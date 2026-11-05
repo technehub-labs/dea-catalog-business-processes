@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Draft Workforce and Agent Mix**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Workforce and Agent Mix** (`processes:process-ao-conceive-z6m6p5`). Its canonical ID is `processes:activity-ao-conceive-73s2vm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts together the actual composition of the workforce mix, working inside the proportions and capacity envelopes already agreed. The envelopes arrive first, the mix is drafted against them and checked for fit, and the draft is confirmed with the people who will ratify it. It ends with a complete draft mix ready to be committed as the organization's reference for acquisition and planning.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the blend of people and artificial agents is shaped deliberately within agreed limits before anything is committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the capacity envelopes are in place during mix conception, and it completes when the drafted mix has been confirmed and its record preserved for the commitment step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management planner drafts the shape of the future mix inside the agreed envelopes, tests the draft against each proportion, and hands the confirmed draft to the strategy function for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Workforce and Agent Mix |
+| `plain_language_description` | string | no | This activity puts together the actual composition of the workforce mix, working inside the proportions and capacity … |
+| `business_purpose` | string | no | It exists so the blend of people and artificial agents is shaped deliberately within agreed limits before anything is … |
+| `practical_context` | string | no | It runs once the capacity envelopes are in place during mix conception, and it completes when the drafted mix has been … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

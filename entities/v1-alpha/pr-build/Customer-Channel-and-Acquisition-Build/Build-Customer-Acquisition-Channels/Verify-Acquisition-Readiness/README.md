@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Verify Acquisition Readiness**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Customer Acquisition Channels** (`processes:process-pr-build-nygvw7`). Its canonical ID is `processes:activity-pr-build-p42qh7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the channels and engines as built can actually bring in the first customers as designed. The assembled acquisition machinery arrives with the designs as the yardstick, readiness is examined against them, and the determination is confirmed for operation. The doors open only once this says the machinery works.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so customer acquisition goes live proven able to acquire, not merely built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the acquisition build once infrastructure, integration, and engines are in place, and it completes when the readiness determination is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management verifier proves the built channels and engines can acquire the first customers as designed, and confirms the readiness determination.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Acquisition Readiness |
+| `plain_language_description` | string | no | This activity proves the channels and engines as built can actually bring in the first customers as designed. The … |
+| `business_purpose` | string | no | It exists so customer acquisition goes live proven able to acquire, not merely built. |
+| `practical_context` | string | no | It closes the acquisition build once infrastructure, integration, and engines are in place, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

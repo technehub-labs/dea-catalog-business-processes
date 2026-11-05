@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-ucxpz4 through concluding task processes:task-sd-operate-record-695prz, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Conduct Strategic Reviews'
+plain_language_description: 'The pack is in the room; now the session itself runs. Intake registers the assembled papers, verification confirms attendance and quorum, and processing chairs the session through the agenda — debating the performance report and the signal briefs toward decisions. Confirmation closes each session with its outcomes communicated and the records custodian preserves the session papers.'
+business_purpose: 'It is the forum where monitoring turns into steering, the live sessions where performance and signals are debated into decisions.'
+practical_context: 'It runs on the scheduled cadence, opening when each session pack is presented at intake and closing when the session outcomes are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead chairs the quarterly session through the assembled pack, the verification custodian confirms quorum at the door, and decisions are minuted live before the confirmation custodian closes the session with outcomes announced.'

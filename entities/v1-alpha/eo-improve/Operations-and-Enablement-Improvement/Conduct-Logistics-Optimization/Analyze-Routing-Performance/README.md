@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Analyze Routing Performance**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Logistics Optimization** (`processes:process-eo-improve-3fem63`). Its canonical ID is `processes:activity-eo-improve-ck6ghm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the performance records for routing and the wider network to surface where cost runs high or service slips. The execution records and attainment figures arrive as the raw material, the analysis bounds the opportunities and quantifies each, and the opportunity analysis is confirmed onward for the change design. The network's weak spots become named, sized targets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so logistics improvement aims at opportunities the evidence actually supports, sized before any change is designed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the logistics optimization, when the routing execution records and service attainment figures are presented, and it completes once the opportunity analysis is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst reads the routing execution records and service attainment figures, bounds and sizes the cost and service opportunities, and confirms the analysis for the design step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Routing Performance |
+| `plain_language_description` | string | no | This activity reads the performance records for routing and the wider network to surface where cost runs high or … |
+| `business_purpose` | string | no | It exists so logistics improvement aims at opportunities the evidence actually supports, sized before any change is … |
+| `practical_context` | string | no | It opens the logistics optimization, when the routing execution records and service attainment figures are presented … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

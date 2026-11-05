@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Codify Policies**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Codify Charters and Policies** (`processes:process-ge-build-mctdgc`). Its canonical ID is `processes:activity-ge-build-f5yeny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the committed policy designs into operative documents. The policy and control designs arrive as the source, each policy is codified into its operative form and checked against its design, and the codified policies are confirmed onward for publication. What the designers intended becomes what the enterprise can read and follow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so designed policies exist as operative documents, not as intentions in a design file.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while the governance build assembles the bodies' instruments, working from the policy and control designs, and it completes once the codified policies are confirmed onward for publication.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer codifies each committed policy design into its operative document form, checks the text against the design, and confirms the policies for publication.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Codify Policies |
+| `plain_language_description` | string | no | This activity turns the committed policy designs into operative documents. The policy and control designs arrive as the … |
+| `business_purpose` | string | no | It exists so designed policies exist as operative documents, not as intentions in a design file. |
+| `practical_context` | string | no | It runs while the governance build assembles the bodies' instruments, working from the policy and control designs, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

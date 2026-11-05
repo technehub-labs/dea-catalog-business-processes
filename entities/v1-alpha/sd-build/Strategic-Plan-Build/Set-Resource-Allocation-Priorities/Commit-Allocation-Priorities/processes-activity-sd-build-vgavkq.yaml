@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-2pkz5n through concluding task processes:task-sd-build-record-v5zrhz, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Allocation Priorities'
+plain_language_description: 'The ranking is settled and now it becomes binding. The prioritized decisions come in at intake, a final verification confirms each envelope still holds, and the priorities are committed so operating teams can fund and staff against them. Confirmation notifies downstream consumers of the committed priorities and the records custodian preserves the evidence at its retention tier.'
+business_purpose: 'It locks the resourcing ranks into a committed position, closing the process and giving operations a stable basis for spending decisions.'
+practical_context: 'It opens once prioritisation is complete and closes with the commitment confirmed, downstream teams notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function confirms the final ranking, the confirmation custodian notifies operating teams that the committed priorities and envelopes are available, and the records custodian archives the commitment evidence so later budget rounds can retrieve it.'

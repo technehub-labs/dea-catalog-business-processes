@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Preserve Regulator-Acknowledged Sunset Record**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-a364uh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The sunset is only as good as its proof, and this work secures that proof. Intake registers the executed communications and the supervisor's response, verification confirms the acknowledgement names the authority and both dates, and processing completes the sunset record — the supervisor's sign-off, the directive particulars, the retirement dates and the successor's standing, all held together. Confirmation tells downstream consumers the record is complete and the records custodian preserves it for the retention period.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It binds the supervisor's acknowledgement, the directive particulars and the successor's standing into one preserved proof, so the sunset survives every later audit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the communications campaign, opening at intake of the supervisor's response and closing when the completed record is confirmed and preserved for retention.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function registrar assembles the acknowledgement, the authority identifier and both dates into the sunset record, a verification custodian checks nothing is missing, and the records custodian preserves the completed record where supervisor reviewers can retrieve it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Preserve Regulator-Acknowledged Sunset Record |
+| `plain_language_description` | string | no | The sunset is only as good as its proof, and this work secures that proof. Intake registers the executed communications … |
+| `business_purpose` | string | no | It binds the supervisor's acknowledgement, the directive particulars and the successor's standing into one preserved … |
+| `practical_context` | string | no | It follows the communications campaign, opening at intake of the supervisor's response and closing when the completed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

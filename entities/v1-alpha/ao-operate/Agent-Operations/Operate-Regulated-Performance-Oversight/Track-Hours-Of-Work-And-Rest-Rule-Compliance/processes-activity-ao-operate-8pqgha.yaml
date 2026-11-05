@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-ba8scr through concluding task processes:task-ao-operate-record-6gyw9t, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Track Hours-of-Work and Rest-Rule Compliance'
+plain_language_description: 'This activity watches the working hours and rest periods of licensed role holders against the applicable rules. The live role list and the hours recording come in together, each holder''s hours and rest are compared with their limits, and the compliance record is confirmed and retained. Pressure points, such as hours creeping past limits or rest being squeezed, surface here while they can still be corrected.'
+business_purpose: 'It exists so working-time and rest limits for licensed roles are watched continuously rather than discovered after a breach.'
+practical_context: 'It runs across the live operation of licensed roles, feeding off the hours recording as it accumulates, and it closes each pass when the compliance record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian compares each licensed crew member''s logged hours and rest against their applicable limits, records the compliance outcome, and files it for oversight.'

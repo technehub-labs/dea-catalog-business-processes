@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Execute Risk Reviews**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Enterprise Risk Oversight** (`processes:process-ge-operate-tpenm6`). Its canonical ID is `processes:activity-ge-operate-wr4w6h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works the reviews of risk that each cycle boundary brings due, examining the register's picture against reality. The cycle boundary arrives as the trigger, reviews are executed over the maintained registers and their findings gathered, and the executed reviews are confirmed onward for the exposure work. The risk picture is re-checked on a rhythm, not left to rot.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's risk picture is re-examined on schedule rather than assumed still true.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each risk review cycle boundary, working over the maintained registers, and it completes once the executed reviews are confirmed onward for the exposure surfacing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function analyst runs the cycle's risk reviews over the maintained registers, gathering what has changed since last time, and confirms the executed reviews onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Risk Reviews |
+| `plain_language_description` | string | no | This activity works the reviews of risk that each cycle boundary brings due, examining the register's picture against … |
+| `business_purpose` | string | no | It exists so the enterprise's risk picture is re-examined on schedule rather than assumed still true. |
+| `practical_context` | string | no | It runs at each risk review cycle boundary, working over the maintained registers, and it completes once the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

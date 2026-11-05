@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Monitor Market and Funding Shifts**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Evolve Treasury and Funding Model** (`processes:process-fa-improve-2kemkq`). Its canonical ID is `processes:activity-fa-improve-capmsa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches the market and the funding world for shifts that will eventually demand a changed model. The posture signals arrive continuously, changes worth noting are tracked as they build, and the monitored shifts are confirmed onward for the exposure review. The model's environment is watched so the model is never blindsided.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so treasury's model evolves in response to shifts spotted early, not to shifts discovered late.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously, whenever a market or funding posture change begins to build, and each tracked shift closes once it is confirmed onward for the exposure review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst tracks the funding-market signals as a posture change builds, logs the shift worth acting on, and confirms it for the exposure review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Market and Funding Shifts |
+| `plain_language_description` | string | no | This activity watches the market and the funding world for shifts that will eventually demand a changed model. The … |
+| `business_purpose` | string | no | It exists so treasury's model evolves in response to shifts spotted early, not to shifts discovered late. |
+| `practical_context` | string | no | It runs continuously, whenever a market or funding posture change begins to build, and each tracked shift closes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

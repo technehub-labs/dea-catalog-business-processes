@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 
 This is a **Activity** (level L3), named **Confirm Retirement Closure**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Transition Proposition Out of Service** (`processes:process-pv-retire-6us5am`). Its canonical ID is `processes:activity-pv-retire-mqkper`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The retirement ends here: with the service withdrawn and its leftover duties routed, the design authority confirms that closure is genuinely complete, on evidence. The closed case arrives at intake, is checked against the specification, the closure record is assembled with the de-listing and archival steps finished, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It certifies that a retirement is truly finished - evidenced, archived, and struck from the catalogue - so nothing lingers half-removed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the final act of the out-of-service transition: intake opens on the withdrawn service and routed residuals, and closure comes when the confirmed closure record and audit trail are preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the last customer has migrated off a retired service, the proposition design authority registers the closed case at intake, checks the evidence that withdrawal and residual routing are done, completes the archival and de-listing steps, and confirms closure with the record filed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm Retirement Closure |
+| `plain_language_description` | string | no | The retirement ends here: with the service withdrawn and its leftover duties routed, the design authority confirms that … |
+| `business_purpose` | string | no | It certifies that a retirement is truly finished - evidenced, archived, and struck from the catalogue - so nothing … |
+| `practical_context` | string | no | It is the final act of the out-of-service transition: intake opens on the withdrawn service and routed residuals, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

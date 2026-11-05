@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Scan Environmental Sources**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Sense Environmental Signals** (`processes:process-sd-operate-53y4j4`). Its canonical ID is `processes:activity-sd-operate-zsruv4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The environment never announces itself; it has to be watched. Intake registers the sweep of internal and external watching points, verification confirms the coverage is complete, and processing works the sources and gathers whatever looks like drift, disruption or opportunity into a raw feed. Confirmation passes the raw feed downstream and the records custodian preserves it for filtering.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps eyes on the world outside the plan, feeding a steady stream of raw observations that drift and disruption cannot slip past.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as a standing sweep, opening at each intake of the source list and closing when the day's raw feed is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function scanners work through the agreed internal and external watching points each week, a verification custodian confirms no source was skipped, and the raw feed goes to the filtering desk for noise removal.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Scan Environmental Sources |
+| `plain_language_description` | string | no | The environment never announces itself; it has to be watched. Intake registers the sweep of internal and external … |
+| `business_purpose` | string | no | It keeps eyes on the world outside the plan, feeding a steady stream of raw observations that drift and disruption … |
+| `practical_context` | string | no | It runs as a standing sweep, opening at each intake of the source list and closing when the day's raw feed is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

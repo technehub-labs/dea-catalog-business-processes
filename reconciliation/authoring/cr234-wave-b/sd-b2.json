@@ -1,0 +1,472 @@
+{
+ "processes:activity-sd-design-eyax2d": {
+  "plain_language_name": "Set the Option Design Space",
+  "plain_language_description": "Leaders need to know how much room they truly have before options are sketched. The committed intent and the scoped trade-offs arrive at intake, verification confirms both are current, and processing marks out the space those two anchors permit — where options may range and where they may not. Confirmation passes the marked space downstream and the records custodian preserves it for the drafting and criteria work.",
+  "business_purpose": "It fixes how far options may range before any drafting starts, so the option set is born inside what the intent and its trade-offs allow.",
+  "practical_context": "It opens this process at intake when the committed intent and the scoped trade-offs are presented, closing once the marked space is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function lead takes the committed intent and the scoped trade-offs into a framing session, agrees the edges of the option space with the activity owner, and the confirmation custodian releases the marked space to the option drafting team."
+  }
+ },
+ "processes:activity-sd-design-eseuhe": {
+  "plain_language_name": "Draft Strategic Options",
+  "plain_language_description": "Inside the agreed space, the actual options take shape. The marked boundaries arrive at intake, verification checks the drafting instructions are usable, and processing writes a spread of candidate options — each one distinct, described and kept within the lines. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved ahead of the criteria step.",
+  "business_purpose": "It turns the permitted space into a genuine set of choices, giving the evaluation work something real to compare.",
+  "practical_context": "It runs once the design space is set, opening at intake of the bounded space and closing when the drafted options are confirmed ready for criteria framing.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers sketch three distinct options inside the agreed space, a verification custodian sends any that stray outside the lines back for tightening, and the confirmation custodian tells the criteria team the option set is ready."
+  }
+ },
+ "processes:activity-sd-design-y5bn4m": {
+  "plain_language_name": "Frame Option Evaluation Criteria",
+  "plain_language_description": "Choices are only comparable if everyone agrees on the yardsticks first. Intake registers the drafted options and the space they came from, verification tests each proposed yardstick for fairness, and processing writes the criteria the option set will be scored against. Confirmation circulates the agreed criteria and the records custodian preserves them for the evaluation work that follows.",
+  "business_purpose": "It supplies the shared yardsticks that make the later comparison of options fair, transparent and repeatable.",
+  "practical_context": "It sits alongside option drafting, opening at intake of the drafted set and closing when the criteria are confirmed and preserved for evaluation.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function pair drafts the scoring yardsticks, tests them against each drafted option with the activity owner, and the confirmation custodian passes the agreed criteria to the colleagues preparing the evaluation scope."
+  }
+ },
+ "processes:activity-sd-design-47gv45": {
+  "plain_language_name": "Commit Strategic Option Designs",
+  "plain_language_description": "Options and yardsticks are ready, so the design work is sealed. Intake registers the drafted set together with its criteria, a final verification confirms nothing is missing, and the commitment locks the option designs for the evaluation and translation work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed designs at their retention tier.",
+  "business_purpose": "It closes option design with one committed package — choices plus yardsticks — the handoff this process owes to evaluation.",
+  "practical_context": "It opens once drafting and criteria framing are complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the option set and its criteria, the confirmation custodian notifies the evaluation team their inputs are ready, and the records custodian archives the committed designs so the comparison can cite them later."
+  }
+ },
+ "processes:activity-sd-design-pw7auq": {
+  "plain_language_name": "Set the Scenario Assumptions",
+  "plain_language_description": "Options are only as good as the futures they are tested against, so the assumptions come first. The committed options and fresh environment cues arrive at intake, verification tests each candidate assumption for realism, and processing draws the bounded assumption set the options must be tested against. Confirmation hands the set downstream and the records custodian preserves it for scenario drafting.",
+  "business_purpose": "It fixes the assumed future conditions up front, so the scenarios built on them are honest stress tests rather than wishful stories.",
+  "practical_context": "It opens this process at intake when the committed options and environment cues are presented, closing once the assumption set is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function scenario lead works through the committed options against fresh environment cues, agrees the assumption set with the activity owner, and the records custodian preserves the bounded assumptions ahead of the drafting workshop."
+  }
+ },
+ "processes:activity-sd-design-xz6zgn": {
+  "plain_language_name": "Draft Strategic Scenarios",
+  "plain_language_description": "With the assumptions fixed, the alternative futures get written. Intake registers the assumption set, verification checks the drafting instructions are complete, and processing writes the scenarios — coherent pictures of how conditions could unfold, each one staying inside the agreed assumptions. Confirmation announces the drafted scenarios downstream and the working papers are preserved for the signpost step.",
+  "business_purpose": "It gives the enterprise a small set of plausible alternative futures, so choices can be stress-tested rather than judged on one forecast.",
+  "practical_context": "It runs once the assumptions are set, opening at intake of the assumption set and closing when the drafted scenarios are confirmed ready for signposts.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers draft each scenario inside the agreed assumptions, a verification custodian returns any that quietly contradict them, and the confirmation custodian tells the signpost team the scenario set is with them."
+  }
+ },
+ "processes:activity-sd-design-vhcbj5": {
+  "plain_language_name": "Design Scenario Signposts",
+  "plain_language_description": "A scenario is only useful if you can tell it is coming true. Intake brings the drafted scenarios in, verification tests the candidate indicators for observability, and processing sets out the signposts — concrete signals showing which future is actually unfolding. Confirmation passes the signpost designs downstream and the records custodian preserves them ready for commitment.",
+  "business_purpose": "It equips each scenario with observable tells, so monitoring can spot early which assumed future is materialising and steering can react in time.",
+  "practical_context": "It follows scenario drafting, opening at intake of the drafted set and closing when the signpost designs are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function picks observable indicators for each drafted scenario, checks with the activity owner that each tell can genuinely be seen in normal reporting, and the confirmation custodian releases the signpost designs for commitment."
+  }
+ },
+ "processes:activity-sd-design-jgwe2n": {
+  "plain_language_name": "Commit Strategic Scenarios",
+  "plain_language_description": "Scenarios and their signposts are complete, so the set becomes official. Intake registers the drafted scenarios and signposts, a last verification confirms the package is coherent, and the commitment locks the scenarios in for use while the plan is being executed. Confirmation notifies downstream consumers and the records custodian preserves the committed scenarios at their retention tier.",
+  "business_purpose": "It seals the scenario work with one committed package of futures and tells, ready to steer operations under uncertainty.",
+  "practical_context": "It opens once drafting and signpost design are done and closes with the commitment confirmed, consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the scenario set, the confirmation custodian notifies plan construction and steering colleagues that the committed assumptions and signposts are available, and the records custodian archives the evidence for the cycle ahead."
+  }
+ },
+ "processes:activity-sd-design-h56x3t": {
+  "plain_language_name": "Set the Evaluation Scope",
+  "plain_language_description": "Before options are compared, the contest rules are fixed. The committed option designs and their criteria arrive at intake, verification confirms both are usable, and processing marks which comparisons will be run — which options, measured against which yardsticks, over what horizon. Confirmation passes the marked scope downstream and the records custodian preserves it for the comparison itself.",
+  "business_purpose": "It keeps the comparison focused and fair by fixing in advance which alternatives are judged and by which measures.",
+  "practical_context": "It opens this process at intake when the committed option designs and criteria are presented, closing once the scope lines are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst agrees with the activity owner which option pairs the evaluation will cover and which criteria apply, a verification custodian confirms the inputs are current, and the records custodian preserves the marked scope ahead of the comparison."
+  }
+ },
+ "processes:activity-sd-design-dgkmm5": {
+  "plain_language_name": "Execute Strategic Comparison",
+  "plain_language_description": "Now the options go head to head. Intake registers the scoped alternatives and their yardsticks, verification checks every option is scored on the same basis, and processing runs the comparison and records the results for each pairing. Confirmation communicates the outcome table to downstream colleagues and the records custodian preserves the results for the preference step.",
+  "business_purpose": "It produces the like-for-like results the preference decision rests on, replacing instinct with a scored comparison.",
+  "practical_context": "It runs once the evaluation scope is set, opening at intake of the scoped options and criteria and closing when the results are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function analysts score each option against the agreed yardsticks, a verification custodian confirms every option was judged on the same basis, and the confirmation custodian circulates the comparison results to the preference team."
+  }
+ },
+ "processes:activity-sd-design-nmbkfx": {
+  "plain_language_name": "Articulate Strategic Preference",
+  "plain_language_description": "Someone now has to say which option wins and own the costs of that answer. Intake registers the comparison results, verification tests the reading against the scores, and processing writes out the preferred option together with the trade-offs the enterprise accepts in choosing it. Confirmation circulates the stated preference and the records custodian preserves it for the final commitment.",
+  "business_purpose": "It turns a table of scores into a defensible statement of which way the enterprise should go and what it gives up by going there.",
+  "practical_context": "It follows the comparison, opening when the results are presented at intake and closing when the stated preference is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function lead reads the comparison results, states which option the enterprise prefers and names the trade-offs accepted, and the confirmation custodian passes the stated preference to the colleagues preparing the strategic choice."
+  }
+ },
+ "processes:activity-sd-design-r7hq2f": {
+  "plain_language_name": "Commit Strategic Preference",
+  "plain_language_description": "The preference is stated; this closing step makes it the enterprise's actual choice. Intake registers the articulated preference, a final verification confirms the reasoning is complete, and the commitment locks the chosen option in for the plan build to carry forward. Confirmation notifies downstream consumers that the strategic choice is made and the records custodian preserves the committed choice on the audit trail.",
+  "business_purpose": "It closes evaluation by ratifying one option as the strategic choice, the decision everything in plan build depends on.",
+  "practical_context": "It opens once the preference is articulated and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead ratifies the preferred option, the confirmation custodian notifies plan-build colleagues that the committed choice is available, and the records custodian archives the decision evidence for later review."
+  }
+ },
+ "processes:activity-sd-improve-dhkxf6": {
+  "plain_language_name": "Consolidate Adaptation Drivers",
+  "plain_language_description": "Adaptation starts by assembling the case for change. Sensed signals, monitored performance and review findings arrive at intake, verification confirms each stream is current, and processing merges them into one adaptation case that states plainly why the direction can no longer stand still. Confirmation shares the consolidated case downstream and the records custodian preserves it for the formulation step.",
+  "business_purpose": "It builds one coherent evidence case for changing course, so adaptation rests on documented drivers rather than scattered impressions.",
+  "practical_context": "It opens this process at intake when the sensed signals, monitored performance and review findings arrive, closing once the consolidated case is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst pulls the environmental briefs, performance reports and review findings into a single case-for-change pack, a verification custodian confirms each stream is up to date, and the confirmation custodian passes the case to the adjustment team."
+  }
+ },
+ "processes:activity-sd-improve-qxsaqc": {
+  "plain_language_name": "Formulate Direction Adjustments",
+  "plain_language_description": "With the case for change on the table, candidate answers are drafted. Intake registers the consolidated case, verification checks the drafting instructions are clear, and processing writes a set of candidate changes to the direction — each one traceable to the evidence that prompted it. Confirmation announces the candidate set downstream and the working papers are preserved for the implications check.",
+  "business_purpose": "It converts the evidence case into concrete candidate changes, giving leadership real options for steering the direction back on course.",
+  "practical_context": "It follows consolidation, opening at intake of the adaptation case and closing when the candidate adjustments are confirmed ready for assessment.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function planners draft candidate changes to the direction, each tagged to the evidence line that motivated it, and the confirmation custodian hands the set to the colleagues who will test the implications."
+  }
+ },
+ "processes:activity-sd-improve-r5jbb6": {
+  "plain_language_name": "Assess Adjustment Implications",
+  "plain_language_description": "Every candidate change ripples somewhere, and this work traces where. Intake brings the candidate adjustments in, scrutiny tests each one across the objective set, the target set, the initiative portfolio and the plan document, and processing records what would have to move if the change were made. Confirmation communicates the assessed implications downstream and the records custodian preserves them for the selection.",
+  "business_purpose": "It exposes the true cost of each candidate change before any is chosen, so the selection is made with consequences in view.",
+  "practical_context": "It follows formulation, opening when the candidate adjustments are presented at intake and closing when the implications are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function analysts walk each candidate change past the objective and target sets, the initiative portfolio and the plan document, note what would have to move, and the confirmation custodian releases the implications pack for selection."
+  }
+ },
+ "processes:activity-sd-improve-m6ww6z": {
+  "plain_language_name": "Commit Direction Adjustment",
+  "plain_language_description": "The candidates have been weighed, so one adjustment can now be ratified. Intake registers the assessed implications, a final verification confirms the reasoning holds, and the commitment locks the chosen change in and hands it onward for the objectives refresh and the effectiveness review. Confirmation notifies downstream consumers and the records custodian preserves the committed adjustment on the audit trail.",
+  "business_purpose": "It ratifies one change of course for the direction, closing the adaptation decision and setting the refresh and review work in motion.",
+  "practical_context": "It opens once the implications are assessed and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead ratifies the selected adjustment, the confirmation custodian notifies the refresh and review teams their input is ready, and the records custodian archives the decision evidence for the next planning cycle."
+  }
+ },
+ "processes:activity-sd-improve-6tdndg": {
+  "plain_language_name": "Gather Objective Performance Evidence",
+  "plain_language_description": "Before objectives can be judged, the facts about them must be brought together. The monitored performance picture arrives at intake, verification checks each item is complete and attributable, and processing assembles the evidence relevant to the measures the enterprise is currently working to. Confirmation shares the gathered evidence downstream and the records custodian preserves it for the fit assessment.",
+  "business_purpose": "It puts a complete, checked evidence base behind the refresh, so judgements about the current measures rest on facts rather than impressions.",
+  "practical_context": "It opens this process at intake when the monitored performance picture is presented, closing once the gathered evidence is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst collects the monitored performance figures bearing on each current measure, a verification custodian confirms sources and completeness, and the confirmation custodian releases the evidence pack to the fit assessment."
+  }
+ },
+ "processes:activity-sd-improve-e2c2ue": {
+  "plain_language_name": "Assess Objective Fit",
+  "plain_language_description": "The evidence is in; the question is whether the current measures still make sense. Intake registers the gathered evidence, scrutiny tests each objective and its target against what performance is actually showing, and processing records a fit verdict for every line — keep, tighten, or retire. Confirmation communicates the assessment downstream and the records custodian preserves it ready for redrafting.",
+  "business_purpose": "It separates the measures that still serve the direction from those that have gone stale, focusing the redraft where it matters.",
+  "practical_context": "It follows evidence gathering, opening at intake of the gathered evidence and closing when the fit verdicts are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function reviewers read each objective and target against the evidence pack, mark one measure for retirement and two for tightening, and the confirmation custodian passes the fit verdicts to the redrafting team."
+  }
+ },
+ "processes:activity-sd-improve-ygmzmg": {
+  "plain_language_name": "Redraft Objectives and Targets",
+  "plain_language_description": "The verdicts are in, so the wording gets rewritten. Intake registers the fit assessment, verification checks every verdict has a redrafting instruction, and processing rewrites the measures so they once more track the adapted course and what the evidence actually shows. Confirmation announces the redrafted set downstream and the working papers are preserved for commitment.",
+  "business_purpose": "It rewrites the stale measures into ones that fit where the direction now points, restoring a steerable objective set.",
+  "practical_context": "It follows the fit assessment, opening at intake of the verdicts and closing when the redrafted set is confirmed ready for commitment.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers rewrite the flagged objectives and targets against the fit verdicts, a verification custodian sends any half-rewritten line back, and the confirmation custodian announces the refreshed set is ready for ratification."
+  }
+ },
+ "processes:activity-sd-improve-dqccp5": {
+  "plain_language_name": "Commit Refreshed Objectives",
+  "plain_language_description": "The refreshed set is complete, so it becomes the measures of record. Intake registers the redrafted set, a last verification confirms every line is owned and measurable, and the commitment locks it in and hands it onward to the planning and steering colleagues. Confirmation notifies downstream consumers and the records custodian preserves the committed set at its retention tier.",
+  "business_purpose": "It ratifies the refreshed measures as the set of record, closing the refresh and re-arming planning and steering with a current baseline.",
+  "practical_context": "It opens once redrafting is complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead ratifies the refreshed objective set, the confirmation custodian notifies planning and steering colleagues the committed measures are available, and the records custodian archives the evidence for the cycle."
+  }
+ },
+ "processes:activity-sd-improve-pke2va": {
+  "plain_language_name": "Assemble Effectiveness Evidence",
+  "plain_language_description": "Is the direction actually working? This work gathers what would let anyone answer that. The monitored performance and the review-cycle records arrive at intake, verification checks each item bears on real outcomes, and processing assembles the outcome picture against what the direction promised to deliver. Confirmation shares the assembled picture downstream and the records custodian preserves it for the evaluation.",
+  "business_purpose": "It builds the factual basis for judging the strategy itself, so the effectiveness verdict stands on evidence rather than anecdote.",
+  "practical_context": "It opens this process at intake when the monitored performance and review records arrive, closing once the assembled evidence is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst pulls the performance figures and review-cycle records into one outcome dossier, a verification custodian confirms every item bears on a promised outcome, and the confirmation custodian passes the dossier to the evaluation."
+  }
+ },
+ "processes:activity-sd-improve-mfk5ab": {
+  "plain_language_name": "Evaluate Strategy Effectiveness",
+  "plain_language_description": "The dossier is assembled; now comes the judgement. Intake registers the outcome picture, scrutiny weighs each line against what the strategy set out to achieve, and processing reaches a reasoned verdict on whether the current course is delivering. Confirmation communicates the evaluation downstream and the records custodian preserves it for the findings step.",
+  "business_purpose": "It renders the honest verdict on whether the strategy is working, the judgement the findings and the next adaptation cycle depend on.",
+  "practical_context": "It follows evidence assembly, opening at intake of the outcome dossier and closing when the evaluation is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function reviewers weigh the dossier line by line against the strategy's promises, agree a verdict in a structured session, and the confirmation custodian releases the evaluation to the findings team."
+  }
+ },
+ "processes:activity-sd-improve-3pccaq": {
+  "plain_language_name": "Formulate Effectiveness Findings",
+  "plain_language_description": "A verdict needs turning into statements the enterprise can act on. Intake registers the evaluation, verification checks each claimed point traces to evidence, and processing writes the findings and their recommendations in plain terms — what worked, what did not, what to change. Confirmation circulates the drafted findings downstream and the records custodian preserves them for ratification.",
+  "business_purpose": "It converts the verdict into concrete findings and recommendations, giving the adaptation cycle usable lessons instead of a bare score.",
+  "practical_context": "It follows the evaluation, opening at intake of the reasoned verdict and closing when the drafted findings are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers draft the findings and recommendations from the evaluation, a verification custodian checks each claim traces to dossier evidence, and the confirmation custodian passes the pack forward for ratification."
+  }
+ },
+ "processes:activity-sd-improve-mu6upn": {
+  "plain_language_name": "Commit Effectiveness Findings",
+  "plain_language_description": "The findings are drafted and evidenced; this closing step makes them official. Intake registers the formulated pack, a final verification confirms nothing is unsupported, and the commitment ratifies the pack and sends it into the adaptation work that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed findings at their retention tier.",
+  "business_purpose": "It ratifies the lessons learned and puts them on the record, closing the review and feeding the next adaptation cycle with evidence-backed findings.",
+  "practical_context": "It opens once the findings are formulated and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead ratifies the findings pack, the confirmation custodian routes it to the adaptation colleagues and notifies other consumers, and the records custodian archives the committed findings for the next cycle."
+  }
+ },
+ "processes:activity-sd-operate-fjj2yt": {
+  "plain_language_name": "Collect Strategic Performance Measures",
+  "plain_language_description": "Now that the plan is being executed, the numbers start flowing and someone has to catch them. Measure readings from the executing initiatives and operations arrive at intake, verification checks each is from the right source and period, and processing gathers them into the complete measure set the review cycle expects. Confirmation announces the collected set downstream and the records custodian preserves it for tracking.",
+  "business_purpose": "It keeps a complete, quality-checked flow of measure readings coming in, the raw material every performance judgement downstream relies on.",
+  "practical_context": "It runs continuously while the plan is in force, opening at each intake of readings and closing when the collected set is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function analysts log the period's measure readings from each executing initiative, a verification custodian rejects readings with the wrong source or period, and the confirmation custodian releases the collected set to the tracking step."
+  }
+ },
+ "processes:activity-sd-operate-v8wq5y": {
+  "plain_language_name": "Track Performance against Plan",
+  "plain_language_description": "Readings on their own say little; they need the plan beside them. Intake registers the collected measures, verification confirms the comparison basis is consistent, and processing lays each reading against the plan's objectives and targets to build the current position. Confirmation shares the tracked position downstream and the records custodian preserves it for the deviation check.",
+  "business_purpose": "It maintains the running picture of where execution stands relative to the plan, the position that makes deviations visible at all.",
+  "practical_context": "It follows collection, opening at intake of each collected measure set and closing when the updated position is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function tracker lays the fresh readings beside the plan's objectives and targets, a verification custodian confirms the basis of comparison has not shifted, and the confirmation custodian publishes the updated position to the monitoring team."
+  }
+ },
+ "processes:activity-sd-operate-xtgshk": {
+  "plain_language_name": "Flag Performance Deviations",
+  "plain_language_description": "The tracked position shows where execution has slipped and this work makes that visible. Intake brings the position in, verification confirms the gap is real rather than a data fault, and processing raises and triages each departure from plan by severity and owner. Confirmation communicates the flagged list downstream and the records custodian preserves it for the reporting step.",
+  "business_purpose": "It turns quiet gaps into explicit, triaged deviations, so underperformance is confronted early instead of surfacing at year end.",
+  "practical_context": "It follows tracking, opening when the updated position is presented at intake and closing when the triaged flags are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function monitor spots two gaps in the tracked position, a verification custodian rules out a data fault before raising them, and the triaged flags go to the reporting step with severities and owners assigned."
+  }
+ },
+ "processes:activity-sd-operate-k48yk5": {
+  "plain_language_name": "Report Strategic Performance",
+  "plain_language_description": "Insight only matters when it reaches the people who steer. Intake registers the tracked position and its flagged departures, verification confirms the numbers reconcile, and processing packages them into the performance report the review cycle will debate. Confirmation delivers the report to the review cycle and the records custodian preserves it on the audit trail.",
+  "business_purpose": "It carries the monitoring picture into the review arena, closing the loop between measurement and the decisions taken on it.",
+  "practical_context": "It closes each monitoring interval, opening at intake of the position and flags and closing when the issued report is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function packs the tracked position and flagged departures into the period report, a verification custodian reconciles the figures, and the confirmation custodian issues the report to the colleagues running the next strategic review."
+  }
+ },
+ "processes:activity-sd-operate-4yw98f": {
+  "plain_language_name": "Schedule Review Cadence",
+  "plain_language_description": "Reviews only discipline a business if they happen on time, every time. The review mandate arrives at intake, verification tests the proposed rhythm against the steering calendar, and processing sets the standing timetable of sessions and keeps it current. Confirmation publishes the timetable downstream and the records custodian preserves the cadence on the audit trail.",
+  "business_purpose": "It gives strategy its drumbeat — a fixed, maintained rhythm of review sessions that monitoring and steering can rely on.",
+  "practical_context": "It opens this process at intake of the review mandate and runs as a maintained service, closing each scheduling cycle once the timetable is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function coordinator sets the yearly timetable of review sessions against the steering calendar, a verification custodian checks the dates avoid clash with reporting deadlines, and the confirmation custodian publishes the confirmed cadence."
+  }
+ },
+ "processes:activity-sd-operate-9evxdj": {
+  "plain_language_name": "Assemble Review Inputs",
+  "plain_language_description": "Each scheduled session deserves a proper pack. The cadence arrives at intake, verification checks every item is the current version, and processing gathers the performance reports, the signal briefs and the session agenda into one pack per review. Confirmation issues the pack to attendees and the records custodian preserves it with the session record.",
+  "business_purpose": "It makes every review session a prepared one, so decisions are taken on complete papers rather than whatever happens to be at hand.",
+  "practical_context": "It runs ahead of each scheduled session on the cadence, opening at intake of the timetable and closing when the issued pack is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function coordinator gathers the latest performance report, the current signal briefs and the draft agenda into the session pack, a verification custodian confirms versions are current, and the pack goes out to the review attendees in good time."
+  }
+ },
+ "processes:activity-sd-operate-m4s5cn": {
+  "plain_language_name": "Conduct Strategic Reviews",
+  "plain_language_description": "The pack is in the room; now the session itself runs. Intake registers the assembled papers, verification confirms attendance and quorum, and processing chairs the session through the agenda — debating the performance report and the signal briefs toward decisions. Confirmation closes each session with its outcomes communicated and the records custodian preserves the session papers.",
+  "business_purpose": "It is the forum where monitoring turns into steering, the live sessions where performance and signals are debated into decisions.",
+  "practical_context": "It runs on the scheduled cadence, opening when each session pack is presented at intake and closing when the session outcomes are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function lead chairs the quarterly session through the assembled pack, the verification custodian confirms quorum at the door, and decisions are minuted live before the confirmation custodian closes the session with outcomes announced."
+  }
+ },
+ "processes:activity-sd-operate-4je2y3": {
+  "plain_language_name": "Record Review Decisions",
+  "plain_language_description": "A decision that is not written down did not really happen. The conducted sessions arrive at intake, verification checks every minute against what was agreed, and processing logs each decision with its owner and route to whichever process will carry it out. Confirmation notifies the receiving teams and the records custodian preserves the decision log at its retention tier.",
+  "business_purpose": "It gives review sessions lasting effect, turning tabled discussion into logged, owned and routed decisions other processes can execute.",
+  "practical_context": "It closes each session on the cadence, opening at intake of the minuted outcomes and closing when the routed log is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function scribe logs each agreed decision with owner and due route, a verification custodian reads the log back against the minutes, and the confirmation custodian notifies the receiving teams their actions are on the record."
+  }
+ },
+ "processes:activity-sd-operate-zsruv4": {
+  "plain_language_name": "Scan Environmental Sources",
+  "plain_language_description": "The environment never announces itself; it has to be watched. Intake registers the sweep of internal and external watching points, verification confirms the coverage is complete, and processing works the sources and gathers whatever looks like drift, disruption or opportunity into a raw feed. Confirmation passes the raw feed downstream and the records custodian preserves it for filtering.",
+  "business_purpose": "It keeps eyes on the world outside the plan, feeding a steady stream of raw observations that drift and disruption cannot slip past.",
+  "practical_context": "It runs as a standing sweep, opening at each intake of the source list and closing when the day's raw feed is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function scanners work through the agreed internal and external watching points each week, a verification custodian confirms no source was skipped, and the raw feed goes to the filtering desk for noise removal."
+  }
+ },
+ "processes:activity-sd-operate-c4n3fr": {
+  "plain_language_name": "Filter Environmental Signals",
+  "plain_language_description": "Most of what the sweep finds is noise, and this work says so. The raw feed arrives at intake, verification applies the relevance tests consistently, and processing removes the noise and keeps only observations that genuinely matter to the strategy. Confirmation passes the qualified observations downstream and the records custodian preserves the filter decisions alongside them.",
+  "business_purpose": "It protects the steering process from noise, letting only observations with genuine strategic weight travel any further.",
+  "practical_context": "It follows the sweep, opening at intake of each raw feed and closing when the qualified set is confirmed and preserved with its decisions.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function sift-team works the raw feed against the relevance tests, a verification custodian spot-checks rejections for consistency, and the qualified observations go onward to classification with the filter decisions attached."
+  }
+ },
+ "processes:activity-sd-operate-acwkkr": {
+  "plain_language_name": "Classify Environmental Signals",
+  "plain_language_description": "Qualified observations still need meaning, so each one gets typed. Intake registers the filtered set, verification confirms the typing rules are applied evenly, and processing sorts the qualified set by type, tagging each observation as drift, as disruption, or as opportunity for the strategy in operation. Confirmation passes the typed set downstream and the records custodian preserves the classifications for routing.",
+  "business_purpose": "It gives each surviving observation a name the steering process can act on, separating slow drift from sudden disruption and real openings.",
+  "practical_context": "It follows filtering, opening at intake of the qualified set and closing when the typed observations are confirmed and preserved for routing.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst tags each qualified observation by type against the typing rules, a verification custodian checks the tags are consistent, and the typed set is confirmed onward to the routing step."
+  }
+ },
+ "processes:activity-sd-operate-ebntgy": {
+  "plain_language_name": "Route Environmental Signals",
+  "plain_language_description": "Typed signals only earn their keep when they reach the right desk. Intake registers the classified set, verification confirms every destination is correct for its type, and processing delivers each signal to the desk its type demands — portfolio steering, performance monitoring or the adaptation work. Confirmation closes the loop with delivery recorded and the records custodian preserves the routing evidence.",
+  "business_purpose": "It lands each typed signal with the process that can act on it, turning sensing into steering rather than a filed-and-forgotten list.",
+  "practical_context": "It closes the sensing loop, opening at intake of the typed set and closing when every delivery is confirmed and the routing evidence preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function router sends drift signals to the monitoring desk and opportunity signals to the steering desk, a verification custodian confirms each destination matches the type, and the records custodian files the routing evidence."
+  }
+ },
+ "processes:activity-sd-operate-cjjgw3": {
+  "plain_language_name": "Assess Initiative Alignment",
+  "plain_language_description": "In-flight work drifts quietly unless someone checks it against the strategy. The monitored performance picture arrives at intake, verification confirms the initiative list is current, and processing weighs each running initiative against what performance and intent say it should be delivering. Confirmation shares the alignment view downstream and the records custodian preserves it for the drift check.",
+  "business_purpose": "It keeps the initiative fleet honest, testing each piece of running work against the strategy it was funded to serve.",
+  "practical_context": "It opens this process at intake when the monitored performance picture arrives, closing once the alignment view is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst walks each running initiative past the current performance picture, a verification custodian confirms the initiative list matches the portfolio register, and the alignment view goes to the drift check."
+  }
+ },
+ "processes:activity-sd-operate-sxnm8p": {
+  "plain_language_name": "Identify Portfolio Drift",
+  "plain_language_description": "The alignment view usually shows something, and this work names it. Intake registers the assessment, scrutiny distinguishes genuine divergence from measurement noise, and processing pins down where the fleet has wandered off the course the strategy set. Confirmation communicates the drift findings downstream and the records custodian preserves them for the options work.",
+  "business_purpose": "It turns vague unease about the initiative fleet into named, evidenced divergence the steering process can respond to.",
+  "practical_context": "It follows the alignment assessment, opening at its intake and closing when the drift findings are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function reviewer reads the alignment view, separates two genuine departures from measurement noise, and the confirmation custodian passes the named drift findings to the colleagues drafting corrections."
+  }
+ },
+ "processes:activity-sd-operate-6en9zk": {
+  "plain_language_name": "Formulate Rebalancing Options",
+  "plain_language_description": "Named drift needs candidate fixes, and this work drafts them. Intake registers the drift findings, verification checks each finding carries enough detail to act on, and processing writes the corrective options — pausing, accelerating, rescoping or re-resourcing the offending initiatives. Confirmation circulates the option set downstream and the records custodian preserves it for selection.",
+  "business_purpose": "It gives the drift real answers, a menu of concrete corrective moves leadership can choose between rather than a problem statement alone.",
+  "practical_context": "It follows the drift check, opening at intake of the findings and closing when the corrective options are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function planners draft corrective moves for each named departure — one initiative paused, one rescoped — and the confirmation custodian passes the option set to the colleagues preparing the decision."
+  }
+ },
+ "processes:activity-sd-operate-th587n": {
+  "plain_language_name": "Commit Portfolio Rebalancing",
+  "plain_language_description": "The corrective menu is on the table and the picks must be made. Intake registers the options, a final verification confirms each is still feasible against current performance, and the commitment ratifies the chosen moves and hands them to the colleagues who govern the initiatives day to day. Confirmation notifies downstream consumers and the records custodian preserves the committed decisions at their retention tier.",
+  "business_purpose": "It turns portfolio steering into reality, ratifying the corrective moves and putting them in the hands of the people who run the initiatives.",
+  "practical_context": "It closes each steering pass, opening at intake of the corrective options and closing when the ratified decisions are confirmed and archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead ratifies the corrective moves with the activity owner, the confirmation custodian hands the committed decisions to initiative governance, and the records custodian archives the decision evidence."
+  }
+ },
+ "processes:activity-sd-retire-z2y3pr": {
+  "plain_language_name": "Receive Regulator Sunset Directive",
+  "plain_language_description": "The sunset begins with an instruction from the supervisor. A directive or rejection notice from the regulator arrives at intake, verification confirms the document is authentic and complete, and processing records it against the regulated strategic-plan record with the issuing authority, the directive date and the retirement date it sets. Confirmation notifies downstream consumers and the records custodian preserves the recorded directive.",
+  "business_purpose": "It anchors the whole retirement on an authenticated instruction, so the plan is sunset because the supervisor required it — not on internal whim.",
+  "practical_context": "It opens this process at intake when the regulator's notice arrives, closing once the recorded directive with its dates is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function registrar logs the regulator's notice against the plan record, a verification custodian confirms the issuing authority and dates before acceptance, and the finance function is told the retirement clock has started."
+  }
+ },
+ "processes:activity-sd-retire-6azc3g": {
+  "plain_language_name": "Identify Superseded Regulated Strategic Plan",
+  "plain_language_description": "The directive says retire; this work pins down exactly which plan on record is the one leaving. Intake registers the recorded directive and the plan record, verification confirms the retiring candidate is the acknowledged, live plan named in the instruction, and processing links it to its successor so old and new stand side by side on the record. Confirmation announces the pairing downstream and the records custodian preserves the supersession reference.",
+  "business_purpose": "It establishes exactly which acknowledged, live plan is retiring and ties it to its successor, so nothing retires by mistake and nothing replaces it untracked.",
+  "practical_context": "It follows the directive, opening at intake of the recorded instruction and closing when the supersession pairing is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function registrar matches the directive against the plan record, a verification custodian confirms the named plan is the acknowledged live one, and the successor link is preserved so reviewers can see old and new side by side."
+  }
+ },
+ "processes:activity-sd-retire-6m38cq": {
+  "plain_language_name": "Update Filings Register for Regulated Strategic Plan",
+  "plain_language_description": "The official list of lodged plans must now show the truth. Intake registers the identified pairing and the register itself, verification checks the entry to be amended, and processing marks the plan as retired on the register, records the issuing authority and the directive and retirement dates, and keeps the successor's standing visible on the same entry. Confirmation transmits the amended register to the supervisor and the records custodian preserves the update evidence.",
+  "business_purpose": "It keeps the public record of lodged plans truthful, marking the retirement where the supervisor and every future reader can see it.",
+  "practical_context": "It follows supersession identification, opening at intake of the register and pairing and closing when the transmitted update is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function registrar amends the register entry to mark the plan retired, enters the authority and the two dates, and the confirmation custodian transmits the amended register to the supervising authority for their records."
+  }
+ },
+ "processes:activity-sd-retire-r5tcp2": {
+  "plain_language_name": "Run the Sunset Communications Plan",
+  "plain_language_description": "With the register updated, the outside world has to be told properly. Intake registers the assembled sunset papers and the mandated communications plan, verification confirms every audience and message meets what the regulator prescribed, and processing carries the communications out — business-unit notices, external statements and the replacement plan's standing shared with the supervisor. Confirmation closes the campaign with delivery recorded and the records custodian preserves the execution evidence.",
+  "business_purpose": "It tells everyone the sunset touches — inside and outside the entity — in the form and sequence the supervisor requires, so retirement happens without surprises.",
+  "practical_context": "It runs once the filings register is updated, opening at intake of the sunset papers and closing when the delivered campaign is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function communications lead runs the regulator-prescribed campaign, the finance function briefs the affected units on what changes for them, and the confirmation custodian records delivery of the replacement plan's standing to the supervising authority."
+  }
+ },
+ "processes:activity-sd-retire-a364uh": {
+  "plain_language_name": "Preserve Regulator-Acknowledged Sunset Record",
+  "plain_language_description": "The sunset is only as good as its proof, and this work secures that proof. Intake registers the executed communications and the supervisor's response, verification confirms the acknowledgement names the authority and both dates, and processing completes the sunset record — the supervisor's sign-off, the directive particulars, the retirement dates and the successor's standing, all held together. Confirmation tells downstream consumers the record is complete and the records custodian preserves it for the retention period.",
+  "business_purpose": "It binds the supervisor's acknowledgement, the directive particulars and the successor's standing into one preserved proof, so the sunset survives every later audit.",
+  "practical_context": "It follows the communications campaign, opening at intake of the supervisor's response and closing when the completed record is confirmed and preserved for retention.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function registrar assembles the acknowledgement, the authority identifier and both dates into the sunset record, a verification custodian checks nothing is missing, and the records custodian preserves the completed record where supervisor reviewers can retrieve it."
+  }
+ },
+ "processes:activity-sd-retire-48khkt": {
+  "plain_language_name": "Execute Retained-Records Plan for Regulated Entity",
+  "plain_language_description": "Retired does not mean discarded; the retired plan's papers must be kept on schedule. Intake registers the completed sunset record and the entity's retention plan, verification reconciles the schedule against what the supervisor requires, and processing catalogues the retired plan's papers, applies the prescribed keeping periods and stores them where continuing oversight can reach them. Confirmation logs the execution against the plan record and the records custodian preserves the catalogue itself.",
+  "business_purpose": "It keeps the retired plan's papers findable and intact for as long as the policy and the supervisor require, so history stays answerable.",
+  "practical_context": "It follows the sunset record, opening at intake of the retention plan and closing when the catalogued, stored papers are confirmed and the execution logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The finance function records team catalogues the retired plan's papers against the retention schedule, a verification custodian reconciles the keeping periods with the supervisor's requirements, and the execution is logged where the industry regulator can inspect it."
+  }
+ },
+ "processes:activity-sd-retire-8yt6ar": {
+  "plain_language_name": "Notify the Affected Business Units of the Sunset",
+  "plain_language_description": "The people whose work the plan governed hear about the sunset through a prescribed outreach, not rumour. Intake registers the prescribed notification list, verification confirms every unit on it is reached with the content and timing the regulator set, and processing delivers the notices and gathers each unit's acknowledgement onto the plan record. Confirmation completes the outreach and the records custodian preserves the acknowledgement trail for the supervisor.",
+  "business_purpose": "It leaves no affected team discovering the sunset by rumour, with every notice delivered, acknowledged and evidenced as the supervisor prescribes.",
+  "practical_context": "It closes the sunset sequence, opening at intake of the prescribed list and closing when the gathered acknowledgements are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function notification desk works through the regulator-prescribed unit list, a verification custodian confirms each unit received the mandated content on the mandated timing, and the gathered acknowledgements are preserved where the supervising authority can review them."
+  }
+ }
+}

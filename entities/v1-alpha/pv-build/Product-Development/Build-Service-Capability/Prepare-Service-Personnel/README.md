@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Prepare Service Personnel**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Service Capability** (`processes:process-pv-build-p9a2s9`). Its canonical ID is `processes:activity-pv-build-zta8ej`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity readies the people who will operate the freshly stood-up delivery mechanism. The stood-up machinery arrives as the thing to be manned, personnel are prepared — trained, briefed, practised — against it, and the prepared team is confirmed onward for the integration. The best mechanism in the world is inert without people who can run it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the service delivery mechanism has trained people ready to operate it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the mechanism stand-up, once the machinery is assembled, and it completes when the prepared personnel are confirmed onward for the delivery model integration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead trains and briefs the team who will run the stood-up delivery mechanism, practising them against it, and confirms the prepared personnel onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare Service Personnel |
+| `plain_language_description` | string | no | This activity readies the people who will operate the freshly stood-up delivery mechanism. The stood-up machinery … |
+| `business_purpose` | string | no | It exists so the service delivery mechanism has trained people ready to operate it. |
+| `practical_context` | string | no | It follows the mechanism stand-up, once the machinery is assembled, and it completes when the prepared personnel are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

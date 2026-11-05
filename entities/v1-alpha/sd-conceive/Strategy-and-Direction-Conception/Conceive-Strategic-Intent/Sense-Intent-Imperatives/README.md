@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Sense Intent Imperatives**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Conceive Strategic Intent** (`processes:process-sd-conceive-3uredz`). Its canonical ID is `processes:activity-sd-conceive-gdjvff`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Direction-setting starts with listening. Purpose signals, mandate changes and cues from the environment are brought in at intake, checked for relevance, and shaped into a clear set of imperatives that explains why bounded intent is needed now. Confirmation shares that set with downstream colleagues and the records custodian preserves it for the framing work that follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It grounds the intent work in evidence, so the direction the enterprise frames responds to real signals rather than assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the process at intake when purpose signals and mandate changes arrive, closing once the sensed imperatives are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst gathers mandate notes and environment cues at intake, a verification custodian filters out the noise, and the team publishes the shortlist of imperatives that the intent framing will answer to.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Intent Imperatives |
+| `plain_language_description` | string | no | Direction-setting starts with listening. Purpose signals, mandate changes and cues from the environment are brought in … |
+| `business_purpose` | string | no | It grounds the intent work in evidence, so the direction the enterprise frames responds to real signals rather than … |
+| `practical_context` | string | no | It opens the process at intake when purpose signals and mandate changes arrive, closing once the sensed imperatives are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

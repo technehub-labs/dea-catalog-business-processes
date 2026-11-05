@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Sequence Strategic Initiatives**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Roadmap** (`processes:process-sd-build-7n4prh`). Its canonical ID is `processes:activity-sd-build-3u6qkt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The initiatives exist, but order matters. This work takes the translated initiatives in, checks each one is complete, and arranges them into a deliberate sequence that respects the strategic horizons they serve. The ordered sequence is then confirmed to downstream colleagues and preserved so the milestone work can build on it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns a pile of initiatives into an ordered path, giving the roadmap its backbone and the planning calendar its running order.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts at intake when the translated initiatives are presented and closes when the agreed sequence is confirmed and stored for milestone anchoring.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function planner lays the translated initiatives out in a workshop, agrees the running order with the activity owner across the strategic horizons, and the confirmation custodian announces the sequence is settled for milestone anchoring.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sequence Strategic Initiatives |
+| `plain_language_description` | string | no | The initiatives exist, but order matters. This work takes the translated initiatives in, checks each one is complete … |
+| `business_purpose` | string | no | It turns a pile of initiatives into an ordered path, giving the roadmap its backbone and the planning calendar its … |
+| `practical_context` | string | no | It starts at intake when the translated initiatives are presented and closes when the agreed sequence is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

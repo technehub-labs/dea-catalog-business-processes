@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-3fem63 through concluding task processes:task-eo-improve-record-uptrqf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Route and Network Changes'
+plain_language_description: 'This activity works the analyzed opportunities into concrete changes to routes and the network. The opportunity analysis arrives with the routing specification as the frame, changes are designed against both and their impact assessed, and the change designs are confirmed onward for commitment. Each opportunity gains a specific, costed answer.'
+business_purpose: 'It exists so every evidenced opportunity gets a concrete, impact-assessed change rather than a vague intention.'
+practical_context: 'It follows the performance analysis, when the bounded opportunities are presented for design, and it completes once the change designs with impact assessments are confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer turns each bounded opportunity into a concrete route or network change, assesses its impact against the routing specification, and confirms the designs for commitment.'

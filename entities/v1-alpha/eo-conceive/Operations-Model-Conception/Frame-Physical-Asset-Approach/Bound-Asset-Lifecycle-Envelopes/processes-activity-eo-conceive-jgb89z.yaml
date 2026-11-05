@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-87kx9n through concluding task processes:task-eo-conceive-record-ej437k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Asset Lifecycle Envelopes'
+plain_language_description: 'This activity sets the postures the enterprise will take across an asset''s life — how it acquires, renews, and retires — so later decisions fall inside agreed bounds. The footprint principles arrive as the reference, the lifecycle postures are worked out and reviewed against them, and the bounded envelopes are confirmed onward for the approach''s commitment. Assets will be born, aged, and disposed of by design.'
+business_purpose: 'It exists so asset decisions over their whole life happen inside deliberate postures rather than being improvised case by case.'
+practical_context: 'It follows the option assessment, when the footprint principles are in place, and it completes once the lifecycle envelopes are confirmed for the approach''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead sets the acquisition, renewal, and retirement postures for assets against the footprint principles, and confirms the bounded envelopes with the strategy function.'

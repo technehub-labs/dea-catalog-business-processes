@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Form Proposition Review Findings**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Conduct Proposition Performance Review** (`processes:process-pv-improve-27r7r7`). Its canonical ID is `processes:activity-pv-improve-sac4pb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management reads the assembled evidence pack and draws the bounded conclusions the review will stand on - what is working, what is slipping, and what needs a decision. The pack is registered at intake, checked for soundness, worked into a finding set, confirmed for the reviewers, and filed with its audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts raw review material into a clear set of findings, giving the routing step something definite to send to the evolution and rationalization tracks.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs mid-review, after the evidence pack is complete: intake opens on the pack's arrival and closure comes when the confirmed finding set is issued and archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management reviewer takes the evidence pack assembled for the half-yearly review, verifies it covers every live proposition, writes the conclusions - for instance, that one proposition is underperforming its envelope - and hands the confirmed finding set to the routing step with the audit record preserved.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Form Proposition Review Findings |
+| `plain_language_description` | string | no | Product management reads the assembled evidence pack and draws the bounded conclusions the review will stand on - what … |
+| `business_purpose` | string | no | It converts raw review material into a clear set of findings, giving the routing step something definite to send to the … |
+| `practical_context` | string | no | It runs mid-review, after the evidence pack is complete: intake opens on the pack's arrival and closure comes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

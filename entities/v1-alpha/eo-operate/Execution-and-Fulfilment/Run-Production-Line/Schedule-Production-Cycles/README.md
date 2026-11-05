@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Schedule Production Cycles**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Run Production Line** (`processes:process-eo-operate-xud3hs`). Its canonical ID is `processes:activity-eo-operate-gmkpny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the plan for production into an ordered, resourced run of cycles for the line. The production plan arrives with the line's capacity and material availability, the cycle sequence is worked out and resourced against all three, and the cycle schedule is confirmed onward for running. The line always knows what it is making next, and with what.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the line's production time is organised into executable, resourced cycles that follow the plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens each production period, when the production plan is presented with capacity and material availability, and it completes once the cycle schedule is confirmed for running.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A production planner sequences the plan into resourced cycles for the line, checking each cycle against capacity and material availability, and confirms the schedule for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Schedule Production Cycles |
+| `plain_language_description` | string | no | This activity turns the plan for production into an ordered, resourced run of cycles for the line. The production plan … |
+| `business_purpose` | string | no | It exists so the line's production time is organised into executable, resourced cycles that follow the plan. |
+| `practical_context` | string | no | It opens each production period, when the production plan is presented with capacity and material availability, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Commit Risk Framework Design**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Risk Framework** (`processes:process-ge-design-pqkvdc`). Its canonical ID is `processes:activity-ge-design-feyvse`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the taxonomy, the scales, and the integration wiring together into one committed framework design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the apparatus build. The enterprise's way of knowing its risks becomes one owned design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so risk apparatus build starts from one committed framework design rather than three pieces.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the risk framework design, once taxonomy, scales, and integration are designed, and it completes when the committed design is confirmed and approved for build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the taxonomy, scales, and integration design into the framework document, obtains ratification, and records the approval for the apparatus build.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Risk Framework Design |
+| `plain_language_description` | string | no | This activity draws the taxonomy, the scales, and the integration wiring together into one committed framework design … |
+| `business_purpose` | string | no | It exists so risk apparatus build starts from one committed framework design rather than three pieces. |
+| `practical_context` | string | no | It closes the risk framework design, once taxonomy, scales, and integration are designed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

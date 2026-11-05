@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Form Retire-or-Pivot Options**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Rationalize Portfolio** (`processes:process-pv-improve-9xvgat`). Its canonical ID is `processes:activity-pv-improve-vaxgzn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+For every proposition that failed its justification, product management works up the realistic paths - withdraw it from the market, or reshape it into something that can succeed. Each failing case arrives at intake, is checked against the assessment, is turned into a documented option set, confirmed for decision makers, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives decision makers real, worked-through choices for weak propositions instead of a bare verdict, so rationalization decisions are deliberate rather than automatic.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the justification assessment in the rationalization sequence, opening when failing cases are presented and closing when the confirmed option sets are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the assessments flag a declining service, a product management pair drafts its options at processing: one path retires it on a managed schedule, the other repositions it for a narrower segment; the confirmed option set goes to the deciding forum with the record preserved.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Form Retire-or-Pivot Options |
+| `plain_language_description` | string | no | For every proposition that failed its justification, product management works up the realistic paths - withdraw it from … |
+| `business_purpose` | string | no | It gives decision makers real, worked-through choices for weak propositions instead of a bare verdict, so … |
+| `practical_context` | string | no | It follows the justification assessment in the rationalization sequence, opening when failing cases are presented and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

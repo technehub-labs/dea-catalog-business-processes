@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-87q5mk through concluding task processes:task-ao-operate-record-d5xcgd, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Evaluate Programme Effectiveness'
+plain_language_description: 'This activity weighs each finished programme against the shortfalls it was meant to close. The recorded completions come in as the starting evidence, effectiveness is judged programme by programme, and the evaluation is confirmed and retained. Which programmes genuinely closed their gaps becomes visible, and which did not.'
+business_purpose: 'It exists so the enterprise learns which development programmes actually close the shortfalls they target.'
+practical_context: 'It runs once programmes have completed and their completions are on file, and it closes when the effectiveness evaluation is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian compares each finished programme''s outcomes with the gap it targeted, records how far the shortfall actually closed, and confirms the evaluation for the record.'

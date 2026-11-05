@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-cv6hjh through concluding task processes:task-pr-design-record-skeyxs, whose outcome — Closure case file retained for Define Demand-Shaping Levers under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define Demand-Shaping Levers'
+plain_language_description: 'This activity names what the enterprise can pull on to steer demand along the paths it has drawn. The supply paths and capacity assumptions arrive as the system to be steered, levers are defined for each point of steering and checked for realism, and the lever set is confirmed onward for the model''s commitment. When demand misbehaves, the enterprise will know which handles to pull.'
+business_purpose: 'It exists so demand can be deliberately steered by named levers rather than merely endured.'
+practical_context: 'It follows the paths and assumptions, once the system to be steered is drawn, and it completes when the defined levers are confirmed onward for the model''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management designer names the handles that steer demand along the drawn supply paths, checks each for realism, and confirms the lever set onward.'

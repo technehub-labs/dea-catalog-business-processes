@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-27r7r7 through concluding task processes:task-pv-improve-record-mjtd2a, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Form Proposition Review Findings'
+plain_language_description: 'Product management reads the assembled evidence pack and draws the bounded conclusions the review will stand on - what is working, what is slipping, and what needs a decision. The pack is registered at intake, checked for soundness, worked into a finding set, confirmed for the reviewers, and filed with its audit trail.'
+business_purpose: 'It converts raw review material into a clear set of findings, giving the routing step something definite to send to the evolution and rationalization tracks.'
+practical_context: 'It runs mid-review, after the evidence pack is complete: intake opens on the pack''s arrival and closure comes when the confirmed finding set is issued and archived.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management reviewer takes the evidence pack assembled for the half-yearly review, verifies it covers every live proposition, writes the conclusions - for instance, that one proposition is underperforming its envelope - and hands the confirmed finding set to the routing step with the audit record preserved.'

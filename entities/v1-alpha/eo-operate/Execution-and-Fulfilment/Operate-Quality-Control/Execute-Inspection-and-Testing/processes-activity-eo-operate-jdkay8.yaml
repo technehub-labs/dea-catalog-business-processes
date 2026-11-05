@@ -83,3 +83,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-44jsrp through concluding task processes:task-eo-operate-record-b9km22, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Inspection and Testing'
+plain_language_description: 'This activity puts the inspection plan to work on the physical output, running the tests and capturing the readings batch by batch. The approved plan arrives with the batch samples, inspection and test are performed with the equipment laid on, and the captured measurements are confirmed onward for recording. Quality is established by hands and instruments here, not by assumption.'
+business_purpose: 'It exists so the enterprise knows, from actual measurement, whether each batch meets its specification.'
+practical_context: 'It runs per batch against its approved inspection plan, and it completes when the captured measurements are confirmed onward for the quality record.'
+worked_example:
+  agent_type: human
+  narrative: 'A quality inspector works the approved plan over the batch''s physical output, runs the tests and captures the readings with the inspection equipment, and confirms the measurements for recording.'

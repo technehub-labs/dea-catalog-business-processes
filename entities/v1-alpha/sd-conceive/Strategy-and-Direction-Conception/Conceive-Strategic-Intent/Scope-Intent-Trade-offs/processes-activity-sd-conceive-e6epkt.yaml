@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-3uredz through concluding task processes:task-sd-conceive-record-7pbb6t, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Scope the Intent Trade-offs'
+plain_language_description: 'Every intent forces choices, and this work maps where the tension lies. The framed narrative and the environmental signals come in at intake, verification confirms both are current, and processing sketches the trade-off space the intent will have to cross — what may be traded and what may not. Confirmation passes the mapped space downstream and the records custodian preserves it ready for commitment.'
+business_purpose: 'It exposes the tensions the intent must cross, so commitment happens with eyes open about what is being traded.'
+practical_context: 'It runs after framing, opening when the narrative and the signals are presented at intake and closing when the mapped trade-offs are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A pair of strategy function colleagues walks the framed narrative against fresh environment signals, lists where growth and risk pull against each other, and the confirmation custodian passes the agreed trade-off map to the colleagues preparing commitment.'

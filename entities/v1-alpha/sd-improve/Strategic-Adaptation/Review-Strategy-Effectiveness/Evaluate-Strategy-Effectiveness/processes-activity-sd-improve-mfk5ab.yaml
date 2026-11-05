@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-duwd64 through concluding task processes:task-sd-improve-record-2hu6gx, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Evaluate Strategy Effectiveness'
+plain_language_description: 'The dossier is assembled; now comes the judgement. Intake registers the outcome picture, scrutiny weighs each line against what the strategy set out to achieve, and processing reaches a reasoned verdict on whether the current course is delivering. Confirmation communicates the evaluation downstream and the records custodian preserves it for the findings step.'
+business_purpose: 'It renders the honest verdict on whether the strategy is working, the judgement the findings and the next adaptation cycle depend on.'
+practical_context: 'It follows evidence assembly, opening at intake of the outcome dossier and closing when the evaluation is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function reviewers weigh the dossier line by line against the strategy''s promises, agree a verdict in a structured session, and the confirmation custodian releases the evaluation to the findings team.'

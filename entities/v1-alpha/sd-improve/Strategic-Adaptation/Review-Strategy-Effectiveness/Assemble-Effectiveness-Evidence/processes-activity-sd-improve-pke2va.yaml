@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-duwd64 through concluding task processes:task-sd-improve-record-t9rasp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Effectiveness Evidence'
+plain_language_description: 'Is the direction actually working? This work gathers what would let anyone answer that. The monitored performance and the review-cycle records arrive at intake, verification checks each item bears on real outcomes, and processing assembles the outcome picture against what the direction promised to deliver. Confirmation shares the assembled picture downstream and the records custodian preserves it for the evaluation.'
+business_purpose: 'It builds the factual basis for judging the strategy itself, so the effectiveness verdict stands on evidence rather than anecdote.'
+practical_context: 'It opens this process at intake when the monitored performance and review records arrive, closing once the assembled evidence is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst pulls the performance figures and review-cycle records into one outcome dossier, a verification custodian confirms every item bears on a promised outcome, and the confirmation custodian passes the dossier to the evaluation.'

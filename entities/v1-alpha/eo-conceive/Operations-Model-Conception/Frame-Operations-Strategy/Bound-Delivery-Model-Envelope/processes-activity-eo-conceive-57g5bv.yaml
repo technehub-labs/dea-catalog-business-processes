@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-xhjdr2 through concluding task processes:task-eo-conceive-record-nwtjzq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Delivery Model Envelope'
+plain_language_description: 'This activity draws the outer limits within which the delivery model must be conceived — the envelope the strategy mandates for the conception and design stages. The assessed context arrives as the basis, the envelope''s bounds are worked out and reviewed against it, and the bounded envelope is confirmed onward for the enablement and asset direction. Broadly what kind of delivery machine this will be is settled here.'
+business_purpose: 'It exists so the delivery model conceived later stays inside limits the strategy actually chose.'
+practical_context: 'It follows the context assessment, when the assessed picture is presented for bounding, and it completes once the bounded envelope is confirmed for the companion direction-setting.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead draws the delivery envelope''s bounds from the assessed context, checks them with the operations function, and confirms the envelope for the enablement and asset direction work.'

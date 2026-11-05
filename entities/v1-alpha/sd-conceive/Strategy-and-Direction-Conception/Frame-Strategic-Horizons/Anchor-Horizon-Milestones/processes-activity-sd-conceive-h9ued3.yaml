@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-xa4h2k through concluding task processes:task-sd-conceive-record-2n9v7g, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Anchor Horizon Milestones'
+plain_language_description: 'Each agreed window now needs its marker points. Intake registers the bounded timeframes, verification checks the candidate anchors are deliverable, and processing fixes the milestones every period is expected to deliver. Confirmation shares the anchored points with downstream colleagues and the records custodian preserves them ready for the alignment step.'
+business_purpose: 'It gives every planning window its concrete deliverable markers, so horizons become trackable commitments rather than vague spans.'
+practical_context: 'It follows timeframe bounding, opening when the bounded windows arrive at intake and closing when the anchors are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function sets milestone points inside each agreed window, checks they are genuinely deliverable with the activity owner, and the records custodian files the anchored set ahead of the alignment review.'

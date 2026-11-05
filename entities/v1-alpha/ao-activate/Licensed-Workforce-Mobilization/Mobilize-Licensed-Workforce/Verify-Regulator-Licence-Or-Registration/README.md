@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-ac
 
 This is a **Activity** (level L3), named **Verify Regulator Licence Or Registration**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Mobilize Licensed Workforce** (`processes:process-ao-activate-jqxtqn`). Its canonical ID is `processes:activity-ao-activate-z4yhzy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks that the licence or registration behind a licensed role is current, is in good standing, and actually fits the live role it is meant to support. The regulator-controlled role and its licence record are brought in together, the licence is examined against what the role requires, and a verified licence record with the scope of practice attested is produced. Confirmation goes to whoever is waiting on it, and the verification is retained as an auditable record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only individuals whose regulator licence genuinely matches the role's controlled scope are progressed toward live work on the personnel record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens at the start of mobilizing a licensed role, when the regulator-controlled role and the licence record are presented together, and it is complete once the verified licence record is confirmed and filed for later reference.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management checker takes an insurance producer's licence details, confirms the line of authority is current and in good standing against the licence record, and files the verified licence record that the remaining mobilization steps rely on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Regulator Licence or Registration |
+| `plain_language_description` | string | no | This activity checks that the licence or registration behind a licensed role is current, is in good standing, and … |
+| `business_purpose` | string | no | It exists so only individuals whose regulator licence genuinely matches the role's controlled scope are progressed … |
+| `practical_context` | string | no | It happens at the start of mobilizing a licensed role, when the regulator-controlled role and the licence record are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

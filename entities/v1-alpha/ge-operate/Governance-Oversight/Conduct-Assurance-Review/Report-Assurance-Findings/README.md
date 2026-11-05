@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Report Assurance Findings**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Conduct Assurance Review** (`processes:process-ge-operate-zwaes5`). Its canonical ID is `processes:activity-ge-operate-q4qn2x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states what the measured evidence showed, as findings delivered to those charged with acting on them. The measured position arrives as the source, findings are written up and delivered to their audiences, and the reported findings are confirmed for the record. Measurement becomes message here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assurance measurement becomes delivered findings someone can act on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evidence measurement, once the measured position is in hand, and it completes when the reported findings are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function analyst writes up the findings from the measured evidence, delivers them to the audiences charged with acting, and confirms the reporting for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Assurance Findings |
+| `plain_language_description` | string | no | This activity states what the measured evidence showed, as findings delivered to those charged with acting on them. The … |
+| `business_purpose` | string | no | It exists so assurance measurement becomes delivered findings someone can act on. |
+| `practical_context` | string | no | It follows the evidence measurement, once the measured position is in hand, and it completes when the reported findings … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Define Experience Principles**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Experience** (`processes:process-pr-design-pxydu3`). Its canonical ID is `processes:activity-pr-design-j9s8mg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the ground rules every part of the experience must keep, so the promised value exchange is actually delivered. The committed segment thesis and value exchange arrive as the promise to be honoured, principles are defined from them and reviewed, and the defined principles are confirmed onward for the touchpoint design. The experience gets its constitution here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every later experience decision answers to principles tied to the promised value exchange.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the experience design once the customer strategy has committed its segment thesis and value exchange, and it completes when the defined principles are confirmed for the touchpoint design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function designer sets the ground rules the experience must keep to deliver the committed value exchange, and confirms the defined principles onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Experience Principles |
+| `plain_language_description` | string | no | This activity sets the ground rules every part of the experience must keep, so the promised value exchange is actually … |
+| `business_purpose` | string | no | It exists so every later experience decision answers to principles tied to the promised value exchange. |
+| `practical_context` | string | no | It opens the experience design once the customer strategy has committed its segment thesis and value exchange, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

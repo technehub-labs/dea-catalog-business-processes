@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-activate-bzfywk through concluding task processes:task-fa-activate-record-5nd8py, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Bring the Billing Operational Controls Live'
+plain_language_description: 'This activity switches the billing operation''s safeguards on and records them live — the separation of duties, the audit trail, and the reconciliations. The regulator-mandated control framework and the fresh authorization come in together, each control is brought into active use and checked against the framework, and the live state is written onto the billing record. The first invoice is raised under controls already running.'
+business_purpose: 'It exists so billing runs under its mandated safeguards from the first transaction, not after the first failure.'
+practical_context: 'It runs late in the billing activation, once the control framework and the authorization are to hand, and it completes when the controls'' live state is confirmed on the regulated billing record and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead brings the separation of duties, the audit trail, and the reconciliations into active use against the mandated framework, and confirms the live state on the billing record.'

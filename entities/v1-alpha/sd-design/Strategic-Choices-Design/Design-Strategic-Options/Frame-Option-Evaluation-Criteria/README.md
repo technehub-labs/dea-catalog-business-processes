@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Frame Option Evaluation Criteria**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Options** (`processes:process-sd-design-ewvbsh`). Its canonical ID is `processes:activity-sd-design-y5bn4m`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Choices are only comparable if everyone agrees on the yardsticks first. Intake registers the drafted options and the space they came from, verification tests each proposed yardstick for fairness, and processing writes the criteria the option set will be scored against. Confirmation circulates the agreed criteria and the records custodian preserves them for the evaluation work that follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It supplies the shared yardsticks that make the later comparison of options fair, transparent and repeatable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It sits alongside option drafting, opening at intake of the drafted set and closing when the criteria are confirmed and preserved for evaluation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function pair drafts the scoring yardsticks, tests them against each drafted option with the activity owner, and the confirmation custodian passes the agreed criteria to the colleagues preparing the evaluation scope.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Option Evaluation Criteria |
+| `plain_language_description` | string | no | Choices are only comparable if everyone agrees on the yardsticks first. Intake registers the drafted options and the … |
+| `business_purpose` | string | no | It supplies the shared yardsticks that make the later comparison of options fair, transparent and repeatable. |
+| `practical_context` | string | no | It sits alongside option drafting, opening at intake of the drafted set and closing when the criteria are confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

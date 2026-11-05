@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-cdtsbq through concluding task processes:task-fa-improve-record-ymhapj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Refinement Effectiveness'
+plain_language_description: 'This activity checks, finding by finding, whether the refinement made actually moved what motivated it. The committed refinements arrive with their originating findings as the yardsticks, effectiveness is measured against each, and the measurement is confirmed for the record. The refinement loop closes on evidence rather than on good intentions.'
+business_purpose: 'It exists so the enterprise learns whether its control fixes genuinely cured the findings behind them.'
+practical_context: 'It runs once the committed refinements have bedded in, measured against the findings that prompted them, and it completes when the effectiveness measurement is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst checks each committed refinement against its originating finding, records where the weakness truly closed, and confirms the measurement for the record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Frame Service-Level Envelopes**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Delivery Model Conception** (`processes:process-eo-conceive-ky5wxp`). Its canonical ID is `processes:activity-eo-conceive-wprvuf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the outer limits for how fast, how well, and how reliably the service will respond once live. The chosen channel patterns arrive as the frame to bound, response, quality, and availability limits are worked out per channel and checked for coherence, and the bounded envelopes are confirmed onward. Customers' expectations are thereby fixed before anything is designed in detail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model states plainly what service customers may count on, within bounds the enterprise can keep.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the channel selection, when the chosen patterns are presented for bounding, and it completes once the service-level envelopes are confirmed for the fulfilment framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead works out the response, quality, and availability limits for each chosen channel, checks the set is deliverable, and confirms the bounded envelopes with the strategy function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Service-Level Envelopes |
+| `plain_language_description` | string | no | This activity sets the outer limits for how fast, how well, and how reliably the service will respond once live. The … |
+| `business_purpose` | string | no | It exists so the delivery model states plainly what service customers may count on, within bounds the enterprise can … |
+| `practical_context` | string | no | It follows the channel selection, when the chosen patterns are presented for bounding, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

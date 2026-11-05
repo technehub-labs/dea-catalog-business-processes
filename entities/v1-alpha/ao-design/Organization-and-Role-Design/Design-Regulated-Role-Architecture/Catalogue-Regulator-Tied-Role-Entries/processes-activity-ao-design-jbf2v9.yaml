@@ -136,3 +136,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-2fkvhx through concluding task processes:task-ao-design-record-yq9m6a, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Catalogue the Regulator-Tied Role Entries'
+plain_language_description: 'This activity writes the licensed roles into the role catalogue as regulator-tied entries. The approved regulated-scope declaration and the catalogue skeleton arrive first, and for each role the entry records the authority it carries, its signing capacity, its controlled-function designation, the licensing basis behind it, and the scope tied to its regulator. The completed entries are confirmed and retained so later design and activation work staffs against an accurate catalogue.'
+business_purpose: 'It exists so the role catalogue states precisely which roles carry regulator-tied authority and on what licensing basis.'
+practical_context: 'It opens the design of the regulated role architecture, when the regulated-scope declaration is presented alongside the catalogue skeleton, and it closes once the entries are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority turns the approved scope declaration into catalogue entries for the enterprise''s controlled-function roles, recording each role''s authority, signing capacity, and licensing basis for the teams that will staff them.'

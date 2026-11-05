@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Certify Market Readiness**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Prepare Market Readiness** (`processes:process-pv-build-6hjzmk`). Its canonical ID is `processes:activity-pv-build-ak4gpq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the offering its formal launch clearance — assets done, pricing set, channels configured, all checked. The prepared offering arrives as the certification candidate, readiness is certified against the full checklist, and the certified market-ready offering is confirmed onward for transition. Launch is authorised here, on evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so launch proceeds only on an offering certified ready in every launch dimension.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the market readiness preparation once assets, pricing, and channels are in place, and it completes when the market readiness certification is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer certifies the offering market-ready — assets, pricing, and channels all verified — and confirms the certification onward for transition.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Certify Market Readiness |
+| `plain_language_description` | string | no | This activity gives the offering its formal launch clearance — assets done, pricing set, channels configured, all … |
+| `business_purpose` | string | no | It exists so launch proceeds only on an offering certified ready in every launch dimension. |
+| `practical_context` | string | no | It closes the market readiness preparation once assets, pricing, and channels are in place, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

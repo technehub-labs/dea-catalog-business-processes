@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-duwd64 through concluding task processes:task-sd-improve-record-ejaamk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Effectiveness Findings'
+plain_language_description: 'The findings are drafted and evidenced; this closing step makes them official. Intake registers the formulated pack, a final verification confirms nothing is unsupported, and the commitment ratifies the pack and sends it into the adaptation work that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed findings at their retention tier.'
+business_purpose: 'It ratifies the lessons learned and puts them on the record, closing the review and feeding the next adaptation cycle with evidence-backed findings.'
+practical_context: 'It opens once the findings are formulated and closes with the commitment confirmed, downstream consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead ratifies the findings pack, the confirmation custodian routes it to the adaptation colleagues and notifies other consumers, and the records custodian archives the committed findings for the next cycle.'

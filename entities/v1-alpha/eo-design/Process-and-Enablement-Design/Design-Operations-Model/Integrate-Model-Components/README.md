@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Integrate Model Components**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Operations Model** (`processes:process-eo-design-rvfpjb`). Its canonical ID is `processes:activity-eo-design-fxpw5z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the four bounded strands — the delivery design, the platform architecture, the facility blueprint, and the routing design — into one coherent whole. The finished component designs arrive one by one, their joins are reconciled and clashes resolved, and the integrated model is confirmed onward for the rhythm work. Four good designs become one workable model.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise designs one operations model, not four designs that have never met each other.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the four component designs, when each bounded design is handed over complete, and it completes once the integrated model is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer reconciles the delivery, technology, facility, and routing designs into one model, resolves the clashes where they meet, and confirms the integrated whole for the rhythm specification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Model Components |
+| `plain_language_description` | string | no | This activity brings the four bounded strands — the delivery design, the platform architecture, the facility blueprint … |
+| `business_purpose` | string | no | It exists so the enterprise designs one operations model, not four designs that have never met each other. |
+| `practical_context` | string | no | It follows the four component designs, when each bounded design is handed over complete, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

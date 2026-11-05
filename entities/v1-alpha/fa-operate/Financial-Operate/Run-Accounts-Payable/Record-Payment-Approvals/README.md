@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Record Payment Approvals**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Payable** (`processes:process-fa-operate-wkqaqp`). Its canonical ID is `processes:activity-fa-operate-rsrcp2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity logs the sign-offs that authorize paying an invoice once it has matched. The matched invoices arrive as the candidates, approvals are recorded under the delegation of authority, and the approved authorizations are confirmed onward for payment. Money leaves the enterprise only after this says someone accountable agreed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every payment carries a recorded, accountable approval behind it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the invoice matching, once invoices are cleared, and it completes when the recorded approvals are confirmed onward for the payment execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A payables custodian records the approving sign-off for each matched invoice under the delegation of authority, and confirms the approvals for the payment run.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Payment Approvals |
+| `plain_language_description` | string | no | This activity logs the sign-offs that authorize paying an invoice once it has matched. The matched invoices arrive as … |
+| `business_purpose` | string | no | It exists so every payment carries a recorded, accountable approval behind it. |
+| `practical_context` | string | no | It follows the invoice matching, once invoices are cleared, and it completes when the recorded approvals are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

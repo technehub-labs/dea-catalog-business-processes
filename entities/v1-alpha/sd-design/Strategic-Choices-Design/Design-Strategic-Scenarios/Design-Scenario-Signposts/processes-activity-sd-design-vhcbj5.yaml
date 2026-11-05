@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-uenzna through concluding task processes:task-sd-design-record-ttkq6q, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Scenario Signposts'
+plain_language_description: 'A scenario is only useful if you can tell it is coming true. Intake brings the drafted scenarios in, verification tests the candidate indicators for observability, and processing sets out the signposts — concrete signals showing which future is actually unfolding. Confirmation passes the signpost designs downstream and the records custodian preserves them ready for commitment.'
+business_purpose: 'It equips each scenario with observable tells, so monitoring can spot early which assumed future is materialising and steering can react in time.'
+practical_context: 'It follows scenario drafting, opening at intake of the drafted set and closing when the signpost designs are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function picks observable indicators for each drafted scenario, checks with the activity owner that each tell can genuinely be seen in normal reporting, and the confirmation custodian releases the signpost designs for commitment.'

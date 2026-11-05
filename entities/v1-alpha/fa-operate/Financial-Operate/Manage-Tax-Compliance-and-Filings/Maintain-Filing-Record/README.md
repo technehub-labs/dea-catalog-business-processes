@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Maintain Filing Record**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Tax Compliance and Filings** (`processes:process-fa-operate-8vqvkk`). Its canonical ID is `processes:activity-fa-operate-avuag6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the ledger of filings current — what has been returned, what has been paid, and where the enterprise stands. Completed returns, scheduled payments, and exposure movements arrive as the inputs, the record is updated as each lands, and the current filing record is confirmed onward. Compliance status is thereby a fact on file, not a feeling.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's tax compliance position is always knowable from a maintained record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as returns, payments, and exposure movements land, and each update closes when the current filing record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function custodian posts each completed return and scheduled payment to the filing record, keeps the compliance status current, and confirms the record onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Filing Record |
+| `plain_language_description` | string | no | This activity keeps the ledger of filings current — what has been returned, what has been paid, and where the … |
+| `business_purpose` | string | no | It exists so the enterprise's tax compliance position is always knowable from a maintained record. |
+| `practical_context` | string | no | It runs continuously as returns, payments, and exposure movements land, and each update closes when the current filing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-7n4prh through concluding task processes:task-sd-build-record-udyr3p, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Roadmap'
+plain_language_description: 'The roadmap has been built and checked, and this is where it stops being a draft. The assembled document comes in at intake, a last verification confirms it carries every ordered initiative and anchor date, and the commitment is made so plan-build work can start from it. Confirmation notifies downstream consumers and the records custodian preserves the committed roadmap for the planning cycle.'
+business_purpose: 'It finalises the roadmap as a committed input, letting the plan build proceed from a settled, auditable sequence of initiatives and dates.'
+practical_context: 'It opens when the assembled roadmap is presented after assembly and closes when commitment is confirmed and its record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function signs the roadmap off, the confirmation custodian notifies the plan-build team that the committed sequence and dates are available, and the records custodian files the roadmap evidence so the planning cycle can cite it later.'

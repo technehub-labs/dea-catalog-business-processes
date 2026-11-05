@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Assign Target Ownership**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Objectives and Targets** (`processes:process-sd-design-vdwkmh`). Its canonical ID is `processes:activity-sd-design-xgzkpn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A target nobody owns is a target that will be missed. Intake registers the drafted targets and the organisational structure, verification confirms every unit and role pairing is real, and processing names an accountable owner for each line. Confirmation announces the ownership map downstream and the records custodian preserves it ready for commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It puts a named accountable party behind every target, so the designed measures can actually be steered once committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows drafting, opening when the drafted targets and the structure are presented at intake and closing when the assignments are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function matches each drafted target to the unit or role best placed to deliver it, a verification custodian confirms the pairings against the organisational structure, and the confirmation custodian publishes the ownership map before commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assign Target Ownership |
+| `plain_language_description` | string | no | A target nobody owns is a target that will be missed. Intake registers the drafted targets and the organisational … |
+| `business_purpose` | string | no | It puts a named accountable party behind every target, so the designed measures can actually be steered once committed. |
+| `practical_context` | string | no | It follows drafting, opening when the drafted targets and the structure are presented at intake and closing when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

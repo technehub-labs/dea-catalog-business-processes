@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Collect Engagement Signals**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Engagement and Alignment Review** (`processes:process-ao-improve-edjyha`). Its canonical ID is `processes:activity-ao-improve-awnbw6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers, at the review's regular intervals, the evidence of how engaged the operating population actually is. The operating agents and teams are taken in as the source, the periodic signals are collected and logged, and the compiled set is confirmed for the review to work from. What is filed gives the review real evidence rather than anecdotes about engagement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so engagement conclusions rest on collected evidence from the population itself, gathered on a regular rhythm.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens at each engagement and alignment review cycle, when the operating population is presented for evidence gathering, and it closes once the collected signals are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An intake custodian gathers the periodic engagement evidence from teams across the operating population, logs each signal with its audit identifiers, and hands the compiled set to the review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect the Engagement Signals |
+| `plain_language_description` | string | no | This activity gathers, at the review's regular intervals, the evidence of how engaged the operating population actually … |
+| `business_purpose` | string | no | It exists so engagement conclusions rest on collected evidence from the population itself, gathered on a regular rhythm. |
+| `practical_context` | string | no | It happens at each engagement and alignment review cycle, when the operating population is presented for evidence … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

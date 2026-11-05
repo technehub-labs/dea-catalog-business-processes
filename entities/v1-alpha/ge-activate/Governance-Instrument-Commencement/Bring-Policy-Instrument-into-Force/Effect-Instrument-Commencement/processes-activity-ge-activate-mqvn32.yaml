@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-activate-wegs44 through concluding task processes:task-ge-activate-record-nhgx8k, whose outcome — Case file retained for Effect Instrument Commencement under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Effect Instrument Commencement'
+plain_language_description: 'This activity performs the deed that switches the instrument on — publishing it, proclaiming it, or letting its effective date arrive. The verified readiness arrives as the authority to act, the commencement act is executed in its proper form, and the instrument in force is confirmed onward. A document becomes a binding instrument at this exact step.'
+business_purpose: 'It exists so the instrument''s force begins through a deliberate, properly executed act rather than by accident of the calendar.'
+practical_context: 'It follows the readiness verification, once every precondition is proven met, and it completes when the instrument in force is confirmed onward for communication and enforcement.'
+worked_example:
+  agent_type: human
+  narrative: 'With readiness verified, an operations function officer publishes the instrument in its prescribed form, executes the commencement act, and confirms the instrument now in force.'

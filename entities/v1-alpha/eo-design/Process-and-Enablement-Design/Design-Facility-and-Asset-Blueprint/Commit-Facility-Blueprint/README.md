@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Commit Facility Blueprint**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Facility and Asset Blueprint** (`processes:process-eo-design-q83tdv`). Its canonical ID is `processes:activity-eo-design-qqytaa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers the layout designs, the equipment specification, and the capacity model into one blueprint and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed blueprint is confirmed for the provisioning build. The physical side of the operation stops being separate drawings and becomes one instruction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so facility and asset provisioning build starts from one committed blueprint rather than scattered documents.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the facility and asset blueprint design, once layouts, equipment, and capacity are modelled, and it completes when the committed blueprint is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the layouts, equipment specification, and capacity model into the blueprint, checks it hangs together, and records the commitment for provisioning planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Facility Blueprint |
+| `plain_language_description` | string | no | This activity gathers the layout designs, the equipment specification, and the capacity model into one blueprint and … |
+| `business_purpose` | string | no | It exists so facility and asset provisioning build starts from one committed blueprint rather than scattered documents. |
+| `practical_context` | string | no | It closes the facility and asset blueprint design, once layouts, equipment, and capacity are modelled, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

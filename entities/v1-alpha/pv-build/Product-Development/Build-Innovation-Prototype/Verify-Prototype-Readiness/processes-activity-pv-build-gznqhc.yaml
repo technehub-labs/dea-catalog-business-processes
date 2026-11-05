@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-8jc3y4 through concluding task processes:task-pv-build-record-2cukjp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Prototype Readiness'
+plain_language_description: 'This activity proves the finished prototype can actually run its hypothesis test inside the time the experiment allows. The documented, instrumented prototype arrives with the experiment design and timebox as the yardstick, readiness is examined against both, and the determination is confirmed for testing. The experiment starts only when the prototype is proven test-ready.'
+business_purpose: 'It exists so the experiment begins on a prototype proven able to test its hypothesis in time.'
+practical_context: 'It closes the prototype build once construction, instrumentation, and documentation are complete, and it completes when the readiness determination is confirmed within the experiment''s timebox.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management verifier checks the instrumented prototype can run the hypothesis test inside the timebox, and confirms the readiness determination for testing.'

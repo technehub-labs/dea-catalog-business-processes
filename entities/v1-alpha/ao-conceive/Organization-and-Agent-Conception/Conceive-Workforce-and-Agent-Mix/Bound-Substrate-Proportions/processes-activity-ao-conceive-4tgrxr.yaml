@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-z6m6p5 through concluding task processes:task-ao-conceive-record-6wa6x6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Human, Artificial, and Hybrid Workforce Proportions'
+plain_language_description: 'This activity fixes the proportions of people, artificial agents, and blended arrangements that the future workforce mix will aim for. The committed organization and agent strategy comes in first, the proportions are worked out and reviewed against it, and the agreed proportions are confirmed to those planning the mix. Once set, they act as the guardrails within which the detailed mix is drafted.'
+business_purpose: 'It exists so the organization commits deliberately to how much of its capacity is human, artificial, or hybrid before acquisition decisions are made.'
+practical_context: 'It follows commitment of the organization and agent strategy, when the strategy is presented for mix planning, and it closes once the proportions are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead, working with workforce management, weighs the committed strategy and fixes how much of the coming capacity will be people, artificial agents, or blended arrangements, confirming the proportions before the mix is drafted.'

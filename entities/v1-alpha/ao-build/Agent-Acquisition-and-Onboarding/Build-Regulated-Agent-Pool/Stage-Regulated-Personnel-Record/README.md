@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Stage Regulated Personnel Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Regulated Agent Pool** (`processes:process-ao-build-9my4jr`). Its canonical ID is `processes:activity-ao-build-r6h2t8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity assembles the personnel file each cleared candidate needs before being activated into a licensed role. The screened candidate list is taken in, and for each person the file is built up with the scope a supervisor controls, the fitness attestation, the plan for supervised training, and the route for notifying the continuing supervisor. Once the staged records are confirmed as ready, activation can proceed later without any of these checks being repeated.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every cleared candidate arrives at activation with a complete, staged personnel record already waiting for them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at the end of the pool build, once candidates have cleared screening, and it completes when the staged records are confirmed and preserved, leaving the pool ready for activation without re-screening.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian sets up the personnel file for a newly cleared candidate, attaching the supervisor-controlled scope, the fitness attestation, and the training plan, and confirms the staged record is ready so later activation needs no repeated screening.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stage the Regulated Personnel Record |
+| `plain_language_description` | string | no | This activity assembles the personnel file each cleared candidate needs before being activated into a licensed role … |
+| `business_purpose` | string | no | It exists so every cleared candidate arrives at activation with a complete, staged personnel record already waiting for … |
+| `practical_context` | string | no | It runs at the end of the pool build, once candidates have cleared screening, and it completes when the staged records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

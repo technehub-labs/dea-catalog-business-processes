@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-activate-sy5qsa through concluding task processes:task-eo-activate-record-xtvzq8, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Obtain the Regulator''s Operations Authorization'
+plain_language_description: 'This activity obtains the formal approval the regulator requires before an operations capability may serve customers live. The capability description goes to the regulator in the mandated filing format, the resulting authorization or certification is examined and accepted onto the record, and the approved authorization is preserved for retrieval. From that point the capability holds the regulatory permission its live service depends on.'
+business_purpose: 'It exists so live operations rest on a regulator-issued authorization held on the operations record, not on an assumption that permission exists.'
+practical_context: 'It runs while the capability is awaiting its gate into live service, once the capability description and the mandated filing format are to hand, and it closes when the issued authorization is confirmed and preserved on the regulated operations record.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function officer submits the capability''s filing to the industry regulator in the required format, receives the issued authorization back, and has it preserved on the regulated operations record for the activation steps that follow.'

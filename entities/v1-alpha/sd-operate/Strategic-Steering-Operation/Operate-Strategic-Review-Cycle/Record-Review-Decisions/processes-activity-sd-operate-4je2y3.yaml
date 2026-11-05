@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-ucxpz4 through concluding task processes:task-sd-operate-record-fpkp9g, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Review Decisions'
+plain_language_description: 'A decision that is not written down did not really happen. The conducted sessions arrive at intake, verification checks every minute against what was agreed, and processing logs each decision with its owner and route to whichever process will carry it out. Confirmation notifies the receiving teams and the records custodian preserves the decision log at its retention tier.'
+business_purpose: 'It gives review sessions lasting effect, turning tabled discussion into logged, owned and routed decisions other processes can execute.'
+practical_context: 'It closes each session on the cadence, opening at intake of the minuted outcomes and closing when the routed log is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function scribe logs each agreed decision with owner and due route, a verification custodian reads the log back against the minutes, and the confirmation custodian notifies the receiving teams their actions are on the record.'

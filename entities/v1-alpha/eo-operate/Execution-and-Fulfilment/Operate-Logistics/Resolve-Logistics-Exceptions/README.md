@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Resolve Logistics Exceptions**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Logistics** (`processes:process-eo-operate-zh9m57`). Its canonical ID is `processes:activity-eo-operate-98gzk2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity steps in when a shipment goes astray — late, damaged, lost, or misrouted — and works to put the delivery promise back on track. The flagged deviations arrive as the triggers, each exception is worked to a recovery, and the handling is recorded. Plans meet reality here, and reality is brought back into line.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so shipment deviations are recovered and the delivery commitment restored rather than quietly missed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever tracking or execution flags a deviation, from the flag to the restored delivery, and it completes once the exception handling is recorded and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A logistics custodian takes a flagged misrouted shipment, works a recovery that still honours the delivery commitment where possible, and records the handling for the file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Logistics Exceptions |
+| `plain_language_description` | string | no | This activity steps in when a shipment goes astray — late, damaged, lost, or misrouted — and works to put the delivery … |
+| `business_purpose` | string | no | It exists so shipment deviations are recovered and the delivery commitment restored rather than quietly missed. |
+| `practical_context` | string | no | It runs whenever tracking or execution flags a deviation, from the flag to the restored delivery, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

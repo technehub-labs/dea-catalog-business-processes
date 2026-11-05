@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Align Competency Framework To Continuing-Supervision**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Regulated Role Architecture** (`processes:process-ao-design-2fkvhx`). Its canonical ID is `processes:activity-ao-design-wnqz3k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lines up what each licensed role's competency framework entry demands with what the regulator's continuing oversight expects of it. The regulator-tied role entries and the framework skeleton arrive first, and for each role the work settles which competency statements apply, how often assessment runs, and who performs it, keeping step with the regulator's continuing-competence program. The aligned entries are then confirmed and retained.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so licensed roles are assessed against competency expectations that satisfy the regulator's continuing oversight, not just internal preference.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens while the regulated role architecture is being designed, once the catalogue entries and the competency skeleton are available, and it closes when the aligned entries are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority aligns a licensed clinician role's competency statements and assessment cadence with the regulator's continuing-competence program, names the employer as assessor, and files the aligned entry.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Align Competency Entries with Continuing Supervision |
+| `plain_language_description` | string | no | This activity lines up what each licensed role's competency framework entry demands with what the regulator's … |
+| `business_purpose` | string | no | It exists so licensed roles are assessed against competency expectations that satisfy the regulator's continuing … |
+| `practical_context` | string | no | It happens while the regulated role architecture is being designed, once the catalogue entries and the competency … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

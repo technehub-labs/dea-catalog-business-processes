@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-uun4ja through concluding task processes:task-fa-design-record-f99r8j, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Financial Policies'
+plain_language_description: 'This activity turns each control objective into an actual policy people can follow. The objectives arrive with the governance posture as the context, policies are drafted against the objectives and reviewed for workability, and the policy designs are confirmed onward for commitment. Intent becomes instruction here.'
+business_purpose: 'It exists so each control objective exists as a written policy the enterprise''s people can actually operate.'
+practical_context: 'It follows the objective design, when the objectives and governance posture are to hand, and it completes once the policy designs are confirmed for the design''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer drafts the policy that makes each control objective real, reviews the drafts for workability against the governance posture, and confirms them for commitment.'

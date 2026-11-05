@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-a4c76s through concluding task processes:task-pv-design-record-xemvke, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Packaging Formats'
+plain_language_description: 'This activity draws up the forms the proposition will take in customers'' hands — its physical or digital packaging. The designed proposition arrives as the content to be housed, packaging formats are designed for it and reviewed against the proposition''s nature, and the designed formats are confirmed onward for the segment work. The proposition gains its clothes here.'
+business_purpose: 'It exists so the proposition reaches customers in deliberately designed physical or digital forms.'
+practical_context: 'It opens the packaging design when the designed proposition requires its packaging and configuration options, and it completes once the designed formats are confirmed for the segment configurations.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer draws up the packaging formats — physical or digital — the proposition needs, reviews them against its nature, and confirms them onward.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-tqybhd through concluding task processes:task-eo-build-record-k6739q, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commission Facility Services'
+plain_language_description: 'This activity brings the building''s services — power and utilities, safety systems, and environmental controls — up to working readiness. The fitted facilities arrive with the blueprint''s service specifications, each service is commissioned and tested against them, and the commissioned services are confirmed onward. A fitted building becomes a running one.'
+business_purpose: 'It exists so the facilities'' services actually work at the readiness the blueprint specifies before production or delivery depends on them.'
+practical_context: 'It follows the fit-out, when the service specifications are to hand for the fitted facilities, and it completes once the commissioned services are confirmed for handover.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian commissions the utilities, safety systems, and environmental controls in each fitted building, tests them against the blueprint''s specifications, and confirms the services for handover.'

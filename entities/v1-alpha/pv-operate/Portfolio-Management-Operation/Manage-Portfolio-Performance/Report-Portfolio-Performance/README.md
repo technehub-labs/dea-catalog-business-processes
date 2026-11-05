@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Report Portfolio Performance**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Portfolio Performance** (`processes:process-pv-operate-en8rdz`). Its canonical ID is `processes:activity-pv-operate-nzj8xu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+On the reporting cadence, product management packages the performance picture into a report for the forums that steer the portfolio. Intake gathers the cycle's material, verification checks the figures, processing assembles the portfolio performance report, confirmation releases it to its consumers, and the issue is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the people who steer the portfolio supplied with a regular, dependable account of performance, so oversight rests on fact rather than impression.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to a reporting cadence within steady-state operation: each cycle opens at intake when the period's material is presented and closes when the confirmed report and its audit trail are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the close of the reporting month, a product management analyst collects the period's figures at intake, verifies them at verification, assembles the report for the governance and strategy consumers, confirms its release, and archives the issue trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Portfolio Performance |
+| `plain_language_description` | string | no | On the reporting cadence, product management packages the performance picture into a report for the forums that steer … |
+| `business_purpose` | string | no | It keeps the people who steer the portfolio supplied with a regular, dependable account of performance, so oversight … |
+| `practical_context` | string | no | It runs to a reporting cadence within steady-state operation: each cycle opens at intake when the period's material is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

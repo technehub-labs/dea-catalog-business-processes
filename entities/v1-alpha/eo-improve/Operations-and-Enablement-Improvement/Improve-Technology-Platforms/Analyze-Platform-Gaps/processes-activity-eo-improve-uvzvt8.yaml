@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-babwdc through concluding task processes:task-eo-improve-record-phsqar, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Analyze Platform Gaps'
+plain_language_description: 'This activity reads the platforms'' performance records and incident history to bound where reliability, capacity, or capability falls short. The records and history arrive as the raw material, the gaps are analyzed and bounded with the worst problems named first, and the gap analysis is confirmed onward for the upgrade design. Platform pain becomes a specific, bounded worklist.'
+business_purpose: 'It exists so platform improvement starts from bounded, evidenced gaps rather than from anecdotes about slowness.'
+practical_context: 'It opens the platform improvement, when the performance records and incident history are presented, and it completes once the gap analysis is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function analyst reads the platform performance records and incident history, bounds the reliability, capacity, and capability gaps, and confirms the analysis for the upgrade design.'

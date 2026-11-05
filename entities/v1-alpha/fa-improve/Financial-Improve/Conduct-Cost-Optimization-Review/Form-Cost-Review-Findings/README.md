@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Form Cost Review Findings**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Conduct Cost Optimization Review** (`processes:process-fa-improve-emqpgr`). Its canonical ID is `processes:activity-fa-improve-rqws4s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the cost evidence gathered earlier into findings the enterprise can act on. The assembled evidence arrives as the material, findings are formed and each held to what the evidence supports, and the finding set is confirmed onward for routing. The review speaks only as loudly as its numbers allow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cost conclusions are grounded in evidence and strong enough to act on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst reads the assembled cost evidence and forms bounded findings on where money is leaking, then confirms the finding set for routing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Form Cost Review Findings |
+| `plain_language_description` | string | no | This activity turns the cost evidence gathered earlier into findings the enterprise can act on. The assembled evidence … |
+| `business_purpose` | string | no | It exists so cost conclusions are grounded in evidence and strong enough to act on. |
+| `practical_context` | string | no | It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

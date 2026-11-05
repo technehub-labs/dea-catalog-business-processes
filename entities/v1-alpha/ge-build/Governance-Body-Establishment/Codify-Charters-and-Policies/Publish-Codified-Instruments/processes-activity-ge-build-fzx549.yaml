@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-mctdgc through concluding task processes:task-ge-build-record-2pm433, whose outcome — Case file retained for Publish Codified Instruments under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Publish Codified Instruments'
+plain_language_description: 'This activity puts the finished documents where the bodies and the wider enterprise can actually reach them. The freshly codified instruments arrive as the stock to release, publication is executed and access verified, and the published instruments are confirmed onward for the bodies'' use. Governing by document requires the document to be findable.'
+business_purpose: 'It exists so codified instruments are genuinely accessible to the bodies and people meant to operate under them.'
+practical_context: 'It closes the codification once the instruments are codified, and it completes when the published, accessible instruments are confirmed onward to the governance bodies.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer publishes the codified charters, policies, and standards to where the bodies can reach them, verifies access works, and confirms the publication.'

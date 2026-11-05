@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-38qyc6 through concluding task processes:task-ao-operate-record-tubnmp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Pay Out the Cycle''s Payroll on Time'
+plain_language_description: 'This activity moves the money: it pays out what the cycle''s payroll calculated, correctly and by the due date. The computed payroll arrives first, each disbursement is executed and checked as it goes, and the executed payments are confirmed for the record. This is the moment the workforce actually gets paid.'
+business_purpose: 'It exists so agents receive what they are owed, accurately and on the day it falls due.'
+practical_context: 'It follows the payroll calculation and benefits administration each cycle, and it closes when the executed payments are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian releases the cycle''s payments from the confirmed payroll figures, checks each disbursement landed as calculated, and confirms the executed payments went out on time.'

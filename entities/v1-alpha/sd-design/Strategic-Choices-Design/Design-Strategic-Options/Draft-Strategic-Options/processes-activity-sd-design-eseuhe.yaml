@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ewvbsh through concluding task processes:task-sd-design-record-zcy32e, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft Strategic Options'
+plain_language_description: 'Inside the agreed space, the actual options take shape. The marked boundaries arrive at intake, verification checks the drafting instructions are usable, and processing writes a spread of candidate options — each one distinct, described and kept within the lines. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved ahead of the criteria step.'
+business_purpose: 'It turns the permitted space into a genuine set of choices, giving the evaluation work something real to compare.'
+practical_context: 'It runs once the design space is set, opening at intake of the bounded space and closing when the drafted options are confirmed ready for criteria framing.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers sketch three distinct options inside the agreed space, a verification custodian sends any that stray outside the lines back for tightening, and the confirmation custodian tells the criteria team the option set is ready.'

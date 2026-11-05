@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Specify Equipment**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Facility and Asset Blueprint** (`processes:process-eo-design-q83tdv`). Its canonical ID is `processes:activity-eo-design-zj5c3v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity names the equipment that will populate each designed layout, to a stated standard. The layouts arrive with the lifecycle postures as the frame, equipment is specified position by position and checked against both, and the equipment specification is confirmed onward for the capacity modelling. A builder could order from this document.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows exactly which equipment fills its layouts and to what standard, before any money is spent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the layout design, when the layouts and the lifecycle postures are to hand, and it completes once the equipment specification is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer specifies the equipment for each position in the drawn layouts, checks the choices against the lifecycle postures, and confirms the specification for capacity modelling.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Specify Equipment |
+| `plain_language_description` | string | no | This activity names the equipment that will populate each designed layout, to a stated standard. The layouts arrive … |
+| `business_purpose` | string | no | It exists so the enterprise knows exactly which equipment fills its layouts and to what standard, before any money is … |
+| `practical_context` | string | no | It follows the layout design, when the layouts and the lifecycle postures are to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

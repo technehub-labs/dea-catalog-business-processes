@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-68mp6v through concluding task processes:task-eo-conceive-record-8mv6y5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Sourcing Principles'
+plain_language_description: 'This activity settles the postures the enterprise will take when obtaining its platforms — build, buy, partner, or adopt open source — so later platform decisions follow agreed ground rules. The platform family register arrives as the reference, the sourcing postures are worked out and reviewed against it, and the framed principles are confirmed onward for the approach''s commitment.'
+business_purpose: 'It exists so the build-versus-buy question is answered by policy up front rather than renegotiated for every platform.'
+practical_context: 'It follows the fit assessment, when the shortlisted families are in hand, and it completes once the sourcing principles are confirmed for the approach''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead sets the build, buy, partner, and open-source postures against the shortlisted platform families, reviews them with the operations function, and confirms the principles for the approach''s commitment.'

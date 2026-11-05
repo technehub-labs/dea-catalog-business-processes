@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-us272s through concluding task processes:task-eo-improve-record-ezcqg5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Select Improvement Projects'
+plain_language_description: 'This activity chooses which projects, drawn from the waste and variation evidence, the programme will take on. The performance evidence and the programme mandate arrive as the basis, candidate projects are weighed and bounded, and the chosen portfolio is confirmed onward for delivery. Improvement effort is spent deliberately rather than scattered.'
+business_purpose: 'It exists so the programme''s effort lands on bounded projects with real waste and variation to remove.'
+practical_context: 'It opens the improvement programme, when the performance evidence and mandate are presented, and it completes once the selected portfolio is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead weighs the candidate projects against the waste and variation evidence and the programme mandate, bounds and selects the portfolio, and confirms it for delivery.'

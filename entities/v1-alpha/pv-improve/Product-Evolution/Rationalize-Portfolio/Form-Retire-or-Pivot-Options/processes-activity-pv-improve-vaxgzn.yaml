@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-9xvgat through concluding task processes:task-pv-improve-record-mgg3zb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Form Retire-or-Pivot Options'
+plain_language_description: 'For every proposition that failed its justification, product management works up the realistic paths - withdraw it from the market, or reshape it into something that can succeed. Each failing case arrives at intake, is checked against the assessment, is turned into a documented option set, confirmed for decision makers, and archived.'
+business_purpose: 'It gives decision makers real, worked-through choices for weak propositions instead of a bare verdict, so rationalization decisions are deliberate rather than automatic.'
+practical_context: 'It follows the justification assessment in the rationalization sequence, opening when failing cases are presented and closing when the confirmed option sets are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'After the assessments flag a declining service, a product management pair drafts its options at processing: one path retires it on a managed schedule, the other repositions it for a narrower segment; the confirmed option set goes to the deciding forum with the record preserved.'

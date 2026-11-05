@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Establish Risk Registers**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Risk and Control Apparatus** (`processes:process-ge-build-rx7kt5`). Its canonical ID is `processes:activity-ge-build-3nk745`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity stands up the registers where risks will be logged, taking their structure from the taxonomy and scales as designed. The approved risk framework design arrives as the blueprint, registers are established and populated in its shape, and the operating registers are confirmed onward for the tooling. Risk acquires its formal home.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so enterprise risks have their designed home — registers structured to the taxonomy and scales.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the risk apparatus build once the risk framework design is approved for build, and it completes as the operating registers are confirmed onward for the tooling and reporting work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer stands up the risk registers in the shape the designed taxonomy and scales give them, and confirms the operating registers onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Risk Registers |
+| `plain_language_description` | string | no | This activity stands up the registers where risks will be logged, taking their structure from the taxonomy and scales … |
+| `business_purpose` | string | no | It exists so enterprise risks have their designed home — registers structured to the taxonomy and scales. |
+| `practical_context` | string | no | It opens the risk apparatus build once the risk framework design is approved for build, and it completes as the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-uun4ja through concluding task processes:task-fa-design-record-bu28z9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Financial Control Objectives'
+plain_language_description: 'This activity states what each bounded gap''s control must achieve. The bounded analysis arrives with the approved financial architecture as the frame, objectives are designed gap by gap and checked against both, and the objective set is confirmed onward for the policy work. Controls gain purpose before they gain mechanics.'
+business_purpose: 'It exists so every control eventually implemented knows precisely what outcome it exists to deliver.'
+practical_context: 'It follows the gap analysis, when the bounded needs and the approved financial architecture are to hand, and it completes once the control objective set is confirmed for the policy design.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer states the objective each bounded gap''s control must achieve, checks the set against the approved financial architecture, and confirms it for the policies.'

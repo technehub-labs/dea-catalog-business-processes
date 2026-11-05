@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Provision Agent Capacity**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Acquire Agents** (`processes:process-ao-build-w2qurd`). Its canonical ID is `processes:activity-ao-build-7xrz4d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets up the agent capacity that the committed organization structure has called for. The structure design is taken in and reviewed, the capacity it requires is worked out and arranged, and the provisioned capacity is confirmed back to those who planned the structure. It ends with capacity in place for the structure that needs it and an audit record of the provisioning kept.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so selection and acquisition work against a real, provisioned amount of capacity rather than an unquantified staffing intention.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens when the committed organization structure design arrives during agent acquisition, and it closes once the provisioned agent capacity is confirmed and the provisioning record is retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian takes the committed organization structure, works out the agent capacity it calls for across people and artificial agents, confirms the provisioned capacity, and files the audit record for the records custodian to preserve.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Provision Agent Capacity |
+| `plain_language_description` | string | no | This activity sets up the agent capacity that the committed organization structure has called for. The structure design … |
+| `business_purpose` | string | no | It exists so selection and acquisition work against a real, provisioned amount of capacity rather than an unquantified … |
+| `practical_context` | string | no | It happens when the committed organization structure design arrives during agent acquisition, and it closes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

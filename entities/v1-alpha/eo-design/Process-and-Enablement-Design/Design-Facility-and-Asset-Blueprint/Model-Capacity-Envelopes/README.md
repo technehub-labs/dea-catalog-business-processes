@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Model Capacity Envelopes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Facility and Asset Blueprint** (`processes:process-eo-design-q83tdv`). Its canonical ID is `processes:activity-eo-design-8pd74t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out what the designed facilities and their equipment can hold — throughput bounds and scaling limits — as a capacity model. The layouts, the equipment specification, and the demand model arrive together, the bounds are modelled and checked against them, and the capacity model is confirmed onward for the blueprint's commitment. How much each site and asset should handle becomes explicit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the blueprint states plainly how much work each facility and asset can carry.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the equipment specification, when layouts, equipment, and the demand model are all in hand, and it completes once the capacity model is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer models the throughput bounds and scaling limits of each designed facility, checks them against the demand model, and confirms the capacity envelopes for the blueprint.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Model Capacity Envelopes |
+| `plain_language_description` | string | no | This activity works out what the designed facilities and their equipment can hold — throughput bounds and scaling … |
+| `business_purpose` | string | no | It exists so the blueprint states plainly how much work each facility and asset can carry. |
+| `practical_context` | string | no | It follows the equipment specification, when layouts, equipment, and the demand model are all in hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

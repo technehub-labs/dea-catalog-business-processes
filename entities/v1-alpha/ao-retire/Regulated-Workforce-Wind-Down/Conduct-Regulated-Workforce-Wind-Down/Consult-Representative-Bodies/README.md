@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 This is a **Activity** (level L3), named **Consult Representative Bodies**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Conduct Regulated Workforce Wind-Down** (`processes:process-ao-retire-g3eyr8`). Its canonical ID is `processes:activity-ao-retire-zmc7yk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity holds the legally required consultation with the bodies representing the affected workforce, whether that is a recognised union, a works council, or elected employee representation, in the window before any redundancy takes effect. The proposed reduction scope, its business case, and the alternatives worth consulting on come in as the ground to discuss, positions are exchanged and minuted, and the consultation outcome is confirmed and retained.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the workforce's representatives genuinely take part before any redundancy takes effect, with the exchange on the record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs in the statutory window between the served advance notice and the reduction taking effect, and it closes when the consultation outcome, covering positions, agreements, and unresolved issues, is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead tables the reduction's proposed scope and the alternatives with the elected employee representatives, minutes the positions and unresolved issues, and files the consultation outcome.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consult Representative Bodies |
+| `plain_language_description` | string | no | This activity holds the legally required consultation with the bodies representing the affected workforce, whether that … |
+| `business_purpose` | string | no | It exists so the workforce's representatives genuinely take part before any redundancy takes effect, with the exchange … |
+| `practical_context` | string | no | It runs in the statutory window between the served advance notice and the reduction taking effect, and it closes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

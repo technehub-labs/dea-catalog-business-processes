@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 
 This is a **Activity** (level L3), named **Frame Monetary Model**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Frame Finance Strategy** (`processes:process-fa-conceive-4uqqvg`). Its canonical ID is `processes:activity-fa-conceive-n35a6c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles how money itself will be handled — the currency posture, the measurement conventions, and the basis on which value is recognized. The enterprise strategy and the jurisdictional footprint arrive as the inputs, the monetary model is framed and bounded against them, and the bounded model is confirmed onward for the funding work. The enterprise's financial language is fixed here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise decides deliberately how money is represented and measured before any of it moves.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the context assessment, when the enterprise strategy and jurisdictional footprint are to hand, and it completes once the bounded monetary model is confirmed for the funding approach.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function lead frames the monetary model — currency posture, measurement conventions, value recognition basis — against the enterprise strategy and its jurisdictions, and confirms the bounded model.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Monetary Model |
+| `plain_language_description` | string | no | This activity settles how money itself will be handled — the currency posture, the measurement conventions, and the … |
+| `business_purpose` | string | no | It exists so the enterprise decides deliberately how money is represented and measured before any of it moves. |
+| `practical_context` | string | no | It follows the context assessment, when the enterprise strategy and jurisdictional footprint are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

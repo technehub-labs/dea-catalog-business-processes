@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Allocate Resources to Initiatives**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Set Resource Allocation Priorities** (`processes:process-sd-build-2pkz5n`). Its canonical ID is `processes:activity-sd-build-25j2m7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With limits drawn, real resourcing can happen. The envelopes arrive at intake, verification checks each request fits inside its cap, and processing assigns funding, people and capacity to the initiatives accordingly. Confirmation announces the allocation to downstream consumers and the records custodian preserves the decisions for the prioritisation round.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It matches concrete funding and capacity to each initiative, converting bounded limits into workable resourcing for the plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once the envelopes are in place, opening at their intake and closing when the allocation is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function fills each initiative's envelope with named funding and staff allocations, the verification custodian confirms nothing exceeds its cap, and the confirmation custodian tells downstream planners the allocation is ready to be ranked.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Allocate Resources to Initiatives |
+| `plain_language_description` | string | no | With limits drawn, real resourcing can happen. The envelopes arrive at intake, verification checks each request fits … |
+| `business_purpose` | string | no | It matches concrete funding and capacity to each initiative, converting bounded limits into workable resourcing for the … |
+| `practical_context` | string | no | It begins once the envelopes are in place, opening at their intake and closing when the allocation is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

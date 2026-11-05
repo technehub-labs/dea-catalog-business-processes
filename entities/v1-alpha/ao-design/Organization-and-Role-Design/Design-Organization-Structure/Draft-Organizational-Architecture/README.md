@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Draft Organizational Architecture**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Organization Structure** (`processes:process-ao-design-7dkbur`). Its canonical ID is `processes:activity-ao-design-bnvt6w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays out the enterprise's units and how they sit together, working from the model frame that strategy committed earlier. The frame is brought in and checked, the unit arrangement is drawn up from it, and the resulting draft is confirmed with the design authority before anyone adds authority detail. It ends with a drafted architecture on file that the rest of structure design can build on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so structure design starts from a concrete arrangement of units that answers to the agreed model rather than from a blank page.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the design of the organization structure, when the committed model frame is presented for drafting, and it completes once the drafted architecture is confirmed and its audit record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer working for the organization design authority arranges the enterprise's units according to the model's principles and spans, then confirms the drafted arrangement with the authority before delegation detail is added.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Organizational Architecture |
+| `plain_language_description` | string | no | This activity lays out the enterprise's units and how they sit together, working from the model frame that strategy … |
+| `business_purpose` | string | no | It exists so structure design starts from a concrete arrangement of units that answers to the agreed model rather than … |
+| `practical_context` | string | no | It opens the design of the organization structure, when the committed model frame is presented for drafting, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

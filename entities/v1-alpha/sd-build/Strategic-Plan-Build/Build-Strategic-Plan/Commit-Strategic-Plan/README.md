@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Commit Strategic Plan**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Plan** (`processes:process-sd-build-q4nf9g`). Its canonical ID is `processes:activity-sd-build-y8cfhp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Everything has been checked, so the plan now becomes official. The reviewed document is brought in, a final verification confirms it is the agreed version, and the commitment is made — the plan, its roadmap and its initiative portfolio are locked for the operating part of the business to execute. Confirmation tells everyone the plan is in force and the records custodian files the commitment evidence for the long term.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise its official, executable plan of record, closing the build and handing a settled mandate to those who will run it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens at intake once review is complete and closes with the commitment confirmed, downstream teams notified and the evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead presents the reviewed plan for commitment, the confirmation custodian records the decision and notifies operations colleagues that the plan is in force, and the records custodian preserves the committed plan at its retention tier so future audits can retrieve it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Plan |
+| `plain_language_description` | string | no | Everything has been checked, so the plan now becomes official. The reviewed document is brought in, a final … |
+| `business_purpose` | string | no | It gives the enterprise its official, executable plan of record, closing the build and handing a settled mandate to … |
+| `practical_context` | string | no | It opens at intake once review is complete and closes with the commitment confirmed, downstream teams notified and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

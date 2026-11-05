@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Bound Allocation Envelopes**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Set Resource Allocation Priorities** (`processes:process-sd-build-2pkz5n`). Its canonical ID is `processes:activity-sd-build-sn9sky`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Money and effort are finite, so limits come before requests. This work registers the translated initiatives and the plan they serve, checks the inputs are sound, and draws a spending and capacity envelope around each initiative. When the envelopes are confirmed, downstream colleagues are notified and the bounded limits are preserved for the allocation and prioritisation steps.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It caps what each initiative may claim, keeping later allocation decisions honest and inside what the strategic plan can fund.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens at intake when the translated initiatives and the plan are presented, closing once the envelope limits are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function budgeting lead works through the initiative list, agrees an envelope of funding and capacity for each with the activity owner, and the records custodian preserves the bounded limits ahead of the allocation round.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Allocation Envelopes |
+| `plain_language_description` | string | no | Money and effort are finite, so limits come before requests. This work registers the translated initiatives and the … |
+| `business_purpose` | string | no | It caps what each initiative may claim, keeping later allocation decisions honest and inside what the strategic plan … |
+| `practical_context` | string | no | It opens at intake when the translated initiatives and the plan are presented, closing once the envelope limits are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Commit Gap Priorities**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Capability Gap Analysis** (`processes:process-ao-improve-h3vgyf`). Its canonical ID is `processes:activity-ao-improve-g5bube`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity is where the ranked capability shortfalls are formally accepted and set in motion. The prioritized list is taken in and reviewed, its ratification is confirmed, and the committed priorities are routed to the development planning side and to learning operations as their standing input. An audit record of the commitment is preserved so the analysis thread can be traced end to end.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ranked shortfalls become a binding instruction to development planning rather than an advisory report.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the capability gap analysis, once the gaps have been ranked, and it completes when the committed priorities are confirmed, routed, and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian presents the ranked gaps for the organization design authority's ratification, records the commitment, and routes the priorities to the development planning and learning teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Gap Priorities |
+| `plain_language_description` | string | no | This activity is where the ranked capability shortfalls are formally accepted and set in motion. The prioritized list … |
+| `business_purpose` | string | no | It exists so the ranked shortfalls become a binding instruction to development planning rather than an advisory report. |
+| `practical_context` | string | no | It closes the capability gap analysis, once the gaps have been ranked, and it completes when the committed priorities … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

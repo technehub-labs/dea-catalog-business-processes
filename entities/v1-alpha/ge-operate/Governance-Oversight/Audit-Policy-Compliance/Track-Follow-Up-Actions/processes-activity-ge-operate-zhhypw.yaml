@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hxxyc9 through concluding task processes:task-ge-operate-record-m96hw4, whose outcome — Case file retained for Track Follow-Up Actions under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Track Follow-Up Actions'
+plain_language_description: 'This activity keeps count of the remedies the audits demanded, from promise to done. The reported findings arrive with their follow-up actions attached, each action is tracked to closure and chased when it stalls, and the tracked actions are confirmed onward as they close. Audit findings do not quietly die here.'
+business_purpose: 'It exists so audit findings produce closed remedies rather than open promises.'
+practical_context: 'It runs from the findings'' reporting to each follow-up action''s closure, and it completes as each tracked action closes and its closure is confirmed for the record.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function custodian tracks each follow-up action from its reporting to its closure, chasing the stalled ones, and confirms each closure for the record.'

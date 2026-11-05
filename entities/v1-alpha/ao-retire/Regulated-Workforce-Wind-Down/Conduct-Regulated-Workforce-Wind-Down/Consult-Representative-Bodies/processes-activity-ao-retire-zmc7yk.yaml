@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-retire-g3eyr8 through concluding task processes:task-ao-retire-record-ue2bkn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Consult Representative Bodies'
+plain_language_description: 'This activity holds the legally required consultation with the bodies representing the affected workforce, whether that is a recognised union, a works council, or elected employee representation, in the window before any redundancy takes effect. The proposed reduction scope, its business case, and the alternatives worth consulting on come in as the ground to discuss, positions are exchanged and minuted, and the consultation outcome is confirmed and retained.'
+business_purpose: 'It exists so the workforce''s representatives genuinely take part before any redundancy takes effect, with the exchange on the record.'
+practical_context: 'It runs in the statutory window between the served advance notice and the reduction taking effect, and it closes when the consultation outcome, covering positions, agreements, and unresolved issues, is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead tables the reduction''s proposed scope and the alternatives with the elected employee representatives, minutes the positions and unresolved issues, and files the consultation outcome.'

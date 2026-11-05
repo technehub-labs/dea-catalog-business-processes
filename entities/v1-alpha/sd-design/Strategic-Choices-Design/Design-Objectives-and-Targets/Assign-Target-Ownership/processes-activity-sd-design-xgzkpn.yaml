@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-vdwkmh through concluding task processes:task-sd-design-record-67bkgv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assign Target Ownership'
+plain_language_description: 'A target nobody owns is a target that will be missed. Intake registers the drafted targets and the organisational structure, verification confirms every unit and role pairing is real, and processing names an accountable owner for each line. Confirmation announces the ownership map downstream and the records custodian preserves it ready for commitment.'
+business_purpose: 'It puts a named accountable party behind every target, so the designed measures can actually be steered once committed.'
+practical_context: 'It follows drafting, opening when the drafted targets and the structure are presented at intake and closing when the assignments are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function matches each drafted target to the unit or role best placed to deliver it, a verification custodian confirms the pairings against the organisational structure, and the confirmation custodian publishes the ownership map before commitment.'

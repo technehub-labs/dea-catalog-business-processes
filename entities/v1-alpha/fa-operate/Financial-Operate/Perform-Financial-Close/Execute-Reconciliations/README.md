@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Execute Reconciliations**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Perform Financial Close** (`processes:process-fa-operate-4xn4d6`). Its canonical ID is `processes:activity-fa-operate-5dp28t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks the ledger's balances against their counterparts outside it before the close is declared done. The executed entries arrive as the starting state, reconciliations are performed across the balances and their external counterparts, and the reconciled state is confirmed onward for certification. Nothing certifies here until the books agree with the world.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the close rests on balances proven against reality, not merely summed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the period-end entries, once the period is fenced off, and it completes when the reconciled balances are confirmed onward for the close certification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A close custodian reconciles each ledger balance against its bank, subledger, or counterparty counterpart, resolves the differences found, and confirms the reconciled state for certification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Reconciliations |
+| `plain_language_description` | string | no | This activity checks the ledger's balances against their counterparts outside it before the close is declared done. The … |
+| `business_purpose` | string | no | It exists so the close rests on balances proven against reality, not merely summed. |
+| `practical_context` | string | no | It follows the period-end entries, once the period is fenced off, and it completes when the reconciled balances are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

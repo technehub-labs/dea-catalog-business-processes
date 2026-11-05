@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 
 This is a **Activity** (level L3), named **Coordinate Renewals**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Manage Customer Relationship** (`processes:process-pr-operate-bbe384`). Its canonical ID is `processes:activity-pr-operate-amg225`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gets the next round of customer commitments ready and signed as their terms run out. Renewal horizons arrive from the relationship reviews, preparation and execution are coordinated ahead of each term's end, and the coordinated renewals are confirmed onward. Continuity is arranged before the expiry date, not negotiated after it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so customer commitments renew on prepared terms rather than lapsing by neglect.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as renewals approach term, signalled by the relationship reviews, and it completes once each renewal is prepared, executed, and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead prepares the renewal ahead of the term's end, executes it with the customer, and confirms the coordinated renewal onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Coordinate Renewals |
+| `plain_language_description` | string | no | This activity gets the next round of customer commitments ready and signed as their terms run out. Renewal horizons … |
+| `business_purpose` | string | no | It exists so customer commitments renew on prepared terms rather than lapsing by neglect. |
+| `practical_context` | string | no | It runs as renewals approach term, signalled by the relationship reviews, and it completes once each renewal is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

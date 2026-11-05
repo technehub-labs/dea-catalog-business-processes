@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Bound Role Accountabilities**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Role Catalogue** (`processes:process-ao-design-34e95r`). Its canonical ID is `processes:activity-ao-design-9fmjnt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity marks, for every role the catalogue now lists, what that role is answerable for and where its responsibility ends. The defined levels come in last, the accountability boundary of each role is worked out and checked against its neighbours, and the bounded accountabilities are confirmed with the design authority. What is filed leaves no doubt about who owns which piece of work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so responsibility between roles is unambiguous, with no gaps where work falls between two roles and no overlaps where both claim it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs late in role catalogue design, once the levels within each family are set, and it closes when the bounded accountabilities are confirmed and their audit record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority draws the accountability line between two adjacent levels so handovers between them are unambiguous, then confirms each role's boundary with the authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Accountability Boundaries of Each Role |
+| `plain_language_description` | string | no | This activity marks, for every role the catalogue now lists, what that role is answerable for and where its … |
+| `business_purpose` | string | no | It exists so responsibility between roles is unambiguous, with no gaps where work falls between two roles and no … |
+| `practical_context` | string | no | It runs late in role catalogue design, once the levels within each family are set, and it closes when the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Monitor Ledger Health**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate General Ledger** (`processes:process-fa-operate-g9zpnq`). Its canonical ID is `processes:activity-fa-operate-ksg7yj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches how well the books are running — how fast entries land, what error counts show, whether balances look odd — for the system the enterprise trusts as its record. Health signals arrive continuously from the operating ledger, the picture is tracked and anomalies flagged, and the monitored health is confirmed onward. The books' own vital signs are read daily.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the financial system of record is checked for health as vigilantly as any machine.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across the operating ledger's signals, and each monitored health pass closes when it is confirmed and any anomaly flagged onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A ledger custodian reads the posting latencies, error counts, and balance anomalies from the operating ledger, flags the odd-looking balance, and confirms the health picture onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Ledger Health |
+| `plain_language_description` | string | no | This activity watches how well the books are running — how fast entries land, what error counts show, whether balances … |
+| `business_purpose` | string | no | It exists so the financial system of record is checked for health as vigilantly as any machine. |
+| `practical_context` | string | no | It runs continuously across the operating ledger's signals, and each monitored health pass closes when it is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

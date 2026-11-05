@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Commit Refreshed Objectives**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Refresh Objectives and Targets** (`processes:process-sd-improve-aqbrm7`). Its canonical ID is `processes:activity-sd-improve-dqccp5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The refreshed set is complete, so it becomes the measures of record. Intake registers the redrafted set, a last verification confirms every line is owned and measurable, and the commitment locks it in and hands it onward to the planning and steering colleagues. Confirmation notifies downstream consumers and the records custodian preserves the committed set at its retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ratifies the refreshed measures as the set of record, closing the refresh and re-arming planning and steering with a current baseline.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once redrafting is complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead ratifies the refreshed objective set, the confirmation custodian notifies planning and steering colleagues the committed measures are available, and the records custodian archives the evidence for the cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Refreshed Objectives |
+| `plain_language_description` | string | no | The refreshed set is complete, so it becomes the measures of record. Intake registers the redrafted set, a last … |
+| `business_purpose` | string | no | It ratifies the refreshed measures as the set of record, closing the refresh and re-arming planning and steering with a … |
+| `practical_context` | string | no | It opens once redrafting is complete and closes with the commitment confirmed, downstream consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 This is a **Activity** (level L3), named **Adjudicate Policyholder Claims**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Conclude Regulated Run-Off** (`processes:process-fa-retire-wkbrsa`). Its canonical ID is `processes:activity-fa-retire-vmpdww`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hears each claim from a policyholder or priority creditor, weighs it under the run-off regime's priority order, and rules — pay, part-pay, or deny — with the reasoning written down. Claim submissions and their supporting documentation arrive against the priority waterfall, each claim is validated and adjudicated, and the adjudicated register is confirmed onward. The enterprise's last promises are kept, in order, on the record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so policyholders and priority creditors are paid according to the regime's priority order, each decision evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs through the run-off as claim submissions arrive against the priority waterfall, and it completes when each adjudication — payment, part-payment, or denial with rationale — is confirmed into the claim register.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A claims adjudicator validates a policyholder's submission against the documentation, rules on it under the priority waterfall, and records the decision with its rationale in the claim register.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Adjudicate Policyholder Claims |
+| `plain_language_description` | string | no | This activity hears each claim from a policyholder or priority creditor, weighs it under the run-off regime's priority … |
+| `business_purpose` | string | no | It exists so policyholders and priority creditors are paid according to the regime's priority order, each decision … |
+| `practical_context` | string | no | It runs through the run-off as claim submissions arrive against the priority waterfall, and it completes when each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

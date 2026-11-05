@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Commit Strategic Initiatives**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Translate Strategic Choices into Initiatives** (`processes:process-sd-build-9admqy`). Its canonical ID is `processes:activity-sd-build-u85tt9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The initiative set has survived scoping, drafting and the fit review, so it is ready to become official. Intake registers the confirmed set, a last verification checks every initiative is complete, and the commitment is made so the roadmap and resourcing work can pick them up. Confirmation tells downstream consumers the committed set is available and the records custodian preserves it with its audit identifiers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It finalises the translated choices as a committed initiative set, the handover this process owes to the sequencing and resourcing work that follows.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens after the fit review clears the set and closes when commitment is confirmed, consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the fit-checked initiative set, the confirmation custodian notifies the roadmap and allocation teams that their inputs are ready, and the records custodian files the set with retention and retrieval handles set up.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Initiatives |
+| `plain_language_description` | string | no | The initiative set has survived scoping, drafting and the fit review, so it is ready to become official. Intake … |
+| `business_purpose` | string | no | It finalises the translated choices as a committed initiative set, the handover this process owes to the sequencing and … |
+| `practical_context` | string | no | It opens after the fit review clears the set and closes when commitment is confirmed, consumers notified and evidence … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-6hjzmk through concluding task processes:task-pv-build-record-4j2dcm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Go-to-Market Assets'
+plain_language_description: 'This activity gathers everything the offering will need in front of customers — the materials, the messaging, the supporting artefacts — into one launch kit. The freshly built offering arrives as the thing to be sold, go-to-market assets are assembled against it and checked, and the assembled kit is confirmed onward for the pricing and channels. The product learns to speak for itself here.'
+business_purpose: 'It exists so the offering goes to market with its complete kit of selling materials.'
+practical_context: 'It opens the market readiness preparation once the product or service is built, and it completes as the assembled go-to-market assets are confirmed onward for pricing and channel setup.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management officer assembles the launch materials and messaging the built offering needs, checks the kit, and confirms the assembled assets onward.'

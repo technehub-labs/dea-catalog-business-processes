@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zh9m57 through concluding task processes:task-eo-operate-record-a5yu2f, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Shipments'
+plain_language_description: 'This activity puts the plan on the road: goods are picked up, moved through the network, and delivered as planned. The planned shipments arrive as the worklist, vehicles and carriers run the movements, and each executed shipment is confirmed for the record. The delivery model''s promises are kept here, in physical motion.'
+business_purpose: 'It exists so the network physically moves goods as its plan says, delivering what was promised to whom it was promised.'
+practical_context: 'It runs against the shipment plan as each movement falls due, and it closes when each executed shipment is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A logistics crew runs each planned shipment — pickup, line-haul, delivery — with the network''s vehicles and carriers, and confirms each executed movement for the record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Commit Strategic Option Designs**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Options** (`processes:process-sd-design-ewvbsh`). Its canonical ID is `processes:activity-sd-design-47gv45`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Options and yardsticks are ready, so the design work is sealed. Intake registers the drafted set together with its criteria, a final verification confirms nothing is missing, and the commitment locks the option designs for the evaluation and translation work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed designs at their retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes option design with one committed package — choices plus yardsticks — the handoff this process owes to evaluation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once drafting and criteria framing are complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the option set and its criteria, the confirmation custodian notifies the evaluation team their inputs are ready, and the records custodian archives the committed designs so the comparison can cite them later.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Option Designs |
+| `plain_language_description` | string | no | Options and yardsticks are ready, so the design work is sealed. Intake registers the drafted set together with its … |
+| `business_purpose` | string | no | It closes option design with one committed package — choices plus yardsticks — the handoff this process owes to … |
+| `practical_context` | string | no | It opens once drafting and criteria framing are complete and closes with the commitment confirmed, downstream consumers … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Financial Policies**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Controls and Policies** (`processes:process-fa-design-uun4ja`). Its canonical ID is `processes:activity-fa-design-ppadqj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns each control objective into an actual policy people can follow. The objectives arrive with the governance posture as the context, policies are drafted against the objectives and reviewed for workability, and the policy designs are confirmed onward for commitment. Intent becomes instruction here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each control objective exists as a written policy the enterprise's people can actually operate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the objective design, when the objectives and governance posture are to hand, and it completes once the policy designs are confirmed for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer drafts the policy that makes each control objective real, reviews the drafts for workability against the governance posture, and confirms them for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Financial Policies |
+| `plain_language_description` | string | no | This activity turns each control objective into an actual policy people can follow. The objectives arrive with the … |
+| `business_purpose` | string | no | It exists so each control objective exists as a written policy the enterprise's people can actually operate. |
+| `practical_context` | string | no | It follows the objective design, when the objectives and governance posture are to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

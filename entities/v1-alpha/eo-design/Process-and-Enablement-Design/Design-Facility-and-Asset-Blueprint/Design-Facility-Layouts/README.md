@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Design Facility Layouts**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Facility and Asset Blueprint** (`processes:process-eo-design-q83tdv`). Its canonical ID is `processes:activity-eo-design-u3j6eu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the footprint principles framed earlier into concrete layouts for each facility. The principles and the operations model arrive as the basis, layouts are drawn per site and checked against both, and the layout designs are confirmed onward for the equipment work. Space is thereby organised on purpose rather than by accident.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each facility's space is organised to serve the operating model the principles describe.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the facility and asset blueprint design, when the footprint principles are presented for realisation, and it completes once the layout designs are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer draws each facility's layout to the framed footprint principles, checks the space serves the operations model, and confirms the layouts for the equipment specification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Facility Layouts |
+| `plain_language_description` | string | no | This activity turns the footprint principles framed earlier into concrete layouts for each facility. The principles and … |
+| `business_purpose` | string | no | It exists so each facility's space is organised to serve the operating model the principles describe. |
+| `practical_context` | string | no | It opens the facility and asset blueprint design, when the footprint principles are presented for realisation, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

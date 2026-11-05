@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-8v4k89 through concluding task processes:task-pv-design-record-gf67av, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Proposition Architecture'
+plain_language_description: 'Here the shape of the offering is laid out: product management takes the committed thesis and gives it a structure that says what the proposition is made of and how its parts relate. Intake registers the incoming thesis, verification checks it is complete enough to build on, processing drafts the architecture, confirmation releases it to the teams who will populate it, and the record custodian files the audit trail.'
+business_purpose: 'It turns an agreed value claim into a concrete skeleton for the offering, giving every later design step a structure to hang its pieces on.'
+practical_context: 'This is typically the first move of the design effort after the thesis is committed: work opens when the thesis is presented at intake and closes when the confirmed architecture and its audit record are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management opens a design cycle for a new bundled offering, receives the committed thesis at intake, confirms it with the originating strategists, drafts the proposition''s structure, and, once confirmation is issued, the records custodian archives the trail so later component work can trace its starting point.'

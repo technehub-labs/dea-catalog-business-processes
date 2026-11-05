@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-a4c76s through concluding task processes:task-pv-design-record-5ybf2t, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Segment Configurations'
+plain_language_description: 'This activity tailors the packaged proposition for each market segment it will meet. The designed formats arrive as the base to be varied, segment configurations are designed per market and checked against the formats, and the configured set is confirmed onward for the rules. One proposition, many fitting outfits.'
+business_purpose: 'It exists so each market segment receives a configuration of the proposition suited to it.'
+practical_context: 'It follows the format design, when the packaging forms are drawn, and it completes once the segment configurations are confirmed onward for the configuration rules.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer tailors the packaged proposition for each market segment, checking the variations against the designed formats, and confirms the set onward.'

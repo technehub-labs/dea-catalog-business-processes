@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-g9zpnq through concluding task processes:task-fa-operate-record-wz8n86, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Ledger Health'
+plain_language_description: 'This activity watches how well the books are running — how fast entries land, what error counts show, whether balances look odd — for the system the enterprise trusts as its record. Health signals arrive continuously from the operating ledger, the picture is tracked and anomalies flagged, and the monitored health is confirmed onward. The books'' own vital signs are read daily.'
+business_purpose: 'It exists so the financial system of record is checked for health as vigilantly as any machine.'
+practical_context: 'It runs continuously across the operating ledger''s signals, and each monitored health pass closes when it is confirmed and any anomaly flagged onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A ledger custodian reads the posting latencies, error counts, and balance anomalies from the operating ledger, flags the odd-looking balance, and confirms the health picture onward.'

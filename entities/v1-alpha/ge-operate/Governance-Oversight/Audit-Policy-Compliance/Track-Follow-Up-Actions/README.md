@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Track Follow-Up Actions**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Audit Policy Compliance** (`processes:process-ge-operate-hxxyc9`). Its canonical ID is `processes:activity-ge-operate-zhhypw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps count of the remedies the audits demanded, from promise to done. The reported findings arrive with their follow-up actions attached, each action is tracked to closure and chased when it stalls, and the tracked actions are confirmed onward as they close. Audit findings do not quietly die here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so audit findings produce closed remedies rather than open promises.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs from the findings' reporting to each follow-up action's closure, and it completes as each tracked action closes and its closure is confirmed for the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function custodian tracks each follow-up action from its reporting to its closure, chasing the stalled ones, and confirms each closure for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Follow-Up Actions |
+| `plain_language_description` | string | no | This activity keeps count of the remedies the audits demanded, from promise to done. The reported findings arrive with … |
+| `business_purpose` | string | no | It exists so audit findings produce closed remedies rather than open promises. |
+| `practical_context` | string | no | It runs from the findings' reporting to each follow-up action's closure, and it completes as each tracked action closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

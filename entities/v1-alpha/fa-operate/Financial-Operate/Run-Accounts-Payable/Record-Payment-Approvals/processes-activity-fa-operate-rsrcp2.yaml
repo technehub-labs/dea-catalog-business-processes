@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-wkqaqp through concluding task processes:task-fa-operate-record-4b7j8f, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Payment Approvals'
+plain_language_description: 'This activity logs the sign-offs that authorize paying an invoice once it has matched. The matched invoices arrive as the candidates, approvals are recorded under the delegation of authority, and the approved authorizations are confirmed onward for payment. Money leaves the enterprise only after this says someone accountable agreed.'
+business_purpose: 'It exists so every payment carries a recorded, accountable approval behind it.'
+practical_context: 'It follows the invoice matching, once invoices are cleared, and it completes when the recorded approvals are confirmed onward for the payment execution.'
+worked_example:
+  agent_type: human
+  narrative: 'A payables custodian records the approving sign-off for each matched invoice under the delegation of authority, and confirms the approvals for the payment run.'

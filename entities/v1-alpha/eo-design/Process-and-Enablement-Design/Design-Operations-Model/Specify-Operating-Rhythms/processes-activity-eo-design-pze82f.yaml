@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-rvfpjb through concluding task processes:task-eo-design-record-ea9z2c, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Specify Operating Rhythms'
+plain_language_description: 'This activity sets the tempos the finished model will live by — its planning cycles, its review cadences, and the paths for escalation. The integrated model arrives as the thing to be timed, the rhythms are specified and checked against how the model actually works, and the rhythm specification is confirmed onward for the design''s commitment. The model gains a heartbeat.'
+business_purpose: 'It exists so the operations model runs to deliberate tempos instead of improvising when to plan, review, or escalate.'
+practical_context: 'It follows the component integration, when the coherent model is presented for timing, and it completes once the rhythm specification is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer sets the planning cycles, review cadences, and escalation paths for the integrated model, checks each tempo against how the model works, and confirms the specification.'

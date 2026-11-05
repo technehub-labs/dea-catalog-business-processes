@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-rqdte5 through concluding task processes:task-eo-operate-record-6w6fwq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Schedule Facility Work Orders'
+plain_language_description: 'This activity turns the building''s needs and the preventive calendar into a dated, resourced book of work orders. The facility demand, the preventive plan, and crew availability arrive together, work is scheduled and resourced against all three, and the work-order book is confirmed onward for execution. The buildings'' upkeep acquires an order of battle.'
+business_purpose: 'It exists so facility work happens to a resourced schedule instead of piling up as unmanaged demand.'
+practical_context: 'It opens the facility work flow, when facility demand and the preventive calendar are presented alongside crew availability, and it completes once the scheduled work-order book is confirmed for execution.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management planner slots the facility''s reported needs and preventive tasks into a dated work-order book, matching each job to crew availability, and confirms the schedule for execution.'

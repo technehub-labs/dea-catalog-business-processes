@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Align Horizons with Intent**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Strategic Horizons** (`processes:process-sd-conceive-xa4h2k`). Its canonical ID is `processes:activity-sd-conceive-6dbxtu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Windows and markers are set; the last test is whether they genuinely fit the intent. Intake brings the dated horizons in, scrutiny tests the fit against what the intent calls for, and processing adjusts any period or marker that sits oddly. Confirmation records the aligned result and the records custodian preserves it for commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It reconciles the calendar with the ambition, so the horizons this process commits actually serve the intent they were framed for.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after anchoring, opening when the dated horizons are presented at intake and closing when the alignment outcome is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function reviewers walk each window and milestone against the intent, shift one marker that lands awkwardly, and the confirmation custodian records the aligned horizons for the colleagues preparing commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Align Horizons with Intent |
+| `plain_language_description` | string | no | Windows and markers are set; the last test is whether they genuinely fit the intent. Intake brings the dated horizons … |
+| `business_purpose` | string | no | It reconciles the calendar with the ambition, so the horizons this process commits actually serve the intent they were … |
+| `practical_context` | string | no | It runs after anchoring, opening when the dated horizons are presented at intake and closing when the alignment outcome … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

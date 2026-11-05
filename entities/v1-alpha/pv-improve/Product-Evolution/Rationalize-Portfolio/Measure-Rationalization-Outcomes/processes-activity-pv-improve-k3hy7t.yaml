@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-9xvgat through concluding task processes:task-pv-improve-record-bqarsg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Rationalization Outcomes'
+plain_language_description: 'Once retire-or-pivot decisions have been carried out, product management looks at what the portfolio actually looks like now and compares it with the picture recorded before the decisions. Outcome material is registered at intake, verified against the pre-decision baseline, assembled into a measurement, confirmed, and archived to inform the next rationalization round.'
+business_purpose: 'It tells the portfolio''s stewards whether the rationalization decisions actually improved matters, closing the loop and informing the next round of choices.'
+practical_context: 'It runs at the end of a rationalization cycle, after decisions have taken effect; intake opens on outcome material arriving and closure comes when the confirmed measurement is archived.'
+worked_example:
+  agent_type: human
+  narrative: 'A quarter after a retirement completes, a product management analyst registers the portfolio''s new state at intake, checks it against the pre-decision snapshot, works out that freed investment now supports the pivoted offering, and confirms the measurement for the stewards.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Build Acquisition Engines**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Customer Acquisition Channels** (`processes:process-pr-build-nygvw7`). Its canonical ID is `processes:activity-pr-build-qutweg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity constructs the machinery that actively brings customers in through the wired channels. The integrated channels arrive as the pathways, the acquisition engines are built onto them and checked as they assemble, and the built engines are confirmed onward for readiness. The enterprise stops waiting for customers and starts going to get them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the channels actively acquire customers through built machinery, not passively hope for them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the experience integration, once the channels are wired, and it completes as the built acquisition engines are confirmed onward for readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function builder constructs the acquisition machinery onto the wired channels, checks it as it assembles, and confirms the built engines for readiness.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build Acquisition Engines |
+| `plain_language_description` | string | no | This activity constructs the machinery that actively brings customers in through the wired channels. The integrated … |
+| `business_purpose` | string | no | It exists so the channels actively acquire customers through built machinery, not passively hope for them. |
+| `practical_context` | string | no | It follows the experience integration, once the channels are wired, and it completes as the built acquisition engines … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

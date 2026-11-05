@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Scheduled Platform Routines**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Technology Platforms** (`processes:process-eo-operate-4njp7b`). Its canonical ID is `processes:activity-eo-operate-7xkcre`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity runs the upkeep routines the operations calendar calls for — backups, key and certificate rotations, renewals, and general housekeeping — so the platforms stay ready to serve. The calendar arrives as the schedule, each routine is performed when due and checked off, and the completed routines are confirmed for the record. Platform upkeep happens by timetable, not by crisis.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the platforms stay servable through routine care performed on schedule, not through emergency attention.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the operations calendar as each routine falls due across the service windows, and it completes when the performed routines are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A platform custodian works the calendar's due routines — a backup here, a certificate renewal there — checks each off as performed, and confirms the completed set for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Scheduled Platform Routines |
+| `plain_language_description` | string | no | This activity runs the upkeep routines the operations calendar calls for — backups, key and certificate rotations … |
+| `business_purpose` | string | no | It exists so the platforms stay servable through routine care performed on schedule, not through emergency attention. |
+| `practical_context` | string | no | It runs against the operations calendar as each routine falls due across the service windows, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

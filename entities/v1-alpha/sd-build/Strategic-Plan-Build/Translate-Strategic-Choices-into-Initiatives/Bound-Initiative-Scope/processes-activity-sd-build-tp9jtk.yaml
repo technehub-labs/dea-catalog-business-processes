@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-9admqy through concluding task processes:task-sd-build-record-c6xq7n, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Initiative Scope'
+plain_language_description: 'Every chosen direction needs turning into work with edges. This step registers the committed choice and the parent plan, verifies the inputs, and marks out how far each initiative may reach — what is in and what is out. The agreed scope lines are confirmed downstream and preserved so drafting stays inside them.'
+business_purpose: 'It stops initiative drafting from sprawling by fixing agreed edges around each piece of work the choices demand.'
+practical_context: 'It opens at intake when the committed choice and the plan are presented, closing once the scope boundaries are confirmed and filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function facilitator walks the committed choice through a scoping session, agrees with the activity owner what each initiative will and will not cover, and the records custodian preserves the agreed boundaries for the drafting team.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-6j5mxp through concluding task processes:task-eo-design-record-67unkj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Service Levels'
+plain_language_description: 'This activity works the framed envelopes into measurable service levels — targets, how they are measured, and the tolerance around each. The envelopes arrive as the frame to work within, the levels are specified per channel and checked against the bounds, and the specification is confirmed onward. What customers may count on becomes a number, not an aspiration.'
+business_purpose: 'It exists so the framed service promises become measurable levels the operation can be held to.'
+practical_context: 'It follows the channel configuration, when the framed envelopes are to hand, and it completes once the service-level specification is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer turns each framed envelope into concrete targets with measures and tolerances, checks the levels stay within the bounds, and confirms the specification.'

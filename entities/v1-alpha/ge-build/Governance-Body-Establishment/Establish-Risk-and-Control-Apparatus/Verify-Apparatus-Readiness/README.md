@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Verify Apparatus Readiness**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Risk and Control Apparatus** (`processes:process-ge-build-rx7kt5`). Its canonical ID is `processes:activity-ge-build-ptnpmg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the assembled machinery — registers, tooling, and reporting lines — fit to start operating. The established apparatus arrives with the risk framework design as the yardstick, readiness is examined against it, and the determination is confirmed for the operate context. Risk management goes live on proof, not on assumption.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the risk and control apparatus starts operating proven complete against its design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the apparatus build once registers, tooling, and reporting lines are in place, and it completes when the readiness determination is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function verifier examines the established registers, tooling, and reporting lines against the framework design, and confirms the readiness determination for operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Apparatus Readiness |
+| `plain_language_description` | string | no | This activity proves the assembled machinery — registers, tooling, and reporting lines — fit to start operating. The … |
+| `business_purpose` | string | no | It exists so the risk and control apparatus starts operating proven complete against its design. |
+| `practical_context` | string | no | It closes the apparatus build once registers, tooling, and reporting lines are in place, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

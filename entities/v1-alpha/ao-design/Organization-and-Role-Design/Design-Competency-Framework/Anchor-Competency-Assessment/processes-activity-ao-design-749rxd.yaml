@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-rve8j5 through concluding task processes:task-ao-design-record-bn4ud5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Assessment Anchors for Each Proficiency Level'
+plain_language_description: 'This activity fixes the observable markers that tell one proficiency level apart from the next. The defined levels are brought in, the assessment anchors for each are worked out and reviewed, and the anchored assessment approach is confirmed with the design authority. With the anchors in place, judgements about capability rest on agreed evidence rather than feel.'
+business_purpose: 'It exists so proficiency assessments are consistent and defensible, anchored to markers agreed in advance.'
+practical_context: 'It runs once proficiency levels are defined, when the levels are presented for anchoring, and it closes once the anchored assessment is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority describes the concrete evidence that separates a developing practitioner from a seasoned one in each domain, confirms those anchors, and files them so future assessments judge against the same markers.'

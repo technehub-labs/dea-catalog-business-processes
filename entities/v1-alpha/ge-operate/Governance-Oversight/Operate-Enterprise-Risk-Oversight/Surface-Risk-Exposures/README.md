@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Surface Risk Exposures**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Enterprise Risk Oversight** (`processes:process-ge-operate-tpenm6`). Its canonical ID is `processes:activity-ge-operate-qtwuqf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the exposures the reviews and monitoring have found up out of the registers and into the light. The executed reviews arrive with their findings, exposures are surfaced and stated plainly, and the surfaced exposures are confirmed onward for the mitigation work. Dangers stop being register entries and become named problems.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so identified exposures are surfaced for action rather than left buried in the registers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the executed reviews and continuous monitoring, and it completes once the surfaced exposures are confirmed onward for the mitigation responses.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function analyst states plainly the exposures the reviews and monitoring have identified, and confirms the surfaced exposures onward for mitigation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Surface Risk Exposures |
+| `plain_language_description` | string | no | This activity brings the exposures the reviews and monitoring have found up out of the registers and into the light … |
+| `business_purpose` | string | no | It exists so identified exposures are surfaced for action rather than left buried in the registers. |
+| `practical_context` | string | no | It follows the executed reviews and continuous monitoring, and it completes once the surfaced exposures are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

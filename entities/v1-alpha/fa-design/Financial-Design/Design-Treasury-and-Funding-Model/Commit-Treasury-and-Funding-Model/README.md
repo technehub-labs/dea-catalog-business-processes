@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Commit Treasury and Funding Model**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury and Funding Model** (`processes:process-fa-design-k5sgfa`). Its canonical ID is `processes:activity-fa-design-r4hzb6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the liquidity rules, the funding make-up, and the treasury way of working together into one committed model. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed model is confirmed as the basis for securing the facilities and running treasury. The enterprise's money mechanics become one owned design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so treasury operations and facility securing start from one committed model rather than three designs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the treasury and funding model design, once liquidity, funding, and operating model are designed, and it completes when the committed model is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the liquidity policy, funding structure, and operating model into the model document, obtains ratification, and records the commitment for facility securing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Treasury and Funding Model |
+| `plain_language_description` | string | no | This activity draws the liquidity rules, the funding make-up, and the treasury way of working together into one … |
+| `business_purpose` | string | no | It exists so treasury operations and facility securing start from one committed model rather than three designs. |
+| `practical_context` | string | no | It closes the treasury and funding model design, once liquidity, funding, and operating model are designed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

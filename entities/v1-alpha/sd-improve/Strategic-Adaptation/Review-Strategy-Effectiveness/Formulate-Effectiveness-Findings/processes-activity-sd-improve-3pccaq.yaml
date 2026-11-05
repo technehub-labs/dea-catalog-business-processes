@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-duwd64 through concluding task processes:task-sd-improve-record-tawq3h, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Effectiveness Findings'
+plain_language_description: 'A verdict needs turning into statements the enterprise can act on. Intake registers the evaluation, verification checks each claimed point traces to evidence, and processing writes the findings and their recommendations in plain terms — what worked, what did not, what to change. Confirmation circulates the drafted findings downstream and the records custodian preserves them for ratification.'
+business_purpose: 'It converts the verdict into concrete findings and recommendations, giving the adaptation cycle usable lessons instead of a bare score.'
+practical_context: 'It follows the evaluation, opening at intake of the reasoned verdict and closing when the drafted findings are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers draft the findings and recommendations from the evaluation, a verification custodian checks each claim traces to dossier evidence, and the confirmation custodian passes the pack forward for ratification.'

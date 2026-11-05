@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Chart of Accounts**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Plan Structure** (`processes:process-fa-design-vk422z`). Its canonical ID is `processes:activity-fa-design-drznes`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws up the account structure that will organize every entry in the enterprise's books. The framed finance strategy arrives as the source, the chart of accounts is designed from it and reviewed for completeness, and the account design is confirmed onward for the allocation work. Every future transaction gains a place to live.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's financial record is organized from the start by a deliberately designed account structure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the financial plan structure design, when the framed finance strategy is presented, and it completes once the chart of accounts design is confirmed for the allocation model.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer draws the account structure from the framed finance strategy, reviews it for completeness, and confirms the chart design for the allocation model.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Chart of Accounts |
+| `plain_language_description` | string | no | This activity draws up the account structure that will organize every entry in the enterprise's books. The framed … |
+| `business_purpose` | string | no | It exists so the enterprise's financial record is organized from the start by a deliberately designed account structure. |
+| `practical_context` | string | no | It opens the financial plan structure design, when the framed finance strategy is presented, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

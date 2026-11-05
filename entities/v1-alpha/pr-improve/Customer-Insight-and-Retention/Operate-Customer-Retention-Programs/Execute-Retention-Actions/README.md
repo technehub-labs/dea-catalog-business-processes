@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 This is a **Activity** (level L3), named **Execute Retention Actions**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Operate Customer Retention Programs** (`processes:process-pr-improve-t6uvan`). Its canonical ID is `processes:activity-pr-improve-jg6bv4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity moves on what the churn and satisfaction findings show, with interventions aimed at the customers who need them. The scored risks and satisfaction findings arrive as the worklist, targeted retention interventions are executed for each named case, and the executed actions are confirmed onward. Warning signs are answered with deeds, not memos.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so at-risk customers receive deliberate retention action rather than eventual farewell.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the churn scoring and satisfaction findings, once the at-risk cases are named, and it completes as each executed retention intervention is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer acts on each scored churn risk with a targeted intervention — a service recovery, a check-in, a tailored offer — and confirms the execution onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Retention Actions |
+| `plain_language_description` | string | no | This activity moves on what the churn and satisfaction findings show, with interventions aimed at the customers who … |
+| `business_purpose` | string | no | It exists so at-risk customers receive deliberate retention action rather than eventual farewell. |
+| `practical_context` | string | no | It follows the churn scoring and satisfaction findings, once the at-risk cases are named, and it completes as each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

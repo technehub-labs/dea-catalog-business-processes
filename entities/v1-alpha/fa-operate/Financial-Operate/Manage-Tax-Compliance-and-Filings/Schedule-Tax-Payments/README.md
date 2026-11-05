@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Schedule Tax Payments**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Tax Compliance and Filings** (`processes:process-fa-operate-8vqvkk`). Its canonical ID is `processes:activity-fa-operate-h7wym7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the dates and amounts for settling what the prepared returns show as owed. The prepared returns arrive as the basis, payments are scheduled against the statutory deadlines, and the payment schedule is confirmed onward for execution and record. The enterprise's tax debts acquire dates before they acquire penalties.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tax shown as owed is paid on time, by schedule rather than by scramble.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the return preparation, when the amounts owed are stated, and it completes once the scheduled payments are confirmed onward for execution and the filing record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function officer sets the payment dates and amounts from the prepared returns against the statutory deadlines, and confirms the schedule for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Schedule Tax Payments |
+| `plain_language_description` | string | no | This activity sets the dates and amounts for settling what the prepared returns show as owed. The prepared returns … |
+| `business_purpose` | string | no | It exists so tax shown as owed is paid on time, by schedule rather than by scramble. |
+| `practical_context` | string | no | It follows the return preparation, when the amounts owed are stated, and it completes once the scheduled payments are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

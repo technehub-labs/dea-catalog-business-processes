@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-ycba3k through concluding task processes:task-fa-operate-record-87w5ns, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prepare Footnotes and Disclosures'
+plain_language_description: 'This activity writes the notes that tell the reader what sits behind the statement figures. The prepared statements arrive as the text to be explained, footnotes and disclosures are drafted against them and checked for completeness, and the prepared set is confirmed onward for the package review. The numbers gain their context here.'
+business_purpose: 'It exists so the statements are accompanied by the disclosures that make them honestly readable.'
+practical_context: 'It follows the statement preparation, working from the prepared statements, and it completes once the footnotes and disclosures are confirmed onward for the package review.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function preparer drafts the footnotes and disclosures explaining the prepared statements, checks nothing required is missing, and confirms the set for the package review.'

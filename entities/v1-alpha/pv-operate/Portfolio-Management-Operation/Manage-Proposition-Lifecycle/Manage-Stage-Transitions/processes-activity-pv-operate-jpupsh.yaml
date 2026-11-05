@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-cau4gv through concluding task processes:task-pv-operate-record-3a5jmn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Manage Stage Transitions'
+plain_language_description: 'Product management steers each offering from one stage of its life to the next - the move into growth, the settling into maturity, the drift toward decline - applying the stage criteria at each step. Transition material is registered at intake, checked against the criteria, executed as a managed move, confirmed, and archived.'
+business_purpose: 'It makes stage change a deliberate, criterion-checked event rather than something that happens by drift, keeping the lifecycle honest and legible.'
+practical_context: 'It spans the life of each proposition: a transition opens when the case for moving stage is presented at intake and closes when the executed move is confirmed and its record filed.'
+worked_example:
+  agent_type: human
+  narrative: 'When an offering''s numbers show it has left its growth phase, a product management steward registers the transition case at intake, checks it against the stage criteria, executes the move into maturity, confirms it to the stakeholders, and the trail is archived.'

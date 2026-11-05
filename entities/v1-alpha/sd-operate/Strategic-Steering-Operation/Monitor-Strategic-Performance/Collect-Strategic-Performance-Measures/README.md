@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Collect Strategic Performance Measures**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Monitor Strategic Performance** (`processes:process-sd-operate-zdjchn`). Its canonical ID is `processes:activity-sd-operate-fjj2yt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Now that the plan is being executed, the numbers start flowing and someone has to catch them. Measure readings from the executing initiatives and operations arrive at intake, verification checks each is from the right source and period, and processing gathers them into the complete measure set the review cycle expects. Confirmation announces the collected set downstream and the records custodian preserves it for tracking.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps a complete, quality-checked flow of measure readings coming in, the raw material every performance judgement downstream relies on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously while the plan is in force, opening at each intake of readings and closing when the collected set is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function analysts log the period's measure readings from each executing initiative, a verification custodian rejects readings with the wrong source or period, and the confirmation custodian releases the collected set to the tracking step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect Strategic Performance Measures |
+| `plain_language_description` | string | no | Now that the plan is being executed, the numbers start flowing and someone has to catch them. Measure readings from the … |
+| `business_purpose` | string | no | It keeps a complete, quality-checked flow of measure readings coming in, the raw material every performance judgement … |
+| `practical_context` | string | no | It runs continuously while the plan is in force, opening at each intake of readings and closing when the collected set … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

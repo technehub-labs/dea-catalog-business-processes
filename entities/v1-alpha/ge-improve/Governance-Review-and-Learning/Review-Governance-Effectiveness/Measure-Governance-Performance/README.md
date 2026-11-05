@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Measure Governance Performance**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Review Governance Effectiveness** (`processes:process-ge-improve-mgkw59`). Its canonical ID is `processes:activity-ge-improve-rbvv52`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks how well the enterprise's governance has actually been working, measured against the strategy it was committed under. The operating governance arrives with the committed strategy as the yardstick, performance is measured against it, and the measured outcomes are confirmed onward for the lessons work. Governance is graded here, against its own homework.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance effectiveness is known by measurement against strategy, not by the bodies' own opinion of themselves.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens each effectiveness review once the bodies have been operating for their periodic cycle, and it completes when the measured outcomes are confirmed onward for the lessons capture.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst measures the operating bodies' performance against the committed governance strategy, and confirms the measured outcomes onward for the lessons work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Governance Performance |
+| `plain_language_description` | string | no | This activity checks how well the enterprise's governance has actually been working, measured against the strategy it … |
+| `business_purpose` | string | no | It exists so governance effectiveness is known by measurement against strategy, not by the bodies' own opinion of … |
+| `practical_context` | string | no | It opens each effectiveness review once the bodies have been operating for their periodic cycle, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

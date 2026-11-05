@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Define Continuing-Supervisor Notification Path**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Regulated Role Architecture** (`processes:process-ao-design-2fkvhx`). Its canonical ID is `processes:activity-ao-design-v8r5n2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity designs, for each licensed role in the catalogue, exactly how its ongoing supervisor will be kept informed. The regulator-tied entries and the supervision matrix are taken in, and the work fixes who the supervisor is, how often notices go out, what those notices contain, and how escalations run when something needs attention. The defined path is confirmed and filed so activation later simply issues the notifications this design already settled.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so supervision arrangements are designed into each licensed role before anyone occupies it, ready for activation to trigger.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during regulated role architecture design, once the catalogue entries and the supervision matrix are presented, and it completes when the defined path is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority pairs each licensed role with its ongoing supervisor, sets the cadence and content of the notices and the escalation arrangements, and files the path for activation to use.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Continuing-Supervisor Notification Path |
+| `plain_language_description` | string | no | This activity designs, for each licensed role in the catalogue, exactly how its ongoing supervisor will be kept … |
+| `business_purpose` | string | no | It exists so supervision arrangements are designed into each licensed role before anyone occupies it, ready for … |
+| `practical_context` | string | no | It runs during regulated role architecture design, once the catalogue entries and the supervision matrix are presented … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

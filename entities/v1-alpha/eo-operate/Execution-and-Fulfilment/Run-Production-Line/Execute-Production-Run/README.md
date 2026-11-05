@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Production Run**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Run Production Line** (`processes:process-eo-operate-xud3hs`). Its canonical ID is `processes:activity-eo-operate-vs8xnq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the line actually working through each cycle on its schedule, turning materials in at one end into product at the other. The scheduled cycle arrives as the order of the day, the line is run with its crew and materials, and the executed run is confirmed onward for recording. Everything the enterprise built the line for happens here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the line produces what its schedule says, cycle by cycle, converting materials into output.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs through each scheduled production cycle, and it completes when the executed run is confirmed and handed to the output recording.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A line crew runs the scheduled cycle with materials loaded and controls set, converting inputs into finished output, and confirms the executed run for the production record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Production Run |
+| `plain_language_description` | string | no | This activity sets the line actually working through each cycle on its schedule, turning materials in at one end into … |
+| `business_purpose` | string | no | It exists so the line produces what its schedule says, cycle by cycle, converting materials into output. |
+| `practical_context` | string | no | It runs through each scheduled production cycle, and it completes when the executed run is confirmed and handed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

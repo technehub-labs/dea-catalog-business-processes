@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Address Performance Exceptions**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Agent Performance** (`processes:process-ao-operate-g4wp63`). Its canonical ID is `processes:activity-ao-operate-yyqtzw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes up the performance shortfalls that monitoring surfaces and works each one through to a settled outcome. The monitored results arrive as the trigger, each exception is examined and handled, and the handled exceptions are confirmed for the record. The aim is that nothing surfacing in service stays unaddressed past the cycle that found it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so performance shortfalls found in service are corrected promptly instead of lingering into the next cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens when monitoring surfaces a performance exception during the operating period, and it closes once each exception is confirmed handled and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian takes up an agent whose results keep missing the agreed expectations, works through the cause and settles the handling, and files the outcome for the cycle review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Address the Performance Exceptions |
+| `plain_language_description` | string | no | This activity takes up the performance shortfalls that monitoring surfaces and works each one through to a settled … |
+| `business_purpose` | string | no | It exists so performance shortfalls found in service are corrected promptly instead of lingering into the next cycle. |
+| `practical_context` | string | no | It happens when monitoring surfaces a performance exception during the operating period, and it closes once each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

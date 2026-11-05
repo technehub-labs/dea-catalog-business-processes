@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Commit Platform Upgrades**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Improve Technology Platforms** (`processes:process-eo-improve-babwdc`). Its canonical ID is `processes:activity-eo-improve-7cek5c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the worked-up platform fixes formal standing so they are scheduled for implementation. The upgrade designs arrive as the case for each fix, the set is reviewed and ratified, and the committed upgrades are confirmed into the improvement backlog. From here the fixes are dated work, not wishes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed platform upgrades are committed to a backlog and scheduled, rather than drifting unprioritised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the upgrade design, once the designs are in hand, and it completes when the committed upgrades are confirmed into the backlog and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian reviews each upgrade design, ratifies the set for implementation, and records the committed upgrades into the platform improvement backlog.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Platform Upgrades |
+| `plain_language_description` | string | no | This activity gives the worked-up platform fixes formal standing so they are scheduled for implementation. The upgrade … |
+| `business_purpose` | string | no | It exists so the designed platform upgrades are committed to a backlog and scheduled, rather than drifting … |
+| `practical_context` | string | no | It follows the upgrade design, once the designs are in hand, and it completes when the committed upgrades are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

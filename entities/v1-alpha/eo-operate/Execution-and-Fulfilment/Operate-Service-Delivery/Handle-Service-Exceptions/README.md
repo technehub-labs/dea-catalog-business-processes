@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Handle Service Exceptions**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Service Delivery** (`processes:process-eo-operate-2jnz85`). Its canonical ID is `processes:activity-eo-operate-hpdc56`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity picks up the flagged deviations and the day's operational surprises and works the service back to its planned state. Flagged exceptions arrive as the case list, each is worked to restoration, and the handling is recorded. The plan's opposite — reality interfering — is met with recovery, not resignation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so deviations and surprises are restored to planned operation rather than left to compound.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever monitoring or operations flags an exception, and it completes once each handled exception is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A service custodian takes a flagged delivery deviation, works the recovery that returns service to its planned state, and records the handling for the file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Handle Service Exceptions |
+| `plain_language_description` | string | no | This activity picks up the flagged deviations and the day's operational surprises and works the service back to its … |
+| `business_purpose` | string | no | It exists so deviations and surprises are restored to planned operation rather than left to compound. |
+| `practical_context` | string | no | It runs whenever monitoring or operations flags an exception, and it completes once each handled exception is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

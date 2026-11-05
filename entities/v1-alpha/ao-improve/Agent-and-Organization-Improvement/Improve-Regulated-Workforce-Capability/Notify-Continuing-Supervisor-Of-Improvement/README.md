@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Notify Continuing Supervisor Of Improvement**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Improve Regulated Workforce Capability** (`processes:process-ao-improve-qqxe4d`). Its canonical ID is `processes:activity-ao-improve-uudtp5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tells the ongoing supervisor of each licensed role what has been recorded: training completions, fitness re-assessments, and remediation outcomes alike. The improvement record and the defined notification path arrive together, the notices go out along that path with the content and cadence it specifies, and the notification record is confirmed and filed. The supervisor is thereby kept current on the role holder's competence picture.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supervisor overseeing a licensed role always holds the role holder's current competence and remediation picture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as each improvement cycle completes and its record lands on the personnel file, and it closes when the notification record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian sends the ongoing supervisor notice of a completed fitness re-assessment along the agreed notification path, and files the notification record for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Notify the Continuing Supervisor of the Improvement |
+| `plain_language_description` | string | no | This activity tells the ongoing supervisor of each licensed role what has been recorded: training completions, fitness … |
+| `business_purpose` | string | no | It exists so the supervisor overseeing a licensed role always holds the role holder's current competence and … |
+| `practical_context` | string | no | It runs as each improvement cycle completes and its record lands on the personnel file, and it closes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

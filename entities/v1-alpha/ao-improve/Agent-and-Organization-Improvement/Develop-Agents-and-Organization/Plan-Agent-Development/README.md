@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Plan Agent Development**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Develop Agents and Organization** (`processes:process-ao-improve-xfh8na`). Its canonical ID is `processes:activity-ao-improve-eq6pbr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out, driver by driver, what development actions will be taken, spanning the population of agents and the organization itself. The gathered drivers come in first, actions are matched to each one and arranged into a plan, and the plan is confirmed with the design authority. It ends with a complete development plan ready to be executed, treating people and artificial agents alike.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so improvement is planned deliberately against named drivers rather than improvised as ad hoc initiatives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the gathering of development drivers, when the consolidated case is presented for planning, and it completes once the development plan is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian matches a development action to each gathered driver, arranges them into one plan covering people and artificial agents alike, and confirms the plan with the design authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Agent Development |
+| `plain_language_description` | string | no | This activity works out, driver by driver, what development actions will be taken, spanning the population of agents … |
+| `business_purpose` | string | no | It exists so improvement is planned deliberately against named drivers rather than improvised as ad hoc initiatives. |
+| `practical_context` | string | no | It follows the gathering of development drivers, when the consolidated case is presented for planning, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

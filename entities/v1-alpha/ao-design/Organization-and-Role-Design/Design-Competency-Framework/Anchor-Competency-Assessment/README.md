@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Anchor Competency Assessment**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Competency Framework** (`processes:process-ao-design-rve8j5`). Its canonical ID is `processes:activity-ao-design-749rxd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes the observable markers that tell one proficiency level apart from the next. The defined levels are brought in, the assessment anchors for each are worked out and reviewed, and the anchored assessment approach is confirmed with the design authority. With the anchors in place, judgements about capability rest on agreed evidence rather than feel.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so proficiency assessments are consistent and defensible, anchored to markers agreed in advance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once proficiency levels are defined, when the levels are presented for anchoring, and it closes once the anchored assessment is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority describes the concrete evidence that separates a developing practitioner from a seasoned one in each domain, confirms those anchors, and files them so future assessments judge against the same markers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Assessment Anchors for Each Proficiency Level |
+| `plain_language_description` | string | no | This activity fixes the observable markers that tell one proficiency level apart from the next. The defined levels are … |
+| `business_purpose` | string | no | It exists so proficiency assessments are consistent and defensible, anchored to markers agreed in advance. |
+| `practical_context` | string | no | It runs once proficiency levels are defined, when the levels are presented for anchoring, and it closes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

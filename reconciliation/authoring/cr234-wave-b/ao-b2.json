@@ -1,0 +1,402 @@
+{
+  "processes:activity-ao-design-bnvt6w": {
+    "plain_language_name": "Draft the Organizational Architecture",
+    "plain_language_description": "This activity lays out the enterprise's units and how they sit together, working from the model frame that strategy committed earlier. The frame is brought in and checked, the unit arrangement is drawn up from it, and the resulting draft is confirmed with the design authority before anyone adds authority detail. It ends with a drafted architecture on file that the rest of structure design can build on.",
+    "business_purpose": "It exists so structure design starts from a concrete arrangement of units that answers to the agreed model rather than from a blank page.",
+    "practical_context": "It opens the design of the organization structure, when the committed model frame is presented for drafting, and it completes once the drafted architecture is confirmed and its audit record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer working for the organization design authority arranges the enterprise's units according to the model's principles and spans, then confirms the drafted arrangement with the authority before delegation detail is added."
+    }
+  },
+  "processes:activity-ao-design-3dpt54": {
+    "plain_language_name": "Set the Authority Chains and Delegation Limits",
+    "plain_language_description": "This activity works out, across the drafted unit arrangement, who answers to whom and how far decision rights may be passed down. The draft arrives first, chains of authority and their delegation limits are worked out and reviewed against it, and the result is confirmed with the design authority. What is filed shows every position's line of accountability and the ceiling on what it may decide on its own.",
+    "business_purpose": "It exists so decision rights are explicit and delegation stays within deliberate limits before the structure design is committed.",
+    "practical_context": "It runs during structure design once the drafted unit architecture is to hand, and it closes when the bounded chains are confirmed and their audit record preserved for the review step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority traces each position's line of accountability through the drafted units, sets how far each may delegate, and files the chains for the design authority to review."
+    }
+  },
+  "processes:activity-ao-design-p6pheg": {
+    "plain_language_name": "Review the Structure against the Framed Model",
+    "plain_language_description": "This activity checks the drafted structure, authority detail included, against the ground rules the framed model established. The bounded chains come in as the last input, every feature of the draft is examined against the model's structural principles, its span limits, and its coordination boundaries, and any departures are recorded for correction. The work ends with a reviewed design ready to be committed.",
+    "business_purpose": "It exists so the enterprise commits a structure proven to respect the structural principles it already agreed, not one that quietly departs from them.",
+    "practical_context": "It follows the setting of authority chains, before the structure design is committed, and it completes once the review outcome is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests the drafted structure feature by feature against the model's principles and spans, records each departure for the design authority to correct, and issues the reviewed design for commitment."
+    }
+  },
+  "processes:activity-ao-design-qp6pxn": {
+    "plain_language_name": "Commit the Organization Structure Design",
+    "plain_language_description": "This activity is where the reviewed structure design is formally accepted and put to work. The reviewed design is taken in and consolidated, its ratification is confirmed with the design authority, and the committed design is handed to the role catalogue, the competency framework, and the agent topology work that accompanies it. An audit record of the commitment is preserved so the enterprise can trace its structure back to this decision.",
+    "business_purpose": "It exists so the structure blueprint becomes one binding reference that the companion designs and later workforce building must follow.",
+    "practical_context": "It takes place at the close of structure design, once the draft has passed review against the framed model, and it completes when the committed design is confirmed, handed over, and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian brings the reviewed design forward for the organization design authority's ratification, records the commitment once made, and notifies the role catalogue, competency framework, and agent topology teams that the design is theirs to build from."
+    }
+  },
+  "processes:activity-ao-design-jbf2v9": {
+    "plain_language_name": "Catalogue the Regulator-Tied Role Entries",
+    "plain_language_description": "This activity writes the licensed roles into the role catalogue as regulator-tied entries. The approved regulated-scope declaration and the catalogue skeleton arrive first, and for each role the entry records the authority it carries, its signing capacity, its controlled-function designation, the licensing basis behind it, and the scope tied to its regulator. The completed entries are confirmed and retained so later design and activation work staffs against an accurate catalogue.",
+    "business_purpose": "It exists so the role catalogue states precisely which roles carry regulator-tied authority and on what licensing basis.",
+    "practical_context": "It opens the design of the regulated role architecture, when the regulated-scope declaration is presented alongside the catalogue skeleton, and it closes once the entries are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority turns the approved scope declaration into catalogue entries for the enterprise's controlled-function roles, recording each role's authority, signing capacity, and licensing basis for the teams that will staff them."
+    }
+  },
+  "processes:activity-ao-design-x9k4m7": {
+    "plain_language_name": "Define the Fitness and Propriety Assessment Regime",
+    "plain_language_description": "This activity fixes, in advance of any hiring, how each licensed role's fitness will be judged over time. The regulator-tied catalogue and the fitness matrix come in, and for each role the regime settles when assessments happen, what criteria they apply, and who attests, all framed by the expectations of the relevant regulator. The defined regime is confirmed and filed so later attestation follows designed rules rather than case-by-case judgement.",
+    "business_purpose": "It exists so fitness checks for licensed roles run to a regime designed up front and framed by regulator expectations.",
+    "practical_context": "It runs during regulated role architecture design, once the catalogue entries and the fitness matrix are to hand, and it completes when the defined regime is confirmed and preserved on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority sets an annual fitness assessment for a controlled-function role, names the employer as attestor, and records the criteria so re-assessments later judge everyone by the same standard."
+    }
+  },
+  "processes:activity-ao-design-wnqz3k": {
+    "plain_language_name": "Align Competency Entries with Continuing Supervision",
+    "plain_language_description": "This activity lines up what each licensed role's competency framework entry demands with what the regulator's continuing oversight expects of it. The regulator-tied role entries and the framework skeleton arrive first, and for each role the work settles which competency statements apply, how often assessment runs, and who performs it, keeping step with the regulator's continuing-competence program. The aligned entries are then confirmed and retained.",
+    "business_purpose": "It exists so licensed roles are assessed against competency expectations that satisfy the regulator's continuing oversight, not just internal preference.",
+    "practical_context": "It happens while the regulated role architecture is being designed, once the catalogue entries and the competency skeleton are available, and it closes when the aligned entries are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority aligns a licensed clinician role's competency statements and assessment cadence with the regulator's continuing-competence program, names the employer as assessor, and files the aligned entry."
+    }
+  },
+  "processes:activity-ao-design-v8r5n2": {
+    "plain_language_name": "Define the Continuing-Supervisor Notification Path",
+    "plain_language_description": "This activity designs, for each licensed role in the catalogue, exactly how its ongoing supervisor will be kept informed. The regulator-tied entries and the supervision matrix are taken in, and the work fixes who the supervisor is, how often notices go out, what those notices contain, and how escalations run when something needs attention. The defined path is confirmed and filed so activation later simply issues the notifications this design already settled.",
+    "business_purpose": "It exists so supervision arrangements are designed into each licensed role before anyone occupies it, ready for activation to trigger.",
+    "practical_context": "It runs during regulated role architecture design, once the catalogue entries and the supervision matrix are presented, and it completes when the defined path is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority pairs each licensed role with its ongoing supervisor, sets the cadence and content of the notices and the escalation arrangements, and files the path for activation to use."
+    }
+  },
+  "processes:activity-ao-design-cezz7p": {
+    "plain_language_name": "Define the Role Families",
+    "plain_language_description": "This activity groups the roles the designed structure needs into families of related work. The committed model frame comes in first, the natural groupings are worked out from it and reviewed, and the defined families are confirmed with the design authority. With the families set, the catalogue has its top-level organization and the leveling work can begin.",
+    "business_purpose": "It exists so the role catalogue organizes roles into recognizable groupings that planning and staffing can navigate.",
+    "practical_context": "It opens the design of the role catalogue, when the model frame is presented for family definition, and it closes once the defined families are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority clusters the structure's roles into families of related work, checks the grouping against the model frame, and confirms the families before levels are defined within them."
+    }
+  },
+  "processes:activity-ao-design-txkve5": {
+    "plain_language_name": "Define the Role Levels",
+    "plain_language_description": "This activity sets the steps of seniority that each role family will carry in the catalogue. The defined families arrive first, the leveling structure within each is worked out and reviewed for sensible progression, and the defined levels are confirmed with the design authority. The catalogue then has, for every family, a common ladder that staffing and development decisions can use.",
+    "business_purpose": "It exists so each role family carries an agreed ladder of levels that the rest of the enterprise can plan careers and staffing against.",
+    "practical_context": "It follows the definition of the role families, when they are presented for leveling, and it completes once the defined levels are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority works through a newly defined family and sets its steps from entry to senior positions, checks the progression makes sense, and confirms the levels before accountability boundaries are drawn."
+    }
+  },
+  "processes:activity-ao-design-9fmjnt": {
+    "plain_language_name": "Set the Accountability Boundaries of Each Role",
+    "plain_language_description": "This activity marks, for every role the catalogue now lists, what that role is answerable for and where its responsibility ends. The defined levels come in last, the accountability boundary of each role is worked out and checked against its neighbours, and the bounded accountabilities are confirmed with the design authority. What is filed leaves no doubt about who owns which piece of work.",
+    "business_purpose": "It exists so responsibility between roles is unambiguous, with no gaps where work falls between two roles and no overlaps where both claim it.",
+    "practical_context": "It runs late in role catalogue design, once the levels within each family are set, and it closes when the bounded accountabilities are confirmed and their audit record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority draws the accountability line between two adjacent levels so handovers between them are unambiguous, then confirms each role's boundary with the authority."
+    }
+  },
+  "processes:activity-ao-design-tfhe6e": {
+    "plain_language_name": "Commit the Role Catalogue",
+    "plain_language_description": "This activity gathers the families, levels, and accountability boundaries into the finished role catalogue and gives it formal standing. The bounded accountabilities arrive as the last piece, the whole catalogue is consolidated and reviewed, and its commitment is confirmed so downstream provisioning has one authoritative list of roles to work from. The committed catalogue is then preserved as an audit record.",
+    "business_purpose": "It exists so the enterprise holds one ratified list of roles that provisioning, planning, and staffing all answer to.",
+    "practical_context": "It takes place at the close of role catalogue design, once accountability boundaries are set, and it completes when the committed catalogue is confirmed, handed to provisioning, and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the defined families, levels, and accountability boundaries into the complete catalogue, obtains the organization design authority's commitment, and files the audit record that lets provisioning begin."
+    }
+  },
+  "processes:activity-ao-improve-2bds64": {
+    "plain_language_name": "Baseline the Current Competencies of the Agent Population",
+    "plain_language_description": "This activity measures where the enterprise's agents actually stand today against the competency framework it designed. The framework and the current population are brought together, each person and artificial agent is assessed against the framework's anchors, and the results are compiled into a population baseline. The baseline is confirmed and retained so every later gap finding rests on measurement rather than impression.",
+    "business_purpose": "It exists so capability analysis starts from an honest, measured picture of current competence instead of assumptions.",
+    "practical_context": "It opens the capability gap analysis, when the committed competency framework and the operating population are presented together, and it closes once the baseline is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A custodian working for the organization design authority runs the framework's assessment anchors across the current population, compiles the results into one baseline, and files it for the gap identification step."
+    }
+  },
+  "processes:activity-ao-improve-eyvh62": {
+    "plain_language_name": "Identify the Capability Gaps",
+    "plain_language_description": "This activity reads the measured baseline against what the framework requires and names every place the population falls short. The baseline arrives first, each shortfall is worked out and recorded in its own right, and the identified gaps are confirmed with the design authority. Nothing is ranked yet; the point here is a complete, honest list of what is missing.",
+    "business_purpose": "It exists so shortfalls between designed and actual capability are named explicitly before anyone decides what to do about them.",
+    "practical_context": "It follows the baselining of population competencies, when the measured baseline is presented, and it completes once the identified gaps are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian compares the baseline domain by domain against the framework's requirements, records each shortfall as a named gap, and hands the list to the prioritization step."
+    }
+  },
+  "processes:activity-ao-improve-rk3g4q": {
+    "plain_language_name": "Prioritize the Capability Gaps",
+    "plain_language_description": "This activity ranks the identified shortfalls by how much each one matters to the organization's structure and direction. The gap list comes in, each entry is weighed for its impact and placed in order, and the ranking is confirmed with the design authority. The output tells development planning which shortfalls to treat first rather than presenting an undifferentiated list.",
+    "business_purpose": "It exists so development effort goes first to the shortfalls that hurt the organization most, rather than being spent evenly across everything found.",
+    "practical_context": "It runs once the capability gaps have been identified, when the gap list is presented for ranking, and it closes when the prioritized list is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian weighs each identified gap by its bearing on critical roles and the organization's direction, puts the one affecting a key role at the top, and confirms the ranking with the design authority."
+    }
+  },
+  "processes:activity-ao-improve-g5bube": {
+    "plain_language_name": "Commit the Gap Priorities",
+    "plain_language_description": "This activity is where the ranked capability shortfalls are formally accepted and set in motion. The prioritized list is taken in and reviewed, its ratification is confirmed, and the committed priorities are routed to the development planning side and to learning operations as their standing input. An audit record of the commitment is preserved so the analysis thread can be traced end to end.",
+    "business_purpose": "It exists so the ranked shortfalls become a binding instruction to development planning rather than an advisory report.",
+    "practical_context": "It closes the capability gap analysis, once the gaps have been ranked, and it completes when the committed priorities are confirmed, routed, and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian presents the ranked gaps for the organization design authority's ratification, records the commitment, and routes the priorities to the development planning and learning teams."
+    }
+  },
+  "processes:activity-ao-improve-awnbw6": {
+    "plain_language_name": "Collect the Engagement Signals",
+    "plain_language_description": "This activity gathers, at the review's regular intervals, the evidence of how engaged the operating population actually is. The operating agents and teams are taken in as the source, the periodic signals are collected and logged, and the compiled set is confirmed for the review to work from. What is filed gives the review real evidence rather than anecdotes about engagement.",
+    "business_purpose": "It exists so engagement conclusions rest on collected evidence from the population itself, gathered on a regular rhythm.",
+    "practical_context": "It happens at each engagement and alignment review cycle, when the operating population is presented for evidence gathering, and it closes once the collected signals are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian gathers the periodic engagement evidence from teams across the operating population, logs each signal with its audit identifiers, and hands the compiled set to the review."
+    }
+  },
+  "processes:activity-ao-improve-ceqsy3": {
+    "plain_language_name": "Assess Agent Alignment",
+    "plain_language_description": "This activity weighs the collected engagement evidence to judge how far agents still track the direction the organization has set. The signals come in and are examined, an alignment judgement is formed for the population and its parts, and the assessment is confirmed with the review. Where drift shows up, the assessment names it plainly for the findings to carry forward.",
+    "business_purpose": "It exists so drift away from the organization's direction is caught while it can still be corrected.",
+    "practical_context": "It follows the collection of engagement signals, when the compiled evidence is presented, and it completes once the alignment assessment is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian reads the collected signals against the organization's current direction, notes a team whose work has drifted from it, and records that judgement in the alignment assessment."
+    }
+  },
+  "processes:activity-ao-improve-zzszrd": {
+    "plain_language_name": "Formulate the Engagement Findings",
+    "plain_language_description": "This activity draws the engagement evidence and the alignment assessment together into the review's written findings. The assessment arrives first, the findings are drafted from it and the evidence behind it, and the formulated findings are confirmed for commitment. The result is a clear statement of what the review established, ready to be routed onward.",
+    "business_purpose": "It exists so the review produces clear, evidence-backed statements rather than leaving its conclusions scattered across signals and assessments.",
+    "practical_context": "It runs once agent alignment has been assessed, when the assessment is presented for drafting, and it completes when the formulated findings are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian drafts the review's findings, pairing each alignment judgement with the evidence behind it, and confirms the formulated findings ahead of formal commitment."
+    }
+  },
+  "processes:activity-ao-improve-ab6gqb": {
+    "plain_language_name": "Commit the Engagement Review Findings",
+    "plain_language_description": "This activity gives the review's formulated findings formal standing and sends them to work. The formulated findings are taken in and reviewed, their commitment is confirmed, and the committed findings are routed into development so the next planning cycle inherits them. The commitment is preserved as an audit record for later reference.",
+    "business_purpose": "It exists so engagement and alignment conclusions become committed inputs to development planning instead of review-stage paperwork.",
+    "practical_context": "It closes the engagement and alignment review, once findings have been formulated, and it completes when the committed findings are confirmed, routed, and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian brings the formulated findings forward for ratification, records the commitment, and routes them to the development planning team with the audit record on file."
+    }
+  },
+  "processes:activity-ao-improve-6fusds": {
+    "plain_language_name": "Gather the Development Drivers",
+    "plain_language_description": "This activity brings together, in one place, every pressure saying the agents or the organization need to develop: engagement findings, capability priorities, and reorganization requirements. The separate review outputs are taken in and compiled, the consolidated set of drivers is confirmed, and it is filed as the single case development planning will answer. Nothing is planned yet; the point is a complete picture of why development is needed.",
+    "business_purpose": "It exists so development responds to every improvement pressure through one consolidated view instead of fragmented, competing requests.",
+    "practical_context": "It opens the development effort, when engagement findings, gap priorities, and reorganization triggers arrive, and it closes once the gathered drivers are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian collects the committed review findings, the gap priorities, and the reorganization requirements into a single development case, and confirms the consolidated drivers for planning."
+    }
+  },
+  "processes:activity-ao-improve-eq6pbr": {
+    "plain_language_name": "Plan Agent Development",
+    "plain_language_description": "This activity works out, driver by driver, what development actions will be taken, spanning the population of agents and the organization itself. The gathered drivers come in first, actions are matched to each one and arranged into a plan, and the plan is confirmed with the design authority. It ends with a complete development plan ready to be executed, treating people and artificial agents alike.",
+    "business_purpose": "It exists so improvement is planned deliberately against named drivers rather than improvised as ad hoc initiatives.",
+    "practical_context": "It follows the gathering of development drivers, when the consolidated case is presented for planning, and it completes once the development plan is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian matches a development action to each gathered driver, arranges them into one plan covering people and artificial agents alike, and confirms the plan with the design authority."
+    }
+  },
+  "processes:activity-ao-improve-r6h2g7": {
+    "plain_language_description": "This activity carries out the development plan's actions, applying them to the agents and organization the plan names, people and artificial alike. The confirmed plan arrives first, each action is executed in turn and its completion logged, and the executed set is confirmed back to the review step. It ends with the planned improvement actually done rather than promised.",
+    "plain_language_name": "Execute the Development Actions",
+    "business_purpose": "It exists so the planned development genuinely happens across the mix, with each action's completion evidenced.",
+    "practical_context": "It runs once the development plan is confirmed, when the plan is presented for execution, and it closes when the executed actions are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian works through the development plan action by action, applies each one to the agents it names, logs completions with their audit identifiers, and confirms the executed set."
+    }
+  },
+  "processes:activity-ao-improve-5tzwvk": {
+    "plain_language_name": "Review the Development Outcomes",
+    "plain_language_description": "This activity checks what the executed development actually achieved against the drivers that gave rise to it. The executed actions come in, each outcome is weighed against its originating driver, and the reviewed outcomes are confirmed for the record. What the review learns feeds the next planning cycle, so development keeps improving on itself.",
+    "business_purpose": "It exists so the enterprise knows which development actions genuinely addressed their drivers and which need another pass.",
+    "practical_context": "It follows the execution of development actions, when the completed set is presented, and it completes once the reviewed outcomes are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian takes each completed action, checks whether it addressed the driver behind it, records where a gap remains, and confirms the reviewed outcomes for the next cycle."
+    }
+  },
+  "processes:activity-ao-improve-x7m4n2": {
+    "plain_language_name": "Run the Regulator-Mandated Recurrent Training",
+    "plain_language_description": "This activity puts the live licensed-role holders through the recurring training their regulator requires, working from the training matrix for each role. The live role list arrives with the matrix, each holder completes the cycle their role demands, and the completions are recorded on the personnel record. The recorded completions are confirmed and retained so the enterprise can show the regulator its people stay current.",
+    "business_purpose": "It exists so holders of licensed roles stay current with the regulator's continuing-competence expectations, cycle after cycle.",
+    "practical_context": "It runs on the continuing-competence calendar against the live role list, and it completes when the training completions are confirmed and preserved on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian works through the training matrix for each holder of a licensed role, sees the recurrent cycle completed, and records the completion on the personnel file for the confirmation step."
+    }
+  },
+  "processes:activity-ao-improve-k9w5p8": {
+    "plain_language_name": "Run the Fit and Propriety Re-Assessment Cycle",
+    "plain_language_description": "This activity re-checks, at the interval each role's regulator requires, that the people holding licensed roles remain fit and proper to hold them. The live role list and the re-assessment calendar come in together, each holder is re-assessed in their turn, and the outcomes are recorded on the personnel record. What is filed proves fitness is re-examined on schedule rather than assumed from a one-time attestation.",
+    "business_purpose": "It exists so fitness for licensed roles is re-proven on the regulator's rhythm instead of resting on a single past attestation.",
+    "practical_context": "It runs to the re-assessment calendar against the live role list, and it closes once the re-assessment outcomes are confirmed and preserved on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian works the re-assessment calendar for the live producer-role holders, sees each annual fitness re-check completed, and records the outcomes on the personnel file."
+    }
+  },
+  "processes:activity-ao-improve-f2r6t4": {
+    "plain_language_name": "Execute the Regulator-Mandated Remediation",
+    "plain_language_description": "This activity carries out the remediation a role holder requires, whether the program is supervised by the regulator or driven by the employer. The remediation trigger and its plan arrive together, the plan is executed step by step with evidence kept along the way, and a completion record is produced on the personnel file. The record is confirmed and retained so the enterprise can demonstrate the remediation was finished, not left open.",
+    "business_purpose": "It exists so mandated remediation for licensed-role holders is executed and evidenced to conclusion rather than left unresolved.",
+    "practical_context": "It happens when a remediation trigger and its plan are presented, whether from regulator supervision or employer-driven action, and it completes when the completion record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian runs the supervised-practice plan for a licensed role holder who fell short, keeps the evidence at each step, and files the completion record once the plan finishes."
+    }
+  },
+  "processes:activity-ao-improve-uudtp5": {
+    "plain_language_name": "Notify the Continuing Supervisor of the Improvement",
+    "plain_language_description": "This activity tells the ongoing supervisor of each licensed role what has been recorded: training completions, fitness re-assessments, and remediation outcomes alike. The improvement record and the defined notification path arrive together, the notices go out along that path with the content and cadence it specifies, and the notification record is confirmed and filed. The supervisor is thereby kept current on the role holder's competence picture.",
+    "business_purpose": "It exists so the supervisor overseeing a licensed role always holds the role holder's current competence and remediation picture.",
+    "practical_context": "It runs as each improvement cycle completes and its record lands on the personnel file, and it closes when the notification record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian sends the ongoing supervisor notice of a completed fitness re-assessment along the agreed notification path, and files the notification record for audit."
+    }
+  },
+  "processes:activity-ao-improve-evxkz9": {
+    "plain_language_name": "Set the Scope of the Reorganization",
+    "plain_language_description": "This activity decides exactly how much structural change the reorganization will cover, taking its cue from committed review findings and any change of direction. Those inputs come in and are examined, the boundary of the required change is drawn around the affected units, roles, and reporting lines, and the bounded scope is confirmed with the design authority. Work outside that line is expressly out of scope.",
+    "business_purpose": "It exists so structural change addresses the named findings without scope creeping across the rest of the organization.",
+    "practical_context": "It opens the reorganization, when committed review findings or a direction change require structural change, and it closes once the bounded scope is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority reads the committed review findings, draws the change boundary around the affected units and reporting lines, and confirms the scope before any sequencing begins."
+    }
+  },
+  "processes:activity-ao-improve-rnkywc": {
+    "plain_language_name": "Sequence the Structure Transition",
+    "plain_language_description": "This activity puts the bounded structural change into a controlled order of moves. The scoped change arrives first, the transition steps are arranged so each part of the organization is ready before the next move lands, and the sequenced transition is confirmed with the design authority. The filed sequence becomes the script the execution step follows.",
+    "business_purpose": "It exists so the reorganization lands in an order that keeps the organization working while it moves, rather than disrupting everything at once.",
+    "practical_context": "It follows the bounding of reorganization scope, when the scoped change is presented for ordering, and it completes once the sequenced transition is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian orders the transition so a receiving team is fully in place before handovers begin, checks each step against the bounded scope, and confirms the sequence with the design authority."
+    }
+  },
+  "processes:activity-ao-improve-pp4uvg": {
+    "plain_language_name": "Execute the Structure Transition",
+    "plain_language_description": "This activity carries out the sequenced transition, moving units, roles, and agents through the change in the agreed order. The sequence comes in first, each step is executed and checked against it as the work proceeds, and the executed transition is confirmed once complete. What is filed shows the change was carried out to the plan rather than improvised along the way.",
+    "business_purpose": "It exists so the planned structural change genuinely happens, in the agreed order, across every affected unit, role, and agent.",
+    "practical_context": "It runs once the transition sequence is confirmed, when the sequenced steps are presented for execution, and it closes when the executed transition is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian walks the transition step by step, moves each unit and role in the agreed order, checks progress against the sequence, and confirms the executed transition for the handover recording."
+    }
+  },
+  "processes:activity-ao-improve-gtc9k8": {
+    "plain_language_name": "Record the Accountability Handovers",
+    "plain_language_description": "This activity logs, as the executed transition settles, every handover of accountability the change produced: which accountability moved, who gave it up, and who now holds it. The executed transition arrives as the input, each handover is recorded against it, and the handover records are confirmed and preserved. After the reorganization, the file shows exactly who owns what.",
+    "business_purpose": "It exists so the enterprise can always show who holds each accountability after structural change, with the handovers on record.",
+    "practical_context": "It follows the execution of the structure transition, when the completed moves are presented, and it completes once every handover is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian logs each handover from the executed transition, naming the outgoing and incoming holder for every accountability moved, and preserves the records for audit."
+    }
+  },
+  "processes:activity-ao-operate-pxxmge": {
+    "plain_language_name": "Provision the Collaboration Workspaces",
+    "plain_language_description": "This activity sets up the shared working arrangements that agents and teams need in order to work together once in service. The operating organization and its teams arrive as the input, the workspaces each grouping needs are provisioned and made ready, and the provisioned set is confirmed for the teams involved. Joint work then has somewhere defined to happen, shared across people and artificial agents alike.",
+    "business_purpose": "It exists so collaboration in service has proper shared ground to happen on, rather than each grouping improvising its own.",
+    "practical_context": "It happens when the operating organization and its teams need shared working arrangements for joint work, and it completes once the provisioned workspaces are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian sets up the shared workspace a mixed team of people and artificial agents will use, checks it is ready for joint work, and confirms it to the team."
+    }
+  },
+  "processes:activity-ao-operate-6r6m2g": {
+    "plain_language_name": "Maintain the Interaction Norms",
+    "plain_language_description": "This activity keeps the agreed expectations for how agents and teams engage in the shared workspaces current as collaboration runs. The provisioned workspaces come in as the starting point, the norms governing work within them are reviewed and refreshed where needed, and the maintained norms are confirmed to the users. The point is that the rules of engagement stay fit for the collaboration actually happening.",
+    "business_purpose": "It exists so joint work follows settled expectations instead of being renegotiated case by case every time agents and teams meet.",
+    "practical_context": "It runs once the collaboration workspaces are provisioned, as day-to-day collaboration throws up changes worth settling, and it closes when the maintained norms are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian refreshes the engagement norms after teams are regrouped, confirms the updated expectations with the people and agents who work under them, and files the record."
+    }
+  },
+  "processes:activity-ao-operate-xnd6yx": {
+    "plain_language_name": "Facilitate the Cross-Team Interactions",
+    "plain_language_description": "This activity keeps interactions flowing between the enterprise's agents and its teams, wherever they sit in the organization, working within the maintained norms of engagement. The norms come in as the footing, the cross-team interactions are enabled and supported as day-to-day work demands, and the facilitated interactions are confirmed for the record. Collaboration across team lines thereby proceeds without each exchange needing special arrangement.",
+    "business_purpose": "It exists so joint work across team lines proceeds smoothly in service instead of stalling at every boundary.",
+    "practical_context": "It runs in day-to-day service, once the interaction norms are maintained and cross-team work is under way, and it completes as facilitated interactions are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian connects two teams and their artificial agents for a piece of joint work, keeps the exchange within the agreed norms, and confirms the interaction for the record."
+    }
+  },
+  "processes:activity-ao-operate-v356a4": {
+    "plain_language_name": "Resolve the Collaboration Frictions",
+    "plain_language_description": "This activity takes the frictions that surface in cross-team work and works them through to resolution. The facilitated interactions arrive as the source, each friction is examined and settled against the agreed norms, and the resolutions are confirmed and filed. Left alone, such frictions accumulate; here they are cleared while they are still small.",
+    "business_purpose": "It exists so friction between teams and agents is settled early, before it accumulates into disruption of day-to-day service.",
+    "practical_context": "It happens when facilitated cross-team work surfaces a friction, and it closes once each resolution is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian settles a handoff disagreement between a team and the team owning an artificial agent, lands the resolution within the agreed norms, and files it for the record."
+    }
+  },
+  "processes:activity-ao-operate-duu9yw": {
+    "plain_language_name": "Set the Performance Expectations",
+    "plain_language_description": "This activity fixes, before each agent enters active operation, what will be expected of them in their role. The onboarded agents and their roles arrive first, the expectations for each are worked out and agreed, and the set expectations are confirmed for the record. From then on, performance in service is judged against a yardstick agreed in advance rather than invented after the fact.",
+    "business_purpose": "It exists so performance in service is measured against expectations agreed before the work starts, for people and artificial agents alike.",
+    "practical_context": "It happens as onboarded agents and their roles arrive to enter active operation, and it completes once the expectations are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian sets out what will be expected of a newly onboarded analyst in their role, agrees the expectations with the receiving team, and files them before the agent's first day in service."
+    }
+  },
+  "processes:activity-ao-operate-k5uvhg": {
+    "plain_language_name": "Monitor Agent Performance",
+    "plain_language_description": "This activity tracks how each agent performs in service against the expectations agreed for their role, applying the same approach to people and artificial agents. The set expectations come in as the reference, performance is observed through the operating period, and the monitoring results are confirmed for the record. Where results diverge from expectations, the monitoring surfaces them for the exception step.",
+    "business_purpose": "It exists so day-to-day performance stays visible against agreed expectations while there is still time to act on it.",
+    "practical_context": "It runs continuously through the operating period, once expectations are set for each agent, and it completes each cycle when the monitoring results are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian follows each agent's results through the operating period, compares them with the role's agreed expectations, and logs the outcomes for the cycle review."
+    }
+  },
+  "processes:activity-ao-operate-yyqtzw": {
+    "plain_language_name": "Address the Performance Exceptions",
+    "plain_language_description": "This activity takes up the performance shortfalls that monitoring surfaces and works each one through to a settled outcome. The monitored results arrive as the trigger, each exception is examined and handled, and the handled exceptions are confirmed for the record. The aim is that nothing surfacing in service stays unaddressed past the cycle that found it.",
+    "business_purpose": "It exists so performance shortfalls found in service are corrected promptly instead of lingering into the next cycle.",
+    "practical_context": "It happens when monitoring surfaces a performance exception during the operating period, and it closes once each exception is confirmed handled and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian takes up an agent whose results keep missing the agreed expectations, works through the cause and settles the handling, and files the outcome for the cycle review."
+    }
+  },
+  "processes:activity-ao-operate-vs4qaq": {
+    "plain_language_name": "Review the Agent Performance Cycles",
+    "plain_language_description": "This activity draws each operating period's monitoring results and handled exceptions together into a periodic review, and commits what the review concludes. The monitored performance and the addressed exceptions arrive as its inputs, the cycle is reviewed as a whole, and the outcomes are confirmed and preserved. Each cycle's lessons then stand ready to shape the next one.",
+    "business_purpose": "It exists so agent performance is managed as a repeating cycle that learns, with each period's outcomes committed rather than lost.",
+    "practical_context": "It happens at the close of each performance cycle, once monitoring and exception handling are complete, and it finishes when the reviewed outcomes are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian assembles the cycle's monitoring results and settled exceptions, reviews the period as a whole, and confirms the outcomes for the record ahead of the next cycle."
+    }
+  }
+}

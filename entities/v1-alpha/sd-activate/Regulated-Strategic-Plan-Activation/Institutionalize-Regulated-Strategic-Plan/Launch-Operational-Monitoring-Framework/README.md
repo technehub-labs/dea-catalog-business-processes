@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 This is a **Activity** (level L3), named **Launch Operational Monitoring Framework**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Institutionalize Regulated Strategic Plan** (`processes:process-sd-activate-s9m34e`). Its canonical ID is `processes:activity-sd-activate-92pg6h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Activation is not complete until someone is actually watching the numbers. At intake the acknowledged plan and the mandated monitoring arrangements are registered, and verification confirms the measures, limits and early warnings match what the supervisor requires. The framework then goes live, confirmation tells the regulator-facing teams it is running, and the live framework is preserved on the regulated strategic-plan record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It stands up the day-to-day oversight machinery — measures, limits, early warnings — that keeps the activated plan observable to its supervisor.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins when the acknowledged plan and the monitoring requirements arrive at intake and ends when confirmation declares the framework live and its record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Risk function analysts register the acknowledged plan at intake, verify the early-warning indicators against the supervisor's expectations, and switch on the reporting rhythm; the operations function feeds the monthly figures while the supervising authority receives confirmation that monitoring is live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Launch Operational Monitoring Framework |
+| `plain_language_description` | string | no | Activation is not complete until someone is actually watching the numbers. At intake the acknowledged plan and the … |
+| `business_purpose` | string | no | It stands up the day-to-day oversight machinery — measures, limits, early warnings — that keeps the activated plan … |
+| `practical_context` | string | no | It begins when the acknowledged plan and the monitoring requirements arrive at intake and ends when confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

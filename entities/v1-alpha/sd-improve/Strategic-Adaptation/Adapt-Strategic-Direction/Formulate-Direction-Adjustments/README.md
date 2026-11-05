@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Formulate Direction Adjustments**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Adapt Strategic Direction** (`processes:process-sd-improve-9wgvaf`). Its canonical ID is `processes:activity-sd-improve-qxsaqc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the case for change on the table, candidate answers are drafted. Intake registers the consolidated case, verification checks the drafting instructions are clear, and processing writes a set of candidate changes to the direction — each one traceable to the evidence that prompted it. Confirmation announces the candidate set downstream and the working papers are preserved for the implications check.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts the evidence case into concrete candidate changes, giving leadership real options for steering the direction back on course.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows consolidation, opening at intake of the adaptation case and closing when the candidate adjustments are confirmed ready for assessment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function planners draft candidate changes to the direction, each tagged to the evidence line that motivated it, and the confirmation custodian hands the set to the colleagues who will test the implications.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate Direction Adjustments |
+| `plain_language_description` | string | no | With the case for change on the table, candidate answers are drafted. Intake registers the consolidated case … |
+| `business_purpose` | string | no | It converts the evidence case into concrete candidate changes, giving leadership real options for steering the … |
+| `practical_context` | string | no | It follows consolidation, opening at intake of the adaptation case and closing when the candidate adjustments are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

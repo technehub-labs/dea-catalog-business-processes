@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Specify Operating Rhythms**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Operations Model** (`processes:process-eo-design-rvfpjb`). Its canonical ID is `processes:activity-eo-design-pze82f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the tempos the finished model will live by — its planning cycles, its review cadences, and the paths for escalation. The integrated model arrives as the thing to be timed, the rhythms are specified and checked against how the model actually works, and the rhythm specification is confirmed onward for the design's commitment. The model gains a heartbeat.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the operations model runs to deliberate tempos instead of improvising when to plan, review, or escalate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the component integration, when the coherent model is presented for timing, and it completes once the rhythm specification is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer sets the planning cycles, review cadences, and escalation paths for the integrated model, checks each tempo against how the model works, and confirms the specification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Specify Operating Rhythms |
+| `plain_language_description` | string | no | This activity sets the tempos the finished model will live by — its planning cycles, its review cadences, and the paths … |
+| `business_purpose` | string | no | It exists so the operations model runs to deliberate tempos instead of improvising when to plan, review, or escalate. |
+| `practical_context` | string | no | It follows the component integration, when the coherent model is presented for timing, and it completes once the rhythm … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

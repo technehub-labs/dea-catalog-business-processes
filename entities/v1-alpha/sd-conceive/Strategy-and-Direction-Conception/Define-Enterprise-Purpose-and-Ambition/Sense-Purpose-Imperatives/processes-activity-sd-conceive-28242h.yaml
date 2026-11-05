@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-r93j3d through concluding task processes:task-sd-conceive-record-2z4yfg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Purpose Imperatives'
+plain_language_description: 'Why does the enterprise need to state its purpose right now? This work gathers the answer at intake — founding context, reframing pressure, mandate signals — verifies which genuinely apply, and distils them into a sensed imperative set. Confirmation shares the set with downstream colleagues and the records custodian preserves it for the framing step.'
+business_purpose: 'It establishes why purpose work is happening at all, anchoring the definition in the establishment, reframe or mandate reality behind it.'
+practical_context: 'It opens this process at intake when establishment context and mandate signals arrive, closing once the imperatives are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead collects the founding papers and the latest mandate notes at intake, the verification custodian confirms which imperatives truly apply, and the sensed set is confirmed onward to the purpose framing team.'

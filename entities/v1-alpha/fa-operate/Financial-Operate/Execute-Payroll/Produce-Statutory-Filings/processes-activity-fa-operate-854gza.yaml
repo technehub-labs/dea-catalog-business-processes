@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-zpmxzp through concluding task processes:task-fa-operate-record-485667, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Produce Statutory Filings'
+plain_language_description: 'This activity prepares the returns the law demands as a result of each pay run. The completed cycle arrives with its compensation and withholding figures, the statutory filings are produced from them and checked, and the filings are confirmed onward. Paying people correctly and telling the authorities about it are completed together.'
+business_purpose: 'It exists so every payroll cycle leaves behind the statutory filings the law requires of it.'
+practical_context: 'It follows each cycle''s disbursement, working from the cycle''s own figures, and it completes when the produced filings are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function payroll officer produces the statutory filings from the completed cycle''s pay and withholding figures, checks them, and confirms the filings for the record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Frame Purpose Statement**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Define Enterprise Purpose and Ambition** (`processes:process-sd-conceive-r93j3d`). Its canonical ID is `processes:activity-sd-conceive-na8erc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The imperatives say why; this work says what. Intake registers the sensed set, verification tests candidate wording against the enterprise context, and processing crafts the short statement that declares what the organisation exists to do. Confirmation circulates the wording for the ambition step and the records custodian preserves the framed statement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a plain declaration of why it exists, the anchor every later strategy artifact refers back to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows sensing, opening at intake of the imperative set and closing when the agreed wording is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers draft candidate purpose wording, test each version against the sensed imperatives with the activity owner, and settle one statement that the confirmation custodian passes to the ambition work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Purpose Statement |
+| `plain_language_description` | string | no | The imperatives say why; this work says what. Intake registers the sensed set, verification tests candidate wording … |
+| `business_purpose` | string | no | It gives the enterprise a plain declaration of why it exists, the anchor every later strategy artifact refers back to. |
+| `practical_context` | string | no | It follows sensing, opening at intake of the imperative set and closing when the agreed wording is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

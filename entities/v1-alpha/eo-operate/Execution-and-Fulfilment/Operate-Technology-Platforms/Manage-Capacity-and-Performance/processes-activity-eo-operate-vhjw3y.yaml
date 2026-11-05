@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-4njp7b through concluding task processes:task-eo-operate-record-wseve3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Manage Capacity and Performance'
+plain_language_description: 'This activity watches how demand presses on each platform''s capacity and adjusts the operating settings to keep performance where it was promised. Usage and performance telemetry arrive continuously, the balance is tracked and the settings tuned as demand moves, and the maintained posture is confirmed for the record. Growth meets a platform that was readied for it.'
+business_purpose: 'It exists so platform performance holds at its agreed level as demand shifts, by tuning rather than by luck.'
+practical_context: 'It runs continuously against the usage and performance telemetry, and each tuning pass closes when the adjusted capacity posture is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A platform custodian reads the telemetry as demand climbs toward a platform''s capacity, tunes the operating settings to hold performance, and confirms the adjusted posture for the record.'

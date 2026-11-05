@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-pnrhem through concluding task processes:task-ao-conceive-record-6v6fz2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Declare the Regulator-Licensed Role Mix'
+plain_language_description: 'This activity settles and states which regulator-licensed roles the enterprise''s planned capacity actually includes, how many of each kind, and what regulator-controlled scope each one carries. The agent-capacity strategy and the licensing taxonomy come in first, the role mix is worked up and reviewed against them, and the resulting declaration is confirmed and placed on the personnel record. From then on, downstream work has an authoritative statement of the licensed roles it is staffing.'
+business_purpose: 'It exists so the enterprise''s regulated-scope declaration spells out its licensed role commitment before any design or build work begins.'
+practical_context: 'It occurs when the agent-capacity strategy is set to include regulator-licensed roles and the licensing taxonomy is to hand, and it closes when the committed declaration is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead, working with workforce management, decides the enterprise will carry a defined count of controlled-function roles, records the scope tied to each category, and confirms the declaration that later design work will staff against.'

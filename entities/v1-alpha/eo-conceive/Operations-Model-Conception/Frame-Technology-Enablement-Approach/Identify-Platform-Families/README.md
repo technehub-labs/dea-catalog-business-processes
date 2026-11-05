@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Identify Platform Families**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Technology Enablement Approach** (`processes:process-eo-conceive-68mp6v`). Its canonical ID is `processes:activity-eo-conceive-c3quwt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity picks out the families of technology platforms the operating model will lean on, recording them in a shortlist for later assessment. The operations strategy and the delivery envelope arrive as the basis, families are identified and gathered into a register, and the register is confirmed onward for the fit work. Which kinds of technology are in play is thereby settled in principle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise names, early, the kinds of platforms its operating model will depend on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the technology enablement framing, once the strategy and delivery envelope are to hand, and it completes when the platform family register is confirmed for the fit assessment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead identifies the platform families the operating model leans on from the strategy and delivery envelope, gathers them into a register, and confirms the shortlist with the operations function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Platform Families |
+| `plain_language_description` | string | no | This activity picks out the families of technology platforms the operating model will lean on, recording them in a … |
+| `business_purpose` | string | no | It exists so the enterprise names, early, the kinds of platforms its operating model will depend on. |
+| `practical_context` | string | no | It opens the technology enablement framing, once the strategy and delivery envelope are to hand, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

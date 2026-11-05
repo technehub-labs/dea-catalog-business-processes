@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Commit Packaging Design**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Packaging and Configuration** (`processes:process-pv-design-a4c76s`). Its canonical ID is `processes:activity-pv-design-shqa4v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the packaging formats, the segment configurations, and the governing rules together into one committed design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the offering's packaging in the market. The proposition's market-facing shape becomes one owned design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the market receives the proposition through one committed packaging and configuration design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the packaging design once formats, configurations, and rules are designed, and it completes when the committed packaging design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the formats, segment configurations, and rules into the packaging design, obtains ratification, and records the committed design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Packaging Design |
+| `plain_language_description` | string | no | This activity draws the packaging formats, the segment configurations, and the governing rules together into one … |
+| `business_purpose` | string | no | It exists so the market receives the proposition through one committed packaging and configuration design. |
+| `practical_context` | string | no | It closes the packaging design once formats, configurations, and rules are designed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

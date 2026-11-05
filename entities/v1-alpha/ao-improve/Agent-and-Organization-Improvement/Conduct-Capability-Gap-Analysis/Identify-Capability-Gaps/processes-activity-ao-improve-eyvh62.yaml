@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-h3vgyf through concluding task processes:task-ao-improve-record-my33dc, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify the Capability Gaps'
+plain_language_description: 'This activity reads the measured baseline against what the framework requires and names every place the population falls short. The baseline arrives first, each shortfall is worked out and recorded in its own right, and the identified gaps are confirmed with the design authority. Nothing is ranked yet; the point here is a complete, honest list of what is missing.'
+business_purpose: 'It exists so shortfalls between designed and actual capability are named explicitly before anyone decides what to do about them.'
+practical_context: 'It follows the baselining of population competencies, when the measured baseline is presented, and it completes once the identified gaps are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian compares the baseline domain by domain against the framework''s requirements, records each shortfall as a named gap, and hands the list to the prioritization step.'

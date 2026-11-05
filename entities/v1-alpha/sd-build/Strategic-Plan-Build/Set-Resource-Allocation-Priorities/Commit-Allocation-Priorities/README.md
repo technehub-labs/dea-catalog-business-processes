@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Commit Allocation Priorities**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Set Resource Allocation Priorities** (`processes:process-sd-build-2pkz5n`). Its canonical ID is `processes:activity-sd-build-vgavkq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The ranking is settled and now it becomes binding. The prioritized decisions come in at intake, a final verification confirms each envelope still holds, and the priorities are committed so operating teams can fund and staff against them. Confirmation notifies downstream consumers of the committed priorities and the records custodian preserves the evidence at its retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It locks the resourcing ranks into a committed position, closing the process and giving operations a stable basis for spending decisions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once prioritisation is complete and closes with the commitment confirmed, downstream teams notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function confirms the final ranking, the confirmation custodian notifies operating teams that the committed priorities and envelopes are available, and the records custodian archives the commitment evidence so later budget rounds can retrieve it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Allocation Priorities |
+| `plain_language_description` | string | no | The ranking is settled and now it becomes binding. The prioritized decisions come in at intake, a final verification … |
+| `business_purpose` | string | no | It locks the resourcing ranks into a committed position, closing the process and giving operations a stable basis for … |
+| `practical_context` | string | no | It opens once prioritisation is complete and closes with the commitment confirmed, downstream teams notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

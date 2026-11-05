@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Process Purchase Requisitions**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Procurement Cycle** (`processes:process-eo-operate-vzcxx7`). Its canonical ID is `processes:activity-eo-operate-xn7mw4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes each incoming purchase request, checks it against the rules and the money set aside, and approves it for ordering. Requisitions arrive from across the operation, each is validated against policy and budget, and the approved ones are confirmed onward for ordering. Wanting something and being allowed to buy it are separated here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only requests that pass the policy and budget checks become orders the enterprise commits to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the procurement cycle, when requisitions arrive from the operation, and it completes as each validated request is approved and confirmed for ordering.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A procurement custodian validates each incoming requisition against the purchasing rules and its budget line, approves the ones that pass, and confirms them for ordering.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Process Purchase Requisitions |
+| `plain_language_description` | string | no | This activity takes each incoming purchase request, checks it against the rules and the money set aside, and approves … |
+| `business_purpose` | string | no | It exists so only requests that pass the policy and budget checks become orders the enterprise commits to. |
+| `practical_context` | string | no | It opens the procurement cycle, when requisitions arrive from the operation, and it completes as each validated request … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

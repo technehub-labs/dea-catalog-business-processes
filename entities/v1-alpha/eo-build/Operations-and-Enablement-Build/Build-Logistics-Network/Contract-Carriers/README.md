@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Contract Carriers**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Logistics Network** (`processes:process-eo-build-ba6ykz`). Its canonical ID is `processes:activity-eo-build-egr964`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the transport operators on under contract for the movement modes the design selected. The mode selections and the service-level designs arrive as the terms to strike, carrier agreements are negotiated and signed, and the contracted carriers are confirmed onward. Goods will move because someone is contractually obliged to move them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the network's movements rest on signed carrier agreements matching the designed modes and service levels.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside the network's physical build, once the transport mode selections and service-level designs are settled, and it completes when the contracted carriers are confirmed and their agreements retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian negotiates and signs carrier agreements for each selected transport mode to the agreed service levels, and confirms the contracted set for network verification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Contract Carriers |
+| `plain_language_description` | string | no | This activity brings the transport operators on under contract for the movement modes the design selected. The mode … |
+| `business_purpose` | string | no | It exists so the network's movements rest on signed carrier agreements matching the designed modes and service levels. |
+| `practical_context` | string | no | It runs alongside the network's physical build, once the transport mode selections and service-level designs are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

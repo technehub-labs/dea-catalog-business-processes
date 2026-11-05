@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-pxydu3 through concluding task processes:task-pr-design-record-cbwe62, whose outcome — Closure case file retained for Set Experience Quality Criteria under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set Experience Quality Criteria'
+plain_language_description: 'This activity fixes the checks the finished experience will have to pass. The specified patterns and designed touchpoints arrive as the thing to be measured, quality criteria are defined to be measurable and reviewed, and the criteria set is confirmed onward for the design''s commitment. The experience is promised, and now it is examinable.'
+business_purpose: 'It exists so the built experience can be objectively tested against designed, measurable criteria.'
+practical_context: 'It follows the touchpoints and patterns, when the experience''s shape is settled, and it completes once the quality criteria set is confirmed for the design''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management designer fixes the measurable checks the built experience must pass, reviews them for objectivity, and confirms the criteria set onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Assemble Strategic Roadmap**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Roadmap** (`processes:process-sd-build-7n4prh`). Its canonical ID is `processes:activity-sd-build-htapw4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Now the pieces become one navigable document. Intake registers the ordered initiatives and their fixed dates, verification makes sure nothing is missing or contradictory, and processing merges them into a single roadmap that reads from first step to last. When assembly is confirmed, downstream colleagues are notified and the assembled roadmap is preserved with its audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It combines order and dates into one roadmap artifact that the wider planning effort can read, challenge and ultimately commit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once sequencing and milestone anchoring are complete, closing when the assembled roadmap is confirmed as ready for commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function roadmap writer combines the agreed initiative order and the anchored dates into one document, a verification custodian confirms the threads tie together, and the confirmation custodian tells plan-build colleagues the draft roadmap is ready.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Strategic Roadmap |
+| `plain_language_description` | string | no | Now the pieces become one navigable document. Intake registers the ordered initiatives and their fixed dates … |
+| `business_purpose` | string | no | It combines order and dates into one roadmap artifact that the wider planning effort can read, challenge and ultimately … |
+| `practical_context` | string | no | It runs once sequencing and milestone anchoring are complete, closing when the assembled roadmap is confirmed as ready … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-conceive-emfgju through concluding task processes:task-pr-conceive-record-r58gjj, whose outcome — Closure case file retained for Formulate Demand Thesis under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Demand Thesis'
+plain_language_description: 'This activity sets out the enterprise''s belief about where its demand will come from and what will keep it coming. The bounded segment and articulated exchange arrive as the foundation, the demand thesis is formulated against them and reviewed for realism, and the formulated thesis is confirmed onward for the strategy''s commitment. The strategy''s bet on the future is stated here.'
+business_purpose: 'It exists so the strategy carries an explicit, reviewable belief about how its demand arises and sustains.'
+practical_context: 'It follows the segment and exchange framing, once both are confirmed, and it completes when the formulated demand thesis is confirmed onward for the strategy''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead sets out where demand from the chosen segment will come from and what sustains it, and confirms the demand thesis for the strategy''s commitment.'

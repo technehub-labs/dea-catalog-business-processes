@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Scope Intent Trade-offs**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Conceive Strategic Intent** (`processes:process-sd-conceive-3uredz`). Its canonical ID is `processes:activity-sd-conceive-e6epkt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every intent forces choices, and this work maps where the tension lies. The framed narrative and the environmental signals come in at intake, verification confirms both are current, and processing sketches the trade-off space the intent will have to cross — what may be traded and what may not. Confirmation passes the mapped space downstream and the records custodian preserves it ready for commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exposes the tensions the intent must cross, so commitment happens with eyes open about what is being traded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after framing, opening when the narrative and the signals are presented at intake and closing when the mapped trade-offs are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A pair of strategy function colleagues walks the framed narrative against fresh environment signals, lists where growth and risk pull against each other, and the confirmation custodian passes the agreed trade-off map to the colleagues preparing commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Scope the Intent Trade-offs |
+| `plain_language_description` | string | no | Every intent forces choices, and this work maps where the tension lies. The framed narrative and the environmental … |
+| `business_purpose` | string | no | It exposes the tensions the intent must cross, so commitment happens with eyes open about what is being traded. |
+| `practical_context` | string | no | It runs after framing, opening when the narrative and the signals are presented at intake and closing when the mapped … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

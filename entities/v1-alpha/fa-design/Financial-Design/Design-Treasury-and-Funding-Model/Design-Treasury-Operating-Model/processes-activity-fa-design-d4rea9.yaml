@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-k5sgfa through concluding task processes:task-fa-design-record-pmndv2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Treasury Operating Model'
+plain_language_description: 'This activity works out who does what in treasury — the roles, their mandates, and the systems they will use — to put the policies into practice. The liquidity rules and the funding make-up arrive as the things to be operated, the operating model is designed around them, and the model design is confirmed onward for the model''s commitment. Treasury gains hands, authority, and tools in one design.'
+business_purpose: 'It exists so the designed treasury policies have an operating model capable of executing them day to day.'
+practical_context: 'It follows the liquidity and funding designs, when both are to hand, and it completes once the treasury operating model design is confirmed for the model''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer sets treasury''s roles, mandates, and systems around the liquidity policy and funding structure, and confirms the operating model design for commitment.'

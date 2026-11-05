@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Commit Strategic Horizons**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Strategic Horizons** (`processes:process-sd-conceive-xa4h2k`). Its canonical ID is `processes:activity-sd-conceive-zz7qrg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The horizons are bounded, marked and aligned; commitment is all that remains. Intake registers the aligned set, a final verification confirms the periods and markers are complete, and the commitment locks the horizons in for the strategy work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed horizons on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It finalises the planning calendar as a committed artifact, closing horizon framing and equipping later strategy work with fixed periods.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once alignment is done and closes with the commitment confirmed, downstream consumers notified and the record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the aligned horizons, the confirmation custodian tells downstream strategy teams the committed windows and milestones are available, and the records custodian archives the evidence for the planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Horizons |
+| `plain_language_description` | string | no | The horizons are bounded, marked and aligned; commitment is all that remains. Intake registers the aligned set, a final … |
+| `business_purpose` | string | no | It finalises the planning calendar as a committed artifact, closing horizon framing and equipping later strategy work … |
+| `practical_context` | string | no | It opens once alignment is done and closes with the commitment confirmed, downstream consumers notified and the record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

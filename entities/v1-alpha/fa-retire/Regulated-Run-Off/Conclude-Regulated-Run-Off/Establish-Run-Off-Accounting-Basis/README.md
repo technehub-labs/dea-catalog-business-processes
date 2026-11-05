@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 This is a **Activity** (level L3), named **Establish Run-Off Accounting Basis**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Conclude Regulated Run-Off** (`processes:process-fa-retire-wkbrsa`). Its canonical ID is `processes:activity-fa-retire-t3uyxp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity moves the books off their going-concern footing and onto the run-off statutory basis the regulator requires, reworking how value is recognized, how liabilities are measured, and which assets still count. The going-concern position, the run-off authorisation, and the controlling rule set arrive together, the transition is executed and its adjustments recorded, and the run-off statutory accounts are confirmed onward. The enterprise's financial story formally changes its ending here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the winding-down entity reports on the statutory basis its run-off regime demands from day one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the run-off once the authorisation is granted, transitioning the statements from going-concern to the statutory basis, and it completes when the run-off statutory accounts with basis-of-preparation disclosure are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance officer transitions the statements from going-concern to the run-off statutory basis under the controlling rule set, records the transition adjustments, and confirms the run-off accounts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Run-Off Accounting Basis |
+| `plain_language_description` | string | no | This activity moves the books off their going-concern footing and onto the run-off statutory basis the regulator … |
+| `business_purpose` | string | no | It exists so the winding-down entity reports on the statutory basis its run-off regime demands from day one. |
+| `practical_context` | string | no | It opens the run-off once the authorisation is granted, transitioning the statements from going-concern to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-edjyha through concluding task processes:task-ao-improve-record-rngcnt, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Agent Alignment'
+plain_language_description: 'This activity weighs the collected engagement evidence to judge how far agents still track the direction the organization has set. The signals come in and are examined, an alignment judgement is formed for the population and its parts, and the assessment is confirmed with the review. Where drift shows up, the assessment names it plainly for the findings to carry forward.'
+business_purpose: 'It exists so drift away from the organization''s direction is caught while it can still be corrected.'
+practical_context: 'It follows the collection of engagement signals, when the compiled evidence is presented, and it completes once the alignment assessment is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian reads the collected signals against the organization''s current direction, notes a team whose work has drifted from it, and records that judgement in the alignment assessment.'

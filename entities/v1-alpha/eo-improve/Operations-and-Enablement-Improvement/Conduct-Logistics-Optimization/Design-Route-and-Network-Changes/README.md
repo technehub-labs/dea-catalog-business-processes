@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Design Route and Network Changes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Logistics Optimization** (`processes:process-eo-improve-3fem63`). Its canonical ID is `processes:activity-eo-improve-nrsv8w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works the analyzed opportunities into concrete changes to routes and the network. The opportunity analysis arrives with the routing specification as the frame, changes are designed against both and their impact assessed, and the change designs are confirmed onward for commitment. Each opportunity gains a specific, costed answer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every evidenced opportunity gets a concrete, impact-assessed change rather than a vague intention.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the performance analysis, when the bounded opportunities are presented for design, and it completes once the change designs with impact assessments are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer turns each bounded opportunity into a concrete route or network change, assesses its impact against the routing specification, and confirms the designs for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Route and Network Changes |
+| `plain_language_description` | string | no | This activity works the analyzed opportunities into concrete changes to routes and the network. The opportunity … |
+| `business_purpose` | string | no | It exists so every evidenced opportunity gets a concrete, impact-assessed change rather than a vague intention. |
+| `practical_context` | string | no | It follows the performance analysis, when the bounded opportunities are presented for design, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Track Continuing-Competence Completion**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Regulated Performance Oversight** (`processes:process-ao-operate-ba8scr`). Its canonical ID is `processes:activity-ao-operate-b5v2k9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps a running tally of each licensed role holder's continuing-competence progress against their plan. The live role list and the competence plan come in, completions are logged as they happen, and the tracking record is confirmed and retained. The tally shows who is current, who is falling behind, and by how much.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise always knows where each licensed role holder stands against their continuing-competence plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs throughout a licensed role's live operation, logging competence completions as they land, and it closes each tracking pass when the completion record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian logs each completed competence activity against the holder's plan, updates the running tally, and files the tracking record for oversight.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Continuing-Competence Completion |
+| `plain_language_description` | string | no | This activity keeps a running tally of each licensed role holder's continuing-competence progress against their plan … |
+| `business_purpose` | string | no | It exists so the enterprise always knows where each licensed role holder stands against their continuing-competence … |
+| `practical_context` | string | no | It runs throughout a licensed role's live operation, logging competence completions as they land, and it closes each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

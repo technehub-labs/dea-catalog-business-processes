@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Assemble Effectiveness Evidence**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Review Strategy Effectiveness** (`processes:process-sd-improve-duwd64`). Its canonical ID is `processes:activity-sd-improve-pke2va`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Is the direction actually working? This work gathers what would let anyone answer that. The monitored performance and the review-cycle records arrive at intake, verification checks each item bears on real outcomes, and processing assembles the outcome picture against what the direction promised to deliver. Confirmation shares the assembled picture downstream and the records custodian preserves it for the evaluation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It builds the factual basis for judging the strategy itself, so the effectiveness verdict stands on evidence rather than anecdote.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the monitored performance and review records arrive, closing once the assembled evidence is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst pulls the performance figures and review-cycle records into one outcome dossier, a verification custodian confirms every item bears on a promised outcome, and the confirmation custodian passes the dossier to the evaluation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Effectiveness Evidence |
+| `plain_language_description` | string | no | Is the direction actually working? This work gathers what would let anyone answer that. The monitored performance and … |
+| `business_purpose` | string | no | It builds the factual basis for judging the strategy itself, so the effectiveness verdict stands on evidence rather … |
+| `practical_context` | string | no | It opens this process at intake when the monitored performance and review records arrive, closing once the assembled … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

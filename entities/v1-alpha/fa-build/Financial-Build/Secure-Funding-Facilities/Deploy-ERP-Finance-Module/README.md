@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Deploy ERP Finance Module**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Secure Funding Facilities** (`processes:process-fa-build-ydnzjc`). Its canonical ID is `processes:activity-fa-build-va7nxd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity installs the finance heart of the enterprise's wider system estate so the new function has its tooling. The financial systems design arrives as the specification, the ERP finance module is deployed into operational state against it, and the deployed module is confirmed for the function's use. The stood-up team gets its working toolkit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the finance function operates on a deployed ERP module built to the financial systems design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the funding securing, once the function is stood up, and it completes when the deployed ERP finance module is confirmed in operational state and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder deploys the ERP finance module to operational state per the financial systems design, and confirms the deployment for the stood-up function's use.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deploy ERP Finance Module |
+| `plain_language_description` | string | no | This activity installs the finance heart of the enterprise's wider system estate so the new function has its tooling … |
+| `business_purpose` | string | no | It exists so the finance function operates on a deployed ERP module built to the financial systems design. |
+| `practical_context` | string | no | It closes the funding securing, once the function is stood up, and it completes when the deployed ERP finance module is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-retire-wkbrsa through concluding task processes:task-fa-retire-record-66qqzn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Reserving Discipline'
+plain_language_description: 'This activity holds the line on the numbers that keep a winding-down book solvent — the reserve, the capital cushion, and the matching of assets to liabilities — reviewed on the regime''s rhythm and reported to the regulator. Run-off experience, asset valuations, and liability cashflow projections arrive as the inputs, the discipline is maintained with actuarial certification, and corrective action is taken where the numbers demand it. Solvency is not an event in a run-off; it is a practice.'
+business_purpose: 'It exists so the winding-down entity stays demonstrably solvent throughout its run-off, on the regime''s reserving standard.'
+practical_context: 'It runs throughout the run-off period to the regime''s review cadence, and each maintained reserve with its actuarial certification closes when it is confirmed and reported to the regulator.'
+worked_example:
+  agent_type: human
+  narrative: 'The actuarial function certifies the maintained reserve each period, and where the cashflow projections move against the book, corrective action on capital or asset matching is taken and reported to the regulator.'

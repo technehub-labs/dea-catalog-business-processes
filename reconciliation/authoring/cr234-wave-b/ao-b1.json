@@ -1,0 +1,402 @@
+{
+  "processes:activity-ao-activate-sq2zfw": {
+    "plain_language_name": "Activate Signing Authority or Controlled-Function Designation",
+    "plain_language_description": "Once a licensed individual's verified licence and designation are on the table, this activity switches on the formal authority the role carries and files it against the personnel record. The work passes through five custodian steps: the request is logged in, the designation details are checked against what was approved, the authority is set up in its final form, the people who rely on it are told it is available, and the audit trail is filed. From that point the individual's continuing supervisor is on notice, and the role's formal authority is live.",
+    "business_purpose": "It exists so a licensed role's signing or decision-making authority only goes live together with the notification that keeps a continuing supervisor accountable for it.",
+    "practical_context": "It happens late in mobilizing a licensed workforce, when the verified licence and the designation are presented after licence verification and the fitness attestation, and it closes once the activation's audit record is preserved for retrieval.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead receives the verified licence details for a newly approved controlled-function appointee, has the designation set up on the personnel record, and issues the notification that places the continuing supervisor on notice before the appointee's first day of live work."
+    }
+  },
+  "processes:activity-ao-activate-x9hy5e": {
+    "plain_language_name": "Attest Fitness and Propriety",
+    "plain_language_description": "This activity captures the formal statement that a licensed individual is fit and proper for their role and files it on the personnel record. The fitness evidence is brought in and examined, the attestation is drawn up and confirmed to those who rely on it, and the attested record is kept for audit. What is filed has to match the fitness standard that applies to the role, because the attestation is made while the regulator keeps the role under continuing oversight.",
+    "business_purpose": "It exists so nobody goes live in a licensed role without a documented fitness attestation backing the enterprise's assurance to its regulator.",
+    "practical_context": "It runs during the mobilization of a licensed role, once the licence has been verified and the fitness evidence is to hand, and it completes when the attested fitness record is preserved on the personnel file.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead gathers the medical certification and good-standing evidence for a clinician joining a regulated team, checks it against the fitness standard for the role, and files the signed attestation on the personnel record."
+    }
+  },
+  "processes:activity-ao-activate-bsjbfc": {
+    "plain_language_name": "Record Supervised-Training Completion",
+    "plain_language_description": "This activity makes sure the evidence that a licensed individual finished their supervised training is captured and kept on the personnel record. The training plan and the completion evidence are logged in and checked, the completion record is drawn up, its availability is confirmed to those who depend on it, and it is preserved for later audit. Without that preserved record, the individual's readiness for live work in the licensed role cannot be demonstrated.",
+    "business_purpose": "It exists so the enterprise can show from its own records that every licensed role holder completed the supervised training their role requires.",
+    "practical_context": "It takes place during mobilization when the role's training plan and the supervised-completion evidence are ready, and it closes once the completion record is held at the agreed retention tier with retrieval handles established.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian for workforce management receives the signed-off supervised-training completion for a newly type-rated crew member, verifies it against the role's training plan, and preserves the completion record on the personnel file."
+    }
+  },
+  "processes:activity-ao-activate-z4yhzy": {
+    "plain_language_name": "Verify Regulator Licence or Registration",
+    "plain_language_description": "This activity checks that the licence or registration behind a licensed role is current, is in good standing, and actually fits the live role it is meant to support. The regulator-controlled role and its licence record are brought in together, the licence is examined against what the role requires, and a verified licence record with the scope of practice attested is produced. Confirmation goes to whoever is waiting on it, and the verification is retained as an auditable record.",
+    "business_purpose": "It exists so only individuals whose regulator licence genuinely matches the role's controlled scope are progressed toward live work on the personnel record.",
+    "practical_context": "It happens at the start of mobilizing a licensed role, when the regulator-controlled role and the licence record are presented together, and it is complete once the verified licence record is confirmed and filed for later reference.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management checker takes an insurance producer's licence details, confirms the line of authority is current and in good standing against the licence record, and files the verified licence record that the remaining mobilization steps rely on."
+    }
+  },
+  "processes:activity-ao-build-khtsgv": {
+    "plain_language_name": "Integrate Agents into the Organization",
+    "plain_language_description": "Once agents have been onboarded into their roles, this activity connects them into the teams and ways of working they will operate in. The onboarded agents are brought in and logged, their placements are checked against the team structure, the connections are put in place, and the teams involved are told the agents are ready to work with them. The work ends with the agents operating inside the organization's team arrangements rather than standing outside them.",
+    "business_purpose": "It exists so newly onboarded agents stop being a list of arrivals and start working as part of the organization's teams and coordination patterns.",
+    "practical_context": "It follows onboarding during agent acquisition, when the onboarded agents are presented for placement into teams, and it closes once the integrated agents are confirmed and an audit record of the integration is retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian places a batch of newly onboarded agents into their assigned teams, checks each connection against the agreed coordination patterns, and files the audit record once the teams confirm the agents are ready to collaborate."
+    }
+  },
+  "processes:activity-ao-build-gceqs6": {
+    "plain_language_name": "Onboard Agents",
+    "plain_language_description": "This activity takes the agents that have been acquired and brings them to readiness in the roles they were recruited or stood up for. Each arrival is logged in, the requirements of their role are checked, and the onboarding arrangements are put in place and confirmed. It finishes with the agents ready in their roles, their expected competencies addressed, and an audit record of the onboarding kept on file.",
+    "business_purpose": "It exists so acquired agents arrive in their roles with the competencies the roles expect, ready for integration into the organization.",
+    "practical_context": "It runs during agent acquisition once selection has produced the acquired agents, and it completes when confirmation is issued and the onboarding record is preserved for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian walks a newly hired analyst and a newly deployed artificial agent through their role requirements, confirms both are onboarded with the expected competencies in place, and hands them over for integration into their teams."
+    }
+  },
+  "processes:activity-ao-build-7xrz4d": {
+    "plain_language_name": "Provision Agent Capacity",
+    "plain_language_description": "This activity sets up the agent capacity that the committed organization structure has called for. The structure design is taken in and reviewed, the capacity it requires is worked out and arranged, and the provisioned capacity is confirmed back to those who planned the structure. It ends with capacity in place for the structure that needs it and an audit record of the provisioning kept.",
+    "business_purpose": "It exists so selection and acquisition work against a real, provisioned amount of capacity rather than an unquantified staffing intention.",
+    "practical_context": "It happens when the committed organization structure design arrives during agent acquisition, and it closes once the provisioned agent capacity is confirmed and the provisioning record is retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian takes the committed organization structure, works out the agent capacity it calls for across people and artificial agents, confirms the provisioned capacity, and files the audit record for the records custodian to preserve."
+    }
+  },
+  "processes:activity-ao-build-4vccpu": {
+    "plain_language_name": "Select and Acquire Agents",
+    "plain_language_description": "This activity chooses and brings in the agents needed to fill the provisioned capacity, judging candidates on merit rather than on the kind of agent they are. The capacity to be filled is logged in and checked, the selections are made and executed as acquisitions, and the outcome is confirmed with the planners. It ends with acquired agents handed over for onboarding and the acquisition record preserved.",
+    "business_purpose": "It exists so the organization fills its provisioned capacity with the right agents, whether people or artificial agents, chosen on suitability alone.",
+    "practical_context": "It runs when the provisioned agent capacity is presented during acquisition, and it finishes once the acquired agents are confirmed and the acquisition record is kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian compares candidates for a provisioned capacity slot, selects the strongest fit whether that is a person or an artificial agent, records the acquisition, and notifies the onboarding step that the acquired agents are on their way."
+    }
+  },
+  "processes:activity-ao-build-yjbucg": {
+    "plain_language_name": "Identify Pool Demand",
+    "plain_language_description": "This activity works out where the enterprise needs surge or specialist help that ordinary direct acquisition cannot supply in time. The committed structure design and capacity plan are taken in and examined, the gaps are identified and written up as pool demand, and the finding is confirmed with those planning the response. It ends with the identified pool demand recorded so the pool build can target it.",
+    "business_purpose": "It exists so the contractor and partner pool is built against genuinely identified demand rather than built speculatively.",
+    "practical_context": "It occurs when the committed organization structure design and capacity plan show demand that direct acquisition cannot serve within the required timeframes, and it closes once the identified demand is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead reviewing the capacity plan spots a seasonal surge that direct acquisition cannot staff in time, has the gap written up as identified pool demand, and confirms it with workforce management."
+    }
+  },
+  "processes:activity-ao-build-9bwc8j": {
+    "plain_language_name": "Vet Pool Sources",
+    "plain_language_description": "This activity qualifies the contractor and partner organisations that could serve the identified pool demand. Each candidate source is logged in and its standing is examined, and the sources that pass are drawn up as the vetted source list. Confirmation is issued to the people arranging the pool, and the vetting results are kept as an audit record.",
+    "business_purpose": "It exists so only sources the enterprise has properly qualified are allowed into its contractor and partner reserve.",
+    "practical_context": "It happens once the pool demand has been identified, when candidate sources are presented for qualification, and it closes when the vetted sources are confirmed and the vetting record is retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian examines a shortlist of contractor firms and partner agencies against the identified specialist demand, records which sources passed vetting, and notifies the processing custodian that the qualified sources are ready for engagement planning."
+    }
+  },
+  "processes:activity-ao-build-jgtegj": {
+    "plain_language_name": "Establish Activation Paths",
+    "plain_language_description": "This activity sets out how vetted pool sources will actually be engaged when the enterprise needs them. The vetted sources are taken in and checked, the routes from source to engagement are worked up, and the established paths are confirmed with the people who will use them. It closes with the paths recorded, so drawing on the pool later means following an agreed route rather than improvising one.",
+    "business_purpose": "It exists so the vetted pool can be brought online quickly when surge or specialist demand arrives.",
+    "practical_context": "It follows the vetting of pool sources, when the qualified sources are presented for engagement planning, and it completes once the established activation paths are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian for the pool build turns the vetted source list into agreed engagement routes, confirms for each source how activation would work, and files the record of the established paths for the team that will commit the pool."
+    }
+  },
+  "processes:activity-ao-build-cxafrf": {
+    "plain_language_name": "Commit the Contractor and Partner Pool",
+    "plain_language_description": "This activity is the point where the assembled pool of contractors and partner agents is formally accepted as a standing operational capacity. The established activation paths are taken in and reviewed, the pool's readiness is drawn together, and its acceptance is confirmed so the enterprise can rely on it alongside direct acquisition. The commitment is then preserved as an audit record.",
+    "business_purpose": "It exists so the enterprise holds a ratified reserve it can draw on whenever direct acquisition alone cannot meet demand.",
+    "practical_context": "It takes place at the end of the pool build, once activation paths have been established, and it closes when the committed pool is confirmed and its audit record retained at the agreed tier.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian presents the finished pool, with its vetted sources and activation paths, for the governing board's ratification, and once it is accepted records the commitment that makes the pool an operational capacity alongside direct acquisition."
+    }
+  },
+  "processes:activity-ao-build-q7m3k9": {
+    "plain_language_name": "Verify Candidates Against the Regulator Licence Registry",
+    "plain_language_description": "This activity confirms, candidate by candidate, that the qualifications people claim for licensed roles really are registered with the relevant regulator. The candidate list is brought in and each person's details are checked against the licence registry, with each confirmed licence record attached to the candidate it covers. The results are confirmed to the next stage and retained so the verification can be evidenced later.",
+    "business_purpose": "It exists so the enterprise builds its licensed-candidate pool on registrations it has actually confirmed, not on credentials it has merely been told about.",
+    "practical_context": "It runs at the start of building the regulated agent pool, when the candidate list and access to the regulator registries are presented, and it closes once the verified candidate list is confirmed and its record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks each clinician's details against the state healthcare licensure registries, records the licence status found for everyone on the list, and passes the verified list on for the fitness attestation step."
+    }
+  },
+  "processes:activity-ao-build-w2n8p4": {
+    "plain_language_name": "Attest Fitness and Propriety for the Pool",
+    "plain_language_description": "This activity records the initial fitness attestation for every candidate sitting in the regulated pool. The verified candidate list and the attestation regime arrive first, each candidate is assessed against the applicable criteria by the designated attestor, and the attested list is produced and confirmed to those who depend on it. The attestations are then kept on the personnel record so the pool is demonstrably fit before anyone goes live.",
+    "business_purpose": "It exists so no candidate reaches activation without the fitness attestation their regulator expects, keeping the pool defensible.",
+    "practical_context": "It happens after registry verification has produced the verified candidate list, and it closes when the attested candidate list is confirmed and the attestation record is preserved on the personnel file.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian applies the employer's fitness criteria to each verified candidate for a producer role, records who passed the initial attestation, and files the attested list with the records custodian for retention."
+    }
+  },
+  "processes:activity-ao-build-bufzrw": {
+    "plain_language_name": "Screen Candidates Against Sanctions, AML, FCRA, and ADA Requirements",
+    "plain_language_description": "This activity runs each fitness-attested candidate through the regulator-specific clearances the enterprise must apply before they join the regulated pool. The candidate list comes in with the screening matrix, every person is checked against the sanctions, financial-crime, background, and fitness requirements that apply, and a screened candidate list with those clearances is produced. The results are confirmed to the next stage and kept as evidence that the screening happened before activation.",
+    "business_purpose": "It exists so the pool carries only candidates who have cleared the sanctions, financial-crime, background, and fitness screening that regulator-tied work demands.",
+    "practical_context": "It follows the fitness attestation of the pool, when the attested candidate list and the screening matrix are presented, and it closes once the screened candidate list is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian runs each attested candidate through the sanctions and financial-crime screening matrix, notes the clearances obtained, and hands the screened list to the records step so the evidence is preserved on the personnel file."
+    }
+  },
+  "processes:activity-ao-build-r6h2t8": {
+    "plain_language_name": "Stage the Regulated Personnel Record",
+    "plain_language_description": "This activity assembles the personnel file each cleared candidate needs before being activated into a licensed role. The screened candidate list is taken in, and for each person the file is built up with the scope a supervisor controls, the fitness attestation, the plan for supervised training, and the route for notifying the continuing supervisor. Once the staged records are confirmed as ready, activation can proceed later without any of these checks being repeated.",
+    "business_purpose": "It exists so every cleared candidate arrives at activation with a complete, staged personnel record already waiting for them.",
+    "practical_context": "It runs at the end of the pool build, once candidates have cleared screening, and it completes when the staged records are confirmed and preserved, leaving the pool ready for activation without re-screening.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian sets up the personnel file for a newly cleared candidate, attaching the supervisor-controlled scope, the fitness attestation, and the training plan, and confirms the staged record is ready so later activation needs no repeated screening."
+    }
+  },
+  "processes:activity-ao-conceive-cqkwrm": {
+    "plain_language_name": "Declare the Regulator-Licensed Role Mix",
+    "plain_language_description": "This activity settles and states which regulator-licensed roles the enterprise's planned capacity actually includes, how many of each kind, and what regulator-controlled scope each one carries. The agent-capacity strategy and the licensing taxonomy come in first, the role mix is worked up and reviewed against them, and the resulting declaration is confirmed and placed on the personnel record. From then on, downstream work has an authoritative statement of the licensed roles it is staffing.",
+    "business_purpose": "It exists so the enterprise's regulated-scope declaration spells out its licensed role commitment before any design or build work begins.",
+    "practical_context": "It occurs when the agent-capacity strategy is set to include regulator-licensed roles and the licensing taxonomy is to hand, and it closes when the committed declaration is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead, working with workforce management, decides the enterprise will carry a defined count of controlled-function roles, records the scope tied to each category, and confirms the declaration that later design work will staff against."
+    }
+  },
+  "processes:activity-ao-conceive-vnkqzf": {
+    "plain_language_name": "Document the Fitness and Propriety Attestation Regime",
+    "plain_language_description": "This activity writes down, ahead of any hiring, exactly how fitness and propriety will be attested for each planned licensed role. The licensing taxonomy and the attestation regime matrix are brought in, the forms of attestation and who attests are worked through, and the resulting regime is documented on the personnel record. Confirmation and retention close the work, giving later attestation steps a regime to follow rather than decisions to make.",
+    "business_purpose": "It exists so fitness attestations for licensed roles follow a declared regime agreed in advance, not case-by-case judgement.",
+    "practical_context": "It happens while licensed capacity is being conceived, once the regulator licensing taxonomy is available, and it completes when the documented regime is confirmed and preserved on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead sets out when initial and periodic attestations will occur for a planned licensed role, names whether the candidate, employer, or regulator attests, and files the documented regime for the teams that will apply it."
+    }
+  },
+  "processes:activity-ao-conceive-fmxtqr": {
+    "plain_language_name": "Map Supervised-Training Completion Requirements",
+    "plain_language_description": "This activity works out in advance what supervised training each planned licensed role will require and how its completion will be evidenced and recorded. The licensing taxonomy and the training matrix come in, the training plan and the evidence class for each role are mapped, and the mapped requirements are confirmed and retained. Later mobilization steps then know precisely what training evidence to look for.",
+    "business_purpose": "It exists so supervised-training expectations for licensed roles are mapped before recruitment, giving activation a clear standard to check against.",
+    "practical_context": "It occurs while licensed capacity is being conceived, when the regulator licensing taxonomy and the training matrix are presented, and it closes once the mapped requirements are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management planner maps the supervised-training plan and the completion evidence required for a type-rating role, agrees the recording path for the completion evidence, and files the mapped requirements for use at activation."
+    }
+  },
+  "processes:activity-ao-conceive-v7g5se": {
+    "plain_language_name": "Capture the Continuing-Supervisor Notification Path",
+    "plain_language_description": "This activity records, for each planned licensed role, who the continuing supervisor will be and how that supervisor will be kept informed. The licensing taxonomy and the supervision matrix are taken in, the supervisor identity, notification cadence, notification content, and escalation arrangements are worked up, and the captured path is confirmed and placed on the personnel record. Activation later simply issues the notification this path defines.",
+    "business_purpose": "It exists so every licensed role enters service with its continuing supervision arrangements already fixed and ready to trigger.",
+    "practical_context": "It runs during the conception of licensed capacity, once the supervision matrix is available alongside the licensing taxonomy, and it completes when the captured notification path is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead records which supervisor will hold continuing oversight for a planned controlled-function role, sets the cadence and content of the notifications and the escalation arrangements, and files the path for activation to use."
+    }
+  },
+  "processes:activity-ao-conceive-4tgrxr": {
+    "plain_language_name": "Set the Human, Artificial, and Hybrid Workforce Proportions",
+    "plain_language_description": "This activity fixes the proportions of people, artificial agents, and blended arrangements that the future workforce mix will aim for. The committed organization and agent strategy comes in first, the proportions are worked out and reviewed against it, and the agreed proportions are confirmed to those planning the mix. Once set, they act as the guardrails within which the detailed mix is drafted.",
+    "business_purpose": "It exists so the organization commits deliberately to how much of its capacity is human, artificial, or hybrid before acquisition decisions are made.",
+    "practical_context": "It follows commitment of the organization and agent strategy, when the strategy is presented for mix planning, and it closes once the proportions are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead, working with workforce management, weighs the committed strategy and fixes how much of the coming capacity will be people, artificial agents, or blended arrangements, confirming the proportions before the mix is drafted."
+    }
+  },
+  "processes:activity-ao-conceive-9mvxt3": {
+    "plain_language_name": "Set the Capacity Envelopes for the Workforce Mix",
+    "plain_language_description": "This activity draws the planning limits within which each part of the workforce mix has to operate. The agreed proportions are taken in and reviewed, the capacity envelope for each of them is worked out, and the envelopes are confirmed with the planners and recorded. Drafting of the mix then happens inside those envelopes rather than by open-ended ambition.",
+    "business_purpose": "It exists so each proportion of the planned mix comes with a workable capacity limit that acquisition and planning can be held to.",
+    "practical_context": "It happens once the substrate proportions have been agreed, when they are presented for envelope planning, and it closes when the envelopes are confirmed and their record kept for the drafting step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead takes the agreed proportions and works out how much capacity each part of the mix may claim, confirms the envelopes with the strategy function, and files them so the mix can be drafted within agreed limits."
+    }
+  },
+  "processes:activity-ao-conceive-73s2vm": {
+    "plain_language_name": "Draft the Workforce and Agent Mix",
+    "plain_language_description": "This activity puts together the actual composition of the workforce mix, working inside the proportions and capacity envelopes already agreed. The envelopes arrive first, the mix is drafted against them and checked for fit, and the draft is confirmed with the people who will ratify it. It ends with a complete draft mix ready to be committed as the organization's reference for acquisition and planning.",
+    "business_purpose": "It exists so the blend of people and artificial agents is shaped deliberately within agreed limits before anything is committed.",
+    "practical_context": "It runs once the capacity envelopes are in place during mix conception, and it completes when the drafted mix has been confirmed and its record preserved for the commitment step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management planner drafts the shape of the future mix inside the agreed envelopes, tests the draft against each proportion, and hands the confirmed draft to the strategy function for commitment."
+    }
+  },
+  "processes:activity-ao-conceive-njcgbs": {
+    "plain_language_name": "Commit the Workforce and Agent Mix",
+    "plain_language_description": "This activity is where the drafted workforce mix is formally accepted and passed on. The drafted mix is taken in and reviewed, its ratification is confirmed, and the committed mix is handed to the design work that will turn it into roles and structure. An audit record of the commitment is preserved so the decision can be traced later.",
+    "business_purpose": "It exists so the conceived blend of people and artificial agents becomes a binding reference that design and acquisition must follow.",
+    "practical_context": "It happens at the close of mix conception, when the drafted mix is presented for ratification, and it completes once the committed mix is confirmed, handed over, and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian presents the drafted mix for the strategy function's ratification, and once it is confirmed, records the committed mix and notifies the organization and role design team that it is theirs to work from."
+    }
+  },
+  "processes:activity-ao-conceive-5fytar": {
+    "plain_language_name": "Derive the Structure Principles",
+    "plain_language_description": "This activity turns the newly committed strategy for the organization and its agents into the structural ground rules the organization model will have to respect. The strategy is brought in and studied, the principles the structure must follow are derived from it, and the derived principles are confirmed with those framing the model. From then on, decisions about spans and boundaries are made inside those principles.",
+    "business_purpose": "It exists so the organization model is framed from explicit strategic principles rather than from habit or ad hoc preference.",
+    "practical_context": "It opens the framing of the organization model, when the committed organization and agent strategy is presented, and it closes once the derived principles are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead reads the newly committed strategy and draws out the structural principles it implies, such as how decision rights should sit, then confirms those principles with workforce management before reporting spans are set."
+    }
+  },
+  "processes:activity-ao-conceive-m77sb9": {
+    "plain_language_name": "Set the Permitted Reporting Spans",
+    "plain_language_description": "This activity decides how wide reporting relationships may run anywhere in the organization model. The derived structure principles come in and are reviewed, the permitted span limits are worked out against them, and the agreed spans are confirmed to the framers of the model. The limits are then recorded so no later design step can quietly stretch a reporting line beyond what the model allows.",
+    "business_purpose": "It exists so reporting loads stay manageable by design, with span limits fixed before concrete roles are drawn up.",
+    "practical_context": "It follows derivation of the structure principles, when those principles are presented for span setting, and it closes once the bounded spans are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead takes the agreed structure principles and sets the maximum number of direct reports any position in the model may carry, confirming the limits before coordination boundaries are marked out."
+    }
+  },
+  "processes:activity-ao-conceive-ycwkts": {
+    "plain_language_name": "Mark Out the Coordination Boundaries",
+    "plain_language_description": "This activity marks where one unit's responsibility ends and another's begins, including between the human and artificial parts of the organization. The bounded reporting spans arrive first, the coordination boundaries are worked out from them and reviewed, and the agreed boundaries are confirmed and recorded. Design work that follows then knows exactly where cooperation has to be arranged rather than assumed.",
+    "business_purpose": "It exists so units and substrates interact through deliberate, agreed boundaries instead of colliding over undefined edges.",
+    "practical_context": "It runs after the reporting spans have been set, when the spans are presented for boundary work, and it completes when the boundaries are confirmed and their record preserved for the model's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead, working from the agreed reporting spans, marks the boundary between a business unit and a team of artificial agents so handovers between them are arranged deliberately rather than improvised."
+    }
+  },
+  "processes:activity-ao-conceive-rcyn7u": {
+    "plain_language_name": "Commit the Organization Model Frame",
+    "plain_language_description": "This activity gathers the principles, spans, and boundaries produced during framing and fixes them as the organization model's frame. The bounded coordination boundaries come in last, the whole frame is consolidated and reviewed, and its commitment is confirmed so structure design can rely on it. The committed frame is preserved as an audit record for later reference.",
+    "business_purpose": "It exists so the organization's structural ground rules become one committed frame that all later design work answers to.",
+    "practical_context": "It takes place at the end of framing the organization model, once the coordination boundaries have been marked, and it closes when the committed frame is confirmed and its record retained at the agreed tier.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the derived principles, reporting spans, and coordination boundaries into a single frame, obtains the strategy function's commitment, and files the audit record that lets structure design begin against a stable reference."
+    }
+  },
+  "processes:activity-ao-conceive-fyb9vc": {
+    "plain_language_name": "Sense the Organization Imperatives",
+    "plain_language_description": "This activity picks up the pressures that make the enterprise need a new or reframed workforce direction, such as a shift toward artificial agents in the mix. The enterprise strategy and the signals about shifting substrates are brought in and examined, and the imperatives behind the coming change are drawn out and confirmed with the leadership. Those imperatives then set the agenda for bounding agent capacity.",
+    "business_purpose": "It exists so the organization and agent strategy is framed in response to real, named pressures rather than in a vacuum.",
+    "practical_context": "It happens when a new agentive fabric is being established, an existing one is being reframed, or a substrate shift calls for board-level realignment, and it closes once the sensed imperatives are confirmed and recorded.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead gathers the signals that artificial agents are changing how work gets done, draws out the imperatives the enterprise must respond to, and confirms them with workforce management as the input to bounding agent capacity."
+    }
+  },
+  "processes:activity-ao-conceive-36aux4": {
+    "plain_language_name": "Set How Much Agent Capacity to Commit",
+    "plain_language_description": "This activity decides how much agent capacity the coming strategy should commit the enterprise to. The sensed imperatives come in and are reviewed, the capacity boundary is worked out from them, and the bounded capacity is confirmed with those drafting the strategy. It ends with a clear answer to how much agent capacity is in scope, recorded for the drafting step.",
+    "business_purpose": "It exists so the strategy commits to a definite amount of agent capacity rather than an open-ended ambition.",
+    "practical_context": "It follows the sensing of organization imperatives, when those imperatives are presented for capacity planning, and it closes once the bounded capacity is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead weighs the imperatives behind a workforce realignment and sets the amount of agent capacity the strategy will commit to, confirming the boundary with workforce management before the strategy is drafted."
+    }
+  },
+  "processes:activity-ao-conceive-9p2cup": {
+    "plain_language_name": "Draft the Organization and Agent Strategy",
+    "plain_language_description": "This activity writes the first full version of the strategy that will steer how the enterprise organizes its workforce, including where artificial agents fit. The bounded agent capacity arrives first, the strategy is drafted from it and reviewed for coherence, and the draft is confirmed with those who will ratify it. Once accepted, it sets the direction for framing the organization model and conceiving the workforce mix.",
+    "business_purpose": "It exists so the enterprise has a coherent written direction for its workforce and agents before committing to it.",
+    "practical_context": "It runs after agent capacity has been bounded, when the capacity boundary is presented for strategy drafting, and it completes when the drafted strategy is confirmed and its record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead turns the agreed agent capacity boundary into a draft strategy covering the organization model and the workforce mix, then confirms the draft with workforce management ahead of formal commitment."
+    }
+  },
+  "processes:activity-ao-conceive-476rpj": {
+    "plain_language_name": "Commit the Organization and Agent Strategy",
+    "plain_language_description": "This activity is where the drafted organization and agent strategy is formally ratified and put to work. The drafted strategy is taken in and reviewed, its commitment is confirmed at the level that owns the decision, and the committed strategy is handed to the framing and mix work that follows. An audit record of the commitment is preserved so the enterprise can trace its workforce direction back to this point.",
+    "business_purpose": "It exists so the enterprise's workforce direction is a committed decision that model framing and mix conception must follow.",
+    "practical_context": "It occurs at the close of strategy framing, when the drafted strategy is presented for ratification, and it completes once the committed strategy is confirmed, handed on, and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian brings the drafted strategy forward for board-level ratification, records the commitment once it is made, and notifies the model framing and mix conception teams that the committed strategy is theirs to execute."
+    }
+  },
+  "processes:activity-ao-design-vtuma6": {
+    "plain_language_name": "Classify the Placement Candidates",
+    "plain_language_description": "This activity sorts the roles and pieces of work in the designed structure into candidates for people, artificial agents, or a blend of both. The committed organization model frame comes in first, each role and work item is examined and typed, and the classified candidates are confirmed with the design authority. The typing then anchors the placement decisions that follow.",
+    "business_purpose": "It exists so placement decisions start from an explicit classification of what work could sit where, rather than from assumptions.",
+    "practical_context": "It opens the design of the agent topology, when the framed organization model is presented for placement work, and it closes once the classified candidates are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer working for the organization design authority goes through the roles in the new structure, marks which are suited to people, artificial agents, or hybrid arrangements, and files the classification that placement decisions will build on."
+    }
+  },
+  "processes:activity-ao-design-h3q5rc": {
+    "plain_language_name": "Decide Human, Artificial, or Hybrid Placement",
+    "plain_language_description": "This activity makes the actual call, for each classified role or work item, on whether a person, an artificial agent, or a hybrid of the two will do it. The classified candidates are taken in and reviewed, the placement of each is decided, and the decisions are confirmed with the design authority. The settled placements are recorded so coordination design can connect them.",
+    "business_purpose": "It exists so every role in the structure has a definite answer about who or what performs it.",
+    "practical_context": "It follows classification of the placement candidates, when the classified list is presented for decision, and it completes once the placements are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Working from the classified list, the organization design authority decides that a recurring approval task will be handled by an artificial agent while the judgement calls stay with a person, and records that hybrid placement for the coordination design step."
+    }
+  },
+  "processes:activity-ao-design-j98gk4": {
+    "plain_language_name": "Design the Coordination Patterns",
+    "plain_language_description": "This activity works out how the placed people, artificial agents, and hybrid arrangements will work together in practice. The decided placements come in first, the handoffs and collaboration patterns between them are designed and reviewed, and the patterns are confirmed with the design authority. They are then recorded so the committed topology shows not just who sits where, but how they connect.",
+    "business_purpose": "It exists so the placed agents do not merely coexist but interact through deliberate, designed patterns.",
+    "practical_context": "It runs once substrate placements have been decided, when the placements are presented for coordination work, and it closes when the designed patterns are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority sketches how a human reviewer and an artificial drafting agent will hand work to each other, confirms the pattern with the wider design team, and files it alongside the placement decisions."
+    }
+  },
+  "processes:activity-ao-design-pc9dh3": {
+    "plain_language_name": "Commit the Agent Topology",
+    "plain_language_description": "This activity brings the placements and coordination patterns together and fixes them as the organization's agent topology. The designed patterns arrive last, the whole topology is consolidated and reviewed, and its commitment is confirmed so downstream activation has a single authoritative reference. The committed topology is then preserved as an audit record.",
+    "business_purpose": "It exists so acquisition planning receives one committed picture of what agents the organization needs and how they connect.",
+    "practical_context": "It happens at the end of topology design, once the coordination patterns have been designed, and it closes when the committed topology is confirmed and its record retained at the agreed tier.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the decided placements and designed coordination patterns into the finished topology, obtains the organization design authority's commitment, and files the audit record that lets acquisition planning proceed."
+    }
+  },
+  "processes:activity-ao-design-e63vge": {
+    "plain_language_name": "Identify the Competency Domains",
+    "plain_language_description": "This activity works out which broad areas of capability the designed structure actually depends on. The committed organization structure design comes in first, the capability areas it calls for are identified and reviewed, and the identified domains are confirmed with the design authority. They then become the scaffold on which proficiency levels are defined.",
+    "business_purpose": "It exists so the competency framework covers the capabilities the structure genuinely needs rather than a generic list.",
+    "practical_context": "It opens the design of the competency framework, when the committed structure design is presented, and it closes once the identified domains are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority reads the committed structure and identifies the broad capability areas it relies on, then confirms those domains as the basis for defining proficiency levels."
+    }
+  },
+  "processes:activity-ao-design-amjqu5": {
+    "plain_language_name": "Define the Proficiency Levels",
+    "plain_language_description": "This activity breaks each competency domain into the steps of mastery that people and agents will progress through. The identified domains arrive first, the levels within each are defined and reviewed, and the defined levels are confirmed with the design authority. Once set, they give the framework a common vocabulary for how capable someone is in a domain.",
+    "business_purpose": "It exists so capability in each domain can be discussed in agreed steps rather than impressions.",
+    "practical_context": "It follows identification of the competency domains, when the domains are presented for level definition, and it completes when the defined levels are confirmed and their record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority splits a newly identified domain into distinct proficiency steps, checks that the steps are meaningfully different, and records the defined levels ready for assessment anchoring."
+    }
+  },
+  "processes:activity-ao-design-749rxd": {
+    "plain_language_name": "Set the Assessment Anchors for Each Proficiency Level",
+    "plain_language_description": "This activity fixes the observable markers that tell one proficiency level apart from the next. The defined levels are brought in, the assessment anchors for each are worked out and reviewed, and the anchored assessment approach is confirmed with the design authority. With the anchors in place, judgements about capability rest on agreed evidence rather than feel.",
+    "business_purpose": "It exists so proficiency assessments are consistent and defensible, anchored to markers agreed in advance.",
+    "practical_context": "It runs once proficiency levels are defined, when the levels are presented for anchoring, and it closes once the anchored assessment is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A designer for the organization design authority describes the concrete evidence that separates a developing practitioner from a seasoned one in each domain, confirms those anchors, and files them so future assessments judge against the same markers."
+    }
+  },
+  "processes:activity-ao-design-3ebtma": {
+    "plain_language_name": "Commit the Competency Framework",
+    "plain_language_description": "This activity gathers the domains, levels, and assessment anchors into the finished competency framework and gives it formal standing. The anchored assessment arrives last, the whole framework is consolidated and reviewed, and its commitment is confirmed so the enterprise can use it as its yardstick for capability. The committed framework is then preserved as an audit record.",
+    "business_purpose": "It exists so the enterprise holds one ratified standard for capability that gap analysis and development planning can rely on.",
+    "practical_context": "It takes place at the close of competency framework design, once the assessment anchors are in place, and it completes when the committed framework is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the identified domains, defined levels, and assessment anchors into the complete framework, obtains the organization design authority's commitment, and preserves the audit record that establishes the framework as the capability yardstick."
+    }
+  }
+}

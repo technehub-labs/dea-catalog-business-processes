@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-en8rdz through concluding task processes:task-pv-operate-record-a8d3w3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Proposition Performance'
+plain_language_description: 'Day to day, product management keeps watch on how each proposition is performing, measuring what comes back against the envelope it was given. Incoming telemetry arrives at intake, is checked for quality, is worked into a current performance picture, confirmed to those managing the portfolio, and archived.'
+business_purpose: 'It provides the steady stream of performance visibility the portfolio needs, so drift away from an investment thesis is spotted early rather than at review time.'
+practical_context: 'It is the standing watch of portfolio management, opening each cycle as telemetry arrives at intake and closing when the refreshed performance picture is confirmed and filed.'
+worked_example:
+  agent_type: human
+  narrative: 'Each reporting day, a product management analyst registers the latest proposition telemetry at intake, verifies odd readings at verification, refreshes the performance picture at processing, and confirms it to the portfolio lead, who uses it to spot propositions drifting past their envelopes.'

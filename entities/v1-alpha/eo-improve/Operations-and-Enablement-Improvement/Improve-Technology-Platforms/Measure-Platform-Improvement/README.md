@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Measure Platform Improvement**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Improve Technology Platforms** (`processes:process-eo-improve-babwdc`). Its canonical ID is `processes:activity-eo-improve-w3hsnq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks how much the implemented upgrades actually improved, against the baseline the gaps set. The implemented work and the gap baseline arrive together, the improvement is measured and compared with what each upgrade promised, and the measurement is confirmed for the record. The platform improvement loop closes on evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows whether its platform spend actually closed the gaps the analysis bounded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the committed upgrades have been implemented and have had time to show their effect, and it completes when the improvement measurement is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst measures each implemented upgrade's effect against the gap baseline, records where reliability or capacity genuinely moved, and confirms the measurement for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Platform Improvement |
+| `plain_language_description` | string | no | This activity checks how much the implemented upgrades actually improved, against the baseline the gaps set. The … |
+| `business_purpose` | string | no | It exists so the enterprise knows whether its platform spend actually closed the gaps the analysis bounded. |
+| `practical_context` | string | no | It runs once the committed upgrades have been implemented and have had time to show their effect, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

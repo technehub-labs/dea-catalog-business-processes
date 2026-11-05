@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Identify Superseded Regulated Strategic Plan**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-6azc3g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The directive says retire; this work pins down exactly which plan on record is the one leaving. Intake registers the recorded directive and the plan record, verification confirms the retiring candidate is the acknowledged, live plan named in the instruction, and processing links it to its successor so old and new stand side by side on the record. Confirmation announces the pairing downstream and the records custodian preserves the supersession reference.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It establishes exactly which acknowledged, live plan is retiring and ties it to its successor, so nothing retires by mistake and nothing replaces it untracked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the directive, opening at intake of the recorded instruction and closing when the supersession pairing is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function registrar matches the directive against the plan record, a verification custodian confirms the named plan is the acknowledged live one, and the successor link is preserved so reviewers can see old and new side by side.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Superseded Regulated Strategic Plan |
+| `plain_language_description` | string | no | The directive says retire; this work pins down exactly which plan on record is the one leaving. Intake registers the … |
+| `business_purpose` | string | no | It establishes exactly which acknowledged, live plan is retiring and ties it to its successor, so nothing retires by … |
+| `practical_context` | string | no | It follows the directive, opening at intake of the recorded instruction and closing when the supersession pairing is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Commit Model Evolutions**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Evolve Treasury and Funding Model** (`processes:process-fa-improve-2kemkq`). Its canonical ID is `processes:activity-fa-improve-4mju3t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity ratifies the designed changes to the model and sets the watch back up for the next shift. The designed evolutions arrive as the case, commitment is given under the standing governance, and the committed changes are confirmed into the model with monitoring resumed. Treasury's model thereby keeps pace with the world it operates in.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed model changes become binding, and the watching for the next shift never stops.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evolution design, once the designed changes are in hand, and it completes when the committed evolutions are confirmed into the model and monitoring is confirmed resumed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian ratifies the designed model changes, records the commitment, and sets the monitoring watch back up for the next posture shift.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Model Evolutions |
+| `plain_language_description` | string | no | This activity ratifies the designed changes to the model and sets the watch back up for the next shift. The designed … |
+| `business_purpose` | string | no | It exists so the designed model changes become binding, and the watching for the next shift never stops. |
+| `practical_context` | string | no | It follows the evolution design, once the designed changes are in hand, and it completes when the committed evolutions … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

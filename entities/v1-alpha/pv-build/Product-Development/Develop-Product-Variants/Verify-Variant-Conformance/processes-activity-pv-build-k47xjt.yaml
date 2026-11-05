@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-say8tb through concluding task processes:task-pv-build-record-rxqcbh, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Variant Conformance'
+plain_language_description: 'This activity checks each built variant against its own design and the configuration rules, before anything is declared done. The constructed variants arrive with their designs and rules as the standard, conformance is verified variant by variant and departures recorded, and the conforming set is confirmed onward for baselining. Variants earn trust by passing this gate.'
+business_purpose: 'It exists so only variants proven true to their designs proceed toward market.'
+practical_context: 'It follows the variant construction, once the builds are complete, and it completes when the conformance verification is confirmed across the constructed set.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management verifier checks each built variant against its design and the configuration rules, records any departure, and confirms the conforming set onward.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-q58ecg through concluding task processes:task-eo-improve-record-xg4j96, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Redeployment Options'
+plain_language_description: 'This activity works each bounded utilization problem into concrete options for moving or re-aiming assets. The utilization analysis arrives with the capacity envelopes and demand model as the frame, options are designed and checked against both, and the option set is confirmed onward for decision. Every named problem gains at least one costed way out.'
+business_purpose: 'It exists so each evidenced utilization problem has designed, assessed options for redress before a decision is forced.'
+practical_context: 'It follows the utilization analysis, when the bounded problems and the capacity envelopes are to hand, and it completes once the option set is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer turns each bounded utilization problem into concrete redeployment options, checks them against the capacity envelopes and demand model, and confirms the option set.'

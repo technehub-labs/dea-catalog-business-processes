@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Identify Competency Domains**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Competency Framework** (`processes:process-ao-design-rve8j5`). Its canonical ID is `processes:activity-ao-design-e63vge`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out which broad areas of capability the designed structure actually depends on. The committed organization structure design comes in first, the capability areas it calls for are identified and reviewed, and the identified domains are confirmed with the design authority. They then become the scaffold on which proficiency levels are defined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the competency framework covers the capabilities the structure genuinely needs rather than a generic list.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the design of the competency framework, when the committed structure design is presented, and it closes once the identified domains are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority reads the committed structure and identifies the broad capability areas it relies on, then confirms those domains as the basis for defining proficiency levels.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify the Competency Domains |
+| `plain_language_description` | string | no | This activity works out which broad areas of capability the designed structure actually depends on. The committed … |
+| `business_purpose` | string | no | It exists so the competency framework covers the capabilities the structure genuinely needs rather than a generic list. |
+| `practical_context` | string | no | It opens the design of the competency framework, when the committed structure design is presented, and it closes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

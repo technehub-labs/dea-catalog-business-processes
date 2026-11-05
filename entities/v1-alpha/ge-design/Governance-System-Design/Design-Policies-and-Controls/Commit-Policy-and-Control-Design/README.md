@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Commit Policy and Control Design**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Policies and Controls** (`processes:process-ge-design-kpsj5b`). Its canonical ID is `processes:activity-ge-design-t3muvd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the policy artefacts, the control objectives, and the regime enforcing them together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for codification and build. Governance's rulebook design becomes one owned decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so codification and build start from one committed policy and control design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the policy and control design, once artefacts, objectives, and regime are designed, and it completes when the committed design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the policy artefacts, control objectives, and compliance regime into the design document, obtains ratification, and records the commitment for codification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Policy and Control Design |
+| `plain_language_description` | string | no | This activity draws the policy artefacts, the control objectives, and the regime enforcing them together into one … |
+| `business_purpose` | string | no | It exists so codification and build start from one committed policy and control design. |
+| `practical_context` | string | no | It closes the policy and control design, once artefacts, objectives, and regime are designed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

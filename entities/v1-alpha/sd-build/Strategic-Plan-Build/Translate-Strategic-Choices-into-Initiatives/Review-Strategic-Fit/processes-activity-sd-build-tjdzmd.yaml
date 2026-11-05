@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-9admqy through concluding task processes:task-sd-build-record-rfpska, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Review Strategic Fit'
+plain_language_description: 'Drafted work is only worth committing if it genuinely serves the direction. Intake brings the initiative set in, scrutiny tests each draft against what the plan and the chosen direction actually call for, and anything off-course is flagged for rework. When the fit is confirmed, downstream colleagues are notified and the fit-checked set is preserved.'
+business_purpose: 'It filters out initiatives that would quietly pull the enterprise off its chosen path, so only aligned work reaches commitment.'
+practical_context: 'It happens after drafting, opening when the drafted initiatives are presented at intake and closing when the fit verdict is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Two strategy function reviewers read each drafted initiative against the approved direction, return one misaligned proposal for reshaping, and the confirmation custodian records the fit outcome once every draft passes.'

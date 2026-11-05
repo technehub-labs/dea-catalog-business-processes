@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-q83tdv through concluding task processes:task-eo-design-record-stym32, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Specify Equipment'
+plain_language_description: 'This activity names the equipment that will populate each designed layout, to a stated standard. The layouts arrive with the lifecycle postures as the frame, equipment is specified position by position and checked against both, and the equipment specification is confirmed onward for the capacity modelling. A builder could order from this document.'
+business_purpose: 'It exists so the enterprise knows exactly which equipment fills its layouts and to what standard, before any money is spent.'
+practical_context: 'It follows the layout design, when the layouts and the lifecycle postures are to hand, and it completes once the equipment specification is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer specifies the equipment for each position in the drawn layouts, checks the choices against the lifecycle postures, and confirms the specification for capacity modelling.'

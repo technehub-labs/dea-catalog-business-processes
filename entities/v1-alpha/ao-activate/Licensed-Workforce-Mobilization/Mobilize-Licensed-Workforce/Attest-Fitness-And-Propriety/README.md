@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-ac
 
 This is a **Activity** (level L3), named **Attest Fitness And Propriety**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Mobilize Licensed Workforce** (`processes:process-ao-activate-jqxtqn`). Its canonical ID is `processes:activity-ao-activate-x9hy5e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity captures the formal statement that a licensed individual is fit and proper for their role and files it on the personnel record. The fitness evidence is brought in and examined, the attestation is drawn up and confirmed to those who rely on it, and the attested record is kept for audit. What is filed has to match the fitness standard that applies to the role, because the attestation is made while the regulator keeps the role under continuing oversight.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody goes live in a licensed role without a documented fitness attestation backing the enterprise's assurance to its regulator.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during the mobilization of a licensed role, once the licence has been verified and the fitness evidence is to hand, and it completes when the attested fitness record is preserved on the personnel file.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead gathers the medical certification and good-standing evidence for a clinician joining a regulated team, checks it against the fitness standard for the role, and files the signed attestation on the personnel record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Attest Fitness and Propriety |
+| `plain_language_description` | string | no | This activity captures the formal statement that a licensed individual is fit and proper for their role and files it on … |
+| `business_purpose` | string | no | It exists so nobody goes live in a licensed role without a documented fitness attestation backing the enterprise's … |
+| `practical_context` | string | no | It runs during the mobilization of a licensed role, once the licence has been verified and the fitness evidence is to … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

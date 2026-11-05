@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-h3vgyf through concluding task processes:task-ao-improve-record-qznyq8, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prioritize the Capability Gaps'
+plain_language_description: 'This activity ranks the identified shortfalls by how much each one matters to the organization''s structure and direction. The gap list comes in, each entry is weighed for its impact and placed in order, and the ranking is confirmed with the design authority. The output tells development planning which shortfalls to treat first rather than presenting an undifferentiated list.'
+business_purpose: 'It exists so development effort goes first to the shortfalls that hurt the organization most, rather than being spent evenly across everything found.'
+practical_context: 'It runs once the capability gaps have been identified, when the gap list is presented for ranking, and it closes when the prioritized list is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian weighs each identified gap by its bearing on critical roles and the organization''s direction, puts the one affecting a key role at the top, and confirms the ranking with the design authority.'

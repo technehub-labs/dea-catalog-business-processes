@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-activate-sy5qsa through concluding task processes:task-eo-activate-record-3x3jub, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Bring the Operational Controls Live'
+plain_language_description: 'This activity switches the capability''s everyday operational controls on and records them as live. The regulator-mandated control framework and the fresh authorization come in together, each control — incident handling, capacity, security, compliance — is brought into active use and checked against the framework, and the live state is written onto the operations record. The capability thereby runs under its controls from its first day, not after them.'
+business_purpose: 'It exists so operational controls are demonstrably running when live service starts, as the regulator''s framework requires.'
+practical_context: 'It runs late in activation, once the authorization is on record, and it completes when the controls'' live state is confirmed on the regulated operations record and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead brings each control in the mandated framework — incident handling, capacity, security, and compliance — into active use, checks the set against the framework, and has the live state recorded on the operations record.'

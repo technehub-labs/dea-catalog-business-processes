@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-ahwvp5 through concluding task processes:task-sd-conceive-record-wfp9f7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Corporate Strategy'
+plain_language_description: 'This is the closing act of strategy conception. The chosen trajectory comes in at intake alongside the settled ambition and intent, a final verification confirms the set is complete, and the corporate strategy is committed as one artifact. Confirmation notifies downstream consumers that the strategy is ready to drive design work, and the records custodian preserves the committed strategy for the long term.'
+business_purpose: 'It seals the process with one committed corporate strategy, the mandate that lets downstream design work begin from a settled base.'
+practical_context: 'It opens once the trajectory is chosen and closes with the commitment confirmed, downstream consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead commits the corporate strategy, the confirmation custodian notifies design colleagues that the committed ambition, intent and trajectory are available, and the records custodian archives the strategy evidence at its retention tier.'

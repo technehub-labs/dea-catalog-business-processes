@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-b38bkg through concluding task processes:task-ao-build-record-6jmk5q, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Establish Activation Paths'
+plain_language_description: 'This activity sets out how vetted pool sources will actually be engaged when the enterprise needs them. The vetted sources are taken in and checked, the routes from source to engagement are worked up, and the established paths are confirmed with the people who will use them. It closes with the paths recorded, so drawing on the pool later means following an agreed route rather than improvising one.'
+business_purpose: 'It exists so the vetted pool can be brought online quickly when surge or specialist demand arrives.'
+practical_context: 'It follows the vetting of pool sources, when the qualified sources are presented for engagement planning, and it completes once the established activation paths are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian for the pool build turns the vetted source list into agreed engagement routes, confirms for each source how activation would work, and files the record of the established paths for the team that will commit the pool.'

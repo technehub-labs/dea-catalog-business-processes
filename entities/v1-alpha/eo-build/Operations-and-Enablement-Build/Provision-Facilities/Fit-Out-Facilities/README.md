@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Fit Out Facilities**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Provision Facilities** (`processes:process-eo-build-tqybhd`). Its canonical ID is `processes:activity-eo-build-vggmrg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the acquired shell sites into fitted workplaces to the planned layouts, applying the health-and-safety and accessibility requirements as it goes. The layout designs arrive as the guide, fit-out is carried out and checked against them, and the fitted facilities are confirmed onward. Empty buildings become places people can safely work in.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's sites become safe, accessible, correctly laid-out workplaces rather than bare shells.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows site securing, when the layouts and their safety and accessibility requirements are to hand, and it completes once the fitted facilities are confirmed for service commissioning.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian fits each secured site out to its planned layout, applies the health-and-safety and accessibility requirements throughout, and confirms the fitted facilities for service commissioning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fit Out Facilities |
+| `plain_language_description` | string | no | This activity turns the acquired shell sites into fitted workplaces to the planned layouts, applying the … |
+| `business_purpose` | string | no | It exists so the enterprise's sites become safe, accessible, correctly laid-out workplaces rather than bare shells. |
+| `practical_context` | string | no | It follows site securing, when the layouts and their safety and accessibility requirements are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

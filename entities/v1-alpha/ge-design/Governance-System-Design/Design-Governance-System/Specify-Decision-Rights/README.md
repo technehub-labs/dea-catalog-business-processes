@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Specify Decision Rights**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Governance System** (`processes:process-ge-design-zbrg8b`). Its canonical ID is `processes:activity-ge-design-sy338w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles who gets to decide what, and with whose consultation, under the delegations just designed. The delegation design arrives as the frame, decision rights are specified body by body and role by role, and the specification is confirmed onward for the system's commitment. Every consequential question gains a named owner.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every decision the governance system exists to make has a designed, named owner.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the delegation design, when the flows of authority are in hand, and it completes once the decision rights specification is confirmed for the system's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer settles who decides what, and with whose consultation, under the designed delegations, and confirms the specification for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Specify Decision Rights |
+| `plain_language_description` | string | no | This activity settles who gets to decide what, and with whose consultation, under the delegations just designed. The … |
+| `business_purpose` | string | no | It exists so every decision the governance system exists to make has a designed, named owner. |
+| `practical_context` | string | no | It follows the delegation design, when the flows of authority are in hand, and it completes once the decision rights … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

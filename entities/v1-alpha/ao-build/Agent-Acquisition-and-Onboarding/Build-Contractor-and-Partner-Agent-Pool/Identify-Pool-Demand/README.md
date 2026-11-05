@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Identify Pool Demand**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Contractor and Partner-Agent Pool** (`processes:process-ao-build-b38bkg`). Its canonical ID is `processes:activity-ao-build-yjbucg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out where the enterprise needs surge or specialist help that ordinary direct acquisition cannot supply in time. The committed structure design and capacity plan are taken in and examined, the gaps are identified and written up as pool demand, and the finding is confirmed with those planning the response. It ends with the identified pool demand recorded so the pool build can target it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the contractor and partner pool is built against genuinely identified demand rather than built speculatively.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It occurs when the committed organization structure design and capacity plan show demand that direct acquisition cannot serve within the required timeframes, and it closes once the identified demand is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead reviewing the capacity plan spots a seasonal surge that direct acquisition cannot staff in time, has the gap written up as identified pool demand, and confirms it with workforce management.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Pool Demand |
+| `plain_language_description` | string | no | This activity works out where the enterprise needs surge or specialist help that ordinary direct acquisition cannot … |
+| `business_purpose` | string | no | It exists so the contractor and partner pool is built against genuinely identified demand rather than built … |
+| `practical_context` | string | no | It occurs when the committed organization structure design and capacity plan show demand that direct acquisition cannot … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

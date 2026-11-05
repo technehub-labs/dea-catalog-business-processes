@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-ba6ykz through concluding task processes:task-eo-build-record-awgtnk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Contract Carriers'
+plain_language_description: 'This activity brings the transport operators on under contract for the movement modes the design selected. The mode selections and the service-level designs arrive as the terms to strike, carrier agreements are negotiated and signed, and the contracted carriers are confirmed onward. Goods will move because someone is contractually obliged to move them.'
+business_purpose: 'It exists so the network''s movements rest on signed carrier agreements matching the designed modes and service levels.'
+practical_context: 'It runs alongside the network''s physical build, once the transport mode selections and service-level designs are settled, and it completes when the contracted carriers are confirmed and their agreements retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian negotiates and signs carrier agreements for each selected transport mode to the agreed service levels, and confirms the contracted set for network verification.'

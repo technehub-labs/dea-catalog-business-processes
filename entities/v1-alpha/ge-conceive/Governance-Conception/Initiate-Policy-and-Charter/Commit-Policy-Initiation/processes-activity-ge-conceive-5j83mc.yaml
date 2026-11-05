@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-xp6fye through concluding task processes:task-ge-conceive-record-cpj74v, whose outcome — Case file retained for Commit Policy Initiation under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Policy Initiation'
+plain_language_description: 'This activity gives the assembled first document its formal commitment, moving the initiative on toward design and codification. The drafted document arrives as the candidate, commitment is given by those sponsoring the initiative, and the committed initiation is confirmed for the design work. The instrument now officially exists as a work in progress with backing.'
+business_purpose: 'It exists so the initiative proceeds to design with a committed document behind it, not a loose draft.'
+practical_context: 'It closes the initiation once the initial document is drafted, and it completes when the committed initiation is confirmed for the design and codification stages.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board sponsor commits the drafted initial policy and charter document, and the confirmation moves the initiative on toward design and codification.'

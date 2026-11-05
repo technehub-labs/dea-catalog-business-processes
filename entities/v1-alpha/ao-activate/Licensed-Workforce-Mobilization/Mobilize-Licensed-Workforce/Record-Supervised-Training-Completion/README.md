@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-ac
 
 This is a **Activity** (level L3), named **Record Supervised-Training Completion**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Mobilize Licensed Workforce** (`processes:process-ao-activate-jqxtqn`). Its canonical ID is `processes:activity-ao-activate-bsjbfc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity makes sure the evidence that a licensed individual finished their supervised training is captured and kept on the personnel record. The training plan and the completion evidence are logged in and checked, the completion record is drawn up, its availability is confirmed to those who depend on it, and it is preserved for later audit. Without that preserved record, the individual's readiness for live work in the licensed role cannot be demonstrated.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise can show from its own records that every licensed role holder completed the supervised training their role requires.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place during mobilization when the role's training plan and the supervised-completion evidence are ready, and it closes once the completion record is held at the agreed retention tier with retrieval handles established.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian for workforce management receives the signed-off supervised-training completion for a newly type-rated crew member, verifies it against the role's training plan, and preserves the completion record on the personnel file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Supervised-Training Completion |
+| `plain_language_description` | string | no | This activity makes sure the evidence that a licensed individual finished their supervised training is captured and … |
+| `business_purpose` | string | no | It exists so the enterprise can show from its own records that every licensed role holder completed the supervised … |
+| `practical_context` | string | no | It takes place during mobilization when the role's training plan and the supervised-completion evidence are ready, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

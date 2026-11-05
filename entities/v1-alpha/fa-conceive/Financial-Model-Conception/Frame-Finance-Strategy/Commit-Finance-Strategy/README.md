@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 
 This is a **Activity** (level L3), named **Commit Finance Strategy**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Frame Finance Strategy** (`processes:process-fa-conceive-4uqqvg`). Its canonical ID is `processes:activity-fa-conceive-wt82fh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the monetary model together with the funding approach into one strategy and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed for the design work that follows. The enterprise's money rules become one owned decision rather than two parallel drafts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's financial direction is a committed strategy that design and build must follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the finance strategy framing, once the monetary model and funding approach are framed, and it completes when the committed finance strategy is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the monetary model and the funding approach into the strategy document, obtains ratification, and records the committed finance strategy for the design teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Finance Strategy |
+| `plain_language_description` | string | no | This activity draws the monetary model together with the funding approach into one strategy and gives it formal … |
+| `business_purpose` | string | no | It exists so the enterprise's financial direction is a committed strategy that design and build must follow. |
+| `practical_context` | string | no | It closes the finance strategy framing, once the monetary model and funding approach are framed, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-ydnzjc through concluding task processes:task-fa-build-record-z648yw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deploy ERP Finance Module'
+plain_language_description: 'This activity installs the finance heart of the enterprise''s wider system estate so the new function has its tooling. The financial systems design arrives as the specification, the ERP finance module is deployed into operational state against it, and the deployed module is confirmed for the function''s use. The stood-up team gets its working toolkit.'
+business_purpose: 'It exists so the finance function operates on a deployed ERP module built to the financial systems design.'
+practical_context: 'It closes the funding securing, once the function is stood up, and it completes when the deployed ERP finance module is confirmed in operational state and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder deploys the ERP finance module to operational state per the financial systems design, and confirms the deployment for the stood-up function''s use.'

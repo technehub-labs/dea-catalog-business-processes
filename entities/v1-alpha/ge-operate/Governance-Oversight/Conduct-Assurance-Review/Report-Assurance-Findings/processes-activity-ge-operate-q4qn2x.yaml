@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-zwaes5 through concluding task processes:task-ge-operate-record-j5hgc3, whose outcome — Case file retained for Report Assurance Findings under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Report Assurance Findings'
+plain_language_description: 'This activity states what the measured evidence showed, as findings delivered to those charged with acting on them. The measured position arrives as the source, findings are written up and delivered to their audiences, and the reported findings are confirmed for the record. Measurement becomes message here.'
+business_purpose: 'It exists so assurance measurement becomes delivered findings someone can act on.'
+practical_context: 'It follows the evidence measurement, once the measured position is in hand, and it completes when the reported findings are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function analyst writes up the findings from the measured evidence, delivers them to the audiences charged with acting, and confirms the reporting for the record.'

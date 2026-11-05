@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-92v24c through concluding task processes:task-fa-build-record-ym9h92, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Build Budget Models'
+plain_language_description: 'This activity works the committed plan structure into working budget models for the scoped cycle. The plan structure arrives as the reference, the models are built against it and checked as they take shape, and the working models are confirmed onward for the integrations. The planning cycle''s arithmetic exists in working form from here.'
+business_purpose: 'It exists so the planning cycle runs on budget models actually built to the committed plan structure.'
+practical_context: 'It opens the planning system build, once a cycle or tool rebuild is scoped and the plan structure is to hand, and it completes when the working budget models are confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder turns the committed plan structure into working budget models for the scoped cycle, checking each model against the structure as it takes shape.'

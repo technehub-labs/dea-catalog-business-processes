@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-2pkz5n through concluding task processes:task-sd-build-record-2ngq6a, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Allocation Envelopes'
+plain_language_description: 'Money and effort are finite, so limits come before requests. This work registers the translated initiatives and the plan they serve, checks the inputs are sound, and draws a spending and capacity envelope around each initiative. When the envelopes are confirmed, downstream colleagues are notified and the bounded limits are preserved for the allocation and prioritisation steps.'
+business_purpose: 'It caps what each initiative may claim, keeping later allocation decisions honest and inside what the strategic plan can fund.'
+practical_context: 'It opens at intake when the translated initiatives and the plan are presented, closing once the envelope limits are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function budgeting lead works through the initiative list, agrees an envelope of funding and capacity for each with the activity owner, and the records custodian preserves the bounded limits ahead of the allocation round.'

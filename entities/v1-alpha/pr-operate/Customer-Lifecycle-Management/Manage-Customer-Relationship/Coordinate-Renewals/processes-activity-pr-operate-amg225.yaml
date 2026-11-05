@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-operate-bbe384 through concluding task processes:task-pr-operate-record-tnft7y, whose outcome — Closure case file retained for Coordinate Renewals under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Coordinate Renewals'
+plain_language_description: 'This activity gets the next round of customer commitments ready and signed as their terms run out. Renewal horizons arrive from the relationship reviews, preparation and execution are coordinated ahead of each term''s end, and the coordinated renewals are confirmed onward. Continuity is arranged before the expiry date, not negotiated after it.'
+business_purpose: 'It exists so customer commitments renew on prepared terms rather than lapsing by neglect.'
+practical_context: 'It runs as renewals approach term, signalled by the relationship reviews, and it completes once each renewal is prepared, executed, and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead prepares the renewal ahead of the term''s end, executes it with the customer, and confirms the coordinated renewal onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Treasury Operating Model**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury and Funding Model** (`processes:process-fa-design-k5sgfa`). Its canonical ID is `processes:activity-fa-design-d4rea9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out who does what in treasury — the roles, their mandates, and the systems they will use — to put the policies into practice. The liquidity rules and the funding make-up arrive as the things to be operated, the operating model is designed around them, and the model design is confirmed onward for the model's commitment. Treasury gains hands, authority, and tools in one design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed treasury policies have an operating model capable of executing them day to day.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the liquidity and funding designs, when both are to hand, and it completes once the treasury operating model design is confirmed for the model's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer sets treasury's roles, mandates, and systems around the liquidity policy and funding structure, and confirms the operating model design for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Treasury Operating Model |
+| `plain_language_description` | string | no | This activity works out who does what in treasury — the roles, their mandates, and the systems they will use — to put … |
+| `business_purpose` | string | no | It exists so the designed treasury policies have an operating model capable of executing them day to day. |
+| `practical_context` | string | no | It follows the liquidity and funding designs, when both are to hand, and it completes once the treasury operating model … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

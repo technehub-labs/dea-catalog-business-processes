@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-improve-t6uvan through concluding task processes:task-pr-improve-record-fas3fm, whose outcome — Closure case file retained for Execute Retention Actions under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Retention Actions'
+plain_language_description: 'This activity moves on what the churn and satisfaction findings show, with interventions aimed at the customers who need them. The scored risks and satisfaction findings arrive as the worklist, targeted retention interventions are executed for each named case, and the executed actions are confirmed onward. Warning signs are answered with deeds, not memos.'
+business_purpose: 'It exists so at-risk customers receive deliberate retention action rather than eventual farewell.'
+practical_context: 'It follows the churn scoring and satisfaction findings, once the at-risk cases are named, and it completes as each executed retention intervention is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management officer acts on each scored churn risk with a targeted intervention — a service recovery, a check-in, a tailored offer — and confirms the execution onward.'

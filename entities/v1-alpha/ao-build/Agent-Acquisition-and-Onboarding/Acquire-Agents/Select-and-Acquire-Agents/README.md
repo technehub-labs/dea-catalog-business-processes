@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Select and Acquire Agents**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Acquire Agents** (`processes:process-ao-build-w2qurd`). Its canonical ID is `processes:activity-ao-build-4vccpu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity chooses and brings in the agents needed to fill the provisioned capacity, judging candidates on merit rather than on the kind of agent they are. The capacity to be filled is logged in and checked, the selections are made and executed as acquisitions, and the outcome is confirmed with the planners. It ends with acquired agents handed over for onboarding and the acquisition record preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organization fills its provisioned capacity with the right agents, whether people or artificial agents, chosen on suitability alone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs when the provisioned agent capacity is presented during acquisition, and it finishes once the acquired agents are confirmed and the acquisition record is kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian compares candidates for a provisioned capacity slot, selects the strongest fit whether that is a person or an artificial agent, records the acquisition, and notifies the onboarding step that the acquired agents are on their way.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Select and Acquire Agents |
+| `plain_language_description` | string | no | This activity chooses and brings in the agents needed to fill the provisioned capacity, judging candidates on merit … |
+| `business_purpose` | string | no | It exists so the organization fills its provisioned capacity with the right agents, whether people or artificial … |
+| `practical_context` | string | no | It runs when the provisioned agent capacity is presented during acquisition, and it finishes once the acquired agents … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

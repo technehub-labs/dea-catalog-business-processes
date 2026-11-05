@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-q83tdv through concluding task processes:task-eo-design-record-6y2emb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Facility Layouts'
+plain_language_description: 'This activity turns the footprint principles framed earlier into concrete layouts for each facility. The principles and the operations model arrive as the basis, layouts are drawn per site and checked against both, and the layout designs are confirmed onward for the equipment work. Space is thereby organised on purpose rather than by accident.'
+business_purpose: 'It exists so each facility''s space is organised to serve the operating model the principles describe.'
+practical_context: 'It opens the facility and asset blueprint design, when the footprint principles are presented for realisation, and it completes once the layout designs are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer draws each facility''s layout to the framed footprint principles, checks the space serves the operations model, and confirms the layouts for the equipment specification.'

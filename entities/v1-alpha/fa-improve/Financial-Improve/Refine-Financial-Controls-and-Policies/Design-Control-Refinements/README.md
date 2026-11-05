@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Design Control Refinements**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Refine Financial Controls and Policies** (`processes:process-fa-improve-cdtsbq`). Its canonical ID is `processes:activity-fa-improve-g6x3fj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works each analyzed finding into a designed refinement that closes it. The bounded analyses arrive as the case list, refinements are designed against the controls and policies they amend, and the designed set is confirmed onward for commitment. Every named weakness gains a specific strengthening.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each analyzed control weakness gains a designed fix before the policy cycle commits it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the findings analysis, when the bounded needs are handed over, and it completes once the designed refinements are confirmed for commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer turns each analyzed finding into a designed refinement of the affected control or policy, and confirms the designed set for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Control Refinements |
+| `plain_language_description` | string | no | This activity works each analyzed finding into a designed refinement that closes it. The bounded analyses arrive as the … |
+| `business_purpose` | string | no | It exists so each analyzed control weakness gains a designed fix before the policy cycle commits it. |
+| `practical_context` | string | no | It follows the findings analysis, when the bounded needs are handed over, and it completes once the designed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

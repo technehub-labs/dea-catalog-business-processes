@@ -136,3 +136,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-ba8scr through concluding task processes:task-ao-operate-record-6um63p, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Audit Conduct-Rule Compliance'
+plain_language_description: 'This activity checks how well live licensed-role holders keep to the conduct rules their roles carry, using the conduct-rule matrix for each role. The live role list and the matrix arrive together, conduct is examined against the applicable rules, and the compliance audit record is produced and retained. Where conduct falls short, the audit names it plainly on the record.'
+business_purpose: 'It exists so the enterprise holds current, auditable evidence that its licensed roles behave within the conduct rules.'
+practical_context: 'It runs while licensed roles are in live operation, when the role list and the conduct-rule matrix are presented, and it closes once the audit record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian examines each live role holder''s conduct against the matrix''s rules, writes the findings into the compliance audit record, and files it for oversight.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Coordinate Subledger Flows**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate General Ledger** (`processes:process-fa-operate-g9zpnq`). Its canonical ID is `processes:activity-fa-operate-v4j4en`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity herds the streams from the side-ledgers — payables, receivables, payroll, tax, and treasury — into the main books. The subledgers' flows arrive continuously, their passage into the ledger is coordinated and checked for completeness, and the coordinated flows are confirmed onward. The main books see everything the side books know.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the general ledger receives every subledger's activity, completely and in order.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as the subledgers generate their flows, and each coordinated passage closes when it is confirmed onward into the ledger.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A ledger custodian shepherds the payables, receivables, payroll, tax, and treasury flows into the main books, checks nothing is dropped in transit, and confirms the coordinated flows.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Coordinate Subledger Flows |
+| `plain_language_description` | string | no | This activity herds the streams from the side-ledgers — payables, receivables, payroll, tax, and treasury — into the … |
+| `business_purpose` | string | no | It exists so the general ledger receives every subledger's activity, completely and in order. |
+| `practical_context` | string | no | It runs continuously as the subledgers generate their flows, and each coordinated passage closes when it is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

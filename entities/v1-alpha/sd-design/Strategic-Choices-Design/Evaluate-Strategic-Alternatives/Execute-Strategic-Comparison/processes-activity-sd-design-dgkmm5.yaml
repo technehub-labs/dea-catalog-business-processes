@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ed7jd5 through concluding task processes:task-sd-design-record-3uafkp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Strategic Comparison'
+plain_language_description: 'Now the options go head to head. Intake registers the scoped alternatives and their yardsticks, verification checks every option is scored on the same basis, and processing runs the comparison and records the results for each pairing. Confirmation communicates the outcome table to downstream colleagues and the records custodian preserves the results for the preference step.'
+business_purpose: 'It produces the like-for-like results the preference decision rests on, replacing instinct with a scored comparison.'
+practical_context: 'It runs once the evaluation scope is set, opening at intake of the scoped options and criteria and closing when the results are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function analysts score each option against the agreed yardsticks, a verification custodian confirms every option was judged on the same basis, and the confirmation custodian circulates the comparison results to the preference team.'

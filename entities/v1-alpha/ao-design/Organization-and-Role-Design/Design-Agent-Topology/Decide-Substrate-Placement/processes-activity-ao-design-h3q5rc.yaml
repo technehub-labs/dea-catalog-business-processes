@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-8fzp2b through concluding task processes:task-ao-design-record-asz7z4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Decide Human, Artificial, or Hybrid Placement'
+plain_language_description: 'This activity makes the actual call, for each classified role or work item, on whether a person, an artificial agent, or a hybrid of the two will do it. The classified candidates are taken in and reviewed, the placement of each is decided, and the decisions are confirmed with the design authority. The settled placements are recorded so coordination design can connect them.'
+business_purpose: 'It exists so every role in the structure has a definite answer about who or what performs it.'
+practical_context: 'It follows classification of the placement candidates, when the classified list is presented for decision, and it completes once the placements are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Working from the classified list, the organization design authority decides that a recurring approval task will be handled by an artificial agent while the judgement calls stay with a person, and records that hybrid placement for the coordination design step.'

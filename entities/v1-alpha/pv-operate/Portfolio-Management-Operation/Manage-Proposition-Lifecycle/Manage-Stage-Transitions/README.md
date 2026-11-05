@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Manage Stage Transitions**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Proposition Lifecycle** (`processes:process-pv-operate-cau4gv`). Its canonical ID is `processes:activity-pv-operate-jpupsh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management steers each offering from one stage of its life to the next - the move into growth, the settling into maturity, the drift toward decline - applying the stage criteria at each step. Transition material is registered at intake, checked against the criteria, executed as a managed move, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes stage change a deliberate, criterion-checked event rather than something that happens by drift, keeping the lifecycle honest and legible.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It spans the life of each proposition: a transition opens when the case for moving stage is presented at intake and closes when the executed move is confirmed and its record filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When an offering's numbers show it has left its growth phase, a product management steward registers the transition case at intake, checks it against the stage criteria, executes the move into maturity, confirms it to the stakeholders, and the trail is archived.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Manage Stage Transitions |
+| `plain_language_description` | string | no | Product management steers each offering from one stage of its life to the next - the move into growth, the settling … |
+| `business_purpose` | string | no | It makes stage change a deliberate, criterion-checked event rather than something that happens by drift, keeping the … |
+| `practical_context` | string | no | It spans the life of each proposition: a transition opens when the case for moving stage is presented at intake and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

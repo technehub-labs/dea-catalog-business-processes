@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-aqbrm7 through concluding task processes:task-sd-improve-record-3j4add, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Refreshed Objectives'
+plain_language_description: 'The refreshed set is complete, so it becomes the measures of record. Intake registers the redrafted set, a last verification confirms every line is owned and measurable, and the commitment locks it in and hands it onward to the planning and steering colleagues. Confirmation notifies downstream consumers and the records custodian preserves the committed set at its retention tier.'
+business_purpose: 'It ratifies the refreshed measures as the set of record, closing the refresh and re-arming planning and steering with a current baseline.'
+practical_context: 'It opens once redrafting is complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead ratifies the refreshed objective set, the confirmation custodian notifies planning and steering colleagues the committed measures are available, and the records custodian archives the evidence for the cycle.'

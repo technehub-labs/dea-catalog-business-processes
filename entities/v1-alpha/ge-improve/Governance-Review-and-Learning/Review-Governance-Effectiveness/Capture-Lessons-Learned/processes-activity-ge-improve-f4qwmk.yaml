@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-mgkw59 through concluding task processes:task-ge-improve-record-wm3aet, whose outcome — Case file retained for Capture Lessons Learned under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Capture Lessons Learned'
+plain_language_description: 'This activity gathers what the measured governance performance has taught. The measured outcomes arrive as the source, lessons are captured from them and written down plainly, and the captured lessons are confirmed onward for the recommendations. The enterprise''s governance mistakes become assets the moment they are written down properly.'
+business_purpose: 'It exists so governance''s operating experience is banked as lessons rather than evaporating with the cycle.'
+practical_context: 'It follows the performance measurement, once the outcomes are in hand, and it completes when the captured lessons are confirmed onward for the recommendations.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer draws the lessons out of the measured governance outcomes — where cycles ran well, where they ground — and confirms the captured lessons onward.'

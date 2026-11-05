@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Plan Quality Inspection**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Quality Control** (`processes:process-eo-operate-44jsrp`). Its canonical ID is `processes:activity-eo-operate-ywjabj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity decides in advance how each batch will be checked — which samples to draw, which specification and tolerances apply, and when the checking happens. The specifications, sampling standards, and production schedule arrive as the inputs, the inspection plan is drawn up per batch, and the plan is confirmed onward for execution. No batch is measured before anyone has decided how to measure it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every batch's inspection is designed before it runs, on the right specification and sampling scheme.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the quality operation for each batch, when the specifications and the production schedule are to hand, and it completes once the inspection plan is confirmed for execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A quality planner selects the sampling scheme and resolves the applicable specification and tolerances for an incoming batch, schedules the checking, and confirms the plan for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Quality Inspection |
+| `plain_language_description` | string | no | This activity decides in advance how each batch will be checked — which samples to draw, which specification and … |
+| `business_purpose` | string | no | It exists so every batch's inspection is designed before it runs, on the right specification and sampling scheme. |
+| `practical_context` | string | no | It opens the quality operation for each batch, when the specifications and the production schedule are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

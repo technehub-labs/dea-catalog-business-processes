@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Commit Direction Adjustment**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Adapt Strategic Direction** (`processes:process-sd-improve-9wgvaf`). Its canonical ID is `processes:activity-sd-improve-m6ww6z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The candidates have been weighed, so one adjustment can now be ratified. Intake registers the assessed implications, a final verification confirms the reasoning holds, and the commitment locks the chosen change in and hands it onward for the objectives refresh and the effectiveness review. Confirmation notifies downstream consumers and the records custodian preserves the committed adjustment on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ratifies one change of course for the direction, closing the adaptation decision and setting the refresh and review work in motion.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the implications are assessed and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead ratifies the selected adjustment, the confirmation custodian notifies the refresh and review teams their input is ready, and the records custodian archives the decision evidence for the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Direction Adjustment |
+| `plain_language_description` | string | no | The candidates have been weighed, so one adjustment can now be ratified. Intake registers the assessed implications, a … |
+| `business_purpose` | string | no | It ratifies one change of course for the direction, closing the adaptation decision and setting the refresh and review … |
+| `practical_context` | string | no | It opens once the implications are assessed and closes with the commitment confirmed, downstream consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

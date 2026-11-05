@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Bound Agent Capacity**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization and Agent Strategy** (`processes:process-ao-conceive-e3u8s2`). Its canonical ID is `processes:activity-ao-conceive-36aux4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity decides how much agent capacity the coming strategy should commit the enterprise to. The sensed imperatives come in and are reviewed, the capacity boundary is worked out from them, and the bounded capacity is confirmed with those drafting the strategy. It ends with a clear answer to how much agent capacity is in scope, recorded for the drafting step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy commits to a definite amount of agent capacity rather than an open-ended ambition.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the sensing of organization imperatives, when those imperatives are presented for capacity planning, and it closes once the bounded capacity is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead weighs the imperatives behind a workforce realignment and sets the amount of agent capacity the strategy will commit to, confirming the boundary with workforce management before the strategy is drafted.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set How Much Agent Capacity to Commit |
+| `plain_language_description` | string | no | This activity decides how much agent capacity the coming strategy should commit the enterprise to. The sensed … |
+| `business_purpose` | string | no | It exists so the strategy commits to a definite amount of agent capacity rather than an open-ended ambition. |
+| `practical_context` | string | no | It follows the sensing of organization imperatives, when those imperatives are presented for capacity planning, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

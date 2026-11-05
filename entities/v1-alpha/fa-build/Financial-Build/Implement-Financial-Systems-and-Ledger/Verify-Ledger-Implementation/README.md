@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Verify Ledger Implementation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Financial Systems and Ledger** (`processes:process-fa-build-d5kb5m`). Its canonical ID is `processes:activity-fa-build-ee89qu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the newly implemented books and their systems fit to run the general ledger day to day. The implemented work comes in with the plan structure and controls design as the yardstick, readiness is examined against them, and the determination is confirmed for the operation. General ledger running is cleared here or not at all.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so general ledger operation starts on an implementation proven against its design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the financial systems implementation, once accounts, posting rules, and reports are deployed, and it completes when the readiness determination is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function verifier examines the implemented systems against the plan structure and controls design, and confirms the readiness determination for ledger operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Ledger Implementation |
+| `plain_language_description` | string | no | This activity proves the newly implemented books and their systems fit to run the general ledger day to day. The … |
+| `business_purpose` | string | no | It exists so general ledger operation starts on an implementation proven against its design. |
+| `practical_context` | string | no | It closes the financial systems implementation, once accounts, posting rules, and reports are deployed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

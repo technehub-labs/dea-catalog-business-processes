@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Replenishment**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Warehouse and Inventory** (`processes:process-eo-operate-zwzmbd`). Its canonical ID is `processes:activity-eo-operate-9sdchy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tops stock and picking locations back up wherever the demand signals show them running low. Stock positions and demand signals arrive as the trigger, replenishment is executed to restore the levels, and the replenished locations are confirmed for the record. The warehouse never lets a pick face run dry by accident.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so stock and pick faces stay replenished ahead of demand rather than emptied by it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as demand signals and stock positions show levels falling, and it completes when each replenished location is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A warehouse crew reads the demand signals showing a pick face running low, moves stock to restore the level, and confirms the replenished location for the stock record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Replenishment |
+| `plain_language_description` | string | no | This activity tops stock and picking locations back up wherever the demand signals show them running low. Stock … |
+| `business_purpose` | string | no | It exists so stock and pick faces stay replenished ahead of demand rather than emptied by it. |
+| `practical_context` | string | no | It runs as demand signals and stock positions show levels falling, and it completes when each replenished location is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

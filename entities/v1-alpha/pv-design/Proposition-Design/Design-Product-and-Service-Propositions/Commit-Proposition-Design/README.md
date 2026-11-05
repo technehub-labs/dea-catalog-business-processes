@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Commit Proposition Design**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Product and Service Propositions** (`processes:process-pv-design-8v4k89`). Its canonical ID is `processes:activity-pv-design-45x29p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a proposition design is ready to be locked down, product management brings the finished pieces together in one place. The package is logged in, checked against the agreed specification, assembled into its final form, confirmed, and filed so the record can be retrieved later. What leaves this work is the committed proposition design the build stage can construct from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the design effort a definite end point: architecture, components, and configuration choices are gathered into a single committed design that the build stage can pick up without guesswork.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at the close of the design effort: once the architecture, component specifications, and configuration options exist, intake opens when they are presented for consolidation, and closure comes when the confirmed design and its audit record are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management receives the completed architecture and component work for a new service proposition, verifies the pack meets the specification, assembles the committed design document, and confirms it to the build teams; the records custodian files it so any later question about what was agreed can be answered.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Proposition Design |
+| `plain_language_description` | string | no | When a proposition design is ready to be locked down, product management brings the finished pieces together in one … |
+| `business_purpose` | string | no | It gives the design effort a definite end point: architecture, components, and configuration choices are gathered into … |
+| `practical_context` | string | no | It runs at the close of the design effort: once the architecture, component specifications, and configuration options … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

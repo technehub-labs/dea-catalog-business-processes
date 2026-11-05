@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-xs59e2 through concluding task processes:task-ao-improve-record-m327py, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Sequence the Structure Transition'
+plain_language_description: 'This activity puts the bounded structural change into a controlled order of moves. The scoped change arrives first, the transition steps are arranged so each part of the organization is ready before the next move lands, and the sequenced transition is confirmed with the design authority. The filed sequence becomes the script the execution step follows.'
+business_purpose: 'It exists so the reorganization lands in an order that keeps the organization working while it moves, rather than disrupting everything at once.'
+practical_context: 'It follows the bounding of reorganization scope, when the scoped change is presented for ordering, and it completes once the sequenced transition is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian orders the transition so a receiving team is fully in place before handovers begin, checks each step against the bounded scope, and confirms the sequence with the design authority.'

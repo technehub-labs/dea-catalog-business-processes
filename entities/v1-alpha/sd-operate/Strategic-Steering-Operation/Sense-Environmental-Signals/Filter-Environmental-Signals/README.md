@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Filter Environmental Signals**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Sense Environmental Signals** (`processes:process-sd-operate-53y4j4`). Its canonical ID is `processes:activity-sd-operate-c4n3fr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Most of what the sweep finds is noise, and this work says so. The raw feed arrives at intake, verification applies the relevance tests consistently, and processing removes the noise and keeps only observations that genuinely matter to the strategy. Confirmation passes the qualified observations downstream and the records custodian preserves the filter decisions alongside them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It protects the steering process from noise, letting only observations with genuine strategic weight travel any further.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the sweep, opening at intake of each raw feed and closing when the qualified set is confirmed and preserved with its decisions.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function sift-team works the raw feed against the relevance tests, a verification custodian spot-checks rejections for consistency, and the qualified observations go onward to classification with the filter decisions attached.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Filter Environmental Signals |
+| `plain_language_description` | string | no | Most of what the sweep finds is noise, and this work says so. The raw feed arrives at intake, verification applies the … |
+| `business_purpose` | string | no | It protects the steering process from noise, letting only observations with genuine strategic weight travel any further. |
+| `practical_context` | string | no | It follows the sweep, opening at intake of each raw feed and closing when the qualified set is confirmed and preserved … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

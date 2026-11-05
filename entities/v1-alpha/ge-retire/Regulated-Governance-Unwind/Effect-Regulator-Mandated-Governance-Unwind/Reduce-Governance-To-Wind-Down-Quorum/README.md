@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 This is a **Activity** (level L3), named **Reduce Governance To Wind-Down Quorum**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Effect Regulator-Mandated Governance Unwind** (`processes:process-ge-retire-mjq5hg`). Its canonical ID is `processes:activity-ge-retire-bp4237`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity trims the governance bodies down to the quorum the binding order allows, sunsets the instruments the order touches, and checks the slimmed regime can still lawfully act. The assessed scope arrives as the measure of the reduction, bodies and instruments are cut back per it, and the reduced regime is confirmed onward for the remaining unwind steps. Governance shrinks on purpose, and stays legal doing it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance shrinks to exactly what the order permits, no further, and remains fit to act.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the scope assessment, working the reduction per the controlling statute or order, and it completes when the reduced regime's fitness to act is confirmed onward for the custodianship and filings.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer cuts the bodies back to the quorum the order allows, sunsets the touched instruments, and confirms the slimmed regime remains fit to lawfully act.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reduce Governance to Wind-Down Quorum |
+| `plain_language_description` | string | no | This activity trims the governance bodies down to the quorum the binding order allows, sunsets the instruments the … |
+| `business_purpose` | string | no | It exists so governance shrinks to exactly what the order permits, no further, and remains fit to act. |
+| `practical_context` | string | no | It follows the scope assessment, working the reduction per the controlling statute or order, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

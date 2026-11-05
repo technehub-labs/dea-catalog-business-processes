@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Audit Conduct-Rule Compliance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Regulated Performance Oversight** (`processes:process-ao-operate-ba8scr`). Its canonical ID is `processes:activity-ao-operate-z4n9m2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks how well live licensed-role holders keep to the conduct rules their roles carry, using the conduct-rule matrix for each role. The live role list and the matrix arrive together, conduct is examined against the applicable rules, and the compliance audit record is produced and retained. Where conduct falls short, the audit names it plainly on the record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds current, auditable evidence that its licensed roles behave within the conduct rules.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while licensed roles are in live operation, when the role list and the conduct-rule matrix are presented, and it closes once the audit record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian examines each live role holder's conduct against the matrix's rules, writes the findings into the compliance audit record, and files it for oversight.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Audit Conduct-Rule Compliance |
+| `plain_language_description` | string | no | This activity checks how well live licensed-role holders keep to the conduct rules their roles carry, using the … |
+| `business_purpose` | string | no | It exists so the enterprise holds current, auditable evidence that its licensed roles behave within the conduct rules. |
+| `practical_context` | string | no | It runs while licensed roles are in live operation, when the role list and the conduct-rule matrix are presented, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

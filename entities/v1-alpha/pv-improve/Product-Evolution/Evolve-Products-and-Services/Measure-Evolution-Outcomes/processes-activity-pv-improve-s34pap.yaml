@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-6c2xvf through concluding task processes:task-pv-improve-record-ey7cgj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Evolution Outcomes'
+plain_language_description: 'After enhancements have been in place for a while, product management checks what they actually achieved, comparing results with the driver baseline recorded when the work was approved. Measurement material is registered at intake, verified against that baseline, assembled into an outcome measurement, confirmed, and archived for the next review.'
+business_purpose: 'It closes the loop on evolution work, telling product management whether each committed enhancement delivered against the pressure that prompted it.'
+practical_context: 'It runs once committed enhancements have had time to take effect: intake opens on the measurement material''s arrival and closure comes with the confirmed outcome measurement on file.'
+worked_example:
+  agent_type: human
+  narrative: 'Two quarters after an enhancement ships, a product management analyst pulls the result figures, registers them at intake, compares them with the baseline captured at approval, assembles the outcome measurement, and confirms it to the reviewers ahead of the next performance review.'

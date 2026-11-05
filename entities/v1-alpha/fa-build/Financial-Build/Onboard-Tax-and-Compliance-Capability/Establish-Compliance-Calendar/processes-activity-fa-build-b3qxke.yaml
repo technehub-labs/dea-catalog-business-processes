@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-ucfjgt through concluding task processes:task-fa-build-record-ugzg2g, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Establish Compliance Calendar'
+plain_language_description: 'This activity lays down the timetable of filings and reports the new regime will demand. The jurisdictional obligations arrive as the raw material, the calendar is established from them and checked for completeness, and the established calendar is confirmed onward for the filings work. Every obligation gets a date before any obligation gets missed.'
+business_purpose: 'It exists so the enterprise''s obligations under a new regime are all dated and owned before any falls due.'
+practical_context: 'It opens the tax and compliance onboarding when a new jurisdiction or regime applies, and it completes once the compliance calendar is established and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder lays the new regime''s filing and reporting obligations onto a dated compliance calendar, checks nothing is missing, and confirms the calendar for the filings.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-6hjzmk through concluding task processes:task-pv-build-record-36vyes, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set Launch Pricing'
+plain_language_description: 'This activity fixes what the offering will cost at launch, inside the enterprise''s financial rules and its own demand model. The assembled assets arrive alongside the financial policy and demand model as the boundaries, launch pricing is set within them and justified, and the set pricing is confirmed onward for the channel configuration. The value exchange gets its number here.'
+business_purpose: 'It exists so the offering launches at a price the financial policy and demand model both support.'
+practical_context: 'It runs during market readiness preparation, once the demand model and financial policy are to hand, and it completes when the set launch pricing is confirmed onward for the channel setup.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management officer sets the launch price within the financial policy and the demand model''s bounds, justifies the number, and confirms it onward.'

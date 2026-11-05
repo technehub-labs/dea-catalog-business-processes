@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-retire-bd3asa through concluding task processes:task-pr-retire-record-8c5qu7, whose outcome — Closure case file retained for Plan Relationship Close-Out under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Plan Relationship Close-Out'
+plain_language_description: 'This activity maps the ending before it happens — what the close covers, by when, and what is still owed. The relationship''s agreed or mandated end arrives as the trigger, the close-out is planned across scope, timeline, and obligations, and the plan is confirmed onward for the settlement work. Endings, like beginnings, deserve a plan.'
+business_purpose: 'It exists so a relationship''s ending is organised and complete rather than abrupt and leaky.'
+practical_context: 'It opens the close when the relationship reaches its agreed or mandated end — expiry, termination, or regulated offboarding — and it completes once the close-out plan is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead maps the close-out — scope, timeline, and the inventory of what is still owed — and confirms the plan for settlement.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Design Redeployment Options**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Optimize Asset Utilization** (`processes:process-eo-improve-q58ecg`). Its canonical ID is `processes:activity-eo-improve-s9zhpt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works each bounded utilization problem into concrete options for moving or re-aiming assets. The utilization analysis arrives with the capacity envelopes and demand model as the frame, options are designed and checked against both, and the option set is confirmed onward for decision. Every named problem gains at least one costed way out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each evidenced utilization problem has designed, assessed options for redress before a decision is forced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the utilization analysis, when the bounded problems and the capacity envelopes are to hand, and it completes once the option set is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer turns each bounded utilization problem into concrete redeployment options, checks them against the capacity envelopes and demand model, and confirms the option set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Redeployment Options |
+| `plain_language_description` | string | no | This activity works each bounded utilization problem into concrete options for moving or re-aiming assets. The … |
+| `business_purpose` | string | no | It exists so each evidenced utilization problem has designed, assessed options for redress before a decision is forced. |
+| `practical_context` | string | no | It follows the utilization analysis, when the bounded problems and the capacity envelopes are to hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Commit Experiment Design**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Innovation Experiment** (`processes:process-pv-design-9ckwf6`). Its canonical ID is `processes:activity-pv-design-mhyxnp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the hypothesis, the success criteria, and the timebox together into one committed experiment design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the prototype build. The test is fully specified before the first thing is built for it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the prototype build proceeds from one committed experiment design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the experiment design once hypothesis, criteria, and timebox are defined, and it completes when the committed experiment design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the hypothesis, success criteria, and timebox into the experiment design, obtains ratification, and records the committed design for the build.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Experiment Design |
+| `plain_language_description` | string | no | This activity draws the hypothesis, the success criteria, and the timebox together into one committed experiment … |
+| `business_purpose` | string | no | It exists so the prototype build proceeds from one committed experiment design. |
+| `practical_context` | string | no | It closes the experiment design once hypothesis, criteria, and timebox are defined, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

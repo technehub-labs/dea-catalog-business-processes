@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Design Integration Patterns**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Technology Platform Architecture** (`processes:process-eo-design-7gtead`). Its canonical ID is `processes:activity-eo-design-6vqzyk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the ways the platform's specified components will connect to one another. The component specification arrives as the map of what must join, integration approaches are designed pair by pair and gathered into a catalogue, and the catalogue is confirmed onward for the topology work. No component is left an island.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the platform's components connect by designed, repeatable patterns rather than ad hoc wiring.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the component specification, when the specified components are presented for connecting, and it completes once the integration catalogue is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer designs how each pair of specified components connects, gathers the approaches into a catalogue, and confirms it for the topology definition.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Integration Patterns |
+| `plain_language_description` | string | no | This activity draws the ways the platform's specified components will connect to one another. The component … |
+| `business_purpose` | string | no | It exists so the platform's components connect by designed, repeatable patterns rather than ad hoc wiring. |
+| `practical_context` | string | no | It follows the component specification, when the specified components are presented for connecting, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

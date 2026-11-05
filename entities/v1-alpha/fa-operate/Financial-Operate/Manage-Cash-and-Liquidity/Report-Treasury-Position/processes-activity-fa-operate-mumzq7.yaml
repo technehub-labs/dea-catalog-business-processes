@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-2pmqb2 through concluding task processes:task-fa-operate-record-najw7g, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Report Treasury Position'
+plain_language_description: 'This activity lays out where treasury stands — positions, forecasts, and investments — for whoever depends on knowing. The accumulated picture arrives as the material, the position report is drawn from it and checked, and the report is confirmed onward to its consumers. Treasury''s world becomes legible to the rest of the enterprise.'
+business_purpose: 'It exists so the people relying on treasury''s state can see it, reported rather than retold.'
+practical_context: 'It runs on the reporting cadence once positions, forecasts, and investments have accumulated, and it completes when the treasury position report is confirmed and delivered to its consumers.'
+worked_example:
+  agent_type: human
+  narrative: 'A treasury custodian draws the positions, forecasts, and investments into one position report, checks it against the underlying records, and confirms it to the consumers.'

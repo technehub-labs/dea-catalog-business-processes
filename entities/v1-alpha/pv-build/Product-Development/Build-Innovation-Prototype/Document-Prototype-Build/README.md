@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Document Prototype Build**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Innovation Prototype** (`processes:process-pv-build-8jc3y4`). Its canonical ID is `processes:activity-pv-build-ef63d7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes down exactly how the prototype was built, so any result it produces can be traced to a known construction. The instrumented prototype arrives as the artefact to be recorded, its build is documented — materials, configuration, known quirks — and the documented build is confirmed onward for readiness. Experiment results are only as trustworthy as the build notes behind them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so experiment results can be attributed to a precisely known construction state.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the instrumentation, once the prototype is fitted and working, and it completes when the documented build is confirmed onward for the readiness verification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder records exactly how the prototype was put together — its configuration and known quirks — and confirms the documented build onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Document Prototype Build |
+| `plain_language_description` | string | no | This activity writes down exactly how the prototype was built, so any result it produces can be traced to a known … |
+| `business_purpose` | string | no | It exists so experiment results can be attributed to a precisely known construction state. |
+| `practical_context` | string | no | It follows the instrumentation, once the prototype is fitted and working, and it completes when the documented build is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

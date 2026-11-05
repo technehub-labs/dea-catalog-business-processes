@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Declare Regulator-Licensed Role Mix**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Licensed or Regulated Agent Capacity** (`processes:process-ao-conceive-pnrhem`). Its canonical ID is `processes:activity-ao-conceive-cqkwrm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles and states which regulator-licensed roles the enterprise's planned capacity actually includes, how many of each kind, and what regulator-controlled scope each one carries. The agent-capacity strategy and the licensing taxonomy come in first, the role mix is worked up and reviewed against them, and the resulting declaration is confirmed and placed on the personnel record. From then on, downstream work has an authoritative statement of the licensed roles it is staffing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's regulated-scope declaration spells out its licensed role commitment before any design or build work begins.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It occurs when the agent-capacity strategy is set to include regulator-licensed roles and the licensing taxonomy is to hand, and it closes when the committed declaration is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead, working with workforce management, decides the enterprise will carry a defined count of controlled-function roles, records the scope tied to each category, and confirms the declaration that later design work will staff against.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Declare the Regulator-Licensed Role Mix |
+| `plain_language_description` | string | no | This activity settles and states which regulator-licensed roles the enterprise's planned capacity actually includes … |
+| `business_purpose` | string | no | It exists so the enterprise's regulated-scope declaration spells out its licensed role commitment before any design or … |
+| `practical_context` | string | no | It occurs when the agent-capacity strategy is set to include regulator-licensed roles and the licensing taxonomy is to … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

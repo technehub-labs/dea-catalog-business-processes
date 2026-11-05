@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-pxydu3 through concluding task processes:task-pr-design-record-rqgj7g, whose outcome — Closure case file retained for Specify Interaction Patterns under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Specify Interaction Patterns'
+plain_language_description: 'This activity sets the house style for how interactions play out, the same way at every touchpoint. The designed touchpoints arrive as the surfaces to be governed, the patterns are specified across them and checked for consistency, and the specification is confirmed onward for the quality criteria. Customers learn the enterprise once and recognise it everywhere.'
+business_purpose: 'It exists so interactions behave consistently by design, whichever touchpoint a customer uses.'
+practical_context: 'It follows the touchpoint design, when the surfaces are drawn, and it completes once the interaction pattern specification is confirmed onward for the quality criteria.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management designer sets the repeatable patterns for how interactions behave across every touchpoint, and confirms the specification onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Issue Purchase Orders**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Procurement Cycle** (`processes:process-eo-operate-vzcxx7`). Its canonical ID is `processes:activity-eo-operate-n5fq6h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns each approved request into an order placed with the supplier. The approved requisitions arrive as the trigger, orders are drawn up and placed with the enterprise's approved suppliers, and the placed orders are confirmed onward for receipt. The enterprise's buying commitments become binding here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so approved demand becomes placed orders with the right suppliers, on terms the enterprise has agreed to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows requisition approval, when each approved request is handed over, and it completes once the placed purchase orders are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A procurement custodian draws up and places the purchase order for each approved request with the supplier, and confirms the placed orders for the receiving step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue Purchase Orders |
+| `plain_language_description` | string | no | This activity turns each approved request into an order placed with the supplier. The approved requisitions arrive as … |
+| `business_purpose` | string | no | It exists so approved demand becomes placed orders with the right suppliers, on terms the enterprise has agreed to. |
+| `practical_context` | string | no | It follows requisition approval, when each approved request is handed over, and it completes once the placed purchase … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Measure Rationalization Outcomes**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Rationalize Portfolio** (`processes:process-pv-improve-9xvgat`). Its canonical ID is `processes:activity-pv-improve-k3hy7t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once retire-or-pivot decisions have been carried out, product management looks at what the portfolio actually looks like now and compares it with the picture recorded before the decisions. Outcome material is registered at intake, verified against the pre-decision baseline, assembled into a measurement, confirmed, and archived to inform the next rationalization round.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It tells the portfolio's stewards whether the rationalization decisions actually improved matters, closing the loop and informing the next round of choices.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at the end of a rationalization cycle, after decisions have taken effect; intake opens on outcome material arriving and closure comes when the confirmed measurement is archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A quarter after a retirement completes, a product management analyst registers the portfolio's new state at intake, checks it against the pre-decision snapshot, works out that freed investment now supports the pivoted offering, and confirms the measurement for the stewards.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Rationalization Outcomes |
+| `plain_language_description` | string | no | Once retire-or-pivot decisions have been carried out, product management looks at what the portfolio actually looks … |
+| `business_purpose` | string | no | It tells the portfolio's stewards whether the rationalization decisions actually improved matters, closing the loop and … |
+| `practical_context` | string | no | It runs at the end of a rationalization cycle, after decisions have taken effect; intake opens on outcome material … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

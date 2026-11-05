@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Draft Strategic Scenarios**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Scenarios** (`processes:process-sd-design-uenzna`). Its canonical ID is `processes:activity-sd-design-xz6zgn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the assumptions fixed, the alternative futures get written. Intake registers the assumption set, verification checks the drafting instructions are complete, and processing writes the scenarios — coherent pictures of how conditions could unfold, each one staying inside the agreed assumptions. Confirmation announces the drafted scenarios downstream and the working papers are preserved for the signpost step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a small set of plausible alternative futures, so choices can be stress-tested rather than judged on one forecast.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the assumptions are set, opening at intake of the assumption set and closing when the drafted scenarios are confirmed ready for signposts.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers draft each scenario inside the agreed assumptions, a verification custodian returns any that quietly contradict them, and the confirmation custodian tells the signpost team the scenario set is with them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft Strategic Scenarios |
+| `plain_language_description` | string | no | With the assumptions fixed, the alternative futures get written. Intake registers the assumption set, verification … |
+| `business_purpose` | string | no | It gives the enterprise a small set of plausible alternative futures, so choices can be stress-tested rather than … |
+| `practical_context` | string | no | It runs once the assumptions are set, opening at intake of the assumption set and closing when the drafted scenarios … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

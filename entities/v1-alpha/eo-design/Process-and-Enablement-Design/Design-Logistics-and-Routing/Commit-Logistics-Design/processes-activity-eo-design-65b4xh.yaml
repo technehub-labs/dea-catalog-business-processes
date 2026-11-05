@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-8s76nv through concluding task processes:task-eo-design-record-vvz5sp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Logistics Design'
+plain_language_description: 'This activity gathers the chosen transport modes, the routing specification, and the node plan into one design and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed design is confirmed for the logistics build. How goods will move stops being three workstreams and becomes one instruction.'
+business_purpose: 'It exists so logistics network build starts from one committed design rather than three separate documents.'
+practical_context: 'It closes the logistics and routing design, once modes, nodes, and routing are designed, and it completes when the committed design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the mode selection, node plan, and routing specification into the logistics design, checks the three cohere, and records the commitment for the build teams.'

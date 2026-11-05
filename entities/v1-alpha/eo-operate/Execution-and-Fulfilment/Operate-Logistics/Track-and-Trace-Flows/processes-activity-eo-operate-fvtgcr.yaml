@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zh9m57 through concluding task processes:task-eo-operate-record-rsnvnb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Track and Trace Flows'
+plain_language_description: 'This activity keeps tabs on where every moving shipment is right now, logging each step of its journey. Movement events arrive as shipments progress, the tracking record is kept current from them, and the maintained visibility is confirmed onward. When someone asks where an order is, the answer comes from this record.'
+business_purpose: 'It exists so the enterprise always knows where its in-flight shipments are, from its own tracking record.'
+practical_context: 'It runs continuously while shipments are in flight, logging movement events as they occur, and the tracking record closes each update when it is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A logistics custodian logs each movement event as shipments progress through the network, keeping the tracking record current enough to answer where any order stands.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Frame Ambition Envelope**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Define Enterprise Purpose and Ambition** (`processes:process-sd-conceive-r93j3d`). Its canonical ID is `processes:activity-sd-conceive-9672ug`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With purpose in words, attention turns to how far the enterprise intends to reach. The purpose statement and fresh environment cues arrive at intake, verification checks they align, and processing draws the ambition envelope — the band of aspiration the organisation is willing to commit to. Confirmation hands the envelope downstream and the records custodian preserves it beside the purpose statement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It bounds how bold the enterprise intends to be, so intent and horizons are framed inside a realistic, agreed level of aspiration.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after the purpose statement is framed, opening at its intake and closing when the drawn envelope is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function sketches an ambition band with the governing board's guidance in view, a verification custodian checks it against the purpose wording, and the confirmation custodian releases the envelope to the intent conception team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Ambition Envelope |
+| `plain_language_description` | string | no | With purpose in words, attention turns to how far the enterprise intends to reach. The purpose statement and fresh … |
+| `business_purpose` | string | no | It bounds how bold the enterprise intends to be, so intent and horizons are framed inside a realistic, agreed level of … |
+| `practical_context` | string | no | It runs after the purpose statement is framed, opening at its intake and closing when the drawn envelope is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

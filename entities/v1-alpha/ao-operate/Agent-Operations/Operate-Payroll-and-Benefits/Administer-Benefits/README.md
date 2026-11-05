@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Administer Benefits**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Payroll and Benefits** (`processes:process-ao-operate-38qyc6`). Its canonical ID is `processes:activity-ao-operate-8sc5gr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps each in-service agent's benefits entitlements straight, cycle after cycle. The standing entitlements arrive as the input, enrolments and changes are processed and the administration checked, and the administered benefits are confirmed for the record. What each agent is owed in benefits is thereby maintained correctly as service continues.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the benefits side of employment stays accurate alongside pay, cycle after cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs every cycle for the agents in service, alongside the payroll calculation, and it closes when the administered benefits are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian processes a joiner's benefits enrolment and a leaver's wind-down in the same cycle, checks the entitlements line up, and confirms the administered benefits for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Administer Benefits |
+| `plain_language_description` | string | no | This activity keeps each in-service agent's benefits entitlements straight, cycle after cycle. The standing … |
+| `business_purpose` | string | no | It exists so the benefits side of employment stays accurate alongside pay, cycle after cycle. |
+| `practical_context` | string | no | It runs every cycle for the agents in service, alongside the payroll calculation, and it closes when the administered … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Plan Transport and Deliveries**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Logistics** (`processes:process-eo-operate-zh9m57`). Its canonical ID is `processes:activity-eo-operate-zdw2by`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the demand for deliveries into a routed, timed plan for moving them. The delivery demand arrives against the network's known capacity, routes and schedules are worked out and checked for feasibility, and the shipment plan is confirmed onward for execution. Every delivery starts life as a plan that fits the network.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so goods move on routed, timed plans the network can actually deliver, rather than on wishful scheduling.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the logistics operation, when delivery demand is presented against network capacity, and it completes once the shipment plan is confirmed for execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A logistics planner routes and times the day's delivery demand across the network's capacity, checks each route is feasible, and confirms the shipment plan for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Transport and Deliveries |
+| `plain_language_description` | string | no | This activity turns the demand for deliveries into a routed, timed plan for moving them. The delivery demand arrives … |
+| `business_purpose` | string | no | It exists so goods move on routed, timed plans the network can actually deliver, rather than on wishful scheduling. |
+| `practical_context` | string | no | It opens the logistics operation, when delivery demand is presented against network capacity, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

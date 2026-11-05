@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-cdtsbq through concluding task processes:task-fa-improve-record-th9vu2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Analyze Control Findings'
+plain_language_description: 'This activity reads the audit finding or the control incident that has surfaced, and works out what refinement it actually demands. The finding or incident arrives as the trigger, its causes and scope are analyzed and the refinement need bounded, and the analysis is confirmed onward for the refinement design. A control failure becomes a design brief rather than a blame exercise.'
+business_purpose: 'It exists so control refinements start from a bounded understanding of what actually went wrong.'
+practical_context: 'It opens the refinement cycle when an audit finding or control incident surfaces, and it completes once the bounded analysis is confirmed for the refinement design.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst reads the surfaced audit finding, works out the refinement it truly demands, bounds the need, and confirms the analysis for the design step.'

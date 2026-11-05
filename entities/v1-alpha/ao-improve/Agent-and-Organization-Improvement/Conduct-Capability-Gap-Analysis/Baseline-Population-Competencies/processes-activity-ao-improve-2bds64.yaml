@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-h3vgyf through concluding task processes:task-ao-improve-record-qgqttw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Baseline the Current Competencies of the Agent Population'
+plain_language_description: 'This activity measures where the enterprise''s agents actually stand today against the competency framework it designed. The framework and the current population are brought together, each person and artificial agent is assessed against the framework''s anchors, and the results are compiled into a population baseline. The baseline is confirmed and retained so every later gap finding rests on measurement rather than impression.'
+business_purpose: 'It exists so capability analysis starts from an honest, measured picture of current competence instead of assumptions.'
+practical_context: 'It opens the capability gap analysis, when the committed competency framework and the operating population are presented together, and it closes once the baseline is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A custodian working for the organization design authority runs the framework''s assessment anchors across the current population, compiles the results into one baseline, and files it for the gap identification step.'

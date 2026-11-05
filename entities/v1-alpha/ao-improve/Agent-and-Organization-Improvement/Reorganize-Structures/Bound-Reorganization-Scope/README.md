@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Bound Reorganization Scope**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Reorganize Structures** (`processes:process-ao-improve-xs59e2`). Its canonical ID is `processes:activity-ao-improve-evxkz9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity decides exactly how much structural change the reorganization will cover, taking its cue from committed review findings and any change of direction. Those inputs come in and are examined, the boundary of the required change is drawn around the affected units, roles, and reporting lines, and the bounded scope is confirmed with the design authority. Work outside that line is expressly out of scope.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so structural change addresses the named findings without scope creeping across the rest of the organization.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the reorganization, when committed review findings or a direction change require structural change, and it closes once the bounded scope is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority reads the committed review findings, draws the change boundary around the affected units and reporting lines, and confirms the scope before any sequencing begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Scope of the Reorganization |
+| `plain_language_description` | string | no | This activity decides exactly how much structural change the reorganization will cover, taking its cue from committed … |
+| `business_purpose` | string | no | It exists so structural change addresses the named findings without scope creeping across the rest of the organization. |
+| `practical_context` | string | no | It opens the reorganization, when committed review findings or a direction change require structural change, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

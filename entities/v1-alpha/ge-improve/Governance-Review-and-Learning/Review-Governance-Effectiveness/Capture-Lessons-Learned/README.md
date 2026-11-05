@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Capture Lessons Learned**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Review Governance Effectiveness** (`processes:process-ge-improve-mgkw59`). Its canonical ID is `processes:activity-ge-improve-f4qwmk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers what the measured governance performance has taught. The measured outcomes arrive as the source, lessons are captured from them and written down plainly, and the captured lessons are confirmed onward for the recommendations. The enterprise's governance mistakes become assets the moment they are written down properly.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance's operating experience is banked as lessons rather than evaporating with the cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the performance measurement, once the outcomes are in hand, and it completes when the captured lessons are confirmed onward for the recommendations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer draws the lessons out of the measured governance outcomes — where cycles ran well, where they ground — and confirms the captured lessons onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Capture Lessons Learned |
+| `plain_language_description` | string | no | This activity gathers what the measured governance performance has taught. The measured outcomes arrive as the source … |
+| `business_purpose` | string | no | It exists so governance's operating experience is banked as lessons rather than evaporating with the cycle. |
+| `practical_context` | string | no | It follows the performance measurement, once the outcomes are in hand, and it completes when the captured lessons are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -1,0 +1,282 @@
+{
+  "processes:activity-ge-improve-rbvv52": {
+    "plain_language_name": "Measure Governance Performance",
+    "plain_language_description": "This activity checks how well the enterprise's governance has actually been working, measured against the strategy it was committed under. The operating governance arrives with the committed strategy as the yardstick, performance is measured against it, and the measured outcomes are confirmed onward for the lessons work. Governance is graded here, against its own homework.",
+    "business_purpose": "It exists so governance effectiveness is known by measurement against strategy, not by the bodies' own opinion of themselves.",
+    "practical_context": "It opens each effectiveness review once the bodies have been operating for their periodic cycle, and it completes when the measured outcomes are confirmed onward for the lessons capture.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst measures the operating bodies' performance against the committed governance strategy, and confirms the measured outcomes onward for the lessons work."
+    }
+  },
+  "processes:activity-ge-improve-f4qwmk": {
+    "plain_language_name": "Capture Lessons Learned",
+    "plain_language_description": "This activity gathers what the measured governance performance has taught. The measured outcomes arrive as the source, lessons are captured from them and written down plainly, and the captured lessons are confirmed onward for the recommendations. The enterprise's governance mistakes become assets the moment they are written down properly.",
+    "business_purpose": "It exists so governance's operating experience is banked as lessons rather than evaporating with the cycle.",
+    "practical_context": "It follows the performance measurement, once the outcomes are in hand, and it completes when the captured lessons are confirmed onward for the recommendations.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer draws the lessons out of the measured governance outcomes — where cycles ran well, where they ground — and confirms the captured lessons onward."
+    }
+  },
+  "processes:activity-ge-improve-nfn3x5": {
+    "plain_language_name": "Formulate Effectiveness Recommendations",
+    "plain_language_description": "This activity turns the measured performance and the captured lessons into concrete recommendations for the bodies. Both arrive as the basis, recommendations are formulated against them and each made actionable, and the formulated set is confirmed onward for delivery. Governance's homework comes back with specific corrections, not vague encouragement.",
+    "business_purpose": "It exists so governance improvement arrives as specific, actionable recommendations rather than reflections.",
+    "practical_context": "It follows the lessons capture, working from the measured outcomes and captured lessons, and it completes once the formulated recommendations are confirmed onward for delivery.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer turns the measured performance and captured lessons into specific recommendations for each body, and confirms the formulated set onward."
+    }
+  },
+  "processes:activity-ge-improve-adkxr6": {
+    "plain_language_name": "Deliver Effectiveness Reviews",
+    "plain_language_description": "This activity hands the finished effectiveness reviews — outcomes, lessons, and recommendations together — to the governance bodies themselves. The consolidated reviews arrive as the release candidates, delivery is executed to each body, and the delivered reviews are confirmed for the record. The people being graded finally receive their grades.",
+    "business_purpose": "It exists so governance bodies actually receive the effectiveness reviews written about them.",
+    "practical_context": "It closes the effectiveness review once outcomes, lessons, and recommendations are consolidated, and it completes when the delivered reviews are confirmed to the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer delivers the consolidated effectiveness reviews to each governance body, and confirms the deliveries for the record."
+    }
+  },
+  "processes:activity-ge-improve-nz4rpa": {
+    "plain_language_name": "Score Finding Severity",
+    "plain_language_description": "This activity grades how serious each delivered audit finding is, using the audit framework's rubric and the assurance thresholds. The delivered findings arrive as the intake, severity is scored finding by finding against the rubric, and the scored findings are confirmed onward for the recurrence work. Not all findings weigh the same, and now that is official.",
+    "business_purpose": "It exists so audit findings carry an official severity, applied by rubric rather than by mood.",
+    "practical_context": "It opens the finding scoring when an audit report arrives with its findings, and it completes once each scored finding is confirmed onward for the recurrence assessment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst grades each delivered finding's severity against the framework rubric and the assurance thresholds, and confirms the scored findings onward."
+    }
+  },
+  "processes:activity-ge-improve-er48vd": {
+    "plain_language_name": "Assess Finding Recurrence",
+    "plain_language_description": "This activity checks whether each finding is new trouble or the same old trouble returning. The scored findings are set beside the record of findings gone before, recurrence is assessed one by one, and the assessed set is confirmed onward for the standards measurement. Repeat findings earn their own special attention from this point.",
+    "business_purpose": "It exists so findings that keep coming back are recognised as repeats, and treated as such.",
+    "practical_context": "It follows the severity scoring, measured against the record of findings gone before, and it completes once the assessed recurrence is confirmed onward for the standards measurement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst checks each scored finding against the historical record, marks the ones that are repeat visits, and confirms the assessed set onward."
+    }
+  },
+  "processes:activity-ge-improve-9te97d": {
+    "plain_language_name": "Measure Findings Against Standards",
+    "plain_language_description": "This activity lays the scored findings alongside the codified standards, working out exactly how far short of them the enterprise has fallen. The assessed findings arrive with the codified standards as the ruler, the compliance delta is bounded finding by finding, and the measured findings are confirmed onward for the trends. Gaps become numbers here.",
+    "business_purpose": "It exists so each finding's distance from the standard is measured, not merely asserted.",
+    "practical_context": "It follows the recurrence assessment, when the codified standards are to hand as the ruler, and it completes once the measured compliance delta is confirmed onward for the trend reporting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst measures each assessed finding against the codified standards, bounds the compliance delta, and confirms the measured findings for the trend reporting."
+    }
+  },
+  "processes:activity-ge-improve-kngey3": {
+    "plain_language_name": "Report Quality Trends",
+    "plain_language_description": "This activity rolls the scored and measured findings into the patterns underneath them, and reports those patterns to the governance bodies. The measured findings arrive as the raw material, quality trends are drawn out and written up, and the trend report is confirmed onward to its readers. Individual findings become a direction the enterprise can steer against.",
+    "business_purpose": "It exists so governance bodies see the shape of their audit findings, not just a list of them.",
+    "practical_context": "It closes the finding scoring once findings are scored, assessed, and measured, and it completes when the trend report is confirmed and delivered to the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst rolls the scored and measured findings into quality trend reporting, and confirms the report to the governance bodies."
+    }
+  },
+  "processes:activity-ge-operate-cpcway": {
+    "plain_language_name": "Plan Compliance Audits",
+    "plain_language_description": "This activity lays out the periodic audits that will check the enterprise against its own codified policies. The codified policies and the operating bodies arrive as the territory to be examined, audits are planned across it and resourced, and the audit plan is confirmed onward for execution. Compliance gets examined by timetable, not by scandal.",
+    "business_purpose": "It exists so compliance with the codified policies is audited on a designed plan rather than by chance.",
+    "practical_context": "It opens the audit cycle once policies are codified and bodies are operating, and it completes when the planned audits are confirmed onward for execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function auditor plans the periodic audits across the codified policies and operating bodies, resources each, and confirms the plan for execution."
+    }
+  },
+  "processes:activity-ge-operate-batrgt": {
+    "plain_language_name": "Execute Compliance Audits",
+    "plain_language_description": "This activity carries the planned audits out, testing the enterprise against its codified policies. The audit plan arrives as the worklist, each audit is executed as designed and its evidence gathered, and the executed audits are confirmed onward for the findings reporting. The policies are tested here against the enterprise's actual behaviour.",
+    "business_purpose": "It exists so the planned compliance audits genuinely happen, and produce real evidence.",
+    "practical_context": "It follows the audit planning, working the plan as each audit falls due, and it completes once the executed audits are confirmed onward for the findings reporting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function auditor executes each planned audit against the codified policies, gathering the evidence the plan calls for, and confirms the executed audits onward."
+    }
+  },
+  "processes:activity-ge-operate-r4ka8z": {
+    "plain_language_name": "Report Audit Findings",
+    "plain_language_description": "This activity delivers what the audits found — findings, recommendations, and the follow-up actions they require — to the governance body charged with receiving them. The executed audits arrive as the source, the findings are written up and routed to the right body, and the reported findings are confirmed onward for tracking. The bodies cannot fix what they never hear about.",
+    "business_purpose": "It exists so audit findings reach the governance body that owns the remedy.",
+    "practical_context": "It follows the audit execution, once evidence is in hand, and it completes when the reported findings and recommendations are confirmed onward to the appropriate governance body.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function auditor writes up the findings and recommendations from the executed audits, routes them to the governance body charged with the remedy, and confirms the reporting."
+    }
+  },
+  "processes:activity-ge-operate-zhhypw": {
+    "plain_language_name": "Track Follow-Up Actions",
+    "plain_language_description": "This activity keeps count of the remedies the audits demanded, from promise to done. The reported findings arrive with their follow-up actions attached, each action is tracked to closure and chased when it stalls, and the tracked actions are confirmed onward as they close. Audit findings do not quietly die here.",
+    "business_purpose": "It exists so audit findings produce closed remedies rather than open promises.",
+    "practical_context": "It runs from the findings' reporting to each follow-up action's closure, and it completes as each tracked action closes and its closure is confirmed for the record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function custodian tracks each follow-up action from its reporting to its closure, chasing the stalled ones, and confirms each closure for the record."
+    }
+  },
+  "processes:activity-ge-operate-x79d9p": {
+    "plain_language_name": "Assemble Assurance Evidence",
+    "plain_language_description": "This activity gathers in the evidence the assurance work will need, from wherever it lives. The cycle or mandate arrives as the specification, evidence is assembled against it and checked for completeness, and the assembled set is confirmed onward for the measurement. Assurance starts from everything it needs, in one place.",
+    "business_purpose": "It exists so assurance examines a complete evidence base rather than whatever happens to be at hand.",
+    "practical_context": "It opens the assurance review when a cycle or audit mandate arrives, and it completes once the assembled evidence is confirmed onward for the measurement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function custodian gathers the evidence an assurance cycle requires from its scattered sources, checks the set for completeness, and confirms it for measurement."
+    }
+  },
+  "processes:activity-ge-operate-gjnh3s": {
+    "plain_language_name": "Measure Evidence Against Standards",
+    "plain_language_description": "This activity lays the assembled evidence alongside the codified standards and finds where the two disagree. The evidence arrives with the standards as the ruler, measurement is performed and differences bounded, and the measured position is confirmed onward for the findings. Assurance speaks in distances from standards here.",
+    "business_purpose": "It exists so assurance findings rest on measured distances from the codified standards.",
+    "practical_context": "It follows the evidence assembly, when the codified standards are to hand as the ruler, and it completes once the measured position is confirmed onward for the findings reporting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function analyst lays the assembled evidence against the codified standards, measures and bounds the differences, and confirms the measured position onward."
+    }
+  },
+  "processes:activity-ge-operate-q4qn2x": {
+    "plain_language_name": "Report Assurance Findings",
+    "plain_language_description": "This activity states what the measured evidence showed, as findings delivered to those charged with acting on them. The measured position arrives as the source, findings are written up and delivered to their audiences, and the reported findings are confirmed for the record. Measurement becomes message here.",
+    "business_purpose": "It exists so assurance measurement becomes delivered findings someone can act on.",
+    "practical_context": "It follows the evidence measurement, once the measured position is in hand, and it completes when the reported findings are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function analyst writes up the findings from the measured evidence, delivers them to the audiences charged with acting, and confirms the reporting for the record."
+    }
+  },
+  "processes:activity-ge-operate-yczj9n": {
+    "plain_language_name": "Maintain Audit Quality",
+    "plain_language_description": "This activity keeps the auditor honest — maintaining the quality of the function that does the auditing, across its cycles. Each completed cycle arrives as material for self-examination, quality is reviewed and weaknesses corrected, and the maintained quality is confirmed onward. The function that grades everyone else grades itself first.",
+    "business_purpose": "It exists so the audit and assurance function stays good enough to judge everyone else.",
+    "practical_context": "It runs across the assurance cycles, examining the function's own work as each completes, and it completes when the maintained audit quality is confirmed onward for the record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function lead reviews the function's own completed audit work for quality, corrects the weaknesses found, and confirms the maintained quality onward."
+    }
+  },
+  "processes:activity-ge-operate-rwpbpf": {
+    "plain_language_name": "Maintain Risk Registers",
+    "plain_language_description": "This activity keeps the risk registers alive — current, accurate, and actually used — across the review cycles. Register movements arrive continuously from the operation, entries are maintained as events land, and the living record is confirmed onward for the reviews. A stale register is a fiction; this prevents the fiction.",
+    "business_purpose": "It exists so the enterprise's risk registers stay a living record rather than a museum piece.",
+    "practical_context": "It runs continuously across the review cycles as register events land, and each maintained update closes when it is confirmed onward for the reviews.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function custodian posts each register movement as it lands — new risks, changed scores, closed entries — keeping the record living across the cycles."
+    }
+  },
+  "processes:activity-ge-operate-wr4w6h": {
+    "plain_language_name": "Execute Risk Reviews",
+    "plain_language_description": "This activity works the reviews of risk that each cycle boundary brings due, examining the register's picture against reality. The cycle boundary arrives as the trigger, reviews are executed over the maintained registers and their findings gathered, and the executed reviews are confirmed onward for the exposure work. The risk picture is re-checked on a rhythm, not left to rot.",
+    "business_purpose": "It exists so the enterprise's risk picture is re-examined on schedule rather than assumed still true.",
+    "practical_context": "It runs at each risk review cycle boundary, working over the maintained registers, and it completes once the executed reviews are confirmed onward for the exposure surfacing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function analyst runs the cycle's risk reviews over the maintained registers, gathering what has changed since last time, and confirms the executed reviews onward."
+    }
+  },
+  "processes:activity-ge-operate-qtwuqf": {
+    "plain_language_name": "Surface Risk Exposures",
+    "plain_language_description": "This activity brings the exposures the reviews and monitoring have found up out of the registers and into the light. The executed reviews arrive with their findings, exposures are surfaced and stated plainly, and the surfaced exposures are confirmed onward for the mitigation work. Dangers stop being register entries and become named problems.",
+    "business_purpose": "It exists so identified exposures are surfaced for action rather than left buried in the registers.",
+    "practical_context": "It follows the executed reviews and continuous monitoring, and it completes once the surfaced exposures are confirmed onward for the mitigation responses.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function analyst states plainly the exposures the reviews and monitoring have identified, and confirms the surfaced exposures onward for mitigation."
+    }
+  },
+  "processes:activity-ge-operate-d5tfkp": {
+    "plain_language_name": "Deliver Mitigations to Bodies",
+    "plain_language_description": "This activity carries the proposed answers to the surfaced exposures up to the bodies charged with deciding on them. The surfaced exposures arrive with their candidate mitigations, the responses are delivered to the governance bodies and their receipt confirmed, and the delivered mitigations are recorded. Risk reaches its decision-makers here, with an answer attached.",
+    "business_purpose": "It exists so surfaced exposures arrive at their governance bodies with proposed mitigations attached.",
+    "practical_context": "It follows the exposure surfacing, once mitigations are worked up, and it completes when the delivered mitigation responses are confirmed to the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function officer delivers the worked-up mitigation responses for the surfaced exposures to the governance bodies, and confirms each delivery on the record."
+    }
+  },
+  "processes:activity-ge-operate-bjfkws": {
+    "plain_language_name": "Run Board and Committee Cycles",
+    "plain_language_description": "This activity keeps the boards and committees convening on their established schedules, cycle after cycle. The established cycles arrive as the timetable, each convening is run as designed with its papers prepared, and the run cycles are confirmed onward for the decisions within them. Governance's pulse is maintained here, beat by beat.",
+    "business_purpose": "It exists so governance bodies actually meet as their charters and cycles require.",
+    "practical_context": "It runs continuously against the established schedules as each cycle falls due, and it completes when the run cycles are confirmed onward for the decisions they carry.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance custodian runs each board and committee convening on its established schedule — papers out, quorum checked, session run — and confirms the cycle onward."
+    }
+  },
+  "processes:activity-ge-operate-yt8562": {
+    "plain_language_name": "Facilitate Governance Decisions",
+    "plain_language_description": "This activity helps the bodies actually make the decisions their cycles exist for, working within the running cycles. The convened cycles arrive with their decision papers, the making of each decision is facilitated under its rights and delegations, and the facilitated decisions are confirmed onward for the record. Governance's whole purpose is exercised here.",
+    "business_purpose": "It exists so governance bodies decide smoothly and properly, within their designed rights.",
+    "practical_context": "It runs within the running board and committee cycles as decision points arrive, and it completes once each facilitated decision is confirmed onward for the decision record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance custodian steers each convened decision through its rights and delegations — papers in order, votes properly taken — and confirms the decision onward for recording."
+    }
+  },
+  "processes:activity-ge-operate-fch6f5": {
+    "plain_language_name": "Record Governance Decisions",
+    "plain_language_description": "This activity writes down what the bodies decided, into the record of record. The made decisions arrive from the facilitated cycles, each is recorded with its terms and its rationale, and the recorded decisions are confirmed onward. Tomorrow's enterprise can know exactly what its governance chose, and why.",
+    "business_purpose": "It exists so governance decisions are preserved with their reasoning in the authoritative record.",
+    "practical_context": "It follows each facilitated decision as it is made within the cycles, and it completes when the recorded decision is confirmed into the decision record of record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance custodian writes each made decision into the record of record — terms, rationale, and dissent noted — and confirms the recorded decision onward."
+    }
+  },
+  "processes:activity-ge-operate-pvyf2x": {
+    "plain_language_name": "Maintain Governance Machinery",
+    "plain_language_description": "This activity keeps the governance machinery oiled between and across the cycles — the calendars current, the delegations register true, the body composition right. Machinery drift arrives as changes land, each is folded into the machinery and checked, and the maintained state is confirmed onward. Governance's engine is serviced here, so it never seizes mid-cycle.",
+    "business_purpose": "It exists so the governance machinery — calendars, delegations, memberships — never drifts out of true.",
+    "practical_context": "It runs between and across the cycles as machinery changes land, and it completes when the maintained machinery state is confirmed onward for the running cycles.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance custodian folds each machinery change into the calendars, the delegations register, and the body composition as it lands, and confirms the maintained state onward."
+    }
+  },
+  "processes:activity-ge-retire-k5amzf": {
+    "plain_language_name": "Assess Regulator or Court Order Scope",
+    "plain_language_description": "This activity reads the order from the regulator or the court, works out what it binds the enterprise to do and by when, and maps each obligation onto the governance bodies and instruments that must now stand down. The order arrives as the controlling authority, its scope is assessed and mapped, and the assessed scope is confirmed onward for the unwind. The enterprise learns exactly how much of itself it must now dismantle, and in what order.",
+    "business_purpose": "It exists so the mandated unwind proceeds against a complete, correct reading of what the order actually demands.",
+    "practical_context": "It opens the unwind when the dissolution, revocation, wind-down, or equivalent order is issued, and it completes once the assessed scope and its mapped obligations are confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management officer reads the regulator's order line by line, maps each binding obligation and deadline onto the bodies and instruments affected, and confirms the assessed scope onward."
+    }
+  },
+  "processes:activity-ge-retire-bp4237": {
+    "plain_language_name": "Reduce Governance to Wind-Down Quorum",
+    "plain_language_description": "This activity trims the governance bodies down to the quorum the binding order allows, sunsets the instruments the order touches, and checks the slimmed regime can still lawfully act. The assessed scope arrives as the measure of the reduction, bodies and instruments are cut back per it, and the reduced regime is confirmed onward for the remaining unwind steps. Governance shrinks on purpose, and stays legal doing it.",
+    "business_purpose": "It exists so governance shrinks to exactly what the order permits, no further, and remains fit to act.",
+    "practical_context": "It follows the scope assessment, working the reduction per the controlling statute or order, and it completes when the reduced regime's fitness to act is confirmed onward for the custodianship and filings.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer cuts the bodies back to the quorum the order allows, sunsets the touched instruments, and confirms the slimmed regime remains fit to lawfully act."
+    }
+  },
+  "processes:activity-ge-retire-rzhc83": {
+    "plain_language_name": "Assign Retained-Records Custodianship",
+    "plain_language_description": "This activity hands the enterprise's retained records to a named keeper — with the arrangement for service of process held in place for the statutory retention period — and confirms both the keeper's acceptance and the regulator's or court's contentment with the arrangement. The order arrives with its custodianship requirements, the assignment is made and accepted, and the satisfied assignment is confirmed onward. Someone specific must keep the enterprise's memory; this names them.",
+    "business_purpose": "It exists so the wound-down enterprise's retained records have a named, accepted, regulator-approved keeper.",
+    "practical_context": "It follows the governance reduction, once the regime can still act to make the assignment, and it completes when the accepted, satisfied custodianship assignment is confirmed onward for the filings.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management officer assigns the retained records to the designated custodian, holds the service-of-process arrangement for the retention period, and confirms the regulator is content with the assignment."
+    }
+  },
+  "processes:activity-ge-retire-rck7n9": {
+    "plain_language_name": "Submit Statutory Dissolution Filings",
+    "plain_language_description": "This activity draws up, lodges, and records the dissolution paperwork the controlling statute and the order demand — tax-status termination, corporate dissolution at the registry, charity asset notifications, receivership reports, and the surrender notice — closing the entity's official life. The reduced regime and settled custodianship arrive as the preconditions, the filings are prepared and lodged with each authority, and the recorded filings are confirmed for the record. The enterprise's official existence ends in properly filed paperwork.",
+    "business_purpose": "It exists so the mandated dissolution is completed by properly lodged filings with every authority the law names.",
+    "practical_context": "It runs once the regime is reduced and custodianship is settled, and it completes when the lodged dissolution filings with each authority's record are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function officer lodges the dissolution filings with each authority — tax-status termination, corporate dissolution, charity notifications, receivership reports, surrender notice — and confirms them recorded."
+    }
+  }
+}

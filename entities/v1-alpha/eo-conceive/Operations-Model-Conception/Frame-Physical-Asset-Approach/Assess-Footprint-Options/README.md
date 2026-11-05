@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Assess Footprint Options**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Physical Asset Approach** (`processes:process-eo-conceive-87kx9n`). Its canonical ID is `processes:activity-eo-conceive-9vsfbw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the candidate site-and-capacity options side by side and weighs each against the agreed principles. The principles and the market geography arrive as the frame, options are assessed and a recommended set is drawn out, and the assessed options are confirmed onward for the lifecycle bounding. Choice among footprints becomes a reasoned comparison, not a hunch.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's footprint commitment rests on options tested against principles, with a recommendation anyone can audit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the framing of footprint principles, when the options and the market geography are presented, and it completes once the assessed option set is confirmed for the lifecycle bounding.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead weighs each candidate footprint option against the agreed principles and the market geography, draws out the recommended set, and confirms the assessment for the lifecycle bounding.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Footprint Options |
+| `plain_language_description` | string | no | This activity puts the candidate site-and-capacity options side by side and weighs each against the agreed principles … |
+| `business_purpose` | string | no | It exists so the enterprise's footprint commitment rests on options tested against principles, with a recommendation … |
+| `practical_context` | string | no | It follows the framing of footprint principles, when the options and the market geography are presented, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

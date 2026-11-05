@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-retire-umxf3c through concluding task processes:task-sd-retire-record-ebsxst, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Run the Sunset Communications Plan'
+plain_language_description: 'With the register updated, the outside world has to be told properly. Intake registers the assembled sunset papers and the mandated communications plan, verification confirms every audience and message meets what the regulator prescribed, and processing carries the communications out — business-unit notices, external statements and the replacement plan''s standing shared with the supervisor. Confirmation closes the campaign with delivery recorded and the records custodian preserves the execution evidence.'
+business_purpose: 'It tells everyone the sunset touches — inside and outside the entity — in the form and sequence the supervisor requires, so retirement happens without surprises.'
+practical_context: 'It runs once the filings register is updated, opening at intake of the sunset papers and closing when the delivered campaign is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function communications lead runs the regulator-prescribed campaign, the finance function briefs the affected units on what changes for them, and the confirmation custodian records delivery of the replacement plan''s standing to the supervising authority.'

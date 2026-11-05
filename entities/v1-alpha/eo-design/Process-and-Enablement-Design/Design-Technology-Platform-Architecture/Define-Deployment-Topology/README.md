@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Define Deployment Topology**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Technology Platform Architecture** (`processes:process-eo-design-7gtead`). Its canonical ID is `processes:activity-eo-design-8uvwq5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles where each component will run — which environments, how they are distributed, and where they sit geographically. The component specification and the integration catalogue arrive as the inputs, the topology is defined and checked against both, and the definition is confirmed onward for the architecture's commitment. The platform gains a geography as well as a shape.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every platform component has a designed place to run, decided with the connections in mind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the integration design, when the components and their connections are specified, and it completes once the topology definition is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer assigns each specified component its environments and distribution, checks the layout against the integration catalogue, and confirms the topology definition.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Deployment Topology |
+| `plain_language_description` | string | no | This activity settles where each component will run — which environments, how they are distributed, and where they sit … |
+| `business_purpose` | string | no | It exists so every platform component has a designed place to run, decided with the connections in mind. |
+| `practical_context` | string | no | It follows the integration design, when the components and their connections are specified, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

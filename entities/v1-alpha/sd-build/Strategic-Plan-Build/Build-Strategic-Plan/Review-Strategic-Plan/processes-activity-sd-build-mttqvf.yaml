@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-q4nf9g through concluding task processes:task-sd-build-record-jjruvg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Review Strategic Plan'
+plain_language_description: 'Someone now reads the assembled plan with a sceptical eye. Intake brings the document in, verification tests it line by line against the direction the enterprise chose and the version it was scoped to, and any gaps go back for rework. Once the scrutiny is satisfied, confirmation records the outcome and the reviewed plan is kept with its audit trail.'
+business_purpose: 'It protects the process from committing a plan that quietly drifts from the direction and scope leadership actually approved.'
+practical_context: 'It happens straight after assembly, opening at intake of the drafted document and closing when the review verdict is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Two strategy function reviewers sit down with the assembled plan, tick each section against the approved direction and version scope, and raise one chapter for rework; after the fix, the confirmation custodian records the verdict and the records custodian archives the reviewed document.'

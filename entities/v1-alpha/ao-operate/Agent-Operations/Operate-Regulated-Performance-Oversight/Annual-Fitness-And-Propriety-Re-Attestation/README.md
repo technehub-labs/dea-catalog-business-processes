@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Annual Fitness-And-Propriety Re-Attestation**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Regulated Performance Oversight** (`processes:process-ao-operate-ba8scr`). Its canonical ID is `processes:activity-ao-operate-j8k5p7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity renews, once a year, the fitness attestation behind every live licensed role. The live role list and the attestation calendar come in together, each holder is re-attested when their turn comes, and the outcomes are written to the personnel record. The yearly rhythm keeps fitness evidence fresh rather than letting it rest on a single past attestation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fitness evidence for licensed roles is renewed on the regulator's yearly rhythm instead of aging unexamined.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to the annual attestation calendar against the live role list, and it closes as each re-attestation outcome is confirmed and preserved on the personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian works the yearly attestation calendar for the live controlled-function holders, sees each fitness re-attestation completed, and records the outcomes on the personnel file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Annual Fitness and Propriety Re-Attestation |
+| `plain_language_description` | string | no | This activity renews, once a year, the fitness attestation behind every live licensed role. The live role list and the … |
+| `business_purpose` | string | no | It exists so fitness evidence for licensed roles is renewed on the regulator's yearly rhythm instead of aging … |
+| `practical_context` | string | no | It runs to the annual attestation calendar against the live role list, and it closes as each re-attestation outcome is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

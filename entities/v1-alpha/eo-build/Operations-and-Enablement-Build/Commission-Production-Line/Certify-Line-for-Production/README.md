@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Certify Line for Production**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Production Line** (`processes:process-eo-build-awy8dz`). Its canonical ID is `processes:activity-eo-build-7bmbzy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the exercised line its formal sign-off to move from trials to full production. The trial results come in with the quality criteria as the standard, certification is judged against them and granted, and the production certification is confirmed and retained. From here the line is entitled to produce for real.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so full production starts only on a line whose trial evidence has passed the agreed quality bar.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes production line commissioning, once trial results are in hand, and it completes when the production certification is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian weighs the trial results against the quality criteria, grants the certification for steady-state production, and has it recorded for the operations teams taking the line on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Certify Line for Production |
+| `plain_language_description` | string | no | This activity gives the exercised line its formal sign-off to move from trials to full production. The trial results … |
+| `business_purpose` | string | no | It exists so full production starts only on a line whose trial evidence has passed the agreed quality bar. |
+| `practical_context` | string | no | It closes production line commissioning, once trial results are in hand, and it completes when the production … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

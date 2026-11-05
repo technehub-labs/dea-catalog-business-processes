@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Capture Time and Attendance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Time and Attendance** (`processes:process-ao-operate-dg9q4h`). Its canonical ID is `processes:activity-ao-operate-kyup4x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity records when and how long each agent works as they deliver service. The service delivery itself arrives as the source, time and attendance are captured day by day, and the captured records are confirmed for what follows. Everything downstream, from validation to pay, starts from what is captured here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds an accurate daily record of the time its agents actually work.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs day by day across the agents delivering service, and it closes each capture pass when the recorded time and attendance are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian gathers each agent's worked time and attendance as service is delivered, logs the day's records with their audit identifiers, and confirms the capture.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Capture Time and Attendance |
+| `plain_language_description` | string | no | This activity records when and how long each agent works as they deliver service. The service delivery itself arrives … |
+| `business_purpose` | string | no | It exists so the enterprise holds an accurate daily record of the time its agents actually work. |
+| `practical_context` | string | no | It runs day by day across the agents delivering service, and it closes each capture pass when the recorded time and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

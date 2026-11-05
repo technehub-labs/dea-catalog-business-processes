@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-ycba3k through concluding task processes:task-fa-operate-record-k2eccj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prepare Financial Statements'
+plain_language_description: 'This activity draws up the statements each reporting milestone calls for, from the closed books. The milestone arrives with the ledger balances behind it, the statements are prepared and checked against those balances, and the prepared statements are confirmed onward for the footnotes. The enterprise''s formal financial account of itself begins here.'
+business_purpose: 'It exists so every reporting milestone produces statements that faithfully reflect the closed books.'
+practical_context: 'It runs at each reporting or disclosure milestone, working from the closed period''s balances, and it completes once the prepared statements are confirmed onward for the footnotes.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function preparer draws up the statements the milestone calls for from the closed ledger balances, checks them against the books, and confirms them for the footnotes.'

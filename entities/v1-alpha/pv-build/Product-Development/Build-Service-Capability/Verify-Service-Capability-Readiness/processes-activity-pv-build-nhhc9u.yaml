@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-p9a2s9 through concluding task processes:task-pv-build-record-3c2z4y, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Service Capability Readiness'
+plain_language_description: 'This activity proves the built, integrated capability can actually deliver the designed service to customers. The integrated capability arrives with the designed proposition as the yardstick, readiness is examined against it, and the determination is confirmed for market readiness preparation. The service is declared buildable-complete only on evidence.'
+business_purpose: 'It exists so market readiness starts from a service capability proven able to deliver as designed.'
+practical_context: 'It closes the service capability build once mechanism, personnel, and integration are in place, and it completes when the readiness determination is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management verifier checks the integrated capability can deliver the designed service proposition to customers, and confirms the readiness determination onward.'

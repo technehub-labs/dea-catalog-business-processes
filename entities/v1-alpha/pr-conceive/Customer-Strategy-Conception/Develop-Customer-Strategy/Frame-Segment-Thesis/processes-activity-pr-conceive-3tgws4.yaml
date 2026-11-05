@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-conceive-emfgju through concluding task processes:task-pr-conceive-record-tgdehu, whose outcome — Closure case file retained for Frame Segment Thesis under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Segment Thesis'
+plain_language_description: 'This activity fixes which customers the strategy is for, and says why that ground was chosen rather than another. The strategy framing need arrives from a new segment, a drifted strategy, or a thesis to re-test, the segment is bounded and its choice argued, and the framed thesis is confirmed onward for the value exchange. Who we serve is decided before anything else.'
+business_purpose: 'It exists so the customer strategy names its intended customers and defends the choice.'
+practical_context: 'It opens the customer strategy framing when the enterprise enters a segment, the existing strategy drifts, or the thesis needs re-testing, and it completes once the segment thesis is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead bounds the target customer segment and argues why that ground beats the alternatives, then confirms the thesis for the value exchange.'

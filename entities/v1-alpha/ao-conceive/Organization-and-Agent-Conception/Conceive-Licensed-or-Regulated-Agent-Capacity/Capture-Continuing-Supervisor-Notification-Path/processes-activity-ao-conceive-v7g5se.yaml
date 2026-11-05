@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-pnrhem through concluding task processes:task-ao-conceive-record-v8ba6s, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Capture the Continuing-Supervisor Notification Path'
+plain_language_description: 'This activity records, for each planned licensed role, who the continuing supervisor will be and how that supervisor will be kept informed. The licensing taxonomy and the supervision matrix are taken in, the supervisor identity, notification cadence, notification content, and escalation arrangements are worked up, and the captured path is confirmed and placed on the personnel record. Activation later simply issues the notification this path defines.'
+business_purpose: 'It exists so every licensed role enters service with its continuing supervision arrangements already fixed and ready to trigger.'
+practical_context: 'It runs during the conception of licensed capacity, once the supervision matrix is available alongside the licensing taxonomy, and it completes when the captured notification path is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead records which supervisor will hold continuing oversight for a planned controlled-function role, sets the cadence and content of the notifications and the escalation arrangements, and files the path for activation to use.'

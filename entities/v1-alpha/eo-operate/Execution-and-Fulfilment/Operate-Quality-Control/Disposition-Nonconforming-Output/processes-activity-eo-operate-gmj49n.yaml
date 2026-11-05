@@ -83,3 +83,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-44jsrp through concluding task processes:task-eo-operate-record-d934av, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Disposition Nonconforming Output'
+plain_language_description: 'This activity takes each recorded nonconformity and rules on what happens to the output behind it — concession, rework, scrap, or sending back — containing any affected batches meanwhile. The recorded nonconformities arrive as the case list, each disposition is decided and applied, and the dispositions are confirmed for the record. Failed product meets a decision, not a shrug.'
+business_purpose: 'It exists so output that fails its specification gets a deliberate, recorded fate before it can reach a customer.'
+practical_context: 'It runs once a batch''s results are in the quality record and nonconformities are logged, and it completes when each disposition, including containment, is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A quality custodian takes a batch''s recorded nonconformity, contains the affected stock, rules the output to rework rather than concession, and confirms the disposition for the record.'

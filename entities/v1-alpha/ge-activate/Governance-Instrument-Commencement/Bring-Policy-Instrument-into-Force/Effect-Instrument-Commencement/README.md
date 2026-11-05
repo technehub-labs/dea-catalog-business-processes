@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 
 This is a **Activity** (level L3), named **Effect Instrument Commencement**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Bring Policy Instrument into Force** (`processes:process-ge-activate-wegs44`). Its canonical ID is `processes:activity-ge-activate-mqvn32`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity performs the deed that switches the instrument on — publishing it, proclaiming it, or letting its effective date arrive. The verified readiness arrives as the authority to act, the commencement act is executed in its proper form, and the instrument in force is confirmed onward. A document becomes a binding instrument at this exact step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the instrument's force begins through a deliberate, properly executed act rather than by accident of the calendar.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the readiness verification, once every precondition is proven met, and it completes when the instrument in force is confirmed onward for communication and enforcement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With readiness verified, an operations function officer publishes the instrument in its prescribed form, executes the commencement act, and confirms the instrument now in force.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Effect Instrument Commencement |
+| `plain_language_description` | string | no | This activity performs the deed that switches the instrument on — publishing it, proclaiming it, or letting its … |
+| `business_purpose` | string | no | It exists so the instrument's force begins through a deliberate, properly executed act rather than by accident of the … |
+| `practical_context` | string | no | It follows the readiness verification, once every precondition is proven met, and it completes when the instrument in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

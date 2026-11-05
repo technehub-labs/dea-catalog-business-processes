@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Commit Refinements**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Refine Financial Controls and Policies** (`processes:process-fa-improve-cdtsbq`). Its canonical ID is `processes:activity-fa-improve-nsgnav`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity ratifies the designed refinements through the policy review cycle that governs them. The designed set arrives as the proposal, commitment is given under the cycle's standing rules, and the committed refinements are confirmed into the controls and policies. The enterprise's financial safeguards get stronger by governed increments.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so control and policy changes land through the governed cycle, not as unilateral edits.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the refinement design, once the designed set is in hand, and it completes when the committed refinements are confirmed under the policy review cycle and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian brings the designed refinements before the policy review cycle, records the commitment once given, and confirms the changes into the controls and policies.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Refinements |
+| `plain_language_description` | string | no | This activity ratifies the designed refinements through the policy review cycle that governs them. The designed set … |
+| `business_purpose` | string | no | It exists so control and policy changes land through the governed cycle, not as unilateral edits. |
+| `practical_context` | string | no | It follows the refinement design, once the designed set is in hand, and it completes when the committed refinements are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

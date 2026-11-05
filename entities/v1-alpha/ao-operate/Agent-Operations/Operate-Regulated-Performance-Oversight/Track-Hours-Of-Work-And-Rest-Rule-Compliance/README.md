@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Track Hours-Of-Work And Rest-Rule Compliance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Regulated Performance Oversight** (`processes:process-ao-operate-ba8scr`). Its canonical ID is `processes:activity-ao-operate-8pqgha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches the working hours and rest periods of licensed role holders against the applicable rules. The live role list and the hours recording come in together, each holder's hours and rest are compared with their limits, and the compliance record is confirmed and retained. Pressure points, such as hours creeping past limits or rest being squeezed, surface here while they can still be corrected.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so working-time and rest limits for licensed roles are watched continuously rather than discovered after a breach.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs across the live operation of licensed roles, feeding off the hours recording as it accumulates, and it closes each pass when the compliance record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian compares each licensed crew member's logged hours and rest against their applicable limits, records the compliance outcome, and files it for oversight.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Hours-of-Work and Rest-Rule Compliance |
+| `plain_language_description` | string | no | This activity watches the working hours and rest periods of licensed role holders against the applicable rules. The … |
+| `business_purpose` | string | no | It exists so working-time and rest limits for licensed roles are watched continuously rather than discovered after a … |
+| `practical_context` | string | no | It runs across the live operation of licensed roles, feeding off the hours recording as it accumulates, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

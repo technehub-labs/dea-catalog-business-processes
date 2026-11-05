@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-qqxe4d through concluding task processes:task-ao-improve-record-t8tmaf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Notify the Continuing Supervisor of the Improvement'
+plain_language_description: 'This activity tells the ongoing supervisor of each licensed role what has been recorded: training completions, fitness re-assessments, and remediation outcomes alike. The improvement record and the defined notification path arrive together, the notices go out along that path with the content and cadence it specifies, and the notification record is confirmed and filed. The supervisor is thereby kept current on the role holder''s competence picture.'
+business_purpose: 'It exists so the supervisor overseeing a licensed role always holds the role holder''s current competence and remediation picture.'
+practical_context: 'It runs as each improvement cycle completes and its record lands on the personnel file, and it closes when the notification record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian sends the ongoing supervisor notice of a completed fitness re-assessment along the agreed notification path, and files the notification record for audit.'

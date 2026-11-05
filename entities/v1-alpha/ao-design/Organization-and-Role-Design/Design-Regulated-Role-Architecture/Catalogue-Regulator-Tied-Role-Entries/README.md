@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Catalogue Regulator-Tied Role Entries**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Regulated Role Architecture** (`processes:process-ao-design-2fkvhx`). Its canonical ID is `processes:activity-ao-design-jbf2v9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the licensed roles into the role catalogue as regulator-tied entries. The approved regulated-scope declaration and the catalogue skeleton arrive first, and for each role the entry records the authority it carries, its signing capacity, its controlled-function designation, the licensing basis behind it, and the scope tied to its regulator. The completed entries are confirmed and retained so later design and activation work staffs against an accurate catalogue.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the role catalogue states precisely which roles carry regulator-tied authority and on what licensing basis.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the design of the regulated role architecture, when the regulated-scope declaration is presented alongside the catalogue skeleton, and it closes once the entries are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority turns the approved scope declaration into catalogue entries for the enterprise's controlled-function roles, recording each role's authority, signing capacity, and licensing basis for the teams that will staff them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Catalogue the Regulator-Tied Role Entries |
+| `plain_language_description` | string | no | This activity writes the licensed roles into the role catalogue as regulator-tied entries. The approved regulated-scope … |
+| `business_purpose` | string | no | It exists so the role catalogue states precisely which roles carry regulator-tied authority and on what licensing basis. |
+| `practical_context` | string | no | It opens the design of the regulated role architecture, when the regulated-scope declaration is presented alongside the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

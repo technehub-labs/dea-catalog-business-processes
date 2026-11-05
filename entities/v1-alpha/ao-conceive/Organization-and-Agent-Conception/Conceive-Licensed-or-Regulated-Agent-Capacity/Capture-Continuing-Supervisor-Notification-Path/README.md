@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Capture Continuing-Supervisor Notification Path**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Licensed or Regulated Agent Capacity** (`processes:process-ao-conceive-pnrhem`). Its canonical ID is `processes:activity-ao-conceive-v7g5se`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity records, for each planned licensed role, who the continuing supervisor will be and how that supervisor will be kept informed. The licensing taxonomy and the supervision matrix are taken in, the supervisor identity, notification cadence, notification content, and escalation arrangements are worked up, and the captured path is confirmed and placed on the personnel record. Activation later simply issues the notification this path defines.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every licensed role enters service with its continuing supervision arrangements already fixed and ready to trigger.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during the conception of licensed capacity, once the supervision matrix is available alongside the licensing taxonomy, and it completes when the captured notification path is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead records which supervisor will hold continuing oversight for a planned controlled-function role, sets the cadence and content of the notifications and the escalation arrangements, and files the path for activation to use.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Capture the Continuing-Supervisor Notification Path |
+| `plain_language_description` | string | no | This activity records, for each planned licensed role, who the continuing supervisor will be and how that supervisor … |
+| `business_purpose` | string | no | It exists so every licensed role enters service with its continuing supervision arrangements already fixed and ready to … |
+| `practical_context` | string | no | It runs during the conception of licensed capacity, once the supervision matrix is available alongside the licensing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

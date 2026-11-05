@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Integrate Demand Engine with Channels**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Generation Programs** (`processes:process-pr-build-4kb2pt`). Its canonical ID is `processes:activity-pr-build-pd7paf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hooks the built demand machinery into the acquisition channels, so its programs can actually reach the market. The built assets arrive at the wired channels as the two halves to join, the connection is made and its flows checked, and the integrated engine is confirmed onward for calibration. Fuel meets engine meets road here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the demand engine's output flows through real channels to real prospects.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the asset build, once the channels are wired and the assets built, and it completes when the engine-to-channel integration is confirmed onward for calibration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function builder connects the demand engine's programs to the acquisition channels, checks the flows reach the market, and confirms the integrated engine.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Demand Engine with Channels |
+| `plain_language_description` | string | no | This activity hooks the built demand machinery into the acquisition channels, so its programs can actually reach the … |
+| `business_purpose` | string | no | It exists so the demand engine's output flows through real channels to real prospects. |
+| `practical_context` | string | no | It follows the asset build, once the channels are wired and the assets built, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

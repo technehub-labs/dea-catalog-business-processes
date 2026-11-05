@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-8vqvkk through concluding task processes:task-fa-operate-record-cg9eb2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prepare Tax Returns'
+plain_language_description: 'This activity draws up each return the calendar brings due, from the records behind it. The filing boundary arrives as the trigger, the return is prepared from the enterprise''s records and the monitored exposures, and the prepared return is confirmed onward for the payment scheduling. What is owed is stated, accurately and on time.'
+business_purpose: 'It exists so every return due is prepared correctly from sound records, ready for payment and filing.'
+practical_context: 'It runs at each filing boundary the compliance calendar sets, and it completes once the prepared return is confirmed onward for the payment scheduling.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function preparer draws up the return due at the filing boundary from the enterprise''s records and the monitored exposures, and confirms it for payment scheduling.'

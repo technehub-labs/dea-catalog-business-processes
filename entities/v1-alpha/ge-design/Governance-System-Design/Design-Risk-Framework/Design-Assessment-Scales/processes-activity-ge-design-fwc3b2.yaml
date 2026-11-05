@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-pqkvdc through concluding task processes:task-ge-design-record-kbuvzf, whose outcome — Case file retained for Design Assessment Scales under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Assessment Scales'
+plain_language_description: 'This activity builds the measuring sticks — likelihood, impact, and velocity — by which classified risks will be judged. The designed taxonomy arrives with the tolerance bands as the frame, the scales are designed against both and checked for usability, and the scale set is confirmed onward for the governance integration. Risk becomes measurable on designed instruments.'
+business_purpose: 'It exists so classified risks are measured on designed, consistent scales rather than on feeling.'
+practical_context: 'It follows the taxonomy design, when the taxonomy and tolerance bands are to hand, and it completes once the assessment scale set is confirmed for the governance integration.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer builds the likelihood, impact, and velocity scales against the taxonomy and tolerance bands, and confirms the scale set for the integration.'

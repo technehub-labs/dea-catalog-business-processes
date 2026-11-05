@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-re
 
 This is a **Activity** (level L3), named **Execute Evidenced Closure**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Close Enterprise Relationship** (`processes:process-pr-retire-bd3asa`). Its canonical ID is `processes:activity-pr-retire-smrebq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity performs the closing itself — the counterparty confirms it, the evidence is captured, and the file is archived. The settled and resolved relationship arrives as ready to end, closure is executed with the counterparty's confirmation, and the evidenced closure is confirmed for the record. The relationship ends not with a whimper but with a receipt.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the relationship's end is proven — confirmed by the counterparty and archived as evidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the close-out once obligations are settled and records resolved, and it completes when the executed closure with counterparty confirmation and archived evidence is confirmed for the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer executes the final closure with the counterparty's confirmation, captures and archives the evidence, and confirms the closure for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Evidenced Closure |
+| `plain_language_description` | string | no | This activity performs the closing itself — the counterparty confirms it, the evidence is captured, and the file is … |
+| `business_purpose` | string | no | It exists so the relationship's end is proven — confirmed by the counterparty and archived as evidence. |
+| `practical_context` | string | no | It closes the close-out once obligations are settled and records resolved, and it completes when the executed closure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

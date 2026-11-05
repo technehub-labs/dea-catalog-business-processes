@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-operate-bbe384 through concluding task processes:task-pr-operate-record-u9gwf7, whose outcome — Closure case file retained for Allocate Relationship Attention under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Allocate Relationship Attention'
+plain_language_description: 'This activity rations the enterprise''s care across its active customers — who owns which account, how often they are contacted, how much service effort each earns. The active customer base arrives as the field to be covered, attention is allocated across it and reviewed for fairness, and the allocation is confirmed onward for the relationship work. Not every customer can be everything; this decides who gets what.'
+business_purpose: 'It exists so relationship effort is deliberately distributed across the base rather than spread by accident.'
+practical_context: 'It runs as customers enter and move through the active relationship lifecycle, and it completes when the allocated attention — ownership, cadence, effort — is confirmed onward for the relationship work.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead assigns account ownership, contact cadence, and service effort across the active base, and confirms the allocation onward.'

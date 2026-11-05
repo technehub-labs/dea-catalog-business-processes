@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-activate-s9m34e through concluding task processes:task-sd-activate-record-3qdnr6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Launch Operational Monitoring Framework'
+plain_language_description: 'Activation is not complete until someone is actually watching the numbers. At intake the acknowledged plan and the mandated monitoring arrangements are registered, and verification confirms the measures, limits and early warnings match what the supervisor requires. The framework then goes live, confirmation tells the regulator-facing teams it is running, and the live framework is preserved on the regulated strategic-plan record.'
+business_purpose: 'It stands up the day-to-day oversight machinery — measures, limits, early warnings — that keeps the activated plan observable to its supervisor.'
+practical_context: 'It begins when the acknowledged plan and the monitoring requirements arrive at intake and ends when confirmation declares the framework live and its record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Risk function analysts register the acknowledged plan at intake, verify the early-warning indicators against the supervisor''s expectations, and switch on the reporting rhythm; the operations function feeds the monthly figures while the supervising authority receives confirmation that monitoring is live.'

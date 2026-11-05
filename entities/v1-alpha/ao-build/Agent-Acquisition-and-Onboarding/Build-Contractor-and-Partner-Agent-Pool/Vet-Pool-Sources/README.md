@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Vet Pool Sources**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Contractor and Partner-Agent Pool** (`processes:process-ao-build-b38bkg`). Its canonical ID is `processes:activity-ao-build-9bwc8j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity qualifies the contractor and partner organisations that could serve the identified pool demand. Each candidate source is logged in and its standing is examined, and the sources that pass are drawn up as the vetted source list. Confirmation is issued to the people arranging the pool, and the vetting results are kept as an audit record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only sources the enterprise has properly qualified are allowed into its contractor and partner reserve.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens once the pool demand has been identified, when candidate sources are presented for qualification, and it closes when the vetted sources are confirmed and the vetting record is retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian examines a shortlist of contractor firms and partner agencies against the identified specialist demand, records which sources passed vetting, and notifies the processing custodian that the qualified sources are ready for engagement planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Vet Pool Sources |
+| `plain_language_description` | string | no | This activity qualifies the contractor and partner organisations that could serve the identified pool demand. Each … |
+| `business_purpose` | string | no | It exists so only sources the enterprise has properly qualified are allowed into its contractor and partner reserve. |
+| `practical_context` | string | no | It happens once the pool demand has been identified, when candidate sources are presented for qualification, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Record Inspection Results**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Quality Control** (`processes:process-eo-operate-44jsrp`). Its canonical ID is `processes:activity-eo-operate-uyzanp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the outcome of each inspection and test into the quality record, batch by batch. The captured measurements arrive from execution, the per-batch results are registered and checked for completeness, and the quality record is confirmed onward for disposition. What the instruments found becomes what the enterprise can prove.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every batch's inspection outcome lives in the quality record as evidence, not in a notebook.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows inspection execution, once a batch's measurements are captured, and it completes when the per-batch results are registered in the quality record and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian registers each batch's inspection and test outcomes into the quality record, checks the entries are complete, and confirms the record for the disposition step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Inspection Results |
+| `plain_language_description` | string | no | This activity writes the outcome of each inspection and test into the quality record, batch by batch. The captured … |
+| `business_purpose` | string | no | It exists so every batch's inspection outcome lives in the quality record as evidence, not in a notebook. |
+| `practical_context` | string | no | It follows inspection execution, once a batch's measurements are captured, and it completes when the per-batch results … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

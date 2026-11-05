@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Attest Fitness-And-Propriety For Pool**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Regulated Agent Pool** (`processes:process-ao-build-9my4jr`). Its canonical ID is `processes:activity-ao-build-w2n8p4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity records the initial fitness attestation for every candidate sitting in the regulated pool. The verified candidate list and the attestation regime arrive first, each candidate is assessed against the applicable criteria by the designated attestor, and the attested list is produced and confirmed to those who depend on it. The attestations are then kept on the personnel record so the pool is demonstrably fit before anyone goes live.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no candidate reaches activation without the fitness attestation their regulator expects, keeping the pool defensible.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens after registry verification has produced the verified candidate list, and it closes when the attested candidate list is confirmed and the attestation record is preserved on the personnel file.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian applies the employer's fitness criteria to each verified candidate for a producer role, records who passed the initial attestation, and files the attested list with the records custodian for retention.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Attest Fitness and Propriety for the Pool |
+| `plain_language_description` | string | no | This activity records the initial fitness attestation for every candidate sitting in the regulated pool. The verified … |
+| `business_purpose` | string | no | It exists so no candidate reaches activation without the fitness attestation their regulator expects, keeping the pool … |
+| `practical_context` | string | no | It happens after registry verification has produced the verified candidate list, and it closes when the attested … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

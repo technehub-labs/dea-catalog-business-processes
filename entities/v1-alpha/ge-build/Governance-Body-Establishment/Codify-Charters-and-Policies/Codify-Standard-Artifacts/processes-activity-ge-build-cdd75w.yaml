@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-mctdgc through concluding task processes:task-ge-build-record-uyqbra, whose outcome — Case file retained for Codify Standard Artifacts under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Codify Standard Artifacts'
+plain_language_description: 'This activity prepares the supporting companions — templates, procedure references, and guidance — that make the charters and policies usable. The policy and control designs arrive as the source, the standard artefacts are codified from them and checked, and the codified set is confirmed onward for publication. Rules alone do not run an enterprise; its working companions do.'
+business_purpose: 'It exists so charters and policies arrive accompanied by the practical artefacts that make them operational.'
+practical_context: 'It runs alongside the charter and policy codification, drawing on the policy and control designs, and it completes once the codified standard artefacts are confirmed onward for publication.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer codifies the templates, procedure references, and guidance supporting the new instruments, checks them against the designs, and confirms the set for publication.'

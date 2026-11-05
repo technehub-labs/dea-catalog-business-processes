@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Decide Substrate Placement**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Agent Topology** (`processes:process-ao-design-8fzp2b`). Its canonical ID is `processes:activity-ao-design-h3q5rc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity makes the actual call, for each classified role or work item, on whether a person, an artificial agent, or a hybrid of the two will do it. The classified candidates are taken in and reviewed, the placement of each is decided, and the decisions are confirmed with the design authority. The settled placements are recorded so coordination design can connect them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every role in the structure has a definite answer about who or what performs it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows classification of the placement candidates, when the classified list is presented for decision, and it completes once the placements are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Working from the classified list, the organization design authority decides that a recurring approval task will be handled by an artificial agent while the judgement calls stay with a person, and records that hybrid placement for the coordination design step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Decide Human, Artificial, or Hybrid Placement |
+| `plain_language_description` | string | no | This activity makes the actual call, for each classified role or work item, on whether a person, an artificial agent … |
+| `business_purpose` | string | no | It exists so every role in the structure has a definite answer about who or what performs it. |
+| `practical_context` | string | no | It follows classification of the placement candidates, when the classified list is presented for decision, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

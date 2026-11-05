@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Notify Affected Business Units Under Regulator Continuing Supervision**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-8yt6ar`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The people whose work the plan governed hear about the sunset through a prescribed outreach, not rumour. Intake registers the prescribed notification list, verification confirms every unit on it is reached with the content and timing the regulator set, and processing delivers the notices and gathers each unit's acknowledgement onto the plan record. Confirmation completes the outreach and the records custodian preserves the acknowledgement trail for the supervisor.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It leaves no affected team discovering the sunset by rumour, with every notice delivered, acknowledged and evidenced as the supervisor prescribes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the sunset sequence, opening at intake of the prescribed list and closing when the gathered acknowledgements are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function notification desk works through the regulator-prescribed unit list, a verification custodian confirms each unit received the mandated content on the mandated timing, and the gathered acknowledgements are preserved where the supervising authority can review them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Notify the Affected Business Units of the Sunset |
+| `plain_language_description` | string | no | The people whose work the plan governed hear about the sunset through a prescribed outreach, not rumour. Intake … |
+| `business_purpose` | string | no | It leaves no affected team discovering the sunset by rumour, with every notice delivered, acknowledged and evidenced as … |
+| `practical_context` | string | no | It closes the sunset sequence, opening at intake of the prescribed list and closing when the gathered acknowledgements … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

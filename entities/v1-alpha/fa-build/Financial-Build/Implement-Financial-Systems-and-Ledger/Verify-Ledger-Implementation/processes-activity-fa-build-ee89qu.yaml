@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-d5kb5m through concluding task processes:task-fa-build-record-sxues7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Ledger Implementation'
+plain_language_description: 'This activity proves the newly implemented books and their systems fit to run the general ledger day to day. The implemented work comes in with the plan structure and controls design as the yardstick, readiness is examined against them, and the determination is confirmed for the operation. General ledger running is cleared here or not at all.'
+business_purpose: 'It exists so general ledger operation starts on an implementation proven against its design.'
+practical_context: 'It closes the financial systems implementation, once accounts, posting rules, and reports are deployed, and it completes when the readiness determination is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function verifier examines the implemented systems against the plan structure and controls design, and confirms the readiness determination for ledger operation.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Route Environmental Signals**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Sense Environmental Signals** (`processes:process-sd-operate-53y4j4`). Its canonical ID is `processes:activity-sd-operate-ebntgy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Typed signals only earn their keep when they reach the right desk. Intake registers the classified set, verification confirms every destination is correct for its type, and processing delivers each signal to the desk its type demands — portfolio steering, performance monitoring or the adaptation work. Confirmation closes the loop with delivery recorded and the records custodian preserves the routing evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It lands each typed signal with the process that can act on it, turning sensing into steering rather than a filed-and-forgotten list.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the sensing loop, opening at intake of the typed set and closing when every delivery is confirmed and the routing evidence preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function router sends drift signals to the monitoring desk and opportunity signals to the steering desk, a verification custodian confirms each destination matches the type, and the records custodian files the routing evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Route Environmental Signals |
+| `plain_language_description` | string | no | Typed signals only earn their keep when they reach the right desk. Intake registers the classified set, verification … |
+| `business_purpose` | string | no | It lands each typed signal with the process that can act on it, turning sensing into steering rather than a … |
+| `practical_context` | string | no | It closes the sensing loop, opening at intake of the typed set and closing when every delivery is confirmed and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

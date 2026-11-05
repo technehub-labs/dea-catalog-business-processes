@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-xfh8na through concluding task processes:task-ao-improve-record-veznhx, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute the Development Actions'
+plain_language_description: 'This activity carries out the development plan''s actions, applying them to the agents and organization the plan names, people and artificial alike. The confirmed plan arrives first, each action is executed in turn and its completion logged, and the executed set is confirmed back to the review step. It ends with the planned improvement actually done rather than promised.'
+business_purpose: 'It exists so the planned development genuinely happens across the mix, with each action''s completion evidenced.'
+practical_context: 'It runs once the development plan is confirmed, when the plan is presented for execution, and it closes when the executed actions are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian works through the development plan action by action, applies each one to the agents it names, logs completions with their audit identifiers, and confirms the executed set.'

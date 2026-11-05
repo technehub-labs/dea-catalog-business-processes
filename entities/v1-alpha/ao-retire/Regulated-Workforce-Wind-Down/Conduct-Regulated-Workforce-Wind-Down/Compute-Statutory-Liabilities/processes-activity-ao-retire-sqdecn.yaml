@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-retire-g3eyr8 through concluding task processes:task-ao-retire-record-tr3ssq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Calculate the Statutory Liabilities and Fund Them'
+plain_language_description: 'This activity works out what the enterprise owes each affected person under the law, in notice pay, severance, and continued benefits cover, and sets the total aside so settlement is funded when it falls due. Each person''s tenure, compensation, classification, and the controlling statute come in as the inputs, an entitlement schedule is drawn per person, and the funded liability is confirmed and retained.'
+business_purpose: 'It exists so the money owed under statute is calculated person by person and actually set aside for settlement day.'
+practical_context: 'It runs during the wind-down once the affected population is known and ahead of the severance date, and it closes when the entitlement schedule and funded liability are confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian calculates each affected person''s entitlements from their tenure, compensation, and classification under the controlling statute, totals the liability, and confirms it is funded for settlement.'

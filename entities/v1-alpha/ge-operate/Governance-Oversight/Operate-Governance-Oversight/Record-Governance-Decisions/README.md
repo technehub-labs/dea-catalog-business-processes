@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Record Governance Decisions**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Governance Oversight** (`processes:process-ge-operate-hs7wf3`). Its canonical ID is `processes:activity-ge-operate-fch6f5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes down what the bodies decided, into the record of record. The made decisions arrive from the facilitated cycles, each is recorded with its terms and its rationale, and the recorded decisions are confirmed onward. Tomorrow's enterprise can know exactly what its governance chose, and why.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance decisions are preserved with their reasoning in the authoritative record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows each facilitated decision as it is made within the cycles, and it completes when the recorded decision is confirmed into the decision record of record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance custodian writes each made decision into the record of record — terms, rationale, and dissent noted — and confirms the recorded decision onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Governance Decisions |
+| `plain_language_description` | string | no | This activity writes down what the bodies decided, into the record of record. The made decisions arrive from the … |
+| `business_purpose` | string | no | It exists so governance decisions are preserved with their reasoning in the authoritative record. |
+| `practical_context` | string | no | It follows each facilitated decision as it is made within the cycles, and it completes when the recorded decision is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

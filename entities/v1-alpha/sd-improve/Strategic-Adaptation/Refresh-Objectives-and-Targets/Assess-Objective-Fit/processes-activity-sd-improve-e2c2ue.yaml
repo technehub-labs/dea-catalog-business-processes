@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-aqbrm7 through concluding task processes:task-sd-improve-record-pprxkr, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Objective Fit'
+plain_language_description: 'The evidence is in; the question is whether the current measures still make sense. Intake registers the gathered evidence, scrutiny tests each objective and its target against what performance is actually showing, and processing records a fit verdict for every line — keep, tighten, or retire. Confirmation communicates the assessment downstream and the records custodian preserves it ready for redrafting.'
+business_purpose: 'It separates the measures that still serve the direction from those that have gone stale, focusing the redraft where it matters.'
+practical_context: 'It follows evidence gathering, opening at intake of the gathered evidence and closing when the fit verdicts are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function reviewers read each objective and target against the evidence pack, mark one measure for retirement and two for tightening, and the confirmation custodian passes the fit verdicts to the redrafting team.'

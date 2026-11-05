@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-4kb2pt through concluding task processes:task-pr-build-record-6dxwpd, whose outcome — Closure case file retained for Integrate Demand Engine with Channels under the records retention schedule with cryptographic integrity protection …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Integrate Demand Engine with Channels'
+plain_language_description: 'This activity hooks the built demand machinery into the acquisition channels, so its programs can actually reach the market. The built assets arrive at the wired channels as the two halves to join, the connection is made and its flows checked, and the integrated engine is confirmed onward for calibration. Fuel meets engine meets road here.'
+business_purpose: 'It exists so the demand engine''s output flows through real channels to real prospects.'
+practical_context: 'It follows the asset build, once the channels are wired and the assets built, and it completes when the engine-to-channel integration is confirmed onward for calibration.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function builder connects the demand engine''s programs to the acquisition channels, checks the flows reach the market, and confirms the integrated engine.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Negotiate Funding Lines**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Secure Funding Facilities** (`processes:process-fa-build-ydnzjc`). Its canonical ID is `processes:activity-fa-build-hkt2qs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity bargains the borrowing and capital arrangements the designed financial plan calls for into agreed terms. The funding structure design arrives as the mandate, negotiations are conducted with the prospective funders and the terms worked through, and the negotiated lines are confirmed onward for documentation. The enterprise's funding stops being a requirement and becomes an agreement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the funding the financial plan requires is actually secured, on negotiated terms the enterprise can live with.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the funding securing when the designed plan structure requires committed lines, and it completes once the negotiated funding lines are confirmed for documentation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function lead negotiates the funding lines with the prospective funders against the designed funding structure, and confirms the agreed terms for documentation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Negotiate Funding Lines |
+| `plain_language_description` | string | no | This activity bargains the borrowing and capital arrangements the designed financial plan calls for into agreed terms … |
+| `business_purpose` | string | no | It exists so the funding the financial plan requires is actually secured, on negotiated terms the enterprise can live … |
+| `practical_context` | string | no | It opens the funding securing when the designed plan structure requires committed lines, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

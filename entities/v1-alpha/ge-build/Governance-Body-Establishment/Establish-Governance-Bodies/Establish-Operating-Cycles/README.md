@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Establish Operating Cycles**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Governance Bodies** (`processes:process-ge-build-3p38us`). Its canonical ID is `processes:activity-ge-build-5cjpnx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the rhythm of meetings the newly constituted bodies will keep — when they gather, how often, on what standing order. The equipped bodies arrive with their charters as the guide, each body's convening cycle is established and checked against it, and the established cycles are confirmed onward for readiness. Governance acquires its heartbeat here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies convene on a designed, regular rhythm instead of gathering only when pressed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the equipping of bodies, working from their charters, and it completes once each body's established operating cycle is confirmed onward for the readiness verification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer sets each body's meeting rhythm from its charter — cadence, standing agenda, convening rules — and confirms the established cycles onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Operating Cycles |
+| `plain_language_description` | string | no | This activity sets the rhythm of meetings the newly constituted bodies will keep — when they gather, how often, on what … |
+| `business_purpose` | string | no | It exists so governance bodies convene on a designed, regular rhythm instead of gathering only when pressed. |
+| `practical_context` | string | no | It follows the equipping of bodies, working from their charters, and it completes once each body's established … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

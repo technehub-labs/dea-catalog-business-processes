@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-9wgvaf through concluding task processes:task-sd-improve-record-dc8xg4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Adjustment Implications'
+plain_language_description: 'Every candidate change ripples somewhere, and this work traces where. Intake brings the candidate adjustments in, scrutiny tests each one across the objective set, the target set, the initiative portfolio and the plan document, and processing records what would have to move if the change were made. Confirmation communicates the assessed implications downstream and the records custodian preserves them for the selection.'
+business_purpose: 'It exposes the true cost of each candidate change before any is chosen, so the selection is made with consequences in view.'
+practical_context: 'It follows formulation, opening when the candidate adjustments are presented at intake and closing when the implications are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function analysts walk each candidate change past the objective and target sets, the initiative portfolio and the plan document, note what would have to move, and the confirmation custodian releases the implications pack for selection.'

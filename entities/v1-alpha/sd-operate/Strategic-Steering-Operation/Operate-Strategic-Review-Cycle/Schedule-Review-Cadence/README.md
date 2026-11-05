@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Schedule Review Cadence**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Operate Strategic Review Cycle** (`processes:process-sd-operate-ucxpz4`). Its canonical ID is `processes:activity-sd-operate-4yw98f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Reviews only discipline a business if they happen on time, every time. The review mandate arrives at intake, verification tests the proposed rhythm against the steering calendar, and processing sets the standing timetable of sessions and keeps it current. Confirmation publishes the timetable downstream and the records custodian preserves the cadence on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives strategy its drumbeat — a fixed, maintained rhythm of review sessions that monitoring and steering can rely on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake of the review mandate and runs as a maintained service, closing each scheduling cycle once the timetable is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function coordinator sets the yearly timetable of review sessions against the steering calendar, a verification custodian checks the dates avoid clash with reporting deadlines, and the confirmation custodian publishes the confirmed cadence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Schedule Review Cadence |
+| `plain_language_description` | string | no | Reviews only discipline a business if they happen on time, every time. The review mandate arrives at intake … |
+| `business_purpose` | string | no | It gives strategy its drumbeat — a fixed, maintained rhythm of review sessions that monitoring and steering can rely on. |
+| `practical_context` | string | no | It opens this process at intake of the review mandate and runs as a maintained service, closing each scheduling cycle … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

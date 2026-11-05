@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-8v4k89 through concluding task processes:task-pv-design-record-xzt4xj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Proposition Design'
+plain_language_description: 'When a proposition design is ready to be locked down, product management brings the finished pieces together in one place. The package is logged in, checked against the agreed specification, assembled into its final form, confirmed, and filed so the record can be retrieved later. What leaves this work is the committed proposition design the build stage can construct from.'
+business_purpose: 'It gives the design effort a definite end point: architecture, components, and configuration choices are gathered into a single committed design that the build stage can pick up without guesswork.'
+practical_context: 'It runs at the close of the design effort: once the architecture, component specifications, and configuration options exist, intake opens when they are presented for consolidation, and closure comes when the confirmed design and its audit record are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management receives the completed architecture and component work for a new service proposition, verifies the pack meets the specification, assembles the committed design document, and confirms it to the build teams; the records custodian files it so any later question about what was agreed can be answered.'

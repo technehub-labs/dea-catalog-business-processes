@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-activate-sy5qsa through concluding task processes:task-eo-activate-record-qgmj5u, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Activate the Continuing-Supervisor Notification'
+plain_language_description: 'This activity switches on the standing notifications that keep the continuing supervisor informed under the regulator''s ongoing oversight. The capability''s authorization and the supervisor relationship arrive as the inputs, the notification arrangements are put into active use and checked against them, and the issued notifications are recorded on the operations record. From then on, oversight does not wait to be asked; it is told.'
+business_purpose: 'It exists so the supervising authority''s continuing oversight is fed by standing notification from the moment the capability goes live.'
+practical_context: 'It runs as the capability approaches live service, once the authorization is on record and the supervisor relationship is set, and it completes when the issued notifications are confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function officer puts the standing notifications for the supervising authority into active use against the capability''s fresh authorization, and confirms the issued notification on the operations record.'

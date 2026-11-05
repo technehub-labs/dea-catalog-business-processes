@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Review Agent Performance Cycles**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Agent Performance** (`processes:process-ao-operate-g4wp63`). Its canonical ID is `processes:activity-ao-operate-vs4qaq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws each operating period's monitoring results and handled exceptions together into a periodic review, and commits what the review concludes. The monitored performance and the addressed exceptions arrive as its inputs, the cycle is reviewed as a whole, and the outcomes are confirmed and preserved. Each cycle's lessons then stand ready to shape the next one.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so agent performance is managed as a repeating cycle that learns, with each period's outcomes committed rather than lost.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens at the close of each performance cycle, once monitoring and exception handling are complete, and it finishes when the reviewed outcomes are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian assembles the cycle's monitoring results and settled exceptions, reviews the period as a whole, and confirms the outcomes for the record ahead of the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review the Agent Performance Cycles |
+| `plain_language_description` | string | no | This activity draws each operating period's monitoring results and handled exceptions together into a periodic review … |
+| `business_purpose` | string | no | It exists so agent performance is managed as a repeating cycle that learns, with each period's outcomes committed … |
+| `practical_context` | string | no | It happens at the close of each performance cycle, once monitoring and exception handling are complete, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

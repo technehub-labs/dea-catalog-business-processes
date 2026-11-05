@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-activate-6qzuve through concluding task processes:task-pr-activate-record-rxv33e, whose outcome — Closure case file retained for Record Onboarding Decision under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Onboarding Decision'
+plain_language_description: 'This activity puts the decision through its required approvals — no single pair of eyes suffices — and records the outcome, its reasoning, and who decided, before handing the onboarding record to whichever systems will act on it. The classified applicant arrives as the case to be judged, activation or refusal is decided and documented, and the recorded decision is confirmed onward. The relationship formally begins — or formally doesn''t — at this step.'
+business_purpose: 'It exists so the onboarding decision is properly approved, fully reasoned, and on the record either way.'
+practical_context: 'It closes the regulated onboarding, once the risk classification is assigned, and it completes when the activation or recorded refusal is issued to the systems that open or close the relationship.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management approver and a second signatory rule on the classified applicant, recording the activation decision with its rationale, and issue the onboarding record to the systems.'

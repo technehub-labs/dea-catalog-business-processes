@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-8jc3y4 through concluding task processes:task-pv-build-record-f2waff, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Document Prototype Build'
+plain_language_description: 'This activity writes down exactly how the prototype was built, so any result it produces can be traced to a known construction. The instrumented prototype arrives as the artefact to be recorded, its build is documented — materials, configuration, known quirks — and the documented build is confirmed onward for readiness. Experiment results are only as trustworthy as the build notes behind them.'
+business_purpose: 'It exists so experiment results can be attributed to a precisely known construction state.'
+practical_context: 'It follows the instrumentation, once the prototype is fitted and working, and it completes when the documented build is confirmed onward for the readiness verification.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management builder records exactly how the prototype was put together — its configuration and known quirks — and confirms the documented build onward.'

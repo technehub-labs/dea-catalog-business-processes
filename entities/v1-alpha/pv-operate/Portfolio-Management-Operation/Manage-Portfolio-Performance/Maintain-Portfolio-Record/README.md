@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Maintain Portfolio Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Portfolio Performance** (`processes:process-pv-operate-en8rdz`). Its canonical ID is `processes:activity-pv-operate-38waaf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the bookkeeping backbone of portfolio management: every rebalancing action and lifecycle transition is folded in so the record always shows the propositions, their envelopes, and how allocation currently stands. Changes arrive at intake, are checked, applied to the record, confirmed, and the update trail is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the portfolio record trustworthy and current, so monitoring, rebalancing, and reporting all reason from one reliable account.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously through steady-state operation: intake opens whenever a rebalancing action or transition lands, and closure comes each time the updated record and its audit trail are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a rebalancing decision shifts investment between two propositions, the product management record keeper registers the action at intake, applies it to the portfolio account at processing, confirms the refreshed view to the team, and files the change trail for later audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Portfolio Record |
+| `plain_language_description` | string | no | This is the bookkeeping backbone of portfolio management: every rebalancing action and lifecycle transition is folded … |
+| `business_purpose` | string | no | It keeps the portfolio record trustworthy and current, so monitoring, rebalancing, and reporting all reason from one … |
+| `practical_context` | string | no | It runs continuously through steady-state operation: intake opens whenever a rebalancing action or transition lands … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

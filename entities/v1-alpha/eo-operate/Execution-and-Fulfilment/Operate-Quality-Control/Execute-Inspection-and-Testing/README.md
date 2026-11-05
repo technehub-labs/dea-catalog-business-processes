@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Inspection and Testing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Quality Control** (`processes:process-eo-operate-44jsrp`). Its canonical ID is `processes:activity-eo-operate-jdkay8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the inspection plan to work on the physical output, running the tests and capturing the readings batch by batch. The approved plan arrives with the batch samples, inspection and test are performed with the equipment laid on, and the captured measurements are confirmed onward for recording. Quality is established by hands and instruments here, not by assumption.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows, from actual measurement, whether each batch meets its specification.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs per batch against its approved inspection plan, and it completes when the captured measurements are confirmed onward for the quality record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A quality inspector works the approved plan over the batch's physical output, runs the tests and captures the readings with the inspection equipment, and confirms the measurements for recording.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Inspection and Testing |
+| `plain_language_description` | string | no | This activity puts the inspection plan to work on the physical output, running the tests and capturing the readings … |
+| `business_purpose` | string | no | It exists so the enterprise knows, from actual measurement, whether each batch meets its specification. |
+| `practical_context` | string | no | It runs per batch against its approved inspection plan, and it completes when the captured measurements are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

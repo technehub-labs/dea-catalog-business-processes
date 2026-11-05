@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Frame Footprint Principles**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Physical Asset Approach** (`processes:process-eo-conceive-87kx9n`). Its canonical ID is `processes:activity-eo-conceive-d3jdaa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles the ground rules that will govern how much facility and asset capacity the enterprise chooses to carry and where. The operations strategy and the delivery envelope arrive as the basis, principles are drawn and reviewed against them, and the principle set is confirmed onward for the option assessment. Every later site decision inherits its logic from here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so physical footprint choices follow declared principles rather than opportunistic site-by-site judgement.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the physical asset approach framing, once the strategy and delivery envelope are to hand, and it completes when the footprint principles are confirmed for assessing the options.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead draws the footprint ground rules from the operations strategy and the delivery envelope, reviews them with the operations function, and confirms the principles for option assessment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Footprint Principles |
+| `plain_language_description` | string | no | This activity settles the ground rules that will govern how much facility and asset capacity the enterprise chooses to … |
+| `business_purpose` | string | no | It exists so physical footprint choices follow declared principles rather than opportunistic site-by-site judgement. |
+| `practical_context` | string | no | It opens the physical asset approach framing, once the strategy and delivery envelope are to hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

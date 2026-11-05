@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-operate-bbe384 through concluding task processes:task-pr-operate-record-9wwtdx, whose outcome — Closure case file retained for Conduct Relationship Reviews under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Conduct Relationship Reviews'
+plain_language_description: 'This activity sits down with each active relationship on its cycle and takes its temperature — how healthy, what was promised, what is coming due. The allocated relationships arrive with their review rhythms, reviews are conducted and their findings gathered, and the conducted reviews are confirmed onward. The relationship''s health is checked before it fails, not after.'
+business_purpose: 'It exists so each active relationship''s health and commitments are reviewed before problems compound.'
+practical_context: 'It runs on each relationship''s allocated review rhythm through the active lifecycle, and it completes when the conducted reviews are confirmed onward for the renewals and escalations.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead reviews each active relationship on its rhythm — health, promises made, milestones ahead — and confirms the review onward.'

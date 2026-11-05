@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-mgkw59 through concluding task processes:task-ge-improve-record-6d9qqh, whose outcome — Case file retained for Measure Governance Performance under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Governance Performance'
+plain_language_description: 'This activity checks how well the enterprise''s governance has actually been working, measured against the strategy it was committed under. The operating governance arrives with the committed strategy as the yardstick, performance is measured against it, and the measured outcomes are confirmed onward for the lessons work. Governance is graded here, against its own homework.'
+business_purpose: 'It exists so governance effectiveness is known by measurement against strategy, not by the bodies'' own opinion of themselves.'
+practical_context: 'It opens each effectiveness review once the bodies have been operating for their periodic cycle, and it completes when the measured outcomes are confirmed onward for the lessons capture.'
+worked_example:
+  agent_type: human
+  narrative: 'An audit function analyst measures the operating bodies'' performance against the committed governance strategy, and confirms the measured outcomes onward for the lessons work.'

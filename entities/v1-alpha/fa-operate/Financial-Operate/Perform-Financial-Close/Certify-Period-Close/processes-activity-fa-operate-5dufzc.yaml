@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-4xn4d6 through concluding task processes:task-fa-operate-record-yng4k6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Certify Period Close'
+plain_language_description: 'This activity gives the closed period its formal certification, releasing the numbers for reporting to begin. The reconciled period arrives as the candidate, the close is certified complete and correct under the close controls, and the certified period is confirmed onward for the reports. The books are officially shut until someone certifies this.'
+business_purpose: 'It exists so reporting builds only on a period whose close has been formally certified.'
+practical_context: 'It follows the reconciliations, once the balances agree with the world, and it completes when the certified close is confirmed and its record retained for the reporting step.'
+worked_example:
+  agent_type: human
+  narrative: 'A close custodian certifies the reconciled period as complete and correct under the close controls, and confirms the certified close for the management reporting.'

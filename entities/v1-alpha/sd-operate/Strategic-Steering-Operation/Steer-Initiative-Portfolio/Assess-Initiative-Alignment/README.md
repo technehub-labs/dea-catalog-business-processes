@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Assess Initiative Alignment**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Steer Initiative Portfolio** (`processes:process-sd-operate-u6xgu5`). Its canonical ID is `processes:activity-sd-operate-cjjgw3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+In-flight work drifts quietly unless someone checks it against the strategy. The monitored performance picture arrives at intake, verification confirms the initiative list is current, and processing weighs each running initiative against what performance and intent say it should be delivering. Confirmation shares the alignment view downstream and the records custodian preserves it for the drift check.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the initiative fleet honest, testing each piece of running work against the strategy it was funded to serve.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the monitored performance picture arrives, closing once the alignment view is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst walks each running initiative past the current performance picture, a verification custodian confirms the initiative list matches the portfolio register, and the alignment view goes to the drift check.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Initiative Alignment |
+| `plain_language_description` | string | no | In-flight work drifts quietly unless someone checks it against the strategy. The monitored performance picture arrives … |
+| `business_purpose` | string | no | It keeps the initiative fleet honest, testing each piece of running work against the strategy it was funded to serve. |
+| `practical_context` | string | no | It opens this process at intake when the monitored performance picture arrives, closing once the alignment view is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

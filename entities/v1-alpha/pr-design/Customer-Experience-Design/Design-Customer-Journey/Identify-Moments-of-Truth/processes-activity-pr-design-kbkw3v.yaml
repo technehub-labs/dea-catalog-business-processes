@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-j6fakx through concluding task processes:task-pr-design-record-vkaxk7, whose outcome — Closure case file retained for Identify Moments of Truth under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Moments of Truth'
+plain_language_description: 'This activity marks the make-or-break points of the journey, where a customer is won for good or lost for good. The mapped stages arrive as the terrain to examine, moments of truth are identified within them and each justified, and the identified set is confirmed onward for the handoff design. Not all journey steps matter equally; this names the ones that do.'
+business_purpose: 'It exists so the journey''s decisive points are known and designed for, not discovered by losing customers.'
+practical_context: 'It follows the stage mapping, once the journey''s chapters are drawn, and it completes when the identified moments of truth are confirmed onward for the handoff design.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management designer marks the points in the mapped journey where the relationship is won or lost, justifies each, and confirms the set onward.'

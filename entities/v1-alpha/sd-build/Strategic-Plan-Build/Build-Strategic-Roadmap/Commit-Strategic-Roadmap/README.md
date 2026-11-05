@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Commit Strategic Roadmap**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Roadmap** (`processes:process-sd-build-7n4prh`). Its canonical ID is `processes:activity-sd-build-jfcx27`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The roadmap has been built and checked, and this is where it stops being a draft. The assembled document comes in at intake, a last verification confirms it carries every ordered initiative and anchor date, and the commitment is made so plan-build work can start from it. Confirmation notifies downstream consumers and the records custodian preserves the committed roadmap for the planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It finalises the roadmap as a committed input, letting the plan build proceed from a settled, auditable sequence of initiatives and dates.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the assembled roadmap is presented after assembly and closes when commitment is confirmed and its record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function signs the roadmap off, the confirmation custodian notifies the plan-build team that the committed sequence and dates are available, and the records custodian files the roadmap evidence so the planning cycle can cite it later.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Roadmap |
+| `plain_language_description` | string | no | The roadmap has been built and checked, and this is where it stops being a draft. The assembled document comes in at … |
+| `business_purpose` | string | no | It finalises the roadmap as a committed input, letting the plan build proceed from a settled, auditable sequence of … |
+| `practical_context` | string | no | It opens when the assembled roadmap is presented after assembly and closes when commitment is confirmed and its record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

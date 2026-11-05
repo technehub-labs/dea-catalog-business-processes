@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Review Reporting Package**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate Financial Reporting and Disclosure** (`processes:process-fa-operate-ycba3k`). Its canonical ID is `processes:activity-fa-operate-mceyb8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the assembled reporting package one careful read before it goes anywhere. Statements and their footnotes arrive assembled together, the package is reviewed for accuracy and completeness, and the reviewed package is confirmed onward for delivery. The enterprise's name goes on these numbers, so someone reads them properly first.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nothing leaves the enterprise under its name unchecked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the statements and footnotes are assembled into the package, ahead of every delivery, and it completes when the reviewed package is confirmed onward for delivery.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function reviewer reads the assembled package end to end, checks the statements against their footnotes for accuracy and completeness, and confirms it for delivery.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review Reporting Package |
+| `plain_language_description` | string | no | This activity gives the assembled reporting package one careful read before it goes anywhere. Statements and their … |
+| `business_purpose` | string | no | It exists so nothing leaves the enterprise under its name unchecked. |
+| `practical_context` | string | no | It runs once the statements and footnotes are assembled into the package, ahead of every delivery, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

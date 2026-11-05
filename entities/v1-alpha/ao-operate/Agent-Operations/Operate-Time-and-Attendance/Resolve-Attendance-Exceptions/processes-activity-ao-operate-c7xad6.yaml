@@ -90,3 +90,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-dg9q4h through concluding task processes:task-ao-operate-record-4x8k94, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve Attendance Exceptions'
+plain_language_description: 'This activity works through the anomalies validation flags, such as missing records or unusual hours, and settles each one. The validated records arrive as the context, exceptions are investigated and resolved under people policy, with escalation where the rules require it, and the resolutions are confirmed for the record. Nothing questionable is left standing between attendance and pay.'
+business_purpose: 'It exists so doubtful time entries are settled deliberately before they can distort what people are paid.'
+practical_context: 'It runs once validation has flagged its exceptions, and it closes when the resolved exceptions are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian investigates a missing day''s record for one agent, settles it under the applicable policy, escalates the unusual-hours case as the rules require, and confirms the resolutions.'

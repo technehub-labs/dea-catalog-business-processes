@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Compute Withholdings**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payroll** (`processes:process-fa-operate-zpmxzp`). Its canonical ID is `processes:activity-fa-operate-eq5bc9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out the deductions — tax and otherwise — that come off the calculated pay. The calculated compensation arrives as the base, withholdings are computed against it per the applicable rules, and the computed deductions are confirmed onward for disbursement. What is earned and what is kept are both established before anyone is paid.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the deductions owed from each person's pay are computed correctly, before payment goes out.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the compensation calculation within the cycle, and it completes once the computed withholdings are confirmed onward for disbursement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function payroll analyst computes the tax and other deductions against the calculated pay for every person, and confirms the withholdings for disbursement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Compute Withholdings |
+| `plain_language_description` | string | no | This activity works out the deductions — tax and otherwise — that come off the calculated pay. The calculated … |
+| `business_purpose` | string | no | It exists so the deductions owed from each person's pay are computed correctly, before payment goes out. |
+| `practical_context` | string | no | It follows the compensation calculation within the cycle, and it completes once the computed withholdings are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

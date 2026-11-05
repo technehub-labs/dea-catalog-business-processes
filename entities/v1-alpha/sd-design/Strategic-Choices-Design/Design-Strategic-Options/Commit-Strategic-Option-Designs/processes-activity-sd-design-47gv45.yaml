@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ewvbsh through concluding task processes:task-sd-design-record-jc2bp5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Option Designs'
+plain_language_description: 'Options and yardsticks are ready, so the design work is sealed. Intake registers the drafted set together with its criteria, a final verification confirms nothing is missing, and the commitment locks the option designs for the evaluation and translation work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed designs at their retention tier.'
+business_purpose: 'It closes option design with one committed package — choices plus yardsticks — the handoff this process owes to evaluation.'
+practical_context: 'It opens once drafting and criteria framing are complete and closes with the commitment confirmed, downstream consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead commits the option set and its criteria, the confirmation custodian notifies the evaluation team their inputs are ready, and the records custodian archives the committed designs so the comparison can cite them later.'

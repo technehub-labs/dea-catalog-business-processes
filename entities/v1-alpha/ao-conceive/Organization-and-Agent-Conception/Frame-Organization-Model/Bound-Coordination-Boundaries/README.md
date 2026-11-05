@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Bound Coordination Boundaries**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization Model** (`processes:process-ao-conceive-ruxjvh`). Its canonical ID is `processes:activity-ao-conceive-ycwkts`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity marks where one unit's responsibility ends and another's begins, including between the human and artificial parts of the organization. The bounded reporting spans arrive first, the coordination boundaries are worked out from them and reviewed, and the agreed boundaries are confirmed and recorded. Design work that follows then knows exactly where cooperation has to be arranged rather than assumed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so units and substrates interact through deliberate, agreed boundaries instead of colliding over undefined edges.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after the reporting spans have been set, when the spans are presented for boundary work, and it completes when the boundaries are confirmed and their record preserved for the model's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead, working from the agreed reporting spans, marks the boundary between a business unit and a team of artificial agents so handovers between them are arranged deliberately rather than improvised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Mark Out the Coordination Boundaries |
+| `plain_language_description` | string | no | This activity marks where one unit's responsibility ends and another's begins, including between the human and … |
+| `business_purpose` | string | no | It exists so units and substrates interact through deliberate, agreed boundaries instead of colliding over undefined … |
+| `practical_context` | string | no | It runs after the reporting spans have been set, when the spans are presented for boundary work, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

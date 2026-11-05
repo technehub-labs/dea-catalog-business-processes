@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 
 This is a **Activity** (level L3), named **Establish Enforcement Baseline**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Bring Policy Instrument into Force** (`processes:process-ge-activate-wegs44`). Its canonical ID is `processes:activity-ge-activate-pm38pv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes a reading of where compliance stands as the instrument comes alive, and readies the machinery for watching and enforcing it. The forced instrument and its notified parties arrive as the state to be measured, the baseline is established and the mechanisms armed, and the armed baseline is confirmed for the instrument's operating life. From here, the instrument has teeth and a starting line.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so enforcement of the new instrument starts from a known compliance position with working machinery behind it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the instrument is in force and its parties notified, and it completes when the armed enforcement and compliance baseline is established and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer measures where compliance stands at commencement, arms the monitoring and enforcement machinery, and confirms the baseline for the instrument's operating life.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Enforcement Baseline |
+| `plain_language_description` | string | no | This activity takes a reading of where compliance stands as the instrument comes alive, and readies the machinery for … |
+| `business_purpose` | string | no | It exists so enforcement of the new instrument starts from a known compliance position with working machinery behind it. |
+| `practical_context` | string | no | It runs once the instrument is in force and its parties notified, and it completes when the armed enforcement and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

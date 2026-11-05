@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Design Platform Upgrades**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Improve Technology Platforms** (`processes:process-eo-improve-babwdc`). Its canonical ID is `processes:activity-eo-improve-hsurx5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works each bounded platform gap into a concrete upgrade design. The gap analysis arrives with the platform architecture as the frame, upgrades are designed against both and checked for fit, and the upgrade designs are confirmed onward for commitment. Each named pain point gains a specific technical answer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every bounded platform gap gets a designed upgrade that fits the architecture, before any is bought or built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the gap analysis, when the bounded gaps and the platform architecture are to hand, and it completes once the upgrade designs are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer turns each bounded gap into a concrete upgrade design, checks the designs fit the platform architecture, and confirms them for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Platform Upgrades |
+| `plain_language_description` | string | no | This activity works each bounded platform gap into a concrete upgrade design. The gap analysis arrives with the … |
+| `business_purpose` | string | no | It exists so every bounded platform gap gets a designed upgrade that fits the architecture, before any is bought or … |
+| `practical_context` | string | no | It follows the gap analysis, when the bounded gaps and the platform architecture are to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

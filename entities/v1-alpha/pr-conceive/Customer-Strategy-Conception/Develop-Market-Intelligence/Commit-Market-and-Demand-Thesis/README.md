@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Commit Market and Demand Thesis**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Market Intelligence** (`processes:process-pr-conceive-tvst8u`). Its canonical ID is `processes:activity-pr-conceive-hx3r6g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the market scan, the hypotheses, and their tests together into one committed thesis. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the intelligence basis for the customer strategy. What the enterprise believes about its market becomes one owned, testable document.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the customer strategy inherits one committed, test-backed view of the market and demand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the market intelligence work once scans, hypotheses, and test plans are in hand, and it completes when the committed market and demand thesis is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the scan, hypotheses, and test plans into the thesis document, obtains ratification, and records the committed market and demand thesis.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Market and Demand Thesis |
+| `plain_language_description` | string | no | This activity draws the market scan, the hypotheses, and their tests together into one committed thesis. The three … |
+| `business_purpose` | string | no | It exists so the customer strategy inherits one committed, test-backed view of the market and demand. |
+| `practical_context` | string | no | It closes the market intelligence work once scans, hypotheses, and test plans are in hand, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

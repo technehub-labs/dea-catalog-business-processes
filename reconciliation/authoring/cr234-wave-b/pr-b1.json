@@ -1,0 +1,442 @@
+{
+  "processes:activity-pr-activate-y46zs2": {
+    "plain_language_name": "Verify Party Identity",
+    "plain_language_description": "This activity proves who the applicant really is, to the standard the controlling regime sets — documents collected and checked, electronic identity verification run, independent sources brought in to corroborate. The application arrives as the trigger, identity is established piece by piece, and the verified identity is confirmed onward. Nothing else in onboarding can proceed on an unproven name.",
+    "business_purpose": "It exists so the enterprise knows, to its regulator's standard, exactly who it is about to do business with.",
+    "practical_context": "It opens the regulated onboarding when a party applies in a jurisdiction or sector mandating identity verification first, and it completes once the verified identity is confirmed onward for the ownership work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer checks the applicant's identity documents, runs the electronic verification, and corroborates against independent sources before confirming the identity onward."
+    }
+  },
+  "processes:activity-pr-activate-ncn924": {
+    "plain_language_name": "Resolve Beneficial Ownership",
+    "plain_language_description": "This activity traces the applicant entity's ownership to the living people ultimately behind it, to whatever depth the regime sets, and records the chain with its evidence. The verified identity arrives as the starting point, the ownership chain is worked through and documented, and the resolved ownership is confirmed onward for the risk classification. Shell fronts stop being effective here.",
+    "business_purpose": "It exists so the enterprise knows the natural people ultimately behind an applicant entity, evidenced to the regime's threshold.",
+    "practical_context": "It follows the identity verification, working down the applicant entity's ownership, and it completes once the ownership chain is recorded with source evidence and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function analyst traces the applicant entity's ownership down to the natural persons ultimately in control, records each link with its evidence, and confirms the resolved chain onward."
+    }
+  },
+  "processes:activity-pr-activate-p53h54": {
+    "plain_language_name": "Classify Party Risk",
+    "plain_language_description": "This activity weighs everything already learned — who the applicant is, who really owns them, where they operate, what they will buy — into one defensible risk rating, weighed against the sectors the regime flags as risk-sensitive. The verified identity and resolved ownership arrive as its inputs, the rating is assigned and justified, and the classified applicant is confirmed onward for the decision. Due diligence becomes a single, arguable judgement here.",
+    "business_purpose": "It exists so every applicant carries a defensible risk rating built from verified facts, not impressions.",
+    "practical_context": "It follows the identity and ownership work, once both are verified and resolved, and it completes when the assigned risk classification is confirmed onward for the approval decision.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A risk function officer weighs the verified identity, the resolved ownership, and the jurisdictional exposure into a defensible risk rating, and confirms the classification onward."
+    }
+  },
+  "processes:activity-pr-activate-q9pr4m": {
+    "plain_language_name": "Record Onboarding Decision",
+    "plain_language_description": "This activity puts the decision through its required approvals — no single pair of eyes suffices — and records the outcome, its reasoning, and who decided, before handing the onboarding record to whichever systems will act on it. The classified applicant arrives as the case to be judged, activation or refusal is decided and documented, and the recorded decision is confirmed onward. The relationship formally begins — or formally doesn't — at this step.",
+    "business_purpose": "It exists so the onboarding decision is properly approved, fully reasoned, and on the record either way.",
+    "practical_context": "It closes the regulated onboarding, once the risk classification is assigned, and it completes when the activation or recorded refusal is issued to the systems that open or close the relationship.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management approver and a second signatory rule on the classified applicant, recording the activation decision with its rationale, and issue the onboarding record to the systems."
+    }
+  },
+  "processes:activity-pr-build-ncrg72": {
+    "plain_language_name": "Provision Channel Infrastructure",
+    "plain_language_description": "This activity stands up the infrastructure through which customers will actually reach the enterprise. The designed experience arrives as the load the channels must carry, the infrastructure is provisioned against it and checked, and the provisioned channels are confirmed onward for the experience wiring. The shop is built before the shopkeepers move in.",
+    "business_purpose": "It exists so the designed customer experience has real infrastructure to run on.",
+    "practical_context": "It opens the acquisition build once the experience and journey designs are committed, and it completes as the provisioned channel infrastructure is confirmed onward for integration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management builder stands up the channel infrastructure sized to carry the designed experience, checks it, and confirms the provisioned channels onward."
+    }
+  },
+  "processes:activity-pr-build-d3pku9": {
+    "plain_language_name": "Integrate Channels with Experience",
+    "plain_language_description": "This activity joins the provisioned channels up with the designed experience — its journey and its interaction patterns — as committed. The infrastructure arrives as the frame, the designed experience is wired into it and checked at every join, and the integrated channels are confirmed onward for the engines. Customers will meet the designed experience, not a bolted-on approximation.",
+    "business_purpose": "It exists so what customers actually encounter through the channels is the experience that was designed.",
+    "practical_context": "It follows the channel provisioning, once the infrastructure is in place, and it completes when the channels' integration with the designed experience is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management builder wires the provisioned channels to the designed journey and interaction patterns, checks every join, and confirms the integrated channels."
+    }
+  },
+  "processes:activity-pr-build-qutweg": {
+    "plain_language_name": "Build Acquisition Engines",
+    "plain_language_description": "This activity constructs the machinery that actively brings customers in through the wired channels. The integrated channels arrive as the pathways, the acquisition engines are built onto them and checked as they assemble, and the built engines are confirmed onward for readiness. The enterprise stops waiting for customers and starts going to get them.",
+    "business_purpose": "It exists so the channels actively acquire customers through built machinery, not passively hope for them.",
+    "practical_context": "It follows the experience integration, once the channels are wired, and it completes as the built acquisition engines are confirmed onward for readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function builder constructs the acquisition machinery onto the wired channels, checks it as it assembles, and confirms the built engines for readiness."
+    }
+  },
+  "processes:activity-pr-build-p42qh7": {
+    "plain_language_name": "Verify Acquisition Readiness",
+    "plain_language_description": "This activity proves the channels and engines as built can actually bring in the first customers as designed. The assembled acquisition machinery arrives with the designs as the yardstick, readiness is examined against them, and the determination is confirmed for operation. The doors open only once this says the machinery works.",
+    "business_purpose": "It exists so customer acquisition goes live proven able to acquire, not merely built.",
+    "practical_context": "It closes the acquisition build once infrastructure, integration, and engines are in place, and it completes when the readiness determination is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management verifier proves the built channels and engines can acquire the first customers as designed, and confirms the readiness determination."
+    }
+  },
+  "processes:activity-pr-build-da7r6t": {
+    "plain_language_name": "Build Demand Program Assets",
+    "plain_language_description": "This activity constructs the content, the campaigns, and the program machinery on which the demand engine will run. The committed demand model arrives as the design of what demand to make, the assets are built against it and checked, and the built assets are confirmed onward for the channel wiring. Demand is manufactured from materials prepared here.",
+    "business_purpose": "It exists so the demand engine has its fuel — real content, campaigns, and machinery built to the demand model.",
+    "practical_context": "It opens the demand generation build once the demand model is committed, and it completes as the built assets are confirmed onward for the channel integration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function builder constructs the content, campaigns, and program machinery the demand model calls for, and confirms the built assets onward."
+    }
+  },
+  "processes:activity-pr-build-pd7paf": {
+    "plain_language_name": "Integrate Demand Engine with Channels",
+    "plain_language_description": "This activity hooks the built demand machinery into the acquisition channels, so its programs can actually reach the market. The built assets arrive at the wired channels as the two halves to join, the connection is made and its flows checked, and the integrated engine is confirmed onward for calibration. Fuel meets engine meets road here.",
+    "business_purpose": "It exists so the demand engine's output flows through real channels to real prospects.",
+    "practical_context": "It follows the asset build, once the channels are wired and the assets built, and it completes when the engine-to-channel integration is confirmed onward for calibration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function builder connects the demand engine's programs to the acquisition channels, checks the flows reach the market, and confirms the integrated engine."
+    }
+  },
+  "processes:activity-pr-build-ywaa6n": {
+    "plain_language_name": "Calibrate Demand Programs",
+    "plain_language_description": "This activity tunes the connected engine against its first responses from the market, before it settles into steady running. The initial demand response arrives as the evidence, programs are adjusted against it and re-checked, and the calibrated engine is confirmed onward for readiness. First contact with the market is used to correct aim, not to declare victory.",
+    "business_purpose": "It exists so the demand engine's settings are corrected against real market response before steady state.",
+    "practical_context": "It follows the engine integration, once initial demand response starts arriving, and it completes as the calibrated programs are confirmed onward for readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function tuner adjusts the programs against the engine's first market responses — retiming, refocusing, rebalancing — and confirms the calibrated engine onward."
+    }
+  },
+  "processes:activity-pr-build-ppw8cp": {
+    "plain_language_name": "Verify Initial Demand Production",
+    "plain_language_description": "This activity proves the calibrated engine produces demand consistent with what the committed demand model predicted. The tuned engine arrives with the model as its yardstick, initial production is examined against it, and the determination is confirmed for operation. The demand machine is warranted only once its output matches the plan.",
+    "business_purpose": "It exists so steady-state demand generation starts on an engine proven to produce as the model predicted.",
+    "practical_context": "It closes the demand generation build once the engine is calibrated, and it completes when the initial demand production is confirmed against the committed model and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management verifier checks the engine's initial demand against what the committed model predicted, and confirms the production determination for operation."
+    }
+  },
+  "processes:activity-pr-conceive-3tgws4": {
+    "plain_language_name": "Frame Segment Thesis",
+    "plain_language_description": "This activity fixes which customers the strategy is for, and says why that ground was chosen rather than another. The strategy framing need arrives from a new segment, a drifted strategy, or a thesis to re-test, the segment is bounded and its choice argued, and the framed thesis is confirmed onward for the value exchange. Who we serve is decided before anything else.",
+    "business_purpose": "It exists so the customer strategy names its intended customers and defends the choice.",
+    "practical_context": "It opens the customer strategy framing when the enterprise enters a segment, the existing strategy drifts, or the thesis needs re-testing, and it completes once the segment thesis is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead bounds the target customer segment and argues why that ground beats the alternatives, then confirms the thesis for the value exchange."
+    }
+  },
+  "processes:activity-pr-conceive-6habrm": {
+    "plain_language_name": "Articulate Value Exchange",
+    "plain_language_description": "This activity states plainly what each side of the relationship puts in and takes out. The framed segment arrives as the counterparty to design for, the exchange is articulated in both directions and checked for fairness, and the articulated exchange is confirmed onward for the demand thesis. The deal the enterprise offers its customers is set down here, in full.",
+    "business_purpose": "It exists so the relationship's give-and-take is stated explicitly rather than left implicit in the product.",
+    "practical_context": "It follows the segment framing, once the chosen customers are fixed, and it completes when the articulated value exchange is confirmed onward for the demand thesis.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead states what the enterprise gives its chosen customers and what it receives in return, and confirms the exchange for the demand thesis."
+    }
+  },
+  "processes:activity-pr-conceive-8frfby": {
+    "plain_language_name": "Formulate Demand Thesis",
+    "plain_language_description": "This activity sets out the enterprise's belief about where its demand will come from and what will keep it coming. The bounded segment and articulated exchange arrive as the foundation, the demand thesis is formulated against them and reviewed for realism, and the formulated thesis is confirmed onward for the strategy's commitment. The strategy's bet on the future is stated here.",
+    "business_purpose": "It exists so the strategy carries an explicit, reviewable belief about how its demand arises and sustains.",
+    "practical_context": "It follows the segment and exchange framing, once both are confirmed, and it completes when the formulated demand thesis is confirmed onward for the strategy's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead sets out where demand from the chosen segment will come from and what sustains it, and confirms the demand thesis for the strategy's commitment."
+    }
+  },
+  "processes:activity-pr-conceive-kbwtdj": {
+    "plain_language_name": "Commit Customer Strategy",
+    "plain_language_description": "This activity draws the three theses — who we serve, what we trade, how demand arises — into one committed strategy document. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed as the basis for the market intelligence and design work. The enterprise's customer intentions become one owned decision.",
+    "business_purpose": "It exists so downstream intelligence, design, and build start from one committed customer strategy.",
+    "practical_context": "It closes the customer strategy framing, once segment, exchange, and demand theses are framed, and it completes when the committed strategy document is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the segment thesis, value exchange, and demand thesis into the strategy document, obtains ratification, and records the committed strategy."
+    }
+  },
+  "processes:activity-pr-conceive-h7aqez": {
+    "plain_language_name": "Scan Market and Segments",
+    "plain_language_description": "This activity sweeps the market methodically for its structure, its segments, and the signals of demand within them. The intelligence need arrives from a market entry, a segment drift, or a hypothesis to test, the scan is executed systematically and its finds gathered, and the scanned signals are confirmed onward for the hypothesis work. The enterprise looks before it leaps.",
+    "business_purpose": "It exists so customer strategy rests on systematically gathered market fact, not on folklore.",
+    "practical_context": "It opens the market intelligence work when a market entry, segment drift, or demand hypothesis needs testing before strategy commitment, and it completes as the scanned signals are confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management analyst sweeps the market for its structure, segments, and demand signals, gathers the finds systematically, and confirms the scan onward."
+    }
+  },
+  "processes:activity-pr-conceive-mnhm2f": {
+    "plain_language_name": "Formulate Demand Hypotheses",
+    "plain_language_description": "This activity shapes what the market scan found into hypotheses sharp enough to be tested. The scanned signals arrive as the raw material, demand hypotheses are formulated from them and each made falsifiable, and the formulated set is confirmed onward for the test design. Hunches become claims that can lose.",
+    "business_purpose": "It exists so market beliefs are stated as testable claims rather than unexamined assumptions.",
+    "practical_context": "It follows the market scan, once the signals are gathered and confirmed, and it completes when the formulated demand hypotheses are confirmed onward for the test design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function analyst shapes the scan's signals into demand hypotheses stated sharply enough to be proven wrong, and confirms the formulated set onward."
+    }
+  },
+  "processes:activity-pr-conceive-wcedtt": {
+    "plain_language_name": "Design Hypothesis Tests",
+    "plain_language_description": "This activity builds the checks that will prove or disprove each demand hypothesis. The formulated hypotheses arrive as the claims under trial, a test is designed for each and reviewed for rigour, and the test designs are confirmed onward for the thesis commitment. Every belief about the market is assigned the experiment that could kill it.",
+    "business_purpose": "It exists so each demand hypothesis is paired with a test capable of proving it wrong.",
+    "practical_context": "It follows the hypothesis formulation, once the claims are on the table, and it completes when the designed tests are confirmed onward for the thesis commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management analyst designs the check that will prove or disprove each formulated hypothesis, reviews the designs for rigour, and confirms them onward."
+    }
+  },
+  "processes:activity-pr-conceive-hx3r6g": {
+    "plain_language_name": "Commit Market and Demand Thesis",
+    "plain_language_description": "This activity draws the market scan, the hypotheses, and their tests together into one committed thesis. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the intelligence basis for the customer strategy. What the enterprise believes about its market becomes one owned, testable document.",
+    "business_purpose": "It exists so the customer strategy inherits one committed, test-backed view of the market and demand.",
+    "practical_context": "It closes the market intelligence work once scans, hypotheses, and test plans are in hand, and it completes when the committed market and demand thesis is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the scan, hypotheses, and test plans into the thesis document, obtains ratification, and records the committed market and demand thesis."
+    }
+  },
+  "processes:activity-pr-design-j9s8mg": {
+    "plain_language_name": "Define Experience Principles",
+    "plain_language_description": "This activity sets the ground rules every part of the experience must keep, so the promised value exchange is actually delivered. The committed segment thesis and value exchange arrive as the promise to be honoured, principles are defined from them and reviewed, and the defined principles are confirmed onward for the touchpoint design. The experience gets its constitution here.",
+    "business_purpose": "It exists so every later experience decision answers to principles tied to the promised value exchange.",
+    "practical_context": "It opens the experience design once the customer strategy has committed its segment thesis and value exchange, and it completes when the defined principles are confirmed for the touchpoint design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function designer sets the ground rules the experience must keep to deliver the committed value exchange, and confirms the defined principles onward."
+    }
+  },
+  "processes:activity-pr-design-5vsfm6": {
+    "plain_language_name": "Design Touchpoints",
+    "plain_language_description": "This activity draws each spot where the customer and the enterprise will meet and interact. The defined principles arrive as the rules to design within, touchpoints are designed point by point and checked against them, and the designed touchpoints are confirmed onward for the interaction patterns. The relationship's handshake points take shape here.",
+    "business_purpose": "It exists so every meeting point between customer and enterprise is deliberately designed.",
+    "practical_context": "It follows the principles definition, when the ground rules are in hand, and it completes once the designed touchpoints are confirmed onward for the interaction patterns.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer draws each point where customer and enterprise will interact, checks every design against the principles, and confirms the touchpoints onward."
+    }
+  },
+  "processes:activity-pr-design-4as452": {
+    "plain_language_name": "Specify Interaction Patterns",
+    "plain_language_description": "This activity sets the house style for how interactions play out, the same way at every touchpoint. The designed touchpoints arrive as the surfaces to be governed, the patterns are specified across them and checked for consistency, and the specification is confirmed onward for the quality criteria. Customers learn the enterprise once and recognise it everywhere.",
+    "business_purpose": "It exists so interactions behave consistently by design, whichever touchpoint a customer uses.",
+    "practical_context": "It follows the touchpoint design, when the surfaces are drawn, and it completes once the interaction pattern specification is confirmed onward for the quality criteria.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer sets the repeatable patterns for how interactions behave across every touchpoint, and confirms the specification onward."
+    }
+  },
+  "processes:activity-pr-design-9kscys": {
+    "plain_language_name": "Set Experience Quality Criteria",
+    "plain_language_description": "This activity fixes the checks the finished experience will have to pass. The specified patterns and designed touchpoints arrive as the thing to be measured, quality criteria are defined to be measurable and reviewed, and the criteria set is confirmed onward for the design's commitment. The experience is promised, and now it is examinable.",
+    "business_purpose": "It exists so the built experience can be objectively tested against designed, measurable criteria.",
+    "practical_context": "It follows the touchpoints and patterns, when the experience's shape is settled, and it completes once the quality criteria set is confirmed for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer fixes the measurable checks the built experience must pass, reviews them for objectivity, and confirms the criteria set onward."
+    }
+  },
+  "processes:activity-pr-design-bp2kwt": {
+    "plain_language_name": "Map Journey Stages",
+    "plain_language_description": "This activity breaks the customer's whole path through the enterprise into named stages. The designed experience arrives as the terrain to be mapped, stages are drawn from first contact to last and reviewed for completeness, and the mapped stages are confirmed onward for the moments work. The journey gains its chapters here.",
+    "business_purpose": "It exists so the customer's end-to-end path is understood as deliberate, named stages.",
+    "practical_context": "It opens the journey design once the customer experience has been designed, and it completes when the mapped stages are confirmed onward for the moments-of-truth work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer breaks the customer's whole path into its named stages, reviews the map for completeness, and confirms the stages onward."
+    }
+  },
+  "processes:activity-pr-design-kbkw3v": {
+    "plain_language_name": "Identify Moments of Truth",
+    "plain_language_description": "This activity marks the make-or-break points of the journey, where a customer is won for good or lost for good. The mapped stages arrive as the terrain to examine, moments of truth are identified within them and each justified, and the identified set is confirmed onward for the handoff design. Not all journey steps matter equally; this names the ones that do.",
+    "business_purpose": "It exists so the journey's decisive points are known and designed for, not discovered by losing customers.",
+    "practical_context": "It follows the stage mapping, once the journey's chapters are drawn, and it completes when the identified moments of truth are confirmed onward for the handoff design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer marks the points in the mapped journey where the relationship is won or lost, justifies each, and confirms the set onward."
+    }
+  },
+  "processes:activity-pr-design-k9ehsu": {
+    "plain_language_name": "Design Journey Handoffs",
+    "plain_language_description": "This activity works out how the customer crosses from one stage to the next, including where work hands off between processes. The mapped stages and their moments arrive as the seams to be smoothed, handoffs are designed across them and checked for drops, and the designed handoffs are confirmed onward for the journey's commitment. The journey is stitched into one continuous experience.",
+    "business_purpose": "It exists so the customer never feels the seams between journey stages or internal handoffs.",
+    "practical_context": "It follows the moments identification, when the decisive points are marked, and it completes once the designed handoffs are confirmed for the journey's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer designs how the customer crosses each stage boundary, including the internal handoffs, and confirms the designed handoffs onward."
+    }
+  },
+  "processes:activity-pr-design-vbvz6f": {
+    "plain_language_name": "Commit Journey Design",
+    "plain_language_description": "This activity draws the stages, the critical moments, and the handoffs together into one committed journey design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed journey is confirmed as the customer's authoritative path. The journey stops being three analyses and becomes one map.",
+    "business_purpose": "It exists so build and operate work from one committed journey rather than from fragments.",
+    "practical_context": "It closes the journey design once stages, moments, and handoffs are designed, and it completes when the committed journey design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the stages, moments of truth, and handoffs into the journey design, obtains ratification, and records the committed journey."
+    }
+  },
+  "processes:activity-pr-design-zst46t": {
+    "plain_language_name": "Articulate Supply Paths",
+    "plain_language_description": "This activity traces the routes by which a customer's need turns into something the enterprise actually supplies. The designed experience arrives as the demand side of the equation, the supply paths are articulated from it and reviewed for practicality, and the articulated paths are confirmed onward for the capacity work. Demand's journey into supply is drawn here.",
+    "business_purpose": "It exists so the enterprise knows exactly how customer need becomes its own supply.",
+    "practical_context": "It opens the demand model design once the customer experience has been designed, and it completes when the articulated supply paths are confirmed for the capacity assumptions.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function designer traces each route by which customer need converts into enterprise supply, reviews the paths for practicality, and confirms them onward."
+    }
+  },
+  "processes:activity-pr-design-nw69bm": {
+    "plain_language_name": "Model Capacity Assumptions",
+    "plain_language_description": "This activity states, plainly and in structure, what the enterprise is assuming about its own capacity as demand arrives. The articulated supply paths arrive as the thing to be underwritten, assumptions are stated and organised against them, and the capacity model is confirmed onward for the levers. The demand model admits honestly what it is betting on.",
+    "business_purpose": "It exists so the demand model's capacity bets are stated openly rather than hidden in the arithmetic.",
+    "practical_context": "It follows the supply paths, once the routes demand will take are drawn, and it completes when the structured capacity assumptions are confirmed onward for the levers.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function designer states and structures the capacity assumptions underpinning each supply path, and confirms the assumptions model onward."
+    }
+  },
+  "processes:activity-pr-design-dakgz2": {
+    "plain_language_name": "Define Demand-Shaping Levers",
+    "plain_language_description": "This activity names what the enterprise can pull on to steer demand along the paths it has drawn. The supply paths and capacity assumptions arrive as the system to be steered, levers are defined for each point of steering and checked for realism, and the lever set is confirmed onward for the model's commitment. When demand misbehaves, the enterprise will know which handles to pull.",
+    "business_purpose": "It exists so demand can be deliberately steered by named levers rather than merely endured.",
+    "practical_context": "It follows the paths and assumptions, once the system to be steered is drawn, and it completes when the defined levers are confirmed onward for the model's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management designer names the handles that steer demand along the drawn supply paths, checks each for realism, and confirms the lever set onward."
+    }
+  },
+  "processes:activity-pr-design-ftrzgz": {
+    "plain_language_name": "Commit Demand Model",
+    "plain_language_description": "This activity draws the supply routes, the capacity assumptions, and the levers together into one committed demand model. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed model is confirmed as the basis for the demand generation build. How demand becomes supply becomes one owned design.",
+    "business_purpose": "It exists so the demand generation build starts from one committed demand model.",
+    "practical_context": "It closes the demand model design once paths, assumptions, and levers are articulated, and it completes when the committed demand model is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the supply paths, capacity assumptions, and levers into the model document, obtains ratification, and records the committed demand model."
+    }
+  },
+  "processes:activity-pr-improve-p988q3": {
+    "plain_language_name": "Collect Customer Feedback",
+    "plain_language_description": "This activity keeps the customer's own voice flowing in — satisfaction measures, survey results, and what service interactions reveal — drawn from the active base without pause. The active relationships arrive as the listening field, feedback is collected continuously and organised as it lands, and the collected signals are confirmed onward for the churn analysis. The enterprise hears its customers on a heartbeat, not once a year.",
+    "business_purpose": "It exists so the enterprise's view of its customers is fed continuously by the customers themselves.",
+    "practical_context": "It runs continuously across the active customer base while the relationships are in operation, and it completes as each collected signal is confirmed onward for the churn analysis.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management analyst keeps satisfaction measures, survey results, and service feedback flowing in from the active base, organising each as it lands."
+    }
+  },
+  "processes:activity-pr-improve-6atff5": {
+    "plain_language_name": "Assess Churn Risk",
+    "plain_language_description": "This activity reads the feedback and the behavioural signals together to grade how likely each active customer is to leave. The collected feedback arrives with the behavioural record as its companion, churn risk is scored customer by customer across the base, and the scored risks are confirmed onward for the retention actions. Leaving customers are seen before they have gone.",
+    "business_purpose": "It exists so customers at risk of leaving are identified by evidence before they actually go.",
+    "practical_context": "It runs continuously against the collected feedback and behaviour signals, and it completes once the scored churn risks are confirmed onward for the retention actions.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management analyst reads the feedback alongside the behavioural signals, scores each active customer's likelihood of leaving, and confirms the scored risks onward."
+    }
+  },
+  "processes:activity-pr-improve-jg6bv4": {
+    "plain_language_name": "Execute Retention Actions",
+    "plain_language_description": "This activity moves on what the churn and satisfaction findings show, with interventions aimed at the customers who need them. The scored risks and satisfaction findings arrive as the worklist, targeted retention interventions are executed for each named case, and the executed actions are confirmed onward. Warning signs are answered with deeds, not memos.",
+    "business_purpose": "It exists so at-risk customers receive deliberate retention action rather than eventual farewell.",
+    "practical_context": "It follows the churn scoring and satisfaction findings, once the at-risk cases are named, and it completes as each executed retention intervention is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer acts on each scored churn risk with a targeted intervention — a service recovery, a check-in, a tailored offer — and confirms the execution onward."
+    }
+  },
+  "processes:activity-pr-improve-k6eb79": {
+    "plain_language_name": "Maintain Win-Back Pipeline",
+    "plain_language_description": "This activity spots the customers who have drifted away or are drifting, and keeps the list of chances to win them back current. The active base and its churn history arrive as the territory, lapsed and lapsing customers are identified and their win-back chances kept live, and the maintained pipeline is confirmed onward. Departed customers are treated as recoverable, not as dead.",
+    "business_purpose": "It exists so lapsed customers remain named, live opportunities rather than forgotten losses.",
+    "practical_context": "It runs continuously across the base as customers lapse or begin lapping, and it completes as the maintained win-back opportunity list is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer spots the drifted and drifting customers, keeps each win-back chance current on the list, and confirms the maintained pipeline onward."
+    }
+  },
+  "processes:activity-pr-operate-v9vny2": {
+    "plain_language_name": "Allocate Relationship Attention",
+    "plain_language_description": "This activity rations the enterprise's care across its active customers — who owns which account, how often they are contacted, how much service effort each earns. The active customer base arrives as the field to be covered, attention is allocated across it and reviewed for fairness, and the allocation is confirmed onward for the relationship work. Not every customer can be everything; this decides who gets what.",
+    "business_purpose": "It exists so relationship effort is deliberately distributed across the base rather than spread by accident.",
+    "practical_context": "It runs as customers enter and move through the active relationship lifecycle, and it completes when the allocated attention — ownership, cadence, effort — is confirmed onward for the relationship work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead assigns account ownership, contact cadence, and service effort across the active base, and confirms the allocation onward."
+    }
+  },
+  "processes:activity-pr-operate-2d88cr": {
+    "plain_language_name": "Conduct Relationship Reviews",
+    "plain_language_description": "This activity sits down with each active relationship on its cycle and takes its temperature — how healthy, what was promised, what is coming due. The allocated relationships arrive with their review rhythms, reviews are conducted and their findings gathered, and the conducted reviews are confirmed onward. The relationship's health is checked before it fails, not after.",
+    "business_purpose": "It exists so each active relationship's health and commitments are reviewed before problems compound.",
+    "practical_context": "It runs on each relationship's allocated review rhythm through the active lifecycle, and it completes when the conducted reviews are confirmed onward for the renewals and escalations.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead reviews each active relationship on its rhythm — health, promises made, milestones ahead — and confirms the review onward."
+    }
+  },
+  "processes:activity-pr-operate-w753mv": {
+    "plain_language_name": "Handle Relationship Escalations",
+    "plain_language_description": "This activity takes the escalated complaints in hand, sorts the resolution, and keeps the customer wanting to stay. Escalations arrive from the reviews and the day's friction, resolution is coordinated across whoever must act, and the handled escalations are confirmed onward. The relationship's worst moments are managed into its best save stories.",
+    "business_purpose": "It exists so escalated customer problems are resolved fast enough to preserve the relationship.",
+    "practical_context": "It runs whenever an escalation arrives from the reviews, operations, or the customer directly, and it completes once the coordinated resolution is confirmed and the relationship preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead takes the escalated complaint in hand, coordinates the fix across the teams involved, and closes it with the relationship intact."
+    }
+  },
+  "processes:activity-pr-operate-amg225": {
+    "plain_language_name": "Coordinate Renewals",
+    "plain_language_description": "This activity gets the next round of customer commitments ready and signed as their terms run out. Renewal horizons arrive from the relationship reviews, preparation and execution are coordinated ahead of each term's end, and the coordinated renewals are confirmed onward. Continuity is arranged before the expiry date, not negotiated after it.",
+    "business_purpose": "It exists so customer commitments renew on prepared terms rather than lapsing by neglect.",
+    "practical_context": "It runs as renewals approach term, signalled by the relationship reviews, and it completes once each renewal is prepared, executed, and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead prepares the renewal ahead of the term's end, executes it with the customer, and confirms the coordinated renewal onward."
+    }
+  },
+  "processes:activity-pr-retire-k646h9": {
+    "plain_language_name": "Plan Relationship Close-Out",
+    "plain_language_description": "This activity maps the ending before it happens — what the close covers, by when, and what is still owed. The relationship's agreed or mandated end arrives as the trigger, the close-out is planned across scope, timeline, and obligations, and the plan is confirmed onward for the settlement work. Endings, like beginnings, deserve a plan.",
+    "business_purpose": "It exists so a relationship's ending is organised and complete rather than abrupt and leaky.",
+    "practical_context": "It opens the close when the relationship reaches its agreed or mandated end — expiry, termination, or regulated offboarding — and it completes once the close-out plan is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management lead maps the close-out — scope, timeline, and the inventory of what is still owed — and confirms the plan for settlement."
+    }
+  },
+  "processes:activity-pr-retire-zb4htq": {
+    "plain_language_name": "Settle Outstanding Obligations",
+    "plain_language_description": "This activity pays off or otherwise discharges whatever the two parties still owe each other. The close-out plan and its obligation inventory arrive as the ledger to clear, each obligation is fulfilled or settled and evidenced, and the settled state is confirmed onward for the records work. Neither side walks away still holding a claim.",
+    "business_purpose": "It exists so the relationship ends with no outstanding claim left on either side.",
+    "practical_context": "It follows the close-out planning, working from the obligation inventory, and it completes once every obligation is fulfilled or settled and the settled state confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer works the obligation inventory, paying off or discharging each item the parties still owe, and confirms the settled state onward."
+    }
+  },
+  "processes:activity-pr-retire-5k7ngj": {
+    "plain_language_name": "Resolve Records and Rights",
+    "plain_language_description": "This activity settles what happens to the relationship's records, the rights either side was granted, and how the regulated data is handled — erasure duties included. The relationship's records, data, and granted rights arrive as the estate to divide, disposition is resolved for each and evidenced, and the resolved position is confirmed onward for the closure. The relationship's paper afterlife is ordered here.",
+    "business_purpose": "It exists so records, licensed rights, and regulated data end up exactly where law and contract say they must.",
+    "practical_context": "It follows the obligation settlement, once the estate to divide is clear, and it completes when the resolved records, rights, and data handling — erasure included — are confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer resolves the records' disposition, the licensed and IP rights, and the regulated data's erasure duties, evidencing each resolution onward."
+    }
+  },
+  "processes:activity-pr-retire-smrebq": {
+    "plain_language_name": "Execute Evidenced Closure",
+    "plain_language_description": "This activity performs the closing itself — the counterparty confirms it, the evidence is captured, and the file is archived. The settled and resolved relationship arrives as ready to end, closure is executed with the counterparty's confirmation, and the evidenced closure is confirmed for the record. The relationship ends not with a whimper but with a receipt.",
+    "business_purpose": "It exists so the relationship's end is proven — confirmed by the counterparty and archived as evidence.",
+    "practical_context": "It closes the close-out once obligations are settled and records resolved, and it completes when the executed closure with counterparty confirmation and archived evidence is confirmed for the record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A customer relationship management officer executes the final closure with the counterparty's confirmation, captures and archives the evidence, and confirms the closure for the record."
+    }
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "processes:activity-pv-activate-922fde": {
+    "plain_language_name": "Prepare Transition Readiness",
+    "plain_language_description": "This activity checks that everything needed for the handover is actually in hand — the readiness criteria met, the transition plan drawn, and the way back prepared. The proposition arrives with its readiness threshold met and its transition authorised, readiness is confirmed criterion by criterion, and the prepared state is confirmed onward for the cutover. Nothing is switched on until the exit is mapped.",
+    "business_purpose": "It exists so the cutover happens on proven readiness, with the rollback provisioned before it is needed.",
+    "practical_context": "It opens the transition once a validated proposition has met its readiness threshold and been authorised for operational transition, and it completes when the confirmed readiness, plan, and rollback provisions are in place for the cutover.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer walks the readiness criteria one by one, sets out the transition plan and the way back if it fails, and confirms the prepared state for the cutover."
+    }
+  },
+  "processes:activity-pv-activate-fd922j": {
+    "plain_language_name": "Execute Service Cutover",
+    "plain_language_description": "This activity performs the switch that puts the proposition to work in the live operational setting. The prepared transition arrives as the authority and the script, the activation is executed step by step against it, and the executed cutover is confirmed onward for stabilisation. This is the moment the proposition stops being a project and starts being a service.",
+    "business_purpose": "It exists so the proposition enters live operation through one deliberate, scripted switch.",
+    "practical_context": "It follows the readiness preparation, once criteria, plan, and rollback are confirmed, and it completes when the executed cutover is confirmed onward for early-life stabilisation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer executes the cutover step by step against the prepared plan, confirming each step as the proposition goes live in the operational environment."
+    }
+  },
+  "processes:activity-pv-activate-f29a5n": {
+    "plain_language_name": "Stabilize Early Operations",
+    "plain_language_description": "This activity babysits the newly live service through its earliest, most fragile days, watching closely and fixing quickly. The executed cutover arrives as the newborn to watch, monitoring runs tightly and issues are resolved as they surface, and the stabilised service is confirmed onward for acceptance. Most launch failures are caught and killed in this window.",
+    "business_purpose": "It exists so the service's early wobbles are caught and settled before they become outages.",
+    "practical_context": "It runs through the transition period after the cutover, watching and resolving until the service is genuinely relied upon, and it completes when the stabilised service is confirmed onward for acceptance.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer keeps tight watch over the newly live service, resolving each issue as it surfaces in the early days, until operation is steady enough for acceptance."
+    }
+  },
+  "processes:activity-pv-activate-hxb9wf": {
+    "plain_language_name": "Confirm Operational Acceptance",
+    "plain_language_description": "This activity collects the formal handover signature — the operational owner accepts the service, with the evidence attached. The stabilised service arrives as the candidate for acceptance, sign-off is obtained from the accepting owner and evidenced, and the accepted service is confirmed onward for operational life. The transition ends when someone with ownership says, in writing, that it is theirs now.",
+    "business_purpose": "It exists so operational reliance on the service begins with a formal, evidenced acceptance by its owner.",
+    "practical_context": "It closes the transition once early operations are stabilised, and it completes when the formal acceptance with ownership sign-off and evidence is confirmed into operational service.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer presents the stabilised service for acceptance, obtains the operational owner's signed sign-off with the evidence attached, and confirms the accepted service into operation."
+    }
+  },
+  "processes:activity-pv-build-r6b4x7": {
+    "plain_language_name": "Construct Prototype",
+    "plain_language_description": "This activity builds the working artefact the designed experiment needs to test its hypothesis. The experiment design arrives as the specification, the prototype is constructed to it and checked as it takes shape, and the constructed prototype is confirmed onward for instrumentation. The idea gets a body here.",
+    "business_purpose": "It exists so the innovation hypothesis has something real to be tested against.",
+    "practical_context": "It opens the prototype build when the designed experiment requires a working prototype, and it completes as the constructed prototype is confirmed onward for instrumentation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder constructs the working prototype the experiment design specifies, checking it against the design as it takes shape, and confirms it onward."
+    }
+  },
+  "processes:activity-pv-build-zvvppc": {
+    "plain_language_name": "Instrument Prototype",
+    "plain_language_description": "This activity fits the prototype with its measuring gear, so it can report exactly what the success criteria ask about. The constructed prototype arrives as the thing to be wired, instruments are fitted to capture each required measurement, and the instrumented prototype is confirmed onward for documentation. An unmeasured prototype is just a toy; this makes it an instrument.",
+    "business_purpose": "It exists so the prototype can actually produce the measurements the experiment will judge it by.",
+    "practical_context": "It follows the prototype construction, once the artefact is built, and it completes when the fitted instruments are confirmed to capture everything the success criteria require.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder fits the prototype with the measuring gear its success criteria demand, checking each reading works, and confirms the instrumented prototype onward."
+    }
+  },
+  "processes:activity-pv-build-ef63d7": {
+    "plain_language_name": "Document Prototype Build",
+    "plain_language_description": "This activity writes down exactly how the prototype was built, so any result it produces can be traced to a known construction. The instrumented prototype arrives as the artefact to be recorded, its build is documented — materials, configuration, known quirks — and the documented build is confirmed onward for readiness. Experiment results are only as trustworthy as the build notes behind them.",
+    "business_purpose": "It exists so experiment results can be attributed to a precisely known construction state.",
+    "practical_context": "It follows the instrumentation, once the prototype is fitted and working, and it completes when the documented build is confirmed onward for the readiness verification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder records exactly how the prototype was put together — its configuration and known quirks — and confirms the documented build onward."
+    }
+  },
+  "processes:activity-pv-build-gznqhc": {
+    "plain_language_name": "Verify Prototype Readiness",
+    "plain_language_description": "This activity proves the finished prototype can actually run its hypothesis test inside the time the experiment allows. The documented, instrumented prototype arrives with the experiment design and timebox as the yardstick, readiness is examined against both, and the determination is confirmed for testing. The experiment starts only when the prototype is proven test-ready.",
+    "business_purpose": "It exists so the experiment begins on a prototype proven able to test its hypothesis in time.",
+    "practical_context": "It closes the prototype build once construction, instrumentation, and documentation are complete, and it completes when the readiness determination is confirmed within the experiment's timebox.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management verifier checks the instrumented prototype can run the hypothesis test inside the timebox, and confirms the readiness determination for testing."
+    }
+  },
+  "processes:activity-pv-build-qf7sxu": {
+    "plain_language_name": "Stand Up Service Delivery Mechanism",
+    "plain_language_description": "This activity assembles the working machinery that will actually deliver the designed service to customers. The designed proposition arrives as the specification, the delivery mechanism is stood up against it and checked as it assembles, and the stood-up mechanism is confirmed onward for the people work. The promise acquires its production line here.",
+    "business_purpose": "It exists so the designed service proposition has a real mechanism able to deliver it.",
+    "practical_context": "It opens the service capability build when the designed proposition requires operational capability to reach customers, and it completes as the stood-up mechanism is confirmed onward for the personnel work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder assembles the delivery machinery the designed service proposition specifies, checking it as it stands up, and confirms the mechanism onward."
+    }
+  },
+  "processes:activity-pv-build-zta8ej": {
+    "plain_language_name": "Prepare Service Personnel",
+    "plain_language_description": "This activity readies the people who will operate the freshly stood-up delivery mechanism. The stood-up machinery arrives as the thing to be manned, personnel are prepared — trained, briefed, practised — against it, and the prepared team is confirmed onward for the integration. The best mechanism in the world is inert without people who can run it.",
+    "business_purpose": "It exists so the service delivery mechanism has trained people ready to operate it.",
+    "practical_context": "It follows the mechanism stand-up, once the machinery is assembled, and it completes when the prepared personnel are confirmed onward for the delivery model integration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead trains and briefs the team who will run the stood-up delivery mechanism, practising them against it, and confirms the prepared personnel onward."
+    }
+  },
+  "processes:activity-pv-build-p2ny2w": {
+    "plain_language_name": "Integrate Service with Delivery Model",
+    "plain_language_description": "This activity wires the built service capability — machinery and people together — into the enterprise's delivery model and channels. The prepared capability arrives as the piece to be connected, integration is made across the delivery model and its channels and checked at every join, and the integrated capability is confirmed onward for readiness. The service joins the enterprise's existing bloodstream here.",
+    "business_purpose": "It exists so the new service capability reaches customers through the enterprise's real delivery model.",
+    "practical_context": "It follows the personnel preparation, once machinery and people are ready, and it completes when the integration with the delivery model and channels is confirmed onward for readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder wires the capability — mechanism and people — into the enterprise's delivery model and channels, checking every join, and confirms the integration onward."
+    }
+  },
+  "processes:activity-pv-build-nhhc9u": {
+    "plain_language_name": "Verify Service Capability Readiness",
+    "plain_language_description": "This activity proves the built, integrated capability can actually deliver the designed service to customers. The integrated capability arrives with the designed proposition as the yardstick, readiness is examined against it, and the determination is confirmed for market readiness preparation. The service is declared buildable-complete only on evidence.",
+    "business_purpose": "It exists so market readiness starts from a service capability proven able to deliver as designed.",
+    "practical_context": "It closes the service capability build once mechanism, personnel, and integration are in place, and it completes when the readiness determination is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management verifier checks the integrated capability can deliver the designed service proposition to customers, and confirms the readiness determination onward."
+    }
+  },
+  "processes:activity-pv-build-sk4whv": {
+    "plain_language_name": "Construct Product Variants",
+    "plain_language_description": "This activity builds out each bounded variant of the product that the designed propositions call for. The designed propositions arrive as the specification of what must exist, variants are constructed within their bounds and checked as they build, and the constructed variants are confirmed onward for conformance checking. One product becomes a family here.",
+    "business_purpose": "It exists so every variant the designed propositions require exists as a constructed reality.",
+    "practical_context": "It opens the variant development when the designed propositions require bounded variant construction, and it completes as the constructed variants are confirmed onward for conformance verification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management builder constructs each bounded variant the designed propositions call for, and confirms the constructed variants onward for conformance checking."
+    }
+  },
+  "processes:activity-pv-build-k47xjt": {
+    "plain_language_name": "Verify Variant Conformance",
+    "plain_language_description": "This activity checks each built variant against its own design and the configuration rules, before anything is declared done. The constructed variants arrive with their designs and rules as the standard, conformance is verified variant by variant and departures recorded, and the conforming set is confirmed onward for baselining. Variants earn trust by passing this gate.",
+    "business_purpose": "It exists so only variants proven true to their designs proceed toward market.",
+    "practical_context": "It follows the variant construction, once the builds are complete, and it completes when the conformance verification is confirmed across the constructed set.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management verifier checks each built variant against its design and the configuration rules, records any departure, and confirms the conforming set onward."
+    }
+  },
+  "processes:activity-pv-build-d86xd9": {
+    "plain_language_name": "Document Variant Baseline",
+    "plain_language_description": "This activity writes down exactly what each conforming variant is — its make-up, its configuration, its known condition — pinning the reference every later change will be measured against. The conforming variants arrive as the artefacts to be pinned, baselines are documented variant by variant, and the documented baselines are confirmed onward for staging. From here, change means something.",
+    "business_purpose": "It exists so every variant has a documented reference state for its whole lifecycle.",
+    "practical_context": "It follows the conformance verification, once the conforming set is proven, and it completes when the documented variant baselines are confirmed onward for staging.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian pins down each conforming variant's composition and configuration as its documented baseline, and confirms the baselines onward for staging."
+    }
+  },
+  "processes:activity-pv-build-6z6rdn": {
+    "plain_language_name": "Stage Variants for Readiness",
+    "plain_language_description": "This activity moves the baselined variants into position for the market readiness work that follows. The documented baselines arrive as the finished stock, variants are staged for what comes next and checked into place, and the staged set is confirmed onward. Variant development ends with its products lined up at the next door.",
+    "business_purpose": "It exists so the developed, baselined variants are formally handed to market readiness preparation.",
+    "practical_context": "It closes the variant development once baselines are documented, and it completes when the staged variants are confirmed onward for market readiness preparation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management custodian lines up the baselined variants for the market readiness work, checks each into place, and confirms the staged set onward."
+    }
+  },
+  "processes:activity-pv-build-d5873p": {
+    "plain_language_name": "Assemble Go-to-Market Assets",
+    "plain_language_description": "This activity gathers everything the offering will need in front of customers — the materials, the messaging, the supporting artefacts — into one launch kit. The freshly built offering arrives as the thing to be sold, go-to-market assets are assembled against it and checked, and the assembled kit is confirmed onward for the pricing and channels. The product learns to speak for itself here.",
+    "business_purpose": "It exists so the offering goes to market with its complete kit of selling materials.",
+    "practical_context": "It opens the market readiness preparation once the product or service is built, and it completes as the assembled go-to-market assets are confirmed onward for pricing and channel setup.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer assembles the launch materials and messaging the built offering needs, checks the kit, and confirms the assembled assets onward."
+    }
+  },
+  "processes:activity-pv-build-n32s5c": {
+    "plain_language_name": "Set Launch Pricing",
+    "plain_language_description": "This activity fixes what the offering will cost at launch, inside the enterprise's financial rules and its own demand model. The assembled assets arrive alongside the financial policy and demand model as the boundaries, launch pricing is set within them and justified, and the set pricing is confirmed onward for the channel configuration. The value exchange gets its number here.",
+    "business_purpose": "It exists so the offering launches at a price the financial policy and demand model both support.",
+    "practical_context": "It runs during market readiness preparation, once the demand model and financial policy are to hand, and it completes when the set launch pricing is confirmed onward for the channel setup.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer sets the launch price within the financial policy and the demand model's bounds, justifies the number, and confirms it onward."
+    }
+  },
+  "processes:activity-pv-build-bhepnm": {
+    "plain_language_name": "Configure Launch Channels",
+    "plain_language_description": "This activity sets up the routes by which the offering will actually reach its buyers at launch. The assembled assets and set pricing arrive as the load the channels must carry, launch channels are configured against both and checked, and the configured channels are confirmed onward for the certification. The road to market is built here.",
+    "business_purpose": "It exists so the offering has configured, working channels to launch through.",
+    "practical_context": "It follows the asset assembly and pricing, once both are confirmed, and it completes when the configured launch channels are confirmed onward for the market readiness certification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer configures the launch channels to carry the assembled assets at the set pricing, checks each route, and confirms the configuration onward."
+    }
+  },
+  "processes:activity-pv-build-ak4gpq": {
+    "plain_language_name": "Certify Market Readiness",
+    "plain_language_description": "This activity gives the offering its formal launch clearance — assets done, pricing set, channels configured, all checked. The prepared offering arrives as the certification candidate, readiness is certified against the full checklist, and the certified market-ready offering is confirmed onward for transition. Launch is authorised here, on evidence.",
+    "business_purpose": "It exists so launch proceeds only on an offering certified ready in every launch dimension.",
+    "practical_context": "It closes the market readiness preparation once assets, pricing, and channels are in place, and it completes when the market readiness certification is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management officer certifies the offering market-ready — assets, pricing, and channels all verified — and confirms the certification onward for transition."
+    }
+  },
+  "processes:activity-pv-conceive-f7anqj": {
+    "plain_language_name": "Select Innovation Focus Areas",
+    "plain_language_description": "This activity chooses where the enterprise will aim its innovation — the few grounds worth breaking on, beyond what it already sells. The innovation framing need arrives as the mandate, focus areas are selected and justified against it, and the selected areas are confirmed onward for the option assessment. Innovation gets its map coordinates here.",
+    "business_purpose": "It exists so innovation effort concentrates on chosen grounds rather than scattering everywhere.",
+    "practical_context": "It opens the innovation thesis framing when the enterprise needs a bounded thesis for where and how it will innovate, and it completes once the selected focus areas are confirmed for the option assessment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead selects the grounds where the enterprise will innovate beyond its current propositions, justifies each choice, and confirms the areas onward."
+    }
+  },
+  "processes:activity-pv-conceive-3ufbnz": {
+    "plain_language_name": "Assess Innovation Option Space",
+    "plain_language_description": "This activity surveys what could actually be done inside the chosen grounds, before anything is promised. The selected focus areas arrive as the territory to explore, the option space is assessed across it and its possibilities mapped, and the assessed space is confirmed onward for the boundary setting. Ambition meets inventory here.",
+    "business_purpose": "It exists so the innovation thesis is grounded in what the focus areas genuinely offer.",
+    "practical_context": "It follows the focus area selection, once the grounds are chosen, and it completes when the assessed option space is confirmed onward for the boundary setting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority analyst surveys what could actually be done within the selected focus areas, maps the possibilities, and confirms the assessed space onward."
+    }
+  },
+  "processes:activity-pv-conceive-m8x6e4": {
+    "plain_language_name": "Bound Experimentation Boundaries",
+    "plain_language_description": "This activity fences the innovation in — how much may be invested, what risks may be taken, how long the enterprise will wait. The assessed option space arrives as the ambition to be contained, boundaries are drawn around investment, risk, and time and reviewed for realism, and the bounded frame is confirmed onward for the thesis commitment. Innovation runs on a leash by design.",
+    "business_purpose": "It exists so innovation experiments proceed inside agreed limits of money, risk, and time.",
+    "practical_context": "It follows the option assessment, when the possibilities are mapped, and it completes once the experimentation boundaries are confirmed for the thesis commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead draws the limits — investment, risk, and time — around the mapped innovation possibilities, and confirms the bounded frame onward."
+    }
+  },
+  "processes:activity-pv-conceive-k87pzt": {
+    "plain_language_name": "Commit Innovation Thesis",
+    "plain_language_description": "This activity draws the focus areas, the option assessment, and the experimentation boundaries together into one committed thesis. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the basis for the experiment design. The enterprise's answer to where and how it will innovate becomes one owned document.",
+    "business_purpose": "It exists so innovation experiments proceed from one committed thesis rather than from enthusiasm.",
+    "practical_context": "It closes the innovation thesis framing once areas, assessment, and boundaries are framed, and it completes when the committed innovation thesis is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the focus areas, option assessment, and experimentation boundaries into the thesis document, obtains ratification, and records the committed thesis."
+    }
+  },
+  "processes:activity-pv-conceive-v37tza": {
+    "plain_language_name": "Assess Portfolio Balance",
+    "plain_language_description": "This activity takes the portfolio's temperature across its whole shape — how its propositions spread across risk, time horizon, and value. The competing propositions arrive as the collection to be judged, balance is assessed across the three dimensions and gaps named, and the assessed balance is confirmed onward for the prioritisation. The portfolio's shape, good or lopsided, becomes visible here.",
+    "business_purpose": "It exists so portfolio direction is set from a clear-eyed view of the collection's balance.",
+    "practical_context": "It opens the portfolio direction framing when multiple propositions compete for bounded investment, and it completes once the assessed balance is confirmed for the prioritisation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority analyst judges how the competing propositions spread across risk, horizon, and value, names the lopsidedness, and confirms the assessed balance onward."
+    }
+  },
+  "processes:activity-pv-conceive-7fg7ft": {
+    "plain_language_name": "Order Portfolio Priorities",
+    "plain_language_description": "This activity lines the competing propositions up in the order the enterprise will favour them. The assessed balance arrives as the evidence base, priorities are ordered proposition by proposition and the sequence argued, and the priority ordering is confirmed onward for the investment envelopes. When money is short, this list decides who eats first.",
+    "business_purpose": "It exists so the portfolio's propositions have a deliberate order of favour for scarce investment.",
+    "practical_context": "It follows the balance assessment, once the portfolio's shape is visible, and it completes when the priority ordering is confirmed onward for the investment envelopes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead lines the competing propositions up in argued order of favour, using the assessed balance as evidence, and confirms the ordering onward."
+    }
+  },
+  "processes:activity-pv-conceive-vez3t5": {
+    "plain_language_name": "Frame Investment Envelopes",
+    "plain_language_description": "This activity caps what each proposition in the ordered portfolio may receive. The priority ordering arrives as the basis of allocation, envelopes are framed around each proposition and checked against the bounded investment total, and the framed envelopes are confirmed onward for the direction's commitment. Every proposition learns its allowance here.",
+    "business_purpose": "It exists so each competing proposition gets a defined investment allowance, not an open tab.",
+    "practical_context": "It follows the priority ordering, once the sequence of favour is set, and it completes when the framed investment envelopes are confirmed for the direction's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead caps each proposition's investment allowance against the priority ordering and the bounded total, and confirms the framed envelopes onward."
+    }
+  },
+  "processes:activity-pv-conceive-nwd9pr": {
+    "plain_language_name": "Commit Portfolio Direction",
+    "plain_language_description": "This activity draws the balance assessment, the priority ordering, and the investment envelopes together into one committed portfolio direction. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed direction is confirmed as the steering basis for the portfolio. The enterprise's answer to what it backs, and how hard, becomes one owned decision.",
+    "business_purpose": "It exists so the competing propositions are steered by one committed portfolio direction.",
+    "practical_context": "It closes the portfolio direction framing once balance, ordering, and envelopes are framed, and it completes when the committed portfolio direction is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the balance assessment, priority ordering, and investment envelopes into the direction document, obtains ratification, and records the commitment."
+    }
+  },
+  "processes:activity-pv-conceive-wtenjt": {
+    "plain_language_name": "Bound Proposition Scope",
+    "plain_language_description": "This activity draws the boundary of the proposition now taking shape — what it is, and just as firmly what it is not. The framing need arrives from a new proposition, a reframe, or a market shift, the scope is bounded against it and its edges argued, and the bounded scope is confirmed onward for the target parties. The proposition learns its own size here.",
+    "business_purpose": "It exists so the proposition knows precisely what it covers before anyone designs or sells it.",
+    "practical_context": "It opens the proposition thesis framing when a new proposition is established, an existing one reframed, or a market shift demands re-conception, and it completes once the bounded scope is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead draws what the new proposition covers — and what it deliberately leaves out — and confirms the bounded scope onward."
+    }
+  },
+  "processes:activity-pv-conceive-xdfjat": {
+    "plain_language_name": "Identify Target Parties",
+    "plain_language_description": "This activity names who the proposition is actually for. The bounded scope arrives as the frame within which parties are identified, the target parties are worked out and each justified against the scope, and the identified set is confirmed onward for the value claim. A proposition without a named audience is a speech to an empty room.",
+    "business_purpose": "It exists so the proposition knows exactly whose lives it intends to improve.",
+    "practical_context": "It follows the scope bounding, once the proposition's edges are drawn, and it completes when the identified target parties are confirmed onward for the value claim.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead names the parties the proposition serves, checking each against the bounded scope, and confirms the identified set onward."
+    }
+  },
+  "processes:activity-pv-conceive-zgnzny": {
+    "plain_language_name": "Articulate Value Claim",
+    "plain_language_description": "This activity states the proposition's central promise — what it claims to do for the parties it serves. The bounded scope and identified parties arrive as the claim's subject and audience, the value claim is articulated and tested for honesty, and the articulated claim is confirmed onward for the thesis commitment. The proposition's whole case in one sentence is crafted here.",
+    "business_purpose": "It exists so the proposition makes one clear, honest claim about the value it delivers.",
+    "practical_context": "It follows the party identification, once the audience is named, and it completes when the articulated value claim is confirmed onward for the thesis commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition design authority lead states what the proposition claims to do for its named parties, tests the claim for honesty, and confirms it onward."
+    }
+  },
+  "processes:activity-pv-conceive-8sq29j": {
+    "plain_language_name": "Commit Proposition Thesis",
+    "plain_language_description": "This activity draws the bounded scope, the identified parties, and the value claim together into one committed thesis. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the proposition's founding document. What the enterprise will offer, to whom, and why becomes one owned statement.",
+    "business_purpose": "It exists so the proposition's later design and build work from one committed founding thesis.",
+    "practical_context": "It closes the proposition thesis framing once scope, parties, and claim are framed, and it completes when the committed thesis is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the scope, target parties, and value claim into the thesis document, obtains ratification, and records the committed proposition thesis."
+    }
+  },
+  "processes:activity-pv-design-fms697": {
+    "plain_language_name": "Formulate Experiment Hypothesis",
+    "plain_language_description": "This activity states, in one bounded sentence, what the experiment will test. The innovation thesis arrives as the source of testable beliefs, a hypothesis is formulated from it and tightened until it can plainly fail, and the formulated hypothesis is confirmed onward for the success criteria. The experiment's subject is pinned here, falsifiably.",
+    "business_purpose": "It exists so the experiment tests one sharp, failable belief rather than a vague hope.",
+    "practical_context": "It opens the experiment design when the innovation thesis requires bounded experiments to validate new propositions, and it completes once the formulated hypothesis is confirmed for the success criteria.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer states the experiment's belief in one bounded, failable sentence drawn from the innovation thesis, and confirms it onward."
+    }
+  },
+  "processes:activity-pv-design-hfczjv": {
+    "plain_language_name": "Define Success Criteria",
+    "plain_language_description": "This activity fixes in advance what result will count as the hypothesis passing — and, by implication, failing. The formulated hypothesis arrives as the claim to be judged, success criteria are defined against it and made measurable, and the criteria set is confirmed onward for the timebox. Verdicts are agreed before the evidence exists.",
+    "business_purpose": "It exists so the experiment's verdict cannot be argued after the fact — the bar was set first.",
+    "practical_context": "It follows the hypothesis formulation, once the claim is pinned, and it completes when the defined success criteria are confirmed onward for the timebox.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer fixes, before any evidence exists, the measurable result that will count as the hypothesis passing, and confirms the criteria onward."
+    }
+  },
+  "processes:activity-pv-design-79sehr": {
+    "plain_language_name": "Bound Experiment Timebox",
+    "plain_language_description": "This activity fences the experiment in time and resources, so it cannot quietly become a project. The defined criteria arrive as the measurement window's purpose, the timebox and resource envelope are drawn within the experimentation boundaries and checked for sufficiency, and the bounded frame is confirmed onward for the design's commitment. Truth has a deadline here.",
+    "business_purpose": "It exists so the experiment ends on schedule with its answer, inside agreed resource limits.",
+    "practical_context": "It follows the success criteria, drawn within the thesis's experimentation boundaries, and it completes once the bounded timebox and resource envelope are confirmed for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer draws the experiment's deadline and resource envelope within the thesis's boundaries, checks the window suffices, and confirms the timebox onward."
+    }
+  },
+  "processes:activity-pv-design-mhyxnp": {
+    "plain_language_name": "Commit Experiment Design",
+    "plain_language_description": "This activity draws the hypothesis, the success criteria, and the timebox together into one committed experiment design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the prototype build. The test is fully specified before the first thing is built for it.",
+    "business_purpose": "It exists so the prototype build proceeds from one committed experiment design.",
+    "practical_context": "It closes the experiment design once hypothesis, criteria, and timebox are defined, and it completes when the committed experiment design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the hypothesis, success criteria, and timebox into the experiment design, obtains ratification, and records the committed design for the build."
+    }
+  },
+  "processes:activity-pv-design-su2rbe": {
+    "plain_language_name": "Design Packaging Formats",
+    "plain_language_description": "This activity draws up the forms the proposition will take in customers' hands — its physical or digital packaging. The designed proposition arrives as the content to be housed, packaging formats are designed for it and reviewed against the proposition's nature, and the designed formats are confirmed onward for the segment work. The proposition gains its clothes here.",
+    "business_purpose": "It exists so the proposition reaches customers in deliberately designed physical or digital forms.",
+    "practical_context": "It opens the packaging design when the designed proposition requires its packaging and configuration options, and it completes once the designed formats are confirmed for the segment configurations.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer draws up the packaging formats — physical or digital — the proposition needs, reviews them against its nature, and confirms them onward."
+    }
+  },
+  "processes:activity-pv-design-yyrnq4": {
+    "plain_language_name": "Design Segment Configurations",
+    "plain_language_description": "This activity tailors the packaged proposition for each market segment it will meet. The designed formats arrive as the base to be varied, segment configurations are designed per market and checked against the formats, and the configured set is confirmed onward for the rules. One proposition, many fitting outfits.",
+    "business_purpose": "It exists so each market segment receives a configuration of the proposition suited to it.",
+    "practical_context": "It follows the format design, when the packaging forms are drawn, and it completes once the segment configurations are confirmed onward for the configuration rules.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer tailors the packaged proposition for each market segment, checking the variations against the designed formats, and confirms the set onward."
+    }
+  },
+  "processes:activity-pv-design-raq3ha": {
+    "plain_language_name": "Define Configuration Rules",
+    "plain_language_description": "This activity states which combinations of packaging and configuration are actually allowed — the difference between a menu and chaos. The designed formats and segment configurations arrive as the possibilities to be governed, valid combinations are defined and invalid ones fenced off, and the rule set is confirmed onward for the design's commitment. Customers may choose freely — inside the rules.",
+    "business_purpose": "It exists so only valid, deliverable combinations of packaging and configuration can be offered.",
+    "practical_context": "It follows the formats and configurations, once both are designed, and it completes when the defined configuration rules are confirmed onward for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer defines which packaging and configuration combinations are valid, fencing off the undeliverable ones, and confirms the rule set onward."
+    }
+  },
+  "processes:activity-pv-design-shqa4v": {
+    "plain_language_name": "Commit Packaging Design",
+    "plain_language_description": "This activity draws the packaging formats, the segment configurations, and the governing rules together into one committed design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the offering's packaging in the market. The proposition's market-facing shape becomes one owned design.",
+    "business_purpose": "It exists so the market receives the proposition through one committed packaging and configuration design.",
+    "practical_context": "It closes the packaging design once formats, configurations, and rules are designed, and it completes when the committed packaging design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the formats, segment configurations, and rules into the packaging design, obtains ratification, and records the committed design."
+    }
+  }
+}

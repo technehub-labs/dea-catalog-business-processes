@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Design Hypothesis Tests**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Market Intelligence** (`processes:process-pr-conceive-tvst8u`). Its canonical ID is `processes:activity-pr-conceive-wcedtt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the checks that will prove or disprove each demand hypothesis. The formulated hypotheses arrive as the claims under trial, a test is designed for each and reviewed for rigour, and the test designs are confirmed onward for the thesis commitment. Every belief about the market is assigned the experiment that could kill it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each demand hypothesis is paired with a test capable of proving it wrong.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the hypothesis formulation, once the claims are on the table, and it completes when the designed tests are confirmed onward for the thesis commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management analyst designs the check that will prove or disprove each formulated hypothesis, reviews the designs for rigour, and confirms them onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Hypothesis Tests |
+| `plain_language_description` | string | no | This activity builds the checks that will prove or disprove each demand hypothesis. The formulated hypotheses arrive as … |
+| `business_purpose` | string | no | It exists so each demand hypothesis is paired with a test capable of proving it wrong. |
+| `practical_context` | string | no | It follows the hypothesis formulation, once the claims are on the table, and it completes when the designed tests are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

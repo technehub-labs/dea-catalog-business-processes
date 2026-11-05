@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Monitor Agent Performance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Agent Performance** (`processes:process-ao-operate-g4wp63`). Its canonical ID is `processes:activity-ao-operate-k5uvhg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tracks how each agent performs in service against the expectations agreed for their role, applying the same approach to people and artificial agents. The set expectations come in as the reference, performance is observed through the operating period, and the monitoring results are confirmed for the record. Where results diverge from expectations, the monitoring surfaces them for the exception step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so day-to-day performance stays visible against agreed expectations while there is still time to act on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously through the operating period, once expectations are set for each agent, and it completes each cycle when the monitoring results are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian follows each agent's results through the operating period, compares them with the role's agreed expectations, and logs the outcomes for the cycle review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Agent Performance |
+| `plain_language_description` | string | no | This activity tracks how each agent performs in service against the expectations agreed for their role, applying the … |
+| `business_purpose` | string | no | It exists so day-to-day performance stays visible against agreed expectations while there is still time to act on it. |
+| `practical_context` | string | no | It runs continuously through the operating period, once expectations are set for each agent, and it completes each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

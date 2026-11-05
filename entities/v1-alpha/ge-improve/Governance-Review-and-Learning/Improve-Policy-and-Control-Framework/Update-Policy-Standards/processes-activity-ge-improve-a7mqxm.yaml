@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-u3g5dh through concluding task processes:task-ge-improve-record-hugab3, whose outcome — Case file retained for Update Policy Standards under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Update Policy Standards'
+plain_language_description: 'This activity revises the policy standards so each measured gap finds its correction. The measured gaps arrive against the codified instruments as they stand, the standards are updated to close what was found, and the updated standards are confirmed onward for the posture work. The rulebook is amended where the evidence pointed.'
+business_purpose: 'It exists so the framework''s standards are amended exactly where measured gaps showed them wanting.'
+practical_context: 'It follows the gap measurement, working from the register against the codified instruments, and it completes once the updated standards are confirmed onward for the posture work.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer revises the policy standards to close each measured gap in the codified instruments, and confirms the updated standards onward.'

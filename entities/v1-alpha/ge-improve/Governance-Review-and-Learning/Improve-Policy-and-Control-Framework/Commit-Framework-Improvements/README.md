@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Commit Framework Improvements**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Improve Policy and Control Framework** (`processes:process-ge-improve-u3g5dh`). Its canonical ID is `processes:activity-ge-improve-68awnk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the measured gaps, the revised standards, and the strengthened posture together into one committed set of framework improvements. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed improvements are confirmed for adoption. Governance's self-correction ends each cycle as decisions, not reflections.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework's improvement cycle ends in committed changes adopted, not in lessons merely noted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the framework improvement, once gaps, standards, and posture are in hand, and it completes when the committed improvements are confirmed and their record retained for adoption.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the measured gaps, updated standards, and strengthened posture into the improvement record, obtains ratification, and records the commitment for adoption.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Framework Improvements |
+| `plain_language_description` | string | no | This activity draws the measured gaps, the revised standards, and the strengthened posture together into one committed … |
+| `business_purpose` | string | no | It exists so the framework's improvement cycle ends in committed changes adopted, not in lessons merely noted. |
+| `practical_context` | string | no | It closes the framework improvement, once gaps, standards, and posture are in hand, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-68mp6v through concluding task processes:task-eo-conceive-record-7mkh6y, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Enablement Fit'
+plain_language_description: 'This activity tests each shortlisted platform family against what the operating model demands and records where it fits well or poorly. The family register and the model''s requirements arrive together, fits are assessed family by family, and the fit assessment is confirmed onward for the sourcing work. Platform enthusiasm gives way to platform evidence.'
+business_purpose: 'It exists so platform selection later rests on demonstrated fit with the operating model rather than preference.'
+practical_context: 'It follows the identification of platform families, when the register and the model''s requirements are presented, and it completes once the fit assessment is confirmed for the sourcing framing.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead tests each shortlisted platform family against the operating model''s requirements, records where each fits and where it falls short, and confirms the assessment for the sourcing work.'

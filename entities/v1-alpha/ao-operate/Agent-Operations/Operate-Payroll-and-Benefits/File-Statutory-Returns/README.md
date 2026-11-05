@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **File Statutory Returns**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Payroll and Benefits** (`processes:process-ao-operate-38qyc6`). Its canonical ID is `processes:activity-ao-operate-7k8xwy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity prepares and files the returns the pay cycle's rules demand, working from the payments made and the benefits administered. The executed disbursements and administered benefits come in as the inputs, each return is prepared, checked, and filed, and the filed returns are confirmed and retained. The enterprise's filing obligations are thereby met every cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the filings that go with paying people are completed properly, every cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the pay cycle, running once payments have been executed and benefits administered, and it completes when the filed returns are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian prepares the cycle's returns from the executed payments and benefits records, checks each filing against the applicable rules, and files it with the confirmation step recording the outcome.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File Statutory Returns |
+| `plain_language_description` | string | no | This activity prepares and files the returns the pay cycle's rules demand, working from the payments made and the … |
+| `business_purpose` | string | no | It exists so the filings that go with paying people are completed properly, every cycle. |
+| `practical_context` | string | no | It closes the pay cycle, running once payments have been executed and benefits administered, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Maintain Stock Accuracy**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Warehouse and Inventory** (`processes:process-eo-operate-zwzmbd`). Its canonical ID is `processes:activity-eo-operate-rrg5cv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps what the system says is on the shelf matching what is actually there, continuously. Variances from counting and discrepancies from operations arrive as the input, positions are reconciled and corrected, and the aligned stock record is confirmed onward. The enterprise's stock numbers are kept true as a standing condition.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so production and delivery plan against stock numbers that are true, not approximate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across warehouse operation, reconciling variances as they arrive, and each reconciliation pass closes when the corrected record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A stock custodian reconciles each variance from the counts and daily operations against the system positions, corrects the record, and confirms the aligned stock picture.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Stock Accuracy |
+| `plain_language_description` | string | no | This activity keeps what the system says is on the shelf matching what is actually there, continuously. Variances from … |
+| `business_purpose` | string | no | It exists so production and delivery plan against stock numbers that are true, not approximate. |
+| `practical_context` | string | no | It runs continuously across warehouse operation, reconciling variances as they arrive, and each reconciliation pass … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

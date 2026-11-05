@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-2jnz85 through concluding task processes:task-eo-operate-record-afg86u, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Handle Service Exceptions'
+plain_language_description: 'This activity picks up the flagged deviations and the day''s operational surprises and works the service back to its planned state. Flagged exceptions arrive as the case list, each is worked to restoration, and the handling is recorded. The plan''s opposite — reality interfering — is met with recovery, not resignation.'
+business_purpose: 'It exists so deviations and surprises are restored to planned operation rather than left to compound.'
+practical_context: 'It runs whenever monitoring or operations flags an exception, and it completes once each handled exception is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A service custodian takes a flagged delivery deviation, works the recovery that returns service to its planned state, and records the handling for the file.'

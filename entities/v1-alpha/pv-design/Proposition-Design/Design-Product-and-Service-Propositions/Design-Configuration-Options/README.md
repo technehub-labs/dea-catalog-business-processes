@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Design Configuration Options**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Product and Service Propositions** (`processes:process-pv-design-8v4k89`). Its canonical ID is `processes:activity-pv-design-xgzh85`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management works out the variants each segment will be offered, turning the component specification and the segment theses into a menu of configuration choices. Submitted materials are registered at intake, verified against the specification, and worked into the option design; confirmation tells downstream consumers the menu is ready, and the audit trail is filed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It supplies the packaged choices customers and segments will actually pick from, so the proposition ships with workable options rather than a one-size offering.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Entry happens when the component specification and segment theses arrive for processing; closure is the confirmed configuration option design and its filed record, ready for whoever assembles the full proposition.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead preparing a mid-market variant logs the incoming component specification, checks it against each segment thesis, drafts the tiered option menu, confirms it with downstream teams, and hands the file to the records custodian for retention.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Configuration Options |
+| `plain_language_description` | string | no | Product management works out the variants each segment will be offered, turning the component specification and the … |
+| `business_purpose` | string | no | It supplies the packaged choices customers and segments will actually pick from, so the proposition ships with workable … |
+| `practical_context` | string | no | Entry happens when the component specification and segment theses arrive for processing; closure is the confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

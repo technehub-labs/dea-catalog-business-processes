@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-2pkz5n through concluding task processes:task-sd-build-record-7jvnwx, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prioritize Allocation Decisions'
+plain_language_description: 'Not every funded initiative can start at once, so ranks are needed. Intake registers the allocations, verification tests them against the envelope limits and what the plan says matters most, and processing orders the decisions into a defensible priority list. Confirmation communicates the ranking and the records custodian preserves it ahead of commitment.'
+business_purpose: 'It ranks the resourcing choices so the strongest strategic cases are served first when envelopes are tight.'
+practical_context: 'It follows allocation, opening when the allocation decisions are presented at intake and closing when the agreed ranking is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function leads compare the allocated initiatives against the plan''s stated priorities and the envelope headroom, agree the ranking in a short review, and the confirmation custodian communicates the order to downstream colleagues before commitment.'

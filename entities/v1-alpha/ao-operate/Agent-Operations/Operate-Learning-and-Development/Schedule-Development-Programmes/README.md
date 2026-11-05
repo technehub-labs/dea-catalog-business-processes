@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Schedule Development Programmes**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Learning and Development** (`processes:process-ao-operate-87q5mk`). Its canonical ID is `processes:activity-ao-operate-skjmyf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the committed development priorities and plan into a dated programme calendar for agents in service. The plan arrives first, each programme is placed on the calendar and checked against it, and the scheduled programmes are confirmed to those who will run them. Delivery then follows a timetable rather than ad hoc invitations.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so development commitments become dated, deliverable sessions that agents in service can actually attend.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the learning operation, when the committed gap priorities and development plan land for scheduling, and it closes once the scheduled programmes are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian places each programme from the development plan onto the calendar, checks the dates are workable for the agents in scope, and confirms the schedule to the delivery team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Schedule Development Programmes |
+| `plain_language_description` | string | no | This activity turns the committed development priorities and plan into a dated programme calendar for agents in … |
+| `business_purpose` | string | no | It exists so development commitments become dated, deliverable sessions that agents in service can actually attend. |
+| `practical_context` | string | no | It opens the learning operation, when the committed gap priorities and development plan land for scheduling, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

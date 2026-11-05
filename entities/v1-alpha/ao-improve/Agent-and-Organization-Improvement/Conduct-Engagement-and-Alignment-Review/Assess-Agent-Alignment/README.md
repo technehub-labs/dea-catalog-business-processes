@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Assess Agent Alignment**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Engagement and Alignment Review** (`processes:process-ao-improve-edjyha`). Its canonical ID is `processes:activity-ao-improve-ceqsy3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity weighs the collected engagement evidence to judge how far agents still track the direction the organization has set. The signals come in and are examined, an alignment judgement is formed for the population and its parts, and the assessment is confirmed with the review. Where drift shows up, the assessment names it plainly for the findings to carry forward.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so drift away from the organization's direction is caught while it can still be corrected.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the collection of engagement signals, when the compiled evidence is presented, and it completes once the alignment assessment is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian reads the collected signals against the organization's current direction, notes a team whose work has drifted from it, and records that judgement in the alignment assessment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Agent Alignment |
+| `plain_language_description` | string | no | This activity weighs the collected engagement evidence to judge how far agents still track the direction the … |
+| `business_purpose` | string | no | It exists so drift away from the organization's direction is caught while it can still be corrected. |
+| `practical_context` | string | no | It follows the collection of engagement signals, when the compiled evidence is presented, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

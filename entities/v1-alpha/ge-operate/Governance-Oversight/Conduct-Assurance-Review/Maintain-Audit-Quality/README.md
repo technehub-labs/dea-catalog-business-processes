@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Maintain Audit Quality**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Conduct Assurance Review** (`processes:process-ge-operate-zwaes5`). Its canonical ID is `processes:activity-ge-operate-yczj9n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the auditor honest — maintaining the quality of the function that does the auditing, across its cycles. Each completed cycle arrives as material for self-examination, quality is reviewed and weaknesses corrected, and the maintained quality is confirmed onward. The function that grades everyone else grades itself first.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the audit and assurance function stays good enough to judge everyone else.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs across the assurance cycles, examining the function's own work as each completes, and it completes when the maintained audit quality is confirmed onward for the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function lead reviews the function's own completed audit work for quality, corrects the weaknesses found, and confirms the maintained quality onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Audit Quality |
+| `plain_language_description` | string | no | This activity keeps the auditor honest — maintaining the quality of the function that does the auditing, across its … |
+| `business_purpose` | string | no | It exists so the audit and assurance function stays good enough to judge everyone else. |
+| `practical_context` | string | no | It runs across the assurance cycles, examining the function's own work as each completes, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

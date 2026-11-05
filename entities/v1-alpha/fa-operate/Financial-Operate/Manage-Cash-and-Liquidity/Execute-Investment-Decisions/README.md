@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Execute Investment Decisions**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Cash and Liquidity** (`processes:process-fa-operate-2pmqb2`). Its canonical ID is `processes:activity-fa-operate-5zesye`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts idle cash to work through the investments treasury policy allows. Surplus liquidity identified against the forecast arrives as the opportunity, investments are executed within the policy's bounds, and the executed decisions are confirmed for the record. Money that would sit still earns instead, inside the rules.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so surplus cash is deployed productively without ever stepping outside the treasury policy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs when the forecast shows surplus liquidity worth deploying, and it completes once the executed investments are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A treasury officer deploys the forecast surplus into investments the policy permits, checks each against its bounds, and confirms the executed decisions for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Investment Decisions |
+| `plain_language_description` | string | no | This activity puts idle cash to work through the investments treasury policy allows. Surplus liquidity identified … |
+| `business_purpose` | string | no | It exists so surplus cash is deployed productively without ever stepping outside the treasury policy. |
+| `practical_context` | string | no | It runs when the forecast shows surplus liquidity worth deploying, and it completes once the executed investments are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

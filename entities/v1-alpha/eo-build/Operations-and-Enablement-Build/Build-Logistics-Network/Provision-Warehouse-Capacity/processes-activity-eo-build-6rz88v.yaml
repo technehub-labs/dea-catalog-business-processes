@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-ba6ykz through concluding task processes:task-eo-build-record-32fyyr, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Provision Warehouse Capacity'
+plain_language_description: 'This activity secures the storage space each node in the network needs. The capacity sizing for the nodes arrives as the requirement, space is provisioned to match it and checked node by node, and the provisioned capacity is confirmed onward. The buildings exist; now they can actually hold what the flows will bring them.'
+business_purpose: 'It exists so every network node has the storage capacity its flows demand, before goods start moving.'
+practical_context: 'It follows the establishment of the network nodes, once node capacity sizing is to hand, and it completes when the provisioned capacity is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian provisions storage space to the sizing worked out for each node, checks the provisioned capacity against the requirement, and confirms it for the network verification.'

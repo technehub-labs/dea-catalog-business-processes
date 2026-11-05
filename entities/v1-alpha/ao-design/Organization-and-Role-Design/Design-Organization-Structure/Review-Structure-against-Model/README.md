@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Review Structure against Model**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Organization Structure** (`processes:process-ao-design-7dkbur`). Its canonical ID is `processes:activity-ao-design-p6pheg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks the drafted structure, authority detail included, against the ground rules the framed model established. The bounded chains come in as the last input, every feature of the draft is examined against the model's structural principles, its span limits, and its coordination boundaries, and any departures are recorded for correction. The work ends with a reviewed design ready to be committed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise commits a structure proven to respect the structural principles it already agreed, not one that quietly departs from them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the setting of authority chains, before the structure design is committed, and it completes once the review outcome is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian tests the drafted structure feature by feature against the model's principles and spans, records each departure for the design authority to correct, and issues the reviewed design for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review the Structure against the Framed Model |
+| `plain_language_description` | string | no | This activity checks the drafted structure, authority detail included, against the ground rules the framed model … |
+| `business_purpose` | string | no | It exists so the enterprise commits a structure proven to respect the structural principles it already agreed, not one … |
+| `practical_context` | string | no | It follows the setting of authority chains, before the structure design is committed, and it completes once the review … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

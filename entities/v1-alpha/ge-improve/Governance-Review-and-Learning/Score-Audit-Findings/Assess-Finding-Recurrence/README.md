@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Assess Finding Recurrence**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Score Audit Findings** (`processes:process-ge-improve-axtq3b`). Its canonical ID is `processes:activity-ge-improve-er48vd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks whether each finding is new trouble or the same old trouble returning. The scored findings are set beside the record of findings gone before, recurrence is assessed one by one, and the assessed set is confirmed onward for the standards measurement. Repeat findings earn their own special attention from this point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so findings that keep coming back are recognised as repeats, and treated as such.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the severity scoring, measured against the record of findings gone before, and it completes once the assessed recurrence is confirmed onward for the standards measurement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst checks each scored finding against the historical record, marks the ones that are repeat visits, and confirms the assessed set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Finding Recurrence |
+| `plain_language_description` | string | no | This activity checks whether each finding is new trouble or the same old trouble returning. The scored findings are set … |
+| `business_purpose` | string | no | It exists so findings that keep coming back are recognised as repeats, and treated as such. |
+| `practical_context` | string | no | It follows the severity scoring, measured against the record of findings gone before, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-a4c76s through concluding task processes:task-pv-design-record-f64suq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define Configuration Rules'
+plain_language_description: 'This activity states which combinations of packaging and configuration are actually allowed — the difference between a menu and chaos. The designed formats and segment configurations arrive as the possibilities to be governed, valid combinations are defined and invalid ones fenced off, and the rule set is confirmed onward for the design''s commitment. Customers may choose freely — inside the rules.'
+business_purpose: 'It exists so only valid, deliverable combinations of packaging and configuration can be offered.'
+practical_context: 'It follows the formats and configurations, once both are designed, and it completes when the defined configuration rules are confirmed onward for the design''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer defines which packaging and configuration combinations are valid, fencing off the undeliverable ones, and confirms the rule set onward.'

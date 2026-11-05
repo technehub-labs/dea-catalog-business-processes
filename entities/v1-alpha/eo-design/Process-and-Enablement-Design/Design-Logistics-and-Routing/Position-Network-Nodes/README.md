@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Position Network Nodes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Logistics and Routing** (`processes:process-eo-design-8s76nv`). Its canonical ID is `processes:activity-eo-design-fcqpn4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity plans where each node of the network — warehouse, hub, or cross-dock — will sit. The delivery model design and the demand geography arrive as the inputs, node positions are worked out and reviewed against the flows they must serve, and the node position plan is confirmed onward for the routing work. The physical skeleton of the network is drawn before anything is built.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the network's nodes sit where the flows actually need them, decided on design rather than on available real estate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the mode selection, when the delivery model design and demand geography are in hand, and it completes once the node position plan is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer works out where each warehouse, hub, and cross-dock should sit to serve the flows, reviews the positions against demand geography, and confirms the node plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Position Network Nodes |
+| `plain_language_description` | string | no | This activity plans where each node of the network — warehouse, hub, or cross-dock — will sit. The delivery model … |
+| `business_purpose` | string | no | It exists so the network's nodes sit where the flows actually need them, decided on design rather than on available … |
+| `practical_context` | string | no | It follows the mode selection, when the delivery model design and demand geography are in hand, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

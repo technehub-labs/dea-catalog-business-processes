@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Prepare Tax Returns**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Tax Compliance and Filings** (`processes:process-fa-operate-8vqvkk`). Its canonical ID is `processes:activity-fa-operate-9g2b8x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws up each return the calendar brings due, from the records behind it. The filing boundary arrives as the trigger, the return is prepared from the enterprise's records and the monitored exposures, and the prepared return is confirmed onward for the payment scheduling. What is owed is stated, accurately and on time.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every return due is prepared correctly from sound records, ready for payment and filing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each filing boundary the compliance calendar sets, and it completes once the prepared return is confirmed onward for the payment scheduling.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function preparer draws up the return due at the filing boundary from the enterprise's records and the monitored exposures, and confirms it for payment scheduling.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare Tax Returns |
+| `plain_language_description` | string | no | This activity draws up each return the calendar brings due, from the records behind it. The filing boundary arrives as … |
+| `business_purpose` | string | no | It exists so every return due is prepared correctly from sound records, ready for payment and filing. |
+| `practical_context` | string | no | It runs at each filing boundary the compliance calendar sets, and it completes once the prepared return is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

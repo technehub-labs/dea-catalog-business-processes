@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-say8tb through concluding task processes:task-pv-build-record-pa2hzd, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Document Variant Baseline'
+plain_language_description: 'This activity writes down exactly what each conforming variant is — its make-up, its configuration, its known condition — pinning the reference every later change will be measured against. The conforming variants arrive as the artefacts to be pinned, baselines are documented variant by variant, and the documented baselines are confirmed onward for staging. From here, change means something.'
+business_purpose: 'It exists so every variant has a documented reference state for its whole lifecycle.'
+practical_context: 'It follows the conformance verification, once the conforming set is proven, and it completes when the documented variant baselines are confirmed onward for staging.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian pins down each conforming variant''s composition and configuration as its documented baseline, and confirms the baselines onward for staging.'

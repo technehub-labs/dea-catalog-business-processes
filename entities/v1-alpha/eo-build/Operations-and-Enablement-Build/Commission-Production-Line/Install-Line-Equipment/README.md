@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Install Line Equipment**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Production Line** (`processes:process-eo-build-awy8dz`). Its canonical ID is `processes:activity-eo-build-mymu7v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts each piece of planned equipment in place along the production line, following the equipment specification and the facility blueprint. The specification arrives as the guide, installation is carried out station by station and checked against it, and the installed line is confirmed onward. The line stops being floor space and becomes a sequence of machines.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the production line's equipment stands in place per the specification, ready to be configured and run.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the production line commissioning, once the equipment specification and facility blueprint are settled, and it completes when the installed line is confirmed for control configuration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian places each piece of equipment at its planned station per the specification and blueprint, verifies the installation, and confirms the assembled line for control configuration.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Install Line Equipment |
+| `plain_language_description` | string | no | This activity puts each piece of planned equipment in place along the production line, following the equipment … |
+| `business_purpose` | string | no | It exists so the production line's equipment stands in place per the specification, ready to be configured and run. |
+| `practical_context` | string | no | It opens the production line commissioning, once the equipment specification and facility blueprint are settled, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

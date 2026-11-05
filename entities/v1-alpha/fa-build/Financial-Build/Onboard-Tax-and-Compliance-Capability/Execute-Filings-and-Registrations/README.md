@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Execute Filings and Registrations**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Onboard Tax and Compliance Capability** (`processes:process-fa-build-ucfjgt`). Its canonical ID is `processes:activity-fa-build-daw35b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity submits the registrations and filings that put the enterprise formally on record in the new regime. The jurisdictional requirements arrive as the checklist, each filing and registration is executed and its completion evidenced, and the completed set is confirmed onward. The enterprise exists, officially, in the new territory's books.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's formal presence in a new regime is established by completed filings, not assumed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the compliance calendar, when the jurisdictional requirements are enumerated, and it completes as each filing and registration is executed and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function officer submits each registration and filing the new regime requires, evidences the completions, and confirms the set for the controls work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Filings and Registrations |
+| `plain_language_description` | string | no | This activity submits the registrations and filings that put the enterprise formally on record in the new regime. The … |
+| `business_purpose` | string | no | It exists so the enterprise's formal presence in a new regime is established by completed filings, not assumed. |
+| `practical_context` | string | no | It follows the compliance calendar, when the jurisdictional requirements are enumerated, and it completes as each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

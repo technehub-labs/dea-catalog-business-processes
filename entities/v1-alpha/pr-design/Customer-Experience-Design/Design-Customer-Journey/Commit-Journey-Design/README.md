@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Commit Journey Design**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Journey** (`processes:process-pr-design-j6fakx`). Its canonical ID is `processes:activity-pr-design-vbvz6f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the stages, the critical moments, and the handoffs together into one committed journey design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed journey is confirmed as the customer's authoritative path. The journey stops being three analyses and becomes one map.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so build and operate work from one committed journey rather than from fragments.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the journey design once stages, moments, and handoffs are designed, and it completes when the committed journey design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the stages, moments of truth, and handoffs into the journey design, obtains ratification, and records the committed journey.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Journey Design |
+| `plain_language_description` | string | no | This activity draws the stages, the critical moments, and the handoffs together into one committed journey design. The … |
+| `business_purpose` | string | no | It exists so build and operate work from one committed journey rather than from fragments. |
+| `practical_context` | string | no | It closes the journey design once stages, moments, and handoffs are designed, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

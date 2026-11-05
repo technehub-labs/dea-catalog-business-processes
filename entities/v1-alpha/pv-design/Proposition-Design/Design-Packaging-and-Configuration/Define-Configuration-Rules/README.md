@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Define Configuration Rules**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Packaging and Configuration** (`processes:process-pv-design-a4c76s`). Its canonical ID is `processes:activity-pv-design-raq3ha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states which combinations of packaging and configuration are actually allowed — the difference between a menu and chaos. The designed formats and segment configurations arrive as the possibilities to be governed, valid combinations are defined and invalid ones fenced off, and the rule set is confirmed onward for the design's commitment. Customers may choose freely — inside the rules.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only valid, deliverable combinations of packaging and configuration can be offered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the formats and configurations, once both are designed, and it completes when the defined configuration rules are confirmed onward for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer defines which packaging and configuration combinations are valid, fencing off the undeliverable ones, and confirms the rule set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Configuration Rules |
+| `plain_language_description` | string | no | This activity states which combinations of packaging and configuration are actually allowed — the difference between a … |
+| `business_purpose` | string | no | It exists so only valid, deliverable combinations of packaging and configuration can be offered. |
+| `practical_context` | string | no | It follows the formats and configurations, once both are designed, and it completes when the defined configuration … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

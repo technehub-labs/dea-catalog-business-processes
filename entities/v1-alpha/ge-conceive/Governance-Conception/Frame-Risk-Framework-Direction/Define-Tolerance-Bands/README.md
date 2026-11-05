@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Define Tolerance Bands**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Frame Risk Framework Direction** (`processes:process-ge-conceive-6qnkhh`). Its canonical ID is `processes:activity-ge-conceive-yucnbe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity marks how far actual risk may swing either side of the appetite before anyone must act. The articulated appetite arrives as the centre line, tolerance bands are drawn around it and checked for realism, and the band set is confirmed onward for the posture work. The appetite gains its margins of tolerance here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so acceptable variation around the appetite is defined in advance, not debated after the fact.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the appetite articulation, working around the stated appetite, and it completes once the tolerance band set is confirmed for the posture framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board lead marks the bands of acceptable variation either side of the stated appetite, checks they are realistic, and confirms the band set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Tolerance Bands |
+| `plain_language_description` | string | no | This activity marks how far actual risk may swing either side of the appetite before anyone must act. The articulated … |
+| `business_purpose` | string | no | It exists so acceptable variation around the appetite is defined in advance, not debated after the fact. |
+| `practical_context` | string | no | It follows the appetite articulation, working around the stated appetite, and it completes once the tolerance band set … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

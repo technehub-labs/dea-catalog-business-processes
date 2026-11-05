@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-activate-s9m34e through concluding task processes:task-sd-activate-record-r8p7py, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Complete Supervisor Review and Obtain Acknowledgement on Record'
+plain_language_description: 'The filed submission now sits with the supervising authority, and this work sees the review through to a formal answer. The team hands the reviewers what they need, tracks their questions against the review criteria, and records how each point is resolved. When the supervisor signs the acknowledgement, it is preserved on the regulated strategic-plan record so the plan''s activation can proceed.'
+business_purpose: 'It secures the supervisor''s formal yes, the gate that turns a filed plan into one the entity may act on under supervision.'
+practical_context: 'It opens when the filed submission and the review criteria are presented for intake and closes when the signed acknowledgement is issued and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A supervising authority reviewer works through the lodged plan against the published review criteria while the strategy function supply evidence on request; when the regulator is satisfied, the confirmation custodian issues the acknowledgement and the records custodian preserves it on the regulated strategic-plan record.'

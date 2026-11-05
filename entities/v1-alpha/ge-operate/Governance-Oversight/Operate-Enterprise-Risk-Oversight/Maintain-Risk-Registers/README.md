@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Maintain Risk Registers**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Enterprise Risk Oversight** (`processes:process-ge-operate-tpenm6`). Its canonical ID is `processes:activity-ge-operate-rwpbpf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the risk registers alive — current, accurate, and actually used — across the review cycles. Register movements arrive continuously from the operation, entries are maintained as events land, and the living record is confirmed onward for the reviews. A stale register is a fiction; this prevents the fiction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's risk registers stay a living record rather than a museum piece.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across the review cycles as register events land, and each maintained update closes when it is confirmed onward for the reviews.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function custodian posts each register movement as it lands — new risks, changed scores, closed entries — keeping the record living across the cycles.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Risk Registers |
+| `plain_language_description` | string | no | This activity keeps the risk registers alive — current, accurate, and actually used — across the review cycles … |
+| `business_purpose` | string | no | It exists so the enterprise's risk registers stay a living record rather than a museum piece. |
+| `practical_context` | string | no | It runs continuously across the review cycles as register events land, and each maintained update closes when it is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

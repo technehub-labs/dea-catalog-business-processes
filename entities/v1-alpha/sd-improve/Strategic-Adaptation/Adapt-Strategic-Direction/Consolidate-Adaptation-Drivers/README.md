@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Consolidate Adaptation Drivers**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Adapt Strategic Direction** (`processes:process-sd-improve-9wgvaf`). Its canonical ID is `processes:activity-sd-improve-dhkxf6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Adaptation starts by assembling the case for change. Sensed signals, monitored performance and review findings arrive at intake, verification confirms each stream is current, and processing merges them into one adaptation case that states plainly why the direction can no longer stand still. Confirmation shares the consolidated case downstream and the records custodian preserves it for the formulation step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It builds one coherent evidence case for changing course, so adaptation rests on documented drivers rather than scattered impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the sensed signals, monitored performance and review findings arrive, closing once the consolidated case is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst pulls the environmental briefs, performance reports and review findings into a single case-for-change pack, a verification custodian confirms each stream is up to date, and the confirmation custodian passes the case to the adjustment team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate Adaptation Drivers |
+| `plain_language_description` | string | no | Adaptation starts by assembling the case for change. Sensed signals, monitored performance and review findings arrive … |
+| `business_purpose` | string | no | It builds one coherent evidence case for changing course, so adaptation rests on documented drivers rather than … |
+| `practical_context` | string | no | It opens this process at intake when the sensed signals, monitored performance and review findings arrive, closing once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

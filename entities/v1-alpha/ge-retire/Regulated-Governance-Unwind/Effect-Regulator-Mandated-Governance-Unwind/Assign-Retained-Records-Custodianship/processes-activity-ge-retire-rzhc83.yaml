@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-retire-mjq5hg through concluding task processes:task-ge-retire-record-wbjrn5, whose outcome — Case file retained for Assign Retained-Records Custodianship under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assign Retained-Records Custodianship'
+plain_language_description: 'This activity hands the enterprise''s retained records to a named keeper — with the arrangement for service of process held in place for the statutory retention period — and confirms both the keeper''s acceptance and the regulator''s or court''s contentment with the arrangement. The order arrives with its custodianship requirements, the assignment is made and accepted, and the satisfied assignment is confirmed onward. Someone specific must keep the enterprise''s memory; this names them.'
+business_purpose: 'It exists so the wound-down enterprise''s retained records have a named, accepted, regulator-approved keeper.'
+practical_context: 'It follows the governance reduction, once the regime can still act to make the assignment, and it completes when the accepted, satisfied custodianship assignment is confirmed onward for the filings.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management officer assigns the retained records to the designated custodian, holds the service-of-process arrangement for the retention period, and confirms the regulator is content with the assignment.'

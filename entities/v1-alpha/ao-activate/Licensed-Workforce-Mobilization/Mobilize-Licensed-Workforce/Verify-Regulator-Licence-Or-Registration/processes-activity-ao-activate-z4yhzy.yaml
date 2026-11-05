@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-activate-jqxtqn through concluding task processes:task-ao-activate-record-8v2www, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Regulator Licence or Registration'
+plain_language_description: 'This activity checks that the licence or registration behind a licensed role is current, is in good standing, and actually fits the live role it is meant to support. The regulator-controlled role and its licence record are brought in together, the licence is examined against what the role requires, and a verified licence record with the scope of practice attested is produced. Confirmation goes to whoever is waiting on it, and the verification is retained as an auditable record.'
+business_purpose: 'It exists so only individuals whose regulator licence genuinely matches the role''s controlled scope are progressed toward live work on the personnel record.'
+practical_context: 'It happens at the start of mobilizing a licensed role, when the regulator-controlled role and the licence record are presented together, and it is complete once the verified licence record is confirmed and filed for later reference.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management checker takes an insurance producer''s licence details, confirms the line of authority is current and in good standing against the licence record, and files the verified licence record that the remaining mobilization steps rely on.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 
 This is a **Activity** (level L3), named **Resolve Residual Obligations**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Transition Proposition Out of Service** (`processes:process-pv-retire-6us5am`). Its canonical ID is `processes:activity-pv-retire-6b3zth`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+An offering can be gone and still owe things: this sweep finds the outstanding support commitments, warranties, and data-retention duties left behind and routes each to whoever must honour it. The withdrawn service and its commitments arrive at intake, are checked for completeness, identified and routed at processing, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes sure retirement is honest: duties that survive the offering are named and handed to owners, so obligations are honoured rather than forgotten.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once withdrawal has taken effect: intake opens on the withdrawn service and its outstanding commitments, and closure comes when the routed duties and audit trail are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a retired product's final cutover, the proposition design authority registers the withdrawn service at intake, lists the support promises and retention duties still live at processing, routes each to the responsible desk, and confirms the routing with the record archived.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Residual Obligations |
+| `plain_language_description` | string | no | An offering can be gone and still owe things: this sweep finds the outstanding support commitments, warranties, and … |
+| `business_purpose` | string | no | It makes sure retirement is honest: duties that survive the offering are named and handed to owners, so obligations are … |
+| `practical_context` | string | no | It runs once withdrawal has taken effect: intake opens on the withdrawn service and its outstanding commitments, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Analyze Asset Utilization**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Optimize Asset Utilization** (`processes:process-eo-improve-q58ecg`). Its canonical ID is `processes:activity-eo-improve-bwndzz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the maintenance records and production performance to bound which assets sit underused and which are choking flow. The records arrive as the raw material, the utilization picture is analyzed and its problems bounded, and the analysis is confirmed onward for the option design. Idle capacity and bottlenecks both get names and numbers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so asset utilization problems — idle and overloaded alike — are evidenced and bounded before any asset is moved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the utilization optimization, when the maintenance records and production performance are presented, and it completes once the utilization analysis is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst reads the maintenance records and production performance, bounds which assets are underused and which are bottlenecks, and confirms the analysis for the option design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Asset Utilization |
+| `plain_language_description` | string | no | This activity reads the maintenance records and production performance to bound which assets sit underused and which … |
+| `business_purpose` | string | no | It exists so asset utilization problems — idle and overloaded alike — are evidenced and bounded before any asset is … |
+| `practical_context` | string | no | It opens the utilization optimization, when the maintenance records and production performance are presented, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

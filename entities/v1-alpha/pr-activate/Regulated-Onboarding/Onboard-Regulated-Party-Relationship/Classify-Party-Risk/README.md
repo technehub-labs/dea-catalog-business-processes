@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 
 This is a **Activity** (level L3), named **Classify Party Risk**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Onboard Regulated Party Relationship** (`processes:process-pr-activate-6qzuve`). Its canonical ID is `processes:activity-pr-activate-p53h54`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity weighs everything already learned — who the applicant is, who really owns them, where they operate, what they will buy — into one defensible risk rating, weighed against the sectors the regime flags as risk-sensitive. The verified identity and resolved ownership arrive as its inputs, the rating is assigned and justified, and the classified applicant is confirmed onward for the decision. Due diligence becomes a single, arguable judgement here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every applicant carries a defensible risk rating built from verified facts, not impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the identity and ownership work, once both are verified and resolved, and it completes when the assigned risk classification is confirmed onward for the approval decision.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function officer weighs the verified identity, the resolved ownership, and the jurisdictional exposure into a defensible risk rating, and confirms the classification onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Classify Party Risk |
+| `plain_language_description` | string | no | This activity weighs everything already learned — who the applicant is, who really owns them, where they operate, what … |
+| `business_purpose` | string | no | It exists so every applicant carries a defensible risk rating built from verified facts, not impressions. |
+| `practical_context` | string | no | It follows the identity and ownership work, once both are verified and resolved, and it completes when the assigned … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

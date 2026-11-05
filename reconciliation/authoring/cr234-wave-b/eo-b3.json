@@ -1,0 +1,412 @@
+{
+  "processes:activity-eo-operate-eadndb": {
+    "plain_language_name": "Plan Maintenance Schedules",
+    "plain_language_description": "This activity turns what the enterprise knows about each asset — its condition, how hard it is used, and the maker's guidance — into a dated plan of upkeep work. The asset register and the condition and usage data arrive as the basis, the schedule is drawn up and reviewed against them, and the finished schedule is confirmed onward for execution. Upkeep stops being reactive guesswork and becomes a timetable.",
+    "business_purpose": "It exists so the enterprise's assets are maintained on a deliberate plan rather than attended to only once something breaks.",
+    "practical_context": "It opens the maintenance operation, when the asset register and the condition and usage data are presented, and it completes once the maintenance schedule is confirmed for the execution step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management planner reads each asset's condition and usage data alongside the maker's guidance, draws up the dated upkeep plan, and confirms the schedule for the maintenance crews."
+    }
+  },
+  "processes:activity-eo-operate-b7x5en": {
+    "plain_language_name": "Execute Scheduled Maintenance",
+    "plain_language_description": "This activity carries out the upkeep tasks the schedule calls for, on the assets it names. The scheduled tasks arrive as the worklist, crews perform each one with the parts and tooling laid on, and the completed work is confirmed for the record. Wear is caught on the timetable, before it becomes downtime.",
+    "business_purpose": "It exists so the enterprise's assets receive their planned upkeep on time, keeping them available for the work they exist to do.",
+    "practical_context": "It runs against the maintenance schedule as each task falls due, and it closes when the completed work is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A maintenance crew works through the schedule's due tasks asset by asset, fitting the parts and tooling laid on for each, and confirms the completed work for the availability record."
+    }
+  },
+  "processes:activity-eo-operate-x3jh4n": {
+    "plain_language_name": "Respond to Asset Breakdowns",
+    "plain_language_description": "This activity mobilizes when an asset fails without warning, gets it back in service, and writes up what was done. The breakdown event arrives as the trigger, the response is worked and the asset restored, and the reactive work is recorded. Unplanned failure is met with a practiced routine rather than a scramble.",
+    "business_purpose": "It exists so unplanned asset failures cost the operation as little availability as possible and leave an honest record behind.",
+    "practical_context": "It runs whenever a breakdown event lands, from the failure to the asset's return to service, and it completes once the reactive work is recorded and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A maintenance crew answers a breakdown call, restores the failed asset to service as quickly as the repair allows, and writes up the reactive work for the record."
+    }
+  },
+  "processes:activity-eo-operate-rwvgfg": {
+    "plain_language_name": "Record Asset Availability",
+    "plain_language_description": "This activity keeps a running account of each asset's availability, fed by both the planned and the unplanned work. Every maintenance event arrives as an entry, the per-asset picture is updated as events land, and the record is confirmed onward for whoever plans around asset uptime. The enterprise can say, from its own records, which assets it can rely on.",
+    "business_purpose": "It exists so asset availability is known from a maintained record rather than guessed from memory.",
+    "practical_context": "It runs continuously as maintenance events land, whether from scheduled work or breakdown response, and each update closes when the record entry is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian posts each maintenance event — planned or reactive — to the asset's availability record, keeping the per-asset picture current for the planners."
+    }
+  },
+  "processes:activity-eo-operate-xzs7d8": {
+    "plain_language_name": "Schedule Facility Work Orders",
+    "plain_language_description": "This activity turns the building's needs and the preventive calendar into a dated, resourced book of work orders. The facility demand, the preventive plan, and crew availability arrive together, work is scheduled and resourced against all three, and the work-order book is confirmed onward for execution. The buildings' upkeep acquires an order of battle.",
+    "business_purpose": "It exists so facility work happens to a resourced schedule instead of piling up as unmanaged demand.",
+    "practical_context": "It opens the facility work flow, when facility demand and the preventive calendar are presented alongside crew availability, and it completes once the scheduled work-order book is confirmed for execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management planner slots the facility's reported needs and preventive tasks into a dated work-order book, matching each job to crew availability, and confirms the schedule for execution."
+    }
+  },
+  "processes:activity-eo-operate-q3sw3q": {
+    "plain_language_name": "Execute Facility Work Orders",
+    "plain_language_description": "This activity carries each issued work order — planned or urgent — through to done. The work-order book arrives as the worklist, crews and contractors perform the jobs with the parts laid on, and the completed work is confirmed for the record. The buildings get fixed by work order, not by hallway requests.",
+    "business_purpose": "It exists so the facility work that has been scheduled is genuinely performed to completion.",
+    "practical_context": "It runs against the work-order book as jobs are issued, and it closes when each completed order is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A facilities crew works through the issued orders with the contractors and parts laid on, closes each job out fully, and confirms the completed work for the record."
+    }
+  },
+  "processes:activity-eo-operate-qx7epe": {
+    "plain_language_name": "Conduct Facility Inspections",
+    "plain_language_description": "This activity walks the buildings on a regular rhythm, notes their condition, and hands anything needing attention to the work-order flow or the safety effort. The inspection cadence arrives as the timetable, rounds are carried out and their findings written up, and the findings are confirmed onward. Small defects are caught while they are still small.",
+    "business_purpose": "It exists so the enterprise learns about facility defects from its own inspections rather than from failures.",
+    "practical_context": "It runs to the planned inspection cadence across the facilities, and it completes once each round's findings are confirmed into the work-order and safety flows.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A facilities inspector walks each building on its scheduled round, notes the condition found, and hands the defects needing attention to the work-order flow or the safety effort."
+    }
+  },
+  "processes:activity-eo-operate-gtt587": {
+    "plain_language_name": "Maintain Safety and Compliance",
+    "plain_language_description": "This activity keeps the buildings on the right side of the safety and regulatory requirements they carry, day in and day out. The requirements arrive as the standing reference, daily operation is checked against them and drift corrected, and the maintained state is confirmed for the record. Safety is a condition the facility is held in, not a poster on the wall.",
+    "business_purpose": "It exists so the facilities the enterprise occupies stay safe and lawful throughout their daily use.",
+    "practical_context": "It runs continuously across daily facility operation, checked against the regulatory and policy requirements, and each conformity pass closes when its outcome is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A facilities custodian checks the buildings' daily operation against the safety and regulatory requirements, corrects the drift it finds, and confirms the maintained state for the record."
+    }
+  },
+  "processes:activity-eo-operate-zdw2by": {
+    "plain_language_name": "Plan Transport and Deliveries",
+    "plain_language_description": "This activity turns the demand for deliveries into a routed, timed plan for moving them. The delivery demand arrives against the network's known capacity, routes and schedules are worked out and checked for feasibility, and the shipment plan is confirmed onward for execution. Every delivery starts life as a plan that fits the network.",
+    "business_purpose": "It exists so goods move on routed, timed plans the network can actually deliver, rather than on wishful scheduling.",
+    "practical_context": "It opens the logistics operation, when delivery demand is presented against network capacity, and it completes once the shipment plan is confirmed for execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A logistics planner routes and times the day's delivery demand across the network's capacity, checks each route is feasible, and confirms the shipment plan for execution."
+    }
+  },
+  "processes:activity-eo-operate-cc82cs": {
+    "plain_language_name": "Execute Shipments",
+    "plain_language_description": "This activity puts the plan on the road: goods are picked up, moved through the network, and delivered as planned. The planned shipments arrive as the worklist, vehicles and carriers run the movements, and each executed shipment is confirmed for the record. The delivery model's promises are kept here, in physical motion.",
+    "business_purpose": "It exists so the network physically moves goods as its plan says, delivering what was promised to whom it was promised.",
+    "practical_context": "It runs against the shipment plan as each movement falls due, and it closes when each executed shipment is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A logistics crew runs each planned shipment — pickup, line-haul, delivery — with the network's vehicles and carriers, and confirms each executed movement for the record."
+    }
+  },
+  "processes:activity-eo-operate-fvtgcr": {
+    "plain_language_name": "Track and Trace Flows",
+    "plain_language_description": "This activity keeps tabs on where every moving shipment is right now, logging each step of its journey. Movement events arrive as shipments progress, the tracking record is kept current from them, and the maintained visibility is confirmed onward. When someone asks where an order is, the answer comes from this record.",
+    "business_purpose": "It exists so the enterprise always knows where its in-flight shipments are, from its own tracking record.",
+    "practical_context": "It runs continuously while shipments are in flight, logging movement events as they occur, and the tracking record closes each update when it is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A logistics custodian logs each movement event as shipments progress through the network, keeping the tracking record current enough to answer where any order stands."
+    }
+  },
+  "processes:activity-eo-operate-98gzk2": {
+    "plain_language_name": "Resolve Logistics Exceptions",
+    "plain_language_description": "This activity steps in when a shipment goes astray — late, damaged, lost, or misrouted — and works to put the delivery promise back on track. The flagged deviations arrive as the triggers, each exception is worked to a recovery, and the handling is recorded. Plans meet reality here, and reality is brought back into line.",
+    "business_purpose": "It exists so shipment deviations are recovered and the delivery commitment restored rather than quietly missed.",
+    "practical_context": "It runs whenever tracking or execution flags a deviation, from the flag to the restored delivery, and it completes once the exception handling is recorded and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A logistics custodian takes a flagged misrouted shipment, works a recovery that still honours the delivery commitment where possible, and records the handling for the file."
+    }
+  },
+  "processes:activity-eo-operate-xn7mw4": {
+    "plain_language_name": "Process Purchase Requisitions",
+    "plain_language_description": "This activity takes each incoming purchase request, checks it against the rules and the money set aside, and approves it for ordering. Requisitions arrive from across the operation, each is validated against policy and budget, and the approved ones are confirmed onward for ordering. Wanting something and being allowed to buy it are separated here.",
+    "business_purpose": "It exists so only requests that pass the policy and budget checks become orders the enterprise commits to.",
+    "practical_context": "It opens the procurement cycle, when requisitions arrive from the operation, and it completes as each validated request is approved and confirmed for ordering.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A procurement custodian validates each incoming requisition against the purchasing rules and its budget line, approves the ones that pass, and confirms them for ordering."
+    }
+  },
+  "processes:activity-eo-operate-n5fq6h": {
+    "plain_language_name": "Issue Purchase Orders",
+    "plain_language_description": "This activity turns each approved request into an order placed with the supplier. The approved requisitions arrive as the trigger, orders are drawn up and placed with the enterprise's approved suppliers, and the placed orders are confirmed onward for receipt. The enterprise's buying commitments become binding here.",
+    "business_purpose": "It exists so approved demand becomes placed orders with the right suppliers, on terms the enterprise has agreed to.",
+    "practical_context": "It follows requisition approval, when each approved request is handed over, and it completes once the placed purchase orders are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A procurement custodian draws up and places the purchase order for each approved request with the supplier, and confirms the placed orders for the receiving step."
+    }
+  },
+  "processes:activity-eo-operate-9q2e4c": {
+    "plain_language_name": "Receive and Verify Deliveries",
+    "plain_language_description": "This activity takes in what the suppliers send, checks each arrival against the order that called for it, and writes up the receipt. Deliveries arrive at the dock, goods are verified against their purchase orders, and the receipts are recorded. What was promised and what turned up are reconciled here, in person.",
+    "business_purpose": "It exists so the enterprise only accepts, and pays for later, what it actually ordered and received in good order.",
+    "practical_context": "It runs as supplier deliveries arrive, each checked against its purchase order, and it completes when the verified receipts are recorded and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A receiving custodian checks each supplier delivery against its purchase order, verifies the goods received, and writes up the receipt for the record."
+    }
+  },
+  "processes:activity-eo-operate-37uk3c": {
+    "plain_language_name": "Maintain Procurement Compliance",
+    "plain_language_description": "This activity watches the buying flow as it runs, catches anything drifting off policy, and settles it. The operating procurement cycle passes continuously under review, deviations from the purchasing rules are caught and resolved, and the compliant state is confirmed onward. The rules govern the buying, not the other way round.",
+    "business_purpose": "It exists so the enterprise's day-to-day buying stays inside its own policy, with deviations caught and settled.",
+    "practical_context": "It runs continuously across the live procurement flow, checked against the purchasing policy, and each deviation it settles closes when the resolution is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A procurement custodian watches the running purchase flow against policy, catches a requisition that slipped past a required check, resolves it, and confirms the outcome for the record."
+    }
+  },
+  "processes:activity-eo-operate-ywjabj": {
+    "plain_language_name": "Plan Quality Inspection",
+    "plain_language_description": "This activity decides in advance how each batch will be checked — which samples to draw, which specification and tolerances apply, and when the checking happens. The specifications, sampling standards, and production schedule arrive as the inputs, the inspection plan is drawn up per batch, and the plan is confirmed onward for execution. No batch is measured before anyone has decided how to measure it.",
+    "business_purpose": "It exists so every batch's inspection is designed before it runs, on the right specification and sampling scheme.",
+    "practical_context": "It opens the quality operation for each batch, when the specifications and the production schedule are to hand, and it completes once the inspection plan is confirmed for execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A quality planner selects the sampling scheme and resolves the applicable specification and tolerances for an incoming batch, schedules the checking, and confirms the plan for execution."
+    }
+  },
+  "processes:activity-eo-operate-jdkay8": {
+    "plain_language_name": "Execute Inspection and Testing",
+    "plain_language_description": "This activity puts the inspection plan to work on the physical output, running the tests and capturing the readings batch by batch. The approved plan arrives with the batch samples, inspection and test are performed with the equipment laid on, and the captured measurements are confirmed onward for recording. Quality is established by hands and instruments here, not by assumption.",
+    "business_purpose": "It exists so the enterprise knows, from actual measurement, whether each batch meets its specification.",
+    "practical_context": "It runs per batch against its approved inspection plan, and it completes when the captured measurements are confirmed onward for the quality record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A quality inspector works the approved plan over the batch's physical output, runs the tests and captures the readings with the inspection equipment, and confirms the measurements for recording."
+    }
+  },
+  "processes:activity-eo-operate-uyzanp": {
+    "plain_language_name": "Record Inspection Results",
+    "plain_language_description": "This activity writes the outcome of each inspection and test into the quality record, batch by batch. The captured measurements arrive from execution, the per-batch results are registered and checked for completeness, and the quality record is confirmed onward for disposition. What the instruments found becomes what the enterprise can prove.",
+    "business_purpose": "It exists so every batch's inspection outcome lives in the quality record as evidence, not in a notebook.",
+    "practical_context": "It follows inspection execution, once a batch's measurements are captured, and it completes when the per-batch results are registered in the quality record and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian registers each batch's inspection and test outcomes into the quality record, checks the entries are complete, and confirms the record for the disposition step."
+    }
+  },
+  "processes:activity-eo-operate-gmj49n": {
+    "plain_language_name": "Disposition Nonconforming Output",
+    "plain_language_description": "This activity takes each recorded nonconformity and rules on what happens to the output behind it — concession, rework, scrap, or sending back — containing any affected batches meanwhile. The recorded nonconformities arrive as the case list, each disposition is decided and applied, and the dispositions are confirmed for the record. Failed product meets a decision, not a shrug.",
+    "business_purpose": "It exists so output that fails its specification gets a deliberate, recorded fate before it can reach a customer.",
+    "practical_context": "It runs once a batch's results are in the quality record and nonconformities are logged, and it completes when each disposition, including containment, is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A quality custodian takes a batch's recorded nonconformity, contains the affected stock, rules the output to rework rather than concession, and confirms the disposition for the record."
+    }
+  },
+  "processes:activity-eo-operate-x59sfp": {
+    "plain_language_name": "Report Quality Performance",
+    "plain_language_description": "This activity rolls the batch-level quality records up into the bigger picture — how much passes first time, how many defects — for the process group that owns the operation. The per-batch records arrive as the raw material, performance is aggregated and drawn into reporting, and the quality report is confirmed onward. Isolated batch verdicts become a trend the enterprise can manage.",
+    "business_purpose": "It exists so the enterprise sees its quality as a trend across batches, not just as one verdict at a time.",
+    "practical_context": "It runs on the reporting cadence once batch records have accumulated, and it completes when the aggregated quality performance report is confirmed and delivered to the owning process group.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A quality custodian aggregates the per-batch records into first-pass yield and defect-rate reporting, and confirms the quality report for the process group that owns the operation."
+    }
+  },
+  "processes:activity-eo-operate-xj922z": {
+    "plain_language_name": "Coordinate Daily Service Operations",
+    "plain_language_description": "This activity draws the day's activity across production, delivery, logistics, platforms, facilities, and buying into one shared operating plan. Current status across the engines arrives at the start of the window, the day's activity is coordinated and reconciled against it, and the coordinated operation is confirmed onward. Six workstreams, one timetable.",
+    "business_purpose": "It exists so the enterprise's many moving parts run to one daily plan instead of six separate ones.",
+    "practical_context": "It opens each operating window, when current status across the engines is gathered, and it completes once the day's coordinated service operation is confirmed and its plan retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A service operations coordinator takes the morning status from production, delivery, logistics, platforms, facilities, and procurement, and draws the day's work into one shared operating plan."
+    }
+  },
+  "processes:activity-eo-operate-n7pddh": {
+    "plain_language_name": "Monitor Service Levels",
+    "plain_language_description": "This activity compares what the service is actually delivering with the levels it promised, and raises a flag when the two diverge. Service-level indicators arrive through each operating window, actuals are tracked against the agreed levels, and flagged deviations are confirmed onward for handling. Drift from the promise is caught while it is still drift.",
+    "business_purpose": "It exists so the enterprise notices its service slipping the moment it slips, not when a customer complains.",
+    "practical_context": "It runs continuously through each operating window against the agreed service levels, and each tracked deviation closes when it is flagged and confirmed for handling.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A service custodian tracks the window's actuals against the agreed levels, spots availability drifting below promise, and flags the deviation for the exception handlers."
+    }
+  },
+  "processes:activity-eo-operate-hpdc56": {
+    "plain_language_name": "Handle Service Exceptions",
+    "plain_language_description": "This activity picks up the flagged deviations and the day's operational surprises and works the service back to its planned state. Flagged exceptions arrive as the case list, each is worked to restoration, and the handling is recorded. The plan's opposite — reality interfering — is met with recovery, not resignation.",
+    "business_purpose": "It exists so deviations and surprises are restored to planned operation rather than left to compound.",
+    "practical_context": "It runs whenever monitoring or operations flags an exception, and it completes once each handled exception is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A service custodian takes a flagged delivery deviation, works the recovery that returns service to its planned state, and records the handling for the file."
+    }
+  },
+  "processes:activity-eo-operate-x8u9ez": {
+    "plain_language_name": "Report Service Delivery Performance",
+    "plain_language_description": "This activity rolls the operating window's actuals up into a performance picture of the service, for the process group that owns it. Window actuals arrive as the raw material, performance is aggregated into reporting, and the service report is confirmed onward. Day-to-day firefighting becomes a trend the enterprise can steer by.",
+    "business_purpose": "It exists so service performance is seen as an aggregate trend by its owners, not just as one window at a time.",
+    "practical_context": "It runs on the reporting cadence once operating-window actuals have accumulated, and it completes when the service performance report is confirmed and delivered to the owning process group.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A service custodian aggregates the window actuals into service performance reporting, and confirms the report for the process group that owns the operation."
+    }
+  },
+  "processes:activity-eo-operate-7xkcre": {
+    "plain_language_name": "Execute Scheduled Platform Routines",
+    "plain_language_description": "This activity runs the upkeep routines the operations calendar calls for — backups, key and certificate rotations, renewals, and general housekeeping — so the platforms stay ready to serve. The calendar arrives as the schedule, each routine is performed when due and checked off, and the completed routines are confirmed for the record. Platform upkeep happens by timetable, not by crisis.",
+    "business_purpose": "It exists so the platforms stay servable through routine care performed on schedule, not through emergency attention.",
+    "practical_context": "It runs against the operations calendar as each routine falls due across the service windows, and it completes when the performed routines are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A platform custodian works the calendar's due routines — a backup here, a certificate renewal there — checks each off as performed, and confirms the completed set for the record."
+    }
+  },
+  "processes:activity-eo-operate-9nhpgy": {
+    "plain_language_name": "Monitor Platform Availability",
+    "plain_language_description": "This activity watches the platforms' health through each service window, comparing the availability they deliver with what was promised. Health signals arrive continuously, availability is tracked against the agreed targets, and any shortfall is flagged onward. The platforms' promises are audited in real time.",
+    "business_purpose": "It exists so the enterprise knows, window by window, whether its platforms are delivering the availability they promised.",
+    "practical_context": "It runs continuously across each service window against the agreed availability targets, and each tracked window closes when its outcome is confirmed and flagged onward where needed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A platform custodian watches the health signals through the service window, compares delivered availability with the agreed target, and flags the shortfall when the platform dips below it."
+    }
+  },
+  "processes:activity-eo-operate-ua7tgk": {
+    "plain_language_name": "Respond to Platform Incidents",
+    "plain_language_description": "This activity takes each platform incident as it surfaces — sizing it up, working a way around it where possible, and restoring service — then writes it up against its window. Detected deviations arrive as the triggers, incidents are triaged and worked to restoration, and each is recorded. Platform trouble gets a practiced response, not a panic.",
+    "business_purpose": "It exists so platform incidents are restored quickly and leave an honest record behind them.",
+    "practical_context": "It runs whenever monitoring or users surface a platform incident, from triage to restored service, and it completes once the incident is recorded against its service window.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A platform custodian triages the surfaced incident, works a workaround and restores service, then writes the incident up against its window for the record."
+    }
+  },
+  "processes:activity-eo-operate-vhjw3y": {
+    "plain_language_name": "Manage Capacity and Performance",
+    "plain_language_description": "This activity watches how demand presses on each platform's capacity and adjusts the operating settings to keep performance where it was promised. Usage and performance telemetry arrive continuously, the balance is tracked and the settings tuned as demand moves, and the maintained posture is confirmed for the record. Growth meets a platform that was readied for it.",
+    "business_purpose": "It exists so platform performance holds at its agreed level as demand shifts, by tuning rather than by luck.",
+    "practical_context": "It runs continuously against the usage and performance telemetry, and each tuning pass closes when the adjusted capacity posture is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A platform custodian reads the telemetry as demand climbs toward a platform's capacity, tunes the operating settings to hold performance, and confirms the adjusted posture for the record."
+    }
+  },
+  "processes:activity-eo-operate-9sdchy": {
+    "plain_language_name": "Execute Replenishment",
+    "plain_language_description": "This activity tops stock and picking locations back up wherever the demand signals show them running low. Stock positions and demand signals arrive as the trigger, replenishment is executed to restore the levels, and the replenished locations are confirmed for the record. The warehouse never lets a pick face run dry by accident.",
+    "business_purpose": "It exists so stock and pick faces stay replenished ahead of demand rather than emptied by it.",
+    "practical_context": "It runs as demand signals and stock positions show levels falling, and it completes when each replenished location is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A warehouse crew reads the demand signals showing a pick face running low, moves stock to restore the level, and confirms the replenished location for the stock record."
+    }
+  },
+  "processes:activity-eo-operate-tbh9q7": {
+    "plain_language_name": "Execute Picking and Dispatch",
+    "plain_language_description": "This activity pulls the stock each demand calls for and sends it on its way, to the production floor or out for delivery. Demand requests arrive as the worklist, picking and dispatch are executed against them, and the dispatched stock is confirmed for the record. The warehouse's whole purpose is exercised here.",
+    "business_purpose": "It exists so demand on the warehouse is fulfilled — the right stock picked and dispatched to where it is needed.",
+    "practical_context": "It runs as demand requests arrive from production and delivery, and it completes when each picked and dispatched order is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A warehouse crew picks the stock each demand request names and dispatches it onward to the production floor or delivery, confirming each dispatch for the record."
+    }
+  },
+  "processes:activity-eo-operate-k73gbs": {
+    "plain_language_name": "Conduct Cycle Counts",
+    "plain_language_description": "This activity counts the stock on the shelves on a rotating timetable and hands any differences found to the accuracy effort. The counting timetable arrives as the schedule, counts are performed physically and their variances recorded, and the counted evidence is confirmed onward. Trust in the stock numbers is earned a section at a time.",
+    "business_purpose": "It exists so the stock record is verified against physical reality continuously, not just at year-end.",
+    "practical_context": "It runs to the cyclical counting timetable across the warehouse's stock, and it completes once each count's variances are recorded and confirmed into the accuracy work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A warehouse counter physically counts the scheduled section's stock, records the variances against the system positions, and hands them to the accuracy work."
+    }
+  },
+  "processes:activity-eo-operate-rrg5cv": {
+    "plain_language_name": "Maintain Stock Accuracy",
+    "plain_language_description": "This activity keeps what the system says is on the shelf matching what is actually there, continuously. Variances from counting and discrepancies from operations arrive as the input, positions are reconciled and corrected, and the aligned stock record is confirmed onward. The enterprise's stock numbers are kept true as a standing condition.",
+    "business_purpose": "It exists so production and delivery plan against stock numbers that are true, not approximate.",
+    "practical_context": "It runs continuously across warehouse operation, reconciling variances as they arrive, and each reconciliation pass closes when the corrected record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A stock custodian reconciles each variance from the counts and daily operations against the system positions, corrects the record, and confirms the aligned stock picture."
+    }
+  },
+  "processes:activity-eo-operate-gmkpny": {
+    "plain_language_name": "Schedule Production Cycles",
+    "plain_language_description": "This activity turns the plan for production into an ordered, resourced run of cycles for the line. The production plan arrives with the line's capacity and material availability, the cycle sequence is worked out and resourced against all three, and the cycle schedule is confirmed onward for running. The line always knows what it is making next, and with what.",
+    "business_purpose": "It exists so the line's production time is organised into executable, resourced cycles that follow the plan.",
+    "practical_context": "It opens each production period, when the production plan is presented with capacity and material availability, and it completes once the cycle schedule is confirmed for running.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A production planner sequences the plan into resourced cycles for the line, checking each cycle against capacity and material availability, and confirms the schedule for execution."
+    }
+  },
+  "processes:activity-eo-operate-snhadj": {
+    "plain_language_name": "Manage Line Changeovers",
+    "plain_language_description": "This activity manages the line's switches from one product configuration to the next in the gaps between cycles, so the timetable loses as little as possible. The upcoming configuration changes arrive as the plan, changeovers are prepared and executed in the between-cycle windows, and each completed changeover is confirmed for the record. Switching products is a rehearsed move, not a lost afternoon.",
+    "business_purpose": "It exists so switching the line between products costs the schedule the least time it can.",
+    "practical_context": "It runs in the windows between production cycles as the configuration changes fall due, and it completes when each executed changeover is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A line crew prepares the changeover in the gap between cycles, executes the switch to the next product configuration, and confirms the completed changeover for the record."
+    }
+  },
+  "processes:activity-eo-operate-vs8xnq": {
+    "plain_language_name": "Execute Production Run",
+    "plain_language_description": "This activity sets the line actually working through each cycle on its schedule, turning materials in at one end into product at the other. The scheduled cycle arrives as the order of the day, the line is run with its crew and materials, and the executed run is confirmed onward for recording. Everything the enterprise built the line for happens here.",
+    "business_purpose": "It exists so the line produces what its schedule says, cycle by cycle, converting materials into output.",
+    "practical_context": "It runs through each scheduled production cycle, and it completes when the executed run is confirmed and handed to the output recording.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A line crew runs the scheduled cycle with materials loaded and controls set, converting inputs into finished output, and confirms the executed run for the production record."
+    }
+  },
+  "processes:activity-eo-operate-94uqh7": {
+    "plain_language_name": "Record Production Output",
+    "plain_language_description": "This activity writes each cycle's output and its quality outcome into the production record once the cycle completes. Cycle actuals arrive from the run, output and quality are registered against the cycle, and the production record is confirmed onward. What the line made, and how well, becomes a matter of record rather than memory.",
+    "business_purpose": "It exists so the enterprise knows from its records what each cycle produced and at what quality.",
+    "practical_context": "It follows each cycle's completion, once the run hands over its actuals, and it completes when the output and quality results are registered in the production record and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian registers the completed cycle's output quantity and quality outcome into the production record, and confirms the entry for the reporting that follows."
+    }
+  },
+  "processes:activity-eo-retire-6gntey": {
+    "plain_language_name": "Plan Asset Retirement",
+    "plain_language_description": "This activity turns the retirement approval into a working plan — the timetable, what the asset depends on, and the safety and regulatory boundaries to respect. The approved decision arrives as the mandate, the retirement is planned against its dependencies and constraints, and the retirement plan is confirmed onward for withdrawal. Decommissioning starts with a plan, not with a wrench.",
+    "business_purpose": "It exists so an asset's retirement is planned against its dependencies and constraints before anything is switched off.",
+    "practical_context": "It opens the decommissioning once the retirement decision is approved, and it completes when the retirement plan is confirmed for the withdrawal step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management planner turns the approved retirement into a dated plan, mapping what the asset feeds and the safety and regulatory boundaries, and confirms the plan for withdrawal."
+    }
+  },
+  "processes:activity-eo-retire-h2dzg3": {
+    "plain_language_name": "Withdraw Asset from Operation",
+    "plain_language_description": "This activity powers the asset down, detaches it from everything it feeds, and cuts it off from live service. The retirement plan arrives as the guide, the shutdown and disconnection are executed safely against it, and the withdrawn asset is confirmed onward for disposal. The asset's working life ends in an orderly, planned way.",
+    "business_purpose": "It exists so a retiring asset leaves live service safely and completely, without taking any dependent operation down with it.",
+    "practical_context": "It runs to the retirement plan once withdrawal is scheduled, and it completes when the asset's safe shutdown and isolation are confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations crew follows the retirement plan to power down the asset, detach its connections, and isolate it from live service, confirming the safe withdrawal for the record."
+    }
+  },
+  "processes:activity-eo-retire-2xjudv": {
+    "plain_language_name": "Execute Disposal Routes",
+    "plain_language_description": "This activity sends each withdrawn asset out along its approved path — sold, recycled, destroyed, or sent back — as the policy directs. The withdrawn asset arrives with its approved route, the disposal is executed and evidenced, and the disposed asset is confirmed onward for the residual work. End of life is handled by policy, not by the loading dock's convenience.",
+    "business_purpose": "It exists so retired assets leave the enterprise by their approved disposal route, with evidence of where they went.",
+    "practical_context": "It follows the withdrawal, once the asset is out of service and its route approved, and it completes when the executed disposal is confirmed and its evidence retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations custodian sends the withdrawn asset along its approved route — in this case to recycling — evidences the disposal, and confirms it for the residual resolution."
+    }
+  },
+  "processes:activity-eo-retire-zkt7eq": {
+    "plain_language_name": "Resolve Residual Value and Obligations",
+    "plain_language_description": "This activity salvages what the disposed asset is still worth, wipes any data it holds, and closes out the obligations left behind, all on the record. The disposed asset and its residual accounts arrive as the closing matter, value is recovered and data sanitised, and the resolved position is confirmed for the record. The asset's story ends with nothing left owing.",
+    "business_purpose": "It exists so a decommissioned asset leaves no loose ends — its value recovered, its data gone, its obligations closed.",
+    "practical_context": "It runs once the asset is disposed of, against its residual accounts, and it completes when the recovered value, sanitised data, and resolved obligations are confirmed on the record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A custodian recovers the disposed asset's remaining book value, sanitises the data it carried, closes out its outstanding obligations, and confirms the resolved position for the record."
+    }
+  }
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Set Experience Quality Criteria**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Experience** (`processes:process-pr-design-pxydu3`). Its canonical ID is `processes:activity-pr-design-9kscys`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes the checks the finished experience will have to pass. The specified patterns and designed touchpoints arrive as the thing to be measured, quality criteria are defined to be measurable and reviewed, and the criteria set is confirmed onward for the design's commitment. The experience is promised, and now it is examinable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the built experience can be objectively tested against designed, measurable criteria.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the touchpoints and patterns, when the experience's shape is settled, and it completes once the quality criteria set is confirmed for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer fixes the measurable checks the built experience must pass, reviews them for objectivity, and confirms the criteria set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set Experience Quality Criteria |
+| `plain_language_description` | string | no | This activity fixes the checks the finished experience will have to pass. The specified patterns and designed … |
+| `business_purpose` | string | no | It exists so the built experience can be objectively tested against designed, measurable criteria. |
+| `practical_context` | string | no | It follows the touchpoints and patterns, when the experience's shape is settled, and it completes once the quality … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

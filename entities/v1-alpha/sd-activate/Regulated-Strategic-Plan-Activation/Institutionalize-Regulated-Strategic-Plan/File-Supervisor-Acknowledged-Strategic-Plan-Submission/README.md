@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 This is a **Activity** (level L3), named **File Supervisor-Acknowledged Strategic-Plan Submission**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Institutionalize Regulated Strategic Plan** (`processes:process-sd-activate-s9m34e`). Its canonical ID is `processes:activity-sd-activate-4gefj3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the governing board has signed off a strategic plan, the team logs its arrival, checks it against the regulator's required filing format, and packages it for lodgement. The submission is then lodged with the competent regulator ahead of the plan coming into effect. Once lodgement is confirmed, the filed submission and its supporting evidence are kept on the regulated strategic-plan record for later retrieval.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It puts a board-approved plan on official record with the regulator, opening the supervised activation journey this process exists to deliver.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Work starts when the approved plan is presented at intake and closes once lodgement is confirmed and the filing evidence is preserved for the record team.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst logs the newly board-approved plan, a verification custodian confirms every section matches the regulator's mandated format, and the packaged submission is lodged with the industry regulator before the deadline; the records custodian then files the lodgement evidence where supervising authority reviewers can retrieve it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Strategic-Plan Submission with the Regulator |
+| `plain_language_description` | string | no | When the governing board has signed off a strategic plan, the team logs its arrival, checks it against the regulator's … |
+| `business_purpose` | string | no | It puts a board-approved plan on official record with the regulator, opening the supervised activation journey this … |
+| `practical_context` | string | no | Work starts when the approved plan is presented at intake and closes once lodgement is confirmed and the filing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

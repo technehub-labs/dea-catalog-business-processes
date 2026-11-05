@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-conceive-xe9axm through concluding task processes:task-pv-conceive-record-4bc6hc, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Value Claim'
+plain_language_description: 'This activity states the proposition''s central promise — what it claims to do for the parties it serves. The bounded scope and identified parties arrive as the claim''s subject and audience, the value claim is articulated and tested for honesty, and the articulated claim is confirmed onward for the thesis commitment. The proposition''s whole case in one sentence is crafted here.'
+business_purpose: 'It exists so the proposition makes one clear, honest claim about the value it delivers.'
+practical_context: 'It follows the party identification, once the audience is named, and it completes when the articulated value claim is confirmed onward for the thesis commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition design authority lead states what the proposition claims to do for its named parties, tests the claim for honesty, and confirms it onward.'

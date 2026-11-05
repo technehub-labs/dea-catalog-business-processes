@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-6j5mxp through concluding task processes:task-eo-design-record-thebbs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Delivery Model Design'
+plain_language_description: 'This activity gathers the channel configurations, the service-level specification, and the fulfilment flow designs into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed design is confirmed for the build stage. The delivery model stops being three documents and becomes one decision.'
+business_purpose: 'It exists so the enterprise holds one committed delivery model design that delivery capability build can start from.'
+practical_context: 'It closes the delivery model design, once channels, service levels, and flows are designed, and it completes when the committed design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the channel configurations, service-level specification, and flow designs into the design document, checks the three hang together, and records the commitment for the build teams.'

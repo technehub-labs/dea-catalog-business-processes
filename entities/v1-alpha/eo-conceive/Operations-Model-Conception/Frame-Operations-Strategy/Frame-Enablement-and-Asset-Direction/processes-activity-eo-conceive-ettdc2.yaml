@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-xhjdr2 through concluding task processes:task-eo-conceive-record-y4ksne, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Enablement and Asset Direction'
+plain_language_description: 'This activity sketches the two companion postures the strategy needs: how technology will enable the delivery model, and how the enterprise will approach its physical assets. The bounded envelope arrives as the reference, both directions are worked out against it and checked for coherence with each other, and the pair is confirmed onward for the strategy''s commitment.'
+business_purpose: 'It exists so the strategy carries explicit technology and physical-asset postures, not just a delivery ambition.'
+practical_context: 'It follows the bounding of the delivery envelope, when the envelope is presented for companion direction-setting, and it completes once both directions are confirmed for the strategy''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead sketches the technology posture and the physical-asset posture against the bounded envelope, checks the two hang together, and confirms both with the strategy function.'

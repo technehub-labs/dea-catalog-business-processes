@@ -1,0 +1,402 @@
+{
+  "processes:activity-eo-design-tsyfd5": {
+    "plain_language_name": "Configure Channels",
+    "plain_language_description": "This activity takes each channel pattern framed during conception and works it into a bounded configuration. The conceived patterns arrive as the input, each channel is configured in detail and checked against its pattern, and the configuration set is confirmed onward for the service-level work. Channels stop being broad ideas and become specified arrangements.",
+    "business_purpose": "It exists so the delivery model's channels move from conception sketches to bounded configurations that can actually be built.",
+    "practical_context": "It opens the delivery model design, when the conceived channel patterns are presented for detailing, and it completes once the channel configuration set is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer works each conceived channel pattern into a detailed configuration, checks every channel against its pattern, and confirms the configuration set for the service-level step."
+    }
+  },
+  "processes:activity-eo-design-r8q6n4": {
+    "plain_language_name": "Design Service Levels",
+    "plain_language_description": "This activity works the framed envelopes into measurable service levels — targets, how they are measured, and the tolerance around each. The envelopes arrive as the frame to work within, the levels are specified per channel and checked against the bounds, and the specification is confirmed onward. What customers may count on becomes a number, not an aspiration.",
+    "business_purpose": "It exists so the framed service promises become measurable levels the operation can be held to.",
+    "practical_context": "It follows the channel configuration, when the framed envelopes are to hand, and it completes once the service-level specification is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer turns each framed envelope into concrete targets with measures and tolerances, checks the levels stay within the bounds, and confirms the specification."
+    }
+  },
+  "processes:activity-eo-design-4wmwgy": {
+    "plain_language_name": "Design Fulfilment Flows",
+    "plain_language_description": "This activity draws the concrete order-to-delivery paths that put the framed fulfilment patterns into practice. The patterns and the channel configurations arrive as the inputs, the flows are designed end to end and checked against both, and the flow designs are confirmed onward. An order's journey from placement to arrival is thereby fully drawn.",
+    "business_purpose": "It exists so the fulfilment patterns conceived earlier become drawable paths an order can actually travel.",
+    "practical_context": "It runs once the channel configurations and the fulfilment patterns are to hand, and it completes when the flow designs are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer draws each order-to-delivery path through the configured channels, checks the flows honour the framed patterns, and confirms the designs for commitment."
+    }
+  },
+  "processes:activity-eo-design-c573pg": {
+    "plain_language_name": "Commit Delivery Model Design",
+    "plain_language_description": "This activity gathers the channel configurations, the service-level specification, and the fulfilment flow designs into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed design is confirmed for the build stage. The delivery model stops being three documents and becomes one decision.",
+    "business_purpose": "It exists so the enterprise holds one committed delivery model design that delivery capability build can start from.",
+    "practical_context": "It closes the delivery model design, once channels, service levels, and flows are designed, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the channel configurations, service-level specification, and flow designs into the design document, checks the three hang together, and records the commitment for the build teams."
+    }
+  },
+  "processes:activity-eo-design-u3j6eu": {
+    "plain_language_name": "Design Facility Layouts",
+    "plain_language_description": "This activity turns the footprint principles framed earlier into concrete layouts for each facility. The principles and the operations model arrive as the basis, layouts are drawn per site and checked against both, and the layout designs are confirmed onward for the equipment work. Space is thereby organised on purpose rather than by accident.",
+    "business_purpose": "It exists so each facility's space is organised to serve the operating model the principles describe.",
+    "practical_context": "It opens the facility and asset blueprint design, when the footprint principles are presented for realisation, and it completes once the layout designs are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer draws each facility's layout to the framed footprint principles, checks the space serves the operations model, and confirms the layouts for the equipment specification."
+    }
+  },
+  "processes:activity-eo-design-zj5c3v": {
+    "plain_language_name": "Specify Equipment",
+    "plain_language_description": "This activity names the equipment that will populate each designed layout, to a stated standard. The layouts arrive with the lifecycle postures as the frame, equipment is specified position by position and checked against both, and the equipment specification is confirmed onward for the capacity modelling. A builder could order from this document.",
+    "business_purpose": "It exists so the enterprise knows exactly which equipment fills its layouts and to what standard, before any money is spent.",
+    "practical_context": "It follows the layout design, when the layouts and the lifecycle postures are to hand, and it completes once the equipment specification is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer specifies the equipment for each position in the drawn layouts, checks the choices against the lifecycle postures, and confirms the specification for capacity modelling."
+    }
+  },
+  "processes:activity-eo-design-8pd74t": {
+    "plain_language_name": "Model Capacity Envelopes",
+    "plain_language_description": "This activity works out what the designed facilities and their equipment can hold — throughput bounds and scaling limits — as a capacity model. The layouts, the equipment specification, and the demand model arrive together, the bounds are modelled and checked against them, and the capacity model is confirmed onward for the blueprint's commitment. How much each site and asset should handle becomes explicit.",
+    "business_purpose": "It exists so the blueprint states plainly how much work each facility and asset can carry.",
+    "practical_context": "It follows the equipment specification, when layouts, equipment, and the demand model are all in hand, and it completes once the capacity model is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer models the throughput bounds and scaling limits of each designed facility, checks them against the demand model, and confirms the capacity envelopes for the blueprint."
+    }
+  },
+  "processes:activity-eo-design-qqytaa": {
+    "plain_language_name": "Commit Facility Blueprint",
+    "plain_language_description": "This activity gathers the layout designs, the equipment specification, and the capacity model into one blueprint and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed blueprint is confirmed for the provisioning build. The physical side of the operation stops being separate drawings and becomes one instruction.",
+    "business_purpose": "It exists so facility and asset provisioning build starts from one committed blueprint rather than scattered documents.",
+    "practical_context": "It closes the facility and asset blueprint design, once layouts, equipment, and capacity are modelled, and it completes when the committed blueprint is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the layouts, equipment specification, and capacity model into the blueprint, checks it hangs together, and records the commitment for provisioning planning."
+    }
+  },
+  "processes:activity-eo-design-m66m45": {
+    "plain_language_name": "Select Transport Modes",
+    "plain_language_description": "This activity picks the ways goods will move — road, rail, sea, air, or a mix — and records why each choice was made. The delivery model design and the geography of demand arrive as the basis, modes are weighed and selected, and the selection with its rationale is confirmed onward for the node positioning. How freight travels is thereby settled in principle.",
+    "business_purpose": "It exists so the movement of goods rests on transport modes chosen deliberately against the delivery model and geography.",
+    "practical_context": "It opens the logistics and routing design, once the delivery model design and demand geography are to hand, and it completes when the mode selection is confirmed and retained with its rationale.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer weighs road, rail, sea, and air options against the delivery model and demand geography, picks the mode mix, and records the rationale with the selection."
+    }
+  },
+  "processes:activity-eo-design-fcqpn4": {
+    "plain_language_name": "Position Network Nodes",
+    "plain_language_description": "This activity plans where each node of the network — warehouse, hub, or cross-dock — will sit. The delivery model design and the demand geography arrive as the inputs, node positions are worked out and reviewed against the flows they must serve, and the node position plan is confirmed onward for the routing work. The physical skeleton of the network is drawn before anything is built.",
+    "business_purpose": "It exists so the network's nodes sit where the flows actually need them, decided on design rather than on available real estate.",
+    "practical_context": "It follows the mode selection, when the delivery model design and demand geography are in hand, and it completes once the node position plan is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer works out where each warehouse, hub, and cross-dock should sit to serve the flows, reviews the positions against demand geography, and confirms the node plan."
+    }
+  },
+  "processes:activity-eo-design-vk83pr": {
+    "plain_language_name": "Design Routing Logic",
+    "plain_language_description": "This activity writes the rules that decide which way each shipment travels across the network. The chosen modes and the service-level designs arrive as the constraints, the routing specification is drawn and checked against them, and the routing logic is confirmed onward for the design's commitment. Shipments will follow rules, not improvisation.",
+    "business_purpose": "It exists so every shipment moves by designed logic that honours the chosen modes and promised service levels.",
+    "practical_context": "It follows the node positioning, when the mode selections and service-level designs are to hand, and it completes once the routing specification is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer draws the rules deciding each shipment's path through the positioned nodes, checks them against the mode and service constraints, and confirms the routing specification."
+    }
+  },
+  "processes:activity-eo-design-65b4xh": {
+    "plain_language_name": "Commit Logistics Design",
+    "plain_language_description": "This activity gathers the chosen transport modes, the routing specification, and the node plan into one design and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed design is confirmed for the logistics build. How goods will move stops being three workstreams and becomes one instruction.",
+    "business_purpose": "It exists so logistics network build starts from one committed design rather than three separate documents.",
+    "practical_context": "It closes the logistics and routing design, once modes, nodes, and routing are designed, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the mode selection, node plan, and routing specification into the logistics design, checks the three cohere, and records the commitment for the build teams."
+    }
+  },
+  "processes:activity-eo-design-cc2c7f": {
+    "plain_language_name": "Structure the Operations Model",
+    "plain_language_description": "This activity lays out the skeleton of the new operations model, drawing on the components the committed strategy named. The strategy arrives as the source, the model's structure is drawn from its components and checked against it, and the model structure is confirmed onward for the component integration. The shape of the operation is thereby settled first, before any strand is filled in.",
+    "business_purpose": "It exists so the operations model has a deliberate skeleton, drawn from the strategy, that the four design strands can hang on.",
+    "practical_context": "It opens the operations model design, when the committed operations strategy is presented for structuring, and it completes once the model structure is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer draws the model's skeleton from the components the committed strategy named, checks the shape against the strategy, and confirms the structure for integration."
+    }
+  },
+  "processes:activity-eo-design-fxpw5z": {
+    "plain_language_name": "Integrate Model Components",
+    "plain_language_description": "This activity brings the four bounded strands — the delivery design, the platform architecture, the facility blueprint, and the routing design — into one coherent whole. The finished component designs arrive one by one, their joins are reconciled and clashes resolved, and the integrated model is confirmed onward for the rhythm work. Four good designs become one workable model.",
+    "business_purpose": "It exists so the enterprise designs one operations model, not four designs that have never met each other.",
+    "practical_context": "It follows the four component designs, when each bounded design is handed over complete, and it completes once the integrated model is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer reconciles the delivery, technology, facility, and routing designs into one model, resolves the clashes where they meet, and confirms the integrated whole for the rhythm specification."
+    }
+  },
+  "processes:activity-eo-design-pze82f": {
+    "plain_language_name": "Specify Operating Rhythms",
+    "plain_language_description": "This activity sets the tempos the finished model will live by — its planning cycles, its review cadences, and the paths for escalation. The integrated model arrives as the thing to be timed, the rhythms are specified and checked against how the model actually works, and the rhythm specification is confirmed onward for the design's commitment. The model gains a heartbeat.",
+    "business_purpose": "It exists so the operations model runs to deliberate tempos instead of improvising when to plan, review, or escalate.",
+    "practical_context": "It follows the component integration, when the coherent model is presented for timing, and it completes once the rhythm specification is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer sets the planning cycles, review cadences, and escalation paths for the integrated model, checks each tempo against how the model works, and confirms the specification."
+    }
+  },
+  "processes:activity-eo-design-9msrc4": {
+    "plain_language_name": "Commit Operations Model Design",
+    "plain_language_description": "This activity gathers the model's structure, its integrated component designs, and its operating rhythms into one document and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the build stage. The operation's blueprint is thereby one decision, owned and dated.",
+    "business_purpose": "It exists so the enterprise builds its operation from one committed model design rather than from four parallel design threads.",
+    "practical_context": "It closes the operations model design, once structure, integration, and rhythms are in place, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the model structure, integrated component designs, and rhythm specification into the design document, obtains ratification, and records the commitment for build planning."
+    }
+  },
+  "processes:activity-eo-design-m29ghr": {
+    "plain_language_name": "Specify Platform Components",
+    "plain_language_description": "This activity turns each platform family identified during framing into concrete components with a stated purpose. The framed enablement approach arrives as the source, components are specified family by family and checked against it, and the component specification is confirmed onward for the integration work. Platform kinds become platform parts.",
+    "business_purpose": "It exists so the platform families the enterprise committed to become buildable components with clear purposes.",
+    "practical_context": "It opens the platform architecture design, when the framed enablement approach is presented for detailing, and it completes once the component specification is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer works each identified platform family into named components with stated purposes, checks the set against the enablement approach, and confirms the specification."
+    }
+  },
+  "processes:activity-eo-design-6vqzyk": {
+    "plain_language_name": "Design Integration Patterns",
+    "plain_language_description": "This activity draws the ways the platform's specified components will connect to one another. The component specification arrives as the map of what must join, integration approaches are designed pair by pair and gathered into a catalogue, and the catalogue is confirmed onward for the topology work. No component is left an island.",
+    "business_purpose": "It exists so the platform's components connect by designed, repeatable patterns rather than ad hoc wiring.",
+    "practical_context": "It follows the component specification, when the specified components are presented for connecting, and it completes once the integration catalogue is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer designs how each pair of specified components connects, gathers the approaches into a catalogue, and confirms it for the topology definition."
+    }
+  },
+  "processes:activity-eo-design-8uvwq5": {
+    "plain_language_name": "Define Deployment Topology",
+    "plain_language_description": "This activity settles where each component will run — which environments, how they are distributed, and where they sit geographically. The component specification and the integration catalogue arrive as the inputs, the topology is defined and checked against both, and the definition is confirmed onward for the architecture's commitment. The platform gains a geography as well as a shape.",
+    "business_purpose": "It exists so every platform component has a designed place to run, decided with the connections in mind.",
+    "practical_context": "It follows the integration design, when the components and their connections are specified, and it completes once the topology definition is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer assigns each specified component its environments and distribution, checks the layout against the integration catalogue, and confirms the topology definition."
+    }
+  },
+  "processes:activity-eo-design-53q5rz": {
+    "plain_language_name": "Commit Platform Architecture",
+    "plain_language_description": "This activity gathers the component specification, the integration catalogue, and the topology definition into one architecture and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and ratified, and the committed architecture is confirmed as the basis for acquisition and build. The technology the operation will run on is thereby one decision.",
+    "business_purpose": "It exists so platform acquisition and build start from one committed architecture rather than three separate specifications.",
+    "practical_context": "It closes the platform architecture design, once components, integrations, and topology are defined, and it completes when the committed architecture is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the component specification, integration catalogue, and topology definition into the architecture document, obtains ratification, and records the commitment for acquisition planning."
+    }
+  },
+  "processes:activity-eo-improve-rdjvga": {
+    "plain_language_name": "Select Improvement Projects",
+    "plain_language_description": "This activity chooses which projects, drawn from the waste and variation evidence, the programme will take on. The performance evidence and the programme mandate arrive as the basis, candidate projects are weighed and bounded, and the chosen portfolio is confirmed onward for delivery. Improvement effort is spent deliberately rather than scattered.",
+    "business_purpose": "It exists so the programme's effort lands on bounded projects with real waste and variation to remove.",
+    "practical_context": "It opens the improvement programme, when the performance evidence and mandate are presented, and it completes once the selected portfolio is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead weighs the candidate projects against the waste and variation evidence and the programme mandate, bounds and selects the portfolio, and confirms it for delivery."
+    }
+  },
+  "processes:activity-eo-improve-gtarnw": {
+    "plain_language_name": "Deliver Improvement Projects",
+    "plain_language_description": "This activity carries each chosen improvement project through its structured method from charter to realized gain. The selected portfolio arrives as the worklist, projects are run phase by phase and their progress checked against the method, and the delivered projects are confirmed onward for sustainment. Problems are fixed by discipline, not heroics.",
+    "business_purpose": "It exists so the programme's selected projects are actually delivered, each to the structured method rather than to improvisation.",
+    "practical_context": "It follows the project selection, when the bounded portfolio is presented for delivery, and it completes as each delivered project is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function project lead runs each selected project through the method's phases, checks progress at every gate, and confirms the delivered projects for the sustainment step."
+    }
+  },
+  "processes:activity-eo-improve-m7paec": {
+    "plain_language_name": "Sustain Improvement Gains",
+    "plain_language_description": "This activity holds the realized gains in place once the project teams move on, so that the improvements cannot quietly slip back. The delivered project outcomes arrive as the gains to protect, control mechanisms are put around each and checked as they bed in, and the sustained gains are confirmed for the record. Winning once is easy; keeping it is this activity's job.",
+    "business_purpose": "It exists so the programme's improvements hold after the project teams leave, rather than decaying into old habits.",
+    "practical_context": "It follows project delivery, when the realized gains are handed over for protection, and it completes once the sustained gains are confirmed and their control mechanisms retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead puts control mechanisms around each delivered gain, checks they hold as the operation settles back into routine, and confirms the sustained gains for the record."
+    }
+  },
+  "processes:activity-eo-improve-334m2m": {
+    "plain_language_name": "Develop Improvement Capability",
+    "plain_language_description": "This activity builds the practitioners, the methods, and the governance that the programme leans on. The programme standards arrive as the benchmark, people are trained and the practices stood up against it, and the built capability is confirmed onward. The enterprise thereby owns a repeatable way of improving, not just this cycle's wins.",
+    "business_purpose": "It exists so improvement rests on the enterprise's own trained people and methods, not on borrowed expertise each cycle.",
+    "practical_context": "It runs alongside the programme as a standing investment, benchmarked to the programme standards, and it completes when the developed capability is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead trains a cohort of practitioners to the programme's standards and stands up its methods and governance, then confirms the developed capability for the record."
+    }
+  },
+  "processes:activity-eo-improve-ck6ghm": {
+    "plain_language_name": "Analyze Routing Performance",
+    "plain_language_description": "This activity reads the performance records for routing and the wider network to surface where cost runs high or service slips. The execution records and attainment figures arrive as the raw material, the analysis bounds the opportunities and quantifies each, and the opportunity analysis is confirmed onward for the change design. The network's weak spots become named, sized targets.",
+    "business_purpose": "It exists so logistics improvement aims at opportunities the evidence actually supports, sized before any change is designed.",
+    "practical_context": "It opens the logistics optimization, when the routing execution records and service attainment figures are presented, and it completes once the opportunity analysis is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst reads the routing execution records and service attainment figures, bounds and sizes the cost and service opportunities, and confirms the analysis for the design step."
+    }
+  },
+  "processes:activity-eo-improve-nrsv8w": {
+    "plain_language_name": "Design Route and Network Changes",
+    "plain_language_description": "This activity works the analyzed opportunities into concrete changes to routes and the network. The opportunity analysis arrives with the routing specification as the frame, changes are designed against both and their impact assessed, and the change designs are confirmed onward for commitment. Each opportunity gains a specific, costed answer.",
+    "business_purpose": "It exists so every evidenced opportunity gets a concrete, impact-assessed change rather than a vague intention.",
+    "practical_context": "It follows the performance analysis, when the bounded opportunities are presented for design, and it completes once the change designs with impact assessments are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer turns each bounded opportunity into a concrete route or network change, assesses its impact against the routing specification, and confirms the designs for commitment."
+    }
+  },
+  "processes:activity-eo-improve-r9dbs8": {
+    "plain_language_name": "Commit Logistics Changes",
+    "plain_language_description": "This activity gives the worked-up changes to routes and the network formal standing so operations can adopt them. The change designs with their impact assessments arrive as the case, each change is reviewed and ratified, and the committed changes are confirmed into the operations planning cycle. Improvement stops being a proposal at this point.",
+    "business_purpose": "It exists so the designed logistics improvements become binding changes the operation will actually adopt.",
+    "practical_context": "It follows the change design, once impact assessments are in hand, and it completes when the committed changes are confirmed into the planning cycle and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reviews each designed change with its impact assessment, ratifies the set for operational adoption, and records the committed changes into the planning cycle."
+    }
+  },
+  "processes:activity-eo-improve-d9p8hv": {
+    "plain_language_name": "Measure Optimization Outcomes",
+    "plain_language_description": "This activity checks each committed change after the fact against the opportunity that justified it. The changes and their baseline quantifications arrive as the yardsticks, outcomes are measured and compared with what was promised, and the measurement is confirmed for the record. The optimization loop is thereby closed with evidence rather than assumption.",
+    "business_purpose": "It exists so the enterprise learns whether its logistics changes actually delivered the opportunities they cited.",
+    "practical_context": "It runs once the committed changes have been adopted and have had time to bite, and it completes when the outcome measurement is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst measures each adopted change against the baseline quantification of its opportunity, records where the gains landed, and confirms the measurement for the record."
+    }
+  },
+  "processes:activity-eo-improve-xunaq5": {
+    "plain_language_name": "Assemble Performance Evidence",
+    "plain_language_description": "This activity pulls the scattered operational records — performance signals, logistics shortfalls, and asset usage — into one review-ready pack. The operational records arrive from their separate homes, the evidence is gathered, organised, and checked for completeness, and the evidence pack is confirmed onward for the findings. The review starts from one coherent picture instead of a drawer of fragments.",
+    "business_purpose": "It exists so the performance review examines one complete, organised evidence base rather than scattered fragments.",
+    "practical_context": "It opens the performance review, when the operational records are presented for assembly, and it completes once the evidence pack is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian gathers the performance signals, logistics shortfall records, and asset usage data into one pack, checks it for completeness, and confirms the evidence for the findings step."
+    }
+  },
+  "processes:activity-eo-improve-rf46hj": {
+    "plain_language_name": "Form Review Findings",
+    "plain_language_description": "This activity turns the assembled evidence into bounded conclusions about what the performance actually shows. The evidence pack arrives as the material, findings are formed and each is kept within what the evidence supports, and the finding set is confirmed onward for routing. The review speaks only as loudly as its evidence allows.",
+    "business_purpose": "It exists so the review's conclusions are bounded by evidence, strong enough to act on and disciplined enough to defend.",
+    "practical_context": "It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian reads the evidence pack and forms bounded findings on logistics, asset usage, and platform performance, each held to what the evidence shows, and confirms the set for routing."
+    }
+  },
+  "processes:activity-eo-improve-zgjqsd": {
+    "plain_language_name": "Route Findings to Improvement Tracks",
+    "plain_language_description": "This activity sends each finding on to the improvement track that can act on it — logistics work, asset utilization work, or platform evolution. The formed findings arrive as the dispatch list, each is routed to its acting track with an owner attached, and the routed findings are confirmed onward for commitment. Nothing the review learned is left without a destination.",
+    "business_purpose": "It exists so every review finding reaches the track equipped to act on it, with an owner who knows it is theirs.",
+    "practical_context": "It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with owners are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian routes each formed finding to the logistics, asset utilization, or platform track that can act on it, attaches an owner to each, and confirms the routing."
+    }
+  },
+  "processes:activity-eo-improve-53zgb8": {
+    "plain_language_name": "Commit Review Outcomes",
+    "plain_language_description": "This activity draws the findings and their routings together into the review's record and gives the outcomes formal standing. The routed findings arrive as its final inputs, the whole is consolidated and ratified, and the committed outcomes are confirmed as the review's standing result. The review thereby closes with decisions on the record, not observations in the air.",
+    "business_purpose": "It exists so the review ends as committed outcomes that the improvement tracks must act on, not as a filed report.",
+    "practical_context": "It closes the performance review, once findings are formed and routed, and it completes when the committed outcomes are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the findings and their routings into the review record, obtains ratification of the outcomes, and preserves the record for the next planning cycle."
+    }
+  },
+  "processes:activity-eo-improve-uvzvt8": {
+    "plain_language_name": "Analyze Platform Gaps",
+    "plain_language_description": "This activity reads the platforms' performance records and incident history to bound where reliability, capacity, or capability falls short. The records and history arrive as the raw material, the gaps are analyzed and bounded with the worst problems named first, and the gap analysis is confirmed onward for the upgrade design. Platform pain becomes a specific, bounded worklist.",
+    "business_purpose": "It exists so platform improvement starts from bounded, evidenced gaps rather than from anecdotes about slowness.",
+    "practical_context": "It opens the platform improvement, when the performance records and incident history are presented, and it completes once the gap analysis is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst reads the platform performance records and incident history, bounds the reliability, capacity, and capability gaps, and confirms the analysis for the upgrade design."
+    }
+  },
+  "processes:activity-eo-improve-hsurx5": {
+    "plain_language_name": "Design Platform Upgrades",
+    "plain_language_description": "This activity works each bounded platform gap into a concrete upgrade design. The gap analysis arrives with the platform architecture as the frame, upgrades are designed against both and checked for fit, and the upgrade designs are confirmed onward for commitment. Each named pain point gains a specific technical answer.",
+    "business_purpose": "It exists so every bounded platform gap gets a designed upgrade that fits the architecture, before any is bought or built.",
+    "practical_context": "It follows the gap analysis, when the bounded gaps and the platform architecture are to hand, and it completes once the upgrade designs are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer turns each bounded gap into a concrete upgrade design, checks the designs fit the platform architecture, and confirms them for commitment."
+    }
+  },
+  "processes:activity-eo-improve-7cek5c": {
+    "plain_language_name": "Commit Platform Upgrades",
+    "plain_language_description": "This activity gives the worked-up platform fixes formal standing so they are scheduled for implementation. The upgrade designs arrive as the case for each fix, the set is reviewed and ratified, and the committed upgrades are confirmed into the improvement backlog. From here the fixes are dated work, not wishes.",
+    "business_purpose": "It exists so the designed platform upgrades are committed to a backlog and scheduled, rather than drifting unprioritised.",
+    "practical_context": "It follows the upgrade design, once the designs are in hand, and it completes when the committed upgrades are confirmed into the backlog and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reviews each upgrade design, ratifies the set for implementation, and records the committed upgrades into the platform improvement backlog."
+    }
+  },
+  "processes:activity-eo-improve-w3hsnq": {
+    "plain_language_name": "Measure Platform Improvement",
+    "plain_language_description": "This activity checks how much the implemented upgrades actually improved, against the baseline the gaps set. The implemented work and the gap baseline arrive together, the improvement is measured and compared with what each upgrade promised, and the measurement is confirmed for the record. The platform improvement loop closes on evidence.",
+    "business_purpose": "It exists so the enterprise knows whether its platform spend actually closed the gaps the analysis bounded.",
+    "practical_context": "It runs once the committed upgrades have been implemented and have had time to show their effect, and it completes when the improvement measurement is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst measures each implemented upgrade's effect against the gap baseline, records where reliability or capacity genuinely moved, and confirms the measurement for the record."
+    }
+  },
+  "processes:activity-eo-improve-bwndzz": {
+    "plain_language_name": "Analyze Asset Utilization",
+    "plain_language_description": "This activity reads the maintenance records and production performance to bound which assets sit underused and which are choking flow. The records arrive as the raw material, the utilization picture is analyzed and its problems bounded, and the analysis is confirmed onward for the option design. Idle capacity and bottlenecks both get names and numbers.",
+    "business_purpose": "It exists so asset utilization problems — idle and overloaded alike — are evidenced and bounded before any asset is moved.",
+    "practical_context": "It opens the utilization optimization, when the maintenance records and production performance are presented, and it completes once the utilization analysis is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst reads the maintenance records and production performance, bounds which assets are underused and which are bottlenecks, and confirms the analysis for the option design."
+    }
+  },
+  "processes:activity-eo-improve-s9zhpt": {
+    "plain_language_name": "Design Redeployment Options",
+    "plain_language_description": "This activity works each bounded utilization problem into concrete options for moving or re-aiming assets. The utilization analysis arrives with the capacity envelopes and demand model as the frame, options are designed and checked against both, and the option set is confirmed onward for decision. Every named problem gains at least one costed way out.",
+    "business_purpose": "It exists so each evidenced utilization problem has designed, assessed options for redress before a decision is forced.",
+    "practical_context": "It follows the utilization analysis, when the bounded problems and the capacity envelopes are to hand, and it completes once the option set is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function designer turns each bounded utilization problem into concrete redeployment options, checks them against the capacity envelopes and demand model, and confirms the option set."
+    }
+  },
+  "processes:activity-eo-improve-acbypp": {
+    "plain_language_name": "Commit Redeployment Decisions",
+    "plain_language_description": "This activity gives formal standing to the redeployment moves chosen from the worked-up options. The assessed options arrive as the menu, decisions are taken and ratified, and the committed decisions are confirmed into the asset plan. The operation's assets are thereby re-aimed by decision rather than by drift.",
+    "business_purpose": "It exists so the utilization fixes become binding redeployment decisions in the asset plan, not shelved options.",
+    "practical_context": "It follows the option design, once the assessed options are in hand, and it completes when the committed decisions are confirmed into the asset plan and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reviews the assessed redeployment options, takes and ratifies the decisions, and records the commitments into the asset plan."
+    }
+  },
+  "processes:activity-eo-improve-zxt423": {
+    "plain_language_name": "Measure Utilization Outcomes",
+    "plain_language_description": "This activity checks, against the before picture, how asset usage actually moved after the redeployment decisions landed. The committed decisions and their baseline arrive together, outcomes are measured and compared with what the decisions intended, and the measurement is confirmed for the record. The utilization loop closes on evidence, not on hope.",
+    "business_purpose": "It exists so the enterprise learns whether its redeployment decisions genuinely improved asset usage.",
+    "practical_context": "It runs once the committed decisions have taken effect, measured against the pre-decision utilization baseline, and it completes when the outcome measurement is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function analyst measures asset usage after the redeployment decisions against the before baseline, records where utilization genuinely moved, and confirms the outcome measurement."
+    }
+  }
+}

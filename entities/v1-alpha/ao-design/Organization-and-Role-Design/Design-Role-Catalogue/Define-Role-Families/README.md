@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Define Role Families**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Role Catalogue** (`processes:process-ao-design-34e95r`). Its canonical ID is `processes:activity-ao-design-cezz7p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity groups the roles the designed structure needs into families of related work. The committed model frame comes in first, the natural groupings are worked out from it and reviewed, and the defined families are confirmed with the design authority. With the families set, the catalogue has its top-level organization and the leveling work can begin.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the role catalogue organizes roles into recognizable groupings that planning and staffing can navigate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the design of the role catalogue, when the model frame is presented for family definition, and it closes once the defined families are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority clusters the structure's roles into families of related work, checks the grouping against the model frame, and confirms the families before levels are defined within them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Role Families |
+| `plain_language_description` | string | no | This activity groups the roles the designed structure needs into families of related work. The committed model frame … |
+| `business_purpose` | string | no | It exists so the role catalogue organizes roles into recognizable groupings that planning and staffing can navigate. |
+| `practical_context` | string | no | It opens the design of the role catalogue, when the model frame is presented for family definition, and it closes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

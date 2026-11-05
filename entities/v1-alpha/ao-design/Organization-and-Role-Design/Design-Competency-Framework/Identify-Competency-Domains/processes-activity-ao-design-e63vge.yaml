@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-rve8j5 through concluding task processes:task-ao-design-record-krw3ga, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify the Competency Domains'
+plain_language_description: 'This activity works out which broad areas of capability the designed structure actually depends on. The committed organization structure design comes in first, the capability areas it calls for are identified and reviewed, and the identified domains are confirmed with the design authority. They then become the scaffold on which proficiency levels are defined.'
+business_purpose: 'It exists so the competency framework covers the capabilities the structure genuinely needs rather than a generic list.'
+practical_context: 'It opens the design of the competency framework, when the committed structure design is presented, and it closes once the identified domains are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority reads the committed structure and identifies the broad capability areas it relies on, then confirms those domains as the basis for defining proficiency levels.'

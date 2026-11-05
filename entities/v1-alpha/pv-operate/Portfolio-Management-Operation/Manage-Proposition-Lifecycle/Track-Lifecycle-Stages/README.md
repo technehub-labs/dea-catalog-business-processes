@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Track Lifecycle Stages**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Proposition Lifecycle** (`processes:process-pv-operate-cau4gv`). Its canonical ID is `processes:activity-pv-operate-zk8rc3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management keeps a live tally of where every proposition sits in its life - the stages run from introduction through growth and maturity toward decline - using the performance signals coming in. Signals arrive at intake, are verified, worked into the stage tracking record, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the stage position of every offering current, so transition management and gate decisions start from an accurate map rather than stale assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the continuous sensing half of lifecycle management: each watching cycle opens as performance signals arrive at intake and closes when the confirmed tracking record is filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management watcher registers each proposition's latest signals at intake, confirms a once-fast grower has plateaued, updates its stage position to maturity in the tracking record, and confirms the refreshed positions to the lifecycle team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Lifecycle Stages |
+| `plain_language_description` | string | no | Product management keeps a live tally of where every proposition sits in its life - the stages run from introduction … |
+| `business_purpose` | string | no | It keeps the stage position of every offering current, so transition management and gate decisions start from an … |
+| `practical_context` | string | no | It is the continuous sensing half of lifecycle management: each watching cycle opens as performance signals arrive at … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-8vqvkk through concluding task processes:task-fa-operate-record-m4z2nt, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Tax Exposures'
+plain_language_description: 'This activity keeps watch on what the enterprise owes in tax in the quiet stretches between filings. Operational changes arrive continuously as potential exposure events, exposures are tracked as they develop, and the monitored picture is confirmed onward for the returns. Tax surprises are caught growing, not arrived.'
+business_purpose: 'It exists so tax exposures are seen building between filing cycles rather than surprising the return preparation.'
+practical_context: 'It runs continuously between filing cycles as exposure events arise, and it completes once the monitored exposures are confirmed onward for the return preparation.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function analyst watches for operational changes carrying tax consequences between filings, tracks the developing exposure, and confirms the picture for the return preparation.'

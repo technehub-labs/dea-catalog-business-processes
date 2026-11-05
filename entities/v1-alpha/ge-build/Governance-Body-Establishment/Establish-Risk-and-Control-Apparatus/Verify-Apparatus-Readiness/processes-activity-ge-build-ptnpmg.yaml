@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-rx7kt5 through concluding task processes:task-ge-build-record-fha2h3, whose outcome — Case file retained for Verify Apparatus Readiness under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Apparatus Readiness'
+plain_language_description: 'This activity proves the assembled machinery — registers, tooling, and reporting lines — fit to start operating. The established apparatus arrives with the risk framework design as the yardstick, readiness is examined against it, and the determination is confirmed for the operate context. Risk management goes live on proof, not on assumption.'
+business_purpose: 'It exists so the risk and control apparatus starts operating proven complete against its design.'
+practical_context: 'It closes the apparatus build once registers, tooling, and reporting lines are in place, and it completes when the readiness determination is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function verifier examines the established registers, tooling, and reporting lines against the framework design, and confirms the readiness determination for operation.'

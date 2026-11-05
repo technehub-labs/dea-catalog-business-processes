@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-68mp6v through concluding task processes:task-eo-conceive-record-k5h45f, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Platform Families'
+plain_language_description: 'This activity picks out the families of technology platforms the operating model will lean on, recording them in a shortlist for later assessment. The operations strategy and the delivery envelope arrive as the basis, families are identified and gathered into a register, and the register is confirmed onward for the fit work. Which kinds of technology are in play is thereby settled in principle.'
+business_purpose: 'It exists so the enterprise names, early, the kinds of platforms its operating model will depend on.'
+practical_context: 'It opens the technology enablement framing, once the strategy and delivery envelope are to hand, and it completes when the platform family register is confirmed for the fit assessment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead identifies the platform families the operating model leans on from the strategy and delivery envelope, gathers them into a register, and confirms the shortlist with the operations function.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Structure Operations Model**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Operations Model** (`processes:process-eo-design-rvfpjb`). Its canonical ID is `processes:activity-eo-design-cc2c7f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays out the skeleton of the new operations model, drawing on the components the committed strategy named. The strategy arrives as the source, the model's structure is drawn from its components and checked against it, and the model structure is confirmed onward for the component integration. The shape of the operation is thereby settled first, before any strand is filled in.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the operations model has a deliberate skeleton, drawn from the strategy, that the four design strands can hang on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the operations model design, when the committed operations strategy is presented for structuring, and it completes once the model structure is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer draws the model's skeleton from the components the committed strategy named, checks the shape against the strategy, and confirms the structure for integration.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Structure the Operations Model |
+| `plain_language_description` | string | no | This activity lays out the skeleton of the new operations model, drawing on the components the committed strategy … |
+| `business_purpose` | string | no | It exists so the operations model has a deliberate skeleton, drawn from the strategy, that the four design strands can … |
+| `practical_context` | string | no | It opens the operations model design, when the committed operations strategy is presented for structuring, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

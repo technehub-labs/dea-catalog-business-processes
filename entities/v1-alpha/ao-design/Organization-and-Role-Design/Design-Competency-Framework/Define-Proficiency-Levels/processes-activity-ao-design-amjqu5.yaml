@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-rve8j5 through concluding task processes:task-ao-design-record-9nsj3m, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define the Proficiency Levels'
+plain_language_description: 'This activity breaks each competency domain into the steps of mastery that people and agents will progress through. The identified domains arrive first, the levels within each are defined and reviewed, and the defined levels are confirmed with the design authority. Once set, they give the framework a common vocabulary for how capable someone is in a domain.'
+business_purpose: 'It exists so capability in each domain can be discussed in agreed steps rather than impressions.'
+practical_context: 'It follows identification of the competency domains, when the domains are presented for level definition, and it completes when the defined levels are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority splits a newly identified domain into distinct proficiency steps, checks that the steps are meaningfully different, and records the defined levels ready for assessment anchoring.'

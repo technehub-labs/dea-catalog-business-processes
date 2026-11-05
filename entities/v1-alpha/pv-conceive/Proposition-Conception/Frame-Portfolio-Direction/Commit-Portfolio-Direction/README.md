@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Commit Portfolio Direction**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Portfolio Direction** (`processes:process-pv-conceive-jb4xtg`). Its canonical ID is `processes:activity-pv-conceive-nwd9pr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the balance assessment, the priority ordering, and the investment envelopes together into one committed portfolio direction. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed direction is confirmed as the steering basis for the portfolio. The enterprise's answer to what it backs, and how hard, becomes one owned decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the competing propositions are steered by one committed portfolio direction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the portfolio direction framing once balance, ordering, and envelopes are framed, and it completes when the committed portfolio direction is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the balance assessment, priority ordering, and investment envelopes into the direction document, obtains ratification, and records the commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Portfolio Direction |
+| `plain_language_description` | string | no | This activity draws the balance assessment, the priority ordering, and the investment envelopes together into one … |
+| `business_purpose` | string | no | It exists so the competing propositions are steered by one committed portfolio direction. |
+| `practical_context` | string | no | It closes the portfolio direction framing once balance, ordering, and envelopes are framed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

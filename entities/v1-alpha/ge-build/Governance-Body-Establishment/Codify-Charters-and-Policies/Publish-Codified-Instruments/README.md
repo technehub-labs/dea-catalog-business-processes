@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Publish Codified Instruments**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Codify Charters and Policies** (`processes:process-ge-build-mctdgc`). Its canonical ID is `processes:activity-ge-build-fzx549`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the finished documents where the bodies and the wider enterprise can actually reach them. The freshly codified instruments arrive as the stock to release, publication is executed and access verified, and the published instruments are confirmed onward for the bodies' use. Governing by document requires the document to be findable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so codified instruments are genuinely accessible to the bodies and people meant to operate under them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the codification once the instruments are codified, and it completes when the published, accessible instruments are confirmed onward to the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer publishes the codified charters, policies, and standards to where the bodies can reach them, verifies access works, and confirms the publication.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Publish Codified Instruments |
+| `plain_language_description` | string | no | This activity puts the finished documents where the bodies and the wider enterprise can actually reach them. The … |
+| `business_purpose` | string | no | It exists so codified instruments are genuinely accessible to the bodies and people meant to operate under them. |
+| `practical_context` | string | no | It closes the codification once the instruments are codified, and it completes when the published, accessible … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

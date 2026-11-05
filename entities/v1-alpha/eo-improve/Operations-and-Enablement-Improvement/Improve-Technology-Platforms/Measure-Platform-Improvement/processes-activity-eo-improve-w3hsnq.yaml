@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-babwdc through concluding task processes:task-eo-improve-record-s4w6xn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Platform Improvement'
+plain_language_description: 'This activity checks how much the implemented upgrades actually improved, against the baseline the gaps set. The implemented work and the gap baseline arrive together, the improvement is measured and compared with what each upgrade promised, and the measurement is confirmed for the record. The platform improvement loop closes on evidence.'
+business_purpose: 'It exists so the enterprise knows whether its platform spend actually closed the gaps the analysis bounded.'
+practical_context: 'It runs once the committed upgrades have been implemented and have had time to show their effect, and it completes when the improvement measurement is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function analyst measures each implemented upgrade''s effect against the gap baseline, records where reliability or capacity genuinely moved, and confirms the measurement for the record.'

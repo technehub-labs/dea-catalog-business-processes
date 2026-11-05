@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Commission Technology Assets**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Acquire Technology Assets** (`processes:process-eo-build-nmmmt6`). Its canonical ID is `processes:activity-eo-build-xy53fb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes the installed assets through commissioning so they are ready to carry real workloads. The in-place assets come in with the architecture's acceptance criteria, commissioning tests are run and the results checked against those criteria, and the commissioned state is confirmed onward. Equipment stops being merely present and starts being usable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise runs its workloads on assets proven ready, not on equipment that has merely been switched on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows installation, when the in-place assets are presented with their acceptance criteria, and it closes when the commissioned assets are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian runs the commissioning tests on each installed asset, checks the results against the architecture's acceptance criteria, and confirms the commissioned set for registration.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commission Technology Assets |
+| `plain_language_description` | string | no | This activity takes the installed assets through commissioning so they are ready to carry real workloads. The in-place … |
+| `business_purpose` | string | no | It exists so the enterprise runs its workloads on assets proven ready, not on equipment that has merely been switched … |
+| `practical_context` | string | no | It follows installation, when the in-place assets are presented with their acceptance criteria, and it closes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

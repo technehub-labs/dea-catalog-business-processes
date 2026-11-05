@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-edjyha through concluding task processes:task-ao-improve-record-ubcq4c, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate the Engagement Findings'
+plain_language_description: 'This activity draws the engagement evidence and the alignment assessment together into the review''s written findings. The assessment arrives first, the findings are drafted from it and the evidence behind it, and the formulated findings are confirmed for commitment. The result is a clear statement of what the review established, ready to be routed onward.'
+business_purpose: 'It exists so the review produces clear, evidence-backed statements rather than leaving its conclusions scattered across signals and assessments.'
+practical_context: 'It runs once agent alignment has been assessed, when the assessment is presented for drafting, and it completes when the formulated findings are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian drafts the review''s findings, pairing each alignment judgement with the evidence behind it, and confirms the formulated findings ahead of formal commitment.'

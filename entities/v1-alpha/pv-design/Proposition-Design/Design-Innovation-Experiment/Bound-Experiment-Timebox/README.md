@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Bound Experiment Timebox**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Innovation Experiment** (`processes:process-pv-design-9ckwf6`). Its canonical ID is `processes:activity-pv-design-79sehr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fences the experiment in time and resources, so it cannot quietly become a project. The defined criteria arrive as the measurement window's purpose, the timebox and resource envelope are drawn within the experimentation boundaries and checked for sufficiency, and the bounded frame is confirmed onward for the design's commitment. Truth has a deadline here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the experiment ends on schedule with its answer, inside agreed resource limits.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the success criteria, drawn within the thesis's experimentation boundaries, and it completes once the bounded timebox and resource envelope are confirmed for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer draws the experiment's deadline and resource envelope within the thesis's boundaries, checks the window suffices, and confirms the timebox onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound Experiment Timebox |
+| `plain_language_description` | string | no | This activity fences the experiment in time and resources, so it cannot quietly become a project. The defined criteria … |
+| `business_purpose` | string | no | It exists so the experiment ends on schedule with its answer, inside agreed resource limits. |
+| `practical_context` | string | no | It follows the success criteria, drawn within the thesis's experimentation boundaries, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

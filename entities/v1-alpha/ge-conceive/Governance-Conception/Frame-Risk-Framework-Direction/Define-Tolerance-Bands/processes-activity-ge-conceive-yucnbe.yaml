@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-6qnkhh through concluding task processes:task-ge-conceive-record-srg99n, whose outcome — Case file retained for Define Tolerance Bands under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define Tolerance Bands'
+plain_language_description: 'This activity marks how far actual risk may swing either side of the appetite before anyone must act. The articulated appetite arrives as the centre line, tolerance bands are drawn around it and checked for realism, and the band set is confirmed onward for the posture work. The appetite gains its margins of tolerance here.'
+business_purpose: 'It exists so acceptable variation around the appetite is defined in advance, not debated after the fact.'
+practical_context: 'It follows the appetite articulation, working around the stated appetite, and it completes once the tolerance band set is confirmed for the posture framing.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board lead marks the bands of acceptable variation either side of the stated appetite, checks they are realistic, and confirms the band set onward.'

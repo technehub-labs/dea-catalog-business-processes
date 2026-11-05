@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Codify Standard Artifacts**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Codify Charters and Policies** (`processes:process-ge-build-mctdgc`). Its canonical ID is `processes:activity-ge-build-cdd75w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity prepares the supporting companions — templates, procedure references, and guidance — that make the charters and policies usable. The policy and control designs arrive as the source, the standard artefacts are codified from them and checked, and the codified set is confirmed onward for publication. Rules alone do not run an enterprise; its working companions do.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so charters and policies arrive accompanied by the practical artefacts that make them operational.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside the charter and policy codification, drawing on the policy and control designs, and it completes once the codified standard artefacts are confirmed onward for publication.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer codifies the templates, procedure references, and guidance supporting the new instruments, checks them against the designs, and confirms the set for publication.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Codify Standard Artifacts |
+| `plain_language_description` | string | no | This activity prepares the supporting companions — templates, procedure references, and guidance — that make the … |
+| `business_purpose` | string | no | It exists so charters and policies arrive accompanied by the practical artefacts that make them operational. |
+| `practical_context` | string | no | It runs alongside the charter and policy codification, drawing on the policy and control designs, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

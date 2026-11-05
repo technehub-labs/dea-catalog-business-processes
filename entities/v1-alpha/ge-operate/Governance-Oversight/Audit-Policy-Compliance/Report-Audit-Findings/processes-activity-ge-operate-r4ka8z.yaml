@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hxxyc9 through concluding task processes:task-ge-operate-record-qh77m6, whose outcome — Case file retained for Report Audit Findings under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Report Audit Findings'
+plain_language_description: 'This activity delivers what the audits found — findings, recommendations, and the follow-up actions they require — to the governance body charged with receiving them. The executed audits arrive as the source, the findings are written up and routed to the right body, and the reported findings are confirmed onward for tracking. The bodies cannot fix what they never hear about.'
+business_purpose: 'It exists so audit findings reach the governance body that owns the remedy.'
+practical_context: 'It follows the audit execution, once evidence is in hand, and it completes when the reported findings and recommendations are confirmed onward to the appropriate governance body.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function auditor writes up the findings and recommendations from the executed audits, routes them to the governance body charged with the remedy, and confirms the reporting.'

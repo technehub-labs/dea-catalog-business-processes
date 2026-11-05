@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-xud3hs through concluding task processes:task-eo-operate-record-xkfjya, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Production Run'
+plain_language_description: 'This activity sets the line actually working through each cycle on its schedule, turning materials in at one end into product at the other. The scheduled cycle arrives as the order of the day, the line is run with its crew and materials, and the executed run is confirmed onward for recording. Everything the enterprise built the line for happens here.'
+business_purpose: 'It exists so the line produces what its schedule says, cycle by cycle, converting materials into output.'
+practical_context: 'It runs through each scheduled production cycle, and it completes when the executed run is confirmed and handed to the output recording.'
+worked_example:
+  agent_type: human
+  narrative: 'A line crew runs the scheduled cycle with materials loaded and controls set, converting inputs into finished output, and confirms the executed run for the production record.'

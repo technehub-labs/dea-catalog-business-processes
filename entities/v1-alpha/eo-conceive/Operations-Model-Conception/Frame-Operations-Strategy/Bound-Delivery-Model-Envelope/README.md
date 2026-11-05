@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Bound Delivery Model Envelope**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Operations Strategy** (`processes:process-eo-conceive-xhjdr2`). Its canonical ID is `processes:activity-eo-conceive-57g5bv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the outer limits within which the delivery model must be conceived — the envelope the strategy mandates for the conception and design stages. The assessed context arrives as the basis, the envelope's bounds are worked out and reviewed against it, and the bounded envelope is confirmed onward for the enablement and asset direction. Broadly what kind of delivery machine this will be is settled here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model conceived later stays inside limits the strategy actually chose.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the context assessment, when the assessed picture is presented for bounding, and it completes once the bounded envelope is confirmed for the companion direction-setting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead draws the delivery envelope's bounds from the assessed context, checks them with the operations function, and confirms the envelope for the enablement and asset direction work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Delivery Model Envelope |
+| `plain_language_description` | string | no | This activity draws the outer limits within which the delivery model must be conceived — the envelope the strategy … |
+| `business_purpose` | string | no | It exists so the delivery model conceived later stays inside limits the strategy actually chose. |
+| `practical_context` | string | no | It follows the context assessment, when the assessed picture is presented for bounding, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

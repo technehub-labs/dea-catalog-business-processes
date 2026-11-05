@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-z6m6p5 through concluding task processes:task-ao-conceive-record-4npvpq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Capacity Envelopes for the Workforce Mix'
+plain_language_description: 'This activity draws the planning limits within which each part of the workforce mix has to operate. The agreed proportions are taken in and reviewed, the capacity envelope for each of them is worked out, and the envelopes are confirmed with the planners and recorded. Drafting of the mix then happens inside those envelopes rather than by open-ended ambition.'
+business_purpose: 'It exists so each proportion of the planned mix comes with a workable capacity limit that acquisition and planning can be held to.'
+practical_context: 'It happens once the substrate proportions have been agreed, when they are presented for envelope planning, and it closes when the envelopes are confirmed and their record kept for the drafting step.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead takes the agreed proportions and works out how much capacity each part of the mix may claim, confirms the envelopes with the strategy function, and files them so the mix can be drafted within agreed limits.'

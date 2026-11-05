@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Execute Regulator-Mandated Remediation**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Improve Regulated Workforce Capability** (`processes:process-ao-improve-qqxe4d`). Its canonical ID is `processes:activity-ao-improve-f2r6t4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries out the remediation a role holder requires, whether the program is supervised by the regulator or driven by the employer. The remediation trigger and its plan arrive together, the plan is executed step by step with evidence kept along the way, and a completion record is produced on the personnel file. The record is confirmed and retained so the enterprise can demonstrate the remediation was finished, not left open.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so mandated remediation for licensed-role holders is executed and evidenced to conclusion rather than left unresolved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens when a remediation trigger and its plan are presented, whether from regulator supervision or employer-driven action, and it completes when the completion record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian runs the supervised-practice plan for a licensed role holder who fell short, keeps the evidence at each step, and files the completion record once the plan finishes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute the Regulator-Mandated Remediation |
+| `plain_language_description` | string | no | This activity carries out the remediation a role holder requires, whether the program is supervised by the regulator or … |
+| `business_purpose` | string | no | It exists so mandated remediation for licensed-role holders is executed and evidenced to conclusion rather than left … |
+| `practical_context` | string | no | It happens when a remediation trigger and its plan are presented, whether from regulator supervision or employer-driven … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-conceive-4uqqvg through concluding task processes:task-fa-conceive-record-vw9yr8, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Finance Strategy'
+plain_language_description: 'This activity draws the monetary model together with the funding approach into one strategy and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed for the design work that follows. The enterprise''s money rules become one owned decision rather than two parallel drafts.'
+business_purpose: 'It exists so the enterprise''s financial direction is a committed strategy that design and build must follow.'
+practical_context: 'It closes the finance strategy framing, once the monetary model and funding approach are framed, and it completes when the committed finance strategy is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian consolidates the monetary model and the funding approach into the strategy document, obtains ratification, and records the committed finance strategy for the design teams.'

@@ -90,3 +90,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-tqybhd through concluding task processes:task-eo-build-record-xnnpmm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Fit Out Facilities'
+plain_language_description: 'This activity turns the acquired shell sites into fitted workplaces to the planned layouts, applying the health-and-safety and accessibility requirements as it goes. The layout designs arrive as the guide, fit-out is carried out and checked against them, and the fitted facilities are confirmed onward. Empty buildings become places people can safely work in.'
+business_purpose: 'It exists so the enterprise''s sites become safe, accessible, correctly laid-out workplaces rather than bare shells.'
+practical_context: 'It follows site securing, when the layouts and their safety and accessibility requirements are to hand, and it completes once the fitted facilities are confirmed for service commissioning.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian fits each secured site out to its planned layout, applies the health-and-safety and accessibility requirements throughout, and confirms the fitted facilities for service commissioning.'

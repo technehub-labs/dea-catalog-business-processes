@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Schedule Facility Work Orders**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Facility Management** (`processes:process-eo-operate-rqdte5`). Its canonical ID is `processes:activity-eo-operate-xzs7d8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the building's needs and the preventive calendar into a dated, resourced book of work orders. The facility demand, the preventive plan, and crew availability arrive together, work is scheduled and resourced against all three, and the work-order book is confirmed onward for execution. The buildings' upkeep acquires an order of battle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so facility work happens to a resourced schedule instead of piling up as unmanaged demand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the facility work flow, when facility demand and the preventive calendar are presented alongside crew availability, and it completes once the scheduled work-order book is confirmed for execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management planner slots the facility's reported needs and preventive tasks into a dated work-order book, matching each job to crew availability, and confirms the schedule for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Schedule Facility Work Orders |
+| `plain_language_description` | string | no | This activity turns the building's needs and the preventive calendar into a dated, resourced book of work orders. The … |
+| `business_purpose` | string | no | It exists so facility work happens to a resourced schedule instead of piling up as unmanaged demand. |
+| `practical_context` | string | no | It opens the facility work flow, when facility demand and the preventive calendar are presented alongside crew … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Draft Objectives and Targets**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Objectives and Targets** (`processes:process-sd-design-vdwkmh`). Its canonical ID is `processes:activity-sd-design-uwqj5w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Inside the agreed edges, the measurable ambition gets written. The scope lines arrive at intake, verification checks the drafting instructions are usable, and processing writes each objective and its target so every line is concrete and checkable. Confirmation hands the drafted set to downstream colleagues and the working papers are preserved for the ownership step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns the scoped intent into named objectives with concrete targets, giving the enterprise something steerable to commit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once scoping is done, opening at intake of the bounded scope and closing when the drafted set is confirmed ready for ownership assignment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function analysts draft each objective and its measurable target inside the agreed lines, a verification custodian returns any vague one for tightening, and the confirmation custodian announces the drafted set is ready for owners to be assigned.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft Objectives and Targets |
+| `plain_language_description` | string | no | Inside the agreed edges, the measurable ambition gets written. The scope lines arrive at intake, verification checks … |
+| `business_purpose` | string | no | It turns the scoped intent into named objectives with concrete targets, giving the enterprise something steerable to … |
+| `practical_context` | string | no | It runs once scoping is done, opening at intake of the bounded scope and closing when the drafted set is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

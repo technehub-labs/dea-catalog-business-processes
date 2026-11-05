@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Assemble Strategic Plan**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Plan** (`processes:process-sd-build-q4nf9g`). Its canonical ID is `processes:activity-sd-build-7z99jy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the pull-it-together moment of the build. The bounded version, the chosen direction, the objectives, the initiatives and the resource allocation are all brought in, checked for completeness, and merged into a single plan document. When the assembled plan is confirmed, downstream reviewers are told it is ready and the working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns scattered approved pieces into one coherent plan document that the process can review, commit and hand to operations.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the version boundary and all ingredient artifacts are presented at intake, closing when the assembled plan is confirmed as ready for review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function plan writer gathers the bounded version, the agreed direction, the objective set, the initiative portfolio and the allocation decisions into one document; a verification custodian checks nothing is missing before the confirmation custodian announces the draft plan is ready for review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Strategic Plan |
+| `plain_language_description` | string | no | This is the pull-it-together moment of the build. The bounded version, the chosen direction, the objectives, the … |
+| `business_purpose` | string | no | It turns scattered approved pieces into one coherent plan document that the process can review, commit and hand to … |
+| `practical_context` | string | no | It runs once the version boundary and all ingredient artifacts are presented at intake, closing when the assembled plan … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

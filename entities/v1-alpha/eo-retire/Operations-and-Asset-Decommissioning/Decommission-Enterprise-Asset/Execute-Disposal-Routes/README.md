@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 This is a **Activity** (level L3), named **Execute Disposal Routes**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Decommission Enterprise Asset** (`processes:process-eo-retire-rpg6d4`). Its canonical ID is `processes:activity-eo-retire-2xjudv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sends each withdrawn asset out along its approved path — sold, recycled, destroyed, or sent back — as the policy directs. The withdrawn asset arrives with its approved route, the disposal is executed and evidenced, and the disposed asset is confirmed onward for the residual work. End of life is handled by policy, not by the loading dock's convenience.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so retired assets leave the enterprise by their approved disposal route, with evidence of where they went.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the withdrawal, once the asset is out of service and its route approved, and it completes when the executed disposal is confirmed and its evidence retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations custodian sends the withdrawn asset along its approved route — in this case to recycling — evidences the disposal, and confirms it for the residual resolution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Disposal Routes |
+| `plain_language_description` | string | no | This activity sends each withdrawn asset out along its approved path — sold, recycled, destroyed, or sent back — as the … |
+| `business_purpose` | string | no | It exists so retired assets leave the enterprise by their approved disposal route, with evidence of where they went. |
+| `practical_context` | string | no | It follows the withdrawal, once the asset is out of service and its route approved, and it completes when the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

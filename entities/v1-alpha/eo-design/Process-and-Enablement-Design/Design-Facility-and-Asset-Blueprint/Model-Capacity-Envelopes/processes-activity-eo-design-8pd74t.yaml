@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-q83tdv through concluding task processes:task-eo-design-record-m2kqh6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Model Capacity Envelopes'
+plain_language_description: 'This activity works out what the designed facilities and their equipment can hold — throughput bounds and scaling limits — as a capacity model. The layouts, the equipment specification, and the demand model arrive together, the bounds are modelled and checked against them, and the capacity model is confirmed onward for the blueprint''s commitment. How much each site and asset should handle becomes explicit.'
+business_purpose: 'It exists so the blueprint states plainly how much work each facility and asset can carry.'
+practical_context: 'It follows the equipment specification, when layouts, equipment, and the demand model are all in hand, and it completes once the capacity model is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer models the throughput bounds and scaling limits of each designed facility, checks them against the demand model, and confirms the capacity envelopes for the blueprint.'

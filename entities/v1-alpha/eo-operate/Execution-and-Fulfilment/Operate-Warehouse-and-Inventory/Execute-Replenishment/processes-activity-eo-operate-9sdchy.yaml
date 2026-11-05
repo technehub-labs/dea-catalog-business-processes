@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zwzmbd through concluding task processes:task-eo-operate-record-txam67, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Replenishment'
+plain_language_description: 'This activity tops stock and picking locations back up wherever the demand signals show them running low. Stock positions and demand signals arrive as the trigger, replenishment is executed to restore the levels, and the replenished locations are confirmed for the record. The warehouse never lets a pick face run dry by accident.'
+business_purpose: 'It exists so stock and pick faces stay replenished ahead of demand rather than emptied by it.'
+practical_context: 'It runs as demand signals and stock positions show levels falling, and it completes when each replenished location is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A warehouse crew reads the demand signals showing a pick face running low, moves stock to restore the level, and confirms the replenished location for the stock record.'

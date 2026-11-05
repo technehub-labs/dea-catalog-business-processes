@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-8fzp2b through concluding task processes:task-ao-design-record-5qjm8t, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Classify the Placement Candidates'
+plain_language_description: 'This activity sorts the roles and pieces of work in the designed structure into candidates for people, artificial agents, or a blend of both. The committed organization model frame comes in first, each role and work item is examined and typed, and the classified candidates are confirmed with the design authority. The typing then anchors the placement decisions that follow.'
+business_purpose: 'It exists so placement decisions start from an explicit classification of what work could sit where, rather than from assumptions.'
+practical_context: 'It opens the design of the agent topology, when the framed organization model is presented for placement work, and it closes once the classified candidates are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer working for the organization design authority goes through the roles in the new structure, marks which are suited to people, artificial agents, or hybrid arrangements, and files the classification that placement decisions will build on.'

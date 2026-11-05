@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-8vqvkk through concluding task processes:task-fa-operate-record-qmb7tn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Filing Record'
+plain_language_description: 'This activity keeps the ledger of filings current — what has been returned, what has been paid, and where the enterprise stands. Completed returns, scheduled payments, and exposure movements arrive as the inputs, the record is updated as each lands, and the current filing record is confirmed onward. Compliance status is thereby a fact on file, not a feeling.'
+business_purpose: 'It exists so the enterprise''s tax compliance position is always knowable from a maintained record.'
+practical_context: 'It runs continuously as returns, payments, and exposure movements land, and each update closes when the current filing record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function custodian posts each completed return and scheduled payment to the filing record, keeps the compliance status current, and confirms the record onward.'

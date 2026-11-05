@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-ucxpz4 through concluding task processes:task-sd-operate-record-834suj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Schedule Review Cadence'
+plain_language_description: 'Reviews only discipline a business if they happen on time, every time. The review mandate arrives at intake, verification tests the proposed rhythm against the steering calendar, and processing sets the standing timetable of sessions and keeps it current. Confirmation publishes the timetable downstream and the records custodian preserves the cadence on the audit trail.'
+business_purpose: 'It gives strategy its drumbeat — a fixed, maintained rhythm of review sessions that monitoring and steering can rely on.'
+practical_context: 'It opens this process at intake of the review mandate and runs as a maintained service, closing each scheduling cycle once the timetable is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function coordinator sets the yearly timetable of review sessions against the steering calendar, a verification custodian checks the dates avoid clash with reporting deadlines, and the confirmation custodian publishes the confirmed cadence.'

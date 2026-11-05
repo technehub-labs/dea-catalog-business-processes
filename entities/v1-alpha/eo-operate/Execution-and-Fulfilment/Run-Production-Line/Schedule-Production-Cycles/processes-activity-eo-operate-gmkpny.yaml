@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-xud3hs through concluding task processes:task-eo-operate-record-cv6u3k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Schedule Production Cycles'
+plain_language_description: 'This activity turns the plan for production into an ordered, resourced run of cycles for the line. The production plan arrives with the line''s capacity and material availability, the cycle sequence is worked out and resourced against all three, and the cycle schedule is confirmed onward for running. The line always knows what it is making next, and with what.'
+business_purpose: 'It exists so the line''s production time is organised into executable, resourced cycles that follow the plan.'
+practical_context: 'It opens each production period, when the production plan is presented with capacity and material availability, and it completes once the cycle schedule is confirmed for running.'
+worked_example:
+  agent_type: human
+  narrative: 'A production planner sequences the plan into resourced cycles for the line, checking each cycle against capacity and material availability, and confirms the schedule for execution.'

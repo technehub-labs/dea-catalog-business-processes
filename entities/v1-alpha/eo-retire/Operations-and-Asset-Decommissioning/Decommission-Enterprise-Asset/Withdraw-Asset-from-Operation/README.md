@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 This is a **Activity** (level L3), named **Withdraw Asset from Operation**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Decommission Enterprise Asset** (`processes:process-eo-retire-rpg6d4`). Its canonical ID is `processes:activity-eo-retire-h2dzg3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity powers the asset down, detaches it from everything it feeds, and cuts it off from live service. The retirement plan arrives as the guide, the shutdown and disconnection are executed safely against it, and the withdrawn asset is confirmed onward for disposal. The asset's working life ends in an orderly, planned way.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a retiring asset leaves live service safely and completely, without taking any dependent operation down with it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to the retirement plan once withdrawal is scheduled, and it completes when the asset's safe shutdown and isolation are confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations crew follows the retirement plan to power down the asset, detach its connections, and isolate it from live service, confirming the safe withdrawal for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Withdraw Asset from Operation |
+| `plain_language_description` | string | no | This activity powers the asset down, detaches it from everything it feeds, and cuts it off from live service. The … |
+| `business_purpose` | string | no | It exists so a retiring asset leaves live service safely and completely, without taking any dependent operation down … |
+| `practical_context` | string | no | It runs to the retirement plan once withdrawal is scheduled, and it completes when the asset's safe shutdown and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

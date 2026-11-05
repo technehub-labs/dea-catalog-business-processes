@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Constitute Bodies**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Governance Bodies** (`processes:process-ge-build-3p38us`). Its canonical ID is `processes:activity-ge-build-tp3aba`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the designed boards and committees formally into existence. The design of the governance system, freshly committed, arrives as the blueprint, each body is constituted per its designed mandate with members appointed, and the constituted bodies are confirmed onward for equipping. Governance stops being a diagram and becomes named bodies with people in them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the governance system's designed bodies exist formally, with their memberships in place.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the body establishment once a governance system design has been committed, and it completes as each constituted body is confirmed onward for equipping and its first cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board officer constitutes each designed board and committee, appointing the members its mandate requires, and confirms the constituted bodies onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Constitute Bodies |
+| `plain_language_description` | string | no | This activity brings the designed boards and committees formally into existence. The design of the governance system … |
+| `business_purpose` | string | no | It exists so the governance system's designed bodies exist formally, with their memberships in place. |
+| `practical_context` | string | no | It opens the body establishment once a governance system design has been committed, and it completes as each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

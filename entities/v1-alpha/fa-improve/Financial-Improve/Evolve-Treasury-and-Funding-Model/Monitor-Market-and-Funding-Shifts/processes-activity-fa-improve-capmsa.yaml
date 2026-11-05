@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-2kemkq through concluding task processes:task-fa-improve-record-v5f7vm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Market and Funding Shifts'
+plain_language_description: 'This activity watches the market and the funding world for shifts that will eventually demand a changed model. The posture signals arrive continuously, changes worth noting are tracked as they build, and the monitored shifts are confirmed onward for the exposure review. The model''s environment is watched so the model is never blindsided.'
+business_purpose: 'It exists so treasury''s model evolves in response to shifts spotted early, not to shifts discovered late.'
+practical_context: 'It runs continuously, whenever a market or funding posture change begins to build, and each tracked shift closes once it is confirmed onward for the exposure review.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst tracks the funding-market signals as a posture change builds, logs the shift worth acting on, and confirms it for the exposure review.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Record Asset Availability**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Asset Maintenance** (`processes:process-eo-operate-j9cjzz`). Its canonical ID is `processes:activity-eo-operate-rwvgfg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps a running account of each asset's availability, fed by both the planned and the unplanned work. Every maintenance event arrives as an entry, the per-asset picture is updated as events land, and the record is confirmed onward for whoever plans around asset uptime. The enterprise can say, from its own records, which assets it can rely on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so asset availability is known from a maintained record rather than guessed from memory.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as maintenance events land, whether from scheduled work or breakdown response, and each update closes when the record entry is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian posts each maintenance event — planned or reactive — to the asset's availability record, keeping the per-asset picture current for the planners.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Asset Availability |
+| `plain_language_description` | string | no | This activity keeps a running account of each asset's availability, fed by both the planned and the unplanned work … |
+| `business_purpose` | string | no | It exists so asset availability is known from a maintained record rather than guessed from memory. |
+| `practical_context` | string | no | It runs continuously as maintenance events land, whether from scheduled work or breakdown response, and each update … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

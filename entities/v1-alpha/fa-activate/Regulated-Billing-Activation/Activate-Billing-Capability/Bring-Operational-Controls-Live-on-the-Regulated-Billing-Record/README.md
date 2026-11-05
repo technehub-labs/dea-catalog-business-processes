@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 This is a **Activity** (level L3), named **Bring Operational Controls Live on the Regulated Billing Record**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Billing Capability** (`processes:process-fa-activate-bzfywk`). Its canonical ID is `processes:activity-fa-activate-utzqpn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity switches the billing operation's safeguards on and records them live — the separation of duties, the audit trail, and the reconciliations. The regulator-mandated control framework and the fresh authorization come in together, each control is brought into active use and checked against the framework, and the live state is written onto the billing record. The first invoice is raised under controls already running.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so billing runs under its mandated safeguards from the first transaction, not after the first failure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs late in the billing activation, once the control framework and the authorization are to hand, and it completes when the controls' live state is confirmed on the regulated billing record and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead brings the separation of duties, the audit trail, and the reconciliations into active use against the mandated framework, and confirms the live state on the billing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Billing Operational Controls Live |
+| `plain_language_description` | string | no | This activity switches the billing operation's safeguards on and records them live — the separation of duties, the … |
+| `business_purpose` | string | no | It exists so billing runs under its mandated safeguards from the first transaction, not after the first failure. |
+| `practical_context` | string | no | It runs late in the billing activation, once the control framework and the authorization are to hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Formulate Effectiveness Findings**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Review Strategy Effectiveness** (`processes:process-sd-improve-duwd64`). Its canonical ID is `processes:activity-sd-improve-3pccaq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A verdict needs turning into statements the enterprise can act on. Intake registers the evaluation, verification checks each claimed point traces to evidence, and processing writes the findings and their recommendations in plain terms — what worked, what did not, what to change. Confirmation circulates the drafted findings downstream and the records custodian preserves them for ratification.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts the verdict into concrete findings and recommendations, giving the adaptation cycle usable lessons instead of a bare score.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evaluation, opening at intake of the reasoned verdict and closing when the drafted findings are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers draft the findings and recommendations from the evaluation, a verification custodian checks each claim traces to dossier evidence, and the confirmation custodian passes the pack forward for ratification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate Effectiveness Findings |
+| `plain_language_description` | string | no | A verdict needs turning into statements the enterprise can act on. Intake registers the evaluation, verification checks … |
+| `business_purpose` | string | no | It converts the verdict into concrete findings and recommendations, giving the adaptation cycle usable lessons instead … |
+| `practical_context` | string | no | It follows the evaluation, opening at intake of the reasoned verdict and closing when the drafted findings are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

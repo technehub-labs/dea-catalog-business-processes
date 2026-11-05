@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Manage Line Changeovers**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Run Production Line** (`processes:process-eo-operate-xud3hs`). Its canonical ID is `processes:activity-eo-operate-snhadj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity manages the line's switches from one product configuration to the next in the gaps between cycles, so the timetable loses as little as possible. The upcoming configuration changes arrive as the plan, changeovers are prepared and executed in the between-cycle windows, and each completed changeover is confirmed for the record. Switching products is a rehearsed move, not a lost afternoon.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so switching the line between products costs the schedule the least time it can.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs in the windows between production cycles as the configuration changes fall due, and it completes when each executed changeover is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A line crew prepares the changeover in the gap between cycles, executes the switch to the next product configuration, and confirms the completed changeover for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Manage Line Changeovers |
+| `plain_language_description` | string | no | This activity manages the line's switches from one product configuration to the next in the gaps between cycles, so the … |
+| `business_purpose` | string | no | It exists so switching the line between products costs the schedule the least time it can. |
+| `practical_context` | string | no | It runs in the windows between production cycles as the configuration changes fall due, and it completes when each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

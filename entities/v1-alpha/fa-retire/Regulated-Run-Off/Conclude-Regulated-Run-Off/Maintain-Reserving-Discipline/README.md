@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 This is a **Activity** (level L3), named **Maintain Reserving Discipline**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Conclude Regulated Run-Off** (`processes:process-fa-retire-wkbrsa`). Its canonical ID is `processes:activity-fa-retire-uuqbe9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity holds the line on the numbers that keep a winding-down book solvent — the reserve, the capital cushion, and the matching of assets to liabilities — reviewed on the regime's rhythm and reported to the regulator. Run-off experience, asset valuations, and liability cashflow projections arrive as the inputs, the discipline is maintained with actuarial certification, and corrective action is taken where the numbers demand it. Solvency is not an event in a run-off; it is a practice.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the winding-down entity stays demonstrably solvent throughout its run-off, on the regime's reserving standard.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs throughout the run-off period to the regime's review cadence, and each maintained reserve with its actuarial certification closes when it is confirmed and reported to the regulator.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The actuarial function certifies the maintained reserve each period, and where the cashflow projections move against the book, corrective action on capital or asset matching is taken and reported to the regulator.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Reserving Discipline |
+| `plain_language_description` | string | no | This activity holds the line on the numbers that keep a winding-down book solvent — the reserve, the capital cushion … |
+| `business_purpose` | string | no | It exists so the winding-down entity stays demonstrably solvent throughout its run-off, on the regime's reserving … |
+| `practical_context` | string | no | It runs throughout the run-off period to the regime's review cadence, and each maintained reserve with its actuarial … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

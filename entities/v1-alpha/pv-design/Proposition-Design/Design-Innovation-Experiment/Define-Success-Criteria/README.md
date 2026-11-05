@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Define Success Criteria**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Innovation Experiment** (`processes:process-pv-design-9ckwf6`). Its canonical ID is `processes:activity-pv-design-hfczjv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes in advance what result will count as the hypothesis passing — and, by implication, failing. The formulated hypothesis arrives as the claim to be judged, success criteria are defined against it and made measurable, and the criteria set is confirmed onward for the timebox. Verdicts are agreed before the evidence exists.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the experiment's verdict cannot be argued after the fact — the bar was set first.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the hypothesis formulation, once the claim is pinned, and it completes when the defined success criteria are confirmed onward for the timebox.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer fixes, before any evidence exists, the measurable result that will count as the hypothesis passing, and confirms the criteria onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Success Criteria |
+| `plain_language_description` | string | no | This activity fixes in advance what result will count as the hypothesis passing — and, by implication, failing. The … |
+| `business_purpose` | string | no | It exists so the experiment's verdict cannot be argued after the fact — the bar was set first. |
+| `practical_context` | string | no | It follows the hypothesis formulation, once the claim is pinned, and it completes when the defined success criteria are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

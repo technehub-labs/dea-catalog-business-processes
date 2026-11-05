@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Register Acquired Assets**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Acquire Technology Assets** (`processes:process-eo-build-nmmmt6`). Its canonical ID is `processes:activity-eo-build-6335m6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity enters the finished assets — bought, installed, and commissioned — into the enterprise's asset record. The commissioning evidence arrives as the trigger, each asset is registered with its details, and the registered entries are confirmed and retained. From here on, the enterprise's records show the asset exists, where it is, and that it is fit to use.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every asset the enterprise has paid for and stood up is formally on its books, visible to later operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes technology acquisition, running once commissioning evidence exists, and it completes when the registered asset entries are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian enters each commissioned asset into the enterprise asset record against its commissioning evidence, confirms the entries, and preserves the record for downstream operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Register Acquired Assets |
+| `plain_language_description` | string | no | This activity enters the finished assets — bought, installed, and commissioned — into the enterprise's asset record … |
+| `business_purpose` | string | no | It exists so every asset the enterprise has paid for and stood up is formally on its books, visible to later operation. |
+| `practical_context` | string | no | It closes technology acquisition, running once commissioning evidence exists, and it completes when the registered … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-en8rdz through concluding task processes:task-pv-operate-record-m8c345, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Rebalance Portfolio Allocations'
+plain_language_description: 'When the performance picture shows money sitting in the wrong places, product management shifts the allocations to match - moving envelope room from laggards toward the propositions doing better. The picture arrives at intake, is verified against the portfolio direction, the shifts are worked out and applied, confirmed, and the rebalancing trail is archived.'
+business_purpose: 'It acts on what monitoring reveals, adjusting where investment sits so the portfolio backs its best-performing propositions instead of its historically favoured ones.'
+practical_context: 'It follows monitoring in the performance cycle: intake opens on the refreshed performance picture and closure comes when the confirmed allocations and their audit trail are on record.'
+worked_example:
+  agent_type: human
+  narrative: 'Seeing one proposition consistently outperform while another drifts, a product management lead registers the picture at intake, works out a reallocation that trims the laggard''s envelope, confirms the change with the portfolio owner, and the records custodian files the trail.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Funding Structure**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury and Funding Model** (`processes:process-fa-design-k5sgfa`). Its canonical ID is `processes:activity-fa-design-r7eq66`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out the make-up of the enterprise's funding — which facilities and instruments, maturing when — that the finance strategy needs behind it. The funding and capital approach arrives as the frame, the funding structure is designed and checked against it, and the structure design is confirmed onward for the operating model. The debt and capital mix becomes a drawing, not a hope.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's funding composition is designed to match the strategy's capital approach.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the liquidity policy, when the funding and capital approach is to hand, and it completes once the funding structure design is confirmed for the operating model.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer works out the facilities, instruments, and maturities making up the funding structure, checks the design against the capital approach, and confirms it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Funding Structure |
+| `plain_language_description` | string | no | This activity works out the make-up of the enterprise's funding — which facilities and instruments, maturing when — … |
+| `business_purpose` | string | no | It exists so the enterprise's funding composition is designed to match the strategy's capital approach. |
+| `practical_context` | string | no | It follows the liquidity policy, when the funding and capital approach is to hand, and it completes once the funding … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

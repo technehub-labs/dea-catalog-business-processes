@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Monitor Service Levels**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Service Delivery** (`processes:process-eo-operate-2jnz85`). Its canonical ID is `processes:activity-eo-operate-n7pddh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity compares what the service is actually delivering with the levels it promised, and raises a flag when the two diverge. Service-level indicators arrive through each operating window, actuals are tracked against the agreed levels, and flagged deviations are confirmed onward for handling. Drift from the promise is caught while it is still drift.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise notices its service slipping the moment it slips, not when a customer complains.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously through each operating window against the agreed service levels, and each tracked deviation closes when it is flagged and confirmed for handling.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A service custodian tracks the window's actuals against the agreed levels, spots availability drifting below promise, and flags the deviation for the exception handlers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Service Levels |
+| `plain_language_description` | string | no | This activity compares what the service is actually delivering with the levels it promised, and raises a flag when the … |
+| `business_purpose` | string | no | It exists so the enterprise notices its service slipping the moment it slips, not when a customer complains. |
+| `practical_context` | string | no | It runs continuously through each operating window against the agreed service levels, and each tracked deviation closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

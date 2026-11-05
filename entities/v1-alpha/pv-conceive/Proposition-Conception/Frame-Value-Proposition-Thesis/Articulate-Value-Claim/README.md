@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Articulate Value Claim**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Value Proposition Thesis** (`processes:process-pv-conceive-xe9axm`). Its canonical ID is `processes:activity-pv-conceive-zgnzny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states the proposition's central promise — what it claims to do for the parties it serves. The bounded scope and identified parties arrive as the claim's subject and audience, the value claim is articulated and tested for honesty, and the articulated claim is confirmed onward for the thesis commitment. The proposition's whole case in one sentence is crafted here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the proposition makes one clear, honest claim about the value it delivers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the party identification, once the audience is named, and it completes when the articulated value claim is confirmed onward for the thesis commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead states what the proposition claims to do for its named parties, tests the claim for honesty, and confirms it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Value Claim |
+| `plain_language_description` | string | no | This activity states the proposition's central promise — what it claims to do for the parties it serves. The bounded … |
+| `business_purpose` | string | no | It exists so the proposition makes one clear, honest claim about the value it delivers. |
+| `practical_context` | string | no | It follows the party identification, once the audience is named, and it completes when the articulated value claim is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

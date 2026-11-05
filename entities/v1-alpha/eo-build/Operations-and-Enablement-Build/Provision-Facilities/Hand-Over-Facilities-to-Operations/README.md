@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Hand Over Facilities to Operations**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Provision Facilities** (`processes:process-eo-build-tqybhd`). Its canonical ID is `processes:activity-eo-build-ds867n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity formally passes the ready buildings from the provisioning side to the teams who will run them day to day. The commissioned facilities arrive as the handover package, acceptance is reviewed and given, and the accepted facilities are confirmed for steady-state running. Provisioning responsibility ends; facility management responsibility begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's buildings change hands cleanly, with operations accepting facilities it has seen working.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes facility provisioning, once the facility services are commissioned, and it finishes when the accepted facilities are confirmed and their handover record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead presents the commissioned facilities to facility management, walks through the commissioning evidence, and records acceptance for steady-state running.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand Over Facilities to Operations |
+| `plain_language_description` | string | no | This activity formally passes the ready buildings from the provisioning side to the teams who will run them day to day … |
+| `business_purpose` | string | no | It exists so the enterprise's buildings change hands cleanly, with operations accepting facilities it has seen working. |
+| `practical_context` | string | no | It closes facility provisioning, once the facility services are commissioned, and it finishes when the accepted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

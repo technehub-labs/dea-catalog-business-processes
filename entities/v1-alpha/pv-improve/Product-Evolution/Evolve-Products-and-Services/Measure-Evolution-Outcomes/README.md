@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Measure Evolution Outcomes**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Evolve Products and Services** (`processes:process-pv-improve-6c2xvf`). Its canonical ID is `processes:activity-pv-improve-s34pap`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After enhancements have been in place for a while, product management checks what they actually achieved, comparing results with the driver baseline recorded when the work was approved. Measurement material is registered at intake, verified against that baseline, assembled into an outcome measurement, confirmed, and archived for the next review.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the loop on evolution work, telling product management whether each committed enhancement delivered against the pressure that prompted it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once committed enhancements have had time to take effect: intake opens on the measurement material's arrival and closure comes with the confirmed outcome measurement on file.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Two quarters after an enhancement ships, a product management analyst pulls the result figures, registers them at intake, compares them with the baseline captured at approval, assembles the outcome measurement, and confirms it to the reviewers ahead of the next performance review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Evolution Outcomes |
+| `plain_language_description` | string | no | After enhancements have been in place for a while, product management checks what they actually achieved, comparing … |
+| `business_purpose` | string | no | It closes the loop on evolution work, telling product management whether each committed enhancement delivered against … |
+| `practical_context` | string | no | It runs once committed enhancements have had time to take effect: intake opens on the measurement material's arrival … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

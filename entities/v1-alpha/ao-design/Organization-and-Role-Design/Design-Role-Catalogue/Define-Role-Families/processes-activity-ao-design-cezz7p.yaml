@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-34e95r through concluding task processes:task-ao-design-record-n42uvs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define the Role Families'
+plain_language_description: 'This activity groups the roles the designed structure needs into families of related work. The committed model frame comes in first, the natural groupings are worked out from it and reviewed, and the defined families are confirmed with the design authority. With the families set, the catalogue has its top-level organization and the leveling work can begin.'
+business_purpose: 'It exists so the role catalogue organizes roles into recognizable groupings that planning and staffing can navigate.'
+practical_context: 'It opens the design of the role catalogue, when the model frame is presented for family definition, and it closes once the defined families are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority clusters the structure''s roles into families of related work, checks the grouping against the model frame, and confirms the families before levels are defined within them.'

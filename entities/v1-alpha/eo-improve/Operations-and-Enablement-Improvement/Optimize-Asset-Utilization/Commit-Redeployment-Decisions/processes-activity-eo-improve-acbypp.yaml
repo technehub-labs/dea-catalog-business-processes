@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-q58ecg through concluding task processes:task-eo-improve-record-ryh8nh, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Redeployment Decisions'
+plain_language_description: 'This activity gives formal standing to the redeployment moves chosen from the worked-up options. The assessed options arrive as the menu, decisions are taken and ratified, and the committed decisions are confirmed into the asset plan. The operation''s assets are thereby re-aimed by decision rather than by drift.'
+business_purpose: 'It exists so the utilization fixes become binding redeployment decisions in the asset plan, not shelved options.'
+practical_context: 'It follows the option design, once the assessed options are in hand, and it completes when the committed decisions are confirmed into the asset plan and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reviews the assessed redeployment options, takes and ratifies the decisions, and records the commitments into the asset plan.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Sense Organization Imperatives**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization and Agent Strategy** (`processes:process-ao-conceive-e3u8s2`). Its canonical ID is `processes:activity-ao-conceive-fyb9vc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity picks up the pressures that make the enterprise need a new or reframed workforce direction, such as a shift toward artificial agents in the mix. The enterprise strategy and the signals about shifting substrates are brought in and examined, and the imperatives behind the coming change are drawn out and confirmed with the leadership. Those imperatives then set the agenda for bounding agent capacity.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organization and agent strategy is framed in response to real, named pressures rather than in a vacuum.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens when a new agentive fabric is being established, an existing one is being reframed, or a substrate shift calls for board-level realignment, and it closes once the sensed imperatives are confirmed and recorded.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead gathers the signals that artificial agents are changing how work gets done, draws out the imperatives the enterprise must respond to, and confirms them with workforce management as the input to bounding agent capacity.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sense the Organization Imperatives |
+| `plain_language_description` | string | no | This activity picks up the pressures that make the enterprise need a new or reframed workforce direction, such as a … |
+| `business_purpose` | string | no | It exists so the organization and agent strategy is framed in response to real, named pressures rather than in a vacuum. |
+| `practical_context` | string | no | It happens when a new agentive fabric is being established, an existing one is being reframed, or a substrate shift … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

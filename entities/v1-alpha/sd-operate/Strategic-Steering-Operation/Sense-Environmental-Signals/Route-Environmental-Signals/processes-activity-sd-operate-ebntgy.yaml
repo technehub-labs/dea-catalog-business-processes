@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-53y4j4 through concluding task processes:task-sd-operate-record-q5szty, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Route Environmental Signals'
+plain_language_description: 'Typed signals only earn their keep when they reach the right desk. Intake registers the classified set, verification confirms every destination is correct for its type, and processing delivers each signal to the desk its type demands — portfolio steering, performance monitoring or the adaptation work. Confirmation closes the loop with delivery recorded and the records custodian preserves the routing evidence.'
+business_purpose: 'It lands each typed signal with the process that can act on it, turning sensing into steering rather than a filed-and-forgotten list.'
+practical_context: 'It closes the sensing loop, opening at intake of the typed set and closing when every delivery is confirmed and the routing evidence preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function router sends drift signals to the monitoring desk and opportunity signals to the steering desk, a verification custodian confirms each destination matches the type, and the records custodian files the routing evidence.'

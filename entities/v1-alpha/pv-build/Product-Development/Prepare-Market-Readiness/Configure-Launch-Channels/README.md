@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Configure Launch Channels**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Prepare Market Readiness** (`processes:process-pv-build-6hjzmk`). Its canonical ID is `processes:activity-pv-build-bhepnm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets up the routes by which the offering will actually reach its buyers at launch. The assembled assets and set pricing arrive as the load the channels must carry, launch channels are configured against both and checked, and the configured channels are confirmed onward for the certification. The road to market is built here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the offering has configured, working channels to launch through.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the asset assembly and pricing, once both are confirmed, and it completes when the configured launch channels are confirmed onward for the market readiness certification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer configures the launch channels to carry the assembled assets at the set pricing, checks each route, and confirms the configuration onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Configure Launch Channels |
+| `plain_language_description` | string | no | This activity sets up the routes by which the offering will actually reach its buyers at launch. The assembled assets … |
+| `business_purpose` | string | no | It exists so the offering has configured, working channels to launch through. |
+| `practical_context` | string | no | It follows the asset assembly and pricing, once both are confirmed, and it completes when the configured launch … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

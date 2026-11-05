@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-8s76nv through concluding task processes:task-eo-design-record-zn4ddp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Routing Logic'
+plain_language_description: 'This activity writes the rules that decide which way each shipment travels across the network. The chosen modes and the service-level designs arrive as the constraints, the routing specification is drawn and checked against them, and the routing logic is confirmed onward for the design''s commitment. Shipments will follow rules, not improvisation.'
+business_purpose: 'It exists so every shipment moves by designed logic that honours the chosen modes and promised service levels.'
+practical_context: 'It follows the node positioning, when the mode selections and service-level designs are to hand, and it completes once the routing specification is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer draws the rules deciding each shipment''s path through the positioned nodes, checks them against the mode and service constraints, and confirms the routing specification.'

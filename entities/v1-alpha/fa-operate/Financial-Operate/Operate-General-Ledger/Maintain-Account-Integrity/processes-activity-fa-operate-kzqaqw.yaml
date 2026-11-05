@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-g9zpnq through concluding task processes:task-fa-operate-record-yz7s9w, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Account Integrity'
+plain_language_description: 'This activity keeps the account structure true to the chart it was designed from, as entries pile up. The live structure is compared continuously against the chart of accounts as designed, departures are corrected as they are found, and the maintained integrity is confirmed onward. The books'' skeleton never quietly warps.'
+business_purpose: 'It exists so the ledger''s account structure stays exactly what the design said it should be.'
+practical_context: 'It runs continuously against the designed chart of accounts as the ledger operates, and each integrity pass closes when the maintained structure is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A ledger custodian checks the live account structure against the designed chart of accounts, corrects the departure it finds, and confirms the maintained integrity onward.'

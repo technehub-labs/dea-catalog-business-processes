@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-activate-jqxtqn through concluding task processes:task-ao-activate-record-4szntk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Activate Signing Authority or Controlled-Function Designation'
+plain_language_description: 'Once a licensed individual''s verified licence and designation are on the table, this activity switches on the formal authority the role carries and files it against the personnel record. The work passes through five custodian steps: the request is logged in, the designation details are checked against what was approved, the authority is set up in its final form, the people who rely on it are told it is available, and the audit trail is filed. From that point the individual''s continuing supervisor is on notice, and the role''s formal authority is live.'
+business_purpose: 'It exists so a licensed role''s signing or decision-making authority only goes live together with the notification that keeps a continuing supervisor accountable for it.'
+practical_context: 'It happens late in mobilizing a licensed workforce, when the verified licence and the designation are presented after licence verification and the fitness attestation, and it closes once the activation''s audit record is preserved for retrieval.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead receives the verified licence details for a newly approved controlled-function appointee, has the designation set up on the personnel record, and issues the notification that places the continuing supervisor on notice before the appointee''s first day of live work.'

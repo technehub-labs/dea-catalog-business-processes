@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-bd7mef through concluding task processes:task-ao-operate-record-ayrww7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain the Interaction Norms'
+plain_language_description: 'This activity keeps the agreed expectations for how agents and teams engage in the shared workspaces current as collaboration runs. The provisioned workspaces come in as the starting point, the norms governing work within them are reviewed and refreshed where needed, and the maintained norms are confirmed to the users. The point is that the rules of engagement stay fit for the collaboration actually happening.'
+business_purpose: 'It exists so joint work follows settled expectations instead of being renegotiated case by case every time agents and teams meet.'
+practical_context: 'It runs once the collaboration workspaces are provisioned, as day-to-day collaboration throws up changes worth settling, and it closes when the maintained norms are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian refreshes the engagement norms after teams are regrouped, confirms the updated expectations with the people and agents who work under them, and files the record.'

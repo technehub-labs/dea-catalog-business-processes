@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Implement Tax Controls**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Onboard Tax and Compliance Capability** (`processes:process-fa-build-ucfjgt`). Its canonical ID is `processes:activity-fa-build-5h2xk4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the safeguards in place that the enterprise's documented tax stances call for. The documented positions arrive as the specification, the controls are implemented against them and checked, and the implemented tax controls are confirmed onward for readiness. Taking a tax position and holding it safely are joined here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each documented tax position is backed by working controls, not just by paperwork.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the filings and registrations, when the documented positions and strategy are to hand, and it completes once the implemented tax controls are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder implements the safeguards each documented tax position requires, checks them against the positions and strategy, and confirms the implemented controls.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Implement Tax Controls |
+| `plain_language_description` | string | no | This activity puts the safeguards in place that the enterprise's documented tax stances call for. The documented … |
+| `business_purpose` | string | no | It exists so each documented tax position is backed by working controls, not just by paperwork. |
+| `practical_context` | string | no | It follows the filings and registrations, when the documented positions and strategy are to hand, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

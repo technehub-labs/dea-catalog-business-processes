@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Certify Period Close**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Perform Financial Close** (`processes:process-fa-operate-4xn4d6`). Its canonical ID is `processes:activity-fa-operate-5dufzc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the closed period its formal certification, releasing the numbers for reporting to begin. The reconciled period arrives as the candidate, the close is certified complete and correct under the close controls, and the certified period is confirmed onward for the reports. The books are officially shut until someone certifies this.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so reporting builds only on a period whose close has been formally certified.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the reconciliations, once the balances agree with the world, and it completes when the certified close is confirmed and its record retained for the reporting step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A close custodian certifies the reconciled period as complete and correct under the close controls, and confirms the certified close for the management reporting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Certify Period Close |
+| `plain_language_description` | string | no | This activity gives the closed period its formal certification, releasing the numbers for reporting to begin. The … |
+| `business_purpose` | string | no | It exists so reporting builds only on a period whose close has been formally certified. |
+| `practical_context` | string | no | It follows the reconciliations, once the balances agree with the world, and it completes when the certified close is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

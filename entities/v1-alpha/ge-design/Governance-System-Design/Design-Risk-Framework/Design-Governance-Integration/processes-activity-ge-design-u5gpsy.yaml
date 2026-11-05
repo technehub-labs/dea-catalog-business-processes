@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-pqkvdc through concluding task processes:task-ge-design-record-cz5anh, whose outcome — Case file retained for Design Governance Integration under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Governance Integration'
+plain_language_description: 'This activity wires the risk machinery into the governance system — where it reports, how it escalates, and which body mandates carry it. The governance system design and the taxonomy and scales arrive as the two sides to join, the integration is designed and checked along both, and the integration design is confirmed onward for the framework''s commitment. Risk that cannot reach its governors is merely observed, not governed.'
+business_purpose: 'It exists so the risk framework plugs into the governance system by designed lines rather than by hope.'
+practical_context: 'It follows the taxonomy and scales, when both and the governance system design are to hand, and it completes once the integration design is confirmed for the framework''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer wires the risk framework''s reporting, escalation, and mandates into the governance system, and confirms the integration design for commitment.'

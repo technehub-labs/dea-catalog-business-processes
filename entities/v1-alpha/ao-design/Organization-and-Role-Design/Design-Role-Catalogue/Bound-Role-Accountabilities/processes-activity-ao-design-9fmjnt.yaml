@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-34e95r through concluding task processes:task-ao-design-record-d4f56k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Accountability Boundaries of Each Role'
+plain_language_description: 'This activity marks, for every role the catalogue now lists, what that role is answerable for and where its responsibility ends. The defined levels come in last, the accountability boundary of each role is worked out and checked against its neighbours, and the bounded accountabilities are confirmed with the design authority. What is filed leaves no doubt about who owns which piece of work.'
+business_purpose: 'It exists so responsibility between roles is unambiguous, with no gaps where work falls between two roles and no overlaps where both claim it.'
+practical_context: 'It runs late in role catalogue design, once the levels within each family are set, and it closes when the bounded accountabilities are confirmed and their audit record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority draws the accountability line between two adjacent levels so handovers between them are unambiguous, then confirms each role''s boundary with the authority.'

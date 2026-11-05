@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ewvbsh through concluding task processes:task-sd-design-record-b7bar8, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Option Evaluation Criteria'
+plain_language_description: 'Choices are only comparable if everyone agrees on the yardsticks first. Intake registers the drafted options and the space they came from, verification tests each proposed yardstick for fairness, and processing writes the criteria the option set will be scored against. Confirmation circulates the agreed criteria and the records custodian preserves them for the evaluation work that follows.'
+business_purpose: 'It supplies the shared yardsticks that make the later comparison of options fair, transparent and repeatable.'
+practical_context: 'It sits alongside option drafting, opening at intake of the drafted set and closing when the criteria are confirmed and preserved for evaluation.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function pair drafts the scoring yardsticks, tests them against each drafted option with the activity owner, and the confirmation custodian passes the agreed criteria to the colleagues preparing the evaluation scope.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Execute Payments to Plan**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Payable** (`processes:process-fa-operate-wkqaqp`). Its canonical ID is `processes:activity-fa-operate-k9cf3b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pays the approved obligations in the order the plan sets, choosing the right instrument for each settlement. Approved and authorized payments arrive as the worklist, disbursement is executed to the plan's ordering and checked as it goes, and the executed payments are confirmed for the record. Suppliers are paid as promised, by design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so approved supplier obligations are settled on plan, by the right payment instrument.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the payment approvals, working to the payment plan as due dates arrive, and it completes when the executed payments are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A payables custodian runs the approved payments in the plan's due-date order, selecting the settlement instrument each supplier expects, and confirms the executed payments.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Payments to Plan |
+| `plain_language_description` | string | no | This activity pays the approved obligations in the order the plan sets, choosing the right instrument for each … |
+| `business_purpose` | string | no | It exists so approved supplier obligations are settled on plan, by the right payment instrument. |
+| `practical_context` | string | no | It follows the payment approvals, working to the payment plan as due dates arrive, and it completes when the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

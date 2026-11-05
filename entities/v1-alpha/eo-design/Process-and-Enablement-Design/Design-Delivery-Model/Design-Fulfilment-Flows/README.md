@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Design Fulfilment Flows**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Delivery Model** (`processes:process-eo-design-6j5mxp`). Its canonical ID is `processes:activity-eo-design-4wmwgy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the concrete order-to-delivery paths that put the framed fulfilment patterns into practice. The patterns and the channel configurations arrive as the inputs, the flows are designed end to end and checked against both, and the flow designs are confirmed onward. An order's journey from placement to arrival is thereby fully drawn.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the fulfilment patterns conceived earlier become drawable paths an order can actually travel.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the channel configurations and the fulfilment patterns are to hand, and it completes when the flow designs are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer draws each order-to-delivery path through the configured channels, checks the flows honour the framed patterns, and confirms the designs for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Fulfilment Flows |
+| `plain_language_description` | string | no | This activity draws the concrete order-to-delivery paths that put the framed fulfilment patterns into practice. The … |
+| `business_purpose` | string | no | It exists so the fulfilment patterns conceived earlier become drawable paths an order can actually travel. |
+| `practical_context` | string | no | It runs once the channel configurations and the fulfilment patterns are to hand, and it completes when the flow designs … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

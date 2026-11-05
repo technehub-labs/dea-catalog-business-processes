@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-u6xgu5 through concluding task processes:task-sd-operate-record-xxxpyp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Initiative Alignment'
+plain_language_description: 'In-flight work drifts quietly unless someone checks it against the strategy. The monitored performance picture arrives at intake, verification confirms the initiative list is current, and processing weighs each running initiative against what performance and intent say it should be delivering. Confirmation shares the alignment view downstream and the records custodian preserves it for the drift check.'
+business_purpose: 'It keeps the initiative fleet honest, testing each piece of running work against the strategy it was funded to serve.'
+practical_context: 'It opens this process at intake when the monitored performance picture arrives, closing once the alignment view is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst walks each running initiative past the current performance picture, a verification custodian confirms the initiative list matches the portfolio register, and the alignment view goes to the drift check.'

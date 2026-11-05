@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Commit Technology Enablement Approach**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Technology Enablement Approach** (`processes:process-eo-conceive-68mp6v`). Its canonical ID is `processes:activity-eo-conceive-b7qwwb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the platform shortlist, the sourcing ground rules, and the fit findings into one approach and gives it formal standing, ready for architecture design. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed approach is confirmed onward. The enterprise's technology-side thinking is thereby one decision rather than three threads.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds one committed technology enablement approach that platform architecture design must answer to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the technology enablement framing, once families, sourcing principles, and fit findings are framed, and it completes when the committed approach is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the platform shortlist, sourcing principles, and fit findings into the approach document, obtains ratification, and records the committed approach for architecture design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Technology Enablement Approach |
+| `plain_language_description` | string | no | This activity draws the platform shortlist, the sourcing ground rules, and the fit findings into one approach and gives … |
+| `business_purpose` | string | no | It exists so the enterprise holds one committed technology enablement approach that platform architecture design must … |
+| `practical_context` | string | no | It closes the technology enablement framing, once families, sourcing principles, and fit findings are framed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zwzmbd through concluding task processes:task-eo-operate-record-ysevzd, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Stock Accuracy'
+plain_language_description: 'This activity keeps what the system says is on the shelf matching what is actually there, continuously. Variances from counting and discrepancies from operations arrive as the input, positions are reconciled and corrected, and the aligned stock record is confirmed onward. The enterprise''s stock numbers are kept true as a standing condition.'
+business_purpose: 'It exists so production and delivery plan against stock numbers that are true, not approximate.'
+practical_context: 'It runs continuously across warehouse operation, reconciling variances as they arrive, and each reconciliation pass closes when the corrected record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A stock custodian reconciles each variance from the counts and daily operations against the system positions, corrects the record, and confirms the aligned stock picture.'

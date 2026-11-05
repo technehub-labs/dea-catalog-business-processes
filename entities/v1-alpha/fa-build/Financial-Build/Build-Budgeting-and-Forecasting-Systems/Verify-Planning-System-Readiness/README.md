@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Verify Planning System Readiness**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Build Budgeting and Forecasting Systems** (`processes:process-fa-build-92v24c`). Its canonical ID is `processes:activity-fa-build-jwt3uv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the assembled planning toolkit fit for the budget cycle it was built for. The built system comes in with the plan structure and controls as the yardstick, readiness is examined against them, and the readiness determination is confirmed for the operation. The planning cycle is cleared to start only once this says so.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operate budgeting begins on systems proven ready, not on a toolkit that merely finished being built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the planning system build, once models, integrations, and controls are in place, and it completes when the readiness determination is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function verifier examines the built planning toolkit against the plan structure and controls, and confirms the readiness determination for the budget cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Planning System Readiness |
+| `plain_language_description` | string | no | This activity proves the assembled planning toolkit fit for the budget cycle it was built for. The built system comes … |
+| `business_purpose` | string | no | It exists so operate budgeting begins on systems proven ready, not on a toolkit that merely finished being built. |
+| `practical_context` | string | no | It closes the planning system build, once models, integrations, and controls are in place, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

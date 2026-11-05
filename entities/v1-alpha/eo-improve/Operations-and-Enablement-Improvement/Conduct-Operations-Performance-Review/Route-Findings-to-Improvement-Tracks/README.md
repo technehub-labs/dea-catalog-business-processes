@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Route Findings to Improvement Tracks**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Operations Performance Review** (`processes:process-eo-improve-g3ngp3`). Its canonical ID is `processes:activity-eo-improve-zgjqsd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sends each finding on to the improvement track that can act on it — logistics work, asset utilization work, or platform evolution. The formed findings arrive as the dispatch list, each is routed to its acting track with an owner attached, and the routed findings are confirmed onward for commitment. Nothing the review learned is left without a destination.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every review finding reaches the track equipped to act on it, with an owner who knows it is theirs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with owners are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian routes each formed finding to the logistics, asset utilization, or platform track that can act on it, attaches an owner to each, and confirms the routing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Route Findings to Improvement Tracks |
+| `plain_language_description` | string | no | This activity sends each finding on to the improvement track that can act on it — logistics work, asset utilization … |
+| `business_purpose` | string | no | It exists so every review finding reaches the track equipped to act on it, with an owner who knows it is theirs. |
+| `practical_context` | string | no | It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

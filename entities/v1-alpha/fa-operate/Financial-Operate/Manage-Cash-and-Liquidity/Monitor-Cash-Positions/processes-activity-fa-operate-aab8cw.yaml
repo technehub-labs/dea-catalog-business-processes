@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-2pmqb2 through concluding task processes:task-fa-operate-record-372wbm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Cash Positions'
+plain_language_description: 'This activity keeps a live eye on where the cash sits, checked against the treasury rules. Position data arrives continuously across the enterprise''s accounts, the positions are tracked and compared with the policy''s expectations, and any anomaly is flagged onward. Treasury never has to wonder how much money it has.'
+business_purpose: 'It exists so the enterprise knows its cash position at all times and spots departures from policy as they happen.'
+practical_context: 'It runs continuously as positions move, checked against the treasury policy, and each monitored position closes when it is confirmed and any anomaly flagged onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A treasury custodian tracks the cash positions across the accounts through the day, spots a balance drifting outside the treasury policy''s expectations, and flags it onward.'

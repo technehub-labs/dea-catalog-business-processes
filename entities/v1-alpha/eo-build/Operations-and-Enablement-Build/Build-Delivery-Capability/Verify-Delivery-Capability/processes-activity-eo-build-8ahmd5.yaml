@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-j9z3q4 through concluding task processes:task-eo-build-record-pmmudp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Delivery Capability'
+plain_language_description: 'This activity tests the assembled capability end to end against what the operations model calls for. The integrated capability comes in with the service levels, capacity envelopes, and delivery model design as the yardstick, performance is exercised and measured against it, and the verification outcome is confirmed onward. Build confidence is earned here, before anyone depends on the capability.'
+business_purpose: 'It exists so handover to operations happens with proof, not hope, that the capability performs to its design.'
+practical_context: 'It follows integration, when the joined capability is presented for testing, and it completes when the verification outcome is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian exercises the joined capability end to end, measures it against the agreed service levels and capacity envelopes, and confirms the verification outcome for handover.'

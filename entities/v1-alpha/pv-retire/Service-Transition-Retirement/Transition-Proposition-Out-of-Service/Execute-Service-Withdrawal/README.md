@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 
 This is a **Activity** (level L3), named **Execute Service Withdrawal**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Transition Proposition Out of Service** (`processes:process-pv-retire-6us5am`). Its canonical ID is `processes:activity-pv-retire-6hqeys`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Following the agreed plan, the design authority takes the offering out of active reliance - customers and internal users are moved off until nothing operationally depends on it any more. The plan arrives at intake, is verified as current, the withdrawal is executed step by step, confirmed to dependents, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the hands-on half of retirement, turning a paper decision into an offering that is genuinely no longer relied upon.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs between planning and closure in the transition sequence: intake opens on the withdrawal plan's arrival and closure comes when the executed withdrawal is confirmed and its record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the withdrawal plan approved, the proposition design authority registers it at intake, confirms dependencies are unchanged, executes the cutover dates step by step, notifies remaining users at confirmation, and the records custodian preserves the execution trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Service Withdrawal |
+| `plain_language_description` | string | no | Following the agreed plan, the design authority takes the offering out of active reliance - customers and internal … |
+| `business_purpose` | string | no | It is the hands-on half of retirement, turning a paper decision into an offering that is genuinely no longer relied … |
+| `practical_context` | string | no | It runs between planning and closure in the transition sequence: intake opens on the withdrawal plan's arrival and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

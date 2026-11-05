@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Measure Policy Gaps**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Improve Policy and Control Framework** (`processes:process-ge-improve-u3g5dh`). Its canonical ID is `processes:activity-ge-improve-5hkh35`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sizes the policy gaps that audit findings and day-to-day evidence have brought to light. The findings and compliance evidence arrive as the material, each gap is measured and entered into a bounded register, and the measured gaps are confirmed onward for the standards work. Governance improves by measurement, not by impression.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework's improvements start from gaps that are measured and registered, not sensed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the framework improvement when audit findings or policy gaps surface, and it completes once the measured gap register is confirmed onward for the standards update.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst sizes each policy gap the audit findings and operating evidence have surfaced, enters it in the bounded register, and confirms the gaps onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Policy Gaps |
+| `plain_language_description` | string | no | This activity sizes the policy gaps that audit findings and day-to-day evidence have brought to light. The findings and … |
+| `business_purpose` | string | no | It exists so the framework's improvements start from gaps that are measured and registered, not sensed. |
+| `practical_context` | string | no | It opens the framework improvement when audit findings or policy gaps surface, and it completes once the measured gap … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

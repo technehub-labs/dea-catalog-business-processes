@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Shipments**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Logistics** (`processes:process-eo-operate-zh9m57`). Its canonical ID is `processes:activity-eo-operate-cc82cs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the plan on the road: goods are picked up, moved through the network, and delivered as planned. The planned shipments arrive as the worklist, vehicles and carriers run the movements, and each executed shipment is confirmed for the record. The delivery model's promises are kept here, in physical motion.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the network physically moves goods as its plan says, delivering what was promised to whom it was promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the shipment plan as each movement falls due, and it closes when each executed shipment is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A logistics crew runs each planned shipment — pickup, line-haul, delivery — with the network's vehicles and carriers, and confirms each executed movement for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Shipments |
+| `plain_language_description` | string | no | This activity puts the plan on the road: goods are picked up, moved through the network, and delivered as planned. The … |
+| `business_purpose` | string | no | It exists so the network physically moves goods as its plan says, delivering what was promised to whom it was promised. |
+| `practical_context` | string | no | It runs against the shipment plan as each movement falls due, and it closes when each executed shipment is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

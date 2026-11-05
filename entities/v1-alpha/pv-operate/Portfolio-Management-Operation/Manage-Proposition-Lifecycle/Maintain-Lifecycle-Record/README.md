@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Maintain Lifecycle Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Proposition Lifecycle** (`processes:process-pv-operate-cau4gv`). Its canonical ID is `processes:activity-pv-operate-89v5ty`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every transition and gate decision is written into the lifecycle record, so at any moment product management can see where each offering stands and how it got there. New events arrive at intake, are checked, applied to the record, confirmed, and the update trail is preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps a faithful running history of each proposition's journey through its stages, the reference everyone relies on for position and precedent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It operates continuously through lifecycle management: intake opens as transitions and gate decisions land, and closure comes when the refreshed record and audit trail are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a gate advance is executed, the product management record keeper registers the event at intake, applies it to the proposition's history at processing, confirms the updated stage account to the team, and hands the trail to the records custodian.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Lifecycle Record |
+| `plain_language_description` | string | no | Every transition and gate decision is written into the lifecycle record, so at any moment product management can see … |
+| `business_purpose` | string | no | It keeps a faithful running history of each proposition's journey through its stages, the reference everyone relies on … |
+| `practical_context` | string | no | It operates continuously through lifecycle management: intake opens as transitions and gate decisions land, and closure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

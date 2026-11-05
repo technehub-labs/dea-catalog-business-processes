@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Assemble Assurance Evidence**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Conduct Assurance Review** (`processes:process-ge-operate-zwaes5`). Its canonical ID is `processes:activity-ge-operate-x79d9p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers in the evidence the assurance work will need, from wherever it lives. The cycle or mandate arrives as the specification, evidence is assembled against it and checked for completeness, and the assembled set is confirmed onward for the measurement. Assurance starts from everything it needs, in one place.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assurance examines a complete evidence base rather than whatever happens to be at hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the assurance review when a cycle or audit mandate arrives, and it completes once the assembled evidence is confirmed onward for the measurement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function custodian gathers the evidence an assurance cycle requires from its scattered sources, checks the set for completeness, and confirms it for measurement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Assurance Evidence |
+| `plain_language_description` | string | no | This activity gathers in the evidence the assurance work will need, from wherever it lives. The cycle or mandate … |
+| `business_purpose` | string | no | It exists so assurance examines a complete evidence base rather than whatever happens to be at hand. |
+| `practical_context` | string | no | It opens the assurance review when a cycle or audit mandate arrives, and it completes once the assembled evidence is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

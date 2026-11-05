@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Stand Up Finance Function**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Secure Funding Facilities** (`processes:process-fa-build-ydnzjc`). Its canonical ID is `processes:activity-fa-build-xf2kdw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity recruits and organizes the team that will run the secured funding arrangements and the financial systems day to day. The treasury operating model and plan structure arrive as the design of the function, people are brought in and roles assigned against them, and the stood-up function is confirmed onward for the module deployment. The enterprise's money acquires hands to hold it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the secured facilities and financial systems have a real, organized function to operate them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the funding documentation, when the treasury operating model and plan structure are to hand, and it completes once the stood-up finance function is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function lead staffs and organizes the team to the treasury operating model, assigns the roles the plan structure implies, and confirms the stood-up function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stand Up Finance Function |
+| `plain_language_description` | string | no | This activity recruits and organizes the team that will run the secured funding arrangements and the financial systems … |
+| `business_purpose` | string | no | It exists so the secured facilities and financial systems have a real, organized function to operate them. |
+| `practical_context` | string | no | It follows the funding documentation, when the treasury operating model and plan structure are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

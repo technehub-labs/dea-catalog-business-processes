@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-aqbrm7 through concluding task processes:task-sd-improve-record-x6w3d7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Gather Objective Performance Evidence'
+plain_language_description: 'Before objectives can be judged, the facts about them must be brought together. The monitored performance picture arrives at intake, verification checks each item is complete and attributable, and processing assembles the evidence relevant to the measures the enterprise is currently working to. Confirmation shares the gathered evidence downstream and the records custodian preserves it for the fit assessment.'
+business_purpose: 'It puts a complete, checked evidence base behind the refresh, so judgements about the current measures rest on facts rather than impressions.'
+practical_context: 'It opens this process at intake when the monitored performance picture is presented, closing once the gathered evidence is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst collects the monitored performance figures bearing on each current measure, a verification custodian confirms sources and completeness, and the confirmation custodian releases the evidence pack to the fit assessment.'

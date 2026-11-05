@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Review Strategic Plan**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Plan** (`processes:process-sd-build-q4nf9g`). Its canonical ID is `processes:activity-sd-build-mttqvf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Someone now reads the assembled plan with a sceptical eye. Intake brings the document in, verification tests it line by line against the direction the enterprise chose and the version it was scoped to, and any gaps go back for rework. Once the scrutiny is satisfied, confirmation records the outcome and the reviewed plan is kept with its audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It protects the process from committing a plan that quietly drifts from the direction and scope leadership actually approved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens straight after assembly, opening at intake of the drafted document and closing when the review verdict is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Two strategy function reviewers sit down with the assembled plan, tick each section against the approved direction and version scope, and raise one chapter for rework; after the fix, the confirmation custodian records the verdict and the records custodian archives the reviewed document.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review Strategic Plan |
+| `plain_language_description` | string | no | Someone now reads the assembled plan with a sceptical eye. Intake brings the document in, verification tests it line by … |
+| `business_purpose` | string | no | It protects the process from committing a plan that quietly drifts from the direction and scope leadership actually … |
+| `practical_context` | string | no | It happens straight after assembly, opening at intake of the drafted document and closing when the review verdict is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-bd7mef through concluding task processes:task-ao-operate-record-37xp45, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve the Collaboration Frictions'
+plain_language_description: 'This activity takes the frictions that surface in cross-team work and works them through to resolution. The facilitated interactions arrive as the source, each friction is examined and settled against the agreed norms, and the resolutions are confirmed and filed. Left alone, such frictions accumulate; here they are cleared while they are still small.'
+business_purpose: 'It exists so friction between teams and agents is settled early, before it accumulates into disruption of day-to-day service.'
+practical_context: 'It happens when facilitated cross-team work surfaces a friction, and it closes once each resolution is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian settles a handoff disagreement between a team and the team owning an artificial agent, lands the resolution within the agreed norms, and files it for the record.'

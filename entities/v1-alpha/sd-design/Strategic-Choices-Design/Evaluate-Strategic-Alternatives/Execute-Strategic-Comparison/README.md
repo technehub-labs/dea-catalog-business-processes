@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Execute Strategic Comparison**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Evaluate Strategic Alternatives** (`processes:process-sd-design-ed7jd5`). Its canonical ID is `processes:activity-sd-design-dgkmm5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Now the options go head to head. Intake registers the scoped alternatives and their yardsticks, verification checks every option is scored on the same basis, and processing runs the comparison and records the results for each pairing. Confirmation communicates the outcome table to downstream colleagues and the records custodian preserves the results for the preference step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It produces the like-for-like results the preference decision rests on, replacing instinct with a scored comparison.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the evaluation scope is set, opening at intake of the scoped options and criteria and closing when the results are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function analysts score each option against the agreed yardsticks, a verification custodian confirms every option was judged on the same basis, and the confirmation custodian circulates the comparison results to the preference team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Strategic Comparison |
+| `plain_language_description` | string | no | Now the options go head to head. Intake registers the scoped alternatives and their yardsticks, verification checks … |
+| `business_purpose` | string | no | It produces the like-for-like results the preference decision rests on, replacing instinct with a scored comparison. |
+| `practical_context` | string | no | It runs once the evaluation scope is set, opening at intake of the scoped options and criteria and closing when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

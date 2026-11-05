@@ -1,0 +1,402 @@
+{
+  "processes:activity-ge-activate-hcg5s8": {
+    "plain_language_name": "Verify Commencement Conditions",
+    "plain_language_description": "This activity checks that everything the instrument demanded before coming alive — its preconditions and its procedural steps — has actually happened. The adopted instrument arrives with its commencement provisions, each is verified against what has been done, and the verified readiness is confirmed onward for the act of commencement. Nothing takes force on hope; it takes force on proof.",
+    "business_purpose": "It exists so an instrument only comes into force once its own conditions for doing so are demonstrably met.",
+    "practical_context": "It opens the commencement when an adopted policy instrument, mandate, or charter's conditions are said to be met, and it completes once the verified readiness is confirmed for the act of commencement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer walks the adopted instrument's commencement provisions one by one, confirms each precondition has been discharged, and hands the verified readiness to the commencement step."
+    }
+  },
+  "processes:activity-ge-activate-mqvn32": {
+    "plain_language_name": "Effect Instrument Commencement",
+    "plain_language_description": "This activity performs the deed that switches the instrument on — publishing it, proclaiming it, or letting its effective date arrive. The verified readiness arrives as the authority to act, the commencement act is executed in its proper form, and the instrument in force is confirmed onward. A document becomes a binding instrument at this exact step.",
+    "business_purpose": "It exists so the instrument's force begins through a deliberate, properly executed act rather than by accident of the calendar.",
+    "practical_context": "It follows the readiness verification, once every precondition is proven met, and it completes when the instrument in force is confirmed onward for communication and enforcement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With readiness verified, an operations function officer publishes the instrument in its prescribed form, executes the commencement act, and confirms the instrument now in force."
+    }
+  },
+  "processes:activity-ge-activate-6uwq7f": {
+    "plain_language_name": "Communicate Obligations and Rights",
+    "plain_language_description": "This activity tells everyone the new instrument binds what it now requires of them and what it gives them in return. The instrument in force arrives as the source of the message, each bound party is notified of its obligations, rights, and duties, and the notified parties are confirmed onward. Nobody can later claim they were not told.",
+    "business_purpose": "It exists so every bound party knows its obligations and rights under the instrument from the moment it takes force.",
+    "practical_context": "It runs as the instrument takes force, working from the instrument's own terms, and it completes once the bound parties are notified and their notification confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer notifies each bound party of the duties and rights the newly forced instrument gives them, and confirms the notifications onward for the enforcement baseline."
+    }
+  },
+  "processes:activity-ge-activate-pm38pv": {
+    "plain_language_name": "Establish Enforcement Baseline",
+    "plain_language_description": "This activity takes a reading of where compliance stands as the instrument comes alive, and readies the machinery for watching and enforcing it. The forced instrument and its notified parties arrive as the state to be measured, the baseline is established and the mechanisms armed, and the armed baseline is confirmed for the instrument's operating life. From here, the instrument has teeth and a starting line.",
+    "business_purpose": "It exists so enforcement of the new instrument starts from a known compliance position with working machinery behind it.",
+    "practical_context": "It runs once the instrument is in force and its parties notified, and it completes when the armed enforcement and compliance baseline is established and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer measures where compliance stands at commencement, arms the monitoring and enforcement machinery, and confirms the baseline for the instrument's operating life."
+    }
+  },
+  "processes:activity-ge-build-2je2u9": {
+    "plain_language_name": "Codify Charters",
+    "plain_language_description": "This activity writes the founding documents of the boards and committees about to be stood up. The governance system design arrives as the mandate of record, each charter is codified from it and checked against what the design intended, and the codified charters are confirmed onward for publication. A body's authority begins in the document this activity produces.",
+    "business_purpose": "It exists so every governance body is founded on a written charter matching its designed mandate.",
+    "practical_context": "It runs while governance bodies are being established and their documents must exist for them to operate, and it completes once the codified charters are confirmed onward for publication.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board officer codifies each designed body's mandate into its operative charter, checks the text against the governance system design, and confirms the charters for publication."
+    }
+  },
+  "processes:activity-ge-build-f5yeny": {
+    "plain_language_name": "Codify Policies",
+    "plain_language_description": "This activity turns the committed policy designs into operative documents. The policy and control designs arrive as the source, each policy is codified into its operative form and checked against its design, and the codified policies are confirmed onward for publication. What the designers intended becomes what the enterprise can read and follow.",
+    "business_purpose": "It exists so designed policies exist as operative documents, not as intentions in a design file.",
+    "practical_context": "It runs while the governance build assembles the bodies' instruments, working from the policy and control designs, and it completes once the codified policies are confirmed onward for publication.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer codifies each committed policy design into its operative document form, checks the text against the design, and confirms the policies for publication."
+    }
+  },
+  "processes:activity-ge-build-cdd75w": {
+    "plain_language_name": "Codify Standard Artifacts",
+    "plain_language_description": "This activity prepares the supporting companions — templates, procedure references, and guidance — that make the charters and policies usable. The policy and control designs arrive as the source, the standard artefacts are codified from them and checked, and the codified set is confirmed onward for publication. Rules alone do not run an enterprise; its working companions do.",
+    "business_purpose": "It exists so charters and policies arrive accompanied by the practical artefacts that make them operational.",
+    "practical_context": "It runs alongside the charter and policy codification, drawing on the policy and control designs, and it completes once the codified standard artefacts are confirmed onward for publication.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer codifies the templates, procedure references, and guidance supporting the new instruments, checks them against the designs, and confirms the set for publication."
+    }
+  },
+  "processes:activity-ge-build-fzx549": {
+    "plain_language_name": "Publish Codified Instruments",
+    "plain_language_description": "This activity puts the finished documents where the bodies and the wider enterprise can actually reach them. The freshly codified instruments arrive as the stock to release, publication is executed and access verified, and the published instruments are confirmed onward for the bodies' use. Governing by document requires the document to be findable.",
+    "business_purpose": "It exists so codified instruments are genuinely accessible to the bodies and people meant to operate under them.",
+    "practical_context": "It closes the codification once the instruments are codified, and it completes when the published, accessible instruments are confirmed onward to the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer publishes the codified charters, policies, and standards to where the bodies can reach them, verifies access works, and confirms the publication."
+    }
+  },
+  "processes:activity-ge-build-tp3aba": {
+    "plain_language_name": "Constitute Bodies",
+    "plain_language_description": "This activity brings the designed boards and committees formally into existence. The design of the governance system, freshly committed, arrives as the blueprint, each body is constituted per its designed mandate with members appointed, and the constituted bodies are confirmed onward for equipping. Governance stops being a diagram and becomes named bodies with people in them.",
+    "business_purpose": "It exists so the governance system's designed bodies exist formally, with their memberships in place.",
+    "practical_context": "It opens the body establishment once a governance system design has been committed, and it completes as each constituted body is confirmed onward for equipping and its first cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board officer constitutes each designed board and committee, appointing the members its mandate requires, and confirms the constituted bodies onward."
+    }
+  },
+  "processes:activity-ge-build-p29x52": {
+    "plain_language_name": "Equip Bodies with Instruments",
+    "plain_language_description": "This activity hands each stood-up body the documents it will govern by — its charter, the policies, and the supporting standards. The published instruments arrive as the equipment, each body is equipped with its own set and checked against what its mandate requires, and the equipped bodies are confirmed onward for their cycles. A body without its instruments is a name without authority.",
+    "business_purpose": "It exists so every constituted body holds the actual documents it is meant to operate under.",
+    "practical_context": "It follows the constitution and publication of instruments, and it completes once each equipped body is confirmed onward for its operating cycles.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer hands each constituted body its charter, the applicable policies, and the supporting standards, checks the set against the body's mandate, and confirms the equipping."
+    }
+  },
+  "processes:activity-ge-build-5cjpnx": {
+    "plain_language_name": "Establish Operating Cycles",
+    "plain_language_description": "This activity sets the rhythm of meetings the newly constituted bodies will keep — when they gather, how often, on what standing order. The equipped bodies arrive with their charters as the guide, each body's convening cycle is established and checked against it, and the established cycles are confirmed onward for readiness. Governance acquires its heartbeat here.",
+    "business_purpose": "It exists so governance bodies convene on a designed, regular rhythm instead of gathering only when pressed.",
+    "practical_context": "It follows the equipping of bodies, working from their charters, and it completes once each body's established operating cycle is confirmed onward for the readiness verification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer sets each body's meeting rhythm from its charter — cadence, standing agenda, convening rules — and confirms the established cycles onward."
+    }
+  },
+  "processes:activity-ge-build-epqkej": {
+    "plain_language_name": "Verify Body Readiness",
+    "plain_language_description": "This activity proves the stood-up bodies can actually gather and use the decision rights the design gave them. The established bodies arrive with the governance system design as the yardstick, readiness is examined body by body, and the readiness determination is confirmed for their operation. Governance goes live only when its bodies have proven they can govern.",
+    "business_purpose": "It exists so governance bodies start operating proven able to convene and decide as designed.",
+    "practical_context": "It closes the body establishment once bodies are constituted, equipped, and cycling, and it completes when the readiness determination is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function verifier checks each established body can convene on its cycle and exercise its designed decision rights, and confirms the readiness determination for operation."
+    }
+  },
+  "processes:activity-ge-build-3nk745": {
+    "plain_language_name": "Establish Risk Registers",
+    "plain_language_description": "This activity stands up the registers where risks will be logged, taking their structure from the taxonomy and scales as designed. The approved risk framework design arrives as the blueprint, registers are established and populated in its shape, and the operating registers are confirmed onward for the tooling. Risk acquires its formal home.",
+    "business_purpose": "It exists so enterprise risks have their designed home — registers structured to the taxonomy and scales.",
+    "practical_context": "It opens the risk apparatus build once the risk framework design is approved for build, and it completes as the operating registers are confirmed onward for the tooling and reporting work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer stands up the risk registers in the shape the designed taxonomy and scales give them, and confirms the operating registers onward."
+    }
+  },
+  "processes:activity-ge-build-459rn2": {
+    "plain_language_name": "Deploy Monitoring Tooling",
+    "plain_language_description": "This activity puts the watching machinery in place that the control apparatus will run on. The control objectives and the compliance regime design arrive as the requirements, the monitoring tooling is deployed against them and checked, and the deployed tooling is confirmed onward for readiness. Controls without watchmen are just words; this gives them watchmen.",
+    "business_purpose": "It exists so the control apparatus has working monitoring tooling behind its objectives and regime.",
+    "practical_context": "It runs alongside the registers, drawing on the control objectives and compliance regime design, and it completes once the deployed tooling is confirmed onward for readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer deploys the monitoring tooling against the control objectives and the compliance regime design, checks it runs, and confirms the deployment onward."
+    }
+  },
+  "processes:activity-ge-build-tj3qj3": {
+    "plain_language_name": "Establish Reporting Lines",
+    "plain_language_description": "This activity draws the channels by which risk and control news reaches the bodies that govern. The governance integration design arrives as the wiring diagram, reporting lines are established from apparatus to bodies and checked against it, and the established lines are confirmed onward for readiness. Risk seen but unreported is risk unmanaged; this closes that gap.",
+    "business_purpose": "It exists so what the risk apparatus sees reliably reaches the bodies charged with acting on it.",
+    "practical_context": "It runs alongside the registers and tooling, working from the governance integration design, and it completes once the established reporting lines are confirmed onward for readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function officer draws the reporting channels from the apparatus up to the governing bodies per the integration design, and confirms the established lines onward."
+    }
+  },
+  "processes:activity-ge-build-ptnpmg": {
+    "plain_language_name": "Verify Apparatus Readiness",
+    "plain_language_description": "This activity proves the assembled machinery — registers, tooling, and reporting lines — fit to start operating. The established apparatus arrives with the risk framework design as the yardstick, readiness is examined against it, and the determination is confirmed for the operate context. Risk management goes live on proof, not on assumption.",
+    "business_purpose": "It exists so the risk and control apparatus starts operating proven complete against its design.",
+    "practical_context": "It closes the apparatus build once registers, tooling, and reporting lines are in place, and it completes when the readiness determination is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function verifier examines the established registers, tooling, and reporting lines against the framework design, and confirms the readiness determination for operation."
+    }
+  },
+  "processes:activity-ge-conceive-b82hdf": {
+    "plain_language_name": "Articulate Risk Appetite",
+    "plain_language_description": "This activity states how much risk the enterprise is willing to carry, as the governance mandate calls for. The mandate arrives as the frame, the appetite is articulated within it and reviewed with those accountable, and the articulated appetite is confirmed onward for the tolerance work. How brave the enterprise intends to be becomes a declared fact.",
+    "business_purpose": "It exists so the enterprise's risk-taking has a declared appetite, stated by those accountable for it.",
+    "practical_context": "It opens the risk direction framing when a governance mandate requires an enterprise risk posture, and it completes once the articulated appetite is confirmed for the tolerance work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board lead articulates, within the governance mandate's frame, how much risk the enterprise will carry, and confirms the stated appetite for the tolerance work."
+    }
+  },
+  "processes:activity-ge-conceive-yucnbe": {
+    "plain_language_name": "Define Tolerance Bands",
+    "plain_language_description": "This activity marks how far actual risk may swing either side of the appetite before anyone must act. The articulated appetite arrives as the centre line, tolerance bands are drawn around it and checked for realism, and the band set is confirmed onward for the posture work. The appetite gains its margins of tolerance here.",
+    "business_purpose": "It exists so acceptable variation around the appetite is defined in advance, not debated after the fact.",
+    "practical_context": "It follows the appetite articulation, working around the stated appetite, and it completes once the tolerance band set is confirmed for the posture framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board lead marks the bands of acceptable variation either side of the stated appetite, checks they are realistic, and confirms the band set onward."
+    }
+  },
+  "processes:activity-ge-conceive-8nxptt": {
+    "plain_language_name": "Frame Governance Posture for Risk",
+    "plain_language_description": "This activity settles how governance will actually carry the risk stance — how it engages, supervises, and enforces it. The appetite and bands arrive as the stance to be carried, the posture is framed around them and reviewed for workability, and the framed posture is confirmed onward for the direction's commitment. A risk position without a way of governing it is just a mood.",
+    "business_purpose": "It exists so the declared risk stance comes with a governance way of carrying it.",
+    "practical_context": "It follows the appetite and bands, when the stance is complete but not yet actionable, and it completes once the framed governance posture is confirmed for the direction's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead frames how governance will engage, supervise, and enforce the stated risk stance, and confirms the framed posture for the direction's commitment."
+    }
+  },
+  "processes:activity-ge-conceive-j72hwy": {
+    "plain_language_name": "Commit Risk Framework Direction",
+    "plain_language_description": "This activity draws the appetite, the bands, and the posture together into one committed direction. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed direction is confirmed as the strategic basis for the framework design. The enterprise's risk stance becomes one owned decision.",
+    "business_purpose": "It exists so risk framework design starts from one committed direction rather than three separate framings.",
+    "practical_context": "It closes the risk direction framing, once appetite, bands, and posture are framed, and it completes when the committed direction is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the appetite, tolerance bands, and governance posture into the direction document, obtains ratification, and records the committed direction for framework design."
+    }
+  },
+  "processes:activity-ge-conceive-tkk9rz": {
+    "plain_language_name": "Bound Policy Scope",
+    "plain_language_description": "This activity draws the boundary of what the new instrument — a policy regime, a charter, or a board mandate — will cover, and just as firmly what it will not. The governance strategy, regulatory requirement, or reorganisation arrives as the reason for the initiative, the scope is bounded against it, and the bounded scope is confirmed onward for the authority proposals. Instruments that try to govern everything end up governing nothing well.",
+    "business_purpose": "It exists so a new instrument knows precisely what it governs, and what it deliberately leaves alone.",
+    "practical_context": "It opens the policy and charter initiation when a new governance strategy, regulatory requirement, or reorganisation demands an instrument, and it completes once the bounded scope is confirmed for the authority proposals.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board lead bounds what the new policy regime will and will not cover against the regulatory requirement behind it, and confirms the scope for the authority proposals."
+    }
+  },
+  "processes:activity-ge-conceive-hsg4tn": {
+    "plain_language_name": "Propose Authority and Decision Rights",
+    "plain_language_description": "This activity sets out who may decide what under the new instrument, proposing its authority and its rights. The bounded scope arrives as the territory to be empowered, authority and decision rights are proposed within it and reviewed for sense, and the proposals are confirmed onward for the drafting. The instrument's teeth are sketched here, before they are cast.",
+    "business_purpose": "It exists so the instrument's power — who decides what — is proposed deliberately before the document is written.",
+    "practical_context": "It follows the scope bounding, working within the bounded territory, and it completes once the proposed authority and decision rights are confirmed for the drafting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board lead proposes who may decide what under the bounded instrument, reviews the authority and rights for sense, and confirms the proposals for the drafting."
+    }
+  },
+  "processes:activity-ge-conceive-g7nxw2": {
+    "plain_language_name": "Draft Initial Policy Document",
+    "plain_language_description": "This activity writes the first version of the document, drawing the proposed scope and proposed authority together into one text. The bounded scope and the authority proposals arrive as its content, the initial document is drafted and reviewed as a whole, and the drafted document is confirmed onward for commitment. The instrument takes its first written body here.",
+    "business_purpose": "It exists so the initiative's proposals become one coherent first document rather than loose notes.",
+    "practical_context": "It follows the scope and authority proposals, when both are confirmed, and it completes once the drafted initial document is confirmed onward for commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer writes the first version of the instrument from the bounded scope and the authority proposals, and confirms the drafted document for commitment."
+    }
+  },
+  "processes:activity-ge-conceive-5j83mc": {
+    "plain_language_name": "Commit Policy Initiation",
+    "plain_language_description": "This activity gives the assembled first document its formal commitment, moving the initiative on toward design and codification. The drafted document arrives as the candidate, commitment is given by those sponsoring the initiative, and the committed initiation is confirmed for the design work. The instrument now officially exists as a work in progress with backing.",
+    "business_purpose": "It exists so the initiative proceeds to design with a committed document behind it, not a loose draft.",
+    "practical_context": "It closes the initiation once the initial document is drafted, and it completes when the committed initiation is confirmed for the design and codification stages.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governing board sponsor commits the drafted initial policy and charter document, and the confirmation moves the initiative on toward design and codification."
+    }
+  },
+  "processes:activity-ge-design-r9wz2r": {
+    "plain_language_name": "Articulate Governance Bodies",
+    "plain_language_description": "This activity names and sketches each board, committee, and other body the governance system will consist of. The committed governance strategy arrives as the source, the body inventory is articulated from it and reviewed for coverage, and the articulated bodies are confirmed onward for the delegation work. The system's cast of characters is settled first.",
+    "business_purpose": "It exists so governance design starts by settling exactly which bodies the system comprises.",
+    "practical_context": "It opens the governance system design once a governance strategy has been committed, and it completes when the articulated body inventory is confirmed for the delegation design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer names and sketches each board, committee, and other body the strategy calls for, and confirms the articulated inventory for the delegation design."
+    }
+  },
+  "processes:activity-ge-design-ry86fn": {
+    "plain_language_name": "Design Authority Delegations",
+    "plain_language_description": "This activity works out how authority passes down from mandate to body to role across the named bodies. The articulated inventory arrives as the structure to be empowered, delegations are designed along its lines and checked for gaps, and the delegation design is confirmed onward for the decision rights. Authority stops being assumed and starts being traced.",
+    "business_purpose": "It exists so every scrap of governing authority has a designed, traceable path to the body holding it.",
+    "practical_context": "It follows the body articulation, when the inventory is confirmed, and it completes once the delegation design is confirmed for the decision rights specification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer traces how authority flows from mandate through each named body down to its roles, and confirms the delegation design for the decision rights."
+    }
+  },
+  "processes:activity-ge-design-sy338w": {
+    "plain_language_name": "Specify Decision Rights",
+    "plain_language_description": "This activity settles who gets to decide what, and with whose consultation, under the delegations just designed. The delegation design arrives as the frame, decision rights are specified body by body and role by role, and the specification is confirmed onward for the system's commitment. Every consequential question gains a named owner.",
+    "business_purpose": "It exists so every decision the governance system exists to make has a designed, named owner.",
+    "practical_context": "It follows the delegation design, when the flows of authority are in hand, and it completes once the decision rights specification is confirmed for the system's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer settles who decides what, and with whose consultation, under the designed delegations, and confirms the specification for commitment."
+    }
+  },
+  "processes:activity-ge-design-6xmeft": {
+    "plain_language_name": "Commit Governance System Design",
+    "plain_language_description": "This activity draws the articulated bodies, the delegations, and the decision rights together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the establishment build. The enterprise's governance shape becomes one owned decision.",
+    "business_purpose": "It exists so governance establishment starts from one committed system design rather than three sketches.",
+    "practical_context": "It closes the governance system design, once bodies, delegations, and rights are designed, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the body inventory, delegation design, and decision rights specification into the system design document, obtains ratification, and records the commitment."
+    }
+  },
+  "processes:activity-ge-design-ka3nqz": {
+    "plain_language_name": "Design Policy Artifacts",
+    "plain_language_description": "This activity turns the charters already committed and the initiated policy documents into designed artefacts ready for codification. The initiated policies and the governance system design arrive as the sources, artefact designs are produced from them and checked against both, and the designs are confirmed onward for the control objectives. Policy intent gains designed form here.",
+    "business_purpose": "It exists so committed charters and initiated policies become designed artefacts that codification can work from.",
+    "practical_context": "It opens the policy and control design once the governance system is designed, and it completes when the policy artefact designs are confirmed for the control objectives.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer turns the committed charters and initiated policies into designed artefacts, checks them against the governance system design, and confirms them onward."
+    }
+  },
+  "processes:activity-ge-design-ewsksx": {
+    "plain_language_name": "Define Control Objectives",
+    "plain_language_description": "This activity states what each control must achieve for the designed policies to hold. The policy artefact designs arrive with the tolerance bands as the frame, objectives are defined against both and checked for coverage, and the objective set is confirmed onward for the compliance regime. Every policy gains the controls it deserves, stated as outcomes first.",
+    "business_purpose": "It exists so controls are designed against stated outcomes rather than invented mechanisms.",
+    "practical_context": "It follows the artefact designs, when the designs and tolerance bands are to hand, and it completes once the control objective set is confirmed for the compliance regime.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer states the outcome each control must achieve for the designed policies to hold within the tolerance bands, and confirms the objective set."
+    }
+  },
+  "processes:activity-ge-design-jrb5hw": {
+    "plain_language_name": "Design Compliance Regime",
+    "plain_language_description": "This activity works out how compliance will be produced and verified — attestations, monitoring, and the consequences of stepping out of line. The policy artefacts and control objectives arrive as the things to be enforced, the regime is designed around them and reviewed for teeth, and the regime design is confirmed onward for the design's commitment. Policies gain their enforcement machinery here.",
+    "business_purpose": "It exists so the enterprise's policies and controls come with a designed regime that actually enforces them.",
+    "practical_context": "It follows the objectives definition, when the artefacts and objectives are to hand, and it completes once the compliance regime design is confirmed for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer designs the attestations, monitoring, and consequence structure enforcing the policies and objectives, and confirms the regime design for commitment."
+    }
+  },
+  "processes:activity-ge-design-t3muvd": {
+    "plain_language_name": "Commit Policy and Control Design",
+    "plain_language_description": "This activity draws the policy artefacts, the control objectives, and the regime enforcing them together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for codification and build. Governance's rulebook design becomes one owned decision.",
+    "business_purpose": "It exists so codification and build start from one committed policy and control design.",
+    "practical_context": "It closes the policy and control design, once artefacts, objectives, and regime are designed, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the policy artefacts, control objectives, and compliance regime into the design document, obtains ratification, and records the commitment for codification."
+    }
+  },
+  "processes:activity-ge-design-q5tqn5": {
+    "plain_language_name": "Design Risk Taxonomy",
+    "plain_language_description": "This activity sorts the enterprise's risks into their named classes, following the committed direction. The committed direction arrives as the ordering principle, the taxonomy is designed from it and reviewed for coverage, and the taxonomy is confirmed onward for the assessment scales. Every risk the enterprise faces gains its proper drawer.",
+    "business_purpose": "It exists so enterprise risks are classified by designed structure rather than ad hoc naming.",
+    "practical_context": "It opens the risk framework design once the risk direction is committed, and it completes when the designed taxonomy is confirmed for the assessment scales.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer sorts the enterprise's risks into named classes per the committed direction, reviews the taxonomy for coverage, and confirms it onward."
+    }
+  },
+  "processes:activity-ge-design-fwc3b2": {
+    "plain_language_name": "Design Assessment Scales",
+    "plain_language_description": "This activity builds the measuring sticks — likelihood, impact, and velocity — by which classified risks will be judged. The designed taxonomy arrives with the tolerance bands as the frame, the scales are designed against both and checked for usability, and the scale set is confirmed onward for the governance integration. Risk becomes measurable on designed instruments.",
+    "business_purpose": "It exists so classified risks are measured on designed, consistent scales rather than on feeling.",
+    "practical_context": "It follows the taxonomy design, when the taxonomy and tolerance bands are to hand, and it completes once the assessment scale set is confirmed for the governance integration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer builds the likelihood, impact, and velocity scales against the taxonomy and tolerance bands, and confirms the scale set for the integration."
+    }
+  },
+  "processes:activity-ge-design-u5gpsy": {
+    "plain_language_name": "Design Governance Integration",
+    "plain_language_description": "This activity wires the risk machinery into the governance system — where it reports, how it escalates, and which body mandates carry it. The governance system design and the taxonomy and scales arrive as the two sides to join, the integration is designed and checked along both, and the integration design is confirmed onward for the framework's commitment. Risk that cannot reach its governors is merely observed, not governed.",
+    "business_purpose": "It exists so the risk framework plugs into the governance system by designed lines rather than by hope.",
+    "practical_context": "It follows the taxonomy and scales, when both and the governance system design are to hand, and it completes once the integration design is confirmed for the framework's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A governance design authority designer wires the risk framework's reporting, escalation, and mandates into the governance system, and confirms the integration design for commitment."
+    }
+  },
+  "processes:activity-ge-design-feyvse": {
+    "plain_language_name": "Commit Risk Framework Design",
+    "plain_language_description": "This activity draws the taxonomy, the scales, and the integration wiring together into one committed framework design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the apparatus build. The enterprise's way of knowing its risks becomes one owned design.",
+    "business_purpose": "It exists so risk apparatus build starts from one committed framework design rather than three pieces.",
+    "practical_context": "It closes the risk framework design, once taxonomy, scales, and integration are designed, and it completes when the committed design is confirmed and approved for build.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the taxonomy, scales, and integration design into the framework document, obtains ratification, and records the approval for the apparatus build."
+    }
+  },
+  "processes:activity-ge-improve-5hkh35": {
+    "plain_language_name": "Measure Policy Gaps",
+    "plain_language_description": "This activity sizes the policy gaps that audit findings and day-to-day evidence have brought to light. The findings and compliance evidence arrive as the material, each gap is measured and entered into a bounded register, and the measured gaps are confirmed onward for the standards work. Governance improves by measurement, not by impression.",
+    "business_purpose": "It exists so the framework's improvements start from gaps that are measured and registered, not sensed.",
+    "practical_context": "It opens the framework improvement when audit findings or policy gaps surface, and it completes once the measured gap register is confirmed onward for the standards update.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function analyst sizes each policy gap the audit findings and operating evidence have surfaced, enters it in the bounded register, and confirms the gaps onward."
+    }
+  },
+  "processes:activity-ge-improve-a7mqxm": {
+    "plain_language_name": "Update Policy Standards",
+    "plain_language_description": "This activity revises the policy standards so each measured gap finds its correction. The measured gaps arrive against the codified instruments as they stand, the standards are updated to close what was found, and the updated standards are confirmed onward for the posture work. The rulebook is amended where the evidence pointed.",
+    "business_purpose": "It exists so the framework's standards are amended exactly where measured gaps showed them wanting.",
+    "practical_context": "It follows the gap measurement, working from the register against the codified instruments, and it completes once the updated standards are confirmed onward for the posture work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer revises the policy standards to close each measured gap in the codified instruments, and confirms the updated standards onward."
+    }
+  },
+  "processes:activity-ge-improve-n9jd2z": {
+    "plain_language_name": "Strengthen Compliance Posture",
+    "plain_language_description": "This activity tightens how the enterprise actually complies, working from the revised standards and the sized-up gaps. The updated standards arrive with the compliance regime design as the mechanism, the posture is strengthened against both, and the strengthened posture is confirmed onward for the improvement's commitment. Compliance stops being the framework's soft spot.",
+    "business_purpose": "It exists so the framework's improved standards translate into genuinely stronger compliance.",
+    "practical_context": "It follows the standards update, working from the revised standards and the sized gaps, and it completes once the strengthened compliance posture is confirmed for the improvement's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function officer tightens the compliance operation against the revised standards and the regime design, and confirms the strengthened posture for commitment."
+    }
+  },
+  "processes:activity-ge-improve-68awnk": {
+    "plain_language_name": "Commit Framework Improvements",
+    "plain_language_description": "This activity draws the measured gaps, the revised standards, and the strengthened posture together into one committed set of framework improvements. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed improvements are confirmed for adoption. Governance's self-correction ends each cycle as decisions, not reflections.",
+    "business_purpose": "It exists so the framework's improvement cycle ends in committed changes adopted, not in lessons merely noted.",
+    "practical_context": "It closes the framework improvement, once gaps, standards, and posture are in hand, and it completes when the committed improvements are confirmed and their record retained for adoption.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the measured gaps, updated standards, and strengthened posture into the improvement record, obtains ratification, and records the commitment for adoption."
+    }
+  }
+}

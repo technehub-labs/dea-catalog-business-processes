@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Commit Logistics Design**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Logistics and Routing** (`processes:process-eo-design-8s76nv`). Its canonical ID is `processes:activity-eo-design-65b4xh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers the chosen transport modes, the routing specification, and the node plan into one design and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed design is confirmed for the logistics build. How goods will move stops being three workstreams and becomes one instruction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so logistics network build starts from one committed design rather than three separate documents.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the logistics and routing design, once modes, nodes, and routing are designed, and it completes when the committed design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the mode selection, node plan, and routing specification into the logistics design, checks the three cohere, and records the commitment for the build teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Logistics Design |
+| `plain_language_description` | string | no | This activity gathers the chosen transport modes, the routing specification, and the node plan into one design and … |
+| `business_purpose` | string | no | It exists so logistics network build starts from one committed design rather than three separate documents. |
+| `practical_context` | string | no | It closes the logistics and routing design, once modes, nodes, and routing are designed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

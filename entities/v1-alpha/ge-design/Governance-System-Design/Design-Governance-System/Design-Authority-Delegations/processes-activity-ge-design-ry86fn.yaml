@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-zbrg8b through concluding task processes:task-ge-design-record-3v5zkr, whose outcome — Case file retained for Design Authority Delegations under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Authority Delegations'
+plain_language_description: 'This activity works out how authority passes down from mandate to body to role across the named bodies. The articulated inventory arrives as the structure to be empowered, delegations are designed along its lines and checked for gaps, and the delegation design is confirmed onward for the decision rights. Authority stops being assumed and starts being traced.'
+business_purpose: 'It exists so every scrap of governing authority has a designed, traceable path to the body holding it.'
+practical_context: 'It follows the body articulation, when the inventory is confirmed, and it completes once the delegation design is confirmed for the decision rights specification.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer traces how authority flows from mandate through each named body down to its roles, and confirms the delegation design for the decision rights.'

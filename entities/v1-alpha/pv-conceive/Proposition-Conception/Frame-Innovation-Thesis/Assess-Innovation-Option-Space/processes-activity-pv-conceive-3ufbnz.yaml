@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-conceive-kps544 through concluding task processes:task-pv-conceive-record-3s424k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Innovation Option Space'
+plain_language_description: 'This activity surveys what could actually be done inside the chosen grounds, before anything is promised. The selected focus areas arrive as the territory to explore, the option space is assessed across it and its possibilities mapped, and the assessed space is confirmed onward for the boundary setting. Ambition meets inventory here.'
+business_purpose: 'It exists so the innovation thesis is grounded in what the focus areas genuinely offer.'
+practical_context: 'It follows the focus area selection, once the grounds are chosen, and it completes when the assessed option space is confirmed onward for the boundary setting.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition design authority analyst surveys what could actually be done within the selected focus areas, maps the possibilities, and confirms the assessed space onward.'

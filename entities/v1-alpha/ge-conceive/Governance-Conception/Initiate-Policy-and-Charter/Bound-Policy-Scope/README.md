@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Bound Policy Scope**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Initiate Policy and Charter** (`processes:process-ge-conceive-xp6fye`). Its canonical ID is `processes:activity-ge-conceive-tkk9rz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the boundary of what the new instrument — a policy regime, a charter, or a board mandate — will cover, and just as firmly what it will not. The governance strategy, regulatory requirement, or reorganisation arrives as the reason for the initiative, the scope is bounded against it, and the bounded scope is confirmed onward for the authority proposals. Instruments that try to govern everything end up governing nothing well.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a new instrument knows precisely what it governs, and what it deliberately leaves alone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the policy and charter initiation when a new governance strategy, regulatory requirement, or reorganisation demands an instrument, and it completes once the bounded scope is confirmed for the authority proposals.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board lead bounds what the new policy regime will and will not cover against the regulatory requirement behind it, and confirms the scope for the authority proposals.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound Policy Scope |
+| `plain_language_description` | string | no | This activity draws the boundary of what the new instrument — a policy regime, a charter, or a board mandate — will … |
+| `business_purpose` | string | no | It exists so a new instrument knows precisely what it governs, and what it deliberately leaves alone. |
+| `practical_context` | string | no | It opens the policy and charter initiation when a new governance strategy, regulatory requirement, or reorganisation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 This is a **Activity** (level L3), named **Acquire Regulator-Acknowledged Accounting or Rate Framework**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Billing Capability** (`processes:process-fa-activate-bzfywk`). Its canonical ID is `processes:activity-fa-activate-63duu7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity obtains the regulator's formal acknowledgement of the accounting or rate framework behind the enterprise's billing, and files it on the regulated billing record. The capability description goes to the regulator in the mandated filing format, the acknowledged framework comes back and is examined, and its preserved record is confirmed onward. Invoicing and revenue recognition then stand on a framework the regulator has formally accepted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so live billing rests on an accounting or rate framework the regulator has formally acknowledged, held on record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while the billing capability awaits its gate into live service, once the capability description and the mandated filing format are to hand, and it completes when the acknowledged framework is preserved on the regulated billing record and confirmed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function officer submits the capability's framework filing to the industry regulator in the required format, receives the acknowledgement back, and has it preserved on the regulated billing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Obtain the Acknowledged Accounting or Rate Framework |
+| `plain_language_description` | string | no | This activity obtains the regulator's formal acknowledgement of the accounting or rate framework behind the … |
+| `business_purpose` | string | no | It exists so live billing rests on an accounting or rate framework the regulator has formally acknowledged, held on … |
+| `practical_context` | string | no | It runs while the billing capability awaits its gate into live service, once the capability description and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

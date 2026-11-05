@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 This is a **Activity** (level L3), named **Resolve Residual Value and Obligations**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Decommission Enterprise Asset** (`processes:process-eo-retire-rpg6d4`). Its canonical ID is `processes:activity-eo-retire-zkt7eq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity salvages what the disposed asset is still worth, wipes any data it holds, and closes out the obligations left behind, all on the record. The disposed asset and its residual accounts arrive as the closing matter, value is recovered and data sanitised, and the resolved position is confirmed for the record. The asset's story ends with nothing left owing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a decommissioned asset leaves no loose ends — its value recovered, its data gone, its obligations closed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the asset is disposed of, against its residual accounts, and it completes when the recovered value, sanitised data, and resolved obligations are confirmed on the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A custodian recovers the disposed asset's remaining book value, sanitises the data it carried, closes out its outstanding obligations, and confirms the resolved position for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Residual Value and Obligations |
+| `plain_language_description` | string | no | This activity salvages what the disposed asset is still worth, wipes any data it holds, and closes out the obligations … |
+| `business_purpose` | string | no | It exists so a decommissioned asset leaves no loose ends — its value recovered, its data gone, its obligations closed. |
+| `practical_context` | string | no | It runs once the asset is disposed of, against its residual accounts, and it completes when the recovered value … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

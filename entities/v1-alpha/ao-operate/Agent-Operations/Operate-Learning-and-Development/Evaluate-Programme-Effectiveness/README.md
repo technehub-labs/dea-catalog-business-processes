@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Evaluate Programme Effectiveness**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Learning and Development** (`processes:process-ao-operate-87q5mk`). Its canonical ID is `processes:activity-ao-operate-8mxujq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity weighs each finished programme against the shortfalls it was meant to close. The recorded completions come in as the starting evidence, effectiveness is judged programme by programme, and the evaluation is confirmed and retained. Which programmes genuinely closed their gaps becomes visible, and which did not.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns which development programmes actually close the shortfalls they target.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once programmes have completed and their completions are on file, and it closes when the effectiveness evaluation is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian compares each finished programme's outcomes with the gap it targeted, records how far the shortfall actually closed, and confirms the evaluation for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Evaluate Programme Effectiveness |
+| `plain_language_description` | string | no | This activity weighs each finished programme against the shortfalls it was meant to close. The recorded completions … |
+| `business_purpose` | string | no | It exists so the enterprise learns which development programmes actually close the shortfalls they target. |
+| `practical_context` | string | no | It runs once programmes have completed and their completions are on file, and it closes when the effectiveness … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

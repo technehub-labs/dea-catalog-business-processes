@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-2pmqb2 through concluding task processes:task-fa-operate-record-ahyhhu, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Investment Decisions'
+plain_language_description: 'This activity puts idle cash to work through the investments treasury policy allows. Surplus liquidity identified against the forecast arrives as the opportunity, investments are executed within the policy''s bounds, and the executed decisions are confirmed for the record. Money that would sit still earns instead, inside the rules.'
+business_purpose: 'It exists so surplus cash is deployed productively without ever stepping outside the treasury policy.'
+practical_context: 'It runs when the forecast shows surplus liquidity worth deploying, and it completes once the executed investments are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A treasury officer deploys the forecast surplus into investments the policy permits, checks each against its bounds, and confirms the executed decisions for the record.'

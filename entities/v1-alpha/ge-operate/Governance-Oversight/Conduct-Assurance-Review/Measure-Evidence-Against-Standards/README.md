@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Measure Evidence Against Standards**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Conduct Assurance Review** (`processes:process-ge-operate-zwaes5`). Its canonical ID is `processes:activity-ge-operate-gjnh3s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays the assembled evidence alongside the codified standards and finds where the two disagree. The evidence arrives with the standards as the ruler, measurement is performed and differences bounded, and the measured position is confirmed onward for the findings. Assurance speaks in distances from standards here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assurance findings rest on measured distances from the codified standards.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evidence assembly, when the codified standards are to hand as the ruler, and it completes once the measured position is confirmed onward for the findings reporting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function analyst lays the assembled evidence against the codified standards, measures and bounds the differences, and confirms the measured position onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Evidence Against Standards |
+| `plain_language_description` | string | no | This activity lays the assembled evidence alongside the codified standards and finds where the two disagree. The … |
+| `business_purpose` | string | no | It exists so assurance findings rest on measured distances from the codified standards. |
+| `practical_context` | string | no | It follows the evidence assembly, when the codified standards are to hand as the ruler, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-activate-5686v7 through concluding task processes:task-pv-activate-record-8n6f74, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Stabilize Early Operations'
+plain_language_description: 'This activity babysits the newly live service through its earliest, most fragile days, watching closely and fixing quickly. The executed cutover arrives as the newborn to watch, monitoring runs tightly and issues are resolved as they surface, and the stabilised service is confirmed onward for acceptance. Most launch failures are caught and killed in this window.'
+business_purpose: 'It exists so the service''s early wobbles are caught and settled before they become outages.'
+practical_context: 'It runs through the transition period after the cutover, watching and resolving until the service is genuinely relied upon, and it completes when the stabilised service is confirmed onward for acceptance.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management officer keeps tight watch over the newly live service, resolving each issue as it surfaces in the early days, until operation is steady enough for acceptance.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-7n4prh through concluding task processes:task-sd-build-record-mbr3a3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Sequence Strategic Initiatives'
+plain_language_description: 'The initiatives exist, but order matters. This work takes the translated initiatives in, checks each one is complete, and arranges them into a deliberate sequence that respects the strategic horizons they serve. The ordered sequence is then confirmed to downstream colleagues and preserved so the milestone work can build on it.'
+business_purpose: 'It turns a pile of initiatives into an ordered path, giving the roadmap its backbone and the planning calendar its running order.'
+practical_context: 'It starts at intake when the translated initiatives are presented and closes when the agreed sequence is confirmed and stored for milestone anchoring.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function planner lays the translated initiatives out in a workshop, agrees the running order with the activity owner across the strategic horizons, and the confirmation custodian announces the sequence is settled for milestone anchoring.'

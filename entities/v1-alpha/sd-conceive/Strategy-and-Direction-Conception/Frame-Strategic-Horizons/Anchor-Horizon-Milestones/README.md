@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Anchor Horizon Milestones**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Strategic Horizons** (`processes:process-sd-conceive-xa4h2k`). Its canonical ID is `processes:activity-sd-conceive-h9ued3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Each agreed window now needs its marker points. Intake registers the bounded timeframes, verification checks the candidate anchors are deliverable, and processing fixes the milestones every period is expected to deliver. Confirmation shares the anchored points with downstream colleagues and the records custodian preserves them ready for the alignment step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives every planning window its concrete deliverable markers, so horizons become trackable commitments rather than vague spans.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows timeframe bounding, opening when the bounded windows arrive at intake and closing when the anchors are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function sets milestone points inside each agreed window, checks they are genuinely deliverable with the activity owner, and the records custodian files the anchored set ahead of the alignment review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Anchor Horizon Milestones |
+| `plain_language_description` | string | no | Each agreed window now needs its marker points. Intake registers the bounded timeframes, verification checks the … |
+| `business_purpose` | string | no | It gives every planning window its concrete deliverable markers, so horizons become trackable commitments rather than … |
+| `practical_context` | string | no | It follows timeframe bounding, opening when the bounded windows arrive at intake and closing when the anchors are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

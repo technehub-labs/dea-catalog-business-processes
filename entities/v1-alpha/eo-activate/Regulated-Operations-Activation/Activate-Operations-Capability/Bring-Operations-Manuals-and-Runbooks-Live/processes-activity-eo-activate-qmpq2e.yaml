@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-activate-sy5qsa through concluding task processes:task-eo-activate-record-nu4fn2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Bring Operations Manuals and Runbooks Live'
+plain_language_description: 'This activity moves the approved operations manuals and runbooks from approved documents into active use. The capability''s authorization and the regulator-approved manual content arrive first, the manuals and runbooks are published into the working environment and checked against what was approved, and their live state is recorded on the operations record. Staff on day one work from documents that are officially in force.'
+business_purpose: 'It exists so the people running the capability operate from manuals and runbooks that are formally live and match what the regulator approved.'
+practical_context: 'It runs as activation proceeds, once the authorization and the approved manual content are to hand, and it completes when the manuals'' and runbooks'' live state is confirmed and retained on the operations record.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead publishes the regulator-approved manual content into the working environment, checks the published set matches what was approved, and confirms the live state for the records step.'

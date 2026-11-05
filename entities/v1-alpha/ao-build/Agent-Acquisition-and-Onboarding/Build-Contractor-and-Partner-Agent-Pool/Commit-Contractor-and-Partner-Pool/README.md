@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Commit Contractor and Partner Pool**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Contractor and Partner-Agent Pool** (`processes:process-ao-build-b38bkg`). Its canonical ID is `processes:activity-ao-build-cxafrf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity is the point where the assembled pool of contractors and partner agents is formally accepted as a standing operational capacity. The established activation paths are taken in and reviewed, the pool's readiness is drawn together, and its acceptance is confirmed so the enterprise can rely on it alongside direct acquisition. The commitment is then preserved as an audit record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds a ratified reserve it can draw on whenever direct acquisition alone cannot meet demand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place at the end of the pool build, once activation paths have been established, and it closes when the committed pool is confirmed and its audit record retained at the agreed tier.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian presents the finished pool, with its vetted sources and activation paths, for the governing board's ratification, and once it is accepted records the commitment that makes the pool an operational capacity alongside direct acquisition.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Contractor and Partner Pool |
+| `plain_language_description` | string | no | This activity is the point where the assembled pool of contractors and partner agents is formally accepted as a … |
+| `business_purpose` | string | no | It exists so the enterprise holds a ratified reserve it can draw on whenever direct acquisition alone cannot meet … |
+| `practical_context` | string | no | It takes place at the end of the pool build, once activation paths have been established, and it closes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

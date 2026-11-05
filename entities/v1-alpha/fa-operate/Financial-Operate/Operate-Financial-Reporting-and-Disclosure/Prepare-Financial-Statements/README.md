@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Prepare Financial Statements**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate Financial Reporting and Disclosure** (`processes:process-fa-operate-ycba3k`). Its canonical ID is `processes:activity-fa-operate-dmzn73`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws up the statements each reporting milestone calls for, from the closed books. The milestone arrives with the ledger balances behind it, the statements are prepared and checked against those balances, and the prepared statements are confirmed onward for the footnotes. The enterprise's formal financial account of itself begins here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every reporting milestone produces statements that faithfully reflect the closed books.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each reporting or disclosure milestone, working from the closed period's balances, and it completes once the prepared statements are confirmed onward for the footnotes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function preparer draws up the statements the milestone calls for from the closed ledger balances, checks them against the books, and confirms them for the footnotes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare Financial Statements |
+| `plain_language_description` | string | no | This activity draws up the statements each reporting milestone calls for, from the closed books. The milestone arrives … |
+| `business_purpose` | string | no | It exists so every reporting milestone produces statements that faithfully reflect the closed books. |
+| `practical_context` | string | no | It runs at each reporting or disclosure milestone, working from the closed period's balances, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

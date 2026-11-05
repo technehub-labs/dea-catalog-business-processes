@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-z6m6p5 through concluding task processes:task-ao-conceive-record-pmbcux, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Workforce and Agent Mix'
+plain_language_description: 'This activity is where the drafted workforce mix is formally accepted and passed on. The drafted mix is taken in and reviewed, its ratification is confirmed, and the committed mix is handed to the design work that will turn it into roles and structure. An audit record of the commitment is preserved so the decision can be traced later.'
+business_purpose: 'It exists so the conceived blend of people and artificial agents becomes a binding reference that design and acquisition must follow.'
+practical_context: 'It happens at the close of mix conception, when the drafted mix is presented for ratification, and it completes once the committed mix is confirmed, handed over, and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian presents the drafted mix for the strategy function''s ratification, and once it is confirmed, records the committed mix and notifies the organization and role design team that it is theirs to work from.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-9wgvaf through concluding task processes:task-sd-improve-record-wvjf2e, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Direction Adjustments'
+plain_language_description: 'With the case for change on the table, candidate answers are drafted. Intake registers the consolidated case, verification checks the drafting instructions are clear, and processing writes a set of candidate changes to the direction — each one traceable to the evidence that prompted it. Confirmation announces the candidate set downstream and the working papers are preserved for the implications check.'
+business_purpose: 'It converts the evidence case into concrete candidate changes, giving leadership real options for steering the direction back on course.'
+practical_context: 'It follows consolidation, opening at intake of the adaptation case and closing when the candidate adjustments are confirmed ready for assessment.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function planners draft candidate changes to the direction, each tagged to the evidence line that motivated it, and the confirmation custodian hands the set to the colleagues who will test the implications.'

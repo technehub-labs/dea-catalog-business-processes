@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-aqbrm7 through concluding task processes:task-sd-improve-record-bx5hgs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Redraft Objectives and Targets'
+plain_language_description: 'The verdicts are in, so the wording gets rewritten. Intake registers the fit assessment, verification checks every verdict has a redrafting instruction, and processing rewrites the measures so they once more track the adapted course and what the evidence actually shows. Confirmation announces the redrafted set downstream and the working papers are preserved for commitment.'
+business_purpose: 'It rewrites the stale measures into ones that fit where the direction now points, restoring a steerable objective set.'
+practical_context: 'It follows the fit assessment, opening at intake of the verdicts and closing when the redrafted set is confirmed ready for commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers rewrite the flagged objectives and targets against the fit verdicts, a verification custodian sends any half-rewritten line back, and the confirmation custodian announces the refreshed set is ready for ratification.'

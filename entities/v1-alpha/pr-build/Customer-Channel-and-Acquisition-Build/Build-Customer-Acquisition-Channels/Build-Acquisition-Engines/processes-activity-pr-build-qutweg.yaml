@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-nygvw7 through concluding task processes:task-pr-build-record-8khwgh, whose outcome — Closure case file retained for Build Acquisition Engines under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Build Acquisition Engines'
+plain_language_description: 'This activity constructs the machinery that actively brings customers in through the wired channels. The integrated channels arrive as the pathways, the acquisition engines are built onto them and checked as they assemble, and the built engines are confirmed onward for readiness. The enterprise stops waiting for customers and starts going to get them.'
+business_purpose: 'It exists so the channels actively acquire customers through built machinery, not passively hope for them.'
+practical_context: 'It follows the experience integration, once the channels are wired, and it completes as the built acquisition engines are confirmed onward for readiness.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function builder constructs the acquisition machinery onto the wired channels, checks it as it assembles, and confirms the built engines for readiness.'

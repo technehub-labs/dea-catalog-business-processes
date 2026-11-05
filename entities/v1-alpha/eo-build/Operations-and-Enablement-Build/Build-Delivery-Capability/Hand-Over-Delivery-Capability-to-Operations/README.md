@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Hand Over Delivery Capability to Operations**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Delivery Capability** (`processes:process-eo-build-j9z3q4`). Its canonical ID is `processes:activity-eo-build-fnyeud`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity formally passes the checked-out delivery capability from the build side to the teams who will run it. The verified capability arrives as the handover package, acceptance is reviewed and given by the receiving side, and the accepted capability is confirmed for steady-state operation. Build responsibility ends; operational responsibility begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's new delivery capability changes hands cleanly, with operations accepting a capability it has seen perform.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the delivery capability build, once verification is complete, and it finishes when the accepted capability is confirmed and its handover record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead presents the verified capability to the operations function's receiving team, walks them through the evidence, and records their acceptance for the move to steady-state running.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand Over Delivery Capability to Operations |
+| `plain_language_description` | string | no | This activity formally passes the checked-out delivery capability from the build side to the teams who will run it. The … |
+| `business_purpose` | string | no | It exists so the enterprise's new delivery capability changes hands cleanly, with operations accepting a capability it … |
+| `practical_context` | string | no | It closes the delivery capability build, once verification is complete, and it finishes when the accepted capability is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

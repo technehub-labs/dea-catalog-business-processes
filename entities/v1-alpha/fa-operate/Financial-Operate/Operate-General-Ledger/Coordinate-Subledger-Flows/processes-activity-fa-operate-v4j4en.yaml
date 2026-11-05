@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-g9zpnq through concluding task processes:task-fa-operate-record-cyvgfb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Coordinate Subledger Flows'
+plain_language_description: 'This activity herds the streams from the side-ledgers — payables, receivables, payroll, tax, and treasury — into the main books. The subledgers'' flows arrive continuously, their passage into the ledger is coordinated and checked for completeness, and the coordinated flows are confirmed onward. The main books see everything the side books know.'
+business_purpose: 'It exists so the general ledger receives every subledger''s activity, completely and in order.'
+practical_context: 'It runs continuously as the subledgers generate their flows, and each coordinated passage closes when it is confirmed onward into the ledger.'
+worked_example:
+  agent_type: human
+  narrative: 'A ledger custodian shepherds the payables, receivables, payroll, tax, and treasury flows into the main books, checks nothing is dropped in transit, and confirms the coordinated flows.'

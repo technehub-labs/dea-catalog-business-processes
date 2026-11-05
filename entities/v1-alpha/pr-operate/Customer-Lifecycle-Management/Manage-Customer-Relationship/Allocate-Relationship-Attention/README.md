@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 
 This is a **Activity** (level L3), named **Allocate Relationship Attention**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Manage Customer Relationship** (`processes:process-pr-operate-bbe384`). Its canonical ID is `processes:activity-pr-operate-v9vny2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity rations the enterprise's care across its active customers — who owns which account, how often they are contacted, how much service effort each earns. The active customer base arrives as the field to be covered, attention is allocated across it and reviewed for fairness, and the allocation is confirmed onward for the relationship work. Not every customer can be everything; this decides who gets what.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so relationship effort is deliberately distributed across the base rather than spread by accident.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as customers enter and move through the active relationship lifecycle, and it completes when the allocated attention — ownership, cadence, effort — is confirmed onward for the relationship work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead assigns account ownership, contact cadence, and service effort across the active base, and confirms the allocation onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Allocate Relationship Attention |
+| `plain_language_description` | string | no | This activity rations the enterprise's care across its active customers — who owns which account, how often they are … |
+| `business_purpose` | string | no | It exists so relationship effort is deliberately distributed across the base rather than spread by accident. |
+| `practical_context` | string | no | It runs as customers enter and move through the active relationship lifecycle, and it completes when the allocated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

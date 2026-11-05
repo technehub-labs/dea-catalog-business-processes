@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 This is a **Activity** (level L3), named **Assess Regulator Or Court Order Scope**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Effect Regulator-Mandated Governance Unwind** (`processes:process-ge-retire-mjq5hg`). Its canonical ID is `processes:activity-ge-retire-k5amzf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the order from the regulator or the court, works out what it binds the enterprise to do and by when, and maps each obligation onto the governance bodies and instruments that must now stand down. The order arrives as the controlling authority, its scope is assessed and mapped, and the assessed scope is confirmed onward for the unwind. The enterprise learns exactly how much of itself it must now dismantle, and in what order.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the mandated unwind proceeds against a complete, correct reading of what the order actually demands.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the unwind when the dissolution, revocation, wind-down, or equivalent order is issued, and it completes once the assessed scope and its mapped obligations are confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management officer reads the regulator's order line by line, maps each binding obligation and deadline onto the bodies and instruments affected, and confirms the assessed scope onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Regulator or Court Order Scope |
+| `plain_language_description` | string | no | This activity reads the order from the regulator or the court, works out what it binds the enterprise to do and by … |
+| `business_purpose` | string | no | It exists so the mandated unwind proceeds against a complete, correct reading of what the order actually demands. |
+| `practical_context` | string | no | It opens the unwind when the dissolution, revocation, wind-down, or equivalent order is issued, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

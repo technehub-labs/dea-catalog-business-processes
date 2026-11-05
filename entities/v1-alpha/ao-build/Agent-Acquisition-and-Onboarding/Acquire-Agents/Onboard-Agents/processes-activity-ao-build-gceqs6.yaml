@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-w2qurd through concluding task processes:task-ao-build-record-szc6re, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Onboard Agents'
+plain_language_description: 'This activity takes the agents that have been acquired and brings them to readiness in the roles they were recruited or stood up for. Each arrival is logged in, the requirements of their role are checked, and the onboarding arrangements are put in place and confirmed. It finishes with the agents ready in their roles, their expected competencies addressed, and an audit record of the onboarding kept on file.'
+business_purpose: 'It exists so acquired agents arrive in their roles with the competencies the roles expect, ready for integration into the organization.'
+practical_context: 'It runs during agent acquisition once selection has produced the acquired agents, and it completes when confirmation is issued and the onboarding record is preserved for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian walks a newly hired analyst and a newly deployed artificial agent through their role requirements, confirms both are onboarded with the expected competencies in place, and hands them over for integration into their teams.'

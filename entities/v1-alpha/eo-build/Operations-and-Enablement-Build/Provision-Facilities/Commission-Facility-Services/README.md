@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Commission Facility Services**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Provision Facilities** (`processes:process-eo-build-tqybhd`). Its canonical ID is `processes:activity-eo-build-napwac`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the building's services — power and utilities, safety systems, and environmental controls — up to working readiness. The fitted facilities arrive with the blueprint's service specifications, each service is commissioned and tested against them, and the commissioned services are confirmed onward. A fitted building becomes a running one.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the facilities' services actually work at the readiness the blueprint specifies before production or delivery depends on them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the fit-out, when the service specifications are to hand for the fitted facilities, and it completes once the commissioned services are confirmed for handover.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian commissions the utilities, safety systems, and environmental controls in each fitted building, tests them against the blueprint's specifications, and confirms the services for handover.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commission Facility Services |
+| `plain_language_description` | string | no | This activity brings the building's services — power and utilities, safety systems, and environmental controls — up to … |
+| `business_purpose` | string | no | It exists so the facilities' services actually work at the readiness the blueprint specifies before production or … |
+| `practical_context` | string | no | It follows the fit-out, when the service specifications are to hand for the fitted facilities, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

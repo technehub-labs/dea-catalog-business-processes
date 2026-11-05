@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-ac
 
 This is a **Activity** (level L3), named **Bring Operational Controls Live on the Regulated Operations Record**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Activate Operations Capability** (`processes:process-eo-activate-sy5qsa`). Its canonical ID is `processes:activity-eo-activate-h2dqvk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity switches the capability's everyday operational controls on and records them as live. The regulator-mandated control framework and the fresh authorization come in together, each control — incident handling, capacity, security, compliance — is brought into active use and checked against the framework, and the live state is written onto the operations record. The capability thereby runs under its controls from its first day, not after them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operational controls are demonstrably running when live service starts, as the regulator's framework requires.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs late in activation, once the authorization is on record, and it completes when the controls' live state is confirmed on the regulated operations record and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead brings each control in the mandated framework — incident handling, capacity, security, and compliance — into active use, checks the set against the framework, and has the live state recorded on the operations record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Operational Controls Live |
+| `plain_language_description` | string | no | This activity switches the capability's everyday operational controls on and records them as live. The … |
+| `business_purpose` | string | no | It exists so operational controls are demonstrably running when live service starts, as the regulator's framework … |
+| `practical_context` | string | no | It runs late in activation, once the authorization is on record, and it completes when the controls' live state is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

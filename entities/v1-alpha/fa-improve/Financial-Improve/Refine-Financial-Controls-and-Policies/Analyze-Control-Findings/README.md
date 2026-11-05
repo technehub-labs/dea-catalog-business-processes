@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Analyze Control Findings**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Refine Financial Controls and Policies** (`processes:process-fa-improve-cdtsbq`). Its canonical ID is `processes:activity-fa-improve-6j2xpt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the audit finding or the control incident that has surfaced, and works out what refinement it actually demands. The finding or incident arrives as the trigger, its causes and scope are analyzed and the refinement need bounded, and the analysis is confirmed onward for the refinement design. A control failure becomes a design brief rather than a blame exercise.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so control refinements start from a bounded understanding of what actually went wrong.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the refinement cycle when an audit finding or control incident surfaces, and it completes once the bounded analysis is confirmed for the refinement design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst reads the surfaced audit finding, works out the refinement it truly demands, bounds the need, and confirms the analysis for the design step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Control Findings |
+| `plain_language_description` | string | no | This activity reads the audit finding or the control incident that has surfaced, and works out what refinement it … |
+| `business_purpose` | string | no | It exists so control refinements start from a bounded understanding of what actually went wrong. |
+| `practical_context` | string | no | It opens the refinement cycle when an audit finding or control incident surfaces, and it completes once the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

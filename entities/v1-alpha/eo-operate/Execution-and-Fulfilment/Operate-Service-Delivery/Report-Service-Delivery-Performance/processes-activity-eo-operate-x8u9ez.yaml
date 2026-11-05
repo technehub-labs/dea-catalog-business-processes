@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-2jnz85 through concluding task processes:task-eo-operate-record-7jz35p, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Report Service Delivery Performance'
+plain_language_description: 'This activity rolls the operating window''s actuals up into a performance picture of the service, for the process group that owns it. Window actuals arrive as the raw material, performance is aggregated into reporting, and the service report is confirmed onward. Day-to-day firefighting becomes a trend the enterprise can steer by.'
+business_purpose: 'It exists so service performance is seen as an aggregate trend by its owners, not just as one window at a time.'
+practical_context: 'It runs on the reporting cadence once operating-window actuals have accumulated, and it completes when the service performance report is confirmed and delivered to the owning process group.'
+worked_example:
+  agent_type: human
+  narrative: 'A service custodian aggregates the window actuals into service performance reporting, and confirms the report for the process group that owns the operation.'

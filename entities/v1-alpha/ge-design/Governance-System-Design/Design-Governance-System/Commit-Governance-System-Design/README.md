@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Commit Governance System Design**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Governance System** (`processes:process-ge-design-zbrg8b`). Its canonical ID is `processes:activity-ge-design-6xmeft`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the articulated bodies, the delegations, and the decision rights together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the establishment build. The enterprise's governance shape becomes one owned decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance establishment starts from one committed system design rather than three sketches.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the governance system design, once bodies, delegations, and rights are designed, and it completes when the committed design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the body inventory, delegation design, and decision rights specification into the system design document, obtains ratification, and records the commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Governance System Design |
+| `plain_language_description` | string | no | This activity draws the articulated bodies, the delegations, and the decision rights together into one design and gives … |
+| `business_purpose` | string | no | It exists so governance establishment starts from one committed system design rather than three sketches. |
+| `practical_context` | string | no | It closes the governance system design, once bodies, delegations, and rights are designed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

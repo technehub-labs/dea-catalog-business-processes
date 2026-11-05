@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-u6xgu5 through concluding task processes:task-sd-operate-record-vnqd68, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Portfolio Drift'
+plain_language_description: 'The alignment view usually shows something, and this work names it. Intake registers the assessment, scrutiny distinguishes genuine divergence from measurement noise, and processing pins down where the fleet has wandered off the course the strategy set. Confirmation communicates the drift findings downstream and the records custodian preserves them for the options work.'
+business_purpose: 'It turns vague unease about the initiative fleet into named, evidenced divergence the steering process can respond to.'
+practical_context: 'It follows the alignment assessment, opening at its intake and closing when the drift findings are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function reviewer reads the alignment view, separates two genuine departures from measurement noise, and the confirmation custodian passes the named drift findings to the colleagues drafting corrections.'

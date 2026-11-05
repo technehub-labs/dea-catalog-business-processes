@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Run Regulator-Mandated Recurrent Training**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Improve Regulated Workforce Capability** (`processes:process-ao-improve-qqxe4d`). Its canonical ID is `processes:activity-ao-improve-x7m4n2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the live licensed-role holders through the recurring training their regulator requires, working from the training matrix for each role. The live role list arrives with the matrix, each holder completes the cycle their role demands, and the completions are recorded on the personnel record. The recorded completions are confirmed and retained so the enterprise can show the regulator its people stay current.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so holders of licensed roles stay current with the regulator's continuing-competence expectations, cycle after cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on the continuing-competence calendar against the live role list, and it completes when the training completions are confirmed and preserved on the personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian works through the training matrix for each holder of a licensed role, sees the recurrent cycle completed, and records the completion on the personnel file for the confirmation step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Regulator-Mandated Recurrent Training |
+| `plain_language_description` | string | no | This activity puts the live licensed-role holders through the recurring training their regulator requires, working from … |
+| `business_purpose` | string | no | It exists so holders of licensed roles stay current with the regulator's continuing-competence expectations, cycle … |
+| `practical_context` | string | no | It runs on the continuing-competence calendar against the live role list, and it completes when the training … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

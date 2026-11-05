@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-b38bkg through concluding task processes:task-ao-build-record-c8h2pq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Vet Pool Sources'
+plain_language_description: 'This activity qualifies the contractor and partner organisations that could serve the identified pool demand. Each candidate source is logged in and its standing is examined, and the sources that pass are drawn up as the vetted source list. Confirmation is issued to the people arranging the pool, and the vetting results are kept as an audit record.'
+business_purpose: 'It exists so only sources the enterprise has properly qualified are allowed into its contractor and partner reserve.'
+practical_context: 'It happens once the pool demand has been identified, when candidate sources are presented for qualification, and it closes when the vetted sources are confirmed and the vetting record is retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian examines a shortlist of contractor firms and partner agencies against the identified specialist demand, records which sources passed vetting, and notifies the processing custodian that the qualified sources are ready for engagement planning.'

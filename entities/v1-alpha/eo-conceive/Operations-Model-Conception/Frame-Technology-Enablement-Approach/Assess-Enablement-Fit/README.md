@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Assess Enablement Fit**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Technology Enablement Approach** (`processes:process-eo-conceive-68mp6v`). Its canonical ID is `processes:activity-eo-conceive-fjcmnb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tests each shortlisted platform family against what the operating model demands and records where it fits well or poorly. The family register and the model's requirements arrive together, fits are assessed family by family, and the fit assessment is confirmed onward for the sourcing work. Platform enthusiasm gives way to platform evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so platform selection later rests on demonstrated fit with the operating model rather than preference.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the identification of platform families, when the register and the model's requirements are presented, and it completes once the fit assessment is confirmed for the sourcing framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead tests each shortlisted platform family against the operating model's requirements, records where each fits and where it falls short, and confirms the assessment for the sourcing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Enablement Fit |
+| `plain_language_description` | string | no | This activity tests each shortlisted platform family against what the operating model demands and records where it fits … |
+| `business_purpose` | string | no | It exists so platform selection later rests on demonstrated fit with the operating model rather than preference. |
+| `practical_context` | string | no | It follows the identification of platform families, when the register and the model's requirements are presented, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

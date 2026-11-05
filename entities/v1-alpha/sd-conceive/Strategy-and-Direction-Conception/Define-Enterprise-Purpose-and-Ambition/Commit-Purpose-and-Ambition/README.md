@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Commit Purpose and Ambition**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Define Enterprise Purpose and Ambition** (`processes:process-sd-conceive-r93j3d`). Its canonical ID is `processes:activity-sd-conceive-jmupn8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Purpose and ambition are framed; this step makes them official. The framed statement and envelope arrive at intake, verification confirms both are settled, and the commitment locks them in as the anchor for the intent work that follows. Confirmation notifies downstream consumers that the anchor is in place and the records custodian preserves the committed pair on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes purpose definition with a committed anchor, giving strategic intent conception a fixed starting point.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the statement and the envelope are framed and closes with commitment confirmed, downstream teams notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead presents the framed purpose and ambition for commitment, the confirmation custodian notifies the intent conception team their anchor is ready, and the records custodian files the committed pair at its retention tier.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Purpose and Ambition |
+| `plain_language_description` | string | no | Purpose and ambition are framed; this step makes them official. The framed statement and envelope arrive at intake … |
+| `business_purpose` | string | no | It closes purpose definition with a committed anchor, giving strategic intent conception a fixed starting point. |
+| `practical_context` | string | no | It opens once the statement and the envelope are framed and closes with commitment confirmed, downstream teams notified … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

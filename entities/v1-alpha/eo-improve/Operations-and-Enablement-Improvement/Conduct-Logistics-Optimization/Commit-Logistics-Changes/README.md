@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Commit Logistics Changes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Logistics Optimization** (`processes:process-eo-improve-3fem63`). Its canonical ID is `processes:activity-eo-improve-r9dbs8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the worked-up changes to routes and the network formal standing so operations can adopt them. The change designs with their impact assessments arrive as the case, each change is reviewed and ratified, and the committed changes are confirmed into the operations planning cycle. Improvement stops being a proposal at this point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed logistics improvements become binding changes the operation will actually adopt.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the change design, once impact assessments are in hand, and it completes when the committed changes are confirmed into the planning cycle and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian reviews each designed change with its impact assessment, ratifies the set for operational adoption, and records the committed changes into the planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Logistics Changes |
+| `plain_language_description` | string | no | This activity gives the worked-up changes to routes and the network formal standing so operations can adopt them. The … |
+| `business_purpose` | string | no | It exists so the designed logistics improvements become binding changes the operation will actually adopt. |
+| `practical_context` | string | no | It follows the change design, once impact assessments are in hand, and it completes when the committed changes are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

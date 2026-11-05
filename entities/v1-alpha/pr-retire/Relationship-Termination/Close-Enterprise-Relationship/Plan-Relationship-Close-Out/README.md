@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-re
 
 This is a **Activity** (level L3), named **Plan Relationship Close-Out**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Close Enterprise Relationship** (`processes:process-pr-retire-bd3asa`). Its canonical ID is `processes:activity-pr-retire-k646h9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity maps the ending before it happens — what the close covers, by when, and what is still owed. The relationship's agreed or mandated end arrives as the trigger, the close-out is planned across scope, timeline, and obligations, and the plan is confirmed onward for the settlement work. Endings, like beginnings, deserve a plan.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a relationship's ending is organised and complete rather than abrupt and leaky.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the close when the relationship reaches its agreed or mandated end — expiry, termination, or regulated offboarding — and it completes once the close-out plan is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead maps the close-out — scope, timeline, and the inventory of what is still owed — and confirms the plan for settlement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Relationship Close-Out |
+| `plain_language_description` | string | no | This activity maps the ending before it happens — what the close covers, by when, and what is still owed. The … |
+| `business_purpose` | string | no | It exists so a relationship's ending is organised and complete rather than abrupt and leaky. |
+| `practical_context` | string | no | It opens the close when the relationship reaches its agreed or mandated end — expiry, termination, or regulated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

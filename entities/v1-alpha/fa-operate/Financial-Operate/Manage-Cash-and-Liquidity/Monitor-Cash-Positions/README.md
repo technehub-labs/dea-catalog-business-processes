@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Monitor Cash Positions**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Cash and Liquidity** (`processes:process-fa-operate-2pmqb2`). Its canonical ID is `processes:activity-fa-operate-aab8cw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps a live eye on where the cash sits, checked against the treasury rules. Position data arrives continuously across the enterprise's accounts, the positions are tracked and compared with the policy's expectations, and any anomaly is flagged onward. Treasury never has to wonder how much money it has.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows its cash position at all times and spots departures from policy as they happen.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as positions move, checked against the treasury policy, and each monitored position closes when it is confirmed and any anomaly flagged onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A treasury custodian tracks the cash positions across the accounts through the day, spots a balance drifting outside the treasury policy's expectations, and flags it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Cash Positions |
+| `plain_language_description` | string | no | This activity keeps a live eye on where the cash sits, checked against the treasury rules. Position data arrives … |
+| `business_purpose` | string | no | It exists so the enterprise knows its cash position at all times and spots departures from policy as they happen. |
+| `practical_context` | string | no | It runs continuously as positions move, checked against the treasury policy, and each monitored position closes when it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

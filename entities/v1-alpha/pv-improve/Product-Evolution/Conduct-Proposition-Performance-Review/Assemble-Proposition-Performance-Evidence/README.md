@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Assemble Proposition Performance Evidence**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Conduct Proposition Performance Review** (`processes:process-pv-improve-27r7r7`). Its canonical ID is `processes:activity-pv-improve-6rycwm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any review can judge how propositions are doing, the scattered material has to be brought together: performance records, signs of gaps in the portfolio, and the evidence rationalization choices will need. Product management registers what arrives, checks it for completeness, organizes it into one review-ready pack, confirms the pack to the review, and has it archived for traceability.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the performance review a complete, trustworthy evidence pack, so findings rest on the full picture rather than whichever signals happened to be at hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It marks the opening of the review cycle: work starts when performance records are presented for intake and ends when the confirmed evidence pack and its audit record are on file.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of the periodic review, a product management analyst collects the performance records for every live proposition, registers them at intake, verifies nothing material is missing, assembles the pack with the portfolio gaps flagged, and the records custodian files it for the reviewers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Proposition Performance Evidence |
+| `plain_language_description` | string | no | Before any review can judge how propositions are doing, the scattered material has to be brought together: performance … |
+| `business_purpose` | string | no | It gives the performance review a complete, trustworthy evidence pack, so findings rest on the full picture rather than … |
+| `practical_context` | string | no | It marks the opening of the review cycle: work starts when performance records are presented for intake and ends when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

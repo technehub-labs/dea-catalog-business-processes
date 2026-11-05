@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Propose Authority and Decision Rights**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Initiate Policy and Charter** (`processes:process-ge-conceive-xp6fye`). Its canonical ID is `processes:activity-ge-conceive-hsg4tn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets out who may decide what under the new instrument, proposing its authority and its rights. The bounded scope arrives as the territory to be empowered, authority and decision rights are proposed within it and reviewed for sense, and the proposals are confirmed onward for the drafting. The instrument's teeth are sketched here, before they are cast.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the instrument's power — who decides what — is proposed deliberately before the document is written.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the scope bounding, working within the bounded territory, and it completes once the proposed authority and decision rights are confirmed for the drafting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board lead proposes who may decide what under the bounded instrument, reviews the authority and rights for sense, and confirms the proposals for the drafting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Propose Authority and Decision Rights |
+| `plain_language_description` | string | no | This activity sets out who may decide what under the new instrument, proposing its authority and its rights. The … |
+| `business_purpose` | string | no | It exists so the instrument's power — who decides what — is proposed deliberately before the document is written. |
+| `practical_context` | string | no | It follows the scope bounding, working within the bounded territory, and it completes once the proposed authority and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

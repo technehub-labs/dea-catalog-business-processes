@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-conceive-4uqqvg through concluding task processes:task-fa-conceive-record-amzehj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Finance Strategy Context'
+plain_language_description: 'This activity establishes why the enterprise needs a fresh finance direction — a new monetary model, a rethink of the existing one, or pressure from funding and capital shifts. The enterprise''s state and the regulatory and market signals arrive as the material, the context is assessed and written up, and the assessed picture is confirmed onward. Everything the strategy later decides answers to this understanding of why now.'
+business_purpose: 'It exists so the finance strategy responds to a correctly understood trigger rather than a vague sense that the money side needs attention.'
+practical_context: 'It opens the finance strategy framing, when the enterprise faces a new monetary model, a reframe, or funding and capital shifts, and it completes once the assessed context is confirmed for the monetary framing.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead reads the enterprise''s state and the funding and capital signals, writes up why a finance strategy is needed now, and confirms the assessed context with the finance function.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Commit Strategic Intent**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Conceive Strategic Intent** (`processes:process-sd-conceive-3uredz`). Its canonical ID is `processes:activity-sd-conceive-nb772h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The intent has been sensed, framed and stress-tested, so it can now be made official. Intake registers the framed narrative and the mapped trade-offs, a last verification confirms both are complete, and the commitment locks the intent in for the strategy development that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed intent on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives direction-setting its anchor decision, closing intent conception and feeding a settled intent into strategy development.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once framing and trade-off scoping are done and closes with the commitment confirmed, consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead confirms the intent and its trade-off map, the confirmation custodian tells the corporate strategy team their input is ready, and the records custodian files the committed intent for the development cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Intent |
+| `plain_language_description` | string | no | The intent has been sensed, framed and stress-tested, so it can now be made official. Intake registers the framed … |
+| `business_purpose` | string | no | It gives direction-setting its anchor decision, closing intent conception and feeding a settled intent into strategy … |
+| `practical_context` | string | no | It opens once framing and trade-off scoping are done and closes with the commitment confirmed, consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

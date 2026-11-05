@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-3p38us through concluding task processes:task-ge-build-record-crhfkv, whose outcome — Case file retained for Equip Bodies with Instruments under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Equip Bodies with Instruments'
+plain_language_description: 'This activity hands each stood-up body the documents it will govern by — its charter, the policies, and the supporting standards. The published instruments arrive as the equipment, each body is equipped with its own set and checked against what its mandate requires, and the equipped bodies are confirmed onward for their cycles. A body without its instruments is a name without authority.'
+business_purpose: 'It exists so every constituted body holds the actual documents it is meant to operate under.'
+practical_context: 'It follows the constitution and publication of instruments, and it completes once each equipped body is confirmed onward for its operating cycles.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer hands each constituted body its charter, the applicable policies, and the supporting standards, checks the set against the body''s mandate, and confirms the equipping.'

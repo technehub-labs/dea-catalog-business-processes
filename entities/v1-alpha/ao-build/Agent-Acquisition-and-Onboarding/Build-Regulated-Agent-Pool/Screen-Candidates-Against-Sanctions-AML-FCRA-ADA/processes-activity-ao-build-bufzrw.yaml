@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-9my4jr through concluding task processes:task-ao-build-record-8dkcu7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Screen Candidates Against Sanctions, AML, FCRA, and ADA Requirements'
+plain_language_description: 'This activity runs each fitness-attested candidate through the regulator-specific clearances the enterprise must apply before they join the regulated pool. The candidate list comes in with the screening matrix, every person is checked against the sanctions, financial-crime, background, and fitness requirements that apply, and a screened candidate list with those clearances is produced. The results are confirmed to the next stage and kept as evidence that the screening happened before activation.'
+business_purpose: 'It exists so the pool carries only candidates who have cleared the sanctions, financial-crime, background, and fitness screening that regulator-tied work demands.'
+practical_context: 'It follows the fitness attestation of the pool, when the attested candidate list and the screening matrix are presented, and it closes once the screened candidate list is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian runs each attested candidate through the sanctions and financial-crime screening matrix, notes the clearances obtained, and hands the screened list to the records step so the evidence is preserved on the personnel file.'

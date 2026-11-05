@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-awy8dz through concluding task processes:task-eo-build-record-5dw4n7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Install Line Equipment'
+plain_language_description: 'This activity puts each piece of planned equipment in place along the production line, following the equipment specification and the facility blueprint. The specification arrives as the guide, installation is carried out station by station and checked against it, and the installed line is confirmed onward. The line stops being floor space and becomes a sequence of machines.'
+business_purpose: 'It exists so the production line''s equipment stands in place per the specification, ready to be configured and run.'
+practical_context: 'It opens the production line commissioning, once the equipment specification and facility blueprint are settled, and it completes when the installed line is confirmed for control configuration.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian places each piece of equipment at its planned station per the specification and blueprint, verifies the installation, and confirms the assembled line for control configuration.'
