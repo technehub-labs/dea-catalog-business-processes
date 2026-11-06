@@ -6,6 +6,9 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+
+## [v0.5.0] - 2026-11-06
+
 ### CR-BP-236: Wave D — L1/L0 Plain-Language Authoring (98 Records) + Two-Layer Programme Closure and HUM Blocking Flip
 
 The final wave of the two-layer documentation programme. **Wave D authoring**: the last 98 records — 49 L1 Process Groups (grounded in scope/grouping basis/composes child process names + the GOV-002-confirmed owner) and 49 L0 Process Contexts (grounded in cell-charter concerns/outcomes/governance roles, with the EXT-24 metrics register reflected in plain words) — gain the five plain-language fields, authored in 2 verified batches via the idempotent `scripts/author_cr236_wave_d.py` (second run writes 0). agent_type: 38 human + 11 mixed at L1 (system/platform actors documented in the records' own scope/composes), all human at L0 (one documented governance role per domain). **Programme closure**: with Wave D, all **3,723 of 3,723 records** carry authored Part I prose — the foundational requirement (every entity semantically precise enough for architectural and computational use, and sufficiently intelligible for a human to recognise, understand and relate to it in everyday business operations) is met corpus-wide. **Gate [51] Human Readability flips advisory → BLOCKING** (`--strict`; CR-BP-CE-RL posture precedent): the blocking profile was 0 across the corpus at flip time, so strict fails only on NEWLY introduced provided-layer defects; the permanent quality rules (HUM-005 jargon denylist, HUM-006 agent clarity, HUM-007 MECE) now police the layer on every commit. Posture artefacts regenerated: 56 gates, all classified, 31 blocking. The metamodel companion CR (CR-BP-230 §4) remains enabled-but-deferred — the authored content lives in the YAML records and flows through the generator, so any future schema/model alignment inherits it mechanically.

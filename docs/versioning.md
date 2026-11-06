@@ -56,6 +56,7 @@ retrospective, link it.
 | version | date | cut by CR | commit SHA | gates (blocking+advisory CONFORMANT) | post-mortem |
 | ------- | ---- | --------- | ---------- | ------------------------------------ | ----------- |
 | _empty post-reset 2026-10-13_ | | | | | |
+| v0.5.0 | 2026-11-06 | CR-BP-30h | (this PR's merge commit) | 31+0 blocking; advisory per the conformance report | — |
 
 The v0.x withdrawals of CR-BP-116 deliberately do not appear here.
 This table records *successful* cuts, not withdrawals; the recovery
@@ -65,7 +66,9 @@ appendix in CR-BP-116 §2 is the audit record for those.
 
 > **Release history**
 >
-> No prior releases. The carrier CRs CR-BP-26 (v0.1.0) and CR-BP-41
+> v0.5.0 (2026-11-06, CR-BP-30h) is the first successful post-reset cut.
+>
+> The carrier CRs CR-BP-26 (v0.1.0) and CR-BP-41
 > (v0.3.0) were withdrawn 2026-10-13 as pre-mature; CR-BP-29 (v0.2.0)
 > and CR-BP-90 (v0.4.0) were never cut. See
 > `change-requests/CR-BP-116-release-history-reset.md` for the
