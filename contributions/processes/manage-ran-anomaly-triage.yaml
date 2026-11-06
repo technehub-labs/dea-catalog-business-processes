@@ -1,0 +1,51 @@
+schema: dea-catalog-processes/contribution/v1
+contributor: emmanuel-a-otchere
+contribution_date: 2026-11-06
+
+# === Process to add ===
+# Filed per contributions/processes/PROCESS-CONTRIBUTION-TEMPLATE.yaml (CR-BP-03 §9).
+# The CI process-contribution-report workflow validates this against
+# schemas/contribution.schema.json, runs the identity check, and emits the
+# reclassification recommendation for maintainer review. This contribution
+# does not auto-land.
+
+proposed_entry:
+  id: dea:process-manage-ran-anomaly-triage
+  name: Manage RAN Anomaly Triage
+  description: |
+    Triage, classify and resolve radio access network anomalies on a 5G
+    estate: validate the raised alarm, classify the anomaly, run the KPI
+    diagnostic, apply the bounded recovery (cell restart), notify the
+    network operations centre, and escalate or dispatch field maintenance
+    on declared thresholds. Performed in the worked reference by a NOC AI
+    agent inside a governed harness (an Agentic Operating Procedure), with
+    human approvers for high-impact dispositions; the outcome is the
+    anomaly resolved, restarted, escalated or dispatched with the
+    disposition recorded against the anomaly ticket.
+  process_intent: operate
+  process_type: core
+  # Trigger (BP-ARC-ID-002): what initiates the process.
+  trigger: |
+    A cell-level anomaly is raised by the network assurance platform for
+    a 5G cell in the monitored estate.
+  # Outcome (BP-ARC-ID-003): what the process produces.
+  outcome: |
+    The anomaly is resolved, restarted, escalated or dispatched with the
+    disposition recorded against the anomaly ticket.
+
+# ECF context: the operations domain at the Operate stage.
+context_reference:
+  domain: AgencyAndOrganization   # to be confirmed by the maintainer against the domain enumeration
+  lifecycle_stage: Operate
+
+# Supporting detail for the maintainer's reclassification review.
+notes: |
+  Contributed by the Agentic Operating Procedure programme with its worked
+  5G exemplar (github.com/agentic-operating-procedure/aop-examples). The
+  process's observed decomposition: activities Validate And Classify
+  Anomaly, Diagnose KPI Degradation, Apply Bounded Recovery, Notify And
+  Escalate Or Dispatch; the programme's case corpus and provenance are
+  published with the exemplar. Two sibling metric contributions are filed
+  with dea-catalog-metrics (CR-MET-023). On publication, the programme
+  replaces its declared process gap with the assigned canonical
+  processes:process-* reference per its process-alignment rule.
