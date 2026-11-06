@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-b
 
 This is a **Process Group** (level L1), named **Governance Body Establishment**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Build. It belongs to `processes:pc-ge-build-52hjrc`. Its canonical ID is `processes:group-ge-build-tbc3ta`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family constructs the working machinery of governance. Its processes establish boards and committees, codify charters and policies into usable artefacts, document standards and procedures, and stand up the risk and control apparatus that keeps the enterprise honest.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the enterprise has operating bodies, charters, policies and controls — not just intentions — when it needs to direct and constrain itself.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Build stage, when a new enterprise, business line or oversight regime needs its governance bodies and policy artefacts stood up.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Spinning off a new subsidiary, the Governance & Existence Process Owner establishes its board and committees, codifies the charter and first policy set, documents the operating standards, and stands up the risk and control apparatus before day one of trading.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Governance Body Establishment |
+| `plain_language_description` | string | no | This family constructs the working machinery of governance. Its processes establish boards and committees, codify … |
+| `business_purpose` | string | no | So the enterprise has operating bodies, charters, policies and controls — not just intentions — when it needs to direct … |
+| `practical_context` | string | no | Encountered in the Build stage, when a new enterprise, business line or oversight regime needs its governance bodies … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

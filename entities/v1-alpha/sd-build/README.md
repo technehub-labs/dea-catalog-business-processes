@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-bu
 
 This is a **Process Context** (level L0), named **Strategic Plan Build**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Build. Its canonical ID is `processes:pc-sd-build-gmzrrm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Build stage: assembling the actual plan. It builds the strategic plan and roadmap, translates committed choices into an initiative portfolio, and sets resource allocation priorities within the authorized frame. Designing the options beforehand and steering execution afterwards belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To turn strategic choices into a versioned plan, roadmap, and initiative set with clear priorities and resourcing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in planning seasons after choices are committed — the weeks where strategy becomes documents, roadmaps, and funded initiatives.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the planning season, the Strategy & Direction Process Owner assembles the plan document, sequences the roadmap, translates each committed choice into named initiatives, and sets resource priorities within the authorized envelope.
 
 ## 5. Header and Identity Table (generated)
 
@@ -187,6 +187,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Strategic Plan Build |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Build stage: assembling the actual plan. It builds the … |
+| `business_purpose` | string | no | To turn strategic choices into a versioned plan, roadmap, and initiative set with clear priorities and resourcing. |
+| `practical_context` | string | no | Encountered in planning seasons after choices are committed — the weeks where strategy becomes documents, roadmaps, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

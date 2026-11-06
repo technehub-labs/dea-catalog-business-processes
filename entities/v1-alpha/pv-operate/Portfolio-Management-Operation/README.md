@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-o
 
 This is a **Process Group** (level L1), named **Portfolio Management Operation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Portfolio Management and Proposition Lifecycle Operation** (`processes:pc-pv-operate-ewpwjc`). Its canonical ID is `processes:group-pv-operate-ah3322`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family runs the live portfolio day to day. Its processes operate the product catalogue with accurate listings, manage portfolio performance with rebalancing decisions, and manage each proposition's lifecycle from launch through gate decisions to retirement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the catalogue stays accurate, portfolio performance is managed against intent, and every proposition moves through its lifecycle with deliberate gate decisions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously in the Operate stage: catalogue updates, performance tracking, rebalancing and lifecycle gates across the live portfolio.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Each week the Product & Value Process Owner's team updates catalogue listings on the commerce platform, reviews portfolio performance against targets, rebalances attention toward the rising proposition, and takes the lifecycle gate decision that moves one offering from growth to maturity management.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Product Portfolio Operation |
+| `plain_language_description` | string | no | This family runs the live portfolio day to day. Its processes operate the product catalogue with accurate listings … |
+| `business_purpose` | string | no | So the catalogue stays accurate, portfolio performance is managed against intent, and every proposition moves through … |
+| `practical_context` | string | no | Encountered continuously in the Operate stage: catalogue updates, performance tracking, rebalancing and lifecycle gates … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

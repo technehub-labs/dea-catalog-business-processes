@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-o
 
 This is a **Process Group** (level L1), named **Financial Operate**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Accounting, Reporting, and Treasury Operation** (`processes:pc-fa-operate-afew7e`). Its canonical ID is `processes:group-fa-operate-mazyjd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family runs the enterprise's money operations each day. Its processes operate the general ledger, run accounts payable and receivable, execute payroll, manage cash and liquidity, perform the financial close, handle tax compliance and filings, and operate financial reporting and disclosure.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So every payment, receipt, pay run, cash movement, close, filing and report happens accurately and on time, inside designed controls.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously in the Operate stage — pay runs, invoice cycles, treasury checks, month-end and year-end closes, and filing deadlines.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* During month-end, the Finance & Accounting Process Owner's team closes the ledger, runs the payables and receivables cycles, executes payroll, checks cash headroom, files the period tax returns, and publishes the financial reporting pack — reconciliation controls running underneath.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Everyday Financial Operations |
+| `plain_language_description` | string | no | This family runs the enterprise's money operations each day. Its processes operate the general ledger, run accounts … |
+| `business_purpose` | string | no | So every payment, receipt, pay run, cash movement, close, filing and report happens accurately and on time, inside … |
+| `practical_context` | string | no | Encountered continuously in the Operate stage — pay runs, invoice cycles, treasury checks, month-end and year-end … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

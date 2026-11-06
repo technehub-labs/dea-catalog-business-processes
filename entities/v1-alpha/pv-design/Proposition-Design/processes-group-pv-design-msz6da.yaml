@@ -121,3 +121,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Proposition Design'
+plain_language_description: 'This family shapes the offer in detail. Its processes design the product and service propositions, design their packaging and configuration for target segments, and design innovation experiments with hypotheses and timeboxes.'
+business_purpose: 'So propositions, packaging and configuration are specified to a buildable standard, and innovation experiments are designed before money is spent building.'
+practical_context: 'Encountered in the Design stage, between the value proposition framing and the development of variants and service capabilities.'
+worked_example:
+  agent_type: human
+  narrative: 'With the thesis validated, the Product & Value Process Owner''s designers specify the product and service propositions, commit packaging and configuration designs for the target segments, and set up an innovation experiment with a clear hypothesis and timebox.'

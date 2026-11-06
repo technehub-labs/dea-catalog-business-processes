@@ -134,3 +134,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Review and Learning'
+plain_language_description: 'This family closes the loop on how well governance actually works. Its processes review governance effectiveness, score audit findings, refine the policy regime, and propagate lessons back into conception, design, build and operation.'
+business_purpose: 'So audit findings and reviews genuinely change the policy regime, and lessons learned reshape how the enterprise governs next time.'
+practical_context: 'Encountered in the Improve stage: effectiveness reviews, audit finding scoring and policy refinement after each oversight cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'After a year of oversight, the Governance & Existence Process Owner reviews governance effectiveness, scores the audit findings by severity, refines two policy regimes that under-performed, and routes the lessons into the next conception and design cycle.'

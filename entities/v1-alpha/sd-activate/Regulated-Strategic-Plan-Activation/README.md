@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-a
 
 This is a **Process Group** (level L1), named **Regulated Strategic Plan Activation**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Institutionalize Regulated Strategic Plan** (`processes:pc-sd-activate-ghaub8`). Its canonical ID is `processes:group-sd-activate-mbw9cc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family makes a board-approved strategic plan live under a supervisor's acknowledged filing regime. Its processes file the plan and secure acknowledgement, preserve the filing receipt on the regulated record, launch the operational monitoring framework of indicators and risk appetite, activate communications under continuing supervision, and make the plan's obligations binding.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So a regulated strategic plan binds in practice: supervisor acknowledgement on record, monitoring framework live, communications active, obligations enforceable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a supervisor must acknowledge a strategic plan — recovery plans, integrated resource plans, approved trust strategies — before live execution begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The board signs a new recovery plan. The Strategy & Direction Process Owner's team submits the filing, secures the supervisor's acknowledgement, preserves the receipt on the regulated record, launches the monitoring framework with early-warning indicators, and activates the communications plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -64,6 +64,11 @@ from steady-state strategy execution.
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Strategic Plan Activation |
+| `plain_language_description` | string | no | This family makes a board-approved strategic plan live under a supervisor's acknowledged filing regime. Its processes … |
+| `business_purpose` | string | no | So a regulated strategic plan binds in practice: supervisor acknowledgement on record, monitoring framework live … |
+| `practical_context` | string | no | Encountered when a supervisor must acknowledge a strategic plan — recovery plans, integrated resource plans, approved … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

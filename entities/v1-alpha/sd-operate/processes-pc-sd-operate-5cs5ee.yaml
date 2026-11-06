@@ -113,3 +113,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategic Steering Operation'
+plain_language_description: 'This context covers the Strategy & Direction area at the Operate stage: steering execution of the chosen strategy. It monitors strategic performance against the plan, senses signals from the environment, steers the initiative portfolio, and runs the strategic review cycle. Executing initiatives is operational work elsewhere; adapting direction itself is the improvement context.'
+business_purpose: 'To hold strategy and execution together — watching performance, reading the environment, and keeping the initiative portfolio pointed at intent.'
+practical_context: 'Encountered on the steering cadence: monthly performance views, quarterly review cycles, and continuous scanning of signals outside the enterprise.'
+worked_example:
+  agent_type: human
+  narrative: 'At the quarterly review, the Strategy & Direction Process Owner compares performance to plan, tables the environmental signals picked up since last cycle, and steers two initiatives ahead while pausing a third.'

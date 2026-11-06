@@ -171,3 +171,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Proposition Conception'
+plain_language_description: 'This family frames what the enterprise will offer the world. Its processes frame the value proposition thesis, set the portfolio direction, frame the innovation thesis, and validate proposition concepts against market evidence before any design begins.'
+business_purpose: 'To decide early which value-bearing propositions are worth pursuing, on what portfolio direction, and which innovation theses deserve testing.'
+practical_context: 'Encountered in the Conceive stage, when leadership frames new propositions and portfolio direction ahead of design and development.'
+worked_example:
+  agent_type: human
+  narrative: 'Sensing a market shift, the Product & Value Process Owner frames the value proposition thesis, adjusts the portfolio direction, frames an innovation thesis, and has the concept validated against market evidence before design capacity is committed.'

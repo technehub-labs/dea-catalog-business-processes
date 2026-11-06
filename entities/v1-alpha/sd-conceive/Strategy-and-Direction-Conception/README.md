@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-c
 
 This is a **Process Group** (level L1), named **Strategy and Direction Conception**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Purpose and Ambition Conception** (`processes:pc-sd-conceive-ucb3gx`). Its canonical ID is `processes:group-sd-conceive-7qhvzn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family is the deepest front-end thinking in the enterprise. Its processes define purpose and ambition, conceive the strategic intent, frame the strategic horizons, and develop the corporate strategy inside the frame governance has authorised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To set the trajectory itself: why the enterprise exists, what it aims to become, the intent and horizons it commits to, and the corporate strategy that directs within the authorised frame.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, at founding, renewal or pivot moments when direction itself is the question.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At a five-year renewal, the Strategy & Direction Process Owner leads the conception cycle: purpose and ambition are re-articulated, strategic intent is committed, horizons are framed, and the corporate strategy is developed within the frame the board authorises.
 
 ## 5. Header and Identity Table (generated)
 
@@ -70,6 +70,11 @@ authorises; strategy-direction x conceive directs).
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[4] | no | array of 4 item(s) |
+| `plain_language_name` | string | no | Framing Purpose, Ambition and Strategic Intent |
+| `plain_language_description` | string | no | This family is the deepest front-end thinking in the enterprise. Its processes define purpose and ambition, conceive … |
+| `business_purpose` | string | no | To set the trajectory itself: why the enterprise exists, what it aims to become, the intent and horizons it commits to … |
+| `practical_context` | string | no | Encountered in the Conceive stage, at founding, renewal or pivot moments when direction itself is the question. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -189,3 +189,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations Model Conception'
+plain_language_description: 'This family frames how the enterprise will make and deliver before anything is built. Its processes set the operations strategy, conceive the delivery model, sketch how technology will enable the work, and decide the handling of physical assets — the shared thinking that later design and build follow.'
+business_purpose: 'To agree early on how production, delivery, technology and physical assets will combine, so downstream design starts from one coherent operations model.'
+practical_context: 'Encountered in the Conceive stage, when leadership is shaping the operations model ahead of detailed design and build.'
+worked_example:
+  agent_type: human
+  narrative: 'Planning a new service, the Enablement & Operations Process Owner runs the framing workshop: the operations strategy is set, the delivery model is conceived, the technology enablement approach is sketched, and the approach to physical assets — own or lease — is decided.'

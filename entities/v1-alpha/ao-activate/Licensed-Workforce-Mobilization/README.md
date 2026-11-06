@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-a
 
 This is a **Process Group** (level L1), named **Licensed Workforce Mobilization**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Activate. It belongs to `processes:pc-ao-activate-kusw2u`. Its canonical ID is `processes:group-ao-activate-jjx738`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family gets licensed people safely into live regulated work. It covers verifying each individual's regulator-issued licence or registration, recording the fitness-and-propriety attestation alongside supervised training and competency assessment, and assigning signing authority or controlled-function status. It ends with notification to the continuing supervisor and an entry on the regulated personnel record, placing the person under ongoing oversight.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So that nobody starts live regulated duties until licence, fitness, training and supervisory oversight are all evidenced, keeping the enterprise's approval authority intact.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever a licensed individual is about to begin live duties — the go-live step that follows recruitment and precedes routine performance management.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A hospital hires a newly qualified nurse. Before her first shift, the team supporting the Agency & Organization Process Owner verifies her state licence, files the fitness-and-propriety attestation and supervised-training record, designates her controlled-function signing authority, notifies her continuing supervisor, and opens her regulated personnel record — only then is she rostered onto live duties.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ performance management.
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Licensed Workforce Mobilization |
+| `plain_language_description` | string | no | This family gets licensed people safely into live regulated work. It covers verifying each individual's … |
+| `business_purpose` | string | no | So that nobody starts live regulated duties until licence, fitness, training and supervisory oversight are all … |
+| `practical_context` | string | no | Encountered whenever a licensed individual is about to begin live duties — the go-live step that follows recruitment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

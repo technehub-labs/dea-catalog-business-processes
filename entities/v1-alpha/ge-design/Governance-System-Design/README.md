@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 
 This is a **Process Group** (level L1), named **Governance System Design**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Design. It belongs to `processes:pc-ge-design-3f2gjr`. Its canonical ID is `processes:group-ge-design-jexyp6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family turns the mandate into a concrete oversight blueprint. Its processes design the governance system itself, articulate control objectives, lay out the policy architecture, and design how authority is delegated through the enterprise.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So oversight, control and delegated authority are designed deliberately — testable and coherent — before bodies are established and instruments built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, translating the conceived mandate and policy direction into architecture ready to be built.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the mandate framed, the Governance & Existence Process Owner's architects design the governance system, write the control objectives, lay out the policy architecture, and draw the authority-delegation map that says who may decide what.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Governance System Design |
+| `plain_language_description` | string | no | This family turns the mandate into a concrete oversight blueprint. Its processes design the governance system itself … |
+| `business_purpose` | string | no | So oversight, control and delegated authority are designed deliberately — testable and coherent — before bodies are … |
+| `practical_context` | string | no | Encountered in the Design stage, translating the conceived mandate and policy direction into architecture ready to be … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

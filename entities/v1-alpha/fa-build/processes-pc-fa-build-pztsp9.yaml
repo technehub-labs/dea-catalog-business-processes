@@ -104,3 +104,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Finance & Accounting x Build'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Finance Capability and System Build'
+plain_language_description: 'This context covers the Finance & Accounting area at the Build stage: standing up the money-management machinery. It staffs and structures the finance function, deploys the finance systems, and secures funding facilities such as credit lines. Designing the accounting architecture and running daily finance work sit in neighboring contexts.'
+business_purpose: 'To give the enterprise a working finance function, fitted-out systems, and arranged funding, ready to record and manage money from day one.'
+practical_context: 'Encountered when the enterprise is first set up, when finance capability lags growth, or during major finance transformation programmes.'
+worked_example:
+  agent_type: human
+  narrative: 'During a finance transformation, the Finance & Accounting Process Owner oversees the new system configuration for the ledger team, confirms staff are in post, and completes negotiation of a revolving funding facility.'

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-i
 
 This is a **Process Group** (level L1), named **Product Evolution**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Product Evolution and Portfolio Rationalization** (`processes:pc-pv-improve-wpyfx7`). Its canonical ID is `processes:group-pv-improve-rjab8b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family keeps the portfolio competitive over time. Its processes conduct proposition performance reviews, evolve products and services with bounded enhancements, and rationalize the portfolio with retire-or-pivot decisions.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So evidence from the market feeds evolution: propositions improved, products evolved deliberately, and weak offerings retired or pivoted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: performance reviews each period, enhancement waves, and portfolio rationalization as the market shifts.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Mid-year, the Product & Value Process Owner conducts the proposition performance review, commits bounded enhancements to the two strongest products, and rationalizes the tail of the portfolio — one line pivots, another is queued for retirement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Product Evolution |
+| `plain_language_description` | string | no | This family keeps the portfolio competitive over time. Its processes conduct proposition performance reviews, evolve … |
+| `business_purpose` | string | no | So evidence from the market feeds evolution: propositions improved, products evolved deliberately, and weak offerings … |
+| `practical_context` | string | no | Encountered in the Improve stage: performance reviews each period, enhancement waves, and portfolio rationalization as … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

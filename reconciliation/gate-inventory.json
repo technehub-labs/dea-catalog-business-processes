@@ -839,11 +839,11 @@
       "population": "the provided plain-language layer of all 3,723 records (CR-BP-230 fields)",
       "population_reconciled": true,
       "open_findings": 0,
-      "reason": "The HUM rules are deterministic over record content; the population is unbackfilled until the CR-BP-233..236 waves (all findings advisory), and the gate flips blocking at wave closure CR-BP-236 per the CR-BP-CE-RL posture precedent. Semantic quality stays owned by the BP-SEM/ECF gates.",
-      "current_blocking": false,
+      "reason": "The HUM rules are deterministic over record content; the population was backfilled by the CR-BP-233..236 waves (all 5x3723 presence findings drained to 0) and the gate flipped blocking at wave closure CR-BP-236 per the CR-BP-CE-RL posture precedent \u2014 strict fails only on NEWLY introduced provided-layer defects. Semantic quality stays owned by the BP-SEM/ECF gates.",
+      "current_blocking": true,
       "target_blocking": true,
-      "status_change": "promoted to blocking",
-      "command": "python3 scripts/check_human_readability.py"
+      "status_change": "unchanged",
+      "command": "python3 scripts/check_human_readability.py --strict"
     }
   ]
 }

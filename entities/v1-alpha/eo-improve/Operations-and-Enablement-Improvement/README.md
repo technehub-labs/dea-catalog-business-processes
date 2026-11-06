@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-i
 
 This is a **Process Group** (level L1), named **Operations and Enablement Improvement**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Improve. It belongs to `processes:pc-eo-improve-pka6dk`. Its canonical ID is `processes:group-eo-improve-c8uff9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family makes the execution engine better year after year. Its processes review operations performance, optimize logistics and asset utilization, run lean and six sigma improvement programmes, and improve the technology platforms the enterprise depends on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To lift throughput, cost and reliability on evidence, so operations performance, logistics, assets and platforms keep improving rather than degrading.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: performance reviews, optimization projects, lean programmes and platform upgrades that follow each operating period.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a quarter of missed throughput targets, the Enablement & Operations Process Owner orders a performance review; the team runs a lean improvement programme on the bottleneck line, re-plans logistics routing, rebalances asset utilization and schedules the next platform upgrade.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Operations and Enablement Improvement |
+| `plain_language_description` | string | no | This family makes the execution engine better year after year. Its processes review operations performance, optimize … |
+| `business_purpose` | string | no | To lift throughput, cost and reliability on evidence, so operations performance, logistics, assets and platforms keep … |
+| `practical_context` | string | no | Encountered in the Improve stage: performance reviews, optimization projects, lean programmes and platform upgrades … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -99,3 +99,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Build'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Body Establishment'
+plain_language_description: 'This context covers the Governance & Existence area at the Build stage: standing up the working organs of governance. It establishes boards and committees, codifies their charters, and constructs the policy artefacts and standards they will use. Framing the direction beforehand and running the bodies afterwards belong to neighboring contexts.'
+business_purpose: 'To create the actual bodies, charters, and policy instruments through which the enterprise will be directed and controlled.'
+practical_context: 'Encountered at enterprise formation, when new oversight bodies are created, or when the policy set is being materially constructed or rebuilt.'
+worked_example:
+  agent_type: human
+  narrative: 'Forming a new risk committee, the Governance & Existence Process Owner confirms membership appointments, finalizes the committee''s charter wording, and publishes the supporting policy artefacts ahead of its first meeting.'

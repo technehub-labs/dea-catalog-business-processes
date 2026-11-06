@@ -133,3 +133,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strengthening Financial Controls and Cost Efficiency'
+plain_language_description: 'This family keeps the money machinery getting better. Its processes refine financial controls and policies, evolve the treasury and funding model as the enterprise changes, audit compliance with policy, and review where cost can be optimized.'
+business_purpose: 'To keep financial controls effective, the treasury model current, compliance audited and costs trending down as the enterprise grows and changes.'
+practical_context: 'Encountered in the Improve stage: control reviews after each close, treasury evolution, compliance audits and cost reviews that follow operating experience.'
+worked_example:
+  agent_type: human
+  narrative: 'Following a costly quarter, the Finance & Accounting Process Owner commissions a cost optimization review; the team refines two weak controls, evolves the treasury and funding model for the new footprint, and scores the latest compliance audit findings into an action list.'

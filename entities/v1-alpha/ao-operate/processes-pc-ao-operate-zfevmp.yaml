@@ -123,3 +123,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent Operations and Performance'
+plain_language_description: 'This context covers the Agency & Organization area at the Operate stage: the steady running of the enterprise''s people and agents. It covers performance management, coordination and collaboration rhythms, time and attendance, compensation administration, and day-to-day learning and development. Getting better as an organization, rather than merely running, is the improvement context''s job.'
+business_purpose: 'To keep the whole agent mix productive, present, coordinated, paid, and learning, so the enterprise runs smoothly day after day.'
+practical_context: 'Encountered continuously — in weekly one-to-ones, monthly attendance and pay cycles, and recurring development activities across the working population.'
+worked_example:
+  agent_type: human
+  narrative: 'At month end the Agency & Organization Process Owner reviews attendance and performance figures, resolves a coordination bottleneck between two teams, and approves the compensation run within workforce policy.'

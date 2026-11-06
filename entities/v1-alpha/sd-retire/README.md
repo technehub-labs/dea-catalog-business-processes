@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-re
 
 This is a **Process Context** (level L0), named **Sunset Regulated Strategic Plan**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Retire. Its canonical ID is `processes:pc-sd-retire-zxnc3c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Retire stage for plans an authority has ordered retired. It documents the sunset filings, stops the plan's execution, decommissions its monitoring framework, executes communications, and preserves the records under the retention regime. Improvement-driven strategy change and replacement-plan activation are handled in neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To retire a mandated plan cleanly — acknowledged filings made, execution ceased, monitoring stood down, and records preserved as required.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered only when a supervisor or regulator directs retirement or replacement of a plan — a scripted, evidence-heavy episode with the authority watching.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Acting on the supervisor's retirement directive, the Strategy & Direction Process Owner completes the sunset filing, confirms plan cessation across business units, stands down the monitoring framework, and preserves the regulated records per the retention policy.
 
 ## 5. Header and Identity Table (generated)
 
@@ -148,6 +148,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, rationale, cell_carries_forward |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Sunset Regulated Strategic Plan |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Retire stage for plans an authority has ordered retired. It … |
+| `business_purpose` | string | no | To retire a mandated plan cleanly — acknowledged filings made, execution ceased, monitoring stood down, and records … |
+| `practical_context` | string | no | Encountered only when a supervisor or regulator directs retirement or replacement of a plan — a scripted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 
 This is a **Process Group** (level L1), named **Agent Operations**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Agent Operations and Performance** (`processes:pc-ao-operate-zfevmp`). Its canonical ID is `processes:group-ao-operate-35gmps`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family runs the steady-state machinery that keeps agents working well. It covers operating agent performance on a review cadence, running payroll and benefits, tracking time and attendance, delivering learning and development to people and fine-tuning to artificial agents alike, and coordinating collaboration across teams and agents.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So every agent — human, artificial or hybrid — is paid, scheduled, developed, coordinated and performance-managed reliably through ordinary working life.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered every operating day: pay runs, attendance tracking, training sessions, performance reviews and collaboration routines after agents have been acquired and onboarded.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* On a normal month-end, the Agency & Organization Process Owner's operations team runs the payroll cycle, reconciles time and attendance, schedules a fine-tuning run for one of the artificial agents, and chairs the cross-team collaboration check — while line managers complete routine performance reviews.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Agent Operations |
+| `plain_language_description` | string | no | This family runs the steady-state machinery that keeps agents working well. It covers operating agent performance on a … |
+| `business_purpose` | string | no | So every agent — human, artificial or hybrid — is paid, scheduled, developed, coordinated and performance-managed … |
+| `practical_context` | string | no | Encountered every operating day: pay runs, attendance tracking, training sessions, performance reviews and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

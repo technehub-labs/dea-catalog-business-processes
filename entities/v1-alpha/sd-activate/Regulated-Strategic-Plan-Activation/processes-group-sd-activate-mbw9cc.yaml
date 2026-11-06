@@ -152,3 +152,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-86-sd-activate-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Strategic Plan Activation'
+plain_language_description: 'This family makes a board-approved strategic plan live under a supervisor''s acknowledged filing regime. Its processes file the plan and secure acknowledgement, preserve the filing receipt on the regulated record, launch the operational monitoring framework of indicators and risk appetite, activate communications under continuing supervision, and make the plan''s obligations binding.'
+business_purpose: 'So a regulated strategic plan binds in practice: supervisor acknowledgement on record, monitoring framework live, communications active, obligations enforceable.'
+practical_context: 'Encountered when a supervisor must acknowledge a strategic plan — recovery plans, integrated resource plans, approved trust strategies — before live execution begins.'
+worked_example:
+  agent_type: human
+  narrative: 'The board signs a new recovery plan. The Strategy & Direction Process Owner''s team submits the filing, secures the supervisor''s acknowledgement, preserves the receipt on the regulated record, launches the monitoring framework with early-warning indicators, and activates the communications plan.'

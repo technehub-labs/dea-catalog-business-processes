@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 
 This is a **Process Group** (level L1), named **Agent Acquisition and Onboarding**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Build. It belongs to `processes:pc-ao-build-pjk4rz`. Its canonical ID is `processes:group-ao-build-m6fmyx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+These are the processes that bring new working capacity into the organization, whatever its substrate: sourcing and recruiting people, provisioning artificial agents by deploying models and wiring up integrations, onboarding and integrating every new agent, and growing the external pools of contractors and partner agents, including a vetted pool for regulated roles. It is the constructive stage of the Agency & Organization domain, turning designed capacity needs into working agents.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To give the enterprise the human, artificial and contracted agent capacity its organization needs, integrated and ready to work.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met during the Build stage whenever the enterprise is hiring staff, deploying new artificial agents, or expanding contractor pools — after agent topology has been designed and before steady-state operation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Ahead of a busy season, the Agency & Organization Process Owner's team recruits additional staff, provisions new artificial agents by deploying models and connecting them through APIs, and extends the vetted contractor pool — a blend of people and automation onboarding together.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Agent Acquisition and Onboarding |
+| `plain_language_description` | string | no | These are the processes that bring new working capacity into the organization, whatever its substrate: sourcing and … |
+| `business_purpose` | string | no | To give the enterprise the human, artificial and contracted agent capacity its organization needs, integrated and ready … |
+| `practical_context` | string | no | Met during the Build stage whenever the enterprise is hiring staff, deploying new artificial agents, or expanding … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

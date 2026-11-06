@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-d
 
 This is a **Process Group** (level L1), named **Process and Enablement Design**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Operations and Enablement Design** (`processes:pc-eo-design-kxdfnz`). Its canonical ID is `processes:group-eo-design-g6dmdk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family turns the operations model into designs people can build from. Its processes design the operations and delivery models, draw the technology platform architecture, produce facility and asset blueprints, and work out logistics and routing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So builders and operators receive coherent, testable designs for how work will flow, on which platforms, in which facilities, and along which routes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, between the operations-model framing and the physical build programmes that implement the blueprints.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the operations model agreed, the Enablement & Operations Process Owner's architects design the delivery model, document the technology platform architecture, draft facility and asset blueprints, and map logistics routing — everything the build teams need to start construction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Process and Enablement Design |
+| `plain_language_description` | string | no | This family turns the operations model into designs people can build from. Its processes design the operations and … |
+| `business_purpose` | string | no | So builders and operators receive coherent, testable designs for how work will flow, on which platforms, in which … |
+| `practical_context` | string | no | Encountered in the Design stage, between the operations-model framing and the physical build programmes that implement … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

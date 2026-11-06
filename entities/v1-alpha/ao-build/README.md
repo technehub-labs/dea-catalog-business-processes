@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-bu
 
 This is a **Process Context** (level L0), named **Agent Acquisition and Onboarding**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Build. Its canonical ID is `processes:pc-ao-build-pjk4rz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Agency & Organization area at the Build stage: bringing new working capacity into the enterprise. It spans sourcing people, standing up automated agents, integrating both into teams, and growing the contractor and partner pool. Design of the structure they join and day-to-day management afterwards sit in neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To supply the enterprise with the people, automated agents, and partner capacity it needs, properly onboarded and ready to contribute.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during growth phases, team expansion, or when new automated agents are provisioned; runs from the sourcing decision through to a fully integrated newcomer.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Agency & Organization Process Owner signs off the onboarding pack for a cohort of new hires and a newly deployed automated agent, confirming provisioning settings and team integration steps are complete before day one.
 
 ## 5. Header and Identity Table (generated)
 
@@ -164,6 +164,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Agent Acquisition and Onboarding |
+| `plain_language_description` | string | no | This context covers the Agency & Organization area at the Build stage: bringing new working capacity into the … |
+| `business_purpose` | string | no | To supply the enterprise with the people, automated agents, and partner capacity it needs, properly onboarded and ready … |
+| `practical_context` | string | no | Encountered during growth phases, team expansion, or when new automated agents are provisioned; runs from the sourcing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

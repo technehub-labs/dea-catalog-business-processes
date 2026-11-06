@@ -149,3 +149,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-83-fa-activate-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Billing Activation'
+plain_language_description: 'This family brings an invoicing or revenue-recognition capability live once the supervisor has acknowledged the accounting and rate regime that governs it. Its processes record that framework activation, secure and preserve the tariff or pricing approval, assemble readiness evidence such as supervised tests and the first-invoice runbook, switch on segregation of duties, audit trail and reconciliation, and notify the continuing supervisor.'
+business_purpose: 'So the first invoice or revenue entry only happens with the regulator''s acknowledgement on record, pricing approval preserved, and billing controls live.'
+practical_context: 'Encountered when a new invoicing or revenue-recognition capability in a supervised sector is cleared to go live — between build and configuration and steady-state billing operations.'
+worked_example:
+  agent_type: human
+  narrative: 'An insurer is switching on a new statutory-accounting billing capability. The Finance & Accounting Process Owner''s team records the supervisor''s acknowledgement, preserves the approved tariff filing, rehearses the first-invoice runbook, verifies the reconciliation and audit-trail controls, notifies the continuing supervisor, and releases the first invoice.'

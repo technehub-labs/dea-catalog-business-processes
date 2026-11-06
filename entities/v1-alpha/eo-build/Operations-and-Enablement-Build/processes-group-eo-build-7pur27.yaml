@@ -151,3 +151,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Enablement Build'
+plain_language_description: 'This family physically assembles the enterprise''s execution engine. Its processes stand up production lines and commission them to trial rate, build delivery capability and the logistics network, acquire and install technology assets, and provision the facilities everything runs from.'
+business_purpose: 'To create the production, delivery, logistics, technology and facility foundations that day-to-day operations will later run on.'
+practical_context: 'Met during the Build stage, when major programmes are standing up new lines, networks, systems and sites ahead of go-live.'
+worked_example:
+  agent_type: human
+  narrative: 'Launching a new product line, the Enablement & Operations Process Owner commissions the production line to trial rate, extends the logistics network with a new regional hub, takes delivery of installed technology assets, and fits out the facility — handing each element to operations as it completes.'

@@ -136,3 +136,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Product Development'
+plain_language_description: 'This family constructs what the enterprise will sell. Its processes develop product variants, build service capabilities, create innovation prototypes for testing hypotheses, and prepare market readiness with go-to-market assets.'
+business_purpose: 'So designed propositions become real, sellable products and services — variants, capabilities and prototypes — with the market readiness to launch.'
+practical_context: 'Encountered in the Build stage, turning proposition designs into variants, prototypes and launch-ready assets ahead of service transition.'
+worked_example:
+  agent_type: human
+  narrative: 'Turning the approved design into reality, the Product & Value Process Owner''s teams develop the first product variants, build the supporting service capability, produce a pilot batch of the innovation prototype for hypothesis testing, and prepare the go-to-market assets that market readiness requires.'

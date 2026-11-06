@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-im
 
 This is a **Process Context** (level L0), named **Finance and Financial Control Improvement**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Improve. Its canonical ID is `processes:pc-fa-improve-haqf4w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Improve stage: making the enterprise's cost base, reporting, and controls stronger. It runs cost optimization reviews, improves reporting and disclosure quality, and strengthens financial controls where findings show weakness. Routine monthly close and reporting are the operating context's work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To reduce cost, sharpen reporting and disclosure, and close control gaps so the financial function improves cycle over cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered after audit cycles, close post-mortems, or cost reviews — whenever findings or cost data indicate structural rather than operational fixes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After an audit flags a weak approval control, the Finance & Accounting Process Owner commissions a cost review across shared services, tightens the control design, and commits the reporting improvements for next quarter.
 
 ## 5. Header and Identity Table (generated)
 
@@ -162,6 +162,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Finance and Financial Control Improvement |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Improve stage: making the enterprise's cost base, reporting … |
+| `business_purpose` | string | no | To reduce cost, sharpen reporting and disclosure, and close control gaps so the financial function improves cycle over … |
+| `practical_context` | string | no | Encountered after audit cycles, close post-mortems, or cost reviews — whenever findings or cost data indicate … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

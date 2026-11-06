@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-ac
 
 This is a **Process Context** (level L0), named **Proposition Launch and Service Transition**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Activate. Its canonical ID is `processes:pc-pv-activate-f7kne7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Activate stage: moving finished propositions into live service. It validates transition readiness, hands the product or service over into operation, obtains operational acceptance, and completes launch activation with ownership and controls assigned. Developing the proposition beforehand and delivering it daily afterwards are neighboring domains' concerns.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To cross the bridge from built to serving: readiness proven, acceptance recorded, and launch completed with clear ownership.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at launch windows and service cutovers, when development is complete and the question is whether the proposition is truly ready for customers.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the launch window, the Product & Value Process Owner reviews the readiness evidence, runs the transition checklist with the receiving operations teams, records operational acceptance, and declares the proposition live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -110,6 +110,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Proposition Launch and Service Transition |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Activate stage: moving finished propositions into live service. It … |
+| `business_purpose` | string | no | To cross the bridge from built to serving: readiness proven, acceptance recorded, and launch completed with clear … |
+| `practical_context` | string | no | Encountered at launch windows and service cutovers, when development is complete and the question is whether the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

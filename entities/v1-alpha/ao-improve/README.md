@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-im
 
 This is a **Process Context** (level L0), named **Agent Development and Organization Improvement**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:pc-ao-improve-qkmh6b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Agency & Organization area at the Improve stage: making the organization and its agents better over time. It runs engagement and alignment reviews, analyses capability gaps, commits reorganizations where warranted, and drives agent performance improvement. Routine supervision of people at work belongs to the operating context next door.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep the workforce and agent base effective by closing capability gaps and adapting structure as evidence accumulates.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered after survey cycles, performance reviews, or structural reviews, when findings point to gaps that need a deliberate response rather than day-to-day correction.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following a dip in engagement scores, the Agency & Organization Process Owner commissions a capability gap analysis, agrees a targeted reorganization, and commits an improvement plan for the underperforming agent group.
 
 ## 5. Header and Identity Table (generated)
 
@@ -214,6 +214,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Agent Development and Organization Improvement |
+| `plain_language_description` | string | no | This context covers the Agency & Organization area at the Improve stage: making the organization and its agents better … |
+| `business_purpose` | string | no | To keep the workforce and agent base effective by closing capability gaps and adapting structure as evidence … |
+| `practical_context` | string | no | Encountered after survey cycles, performance reviews, or structural reviews, when findings point to gaps that need a … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

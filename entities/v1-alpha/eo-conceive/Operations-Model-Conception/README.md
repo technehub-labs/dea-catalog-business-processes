@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-c
 
 This is a **Process Group** (level L1), named **Operations Model Conception**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Operations Model and Enablement Conception** (`processes:pc-eo-conceive-mxmtzq`). Its canonical ID is `processes:group-eo-conceive-j6n4f7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family frames how the enterprise will make and deliver before anything is built. Its processes set the operations strategy, conceive the delivery model, sketch how technology will enable the work, and decide the handling of physical assets — the shared thinking that later design and build follow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To agree early on how production, delivery, technology and physical assets will combine, so downstream design starts from one coherent operations model.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, when leadership is shaping the operations model ahead of detailed design and build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Planning a new service, the Enablement & Operations Process Owner runs the framing workshop: the operations strategy is set, the delivery model is conceived, the technology enablement approach is sketched, and the approach to physical assets — own or lease — is decided.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ absorbed from the dissolved Supply & Resources domain.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Operations Model Conception |
+| `plain_language_description` | string | no | This family frames how the enterprise will make and deliver before anything is built. Its processes set the operations … |
+| `business_purpose` | string | no | To agree early on how production, delivery, technology and physical assets will combine, so downstream design starts … |
+| `practical_context` | string | no | Encountered in the Conceive stage, when leadership is shaping the operations model ahead of detailed design and build. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

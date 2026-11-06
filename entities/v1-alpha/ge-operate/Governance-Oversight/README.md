@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 
 This is a **Process Group** (level L1), named **Governance Oversight**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Operate. It belongs to `processes:pc-ge-operate-hb2dac`. Its canonical ID is `processes:group-ge-operate-v2eu8x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family runs the governance machinery day to day. Its processes convene board and committee cycles, operate enterprise risk oversight, execute policy compliance, audit that compliance, and conduct assurance reviews.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So boards meet, risks are surfaced and mitigated, policy compliance is executed and checked, and governance decisions keep being made on schedule.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously in the Operate stage — committee calendars, risk reviews, compliance audits and assurance reports through the year.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Mid-quarter, the Governance & Existence Process Owner convenes the risk committee, operates enterprise risk oversight over the emerging exposure, runs the policy compliance audit on a sampled area, and tables the assurance review at the board with recommended decisions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Governance Oversight |
+| `plain_language_description` | string | no | This family runs the governance machinery day to day. Its processes convene board and committee cycles, operate … |
+| `business_purpose` | string | no | So boards meet, risks are surfaced and mitigated, policy compliance is executed and checked, and governance decisions … |
+| `practical_context` | string | no | Encountered continuously in the Operate stage — committee calendars, risk reviews, compliance audits and assurance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

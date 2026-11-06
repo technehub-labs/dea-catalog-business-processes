@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-d
 
 This is a **Process Group** (level L1), named **Proposition Design**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Proposition and Packaging Design** (`processes:pc-pv-design-8dhwpn`). Its canonical ID is `processes:group-pv-design-msz6da`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family shapes the offer in detail. Its processes design the product and service propositions, design their packaging and configuration for target segments, and design innovation experiments with hypotheses and timeboxes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So propositions, packaging and configuration are specified to a buildable standard, and innovation experiments are designed before money is spent building.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, between the value proposition framing and the development of variants and service capabilities.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the thesis validated, the Product & Value Process Owner's designers specify the product and service propositions, commit packaging and configuration designs for the target segments, and set up an innovation experiment with a clear hypothesis and timebox.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Proposition Design |
+| `plain_language_description` | string | no | This family shapes the offer in detail. Its processes design the product and service propositions, design their … |
+| `business_purpose` | string | no | So propositions, packaging and configuration are specified to a buildable standard, and innovation experiments are … |
+| `practical_context` | string | no | Encountered in the Design stage, between the value proposition framing and the development of variants and service … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

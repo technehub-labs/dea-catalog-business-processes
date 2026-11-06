@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-re
 
 This is a **Process Context** (level L0), named **Operations and Asset Decommissioning**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Retire. Its canonical ID is `processes:pc-eo-retire-nw3ynf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Enablement & Operations area at the Retire stage: taking operational assets out of service in a controlled way. It plans and approves the retirement, isolates and withdraws the asset, handles decommissioning and disposal including data sanitization, and settles residual value and obligations. Withdrawing a product or service from the market is a different retirement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To remove end-of-life assets safely and accountably, leaving no live data, unsafe equipment, or unresolved obligations behind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at equipment end-of-life, site closures, platform replacements, or facility exits — an episodic stage gated by an approved retirement plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Retiring an ageing server estate, the Enablement & Operations Process Owner approves the retirement plan, witnesses isolation from the network, confirms certified data sanitization before disposal, and closes out residual contract obligations.
 
 ## 5. Header and Identity Table (generated)
 
@@ -115,6 +115,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Operations and Asset Decommissioning |
+| `plain_language_description` | string | no | This context covers the Enablement & Operations area at the Retire stage: taking operational assets out of service in a … |
+| `business_purpose` | string | no | To remove end-of-life assets safely and accountably, leaving no live data, unsafe equipment, or unresolved obligations … |
+| `practical_context` | string | no | Encountered at equipment end-of-life, site closures, platform replacements, or facility exits — an episodic stage gated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

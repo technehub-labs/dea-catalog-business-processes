@@ -154,3 +154,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Unwind'
+plain_language_description: 'This context covers the Governance & Existence area at the Retire stage, and only when an authority compels it: winding down governance bodies, mandates, and instruments under a regulator or court order. It reduces bodies to wind-down quorum, sunsets policy instruments, files the dissolution paperwork, assigns custodianship of retained records, and surrenders authorizations. Voluntary wind-downs chosen internally are handled as improvement work instead.'
+business_purpose: 'To dissolve a compelled governance regime lawfully and traceably, with filings made, records kept safe, and authorities surrendered as ordered.'
+practical_context: 'Encountered only on receipt of a mandatory dissolution, revocation, or wind-down order — a rare, script-driven stage with the external authority watching.'
+worked_example:
+  agent_type: human
+  narrative: 'On receiving the court''s dissolution order, the Governance & Existence Process Owner reduces the bodies to wind-down quorum, sunsets the policy instruments, files the dissolution certificate, and assigns retained-records custodianship before releasing the authorizations.'

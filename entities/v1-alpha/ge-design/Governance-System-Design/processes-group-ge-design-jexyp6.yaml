@@ -137,3 +137,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance System Design'
+plain_language_description: 'This family turns the mandate into a concrete oversight blueprint. Its processes design the governance system itself, articulate control objectives, lay out the policy architecture, and design how authority is delegated through the enterprise.'
+business_purpose: 'So oversight, control and delegated authority are designed deliberately — testable and coherent — before bodies are established and instruments built.'
+practical_context: 'Encountered in the Design stage, translating the conceived mandate and policy direction into architecture ready to be built.'
+worked_example:
+  agent_type: human
+  narrative: 'With the mandate framed, the Governance & Existence Process Owner''s architects design the governance system, write the control objectives, lay out the policy architecture, and draw the authority-delegation map that says who may decide what.'

@@ -98,3 +98,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Insight and Retention'
+plain_language_description: 'This family turns listening into loyalty. Its processes monitor customer satisfaction, run churn analysis and prediction, operate win-back programmes for lapsed customers, and feed the resulting insight back into strategy, design, build and operation.'
+business_purpose: 'So satisfaction, churn risk and win-back signals become action — retention programmes that reduce losses and insight that reshapes the customer value stream.'
+practical_context: 'Encountered in the Improve stage: satisfaction monitoring, churn models, win-back campaigns and feedback loops running alongside live customer operations.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Churn models flag a segment at risk. The Party & Relationship Process Owner''s team launches a win-back programme, monitors satisfaction weekly, and routes the insight to the strategy and design teams so the underlying experience fault gets fixed.'

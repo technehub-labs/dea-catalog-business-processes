@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-op
 
 This is a **Process Context** (level L0), named **Execution, Technology, and Asset Operation**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:pc-eo-operate-ydqb96`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Enablement & Operations area at the Operate stage: running the enterprise's execution engine day to day. It covers production and service delivery, logistics and warehousing with stock control, the technology platforms, facility upkeep and asset maintenance, and the purchasing cycle. Improving the engine rather than running it is handled in the improvement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To deliver what the enterprise promises, on time and to standard, by keeping every operational asset and platform running as planned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously — every production shift, delivery run, stock count, platform incident, and maintenance window across the operating calendar.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a supply delay threatens the week's schedule, the Enablement & Operations Process Owner rebalances inventory between warehouses, approves an expedited purchase, and confirms the maintenance window will not collide with peak demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -319,6 +319,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Execution, Technology, and Asset Operation |
+| `plain_language_description` | string | no | This context covers the Enablement & Operations area at the Operate stage: running the enterprise's execution engine … |
+| `business_purpose` | string | no | To deliver what the enterprise promises, on time and to standard, by keeping every operational asset and platform … |
+| `practical_context` | string | no | Encountered continuously — every production shift, delivery run, stock count, platform incident, and maintenance window … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

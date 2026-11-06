@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-o
 
 This is a **Process Group** (level L1), named **Customer Lifecycle Management**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Customer Relationship Operations** (`processes:pc-pr-operate-pwue5a`). Its canonical ID is `processes:group-pr-operate-7ab3ma`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family sustains each active customer relationship day to day. Its processes manage active accounts, resolve escalations, coordinate renewals, run win-back coordination where a relationship has lapsed, and allocate the customer portfolio on evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So active relationships are sustained — escalations resolved, renewals coordinated, portfolios allocated — with minimal revenue leakage across the customer lifecycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered throughout the Operate stage, from a customer's first live day to renewal conversations and escalation handling.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A key account threatens to lapse at renewal. The Party & Relationship Process Owner's account team resolves the outstanding escalation, coordinates the renewal with a revised allocation of service, and keeps the relationship — recording the lesson for the portfolio review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ group itself.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Customer Lifecycle Management |
+| `plain_language_description` | string | no | This family sustains each active customer relationship day to day. Its processes manage active accounts, resolve … |
+| `business_purpose` | string | no | So active relationships are sustained — escalations resolved, renewals coordinated, portfolios allocated — with minimal … |
+| `practical_context` | string | no | Encountered throughout the Operate stage, from a customer's first live day to renewal conversations and escalation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

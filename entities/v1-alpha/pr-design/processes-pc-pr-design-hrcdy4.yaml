@@ -99,3 +99,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Experience Design'
+plain_language_description: 'This context covers the customer and demand area at the Design stage: shaping what customers will actually experience. It designs the experience, articulates the journey end to end, models how demand responds to the offering, and selects the experience patterns to use. Building the channels and running relationships come later.'
+business_purpose: 'To turn customer strategy into a concrete, testable experience and journey design that build and operations can realize.'
+practical_context: 'Encountered when strategy is being made tangible — new journey blueprints, experience redesigns, or demand model updates ahead of build work.'
+worked_example:
+  agent_type: human
+  narrative: 'The Party & Relationship Process Owner walks the draft journey with the design team, spots a handoff that would frustrate customers, and approves the revised experience patterns for channel build.'

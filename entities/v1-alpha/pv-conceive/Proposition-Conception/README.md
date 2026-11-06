@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-c
 
 This is a **Process Group** (level L1), named **Proposition Conception**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Proposition and Portfolio Conception** (`processes:pc-pv-conceive-fe9awk`). Its canonical ID is `processes:group-pv-conceive-geej6b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family frames what the enterprise will offer the world. Its processes frame the value proposition thesis, set the portfolio direction, frame the innovation thesis, and validate proposition concepts against market evidence before any design begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To decide early which value-bearing propositions are worth pursuing, on what portfolio direction, and which innovation theses deserve testing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, when leadership frames new propositions and portfolio direction ahead of design and development.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Sensing a market shift, the Product & Value Process Owner frames the value proposition thesis, adjusts the portfolio direction, frames an innovation thesis, and has the concept validated against market evidence before design capacity is committed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ builds, evolves, and eventually retires.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Proposition Conception |
+| `plain_language_description` | string | no | This family frames what the enterprise will offer the world. Its processes frame the value proposition thesis, set the … |
+| `business_purpose` | string | no | To decide early which value-bearing propositions are worth pursuing, on what portfolio direction, and which innovation … |
+| `practical_context` | string | no | Encountered in the Conceive stage, when leadership frames new propositions and portfolio direction ahead of design and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

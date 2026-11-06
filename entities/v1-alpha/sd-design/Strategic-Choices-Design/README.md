@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-d
 
 This is a **Process Group** (level L1), named **Strategic Choices Design**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Design. It belongs to `processes:pc-sd-design-g3es76`. Its canonical ID is `processes:group-sd-design-q4mj9z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family turns intent into deliberate choices. Its processes design the strategic options, evaluate the alternatives against stated criteria, design objectives and targets with bounded measures, and frame strategic scenarios with explicit assumptions.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the enterprise chooses deliberately: options compared, alternatives evaluated, objectives and scenarios designed before the plan is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, between the conceived intent and the building of the plan and roadmap.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With intent committed, the Strategy & Direction Process Owner's team designs three strategic options, evaluates the alternatives against the agreed criteria, sets objectives and targets, and frames two scenarios so the plan can be stress-tested.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Strategic Choices Design |
+| `plain_language_description` | string | no | This family turns intent into deliberate choices. Its processes design the strategic options, evaluate the alternatives … |
+| `business_purpose` | string | no | So the enterprise chooses deliberately: options compared, alternatives evaluated, objectives and scenarios designed … |
+| `practical_context` | string | no | Encountered in the Design stage, between the conceived intent and the building of the plan and roadmap. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

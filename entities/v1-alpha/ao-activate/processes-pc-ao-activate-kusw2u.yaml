@@ -185,3 +185,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Licensed Workforce Mobilization'
+plain_language_description: 'This context covers the Agency & Organization area at the Activate stage of its lifecycle: the moment a licensed or regulated worker moves from fully credentialed to actually live in the role. Inside it, licence and registration evidence is confirmed, fitness declarations are filed, supervised training is shown complete, and the continuing supervisor is told that oversight now begins. Nothing here recruits or trains; the context picks up once every prerequisite is in place and ends when the person is formally ready for live duties.'
+business_purpose: 'To guarantee that nobody starts performing regulated work until every licence, fitness, and training prerequisite is verified and oversight is formally in place.'
+practical_context: 'Encountered whenever a regulated role is about to go live for an individual — typically at the end of a hiring and credentialing cycle, per person and per role, before first live duties.'
+worked_example:
+  agent_type: human
+  narrative: 'A candidate for a controlled function has passed every course and holds the regulator-issued licence. The Agency & Organization Process Owner walks the readiness checklist, confirms the licence evidence and fitness declaration are on file, notifies the continuing supervisor, and authorizes the person to begin live work on Monday.'

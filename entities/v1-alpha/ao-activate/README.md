@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-ac
 
 This is a **Process Context** (level L0), named **Licensed Workforce Mobilization**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Activate. Its canonical ID is `processes:pc-ao-activate-kusw2u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Agency & Organization area at the Activate stage of its lifecycle: the moment a licensed or regulated worker moves from fully credentialed to actually live in the role. Inside it, licence and registration evidence is confirmed, fitness declarations are filed, supervised training is shown complete, and the continuing supervisor is told that oversight now begins. Nothing here recruits or trains; the context picks up once every prerequisite is in place and ends when the person is formally ready for live duties.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To guarantee that nobody starts performing regulated work until every licence, fitness, and training prerequisite is verified and oversight is formally in place.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever a regulated role is about to go live for an individual — typically at the end of a hiring and credentialing cycle, per person and per role, before first live duties.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A candidate for a controlled function has passed every course and holds the regulator-issued licence. The Agency & Organization Process Owner walks the readiness checklist, confirms the licence evidence and fitness declaration are on file, notifies the continuing supervisor, and authorizes the person to begin live work on Monday.
 
 ## 5. Header and Identity Table (generated)
 
@@ -128,6 +128,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Licensed Workforce Mobilization |
+| `plain_language_description` | string | no | This context covers the Agency & Organization area at the Activate stage of its lifecycle: the moment a licensed or … |
+| `business_purpose` | string | no | To guarantee that nobody starts performing regulated work until every licence, fitness, and training prerequisite is … |
+| `practical_context` | string | no | Encountered whenever a regulated role is about to go live for an individual — typically at the end of a hiring and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -100,3 +100,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Improve'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Review and Learning'
+plain_language_description: 'This context covers the Governance & Existence area at the Improve stage: learning whether governance works and making it better. It reviews governance effectiveness, scores audit findings, refines the policy regime, and feeds lessons back into framing, design, build, and operation. Running the meetings and controls day to day is the operating context.'
+business_purpose: 'To close the loop between governance insight and practice, so findings genuinely change how the enterprise is governed.'
+practical_context: 'Encountered after audit cycles, effectiveness assessments, or governance incidents, on a periodic rhythm rather than a daily one.'
+worked_example:
+  agent_type: human
+  narrative: 'Following the annual effectiveness review, the Governance & Existence Process Owner scores the audit findings, agrees policy refinements, and carries the lessons into the next framing and design cycle.'

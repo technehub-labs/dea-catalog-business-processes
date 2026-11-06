@@ -107,3 +107,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Finance & Accounting x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Financial Planning and Accounting Architecture Design'
+plain_language_description: 'This context covers the Finance & Accounting area at the Design stage: drawing the architecture of the enterprise''s money handling. It designs the chart of accounts, the cost allocation model, the structure of financial plans, and the financial controls. Standing up the systems and running the ledger belong to neighboring contexts.'
+business_purpose: 'To define exactly how money is categorized, allocated, planned, and controlled, giving every later transaction a consistent home.'
+practical_context: 'Encountered when finance operations are first designed, or during redesigns after mergers, new reporting needs, or control weaknesses.'
+worked_example:
+  agent_type: human
+  narrative: 'The Finance & Accounting Process Owner signs off a refreshed chart of accounts, agrees the cost allocation rules between divisions, and approves the design of the approval and reconciliation controls.'

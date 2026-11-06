@@ -2,18 +2,9 @@
   "gate": "HUM-001..007 (CR-BP-232)",
   "records_checked": 3723,
   "summary": {
-    "total_findings": 490,
-    "advisory_findings": 490
+    "total_findings": 0,
+    "advisory_findings": 0
   },
-  "findings_by_rule": {
-    "HUM-001": 98,
-    "HUM-002": 98,
-    "HUM-003": 98,
-    "HUM-004": 98,
-    "HUM-006": 98
-  },
-  "findings_by_level": {
-    "L1": 245,
-    "L0": 245
-  }
+  "findings_by_rule": {},
+  "findings_by_level": {}
 }

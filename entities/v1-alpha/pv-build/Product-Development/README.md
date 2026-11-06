@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-b
 
 This is a **Process Group** (level L1), named **Product Development**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Product Development and Market Readiness Build** (`processes:pc-pv-build-ygbmxb`). Its canonical ID is `processes:group-pv-build-g6sua5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family constructs what the enterprise will sell. Its processes develop product variants, build service capabilities, create innovation prototypes for testing hypotheses, and prepare market readiness with go-to-market assets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So designed propositions become real, sellable products and services — variants, capabilities and prototypes — with the market readiness to launch.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Build stage, turning proposition designs into variants, prototypes and launch-ready assets ahead of service transition.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Turning the approved design into reality, the Product & Value Process Owner's teams develop the first product variants, build the supporting service capability, produce a pilot batch of the innovation prototype for hypothesis testing, and prepare the go-to-market assets that market readiness requires.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Product Development |
+| `plain_language_description` | string | no | This family constructs what the enterprise will sell. Its processes develop product variants, build service … |
+| `business_purpose` | string | no | So designed propositions become real, sellable products and services — variants, capabilities and prototypes — with the … |
+| `practical_context` | string | no | Encountered in the Build stage, turning proposition designs into variants, prototypes and launch-ready assets ahead of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 
 This is a **Process Group** (level L1), named **Customer Experience Design**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Design. It belongs to `processes:pc-pr-design-hrcdy4`. Its canonical ID is `processes:group-pr-design-enpedx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family designs how customers will experience the enterprise. Its processes design the customer experience, articulate the end-to-end customer journey, design the demand model, and select the experience patterns that ground later build and operation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the promised customer experience is designed and testable — journey, demand model and patterns — before channels are implemented.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, between the customer strategy framing and the build of channels and acquisition engines.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the strategy committed, the Party & Relationship Process Owner's designers map the customer journey end to end, design the experience and demand model, and choose the service patterns the channel builders will implement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Customer Experience Design |
+| `plain_language_description` | string | no | This family designs how customers will experience the enterprise. Its processes design the customer experience … |
+| `business_purpose` | string | no | So the promised customer experience is designed and testable — journey, demand model and patterns — before channels are … |
+| `practical_context` | string | no | Encountered in the Design stage, between the customer strategy framing and the build of channels and acquisition … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

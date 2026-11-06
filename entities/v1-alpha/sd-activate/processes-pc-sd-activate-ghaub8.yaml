@@ -130,3 +130,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Institutionalize Regulated Strategic Plan'
+plain_language_description: 'This context covers the Strategy & Direction area at the Activate stage for plans whose execution awaits formal supervisor acknowledgement. It completes the filing, secures the acknowledgement on record, preserves the filing receipt, launches the monitoring framework, and activates the communications plan. Building the plan beforehand and steering its execution afterwards are neighboring contexts.'
+business_purpose: 'To make a board-approved plan genuinely binding and live — acknowledged, receipted, monitored, and communicated under continuing supervision.'
+practical_context: 'Encountered when an approved plan must pass supervisor review before execution begins, typically on multi-year planning rhythms or after supervisory engagement.'
+worked_example:
+  agent_type: human
+  narrative: 'With the supervisor''s acknowledgement received, the Strategy & Direction Process Owner files the receipt on the regulated record, switches on the monitoring indicators and early-warning measures, and activates the communications plan.'

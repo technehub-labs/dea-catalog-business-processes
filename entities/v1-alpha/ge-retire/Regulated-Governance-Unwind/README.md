@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-r
 
 This is a **Process Group** (level L1), named **Regulated Governance Unwind**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Governance Unwind** (`processes:pc-ge-retire-kndw6x`). Its canonical ID is `processes:group-ge-retire-v3vy7t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family winds down an enterprise's governance regime when a regulator or court so orders. Its processes act on the dissolution or wind-down order, reduce the governing body to a wind-down quorum, sunset the charters, mandates and delegations, make the statutory dissolution filings, assign retained-records custodianship for the required period, and surrender the authorisation or permission.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the governance regime ends lawfully and traceably: bodies reduced, instruments sunset, filings made, records entrusted, and the authorisation formally surrendered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered only under regulator or court mandate — a dissolution order, cease-and-desist or receivership — not for voluntary internal sunsets.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A court orders a nonprofit's dissolution. The Governance & Existence Process Owner's team reduces the board to a wind-down quorum, sunsets the charters and delegations, files the statutory dissolution paperwork with the state and attorney-general, assigns retained-records custody, and surrenders the tax-exempt permission.
 
 ## 5. Header and Identity Table (generated)
 
@@ -67,6 +67,11 @@ supervision.
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Governance Unwind |
+| `plain_language_description` | string | no | This family winds down an enterprise's governance regime when a regulator or court so orders. Its processes act on the … |
+| `business_purpose` | string | no | So the governance regime ends lawfully and traceably: bodies reduced, instruments sunset, filings made, records … |
+| `practical_context` | string | no | Encountered only under regulator or court mandate — a dissolution order, cease-and-desist or receivership — not for … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

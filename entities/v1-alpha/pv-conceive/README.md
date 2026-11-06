@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-co
 
 This is a **Process Context** (level L0), named **Proposition and Portfolio Conception**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Conceive. Its canonical ID is `processes:pc-pv-conceive-fe9awk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Conceive stage: deciding what the enterprise should offer at all. It frames value proposition theses, sets portfolio direction, frames innovation theses, and validates proposition concepts against market evidence. Designing and building follow later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To choose, early and deliberately, which propositions and innovations deserve the enterprise's development investment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in front-end innovation work and portfolio planning, before any design or development money is committed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Product & Value Process Owner frames two proposition theses for a new market, validates the concepts against customer evidence, and recommends which one enters the portfolio direction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Proposition and Portfolio Conception |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Conceive stage: deciding what the enterprise should offer at all … |
+| `business_purpose` | string | no | To choose, early and deliberately, which propositions and innovations deserve the enterprise's development investment. |
+| `practical_context` | string | no | Encountered in front-end innovation work and portfolio planning, before any design or development money is committed. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

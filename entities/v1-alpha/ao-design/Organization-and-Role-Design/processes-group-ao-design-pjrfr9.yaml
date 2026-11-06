@@ -154,3 +154,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Organization and Role Design'
+plain_language_description: 'This family turns conception into concrete structure. Its processes design the organization structure, define the catalogue of roles, build the competency framework that describes what each role requires, and lay out the agent topology — deciding where human, artificial and hybrid agents sit, including the architecture for regulated roles.'
+business_purpose: 'So the enterprise knows exactly which roles exist, what competencies they demand, and which kind of agent fills each seat before anyone is hired or provisioned.'
+practical_context: 'Met in the Design stage, once capacity direction is set and before recruitment, model provisioning or job descriptions are produced in the Build stage.'
+worked_example:
+  agent_type: human
+  narrative: 'After the capacity strategy is agreed, the Agency & Organization Process Owner''s design team draws the new organization structure, writes the role catalogue and competency framework, and places each artificial agent in the topology alongside human roles — flagging which roles are regulated and need a licensed architecture.'

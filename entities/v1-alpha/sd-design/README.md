@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-de
 
 This is a **Process Context** (level L0), named **Strategic Choices Design**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Design. Its canonical ID is `processes:pc-sd-design-g3es76`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Design stage: shaping intent into concrete choices. It designs strategic options, evaluates the alternatives against stated criteria, defines objectives and targets, and frames scenarios for resilience testing. Building the plan and steering delivery belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To give leadership well-formed options, tested trade-offs, and committed objectives instead of raw ambition.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in strategy workshops and option assessments, between committed intent and the construction of the plan itself.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Strategy & Direction Process Owner runs the options workshop, scores each alternative against the agreed criteria, frames downside scenarios, and commits the objectives and targets for the plan builders.
 
 ## 5. Header and Identity Table (generated)
 
@@ -187,6 +187,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Strategic Choices Design |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Design stage: shaping intent into concrete choices. It designs … |
+| `business_purpose` | string | no | To give leadership well-formed options, tested trade-offs, and committed objectives instead of raw ambition. |
+| `practical_context` | string | no | Encountered in strategy workshops and option assessments, between committed intent and the construction of the plan … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

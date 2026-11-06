@@ -131,3 +131,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Finance & Accounting x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Activate Billing Capability'
+plain_language_description: 'This context covers the Finance & Accounting area at the Activate stage for billing and revenue-recognition capabilities. It takes a capability that has been acknowledged against the applicable accounting or rate framework and brings it live: approvals recorded, controls such as segregation of duties and reconciliation switched on, and the continuing supervisor notified. Building the capability beforehand and running invoices afterwards are neighboring concerns.'
+business_purpose: 'To ensure the first live invoice or revenue entry happens only once the framework is acknowledged, pricing approvals are held, and financial controls are active.'
+practical_context: 'Encountered at cutover for a new billing arrangement or revenue stream — after regulator acknowledgement and testing, before the first production run.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the first billing run for a regulated tariff, the Finance & Accounting Process Owner verifies the pricing approval is on file, activates the reconciliation and audit-trail controls, notifies the continuing supervisor, and authorizes the run.'

@@ -127,3 +127,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Product & Value x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Proposition Sunset and Service Withdrawal'
+plain_language_description: 'This context covers the Product & Value area at the Retire stage: bringing propositions out of service in a controlled way. It takes in the retirement decision, plans the withdrawal, transitions stakeholders off the service, removes operational reliance, and routes residual obligations onward. Decommissioning physical assets is the operations domain''s retirement context.'
+business_purpose: 'To withdraw offerings from the market deliberately — stakeholders moved, reliance removed, and every residual obligation routed to its owner.'
+practical_context: 'Encountered at end-of-life decisions and sunset plans, when a proposition stops earning its place and must leave service without stranding customers.'
+worked_example:
+  agent_type: human
+  narrative: 'Sunsetting a legacy service tier, the Product & Value Process Owner approves the withdrawal plan, schedules stakeholder transition communications, confirms operational reliance is removed, and routes the residual obligations to the operating teams.'

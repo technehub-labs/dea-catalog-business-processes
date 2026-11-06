@@ -1,0 +1,698 @@
+{
+  "cr": "CR-BP-233",
+  "wave": "A (L2 Business Process plain-language authoring)",
+  "records_authored": 98,
+  "agent_type_distribution": {
+    "human": 87,
+    "mixed": 11
+  },
+  "author_of_record": "Emmanuel A. Otchere",
+  "records": [
+    {
+      "id": "processes:group-ao-activate-jjx738",
+      "file": "entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/processes-group-ao-activate-jjx738.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 460
+    },
+    {
+      "id": "processes:group-ao-build-m6fmyx",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/processes-group-ao-build-m6fmyx.yaml",
+      "agent_type": "mixed",
+      "name_chars": 32,
+      "description_chars": 487
+    },
+    {
+      "id": "processes:group-ao-conceive-bwjhgd",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/processes-group-ao-conceive-bwjhgd.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:group-ao-design-pjrfr9",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/processes-group-ao-design-pjrfr9.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 341
+    },
+    {
+      "id": "processes:group-ao-improve-su4c8p",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/processes-group-ao-improve-su4c8p.yaml",
+      "agent_type": "mixed",
+      "name_chars": 34,
+      "description_chars": 341
+    },
+    {
+      "id": "processes:group-ao-operate-35gmps",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/processes-group-ao-operate-35gmps.yaml",
+      "agent_type": "mixed",
+      "name_chars": 16,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:group-ao-retire-jspuzz",
+      "file": "entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/processes-group-ao-retire-jspuzz.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 435
+    },
+    {
+      "id": "processes:group-eo-activate-bnmwuu",
+      "file": "entities/v1-alpha/eo-activate/Regulated-Operations-Activation/processes-group-eo-activate-bnmwuu.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 443
+    },
+    {
+      "id": "processes:group-eo-build-7pur27",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/processes-group-eo-build-7pur27.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 285
+    },
+    {
+      "id": "processes:group-eo-conceive-j6n4f7",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/processes-group-eo-conceive-j6n4f7.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 302
+    },
+    {
+      "id": "processes:group-eo-design-g6dmdk",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/processes-group-eo-design-g6dmdk.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 249
+    },
+    {
+      "id": "processes:group-eo-improve-c8uff9",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/processes-group-eo-improve-c8uff9.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 260
+    },
+    {
+      "id": "processes:group-eo-operate-bfd7jb",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/processes-group-eo-operate-bfd7jb.yaml",
+      "agent_type": "mixed",
+      "name_chars": 24,
+      "description_chars": 293
+    },
+    {
+      "id": "processes:group-eo-retire-n9ge5c",
+      "file": "entities/v1-alpha/eo-retire/Operations-and-Asset-Decommissioning/processes-group-eo-retire-n9ge5c.yaml",
+      "agent_type": "mixed",
+      "name_chars": 36,
+      "description_chars": 286
+    },
+    {
+      "id": "processes:group-fa-activate-n9s2z3",
+      "file": "entities/v1-alpha/fa-activate/Regulated-Billing-Activation/processes-group-fa-activate-n9s2z3.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 442
+    },
+    {
+      "id": "processes:group-fa-build-d7ww77",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/processes-group-fa-build-d7ww77.yaml",
+      "agent_type": "human",
+      "name_chars": 44,
+      "description_chars": 262
+    },
+    {
+      "id": "processes:group-fa-conceive-9xzf3b",
+      "file": "entities/v1-alpha/fa-conceive/Financial-Model-Conception/processes-group-fa-conceive-9xzf3b.yaml",
+      "agent_type": "human",
+      "name_chars": 48,
+      "description_chars": 266
+    },
+    {
+      "id": "processes:group-fa-design-7juvse",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/processes-group-fa-design-7juvse.yaml",
+      "agent_type": "human",
+      "name_chars": 43,
+      "description_chars": 244
+    },
+    {
+      "id": "processes:group-fa-improve-hvq8u8",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/processes-group-fa-improve-hvq8u8.yaml",
+      "agent_type": "human",
+      "name_chars": 52,
+      "description_chars": 242
+    },
+    {
+      "id": "processes:group-fa-operate-mazyjd",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/processes-group-fa-operate-mazyjd.yaml",
+      "agent_type": "mixed",
+      "name_chars": 29,
+      "description_chars": 295
+    },
+    {
+      "id": "processes:group-fa-retire-2ptdnw",
+      "file": "entities/v1-alpha/fa-retire/Regulated-Run-Off/processes-group-fa-retire-2ptdnw.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 521
+    },
+    {
+      "id": "processes:group-ge-activate-7d46tn",
+      "file": "entities/v1-alpha/ge-activate/Governance-Instrument-Commencement/processes-group-ge-activate-7d46tn.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 259
+    },
+    {
+      "id": "processes:group-ge-build-tbc3ta",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/processes-group-ge-build-tbc3ta.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 271
+    },
+    {
+      "id": "processes:group-ge-conceive-y93bwr",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/processes-group-ge-conceive-y93bwr.yaml",
+      "agent_type": "human",
+      "name_chars": 40,
+      "description_chars": 261
+    },
+    {
+      "id": "processes:group-ge-design-jexyp6",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/processes-group-ge-design-jexyp6.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 243
+    },
+    {
+      "id": "processes:group-ge-improve-s9r3qj",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/processes-group-ge-improve-s9r3qj.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 234
+    },
+    {
+      "id": "processes:group-ge-operate-v2eu8x",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/processes-group-ge-operate-v2eu8x.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 219
+    },
+    {
+      "id": "processes:group-ge-retire-v3vy7t",
+      "file": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/processes-group-ge-retire-v3vy7t.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:group-pr-activate-d7j4et",
+      "file": "entities/v1-alpha/pr-activate/Regulated-Onboarding/processes-group-pr-activate-d7j4et.yaml",
+      "agent_type": "mixed",
+      "name_chars": 20,
+      "description_chars": 405
+    },
+    {
+      "id": "processes:group-pr-build-7u5xj6",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/processes-group-pr-build-7u5xj6.yaml",
+      "agent_type": "mixed",
+      "name_chars": 38,
+      "description_chars": 242
+    },
+    {
+      "id": "processes:group-pr-conceive-rv32m4",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/processes-group-pr-conceive-rv32m4.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 289
+    },
+    {
+      "id": "processes:group-pr-design-enpedx",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/processes-group-pr-design-enpedx.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 254
+    },
+    {
+      "id": "processes:group-pr-improve-zpb8e3",
+      "file": "entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/processes-group-pr-improve-zpb8e3.yaml",
+      "agent_type": "mixed",
+      "name_chars": 30,
+      "description_chars": 251
+    },
+    {
+      "id": "processes:group-pr-operate-7ab3ma",
+      "file": "entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 254
+    },
+    {
+      "id": "processes:group-pr-retire-c3u3wc",
+      "file": "entities/v1-alpha/pr-retire/Relationship-Termination/processes-group-pr-retire-c3u3wc.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 240
+    },
+    {
+      "id": "processes:group-pv-activate-e7fdrk",
+      "file": "entities/v1-alpha/pv-activate/Service-Transition-Activation/processes-group-pv-activate-e7fdrk.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 236
+    },
+    {
+      "id": "processes:group-pv-build-g6sua5",
+      "file": "entities/v1-alpha/pv-build/Product-Development/processes-group-pv-build-g6sua5.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 229
+    },
+    {
+      "id": "processes:group-pv-conceive-geej6b",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/processes-group-pv-conceive-geej6b.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 252
+    },
+    {
+      "id": "processes:group-pv-design-msz6da",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/processes-group-pv-design-msz6da.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 225
+    },
+    {
+      "id": "processes:group-pv-improve-rjab8b",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/processes-group-pv-improve-rjab8b.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 227
+    },
+    {
+      "id": "processes:group-pv-operate-ah3322",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/processes-group-pv-operate-ah3322.yaml",
+      "agent_type": "mixed",
+      "name_chars": 27,
+      "description_chars": 262
+    },
+    {
+      "id": "processes:group-pv-retire-buqktk",
+      "file": "entities/v1-alpha/pv-retire/Service-Transition-Retirement/processes-group-pv-retire-buqktk.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 258
+    },
+    {
+      "id": "processes:group-sd-activate-mbw9cc",
+      "file": "entities/v1-alpha/sd-activate/Regulated-Strategic-Plan-Activation/processes-group-sd-activate-mbw9cc.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 384
+    },
+    {
+      "id": "processes:group-sd-build-tnq4p6",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/processes-group-sd-build-tnq4p6.yaml",
+      "agent_type": "human",
+      "name_chars": 39,
+      "description_chars": 273
+    },
+    {
+      "id": "processes:group-sd-conceive-7qhvzn",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/processes-group-sd-conceive-7qhvzn.yaml",
+      "agent_type": "human",
+      "name_chars": 46,
+      "description_chars": 247
+    },
+    {
+      "id": "processes:group-sd-design-q4mj9z",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/processes-group-sd-design-q4mj9z.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 254
+    },
+    {
+      "id": "processes:group-sd-improve-vdz4xp",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/processes-group-sd-improve-vdz4xp.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 246
+    },
+    {
+      "id": "processes:group-sd-operate-22epxr",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/processes-group-sd-operate-22epxr.yaml",
+      "agent_type": "mixed",
+      "name_chars": 33,
+      "description_chars": 280
+    },
+    {
+      "id": "processes:group-sd-retire-7fksad",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/processes-group-sd-retire-7fksad.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:pc-ao-activate-kusw2u",
+      "file": "entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 537
+    },
+    {
+      "id": "processes:pc-ao-build-pjk4rz",
+      "file": "entities/v1-alpha/ao-build/processes-pc-ao-build-pjk4rz.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:pc-ao-conceive-wtq4cr",
+      "file": "entities/v1-alpha/ao-conceive/processes-pc-ao-conceive-wtq4cr.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:pc-ao-design-a4hq2r",
+      "file": "entities/v1-alpha/ao-design/processes-pc-ao-design-a4hq2r.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 383
+    },
+    {
+      "id": "processes:pc-ao-improve-qkmh6b",
+      "file": "entities/v1-alpha/ao-improve/processes-pc-ao-improve-qkmh6b.yaml",
+      "agent_type": "human",
+      "name_chars": 46,
+      "description_chars": 362
+    },
+    {
+      "id": "processes:pc-ao-operate-zfevmp",
+      "file": "entities/v1-alpha/ao-operate/processes-pc-ao-operate-zfevmp.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:pc-ao-retire-3kqe9c",
+      "file": "entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 431
+    },
+    {
+      "id": "processes:pc-eo-activate-xdfscw",
+      "file": "entities/v1-alpha/eo-activate/processes-pc-eo-activate-xdfscw.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 433
+    },
+    {
+      "id": "processes:pc-eo-build-zwkhxc",
+      "file": "entities/v1-alpha/eo-build/processes-pc-eo-build-zwkhxc.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 387
+    },
+    {
+      "id": "processes:pc-eo-conceive-mxmtzq",
+      "file": "entities/v1-alpha/eo-conceive/processes-pc-eo-conceive-mxmtzq.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 321
+    },
+    {
+      "id": "processes:pc-eo-design-kxdfnz",
+      "file": "entities/v1-alpha/eo-design/processes-pc-eo-design-kxdfnz.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:pc-eo-improve-pka6dk",
+      "file": "entities/v1-alpha/eo-improve/processes-pc-eo-improve-pka6dk.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:pc-eo-operate-ydqb96",
+      "file": "entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:pc-eo-retire-nw3ynf",
+      "file": "entities/v1-alpha/eo-retire/processes-pc-eo-retire-nw3ynf.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 401
+    },
+    {
+      "id": "processes:pc-fa-activate-yrhcfm",
+      "file": "entities/v1-alpha/fa-activate/processes-pc-fa-activate-yrhcfm.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 466
+    },
+    {
+      "id": "processes:pc-fa-build-pztsp9",
+      "file": "entities/v1-alpha/fa-build/processes-pc-fa-build-pztsp9.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:pc-fa-conceive-phabh2",
+      "file": "entities/v1-alpha/fa-conceive/processes-pc-fa-conceive-phabh2.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:pc-fa-design-4j8evh",
+      "file": "entities/v1-alpha/fa-design/processes-pc-fa-design-4j8evh.yaml",
+      "agent_type": "human",
+      "name_chars": 53,
+      "description_chars": 333
+    },
+    {
+      "id": "processes:pc-fa-improve-haqf4w",
+      "file": "entities/v1-alpha/fa-improve/processes-pc-fa-improve-haqf4w.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:pc-fa-operate-afew7e",
+      "file": "entities/v1-alpha/fa-operate/processes-pc-fa-operate-afew7e.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:pc-fa-retire-64q5p9",
+      "file": "entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 475
+    },
+    {
+      "id": "processes:pc-ge-activate-hxtfcv",
+      "file": "entities/v1-alpha/ge-activate/processes-pc-ge-activate-hxtfcv.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:pc-ge-build-52hjrc",
+      "file": "entities/v1-alpha/ge-build/processes-pc-ge-build-52hjrc.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:pc-ge-conceive-b5xwpd",
+      "file": "entities/v1-alpha/ge-conceive/processes-pc-ge-conceive-b5xwpd.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 324
+    },
+    {
+      "id": "processes:pc-ge-design-3f2gjr",
+      "file": "entities/v1-alpha/ge-design/processes-pc-ge-design-3f2gjr.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 312
+    },
+    {
+      "id": "processes:pc-ge-improve-c78ppp",
+      "file": "entities/v1-alpha/ge-improve/processes-pc-ge-improve-c78ppp.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:pc-ge-operate-hb2dac",
+      "file": "entities/v1-alpha/ge-operate/processes-pc-ge-operate-hb2dac.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:pc-ge-retire-kndw6x",
+      "file": "entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 457
+    },
+    {
+      "id": "processes:pc-pr-activate-mwq7bj",
+      "file": "entities/v1-alpha/pr-activate/processes-pc-pr-activate-mwq7bj.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 454
+    },
+    {
+      "id": "processes:pc-pr-build-a46hp7",
+      "file": "entities/v1-alpha/pr-build/processes-pc-pr-build-a46hp7.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:pc-pr-conceive-6xztsq",
+      "file": "entities/v1-alpha/pr-conceive/processes-pc-pr-conceive-6xztsq.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 296
+    },
+    {
+      "id": "processes:pc-pr-design-hrcdy4",
+      "file": "entities/v1-alpha/pr-design/processes-pc-pr-design-hrcdy4.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 329
+    },
+    {
+      "id": "processes:pc-pr-improve-k8phkn",
+      "file": "entities/v1-alpha/pr-improve/processes-pc-pr-improve-k8phkn.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:pc-pr-operate-pwue5a",
+      "file": "entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 395
+    },
+    {
+      "id": "processes:pc-pr-retire-2cusde",
+      "file": "entities/v1-alpha/pr-retire/processes-pc-pr-retire-2cusde.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 402
+    },
+    {
+      "id": "processes:pc-pv-activate-f7kne7",
+      "file": "entities/v1-alpha/pv-activate/processes-pc-pv-activate-f7kne7.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 410
+    },
+    {
+      "id": "processes:pc-pv-build-ygbmxb",
+      "file": "entities/v1-alpha/pv-build/processes-pc-pv-build-ygbmxb.yaml",
+      "agent_type": "human",
+      "name_chars": 46,
+      "description_chars": 343
+    },
+    {
+      "id": "processes:pc-pv-conceive-fe9awk",
+      "file": "entities/v1-alpha/pv-conceive/processes-pc-pv-conceive-fe9awk.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 302
+    },
+    {
+      "id": "processes:pc-pv-design-8dhwpn",
+      "file": "entities/v1-alpha/pv-design/processes-pc-pv-design-8dhwpn.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:pc-pv-improve-wpyfx7",
+      "file": "entities/v1-alpha/pv-improve/processes-pc-pv-improve-wpyfx7.yaml",
+      "agent_type": "human",
+      "name_chars": 47,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:pc-pv-operate-ewpwjc",
+      "file": "entities/v1-alpha/pv-operate/processes-pc-pv-operate-ewpwjc.yaml",
+      "agent_type": "human",
+      "name_chars": 56,
+      "description_chars": 393
+    },
+    {
+      "id": "processes:pc-pv-retire-eeck6d",
+      "file": "entities/v1-alpha/pv-retire/processes-pc-pv-retire-eeck6d.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:pc-sd-activate-ghaub8",
+      "file": "entities/v1-alpha/sd-activate/processes-pc-sd-activate-ghaub8.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:pc-sd-build-gmzrrm",
+      "file": "entities/v1-alpha/sd-build/processes-pc-sd-build-gmzrrm.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:pc-sd-conceive-ucb3gx",
+      "file": "entities/v1-alpha/sd-conceive/processes-pc-sd-conceive-ucb3gx.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:pc-sd-design-g3es76",
+      "file": "entities/v1-alpha/sd-design/processes-pc-sd-design-g3es76.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:pc-sd-improve-ft9k5f",
+      "file": "entities/v1-alpha/sd-improve/processes-pc-sd-improve-ft9k5f.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:pc-sd-operate-5cs5ee",
+      "file": "entities/v1-alpha/sd-operate/processes-pc-sd-operate-5cs5ee.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 380
+    },
+    {
+      "id": "processes:pc-sd-retire-zxnc3c",
+      "file": "entities/v1-alpha/sd-retire/processes-pc-sd-retire-zxnc3c.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 397
+    }
+  ]
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 
 This is a **Process Group** (level L1), named **Organization and Role Design**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Organization and Agent Topology Design** (`processes:pc-ao-design-a4hq2r`). Its canonical ID is `processes:group-ao-design-pjrfr9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family turns conception into concrete structure. Its processes design the organization structure, define the catalogue of roles, build the competency framework that describes what each role requires, and lay out the agent topology — deciding where human, artificial and hybrid agents sit, including the architecture for regulated roles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the enterprise knows exactly which roles exist, what competencies they demand, and which kind of agent fills each seat before anyone is hired or provisioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met in the Design stage, once capacity direction is set and before recruitment, model provisioning or job descriptions are produced in the Build stage.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the capacity strategy is agreed, the Agency & Organization Process Owner's design team draws the new organization structure, writes the role catalogue and competency framework, and places each artificial agent in the topology alongside human roles — flagging which roles are regulated and need a licensed architecture.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Organization and Role Design |
+| `plain_language_description` | string | no | This family turns conception into concrete structure. Its processes design the organization structure, define the … |
+| `business_purpose` | string | no | So the enterprise knows exactly which roles exist, what competencies they demand, and which kind of agent fills each … |
+| `practical_context` | string | no | Met in the Design stage, once capacity direction is set and before recruitment, model provisioning or job descriptions … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

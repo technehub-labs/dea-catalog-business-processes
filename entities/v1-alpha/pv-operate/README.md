@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-op
 
 This is a **Process Context** (level L0), named **Portfolio Management and Proposition Lifecycle Operation**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Operate. Its canonical ID is `processes:pc-pv-operate-ewpwjc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Operate stage: managing the live portfolio and its catalogue. It operates the product catalogue, manages portfolio performance against targets, tracks each proposition through its lifecycle, and monitors performance for reporting. Physically delivering the product is the operations domain; evolving the portfolio is the improvement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep the offering portfolio healthy in the market — catalogue accurate, performance visible, and every proposition tracked from launch toward eventual exit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered on a steady commercial rhythm: catalogue updates, performance reporting cycles, and lifecycle checkpoints for each proposition.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the monthly portfolio session, the Product & Value Process Owner reviews performance against targets, updates catalogue status for two propositions, and flags one nearing its lifecycle decision point.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Portfolio Management and Proposition Lifecycle Operation |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Operate stage: managing the live portfolio and its catalogue. It … |
+| `business_purpose` | string | no | To keep the offering portfolio healthy in the market — catalogue accurate, performance visible, and every proposition … |
+| `practical_context` | string | no | Encountered on a steady commercial rhythm: catalogue updates, performance reporting cycles, and lifecycle checkpoints … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

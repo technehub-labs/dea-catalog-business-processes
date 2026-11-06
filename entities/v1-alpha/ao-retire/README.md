@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-re
 
 This is a **Process Context** (level L0), named **Workforce Retirement**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Retire. Its canonical ID is `processes:pc-ao-retire-3kqe9c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Agency & Organization area at the Retire stage: reducing or winding down a workforce population where regulation governs the reduction. It serves statutory advance notice, runs information and consultation with worker representatives, applies fair selection, funds severance and benefits continuation, and routes transition support. Everyday offboarding of single individuals stays in the operating context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To shrink or close out a workforce population lawfully and humanely, with notice, consultation, fair selection, and funded supports at every step.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a site closes, a function is displaced, or a reduction crosses statutory thresholds — an episodic, heavily scripted episode rather than routine administration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a depot closure passes the statutory threshold, the Agency & Organization Process Owner serves advance notice, opens consultation with worker representatives, applies the agreed selection criteria, and funds severance and retraining support.
 
 ## 5. Header and Identity Table (generated)
 
@@ -125,6 +125,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Workforce Retirement |
+| `plain_language_description` | string | no | This context covers the Agency & Organization area at the Retire stage: reducing or winding down a workforce population … |
+| `business_purpose` | string | no | To shrink or close out a workforce population lawfully and humanely, with notice, consultation, fair selection, and … |
+| `practical_context` | string | no | Encountered when a site closes, a function is displaced, or a reduction crosses statutory thresholds — an episodic … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

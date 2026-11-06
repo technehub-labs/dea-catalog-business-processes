@@ -121,3 +121,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Enablement Design'
+plain_language_description: 'This context covers the Enablement & Operations area at the Design stage: drawing the blueprints for production and delivery. It designs the operations and delivery models, the architecture of the technology platforms, facility layouts, and how logistics will route. Nothing is constructed yet; the output is the set of designs the build context will realize.'
+business_purpose: 'To turn the conceived operations approach into precise, buildable designs for platforms, facilities, and logistics before money is spent.'
+practical_context: 'Encountered between an agreed operations direction and physical build — during solutioning for new sites, platforms, or distribution patterns.'
+worked_example:
+  agent_type: human
+  narrative: 'The Enablement & Operations Process Owner reviews the platform architecture and the warehouse flow drawings, asks for a second routing option, and approves the design package released to the build teams.'

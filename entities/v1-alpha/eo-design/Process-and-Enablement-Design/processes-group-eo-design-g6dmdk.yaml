@@ -151,3 +151,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Process and Enablement Design'
+plain_language_description: 'This family turns the operations model into designs people can build from. Its processes design the operations and delivery models, draw the technology platform architecture, produce facility and asset blueprints, and work out logistics and routing.'
+business_purpose: 'So builders and operators receive coherent, testable designs for how work will flow, on which platforms, in which facilities, and along which routes.'
+practical_context: 'Encountered in the Design stage, between the operations-model framing and the physical build programmes that implement the blueprints.'
+worked_example:
+  agent_type: human
+  narrative: 'With the operations model agreed, the Enablement & Operations Process Owner''s architects design the delivery model, document the technology platform architecture, draft facility and asset blueprints, and map logistics routing — everything the build teams need to start construction.'

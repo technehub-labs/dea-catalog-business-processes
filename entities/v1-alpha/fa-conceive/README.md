@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-co
 
 This is a **Process Context** (level L0), named **Financial Model and Funding Conception**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Conceive. Its canonical ID is `processes:pc-fa-conceive-phabh2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Conceive stage: framing how the enterprise will be financed and how money should flow through it. It shapes the finance strategy, settles the shape of the monetary model, and frames how the enterprise will fund and capitalize itself. Detailed accounting design and day-to-day treasury work follow later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To settle early how the enterprise funds itself and organizes its monetary flows, so design and build decisions rest on one financial intent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at enterprise founding, before expansion, or ahead of fundraising windows, when funding mix and monetary model questions dominate.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Considering an acquisition, the Finance & Accounting Process Owner frames the funding approach — debt versus cash versus facility headroom — and presents the monetary model consequences to leadership for a decision.
 
 ## 5. Header and Identity Table (generated)
 
@@ -112,6 +112,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Financial Model and Funding Conception |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Conceive stage: framing how the enterprise will be financed … |
+| `business_purpose` | string | no | To settle early how the enterprise funds itself and organizes its monetary flows, so design and build decisions rest on … |
+| `practical_context` | string | no | Encountered at enterprise founding, before expansion, or ahead of fundraising windows, when funding mix and monetary … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-c
 
 This is a **Process Group** (level L1), named **Financial Model Conception**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Financial Model and Funding Conception** (`processes:pc-fa-conceive-phabh2`). Its canonical ID is `processes:group-fa-conceive-9xzf3b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family is the front-end thinking for the enterprise's money model. Its processes frame the finance strategy, shape the monetary model the enterprise will run on, and set how it will fund itself and structure its capital — how much, from whom, and on what terms.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So decisions about money — strategy, monetary model, funding and capital — are framed deliberately before plans, systems and operations follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, when founders or leadership set the financial direction ahead of detailed financial planning and system build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Preparing a scale-up year, the Finance & Accounting Process Owner frames the finance strategy with the leadership team, shapes the monetary model, and settles how much funding to raise, from whom and on what terms before planning begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ scope.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Framing the Financial Model and Funding Approach |
+| `plain_language_description` | string | no | This family is the front-end thinking for the enterprise's money model. Its processes frame the finance strategy, shape … |
+| `business_purpose` | string | no | So decisions about money — strategy, monetary model, funding and capital — are framed deliberately before plans … |
+| `practical_context` | string | no | Encountered in the Conceive stage, when founders or leadership set the financial direction ahead of detailed financial … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

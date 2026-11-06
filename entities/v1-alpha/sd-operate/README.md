@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-op
 
 This is a **Process Context** (level L0), named **Strategic Steering Operation**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Operate. Its canonical ID is `processes:pc-sd-operate-5cs5ee`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Operate stage: steering execution of the chosen strategy. It monitors strategic performance against the plan, senses signals from the environment, steers the initiative portfolio, and runs the strategic review cycle. Executing initiatives is operational work elsewhere; adapting direction itself is the improvement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To hold strategy and execution together — watching performance, reading the environment, and keeping the initiative portfolio pointed at intent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered on the steering cadence: monthly performance views, quarterly review cycles, and continuous scanning of signals outside the enterprise.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the quarterly review, the Strategy & Direction Process Owner compares performance to plan, tables the environmental signals picked up since last cycle, and steers two initiatives ahead while pausing a third.
 
 ## 5. Header and Identity Table (generated)
 
@@ -187,6 +187,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Strategic Steering Operation |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Operate stage: steering execution of the chosen strategy. It … |
+| `business_purpose` | string | no | To hold strategy and execution together — watching performance, reading the environment, and keeping the initiative … |
+| `practical_context` | string | no | Encountered on the steering cadence: monthly performance views, quarterly review cycles, and continuous scanning of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-r
 
 This is a **Process Group** (level L1), named **Regulated Run-Off**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Financial Run-Off** (`processes:pc-fa-retire-64q5p9`). Its canonical ID is `processes:group-fa-retire-2ptdnw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family winds a regulated financial entity or run-off portfolio down under the supervisor's oversight. Its processes secure the run-off authorisation and plan, transition to the statutory accounting basis, and keep reserving, capital adequacy and asset-liability matching intact while policyholder claims are adjudicated and paid with priority. It closes with stakeholder communications, retained-records and service-of-process duties, tax clearance, and the final exit or completion certification from the regulator.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So an insurer or portfolio exits the market responsibly: claims paid with policyholder priority, statutory liabilities settled, records retained, and the regulator's certification obtained.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a supervisor authorises run-off of an insurer, mutual or portfolio — the managed end-of-life phase between going-concern operation and final solvent exit.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A mutual insurer enters run-off. The Finance & Accounting Process Owner's team files the run-off plan inside the regulator's window, moves the books to the liquidation basis, keeps reserving and asset-liability matching current, pays policyholder claims in priority order, retains the statutory records, and secures the solvent-exit certification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -64,6 +64,11 @@ certification).
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Run-Off |
+| `plain_language_description` | string | no | This family winds a regulated financial entity or run-off portfolio down under the supervisor's oversight. Its … |
+| `business_purpose` | string | no | So an insurer or portfolio exits the market responsibly: claims paid with policyholder priority, statutory liabilities … |
+| `practical_context` | string | no | Encountered when a supervisor authorises run-off of an insurer, mutual or portfolio — the managed end-of-life phase … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

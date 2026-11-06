@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-bu
 
 This is a **Process Context** (level L0), named **Product Development and Market Readiness Build**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Build. Its canonical ID is `processes:pc-pv-build-ygbmxb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Build stage: constructing the things the enterprise will offer. It develops product variants, builds service capability, creates innovation prototypes, and prepares market readiness. Designing the propositions beforehand and operating the portfolio afterwards belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To turn designed propositions into real, validated products and services that are ready for market and for live operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in development cycles and prototyping sprints, between an approved design and a market-ready release.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Reviewing the prototype results, the Product & Value Process Owner approves the variant for volume development, confirms service capability is on track, and sets the market-readiness checklist in motion.
 
 ## 5. Header and Identity Table (generated)
 
@@ -183,6 +183,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Product Development and Market Readiness Build |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Build stage: constructing the things the enterprise will offer. It … |
+| `business_purpose` | string | no | To turn designed propositions into real, validated products and services that are ready for market and for live … |
+| `practical_context` | string | no | Encountered in development cycles and prototyping sprints, between an approved design and a market-ready release. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

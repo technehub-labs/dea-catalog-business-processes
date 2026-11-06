@@ -98,3 +98,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Build'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Channel and Acquisition Build'
+plain_language_description: 'This context covers the customer and demand area at the Build stage: constructing what will attract and win customers. It builds channel infrastructure, acquisition engines, marketing automation, and the demand-generation machinery. Framing the strategy beforehand and serving live customers afterwards belong to neighboring contexts.'
+business_purpose: 'To give the enterprise working channels and engines that generate qualified demand and bring customers in at sustainable cost.'
+practical_context: 'Encountered before launch and during growth pushes, between designed experiences and the first live campaign through the new channels.'
+worked_example:
+  agent_type: human
+  narrative: 'Before the seasonal campaign, the Party & Relationship Process Owner accepts the new channel infrastructure, confirms the acquisition engine is producing qualified leads in test, and schedules the marketing automation go-live.'

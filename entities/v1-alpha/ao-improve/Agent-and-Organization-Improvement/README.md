@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-i
 
 This is a **Process Group** (level L1), named **Agent and Organization Improvement**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Agent Development and Organization Improvement** (`processes:pc-ao-improve-qkmh6b`). Its canonical ID is `processes:group-ao-improve-su4c8p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family strengthens the workforce and the organization that supports it. Its processes run agent and organization development, review engagement and alignment, analyse where capability gaps hold the enterprise back, plan structural reorganizations when structure itself is the problem, and lift the capability of the regulated workforce.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep the enterprise's agents — people and artificial alike — and its structures improving on evidence rather than drifting.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: development cycles, engagement surveys, capability reviews and reorganization projects that follow operating experience.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* After a rough year, the Agency & Organization Process Owner commissions a capability gap analysis; the team reviews engagement and alignment, schedules fine-tuning for the underperforming artificial agents and coaching for people teams, and sequences a reorganization with a managed transition.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Agent and Organization Improvement |
+| `plain_language_description` | string | no | This family strengthens the workforce and the organization that supports it. Its processes run agent and organization … |
+| `business_purpose` | string | no | To keep the enterprise's agents — people and artificial alike — and its structures improving on evidence rather than … |
+| `practical_context` | string | no | Encountered in the Improve stage: development cycles, engagement surveys, capability reviews and reorganization … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

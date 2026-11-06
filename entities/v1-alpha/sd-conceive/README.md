@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-co
 
 This is a **Process Context** (level L0), named **Purpose and Ambition Conception**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Conceive. Its canonical ID is `processes:pc-sd-conceive-ucb3gx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Conceive stage: the deepest front-end thinking about the enterprise's trajectory. It frames purpose and ambition, commits strategic intent, sets the horizons the enterprise aims at, and develops corporate strategy within its authorized mandate. Option design and plan building come later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To decide, deliberately and early, what the enterprise is aiming at and how far it intends to go over each horizon.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at founding, at generational inflection points, and in long-horizon reviews when the question of direction itself is open.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Facing a generational shift in its market, the Strategy & Direction Process Owner leads the framing of purpose and ambition, commits a strategic intent for the decade, and bounds the horizons the enterprise will plan against.
 
 ## 5. Header and Identity Table (generated)
 
@@ -189,6 +189,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Purpose and Ambition Conception |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Conceive stage: the deepest front-end thinking about the … |
+| `business_purpose` | string | no | To decide, deliberately and early, what the enterprise is aiming at and how far it intends to go over each horizon. |
+| `practical_context` | string | no | Encountered at founding, at generational inflection points, and in long-horizon reviews when the question of direction … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

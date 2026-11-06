@@ -48,10 +48,9 @@
       "T3": 6
     },
     "by_status_change": {
-      "promoted to blocking": 1,
-      "unchanged": 55
+      "unchanged": 56
     },
-    "current_blocking_count": 30,
+    "current_blocking_count": 31,
     "target_blocking_count": 31
   }
 }

@@ -1,0 +1,492 @@
+{
+  "processes:pc-ao-activate-kusw2u": {
+    "plain_language_name": "Licensed Workforce Mobilization",
+    "plain_language_description": "This context covers the Agency & Organization area at the Activate stage of its lifecycle: the moment a licensed or regulated worker moves from fully credentialed to actually live in the role. Inside it, licence and registration evidence is confirmed, fitness declarations are filed, supervised training is shown complete, and the continuing supervisor is told that oversight now begins. Nothing here recruits or trains; the context picks up once every prerequisite is in place and ends when the person is formally ready for live duties.",
+    "business_purpose": "To guarantee that nobody starts performing regulated work until every licence, fitness, and training prerequisite is verified and oversight is formally in place.",
+    "practical_context": "Encountered whenever a regulated role is about to go live for an individual — typically at the end of a hiring and credentialing cycle, per person and per role, before first live duties.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A candidate for a controlled function has passed every course and holds the regulator-issued licence. The Agency & Organization Process Owner walks the readiness checklist, confirms the licence evidence and fitness declaration are on file, notifies the continuing supervisor, and authorizes the person to begin live work on Monday."
+    }
+  },
+  "processes:pc-ao-build-pjk4rz": {
+    "plain_language_name": "Agent Acquisition and Onboarding",
+    "plain_language_description": "This context covers the Agency & Organization area at the Build stage: bringing new working capacity into the enterprise. It spans sourcing people, standing up automated agents, integrating both into teams, and growing the contractor and partner pool. Design of the structure they join and day-to-day management afterwards sit in neighboring contexts.",
+    "business_purpose": "To supply the enterprise with the people, automated agents, and partner capacity it needs, properly onboarded and ready to contribute.",
+    "practical_context": "Encountered during growth phases, team expansion, or when new automated agents are provisioned; runs from the sourcing decision through to a fully integrated newcomer.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Agency & Organization Process Owner signs off the onboarding pack for a cohort of new hires and a newly deployed automated agent, confirming provisioning settings and team integration steps are complete before day one."
+    }
+  },
+  "processes:pc-ao-conceive-wtq4cr": {
+    "plain_language_name": "Agent Capacity and Organization Conception",
+    "plain_language_description": "This context covers the Agency & Organization area at the Conceive stage: deciding in principle what working capacity the enterprise will need. It frames capacity strategy, sketches the organization model, and settles the mix between people, automated agents, and hybrid arrangements. Nobody is hired and no structure is drawn in detail here; those follow in later stages.",
+    "business_purpose": "To set the forward view of workforce and agent capacity so acquisition and design work starts from a deliberate, substrate-neutral intent.",
+    "practical_context": "Encountered ahead of planning cycles, major growth decisions, or reorganizations, when leadership asks what kind of working capacity the enterprise needs next.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the annual planning round, the Agency & Organization Process Owner frames the capacity question with leadership: which work suits people, which suits automated agents, and how the mix should shift over the next horizon."
+    }
+  },
+  "processes:pc-ao-design-a4hq2r": {
+    "plain_language_name": "Organization and Agent Topology Design",
+    "plain_language_description": "This context covers the Agency & Organization area at the Design stage: turning capacity intent into concrete structure. It produces the organization design, the catalogue of roles, the competency framework, and the topology showing how human and automated agents fit together, along with the chains of authority between them. Building the teams themselves is the next context along.",
+    "business_purpose": "To give the enterprise a workable blueprint of roles, competencies, and agent placement with clear authority, before any capacity is acquired.",
+    "practical_context": "Encountered when a new structure is being prepared or an existing one is redrawn — typically after conception work and before recruitment or provisioning begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Agency & Organization Process Owner reviews the draft role catalogue and reporting lines, challenges a duplicated approval step, and approves the topology that shows where automated agents sit alongside each team."
+    }
+  },
+  "processes:pc-ao-improve-qkmh6b": {
+    "plain_language_name": "Agent Development and Organization Improvement",
+    "plain_language_description": "This context covers the Agency & Organization area at the Improve stage: making the organization and its agents better over time. It runs engagement and alignment reviews, analyses capability gaps, commits reorganizations where warranted, and drives agent performance improvement. Routine supervision of people at work belongs to the operating context next door.",
+    "business_purpose": "To keep the workforce and agent base effective by closing capability gaps and adapting structure as evidence accumulates.",
+    "practical_context": "Encountered after survey cycles, performance reviews, or structural reviews, when findings point to gaps that need a deliberate response rather than day-to-day correction.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Following a dip in engagement scores, the Agency & Organization Process Owner commissions a capability gap analysis, agrees a targeted reorganization, and commits an improvement plan for the underperforming agent group."
+    }
+  },
+  "processes:pc-ao-operate-zfevmp": {
+    "plain_language_name": "Agent Operations and Performance",
+    "plain_language_description": "This context covers the Agency & Organization area at the Operate stage: the steady running of the enterprise's people and agents. It covers performance management, coordination and collaboration rhythms, time and attendance, compensation administration, and day-to-day learning and development. Getting better as an organization, rather than merely running, is the improvement context's job.",
+    "business_purpose": "To keep the whole agent mix productive, present, coordinated, paid, and learning, so the enterprise runs smoothly day after day.",
+    "practical_context": "Encountered continuously — in weekly one-to-ones, monthly attendance and pay cycles, and recurring development activities across the working population.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At month end the Agency & Organization Process Owner reviews attendance and performance figures, resolves a coordination bottleneck between two teams, and approves the compensation run within workforce policy."
+    }
+  },
+  "processes:pc-ao-retire-3kqe9c": {
+    "plain_language_name": "Workforce Retirement",
+    "plain_language_description": "This context covers the Agency & Organization area at the Retire stage: reducing or winding down a workforce population where regulation governs the reduction. It serves statutory advance notice, runs information and consultation with worker representatives, applies fair selection, funds severance and benefits continuation, and routes transition support. Everyday offboarding of single individuals stays in the operating context.",
+    "business_purpose": "To shrink or close out a workforce population lawfully and humanely, with notice, consultation, fair selection, and funded supports at every step.",
+    "practical_context": "Encountered when a site closes, a function is displaced, or a reduction crosses statutory thresholds — an episodic, heavily scripted episode rather than routine administration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a depot closure passes the statutory threshold, the Agency & Organization Process Owner serves advance notice, opens consultation with worker representatives, applies the agreed selection criteria, and funds severance and retraining support."
+    }
+  },
+  "processes:pc-eo-activate-xdfscw": {
+    "plain_language_name": "Activate Operations Capability",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Activate stage for capabilities whose live service needs formal regulator-issued authorization. It confirms the authorization is on record, brings operating manuals and runbooks into service, switches operational controls on, and notifies the continuing supervisor. Construction of the capability beforehand and its steady running afterwards belong to neighboring contexts.",
+    "business_purpose": "To carry an authorized operations capability across the final step into live service with evidence, controls, and oversight all in place.",
+    "practical_context": "Encountered at go-live for a regulated facility, line, or service — after authorization is granted but before the first live operational day.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the authorization certificate received, the Enablement & Operations Process Owner checks the readiness evidence, brings the runbooks into service, confirms the incident and capacity controls are active, notifies the continuing supervisor, and has the activation entered on the regulated operations record."
+    }
+  },
+  "processes:pc-eo-build-zwkhxc": {
+    "plain_language_name": "Operations and Enablement Build",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Build stage: physically constructing the enterprise's ability to produce and deliver. It stands up production lines, builds delivery capability and the logistics network, and acquires and installs technology assets and facilities. Deciding what to build is conceived and designed elsewhere; here the assets actually take shape.",
+    "business_purpose": "To create the working engine of the enterprise — lines, delivery routes, systems, and sites — ready for steady operation.",
+    "practical_context": "Encountered during set-up of a new operation, capacity expansion, or site and platform rollout, between approved designs and day-one running.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Enablement & Operations Process Owner walks the new production line before acceptance, confirms installation of the technology assets, and signs off facility provisioning so the site can hand over to the operating teams."
+    }
+  },
+  "processes:pc-eo-conceive-mxmtzq": {
+    "plain_language_name": "Operations Model and Enablement Conception",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Conceive stage: framing how the enterprise will produce and deliver. It shapes operations strategy, settles the delivery model, and sets the broad approach to technology enablement and physical assets. Detailed designs and construction follow in later contexts.",
+    "business_purpose": "To commit early to an operations and enablement approach so later design and build decisions share one coherent intent.",
+    "practical_context": "Encountered early in planning horizons, before major investment in facilities or platforms, when the question is how work should get done rather than doing it.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Considering a shift toward regional fulfilment, the Enablement & Operations Process Owner frames three delivery model options with their cost and service implications and recommends one for detailed design."
+    }
+  },
+  "processes:pc-eo-design-kxdfnz": {
+    "plain_language_name": "Operations and Enablement Design",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Design stage: drawing the blueprints for production and delivery. It designs the operations and delivery models, the architecture of the technology platforms, facility layouts, and how logistics will route. Nothing is constructed yet; the output is the set of designs the build context will realize.",
+    "business_purpose": "To turn the conceived operations approach into precise, buildable designs for platforms, facilities, and logistics before money is spent.",
+    "practical_context": "Encountered between an agreed operations direction and physical build — during solutioning for new sites, platforms, or distribution patterns.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Enablement & Operations Process Owner reviews the platform architecture and the warehouse flow drawings, asks for a second routing option, and approves the design package released to the build teams."
+    }
+  },
+  "processes:pc-eo-improve-pka6dk": {
+    "plain_language_name": "Operations and Enablement Improvement",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Improve stage: making production and delivery better, cheaper, and more reliable. It conducts performance reviews, optimizes logistics, runs lean and continuous improvement programmes, tunes asset utilization, and evolves the technology platforms. Daily running of the operation belongs to the operating context.",
+    "business_purpose": "To lift the performance of the execution engine over time through reviewed findings, optimization programmes, and platform evolution.",
+    "practical_context": "Encountered in periodic review cycles and improvement programmes — whenever performance data, audits, or cost pressure point to something worth changing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a quarter of missed throughput targets, the Enablement & Operations Process Owner chairs a performance review, commits a lean programme on the busiest line, and schedules a logistics optimization study."
+    }
+  },
+  "processes:pc-eo-operate-ydqb96": {
+    "plain_language_name": "Execution, Technology, and Asset Operation",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Operate stage: running the enterprise's execution engine day to day. It covers production and service delivery, logistics and warehousing with stock control, the technology platforms, facility upkeep and asset maintenance, and the purchasing cycle. Improving the engine rather than running it is handled in the improvement context.",
+    "business_purpose": "To deliver what the enterprise promises, on time and to standard, by keeping every operational asset and platform running as planned.",
+    "practical_context": "Encountered continuously — every production shift, delivery run, stock count, platform incident, and maintenance window across the operating calendar.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a supply delay threatens the week's schedule, the Enablement & Operations Process Owner rebalances inventory between warehouses, approves an expedited purchase, and confirms the maintenance window will not collide with peak demand."
+    }
+  },
+  "processes:pc-eo-retire-nw3ynf": {
+    "plain_language_name": "Operations and Asset Decommissioning",
+    "plain_language_description": "This context covers the Enablement & Operations area at the Retire stage: taking operational assets out of service in a controlled way. It plans and approves the retirement, isolates and withdraws the asset, handles decommissioning and disposal including data sanitization, and settles residual value and obligations. Withdrawing a product or service from the market is a different retirement context.",
+    "business_purpose": "To remove end-of-life assets safely and accountably, leaving no live data, unsafe equipment, or unresolved obligations behind.",
+    "practical_context": "Encountered at equipment end-of-life, site closures, platform replacements, or facility exits — an episodic stage gated by an approved retirement plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Retiring an ageing server estate, the Enablement & Operations Process Owner approves the retirement plan, witnesses isolation from the network, confirms certified data sanitization before disposal, and closes out residual contract obligations."
+    }
+  },
+  "processes:pc-fa-activate-yrhcfm": {
+    "plain_language_name": "Activate Billing Capability",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Activate stage for billing and revenue-recognition capabilities. It takes a capability that has been acknowledged against the applicable accounting or rate framework and brings it live: approvals recorded, controls such as segregation of duties and reconciliation switched on, and the continuing supervisor notified. Building the capability beforehand and running invoices afterwards are neighboring concerns.",
+    "business_purpose": "To ensure the first live invoice or revenue entry happens only once the framework is acknowledged, pricing approvals are held, and financial controls are active.",
+    "practical_context": "Encountered at cutover for a new billing arrangement or revenue stream — after regulator acknowledgement and testing, before the first production run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the first billing run for a regulated tariff, the Finance & Accounting Process Owner verifies the pricing approval is on file, activates the reconciliation and audit-trail controls, notifies the continuing supervisor, and authorizes the run."
+    }
+  },
+  "processes:pc-fa-build-pztsp9": {
+    "plain_language_name": "Finance Capability and System Build",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Build stage: standing up the money-management machinery. It staffs and structures the finance function, deploys the finance systems, and secures funding facilities such as credit lines. Designing the accounting architecture and running daily finance work sit in neighboring contexts.",
+    "business_purpose": "To give the enterprise a working finance function, fitted-out systems, and arranged funding, ready to record and manage money from day one.",
+    "practical_context": "Encountered when the enterprise is first set up, when finance capability lags growth, or during major finance transformation programmes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During a finance transformation, the Finance & Accounting Process Owner oversees the new system configuration for the ledger team, confirms staff are in post, and completes negotiation of a revolving funding facility."
+    }
+  },
+  "processes:pc-fa-conceive-phabh2": {
+    "plain_language_name": "Financial Model and Funding Conception",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Conceive stage: framing how the enterprise will be financed and how money should flow through it. It shapes the finance strategy, settles the shape of the monetary model, and frames how the enterprise will fund and capitalize itself. Detailed accounting design and day-to-day treasury work follow later.",
+    "business_purpose": "To settle early how the enterprise funds itself and organizes its monetary flows, so design and build decisions rest on one financial intent.",
+    "practical_context": "Encountered at enterprise founding, before expansion, or ahead of fundraising windows, when funding mix and monetary model questions dominate.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Considering an acquisition, the Finance & Accounting Process Owner frames the funding approach — debt versus cash versus facility headroom — and presents the monetary model consequences to leadership for a decision."
+    }
+  },
+  "processes:pc-fa-design-4j8evh": {
+    "plain_language_name": "Financial Planning and Accounting Architecture Design",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Design stage: drawing the architecture of the enterprise's money handling. It designs the chart of accounts, the cost allocation model, the structure of financial plans, and the financial controls. Standing up the systems and running the ledger belong to neighboring contexts.",
+    "business_purpose": "To define exactly how money is categorized, allocated, planned, and controlled, giving every later transaction a consistent home.",
+    "practical_context": "Encountered when finance operations are first designed, or during redesigns after mergers, new reporting needs, or control weaknesses.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Finance & Accounting Process Owner signs off a refreshed chart of accounts, agrees the cost allocation rules between divisions, and approves the design of the approval and reconciliation controls."
+    }
+  },
+  "processes:pc-fa-improve-haqf4w": {
+    "plain_language_name": "Finance and Financial Control Improvement",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Improve stage: making the enterprise's cost base, reporting, and controls stronger. It runs cost optimization reviews, improves reporting and disclosure quality, and strengthens financial controls where findings show weakness. Routine monthly close and reporting are the operating context's work.",
+    "business_purpose": "To reduce cost, sharpen reporting and disclosure, and close control gaps so the financial function improves cycle over cycle.",
+    "practical_context": "Encountered after audit cycles, close post-mortems, or cost reviews — whenever findings or cost data indicate structural rather than operational fixes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After an audit flags a weak approval control, the Finance & Accounting Process Owner commissions a cost review across shared services, tightens the control design, and commits the reporting improvements for next quarter."
+    }
+  },
+  "processes:pc-fa-operate-afew7e": {
+    "plain_language_name": "Accounting, Reporting, and Treasury Operation",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Operate stage: the everyday recording and reporting of the enterprise's money. It runs the ledger, payables and receivables, treasury activity, tax obligations, the period close, planning and analysis, and outward reporting. Purchasing transactions themselves are executed in the operations domain; their monetary recording lands here.",
+    "business_purpose": "To keep an accurate, timely, compliant monetary record and produce the statements and insight the enterprise and its stakeholders rely on.",
+    "practical_context": "Encountered daily in payments and postings, monthly at close, quarterly in reporting, and annually in disclosures and tax filings.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During the monthly close, the Finance & Accounting Process Owner clears reconciliation breaks, reviews treasury positions against policy, and signs the reporting pack before it goes to the governance cycle."
+    }
+  },
+  "processes:pc-fa-retire-64q5p9": {
+    "plain_language_name": "Financial Run-Off",
+    "plain_language_description": "This context covers the Finance & Accounting area at the Retire stage for a regulated financial entity stopping business under supervised run-off. It secures the run-off authorization, submits the plan, moves the books to the required wind-down accounting basis, maintains reserving and capital through the period, settles claimants with their statutory priority, and keeps stakeholders informed. Ordinary stewardship beforehand and asset disposal elsewhere are out of scope.",
+    "business_purpose": "To wind down a regulated financial entity in good order — authorized, planned, adequately reserved, and fair to policyholders ahead of other creditors.",
+    "practical_context": "Encountered when a financial entity or book ceases new business under a run-off authorization and spends years settling obligations under supervision.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the run-off authorization granted, the Finance & Accounting Process Owner submits the run-off plan in the regulator's window, transitions the books to the wind-down accounting basis, and chairs the monthly reserving and claims review until the last policyholder claim is settled."
+    }
+  },
+  "processes:pc-ge-activate-hxtfcv": {
+    "plain_language_name": "Governance Instrument Commencement",
+    "plain_language_description": "This context covers the Governance & Existence area at the Activate stage: making adopted governance instruments legally effective. It verifies the conditions for commencement, promulgates the adopted instruments, and confirms and records their effectiveness dates. Drafting and adopting happened earlier; enforcing the in-force instrument happens in the operating context.",
+    "business_purpose": "To bring adopted rules, policies, and charters into force at the right moment, so obligations and rights attach exactly when intended.",
+    "practical_context": "Encountered whenever an approved instrument has commencement conditions to satisfy — a waiting period, a required communication, or a registration step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A newly adopted policy cannot take effect until notice is published. The Governance & Existence Process Owner verifies the notice condition is met, promulgates the instrument, and records its effectiveness date so obligations attach from that day."
+    }
+  },
+  "processes:pc-ge-build-52hjrc": {
+    "plain_language_name": "Governance Body Establishment",
+    "plain_language_description": "This context covers the Governance & Existence area at the Build stage: standing up the working organs of governance. It establishes boards and committees, codifies their charters, and constructs the policy artefacts and standards they will use. Framing the direction beforehand and running the bodies afterwards belong to neighboring contexts.",
+    "business_purpose": "To create the actual bodies, charters, and policy instruments through which the enterprise will be directed and controlled.",
+    "practical_context": "Encountered at enterprise formation, when new oversight bodies are created, or when the policy set is being materially constructed or rebuilt.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Forming a new risk committee, the Governance & Existence Process Owner confirms membership appointments, finalizes the committee's charter wording, and publishes the supporting policy artefacts ahead of its first meeting."
+    }
+  },
+  "processes:pc-ge-conceive-b5xwpd": {
+    "plain_language_name": "Strategy and Governance Conception",
+    "plain_language_description": "This context covers the Governance & Existence area at the Conceive stage: deciding in principle what the organization is and how it will be governed. It frames governance strategy, initiates the policy posture and mandate, and sets charter direction. Designing the control system and standing up the bodies come afterwards.",
+    "business_purpose": "To articulate the mandate and governance posture that give every later body, charter, and policy a defensible foundation.",
+    "practical_context": "Encountered at founding, during mandate renewals, or when the enterprise's governance direction needs a deliberate reset.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the enterprise's founding, the Governance & Existence Process Owner frames the mandate, the policy posture, and the charter direction with the founders, settling what the organization is for before any body is convened."
+    }
+  },
+  "processes:pc-ge-design-3f2gjr": {
+    "plain_language_name": "Governance System Design",
+    "plain_language_description": "This context covers the Governance & Existence area at the Design stage: shaping how governance will actually work. It designs the governance architecture, sets control objectives, lays out the policy architecture, and defines how authority is delegated. Building the bodies and running the machinery come later.",
+    "business_purpose": "To translate mandate and direction into a designed, testable system of controls, policies, and delegated authority.",
+    "practical_context": "Encountered once direction is framed and before bodies are convened — typically during governance overhauls or new-control programmes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Governance & Existence Process Owner reviews the draft control objectives, tests the delegation design against a sample decision, and approves the policy architecture ready for construction."
+    }
+  },
+  "processes:pc-ge-improve-c78ppp": {
+    "plain_language_name": "Governance Review and Learning",
+    "plain_language_description": "This context covers the Governance & Existence area at the Improve stage: learning whether governance works and making it better. It reviews governance effectiveness, scores audit findings, refines the policy regime, and feeds lessons back into framing, design, build, and operation. Running the meetings and controls day to day is the operating context.",
+    "business_purpose": "To close the loop between governance insight and practice, so findings genuinely change how the enterprise is governed.",
+    "practical_context": "Encountered after audit cycles, effectiveness assessments, or governance incidents, on a periodic rhythm rather than a daily one.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Following the annual effectiveness review, the Governance & Existence Process Owner scores the audit findings, agrees policy refinements, and carries the lessons into the next framing and design cycle."
+    }
+  },
+  "processes:pc-ge-operate-hb2dac": {
+    "plain_language_name": "Governance Oversight",
+    "plain_language_description": "This context covers the Governance & Existence area at the Operate stage: keeping the governance machinery running continuously. It convenes boards and committees on their cycles, executes risk oversight, maintains policy compliance, and commissions audit and assurance. Making governance better as a result is the improvement context's concern.",
+    "business_purpose": "To keep oversight live — decisions taken on schedule, risk watched, and compliance maintained through the standing governance cycles.",
+    "practical_context": "Encountered on the meeting calendar and review rhythm: convened sessions, recurring risk and compliance checkpoints, and assurance engagements.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the quarterly cycle, the Governance & Existence Process Owner convenes the board committees, walks the risk oversight dashboard, tracks compliance exceptions to closure, and records the decisions taken."
+    }
+  },
+  "processes:pc-ge-retire-kndw6x": {
+    "plain_language_name": "Governance Unwind",
+    "plain_language_description": "This context covers the Governance & Existence area at the Retire stage, and only when an authority compels it: winding down governance bodies, mandates, and instruments under a regulator or court order. It reduces bodies to wind-down quorum, sunsets policy instruments, files the dissolution paperwork, assigns custodianship of retained records, and surrenders authorizations. Voluntary wind-downs chosen internally are handled as improvement work instead.",
+    "business_purpose": "To dissolve a compelled governance regime lawfully and traceably, with filings made, records kept safe, and authorities surrendered as ordered.",
+    "practical_context": "Encountered only on receipt of a mandatory dissolution, revocation, or wind-down order — a rare, script-driven stage with the external authority watching.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "On receiving the court's dissolution order, the Governance & Existence Process Owner reduces the bodies to wind-down quorum, sunsets the policy instruments, files the dissolution certificate, and assigns retained-records custodianship before releasing the authorizations."
+    }
+  },
+  "processes:pc-pr-activate-mwq7bj": {
+    "plain_language_name": "Enterprise Relationship Activation",
+    "plain_language_description": "This context covers the Party & Relationship area at the Activate stage: the regulated start of enterprise relationships. Before a customer, supplier, or partner relationship may begin, identity is verified, beneficial ownership is resolved, screening runs, and an approval — or a reasoned refusal — is recorded. Routine onboarding without a regulated gate stays in the operating context, and closing relationships later is a separate retirement context.",
+    "business_purpose": "To open relationships only on verified identity and understood ownership and risk, with every approval or refusal evidenced.",
+    "practical_context": "Encountered whenever a new customer, supplier, or partner relationship carries regulated onboarding duties — at account opening or contract start, case by case.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A new supplier requests an account. The Party & Relationship Process Owner oversees identity verification, resolves the beneficial-ownership picture, reviews the screening result, and records an approval — or a documented refusal with its rationale."
+    }
+  },
+  "processes:pc-pr-build-a46hp7": {
+    "plain_language_name": "Customer Channel and Acquisition Build",
+    "plain_language_description": "This context covers the customer and demand area at the Build stage: constructing what will attract and win customers. It builds channel infrastructure, acquisition engines, marketing automation, and the demand-generation machinery. Framing the strategy beforehand and serving live customers afterwards belong to neighboring contexts.",
+    "business_purpose": "To give the enterprise working channels and engines that generate qualified demand and bring customers in at sustainable cost.",
+    "practical_context": "Encountered before launch and during growth pushes, between designed experiences and the first live campaign through the new channels.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Before the seasonal campaign, the Party & Relationship Process Owner accepts the new channel infrastructure, confirms the acquisition engine is producing qualified leads in test, and schedules the marketing automation go-live."
+    }
+  },
+  "processes:pc-pr-conceive-6xztsq": {
+    "plain_language_name": "Customer Strategy Conception",
+    "plain_language_description": "This context covers the customer and demand area at the Conceive stage: choosing who the enterprise serves and on what terms of exchange. It frames customer strategy, segments the market, and commits to a demand thesis that can be tested. Designing experiences and building channels follow later.",
+    "business_purpose": "To commit to a defensible view of target segments and demand before money is spent on channels, experiences, or acquisition.",
+    "practical_context": "Encountered in planning rounds and when market shifts force a rethink of who the enterprise is trying to win.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the annual planning round, the Party & Relationship Process Owner frames three candidate segments, tests each demand thesis against available evidence, and recommends the segment mix to commit to for the year."
+    }
+  },
+  "processes:pc-pr-design-hrcdy4": {
+    "plain_language_name": "Customer Experience Design",
+    "plain_language_description": "This context covers the customer and demand area at the Design stage: shaping what customers will actually experience. It designs the experience, articulates the journey end to end, models how demand responds to the offering, and selects the experience patterns to use. Building the channels and running relationships come later.",
+    "business_purpose": "To turn customer strategy into a concrete, testable experience and journey design that build and operations can realize.",
+    "practical_context": "Encountered when strategy is being made tangible — new journey blueprints, experience redesigns, or demand model updates ahead of build work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Party & Relationship Process Owner walks the draft journey with the design team, spots a handoff that would frustrate customers, and approves the revised experience patterns for channel build."
+    }
+  },
+  "processes:pc-pr-improve-k8phkn": {
+    "plain_language_name": "Customer Insight and Retention",
+    "plain_language_description": "This context covers the customer and demand area at the Improve stage: learning from customers and keeping more of them. It monitors satisfaction, analyses churn and its warning signs, operates win-back activity for lapsed customers, and feeds insight back into strategy, design, and operations. Day-to-day account handling belongs to the operating context.",
+    "business_purpose": "To lengthen customer relationships and raise their value by acting on satisfaction, churn, and win-back evidence.",
+    "practical_context": "Encountered on a continuous insight rhythm — survey waves, churn reviews, and triggered win-back pushes when departure risk shows.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When churn analysis flags a cluster of at-risk accounts, the Party & Relationship Process Owner commissions a satisfaction deep-dive, launches a targeted win-back push, and routes the findings into the next experience design cycle."
+    }
+  },
+  "processes:pc-pr-operate-pwue5a": {
+    "plain_language_name": "Customer Relationship Operations",
+    "plain_language_description": "This context covers the customer and demand area at the Operate stage: the everyday care of active customer relationships. It manages accounts, resolves escalations within agreed service levels, coordinates renewals, runs win-back coordination, and allocates attention across the portfolio. Winning customers initially and improving the relationship practice overall sit in neighboring contexts.",
+    "business_purpose": "To sustain active relationships — resolving problems fast, renewing cleanly, and spending attention where the portfolio needs it most.",
+    "practical_context": "Encountered continuously: account reviews, escalation calls, renewal windows approaching, and portfolio reallocation decisions through the year.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An escalated account threatens to lapse at renewal. The Party & Relationship Process Owner takes the call personally, agrees the remediation, coordinates the renewal with minimal leakage, and logs the portfolio lesson."
+    }
+  },
+  "processes:pc-pr-retire-2cusde": {
+    "plain_language_name": "Enterprise Relationship Close-Out",
+    "plain_language_description": "This context covers the Party & Relationship area at the Retire stage: ending relationships in good order. It closes out contracts and settles terminations, offboards the party across every role — customer, supplier, or partner — and resolves residual obligations, records, and rights, evidencing any regulated offboarding duties such as erasure. Starting relationships is the activation context's job.",
+    "business_purpose": "To finish relationships cleanly: obligations settled, records and rights resolved, and every regulated offboarding duty evidenced.",
+    "practical_context": "Encountered at contract end, termination, or a regulated offboarding event — a case-by-case stage that follows an approved close-out plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a supplier contract terminates, the Party & Relationship Process Owner confirms final settlements, resolves the record and access rights, evidences the offboarding duties, and closes the relationship file."
+    }
+  },
+  "processes:pc-pv-activate-f7kne7": {
+    "plain_language_name": "Proposition Launch and Service Transition",
+    "plain_language_description": "This context covers the Product & Value area at the Activate stage: moving finished propositions into live service. It validates transition readiness, hands the product or service over into operation, obtains operational acceptance, and completes launch activation with ownership and controls assigned. Developing the proposition beforehand and delivering it daily afterwards are neighboring domains' concerns.",
+    "business_purpose": "To cross the bridge from built to serving: readiness proven, acceptance recorded, and launch completed with clear ownership.",
+    "practical_context": "Encountered at launch windows and service cutovers, when development is complete and the question is whether the proposition is truly ready for customers.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the launch window, the Product & Value Process Owner reviews the readiness evidence, runs the transition checklist with the receiving operations teams, records operational acceptance, and declares the proposition live."
+    }
+  },
+  "processes:pc-pv-build-ygbmxb": {
+    "plain_language_name": "Product Development and Market Readiness Build",
+    "plain_language_description": "This context covers the Product & Value area at the Build stage: constructing the things the enterprise will offer. It develops product variants, builds service capability, creates innovation prototypes, and prepares market readiness. Designing the propositions beforehand and operating the portfolio afterwards belong to neighboring contexts.",
+    "business_purpose": "To turn designed propositions into real, validated products and services that are ready for market and for live operation.",
+    "practical_context": "Encountered in development cycles and prototyping sprints, between an approved design and a market-ready release.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Reviewing the prototype results, the Product & Value Process Owner approves the variant for volume development, confirms service capability is on track, and sets the market-readiness checklist in motion."
+    }
+  },
+  "processes:pc-pv-conceive-fe9awk": {
+    "plain_language_name": "Proposition and Portfolio Conception",
+    "plain_language_description": "This context covers the Product & Value area at the Conceive stage: deciding what the enterprise should offer at all. It frames value proposition theses, sets portfolio direction, frames innovation theses, and validates proposition concepts against market evidence. Designing and building follow later.",
+    "business_purpose": "To choose, early and deliberately, which propositions and innovations deserve the enterprise's development investment.",
+    "practical_context": "Encountered in front-end innovation work and portfolio planning, before any design or development money is committed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Product & Value Process Owner frames two proposition theses for a new market, validates the concepts against customer evidence, and recommends which one enters the portfolio direction."
+    }
+  },
+  "processes:pc-pv-design-8dhwpn": {
+    "plain_language_name": "Proposition and Packaging Design",
+    "plain_language_description": "This context covers the Product & Value area at the Design stage: giving chosen propositions their concrete shape. It designs the propositions themselves, settles packaging and configuration, plans innovation experiments, and lays out the proposition architecture for the portfolio. Development and delivery belong to neighboring contexts.",
+    "business_purpose": "To convert proposition theses into precise designs — packaging, configuration, and experiments — that development can build and test.",
+    "practical_context": "Encountered after conception commits a thesis and before development starts: proposition workshops, packaging decisions, and experiment plans.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Product & Value Process Owner compares three packaging configurations, commits one design for the launch proposition, and approves an innovation experiment to test a bundled variant."
+    }
+  },
+  "processes:pc-pv-improve-wpyfx7": {
+    "plain_language_name": "Product Evolution and Portfolio Rationalization",
+    "plain_language_description": "This context covers the Product & Value area at the Improve stage: making the offering better and leaner over time. It reviews proposition performance, evolves products and services on the evidence, rationalizes the portfolio against fit and results, and optimizes each proposition's lifecycle. Running the live catalogue belongs to the operating context.",
+    "business_purpose": "To keep the portfolio earning its keep: evolve the strong, fix the weak, and retire the parts that no longer fit.",
+    "practical_context": "Encountered in periodic performance reviews and portfolio refreshes, when evidence shows which propositions deserve more and which less.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the portfolio review, the Product & Value Process Owner weighs each proposition's performance evidence, commits evolution funding for the strong performers, and rationalizes the long tail out of the plan."
+    }
+  },
+  "processes:pc-pv-operate-ewpwjc": {
+    "plain_language_name": "Portfolio Management and Proposition Lifecycle Operation",
+    "plain_language_description": "This context covers the Product & Value area at the Operate stage: managing the live portfolio and its catalogue. It operates the product catalogue, manages portfolio performance against targets, tracks each proposition through its lifecycle, and monitors performance for reporting. Physically delivering the product is the operations domain; evolving the portfolio is the improvement context.",
+    "business_purpose": "To keep the offering portfolio healthy in the market — catalogue accurate, performance visible, and every proposition tracked from launch toward eventual exit.",
+    "practical_context": "Encountered on a steady commercial rhythm: catalogue updates, performance reporting cycles, and lifecycle checkpoints for each proposition.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the monthly portfolio session, the Product & Value Process Owner reviews performance against targets, updates catalogue status for two propositions, and flags one nearing its lifecycle decision point."
+    }
+  },
+  "processes:pc-pv-retire-eeck6d": {
+    "plain_language_name": "Proposition Sunset and Service Withdrawal",
+    "plain_language_description": "This context covers the Product & Value area at the Retire stage: bringing propositions out of service in a controlled way. It takes in the retirement decision, plans the withdrawal, transitions stakeholders off the service, removes operational reliance, and routes residual obligations onward. Decommissioning physical assets is the operations domain's retirement context.",
+    "business_purpose": "To withdraw offerings from the market deliberately — stakeholders moved, reliance removed, and every residual obligation routed to its owner.",
+    "practical_context": "Encountered at end-of-life decisions and sunset plans, when a proposition stops earning its place and must leave service without stranding customers.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Sunsetting a legacy service tier, the Product & Value Process Owner approves the withdrawal plan, schedules stakeholder transition communications, confirms operational reliance is removed, and routes the residual obligations to the operating teams."
+    }
+  },
+  "processes:pc-sd-activate-ghaub8": {
+    "plain_language_name": "Institutionalize Regulated Strategic Plan",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Activate stage for plans whose execution awaits formal supervisor acknowledgement. It completes the filing, secures the acknowledgement on record, preserves the filing receipt, launches the monitoring framework, and activates the communications plan. Building the plan beforehand and steering its execution afterwards are neighboring contexts.",
+    "business_purpose": "To make a board-approved plan genuinely binding and live — acknowledged, receipted, monitored, and communicated under continuing supervision.",
+    "practical_context": "Encountered when an approved plan must pass supervisor review before execution begins, typically on multi-year planning rhythms or after supervisory engagement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the supervisor's acknowledgement received, the Strategy & Direction Process Owner files the receipt on the regulated record, switches on the monitoring indicators and early-warning measures, and activates the communications plan."
+    }
+  },
+  "processes:pc-sd-build-gmzrrm": {
+    "plain_language_name": "Strategic Plan Build",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Build stage: assembling the actual plan. It builds the strategic plan and roadmap, translates committed choices into an initiative portfolio, and sets resource allocation priorities within the authorized frame. Designing the options beforehand and steering execution afterwards belong to neighboring contexts.",
+    "business_purpose": "To turn strategic choices into a versioned plan, roadmap, and initiative set with clear priorities and resourcing.",
+    "practical_context": "Encountered in planning seasons after choices are committed — the weeks where strategy becomes documents, roadmaps, and funded initiatives.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the planning season, the Strategy & Direction Process Owner assembles the plan document, sequences the roadmap, translates each committed choice into named initiatives, and sets resource priorities within the authorized envelope."
+    }
+  },
+  "processes:pc-sd-conceive-ucb3gx": {
+    "plain_language_name": "Purpose and Ambition Conception",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Conceive stage: the deepest front-end thinking about the enterprise's trajectory. It frames purpose and ambition, commits strategic intent, sets the horizons the enterprise aims at, and develops corporate strategy within its authorized mandate. Option design and plan building come later.",
+    "business_purpose": "To decide, deliberately and early, what the enterprise is aiming at and how far it intends to go over each horizon.",
+    "practical_context": "Encountered at founding, at generational inflection points, and in long-horizon reviews when the question of direction itself is open.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Facing a generational shift in its market, the Strategy & Direction Process Owner leads the framing of purpose and ambition, commits a strategic intent for the decade, and bounds the horizons the enterprise will plan against."
+    }
+  },
+  "processes:pc-sd-design-g3es76": {
+    "plain_language_name": "Strategic Choices Design",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Design stage: shaping intent into concrete choices. It designs strategic options, evaluates the alternatives against stated criteria, defines objectives and targets, and frames scenarios for resilience testing. Building the plan and steering delivery belong to neighboring contexts.",
+    "business_purpose": "To give leadership well-formed options, tested trade-offs, and committed objectives instead of raw ambition.",
+    "practical_context": "Encountered in strategy workshops and option assessments, between committed intent and the construction of the plan itself.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The Strategy & Direction Process Owner runs the options workshop, scores each alternative against the agreed criteria, frames downside scenarios, and commits the objectives and targets for the plan builders."
+    }
+  },
+  "processes:pc-sd-improve-ft9k5f": {
+    "plain_language_name": "Strategic Adaptation",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Improve stage: keeping strategy honest as the world moves. It adapts the strategic direction, refreshes objectives and targets, and reviews how well the strategy is actually working. Monitoring execution belongs to the operating context; this is where direction itself changes.",
+    "business_purpose": "To renew the enterprise's direction on evidence — adjusting course, refreshing targets, and learning from what the strategy delivered.",
+    "practical_context": "Encountered in refresh cycles and, abruptly, when market or supervisory shifts invalidate assumptions the strategy rests on.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a market shift breaks a core assumption, the Strategy & Direction Process Owner convenes the effectiveness review, adapts the direction statement, and issues refreshed objectives and targets to the planning teams."
+    }
+  },
+  "processes:pc-sd-operate-5cs5ee": {
+    "plain_language_name": "Strategic Steering Operation",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Operate stage: steering execution of the chosen strategy. It monitors strategic performance against the plan, senses signals from the environment, steers the initiative portfolio, and runs the strategic review cycle. Executing initiatives is operational work elsewhere; adapting direction itself is the improvement context.",
+    "business_purpose": "To hold strategy and execution together — watching performance, reading the environment, and keeping the initiative portfolio pointed at intent.",
+    "practical_context": "Encountered on the steering cadence: monthly performance views, quarterly review cycles, and continuous scanning of signals outside the enterprise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the quarterly review, the Strategy & Direction Process Owner compares performance to plan, tables the environmental signals picked up since last cycle, and steers two initiatives ahead while pausing a third."
+    }
+  },
+  "processes:pc-sd-retire-zxnc3c": {
+    "plain_language_name": "Sunset Regulated Strategic Plan",
+    "plain_language_description": "This context covers the Strategy & Direction area at the Retire stage for plans an authority has ordered retired. It documents the sunset filings, stops the plan's execution, decommissions its monitoring framework, executes communications, and preserves the records under the retention regime. Improvement-driven strategy change and replacement-plan activation are handled in neighboring contexts.",
+    "business_purpose": "To retire a mandated plan cleanly — acknowledged filings made, execution ceased, monitoring stood down, and records preserved as required.",
+    "practical_context": "Encountered only when a supervisor or regulator directs retirement or replacement of a plan — a scripted, evidence-heavy episode with the authority watching.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Acting on the supervisor's retirement directive, the Strategy & Direction Process Owner completes the sunset filing, confirms plan cessation across business units, stands down the monitoring framework, and preserves the regulated records per the retention policy."
+    }
+  }
+}

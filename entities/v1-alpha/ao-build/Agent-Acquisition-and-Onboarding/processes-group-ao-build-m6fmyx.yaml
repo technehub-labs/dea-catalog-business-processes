@@ -124,3 +124,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent Acquisition and Onboarding'
+plain_language_description: 'These are the processes that bring new working capacity into the organization, whatever its substrate: sourcing and recruiting people, provisioning artificial agents by deploying models and wiring up integrations, onboarding and integrating every new agent, and growing the external pools of contractors and partner agents, including a vetted pool for regulated roles. It is the constructive stage of the Agency & Organization domain, turning designed capacity needs into working agents.'
+business_purpose: 'To give the enterprise the human, artificial and contracted agent capacity its organization needs, integrated and ready to work.'
+practical_context: 'Met during the Build stage whenever the enterprise is hiring staff, deploying new artificial agents, or expanding contractor pools — after agent topology has been designed and before steady-state operation.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Ahead of a busy season, the Agency & Organization Process Owner''s team recruits additional staff, provisions new artificial agents by deploying models and connecting them through APIs, and extends the vetted contractor pool — a blend of people and automation onboarding together.'

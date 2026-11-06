@@ -144,3 +144,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Enterprise Relationship Activation'
+plain_language_description: 'This context covers the Party & Relationship area at the Activate stage: the regulated start of enterprise relationships. Before a customer, supplier, or partner relationship may begin, identity is verified, beneficial ownership is resolved, screening runs, and an approval — or a reasoned refusal — is recorded. Routine onboarding without a regulated gate stays in the operating context, and closing relationships later is a separate retirement context.'
+business_purpose: 'To open relationships only on verified identity and understood ownership and risk, with every approval or refusal evidenced.'
+practical_context: 'Encountered whenever a new customer, supplier, or partner relationship carries regulated onboarding duties — at account opening or contract start, case by case.'
+worked_example:
+  agent_type: human
+  narrative: 'A new supplier requests an account. The Party & Relationship Process Owner oversees identity verification, resolves the beneficial-ownership picture, reviews the screening result, and records an approval — or a documented refusal with its rationale.'

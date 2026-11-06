@@ -133,3 +133,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-75-fa-retire-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Run-Off'
+plain_language_description: 'This family winds a regulated financial entity or run-off portfolio down under the supervisor''s oversight. Its processes secure the run-off authorisation and plan, transition to the statutory accounting basis, and keep reserving, capital adequacy and asset-liability matching intact while policyholder claims are adjudicated and paid with priority. It closes with stakeholder communications, retained-records and service-of-process duties, tax clearance, and the final exit or completion certification from the regulator.'
+business_purpose: 'So an insurer or portfolio exits the market responsibly: claims paid with policyholder priority, statutory liabilities settled, records retained, and the regulator''s certification obtained.'
+practical_context: 'Encountered when a supervisor authorises run-off of an insurer, mutual or portfolio — the managed end-of-life phase between going-concern operation and final solvent exit.'
+worked_example:
+  agent_type: human
+  narrative: 'A mutual insurer enters run-off. The Finance & Accounting Process Owner''s team files the run-off plan inside the regulator''s window, moves the books to the liquidation basis, keeps reserving and asset-liability matching current, pays policyholder claims in priority order, retains the statutory records, and secures the solvent-exit certification.'

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-im
 
 This is a **Process Context** (level L0), named **Product Evolution and Portfolio Rationalization**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Improve. Its canonical ID is `processes:pc-pv-improve-wpyfx7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Improve stage: making the offering better and leaner over time. It reviews proposition performance, evolves products and services on the evidence, rationalizes the portfolio against fit and results, and optimizes each proposition's lifecycle. Running the live catalogue belongs to the operating context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep the portfolio earning its keep: evolve the strong, fix the weak, and retire the parts that no longer fit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in periodic performance reviews and portfolio refreshes, when evidence shows which propositions deserve more and which less.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the portfolio review, the Product & Value Process Owner weighs each proposition's performance evidence, commits evolution funding for the strong performers, and rationalizes the long tail out of the plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Product Evolution and Portfolio Rationalization |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Improve stage: making the offering better and leaner over time. It … |
+| `business_purpose` | string | no | To keep the portfolio earning its keep: evolve the strong, fix the weak, and retire the parts that no longer fit. |
+| `practical_context` | string | no | Encountered in periodic performance reviews and portfolio refreshes, when evidence shows which propositions deserve … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

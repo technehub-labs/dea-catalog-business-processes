@@ -115,3 +115,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Product & Value x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Portfolio Management and Proposition Lifecycle Operation'
+plain_language_description: 'This context covers the Product & Value area at the Operate stage: managing the live portfolio and its catalogue. It operates the product catalogue, manages portfolio performance against targets, tracks each proposition through its lifecycle, and monitors performance for reporting. Physically delivering the product is the operations domain; evolving the portfolio is the improvement context.'
+business_purpose: 'To keep the offering portfolio healthy in the market — catalogue accurate, performance visible, and every proposition tracked from launch toward eventual exit.'
+practical_context: 'Encountered on a steady commercial rhythm: catalogue updates, performance reporting cycles, and lifecycle checkpoints for each proposition.'
+worked_example:
+  agent_type: human
+  narrative: 'In the monthly portfolio session, the Product & Value Process Owner reviews performance against targets, updates catalogue status for two propositions, and flags one nearing its lifecycle decision point.'

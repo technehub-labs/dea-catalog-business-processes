@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-o
 
 This is a **Process Group** (level L1), named **Strategic Steering Operation**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Operate. It belongs to `processes:pc-sd-operate-5cs5ee`. Its canonical ID is `processes:group-sd-operate-22epxr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family steers the enterprise along its chosen trajectory. Its processes monitor strategic performance against objectives, sense environmental signals and route them, steer the initiative portfolio with rebalancing decisions, and operate the strategic review cycle on cadence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the plan stays connected to reality: performance monitored, signals sensed, the portfolio steered, and reviews held on rhythm.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously in the Operate stage: dashboard reviews, signal sensing, portfolio steering sessions and quarterly strategic reviews.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* At the quarterly review, the Strategy & Direction Process Owner's team reads the monitoring dashboards, weighs the environmental signals the sensing routines surfaced, steers the initiative portfolio with two rebalancing decisions, and closes the review cycle with recorded actions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Strategic Monitoring and Steering |
+| `plain_language_description` | string | no | This family steers the enterprise along its chosen trajectory. Its processes monitor strategic performance against … |
+| `business_purpose` | string | no | So the plan stays connected to reality: performance monitored, signals sensed, the portfolio steered, and reviews held … |
+| `practical_context` | string | no | Encountered continuously in the Operate stage: dashboard reviews, signal sensing, portfolio steering sessions and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

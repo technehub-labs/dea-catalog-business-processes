@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-im
 
 This is a **Process Context** (level L0), named **Governance Review and Learning**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Improve. Its canonical ID is `processes:pc-ge-improve-c78ppp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Improve stage: learning whether governance works and making it better. It reviews governance effectiveness, scores audit findings, refines the policy regime, and feeds lessons back into framing, design, build, and operation. Running the meetings and controls day to day is the operating context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To close the loop between governance insight and practice, so findings genuinely change how the enterprise is governed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered after audit cycles, effectiveness assessments, or governance incidents, on a periodic rhythm rather than a daily one.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following the annual effectiveness review, the Governance & Existence Process Owner scores the audit findings, agrees policy refinements, and carries the lessons into the next framing and design cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Governance Review and Learning |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Improve stage: learning whether governance works and making … |
+| `business_purpose` | string | no | To close the loop between governance insight and practice, so findings genuinely change how the enterprise is governed. |
+| `practical_context` | string | no | Encountered after audit cycles, effectiveness assessments, or governance incidents, on a periodic rhythm rather than a … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -127,3 +127,18 @@ metadata:
       strategic-plan-activation (CR-BP-86) for the inverse
 
       Retire-stage concern. Closes the 7x7 = 49-cell matrix.'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Strategic Plan Sunset'
+plain_language_description: 'This family sunsets a regulated strategic plan when the regulator requires it. Its processes act on the directive or rejection notice, identify the superseded plan on the regulated record, update the filings register, execute the communications plan, preserve the sunset record, keep the superseded plan''s records on file, and notify affected business units.'
+business_purpose: 'So a superseded plan leaves the record set cleanly: directive on file, replacement preserved, records retained, supervisor acknowledgement recorded.'
+practical_context: 'Encountered only when a competent regulator requires retirement — a failed stress test, a rejected recovery plan, a retracted approval — never for routine plan refreshes.'
+worked_example:
+  agent_type: human
+  narrative: 'A bank''s recovery plan fails the stress test. The Strategy & Direction Process Owner''s team logs the regulator''s directive, marks the plan superseded on the regulated record, updates the filings register, runs the communications plan, retains the retired records, and notifies the affected business units.'

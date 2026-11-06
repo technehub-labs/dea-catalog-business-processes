@@ -148,3 +148,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Standing Up the Finance Function and Systems'
+plain_language_description: 'This family constructs the finance capability itself. Its processes implement the financial systems and ledger, build the budgeting and forecasting tooling, onboard the tax and compliance capability, and secure the funding facilities the enterprise will draw on.'
+business_purpose: 'To give the enterprise working ledgers, planning tools, tax capability and funding lines, ready to hand over to financial operations.'
+practical_context: 'Met during the Build stage, when finance platforms are being implemented and configured ahead of steady-state running.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of year one of trading, the Finance & Accounting Process Owner''s programme implements the ledger and finance systems, configures budgeting and forecasting tooling, onboards the tax and compliance capability, and negotiates the funding facilities — then hands each element to operations.'

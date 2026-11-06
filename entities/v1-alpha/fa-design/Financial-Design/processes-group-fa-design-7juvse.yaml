@@ -134,3 +134,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Financial Controls, Tax and Treasury Design'
+plain_language_description: 'This family produces the designs that make money handling safe and deliberate. Its processes design the financial controls and policies, set the tax position and strategy, design the treasury and funding model, and structure the financial plan.'
+business_purpose: 'So spending, tax and cash are governed by designed controls and a deliberate treasury model before systems are built and operations begin.'
+practical_context: 'Encountered in the Design stage, between the finance strategy framing and the implementation of financial systems.'
+worked_example:
+  agent_type: human
+  narrative: 'With the finance strategy framed, the Finance & Accounting Process Owner''s team designs the controls and policies, sets the tax position and strategy, structures the financial plan, and finalizes the treasury and funding model for the build teams to implement.'

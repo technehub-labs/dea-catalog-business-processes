@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-im
 
 This is a **Process Context** (level L0), named **Strategic Adaptation**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Improve. Its canonical ID is `processes:pc-sd-improve-ft9k5f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Improve stage: keeping strategy honest as the world moves. It adapts the strategic direction, refreshes objectives and targets, and reviews how well the strategy is actually working. Monitoring execution belongs to the operating context; this is where direction itself changes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To renew the enterprise's direction on evidence — adjusting course, refreshing targets, and learning from what the strategy delivered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in refresh cycles and, abruptly, when market or supervisory shifts invalidate assumptions the strategy rests on.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a market shift breaks a core assumption, the Strategy & Direction Process Owner convenes the effectiveness review, adapts the direction statement, and issues refreshed objectives and targets to the planning teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -162,6 +162,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Strategic Adaptation |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Improve stage: keeping strategy honest as the world moves. It … |
+| `business_purpose` | string | no | To renew the enterprise's direction on evidence — adjusting course, refreshing targets, and learning from what the … |
+| `practical_context` | string | no | Encountered in refresh cycles and, abruptly, when market or supervisory shifts invalidate assumptions the strategy … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

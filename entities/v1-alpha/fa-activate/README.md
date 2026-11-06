@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-ac
 
 This is a **Process Context** (level L0), named **Activate Billing Capability**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Activate. Its canonical ID is `processes:pc-fa-activate-yrhcfm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Activate stage for billing and revenue-recognition capabilities. It takes a capability that has been acknowledged against the applicable accounting or rate framework and brings it live: approvals recorded, controls such as segregation of duties and reconciliation switched on, and the continuing supervisor notified. Building the capability beforehand and running invoices afterwards are neighboring concerns.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To ensure the first live invoice or revenue entry happens only once the framework is acknowledged, pricing approvals are held, and financial controls are active.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at cutover for a new billing arrangement or revenue stream — after regulator acknowledgement and testing, before the first production run.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of the first billing run for a regulated tariff, the Finance & Accounting Process Owner verifies the pricing approval is on file, activates the reconciliation and audit-trail controls, notifies the continuing supervisor, and authorizes the run.
 
 ## 5. Header and Identity Table (generated)
 
@@ -124,6 +124,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Activate Billing Capability |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Activate stage for billing and revenue-recognition … |
+| `business_purpose` | string | no | To ensure the first live invoice or revenue entry happens only once the framework is acknowledged, pricing approvals … |
+| `practical_context` | string | no | Encountered at cutover for a new billing arrangement or revenue stream — after regulator acknowledgement and testing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

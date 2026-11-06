@@ -116,3 +116,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Strategy Conception'
+plain_language_description: 'This family frames the enterprise''s exchange with its customers before anything is built. Its processes develop the customer strategy, build market intelligence, segment the market, and commit to a testable demand thesis — deciding who the enterprise will serve and on what value exchange.'
+business_purpose: 'So the enterprise commits to served segments and a demand thesis deliberately, giving every later channel, journey and campaign a defensible basis.'
+practical_context: 'Encountered in the Conceive stage, when leadership frames who to serve and why, ahead of experience design and channel build.'
+worked_example:
+  agent_type: human
+  narrative: 'Entering a new region, the Party & Relationship Process Owner develops the customer strategy with market intelligence, segments the market, and commits the demand thesis — naming the segments to serve and the value exchange — before channels are designed.'

@@ -98,3 +98,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Conceive'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Strategy Conception'
+plain_language_description: 'This context covers the customer and demand area at the Conceive stage: choosing who the enterprise serves and on what terms of exchange. It frames customer strategy, segments the market, and commits to a demand thesis that can be tested. Designing experiences and building channels follow later.'
+business_purpose: 'To commit to a defensible view of target segments and demand before money is spent on channels, experiences, or acquisition.'
+practical_context: 'Encountered in planning rounds and when market shifts force a rethink of who the enterprise is trying to win.'
+worked_example:
+  agent_type: human
+  narrative: 'In the annual planning round, the Party & Relationship Process Owner frames three candidate segments, tests each demand thesis against available evidence, and recommends the segment mix to commit to for the year.'

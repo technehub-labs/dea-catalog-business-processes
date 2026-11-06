@@ -120,3 +120,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategic Adaptation'
+plain_language_description: 'This family adapts direction as reality teaches. Its processes adapt the strategic direction on evidence, refresh objectives and targets when they drift from relevance, and review strategy effectiveness with findings committed for the next cycle.'
+business_purpose: 'So strategy stays alive: direction adjusted on evidence, objectives refreshed, and effectiveness reviewed rather than assumed.'
+practical_context: 'Encountered in the Improve stage: annual strategy reviews, mid-course corrections after environmental shifts, and target refreshes.'
+worked_example:
+  agent_type: human
+  narrative: 'After a market shock, the Strategy & Direction Process Owner reviews strategy effectiveness, adapts the strategic direction toward the changed landscape, refreshes the objectives and targets, and commits the findings for the next planning cycle.'

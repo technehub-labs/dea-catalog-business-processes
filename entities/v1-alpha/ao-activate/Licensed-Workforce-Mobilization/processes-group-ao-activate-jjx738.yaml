@@ -139,3 +139,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-81-ao-activate-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Licensed Workforce Mobilization'
+plain_language_description: 'This family gets licensed people safely into live regulated work. It covers verifying each individual''s regulator-issued licence or registration, recording the fitness-and-propriety attestation alongside supervised training and competency assessment, and assigning signing authority or controlled-function status. It ends with notification to the continuing supervisor and an entry on the regulated personnel record, placing the person under ongoing oversight.'
+business_purpose: 'So that nobody starts live regulated duties until licence, fitness, training and supervisory oversight are all evidenced, keeping the enterprise''s approval authority intact.'
+practical_context: 'Encountered whenever a licensed individual is about to begin live duties — the go-live step that follows recruitment and precedes routine performance management.'
+worked_example:
+  agent_type: human
+  narrative: 'A hospital hires a newly qualified nurse. Before her first shift, the team supporting the Agency & Organization Process Owner verifies her state licence, files the fitness-and-propriety attestation and supervised-training record, designates her controlled-function signing authority, notifies her continuing supervisor, and opens her regulated personnel record — only then is she rostered onto live duties.'

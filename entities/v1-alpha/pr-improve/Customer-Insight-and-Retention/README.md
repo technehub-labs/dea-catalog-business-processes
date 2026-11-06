@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-i
 
 This is a **Process Group** (level L1), named **Customer Insight and Retention**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Improve. It belongs to `processes:pc-pr-improve-k8phkn`. Its canonical ID is `processes:group-pr-improve-zpb8e3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family turns listening into loyalty. Its processes monitor customer satisfaction, run churn analysis and prediction, operate win-back programmes for lapsed customers, and feed the resulting insight back into strategy, design, build and operation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So satisfaction, churn risk and win-back signals become action — retention programmes that reduce losses and insight that reshapes the customer value stream.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: satisfaction monitoring, churn models, win-back campaigns and feedback loops running alongside live customer operations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Churn models flag a segment at risk. The Party & Relationship Process Owner's team launches a win-back programme, monitors satisfaction weekly, and routes the insight to the strategy and design teams so the underlying experience fault gets fixed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Customer Insight and Retention |
+| `plain_language_description` | string | no | This family turns listening into loyalty. Its processes monitor customer satisfaction, run churn analysis and … |
+| `business_purpose` | string | no | So satisfaction, churn risk and win-back signals become action — retention programmes that reduce losses and insight … |
+| `practical_context` | string | no | Encountered in the Improve stage: satisfaction monitoring, churn models, win-back campaigns and feedback loops running … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

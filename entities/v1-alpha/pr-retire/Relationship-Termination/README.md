@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-r
 
 This is a **Process Group** (level L1), named **Relationship Termination**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Enterprise Relationship Close-Out** (`processes:pc-pr-retire-2cusde`). Its canonical ID is `processes:group-pr-retire-c3u3wc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family closes enterprise relationships properly. Its processes execute contract close-out and termination settlement, offboard the party across customer, supplier and partner roles, and resolve residual obligations, records and rights.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So endings are orderly: settlements agreed, offboarding completed for every party role, and residual obligations, records and rights resolved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at the end of a relationship — a contract expiring, a supplier exiting, a customer leaving — distinct from day-to-day relationship operation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A supplier contract ends. The Party & Relationship Process Owner's team runs the contract close-out, settles the termination terms, offboards the supplier across systems and access, and resolves the residual obligations and records before archiving the file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ offboarding, residual obligation and record resolution).
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Relationship Termination |
+| `plain_language_description` | string | no | This family closes enterprise relationships properly. Its processes execute contract close-out and termination … |
+| `business_purpose` | string | no | So endings are orderly: settlements agreed, offboarding completed for every party role, and residual obligations … |
+| `practical_context` | string | no | Encountered at the end of a relationship — a contract expiring, a supplier exiting, a customer leaving — distinct from … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

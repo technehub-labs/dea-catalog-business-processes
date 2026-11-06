@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-re
 
 This is a **Process Context** (level L0), named **Enterprise Relationship Close-Out**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Retire. Its canonical ID is `processes:pc-pr-retire-2cusde`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Party & Relationship area at the Retire stage: ending relationships in good order. It closes out contracts and settles terminations, offboards the party across every role — customer, supplier, or partner — and resolves residual obligations, records, and rights, evidencing any regulated offboarding duties such as erasure. Starting relationships is the activation context's job.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To finish relationships cleanly: obligations settled, records and rights resolved, and every regulated offboarding duty evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at contract end, termination, or a regulated offboarding event — a case-by-case stage that follows an approved close-out plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a supplier contract terminates, the Party & Relationship Process Owner confirms final settlements, resolves the record and access rights, evidences the offboarding duties, and closes the relationship file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -110,6 +110,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Enterprise Relationship Close-Out |
+| `plain_language_description` | string | no | This context covers the Party & Relationship area at the Retire stage: ending relationships in good order. It closes … |
+| `business_purpose` | string | no | To finish relationships cleanly: obligations settled, records and rights resolved, and every regulated offboarding duty … |
+| `practical_context` | string | no | Encountered at contract end, termination, or a regulated offboarding event — a case-by-case stage that follows an … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

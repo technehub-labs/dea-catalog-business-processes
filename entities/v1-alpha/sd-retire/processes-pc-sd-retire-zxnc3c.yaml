@@ -186,3 +186,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Sunset Regulated Strategic Plan'
+plain_language_description: 'This context covers the Strategy & Direction area at the Retire stage for plans an authority has ordered retired. It documents the sunset filings, stops the plan''s execution, decommissions its monitoring framework, executes communications, and preserves the records under the retention regime. Improvement-driven strategy change and replacement-plan activation are handled in neighboring contexts.'
+business_purpose: 'To retire a mandated plan cleanly — acknowledged filings made, execution ceased, monitoring stood down, and records preserved as required.'
+practical_context: 'Encountered only when a supervisor or regulator directs retirement or replacement of a plan — a scripted, evidence-heavy episode with the authority watching.'
+worked_example:
+  agent_type: human
+  narrative: 'Acting on the supervisor''s retirement directive, the Strategy & Direction Process Owner completes the sunset filing, confirms plan cessation across business units, stands down the monitoring framework, and preserves the regulated records per the retention policy.'

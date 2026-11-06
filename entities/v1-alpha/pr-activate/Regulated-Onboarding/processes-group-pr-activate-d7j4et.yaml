@@ -147,3 +147,18 @@ links:
   href: discovery/v1-alpha/party-and-relationship-activate-escape.yaml
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Onboarding'
+plain_language_description: 'This family brings a new customer, supplier or partner relationship live under regulated controls. Its processes run identity verification and customer due diligence, resolve beneficial ownership at account opening, screen against sanctions and politically exposed persons, assign the risk classification, take the onboarding approval decision — and record the rationale when an applicant must be refused.'
+business_purpose: 'So relationships only begin once identity, ownership and risk are verified and approved, and monitoring obligations carry forward into steady-state operation.'
+practical_context: 'Encountered at first activation of a customer, supplier or partner relationship in a regulated sector — after acquisition interest, before the relationship operates.'
+worked_example:
+  agent_type: mixed
+  narrative: 'A corporate applicant asks to open an account. Screening systems clear the sanctions and politically-exposed-persons checks while the onboarding team working for the Party & Relationship Process Owner verifies identity, resolves the beneficial-ownership chain, assigns the risk classification, and approves — or declines with recorded rationale.'

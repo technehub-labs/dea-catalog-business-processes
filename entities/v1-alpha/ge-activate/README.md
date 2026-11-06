@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-ac
 
 This is a **Process Context** (level L0), named **Governance Instrument Commencement**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Activate. Its canonical ID is `processes:pc-ge-activate-hxtfcv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Activate stage: making adopted governance instruments legally effective. It verifies the conditions for commencement, promulgates the adopted instruments, and confirms and records their effectiveness dates. Drafting and adopting happened earlier; enforcing the in-force instrument happens in the operating context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To bring adopted rules, policies, and charters into force at the right moment, so obligations and rights attach exactly when intended.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever an approved instrument has commencement conditions to satisfy — a waiting period, a required communication, or a registration step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A newly adopted policy cannot take effect until notice is published. The Governance & Existence Process Owner verifies the notice condition is met, promulgates the instrument, and records its effectiveness date so obligations attach from that day.
 
 ## 5. Header and Identity Table (generated)
 
@@ -109,6 +109,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Governance Instrument Commencement |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Activate stage: making adopted governance instruments … |
+| `business_purpose` | string | no | To bring adopted rules, policies, and charters into force at the right moment, so obligations and rights attach exactly … |
+| `practical_context` | string | no | Encountered whenever an approved instrument has commencement conditions to satisfy — a waiting period, a required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -121,3 +121,18 @@ links:
   href: discovery/v1-alpha/party-and-relationship-retire.yaml
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Relationship Termination'
+plain_language_description: 'This family closes enterprise relationships properly. Its processes execute contract close-out and termination settlement, offboard the party across customer, supplier and partner roles, and resolve residual obligations, records and rights.'
+business_purpose: 'So endings are orderly: settlements agreed, offboarding completed for every party role, and residual obligations, records and rights resolved.'
+practical_context: 'Encountered at the end of a relationship — a contract expiring, a supplier exiting, a customer leaving — distinct from day-to-day relationship operation.'
+worked_example:
+  agent_type: human
+  narrative: 'A supplier contract ends. The Party & Relationship Process Owner''s team runs the contract close-out, settles the termination terms, offboards the supplier across systems and access, and resolves the residual obligations and records before archiving the file.'

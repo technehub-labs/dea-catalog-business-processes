@@ -137,3 +137,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategic Monitoring and Steering'
+plain_language_description: 'This family steers the enterprise along its chosen trajectory. Its processes monitor strategic performance against objectives, sense environmental signals and route them, steer the initiative portfolio with rebalancing decisions, and operate the strategic review cycle on cadence.'
+business_purpose: 'So the plan stays connected to reality: performance monitored, signals sensed, the portfolio steered, and reviews held on rhythm.'
+practical_context: 'Encountered continuously in the Operate stage: dashboard reviews, signal sensing, portfolio steering sessions and quarterly strategic reviews.'
+worked_example:
+  agent_type: mixed
+  narrative: 'At the quarterly review, the Strategy & Direction Process Owner''s team reads the monitoring dashboards, weighs the environmental signals the sensing routines surfaced, steers the initiative portfolio with two rebalancing decisions, and closes the review cycle with recorded actions.'

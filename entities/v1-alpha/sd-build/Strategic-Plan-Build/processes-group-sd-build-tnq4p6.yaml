@@ -136,3 +136,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Building the Strategic Plan and Roadmap'
+plain_language_description: 'This family assembles the plan itself. Its processes build the strategic plan, construct the roadmap with sequenced initiatives, translate the designed strategic choices into concrete initiatives, and set the resource allocation priorities each initiative will live within.'
+business_purpose: 'So direction becomes a committed, versioned plan and roadmap — initiatives named, sequenced and resourced within the authorised envelope.'
+practical_context: 'Encountered in the Build stage, once strategic choices are designed, ahead of plan activation and the steering of execution.'
+worked_example:
+  agent_type: human
+  narrative: 'After the choices are designed, the Strategy & Direction Process Owner builds the strategic plan, sequences the roadmap initiatives, translates each choice into owned initiatives, and sets the resource allocation priorities the programme teams will work within.'

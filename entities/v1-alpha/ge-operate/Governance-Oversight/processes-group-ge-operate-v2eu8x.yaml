@@ -153,3 +153,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Oversight'
+plain_language_description: 'This family runs the governance machinery day to day. Its processes convene board and committee cycles, operate enterprise risk oversight, execute policy compliance, audit that compliance, and conduct assurance reviews.'
+business_purpose: 'So boards meet, risks are surfaced and mitigated, policy compliance is executed and checked, and governance decisions keep being made on schedule.'
+practical_context: 'Encountered continuously in the Operate stage — committee calendars, risk reviews, compliance audits and assurance reports through the year.'
+worked_example:
+  agent_type: human
+  narrative: 'Mid-quarter, the Governance & Existence Process Owner convenes the risk committee, operates enterprise risk oversight over the emerging exposure, runs the policy compliance audit on a sampled area, and tables the assurance review at the board with recommended decisions.'

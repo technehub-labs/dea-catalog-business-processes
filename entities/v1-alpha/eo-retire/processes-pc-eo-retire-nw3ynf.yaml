@@ -135,3 +135,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Asset Decommissioning'
+plain_language_description: 'This context covers the Enablement & Operations area at the Retire stage: taking operational assets out of service in a controlled way. It plans and approves the retirement, isolates and withdraws the asset, handles decommissioning and disposal including data sanitization, and settles residual value and obligations. Withdrawing a product or service from the market is a different retirement context.'
+business_purpose: 'To remove end-of-life assets safely and accountably, leaving no live data, unsafe equipment, or unresolved obligations behind.'
+practical_context: 'Encountered at equipment end-of-life, site closures, platform replacements, or facility exits — an episodic stage gated by an approved retirement plan.'
+worked_example:
+  agent_type: human
+  narrative: 'Retiring an ageing server estate, the Enablement & Operations Process Owner approves the retirement plan, witnesses isolation from the network, confirms certified data sanitization before disposal, and closes out residual contract obligations.'

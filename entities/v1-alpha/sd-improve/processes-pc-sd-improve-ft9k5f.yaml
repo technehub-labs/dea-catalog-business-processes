@@ -107,3 +107,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Improve'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategic Adaptation'
+plain_language_description: 'This context covers the Strategy & Direction area at the Improve stage: keeping strategy honest as the world moves. It adapts the strategic direction, refreshes objectives and targets, and reviews how well the strategy is actually working. Monitoring execution belongs to the operating context; this is where direction itself changes.'
+business_purpose: 'To renew the enterprise''s direction on evidence — adjusting course, refreshing targets, and learning from what the strategy delivered.'
+practical_context: 'Encountered in refresh cycles and, abruptly, when market or supervisory shifts invalidate assumptions the strategy rests on.'
+worked_example:
+  agent_type: human
+  narrative: 'After a market shift breaks a core assumption, the Strategy & Direction Process Owner convenes the effectiveness review, adapts the direction statement, and issues refreshed objectives and targets to the planning teams.'

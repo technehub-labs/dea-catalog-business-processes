@@ -118,3 +118,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Conceive'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations Model and Enablement Conception'
+plain_language_description: 'This context covers the Enablement & Operations area at the Conceive stage: framing how the enterprise will produce and deliver. It shapes operations strategy, settles the delivery model, and sets the broad approach to technology enablement and physical assets. Detailed designs and construction follow in later contexts.'
+business_purpose: 'To commit early to an operations and enablement approach so later design and build decisions share one coherent intent.'
+practical_context: 'Encountered early in planning horizons, before major investment in facilities or platforms, when the question is how work should get done rather than doing it.'
+worked_example:
+  agent_type: human
+  narrative: 'Considering a shift toward regional fulfilment, the Enablement & Operations Process Owner frames three delivery model options with their cost and service implications and recommends one for detailed design.'
