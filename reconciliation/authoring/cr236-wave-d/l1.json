@@ -1,0 +1,492 @@
+{
+ "processes:group-ao-activate-jjx738": {
+  "plain_language_name": "Licensed Workforce Mobilization",
+  "plain_language_description": "This family gets licensed people safely into live regulated work. It covers verifying each individual's regulator-issued licence or registration, recording the fitness-and-propriety attestation alongside supervised training and competency assessment, and assigning signing authority or controlled-function status. It ends with notification to the continuing supervisor and an entry on the regulated personnel record, placing the person under ongoing oversight.",
+  "business_purpose": "So that nobody starts live regulated duties until licence, fitness, training and supervisory oversight are all evidenced, keeping the enterprise's approval authority intact.",
+  "practical_context": "Encountered whenever a licensed individual is about to begin live duties — the go-live step that follows recruitment and precedes routine performance management.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A hospital hires a newly qualified nurse. Before her first shift, the team supporting the Agency & Organization Process Owner verifies her state licence, files the fitness-and-propriety attestation and supervised-training record, designates her controlled-function signing authority, notifies her continuing supervisor, and opens her regulated personnel record — only then is she rostered onto live duties."
+  }
+ },
+ "processes:group-ao-build-m6fmyx": {
+  "plain_language_name": "Agent Acquisition and Onboarding",
+  "plain_language_description": "These are the processes that bring new working capacity into the organization, whatever its substrate: sourcing and recruiting people, provisioning artificial agents by deploying models and wiring up integrations, onboarding and integrating every new agent, and growing the external pools of contractors and partner agents, including a vetted pool for regulated roles. It is the constructive stage of the Agency & Organization domain, turning designed capacity needs into working agents.",
+  "business_purpose": "To give the enterprise the human, artificial and contracted agent capacity its organization needs, integrated and ready to work.",
+  "practical_context": "Met during the Build stage whenever the enterprise is hiring staff, deploying new artificial agents, or expanding contractor pools — after agent topology has been designed and before steady-state operation.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Ahead of a busy season, the Agency & Organization Process Owner's team recruits additional staff, provisions new artificial agents by deploying models and connecting them through APIs, and extends the vetted contractor pool — a blend of people and automation onboarding together."
+  }
+ },
+ "processes:group-ao-conceive-bwjhgd": {
+  "plain_language_name": "Organization and Agent Conception",
+  "plain_language_description": "This is the front-end thinking family for the enterprise's organization and its agent capacity. It frames the agent capacity strategy, sketches the organization model as a durable pattern of roles and authority, works out the future workforce-and-agent mix across human, artificial and hybrid options, and captures what the agents of the future must be capable of.",
+  "business_purpose": "To decide, before anything is built, how much agent capacity the enterprise needs and how people, artificial agents and structures should combine to direct its agency.",
+  "practical_context": "Encountered early in the Conceive stage, when leadership is setting direction for the organization before design and recruitment follow.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Facing rapid growth, the Agency & Organization Process Owner convenes the capacity review: the team frames the agent capacity strategy, sketches the organization model, and decides the future blend of human staff, artificial agents and contractors — recording the capability each future agent must have."
+  }
+ },
+ "processes:group-ao-design-pjrfr9": {
+  "plain_language_name": "Organization and Role Design",
+  "plain_language_description": "This family turns conception into concrete structure. Its processes design the organization structure, define the catalogue of roles, build the competency framework that describes what each role requires, and lay out the agent topology — deciding where human, artificial and hybrid agents sit, including the architecture for regulated roles.",
+  "business_purpose": "So the enterprise knows exactly which roles exist, what competencies they demand, and which kind of agent fills each seat before anyone is hired or provisioned.",
+  "practical_context": "Met in the Design stage, once capacity direction is set and before recruitment, model provisioning or job descriptions are produced in the Build stage.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "After the capacity strategy is agreed, the Agency & Organization Process Owner's design team draws the new organization structure, writes the role catalogue and competency framework, and places each artificial agent in the topology alongside human roles — flagging which roles are regulated and need a licensed architecture."
+  }
+ },
+ "processes:group-ao-improve-su4c8p": {
+  "plain_language_name": "Agent and Organization Improvement",
+  "plain_language_description": "This family strengthens the workforce and the organization that supports it. Its processes run agent and organization development, review engagement and alignment, analyse where capability gaps hold the enterprise back, plan structural reorganizations when structure itself is the problem, and lift the capability of the regulated workforce.",
+  "business_purpose": "To keep the enterprise's agents — people and artificial alike — and its structures improving on evidence rather than drifting.",
+  "practical_context": "Encountered in the Improve stage: development cycles, engagement surveys, capability reviews and reorganization projects that follow operating experience.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "After a rough year, the Agency & Organization Process Owner commissions a capability gap analysis; the team reviews engagement and alignment, schedules fine-tuning for the underperforming artificial agents and coaching for people teams, and sequences a reorganization with a managed transition."
+  }
+ },
+ "processes:group-ao-operate-35gmps": {
+  "plain_language_name": "Agent Operations",
+  "plain_language_description": "This family runs the steady-state machinery that keeps agents working well. It covers operating agent performance on a review cadence, running payroll and benefits, tracking time and attendance, delivering learning and development to people and fine-tuning to artificial agents alike, and coordinating collaboration across teams and agents.",
+  "business_purpose": "So every agent — human, artificial or hybrid — is paid, scheduled, developed, coordinated and performance-managed reliably through ordinary working life.",
+  "practical_context": "Encountered every operating day: pay runs, attendance tracking, training sessions, performance reviews and collaboration routines after agents have been acquired and onboarded.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "On a normal month-end, the Agency & Organization Process Owner's operations team runs the payroll cycle, reconciles time and attendance, schedules a fine-tuning run for one of the artificial agents, and chairs the cross-team collaboration check — while line managers complete routine performance reviews."
+  }
+ },
+ "processes:group-ao-retire-jspuzz": {
+  "plain_language_name": "Regulated Workforce Wind-Down",
+  "plain_language_description": "This family handles the statutory exit of workforce populations when a statutory mass-layoff trigger or a regulated wind-down obligation bites. Its processes issue advance statutory notice, consult workers' representatives, apply fair-selection criteria, settle severance and benefits continuation with liabilities recorded, and route transition supports such as retraining, health-care continuation and outplacement to affected staff.",
+  "business_purpose": "So that large-scale workforce exits meet every statutory notice, consultation and severance obligation while affected people are treated fairly and liabilities are properly recorded and funded.",
+  "practical_context": "Encountered when a reduction crosses a statutory mass-layoff threshold or a regulated wind-down is authorized — not for routine individual offboarding, which sits elsewhere.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A plant closure crosses the statutory threshold, so the Agency & Organization Process Owner's team serves the required 60-day notice, opens consultation with the workers' representatives, applies the agreed fair-selection criteria, records severance liabilities, and books affected employees onto retraining and outplacement support."
+  }
+ },
+ "processes:group-eo-activate-bnmwuu": {
+  "plain_language_name": "Regulated Operations Activation",
+  "plain_language_description": "This family takes an operations capability that the regulator has authorized and makes it live. Its processes confirm the authorization or certification is in place, assemble readiness evidence such as supervised-test records and operations manuals, switch on operational controls for incidents, capacity, security and compliance, and activate notification to the continuing supervisor, preserving the entry on the regulated operations record.",
+  "business_purpose": "So that nothing serves customers live until the regulator's authorization, readiness evidence, manuals and operational controls are all in place under continuing supervisory oversight.",
+  "practical_context": "Encountered at the moment a regulated service — an airline, a payments institution, a certified production site — is cleared to go live, between build and configuration and steady-state running.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A payment institution receives its authorization letter. The Enablement & Operations Process Owner's team checks the certification, files supervised-test evidence, brings the incident and compliance controls live, notifies the continuing supervisor, and records the go-live on the regulated operations record before the first customer payment is processed."
+  }
+ },
+ "processes:group-eo-build-7pur27": {
+  "plain_language_name": "Operations and Enablement Build",
+  "plain_language_description": "This family physically assembles the enterprise's execution engine. Its processes stand up production lines and commission them to trial rate, build delivery capability and the logistics network, acquire and install technology assets, and provision the facilities everything runs from.",
+  "business_purpose": "To create the production, delivery, logistics, technology and facility foundations that day-to-day operations will later run on.",
+  "practical_context": "Met during the Build stage, when major programmes are standing up new lines, networks, systems and sites ahead of go-live.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Launching a new product line, the Enablement & Operations Process Owner commissions the production line to trial rate, extends the logistics network with a new regional hub, takes delivery of installed technology assets, and fits out the facility — handing each element to operations as it completes."
+  }
+ },
+ "processes:group-eo-conceive-j6n4f7": {
+  "plain_language_name": "Operations Model Conception",
+  "plain_language_description": "This family frames how the enterprise will make and deliver before anything is built. Its processes set the operations strategy, conceive the delivery model, sketch how technology will enable the work, and decide the handling of physical assets — the shared thinking that later design and build follow.",
+  "business_purpose": "To agree early on how production, delivery, technology and physical assets will combine, so downstream design starts from one coherent operations model.",
+  "practical_context": "Encountered in the Conceive stage, when leadership is shaping the operations model ahead of detailed design and build.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Planning a new service, the Enablement & Operations Process Owner runs the framing workshop: the operations strategy is set, the delivery model is conceived, the technology enablement approach is sketched, and the approach to physical assets — own or lease — is decided."
+  }
+ },
+ "processes:group-eo-design-g6dmdk": {
+  "plain_language_name": "Process and Enablement Design",
+  "plain_language_description": "This family turns the operations model into designs people can build from. Its processes design the operations and delivery models, draw the technology platform architecture, produce facility and asset blueprints, and work out logistics and routing.",
+  "business_purpose": "So builders and operators receive coherent, testable designs for how work will flow, on which platforms, in which facilities, and along which routes.",
+  "practical_context": "Encountered in the Design stage, between the operations-model framing and the physical build programmes that implement the blueprints.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With the operations model agreed, the Enablement & Operations Process Owner's architects design the delivery model, document the technology platform architecture, draft facility and asset blueprints, and map logistics routing — everything the build teams need to start construction."
+  }
+ },
+ "processes:group-eo-improve-c8uff9": {
+  "plain_language_name": "Operations and Enablement Improvement",
+  "plain_language_description": "This family makes the execution engine better year after year. Its processes review operations performance, optimize logistics and asset utilization, run lean and six sigma improvement programmes, and improve the technology platforms the enterprise depends on.",
+  "business_purpose": "To lift throughput, cost and reliability on evidence, so operations performance, logistics, assets and platforms keep improving rather than degrading.",
+  "practical_context": "Encountered in the Improve stage: performance reviews, optimization projects, lean programmes and platform upgrades that follow each operating period.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "After a quarter of missed throughput targets, the Enablement & Operations Process Owner orders a performance review; the team runs a lean improvement programme on the bottleneck line, re-plans logistics routing, rebalances asset utilization and schedules the next platform upgrade."
+  }
+ },
+ "processes:group-eo-operate-bfd7jb": {
+  "plain_language_name": "Execution and Fulfilment",
+  "plain_language_description": "This family is the enterprise's daily engine room. Its processes run production lines, deliver services to customers, operate logistics, warehouses and inventory, keep quality control running, operate the technology platforms and facilities, maintain assets, and execute the procurement cycle.",
+  "business_purpose": "So customer orders are fulfilled and services delivered to plan, with quality, platforms, facilities and assets kept running and supplied.",
+  "practical_context": "Encountered every operating day — production shifts, delivery runs, warehouse operations, platform monitoring, maintenance windows and purchasing cycles across the Operate stage.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Over one trading day, the Enablement & Operations Process Owner's teams run the production line, pick and ship customer orders through the warehouse, monitor the technology platforms, complete a preventive maintenance window, and raise purchase orders — with quality control sampling output along the way."
+  }
+ },
+ "processes:group-eo-retire-n9ge5c": {
+  "plain_language_name": "Operations and Asset Decommissioning",
+  "plain_language_description": "This family takes operational assets out of service in a controlled way. Its processes plan and approve the retirement, isolate and withdraw the asset, carry out decommissioning and disposal — including sanitizing any data it holds — and resolve residual value and leftover obligations.",
+  "business_purpose": "So assets leave service safely and accountably, with disposal evidence, data sanitization and any residual value or obligations settled.",
+  "practical_context": "Encountered at end of life: approved retirement projects that withdraw plant, systems or facilities from service, distinct from routine maintenance or product withdrawal.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Retiring an old data centre hall, the Enablement & Operations Process Owner approves the retirement plan, engineers isolate the power and cooling, technicians sanitize the drives before disposal, and the team settles the residual lease obligations and books remaining scrap value."
+  }
+ },
+ "processes:group-fa-activate-n9s2z3": {
+  "plain_language_name": "Regulated Billing Activation",
+  "plain_language_description": "This family brings an invoicing or revenue-recognition capability live once the supervisor has acknowledged the accounting and rate regime that governs it. Its processes record that framework activation, secure and preserve the tariff or pricing approval, assemble readiness evidence such as supervised tests and the first-invoice runbook, switch on segregation of duties, audit trail and reconciliation, and notify the continuing supervisor.",
+  "business_purpose": "So the first invoice or revenue entry only happens with the regulator's acknowledgement on record, pricing approval preserved, and billing controls live.",
+  "practical_context": "Encountered when a new invoicing or revenue-recognition capability in a supervised sector is cleared to go live — between build and configuration and steady-state billing operations.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An insurer is switching on a new statutory-accounting billing capability. The Finance & Accounting Process Owner's team records the supervisor's acknowledgement, preserves the approved tariff filing, rehearses the first-invoice runbook, verifies the reconciliation and audit-trail controls, notifies the continuing supervisor, and releases the first invoice."
+  }
+ },
+ "processes:group-fa-build-d7ww77": {
+  "plain_language_name": "Standing Up the Finance Function and Systems",
+  "plain_language_description": "This family constructs the finance capability itself. Its processes implement the financial systems and ledger, build the budgeting and forecasting tooling, onboard the tax and compliance capability, and secure the funding facilities the enterprise will draw on.",
+  "business_purpose": "To give the enterprise working ledgers, planning tools, tax capability and funding lines, ready to hand over to financial operations.",
+  "practical_context": "Met during the Build stage, when finance platforms are being implemented and configured ahead of steady-state running.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Ahead of year one of trading, the Finance & Accounting Process Owner's programme implements the ledger and finance systems, configures budgeting and forecasting tooling, onboards the tax and compliance capability, and negotiates the funding facilities — then hands each element to operations."
+  }
+ },
+ "processes:group-fa-conceive-9xzf3b": {
+  "plain_language_name": "Framing the Financial Model and Funding Approach",
+  "plain_language_description": "This family is the front-end thinking for the enterprise's money model. Its processes frame the finance strategy, shape the monetary model the enterprise will run on, and set how it will fund itself and structure its capital — how much, from whom, and on what terms.",
+  "business_purpose": "So decisions about money — strategy, monetary model, funding and capital — are framed deliberately before plans, systems and operations follow.",
+  "practical_context": "Encountered in the Conceive stage, when founders or leadership set the financial direction ahead of detailed financial planning and system build.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Preparing a scale-up year, the Finance & Accounting Process Owner frames the finance strategy with the leadership team, shapes the monetary model, and settles how much funding to raise, from whom and on what terms before planning begins."
+  }
+ },
+ "processes:group-fa-design-7juvse": {
+  "plain_language_name": "Financial Controls, Tax and Treasury Design",
+  "plain_language_description": "This family produces the designs that make money handling safe and deliberate. Its processes design the financial controls and policies, set the tax position and strategy, design the treasury and funding model, and structure the financial plan.",
+  "business_purpose": "So spending, tax and cash are governed by designed controls and a deliberate treasury model before systems are built and operations begin.",
+  "practical_context": "Encountered in the Design stage, between the finance strategy framing and the implementation of financial systems.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With the finance strategy framed, the Finance & Accounting Process Owner's team designs the controls and policies, sets the tax position and strategy, structures the financial plan, and finalizes the treasury and funding model for the build teams to implement."
+  }
+ },
+ "processes:group-fa-improve-hvq8u8": {
+  "plain_language_name": "Strengthening Financial Controls and Cost Efficiency",
+  "plain_language_description": "This family keeps the money machinery getting better. Its processes refine financial controls and policies, evolve the treasury and funding model as the enterprise changes, audit compliance with policy, and review where cost can be optimized.",
+  "business_purpose": "To keep financial controls effective, the treasury model current, compliance audited and costs trending down as the enterprise grows and changes.",
+  "practical_context": "Encountered in the Improve stage: control reviews after each close, treasury evolution, compliance audits and cost reviews that follow operating experience.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Following a costly quarter, the Finance & Accounting Process Owner commissions a cost optimization review; the team refines two weak controls, evolves the treasury and funding model for the new footprint, and scores the latest compliance audit findings into an action list."
+  }
+ },
+ "processes:group-fa-operate-mazyjd": {
+  "plain_language_name": "Everyday Financial Operations",
+  "plain_language_description": "This family runs the enterprise's money operations each day. Its processes operate the general ledger, run accounts payable and receivable, execute payroll, manage cash and liquidity, perform the financial close, handle tax compliance and filings, and operate financial reporting and disclosure.",
+  "business_purpose": "So every payment, receipt, pay run, cash movement, close, filing and report happens accurately and on time, inside designed controls.",
+  "practical_context": "Encountered continuously in the Operate stage — pay runs, invoice cycles, treasury checks, month-end and year-end closes, and filing deadlines.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "During month-end, the Finance & Accounting Process Owner's team closes the ledger, runs the payables and receivables cycles, executes payroll, checks cash headroom, files the period tax returns, and publishes the financial reporting pack — reconciliation controls running underneath."
+  }
+ },
+ "processes:group-fa-retire-2ptdnw": {
+  "plain_language_name": "Regulated Run-Off",
+  "plain_language_description": "This family winds a regulated financial entity or run-off portfolio down under the supervisor's oversight. Its processes secure the run-off authorisation and plan, transition to the statutory accounting basis, and keep reserving, capital adequacy and asset-liability matching intact while policyholder claims are adjudicated and paid with priority. It closes with stakeholder communications, retained-records and service-of-process duties, tax clearance, and the final exit or completion certification from the regulator.",
+  "business_purpose": "So an insurer or portfolio exits the market responsibly: claims paid with policyholder priority, statutory liabilities settled, records retained, and the regulator's certification obtained.",
+  "practical_context": "Encountered when a supervisor authorises run-off of an insurer, mutual or portfolio — the managed end-of-life phase between going-concern operation and final solvent exit.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A mutual insurer enters run-off. The Finance & Accounting Process Owner's team files the run-off plan inside the regulator's window, moves the books to the liquidation basis, keeps reserving and asset-liability matching current, pays policyholder claims in priority order, retains the statutory records, and secures the solvent-exit certification."
+  }
+ },
+ "processes:group-ge-activate-7d46tn": {
+  "plain_language_name": "Bringing Governance Instruments into Force",
+  "plain_language_description": "This family moves adopted policies, mandates and charters from approved-but-dormant to in-force. Its processes verify that commencement conditions are met, promulgate the instruments so people know they apply, and confirm and record their effectiveness dates.",
+  "business_purpose": "So obligations, rights and duties only attach once commencement conditions are verified, promulgation has happened, and effectiveness is recorded.",
+  "practical_context": "Encountered when a board adopts a new policy or charter with a commencement date, between adoption in the Build stage and day-to-day enforcement in the Operate stage.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The board approves a new delegation-of-authority charter effective next quarter. The Governance & Existence Process Owner's team verifies each commencement condition, promulgates the instrument across the enterprise, and records the effectiveness date — from which point the new authorities bind."
+  }
+ },
+ "processes:group-ge-build-tbc3ta": {
+  "plain_language_name": "Governance Body Establishment",
+  "plain_language_description": "This family constructs the working machinery of governance. Its processes establish boards and committees, codify charters and policies into usable artefacts, document standards and procedures, and stand up the risk and control apparatus that keeps the enterprise honest.",
+  "business_purpose": "So the enterprise has operating bodies, charters, policies and controls — not just intentions — when it needs to direct and constrain itself.",
+  "practical_context": "Encountered in the Build stage, when a new enterprise, business line or oversight regime needs its governance bodies and policy artefacts stood up.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Spinning off a new subsidiary, the Governance & Existence Process Owner establishes its board and committees, codifies the charter and first policy set, documents the operating standards, and stands up the risk and control apparatus before day one of trading."
+  }
+ },
+ "processes:group-ge-conceive-y93bwr": {
+  "plain_language_name": "Framing the Mandate and Policy Direction",
+  "plain_language_description": "This family frames the enterprise's founding authority. Its processes initiate the policy and charter direction, articulate the board's mandate, and set the direction for risk and control — the constitutional thinking that authorizes without directing strategy.",
+  "business_purpose": "To settle, at the very front end, what the enterprise may exist as and do: mandate, policy posture, charter direction and the frame strategy will later direct within.",
+  "practical_context": "Encountered in the Conceive stage, when a founding team or board frames the constitutional basis before any governance body is established.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "At incorporation, the Governance & Existence Process Owner convenes the founders: the policy and charter direction is initiated, the board mandate is articulated, and the risk framework direction is set — the authorised frame the new enterprise will operate inside."
+  }
+ },
+ "processes:group-ge-design-jexyp6": {
+  "plain_language_name": "Governance System Design",
+  "plain_language_description": "This family turns the mandate into a concrete oversight blueprint. Its processes design the governance system itself, articulate control objectives, lay out the policy architecture, and design how authority is delegated through the enterprise.",
+  "business_purpose": "So oversight, control and delegated authority are designed deliberately — testable and coherent — before bodies are established and instruments built.",
+  "practical_context": "Encountered in the Design stage, translating the conceived mandate and policy direction into architecture ready to be built.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With the mandate framed, the Governance & Existence Process Owner's architects design the governance system, write the control objectives, lay out the policy architecture, and draw the authority-delegation map that says who may decide what."
+  }
+ },
+ "processes:group-ge-improve-s9r3qj": {
+  "plain_language_name": "Governance Review and Learning",
+  "plain_language_description": "This family closes the loop on how well governance actually works. Its processes review governance effectiveness, score audit findings, refine the policy regime, and propagate lessons back into conception, design, build and operation.",
+  "business_purpose": "So audit findings and reviews genuinely change the policy regime, and lessons learned reshape how the enterprise governs next time.",
+  "practical_context": "Encountered in the Improve stage: effectiveness reviews, audit finding scoring and policy refinement after each oversight cycle.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "After a year of oversight, the Governance & Existence Process Owner reviews governance effectiveness, scores the audit findings by severity, refines two policy regimes that under-performed, and routes the lessons into the next conception and design cycle."
+  }
+ },
+ "processes:group-ge-operate-v2eu8x": {
+  "plain_language_name": "Governance Oversight",
+  "plain_language_description": "This family runs the governance machinery day to day. Its processes convene board and committee cycles, operate enterprise risk oversight, execute policy compliance, audit that compliance, and conduct assurance reviews.",
+  "business_purpose": "So boards meet, risks are surfaced and mitigated, policy compliance is executed and checked, and governance decisions keep being made on schedule.",
+  "practical_context": "Encountered continuously in the Operate stage — committee calendars, risk reviews, compliance audits and assurance reports through the year.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Mid-quarter, the Governance & Existence Process Owner convenes the risk committee, operates enterprise risk oversight over the emerging exposure, runs the policy compliance audit on a sampled area, and tables the assurance review at the board with recommended decisions."
+  }
+ },
+ "processes:group-ge-retire-v3vy7t": {
+  "plain_language_name": "Regulated Governance Unwind",
+  "plain_language_description": "This family winds down an enterprise's governance regime when a regulator or court so orders. Its processes act on the dissolution or wind-down order, reduce the governing body to a wind-down quorum, sunset the charters, mandates and delegations, make the statutory dissolution filings, assign retained-records custodianship for the required period, and surrender the authorisation or permission.",
+  "business_purpose": "So the governance regime ends lawfully and traceably: bodies reduced, instruments sunset, filings made, records entrusted, and the authorisation formally surrendered.",
+  "practical_context": "Encountered only under regulator or court mandate — a dissolution order, cease-and-desist or receivership — not for voluntary internal sunsets.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A court orders a nonprofit's dissolution. The Governance & Existence Process Owner's team reduces the board to a wind-down quorum, sunsets the charters and delegations, files the statutory dissolution paperwork with the state and attorney-general, assigns retained-records custody, and surrenders the tax-exempt permission."
+  }
+ },
+ "processes:group-pr-activate-d7j4et": {
+  "plain_language_name": "Regulated Onboarding",
+  "plain_language_description": "This family brings a new customer, supplier or partner relationship live under regulated controls. Its processes run identity verification and customer due diligence, resolve beneficial ownership at account opening, screen against sanctions and politically exposed persons, assign the risk classification, take the onboarding approval decision — and record the rationale when an applicant must be refused.",
+  "business_purpose": "So relationships only begin once identity, ownership and risk are verified and approved, and monitoring obligations carry forward into steady-state operation.",
+  "practical_context": "Encountered at first activation of a customer, supplier or partner relationship in a regulated sector — after acquisition interest, before the relationship operates.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "A corporate applicant asks to open an account. Screening systems clear the sanctions and politically-exposed-persons checks while the onboarding team working for the Party & Relationship Process Owner verifies identity, resolves the beneficial-ownership chain, assigns the risk classification, and approves — or declines with recorded rationale."
+  }
+ },
+ "processes:group-pr-build-7u5xj6": {
+  "plain_language_name": "Customer Channel and Acquisition Build",
+  "plain_language_description": "This family constructs the assets that will win customers. Its processes build the channel infrastructure, stand up the acquisition engine, implement marketing automation, and build the demand-generation machinery that keeps interest flowing.",
+  "business_purpose": "So the enterprise owns working channels, acquisition and demand-generation engines before it needs them, ready to carry customers into live operation.",
+  "practical_context": "Encountered in the Build stage, between customer strategy and experience design and the live acquisition activity of steady-state operation.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Ahead of launch, the Party & Relationship Process Owner's programme builds the channel infrastructure, wires marketing automation into the acquisition engine, and tunes the demand-generation programmes so qualified leads will flow when the doors open."
+  }
+ },
+ "processes:group-pr-conceive-rv32m4": {
+  "plain_language_name": "Customer Strategy Conception",
+  "plain_language_description": "This family frames the enterprise's exchange with its customers before anything is built. Its processes develop the customer strategy, build market intelligence, segment the market, and commit to a testable demand thesis — deciding who the enterprise will serve and on what value exchange.",
+  "business_purpose": "So the enterprise commits to served segments and a demand thesis deliberately, giving every later channel, journey and campaign a defensible basis.",
+  "practical_context": "Encountered in the Conceive stage, when leadership frames who to serve and why, ahead of experience design and channel build.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Entering a new region, the Party & Relationship Process Owner develops the customer strategy with market intelligence, segments the market, and commits the demand thesis — naming the segments to serve and the value exchange — before channels are designed."
+  }
+ },
+ "processes:group-pr-design-enpedx": {
+  "plain_language_name": "Customer Experience Design",
+  "plain_language_description": "This family designs how customers will experience the enterprise. Its processes design the customer experience, articulate the end-to-end customer journey, design the demand model, and select the experience patterns that ground later build and operation.",
+  "business_purpose": "So the promised customer experience is designed and testable — journey, demand model and patterns — before channels are implemented.",
+  "practical_context": "Encountered in the Design stage, between the customer strategy framing and the build of channels and acquisition engines.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With the strategy committed, the Party & Relationship Process Owner's designers map the customer journey end to end, design the experience and demand model, and choose the service patterns the channel builders will implement."
+  }
+ },
+ "processes:group-pr-improve-zpb8e3": {
+  "plain_language_name": "Customer Insight and Retention",
+  "plain_language_description": "This family turns listening into loyalty. Its processes monitor customer satisfaction, run churn analysis and prediction, operate win-back programmes for lapsed customers, and feed the resulting insight back into strategy, design, build and operation.",
+  "business_purpose": "So satisfaction, churn risk and win-back signals become action — retention programmes that reduce losses and insight that reshapes the customer value stream.",
+  "practical_context": "Encountered in the Improve stage: satisfaction monitoring, churn models, win-back campaigns and feedback loops running alongside live customer operations.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Churn models flag a segment at risk. The Party & Relationship Process Owner's team launches a win-back programme, monitors satisfaction weekly, and routes the insight to the strategy and design teams so the underlying experience fault gets fixed."
+  }
+ },
+ "processes:group-pr-operate-7ab3ma": {
+  "plain_language_name": "Customer Lifecycle Management",
+  "plain_language_description": "This family sustains each active customer relationship day to day. Its processes manage active accounts, resolve escalations, coordinate renewals, run win-back coordination where a relationship has lapsed, and allocate the customer portfolio on evidence.",
+  "business_purpose": "So active relationships are sustained — escalations resolved, renewals coordinated, portfolios allocated — with minimal revenue leakage across the customer lifecycle.",
+  "practical_context": "Encountered throughout the Operate stage, from a customer's first live day to renewal conversations and escalation handling.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A key account threatens to lapse at renewal. The Party & Relationship Process Owner's account team resolves the outstanding escalation, coordinates the renewal with a revised allocation of service, and keeps the relationship — recording the lesson for the portfolio review."
+  }
+ },
+ "processes:group-pr-retire-c3u3wc": {
+  "plain_language_name": "Relationship Termination",
+  "plain_language_description": "This family closes enterprise relationships properly. Its processes execute contract close-out and termination settlement, offboard the party across customer, supplier and partner roles, and resolve residual obligations, records and rights.",
+  "business_purpose": "So endings are orderly: settlements agreed, offboarding completed for every party role, and residual obligations, records and rights resolved.",
+  "practical_context": "Encountered at the end of a relationship — a contract expiring, a supplier exiting, a customer leaving — distinct from day-to-day relationship operation.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A supplier contract ends. The Party & Relationship Process Owner's team runs the contract close-out, settles the termination terms, offboards the supplier across systems and access, and resolves the residual obligations and records before archiving the file."
+  }
+ },
+ "processes:group-pv-activate-e7fdrk": {
+  "plain_language_name": "Launching Propositions into Service",
+  "plain_language_description": "This family moves validated propositions into live operational service. Its processes validate transition readiness, carry out the service transition, and secure operational acceptance so the launch is completed with evidence on record.",
+  "business_purpose": "So propositions reach customers only after readiness is validated and acceptance recorded — a controlled launch rather than a hopeful one.",
+  "practical_context": "Encountered at launch time, between development and market-readiness build and the steady-state running of the portfolio.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A new service variant has finished development. The Product & Value Process Owner validates the transition readiness checklist, runs the cutover into operational service, and obtains the operational acceptance signature before the launch is declared complete."
+  }
+ },
+ "processes:group-pv-build-g6sua5": {
+  "plain_language_name": "Product Development",
+  "plain_language_description": "This family constructs what the enterprise will sell. Its processes develop product variants, build service capabilities, create innovation prototypes for testing hypotheses, and prepare market readiness with go-to-market assets.",
+  "business_purpose": "So designed propositions become real, sellable products and services — variants, capabilities and prototypes — with the market readiness to launch.",
+  "practical_context": "Encountered in the Build stage, turning proposition designs into variants, prototypes and launch-ready assets ahead of service transition.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Turning the approved design into reality, the Product & Value Process Owner's teams develop the first product variants, build the supporting service capability, produce a pilot batch of the innovation prototype for hypothesis testing, and prepare the go-to-market assets that market readiness requires."
+  }
+ },
+ "processes:group-pv-conceive-geej6b": {
+  "plain_language_name": "Proposition Conception",
+  "plain_language_description": "This family frames what the enterprise will offer the world. Its processes frame the value proposition thesis, set the portfolio direction, frame the innovation thesis, and validate proposition concepts against market evidence before any design begins.",
+  "business_purpose": "To decide early which value-bearing propositions are worth pursuing, on what portfolio direction, and which innovation theses deserve testing.",
+  "practical_context": "Encountered in the Conceive stage, when leadership frames new propositions and portfolio direction ahead of design and development.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Sensing a market shift, the Product & Value Process Owner frames the value proposition thesis, adjusts the portfolio direction, frames an innovation thesis, and has the concept validated against market evidence before design capacity is committed."
+  }
+ },
+ "processes:group-pv-design-msz6da": {
+  "plain_language_name": "Proposition Design",
+  "plain_language_description": "This family shapes the offer in detail. Its processes design the product and service propositions, design their packaging and configuration for target segments, and design innovation experiments with hypotheses and timeboxes.",
+  "business_purpose": "So propositions, packaging and configuration are specified to a buildable standard, and innovation experiments are designed before money is spent building.",
+  "practical_context": "Encountered in the Design stage, between the value proposition framing and the development of variants and service capabilities.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With the thesis validated, the Product & Value Process Owner's designers specify the product and service propositions, commit packaging and configuration designs for the target segments, and set up an innovation experiment with a clear hypothesis and timebox."
+  }
+ },
+ "processes:group-pv-improve-rjab8b": {
+  "plain_language_name": "Product Evolution",
+  "plain_language_description": "This family keeps the portfolio competitive over time. Its processes conduct proposition performance reviews, evolve products and services with bounded enhancements, and rationalize the portfolio with retire-or-pivot decisions.",
+  "business_purpose": "So evidence from the market feeds evolution: propositions improved, products evolved deliberately, and weak offerings retired or pivoted.",
+  "practical_context": "Encountered in the Improve stage: performance reviews each period, enhancement waves, and portfolio rationalization as the market shifts.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Mid-year, the Product & Value Process Owner conducts the proposition performance review, commits bounded enhancements to the two strongest products, and rationalizes the tail of the portfolio — one line pivots, another is queued for retirement."
+  }
+ },
+ "processes:group-pv-operate-ah3322": {
+  "plain_language_name": "Product Portfolio Operation",
+  "plain_language_description": "This family runs the live portfolio day to day. Its processes operate the product catalogue with accurate listings, manage portfolio performance with rebalancing decisions, and manage each proposition's lifecycle from launch through gate decisions to retirement.",
+  "business_purpose": "So the catalogue stays accurate, portfolio performance is managed against intent, and every proposition moves through its lifecycle with deliberate gate decisions.",
+  "practical_context": "Encountered continuously in the Operate stage: catalogue updates, performance tracking, rebalancing and lifecycle gates across the live portfolio.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "Each week the Product & Value Process Owner's team updates catalogue listings on the commerce platform, reviews portfolio performance against targets, rebalances attention toward the rising proposition, and takes the lifecycle gate decision that moves one offering from growth to maturity management."
+  }
+ },
+ "processes:group-pv-retire-buqktk": {
+  "plain_language_name": "Withdrawing Propositions from Service",
+  "plain_language_description": "This family takes propositions out of live service in a controlled way. Its processes intake the retirement decision and plan the withdrawal, transition stakeholders off the retiring service, and remove operational reliance so nothing depends on it any more.",
+  "business_purpose": "So retirement is deliberate rather than accidental: planned withdrawal, stakeholders moved on, and reliance removed with obligations tracked.",
+  "practical_context": "Encountered when a proposition is withdrawn from the market — after the rationalization or lifecycle decision — ahead of asset-level decommissioning elsewhere.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A legacy service is being retired. The Product & Value Process Owner plans the withdrawal, communicates with affected stakeholders, transitions customers to successor offerings, and confirms that operational reliance has been removed before the final switch-off date."
+  }
+ },
+ "processes:group-sd-activate-mbw9cc": {
+  "plain_language_name": "Regulated Strategic Plan Activation",
+  "plain_language_description": "This family makes a board-approved strategic plan live under a supervisor's acknowledged filing regime. Its processes file the plan and secure acknowledgement, preserve the filing receipt on the regulated record, launch the operational monitoring framework of indicators and risk appetite, activate communications under continuing supervision, and make the plan's obligations binding.",
+  "business_purpose": "So a regulated strategic plan binds in practice: supervisor acknowledgement on record, monitoring framework live, communications active, obligations enforceable.",
+  "practical_context": "Encountered when a supervisor must acknowledge a strategic plan — recovery plans, integrated resource plans, approved trust strategies — before live execution begins.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The board signs a new recovery plan. The Strategy & Direction Process Owner's team submits the filing, secures the supervisor's acknowledgement, preserves the receipt on the regulated record, launches the monitoring framework with early-warning indicators, and activates the communications plan."
+  }
+ },
+ "processes:group-sd-build-tnq4p6": {
+  "plain_language_name": "Building the Strategic Plan and Roadmap",
+  "plain_language_description": "This family assembles the plan itself. Its processes build the strategic plan, construct the roadmap with sequenced initiatives, translate the designed strategic choices into concrete initiatives, and set the resource allocation priorities each initiative will live within.",
+  "business_purpose": "So direction becomes a committed, versioned plan and roadmap — initiatives named, sequenced and resourced within the authorised envelope.",
+  "practical_context": "Encountered in the Build stage, once strategic choices are designed, ahead of plan activation and the steering of execution.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "After the choices are designed, the Strategy & Direction Process Owner builds the strategic plan, sequences the roadmap initiatives, translates each choice into owned initiatives, and sets the resource allocation priorities the programme teams will work within."
+  }
+ },
+ "processes:group-sd-conceive-7qhvzn": {
+  "plain_language_name": "Framing Purpose, Ambition and Strategic Intent",
+  "plain_language_description": "This family is the deepest front-end thinking in the enterprise. Its processes define purpose and ambition, conceive the strategic intent, frame the strategic horizons, and develop the corporate strategy inside the frame governance has authorised.",
+  "business_purpose": "To set the trajectory itself: why the enterprise exists, what it aims to become, the intent and horizons it commits to, and the corporate strategy that directs within the authorised frame.",
+  "practical_context": "Encountered in the Conceive stage, at founding, renewal or pivot moments when direction itself is the question.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "At a five-year renewal, the Strategy & Direction Process Owner leads the conception cycle: purpose and ambition are re-articulated, strategic intent is committed, horizons are framed, and the corporate strategy is developed within the frame the board authorises."
+  }
+ },
+ "processes:group-sd-design-q4mj9z": {
+  "plain_language_name": "Strategic Choices Design",
+  "plain_language_description": "This family turns intent into deliberate choices. Its processes design the strategic options, evaluate the alternatives against stated criteria, design objectives and targets with bounded measures, and frame strategic scenarios with explicit assumptions.",
+  "business_purpose": "So the enterprise chooses deliberately: options compared, alternatives evaluated, objectives and scenarios designed before the plan is built.",
+  "practical_context": "Encountered in the Design stage, between the conceived intent and the building of the plan and roadmap.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "With intent committed, the Strategy & Direction Process Owner's team designs three strategic options, evaluates the alternatives against the agreed criteria, sets objectives and targets, and frames two scenarios so the plan can be stress-tested."
+  }
+ },
+ "processes:group-sd-improve-vdz4xp": {
+  "plain_language_name": "Strategic Adaptation",
+  "plain_language_description": "This family adapts direction as reality teaches. Its processes adapt the strategic direction on evidence, refresh objectives and targets when they drift from relevance, and review strategy effectiveness with findings committed for the next cycle.",
+  "business_purpose": "So strategy stays alive: direction adjusted on evidence, objectives refreshed, and effectiveness reviewed rather than assumed.",
+  "practical_context": "Encountered in the Improve stage: annual strategy reviews, mid-course corrections after environmental shifts, and target refreshes.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "After a market shock, the Strategy & Direction Process Owner reviews strategy effectiveness, adapts the strategic direction toward the changed landscape, refreshes the objectives and targets, and commits the findings for the next planning cycle."
+  }
+ },
+ "processes:group-sd-operate-22epxr": {
+  "plain_language_name": "Strategic Monitoring and Steering",
+  "plain_language_description": "This family steers the enterprise along its chosen trajectory. Its processes monitor strategic performance against objectives, sense environmental signals and route them, steer the initiative portfolio with rebalancing decisions, and operate the strategic review cycle on cadence.",
+  "business_purpose": "So the plan stays connected to reality: performance monitored, signals sensed, the portfolio steered, and reviews held on rhythm.",
+  "practical_context": "Encountered continuously in the Operate stage: dashboard reviews, signal sensing, portfolio steering sessions and quarterly strategic reviews.",
+  "worked_example": {
+   "agent_type": "mixed",
+   "narrative": "At the quarterly review, the Strategy & Direction Process Owner's team reads the monitoring dashboards, weighs the environmental signals the sensing routines surfaced, steers the initiative portfolio with two rebalancing decisions, and closes the review cycle with recorded actions."
+  }
+ },
+ "processes:group-sd-retire-7fksad": {
+  "plain_language_name": "Regulated Strategic Plan Sunset",
+  "plain_language_description": "This family sunsets a regulated strategic plan when the regulator requires it. Its processes act on the directive or rejection notice, identify the superseded plan on the regulated record, update the filings register, execute the communications plan, preserve the sunset record, keep the superseded plan's records on file, and notify affected business units.",
+  "business_purpose": "So a superseded plan leaves the record set cleanly: directive on file, replacement preserved, records retained, supervisor acknowledgement recorded.",
+  "practical_context": "Encountered only when a competent regulator requires retirement — a failed stress test, a rejected recovery plan, a retracted approval — never for routine plan refreshes.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A bank's recovery plan fails the stress test. The Strategy & Direction Process Owner's team logs the regulator's directive, marks the plan superseded on the regulated record, updates the filings register, runs the communications plan, retains the retired records, and notifies the affected business units."
+  }
+ }
+}

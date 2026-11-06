@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-a
 
 This is a **Process Group** (level L1), named **Regulated Onboarding**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Enterprise Relationship Activation** (`processes:pc-pr-activate-mwq7bj`). Its canonical ID is `processes:group-pr-activate-d7j4et`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family brings a new customer, supplier or partner relationship live under regulated controls. Its processes run identity verification and customer due diligence, resolve beneficial ownership at account opening, screen against sanctions and politically exposed persons, assign the risk classification, take the onboarding approval decision — and record the rationale when an applicant must be refused.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So relationships only begin once identity, ownership and risk are verified and approved, and monitoring obligations carry forward into steady-state operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at first activation of a customer, supplier or partner relationship in a regulated sector — after acquisition interest, before the relationship operates.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* A corporate applicant asks to open an account. Screening systems clear the sanctions and politically-exposed-persons checks while the onboarding team working for the Party & Relationship Process Owner verifies identity, resolves the beneficial-ownership chain, assigns the risk classification, and approves — or declines with recorded rationale.
 
 ## 5. Header and Identity Table (generated)
 
@@ -67,6 +67,11 @@ classification; onboarding approval).
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Regulated Onboarding |
+| `plain_language_description` | string | no | This family brings a new customer, supplier or partner relationship live under regulated controls. Its processes run … |
+| `business_purpose` | string | no | So relationships only begin once identity, ownership and risk are verified and approved, and monitoring obligations … |
+| `practical_context` | string | no | Encountered at first activation of a customer, supplier or partner relationship in a regulated sector — after … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

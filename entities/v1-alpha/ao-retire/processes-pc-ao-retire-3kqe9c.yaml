@@ -171,3 +171,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Workforce Retirement'
+plain_language_description: 'This context covers the Agency & Organization area at the Retire stage: reducing or winding down a workforce population where regulation governs the reduction. It serves statutory advance notice, runs information and consultation with worker representatives, applies fair selection, funds severance and benefits continuation, and routes transition support. Everyday offboarding of single individuals stays in the operating context.'
+business_purpose: 'To shrink or close out a workforce population lawfully and humanely, with notice, consultation, fair selection, and funded supports at every step.'
+practical_context: 'Encountered when a site closes, a function is displaced, or a reduction crosses statutory thresholds — an episodic, heavily scripted episode rather than routine administration.'
+worked_example:
+  agent_type: human
+  narrative: 'When a depot closure passes the statutory threshold, the Agency & Organization Process Owner serves advance notice, opens consultation with worker representatives, applies the agreed selection criteria, and funds severance and retraining support.'

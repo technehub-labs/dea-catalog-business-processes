@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-op
 
 This is a **Process Context** (level L0), named **Accounting, Reporting, and Treasury Operation**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:pc-fa-operate-afew7e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Operate stage: the everyday recording and reporting of the enterprise's money. It runs the ledger, payables and receivables, treasury activity, tax obligations, the period close, planning and analysis, and outward reporting. Purchasing transactions themselves are executed in the operations domain; their monetary recording lands here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep an accurate, timely, compliant monetary record and produce the statements and insight the enterprise and its stakeholders rely on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered daily in payments and postings, monthly at close, quarterly in reporting, and annually in disclosures and tax filings.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During the monthly close, the Finance & Accounting Process Owner clears reconciliation breaks, reviews treasury positions against policy, and signs the reporting pack before it goes to the governance cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -287,6 +287,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Accounting, Reporting, and Treasury Operation |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Operate stage: the everyday recording and reporting of the … |
+| `business_purpose` | string | no | To keep an accurate, timely, compliant monetary record and produce the statements and insight the enterprise and its … |
+| `practical_context` | string | no | Encountered daily in payments and postings, monthly at close, quarterly in reporting, and annually in disclosures and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

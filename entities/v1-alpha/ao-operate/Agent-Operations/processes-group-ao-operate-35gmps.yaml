@@ -170,3 +170,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent Operations'
+plain_language_description: 'This family runs the steady-state machinery that keeps agents working well. It covers operating agent performance on a review cadence, running payroll and benefits, tracking time and attendance, delivering learning and development to people and fine-tuning to artificial agents alike, and coordinating collaboration across teams and agents.'
+business_purpose: 'So every agent — human, artificial or hybrid — is paid, scheduled, developed, coordinated and performance-managed reliably through ordinary working life.'
+practical_context: 'Encountered every operating day: pay runs, attendance tracking, training sessions, performance reviews and collaboration routines after agents have been acquired and onboarded.'
+worked_example:
+  agent_type: mixed
+  narrative: 'On a normal month-end, the Agency & Organization Process Owner''s operations team runs the payroll cycle, reconciles time and attendance, schedules a fine-tuning run for one of the artificial agents, and chairs the cross-team collaboration check — while line managers complete routine performance reviews.'

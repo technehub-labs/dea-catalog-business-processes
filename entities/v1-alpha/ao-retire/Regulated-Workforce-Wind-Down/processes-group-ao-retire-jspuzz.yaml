@@ -120,3 +120,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-73-ao-retire-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Workforce Wind-Down'
+plain_language_description: 'This family handles the statutory exit of workforce populations when a statutory mass-layoff trigger or a regulated wind-down obligation bites. Its processes issue advance statutory notice, consult workers'' representatives, apply fair-selection criteria, settle severance and benefits continuation with liabilities recorded, and route transition supports such as retraining, health-care continuation and outplacement to affected staff.'
+business_purpose: 'So that large-scale workforce exits meet every statutory notice, consultation and severance obligation while affected people are treated fairly and liabilities are properly recorded and funded.'
+practical_context: 'Encountered when a reduction crosses a statutory mass-layoff threshold or a regulated wind-down is authorized — not for routine individual offboarding, which sits elsewhere.'
+worked_example:
+  agent_type: human
+  narrative: 'A plant closure crosses the statutory threshold, so the Agency & Organization Process Owner''s team serves the required 60-day notice, opens consultation with the workers'' representatives, applies the agreed fair-selection criteria, records severance liabilities, and books affected employees onto retraining and outplacement support.'

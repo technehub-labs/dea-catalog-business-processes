@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-co
 
 This is a **Process Context** (level L0), named **Strategy and Governance Conception**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Conceive. Its canonical ID is `processes:pc-ge-conceive-b5xwpd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Conceive stage: deciding in principle what the organization is and how it will be governed. It frames governance strategy, initiates the policy posture and mandate, and sets charter direction. Designing the control system and standing up the bodies come afterwards.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To articulate the mandate and governance posture that give every later body, charter, and policy a defensible foundation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at founding, during mandate renewals, or when the enterprise's governance direction needs a deliberate reset.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the enterprise's founding, the Governance & Existence Process Owner frames the mandate, the policy posture, and the charter direction with the founders, settling what the organization is for before any body is convened.
 
 ## 5. Header and Identity Table (generated)
 
@@ -134,6 +134,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Strategy and Governance Conception |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Conceive stage: deciding in principle what the organization … |
+| `business_purpose` | string | no | To articulate the mandate and governance posture that give every later body, charter, and policy a defensible … |
+| `practical_context` | string | no | Encountered at founding, during mandate renewals, or when the enterprise's governance direction needs a deliberate … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -143,3 +143,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-82-eo-activate-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Operations Activation'
+plain_language_description: 'This family takes an operations capability that the regulator has authorized and makes it live. Its processes confirm the authorization or certification is in place, assemble readiness evidence such as supervised-test records and operations manuals, switch on operational controls for incidents, capacity, security and compliance, and activate notification to the continuing supervisor, preserving the entry on the regulated operations record.'
+business_purpose: 'So that nothing serves customers live until the regulator''s authorization, readiness evidence, manuals and operational controls are all in place under continuing supervisory oversight.'
+practical_context: 'Encountered at the moment a regulated service — an airline, a payments institution, a certified production site — is cleared to go live, between build and configuration and steady-state running.'
+worked_example:
+  agent_type: human
+  narrative: 'A payment institution receives its authorization letter. The Enablement & Operations Process Owner''s team checks the certification, files supervised-test evidence, brings the incident and compliance controls live, notifies the continuing supervisor, and records the go-live on the regulated operations record before the first customer payment is processed.'

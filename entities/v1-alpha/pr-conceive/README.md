@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-co
 
 This is a **Process Context** (level L0), named **Customer Strategy Conception**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Conceive. Its canonical ID is `processes:pc-pr-conceive-6xztsq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the customer and demand area at the Conceive stage: choosing who the enterprise serves and on what terms of exchange. It frames customer strategy, segments the market, and commits to a demand thesis that can be tested. Designing experiences and building channels follow later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To commit to a defensible view of target segments and demand before money is spent on channels, experiences, or acquisition.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in planning rounds and when market shifts force a rethink of who the enterprise is trying to win.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the annual planning round, the Party & Relationship Process Owner frames three candidate segments, tests each demand thesis against available evidence, and recommends the segment mix to commit to for the year.
 
 ## 5. Header and Identity Table (generated)
 
@@ -133,6 +133,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Customer Strategy Conception |
+| `plain_language_description` | string | no | This context covers the customer and demand area at the Conceive stage: choosing who the enterprise serves and on what … |
+| `business_purpose` | string | no | To commit to a defensible view of target segments and demand before money is spent on channels, experiences, or … |
+| `practical_context` | string | no | Encountered in planning rounds and when market shifts force a rethink of who the enterprise is trying to win. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

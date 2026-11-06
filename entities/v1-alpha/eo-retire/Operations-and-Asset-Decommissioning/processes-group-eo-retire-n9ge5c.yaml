@@ -120,3 +120,18 @@ links:
   href: discovery/v1-alpha/enablement-and-operations-retire.yaml
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Asset Decommissioning'
+plain_language_description: 'This family takes operational assets out of service in a controlled way. Its processes plan and approve the retirement, isolate and withdraw the asset, carry out decommissioning and disposal — including sanitizing any data it holds — and resolve residual value and leftover obligations.'
+business_purpose: 'So assets leave service safely and accountably, with disposal evidence, data sanitization and any residual value or obligations settled.'
+practical_context: 'Encountered at end of life: approved retirement projects that withdraw plant, systems or facilities from service, distinct from routine maintenance or product withdrawal.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Retiring an old data centre hall, the Enablement & Operations Process Owner approves the retirement plan, engineers isolate the power and cooling, technicians sanitize the drives before disposal, and the team settles the residual lease obligations and books remaining scrap value.'

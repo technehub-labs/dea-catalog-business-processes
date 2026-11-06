@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-de
 
 This is a **Process Context** (level L0), named **Proposition and Packaging Design**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Design. Its canonical ID is `processes:pc-pv-design-8dhwpn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Design stage: giving chosen propositions their concrete shape. It designs the propositions themselves, settles packaging and configuration, plans innovation experiments, and lays out the proposition architecture for the portfolio. Development and delivery belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To convert proposition theses into precise designs — packaging, configuration, and experiments — that development can build and test.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered after conception commits a thesis and before development starts: proposition workshops, packaging decisions, and experiment plans.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Product & Value Process Owner compares three packaging configurations, commits one design for the launch proposition, and approves an innovation experiment to test a bundled variant.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Proposition and Packaging Design |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Design stage: giving chosen propositions their concrete shape. It … |
+| `business_purpose` | string | no | To convert proposition theses into precise designs — packaging, configuration, and experiments — that development can … |
+| `practical_context` | string | no | Encountered after conception commits a thesis and before development starts: proposition workshops, packaging … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

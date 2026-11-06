@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-im
 
 This is a **Process Context** (level L0), named **Customer Insight and Retention**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Improve. Its canonical ID is `processes:pc-pr-improve-k8phkn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the customer and demand area at the Improve stage: learning from customers and keeping more of them. It monitors satisfaction, analyses churn and its warning signs, operates win-back activity for lapsed customers, and feeds insight back into strategy, design, and operations. Day-to-day account handling belongs to the operating context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To lengthen customer relationships and raise their value by acting on satisfaction, churn, and win-back evidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered on a continuous insight rhythm — survey waves, churn reviews, and triggered win-back pushes when departure risk shows.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When churn analysis flags a cluster of at-risk accounts, the Party & Relationship Process Owner commissions a satisfaction deep-dive, launches a targeted win-back push, and routes the findings into the next experience design cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -108,6 +108,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Customer Insight and Retention |
+| `plain_language_description` | string | no | This context covers the customer and demand area at the Improve stage: learning from customers and keeping more of … |
+| `business_purpose` | string | no | To lengthen customer relationships and raise their value by acting on satisfaction, churn, and win-back evidence. |
+| `practical_context` | string | no | Encountered on a continuous insight rhythm — survey waves, churn reviews, and triggered win-back pushes when departure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

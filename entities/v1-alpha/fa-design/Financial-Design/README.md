@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 
 This is a **Process Group** (level L1), named **Financial Design**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Financial Planning and Accounting Architecture Design** (`processes:pc-fa-design-4j8evh`). Its canonical ID is `processes:group-fa-design-7juvse`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family produces the designs that make money handling safe and deliberate. Its processes design the financial controls and policies, set the tax position and strategy, design the treasury and funding model, and structure the financial plan.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So spending, tax and cash are governed by designed controls and a deliberate treasury model before systems are built and operations begin.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Design stage, between the finance strategy framing and the implementation of financial systems.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the finance strategy framed, the Finance & Accounting Process Owner's team designs the controls and policies, sets the tax position and strategy, structures the financial plan, and finalizes the treasury and funding model for the build teams to implement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Financial Controls, Tax and Treasury Design |
+| `plain_language_description` | string | no | This family produces the designs that make money handling safe and deliberate. Its processes design the financial … |
+| `business_purpose` | string | no | So spending, tax and cash are governed by designed controls and a deliberate treasury model before systems are built … |
+| `practical_context` | string | no | Encountered in the Design stage, between the finance strategy framing and the implementation of financial systems. |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

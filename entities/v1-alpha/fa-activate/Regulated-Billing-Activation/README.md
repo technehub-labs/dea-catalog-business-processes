@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-a
 
 This is a **Process Group** (level L1), named **Regulated Billing Activation**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Billing Capability** (`processes:pc-fa-activate-yrhcfm`). Its canonical ID is `processes:group-fa-activate-n9s2z3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family brings an invoicing or revenue-recognition capability live once the supervisor has acknowledged the accounting and rate regime that governs it. Its processes record that framework activation, secure and preserve the tariff or pricing approval, assemble readiness evidence such as supervised tests and the first-invoice runbook, switch on segregation of duties, audit trail and reconciliation, and notify the continuing supervisor.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the first invoice or revenue entry only happens with the regulator's acknowledgement on record, pricing approval preserved, and billing controls live.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a new invoicing or revenue-recognition capability in a supervised sector is cleared to go live — between build and configuration and steady-state billing operations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An insurer is switching on a new statutory-accounting billing capability. The Finance & Accounting Process Owner's team records the supervisor's acknowledgement, preserves the approved tariff filing, rehearses the first-invoice runbook, verifies the reconciliation and audit-trail controls, notifies the continuing supervisor, and releases the first invoice.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ separate from capability build and from steady-state billing.
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Billing Activation |
+| `plain_language_description` | string | no | This family brings an invoicing or revenue-recognition capability live once the supervisor has acknowledged the … |
+| `business_purpose` | string | no | So the first invoice or revenue entry only happens with the regulator's acknowledgement on record, pricing approval … |
+| `practical_context` | string | no | Encountered when a new invoicing or revenue-recognition capability in a supervised sector is cleared to go live — … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

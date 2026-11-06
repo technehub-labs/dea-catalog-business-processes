@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-bu
 
 This is a **Process Context** (level L0), named **Finance Capability and System Build**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Build. Its canonical ID is `processes:pc-fa-build-pztsp9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Build stage: standing up the money-management machinery. It staffs and structures the finance function, deploys the finance systems, and secures funding facilities such as credit lines. Designing the accounting architecture and running daily finance work sit in neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To give the enterprise a working finance function, fitted-out systems, and arranged funding, ready to record and manage money from day one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when the enterprise is first set up, when finance capability lags growth, or during major finance transformation programmes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During a finance transformation, the Finance & Accounting Process Owner oversees the new system configuration for the ledger team, confirms staff are in post, and completes negotiation of a revolving funding facility.
 
 ## 5. Header and Identity Table (generated)
 
@@ -187,6 +187,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Finance Capability and System Build |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Build stage: standing up the money-management machinery. It … |
+| `business_purpose` | string | no | To give the enterprise a working finance function, fitted-out systems, and arranged funding, ready to record and manage … |
+| `practical_context` | string | no | Encountered when the enterprise is first set up, when finance capability lags growth, or during major finance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

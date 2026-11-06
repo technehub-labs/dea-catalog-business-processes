@@ -114,3 +114,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Build'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent Acquisition and Onboarding'
+plain_language_description: 'This context covers the Agency & Organization area at the Build stage: bringing new working capacity into the enterprise. It spans sourcing people, standing up automated agents, integrating both into teams, and growing the contractor and partner pool. Design of the structure they join and day-to-day management afterwards sit in neighboring contexts.'
+business_purpose: 'To supply the enterprise with the people, automated agents, and partner capacity it needs, properly onboarded and ready to contribute.'
+practical_context: 'Encountered during growth phases, team expansion, or when new automated agents are provisioned; runs from the sourcing decision through to a fully integrated newcomer.'
+worked_example:
+  agent_type: human
+  narrative: 'The Agency & Organization Process Owner signs off the onboarding pack for a cohort of new hires and a newly deployed automated agent, confirming provisioning settings and team integration steps are complete before day one.'

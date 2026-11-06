@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 
 This is a **Process Group** (level L1), named **Governance Review and Learning**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Improve. It belongs to `processes:pc-ge-improve-c78ppp`. Its canonical ID is `processes:group-ge-improve-s9r3qj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family closes the loop on how well governance actually works. Its processes review governance effectiveness, score audit findings, refine the policy regime, and propagate lessons back into conception, design, build and operation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So audit findings and reviews genuinely change the policy regime, and lessons learned reshape how the enterprise governs next time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: effectiveness reviews, audit finding scoring and policy refinement after each oversight cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a year of oversight, the Governance & Existence Process Owner reviews governance effectiveness, scores the audit findings by severity, refines two policy regimes that under-performed, and routes the lessons into the next conception and design cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Governance Review and Learning |
+| `plain_language_description` | string | no | This family closes the loop on how well governance actually works. Its processes review governance effectiveness, score … |
+| `business_purpose` | string | no | So audit findings and reviews genuinely change the policy regime, and lessons learned reshape how the enterprise … |
+| `practical_context` | string | no | Encountered in the Improve stage: effectiveness reviews, audit finding scoring and policy refinement after each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

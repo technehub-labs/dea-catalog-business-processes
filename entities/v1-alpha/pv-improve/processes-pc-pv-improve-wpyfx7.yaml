@@ -113,3 +113,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Product & Value x Improve'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Product Evolution and Portfolio Rationalization'
+plain_language_description: 'This context covers the Product & Value area at the Improve stage: making the offering better and leaner over time. It reviews proposition performance, evolves products and services on the evidence, rationalizes the portfolio against fit and results, and optimizes each proposition''s lifecycle. Running the live catalogue belongs to the operating context.'
+business_purpose: 'To keep the portfolio earning its keep: evolve the strong, fix the weak, and retire the parts that no longer fit.'
+practical_context: 'Encountered in periodic performance reviews and portfolio refreshes, when evidence shows which propositions deserve more and which less.'
+worked_example:
+  agent_type: human
+  narrative: 'At the portfolio review, the Product & Value Process Owner weighs each proposition''s performance evidence, commits evolution funding for the strong performers, and rationalizes the long tail out of the plan.'

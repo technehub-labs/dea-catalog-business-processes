@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-op
 
 This is a **Process Context** (level L0), named **Agent Operations and Performance**, currently **candidate (yellow)**. It is domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:pc-ao-operate-zfevmp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Agency & Organization area at the Operate stage: the steady running of the enterprise's people and agents. It covers performance management, coordination and collaboration rhythms, time and attendance, compensation administration, and day-to-day learning and development. Getting better as an organization, rather than merely running, is the improvement context's job.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep the whole agent mix productive, present, coordinated, paid, and learning, so the enterprise runs smoothly day after day.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously — in weekly one-to-ones, monthly attendance and pay cycles, and recurring development activities across the working population.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At month end the Agency & Organization Process Owner reviews attendance and performance figures, resolves a coordination bottleneck between two teams, and approves the compensation run within workforce policy.
 
 ## 5. Header and Identity Table (generated)
 
@@ -239,6 +239,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Agent Operations and Performance |
+| `plain_language_description` | string | no | This context covers the Agency & Organization area at the Operate stage: the steady running of the enterprise's people … |
+| `business_purpose` | string | no | To keep the whole agent mix productive, present, coordinated, paid, and learning, so the enterprise runs smoothly day … |
+| `practical_context` | string | no | Encountered continuously — in weekly one-to-ones, monthly attendance and pay cycles, and recurring development … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

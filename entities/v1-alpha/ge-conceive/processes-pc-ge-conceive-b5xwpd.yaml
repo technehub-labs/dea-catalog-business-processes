@@ -99,3 +99,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Conceive'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategy and Governance Conception'
+plain_language_description: 'This context covers the Governance & Existence area at the Conceive stage: deciding in principle what the organization is and how it will be governed. It frames governance strategy, initiates the policy posture and mandate, and sets charter direction. Designing the control system and standing up the bodies come afterwards.'
+business_purpose: 'To articulate the mandate and governance posture that give every later body, charter, and policy a defensible foundation.'
+practical_context: 'Encountered at founding, during mandate renewals, or when the enterprise''s governance direction needs a deliberate reset.'
+worked_example:
+  agent_type: human
+  narrative: 'At the enterprise''s founding, the Governance & Existence Process Owner frames the mandate, the policy posture, and the charter direction with the founders, settling what the organization is for before any body is convened.'

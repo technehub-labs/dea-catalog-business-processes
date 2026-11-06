@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-de
 
 This is a **Process Context** (level L0), named **Operations and Enablement Design**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Design. Its canonical ID is `processes:pc-eo-design-kxdfnz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Enablement & Operations area at the Design stage: drawing the blueprints for production and delivery. It designs the operations and delivery models, the architecture of the technology platforms, facility layouts, and how logistics will route. Nothing is constructed yet; the output is the set of designs the build context will realize.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To turn the conceived operations approach into precise, buildable designs for platforms, facilities, and logistics before money is spent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered between an agreed operations direction and physical build — during solutioning for new sites, platforms, or distribution patterns.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Enablement & Operations Process Owner reviews the platform architecture and the warehouse flow drawings, asks for a second routing option, and approves the design package released to the build teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -213,6 +213,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Operations and Enablement Design |
+| `plain_language_description` | string | no | This context covers the Enablement & Operations area at the Design stage: drawing the blueprints for production and … |
+| `business_purpose` | string | no | To turn the conceived operations approach into precise, buildable designs for platforms, facilities, and logistics … |
+| `practical_context` | string | no | Encountered between an agreed operations direction and physical build — during solutioning for new sites, platforms, or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

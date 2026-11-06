@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-de
 
 This is a **Process Context** (level L0), named **Governance System Design**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Design. Its canonical ID is `processes:pc-ge-design-3f2gjr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Design stage: shaping how governance will actually work. It designs the governance architecture, sets control objectives, lays out the policy architecture, and defines how authority is delegated. Building the bodies and running the machinery come later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To translate mandate and direction into a designed, testable system of controls, policies, and delegated authority.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered once direction is framed and before bodies are convened — typically during governance overhauls or new-control programmes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Governance & Existence Process Owner reviews the draft control objectives, tests the delegation design against a sample decision, and approves the policy architecture ready for construction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Governance System Design |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Design stage: shaping how governance will actually work. It … |
+| `business_purpose` | string | no | To translate mandate and direction into a designed, testable system of controls, policies, and delegated authority. |
+| `practical_context` | string | no | Encountered once direction is framed and before bodies are convened — typically during governance overhauls or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

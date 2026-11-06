@@ -101,3 +101,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Oversight'
+plain_language_description: 'This context covers the Governance & Existence area at the Operate stage: keeping the governance machinery running continuously. It convenes boards and committees on their cycles, executes risk oversight, maintains policy compliance, and commissions audit and assurance. Making governance better as a result is the improvement context''s concern.'
+business_purpose: 'To keep oversight live — decisions taken on schedule, risk watched, and compliance maintained through the standing governance cycles.'
+practical_context: 'Encountered on the meeting calendar and review rhythm: convened sessions, recurring risk and compliance checkpoints, and assurance engagements.'
+worked_example:
+  agent_type: human
+  narrative: 'In the quarterly cycle, the Governance & Existence Process Owner convenes the board committees, walks the risk oversight dashboard, tracks compliance exceptions to closure, and records the decisions taken.'

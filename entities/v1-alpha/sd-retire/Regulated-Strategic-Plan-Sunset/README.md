@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-r
 
 This is a **Process Group** (level L1), named **Regulated Strategic Plan Sunset**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:pc-sd-retire-zxnc3c`). Its canonical ID is `processes:group-sd-retire-7fksad`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family sunsets a regulated strategic plan when the regulator requires it. Its processes act on the directive or rejection notice, identify the superseded plan on the regulated record, update the filings register, execute the communications plan, preserve the sunset record, keep the superseded plan's records on file, and notify affected business units.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So a superseded plan leaves the record set cleanly: directive on file, replacement preserved, records retained, supervisor acknowledgement recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered only when a competent regulator requires retirement — a failed stress test, a rejected recovery plan, a retracted approval — never for routine plan refreshes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A bank's recovery plan fails the stress test. The Strategy & Direction Process Owner's team logs the regulator's directive, marks the plan superseded on the regulated record, updates the filings register, runs the communications plan, retains the retired records, and notifies the affected business units.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ retention policy.
 | `status` | string | no | accepted |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
+| `plain_language_name` | string | no | Regulated Strategic Plan Sunset |
+| `plain_language_description` | string | no | This family sunsets a regulated strategic plan when the regulator requires it. Its processes act on the directive or … |
+| `business_purpose` | string | no | So a superseded plan leaves the record set cleanly: directive on file, replacement preserved, records retained … |
+| `practical_context` | string | no | Encountered only when a competent regulator requires retirement — a failed stress test, a rejected recovery plan, a … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

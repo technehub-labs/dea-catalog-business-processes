@@ -135,3 +135,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Experience Design'
+plain_language_description: 'This family designs how customers will experience the enterprise. Its processes design the customer experience, articulate the end-to-end customer journey, design the demand model, and select the experience patterns that ground later build and operation.'
+business_purpose: 'So the promised customer experience is designed and testable — journey, demand model and patterns — before channels are implemented.'
+practical_context: 'Encountered in the Design stage, between the customer strategy framing and the build of channels and acquisition engines.'
+worked_example:
+  agent_type: human
+  narrative: 'With the strategy committed, the Party & Relationship Process Owner''s designers map the customer journey end to end, design the experience and demand model, and choose the service patterns the channel builders will implement.'

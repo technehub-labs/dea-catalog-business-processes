@@ -97,3 +97,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Improve'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Insight and Retention'
+plain_language_description: 'This context covers the customer and demand area at the Improve stage: learning from customers and keeping more of them. It monitors satisfaction, analyses churn and its warning signs, operates win-back activity for lapsed customers, and feeds insight back into strategy, design, and operations. Day-to-day account handling belongs to the operating context.'
+business_purpose: 'To lengthen customer relationships and raise their value by acting on satisfaction, churn, and win-back evidence.'
+practical_context: 'Encountered on a continuous insight rhythm — survey waves, churn reviews, and triggered win-back pushes when departure risk shows.'
+worked_example:
+  agent_type: human
+  narrative: 'When churn analysis flags a cluster of at-risk accounts, the Party & Relationship Process Owner commissions a satisfaction deep-dive, launches a targeted win-back push, and routes the findings into the next experience design cycle.'

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-i
 
 This is a **Process Group** (level L1), named **Financial Improve**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Finance and Financial Control Improvement** (`processes:pc-fa-improve-haqf4w`). Its canonical ID is `processes:group-fa-improve-hvq8u8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family keeps the money machinery getting better. Its processes refine financial controls and policies, evolve the treasury and funding model as the enterprise changes, audit compliance with policy, and review where cost can be optimized.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To keep financial controls effective, the treasury model current, compliance audited and costs trending down as the enterprise grows and changes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: control reviews after each close, treasury evolution, compliance audits and cost reviews that follow operating experience.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following a costly quarter, the Finance & Accounting Process Owner commissions a cost optimization review; the team refines two weak controls, evolves the treasury and funding model for the new footprint, and scores the latest compliance audit findings into an action list.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Strengthening Financial Controls and Cost Efficiency |
+| `plain_language_description` | string | no | This family keeps the money machinery getting better. Its processes refine financial controls and policies, evolve the … |
+| `business_purpose` | string | no | To keep financial controls effective, the treasury model current, compliance audited and costs trending down as the … |
+| `practical_context` | string | no | Encountered in the Improve stage: control reviews after each close, treasury evolution, compliance audits and cost … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

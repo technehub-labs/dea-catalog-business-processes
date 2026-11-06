@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-re
 
 This is a **Process Context** (level L0), named **Financial Run-Off**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Retire. Its canonical ID is `processes:pc-fa-retire-64q5p9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Retire stage for a regulated financial entity stopping business under supervised run-off. It secures the run-off authorization, submits the plan, moves the books to the required wind-down accounting basis, maintains reserving and capital through the period, settles claimants with their statutory priority, and keeps stakeholders informed. Ordinary stewardship beforehand and asset disposal elsewhere are out of scope.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To wind down a regulated financial entity in good order — authorized, planned, adequately reserved, and fair to policyholders ahead of other creditors.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a financial entity or book ceases new business under a run-off authorization and spends years settling obligations under supervision.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the run-off authorization granted, the Finance & Accounting Process Owner submits the run-off plan in the regulator's window, transitions the books to the wind-down accounting basis, and chairs the monthly reserving and claims review until the last policyholder claim is settled.
 
 ## 5. Header and Identity Table (generated)
 
@@ -125,6 +125,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Financial Run-Off |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Retire stage for a regulated financial entity stopping … |
+| `business_purpose` | string | no | To wind down a regulated financial entity in good order — authorized, planned, adequately reserved, and fair to … |
+| `practical_context` | string | no | Encountered when a financial entity or book ceases new business under a run-off authorization and spends years settling … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

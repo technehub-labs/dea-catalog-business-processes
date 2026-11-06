@@ -130,3 +130,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Activate Operations Capability'
+plain_language_description: 'This context covers the Enablement & Operations area at the Activate stage for capabilities whose live service needs formal regulator-issued authorization. It confirms the authorization is on record, brings operating manuals and runbooks into service, switches operational controls on, and notifies the continuing supervisor. Construction of the capability beforehand and its steady running afterwards belong to neighboring contexts.'
+business_purpose: 'To carry an authorized operations capability across the final step into live service with evidence, controls, and oversight all in place.'
+practical_context: 'Encountered at go-live for a regulated facility, line, or service — after authorization is granted but before the first live operational day.'
+worked_example:
+  agent_type: human
+  narrative: 'With the authorization certificate received, the Enablement & Operations Process Owner checks the readiness evidence, brings the runbooks into service, confirms the incident and capacity controls are active, notifies the continuing supervisor, and has the activation entered on the regulated operations record.'

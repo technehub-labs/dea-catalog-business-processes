@@ -133,3 +133,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Product & Value x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Proposition Launch and Service Transition'
+plain_language_description: 'This context covers the Product & Value area at the Activate stage: moving finished propositions into live service. It validates transition readiness, hands the product or service over into operation, obtains operational acceptance, and completes launch activation with ownership and controls assigned. Developing the proposition beforehand and delivering it daily afterwards are neighboring domains'' concerns.'
+business_purpose: 'To cross the bridge from built to serving: readiness proven, acceptance recorded, and launch completed with clear ownership.'
+practical_context: 'Encountered at launch windows and service cutovers, when development is complete and the question is whether the proposition is truly ready for customers.'
+worked_example:
+  agent_type: human
+  narrative: 'At the launch window, the Product & Value Process Owner reviews the readiness evidence, runs the transition checklist with the receiving operations teams, records operational acceptance, and declares the proposition live.'

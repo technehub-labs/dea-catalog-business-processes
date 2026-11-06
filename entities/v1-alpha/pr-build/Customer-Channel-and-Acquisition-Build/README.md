@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-b
 
 This is a **Process Group** (level L1), named **Customer Channel and Acquisition Build**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Build. It belongs to `processes:pc-pr-build-a46hp7`. Its canonical ID is `processes:group-pr-build-7u5xj6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family constructs the assets that will win customers. Its processes build the channel infrastructure, stand up the acquisition engine, implement marketing automation, and build the demand-generation machinery that keeps interest flowing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the enterprise owns working channels, acquisition and demand-generation engines before it needs them, ready to carry customers into live operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Build stage, between customer strategy and experience design and the live acquisition activity of steady-state operation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Ahead of launch, the Party & Relationship Process Owner's programme builds the channel infrastructure, wires marketing automation into the acquisition engine, and tunes the demand-generation programmes so qualified leads will flow when the doors open.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Customer Channel and Acquisition Build |
+| `plain_language_description` | string | no | This family constructs the assets that will win customers. Its processes build the channel infrastructure, stand up the … |
+| `business_purpose` | string | no | So the enterprise owns working channels, acquisition and demand-generation engines before it needs them, ready to carry … |
+| `practical_context` | string | no | Encountered in the Build stage, between customer strategy and experience design and the live acquisition activity of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

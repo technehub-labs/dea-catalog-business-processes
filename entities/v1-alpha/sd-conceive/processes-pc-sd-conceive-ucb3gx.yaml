@@ -140,3 +140,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Conceive'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Purpose and Ambition Conception'
+plain_language_description: 'This context covers the Strategy & Direction area at the Conceive stage: the deepest front-end thinking about the enterprise''s trajectory. It frames purpose and ambition, commits strategic intent, sets the horizons the enterprise aims at, and develops corporate strategy within its authorized mandate. Option design and plan building come later.'
+business_purpose: 'To decide, deliberately and early, what the enterprise is aiming at and how far it intends to go over each horizon.'
+practical_context: 'Encountered at founding, at generational inflection points, and in long-horizon reviews when the question of direction itself is open.'
+worked_example:
+  agent_type: human
+  narrative: 'Facing a generational shift in its market, the Strategy & Direction Process Owner leads the framing of purpose and ambition, commits a strategic intent for the decade, and bounds the horizons the enterprise will plan against.'

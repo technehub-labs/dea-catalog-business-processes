@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-r
 
 This is a **Process Group** (level L1), named **Regulated Workforce Wind-Down**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Workforce Retirement** (`processes:pc-ao-retire-3kqe9c`). Its canonical ID is `processes:group-ao-retire-jspuzz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family handles the statutory exit of workforce populations when a statutory mass-layoff trigger or a regulated wind-down obligation bites. Its processes issue advance statutory notice, consult workers' representatives, apply fair-selection criteria, settle severance and benefits continuation with liabilities recorded, and route transition supports such as retraining, health-care continuation and outplacement to affected staff.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So that large-scale workforce exits meet every statutory notice, consultation and severance obligation while affected people are treated fairly and liabilities are properly recorded and funded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a reduction crosses a statutory mass-layoff threshold or a regulated wind-down is authorized — not for routine individual offboarding, which sits elsewhere.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A plant closure crosses the statutory threshold, so the Agency & Organization Process Owner's team serves the required 60-day notice, opens consultation with the workers' representatives, applies the agreed fair-selection criteria, records severance liabilities, and books affected employees onto retraining and outplacement support.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ benefits continuation, transition supports).
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Workforce Wind-Down |
+| `plain_language_description` | string | no | This family handles the statutory exit of workforce populations when a statutory mass-layoff trigger or a regulated … |
+| `business_purpose` | string | no | So that large-scale workforce exits meet every statutory notice, consultation and severance obligation while affected … |
+| `practical_context` | string | no | Encountered when a reduction crosses a statutory mass-layoff threshold or a regulated wind-down is authorized — not for … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

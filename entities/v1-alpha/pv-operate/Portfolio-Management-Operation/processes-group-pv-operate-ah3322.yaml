@@ -121,3 +121,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Product Portfolio Operation'
+plain_language_description: 'This family runs the live portfolio day to day. Its processes operate the product catalogue with accurate listings, manage portfolio performance with rebalancing decisions, and manage each proposition''s lifecycle from launch through gate decisions to retirement.'
+business_purpose: 'So the catalogue stays accurate, portfolio performance is managed against intent, and every proposition moves through its lifecycle with deliberate gate decisions.'
+practical_context: 'Encountered continuously in the Operate stage: catalogue updates, performance tracking, rebalancing and lifecycle gates across the live portfolio.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Each week the Product & Value Process Owner''s team updates catalogue listings on the commerce platform, reviews portfolio performance against targets, rebalances attention toward the rising proposition, and takes the lifecycle gate decision that moves one offering from growth to maturity management.'

@@ -105,3 +105,18 @@ links:
   href: discovery/v1-alpha/product-and-value-activate.yaml
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Launching Propositions into Service'
+plain_language_description: 'This family moves validated propositions into live operational service. Its processes validate transition readiness, carry out the service transition, and secure operational acceptance so the launch is completed with evidence on record.'
+business_purpose: 'So propositions reach customers only after readiness is validated and acceptance recorded — a controlled launch rather than a hopeful one.'
+practical_context: 'Encountered at launch time, between development and market-readiness build and the steady-state running of the portfolio.'
+worked_example:
+  agent_type: human
+  narrative: 'A new service variant has finished development. The Product & Value Process Owner validates the transition readiness checklist, runs the cutover into operational service, and obtains the operational acceptance signature before the launch is declared complete.'

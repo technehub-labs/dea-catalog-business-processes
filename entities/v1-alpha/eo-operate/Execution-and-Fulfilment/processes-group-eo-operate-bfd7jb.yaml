@@ -210,3 +210,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Execution and Fulfilment'
+plain_language_description: 'This family is the enterprise''s daily engine room. Its processes run production lines, deliver services to customers, operate logistics, warehouses and inventory, keep quality control running, operate the technology platforms and facilities, maintain assets, and execute the procurement cycle.'
+business_purpose: 'So customer orders are fulfilled and services delivered to plan, with quality, platforms, facilities and assets kept running and supplied.'
+practical_context: 'Encountered every operating day — production shifts, delivery runs, warehouse operations, platform monitoring, maintenance windows and purchasing cycles across the Operate stage.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Over one trading day, the Enablement & Operations Process Owner''s teams run the production line, pick and ship customer orders through the warehouse, monitor the technology platforms, complete a preventive maintenance window, and raise purchase orders — with quality control sampling output along the way.'

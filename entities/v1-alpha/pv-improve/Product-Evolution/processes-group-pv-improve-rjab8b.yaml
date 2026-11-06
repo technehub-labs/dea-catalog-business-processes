@@ -120,3 +120,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Product Evolution'
+plain_language_description: 'This family keeps the portfolio competitive over time. Its processes conduct proposition performance reviews, evolve products and services with bounded enhancements, and rationalize the portfolio with retire-or-pivot decisions.'
+business_purpose: 'So evidence from the market feeds evolution: propositions improved, products evolved deliberately, and weak offerings retired or pivoted.'
+practical_context: 'Encountered in the Improve stage: performance reviews each period, enhancement waves, and portfolio rationalization as the market shifts.'
+worked_example:
+  agent_type: human
+  narrative: 'Mid-year, the Product & Value Process Owner conducts the proposition performance review, commits bounded enhancements to the two strongest products, and rationalizes the tail of the portfolio — one line pivots, another is queued for retirement.'

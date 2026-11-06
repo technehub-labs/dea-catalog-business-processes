@@ -105,3 +105,18 @@ links:
   href: discovery/v1-alpha/product-and-value-retire.yaml
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Withdrawing Propositions from Service'
+plain_language_description: 'This family takes propositions out of live service in a controlled way. Its processes intake the retirement decision and plan the withdrawal, transition stakeholders off the retiring service, and remove operational reliance so nothing depends on it any more.'
+business_purpose: 'So retirement is deliberate rather than accidental: planned withdrawal, stakeholders moved on, and reliance removed with obligations tracked.'
+practical_context: 'Encountered when a proposition is withdrawn from the market — after the rationalization or lifecycle decision — ahead of asset-level decommissioning elsewhere.'
+worked_example:
+  agent_type: human
+  narrative: 'A legacy service is being retired. The Product & Value Process Owner plans the withdrawal, communicates with affected stakeholders, transitions customers to successor offerings, and confirms that operational reliance has been removed before the final switch-off date.'

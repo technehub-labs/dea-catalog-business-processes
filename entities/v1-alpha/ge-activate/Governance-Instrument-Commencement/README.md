@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-a
 
 This is a **Process Group** (level L1), named **Governance Instrument Commencement**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Activate. It belongs to `processes:pc-ge-activate-hxtfcv`. Its canonical ID is `processes:group-ge-activate-7d46tn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family moves adopted policies, mandates and charters from approved-but-dormant to in-force. Its processes verify that commencement conditions are met, promulgate the instruments so people know they apply, and confirm and record their effectiveness dates.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So obligations, rights and duties only attach once commencement conditions are verified, promulgation has happened, and effectiveness is recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a board adopts a new policy or charter with a commencement date, between adoption in the Build stage and day-to-day enforcement in the Operate stage.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The board approves a new delegation-of-authority charter effective next quarter. The Governance & Existence Process Owner's team verifies each commencement condition, promulgates the instrument across the enterprise, and records the effectiveness date — from which point the new authorities bind.
 
 ## 5. Header and Identity Table (generated)
 
@@ -66,6 +66,11 @@ confirmation).
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Bringing Governance Instruments into Force |
+| `plain_language_description` | string | no | This family moves adopted policies, mandates and charters from approved-but-dormant to in-force. Its processes verify … |
+| `business_purpose` | string | no | So obligations, rights and duties only attach once commencement conditions are verified, promulgation has happened, and … |
+| `practical_context` | string | no | Encountered when a board adopts a new policy or charter with a commencement date, between adoption in the Build stage … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-bu
 
 This is a **Process Context** (level L0), named **Customer Channel and Acquisition Build**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Build. Its canonical ID is `processes:pc-pr-build-a46hp7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the customer and demand area at the Build stage: constructing what will attract and win customers. It builds channel infrastructure, acquisition engines, marketing automation, and the demand-generation machinery. Framing the strategy beforehand and serving live customers afterwards belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To give the enterprise working channels and engines that generate qualified demand and bring customers in at sustainable cost.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered before launch and during growth pushes, between designed experiences and the first live campaign through the new channels.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Before the seasonal campaign, the Party & Relationship Process Owner accepts the new channel infrastructure, confirms the acquisition engine is producing qualified leads in test, and schedules the marketing automation go-live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -133,6 +133,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Customer Channel and Acquisition Build |
+| `plain_language_description` | string | no | This context covers the customer and demand area at the Build stage: constructing what will attract and win customers … |
+| `business_purpose` | string | no | To give the enterprise working channels and engines that generate qualified demand and bring customers in at … |
+| `practical_context` | string | no | Encountered before launch and during growth pushes, between designed experiences and the first live campaign through … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

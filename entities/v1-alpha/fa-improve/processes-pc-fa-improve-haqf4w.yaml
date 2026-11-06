@@ -102,3 +102,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Finance & Accounting x Improve'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Finance and Financial Control Improvement'
+plain_language_description: 'This context covers the Finance & Accounting area at the Improve stage: making the enterprise''s cost base, reporting, and controls stronger. It runs cost optimization reviews, improves reporting and disclosure quality, and strengthens financial controls where findings show weakness. Routine monthly close and reporting are the operating context''s work.'
+business_purpose: 'To reduce cost, sharpen reporting and disclosure, and close control gaps so the financial function improves cycle over cycle.'
+practical_context: 'Encountered after audit cycles, close post-mortems, or cost reviews — whenever findings or cost data indicate structural rather than operational fixes.'
+worked_example:
+  agent_type: human
+  narrative: 'After an audit flags a weak approval control, the Finance & Accounting Process Owner commissions a cost review across shared services, tightens the control design, and commits the reporting improvements for next quarter.'

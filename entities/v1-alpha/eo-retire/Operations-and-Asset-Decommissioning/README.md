@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-r
 
 This is a **Process Group** (level L1), named **Operations and Asset Decommissioning**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Retire. It belongs to `processes:pc-eo-retire-nw3ynf`. Its canonical ID is `processes:group-eo-retire-n9ge5c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family takes operational assets out of service in a controlled way. Its processes plan and approve the retirement, isolate and withdraw the asset, carry out decommissioning and disposal — including sanitizing any data it holds — and resolve residual value and leftover obligations.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So assets leave service safely and accountably, with disposal evidence, data sanitization and any residual value or obligations settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at end of life: approved retirement projects that withdraw plant, systems or facilities from service, distinct from routine maintenance or product withdrawal.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Retiring an old data centre hall, the Enablement & Operations Process Owner approves the retirement plan, engineers isolate the power and cooling, technicians sanitize the drives before disposal, and the team settles the residual lease obligations and books remaining scrap value.
 
 ## 5. Header and Identity Table (generated)
 
@@ -66,6 +66,11 @@ resolution).
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Operations and Asset Decommissioning |
+| `plain_language_description` | string | no | This family takes operational assets out of service in a controlled way. Its processes plan and approve the retirement … |
+| `business_purpose` | string | no | So assets leave service safely and accountably, with disposal evidence, data sanitization and any residual value or … |
+| `practical_context` | string | no | Encountered at end of life: approved retirement projects that withdraw plant, systems or facilities from service … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

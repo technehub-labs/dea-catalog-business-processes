@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 
 This is a **Process Group** (level L1), named **Strategic Plan Build**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Build. It belongs to `processes:pc-sd-build-gmzrrm`. Its canonical ID is `processes:group-sd-build-tnq4p6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family assembles the plan itself. Its processes build the strategic plan, construct the roadmap with sequenced initiatives, translate the designed strategic choices into concrete initiatives, and set the resource allocation priorities each initiative will live within.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So direction becomes a committed, versioned plan and roadmap — initiatives named, sequenced and resourced within the authorised envelope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Build stage, once strategic choices are designed, ahead of plan activation and the steering of execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the choices are designed, the Strategy & Direction Process Owner builds the strategic plan, sequences the roadmap initiatives, translates each choice into owned initiatives, and sets the resource allocation priorities the programme teams will work within.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Building the Strategic Plan and Roadmap |
+| `plain_language_description` | string | no | This family assembles the plan itself. Its processes build the strategic plan, construct the roadmap with sequenced … |
+| `business_purpose` | string | no | So direction becomes a committed, versioned plan and roadmap — initiatives named, sequenced and resourced within the … |
+| `practical_context` | string | no | Encountered in the Build stage, once strategic choices are designed, ahead of plan activation and the steering of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

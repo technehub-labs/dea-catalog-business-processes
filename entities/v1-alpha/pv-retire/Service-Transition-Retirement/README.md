@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 
 This is a **Process Group** (level L1), named **Service Transition Retirement**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Proposition Retirement and Service Withdrawal** (`processes:pc-pv-retire-eeck6d`). Its canonical ID is `processes:group-pv-retire-buqktk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family takes propositions out of live service in a controlled way. Its processes intake the retirement decision and plan the withdrawal, transition stakeholders off the retiring service, and remove operational reliance so nothing depends on it any more.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So retirement is deliberate rather than accidental: planned withdrawal, stakeholders moved on, and reliance removed with obligations tracked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a proposition is withdrawn from the market — after the rationalization or lifecycle decision — ahead of asset-level decommissioning elsewhere.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A legacy service is being retired. The Product & Value Process Owner plans the withdrawal, communicates with affected stakeholders, transitions customers to successor offerings, and confirms that operational reliance has been removed before the final switch-off date.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Withdrawing Propositions from Service |
+| `plain_language_description` | string | no | This family takes propositions out of live service in a controlled way. Its processes intake the retirement decision … |
+| `business_purpose` | string | no | So retirement is deliberate rather than accidental: planned withdrawal, stakeholders moved on, and reliance removed … |
+| `practical_context` | string | no | Encountered when a proposition is withdrawn from the market — after the rationalization or lifecycle decision — ahead … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

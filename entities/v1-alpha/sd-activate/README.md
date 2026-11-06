@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-ac
 
 This is a **Process Context** (level L0), named **Institutionalize Regulated Strategic Plan**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Activate. Its canonical ID is `processes:pc-sd-activate-ghaub8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Strategy & Direction area at the Activate stage for plans whose execution awaits formal supervisor acknowledgement. It completes the filing, secures the acknowledgement on record, preserves the filing receipt, launches the monitoring framework, and activates the communications plan. Building the plan beforehand and steering its execution afterwards are neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To make a board-approved plan genuinely binding and live — acknowledged, receipted, monitored, and communicated under continuing supervision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when an approved plan must pass supervisor review before execution begins, typically on multi-year planning rhythms or after supervisory engagement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the supervisor's acknowledgement received, the Strategy & Direction Process Owner files the receipt on the regulated record, switches on the monitoring indicators and early-warning measures, and activates the communications plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -124,6 +124,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Institutionalize Regulated Strategic Plan |
+| `plain_language_description` | string | no | This context covers the Strategy & Direction area at the Activate stage for plans whose execution awaits formal … |
+| `business_purpose` | string | no | To make a board-approved plan genuinely binding and live — acknowledged, receipted, monitored, and communicated under … |
+| `practical_context` | string | no | Encountered when an approved plan must pass supervisor review before execution begins, typically on multi-year planning … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

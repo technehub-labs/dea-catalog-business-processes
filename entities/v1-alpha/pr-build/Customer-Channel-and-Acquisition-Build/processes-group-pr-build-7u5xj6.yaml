@@ -116,3 +116,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Channel and Acquisition Build'
+plain_language_description: 'This family constructs the assets that will win customers. Its processes build the channel infrastructure, stand up the acquisition engine, implement marketing automation, and build the demand-generation machinery that keeps interest flowing.'
+business_purpose: 'So the enterprise owns working channels, acquisition and demand-generation engines before it needs them, ready to carry customers into live operation.'
+practical_context: 'Encountered in the Build stage, between customer strategy and experience design and the live acquisition activity of steady-state operation.'
+worked_example:
+  agent_type: mixed
+  narrative: 'Ahead of launch, the Party & Relationship Process Owner''s programme builds the channel infrastructure, wires marketing automation into the acquisition engine, and tunes the demand-generation programmes so qualified leads will flow when the doors open.'

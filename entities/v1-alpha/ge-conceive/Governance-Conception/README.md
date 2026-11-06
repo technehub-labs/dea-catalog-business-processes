@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-c
 
 This is a **Process Group** (level L1), named **Governance Conception**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Strategy and Governance Conception** (`processes:pc-ge-conceive-b5xwpd`). Its canonical ID is `processes:group-ge-conceive-y93bwr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family frames the enterprise's founding authority. Its processes initiate the policy and charter direction, articulate the board's mandate, and set the direction for risk and control — the constitutional thinking that authorizes without directing strategy.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To settle, at the very front end, what the enterprise may exist as and do: mandate, policy posture, charter direction and the frame strategy will later direct within.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, when a founding team or board frames the constitutional basis before any governance body is established.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At incorporation, the Governance & Existence Process Owner convenes the founders: the policy and charter direction is initiated, the board mandate is articulated, and the risk framework direction is set — the authorised frame the new enterprise will operate inside.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ Strategy & Direction directs within the authorized frame").
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Framing the Mandate and Policy Direction |
+| `plain_language_description` | string | no | This family frames the enterprise's founding authority. Its processes initiate the policy and charter direction … |
+| `business_purpose` | string | no | To settle, at the very front end, what the enterprise may exist as and do: mandate, policy posture, charter direction … |
+| `practical_context` | string | no | Encountered in the Conceive stage, when a founding team or board frames the constitutional basis before any governance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

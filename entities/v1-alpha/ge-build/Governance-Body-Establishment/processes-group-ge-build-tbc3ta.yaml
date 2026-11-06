@@ -137,3 +137,18 @@ links:
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Body Establishment'
+plain_language_description: 'This family constructs the working machinery of governance. Its processes establish boards and committees, codify charters and policies into usable artefacts, document standards and procedures, and stand up the risk and control apparatus that keeps the enterprise honest.'
+business_purpose: 'So the enterprise has operating bodies, charters, policies and controls — not just intentions — when it needs to direct and constrain itself.'
+practical_context: 'Encountered in the Build stage, when a new enterprise, business line or oversight regime needs its governance bodies and policy artefacts stood up.'
+worked_example:
+  agent_type: human
+  narrative: 'Spinning off a new subsidiary, the Governance & Existence Process Owner establishes its board and committees, codifies the charter and first policy set, documents the operating standards, and stands up the risk and control apparatus before day one of trading.'

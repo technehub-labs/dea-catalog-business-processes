@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-c
 
 This is a **Process Group** (level L1), named **Organization and Agent Conception**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Agent Capacity and Organization Conception** (`processes:pc-ao-conceive-wtq4cr`). Its canonical ID is `processes:group-ao-conceive-bwjhgd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the front-end thinking family for the enterprise's organization and its agent capacity. It frames the agent capacity strategy, sketches the organization model as a durable pattern of roles and authority, works out the future workforce-and-agent mix across human, artificial and hybrid options, and captures what the agents of the future must be capable of.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To decide, before anything is built, how much agent capacity the enterprise needs and how people, artificial agents and structures should combine to direct its agency.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered early in the Conceive stage, when leadership is setting direction for the organization before design and recruitment follow.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Facing rapid growth, the Agency & Organization Process Owner convenes the capacity review: the team frames the agent capacity strategy, sketches the organization model, and decides the future blend of human staff, artificial agents and contractors — recording the capability each future agent must have.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ directed.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Organization and Agent Conception |
+| `plain_language_description` | string | no | This is the front-end thinking family for the enterprise's organization and its agent capacity. It frames the agent … |
+| `business_purpose` | string | no | To decide, before anything is built, how much agent capacity the enterprise needs and how people, artificial agents and … |
+| `practical_context` | string | no | Encountered early in the Conceive stage, when leadership is setting direction for the organization before design and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

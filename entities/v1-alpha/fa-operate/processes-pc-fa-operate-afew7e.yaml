@@ -123,3 +123,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Finance & Accounting x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Accounting, Reporting, and Treasury Operation'
+plain_language_description: 'This context covers the Finance & Accounting area at the Operate stage: the everyday recording and reporting of the enterprise''s money. It runs the ledger, payables and receivables, treasury activity, tax obligations, the period close, planning and analysis, and outward reporting. Purchasing transactions themselves are executed in the operations domain; their monetary recording lands here.'
+business_purpose: 'To keep an accurate, timely, compliant monetary record and produce the statements and insight the enterprise and its stakeholders rely on.'
+practical_context: 'Encountered daily in payments and postings, monthly at close, quarterly in reporting, and annually in disclosures and tax filings.'
+worked_example:
+  agent_type: human
+  narrative: 'During the monthly close, the Finance & Accounting Process Owner clears reconciliation breaks, reviews treasury positions against policy, and signs the reporting pack before it goes to the governance cycle.'

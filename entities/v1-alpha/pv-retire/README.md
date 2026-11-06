@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-re
 
 This is a **Process Context** (level L0), named **Proposition Retirement and Service Withdrawal**, currently **candidate (yellow)**. It is domain `pv`, lifecycle stage Retire. Its canonical ID is `processes:pc-pv-retire-eeck6d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Product & Value area at the Retire stage: bringing propositions out of service in a controlled way. It takes in the retirement decision, plans the withdrawal, transitions stakeholders off the service, removes operational reliance, and routes residual obligations onward. Decommissioning physical assets is the operations domain's retirement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To withdraw offerings from the market deliberately — stakeholders moved, reliance removed, and every residual obligation routed to its owner.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at end-of-life decisions and sunset plans, when a proposition stops earning its place and must leave service without stranding customers.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Sunsetting a legacy service tier, the Product & Value Process Owner approves the withdrawal plan, schedules stakeholder transition communications, confirms operational reliance is removed, and routes the residual obligations to the operating teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -109,6 +109,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Proposition Sunset and Service Withdrawal |
+| `plain_language_description` | string | no | This context covers the Product & Value area at the Retire stage: bringing propositions out of service in a controlled … |
+| `business_purpose` | string | no | To withdraw offerings from the market deliberately — stakeholders moved, reliance removed, and every residual … |
+| `practical_context` | string | no | Encountered at end-of-life decisions and sunset plans, when a proposition stops earning its place and must leave … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

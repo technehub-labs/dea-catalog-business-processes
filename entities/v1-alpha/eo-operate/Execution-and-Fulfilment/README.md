@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 
 This is a **Process Group** (level L1), named **Execution and Fulfilment**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execution, Technology, and Asset Operation** (`processes:pc-eo-operate-ydqb96`). Its canonical ID is `processes:group-eo-operate-bfd7jb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family is the enterprise's daily engine room. Its processes run production lines, deliver services to customers, operate logistics, warehouses and inventory, keep quality control running, operate the technology platforms and facilities, maintain assets, and execute the procurement cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So customer orders are fulfilled and services delivered to plan, with quality, platforms, facilities and assets kept running and supplied.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered every operating day — production shifts, delivery runs, warehouse operations, platform monitoring, maintenance windows and purchasing cycles across the Operate stage.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person working with a system):* Over one trading day, the Enablement & Operations Process Owner's teams run the production line, pick and ship customer orders through the warehouse, monitor the technology platforms, complete a preventive maintenance window, and raise purchase orders — with quality control sampling output along the way.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Execution and Fulfilment |
+| `plain_language_description` | string | no | This family is the enterprise's daily engine room. Its processes run production lines, deliver services to customers … |
+| `business_purpose` | string | no | So customer orders are fulfilled and services delivered to plan, with quality, platforms, facilities and assets kept … |
+| `practical_context` | string | no | Encountered every operating day — production shifts, delivery runs, warehouse operations, platform monitoring … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

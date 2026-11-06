@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-de
 
 This is a **Process Context** (level L0), named **Financial Planning and Accounting Architecture Design**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Design. Its canonical ID is `processes:pc-fa-design-4j8evh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Finance & Accounting area at the Design stage: drawing the architecture of the enterprise's money handling. It designs the chart of accounts, the cost allocation model, the structure of financial plans, and the financial controls. Standing up the systems and running the ledger belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To define exactly how money is categorized, allocated, planned, and controlled, giving every later transaction a consistent home.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when finance operations are first designed, or during redesigns after mergers, new reporting needs, or control weaknesses.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Finance & Accounting Process Owner signs off a refreshed chart of accounts, agrees the cost allocation rules between divisions, and approves the design of the approval and reconciliation controls.
 
 ## 5. Header and Identity Table (generated)
 
@@ -187,6 +187,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[3] | no | array of 3 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Financial Planning and Accounting Architecture Design |
+| `plain_language_description` | string | no | This context covers the Finance & Accounting area at the Design stage: drawing the architecture of the enterprise's … |
+| `business_purpose` | string | no | To define exactly how money is categorized, allocated, planned, and controlled, giving every later transaction a … |
+| `practical_context` | string | no | Encountered when finance operations are first designed, or during redesigns after mergers, new reporting needs, or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

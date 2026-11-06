@@ -116,3 +116,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Organization and Agent Topology Design'
+plain_language_description: 'This context covers the Agency & Organization area at the Design stage: turning capacity intent into concrete structure. It produces the organization design, the catalogue of roles, the competency framework, and the topology showing how human and automated agents fit together, along with the chains of authority between them. Building the teams themselves is the next context along.'
+business_purpose: 'To give the enterprise a workable blueprint of roles, competencies, and agent placement with clear authority, before any capacity is acquired.'
+practical_context: 'Encountered when a new structure is being prepared or an existing one is redrawn — typically after conception work and before recruitment or provisioning begins.'
+worked_example:
+  agent_type: human
+  narrative: 'The Agency & Organization Process Owner reviews the draft role catalogue and reporting lines, challenges a duplicated approval step, and approves the topology that shows where automated agents sit alongside each team.'

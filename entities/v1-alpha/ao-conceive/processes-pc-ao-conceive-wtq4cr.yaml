@@ -117,3 +117,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Agency & Organization x Conceive'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent Capacity and Organization Conception'
+plain_language_description: 'This context covers the Agency & Organization area at the Conceive stage: deciding in principle what working capacity the enterprise will need. It frames capacity strategy, sketches the organization model, and settles the mix between people, automated agents, and hybrid arrangements. Nobody is hired and no structure is drawn in detail here; those follow in later stages.'
+business_purpose: 'To set the forward view of workforce and agent capacity so acquisition and design work starts from a deliberate, substrate-neutral intent.'
+practical_context: 'Encountered ahead of planning cycles, major growth decisions, or reorganizations, when leadership asks what kind of working capacity the enterprise needs next.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the annual planning round, the Agency & Organization Process Owner frames the capacity question with leadership: which work suits people, which suits automated agents, and how the mix should shift over the next horizon.'

@@ -135,3 +135,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Retire'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Enterprise Relationship Close-Out'
+plain_language_description: 'This context covers the Party & Relationship area at the Retire stage: ending relationships in good order. It closes out contracts and settles terminations, offboards the party across every role — customer, supplier, or partner — and resolves residual obligations, records, and rights, evidencing any regulated offboarding duties such as erasure. Starting relationships is the activation context''s job.'
+business_purpose: 'To finish relationships cleanly: obligations settled, records and rights resolved, and every regulated offboarding duty evidenced.'
+practical_context: 'Encountered at contract end, termination, or a regulated offboarding event — a case-by-case stage that follows an approved close-out plan.'
+worked_example:
+  agent_type: human
+  narrative: 'When a supplier contract terminates, the Party & Relationship Process Owner confirms final settlements, resolves the record and access rights, evidences the offboarding duties, and closes the relationship file.'

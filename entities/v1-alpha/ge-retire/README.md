@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-re
 
 This is a **Process Context** (level L0), named **Governance Unwind**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Retire. Its canonical ID is `processes:pc-ge-retire-kndw6x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Retire stage, and only when an authority compels it: winding down governance bodies, mandates, and instruments under a regulator or court order. It reduces bodies to wind-down quorum, sunsets policy instruments, files the dissolution paperwork, assigns custodianship of retained records, and surrenders authorizations. Voluntary wind-downs chosen internally are handled as improvement work instead.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To dissolve a compelled governance regime lawfully and traceably, with filings made, records kept safe, and authorities surrendered as ordered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered only on receipt of a mandatory dissolution, revocation, or wind-down order — a rare, script-driven stage with the external authority watching.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* On receiving the court's dissolution order, the Governance & Existence Process Owner reduces the bodies to wind-down quorum, sunsets the policy instruments, files the dissolution certificate, and assigns retained-records custodianship before releasing the authorizations.
 
 ## 5. Header and Identity Table (generated)
 
@@ -116,6 +116,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[1] | no | array of 1 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Governance Unwind |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Retire stage, and only when an authority compels it: winding … |
+| `business_purpose` | string | no | To dissolve a compelled governance regime lawfully and traceably, with filings made, records kept safe, and authorities … |
+| `practical_context` | string | no | Encountered only on receipt of a mandatory dissolution, revocation, or wind-down order — a rare, script-driven stage … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

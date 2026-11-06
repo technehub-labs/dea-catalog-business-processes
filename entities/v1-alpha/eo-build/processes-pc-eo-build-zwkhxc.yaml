@@ -122,3 +122,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Build'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Enablement Build'
+plain_language_description: 'This context covers the Enablement & Operations area at the Build stage: physically constructing the enterprise''s ability to produce and deliver. It stands up production lines, builds delivery capability and the logistics network, and acquires and installs technology assets and facilities. Deciding what to build is conceived and designed elsewhere; here the assets actually take shape.'
+business_purpose: 'To create the working engine of the enterprise — lines, delivery routes, systems, and sites — ready for steady operation.'
+practical_context: 'Encountered during set-up of a new operation, capacity expansion, or site and platform rollout, between approved designs and day-one running.'
+worked_example:
+  agent_type: human
+  narrative: 'The Enablement & Operations Process Owner walks the new production line before acceptance, confirms installation of the technology assets, and signs off facility provisioning so the site can hand over to the operating teams.'

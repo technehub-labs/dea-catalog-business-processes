@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 
 This is a **Process Group** (level L1), named **Strategic Adaptation**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Improve. It belongs to `processes:pc-sd-improve-ft9k5f`. Its canonical ID is `processes:group-sd-improve-vdz4xp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family adapts direction as reality teaches. Its processes adapt the strategic direction on evidence, refresh objectives and targets when they drift from relevance, and review strategy effectiveness with findings committed for the next cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So strategy stays alive: direction adjusted on evidence, objectives refreshed, and effectiveness reviewed rather than assumed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Improve stage: annual strategy reviews, mid-course corrections after environmental shifts, and target refreshes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a market shock, the Strategy & Direction Process Owner reviews strategy effectiveness, adapts the strategic direction toward the changed landscape, refreshes the objectives and targets, and commits the findings for the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Strategic Adaptation |
+| `plain_language_description` | string | no | This family adapts direction as reality teaches. Its processes adapt the strategic direction on evidence, refresh … |
+| `business_purpose` | string | no | So strategy stays alive: direction adjusted on evidence, objectives refreshed, and effectiveness reviewed rather than … |
+| `practical_context` | string | no | Encountered in the Improve stage: annual strategy reviews, mid-course corrections after environmental shifts, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

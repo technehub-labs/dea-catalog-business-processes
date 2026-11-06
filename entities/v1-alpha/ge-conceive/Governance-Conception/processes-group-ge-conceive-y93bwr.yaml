@@ -171,3 +171,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Framing the Mandate and Policy Direction'
+plain_language_description: 'This family frames the enterprise''s founding authority. Its processes initiate the policy and charter direction, articulate the board''s mandate, and set the direction for risk and control — the constitutional thinking that authorizes without directing strategy.'
+business_purpose: 'To settle, at the very front end, what the enterprise may exist as and do: mandate, policy posture, charter direction and the frame strategy will later direct within.'
+practical_context: 'Encountered in the Conceive stage, when a founding team or board frames the constitutional basis before any governance body is established.'
+worked_example:
+  agent_type: human
+  narrative: 'At incorporation, the Governance & Existence Process Owner convenes the founders: the policy and charter direction is initiated, the board mandate is articulated, and the risk framework direction is set — the authorised frame the new enterprise will operate inside.'

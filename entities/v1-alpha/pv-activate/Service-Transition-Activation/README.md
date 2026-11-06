@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-a
 
 This is a **Process Group** (level L1), named **Service Transition Activation**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Proposition Launch and Service Transition** (`processes:pc-pv-activate-f7kne7`). Its canonical ID is `processes:group-pv-activate-e7fdrk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family moves validated propositions into live operational service. Its processes validate transition readiness, carry out the service transition, and secure operational acceptance so the launch is completed with evidence on record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So propositions reach customers only after readiness is validated and acceptance recorded — a controlled launch rather than a hopeful one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at launch time, between development and market-readiness build and the steady-state running of the portfolio.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A new service variant has finished development. The Product & Value Process Owner validates the transition readiness checklist, runs the cutover into operational service, and obtains the operational acceptance signature before the launch is declared complete.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Launching Propositions into Service |
+| `plain_language_description` | string | no | This family moves validated propositions into live operational service. Its processes validate transition readiness … |
+| `business_purpose` | string | no | So propositions reach customers only after readiness is validated and acceptance recorded — a controlled launch rather … |
+| `practical_context` | string | no | Encountered at launch time, between development and market-readiness build and the steady-state running of the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

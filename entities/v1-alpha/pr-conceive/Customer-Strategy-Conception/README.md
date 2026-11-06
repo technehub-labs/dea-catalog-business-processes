@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-c
 
 This is a **Process Group** (level L1), named **Customer Strategy Conception**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Conceive. It belongs to `processes:pc-pr-conceive-6xztsq`. Its canonical ID is `processes:group-pr-conceive-rv32m4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family frames the enterprise's exchange with its customers before anything is built. Its processes develop the customer strategy, build market intelligence, segment the market, and commit to a testable demand thesis — deciding who the enterprise will serve and on what value exchange.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So the enterprise commits to served segments and a demand thesis deliberately, giving every later channel, journey and campaign a defensible basis.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered in the Conceive stage, when leadership frames who to serve and why, ahead of experience design and channel build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Entering a new region, the Party & Relationship Process Owner develops the customer strategy with market intelligence, segments the market, and commits the demand thesis — naming the segments to serve and the value exchange — before channels are designed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Customer Strategy Conception |
+| `plain_language_description` | string | no | This family frames the enterprise's exchange with its customers before anything is built. Its processes develop the … |
+| `business_purpose` | string | no | So the enterprise commits to served segments and a demand thesis deliberately, giving every later channel, journey and … |
+| `practical_context` | string | no | Encountered in the Conceive stage, when leadership frames who to serve and why, ahead of experience design and channel … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

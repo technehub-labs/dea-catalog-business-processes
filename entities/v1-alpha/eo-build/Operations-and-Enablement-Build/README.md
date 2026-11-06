@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 
 This is a **Process Group** (level L1), named **Operations and Enablement Build**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Build. It belongs to `processes:pc-eo-build-zwkhxc`. Its canonical ID is `processes:group-eo-build-7pur27`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family physically assembles the enterprise's execution engine. Its processes stand up production lines and commission them to trial rate, build delivery capability and the logistics network, acquire and install technology assets, and provision the facilities everything runs from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To create the production, delivery, logistics, technology and facility foundations that day-to-day operations will later run on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met during the Build stage, when major programmes are standing up new lines, networks, systems and sites ahead of go-live.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Launching a new product line, the Enablement & Operations Process Owner commissions the production line to trial rate, extends the logistics network with a new regional hub, takes delivery of installed technology assets, and fits out the facility — handing each element to operations as it completes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `plain_language_name` | string | no | Operations and Enablement Build |
+| `plain_language_description` | string | no | This family physically assembles the enterprise's execution engine. Its processes stand up production lines and … |
+| `business_purpose` | string | no | To create the production, delivery, logistics, technology and facility foundations that day-to-day operations will … |
+| `practical_context` | string | no | Met during the Build stage, when major programmes are standing up new lines, networks, systems and sites ahead of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

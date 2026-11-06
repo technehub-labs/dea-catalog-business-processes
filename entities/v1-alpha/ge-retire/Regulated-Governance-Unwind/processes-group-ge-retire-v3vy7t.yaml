@@ -140,3 +140,18 @@ evidence:
     '
   strength: E4
   reference: change-requests/CR-BP-78-ge-retire-admission.md
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Regulated Governance Unwind'
+plain_language_description: 'This family winds down an enterprise''s governance regime when a regulator or court so orders. Its processes act on the dissolution or wind-down order, reduce the governing body to a wind-down quorum, sunset the charters, mandates and delegations, make the statutory dissolution filings, assign retained-records custodianship for the required period, and surrender the authorisation or permission.'
+business_purpose: 'So the governance regime ends lawfully and traceably: bodies reduced, instruments sunset, filings made, records entrusted, and the authorisation formally surrendered.'
+practical_context: 'Encountered only under regulator or court mandate — a dissolution order, cease-and-desist or receivership — not for voluntary internal sunsets.'
+worked_example:
+  agent_type: human
+  narrative: 'A court orders a nonprofit''s dissolution. The Governance & Existence Process Owner''s team reduces the board to a wind-down quorum, sunsets the charters and delegations, files the statutory dissolution paperwork with the state and attorney-general, assigns retained-records custody, and surrenders the tax-exempt permission.'

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-a
 
 This is a **Process Group** (level L1), named **Regulated Operations Activation**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Activate Operations Capability** (`processes:pc-eo-activate-xdfscw`). Its canonical ID is `processes:group-eo-activate-bnmwuu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This family takes an operations capability that the regulator has authorized and makes it live. Its processes confirm the authorization or certification is in place, assemble readiness evidence such as supervised-test records and operations manuals, switch on operational controls for incidents, capacity, security and compliance, and activate notification to the continuing supervisor, preserving the entry on the regulated operations record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+So that nothing serves customers live until the regulator's authorization, readiness evidence, manuals and operational controls are all in place under continuing supervisory oversight.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at the moment a regulated service — an airline, a payments institution, a certified production site — is cleared to go live, between build and configuration and steady-state running.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A payment institution receives its authorization letter. The Enablement & Operations Process Owner's team checks the certification, files supervised-test evidence, brings the incident and compliance controls live, notifies the continuing supervisor, and records the go-live on the regulated operations record before the first customer payment is processed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -64,6 +64,11 @@ steady-state operation.
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
+| `plain_language_name` | string | no | Regulated Operations Activation |
+| `plain_language_description` | string | no | This family takes an operations capability that the regulator has authorized and makes it live. Its processes confirm … |
+| `business_purpose` | string | no | So that nothing serves customers live until the regulator's authorization, readiness evidence, manuals and operational … |
+| `practical_context` | string | no | Encountered at the moment a regulated service — an airline, a payments institution, a certified production site — is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

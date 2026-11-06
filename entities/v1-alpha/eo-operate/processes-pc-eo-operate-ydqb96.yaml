@@ -134,3 +134,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Enablement & Operations x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Execution, Technology, and Asset Operation'
+plain_language_description: 'This context covers the Enablement & Operations area at the Operate stage: running the enterprise''s execution engine day to day. It covers production and service delivery, logistics and warehousing with stock control, the technology platforms, facility upkeep and asset maintenance, and the purchasing cycle. Improving the engine rather than running it is handled in the improvement context.'
+business_purpose: 'To deliver what the enterprise promises, on time and to standard, by keeping every operational asset and platform running as planned.'
+practical_context: 'Encountered continuously — every production shift, delivery run, stock count, platform incident, and maintenance window across the operating calendar.'
+worked_example:
+  agent_type: human
+  narrative: 'When a supply delay threatens the week''s schedule, the Enablement & Operations Process Owner rebalances inventory between warehouses, approves an expedited purchase, and confirms the maintenance window will not collide with peak demand.'

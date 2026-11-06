@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-bu
 
 This is a **Process Context** (level L0), named **Governance Body Establishment**, currently **candidate (yellow)**. It is domain `ge`, lifecycle stage Build. Its canonical ID is `processes:pc-ge-build-52hjrc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Governance & Existence area at the Build stage: standing up the working organs of governance. It establishes boards and committees, codifies their charters, and constructs the policy artefacts and standards they will use. Framing the direction beforehand and running the bodies afterwards belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To create the actual bodies, charters, and policy instruments through which the enterprise will be directed and controlled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at enterprise formation, when new oversight bodies are created, or when the policy set is being materially constructed or rebuilt.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Forming a new risk committee, the Governance & Existence Process Owner confirms membership appointments, finalizes the committee's charter wording, and publishes the supporting policy artefacts ahead of its first meeting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Governance Body Establishment |
+| `plain_language_description` | string | no | This context covers the Governance & Existence area at the Build stage: standing up the working organs of governance … |
+| `business_purpose` | string | no | To create the actual bodies, charters, and policy instruments through which the enterprise will be directed and … |
+| `practical_context` | string | no | Encountered at enterprise formation, when new oversight bodies are created, or when the policy set is being materially … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

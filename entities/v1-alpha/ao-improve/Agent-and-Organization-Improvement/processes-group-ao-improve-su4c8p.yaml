@@ -153,3 +153,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Agent and Organization Improvement'
+plain_language_description: 'This family strengthens the workforce and the organization that supports it. Its processes run agent and organization development, review engagement and alignment, analyse where capability gaps hold the enterprise back, plan structural reorganizations when structure itself is the problem, and lift the capability of the regulated workforce.'
+business_purpose: 'To keep the enterprise''s agents — people and artificial alike — and its structures improving on evidence rather than drifting.'
+practical_context: 'Encountered in the Improve stage: development cycles, engagement surveys, capability reviews and reorganization projects that follow operating experience.'
+worked_example:
+  agent_type: mixed
+  narrative: 'After a rough year, the Agency & Organization Process Owner commissions a capability gap analysis; the team reviews engagement and alignment, schedules fine-tuning for the underperforming artificial agents and coaching for people teams, and sequences a reorganization with a managed transition.'

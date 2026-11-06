@@ -111,3 +111,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Party & Relationship x Operate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Customer Relationship Operations'
+plain_language_description: 'This context covers the customer and demand area at the Operate stage: the everyday care of active customer relationships. It manages accounts, resolves escalations within agreed service levels, coordinates renewals, runs win-back coordination, and allocates attention across the portfolio. Winning customers initially and improving the relationship practice overall sit in neighboring contexts.'
+business_purpose: 'To sustain active relationships — resolving problems fast, renewing cleanly, and spending attention where the portfolio needs it most.'
+practical_context: 'Encountered continuously: account reviews, escalation calls, renewal windows approaching, and portfolio reallocation decisions through the year.'
+worked_example:
+  agent_type: human
+  narrative: 'An escalated account threatens to lapse at renewal. The Party & Relationship Process Owner takes the call personally, agrees the remediation, coordinates the renewal with minimal leakage, and logs the portfolio lesson.'

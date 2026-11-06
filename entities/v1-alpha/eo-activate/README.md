@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-ac
 
 This is a **Process Context** (level L0), named **Activate Operations Capability**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Activate. Its canonical ID is `processes:pc-eo-activate-xdfscw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Enablement & Operations area at the Activate stage for capabilities whose live service needs formal regulator-issued authorization. It confirms the authorization is on record, brings operating manuals and runbooks into service, switches operational controls on, and notifies the continuing supervisor. Construction of the capability beforehand and its steady running afterwards belong to neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To carry an authorized operations capability across the final step into live service with evidence, controls, and oversight all in place.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at go-live for a regulated facility, line, or service — after authorization is granted but before the first live operational day.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the authorization certificate received, the Enablement & Operations Process Owner checks the readiness evidence, brings the runbooks into service, confirms the incident and capacity controls are active, notifies the continuing supervisor, and has the activation entered on the regulated operations record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -124,6 +124,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Activate Operations Capability |
+| `plain_language_description` | string | no | This context covers the Enablement & Operations area at the Activate stage for capabilities whose live service needs … |
+| `business_purpose` | string | no | To carry an authorized operations capability across the final step into live service with evidence, controls, and … |
+| `practical_context` | string | no | Encountered at go-live for a regulated facility, line, or service — after authorization is granted but before the first … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

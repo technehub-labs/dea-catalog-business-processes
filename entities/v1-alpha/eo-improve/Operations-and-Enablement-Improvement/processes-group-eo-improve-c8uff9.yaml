@@ -151,3 +151,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Operations and Enablement Improvement'
+plain_language_description: 'This family makes the execution engine better year after year. Its processes review operations performance, optimize logistics and asset utilization, run lean and six sigma improvement programmes, and improve the technology platforms the enterprise depends on.'
+business_purpose: 'To lift throughput, cost and reliability on evidence, so operations performance, logistics, assets and platforms keep improving rather than degrading.'
+practical_context: 'Encountered in the Improve stage: performance reviews, optimization projects, lean programmes and platform upgrades that follow each operating period.'
+worked_example:
+  agent_type: human
+  narrative: 'After a quarter of missed throughput targets, the Enablement & Operations Process Owner orders a performance review; the team runs a lean improvement programme on the bottleneck line, re-plans logistics routing, rebalances asset utilization and schedules the next platform upgrade.'

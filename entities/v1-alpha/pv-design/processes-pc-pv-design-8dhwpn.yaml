@@ -115,3 +115,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Product & Value x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Proposition and Packaging Design'
+plain_language_description: 'This context covers the Product & Value area at the Design stage: giving chosen propositions their concrete shape. It designs the propositions themselves, settles packaging and configuration, plans innovation experiments, and lays out the proposition architecture for the portfolio. Development and delivery belong to neighboring contexts.'
+business_purpose: 'To convert proposition theses into precise designs — packaging, configuration, and experiments — that development can build and test.'
+practical_context: 'Encountered after conception commits a thesis and before development starts: proposition workshops, packaging decisions, and experiment plans.'
+worked_example:
+  agent_type: human
+  narrative: 'The Product & Value Process Owner compares three packaging configurations, commits one design for the launch proposition, and approves an innovation experiment to test a bundled variant.'

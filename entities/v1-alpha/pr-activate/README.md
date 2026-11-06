@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-ac
 
 This is a **Process Context** (level L0), named **Enterprise Relationship Activation**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Activate. Its canonical ID is `processes:pc-pr-activate-mwq7bj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the Party & Relationship area at the Activate stage: the regulated start of enterprise relationships. Before a customer, supplier, or partner relationship may begin, identity is verified, beneficial ownership is resolved, screening runs, and an approval — or a reasoned refusal — is recorded. Routine onboarding without a regulated gate stays in the operating context, and closing relationships later is a separate retirement context.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To open relationships only on verified identity and understood ownership and risk, with every approval or refusal evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever a new customer, supplier, or partner relationship carries regulated onboarding duties — at account opening or contract start, case by case.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A new supplier requests an account. The Party & Relationship Process Owner oversees identity verification, resolves the beneficial-ownership picture, reviews the screening result, and records an approval — or a documented refusal with its rationale.
 
 ## 5. Header and Identity Table (generated)
 
@@ -111,6 +111,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[4] | no | array of 4 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Enterprise Relationship Activation |
+| `plain_language_description` | string | no | This context covers the Party & Relationship area at the Activate stage: the regulated start of enterprise … |
+| `business_purpose` | string | no | To open relationships only on verified identity and understood ownership and risk, with every approval or refusal … |
+| `practical_context` | string | no | Encountered whenever a new customer, supplier, or partner relationship carries regulated onboarding duties — at account … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

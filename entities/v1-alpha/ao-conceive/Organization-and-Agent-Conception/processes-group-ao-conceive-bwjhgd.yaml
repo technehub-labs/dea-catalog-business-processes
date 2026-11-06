@@ -194,3 +194,18 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Organization and Agent Conception'
+plain_language_description: 'This is the front-end thinking family for the enterprise''s organization and its agent capacity. It frames the agent capacity strategy, sketches the organization model as a durable pattern of roles and authority, works out the future workforce-and-agent mix across human, artificial and hybrid options, and captures what the agents of the future must be capable of.'
+business_purpose: 'To decide, before anything is built, how much agent capacity the enterprise needs and how people, artificial agents and structures should combine to direct its agency.'
+practical_context: 'Encountered early in the Conceive stage, when leadership is setting direction for the organization before design and recruitment follow.'
+worked_example:
+  agent_type: human
+  narrative: 'Facing rapid growth, the Agency & Organization Process Owner convenes the capacity review: the team frames the agent capacity strategy, sketches the organization model, and decides the future blend of human staff, artificial agents and contractors — recording the capability each future agent must have.'

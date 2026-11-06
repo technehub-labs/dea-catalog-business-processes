@@ -191,3 +191,18 @@ links:
   href: change-requests/CR-BP-20-l1-l2-alignment-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Framing Purpose, Ambition and Strategic Intent'
+plain_language_description: 'This family is the deepest front-end thinking in the enterprise. Its processes define purpose and ambition, conceive the strategic intent, frame the strategic horizons, and develop the corporate strategy inside the frame governance has authorised.'
+business_purpose: 'To set the trajectory itself: why the enterprise exists, what it aims to become, the intent and horizons it commits to, and the corporate strategy that directs within the authorised frame.'
+practical_context: 'Encountered in the Conceive stage, at founding, renewal or pivot moments when direction itself is the question.'
+worked_example:
+  agent_type: human
+  narrative: 'At a five-year renewal, the Strategy & Direction Process Owner leads the conception cycle: purpose and ambition are re-articulated, strategic intent is committed, horizons are framed, and the corporate strategy is developed within the frame the board authorises.'

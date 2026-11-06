@@ -114,3 +114,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Strategy & Direction x Design'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Strategic Choices Design'
+plain_language_description: 'This context covers the Strategy & Direction area at the Design stage: shaping intent into concrete choices. It designs strategic options, evaluates the alternatives against stated criteria, defines objectives and targets, and frames scenarios for resilience testing. Building the plan and steering delivery belong to neighboring contexts.'
+business_purpose: 'To give leadership well-formed options, tested trade-offs, and committed objectives instead of raw ambition.'
+practical_context: 'Encountered in strategy workshops and option assessments, between committed intent and the construction of the plan itself.'
+worked_example:
+  agent_type: human
+  narrative: 'The Strategy & Direction Process Owner runs the options workshop, scores each alternative against the agreed criteria, frames downside scenarios, and commits the objectives and targets for the plan builders.'

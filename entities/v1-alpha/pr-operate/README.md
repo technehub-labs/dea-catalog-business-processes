@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-op
 
 This is a **Process Context** (level L0), named **Customer Relationship Operations**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Operate. Its canonical ID is `processes:pc-pr-operate-pwue5a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the customer and demand area at the Operate stage: the everyday care of active customer relationships. It manages accounts, resolves escalations within agreed service levels, coordinates renewals, runs win-back coordination, and allocates attention across the portfolio. Winning customers initially and improving the relationship practice overall sit in neighboring contexts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To sustain active relationships — resolving problems fast, renewing cleanly, and spending attention where the portfolio needs it most.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously: account reviews, escalation calls, renewal windows approaching, and portfolio reallocation decisions through the year.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An escalated account threatens to lapse at renewal. The Party & Relationship Process Owner takes the call personally, agrees the remediation, coordinates the renewal with minimal leakage, and logs the portfolio lesson.
 
 ## 5. Header and Identity Table (generated)
 
@@ -111,6 +111,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `status` | string | no | defined |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Customer Relationship Operations |
+| `plain_language_description` | string | no | This context covers the customer and demand area at the Operate stage: the everyday care of active customer … |
+| `business_purpose` | string | no | To sustain active relationships — resolving problems fast, renewing cleanly, and spending attention where the portfolio … |
+| `practical_context` | string | no | Encountered continuously: account reviews, escalation calls, renewal windows approaching, and portfolio reallocation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-de
 
 This is a **Process Context** (level L0), named **Customer Experience Design**, currently **candidate (yellow)**. It is domain `pr`, lifecycle stage Design. Its canonical ID is `processes:pc-pr-design-hrcdy4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This context covers the customer and demand area at the Design stage: shaping what customers will actually experience. It designs the experience, articulates the journey end to end, models how demand responds to the offering, and selects the experience patterns to use. Building the channels and running relationships come later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To turn customer strategy into a concrete, testable experience and journey design that build and operations can realize.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when strategy is being made tangible — new journey blueprints, experience redesigns, or demand model updates ahead of build work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The Party & Relationship Process Owner walks the draft journey with the design team, spots a handoff that would frustrate customers, and approves the revised experience patterns for channel build.
 
 ## 5. Header and Identity Table (generated)
 
@@ -158,6 +158,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `links` | array[2] | no | array of 2 item(s) |
 | `governance` | object | no | object: roles, provenance |
 | `metrics` | object | no | object: performance, risk, compliance |
+| `plain_language_name` | string | no | Customer Experience Design |
+| `plain_language_description` | string | no | This context covers the customer and demand area at the Design stage: shaping what customers will actually experience … |
+| `business_purpose` | string | no | To turn customer strategy into a concrete, testable experience and journey design that build and operations can realize. |
+| `practical_context` | string | no | Encountered when strategy is being made tangible — new journey blueprints, experience redesigns, or demand model … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

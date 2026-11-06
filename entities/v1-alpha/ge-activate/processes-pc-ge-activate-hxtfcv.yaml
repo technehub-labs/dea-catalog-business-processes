@@ -130,3 +130,18 @@ metrics:
   - name: 'Charter and regulatory evidence currency — Governance & Existence x Activate'
     target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
     frequency: 'semi-annual'
+
+
+# CR-BP-236 Wave D (2026-11-05): plain-language fields authored from the
+# record's own documented content (cell charter / scope / composes / owner
+# at L1; cell charter / outcomes / governance at L0; CR-BP-230 S2; no
+# invention; MECE against the formal definition). Rendered in README Part
+# I by the CR-BP-231 profile v3 generator. Programme closure wave.
+
+plain_language_name: 'Governance Instrument Commencement'
+plain_language_description: 'This context covers the Governance & Existence area at the Activate stage: making adopted governance instruments legally effective. It verifies the conditions for commencement, promulgates the adopted instruments, and confirms and records their effectiveness dates. Drafting and adopting happened earlier; enforcing the in-force instrument happens in the operating context.'
+business_purpose: 'To bring adopted rules, policies, and charters into force at the right moment, so obligations and rights attach exactly when intended.'
+practical_context: 'Encountered whenever an approved instrument has commencement conditions to satisfy — a waiting period, a required communication, or a registration step.'
+worked_example:
+  agent_type: human
+  narrative: 'A newly adopted policy cannot take effect until notice is published. The Governance & Existence Process Owner verifies the notice condition is met, promulgates the instrument, and records its effectiveness date so obligations attach from that day.'
