@@ -73,3 +73,18 @@ outputs:
   description: Bounded-work artefact produced for Frame Segment Thesis conforming to the Conceive schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bound the Segment and Say Why'
+plain_language_description: 'With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The bounded segment and the reasons for choosing it are produced as a thesis package ready for confirmation.'
+business_purpose: 'It exists so the enterprise names exactly which customers it will serve and can defend why them.'
+practical_context: 'It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function bounds the target segment and writes the rationale into the thesis package.'

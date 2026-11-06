@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Choose Strategic Trajectory Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Choose Strategic Trajectory** (`processes:activity-sd-conceive-uvhsrz`). Its canonical ID is `processes:task-sd-conceive-confirm-bymu5e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the trajectory is chosen. The confirmation custodian tells the downstream teams the chosen trajectory is available, and closes the reconciliation against what the activity promised for the choice.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the corporate strategy is committed over a confirmed course rather than over a choice still being second-guessed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the chosen trajectory is ready to hand on, and it closes with the confirmation issued and the choice's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the chosen trajectory to the strategy commitment team, reconciles it against what the choice promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Chosen Trajectory to the Strategy Commitment |
+| `plain_language_description` | string | no | The confirming opens once the trajectory is chosen. The confirmation custodian tells the downstream teams the chosen … |
+| `business_purpose` | string | no | It exists so the corporate strategy is committed over a confirmed course rather than over a choice still being … |
+| `practical_context` | string | no | It opens when the chosen trajectory is ready to hand on, and it closes with the confirmation issued and the choice's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

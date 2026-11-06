@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-int
 
 This is a **Task** (level L4), named **Design Cash and Liquidity Policy Intake**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Cash and Liquidity Policy** (`processes:activity-fa-design-tsdptr`). Its canonical ID is `processes:task-fa-design-intake-26r9ua`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Policy work opens when the treasury policy review and the funding posture are handed over together as the ground the liquidity policy will be drawn from. The intake custodian accepts both, registers them with audit identifiers, and starts the designing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cash is governed from a registered review under a registered posture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the review and posture are presented for the policy work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the treasury policy review and funding posture as the liquidity baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Policy Review and Funding Posture |
+| `plain_language_description` | string | no | Policy work opens when the treasury policy review and the funding posture are handed over together as the ground the … |
+| `business_purpose` | string | no | It exists so cash is governed from a registered review under a registered posture. |
+| `practical_context` | string | no | It opens when the review and posture are presented for the policy work, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

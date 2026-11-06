@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Stand Up Delivery Components Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Stand Up Delivery Components** (`processes:activity-eo-build-tq634n`). Its canonical ID is `processes:task-eo-build-intake-cfvyse`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The stand-up opens when the component designs are handed over as the plans the delivery components must be stood up from. The intake custodian accepts them, registers them with audit identifiers, and starts the work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so components are stood up from registered designs rather than from improvisation on the floor.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the designs are presented for the stand-up, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management registers the component designs as the stand-up baseline, with audit references, and opens the build work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Designs Behind the Delivery Components |
+| `plain_language_description` | string | no | The stand-up opens when the component designs are handed over as the plans the delivery components must be stood up … |
+| `business_purpose` | string | no | It exists so components are stood up from registered designs rather than from improvisation on the floor. |
+| `practical_context` | string | no | It opens when the designs are presented for the stand-up, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

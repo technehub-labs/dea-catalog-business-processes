@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-i
 
 This is a **Task** (level L4), named **Commit Corporate Strategy Intake**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Commit Corporate Strategy** (`processes:activity-sd-conceive-7tr4ax`). Its canonical ID is `processes:task-sd-conceive-intake-s27hey`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The committing opens as its material arrives: the bounded ambition, the strategic intent and the chosen trajectory that together make the corporate strategy. The intake custodian logs them against the commitment file so the committing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy is committed from its logged upstream parts rather than from a summary deck someone assembled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the ambition, intent and trajectory are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the bounded ambition, strategic intent and chosen trajectory into the commitment file, so the commitment work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Ambition, Intent and Trajectory for the Strategy Commitment |
+| `plain_language_description` | string | no | The committing opens as its material arrives: the bounded ambition, the strategic intent and the chosen trajectory that … |
+| `business_purpose` | string | no | It exists so the strategy is committed from its logged upstream parts rather than from a summary deck someone assembled. |
+| `practical_context` | string | no | It opens when the ambition, intent and trajectory are presented for commitment, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

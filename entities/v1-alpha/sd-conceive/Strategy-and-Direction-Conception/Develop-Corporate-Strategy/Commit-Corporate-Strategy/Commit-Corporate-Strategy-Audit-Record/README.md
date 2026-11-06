@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-r
 
 This is a **Task** (level L4), named **Commit Corporate Strategy Audit Record**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Commit Corporate Strategy** (`processes:activity-sd-conceive-7tr4ax`). Its canonical ID is `processes:task-sd-conceive-record-wfp9f7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the enterprise committed to as its strategy stays provable through every leadership transition.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the committed strategy is the reference every later plan is judged against, and its evidence must outlive the debate that produced it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so the governing strategy is always retrievable from the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Corporate Strategy Commitment Evidence |
+| `plain_language_description` | string | no | The filing work opens once confirmation is given. The records custodian preserves the audit record at its required … |
+| `business_purpose` | string | no | It exists because the committed strategy is the reference every later plan is judged against, and its evidence must … |
+| `practical_context` | string | no | It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

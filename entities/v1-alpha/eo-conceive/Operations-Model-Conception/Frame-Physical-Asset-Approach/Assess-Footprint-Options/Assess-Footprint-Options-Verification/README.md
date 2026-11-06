@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-v
 
 This is a **Task** (level L4), named **Assess Footprint Options Verification**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Assess Footprint Options** (`processes:activity-eo-conceive-9vsfbw`). Its canonical ID is `processes:task-eo-conceive-verify-vkyzva`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any option is weighed, the verification custodian checks the principles and geography against what assessment requires - that the principles are the framed set and the geography is current. Defects are flagged for rejection or repair before the weighing is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so options are never weighed against superseded principles or stale geography.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the geography a cycle out of date and flags the defect before any options are weighed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Inputs Before Weighing the Options |
+| `plain_language_description` | string | no | Before any option is weighed, the verification custodian checks the principles and geography against what assessment … |
+| `business_purpose` | string | no | It exists so options are never weighed against superseded principles or stale geography. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

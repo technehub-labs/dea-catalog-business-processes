@@ -1,0 +1,582 @@
+{
+ "processes:task-sd-conceive-intake-xk79sz": {
+  "plain_language_name": "Take In the Articulated Trajectories for the Choice",
+  "plain_language_description": "The choosing opens as its material arrives: the articulated trajectories that state the courses the direction could take. The intake custodian logs them against the choosing file so the choosing starts accounted for.",
+  "business_purpose": "It exists so one trajectory is chosen over a logged option set rather than over whichever course was argued hardest.",
+  "practical_context": "It opens when the articulated trajectories are presented for the choice, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the articulated trajectories into the choosing file, so the choice work starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-c92ykv": {
+  "plain_language_name": "Test the Articulated Trajectories Before Choosing One",
+  "plain_language_description": "Before one course is chosen, the arriving trajectory material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because choosing a defective trajectory sends the whole enterprise down a course that was never soundly drawn.",
+  "practical_context": "It opens once the intake is registered and the trajectory material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged trajectories against what the activity requires, and writes up a trajectory that omits its pace assumptions as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-y9fn3a": {
+  "plain_language_name": "Choose the Trajectory the Synthesized Direction Commits To",
+  "plain_language_description": "With the inputs verified, the choosing proper begins. The processing custodian weighs the articulated trajectories against the synthesized direction and fixes the one course the enterprise will follow, producing the chosen trajectory in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a direction stays a wish until one course of travel is actually chosen over the alternatives.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the chosen trajectory produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function weighs the verified trajectories against the direction, settles on the one the enterprise will follow, and keeps the choosing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-bymu5e": {
+  "plain_language_name": "Hand the Chosen Trajectory to the Strategy Commitment",
+  "plain_language_description": "The confirming opens once the trajectory is chosen. The confirmation custodian tells the downstream teams the chosen trajectory is available, and closes the reconciliation against what the activity promised for the choice.",
+  "business_purpose": "It exists so the corporate strategy is committed over a confirmed course rather than over a choice still being second-guessed.",
+  "practical_context": "It opens when the chosen trajectory is ready to hand on, and it closes with the confirmation issued and the choice's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the chosen trajectory to the strategy commitment team, reconciles it against what the choice promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-y2bnz5": {
+  "plain_language_name": "File the Trajectory Choice Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why this course was chosen, and the others set aside, stays answerable at every strategy review.",
+  "business_purpose": "It exists because the road not taken is exactly what future rounds will want examined with evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the choice evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the choice evidence at its required retention tier and sets the retrieval handles, so a later challenge to the course taken is met from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-s27hey": {
+  "plain_language_name": "Take In the Ambition, Intent and Trajectory for the Strategy Commitment",
+  "plain_language_description": "The committing opens as its material arrives: the bounded ambition, the strategic intent and the chosen trajectory that together make the corporate strategy. The intake custodian logs them against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the strategy is committed from its logged upstream parts rather than from a summary deck someone assembled.",
+  "practical_context": "It opens when the ambition, intent and trajectory are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded ambition, strategic intent and chosen trajectory into the commitment file, so the commitment work starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-5f4pnj": {
+  "plain_language_name": "Test the Strategy Parts Before Committing the Corporate Strategy",
+  "plain_language_description": "Before the strategy is committed, the arriving ambition, intent and trajectory material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because committing a strategy whose parts are unsettled commits the enterprise to a position it never actually took.",
+  "practical_context": "It opens once the intake is registered and the strategy material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged strategy parts against what the activity requires, and writes up an intent that predates the chosen trajectory as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-gdm78s": {
+  "plain_language_name": "Bind Ambition, Intent and Trajectory into the Committed Strategy",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian binds the bounded ambition, strategic intent and chosen trajectory into one strategy statement, producing the committed corporate strategy in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the enterprise only steers by its strategy once ambition, intent and course are bound and committed as one.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed corporate strategy produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function binds the verified ambition, intent and trajectory into the committed corporate strategy, keeping the binding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-3r8cha": {
+  "plain_language_name": "Release the Committed Corporate Strategy Downstream",
+  "plain_language_description": "The confirming opens once the strategy is committed. The confirmation custodian tells the downstream teams the committed corporate strategy is available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so planning and design downstream work from one confirmed strategy rather than from circulating excerpts.",
+  "practical_context": "It opens when the committed strategy is ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function releases the committed corporate strategy to the downstream planning teams, reconciles it against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-wfp9f7": {
+  "plain_language_name": "File the Corporate Strategy Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the enterprise committed to as its strategy stays provable through every leadership transition.",
+  "business_purpose": "It exists because the committed strategy is the reference every later plan is judged against, and its evidence must outlive the debate that produced it.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so the governing strategy is always retrievable from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-2bqkps": {
+  "plain_language_name": "Take In the Committed Purpose, Ambition, Intent and Horizons",
+  "plain_language_description": "The synthesis opens as its material arrives: the committed purpose, ambition, intent and horizons that together point where the enterprise must go. The intake custodian logs them against the synthesis file so the synthesizing starts accounted for.",
+  "business_purpose": "It exists so the direction is drawn from logged upstream commitments rather than from a private digest of them.",
+  "practical_context": "It opens when the upstream commitments are presented for synthesis, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed purpose, ambition, intent and horizons into the synthesis file, so the direction work starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-m2bauv": {
+  "plain_language_name": "Test the Upstream Commitments Before Synthesizing the Direction",
+  "plain_language_description": "Before any direction is synthesized, the arriving upstream commitments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a direction synthesized from incomplete commitments inherits every contradiction they carry.",
+  "practical_context": "It opens once the intake is registered and the commitment material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged commitments against what the activity requires, and writes up a horizon set that outruns the ambition as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-u8k6pq": {
+  "plain_language_name": "Synthesize One Direction from the Committed Parts",
+  "plain_language_description": "With the inputs verified, the synthesizing proper begins. The processing custodian reads purpose, ambition, intent and horizons together into one unified direction, producing the synthesized direction in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because four settled commitments still pull four ways until someone reads them into a single course.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the synthesized direction produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function reads the verified commitments into one unified direction, resolving where they strain against each other, and keeps the synthesis workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-zvwed5": {
+  "plain_language_name": "Hand the Synthesized Direction to the Trajectory Work",
+  "plain_language_description": "The confirming opens once the direction stands. The confirmation custodian tells the downstream teams the synthesized direction is available, and closes the reconciliation against what the activity promised for the synthesis.",
+  "business_purpose": "It exists so trajectories are drawn from a confirmed direction rather than from a synthesis still being argued.",
+  "practical_context": "It opens when the synthesized direction is ready to hand on, and it closes with the confirmation issued and the synthesis's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the synthesized direction to the trajectory teams, reconciles it against what the synthesis promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-59brjw": {
+  "plain_language_name": "File the Direction Synthesis Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so how the commitments were read into one direction stays answerable when the strategy is later re-read.",
+  "business_purpose": "It exists because the synthesis step is where upstream meaning was settled, and that settlement deserves retrievable evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the synthesis evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the synthesis evidence at its required retention tier and sets the retrieval handles, so the direction's debt to each commitment is traceable from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-qsy5rg": {
+  "plain_language_name": "Take In the Timeframes, Milestones and Committed Intent",
+  "plain_language_description": "The alignment opens as its material arrives: the bounded timeframes and their milestones together with the committed strategic intent they must serve. The intake custodian logs them against the alignment file so the aligning starts accounted for.",
+  "business_purpose": "It exists so the horizons are aligned over logged intent rather than over a calendar that simply looked tidy.",
+  "practical_context": "It opens when the timeframes, milestones and intent are presented for alignment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded timeframes, their milestones and the committed intent into the alignment file, so the aligning starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-tpbxsw": {
+  "plain_language_name": "Test the Alignment Material Before Aligning the Horizons",
+  "plain_language_description": "Before the horizons are aligned, the arriving timeframe and intent material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because aligning horizons against a half-present intent produces timeframes that serve no stated aim.",
+  "practical_context": "It opens once the intake is registered and the alignment material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged timeframes and intent against what the activity requires, and writes up a timeframe missing its milestone set as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-u3fm6u": {
+  "plain_language_name": "Line the Timeframes and Milestones Up with the Intent",
+  "plain_language_description": "With the inputs verified, the aligning proper begins. The processing custodian reads each bounded timeframe and its milestones against the committed intent, adjusting where they pull apart, producing the aligned horizons in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because timeframes that drift from the intent turn the horizons into an arbitrary calendar.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the aligned horizons produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function reads each verified timeframe and milestone against the committed intent, easing the boundaries until they serve the intent's demands, and keeps the alignment workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-pm3g7m": {
+  "plain_language_name": "Hand the Aligned Horizons to the Horizon Commitment",
+  "plain_language_description": "The confirming opens once the horizons are aligned. The confirmation custodian tells the downstream teams the aligned horizons are available, and closes the reconciliation against what the activity promised for the alignment.",
+  "business_purpose": "It exists so the horizons are committed over a confirmed alignment rather than over boundaries still being nudged.",
+  "practical_context": "It opens when the aligned horizons are ready to hand on, and it closes with the confirmation issued and the alignment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the aligned horizons to the commitment team, reconciles them against what the alignment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-w3j4hc": {
+  "plain_language_name": "File the Horizon Alignment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so how the timeframes were brought into line with the intent stays answerable when horizon dates are later queried.",
+  "business_purpose": "It exists because the alignment decisions are what made the horizons meaningful, and their reasoning deserves evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the alignment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the alignment evidence at its required retention tier and sets the retrieval handles, so a queried horizon boundary is explained from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-f988t4": {
+  "plain_language_name": "Take In the Bounded Timeframes for Milestone Anchoring",
+  "plain_language_description": "The anchoring opens as its material arrives: the bounded timeframes that each must carry their own milestones. The intake custodian logs them against the anchoring file so the anchoring starts accounted for.",
+  "business_purpose": "It exists so the milestones are anchored over logged timeframes rather than over dates borrowed from the last plan.",
+  "practical_context": "It opens when the bounded timeframes are presented for anchoring, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded timeframes into the anchoring file, so the milestone anchoring starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-mfaydt": {
+  "plain_language_name": "Test the Bounded Timeframes Before Anchoring Milestones",
+  "plain_language_description": "Before any milestone is anchored, the arriving timeframe material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because milestones anchored in a badly bounded timeframe misdate the strategy's promises.",
+  "practical_context": "It opens once the intake is registered and the anchoring material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged timeframes against what the activity requires, and writes up an overlapping timeframe boundary as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-kfker6": {
+  "plain_language_name": "Anchor the Milestones Each Timeframe Must Deliver",
+  "plain_language_description": "With the inputs verified, the anchoring proper begins. The processing custodian fixes into each bounded timeframe the milestones it must deliver, producing the anchored milestones in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a timeframe without its own milestones promises a period instead of a result.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the anchored milestones produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function fixes the milestones each verified timeframe must deliver, and keeps the anchoring workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-etf7y2": {
+  "plain_language_name": "Hand the Anchored Milestones to the Horizon Commitment",
+  "plain_language_description": "The confirming opens once the milestones are anchored. The confirmation custodian tells the downstream teams the anchored milestones are available, and closes the reconciliation against what the activity promised for the anchoring.",
+  "business_purpose": "It exists so the horizons are committed over confirmed anchors rather than over dates still being moved.",
+  "practical_context": "It opens when the anchored milestones are ready to hand on, and it closes with the confirmation issued and the anchoring's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the anchored milestones to the commitment team, reconciles them against what the anchoring promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-2n9v7g": {
+  "plain_language_name": "File the Horizon Milestone Anchoring Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why each milestone sits in its timeframe stays answerable when horizon dates are later challenged.",
+  "business_purpose": "It exists because the anchoring logic is what dated the strategy's promises, and it must be answerable from evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the anchoring evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the anchoring evidence at its required retention tier and sets the retrieval handles, so a challenged milestone date is explained from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-wqehaj": {
+  "plain_language_name": "Take In the Committed Intent and the Environment Cycles",
+  "plain_language_description": "The bounding opens as its material arrives: the conceived strategic intent together with the environment cycles it must operate within. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the timeframes are drawn from logged intent and real cycles rather than from an arbitrary five-year habit.",
+  "practical_context": "It opens when the intent and the environment cycles are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed intent and the environment cycles into the bounding file, so the timeframe work starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-t4vz8r": {
+  "plain_language_name": "Test the Intent and Cycles Before Bounding the Timeframes",
+  "plain_language_description": "Before any timeframe is bounded, the arriving intent and cycle material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because timeframes bounded against misread cycles plan the strategy around a rhythm the world does not keep.",
+  "practical_context": "It opens once the intake is registered and the bounding material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged intent and cycles against what the activity requires, and writes up a regulatory cycle misdated by a year as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-4r79ev": {
+  "plain_language_name": "Bound the Timeframes the Intent Must Operate Against",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian sets the period each horizon covers, reading the intent against the environment cycles, producing the bounded timeframes in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an intent without timeframes never has to answer for when anything should happen.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the bounded timeframes produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function sets the period each horizon covers, matching the intent's demands to the environment cycles, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-squj5r": {
+  "plain_language_name": "Hand the Bounded Timeframes to the Next Horizon Step",
+  "plain_language_description": "The confirming opens once the timeframes are bounded. The confirmation custodian tells the downstream teams the bounded timeframes are available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so anchoring and alignment work from confirmed timeframes rather than from boundaries still being stretched.",
+  "practical_context": "It opens when the bounded timeframes are ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the bounded timeframes to the anchoring and alignment teams, reconciles them against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-get6zv": {
+  "plain_language_name": "File the Timeframe Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why each horizon covers the period it does stays answerable when the cadence is later questioned.",
+  "business_purpose": "It exists because the timeframe boundaries set the rhythm the whole strategy keeps, and that choice deserves evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a questioned horizon period is explained from the record."
+  }
+ },
+ "processes:task-sd-conceive-intake-atnjau": {
+  "plain_language_name": "Take In the Bounded Timeframes and Their Anchored Milestones",
+  "plain_language_description": "The committing opens as its material arrives: the bounded timeframes together with the anchored milestones they carry. The intake custodian logs them against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the horizons are committed from logged, anchored material rather than from a planning sketch.",
+  "practical_context": "It opens when the timeframes and their milestones are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded timeframes and their anchored milestones into the commitment file, so the commitment work starts accounted for."
+  }
+ },
+ "processes:task-sd-conceive-verify-bta6jv": {
+  "plain_language_name": "Test the Timeframes and Milestones Before Committing the Horizons",
+  "plain_language_description": "Before the horizons are committed for downstream strategy work, the arriving horizon material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because downstream strategy work built on defective horizons inherits every misplaced date.",
+  "practical_context": "It opens once the intake is registered and the horizon material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged timeframes and milestones against what the activity requires, and writes up a horizon whose anchors sit outside its boundary as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-conceive-transform-btzp95": {
+  "plain_language_name": "Commit the Horizons with Their Bounded Timeframes",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian fixes the bounded timeframes and their anchored milestones as the horizons downstream strategy work will use, producing the committed horizons in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because downstream work needs settled horizons; unsettled ones let every plan choose its own calendar.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed horizons produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function commits the verified timeframes and milestones as the settled horizons for downstream strategy work, keeping the committing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-conceive-confirm-dzb536": {
+  "plain_language_name": "Tell the Downstream Strategy Teams the Horizons Are Committed",
+  "plain_language_description": "The confirming opens once the horizons are committed. The confirmation custodian tells the downstream teams the committed horizons are available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so direction synthesis and planning proceed over one confirmed calendar rather than over competing ones.",
+  "practical_context": "It opens when the committed horizons are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the downstream strategy teams the committed horizons are ready, reconciles them against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-conceive-record-4c6vym": {
+  "plain_language_name": "File the Strategic Horizons Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the calendar the strategy committed to stays provable when delivery dates are later disputed.",
+  "business_purpose": "It exists because the committed horizons are the strategy's clock, and their evidence must survive every replanning round.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so a disputed horizon date is settled from the record."
+  }
+ },
+ "processes:task-sd-design-intake-ban6dz": {
+  "plain_language_name": "Take In the Drafted Targets and the Organisational Structure",
+  "plain_language_description": "The assignment opens as its material arrives: the drafted targets together with the organisational structure that says who could own them. The intake custodian logs them against the assignment file so the assigning starts accounted for.",
+  "business_purpose": "It exists so ownership is assigned over logged targets and a real structure rather than over whoever happens to be keen.",
+  "practical_context": "It opens when the drafted targets and the structure are presented for assignment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted targets and the organisational structure into the assignment file, so the ownership work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-5ajtvf": {
+  "plain_language_name": "Test the Targets and Structure Before Assigning Ownership",
+  "plain_language_description": "Before any target is assigned, the arriving target and structure material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a target owned by a unit that cannot influence it is a promise nobody can keep.",
+  "practical_context": "It opens once the intake is registered and the assignment material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged targets and structure against what the activity requires, and writes up a target with no matching owning unit as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-w2yqcv": {
+  "plain_language_name": "Give Each Target an Owner That Can Answer for It",
+  "plain_language_description": "With the inputs verified, the assigning proper begins. The processing custodian names the organisational unit or role that will answer for each drafted target, producing the assigned ownership in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an unowned target is a wish; the design only works once someone specific is on the hook for each number.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the assigned ownership produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function names the unit or role that will answer for each verified target, checking the structure for fit, and keeps the assignment workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-y3az5q": {
+  "plain_language_name": "Tell the Owning Units What Targets They Now Hold",
+  "plain_language_description": "The confirming opens once the ownership is assigned. The confirmation custodian tells the downstream teams the assigned ownership is available, and closes the reconciliation against what the activity promised for the assignment.",
+  "business_purpose": "It exists so the owning units hear formally what they now answer for, instead of finding out at the first review.",
+  "practical_context": "It opens when the assigned ownership is ready to hand on, and it closes with the confirmation issued and the assignment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function notifies each owning unit of the targets it now holds, reconciles the assignments against what the assignment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-67bkgv": {
+  "plain_language_name": "File the Target Ownership Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so who was made answerable for each target stays provable when accountability questions arise.",
+  "business_purpose": "It exists because ownership decisions are exactly what reviews revisit, and they must be answerable from evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the assignment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the assignment evidence at its required retention tier and sets the retrieval handles, so a target's owner at commitment time is always traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-msqkg7": {
+  "plain_language_name": "Take In the Chosen Option and Its Evaluation Criteria",
+  "plain_language_description": "The bounding opens as its material arrives: the chosen strategic option together with the evaluation criteria that framed its selection. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the objectives scope is drawn from the logged option and its criteria rather than from enthusiasm about the option.",
+  "practical_context": "It opens when the chosen option and the criteria are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the chosen strategic option and its evaluation criteria into the bounding file, so the objectives scoping starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-fhvhzy": {
+  "plain_language_name": "Test the Option and Criteria Before Bounding the Objectives",
+  "plain_language_description": "Before any scope is drawn, the arriving option and criteria material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because objectives scoped past the option's edges promise results the chosen strategy never bought.",
+  "practical_context": "It opens once the intake is registered and the bounding material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged option and criteria against what the activity requires, and writes up an option summary missing its trade-off notes as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-ekhvm5": {
+  "plain_language_name": "Bound the Objectives and Targets the Chosen Option Requires",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian fixes what objectives and targets the chosen option requires, and what lies outside them, producing the bounded scope in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because drafting without a firm scope produces a wish list sized to hope rather than to the option.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the bounded scope produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function fixes what the objectives and targets will cover for the verified option, writing down the exclusions too, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-zhjd4u": {
+  "plain_language_name": "Hand the Bounded Scope to the Objective Drafting",
+  "plain_language_description": "The confirming opens once the scope is bounded. The confirmation custodian tells the downstream teams the bounded scope is available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so the drafting covers a confirmed scope rather than a boundary still being widened.",
+  "practical_context": "It opens when the bounded scope is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the bounded scope to the drafting team, reconciles it against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-2khy6j": {
+  "plain_language_name": "File the Objectives Scope Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the objectives deliberately leave out stays answerable when scope questions arise at plan build.",
+  "business_purpose": "It exists because the exclusions are what keep the design honest, and they deserve retrievable evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a scope dispute at plan build is settled from the record."
+  }
+ },
+ "processes:task-sd-design-intake-h5umgk": {
+  "plain_language_name": "Take In the Drafted Objectives, Their Measures and Their Owners",
+  "plain_language_description": "The committing opens as its material arrives: the drafted objectives and targets together with their bounded measures and assigned owners. The intake custodian logs them against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the design is committed as logged, owned material rather than as a draft still collecting comments.",
+  "practical_context": "It opens when the drafted objectives, measures and owners are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted objectives with their measures and owners into the commitment file, so the commitment work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-p5vapp": {
+  "plain_language_name": "Test the Drafted Objectives and Owners Before Committing Them",
+  "plain_language_description": "Before the objectives and targets are committed for plan build, the arriving design material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because plan build over an unmeasured or unowned objective inherits a target nobody can steer by.",
+  "practical_context": "It opens once the intake is registered and the design material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged design material against what the activity requires, and writes up a target whose measure lacks a bound as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-ujsf66": {
+  "plain_language_name": "Commit the Objectives and Targets with Their Measures and Owners",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian fixes the drafted objectives and targets with their bounded measures and ownership for the plan build, producing the committed objectives and targets in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the plan build needs one settled design; a moving one gives the plan nothing solid to stand on.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed objectives and targets produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function commits the verified objectives and targets with their measures and owners for the plan build, keeping the committing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-tkyyad": {
+  "plain_language_name": "Release the Committed Objectives and Targets to the Plan Build",
+  "plain_language_description": "The confirming opens once the design is committed. The confirmation custodian tells the downstream teams the committed objectives and targets are available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so the plan build assembles over a confirmed design rather than over the newest circulating version.",
+  "practical_context": "It opens when the committed objectives and targets are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function releases the committed objectives and targets to the plan build team, reconciles them against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-m9srme": {
+  "plain_language_name": "File the Objectives and Targets Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what was committed, with which measures and owners, stays provable through every performance review.",
+  "business_purpose": "It exists because performance is later judged against the committed design, and the design's evidence must hold.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so a performance dispute is settled against the record's committed design."
+  }
+ },
+ "processes:task-sd-design-intake-uz5fgp": {
+  "plain_language_name": "Take In the Bounded Scope for the Objective Drafting",
+  "plain_language_description": "The drafting opens as its material arrives: the bounded scope that says what objectives and targets must be designed. The intake custodian logs it against the drafting file so the drafting starts accounted for.",
+  "business_purpose": "It exists so the design is drafted over the logged scope rather than over each drafter's favourite metric.",
+  "practical_context": "It opens when the bounded scope is presented for drafting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded scope into the drafting file, so the objectives drafting starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-vf3ffg": {
+  "plain_language_name": "Test the Scope Material Before Drafting Objectives and Targets",
+  "plain_language_description": "Before any objective is drafted, the arriving scope material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because objectives drafted over a gappy scope chase results the option never called for.",
+  "practical_context": "It opens once the intake is registered and the scope material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged scope against what the activity requires, and writes up an under-specified objective area as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-6p4vgb": {
+  "plain_language_name": "Draft the Objectives and Targets Within the Bounded Scope",
+  "plain_language_description": "With the inputs verified, the drafting proper begins. The processing custodian sketches the objectives and targets the scope calls for, each with its measure, producing the drafted objectives and targets in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a strategic option becomes steerable only when its aims are written as objectives with measurable targets.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the drafted objectives and targets produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function drafts the objectives and targets within the verified scope, giving each a measurable edge, and keeps the drafting workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-9856wz": {
+  "plain_language_name": "Hand the Drafted Objectives and Targets Down the Design",
+  "plain_language_description": "The confirming opens once the objectives and targets are drafted. The confirmation custodian tells the downstream teams the drafted set is available, and closes the reconciliation against what the activity promised for the drafting.",
+  "business_purpose": "It exists so ownership assignment and commitment work from a confirmed draft rather than from pages still being rewritten.",
+  "practical_context": "It opens when the drafted objectives and targets are ready to hand on, and it closes with the confirmation issued and the drafting's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the drafted objectives and targets to the ownership team, reconciles them against what the drafting promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-tzttw3": {
+  "plain_language_name": "File the Objectives Drafting Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so how the objectives and measures were first drafted stays retrievable through the ownership and commitment rounds.",
+  "business_purpose": "It exists because the drafting's choices about measures shape every later judgement, and their basis deserves evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the drafting evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the drafting evidence at its required retention tier and sets the retrieval handles, so a questioned measure can be traced back to its first drafting."
+  }
+ },
+ "processes:task-sd-design-intake-pmfk9b": {
+  "plain_language_name": "Take In the Committed Intent and the Scoped Trade-offs",
+  "plain_language_description": "The bounding opens as its material arrives: the committed strategic intent together with the trade-offs scoped around it. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the option design space is bounded from logged intent and trade-offs rather than from a designer's optimism.",
+  "practical_context": "It opens when the committed intent and the scoped trade-offs are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed strategic intent and the scoped trade-offs into the bounding file, so the design space work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-confirm-txfv8k": {
+  "plain_language_name": "Hand the Bounded Design Space to the Option Designers",
+  "plain_language_description": "The confirming opens once the design space is bounded. The confirmation custodian tells the downstream teams the bounded design space is available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so options are designed inside a confirmed space rather than inside a fence still being moved.",
+  "practical_context": "It opens when the bounded design space is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the bounded design space to the option design team, reconciles it against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-4bkauf": {
+  "plain_language_name": "File the Design Space Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which options the space permitted, and which it fenced out, stays answerable when the designed options are later judged.",
+  "business_purpose": "It exists because what was ruled out before design began explains much of what was later chosen, and deserves evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a questioned option's fitness to the space is checked from the record."
+  }
+ }
+}

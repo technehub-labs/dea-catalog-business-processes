@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-re
 
 This is a **Task** (level L4), named **Compute Withholdings Audit Record**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Compute Withholdings** (`processes:activity-fa-operate-eq5bc9`). Its canonical ID is `processes:task-fa-operate-record-5qp3wn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the computation trail at its required retention tier and sets the retrieval handles for it. What was taken from each person's pay, and under what authority, stays readable whenever a deduction is queried.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every deduction can be evidenced back to the tables and positions behind it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the withholding trail at its retention tier and sets the retrieval handles a deduction query would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Withholdings Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the computation trail at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so every deduction can be evidenced back to the tables and positions behind it. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

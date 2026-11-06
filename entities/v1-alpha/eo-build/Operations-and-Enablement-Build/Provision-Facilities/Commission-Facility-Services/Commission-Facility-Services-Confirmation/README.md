@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-conf
 
 This is a **Task** (level L4), named **Commission Facility Services Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Facility Services** (`processes:activity-eo-build-napwac`). Its canonical ID is `processes:task-eo-build-confirm-tj2wsf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the services stand commissioned, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The hand-over that follows learns the facilities are live and ready to be passed to facility management.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the hand-over proceeds only over services confirmed as commissioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the commissioned services await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the commissioned services against the activity's intended outcome and issues the confirmation the hand-over needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Commissioned Facility Services |
+| `plain_language_description` | string | no | When the services stand commissioned, the confirmation custodian reconciles them against the outcome the activity set … |
+| `business_purpose` | string | no | It exists so the hand-over proceeds only over services confirmed as commissioned. |
+| `practical_context` | string | no | It begins once preparation is complete and the commissioned services await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

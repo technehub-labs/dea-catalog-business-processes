@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Vet Pool Sources Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Vet Pool Sources** (`processes:activity-ao-build-9bwc8j`). Its canonical ID is `processes:task-ao-build-intake-4bu7j3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Vetting opens when the candidate contractor and partner sources arrive, together with the identified demand they are meant to serve. The intake custodian accepts the package, registers it with audit identifiers, and puts the vetting work on a traceable footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so source vetting starts from a registered list tied to the demand it must answer.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the candidate sources and the identified demand are presented for vetting, with the activity owner alerted, and it closes with the intake registered and the later steps free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the candidate contractor sources against the identified demand, with audit references, and hands a clean list to vetting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Candidate Pool Sources |
+| `plain_language_description` | string | no | Vetting opens when the candidate contractor and partner sources arrive, together with the identified demand they are … |
+| `business_purpose` | string | no | It exists so source vetting starts from a registered list tied to the demand it must answer. |
+| `practical_context` | string | no | It opens when the candidate sources and the identified demand are presented for vetting, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

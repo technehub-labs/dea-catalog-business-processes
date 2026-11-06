@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 
 This is a **Task** (level L4), named **Verify Party Identity Processing**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Verify Party Identity** (`processes:activity-pr-activate-y46zs2`). Its canonical ID is `processes:task-pr-activate-transform-uvgjbd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian resolves the party identifier, computes the risk classification, and sets the diligence tier. The verified identity becomes a party record built to the master-data standard.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so downstream onboarding steps act on one authoritative record rather than scattered verification artefacts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate is issued, and it closes with the party record produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian converts a newly verified identity into the master party record for the onboarding flow.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn the Verified Identity into the Party Record |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian resolves the party identifier, computes the risk classification … |
+| `business_purpose` | string | no | It exists so downstream onboarding steps act on one authoritative record rather than scattered verification artefacts. |
+| `practical_context` | string | no | It opens when the verification certificate is issued, and it closes with the party record produced and custody passed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

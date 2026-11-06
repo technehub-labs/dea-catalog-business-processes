@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Verify Candidates Against Regulator Licence Registry Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Verify Candidates Against Regulator Licence Registry** (`processes:activity-ao-build-q7m3k9`). Its canonical ID is `processes:task-ao-build-intake-nkc3gd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Registry verification opens when the candidate list is handed over together with the access the registry checks require. The intake custodian accepts both, registers the handover with audit identifiers, and puts the checking work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so registry checks run from a registered candidate list under registered access, not ad hoc.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the candidate list and the registry access are presented for the activity, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the candidate list and the registry access as the checking baseline, with audit references, and opens the checks.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Candidates for Registry Checks |
+| `plain_language_description` | string | no | Registry verification opens when the candidate list is handed over together with the access the registry checks … |
+| `business_purpose` | string | no | It exists so registry checks run from a registered candidate list under registered access, not ad hoc. |
+| `practical_context` | string | no | It opens when the candidate list and the registry access are presented for the activity, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

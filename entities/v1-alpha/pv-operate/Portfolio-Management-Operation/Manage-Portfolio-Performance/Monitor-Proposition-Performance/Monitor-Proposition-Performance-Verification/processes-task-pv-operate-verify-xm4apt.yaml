@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Performance Signals for Fitness'
+plain_language_description: 'Before the signals inform any picture, they are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.'
+business_purpose: 'It exists because a picture built on gappy or mislabelled telemetry would mislead every steering call taken from it.'
+practical_context: 'It opens once intake has registered the signals, and it closes with them verified fit for the monitoring or their defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in product management checks the arriving telemetry for a flagship proposition, notices one channel''s figures are missing for the week, and writes the shortfall down so the source feed can put it right.'

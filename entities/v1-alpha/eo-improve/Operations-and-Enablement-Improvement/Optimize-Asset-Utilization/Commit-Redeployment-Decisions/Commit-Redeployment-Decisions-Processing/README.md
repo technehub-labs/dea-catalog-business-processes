@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Commit Redeployment Decisions Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Commit Redeployment Decisions** (`processes:activity-eo-improve-acbypp`). Its canonical ID is `processes:task-eo-improve-transform-nad2ry`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the options verified, the processing custodian does the commitment itself: each selected redeployment is ratified for the fleet to carry out, and the committed decisions are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a weighed option is still a suggestion - commitment is what tells the fleet to actually move.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified options are ready to be committed, and it ends with the committed decisions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function ratifies each chosen redeployment and records the committed decisions, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Chosen Redeployments for Action |
+| `plain_language_description` | string | no | With the options verified, the processing custodian does the commitment itself: each selected redeployment is ratified … |
+| `business_purpose` | string | no | It exists because a weighed option is still a suggestion - commitment is what tells the fleet to actually move. |
+| `practical_context` | string | no | It starts once checking is complete and the verified options are ready to be committed, and it ends with the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

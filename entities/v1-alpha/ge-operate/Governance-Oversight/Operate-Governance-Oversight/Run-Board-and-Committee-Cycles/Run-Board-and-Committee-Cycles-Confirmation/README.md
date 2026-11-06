@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-co
 
 This is a **Task** (level L4), named **Run Board and Committee Cycles Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Run Board and Committee Cycles** (`processes:activity-ge-operate-bjfkws`). Its canonical ID is `processes:task-ge-operate-confirm-pzakrz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles what the round produced with what the cycle contract and assurance standards demanded, then closes the round out. The board secretary and the governance custodian receive the completion confirmation, and it is logged before the file moves on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the end of each cycle round is evidenced, and custody passes onward with a clean handover.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts with the produced results pack, and it closes once acknowledgements are back and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian checks the round's outputs against the cycle contract, then logs the confirmation acknowledged by the governance custodian.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Cycle Round Is Complete |
+| `plain_language_description` | string | no | The confirmation custodian reconciles what the round produced with what the cycle contract and assurance standards … |
+| `business_purpose` | string | no | It exists so the end of each cycle round is evidenced, and custody passes onward with a clean handover. |
+| `practical_context` | string | no | It starts with the produced results pack, and it closes once acknowledgements are back and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

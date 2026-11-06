@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Draft Organizational Architecture Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Draft Organizational Architecture** (`processes:activity-ao-design-bnvt6w`). Its canonical ID is `processes:task-ao-design-verify-jhynku`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any unit is drawn, the verification custodian checks the model frame against what drafting requires - that its principles, spans, and boundaries are settled enough to arrange units within. Defects are logged for rejection or repair before any drafting is attempted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the architecture is never drafted inside a frame that was not settled to begin with.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the frame's boundaries leaving one unit's place unset and logs the defect before drafting begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Model Frame Before Drafting the Architecture |
+| `plain_language_description` | string | no | Before any unit is drawn, the verification custodian checks the model frame against what drafting requires - that its … |
+| `business_purpose` | string | no | It exists so the architecture is never drafted inside a frame that was not settled to begin with. |
+| `practical_context` | string | no | It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -117,3 +117,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Licensing Taxonomy and Supervision Matrix'
+plain_language_description: 'The notification-path work opens when the regulator licensing taxonomy and the supervision matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the reference the capture will be made from.'
+business_purpose: 'It exists so notification paths are captured against a registered taxonomy and a registered supervision matrix.'
+practical_context: 'It opens when the taxonomy and supervision matrix are presented for the capture, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in workforce management registers the licensing taxonomy and supervision matrix as the capture baseline, with audit references.'

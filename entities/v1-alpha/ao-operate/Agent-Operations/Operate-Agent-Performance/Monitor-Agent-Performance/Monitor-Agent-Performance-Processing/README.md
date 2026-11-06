@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Monitor Agent Performance Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Monitor Agent Performance** (`processes:activity-ao-operate-k5uvhg`). Its canonical ID is `processes:task-ao-operate-transform-fw9kzg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the expectations verified, the processing custodian does the monitoring itself: each agent's performance is tracked against its expectations - whatever the agent's substrate - and the monitored performance is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because expectations only discipline performance when somebody is actually watching, and watching evenly across every substrate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified expectations are ready to be monitored from, and it ends with the monitored performance produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management tracks each agent's work against its expectations, the same yardstick whatever the agent's makeup, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Each Agent's Work Against Its Expectations |
+| `plain_language_description` | string | no | With the expectations verified, the processing custodian does the monitoring itself: each agent's performance is … |
+| `business_purpose` | string | no | It exists because expectations only discipline performance when somebody is actually watching, and watching evenly … |
+| `practical_context` | string | no | It starts once checking is complete and the verified expectations are ready to be monitored from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

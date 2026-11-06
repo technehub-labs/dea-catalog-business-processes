@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-v
 
 This is a **Task** (level L4), named **Activate Signing Authority Or Controlled-Function Designation Verification**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Activate Signing Authority Or Controlled-Function Designation** (`processes:activity-ao-activate-sq2zfw`). Its canonical ID is `processes:task-ao-activate-verify-2zvpak`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the request booked in, the verification custodian goes through it against what the activity requires before any activation happens. Licence details, the designation being sought, and the supporting particulars are compared line by line; anything that falls short is written down for correction or refusal rather than waved through.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a defective request is caught on paper, before it can turn into an activation that should not happen.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once intake is registered and checking against the activity's requirements can begin, and it closes with the request found conformant or the shortfalls logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in workforce management compares an executive's designation request against the activity's checklist, finds the supervisor's endorsement missing, and records the shortfall for remediation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Activation Request for Completeness |
+| `plain_language_description` | string | no | With the request booked in, the verification custodian goes through it against what the activity requires before any … |
+| `business_purpose` | string | no | It exists so a defective request is caught on paper, before it can turn into an activation that should not happen. |
+| `practical_context` | string | no | It starts once intake is registered and checking against the activity's requirements can begin, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

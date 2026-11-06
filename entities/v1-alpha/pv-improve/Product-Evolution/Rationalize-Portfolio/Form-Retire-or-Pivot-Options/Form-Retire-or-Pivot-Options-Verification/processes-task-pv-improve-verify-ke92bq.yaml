@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Justification Assessments Feeding the Option Set'
+plain_language_description: 'Before any retire-or-pivot option is drawn up, the incoming justification assessments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.'
+business_purpose: 'It exists because options drawn up on an unsound justification assessment would steer a failing proposition toward the wrong path.'
+practical_context: 'It opens once intake has registered the assessment material, and it closes with the material verified fit or its shortcomings written down for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in product management receives the justification assessment for a proposition that missed its targets and confirms it carries the evidence the option work needs before anything is drawn up.'

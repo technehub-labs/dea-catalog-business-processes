@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Filed Submission and the Review Criteria'
+plain_language_description: 'The supervisor review opens as its material arrives: the filed strategic-plan submission together with the review criteria the supervisor applies. The intake custodian logs them against the review file so the review starts accounted for.'
+business_purpose: 'It exists so the pursuit of the acknowledgement is tracked over a logged submission and criteria, not over an unfiled draft.'
+practical_context: 'It opens when the filed submission and the review criteria are presented for the review, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the filed strategic-plan submission and the supervisor''s review criteria into the review file, so the pursuit of the acknowledgement starts accounted for.'

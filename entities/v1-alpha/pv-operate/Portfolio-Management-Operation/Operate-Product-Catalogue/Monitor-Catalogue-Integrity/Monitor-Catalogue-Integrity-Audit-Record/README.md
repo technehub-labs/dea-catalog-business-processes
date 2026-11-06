@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Monitor Catalogue Integrity Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Catalogue Integrity** (`processes:activity-pv-operate-5gtsjg`). Its canonical ID is `processes:task-pv-operate-record-qr65se`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the integrity round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The accuracy, availability, and consistency findings therefore stand as retrievable evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the catalogue is the system of record for buyable offerings, and its integrity findings must survive as retrievable evidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the integrity audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the integrity round's audit record at its required retention tier and sets the retrieval handles, so a later challenge to catalogue accuracy can be answered from the findings on file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Catalogue Integrity Audit Record |
+| `plain_language_description` | string | no | After confirmation, the integrity round is put beyond doubt for later scrutiny. The records custodian preserves the … |
+| `business_purpose` | string | no | It exists because the catalogue is the system of record for buyable offerings, and its integrity findings must survive … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the integrity audit record held at its required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

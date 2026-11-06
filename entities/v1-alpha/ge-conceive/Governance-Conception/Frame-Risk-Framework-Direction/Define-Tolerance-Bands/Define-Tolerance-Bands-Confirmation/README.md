@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-c
 
 This is a **Task** (level L4), named **Define Tolerance Bands Confirmation**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Define Tolerance Bands** (`processes:activity-ge-conceive-yucnbe`). Its canonical ID is `processes:task-ge-conceive-confirm-hrksz3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the conception-ready package exists, the confirmation custodian sets it beside the method and the bounding rules, reconciles the two, and issues the conception confirmation to the custodian of governance, logging it into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because bands nobody has confirmed are bands nobody can manage against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian sets the package beside the method and the bounding rules and issues the conception confirmation to the custodian of governance.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reconcile the Package and Confirm the Bands |
+| `plain_language_description` | string | no | When the conception-ready package exists, the confirmation custodian sets it beside the method and the bounding rules … |
+| `business_purpose` | string | no | It exists because bands nobody has confirmed are bands nobody can manage against. |
+| `practical_context` | string | no | It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-co
 
 This is a **Task** (level L4), named **Commit Review Outcomes Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Commit Review Outcomes** (`processes:activity-eo-improve-53zgb8`). Its canonical ID is `processes:task-eo-improve-confirm-ftpqq2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the outcomes stand committed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The improvement tracks learn exactly what each has been handed to act on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the tracks act only on outcomes confirmed as committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the committed outcomes await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the committed outcomes against the activity's intended outcome and issues the confirmation the improvement tracks wait on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Committed Outcomes |
+| `plain_language_description` | string | no | When the outcomes stand committed, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so the tracks act only on outcomes confirmed as committed. |
+| `practical_context` | string | no | It begins once preparation is complete and the committed outcomes await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

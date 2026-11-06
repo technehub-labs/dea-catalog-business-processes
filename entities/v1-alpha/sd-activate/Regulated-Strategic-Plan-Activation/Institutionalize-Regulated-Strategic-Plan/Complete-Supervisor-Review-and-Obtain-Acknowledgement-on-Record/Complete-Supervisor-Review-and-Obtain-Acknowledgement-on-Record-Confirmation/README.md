@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-c
 
 This is a **Task** (level L4), named **Complete Supervisor Review and Obtain Acknowledgement on Record Confirmation**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Complete Supervisor Review and Obtain Acknowledgement on Record** (`processes:activity-sd-activate-w83pp4`). Its canonical ID is `processes:task-sd-activate-confirm-eu6wma`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the acknowledgement is on record. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the review.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the activation and communications work starts only once the acknowledgement is confirmed, never on assumption.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the acknowledgement is secured and ready to hand on, and it closes with the confirmation issued and the review's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the activation and communications teams that the supervising authority's acknowledgement is on record, reconciles the outcome against what the review promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Announce the Acknowledgement to the Teams Waiting on the Plan |
+| `plain_language_description` | string | no | The confirming opens once the acknowledgement is on record. The confirmation custodian tells the downstream teams it is … |
+| `business_purpose` | string | no | It exists so the activation and communications work starts only once the acknowledgement is confirmed, never on … |
+| `practical_context` | string | no | It opens when the acknowledgement is secured and ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

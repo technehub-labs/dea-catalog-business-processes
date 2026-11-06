@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Monitor Agent Performance Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Monitor Agent Performance** (`processes:activity-ao-operate-k5uvhg`). Its canonical ID is `processes:task-ao-operate-verify-3ynv3g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any performance is monitored, the verification custodian checks the expectations against what monitoring requires - that every agent in operation carries an expectation to be watched against. Gaps are logged for rejection or repair before the monitoring proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no agent's work goes unwatched, and none is watched against a standard that was never set.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the expectations can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an agent in operation with no expectation to measure against and logs the gap before monitoring proceeds.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Expectations Before Monitoring the Performance |
+| `plain_language_description` | string | no | Before any performance is monitored, the verification custodian checks the expectations against what monitoring … |
+| `business_purpose` | string | no | It exists so no agent's work goes unwatched, and none is watched against a standard that was never set. |
+| `practical_context` | string | no | It runs once the intake is registered and the expectations can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-ve
 
 This is a **Task** (level L4), named **Run Board and Committee Cycles Verification**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Run Board and Committee Cycles** (`processes:activity-ge-operate-bjfkws`). Its canonical ID is `processes:task-ge-operate-verify-tpbrgp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian tests the pack before the round begins: do the scheduled meetings satisfy the legal frequency requirements, does the assurance material meet the professional standards, and do the risk reviews follow the agreed method? Any deviation is written up with its remedy.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a cycle run on non-conforming inputs would compromise every decision taken in it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is on file, and it ends when the certificate is issued, deviations are remediated, and the processing custodian takes custody.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian from the compliance function checks the draft meeting schedule against the statutory frequency rules and clears the pack for the round.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Cycle Pack Against Meeting Rules and Methods |
+| `plain_language_description` | string | no | The verification custodian tests the pack before the round begins: do the scheduled meetings satisfy the legal … |
+| `business_purpose` | string | no | It exists because a cycle run on non-conforming inputs would compromise every decision taken in it. |
+| `practical_context` | string | no | It starts once the intake manifest is on file, and it ends when the certificate is issued, deviations are remediated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

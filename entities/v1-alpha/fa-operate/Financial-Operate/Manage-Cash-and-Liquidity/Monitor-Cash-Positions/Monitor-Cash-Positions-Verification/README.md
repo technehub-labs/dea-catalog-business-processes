@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-ve
 
 This is a **Task** (level L4), named **Monitor Cash Positions Verification**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Monitor Cash Positions** (`processes:activity-fa-operate-aab8cw`). Its canonical ID is `processes:task-fa-operate-verify-acedgn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is watched, the verification custodian checks the inputs and the policy against what monitoring requires - that the balances cover the accounts in scope and the policy is the current one. Defects are logged for rejection or repair before the watching begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cash is never watched against a policy that was superseded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the balances missing a newly opened account and logs the defect before the watching begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Policy Before Watching the Cash |
+| `plain_language_description` | string | no | Before anything is watched, the verification custodian checks the inputs and the policy against what monitoring … |
+| `business_purpose` | string | no | It exists so cash is never watched against a policy that was superseded. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

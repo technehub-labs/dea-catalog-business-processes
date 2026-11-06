@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-conf
 
 This is a **Task** (level L4), named **Certify Market Readiness Confirmation**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Certify Market Readiness** (`processes:activity-pv-build-ak4gpq`). Its canonical ID is `processes:task-pv-build-confirm-rgseqy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian issues the completion confirmation, tells the downstream teams the readiness certification is available, and closes the reconciliation against what the activity promised. The confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the certification is formally issued to the parties who will rely on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management issues the readiness certificate and notifies the launch teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue the Market Readiness Certificate |
+| `plain_language_description` | string | no | The confirmation custodian issues the completion confirmation, tells the downstream teams the readiness certification … |
+| `business_purpose` | string | no | It exists so the certification is formally issued to the parties who will rely on it. |
+| `practical_context` | string | no | It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-int
 
 This is a **Task** (level L4), named **Commit Strategic Preference Intake**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Strategic Preference** (`processes:activity-sd-design-r7hq2f`). Its canonical ID is `processes:task-sd-design-intake-pdyjxp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The committing opens as its material arrives: the articulated preference that names the option to carry forward. The intake custodian logs it against the commitment file so the committing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategic choice is committed over logged preference material rather than over momentum.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the articulated preference is presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the articulated preference into the commitment file, so the choice commitment starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Articulated Preference for the Choice Commitment |
+| `plain_language_description` | string | no | The committing opens as its material arrives: the articulated preference that names the option to carry forward. The … |
+| `business_purpose` | string | no | It exists so the strategic choice is committed over logged preference material rather than over momentum. |
+| `practical_context` | string | no | It opens when the articulated preference is presented for commitment, with the activity's owner told that it has … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-re
 
 This is a **Task** (level L4), named **Route Environmental Signals Audit Record**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Route Environmental Signals** (`processes:activity-sd-operate-ebntgy`). Its canonical ID is `processes:task-sd-operate-record-q5szty`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation can later show which signal went where, and what each consuming team was told and when.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the routing record preserved at its required tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the routing record with each signal's destination at the agreed retention tier, and sets the retrieval handles for tracing who knew what, and when.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Signal Routing Record with Its Destinations |
+| `plain_language_description` | string | no | After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention … |
+| `business_purpose` | string | no | It exists so the organisation can later show which signal went where, and what each consuming team was told and when. |
+| `practical_context` | string | no | It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the routing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Provision Agent Capacity Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Provision Agent Capacity** (`processes:activity-ao-build-7xrz4d`). Its canonical ID is `processes:task-ao-build-verify-we37nj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before capacity is committed, the verification custodian tests the design against what provisioning requires of it - completeness, consistency, and fitness to be built. Defects are written up as nonconformances for rejection or repair, so no capacity gets built on a flawed base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation never provisions capacity from a design that would not survive scrutiny.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with the design verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian checks the committed design for completeness and consistency, finds a capacity line left unspecified, and records the defect for repair.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Design Against the Provisioning Requirements |
+| `plain_language_description` | string | no | Before capacity is committed, the verification custodian tests the design against what provisioning requires of it - … |
+| `business_purpose` | string | no | It exists so the organisation never provisions capacity from a design that would not survive scrutiny. |
+| `practical_context` | string | no | It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-ve
 
 This is a **Task** (level L4), named **Execute Facility Work Orders Verification**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Facility Work Orders** (`processes:activity-eo-operate-q3sw3q`). Its canonical ID is `processes:task-eo-operate-verify-697v63`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any order is worked, the verification custodian checks the issued orders against what execution requires - that each order states its job, its location, and the resources it will draw. Defects are logged for rejection or repair before any crew is dispatched.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so crews are never sent to jobs that were never fully specified.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the orders can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an order that names no location and logs the defect before any crew is sent.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Orders Before Working Them |
+| `plain_language_description` | string | no | Before any order is worked, the verification custodian checks the issued orders against what execution requires - that … |
+| `business_purpose` | string | no | It exists so crews are never sent to jobs that were never fully specified. |
+| `practical_context` | string | no | It runs once the intake is registered and the orders can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

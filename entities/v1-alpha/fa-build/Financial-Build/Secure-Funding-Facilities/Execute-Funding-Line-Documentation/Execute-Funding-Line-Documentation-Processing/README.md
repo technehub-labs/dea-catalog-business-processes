@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Execute Funding Line Documentation Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Execute Funding Line Documentation** (`processes:activity-fa-build-2ccp49`). Its canonical ID is `processes:task-fa-build-transform-e6s696`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the terms verified, the processing custodian does the execution itself: each negotiated line is carried into its formal documentation and executed, and the executed facility papers are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an agreement spoken is an agreement not yet owned - the signed paper is what makes the money actually available.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified terms are ready to be papered, and it ends with the executed papers produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function carries each agreed line into its signed documentation, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Put the Agreed Terms onto Signed Paper |
+| `plain_language_description` | string | no | With the terms verified, the processing custodian does the execution itself: each negotiated line is carried into its … |
+| `business_purpose` | string | no | It exists because an agreement spoken is an agreement not yet owned - the signed paper is what makes the money actually … |
+| `practical_context` | string | no | It starts once checking is complete and the verified terms are ready to be papered, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

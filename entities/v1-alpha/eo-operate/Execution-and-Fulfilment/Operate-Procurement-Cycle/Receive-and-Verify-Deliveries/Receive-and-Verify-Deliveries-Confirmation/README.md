@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-co
 
 This is a **Task** (level L4), named **Receive and Verify Deliveries Confirmation**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Receive and Verify Deliveries** (`processes:activity-eo-operate-9q2e4c`). Its canonical ID is `processes:task-eo-operate-confirm-ccsz6z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the deliveries stand checked, the confirmation custodian reconciles the verified receipts against the outcome the activity set out to reach and issues the confirmation. The payment side learns what arrived in good order and can settle against it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so payment proceeds only over receipts confirmed as verified.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the verified receipts await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the verified receipts against the activity's intended outcome and issues the confirmation the payment side needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Verified Receipts |
+| `plain_language_description` | string | no | When the deliveries stand checked, the confirmation custodian reconciles the verified receipts against the outcome the … |
+| `business_purpose` | string | no | It exists so payment proceeds only over receipts confirmed as verified. |
+| `practical_context` | string | no | It begins once preparation is complete and the verified receipts await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

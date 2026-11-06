@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Record Payment Approvals Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Record Payment Approvals** (`processes:activity-fa-operate-rsrcp2`). Its canonical ID is `processes:task-fa-operate-transform-ymfr4u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the invoices verified, the processing custodian does the recording itself: each matched bill's approval is captured from the voice the delegation of authority names, and the recorded approvals are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a yes from the wrong voice is a no wearing a costume - the delegation is what decides whose yes counts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified invoices are ready to be approved, and it ends with the recorded approvals produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function captures each approval from the voice the delegation names, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Let the Right Voice Say Yes |
+| `plain_language_description` | string | no | With the invoices verified, the processing custodian does the recording itself: each matched bill's approval is … |
+| `business_purpose` | string | no | It exists because a yes from the wrong voice is a no wearing a costume - the delegation is what decides whose yes … |
+| `practical_context` | string | no | It starts once checking is complete and the verified invoices are ready to be approved, and it ends with the recorded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Bound Plan Version Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Bound Plan Version** (`processes:activity-sd-build-c2ky47`). Its canonical ID is `processes:task-sd-build-confirm-ubuhtv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the version is bounded. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the bounding.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assembly starts over a confirmed version boundary rather than over a scope still being argued.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded version is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the assembly team the bounded version is ready, reconciles the boundary against what the bounding promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Bounded Version to the Plan Assemblers |
+| `plain_language_description` | string | no | The confirming opens once the version is bounded. The confirmation custodian tells the downstream teams it is … |
+| `business_purpose` | string | no | It exists so assembly starts over a confirmed version boundary rather than over a scope still being argued. |
+| `practical_context` | string | no | It opens when the bounded version is ready to hand on, and it closes with the confirmation issued and the bounding's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

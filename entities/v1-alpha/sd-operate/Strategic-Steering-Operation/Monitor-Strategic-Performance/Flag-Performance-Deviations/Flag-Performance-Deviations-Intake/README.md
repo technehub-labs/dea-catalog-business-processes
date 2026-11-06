@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-in
 
 This is a **Task** (level L4), named **Flag Performance Deviations Intake**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Flag Performance Deviations** (`processes:activity-sd-operate-xtgshk`). Its canonical ID is `processes:task-sd-operate-intake-3465p4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The flagging opens as its material arrives: the performance-against-plan position showing where execution sits against the plan. The intake custodian logs it against the flagging file so the flagging starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every deviation is raised from the registered position rather than from anecdote or a slide that caught someone's eye.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the tracked position is presented for flagging, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the tracked position into the flagging file, so the work of raising deviations starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Tracked Position for Deviation Work |
+| `plain_language_description` | string | no | The flagging opens as its material arrives: the performance-against-plan position showing where execution sits against … |
+| `business_purpose` | string | no | It exists so every deviation is raised from the registered position rather than from anecdote or a slide that caught … |
+| `practical_context` | string | no | It opens when the tracked position is presented for flagging, with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

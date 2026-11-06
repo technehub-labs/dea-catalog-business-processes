@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-reco
 
 This is a **Task** (level L4), named **Document Variant Baseline Audit Record**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Document Variant Baseline** (`processes:activity-pv-build-d86xd9`). Its canonical ID is `processes:task-pv-build-record-pa2hzd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The baseline's authority stays readable for the discipline's duration.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the baseline's authority survives every change that follows.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the baseline record at its retention tier and sets the retrieval handles.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Variant Baseline on File |
+| `plain_language_description` | string | no | Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets … |
+| `business_purpose` | string | no | It exists so the baseline's authority survives every change that follows. |
+| `practical_context` | string | no | It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

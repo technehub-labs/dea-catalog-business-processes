@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-r
 
 This is a **Task** (level L4), named **Attest Fitness And Propriety Audit Record**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Attest Fitness And Propriety** (`processes:activity-ao-activate-x9hy5e`). Its canonical ID is `processes:task-ao-activate-record-c3era6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the confirmation out, the records custodian puts the attestation's audit trail into long-term keeping at the tier it must be retained at, and sets the handles that will find it again on demand. The point is simple: years later, the fitness position can be evidenced without reconstruction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the attested fitness position can be proven on demand long after the work itself has moved on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts when the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the attestation trail at its required tier and sets the retrieval handles an evidence review would use to call it up years later.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Fitness Attestation Audit Record |
+| `plain_language_description` | string | no | With the confirmation out, the records custodian puts the attestation's audit trail into long-term keeping at the tier … |
+| `business_purpose` | string | no | It exists so the attested fitness position can be proven on demand long after the work itself has moved on. |
+| `practical_context` | string | no | It starts when the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

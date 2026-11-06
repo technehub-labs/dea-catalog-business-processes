@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Provision Agent Capacity Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Provision Agent Capacity** (`processes:activity-ao-build-7xrz4d`). Its canonical ID is `processes:task-ao-build-intake-yy9kw6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Provisioning starts when the committed organisation structure design lands with the intake custodian. The design is accepted, registered with audit identifiers, and logged as the standing reference the capacity work will be built from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so capacity is provisioned from a registered, traceable design rather than an informal sketch.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed structure design is presented for provisioning, with the activity owner alerted to its arrival, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the committed structure design as the provisioning baseline, complete with audit identifiers, and signals the capacity work to begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Structure Design for Provisioning |
+| `plain_language_description` | string | no | Provisioning starts when the committed organisation structure design lands with the intake custodian. The design is … |
+| `business_purpose` | string | no | It exists so capacity is provisioned from a registered, traceable design rather than an informal sketch. |
+| `practical_context` | string | no | It opens when the committed structure design is presented for provisioning, with the activity owner alerted to its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

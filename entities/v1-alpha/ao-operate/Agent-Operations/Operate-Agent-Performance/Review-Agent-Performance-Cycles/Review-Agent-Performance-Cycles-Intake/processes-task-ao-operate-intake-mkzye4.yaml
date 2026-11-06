@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Monitoring and Exceptions for the Review Cycle'
+plain_language_description: 'The review cycle opens when the monitored performance and the addressed exceptions are handed over together as the record the period''s judgement will be made from. The intake custodian accepts both, registers them with audit identifiers, and starts the review from a recorded baseline.'
+business_purpose: 'It exists so the cycle''s judgement is made over the full registered record, monitoring and handling alike.'
+practical_context: 'It opens when the monitoring and exceptions are presented for the review cycle, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the monitoring record and addressed exceptions as the review baseline, with audit references, and opens the cycle.'

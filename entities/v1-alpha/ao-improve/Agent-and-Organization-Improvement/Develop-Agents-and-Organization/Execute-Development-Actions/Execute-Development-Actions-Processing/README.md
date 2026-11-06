@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Execute Development Actions Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Execute Development Actions** (`processes:activity-ao-improve-r6h2g7`). Its canonical ID is `processes:task-ao-improve-transform-868wha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the plan verified, the processing custodian does the execution itself: the planned development actions are carried out across the agentive mix, and the executed actions are set down in the form the activity defines. Working papers from the execution are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a plan on paper develops nobody - execution is where the mix actually changes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified plan is ready to be executed from, and it ends with the executed development actions produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian carries the planned development actions across the agentive mix and records what was executed, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Planned Development Actions |
+| `plain_language_description` | string | no | With the plan verified, the processing custodian does the execution itself: the planned development actions are carried … |
+| `business_purpose` | string | no | It exists because a plan on paper develops nobody - execution is where the mix actually changes. |
+| `practical_context` | string | no | It starts once checking is complete and the verified plan is ready to be executed from, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

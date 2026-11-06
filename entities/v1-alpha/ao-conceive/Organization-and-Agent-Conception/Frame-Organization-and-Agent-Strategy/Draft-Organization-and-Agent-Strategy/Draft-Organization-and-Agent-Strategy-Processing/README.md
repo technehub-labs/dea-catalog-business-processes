@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Draft Organization and Agent Strategy Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Draft Organization and Agent Strategy** (`processes:activity-ao-conceive-9p2cup`). Its canonical ID is `processes:task-ao-conceive-transform-webqte`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the capacity verified, the processing custodian does the drafting itself: the strategy direction for the organization model and the workforce-and-agent mix is written within the bounded capacity, in the form the activity defines. Drafting working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because capacity without direction idles, and direction without capacity overcommits - the draft is where the two are reconciled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified capacity is ready to be written within, and it ends with the drafted strategy produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function writes the strategy draft - direction for the model and the mix - within the bounded capacity, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Organization and Agent Strategy |
+| `plain_language_description` | string | no | With the capacity verified, the processing custodian does the drafting itself: the strategy direction for the … |
+| `business_purpose` | string | no | It exists because capacity without direction idles, and direction without capacity overcommits - the draft is where the … |
+| `practical_context` | string | no | It starts once checking is complete and the verified capacity is ready to be written within, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

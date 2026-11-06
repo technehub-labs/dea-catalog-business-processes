@@ -1,0 +1,582 @@
+{
+  "processes:task-ge-build-confirm-h8c8b3": {
+    "plain_language_name": "Reconcile the Inventory and Give the Charters Their Yes",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because charters nobody has confirmed are charters nobody can govern by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-jtpedx": {
+    "plain_language_name": "Take Custody of the Charter Drafts Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the charters begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-wm93hx": {
+    "plain_language_name": "Write the Charters the Bodies Will Live Under",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the charters: the charters the new bodies will live under are codified from the governance system design, joined by the policies, bodies, cycles, registers, and tooling the full build calls for, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a mandate on paper governs nobody - the codifying is where the charters start to bind.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function codifies the charters the new bodies will live under and produces the build-ready inventory, keeping the working papers."
+    }
+  },
+  "processes:task-ge-build-verify-ckxtw4": {
+    "plain_language_name": "Hold the Charters Against the Framework's Measuring Stick",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because charters built short of their framework would govern loosely from day one - the reading is what catches that before it ships.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-4k3279": {
+    "plain_language_name": "Lay the Policies Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The policies' making stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the policies' making can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-mdney5": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Policies",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because policies nobody has confirmed are policies nobody can govern by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-r27upp": {
+    "plain_language_name": "Take Custody of the Policy Drafts Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the policies begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-xf42xt": {
+    "plain_language_name": "Turn the Policy Designs into Rules That Operate",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the policies: the committed policy designs are codified into rules that operate, joined by the rest of the build the inventory calls for, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a policy design that never becomes an operative rule governs nothing - the codifying is where the design starts to bite.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function codifies the committed policy designs into operative rules, keeping the working papers."
+    }
+  },
+  "processes:task-ge-build-verify-nrw7qn": {
+    "plain_language_name": "Hold the Policies Against the Same Measuring Stick",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because policies built short of their framework would govern loosely from day one - the reading is what catches that before it ships.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-uyqbra": {
+    "plain_language_name": "Lay the Standards Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The standards' making stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the standards' making can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-k8qw68": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Standards",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because standards nobody has confirmed are standards nobody can rely on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-72wuzc": {
+    "plain_language_name": "Take Custody of the Standards Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the standards begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-zzz3zb": {
+    "plain_language_name": "Codify the Templates and Guidance Around the Rules",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the standards: the templates, procedure references, and guidance that support the charters and policies are codified, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because charters and policies without their supporting standards leave bodies guessing at the everyday - the codifying is what fills the gap.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function codifies the templates, procedure references, and guidance the charters and policies rely on."
+    }
+  },
+  "processes:task-ge-build-verify-v3cwn8": {
+    "plain_language_name": "Hold the Standards Against the Same Stick",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because standards built short of their framework would leave the bodies guessing from day one - the reading is what catches that before it ships.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-2pm433": {
+    "plain_language_name": "Lay the Publication Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The publication's making stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the publication's making can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-pmnzx2": {
+    "plain_language_name": "Reconcile the Inventory and Clear the Instruments for Publication",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because instruments nobody has cleared are instruments nobody can publish.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-cb6hmk": {
+    "plain_language_name": "Take Custody of the Instruments Waiting to Publish",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the publication begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-cw44rw": {
+    "plain_language_name": "Put the Instruments Where Everyone Can Reach Them",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the publication: the codified charters, policies, and standards are placed where the bodies and the enterprise can reach them, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because an instrument codified but shelved governs nobody - the publishing is where the instruments become reachable.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function places the codified instruments where the bodies and the enterprise can reach them."
+    }
+  },
+  "processes:task-ge-build-verify-ezcgbb": {
+    "plain_language_name": "Hold the Instruments Against the Stick Before Release",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because instruments published short of their framework would mislead from day one - the reading is what catches that before it releases.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-vjam3g": {
+    "plain_language_name": "Lay the Constitution Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The constituting stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the constituting can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-8qmtyb": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Bodies Stand",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because bodies nobody has confirmed are bodies nobody can staff.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-2m3gxz": {
+    "plain_language_name": "Take Custody of the Constitution Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the constitution begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-d3nvq6": {
+    "plain_language_name": "Constitute the Boards and Committees the Design Calls For",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the constitution: the boards and committees the committed design calls for are constituted, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a design of bodies without bodies is a design of shadows - the constituting is where governance gains its people.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function constitutes the boards and committees the committed design calls for."
+    }
+  },
+  "processes:task-ge-build-verify-9gzb6m": {
+    "plain_language_name": "Hold the Bodies Against the Design Before They Sit",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because bodies constituted short of their framework would govern loosely from day one - the reading is what catches that before they sit.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-crhfkv": {
+    "plain_language_name": "Lay the Equipping Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The equipping stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the equipping can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-yu72tz": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Bodies Are Equipped",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because bodies nobody has confirmed as equipped are bodies that would govern unarmed.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-syq2un": {
+    "plain_language_name": "Take Custody of the Equipping Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the equipping begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-xd553b": {
+    "plain_language_name": "Hand Each Body the Instruments It Will Govern By",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the equipping: each constituted body is handed the codified charters, policies, and standards it will govern by, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a body without its instruments is a gavel without a bench - the equipping is what arms the governance.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function hands each body the charters, policies, and standards it will govern by."
+    }
+  },
+  "processes:task-ge-build-verify-mvu457": {
+    "plain_language_name": "Hold the Equipping Against the Design Before It Counts",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because bodies equipped short of their framework would reach for missing instruments from day one - the reading is what catches that before it matters.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-mh6mfb": {
+    "plain_language_name": "Lay the Cycles Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The cycles' establishing stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the cycles' establishing can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-52he6v": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Cycles",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because cycles nobody has confirmed are rhythms nobody can keep.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-qjed7w": {
+    "plain_language_name": "Take Custody of the Cycles Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the cycles begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-mz7c8z": {
+    "plain_language_name": "Set the Rhythm the Bodies Will Convene On",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the cycles: the regular convening rhythms the bodies will keep are established against their charters, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a body that never convenes never governs - the cycles are what turn constituted bodies into sitting ones.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function sets the convening rhythms each body's charter calls for."
+    }
+  },
+  "processes:task-ge-build-verify-6pcmhf": {
+    "plain_language_name": "Hold the Cycles Against the Charters Before They Bind",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because cycles set short of their charters would strand the bodies from day one - the reading is what catches that before the first sitting.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-qckf8u": {
+    "plain_language_name": "Lay the Readiness Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The readiness call stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the readiness call can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-zn655n": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Readiness",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because readiness nobody has confirmed is readiness nobody can build on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-evpwg3": {
+    "plain_language_name": "Take Custody of the Readiness Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the readiness call begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-ypz696": {
+    "plain_language_name": "Test Whether the Bodies Can Truly Govern",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the readiness call: the bodies are tested for whether they can convene and exercise their decision rights as designed, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because a body ready on paper may be unready in the room - the testing is what finds the difference before the first decision.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function tests whether the bodies can convene and exercise their decision rights as designed."
+    }
+  },
+  "processes:task-ge-build-verify-5sxw4t": {
+    "plain_language_name": "Hold the Readiness Against the Design Before It Counts",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because readiness judged short of the design would hand operation a body that cannot govern - the reading is what catches that before it counts.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-zxkgc7": {
+    "plain_language_name": "Lay the Tooling Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The tooling's deployment stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the tooling's deployment can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-yemauu": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Tooling",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because tooling nobody has confirmed is tooling nobody can watch through.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-w9b6eu": {
+    "plain_language_name": "Take Custody of the Tooling Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the deployment begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-c5j7nf": {
+    "plain_language_name": "Stand Up the Eyes the Controls Need",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the tooling: the monitoring the control objectives and the compliance regime demand is stood up, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because controls without eyes are controls honoured only by choice - the tooling is what makes the watching constant.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function stands up the monitoring the control objectives and regime demand."
+    }
+  },
+  "processes:task-ge-build-verify-vvnwvw": {
+    "plain_language_name": "Hold the Tooling Against the Specification Before It Watches",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because tooling deployed short of its specification would watch with gaps from day one - the reading is what catches that before it watches.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-dmpg98": {
+    "plain_language_name": "Lay the Reporting Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The lines' establishing stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the lines' establishing can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-8pkexe": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Lines",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because lines nobody has confirmed are lines nobody can report through.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-f8qffn": {
+    "plain_language_name": "Take Custody of the Reporting Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the lines begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-uh4wuk": {
+    "plain_language_name": "Draw the Wires from the Apparatus to the Bodies",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the lines: the routes by which risk and control findings reach the governance bodies are established per the integration design, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because apparatus that reports nowhere governs nothing - the lines are what wire the watching to the people who can act.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function establishes the routes by which findings reach the governance bodies."
+    }
+  },
+  "processes:task-ge-build-verify-rpz2g7": {
+    "plain_language_name": "Hold the Lines Against the Integration Design Before They Carry",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because lines set short of the integration design would leave findings unheard from day one - the reading is what catches that before they carry.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-8etqrz": {
+    "plain_language_name": "Lay the Registers Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The registers' opening stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the registers' opening can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-ppjmue": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Registers",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because registers nobody has confirmed are registers nobody would trust.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-mbtm4n": {
+    "plain_language_name": "Take Custody of the Registers Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the registers begin from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-fzv7f8": {
+    "plain_language_name": "Open the Registers the Framework Designed",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the registers: the risk registers are opened and populated per the designed taxonomy and scales, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because risk nobody has written down is risk nobody manages - the registers are where the watching begins.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function opens the registers and populates them per the designed taxonomy and scales."
+    }
+  },
+  "processes:task-ge-build-verify-vxhcyf": {
+    "plain_language_name": "Hold the Registers Against the Framework Before They Work",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because registers opened short of the framework would mislead the watching from day one - the reading is what catches that before they work.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-build-record-fha2h3": {
+    "plain_language_name": "Lay the Apparatus Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The apparatus' readiness call stays provable for as long as the Operate context demands.",
+    "business_purpose": "It exists so the apparatus' readiness call can be evidenced for as long as the Operate context demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-build-confirm-9akpdb": {
+    "plain_language_name": "Reconcile the Inventory and Confirm the Apparatus Ready",
+    "plain_language_description": "When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because apparatus nobody has confirmed ready is apparatus nobody can hand to operation.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-build-intake-zuwn39": {
+    "plain_language_name": "Take Custody of the Apparatus Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.",
+    "business_purpose": "It exists so the readiness call begins from a registered pack rather than from loose drafts.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-build-transform-7ufn3c": {
+    "plain_language_name": "Test Whether the Apparatus Can Operate in Earnest",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the build for the readiness call: the registers, tooling, and reporting are tested for whether they can operate in earnest, joined by the rest of the build, and the build-ready inventory is produced for confirmation.",
+    "business_purpose": "It exists because apparatus ready on paper may be unready in the room - the testing is what finds the difference before operation inherits it.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function tests whether the registers, tooling, and reporting can operate in earnest."
+    }
+  }
+}

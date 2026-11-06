@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Execute Disbursements Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Execute Disbursements** (`processes:activity-ao-operate-h6hmqm`). Its canonical ID is `processes:task-ao-operate-intake-mgzvd4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Disbursement opens when the computed cycle payroll is handed over as the figures to be paid. The intake custodian accepts the handover, registers it with audit identifiers, and puts the payment run on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so pay goes out from the registered computed figures, not from side arrangements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the computed payroll is presented for disbursement, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the computed payroll as the disbursement baseline, with audit references, and opens the payment run.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Computed Payroll for Disbursement |
+| `plain_language_description` | string | no | Disbursement opens when the computed cycle payroll is handed over as the figures to be paid. The intake custodian … |
+| `business_purpose` | string | no | It exists so pay goes out from the registered computed figures, not from side arrangements. |
+| `practical_context` | string | no | It opens when the computed payroll is presented for disbursement, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

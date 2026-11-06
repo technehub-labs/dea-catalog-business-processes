@@ -1,0 +1,582 @@
+{
+ "processes:task-pv-design-intake-updatw": {
+  "plain_language_name": "Open the Component Specification File",
+  "plain_language_description": "The specification work opens with the committed architecture and its design materials arriving to be populated. The intake custodian logs them against the specification file so the specifying starts accounted for.",
+  "business_purpose": "It exists because components specified from an unlogged architecture populate the wrong skeleton.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the committed architecture into the component specification file."
+  }
+ },
+ "processes:task-pv-design-verify-2wbb6h": {
+  "plain_language_name": "Check the Component Inputs Against the Architecture",
+  "plain_language_description": "Before the components are specified, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the specifying proceeds.",
+  "business_purpose": "It exists because a component that does not fit the architecture is a feature in search of a product.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the component inputs against the architecture before specifying."
+  }
+ },
+ "processes:task-pv-design-transform-v7aju8": {
+  "plain_language_name": "Specify What the Proposition Is Made Of",
+  "plain_language_description": "With the checks done, the processing custodian specifies the components, producing the feature and service element set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the architecture is only a skeleton until the components give it something to sell.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management specifies the features and service elements that populate the architecture."
+  }
+ },
+ "processes:task-pv-design-confirm-x4hj65": {
+  "plain_language_name": "Confirm the Specified Components",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the specified components are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the component set is formally accepted before the design commits.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the specified components."
+  }
+ },
+ "processes:task-pv-design-record-zhgqqw": {
+  "plain_language_name": "Keep the Component Specification on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The component set stays readable for the discipline's duration.",
+  "business_purpose": "It exists so what the proposition was specified to contain stays consultable when the build diverges.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the component specification at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-z7q7g6": {
+  "plain_language_name": "Open the Performance Evidence File",
+  "plain_language_description": "The review opens with the performance signals, portfolio gaps, and rationalization material arriving to be examined. The intake custodian logs them against the evidence file so the assembly starts accounted for.",
+  "business_purpose": "It exists because a review held over an unlogged evidence pack reviews only its assumptions.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the performance signals and gap reports into the evidence file."
+  }
+ },
+ "processes:task-pv-improve-verify-pffc8n": {
+  "plain_language_name": "Check the Evidence Pack Before the Review",
+  "plain_language_description": "Before the evidence is assembled, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the assembly proceeds.",
+  "business_purpose": "It exists because findings drawn from unverified evidence unmake themselves at the first challenge.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the evidence pack for completeness before the review examines it."
+  }
+ },
+ "processes:task-pv-improve-transform-kmzpdx": {
+  "plain_language_name": "Gather the Review's Evidence",
+  "plain_language_description": "With the checks done, the processing custodian assembles the material, producing the evidence set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the review can only be as honest as the evidence placed in front of it.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management assembles the performance signals, gaps, and rationalization evidence for the review."
+  }
+ },
+ "processes:task-pv-improve-confirm-ghkmaz": {
+  "plain_language_name": "Confirm the Assembled Evidence",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the assembled evidence is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the review proceeds on evidence formally accepted as complete.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the assembled evidence and notifies the findings work."
+  }
+ },
+ "processes:task-pv-improve-record-24arc4": {
+  "plain_language_name": "Keep the Evidence Assembly on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. What the review saw stays readable for the discipline's duration.",
+  "business_purpose": "It exists so what the review examined, and omitted, stays answerable later.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the evidence assembly record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-jf48qy": {
+  "plain_language_name": "Open the Findings File",
+  "plain_language_description": "The findings work opens with the assembled performance evidence arriving to be read for what it says. The intake custodian logs it against the findings file so the forming starts accounted for.",
+  "business_purpose": "It exists because findings formed from an unlogged evidence set find only what the reader brought.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the assembled evidence into the findings file."
+  }
+ },
+ "processes:task-pv-improve-verify-2ecqqs": {
+  "plain_language_name": "Check the Evidence Before Findings Are Formed",
+  "plain_language_description": "Before the findings are formed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the forming proceeds.",
+  "business_purpose": "It exists because a finding built on a cracked evidence base cracks the same way.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the evidence against the review's requirements before findings are formed."
+  }
+ },
+ "processes:task-pv-improve-transform-zmxrbr": {
+  "plain_language_name": "Turn the Evidence into Findings",
+  "plain_language_description": "With the checks done, the processing custodian forms the findings, producing them in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because evidence that never becomes a finding changes nothing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management reads the evidence and forms each finding it supports."
+  }
+ },
+ "processes:task-pv-improve-confirm-ybjfqb": {
+  "plain_language_name": "Confirm the Formed Findings",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the formed findings are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the findings are formally accepted before they are routed to the tracks that act on them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the formed findings."
+  }
+ },
+ "processes:task-pv-improve-record-mjtd2a": {
+  "plain_language_name": "Retain the Findings Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The findings and their basis stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the findings, and the evidence behind them, can be revisited when the routes are challenged.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the findings record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-atmty3": {
+  "plain_language_name": "Open the Routing File",
+  "plain_language_description": "The routing work opens with the formed findings arriving to be sent onward. The intake custodian logs them against the routing file so the routing starts accounted for.",
+  "business_purpose": "It exists because findings routed from an unlogged set land on the wrong desks.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the formed findings into the routing file."
+  }
+ },
+ "processes:task-pv-improve-verify-k8e9fw": {
+  "plain_language_name": "Check the Findings Before They Are Routed",
+  "plain_language_description": "Before the routings are made, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the routing proceeds.",
+  "business_purpose": "It exists because a finding sent to the wrong track is a finding that dies in transit.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the findings before they are routed to the evolution and rationalization tracks."
+  }
+ },
+ "processes:task-pv-improve-transform-hsebpu": {
+  "plain_language_name": "Send Each Finding to Its Track",
+  "plain_language_description": "With the checks done, the processing custodian routes the findings, producing the routings in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the evolution and rationalization tracks can only act on what actually reaches them.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management sends each finding to the evolution or rationalization track that will act on it."
+  }
+ },
+ "processes:task-pv-improve-confirm-jwrctt": {
+  "plain_language_name": "Confirm the Finding Routings",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the finding routings are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the receiving tracks formally accept what has been routed to them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the routings and notifies the receiving tracks."
+  }
+ },
+ "processes:task-pv-improve-record-pa46hc": {
+  "plain_language_name": "Keep the Routing Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. Where each finding went stays readable for the discipline's duration.",
+  "business_purpose": "It exists so no finding can quietly vanish between the review and the tracks.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the routing record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-qyydku": {
+  "plain_language_name": "Collect the Review Outcome Papers",
+  "plain_language_description": "Bringing the outcomes together starts with intake: the findings and their routings arrive to be consolidated. The intake custodian logs them against the outcomes file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because outcomes committed from an incomplete set leave findings permanently unresolved.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the findings and routings into the review outcomes file."
+  }
+ },
+ "processes:task-pv-improve-verify-eqxxnd": {
+  "plain_language_name": "Check the Outcome Inputs Before Commitment",
+  "plain_language_description": "Before the outcomes are committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit outcomes whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management clears the outcome inputs before the commitment round."
+  }
+ },
+ "processes:task-pv-improve-transform-dywmfw": {
+  "plain_language_name": "Consolidate the Review Outcomes",
+  "plain_language_description": "With the checks done, the processing custodian consolidates the review's results, producing the committed outcomes in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the review ends in decisions rather than in a folder of loose findings.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management consolidates the findings and routings into the committed review outcomes."
+  }
+ },
+ "processes:task-pv-improve-confirm-zhfx2e": {
+  "plain_language_name": "Log the Review Outcomes Commitment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the committed review outcomes are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the commitment carries a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management issues the outcomes commitment and notifies the evolution and rationalization teams."
+  }
+ },
+ "processes:task-pv-improve-record-pjk6c3": {
+  "plain_language_name": "Preserve the Committed Outcomes File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The committed outcomes stay readable for the discipline's duration.",
+  "business_purpose": "It exists because the committed outcomes' evidence must survive for the tracks that implement them.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the committed outcomes at their retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-9agvzd": {
+  "plain_language_name": "Open the Drivers File",
+  "plain_language_description": "The analysis opens with the market feedback, competitive pressure, and technology shifts arriving to be examined. The intake custodian logs them against the drivers file so the analysis starts accounted for.",
+  "business_purpose": "It exists because drivers analyzed from an unlogged signal set push the proposition in the wrong direction.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the market feedback and competitor moves into the drivers file."
+  }
+ },
+ "processes:task-pv-improve-verify-x2ff83": {
+  "plain_language_name": "Check the Driver Signals Before Analysis",
+  "plain_language_description": "Before the drivers are analyzed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the analysis proceeds.",
+  "business_purpose": "It exists because enhancements designed for imagined pressures solve imaginary problems.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the driver signals for reliability before the analysis begins."
+  }
+ },
+ "processes:task-pv-improve-transform-z86sdt": {
+  "plain_language_name": "Analyze What Is Pushing the Proposition to Change",
+  "plain_language_description": "With the checks done, the processing custodian analyzes the drivers, producing the analysis in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an enhancement designed without understanding its driver treats the symptom and bills for it.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management analyzes the market feedback, competitive pressure, and technology shifts driving the change."
+  }
+ },
+ "processes:task-pv-improve-confirm-mdsmgq": {
+  "plain_language_name": "Confirm the Analyzed Drivers",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the analyzed drivers are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the driver analysis is formally accepted before enhancements are designed against it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the analyzed drivers."
+  }
+ },
+ "processes:task-pv-improve-record-uygvda": {
+  "plain_language_name": "Keep the Driver Analysis on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The driver analysis stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the reasons for change stay on record when the change itself is questioned.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the driver analysis at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-58hzv5": {
+  "plain_language_name": "Receive the Enhancement Design Pack",
+  "plain_language_description": "The design work opens with the analyzed drivers and their design materials arriving to be answered. The intake custodian logs them against the design file so the designing starts accounted for.",
+  "business_purpose": "It exists because enhancements designed from an unlogged driver set enhance nothing in particular.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the analyzed drivers into the enhancement design file."
+  }
+ },
+ "processes:task-pv-improve-verify-cvsvbb": {
+  "plain_language_name": "Check the Enhancement Inputs Against the Drivers",
+  "plain_language_description": "Before the enhancements are designed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the designing proceeds.",
+  "business_purpose": "It exists because an enhancement that answers no driver is effort wearing a feature's clothes.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the enhancement inputs against the analyzed drivers before designing."
+  }
+ },
+ "processes:task-pv-improve-transform-d6rmng": {
+  "plain_language_name": "Design the Bounded Enhancements",
+  "plain_language_description": "With the checks done, the processing custodian designs the enhancements, producing the bounded designs in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an unbounded enhancement to fix one driver becomes a project that fixes everything and ships nothing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management designs bounded enhancements that each answer a specific driver."
+  }
+ },
+ "processes:task-pv-improve-confirm-6g4ffb": {
+  "plain_language_name": "Confirm the Designed Enhancements",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the designed enhancements are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the designs are formally accepted before the commitment decides their fate.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the designed enhancements."
+  }
+ },
+ "processes:task-pv-improve-record-bvs2t6": {
+  "plain_language_name": "Keep the Enhancement Designs on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The enhancement designs stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the designs, and the drivers they answered, stay paired in the record.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the enhancement designs at their retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-w9vt2f": {
+  "plain_language_name": "Open the Enhancement Commitment File",
+  "plain_language_description": "The commitment work opens with the designed enhancements arriving to be decided on. The intake custodian logs them against the commitment file so the deciding starts accounted for.",
+  "business_purpose": "It exists because enhancements committed from an unlogged design commit effort to the wrong fixes.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the designed enhancements into the commitment file."
+  }
+ },
+ "processes:task-pv-improve-verify-jv3atv": {
+  "plain_language_name": "Check the Enhancements Before They Are Committed",
+  "plain_language_description": "Before the enhancements are committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit enhancements whose designs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management clears the enhancements before the commitment round."
+  }
+ },
+ "processes:task-pv-improve-transform-9mpbgp": {
+  "plain_language_name": "Commit the Enhancements for Build",
+  "plain_language_description": "With the checks done, the processing custodian commits the enhancements, producing the commitments in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a designed enhancement that is never committed is analysis that learned nothing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management commits the designed enhancements for implementation."
+  }
+ },
+ "processes:task-pv-improve-confirm-hgfaad": {
+  "plain_language_name": "Log the Enhancement Commitments",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the committed enhancements are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the commitments carry a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management logs the enhancement commitments and notifies the implementation teams."
+  }
+ },
+ "processes:task-pv-improve-record-hsh9bc": {
+  "plain_language_name": "Preserve the Committed Enhancements File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The commitments stay readable for the discipline's duration.",
+  "business_purpose": "It exists so what was promised for build stays on record when delivery is questioned.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the commitments at their retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-yscqga": {
+  "plain_language_name": "Open the Outcome Measurement File",
+  "plain_language_description": "The measurement work opens with the committed enhancements and their motivating drivers arriving to be judged. The intake custodian logs them against the measurement file so the measuring starts accounted for.",
+  "business_purpose": "It exists because outcomes measured from an unlogged baseline measure nothing at all.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the committed enhancements and their drivers into the measurement file."
+  }
+ },
+ "processes:task-pv-improve-verify-pk4caf": {
+  "plain_language_name": "Check the Measurement Inputs Against the Drivers",
+  "plain_language_description": "Before the outcomes are measured, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the measuring proceeds.",
+  "business_purpose": "It exists because success measured against the wrong driver is failure with better paperwork.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the measurement inputs against the motivating drivers before measuring."
+  }
+ },
+ "processes:task-pv-improve-transform-twfznd": {
+  "plain_language_name": "Measure What the Enhancements Changed",
+  "plain_language_description": "With the checks done, the processing custodian measures the outcomes, producing the measurements in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an enhancement whose outcome is never measured teaches the enterprise nothing it paid for.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management measures each enhancement's outcome against the driver that motivated it."
+  }
+ },
+ "processes:task-pv-improve-confirm-fsqza3": {
+  "plain_language_name": "Confirm the Measured Outcomes",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the measured outcomes are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the measurements are formally accepted before they steer the next evolution round.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the measured outcomes."
+  }
+ },
+ "processes:task-pv-improve-record-ey7cgj": {
+  "plain_language_name": "Retain the Outcome Measurements",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The outcome measurements stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the evolution's track record survives to inform the next round of drivers.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the outcome measurements at their retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-uqqgj4": {
+  "plain_language_name": "Open the Justification Case File",
+  "plain_language_description": "The assessment opens with the portfolio propositions and their investment envelopes arriving to be examined. The intake custodian logs them against the justification file so the assessing starts accounted for.",
+  "business_purpose": "It exists because a justification assessed from an unlogged case defends the wrong spending.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the propositions and their envelopes into the justification file."
+  }
+ },
+ "processes:task-pv-improve-verify-9pbv82": {
+  "plain_language_name": "Check the Justification Inputs Before Assessment",
+  "plain_language_description": "Before the propositions are assessed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the assessing proceeds.",
+  "business_purpose": "It exists because spending retracted on a flawed assessment is spending that never returns.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the justification inputs before the propositions are assessed."
+  }
+ },
+ "processes:task-pv-improve-transform-rrxcsp": {
+  "plain_language_name": "Test Each Proposition's Right to Its Investment",
+  "plain_language_description": "With the checks done, the processing custodian assesses the justifications, producing the assessments in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because yesterday's investment case does not automatically earn today's envelope.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management assesses whether each proposition still justifies its investment envelope."
+  }
+ },
+ "processes:task-pv-improve-confirm-as68wv": {
+  "plain_language_name": "Confirm the Justification Assessment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the justification assessment is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the assessments are formally accepted before options are formed from them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the justification assessment."
+  }
+ },
+ "processes:task-pv-improve-record-xq3zvf": {
+  "plain_language_name": "Keep the Justification Assessment on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The assessments stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the verdicts on spending stay on record when the affected teams ask why.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the justification assessment at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-tbq8sx": {
+  "plain_language_name": "Open the Options File",
+  "plain_language_description": "The option work opens with the failing propositions and their assessments arriving to be given choices. The intake custodian logs them against the options file so the forming starts accounted for.",
+  "business_purpose": "It exists because options formed from an unlogged assessment offer exits nobody can justify.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the failing propositions and their assessments into the options file."
+  }
+ },
+ "processes:task-pv-improve-confirm-a5g5dq": {
+  "plain_language_name": "Confirm the Formed Options",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the formed options are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the options are formally accepted before the rationalization decisions choose among them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the formed retire-or-pivot options."
+  }
+ },
+ "processes:task-pv-improve-record-mgg3zb": {
+  "plain_language_name": "Keep the Option Set on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The options formed stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the choices that were on the table stay visible when the decision is second-guessed.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the option set at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-improve-intake-wq6qhc": {
+  "plain_language_name": "Collect the Rationalization Papers",
+  "plain_language_description": "Bringing the decisions together starts with intake: the formed retire-or-pivot options arrive to be decided on. The intake custodian logs them against the rationalization file so the deciding works from one accounted-for set.",
+  "business_purpose": "It exists because decisions committed from an incomplete option set decide nothing that lasts.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the formed options into the rationalization file."
+  }
+ },
+ "processes:task-pv-improve-verify-fksbn2": {
+  "plain_language_name": "Check the Decision Inputs Before Commitment",
+  "plain_language_description": "Before the decisions are committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit decisions whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management clears the decision inputs before the commitment round."
+  }
+ },
+ "processes:task-pv-improve-transform-4en8uz": {
+  "plain_language_name": "Decide Which Propositions Retire or Pivot",
+  "plain_language_description": "With the checks done, the processing custodian commits the decisions, producing them in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a proposition that has lost its justification keeps spending until someone says stop.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management commits the retire-or-pivot decisions selected from the formed options."
+  }
+ },
+ "processes:task-pv-improve-confirm-82z8az": {
+  "plain_language_name": "Log the Rationalization Decisions",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the rationalization decisions are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the decisions carry a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management logs the rationalization decisions and notifies the affected teams."
+  }
+ },
+ "processes:task-pv-improve-record-hrgcrr": {
+  "plain_language_name": "Preserve the Rationalization Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The decisions and their grounds stay readable for the discipline's duration.",
+  "business_purpose": "It exists because a retirement decided without a record looks, later, like a loss without a reason.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the rationalization record at its retention tier and sets the retrieval handles."
+  }
+ }
+}

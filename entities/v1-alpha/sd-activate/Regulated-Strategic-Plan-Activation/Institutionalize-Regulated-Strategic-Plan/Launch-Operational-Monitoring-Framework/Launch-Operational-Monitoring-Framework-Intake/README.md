@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-i
 
 This is a **Task** (level L4), named **Launch Operational Monitoring Framework Intake**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Launch Operational Monitoring Framework** (`processes:activity-sd-activate-92pg6h`). Its canonical ID is `processes:task-sd-activate-intake-trqgq3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The monitoring launch opens as its material arrives: the supervisor-acknowledged strategic plan together with the regulator-mandated monitoring framework. The intake custodian logs them against the launch file so the launching starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the monitoring framework goes live over a logged acknowledged plan and the mandated framework, under continuing supervision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the acknowledged plan and the monitoring framework are presented for launch, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the acknowledged plan and the mandated monitoring framework into the launch file, so the framework launch starts accounted for under the supervisor's continuing oversight.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Acknowledged Plan and the Mandated Monitoring Framework |
+| `plain_language_description` | string | no | The monitoring launch opens as its material arrives: the supervisor-acknowledged strategic plan together with the … |
+| `business_purpose` | string | no | It exists so the monitoring framework goes live over a logged acknowledged plan and the mandated framework, under … |
+| `practical_context` | string | no | It opens when the acknowledged plan and the monitoring framework are presented for launch, with the activity's owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

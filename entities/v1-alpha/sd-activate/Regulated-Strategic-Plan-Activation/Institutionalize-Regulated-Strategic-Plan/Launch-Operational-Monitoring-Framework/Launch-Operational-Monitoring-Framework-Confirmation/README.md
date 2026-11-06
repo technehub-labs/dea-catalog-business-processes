@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-c
 
 This is a **Task** (level L4), named **Launch Operational Monitoring Framework Confirmation**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Launch Operational Monitoring Framework** (`processes:activity-sd-activate-92pg6h`). Its canonical ID is `processes:task-sd-activate-confirm-qwg65y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the framework is live. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the launch under continuing oversight.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supervisor and the business functions both hear one confirmed word that monitoring is operating, not promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the live framework is ready to hand on, and it closes with the confirmation issued and the launch's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function confirms to the supervising authority and the operations and workforce functions that the monitoring framework is live, reconciles the delivery against what the launch promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Live Framework to the Supervisor and the Business |
+| `plain_language_description` | string | no | The confirming opens once the framework is live. The confirmation custodian tells the downstream teams it is available … |
+| `business_purpose` | string | no | It exists so the supervisor and the business functions both hear one confirmed word that monitoring is operating, not … |
+| `practical_context` | string | no | It opens when the live framework is ready to hand on, and it closes with the confirmation issued and the launch's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Implement Tax Controls Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Tax Controls** (`processes:activity-fa-build-5h2xk4`). Its canonical ID is `processes:task-fa-build-transform-kprxxy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the positions verified, the processing custodian does the fitting itself: the controls each documented position needs to stay safe in operation are implemented, and the fitted guard-rails are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a tax position without controls is a claim waiting to unravel - the guard-rails are what keep the position standing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified positions are ready to be governed, and it ends with the implemented controls produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function fits each position's guard-rails so the claim holds in daily operation, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fit the Guard-Rails Around the Tax Positions |
+| `plain_language_description` | string | no | With the positions verified, the processing custodian does the fitting itself: the controls each documented position … |
+| `business_purpose` | string | no | It exists because a tax position without controls is a claim waiting to unravel - the guard-rails are what keep the … |
+| `practical_context` | string | no | It starts once checking is complete and the verified positions are ready to be governed, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

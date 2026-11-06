@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Commit Corporate Strategy Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Commit Corporate Strategy** (`processes:activity-sd-conceive-7tr4ax`). Its canonical ID is `processes:task-sd-conceive-confirm-3r8cha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the strategy is committed. The confirmation custodian tells the downstream teams the committed corporate strategy is available, and closes the reconciliation against what the activity promised for the commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so planning and design downstream work from one confirmed strategy rather than from circulating excerpts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed strategy is ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function releases the committed corporate strategy to the downstream planning teams, reconciles it against what the commitment promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Release the Committed Corporate Strategy Downstream |
+| `plain_language_description` | string | no | The confirming opens once the strategy is committed. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so planning and design downstream work from one confirmed strategy rather than from circulating excerpts. |
+| `practical_context` | string | no | It opens when the committed strategy is ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

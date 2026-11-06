@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Verify Ledger Implementation Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Verify Ledger Implementation** (`processes:activity-fa-build-ee89qu`). Its canonical ID is `processes:task-fa-build-intake-52ugge`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Proving opens when the implemented systems and ledger are handed over as the whole whose readiness must be judged. The intake custodian accepts them, registers them with audit identifiers, and starts the determination from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so readiness is judged over the registered implemented whole rather than over optimism.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the implemented systems are presented for the determination, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the implemented systems as the proving baseline, with audit references, and opens the readiness work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Implemented Systems for the Ledger Call |
+| `plain_language_description` | string | no | Proving opens when the implemented systems and ledger are handed over as the whole whose readiness must be judged. The … |
+| `business_purpose` | string | no | It exists so readiness is judged over the registered implemented whole rather than over optimism. |
+| `practical_context` | string | no | It opens when the implemented systems are presented for the determination, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Commit Strategic Initiatives Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Commit Strategic Initiatives** (`processes:activity-sd-build-u85tt9`). Its canonical ID is `processes:task-sd-build-intake-us9vec`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The committing opens as its material arrives: the bounded initiatives that have come through scope setting and fit review. The intake custodian logs them against the commitment file so the committing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the initiative set is committed from logged, attributable material rather than from a list still circulating informally.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded initiatives are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the bounded initiatives into the commitment file, so the committing starts accounted for ahead of sequencing and resourcing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Bounded Initiatives for Commitment |
+| `plain_language_description` | string | no | The committing opens as its material arrives: the bounded initiatives that have come through scope setting and fit … |
+| `business_purpose` | string | no | It exists so the initiative set is committed from logged, attributable material rather than from a list still … |
+| `practical_context` | string | no | It opens when the bounded initiatives are presented for commitment, with the activity's owner told that it has landed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

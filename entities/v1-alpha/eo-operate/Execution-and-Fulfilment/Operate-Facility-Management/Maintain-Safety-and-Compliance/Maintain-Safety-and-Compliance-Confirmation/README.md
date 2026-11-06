@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-co
 
 This is a **Task** (level L4), named **Maintain Safety and Compliance Confirmation**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Safety and Compliance** (`processes:activity-eo-operate-gtt587`). Its canonical ID is `processes:task-eo-operate-confirm-cq2y3q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the watch stands kept, the confirmation custodian reconciles the position against the outcome the activity set out to reach and issues the confirmation. The facility management chain learns where the buildings stand safe and where attention is owed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the facilities are treated as safe only once the position is confirmed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the safety position awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the safety position against the activity's intended outcome and issues the confirmation the facility chain needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Safety and Compliance Position |
+| `plain_language_description` | string | no | When the watch stands kept, the confirmation custodian reconciles the position against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so the facilities are treated as safe only once the position is confirmed. |
+| `practical_context` | string | no | It begins once preparation is complete and the safety position awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

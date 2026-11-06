@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Commit the Strategy for Framing and Mix Conception'
+plain_language_description: 'With the draft verified, the processing custodian works the commitment itself: the organization and agent strategy is ratified and set down in the form the activity defines, ready to be handed onward to organization model framing and mix conception. Working papers from the commitment are preserved.'
+business_purpose: 'It exists because a strategy only steers the enterprise once it is committed and handed to the work it directs.'
+practical_context: 'It starts once checking is complete and the verified draft is ready to be committed, and it ends with the committed strategy produced and the working papers kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian ratifies the strategy and sets it down for model framing and mix conception to receive, keeping the working papers.'

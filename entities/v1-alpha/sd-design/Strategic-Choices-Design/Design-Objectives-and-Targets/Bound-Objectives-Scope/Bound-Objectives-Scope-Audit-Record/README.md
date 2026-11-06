@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-rec
 
 This is a **Task** (level L4), named **Bound Objectives Scope Audit Record**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Bound Objectives Scope** (`processes:activity-sd-design-ck5dud`). Its canonical ID is `processes:task-sd-design-record-2khy6j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the objectives deliberately leave out stays answerable when scope questions arise at plan build.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the exclusions are what keep the design honest, and they deserve retrievable evidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a scope dispute at plan build is settled from the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Objectives Scope Bounding Evidence |
+| `plain_language_description` | string | no | The filing work opens once confirmation is given. The records custodian preserves the audit record at its required … |
+| `business_purpose` | string | no | It exists because the exclusions are what keep the design honest, and they deserve retrievable evidence. |
+| `practical_context` | string | no | It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Watch the Actuals Against the Promises'
+plain_language_description: 'With the levels verified, the processing custodian does the monitoring itself: each window''s actual delivery is read against its promised level, and anything off the mark is flagged, set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a promise nobody measures is a promise quietly broken - the watching is what keeps the levels honest.'
+practical_context: 'It starts once checking is complete and the verified levels are ready to be watched, and it ends with the service-level position produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management reads each window''s actuals against its promised level and flags what slips, keeping the working papers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Screen Candidates Against Sanctions / AML / FCRA / ADA Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Screen Candidates Against Sanctions / AML / FCRA / ADA** (`processes:activity-ao-build-bufzrw`). Its canonical ID is `processes:task-ao-build-verify-bdy3ah`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any check runs, the verification custodian examines the candidate list and the screening matrix against what the activity requires of them. A matrix with gaps would let a candidate slip through uncleared, so defects are flagged for rejection or repair at this point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no candidate is screened under a matrix that would miss what it must catch.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the list and matrix can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian spots a screening line missing from the matrix and flags the defect so the checks catch everything the pool requires.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Screening Inputs Before Screening |
+| `plain_language_description` | string | no | Before any check runs, the verification custodian examines the candidate list and the screening matrix against what the … |
+| `business_purpose` | string | no | It exists so no candidate is screened under a matrix that would miss what it must catch. |
+| `practical_context` | string | no | It runs once the intake is registered and the list and matrix can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Coordinate Subledger Flows Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Coordinate Subledger Flows** (`processes:activity-fa-operate-v4j4en`). Its canonical ID is `processes:task-fa-operate-transform-qanj4j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the outputs verified, the processing custodian does the coordinating itself: each subledger's flow is brought to the ledger in the order and shape it can accept, and the coordinated flows are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a ledger fed carelessly is a ledger that lies politely - the coordination is what makes every tributary arrive true.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified outputs are ready to be brought in, and it ends with the coordinated flows produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function brings each subledger's feed to the ledger in its proper order and shape, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Meet the Feeds Where the Ledger Waits |
+| `plain_language_description` | string | no | With the outputs verified, the processing custodian does the coordinating itself: each subledger's flow is brought to … |
+| `business_purpose` | string | no | It exists because a ledger fed carelessly is a ledger that lies politely - the coordination is what makes every … |
+| `practical_context` | string | no | It starts once checking is complete and the verified outputs are ready to be brought in, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

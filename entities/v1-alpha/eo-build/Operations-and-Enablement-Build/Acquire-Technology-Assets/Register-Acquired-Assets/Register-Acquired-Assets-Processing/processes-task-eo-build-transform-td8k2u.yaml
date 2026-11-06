@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Enter Every Acquired Asset into the Asset Record'
+plain_language_description: 'With the evidence verified, the processing custodian does the registration itself: each acquired, installed, and commissioned asset is entered into the enterprise asset record, and the registered entries are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because assets nobody recorded are assets nobody can account for - the entry is what makes each asset governable.'
+practical_context: 'It starts once checking is complete and the verified evidence is ready to be entered from, and it ends with the registered entries produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management enters each commissioned asset into the enterprise asset record, keeping the working papers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Track Lifecycle Stages Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Track Lifecycle Stages** (`processes:activity-pv-operate-zk8rc3`). Its canonical ID is `processes:task-pv-operate-verify-fcvpe3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a stage position is read from them, the signals are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a proposition tracked in the wrong stage misdirects every decision that stage implies.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the signals, and it closes with them verified fit for the tracking or their defects logged.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks the signals behind a maturity reading, notices a sales feed double-counting one region, and writes the shortfall down for the feed to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Signals That Bear on Stage Positions |
+| `plain_language_description` | string | no | Before a stage position is read from them, the signals are put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because a proposition tracked in the wrong stage misdirects every decision that stage implies. |
+| `practical_context` | string | no | It opens once intake has registered the signals, and it closes with them verified fit for the tracking or their defects … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

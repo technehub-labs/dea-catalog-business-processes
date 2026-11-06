@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-conf
 
 This is a **Task** (level L4), named **Calibrate Demand Programs Confirmation**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Calibrate Demand Programs** (`processes:activity-pr-build-ywaa6n`). Its canonical ID is `processes:task-pr-build-confirm-s966qb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the tuned programmes hold up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the calibrated settings are formally accepted before the programmes settle into steady operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian logs the tuning sign-off once the demand-programme custodian acknowledges it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Calibrated Programmes |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the … |
+| `business_purpose` | string | no | It exists so the calibrated settings are formally accepted before the programmes settle into steady operation. |
+| `practical_context` | string | no | It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

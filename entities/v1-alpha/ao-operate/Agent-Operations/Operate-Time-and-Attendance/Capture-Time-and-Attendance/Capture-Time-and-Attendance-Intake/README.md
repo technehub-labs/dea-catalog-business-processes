@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Capture Time and Attendance Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Capture Time and Attendance** (`processes:activity-ao-operate-kyup4x`). Its canonical ID is `processes:task-ao-operate-intake-zc5mxm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Capture opens when the agents delivering service are handed over as the workforce whose time and attendance must be recorded. The intake custodian accepts the handover, registers it with audit identifiers, and starts the capture from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so time is captured for the agents actually delivering service, not for an assumed roster.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the delivering agents are presented for capture, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the agents delivering service as the capture baseline, with audit references, and opens the capture work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Agents Delivering Service for Capture |
+| `plain_language_description` | string | no | Capture opens when the agents delivering service are handed over as the workforce whose time and attendance must be … |
+| `business_purpose` | string | no | It exists so time is captured for the agents actually delivering service, not for an assumed roster. |
+| `practical_context` | string | no | It opens when the delivering agents are presented for capture, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

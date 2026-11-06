@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-tr
 
 This is a **Task** (level L4), named **Measure Rationalization Outcomes Processing**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Measure Rationalization Outcomes** (`processes:activity-pv-improve-k3hy7t`). Its canonical ID is `processes:task-pv-improve-transform-ne65yt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the inputs are verified, the measuring itself is done. The processing custodian compares the realized portfolio state with the pre-decision baseline, producing the outcome measurement in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because committed rationalization decisions only prove their worth when what the portfolio actually became is measured against where it stood before.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified inputs are ready to be worked, and it closes with the outcome measurement produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management scores what changed after a rationalization wave, comparing the portfolio's current position with the pre-decision baseline and writing up the measurement with its workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure the Realized Rationalization Outcomes |
+| `plain_language_description` | string | no | Once the inputs are verified, the measuring itself is done. The processing custodian compares the realized portfolio … |
+| `business_purpose` | string | no | It exists because committed rationalization decisions only prove their worth when what the portfolio actually became is … |
+| `practical_context` | string | no | It opens when the verified inputs are ready to be worked, and it closes with the outcome measurement produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

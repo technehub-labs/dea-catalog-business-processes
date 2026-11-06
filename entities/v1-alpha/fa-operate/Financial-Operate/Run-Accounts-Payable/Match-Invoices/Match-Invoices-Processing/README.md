@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Match Invoices Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Match Invoices** (`processes:activity-fa-operate-f3c2rt`). Its canonical ID is `processes:task-fa-operate-transform-pksym4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the papers verified, the processing custodian does the matching itself: each invoice is set against its purchase order and its goods receipt, discrepancies written down, and the matched invoices are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because paying for what was never ordered is the oldest leak in the book - the matching is what shuts it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified papers are ready to be matched, and it ends with the matched invoices produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function sets each bill against its order and receipt and writes down the discrepancies, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prove Every Bill Was Really Ordered and Really Received |
+| `plain_language_description` | string | no | With the papers verified, the processing custodian does the matching itself: each invoice is set against its purchase … |
+| `business_purpose` | string | no | It exists because paying for what was never ordered is the oldest leak in the book - the matching is what shuts it. |
+| `practical_context` | string | no | It starts once checking is complete and the verified papers are ready to be matched, and it ends with the matched … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-re
 
 This is a **Task** (level L4), named **Execute Facility Work Orders Audit Record**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Facility Work Orders** (`processes:activity-eo-operate-q3sw3q`). Its canonical ID is `processes:task-eo-operate-record-3y9sfm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval handles for it. Which orders were worked, by whom, and to what result, stays readable whenever the facility's upkeep history is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the completion of each order can be evidenced whenever the upkeep history is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the execution trail at its retention tier and sets the retrieval handles an upkeep review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Work Order Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the completion of each order can be evidenced whenever the upkeep history is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

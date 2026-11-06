@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Configure Posting Rules Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Configure Posting Rules** (`processes:activity-fa-build-g2g6yw`). Its canonical ID is `processes:task-fa-build-intake-5nkpc7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Configuration opens when the chart of accounts and the financial controls are handed over together as the frame the posting rules must be set within. The intake custodian accepts both, registers them with audit identifiers, and starts the configuration from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so entries are governed by rules set from the registered chart and controls.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the chart and controls are presented for the configuration, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function registers the chart and controls as the rule-setting baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Chart and the Controls for the Rules |
+| `plain_language_description` | string | no | Configuration opens when the chart of accounts and the financial controls are handed over together as the frame the … |
+| `business_purpose` | string | no | It exists so entries are governed by rules set from the registered chart and controls. |
+| `practical_context` | string | no | It opens when the chart and controls are presented for the configuration, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

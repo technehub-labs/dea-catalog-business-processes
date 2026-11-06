@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-co
 
 This is a **Task** (level L4), named **Develop Improvement Capability Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Develop Improvement Capability** (`processes:activity-eo-improve-334m2m`). Its canonical ID is `processes:task-eo-improve-confirm-r4cdky`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the capability stands developed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The programme learns it has the practitioners, methods, and governance to sustain the work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the programme runs on capability that was deliberately built, not on borrowed expertise.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the developed capability awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the developed capability against the activity's intended outcome and issues the confirmation the programme needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Improvement Capability |
+| `plain_language_description` | string | no | When the capability stands developed, the confirmation custodian reconciles it against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so the programme runs on capability that was deliberately built, not on borrowed expertise. |
+| `practical_context` | string | no | It begins once preparation is complete and the developed capability awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

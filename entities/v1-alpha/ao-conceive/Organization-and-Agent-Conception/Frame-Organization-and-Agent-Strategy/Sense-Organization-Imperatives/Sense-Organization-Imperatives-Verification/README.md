@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-v
 
 This is a **Task** (level L4), named **Sense Organization Imperatives Verification**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Sense Organization Imperatives** (`processes:activity-ao-conceive-fyb9vc`). Its canonical ID is `processes:task-ao-conceive-verify-a8sbgj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any imperative is read, the verification custodian checks the strategy and signals against what the sensing requires - that the signals are current and the strategy reading is complete. Defects are flagged for rejection or repair before the sensing is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy work never sets out from stale signals or a half-read strategy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds one substrate signal out of date and flags the defect before the imperatives are read.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Signals Before Reading the Imperatives |
+| `plain_language_description` | string | no | Before any imperative is read, the verification custodian checks the strategy and signals against what the sensing … |
+| `business_purpose` | string | no | It exists so the strategy work never sets out from stale signals or a half-read strategy. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

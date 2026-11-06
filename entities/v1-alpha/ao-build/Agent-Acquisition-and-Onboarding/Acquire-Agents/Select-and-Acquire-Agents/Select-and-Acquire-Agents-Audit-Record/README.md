@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 This is a **Task** (level L4), named **Select and Acquire Agents Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Select and Acquire Agents** (`processes:activity-ao-build-4vccpu`). Its canonical ID is `processes:task-ao-build-record-2nmbeu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The records custodian ends the activity by preserving the acquisition trail at its required retention tier and establishing the retrieval handles that keep it reachable. Who was selected, against what requirement, and why, remains answerable from the record alone.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every acquisition decision stays evidenced and retrievable for later scrutiny.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the acquisition trail at its retention tier and sets the retrieval handles a future audit would use to see why each agent was chosen.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Acquisition Audit Record |
+| `plain_language_description` | string | no | The records custodian ends the activity by preserving the acquisition trail at its required retention tier and … |
+| `business_purpose` | string | no | It exists so every acquisition decision stays evidenced and retrievable for later scrutiny. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

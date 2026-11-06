@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Withdrawn Service and Its Routed Residuals for Closure'
+plain_language_description: 'The closure work opens as its material arrives: the withdrawn service together with the residual obligations already routed from the withdrawal. The intake custodian logs them against the closure file so the confirming starts accounted for.'
+business_purpose: 'It exists so retirement closure is confirmed only over a logged withdrawn service and routed residuals, never over loose assertions that a product has gone.'
+practical_context: 'It opens when the withdrawn service and its routed residuals are presented for closure, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the proposition design authority logs the newly withdrawn service and the routed warranty and data-retention residuals into the closure file, so the closure confirmation starts accounted for.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Gather Development Drivers Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Gather Development Drivers** (`processes:activity-ao-improve-6fusds`). Its canonical ID is `processes:task-ao-improve-verify-ydkfxa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any driver is gathered, the verification custodian checks the reviews, analyses, and triggers against what gathering requires - that they are the committed versions and current. Defects are flagged for rejection or repair before the drivers are gathered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the development case is never built on superseded reviews or stale analyses.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a gap analysis from a superseded framework cycle and flags the defect before drivers are gathered from it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Source Material Before Gathering the Drivers |
+| `plain_language_description` | string | no | Before any driver is gathered, the verification custodian checks the reviews, analyses, and triggers against what … |
+| `business_purpose` | string | no | It exists so the development case is never built on superseded reviews or stale analyses. |
+| `practical_context` | string | no | It runs once the intake is registered and the material can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-ver
 
 This is a **Task** (level L4), named **Commit Platform Architecture Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Commit Platform Architecture** (`processes:activity-eo-design-53q5rz`). Its canonical ID is `processes:task-eo-design-verify-bkrvus`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the architecture is committed, the verification custodian checks the pieces against what commitment requires - that components, patterns, and topology are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the architecture is never committed from pieces that were only partly drawn.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the topology definition leaving one environment unstated and logs the defect before the architecture is committed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Pieces Before Committing the Architecture |
+| `plain_language_description` | string | no | Before the architecture is committed, the verification custodian checks the pieces against what commitment requires - … |
+| `business_purpose` | string | no | It exists so the architecture is never committed from pieces that were only partly drawn. |
+| `practical_context` | string | no | It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **File Statutory Returns Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **File Statutory Returns** (`processes:activity-ao-operate-7k8xwy`). Its canonical ID is `processes:task-ao-operate-verify-j7c39q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any return is prepared, the verification custodian checks the disbursements and benefits against what filing requires - that both sides are the confirmed, complete set for the cycle. Defects are logged for rejection or repair before any return is prepared.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the returns the authorities receive are never built on incomplete figures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the figures can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the benefits side missing a cycle's adjustments and logs the defect before any return is prepared.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Figures Before Preparing the Returns |
+| `plain_language_description` | string | no | Before any return is prepared, the verification custodian checks the disbursements and benefits against what filing … |
+| `business_purpose` | string | no | It exists so the returns the authorities receive are never built on incomplete figures. |
+| `practical_context` | string | no | It runs once the intake is registered and the figures can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

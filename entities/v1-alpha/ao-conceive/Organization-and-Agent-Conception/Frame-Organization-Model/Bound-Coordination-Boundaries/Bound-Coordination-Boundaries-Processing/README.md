@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Bound Coordination Boundaries Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Coordination Boundaries** (`processes:activity-ao-conceive-ycwkts`). Its canonical ID is `processes:task-ao-conceive-transform-u8de85`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the spans verified, the processing custodian draws the boundaries themselves: where each organizational unit ends and each substrate begins, and how they coordinate across the line, is worked out and set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because units and substrates only cooperate cleanly once the line between them is drawn and agreed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified spans are ready to be drawn within, and it ends with the bounded coordination boundaries produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management draws the coordination boundaries between units and substrates, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Coordination Boundaries Between Units and Substrates |
+| `plain_language_description` | string | no | With the spans verified, the processing custodian draws the boundaries themselves: where each organizational unit ends … |
+| `business_purpose` | string | no | It exists because units and substrates only cooperate cleanly once the line between them is drawn and agreed. |
+| `practical_context` | string | no | It starts once checking is complete and the verified spans are ready to be drawn within, and it ends with the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

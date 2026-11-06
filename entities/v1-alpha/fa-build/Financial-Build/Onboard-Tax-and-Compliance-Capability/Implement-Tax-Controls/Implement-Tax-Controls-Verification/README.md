@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-veri
 
 This is a **Task** (level L4), named **Implement Tax Controls Verification**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Tax Controls** (`processes:activity-fa-build-5h2xk4`). Its canonical ID is `processes:task-fa-build-verify-es9dcy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is fitted, the verification custodian checks the documented positions against what control work requires - that each position is documented completely enough to be governed. Gaps are logged for rejection or repair before any guard-rail is fitted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no position is governed from documentation too thin to control against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the positions can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a position documented without its filing basis and logs the gap before any guard-rail is fitted.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Positions Before Fitting the Guard-Rails |
+| `plain_language_description` | string | no | Before anything is fitted, the verification custodian checks the documented positions against what control work … |
+| `business_purpose` | string | no | It exists so no position is governed from documentation too thin to control against. |
+| `practical_context` | string | no | It runs once the intake is registered and the positions can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

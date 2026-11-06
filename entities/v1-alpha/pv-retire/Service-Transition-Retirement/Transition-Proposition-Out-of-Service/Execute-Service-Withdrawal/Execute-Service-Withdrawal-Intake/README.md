@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-int
 
 This is a **Task** (level L4), named **Execute Service Withdrawal Intake**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Execute Service Withdrawal** (`processes:activity-pv-retire-6hqeys`). Its canonical ID is `processes:task-pv-retire-intake-s2nuvm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The withdrawing opens as its material arrives: the service withdrawal plan that says how the proposition comes out of operational reliance. The intake custodian logs it against the withdrawal file so the executing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the removal of a live service starts from one logged plan rather than from verbal instructions drifting across teams.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the withdrawal plan is presented for execution, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the proposition design authority receives the approved withdrawal plan for a sunset offering, logs it into the withdrawal file, and signals that the removal work can start accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Withdrawal Plan for Execution |
+| `plain_language_description` | string | no | The withdrawing opens as its material arrives: the service withdrawal plan that says how the proposition comes out of … |
+| `business_purpose` | string | no | It exists so the removal of a live service starts from one logged plan rather than from verbal instructions drifting … |
+| `practical_context` | string | no | It opens when the withdrawal plan is presented for execution, with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

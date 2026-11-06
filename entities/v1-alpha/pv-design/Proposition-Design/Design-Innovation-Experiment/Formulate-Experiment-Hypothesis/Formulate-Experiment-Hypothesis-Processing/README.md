@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-design-tra
 
 This is a **Task** (level L4), named **Formulate Experiment Hypothesis Processing**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Formulate Experiment Hypothesis** (`processes:activity-pv-design-fms697`). Its canonical ID is `processes:task-pv-design-transform-tzfz2r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checks done, the processing custodian formulates the hypothesis, producing the bounded claim in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the thesis direction only earns knowledge when stated as something a test can refute.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management turns the thesis direction into a claim a test can refute.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn the Thesis Direction into a Testable Claim |
+| `plain_language_description` | string | no | With the checks done, the processing custodian formulates the hypothesis, producing the bounded claim in the form the … |
+| `business_purpose` | string | no | It exists because the thesis direction only earns knowledge when stated as something a test can refute. |
+| `practical_context` | string | no | It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

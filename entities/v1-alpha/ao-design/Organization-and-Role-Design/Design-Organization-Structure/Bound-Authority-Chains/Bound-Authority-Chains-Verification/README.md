@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Bound Authority Chains Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Bound Authority Chains** (`processes:activity-ao-design-3dpt54`). Its canonical ID is `processes:task-ao-design-verify-ujng66`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any chain is bounded, the verification custodian checks the drafted architecture against what the authority work requires - that every unit sits in a settled place from which a chain of authority can run. Defects are logged for rejection or repair before any chain is fixed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so authority is never bounded through a unit whose place in the architecture was never settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the architecture can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a unit hanging outside any settled arrangement and logs the defect before chains are bounded through it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Architecture Before Bounding the Chains |
+| `plain_language_description` | string | no | Before any chain is bounded, the verification custodian checks the drafted architecture against what the authority work … |
+| `business_purpose` | string | no | It exists so authority is never bounded through a unit whose place in the architecture was never settled. |
+| `practical_context` | string | no | It runs once the intake is registered and the architecture can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

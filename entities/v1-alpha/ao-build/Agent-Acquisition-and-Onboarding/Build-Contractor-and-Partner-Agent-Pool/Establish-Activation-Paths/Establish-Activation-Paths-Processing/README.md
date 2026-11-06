@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Establish Activation Paths Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Establish Activation Paths** (`processes:activity-ao-build-jgtegj`). Its canonical ID is `processes:task-ao-build-transform-frhu2h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the sources verified, the processing custodian establishes the activation paths themselves: each route from a vetted source to actual engagement is worked out and set down in the form the activity defines. The working papers behind the routes are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because vetted sources idle until a defined route exists for turning them into working capacity.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified sources are ready to be built through, and it ends with the established paths produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian sets down the route each vetted source will follow into engagement, keeping the working papers so the paths can be retraced.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set Up the Routes from Sources to Engagement |
+| `plain_language_description` | string | no | With the sources verified, the processing custodian establishes the activation paths themselves: each route from a … |
+| `business_purpose` | string | no | It exists because vetted sources idle until a defined route exists for turning them into working capacity. |
+| `practical_context` | string | no | It starts once checking is complete and the verified sources are ready to be built through, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

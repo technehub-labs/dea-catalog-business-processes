@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Set the Capacity Envelopes for Each Proportion'
+plain_language_description: 'With the proportions verified, the processing custodian sets the envelopes themselves: the capacity limits each substrate proportion has to stay within are worked out and fixed in the form the activity defines. Working papers behind each envelope are preserved for audit.'
+business_purpose: 'It exists because proportions only hold when the capacity each one may carry is fixed in advance.'
+practical_context: 'It starts once checking is complete and the verified proportions are ready to be bounded, and it ends with the bounded capacity envelopes produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function fixes the capacity limits each substrate proportion must stay within, keeping the working papers.'

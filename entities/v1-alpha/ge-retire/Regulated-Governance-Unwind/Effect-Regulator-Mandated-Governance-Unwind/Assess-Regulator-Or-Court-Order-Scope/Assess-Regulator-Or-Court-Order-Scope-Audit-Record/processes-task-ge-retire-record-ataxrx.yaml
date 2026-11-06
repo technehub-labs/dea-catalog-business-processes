@@ -71,3 +71,18 @@ outputs:
   description: Case file retained for Assess Regulator Or Court Order Scope under the records retention schedule with cryptographic integrity protection; statutory retention …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Preserve the Wind-Down Case File Under the Retention Rules'
+plain_language_description: 'After confirmation, the records custodian secures the complete wind-down file - manifest, verification report, record pack, completion confirmation, and remediation notes - under the retention schedule for dissolved entities, protected against tampering. It must remain intact for the whole statutory retention horizon.'
+business_purpose: 'It exists because a dissolved entity''s records must stay provable for years after the organisation itself is gone.'
+practical_context: 'It opens when the completion confirmation is issued, and it closes with the case file retained at its tier and the statutory horizon applied.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian seals the wind-down file into tamper-protected retention and applies the multi-year horizon the dissolution rules demand.'

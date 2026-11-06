@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Cadence and Its Feeds for the Review Pack'
+plain_language_description: 'The assembly opens as its material arrives: the scheduled review cadence naming the session, with its due performance reports and signal briefs. The intake custodian logs them against the assembly file so the assembly starts accounted for.'
+business_purpose: 'It exists so every scheduled review is built from a counted pack, with no report or brief missing when the room sits.'
+practical_context: 'It opens when the cadence and its feeds are presented for assembly, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the scheduled session with its due reports and briefs into the assembly file, so the building of the review pack starts accounted for.'

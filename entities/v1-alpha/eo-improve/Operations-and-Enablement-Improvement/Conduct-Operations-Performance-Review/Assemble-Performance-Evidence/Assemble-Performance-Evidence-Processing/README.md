@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Assemble Performance Evidence Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Assemble Performance Evidence** (`processes:activity-eo-improve-xunaq5`). Its canonical ID is `processes:task-eo-improve-transform-z3k32w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the records verified, the processing custodian does the assembly itself: the performance signals, the logistics gaps, and the asset utilization evidence are gathered into one review-ready pack, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because scattered evidence convinces nobody - the pack is what lets the review conclude from one coherent body of proof.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified records are ready to be gathered from, and it ends with the evidence pack produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function gathers the signals, gaps, and utilization evidence into one review-ready pack, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather the Signals, Gaps, and Utilization into One Pack |
+| `plain_language_description` | string | no | With the records verified, the processing custodian does the assembly itself: the performance signals, the logistics … |
+| `business_purpose` | string | no | It exists because scattered evidence convinces nobody - the pack is what lets the review conclude from one coherent … |
+| `practical_context` | string | no | It starts once checking is complete and the verified records are ready to be gathered from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

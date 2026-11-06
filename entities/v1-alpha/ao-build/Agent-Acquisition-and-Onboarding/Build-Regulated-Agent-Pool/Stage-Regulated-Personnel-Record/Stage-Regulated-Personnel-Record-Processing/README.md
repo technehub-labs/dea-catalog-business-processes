@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Stage Regulated Personnel Record Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Stage Regulated Personnel Record** (`processes:activity-ao-build-r6h2t8`). Its canonical ID is `processes:task-ao-build-transform-xh5297`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian stages the records themselves: every cleared candidate gets a record laid down in its ready shape - the scope the supervisor controls, the fitness attestation, the training completion plan, and the route to the continuing supervisor - in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because activation can only proceed cleanly over personnel records that are already staged and complete.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be staged, and it ends with the staged personnel records produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian lays down each cleared candidate's personnel record in its ready shape - scope, attestation, training plan, notification path - keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stage Each Candidate's Personnel Record |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian stages the records themselves: every cleared candidate gets a record … |
+| `business_purpose` | string | no | It exists because activation can only proceed cleanly over personnel records that are already staged and complete. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be staged, and it ends with the staged … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

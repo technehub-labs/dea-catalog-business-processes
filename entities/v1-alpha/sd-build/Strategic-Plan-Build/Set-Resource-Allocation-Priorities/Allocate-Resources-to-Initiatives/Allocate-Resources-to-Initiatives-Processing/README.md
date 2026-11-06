@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Allocate Resources to Initiatives Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Allocate Resources to Initiatives** (`processes:activity-sd-build-25j2m7`). Its canonical ID is `processes:task-sd-build-transform-xaa9vp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the allocating proper begins. The processing custodian distributes people, funding and capacity to each initiative within its bounded envelope, producing the allocation in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an initiative without named resources is an aspiration, and one over its envelope is a future overrun.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the allocation produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function assigns funding and capacity to each verified initiative within its envelope, keeping the allocation workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assign the Resources to Each Initiative Within Its Envelope |
+| `plain_language_description` | string | no | With the inputs verified, the allocating proper begins. The processing custodian distributes people, funding and … |
+| `business_purpose` | string | no | It exists because an initiative without named resources is an aspiration, and one over its envelope is a future overrun. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the allocation produced in the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Deliver the Scheduled Sessions Across the Agentive Mix'
+plain_language_description: 'With the schedule verified, the processing custodian does the delivery itself: the scheduled learning sessions are delivered across the agentive mix, and the delivered sessions are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a schedule of learning develops nobody until the sessions are actually delivered to the agents.'
+practical_context: 'It starts once checking is complete and the verified schedule is ready to be delivered from, and it ends with the delivered sessions produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian delivers each scheduled learning session across the mix and records what was delivered, keeping the working papers.'

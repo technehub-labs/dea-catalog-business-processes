@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-retire-intake-gkx5n8": {
+    "plain_language_name": "Receive the Retirement Plan for the Shutdown",
+    "plain_language_description": "Withdrawal opens when the asset retirement plan is handed over as the order the shutdown, disconnection, and isolation will follow. The intake custodian accepts it, registers it with audit identifiers, and starts the withdrawal from a recorded baseline.",
+    "business_purpose": "It exists so the asset is taken out of service to a registered plan rather than to whoever's frustration.",
+    "practical_context": "It opens when the retirement plan is presented for the withdrawal, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the retirement plan as the withdrawal baseline, with audit references, and opens the shutdown work."
+    }
+  },
+  "processes:task-eo-retire-transform-qe7y2h": {
+    "plain_language_name": "Shut It Down, Unplug It, Fence It Off",
+    "plain_language_description": "With the plan verified, the processing custodian does the withdrawal itself: the asset is powered down, disconnected from everything it fed, and fenced off from operational use, and the withdrawn state is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an asset still wired in is an asset still relied on - the withdrawal is what makes the ending real.",
+    "practical_context": "It starts once checking is complete and the verified plan is ready to be executed, and it ends with the withdrawn asset produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management powers the asset down, unplugs it, and fences it off from use, keeping the working papers."
+    }
+  },
+  "processes:task-eo-retire-verify-636h9f": {
+    "plain_language_name": "Check the Plan Before the Shutdown Begins",
+    "plain_language_description": "Before anything is powered down, the verification custodian checks the plan against what withdrawal requires - that the shutdown order covers the asset named and respects what still depends on it. Defects are logged for rejection or repair before the shutdown begins.",
+    "business_purpose": "It exists so nothing still in service is switched off by mistake.",
+    "practical_context": "It runs once the intake is registered and the plan can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a dependency the plan never accounted for and logs the defect before the shutdown begins."
+    }
+  },
+  "processes:task-fa-activate-record-cmebw8": {
+    "plain_language_name": "File the Framework Acquisition Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the acquisition trail at its required retention tier and sets the retrieval handles for it. What was filed, what the regulator acknowledged, and on what basis stays provable for the whole life of the framework.",
+    "business_purpose": "It exists so the regulator's acknowledgment can be evidenced, with its history, whenever the basis for billing is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the acquisition trail at its retention tier and sets the retrieval handles a billing review would consult."
+    }
+  },
+  "processes:task-fa-activate-confirm-5btdey": {
+    "plain_language_name": "Confirm the Acknowledged Framework",
+    "plain_language_description": "When the framework stands acknowledged, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The billing activation steps that follow learn the accounting basis is secured and billing may proceed.",
+    "business_purpose": "It exists so billing proceeds only over a framework confirmed as acknowledged.",
+    "practical_context": "It begins once preparation is complete and the acknowledged framework awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the acknowledged framework against the activity's intended outcome and issues the confirmation the activation steps need."
+    }
+  },
+  "processes:task-fa-activate-intake-nzhjyz": {
+    "plain_language_name": "Receive the Capability Description and the Mandated Format",
+    "plain_language_description": "The acquisition opens when the billing-capability description and the regulator-mandated filing format are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the application work from a recorded base.",
+    "business_purpose": "It exists so the acknowledgment is applied for from a registered description in the format the regulator mandates.",
+    "practical_context": "It opens when the description and format are presented for the application, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function registers the capability description and the mandated format as the application baseline, with audit references."
+    }
+  },
+  "processes:task-fa-activate-transform-sek259": {
+    "plain_language_name": "Win the Regulator's Acknowledgment of the Framework",
+    "plain_language_description": "With the material verified, the processing custodian makes the acquisition itself: the filing goes in, the regulator's acknowledgment of the accounting or rate basis comes back, and the acknowledged framework is preserved on the regulated billing record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because invoicing on an unacknowledged basis is invoicing on borrowed ground - this is the ground being made firm, recorded.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be filed, and it ends with the acknowledged framework preserved and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function files the application and preserves the regulator's acknowledgment on the billing record."
+    }
+  },
+  "processes:task-fa-activate-verify-y6snsj": {
+    "plain_language_name": "Check the Filing Before It Reaches the Regulator",
+    "plain_language_description": "Before anything is filed, the verification custodian checks the material against what the application requires - that the description is complete and the filing follows the mandated format exactly. Defects are logged for rejection or repair before the filing is made.",
+    "business_purpose": "It exists so the regulator never receives an application that would fail on form or completeness.",
+    "practical_context": "It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the filing drifting from the mandated format and logs the defect before anything is filed."
+    }
+  },
+  "processes:task-fa-activate-record-yp9frh": {
+    "plain_language_name": "File the Pricing Approval Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the approval trail at its required retention tier and sets the retrieval handles for it. What rates were asked for, what was granted, and on what filing, stays provable for the whole life of the prices.",
+    "business_purpose": "It exists so the permission behind every price can be evidenced whenever a charge is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the approval trail at its retention tier and sets the retrieval handles a rate review would consult."
+    }
+  },
+  "processes:task-fa-activate-confirm-kuz7yt": {
+    "plain_language_name": "Confirm the Granted Pricing Approval",
+    "plain_language_description": "When the approval stands granted, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The billing activation steps that follow learn the prices carry permission and invoicing may proceed.",
+    "business_purpose": "It exists so invoicing proceeds only at prices confirmed as approved.",
+    "practical_context": "It begins once preparation is complete and the granted approval awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the granted approval against the activity's intended outcome and issues the confirmation the activation steps need."
+    }
+  },
+  "processes:task-fa-activate-intake-xcj4gm": {
+    "plain_language_name": "Receive the Capability Description and the Pricing Submission",
+    "plain_language_description": "The acquisition opens when the billing-capability description and the pricing submission are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the approval work from a recorded base.",
+    "business_purpose": "It exists so prices are asked for from a registered description through a registered submission.",
+    "practical_context": "It opens when the description and submission are presented for the approval, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function registers the capability description and pricing submission as the approval baseline, with audit references."
+    }
+  },
+  "processes:task-fa-activate-transform-ffn27p": {
+    "plain_language_name": "Win the Approval to Charge What the Filing Says",
+    "plain_language_description": "With the material verified, the processing custodian makes the acquisition itself: the pricing submission is filed, the tariff or pricing permission is secured, and the granted approval is preserved on the regulated billing record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a price without permission is a debt without a leg to stand on - this is the permission being won, recorded.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be filed, and it ends with the granted approval preserved and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function files the submission and preserves the granted approval on the billing record."
+    }
+  },
+  "processes:task-fa-activate-verify-w9z3cb": {
+    "plain_language_name": "Check the Pricing Submission Before It Is Filed",
+    "plain_language_description": "Before anything is filed, the verification custodian checks the submission against what the approval requires - that the rates asked for match the capability described and the filing is complete. Defects are logged for rejection or repair before the filing is made.",
+    "business_purpose": "It exists so the regulator never receives a pricing ask that contradicts the capability behind it.",
+    "practical_context": "It runs once the intake is registered and the submission can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the submission asking rates the description does not cover and logs the defect before anything is filed."
+    }
+  },
+  "processes:task-fa-activate-record-tn4bqy": {
+    "plain_language_name": "File the Billing Notification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the activation trail at its required retention tier and sets the retrieval handles for it. When the notification was switched on, under which authorization, and for which supervisor stays provable for the life of the oversight.",
+    "business_purpose": "It exists so the start of continuing oversight over billing can be evidenced whenever its coverage is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the activation trail at its retention tier and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-fa-activate-confirm-dw6kf3": {
+    "plain_language_name": "Confirm the Issued Billing Notification",
+    "plain_language_description": "When the notification stands issued, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The oversight chain learns the notification is live and supervision of the billing can proceed.",
+    "business_purpose": "It exists so live billing proceeds only once the notification is confirmed as issued.",
+    "practical_context": "It begins once preparation is complete and the issued notification awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the issued notification against the activity's intended outcome and issues the confirmation the oversight chain needs."
+    }
+  },
+  "processes:task-fa-activate-intake-mkux6m": {
+    "plain_language_name": "Receive the Billing Authorization and Supervisor Link",
+    "plain_language_description": "The activation opens when the billing authorization and the supervisor relationship are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the notification work from a recorded baseline.",
+    "business_purpose": "It exists so the notification is activated from the issued authorization against a registered supervisor link.",
+    "practical_context": "It opens when the authorization and supervisor link are presented for activation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function registers the billing authorization and supervisor link as the activation baseline, with audit references."
+    }
+  },
+  "processes:task-fa-activate-transform-h854u2": {
+    "plain_language_name": "Switch On the Billing Oversight Notifications",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the activation itself: the continuing-supervisor notification is switched on under the regulator's continuing oversight, and the issued notification is set down on the regulated billing record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because billing authority is not the end - live billing runs under continuing oversight, and the notification is where that oversight begins.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be activated from, and it ends with the issued notification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function switches on the oversight notification and records it on the billing record."
+    }
+  },
+  "processes:task-fa-activate-verify-383bqa": {
+    "plain_language_name": "Check the Authorization and Link Before Switching On",
+    "plain_language_description": "Before the notification is activated, the verification custodian checks the authorization and link against what activation requires - that the authorization covers the billing and the supervisor named is the one the oversight requires. Gaps are logged for rejection or repair before the switch is made.",
+    "business_purpose": "It exists so continuing oversight never starts against the wrong authorization or the wrong supervisor.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the supervisor link pointing at a departed role and logs the gap before the notification switches on."
+    }
+  },
+  "processes:task-fa-activate-record-5nd8py": {
+    "plain_language_name": "File the Billing Controls Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the go-live trail at its required retention tier and sets the retrieval handles for it. Which controls were brought live, from which framework, and on whose authorization stays provable for the life of the billing.",
+    "business_purpose": "It exists so the control arrangement behind live billing can be evidenced whenever its adequacy is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the go-live trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-activate-confirm-53yqz4": {
+    "plain_language_name": "Confirm the Live Billing Controls",
+    "plain_language_description": "When the controls stand live, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The billing activation closes with its safeguards running and its record authoritative.",
+    "business_purpose": "It exists so live billing proceeds only once the controls are confirmed as live.",
+    "practical_context": "It begins once preparation is complete and the live controls await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the live controls against the activity's intended outcome and issues the confirmation that closes the activation."
+    }
+  },
+  "processes:task-fa-activate-intake-anjpep": {
+    "plain_language_name": "Receive the Control Framework and the Billing Authorization",
+    "plain_language_description": "The go-live opens when the regulator-mandated control framework and the billing authorization are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the bring-live work from a recorded baseline.",
+    "business_purpose": "It exists so controls go live from the mandated framework over an issued authorization, not from local improvisation.",
+    "practical_context": "It opens when the framework and authorization are presented for the bring-live, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function registers the mandated framework and billing authorization as the bring-live baseline, with audit references."
+    }
+  },
+  "processes:task-fa-activate-transform-5k9ase": {
+    "plain_language_name": "Make the Billing Controls Live",
+    "plain_language_description": "With the framework verified, the processing custodian makes the go-live itself: the separation of duties, the audit trail, and the reconciliations are brought live and recorded onto the regulated billing record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because controls on paper restrain no invoices - the go-live is where the authorization starts to mean trustworthy billing.",
+    "practical_context": "It starts once checking is complete and the verified framework is ready to be brought live, and it ends with the live controls produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function brings the separation of duties, trail, and reconciliations live on the billing record."
+    }
+  },
+  "processes:task-fa-activate-verify-mpmdtm": {
+    "plain_language_name": "Check the Framework Before Making the Controls Live",
+    "plain_language_description": "Before any control is brought live, the verification custodian checks the framework against what the go-live requires - that every mandated control is present and each is traceable to the authorization. Defects are logged for rejection or repair before any control is switched on.",
+    "business_purpose": "It exists so live billing never runs on controls that only partially match what was mandated.",
+    "practical_context": "It runs once the intake is registered and the framework can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a mandated reconciliation with no implementation behind it and logs the defect before any control goes live."
+    }
+  },
+  "processes:task-fa-build-record-ym9h92": {
+    "plain_language_name": "File the Budget Model Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the build trail at its required retention tier and sets the retrieval handles for it. Which models were built, from which structure, stays readable whenever a planning number is traced back.",
+    "business_purpose": "It exists so the building of each model can be evidenced whenever a planning number is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the build trail at its retention tier and sets the retrieval handles a planning review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-brar38": {
+    "plain_language_name": "Confirm the Working Budget Models",
+    "plain_language_description": "When the models stand built, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The controls and integration work that follows learns the models are ready to be governed and fed.",
+    "business_purpose": "It exists so planning systems are governed only over models confirmed as built.",
+    "practical_context": "It begins once preparation is complete and the working models await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the built models against the activity's intended outcome and issues the confirmation the controls work needs."
+    }
+  },
+  "processes:task-fa-build-intake-d8aek6": {
+    "plain_language_name": "Receive the Plan Structure for the Models",
+    "plain_language_description": "Building opens when the financial plan structure is handed over as the frame the budget models must be built to. The intake custodian accepts it, registers it with audit identifiers, and starts the building from a recorded baseline.",
+    "business_purpose": "It exists so models are built to the committed plan structure rather than to each builder's taste.",
+    "practical_context": "It opens when the plan structure is presented for the building, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the plan structure as the building baseline, with audit references, and opens the model work."
+    }
+  },
+  "processes:task-fa-build-transform-amb826": {
+    "plain_language_name": "Build the Models the Planning Cycle Calls For",
+    "plain_language_description": "With the structure verified, the processing custodian does the building itself: the budget models the scoped cycle requires are built to the plan structure, and the working models are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a planning cycle without models is a wish with a deadline - the models are where the cycle becomes computable.",
+    "practical_context": "It starts once checking is complete and the verified structure is ready to be built from, and it ends with the working models produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function builds each model the cycle requires to the plan structure, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-3xsata": {
+    "plain_language_name": "Check the Structure Before Building the Models",
+    "plain_language_description": "Before anything is built, the verification custodian checks the plan structure against what building requires - that it is complete enough for every model the cycle calls for. Defects are logged for rejection or repair before any model is built.",
+    "business_purpose": "It exists so no model is built on a structure that was never fully framed.",
+    "practical_context": "It runs once the intake is registered and the structure can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the structure missing a dimension the cycle needs and logs the defect before any model is built."
+    }
+  },
+  "processes:task-fa-build-record-v6f533": {
+    "plain_language_name": "File the Planning Controls Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the control trail at its required retention tier and sets the retrieval handles for it. Which guard-rails were fitted, and against which design, stays readable whenever a planning number is questioned.",
+    "business_purpose": "It exists so the guard-rails behind the planning numbers can be evidenced whenever a number is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the control trail at its retention tier and sets the retrieval handles a planning review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-bmcn2g": {
+    "plain_language_name": "Confirm the Implemented Planning Controls",
+    "plain_language_description": "When the guard-rails stand fitted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The integration and readiness work that follows learns the systems are governed.",
+    "business_purpose": "It exists so systems are fed and proven only once their controls are confirmed as fitted.",
+    "practical_context": "It begins once preparation is complete and the implemented controls await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the fitted guard-rails against the activity's intended outcome and issues the confirmation the integration work needs."
+    }
+  },
+  "processes:task-fa-build-intake-bqh2z8": {
+    "plain_language_name": "Receive the Financial Controls Design",
+    "plain_language_description": "The control work opens when the financial controls design is handed over as the frame the planning guard-rails must be fitted to. The intake custodian accepts it, registers it with audit identifiers, and starts the fitting from a recorded baseline.",
+    "business_purpose": "It exists so guard-rails are fitted to a registered design rather than to convenience.",
+    "practical_context": "It opens when the controls design is presented for the fitting, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the controls design as the fitting baseline, with audit references, and opens the guard-rail work."
+    }
+  },
+  "processes:task-fa-build-transform-9epuwq": {
+    "plain_language_name": "Put the Guard-Rails on the Planning Systems",
+    "plain_language_description": "With the design verified, the processing custodian does the fitting itself: the controls that govern how the planning systems may be used are implemented to the design, and the fitted guard-rails are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an ungoverned planning system produces numbers nobody can trust - the guard-rails are what make the numbers repeatable.",
+    "practical_context": "It starts once checking is complete and the verified design is ready to be fitted, and it ends with the implemented controls produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function fits each designed guard-rail onto the planning systems, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-ha5ygz": {
+    "plain_language_name": "Check the Design Before Fitting the Guard-Rails",
+    "plain_language_description": "Before anything is fitted, the verification custodian checks the controls design against what fitting requires - that every control the systems need is stated in the design. Gaps are logged for rejection or repair before any guard-rail is fitted.",
+    "business_purpose": "It exists so no system is left ungoverned because the design skipped it.",
+    "practical_context": "It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the design silent on one system's access rules and logs the gap before any guard-rail is fitted."
+    }
+  },
+  "processes:task-fa-build-record-xnebzw": {
+    "plain_language_name": "File the Forecasting Integration Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the integration trail at its required retention tier and sets the retrieval handles for it. Which feeds were laid, from which sources, stays readable whenever a planning number's origins are examined.",
+    "business_purpose": "It exists so the pipes behind the planning data can be evidenced whenever a number's origins are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the integration trail at its retention tier and sets the retrieval handles a data lineage review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-xxwr8j": {
+    "plain_language_name": "Confirm the Working Integrations",
+    "plain_language_description": "When the pipes stand laid, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The readiness work that follows learns the systems are fed and can be proven whole.",
+    "business_purpose": "It exists so readiness is proven only over integrations confirmed as working.",
+    "practical_context": "It begins once preparation is complete and the working integrations await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the laid pipes against the activity's intended outcome and issues the confirmation the readiness work needs."
+    }
+  },
+  "processes:task-fa-build-intake-b4u8zj": {
+    "plain_language_name": "Receive the Operational Data Sources for the Feeds",
+    "plain_language_description": "Integration opens when the operational data sources are handed over as the wells the planning feeds will draw from. The intake custodian accepts them, registers them with audit identifiers, and starts the laying from a recorded baseline.",
+    "business_purpose": "It exists so the planning models drink from registered wells rather than from whatever spreadsheet is at hand.",
+    "practical_context": "It opens when the data sources are presented for the feeds, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the operational data sources as the feed baseline, with audit references."
+    }
+  },
+  "processes:task-fa-build-transform-xfxfgm": {
+    "plain_language_name": "Run the Pipes from Operations into the Planning Models",
+    "plain_language_description": "With the sources verified, the processing custodian does the laying itself: the feeds that carry operational data into the planning models are built and proven, and the working integrations are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a forecast built on hand-copied numbers is a forecast built on typos - the pipes are what keep the planning honest.",
+    "practical_context": "It starts once checking is complete and the verified sources are ready to be piped from, and it ends with the working integrations produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function lays and proves each feed from operations into the models, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-ebpgww": {
+    "plain_language_name": "Check the Sources Before Laying the Pipes",
+    "plain_language_description": "Before anything is piped, the verification custodian checks the data sources against what integration requires - that each source is authoritative for what it will feed. Defects are logged for rejection or repair before any pipe is laid.",
+    "business_purpose": "It exists so the models are never fed from wells that were never authoritative.",
+    "practical_context": "It runs once the intake is registered and the sources can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a feed pointed at a shadow copy of the sales data and logs the defect before any pipe is laid."
+    }
+  },
+  "processes:task-fa-build-record-bsbau9": {
+    "plain_language_name": "File the Readiness Determination Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the proving trail at its required retention tier and sets the retrieval handles for it. What was exercised, against which structure and controls, stays readable whenever the readiness call is revisited.",
+    "business_purpose": "It exists so the readiness judgement can be evidenced against the proof it was drawn from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the proving trail at its retention tier and sets the retrieval handles a readiness review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-d9ns86": {
+    "plain_language_name": "Confirm the Readiness Determination",
+    "plain_language_description": "When the proving stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The operate budgeting that follows learns the systems are proven and the cycle may begin.",
+    "business_purpose": "It exists so budgeting runs only over systems proven ready by determination.",
+    "practical_context": "It begins once preparation is complete and the readiness determination awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the readiness determination against the activity's intended outcome and issues the confirmation the operating cycle waits on."
+    }
+  },
+  "processes:task-fa-build-intake-675pdz": {
+    "plain_language_name": "Receive the Built Systems for the Readiness Call",
+    "plain_language_description": "Proving opens when the built systems are handed over as the whole whose readiness must be judged. The intake custodian accepts them, registers them with audit identifiers, and starts the determination from a recorded baseline.",
+    "business_purpose": "It exists so readiness is judged over the registered built whole rather than over optimism.",
+    "practical_context": "It opens when the built systems are presented for the determination, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the built systems as the proving baseline, with audit references, and opens the readiness work."
+    }
+  },
+  "processes:task-fa-build-transform-mx3hfs": {
+    "plain_language_name": "Prove the Planning Systems Ready for the Cycle",
+    "plain_language_description": "With the build verified, the processing custodian does the proving itself: the systems are exercised against the plan structure and the fitted guard-rails, and the readiness determination is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a system that was never exercised is a promise nobody has tested - proving is where the cycle's foundation is shown to hold.",
+    "practical_context": "It starts once checking is complete and the verified build is ready to be proven, and it ends with the readiness determination produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function exercises the systems against the structure and controls and records the determination, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-bsuc4r": {
+    "plain_language_name": "Check the Build Before the Readiness Call",
+    "plain_language_description": "Before anything is proven, the verification custodian checks the built systems against what proving requires - that models, controls, and integrations are all present and none arrived half-built. Defects are logged for rejection or repair before the proving begins.",
+    "business_purpose": "It exists so readiness is never declared over a build with pieces still missing.",
+    "practical_context": "It runs once the intake is registered and the build can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an integration still unproven and logs the defect before the readiness call is made."
+    }
+  },
+  "processes:task-fa-build-record-86quhg": {
+    "plain_language_name": "File the Posting Rules Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the configuration trail at its required retention tier and sets the retrieval handles for it. How each transaction class was set to enter the books stays readable whenever an entry's route is examined.",
+    "business_purpose": "It exists so the rules behind every ledger entry can be evidenced whenever an entry's route is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the configuration trail at its retention tier and sets the retrieval handles a ledger review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-upnzy8": {
+    "plain_language_name": "Confirm the Configured Posting Rules",
+    "plain_language_description": "When the rules stand set, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The chart deployment that follows learns the entry logic is settled and the structure can go live over it.",
+    "business_purpose": "It exists so the ledger goes live only over rules confirmed as configured.",
+    "practical_context": "It begins once preparation is complete and the configured rules await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the configured rules against the activity's intended outcome and issues the confirmation the chart deployment needs."
+    }
+  },
+  "processes:task-fa-build-intake-5nkpc7": {
+    "plain_language_name": "Receive the Chart and the Controls for the Rules",
+    "plain_language_description": "Configuration opens when the chart of accounts and the financial controls are handed over together as the frame the posting rules must be set within. The intake custodian accepts both, registers them with audit identifiers, and starts the configuration from a recorded baseline.",
+    "business_purpose": "It exists so entries are governed by rules set from the registered chart and controls.",
+    "practical_context": "It opens when the chart and controls are presented for the configuration, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the chart and controls as the rule-setting baseline, with audit references."
+    }
+  },
+  "processes:task-fa-build-transform-c9xmfy": {
+    "plain_language_name": "Set How Transactions Find Their Way into the Ledger",
+    "plain_language_description": "With the frame verified, the processing custodian does the configuration itself: the rules that route each class of transaction to its ledger treatment are worked out and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a ledger is only as trustworthy as its front door - the rules are what keep every entry arriving where it belongs.",
+    "practical_context": "It starts once checking is complete and the verified frame is ready to be configured from, and it ends with the configured rules produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function sets the routing for each class of transaction into the books, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-z532x3": {
+    "plain_language_name": "Check the Chart Before Setting the Rules",
+    "plain_language_description": "Before anything is configured, the verification custodian checks the chart and controls against what configuration requires - that the chart is the committed one and the controls cover the entry paths the rules will open. Defects are logged for rejection or repair before the rules are set.",
+    "business_purpose": "It exists so no rule is set against a chart that was superseded.",
+    "practical_context": "It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the rules being set against a superseded chart and logs the defect before the configuration proceeds."
+    }
+  },
+  "processes:task-fa-build-record-bwk7zj": {
+    "plain_language_name": "File the Chart Deployment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the deployment trail at its required retention tier and sets the retrieval handles for it. Which structure went live, in which systems, and when, stays readable whenever an account's standing is examined.",
+    "business_purpose": "It exists so the going-live of the account structure can be evidenced whenever an account's standing is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the deployment trail at its retention tier and sets the retrieval handles an accounting review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-8cwh9a": {
+    "plain_language_name": "Confirm the Deployed Chart of Accounts",
+    "plain_language_description": "When the structure stands live, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The report deployment that follows learns the account skeleton is up and reports can be built over it.",
+    "business_purpose": "It exists so reports are built only over a chart confirmed as deployed.",
+    "practical_context": "It begins once preparation is complete and the deployed chart awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the deployed chart against the activity's intended outcome and issues the confirmation the report deployment needs."
+    }
+  },
+  "processes:task-fa-build-intake-27peg5": {
+    "plain_language_name": "Receive the Committed Account Structure",
+    "plain_language_description": "Deployment opens when the committed account structure is handed over as the skeleton the financial systems will live by. The intake custodian accepts it, registers it with audit identifiers, and starts the deployment from a recorded baseline.",
+    "business_purpose": "It exists so the systems take their account structure from the committed design rather than from local habit.",
+    "practical_context": "It opens when the committed structure is presented for deployment, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the committed account structure as the deployment baseline, with audit references."
+    }
+  },
+  "processes:task-fa-build-transform-jf33mp": {
+    "plain_language_name": "Stand the Account Structure Up in the Systems",
+    "plain_language_description": "With the structure verified, the processing custodian does the deployment itself: the designed chart is stood up inside the financial systems and made live, and the deployed chart is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a chart on paper classifies nothing - deployment is where the enterprise's financial language actually starts working.",
+    "practical_context": "It starts once checking is complete and the verified structure is ready to be stood up, and it ends with the deployed chart produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function stands the designed account structure up live inside the systems, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-fqjmy6": {
+    "plain_language_name": "Check the Structure Before Standing It Up",
+    "plain_language_description": "Before anything is deployed, the verification custodian checks the structure against what deployment requires - that every account in the design is stated and none is left ambiguous. Defects are logged for rejection or repair before any structure is stood up.",
+    "business_purpose": "It exists so the systems never go live on a skeleton with missing bones.",
+    "practical_context": "It runs once the intake is registered and the structure can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an account whose purpose is ambiguous and logs the defect before the structure is stood up."
+    }
+  },
+  "processes:task-fa-build-record-tcr27x": {
+    "plain_language_name": "File the Report Deployment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the deployment trail at its required retention tier and sets the retrieval handles for it. Which reports went live, against which requirements, stays readable whenever a disclosed figure is examined.",
+    "business_purpose": "It exists so the deployment of each report can be evidenced whenever a disclosed figure is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the deployment trail at its retention tier and sets the retrieval handles a reporting review would consult."
+    }
+  },
+  "processes:task-fa-build-confirm-v363gv": {
+    "plain_language_name": "Confirm the Deployed Reports",
+    "plain_language_description": "When the reports stand deployed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The build closes with its reporting obligations met and the ledger able to speak.",
+    "business_purpose": "It exists so the ledger is treated as complete only once its reports are confirmed as deployed.",
+    "practical_context": "It begins once preparation is complete and the deployed reports await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the deployed reports against the activity's intended outcome and issues the confirmation that closes the build."
+    }
+  },
+  "processes:task-fa-build-intake-q9uzcd": {
+    "plain_language_name": "Receive the Reporting Requirements and Disclosure Needs",
+    "plain_language_description": "Report deployment opens when the reporting requirements and the disclosure needs are handed over as the obligations the reports must satisfy. The intake custodian accepts them, registers them with audit identifiers, and starts the building from a recorded baseline.",
+    "business_purpose": "It exists so reports are built against registered obligations rather than against whatever looks presentable.",
+    "practical_context": "It opens when the requirements and disclosure needs are presented for the deployment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance function registers the reporting requirements and disclosure needs as the deployment baseline, with audit references."
+    }
+  },
+  "processes:task-fa-build-transform-kxbhz8": {
+    "plain_language_name": "Build the Reports the Ledger Owes",
+    "plain_language_description": "With the requirements verified, the processing custodian does the building itself: each report the ledger owes - to management, to disclosure - is built over the deployed chart and made live, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a ledger that cannot speak produces trust in nothing - the reports are where the books answer for themselves.",
+    "practical_context": "It starts once checking is complete and the verified requirements are ready to be built from, and it ends with the deployed reports produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance function builds each owed report over the deployed chart and makes it live, keeping the working papers."
+    }
+  },
+  "processes:task-fa-build-verify-aafzze": {
+    "plain_language_name": "Check the Requirements Before Building the Reports",
+    "plain_language_description": "Before anything is built, the verification custodian checks the requirements against what deployment requires - that every obligation is stated and each maps to the chart's accounts. Gaps are logged for rejection or repair before any report is built.",
+    "business_purpose": "It exists so no report is built that leaves an obligation unmet.",
+    "practical_context": "It runs once the intake is registered and the requirements can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a disclosure obligation with no mapped account and logs the gap before any report is built."
+    }
+  }
+}

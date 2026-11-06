@@ -74,3 +74,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Register Update as Transmitted'
+plain_language_description: 'After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.'
+business_purpose: 'It exists so the entity can show the supervisor exactly what was filed, and when, if the retirement is ever queried.'
+practical_context: 'It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the register record preserved at its required tier and its retrieval handles in place.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian in the strategy function files the register update exactly as transmitted, at the agreed retention tier, and sets the retrieval handles for the supervisor''s follow-up queries.'

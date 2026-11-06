@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-conf
 
 This is a **Task** (level L4), named **Secure Facility Sites Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Secure Facility Sites** (`processes:activity-eo-build-neek9x`). Its canonical ID is `processes:task-eo-build-confirm-ejk4te`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the sites stand secured, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The fit-out that follows learns the ground is held and the building work can begin.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fit-out proceeds only over sites confirmed as secured.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the secured sites await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the secured sites against the activity's intended outcome and issues the confirmation the fit-out needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Secured Facility Sites |
+| `plain_language_description` | string | no | When the sites stand secured, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so fit-out proceeds only over sites confirmed as secured. |
+| `practical_context` | string | no | It begins once preparation is complete and the secured sites await their consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

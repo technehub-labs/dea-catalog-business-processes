@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-t
 
 This is a **Task** (level L4), named **Activate Continuing-Supervisor Notification Processing**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Activate Continuing-Supervisor Notification** (`processes:activity-eo-activate-wfw66c`). Its canonical ID is `processes:task-eo-activate-transform-9fhapw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the activation itself: the continuing-supervisor notification is activated under the regulator's continuing oversight, and the issued notification is set down on the regulated operations record in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an authorization is not the end - live operations run under continuing oversight, and the notification is where that oversight begins.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be activated from, and it ends with the issued notification produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian activates the continuing-supervisor notification under the oversight regime and records it on the regulated operations record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Switch On the Continuing-Supervisor Notification |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the activation itself: the continuing-supervisor notification … |
+| `business_purpose` | string | no | It exists because an authorization is not the end - live operations run under continuing oversight, and the … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be activated from, and it ends with the issued … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

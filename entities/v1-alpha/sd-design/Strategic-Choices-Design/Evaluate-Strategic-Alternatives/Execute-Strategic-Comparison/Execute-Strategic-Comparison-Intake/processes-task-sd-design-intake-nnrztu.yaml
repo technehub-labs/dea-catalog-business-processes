@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Option Designs and Criteria Within the Evaluation Scope'
+plain_language_description: 'The comparing opens as its material arrives: the committed option designs and the criteria within the bounded evaluation scope. The intake custodian logs them against the comparison file so the comparing starts accounted for.'
+business_purpose: 'It exists so the comparison runs over logged designs and criteria rather than over summaries prepared to persuade.'
+practical_context: 'It opens when the designs and criteria are presented for comparison, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the option designs and criteria within the bounded scope into the comparison file, so the comparing starts accounted for.'

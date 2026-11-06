@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Bound Authority Chains Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Bound Authority Chains** (`processes:activity-ao-design-3dpt54`). Its canonical ID is `processes:task-ao-design-transform-twym52`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the architecture verified, the processing custodian bounds the chains themselves: the lines of authority and the delegation limits across the drafted architecture are worked out and fixed in the form the activity defines. Working papers behind each bound are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an architecture without settled authority invites every decision to become an argument.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified architecture is ready to be bounded, and it ends with the bounded authority chains produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian fixes the authority lines and delegation limits across the drafted architecture, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound the Authority Chains and Delegation Limits |
+| `plain_language_description` | string | no | With the architecture verified, the processing custodian bounds the chains themselves: the lines of authority and the … |
+| `business_purpose` | string | no | It exists because an architecture without settled authority invites every decision to become an argument. |
+| `practical_context` | string | no | It starts once checking is complete and the verified architecture is ready to be bounded, and it ends with the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Prepare Tax Returns Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Prepare Tax Returns** (`processes:activity-fa-operate-9g2b8x`). Its canonical ID is `processes:task-fa-operate-transform-w9h887`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the preparation itself: each return the filing boundary demands is filled from the positions and the ledger, and the prepared returns are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a filing boundary does not negotiate - the preparation is what meets it with the truth, ready.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be filled from, and it ends with the prepared returns produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function fills each return from the positions and the books before its boundary, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fill In What the Calendar Demands |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the preparation itself: each return the filing boundary demands … |
+| `business_purpose` | string | no | It exists because a filing boundary does not negotiate - the preparation is what meets it with the truth, ready. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be filled from, and it ends with the prepared … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

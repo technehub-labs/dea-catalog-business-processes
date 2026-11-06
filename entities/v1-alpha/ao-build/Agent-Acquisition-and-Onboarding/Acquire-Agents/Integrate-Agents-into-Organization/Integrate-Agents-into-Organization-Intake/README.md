@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Integrate Agents into Organization Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Integrate Agents into Organization** (`processes:activity-ao-build-khtsgv`). Its canonical ID is `processes:task-ao-build-intake-xhmpqf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Agents that have finished onboarding arrive here to begin the move into the working organisation. The intake custodian accepts each one, registers the arrival with audit identifiers, and lets the placement work start from a clean, traceable list.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so integration begins from a registered roster rather than whoever happens to turn up.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the onboarded agents are handed over for placement, with the activity owner told of their arrival, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian logs the freshly onboarded agents onto the integration roster with audit references and confirms the handover so placement work can begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Onboarded Agents for Integration |
+| `plain_language_description` | string | no | Agents that have finished onboarding arrive here to begin the move into the working organisation. The intake custodian … |
+| `business_purpose` | string | no | It exists so integration begins from a registered roster rather than whoever happens to turn up. |
+| `practical_context` | string | no | It opens when the onboarded agents are handed over for placement, with the activity owner told of their arrival, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Draft the Organization and Agent Strategy'
+plain_language_description: 'With the capacity verified, the processing custodian does the drafting itself: the strategy direction for the organization model and the workforce-and-agent mix is written within the bounded capacity, in the form the activity defines. Drafting working papers are preserved for audit.'
+business_purpose: 'It exists because capacity without direction idles, and direction without capacity overcommits - the draft is where the two are reconciled.'
+practical_context: 'It starts once checking is complete and the verified capacity is ready to be written within, and it ends with the drafted strategy produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function writes the strategy draft - direction for the model and the mix - within the bounded capacity, keeping the working papers.'

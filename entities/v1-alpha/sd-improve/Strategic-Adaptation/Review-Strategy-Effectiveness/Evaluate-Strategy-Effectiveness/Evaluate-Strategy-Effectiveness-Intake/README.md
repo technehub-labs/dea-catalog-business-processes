@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-in
 
 This is a **Task** (level L4), named **Evaluate Strategy Effectiveness Intake**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Evaluate Strategy Effectiveness** (`processes:activity-sd-improve-mfk5ab`). Its canonical ID is `processes:task-sd-improve-intake-ppax9y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The evaluation opens as its material arrives: the assembled evidence on whether the current direction is delivering its intended outcomes. The intake custodian logs it against the evaluation file so the evaluation starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the verdict is delivered on the registered evidence set in full, with no outcome line judged unseen.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the assembled evidence is presented for evaluation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the assembled evidence set into the evaluation file, so the work of judging the strategy starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Assembled Evidence for the Effectiveness Verdict |
+| `plain_language_description` | string | no | The evaluation opens as its material arrives: the assembled evidence on whether the current direction is delivering its … |
+| `business_purpose` | string | no | It exists so the verdict is delivered on the registered evidence set in full, with no outcome line judged unseen. |
+| `practical_context` | string | no | It opens when the assembled evidence is presented for evaluation, with the activity's owner told that it has landed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

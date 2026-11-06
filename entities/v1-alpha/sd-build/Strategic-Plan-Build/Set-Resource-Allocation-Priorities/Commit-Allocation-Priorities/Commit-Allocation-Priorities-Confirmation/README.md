@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Commit Allocation Priorities Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Commit Allocation Priorities** (`processes:activity-sd-build-vgavkq`). Its canonical ID is `processes:task-sd-build-confirm-c85f8z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the priorities are committed. The confirmation custodian tells the downstream teams the committed priorities are available, and closes the reconciliation against what the activity promised for the commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operate executes to one confirmed precedence order rather than to each team's own ranking.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed priorities are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function releases the committed priorities to the operating teams, reconciles them against what the commitment promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Release the Committed Priorities to the Operating Teams |
+| `plain_language_description` | string | no | The confirming opens once the priorities are committed. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so operate executes to one confirmed precedence order rather than to each team's own ranking. |
+| `practical_context` | string | no | It opens when the committed priorities are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

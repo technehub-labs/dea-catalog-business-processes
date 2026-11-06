@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-v
 
 This is a **Task** (level L4), named **Commit Customer Strategy Verification**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Commit Customer Strategy** (`processes:activity-pr-conceive-kbwtdj`). Its canonical ID is `processes:task-pr-conceive-verify-9gbvr7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the strategy is committed, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Deviations are reported with their fixes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the approvers commit a strategy whose inputs have survived scrutiny.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function clears the strategy inputs against the framing method before commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Strategy Inputs Before Commitment |
+| `plain_language_description` | string | no | Before the strategy is committed, the verification custodian tests the pack against the methodology for framing the … |
+| `business_purpose` | string | no | It exists so the approvers commit a strategy whose inputs have survived scrutiny. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

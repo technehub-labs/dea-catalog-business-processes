@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Frame How Fulfilment Will Happen'
+plain_language_description: 'With the inputs verified, the processing custodian does the framing itself: how the delivery model will fulfil demand - make-to-order, make-to-stock, hybrid - is worked out and set down in the form the activity defines. Working papers behind the patterns are preserved.'
+business_purpose: 'It exists because channels and service levels promise an experience; the fulfilment patterns are what decide how the promise can actually be kept.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be framed from, and it ends with the fulfilment pattern set produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function frames how demand will be fulfilled - to order, to stock, or hybrid - and records the pattern set.'

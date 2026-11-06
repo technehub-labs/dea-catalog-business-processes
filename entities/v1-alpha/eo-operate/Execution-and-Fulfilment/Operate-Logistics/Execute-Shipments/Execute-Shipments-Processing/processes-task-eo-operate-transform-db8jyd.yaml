@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Move the Goods Along the Planned Routes'
+plain_language_description: 'With the plan verified, the processing custodian does the movement itself: each shipment is carried from pickup to delivery by the vehicles and crews the plan names, and the executed runs are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a plan on paper delivers nothing - movement is where the network''s whole design finally touches the customer.'
+practical_context: 'It starts once checking is complete and the verified plan is ready to be run, and it ends with the moved goods produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management runs each shipment from pickup to delivery per the plan, keeping the working papers.'

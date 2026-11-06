@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Maintained Norms for Facilitation'
+plain_language_description: 'Facilitation opens when the maintained interaction norms are handed over as the rules the interactions will run under. The intake custodian accepts the handover, registers it with audit identifiers, and starts the facilitation from a recorded baseline.'
+business_purpose: 'It exists so cross-team interactions are facilitated under a registered set of norms rather than ad hoc.'
+practical_context: 'It opens when the maintained norms are presented for facilitation, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the maintained norms as the facilitation baseline, with audit references, and opens the facilitation work.'

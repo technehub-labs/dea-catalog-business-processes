@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Acquired Agents Before Onboarding'
+plain_language_description: 'The verification custodian examines each acquired agent against what its intended role and competencies demand before any onboarding work is invested. An agent that misses the requirement is logged as a shortfall for rejection or repair, so effort is not spent on the wrong material.'
+business_purpose: 'It exists so onboarding effort is spent only on agents that genuinely fit the roles awaiting them.'
+practical_context: 'It runs once the intake is registered and each agent can be compared with the activity''s requirements, and it finishes with the agents verified or their gaps recorded for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian checks each acquired agent against its intended role''s competencies and logs one shortfall where an agent lacks a required skill.'

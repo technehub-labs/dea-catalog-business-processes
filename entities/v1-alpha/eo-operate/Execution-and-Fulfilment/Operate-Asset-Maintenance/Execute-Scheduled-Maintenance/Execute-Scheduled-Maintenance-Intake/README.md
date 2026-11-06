@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Execute Scheduled Maintenance Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Scheduled Maintenance** (`processes:activity-eo-operate-b7x5en`). Its canonical ID is `processes:task-eo-operate-intake-7buefn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Execution opens when the maintenance schedule is handed over as the plan of tasks the crews will work through. The intake custodian accepts it, registers it with audit identifiers, and starts the execution from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so maintenance is performed from a registered schedule rather than from whoever's shift notices a need.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the maintenance schedule is presented for execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the maintenance schedule as the execution baseline, with audit references, and opens the task work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Maintenance Schedule for Execution |
+| `plain_language_description` | string | no | Execution opens when the maintenance schedule is handed over as the plan of tasks the crews will work through. The … |
+| `business_purpose` | string | no | It exists so maintenance is performed from a registered schedule rather than from whoever's shift notices a need. |
+| `practical_context` | string | no | It opens when the maintenance schedule is presented for execution, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Commit Platform Architecture Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Commit Platform Architecture** (`processes:activity-eo-design-53q5rz`). Its canonical ID is `processes:task-eo-design-transform-qb8fc2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the consolidation itself: the component specification, the integration patterns, and the topology are brought together and the architecture is set down in the form the activity defines, ready for acquisition and build. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because framings scattered across documents acquire nothing - the commit is where the architecture becomes one authority ready for acquisition and build.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed architecture produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function consolidates the pieces into the committed architecture, ready for acquisition and build, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Platform Architecture for Acquisition and Build |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the consolidation itself: the component specification, the … |
+| `business_purpose` | string | no | It exists because framings scattered across documents acquire nothing - the commit is where the architecture becomes … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

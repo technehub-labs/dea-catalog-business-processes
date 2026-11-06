@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Draft Objectives and Targets Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Draft Objectives and Targets** (`processes:activity-sd-design-uwqj5w`). Its canonical ID is `processes:task-sd-design-transform-6p4vgb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the drafting proper begins. The processing custodian sketches the objectives and targets the scope calls for, each with its measure, producing the drafted objectives and targets in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategic option becomes steerable only when its aims are written as objectives with measurable targets.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the drafted objectives and targets produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function drafts the objectives and targets within the verified scope, giving each a measurable edge, and keeps the drafting workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Objectives and Targets Within the Bounded Scope |
+| `plain_language_description` | string | no | With the inputs verified, the drafting proper begins. The processing custodian sketches the objectives and targets the … |
+| `business_purpose` | string | no | It exists because a strategic option becomes steerable only when its aims are written as objectives with measurable … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the drafted objectives and targets … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -74,3 +74,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Activation Request for Completeness'
+plain_language_description: 'With the request booked in, the verification custodian goes through it against what the activity requires before any activation happens. Licence details, the designation being sought, and the supporting particulars are compared line by line; anything that falls short is written down for correction or refusal rather than waved through.'
+business_purpose: 'It exists so a defective request is caught on paper, before it can turn into an activation that should not happen.'
+practical_context: 'It starts once intake is registered and checking against the activity''s requirements can begin, and it closes with the request found conformant or the shortfalls logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in workforce management compares an executive''s designation request against the activity''s checklist, finds the supervisor''s endorsement missing, and records the shortfall for remediation.'

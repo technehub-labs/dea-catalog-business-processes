@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Rebalance Portfolio Allocations Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Rebalance Portfolio Allocations** (`processes:activity-pv-operate-bzud7v`). Its canonical ID is `processes:task-pv-operate-transform-edvupt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the allocations themselves are reworked. The processing custodian reads the performance picture against the portfolio direction, producing the adjusted allocations in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the portfolio only keeps pointing where the direction says while its allocations are deliberately reworked from the monitored performance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified inputs are ready to be worked, and it closes with the adjusted allocations produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management reworks the allocation split, moving weight from propositions trailing their envelopes toward the ones the direction favours, and keeps the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Out the Adjusted Portfolio Allocations |
+| `plain_language_description` | string | no | With the inputs verified, the allocations themselves are reworked. The processing custodian reads the performance … |
+| `business_purpose` | string | no | It exists because the portfolio only keeps pointing where the direction says while its allocations are deliberately … |
+| `practical_context` | string | no | It opens when the verified inputs are ready to be worked, and it closes with the adjusted allocations produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

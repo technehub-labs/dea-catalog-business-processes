@@ -71,3 +71,18 @@ outputs:
   description: Intake manifest registered and bound to the Verify Party Identity case file; registered intake custodian passes custody to the verification custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Identity Documents'
+plain_language_description: 'Identity verification starts with reception: the applicant''s party record, the identity documents, and the request packet arrive and are logged. The intake custodian registers them against the activation case file so the checking work begins accounted for.'
+business_purpose: 'It exists because identity verification is only as strong as the documents and traces it starts from.'
+practical_context: 'It opens when the Activate-stage pack arrives for the applicant, and it closes with the manifest registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in customer relationship management logs a passport scan and request packet against the activation case file.'

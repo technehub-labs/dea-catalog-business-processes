@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Maintain Lifecycle Record Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Lifecycle Record** (`processes:activity-pv-operate-89v5ty`). Its canonical ID is `processes:task-pv-operate-confirm-ux8xwc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the record is current, the people who plan against it are told. The confirmation custodian tells the downstream teams the updated lifecycle record is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because stage planning and gate preparation both run off the lifecycle record, and its users must know when it has moved on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the planning teams the lifecycle record now carries the latest stage histories and gate outcomes, and closes the reconciliation against what the maintenance work promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Current Lifecycle Record to Its Users |
+| `plain_language_description` | string | no | Once the record is current, the people who plan against it are told. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because stage planning and gate preparation both run off the lifecycle record, and its users must know when … |
+| `practical_context` | string | no | It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Frame Ambition Envelope Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Ambition Envelope** (`processes:activity-sd-conceive-9672ug`). Its canonical ID is `processes:task-sd-conceive-confirm-rgkpfk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the envelope is framed. The confirmation custodian tells the downstream teams the ambition envelope is available, and closes the reconciliation against what the activity promised for the framing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the commitment covers a confirmed ambition rather than a reach still being argued upwards.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the ambition envelope is ready to hand on, and it closes with the confirmation issued and the framing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the framed ambition envelope to the commitment team, reconciles it against what the framing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Framed Ambition Envelope to the Commitment |
+| `plain_language_description` | string | no | The confirming opens once the envelope is framed. The confirmation custodian tells the downstream teams the ambition … |
+| `business_purpose` | string | no | It exists so the commitment covers a confirmed ambition rather than a reach still being argued upwards. |
+| `practical_context` | string | no | It opens when the ambition envelope is ready to hand on, and it closes with the confirmation issued and the framing's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

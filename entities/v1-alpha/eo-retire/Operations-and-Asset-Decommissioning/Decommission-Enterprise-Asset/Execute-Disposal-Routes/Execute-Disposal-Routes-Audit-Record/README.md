@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-rec
 
 This is a **Task** (level L4), named **Execute Disposal Routes Audit Record**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Execute Disposal Routes** (`processes:activity-eo-retire-2xjudv`). Its canonical ID is `processes:task-eo-retire-record-tj989v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the disposal trail at its required retention tier and sets the retrieval handles for it. Which asset went down which path, and with what certificate at the end, stays readable whenever the asset's fate is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the disposal of every asset can be evidenced whenever its fate is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the disposal trail at its retention tier and sets the retrieval handles an asset review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Disposal Execution Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the disposal trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the disposal of every asset can be evidenced whenever its fate is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

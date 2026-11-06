@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Conduct Strategic Reviews Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Conduct Strategic Reviews** (`processes:activity-sd-operate-m4s5cn`). Its canonical ID is `processes:task-sd-operate-confirm-mgrjs8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The session has run and its outputs must travel. The confirmation custodian tells the downstream teams the conducted strategic reviews are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the decisions taken in the room cannot be logged until the review is formally closed and its outputs handed on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the review work is finished and the outcomes are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the decision-recording team the conducted review and its outputs are available, then closes the handover against what the review promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Review Outcomes to the Decision Recorders |
+| `plain_language_description` | string | no | The session has run and its outputs must travel. The confirmation custodian tells the downstream teams the conducted … |
+| `business_purpose` | string | no | It exists because the decisions taken in the room cannot be logged until the review is formally closed and its outputs … |
+| `practical_context` | string | no | It opens when the review work is finished and the outcomes are ready to travel, and it closes with the downstream teams … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

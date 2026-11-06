@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Analyze Control Findings Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Analyze Control Findings** (`processes:activity-fa-improve-6j2xpt`). Its canonical ID is `processes:task-fa-improve-intake-uytxct`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Analysis opens when the audit findings and the control incidents are handed over together as the material the refinement need will be read from. The intake custodian accepts them, registers them with audit identifiers, and starts the analysis from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so refinements answer registered findings rather than recurring hunches.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the findings and incidents are presented for the analysis, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the audit findings and control incidents as the analysis baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Audit Findings and Control Incidents |
+| `plain_language_description` | string | no | Analysis opens when the audit findings and the control incidents are handed over together as the material the … |
+| `business_purpose` | string | no | It exists so refinements answer registered findings rather than recurring hunches. |
+| `practical_context` | string | no | It opens when the findings and incidents are presented for the analysis, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-v
 
 This is a **Task** (level L4), named **Verify Commencement Conditions Verification**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Verify Commencement Conditions** (`processes:activity-ge-activate-hcg5s8`). Its canonical ID is `processes:task-ge-activate-verify-e2cm72`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a gate that opens on unmet preconditions was never a gate - the testing is what makes the opening lawful.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Preconditions Before the Gate Opens |
+| `plain_language_description` | string | no | With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading … |
+| `business_purpose` | string | no | It exists because a gate that opens on unmet preconditions was never a gate - the testing is what makes the opening … |
+| `practical_context` | string | no | It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

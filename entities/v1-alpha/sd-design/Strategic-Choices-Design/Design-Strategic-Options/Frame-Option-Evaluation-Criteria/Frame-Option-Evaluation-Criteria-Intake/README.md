@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-int
 
 This is a **Task** (level L4), named **Frame Option Evaluation Criteria Intake**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Frame Option Evaluation Criteria** (`processes:activity-sd-design-y5bn4m`). Its canonical ID is `processes:task-sd-design-intake-8cgfpm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The framing opens as its material arrives: the drafted option set together with the bounded design space the criteria must respect. The intake custodian logs them against the framing file so the framing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the criteria are framed over the logged options and space rather than over measures that flatter one option.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the option set and the bounded space are presented for framing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the drafted options and the bounded space into the framing file, so the criteria work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Option Set and the Bounded Space for the Criteria Work |
+| `plain_language_description` | string | no | The framing opens as its material arrives: the drafted option set together with the bounded design space the criteria … |
+| `business_purpose` | string | no | It exists so the criteria are framed over the logged options and space rather than over measures that flatter one … |
+| `practical_context` | string | no | It opens when the option set and the bounded space are presented for framing, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

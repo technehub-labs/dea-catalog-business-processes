@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-co
 
 This is a **Task** (level L4), named **Assess Agent Alignment Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Assess Agent Alignment** (`processes:activity-ao-improve-ceqsy3`). Its canonical ID is `processes:task-ao-improve-confirm-msag5s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the assessment stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The improvement work that draws on the review learns the alignment assessment is settled and available.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so improvement decisions rest only on an alignment assessment confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the assessment awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the alignment assessment against the activity's intended outcome and issues the confirmation the improvement work depends on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Agent Alignment Assessment |
+| `plain_language_description` | string | no | When the assessment stands made, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so improvement decisions rest only on an alignment assessment confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the assessment awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

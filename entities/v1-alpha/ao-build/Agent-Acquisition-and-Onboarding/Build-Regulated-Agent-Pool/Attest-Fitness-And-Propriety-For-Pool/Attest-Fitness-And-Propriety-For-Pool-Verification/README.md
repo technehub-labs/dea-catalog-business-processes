@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Attest Fitness-And-Propriety For Pool Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Attest Fitness-And-Propriety For Pool** (`processes:activity-ao-build-w2n8p4`). Its canonical ID is `processes:task-ao-build-verify-scgrww`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anyone is attested, the verification custodian tests the candidate list and the regime against what the activity requires - that every candidate is in scope and the criteria are complete enough to judge against. Defects are flagged for rejection or repair before attestations are made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no candidate is attested under a regime that has not itself been checked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the list and regime can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the candidate list carrying one candidate outside the regime's scope and flags the defect for repair before attestation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Candidate List Against the Attestation Regime |
+| `plain_language_description` | string | no | Before anyone is attested, the verification custodian tests the candidate list and the regime against what the activity … |
+| `business_purpose` | string | no | It exists so no candidate is attested under a regime that has not itself been checked. |
+| `practical_context` | string | no | It runs once the intake is registered and the list and regime can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

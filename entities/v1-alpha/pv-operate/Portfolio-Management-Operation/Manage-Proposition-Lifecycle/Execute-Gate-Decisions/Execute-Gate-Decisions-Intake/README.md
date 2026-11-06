@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Execute Gate Decisions Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Execute Gate Decisions** (`processes:activity-pv-operate-xmvfj7`). Its canonical ID is `processes:task-pv-operate-intake-jrk2t8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The gate work opens as the decisions taken at stage boundaries arrive for execution. The intake custodian logs them against the gate execution file so the executing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a gate decision that arrives unlogged cannot be executed accountably or defended against later challenge.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when a gate decision is presented for execution with the activity's owner told that it has landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the review board's decision to advance a proposition past its growth-stage gate into the gate execution file, so the executing starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Book In the Arriving Gate Decision Papers |
+| `plain_language_description` | string | no | The gate work opens as the decisions taken at stage boundaries arrive for execution. The intake custodian logs them … |
+| `business_purpose` | string | no | It exists because a gate decision that arrives unlogged cannot be executed accountably or defended against later … |
+| `practical_context` | string | no | It opens when a gate decision is presented for execution with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

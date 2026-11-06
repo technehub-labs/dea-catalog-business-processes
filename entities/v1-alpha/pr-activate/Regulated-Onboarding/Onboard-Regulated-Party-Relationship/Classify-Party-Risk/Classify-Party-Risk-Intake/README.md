@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-i
 
 This is a **Task** (level L4), named **Classify Party Risk Intake**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Classify Party Risk** (`processes:activity-pr-activate-p53h54`). Its canonical ID is `processes:task-pr-activate-intake-frjubr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Risk classification begins with delivery: the applicant's party record, the identity documents, and the onboarding request all arrive with the intake custodian. Each is logged into the activation case file so the rating work starts from an accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the risk rating rests on a complete, logged application rather than whatever happens to be at hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Activate-stage pack is handed over for the applicant, and it closes with the manifest registered and the verification custodian in custody.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs a corporate applicant's documents and request packet into the activation case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Applicant's Onboarding Papers |
+| `plain_language_description` | string | no | Risk classification begins with delivery: the applicant's party record, the identity documents, and the onboarding … |
+| `business_purpose` | string | no | It exists so the risk rating rests on a complete, logged application rather than whatever happens to be at hand. |
+| `practical_context` | string | no | It opens when the Activate-stage pack is handed over for the applicant, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

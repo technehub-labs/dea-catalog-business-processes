@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-in
 
 This is a **Task** (level L4), named **Consolidate Adaptation Drivers Intake**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Consolidate Adaptation Drivers** (`processes:activity-sd-improve-dhkxf6`). Its canonical ID is `processes:task-sd-improve-intake-k7ukdu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The consolidation opens as its material arrives: the environmental signals, the monitored performance figures and the review findings that all point the same way. The intake custodian logs them against the consolidation file so the consolidation starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the case for changing direction is built from logged, counted material rather than from impressions that drift in and out of the room.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the signals, performance figures and review findings are presented for consolidation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the quarter's environmental signals, the monitored performance figures and the last review's findings into the consolidation file, so the work of building the adaptation case starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Arriving Signals, Performance Figures and Review Findings |
+| `plain_language_description` | string | no | The consolidation opens as its material arrives: the environmental signals, the monitored performance figures and the … |
+| `business_purpose` | string | no | It exists so the case for changing direction is built from logged, counted material rather than from impressions that … |
+| `practical_context` | string | no | It opens when the signals, performance figures and review findings are presented for consolidation, with the activity's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

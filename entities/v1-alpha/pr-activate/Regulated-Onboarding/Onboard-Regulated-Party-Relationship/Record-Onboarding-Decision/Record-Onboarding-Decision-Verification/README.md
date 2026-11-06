@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 
 This is a **Task** (level L4), named **Record Onboarding Decision Verification**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Record Onboarding Decision** (`processes:activity-pr-activate-q9pr4m`). Its canonical ID is `processes:task-pr-activate-verify-cfkhv2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before approvers are asked to decide, the verification custodian runs the identity, sanctions, and adverse-media checks over the logged application and reconciles the outcomes. The certificate that results names precisely which checks were applied.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the approvers sign a decision that rests on verified facts rather than untested claims.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the risk function reruns the sanctions screening before the four-eye approval, and issues the certificate.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Recheck the Applicant Before the Decision |
+| `plain_language_description` | string | no | Before approvers are asked to decide, the verification custodian runs the identity, sanctions, and adverse-media checks … |
+| `business_purpose` | string | no | It exists so the approvers sign a decision that rests on verified facts rather than untested claims. |
+| `practical_context` | string | no | It starts once the manifest is registered, and it ends with the certificate issued and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

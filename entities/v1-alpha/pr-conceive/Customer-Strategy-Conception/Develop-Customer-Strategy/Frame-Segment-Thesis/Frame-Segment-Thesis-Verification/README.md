@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-v
 
 This is a **Task** (level L4), named **Frame Segment Thesis Verification**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Frame Segment Thesis** (`processes:activity-pr-conceive-3tgws4`). Its canonical ID is `processes:task-pr-conceive-verify-7mg2dq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the segment is bounded, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack deviates, the deviation is named and a remediation is set out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a segment framed on shaky evidence would misdirect the entire customer strategy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the segment research against the framing method and flags one gap.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Segment Research Against the Method |
+| `plain_language_description` | string | no | Before the segment is bounded, the verification custodian tests the pack against the methodology for framing the … |
+| `business_purpose` | string | no | It exists because a segment framed on shaky evidence would misdirect the entire customer strategy. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

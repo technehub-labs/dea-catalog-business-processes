@@ -74,3 +74,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Lodgement Receipt and Submission Evidence'
+plain_language_description: 'The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the receipt proving what was filed, with whom, and when, is retrievable for the life of the plan''s supervision.'
+business_purpose: 'It exists because the filing receipt is the plan''s licence to proceed, and losing its evidence undermines every later step.'
+practical_context: 'It opens when the confirmation is in place, and it closes with the lodgement evidence filed at its required tier and the retrieval handles set.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian in the strategy function files the lodgement receipt and submission evidence at its required retention tier and sets the retrieval handles, so the proof of timely filing survives every later reorganisation.'

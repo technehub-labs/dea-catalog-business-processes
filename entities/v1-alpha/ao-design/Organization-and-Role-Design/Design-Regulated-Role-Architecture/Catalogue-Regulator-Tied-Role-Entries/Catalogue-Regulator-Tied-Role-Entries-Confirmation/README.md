@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-con
 
 This is a **Task** (level L4), named **Catalogue Regulator-Tied Role Entries Confirmation**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Catalogue Regulator-Tied Role Entries** (`processes:activity-ao-design-jbf2v9`). Its canonical ID is `processes:task-ao-design-confirm-txfv3t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the entries stand catalogued, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The alignment and notification work that follows learns the catalogue entries are settled and available.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so downstream regulated-role work proceeds only over catalogue entries confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the catalogued entries await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the catalogued entries against the activity's intended outcome and issues the confirmation the alignment step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Regulator-Tied Role Catalogue Entries |
+| `plain_language_description` | string | no | When the entries stand catalogued, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so downstream regulated-role work proceeds only over catalogue entries confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the catalogued entries await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

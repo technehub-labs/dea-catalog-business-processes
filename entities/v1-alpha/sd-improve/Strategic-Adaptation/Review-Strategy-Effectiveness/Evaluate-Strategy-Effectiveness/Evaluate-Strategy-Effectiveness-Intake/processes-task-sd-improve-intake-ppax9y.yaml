@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Assembled Evidence for the Effectiveness Verdict'
+plain_language_description: 'The evaluation opens as its material arrives: the assembled evidence on whether the current direction is delivering its intended outcomes. The intake custodian logs it against the evaluation file so the evaluation starts accounted for.'
+business_purpose: 'It exists so the verdict is delivered on the registered evidence set in full, with no outcome line judged unseen.'
+practical_context: 'It opens when the assembled evidence is presented for evaluation, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the assembled evidence set into the evaluation file, so the work of judging the strategy starts accounted for.'

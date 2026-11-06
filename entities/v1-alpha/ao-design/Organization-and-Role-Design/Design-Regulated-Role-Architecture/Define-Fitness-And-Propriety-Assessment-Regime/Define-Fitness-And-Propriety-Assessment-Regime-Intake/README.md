@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Define Fitness-And-Propriety Assessment Regime Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Define Fitness-And-Propriety Assessment Regime** (`processes:activity-ao-design-x9k4m7`). Its canonical ID is `processes:task-ao-design-intake-gbaudu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Regime definition opens when the regulator-tied role catalogue and the fitness-and-propriety matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the regime will be defined from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fitness assessment regimes are defined from a registered catalogue against a registered matrix.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the role catalogue and fitness matrix are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the role catalogue and fitness matrix as the definition baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Role Catalogue and Fitness Matrix |
+| `plain_language_description` | string | no | Regime definition opens when the regulator-tied role catalogue and the fitness-and-propriety matrix are handed to the … |
+| `business_purpose` | string | no | It exists so fitness assessment regimes are defined from a registered catalogue against a registered matrix. |
+| `practical_context` | string | no | It opens when the role catalogue and fitness matrix are presented for the definition, with the activity owner alerted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-re
 
 This is a **Task** (level L4), named **Commit Portfolio Rebalancing Audit Record**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Commit Portfolio Rebalancing** (`processes:activity-sd-operate-th587n`). Its canonical ID is `processes:task-sd-operate-record-e4yhvs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the handoff, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation can show which rebalancing decisions were committed, when, and on whose ratification.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the commitment record preserved at its required tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the committed decisions with their ratification trail at the agreed retention tier, and sets the retrieval handles auditors use when they ask why the portfolio moved.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Rebalancing Commitment with Its Ratification Trail |
+| `plain_language_description` | string | no | After the handoff, the trail must be kept. The records custodian preserves the audit record at its required retention … |
+| `business_purpose` | string | no | It exists so the organisation can show which rebalancing decisions were committed, when, and on whose ratification. |
+| `practical_context` | string | no | It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the commitment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

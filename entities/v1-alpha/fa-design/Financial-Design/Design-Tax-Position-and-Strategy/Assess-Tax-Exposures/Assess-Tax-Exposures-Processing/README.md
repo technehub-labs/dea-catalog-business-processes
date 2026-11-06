@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Assess Tax Exposures Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Assess Tax Exposures** (`processes:activity-fa-design-rh9ft4`). Its canonical ID is `processes:task-fa-design-transform-8nhgtf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the assessing itself: what the jurisdictional change actually exposes the enterprise to is read out and bounded, and the exposure assessment is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an exposure nobody has bounded is a bill nobody has budgeted - the assessment is what sizes the cost before it arrives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the exposure assessment produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority reads the change down to its bounded exposure, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound What the New Exposure Means |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the assessing itself: what the jurisdictional change actually … |
+| `business_purpose` | string | no | It exists because an exposure nobody has bounded is a bill nobody has budgeted - the assessment is what sizes the cost … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the exposure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Scan Environmental Sources Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Scan Environmental Sources** (`processes:activity-sd-operate-zsruv4`). Its canonical ID is `processes:task-sd-operate-transform-qv3jr5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the sweep proper begins. The processing custodian works through each tested source, gathering whatever bears on drift, disruption or opportunity, producing the raw environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because drift and disruption announce themselves in the sources; if nobody sweeps them, the strategy hears about them last.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified environment is ready to be worked, and it closes with the raw environmental signals produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function sweeps each tested source and gathers the raw signals, from regulatory murmurings to competitor moves, keeping the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sweep the Internal and External Sources for Candidate Signals |
+| `plain_language_description` | string | no | With the inputs verified, the sweep proper begins. The processing custodian works through each tested source, gathering … |
+| `business_purpose` | string | no | It exists because drift and disruption announce themselves in the sources; if nobody sweeps them, the strategy hears … |
+| `practical_context` | string | no | It opens when the verified environment is ready to be worked, and it closes with the raw environmental signals produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

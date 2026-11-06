@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Conduct Strategic Reviews Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Conduct Strategic Reviews** (`processes:activity-sd-operate-m4s5cn`). Its canonical ID is `processes:task-sd-operate-transform-p69se3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the conducting proper begins. The processing custodian chairs the scheduled session through the pack's position, flags and briefs, producing the conducted strategic reviews in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the reviews only steer the strategy if someone actually sits the leadership down and works the pack to a conclusion.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified pack is ready to be worked, and it closes with the conducted strategic reviews produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function chairs the scheduled session, working the pack's position and flags through to conclusions, and keeps the session workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Strategic Review Against Its Pack |
+| `plain_language_description` | string | no | With the inputs verified, the conducting proper begins. The processing custodian chairs the scheduled session through … |
+| `business_purpose` | string | no | It exists because the reviews only steer the strategy if someone actually sits the leadership down and works the pack … |
+| `practical_context` | string | no | It opens when the verified pack is ready to be worked, and it closes with the conducted strategic reviews produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Hand the Scoped Trade-offs to the Intent Commitment'
+plain_language_description: 'The confirming opens once the trade-offs are scoped. The confirmation custodian tells the downstream teams the scoped trade-offs are available, and closes the reconciliation against what the activity promised for the scoping.'
+business_purpose: 'It exists so the intent is committed over confirmed trade-offs rather than over a bargaining space still being drawn.'
+practical_context: 'It opens when the scoped trade-offs are ready to hand on, and it closes with the confirmation issued and the scoping''s promises checked off against what was delivered.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function hands the scoped trade-offs to the intent commitment team, reconciles them against what the scoping promised, and issues the confirmation.'

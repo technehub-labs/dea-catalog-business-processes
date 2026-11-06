@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Commit Policy Initiation naming verification methods applied and any deviations remediated; verification custodian passes …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Read the Pack Against the Method Before the Initiation'
+plain_language_description: 'With the manifest registered, the verification custodian reads the whole pack against the methodology that governs the framework and the rules that bound the scope, and issues the report naming whatever deviates from the method and how it will be mended.'
+business_purpose: 'It exists because an initiation committed short of the method would wobble from day one - the reading is what keeps it honest.'
+practical_context: 'It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in the strategy function reads the pack against the method and names whatever deviates and how it will be mended.'

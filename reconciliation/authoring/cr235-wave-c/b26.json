@@ -1,0 +1,582 @@
+{
+  "processes:task-fa-operate-record-yz7s9w": {
+    "plain_language_name": "File the Account Integrity Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the watch trail at its required retention tier and sets the retrieval handles for it. What the watch found, and what was corrected, stays readable whenever the structure's history is examined.",
+    "business_purpose": "It exists so the corrections behind the structure can be evidenced whenever its history is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the watch trail at its retention tier and sets the retrieval handles an accounting review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-wku2vy": {
+    "plain_language_name": "Confirm the Maintained Account Integrity",
+    "plain_language_description": "When the watch stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The reporting that follows learns the ledger's skeleton holds true to its design.",
+    "business_purpose": "It exists so reporting rests only on a structure confirmed as held true.",
+    "practical_context": "It begins once preparation is complete and the maintained integrity awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the held structure against the activity's intended outcome and issues the confirmation the reporting needs."
+    }
+  },
+  "processes:task-fa-operate-intake-9vz8dw": {
+    "plain_language_name": "Receive the Designed Chart for the Watch",
+    "plain_language_description": "Integrity work opens when the designed chart of accounts is handed over as the standard the live structure will be watched against. The intake custodian accepts it, registers it with audit identifiers, and starts the watching from a recorded baseline.",
+    "business_purpose": "It exists so the structure is watched against a registered standard rather than against drift.",
+    "practical_context": "It opens when the designed chart is presented for the watch, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the designed chart as the watch baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-kdb9d8": {
+    "plain_language_name": "Keep the Ledger's Skeleton True to the Chart",
+    "plain_language_description": "With the chart verified, the processing custodian does the watching itself: the live structure is held against the designed chart, departures corrected as they are found, and the maintained integrity is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a ledger that quietly warps out of shape misreports everything it touches - the watch is what keeps the skeleton honest.",
+    "practical_context": "It starts once checking is complete and the verified chart is ready to be watched against, and it ends with the maintained integrity produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function holds the live structure against the chart and corrects the departure it finds, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-9wmxsy": {
+    "plain_language_name": "Check the Chart Before Watching the Skeleton",
+    "plain_language_description": "Before anything is watched, the verification custodian checks the chart against what integrity work requires - that it is the designed version and complete enough to watch against. Defects are logged for rejection or repair before the watching begins.",
+    "business_purpose": "It exists so the skeleton is never watched against a chart that was superseded.",
+    "practical_context": "It runs once the intake is registered and the chart can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the chart one design revision behind and logs the defect before the watching begins."
+    }
+  },
+  "processes:task-fa-operate-record-wz8n86": {
+    "plain_language_name": "File the Health Posture Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the watching trail at its required retention tier and sets the retrieval handles for it. What the ledger's pulse showed, and how it was answered, stays readable whenever the books' reliability is examined.",
+    "business_purpose": "It exists so the watching behind the books' reliability can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the watching trail at its retention tier and sets the retrieval handles a reliability review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-hnukwh": {
+    "plain_language_name": "Confirm the Current Health Posture",
+    "plain_language_description": "When the watching stands done, the confirmation custodian reconciles the posture against the outcome the activity set out to reach and issues the confirmation. The ledger operation that follows learns its machinery is sound.",
+    "business_purpose": "It exists so the ledger runs only over machinery confirmed as sound.",
+    "practical_context": "It begins once preparation is complete and the health posture awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the health posture against the activity's intended outcome and issues the confirmation the ledger operation needs."
+    }
+  },
+  "processes:task-fa-operate-intake-g62vfq": {
+    "plain_language_name": "Receive the Ledger Telemetry for the Watch",
+    "plain_language_description": "Watching opens when the ledger telemetry is handed over as the readings the health posture will be kept from. The intake custodian accepts it, registers it with audit identifiers, and starts the monitoring from a recorded baseline.",
+    "business_purpose": "It exists so the books' machinery is watched from measured readings rather than from silence.",
+    "practical_context": "It opens when the telemetry is presented for the watch, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the ledger telemetry as the watch baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-ehthgj": {
+    "plain_language_name": "Watch the Books' Pulse Between the Entries",
+    "plain_language_description": "With the telemetry verified, the processing custodian does the watching itself: how fast entries post, where errors gather, and which balances behave oddly is read continuously, and the health posture is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a ledger's sickness shows in its pulse long before it shows in its balances - the watching is what catches it early.",
+    "practical_context": "It starts once checking is complete and the verified telemetry is ready to be watched, and it ends with the health posture produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function watches the ledger's latency, errors, and odd balances through the day, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-pfv2ym": {
+    "plain_language_name": "Check the Telemetry Before Watching the Pulse",
+    "plain_language_description": "Before anything is watched, the verification custodian checks the telemetry against what monitoring requires - that it covers the ledger's operation and is flowing for the period ahead. Defects are logged for rejection or repair before the watching begins.",
+    "business_purpose": "It exists so the pulse is never read from telemetry that went quietly dark.",
+    "practical_context": "It runs once the intake is registered and the telemetry can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the telemetry stopped flowing for one feed and logs the defect before the watching begins."
+    }
+  },
+  "processes:task-fa-operate-record-ye7by9": {
+    "plain_language_name": "File the Posted Entries Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the posting trail at its required retention tier and sets the retrieval handles for it. What entered the books day by day, and under which rules, stays readable whenever a posted figure is examined.",
+    "business_purpose": "It exists so the daily diet of the books can be evidenced whenever a posted figure is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the posting trail at its retention tier and sets the retrieval handles a posted-figure query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-g492nj": {
+    "plain_language_name": "Confirm the Posted Entries",
+    "plain_language_description": "When the posting stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The ledger operation learns its daily diet is digested and the books stand current.",
+    "business_purpose": "It exists so the books are treated as current only once the posting is confirmed.",
+    "practical_context": "It begins once preparation is complete and the posted entries await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the posted entries against the activity's intended outcome and issues the confirmation the ledger operation needs."
+    }
+  },
+  "processes:task-fa-operate-intake-tu2r4c": {
+    "plain_language_name": "Receive the Entries Flowing In Day by Day",
+    "plain_language_description": "Processing opens when the journal entries are handed over as the daily diet the books must digest. The intake custodian accepts them, registers them with audit identifiers, and starts the posting from a recorded baseline.",
+    "business_purpose": "It exists so entries enter the books through a registered gate rather than around it.",
+    "practical_context": "It opens when the entries are presented for the processing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the arriving entries as the posting baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-psjvpp": {
+    "plain_language_name": "Post Each Entry Where the Rules Send It",
+    "plain_language_description": "With the entries verified, the processing custodian does the posting itself: each entry is processed under the configured rules and checked as it lands in the books, and the posted entries are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an entry posted by whim is an entry that lies - the rules are what make every posting land where it belongs.",
+    "practical_context": "It starts once checking is complete and the verified entries are ready to be posted, and it ends with the posted entries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function posts each arriving entry under the configured rules and checks it as it lands, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-4etjh5": {
+    "plain_language_name": "Check the Rules Before Posting the Entries",
+    "plain_language_description": "Before anything is posted, the verification custodian checks the entries and the rules against what processing requires - that the rules are the configured ones and the entries carry what the rules will ask of them. Defects are logged for rejection or repair before the posting begins.",
+    "business_purpose": "It exists so no entry is posted by rules that were superseded.",
+    "practical_context": "It runs once the intake is registered and the entries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an entry missing the reference its rule requires and logs the defect before the posting begins."
+    }
+  },
+  "processes:task-fa-operate-record-yng4k6": {
+    "plain_language_name": "File the Certified Close Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the certification trail at its required retention tier and sets the retrieval handles for it. Who signed the period off, and against which checklist, stays readable whenever the release is examined.",
+    "business_purpose": "It exists so the signing-off of the period can be evidenced whenever its release is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the certification trail at its retention tier and sets the retrieval handles a reporting review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-jztcet": {
+    "plain_language_name": "Confirm the Certified Period Close",
+    "plain_language_description": "When the period stands certified, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The reporting that follows learns the period is released and can be spoken from.",
+    "business_purpose": "It exists so reporting proceeds only over a period confirmed as certified.",
+    "practical_context": "It begins once preparation is complete and the certified close awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the certified period against the activity's intended outcome and issues the confirmation the reporting needs."
+    }
+  },
+  "processes:task-fa-operate-intake-bfanxp": {
+    "plain_language_name": "Receive the Closed Period and Its Checklist",
+    "plain_language_description": "Certification opens when the closed period and its checklist are handed over as the work the sign-off will judge. The intake custodian accepts them, registers them with audit identifiers, and starts the certification from a recorded baseline.",
+    "business_purpose": "It exists so the period is signed off against a registered checklist rather than against fatigue.",
+    "practical_context": "It opens when the closed period and checklist are presented for the certification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the closed period and its checklist as the certification baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-k99zmt": {
+    "plain_language_name": "Sign the Period Off as Done and Right",
+    "plain_language_description": "With the checklist verified, the processing custodian does the certifying itself: the closed period is judged against the checklist and the control requirements, and the certified close is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a period released uncertified releases every doubt with it - the certification is what lets reporting speak with one voice.",
+    "practical_context": "It starts once checking is complete and the verified checklist is ready to be judged from, and it ends with the certified close produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function judges the period against the checklist and signs it off, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-yknv9u": {
+    "plain_language_name": "Check the Checklist Before Signing the Period Off",
+    "plain_language_description": "Before anything is signed, the verification custodian checks the checklist against what certification requires - that it is complete for the period and its control requirements are the current ones. Defects are logged for rejection or repair before the signing begins.",
+    "business_purpose": "It exists so the period is never signed off by a checklist with holes in it.",
+    "practical_context": "It runs once the intake is registered and the checklist can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the checklist missing a new control's line and logs the defect before the signing begins."
+    }
+  },
+  "processes:task-fa-operate-record-wzuwxj": {
+    "plain_language_name": "File the Period-End Entries Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the entry trail at its required retention tier and sets the retrieval handles for it. Which accruals, deferrals, and adjustments were made, and under which policies, stays readable whenever a period's seams are examined.",
+    "business_purpose": "It exists so the stitching of each period's seams can be evidenced whenever the seams are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the entry trail at its retention tier and sets the retrieval handles a period review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-x8wh3e": {
+    "plain_language_name": "Confirm the Posted Period-End Entries",
+    "plain_language_description": "When the entries stand posted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The reconciliation work that follows learns the period's seams are sewn and can be checked whole.",
+    "business_purpose": "It exists so reconciliations run only over entries confirmed as posted.",
+    "practical_context": "It begins once preparation is complete and the posted entries await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the posted entries against the activity's intended outcome and issues the confirmation the reconciliation work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-b5da59": {
+    "plain_language_name": "Receive the Close Schedule and Accounting Policies",
+    "plain_language_description": "Entry work opens when the close schedule and the accounting policies are handed over together as the frame the period-end entries must be made within. The intake custodian accepts both, registers them with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so the period's seams are sewn on schedule and by the book.",
+    "practical_context": "It opens when the schedule and policies are presented for the entry work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the close schedule and policies as the entry baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-rtxd63": {
+    "plain_language_name": "Make the Entries That End the Period",
+    "plain_language_description": "With the frame verified, the processing custodian does the entry work itself: the accruals, deferrals, and adjustments that close the period are made on schedule under the policies, and the executed entries are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a period does not end until its loose ends are stitched - the entries are the stitching.",
+    "practical_context": "It starts once checking is complete and the verified frame is ready to be worked from, and it ends with the executed entries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function makes each accrual, deferral, and adjustment on schedule under the policies, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-7m9874": {
+    "plain_language_name": "Check the Schedule Before Making the Entries",
+    "plain_language_description": "Before anything is made, the verification custodian checks the schedule and policies against what entry work requires - that every due entry type is on the schedule and the policies are the current ones. Defects are logged for rejection or repair before the entries are made.",
+    "business_purpose": "It exists so no loose end is left because the schedule forgot it.",
+    "practical_context": "It runs once the intake is registered and the schedule can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a due accrual missing from the schedule and logs the defect before the entries are made."
+    }
+  },
+  "processes:task-fa-operate-record-2g5mm5": {
+    "plain_language_name": "File the Completed Reconciliations Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the reconciliation trail at its required retention tier and sets the retrieval handles for it. What was checked against what, and what was found, stays readable whenever a balance's honesty is examined.",
+    "business_purpose": "It exists so the proving of every balance can be evidenced whenever its honesty is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the reconciliation trail at its retention tier and sets the retrieval handles a balance review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-d7yjw9": {
+    "plain_language_name": "Confirm the Completed Reconciliations",
+    "plain_language_description": "When the reconciliations stand run, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The reporting work that follows learns the balances are proven and can be spoken from.",
+    "business_purpose": "It exists so the managers' pages are built only over balances confirmed as proven.",
+    "practical_context": "It begins once preparation is complete and the completed reconciliations await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the run reconciliations against the activity's intended outcome and issues the confirmation the reporting work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-ananm5": {
+    "plain_language_name": "Receive the Ledger Balances and Source Records",
+    "plain_language_description": "Reconciliation opens when the ledger balances and the source records are handed over together as the two sides each balance must be proven between. The intake custodian accepts them, registers them with audit identifiers, and starts the executing from a recorded baseline.",
+    "business_purpose": "It exists so balances are proven against their real sources rather than against themselves.",
+    "practical_context": "It opens when the balances and sources are presented for the reconciliation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the ledger balances and source records as the reconciliation baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-b3r859": {
+    "plain_language_name": "Set the Books Against Their Sources",
+    "plain_language_description": "With the inputs verified, the processing custodian does the reconciling itself: each ledger balance is set against its subledger or bank source and the difference run to ground, and the completed reconciliations are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a balance believed without being checked is a balance believed on faith - the reconciling is what turns faith into evidence.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be set against each other, and it ends with the completed reconciliations produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function sets each balance against its source and runs the difference to ground, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-p8fmku": {
+    "plain_language_name": "Check the Sources Before Setting the Books",
+    "plain_language_description": "Before anything is reconciled, the verification custodian checks the balances and sources against what reconciling requires - that every balance has a source to meet and every source is current. Defects are logged for rejection or repair before the reconciling begins.",
+    "business_purpose": "It exists so no balance is proven against a source that was never really there.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a balance with no matching source record and logs the defect before the reconciling begins."
+    }
+  },
+  "processes:task-fa-operate-record-th6mk2": {
+    "plain_language_name": "File the Management Reports Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the production trail at its required retention tier and sets the retrieval handles for it. Which pages were produced, from which proven balances, stays readable whenever a manager's number is examined.",
+    "business_purpose": "It exists so the making of the managers' pages can be evidenced whenever a manager's number is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the production trail at its retention tier and sets the retrieval handles a management review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-2x7mfy": {
+    "plain_language_name": "Confirm the Produced Management Reports",
+    "plain_language_description": "When the pages stand produced, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The close closes with its managers served and its numbers spoken from evidence.",
+    "business_purpose": "It exists so the close is treated as done only once the managers' pages are confirmed as produced.",
+    "practical_context": "It begins once preparation is complete and the produced reports await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the produced pages against the activity's intended outcome and issues the confirmation that closes the close."
+    }
+  },
+  "processes:task-fa-operate-intake-gwfm2w": {
+    "plain_language_name": "Receive the Reconciled Balances for the Reports",
+    "plain_language_description": "Production opens when the reconciled balances are handed over as the proven ground the managers' pages will be built from. The intake custodian accepts them, registers them with audit identifiers, and starts the producing from a recorded baseline.",
+    "business_purpose": "It exists so the managers read numbers that were proven before they were printed.",
+    "practical_context": "It opens when the reconciled balances are presented for the production, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the reconciled balances as the production baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-7d29bh": {
+    "plain_language_name": "Turn the Closed Period into the Managers' Pages",
+    "plain_language_description": "With the balances verified, the processing custodian does the producing itself: the period's proven balances are drawn into the reports the managers run the enterprise by, and the produced reports are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a close that produces nothing for the managers produced nothing at all - the pages are the close's answer to its own question.",
+    "practical_context": "It starts once checking is complete and the verified balances are ready to be drawn from, and it ends with the produced reports and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function draws the proven balances into the managers' pages, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-j9yb2g": {
+    "plain_language_name": "Check the Balances Before Turning Them into Pages",
+    "plain_language_description": "Before anything is produced, the verification custodian checks the reconciled balances against what production requires - that they are the proven set and cover the period the pages will speak for. Defects are logged for rejection or repair before the producing begins.",
+    "business_purpose": "It exists so no manager's page is printed from balances that were never proven.",
+    "practical_context": "It runs once the intake is registered and the balances can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a balance whose reconciliation is still open and logs the defect before the producing begins."
+    }
+  },
+  "processes:task-fa-operate-record-fprtr3": {
+    "plain_language_name": "File the Payment Execution Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval handles for it. What was paid, to whom, on which day, stays readable whenever a supplier's account is examined.",
+    "business_purpose": "It exists so the paying of every supplier can be evidenced whenever a supplier's account is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the execution trail at its retention tier and sets the retrieval handles a supplier query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-3vry7a": {
+    "plain_language_name": "Confirm the Executed Payments",
+    "plain_language_description": "When the payments stand made, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The payables record learns what left and the suppliers learn what arrived.",
+    "business_purpose": "It exists so the record and the suppliers are told only what is confirmed as paid.",
+    "practical_context": "It begins once preparation is complete and the executed payments await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the made payments against the activity's intended outcome and issues the confirmation the payables record needs."
+    }
+  },
+  "processes:task-fa-operate-intake-smany2": {
+    "plain_language_name": "Receive the Approved Invoices and the Payment Plan",
+    "plain_language_description": "Execution opens when the approved invoices and the payment plan are handed over together as the two sides the paying will be run between. The intake custodian accepts them, registers them with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so suppliers are paid from approved invoices on a registered plan rather than at whim.",
+    "practical_context": "It opens when the invoices and plan are presented for the execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the approved invoices and payment plan as the execution baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-cwpc2u": {
+    "plain_language_name": "Pay the Suppliers in the Order the Plan Says",
+    "plain_language_description": "With the inputs verified, the processing custodian does the execution itself: each approved invoice is paid per the plan's ordering and settled through its chosen instrument, and the executed payments are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because paying in the wrong order strands the suppliers who mattered most - the plan is what keeps the money loyal to the schedule.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be paid from, and it ends with the executed payments produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function pays each invoice in the plan's order through its chosen instrument, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-bgr7d6": {
+    "plain_language_name": "Check the Plan Before Paying the Suppliers",
+    "plain_language_description": "Before anything is paid, the verification custodian checks the invoices and plan against what execution requires - that every invoice paid is approved and the plan's ordering holds. Defects are logged for rejection or repair before any payment is made.",
+    "business_purpose": "It exists so no payment leaves for an invoice that was never approved.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an unapproved invoice sitting in the payment run and logs the defect before any payment is made."
+    }
+  },
+  "processes:task-fa-operate-record-ffevdf": {
+    "plain_language_name": "File the Payables Record Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the maintenance trail at its required retention tier and sets the retrieval handles for it. The running account of what is owed to whom stays readable whenever a supplier's balance is examined.",
+    "business_purpose": "It exists so the owings to suppliers can be evidenced whenever a supplier's balance is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the maintenance trail at its retention tier and sets the retrieval handles a supplier balance review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-m79x5p": {
+    "plain_language_name": "Confirm the Current Payables Record",
+    "plain_language_description": "When the record stands current, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The paying that follows learns the owings are true and can be settled against them.",
+    "business_purpose": "It exists so suppliers are paid only against owings confirmed as true.",
+    "practical_context": "It begins once preparation is complete and the current record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the current record against the activity's intended outcome and issues the confirmation the paying needs."
+    }
+  },
+  "processes:task-fa-operate-intake-sfu24p": {
+    "plain_language_name": "Receive the Invoices, Approvals, and Payments",
+    "plain_language_description": "Record-keeping opens when the invoices, the approvals, and the payments are handed over together as the material the payables record will be kept true from. The intake custodian accepts them, registers them with audit identifiers, and starts the maintenance from a recorded baseline.",
+    "business_purpose": "It exists so the owings are kept from registered movements rather than from the ledger's mood.",
+    "practical_context": "It opens when the invoices, approvals, and payments are presented for the record-keeping, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the invoices, approvals, and payments as the record baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-vnuqez": {
+    "plain_language_name": "Keep the Owings to Suppliers True",
+    "plain_language_description": "With the inputs verified, the processing custodian does the keeping itself: every invoice, approval, and payment is written into the payables record as it happens, and the current record is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an owing that drifts from its facts is a dispute in waiting - the keeping is what makes the payables record worth trusting.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be written from, and it ends with the current record produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function writes every invoice, approval, and payment into the record as it happens, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-85ff86": {
+    "plain_language_name": "Check the Sources Before Keeping the Owings True",
+    "plain_language_description": "Before anything is written, the verification custodian checks the invoices, approvals, and payments against what record-keeping requires - that each carries its supplier and its date. Defects are logged for rejection or repair before the record is touched.",
+    "business_purpose": "It exists so the record never gains an owing nobody can attribute.",
+    "practical_context": "It runs once the intake is registered and the sources can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an invoice with no supplier named and logs the defect before the record is touched."
+    }
+  },
+  "processes:task-fa-operate-record-uqztnu": {
+    "plain_language_name": "File the Matched Invoices Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the matching trail at its required retention tier and sets the retrieval handles for it. What was proved against what, and what was found, stays readable whenever a payment's basis is examined.",
+    "business_purpose": "It exists so the proving behind every payment can be evidenced whenever a payment's basis is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the matching trail at its retention tier and sets the retrieval handles a payment review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-qtxrrw": {
+    "plain_language_name": "Confirm the Matched Invoices",
+    "plain_language_description": "When the matching stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The approval work that follows learns which bills are proved and can be authorized.",
+    "business_purpose": "It exists so approvals are recorded only over bills confirmed as matched.",
+    "practical_context": "It begins once preparation is complete and the matched invoices await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the matched invoices against the activity's intended outcome and issues the confirmation the approval work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-w27h77": {
+    "plain_language_name": "Receive the Invoices, Orders, and Receipts",
+    "plain_language_description": "Matching opens when the invoices, the purchase orders, and the goods receipts are handed over together as the three papers every bill must prove itself between. The intake custodian accepts them, registers them with audit identifiers, and starts the matching from a recorded baseline.",
+    "business_purpose": "It exists so bills are proved between registered papers rather than on a supplier's insistence.",
+    "practical_context": "It opens when the invoices, orders, and receipts are presented for the matching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the invoices, orders, and receipts as the matching baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-pksym4": {
+    "plain_language_name": "Prove Every Bill Was Really Ordered and Really Received",
+    "plain_language_description": "With the papers verified, the processing custodian does the matching itself: each invoice is set against its purchase order and its goods receipt, discrepancies written down, and the matched invoices are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because paying for what was never ordered is the oldest leak in the book - the matching is what shuts it.",
+    "practical_context": "It starts once checking is complete and the verified papers are ready to be matched, and it ends with the matched invoices produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function sets each bill against its order and receipt and writes down the discrepancies, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-wgp3js": {
+    "plain_language_name": "Check the Papers Before Proving the Bills",
+    "plain_language_description": "Before anything is matched, the verification custodian checks the invoices, orders, and receipts against what matching requires - that each paper carries its references and the sets are complete enough to match between. Defects are logged for rejection or repair before the matching begins.",
+    "business_purpose": "It exists so no bill is proved against papers that were never really there.",
+    "practical_context": "It runs once the intake is registered and the papers can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an invoice with no order to meet and logs the defect before the matching begins."
+    }
+  },
+  "processes:task-fa-operate-record-4b7j8f": {
+    "plain_language_name": "File the Payment Approvals Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the approval trail at its required retention tier and sets the retrieval handles for it. Who said yes, and on what authority, stays readable whenever a payment's authority is examined.",
+    "business_purpose": "It exists so the yes behind every payment can be evidenced whenever a payment's authority is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the approval trail at its retention tier and sets the retrieval handles an authority review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-vqgq4f": {
+    "plain_language_name": "Confirm the Recorded Approvals",
+    "plain_language_description": "When the approvals stand recorded, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The paying that follows learns which bills may leave and can run them.",
+    "business_purpose": "It exists so bills are paid only over approvals confirmed as recorded.",
+    "practical_context": "It begins once preparation is complete and the recorded approvals await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the recorded approvals against the activity's intended outcome and issues the confirmation the paying needs."
+    }
+  },
+  "processes:task-fa-operate-intake-byzf3b": {
+    "plain_language_name": "Receive the Matched Invoices for Approval",
+    "plain_language_description": "Approval work opens when the matched invoices are handed over as the proved bills awaiting their yes. The intake custodian accepts them, registers them with audit identifiers, and starts the recording from a recorded baseline.",
+    "business_purpose": "It exists so the yes is asked over proved bills rather than over insistence.",
+    "practical_context": "It opens when the matched invoices are presented for the approval work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the matched invoices as the approval baseline, with audit references, and opens the asking."
+    }
+  },
+  "processes:task-fa-operate-transform-ymfr4u": {
+    "plain_language_name": "Let the Right Voice Say Yes",
+    "plain_language_description": "With the invoices verified, the processing custodian does the recording itself: each matched bill's approval is captured from the voice the delegation of authority names, and the recorded approvals are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a yes from the wrong voice is a no wearing a costume - the delegation is what decides whose yes counts.",
+    "practical_context": "It starts once checking is complete and the verified invoices are ready to be approved, and it ends with the recorded approvals produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function captures each approval from the voice the delegation names, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-aed2x3": {
+    "plain_language_name": "Check the Voices Before the Yes Is Recorded",
+    "plain_language_description": "Before anything is recorded, the verification custodian checks the approvals against what recording requires - that each voice is the one the delegation of authority names for its amount. Defects are logged for rejection or repair before the recording begins.",
+    "business_purpose": "It exists so no yes is recorded from a voice that had no right to give it.",
+    "practical_context": "It runs once the intake is registered and the approvals can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an approval given above its delegator's limit and logs the defect before the recording begins."
+    }
+  },
+  "processes:task-fa-operate-record-9v8bek": {
+    "plain_language_name": "File the Applied Cash Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the application trail at its required retention tier and sets the retrieval handles for it. What came in, what it cleared, stays readable whenever an invoice's standing is examined.",
+    "business_purpose": "It exists so the clearing of every invoice can be evidenced whenever its standing is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the application trail at its retention tier and sets the retrieval handles an invoice query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-6vms9m": {
+    "plain_language_name": "Confirm the Applied Cash",
+    "plain_language_description": "When the cash stands applied, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The receivables story learns which invoices are cleared and which still stand open.",
+    "business_purpose": "It exists so the receivables story counts only cash confirmed as applied.",
+    "practical_context": "It begins once preparation is complete and the applied cash awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the applied cash against the activity's intended outcome and issues the confirmation the receivables story needs."
+    }
+  },
+  "processes:task-fa-operate-intake-hz5r7p": {
+    "plain_language_name": "Receive the Receipts and the Open Invoices",
+    "plain_language_description": "Application opens when the received cash and the open invoices are handed over together as the two sides the clearing will be made between. The intake custodian accepts both, registers them with audit identifiers, and starts the applying from a recorded baseline.",
+    "business_purpose": "It exists so cash is cleared against registered invoices rather than against the bank's guesswork.",
+    "practical_context": "It opens when the receipts and invoices are presented for the application, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the receipts and open invoices as the application baseline, with audit references."
+    }
+  }
+}

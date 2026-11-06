@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-tr
 
 This is a **Task** (level L4), named **Gather Objective Performance Evidence Processing**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Gather Objective Performance Evidence** (`processes:activity-sd-improve-6tdndg`). Its canonical ID is `processes:task-sd-improve-transform-fuknj3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the gathering proper begins. The processing custodian lines the tested performance up against each objective and target, producing the gathered evidence in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because raw monitoring tells nobody anything until it is arranged objective by objective and the comparison is ready to read.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified performance is ready to be worked, and it closes with the gathered objective performance evidence produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function arranges the tested performance figures against every current objective and target, producing the gathered evidence pack with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble the Evidence Against Each Current Objective |
+| `plain_language_description` | string | no | With the inputs verified, the gathering proper begins. The processing custodian lines the tested performance up against … |
+| `business_purpose` | string | no | It exists because raw monitoring tells nobody anything until it is arranged objective by objective and the comparison … |
+| `practical_context` | string | no | It opens when the verified performance is ready to be worked, and it closes with the gathered objective performance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

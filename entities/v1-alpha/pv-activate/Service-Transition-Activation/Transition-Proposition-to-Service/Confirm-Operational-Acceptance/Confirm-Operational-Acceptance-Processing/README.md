@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-activate-t
 
 This is a **Task** (level L4), named **Confirm Operational Acceptance Processing**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Confirm Operational Acceptance** (`processes:activity-pv-activate-hxb9wf`). Its canonical ID is `processes:task-pv-activate-transform-uhga2s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checks done, the processing custodian does the acceptance work itself, producing the output the activity calls for in the form its definition specifies. Everything produced along the way is kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the acceptance rests on assembled evidence rather than on a handshake.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian of the proposition design authority assembles the acceptance evidence into the output the sign-off needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble the Acceptance Evidence |
+| `plain_language_description` | string | no | With the checks done, the processing custodian does the acceptance work itself, producing the output the activity calls … |
+| `business_purpose` | string | no | It exists so the acceptance rests on assembled evidence rather than on a handshake. |
+| `practical_context` | string | no | It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

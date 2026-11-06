@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-design-int
 
 This is a **Task** (level L4), named **Commit Demand Model Intake**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Commit Demand Model** (`processes:activity-pr-design-ftrzgz`). Its canonical ID is `processes:task-pr-design-intake-cekxqc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Bringing the demand model together starts with intake: the segment thesis the design serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian binds the pack to the design file so the consolidation works from one accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a committed model is only as sound as the completeness of what fed it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the supply paths, capacity register, and lever catalogue into the model design file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Demand Model File for Commitment |
+| `plain_language_description` | string | no | Bringing the demand model together starts with intake: the segment thesis the design serves, the library of interaction … |
+| `business_purpose` | string | no | It exists because a committed model is only as sound as the completeness of what fed it. |
+| `practical_context` | string | no | It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

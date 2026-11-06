@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Establish Network Nodes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Establish Network Nodes** (`processes:activity-eo-build-8x4ajc`). Its canonical ID is `processes:task-eo-build-transform-sjc3c2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the plan verified, the processing custodian does the establishment itself: the warehouses, hubs, and cross-docks the design positions are established at their planned locations, and the established nodes are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a logistics design is lines on a map until the nodes actually stand at the positions it chose.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified plan is ready to be built from, and it ends with the established nodes produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management establishes the warehouses, hubs, and cross-docks at their planned positions, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Nodes the Logistics Design Positions |
+| `plain_language_description` | string | no | With the plan verified, the processing custodian does the establishment itself: the warehouses, hubs, and cross-docks … |
+| `business_purpose` | string | no | It exists because a logistics design is lines on a map until the nodes actually stand at the positions it chose. |
+| `practical_context` | string | no | It starts once checking is complete and the verified plan is ready to be built from, and it ends with the established … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Implement Planning Controls Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Planning Controls** (`processes:activity-fa-build-dsxzrc`). Its canonical ID is `processes:task-fa-build-intake-bqh2z8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The control work opens when the financial controls design is handed over as the frame the planning guard-rails must be fitted to. The intake custodian accepts it, registers it with audit identifiers, and starts the fitting from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so guard-rails are fitted to a registered design rather than to convenience.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the controls design is presented for the fitting, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function registers the controls design as the fitting baseline, with audit references, and opens the guard-rail work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Financial Controls Design |
+| `plain_language_description` | string | no | The control work opens when the financial controls design is handed over as the frame the planning guard-rails must be … |
+| `business_purpose` | string | no | It exists so guard-rails are fitted to a registered design rather than to convenience. |
+| `practical_context` | string | no | It opens when the controls design is presented for the fitting, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

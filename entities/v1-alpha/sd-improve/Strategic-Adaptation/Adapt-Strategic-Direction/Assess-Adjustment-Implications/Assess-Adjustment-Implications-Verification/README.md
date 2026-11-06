@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-ve
 
 This is a **Task** (level L4), named **Assess Adjustment Implications Verification**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Assess Adjustment Implications** (`processes:activity-sd-improve-r5jbb6`). Its canonical ID is `processes:task-sd-improve-verify-x447pz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before implications are traced, the arriving candidate adjustments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because implications traced from a half-formed candidate would misstate the cost and reach of the change across plan and portfolio.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the candidates can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests each arriving candidate against what the assessment needs, and writes up one candidate whose targets are unstated as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Candidate Adjustments Before Assessing Their Reach |
+| `plain_language_description` | string | no | Before implications are traced, the arriving candidate adjustments are put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because implications traced from a half-formed candidate would misstate the cost and reach of the change … |
+| `practical_context` | string | no | It opens once the intake is registered and the candidates can be challenged, and it closes with its shortfalls written … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

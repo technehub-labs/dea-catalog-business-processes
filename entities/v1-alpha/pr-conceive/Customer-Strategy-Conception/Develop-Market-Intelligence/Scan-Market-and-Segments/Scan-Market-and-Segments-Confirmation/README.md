@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-c
 
 This is a **Task** (level L4), named **Scan Market and Segments Confirmation**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Scan Market and Segments** (`processes:activity-pr-conceive-h7aqez`). Its canonical ID is `processes:task-pr-conceive-confirm-4esp8u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the scan's findings are formally accepted before hypotheses are drawn from them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian closes the reconciliation, and the strategy custodian acknowledges the scan results.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Scan Results with the Strategy Owner |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with … |
+| `business_purpose` | string | no | It exists so the scan's findings are formally accepted before hypotheses are drawn from them. |
+| `practical_context` | string | no | It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

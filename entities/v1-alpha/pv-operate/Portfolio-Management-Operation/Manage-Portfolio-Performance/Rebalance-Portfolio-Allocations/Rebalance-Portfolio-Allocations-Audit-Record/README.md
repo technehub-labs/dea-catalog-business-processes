@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Rebalance Portfolio Allocations Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Rebalance Portfolio Allocations** (`processes:activity-pv-operate-bzud7v`). Its canonical ID is `processes:task-pv-operate-record-m8c345`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the rebalancing round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Every allocation shift can then be traced to the performance and direction behind it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because moving portfolio money must leave retrievable evidence of what moved, when it moved, and on whose authority.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the rebalancing audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the audit record for the quarter's rebalancing at its required retention tier and sets the retrieval handles, so an auditor can trace each envelope shift to the picture and direction that justified it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Rebalancing Audit Record |
+| `plain_language_description` | string | no | After confirmation, the rebalancing round is put beyond doubt for later scrutiny. The records custodian preserves the … |
+| `business_purpose` | string | no | It exists because moving portfolio money must leave retrievable evidence of what moved, when it moved, and on whose … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the rebalancing audit record held at its required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Competency Domains for Level Definition'
+plain_language_description: 'Level definition opens when the identified competency domains are handed over as the ground the levels will be cut into. The intake custodian accepts them, registers the handover with audit identifiers, and starts the definition work on a recorded footing.'
+business_purpose: 'It exists so proficiency levels are defined within a registered set of domains rather than free-floating.'
+practical_context: 'It opens when the competency domains are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the identified domains as the definition baseline, with audit references, and opens the levelling work.'

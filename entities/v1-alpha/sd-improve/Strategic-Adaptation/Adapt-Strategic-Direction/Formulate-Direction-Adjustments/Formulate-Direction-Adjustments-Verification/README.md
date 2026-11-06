@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-ve
 
 This is a **Task** (level L4), named **Formulate Direction Adjustments Verification**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Formulate Direction Adjustments** (`processes:activity-sd-improve-qxsaqc`). Its canonical ID is `processes:task-sd-improve-verify-ah9bb9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before candidate adjustments are drafted, the arriving case material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because adjustments drafted to answer a shaky case would send the strategy chasing a problem it does not have.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the case can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the adaptation case against what the formulation needs, and writes up a driver whose evidence is thin as a shortfall to be filled before drafting starts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Case Before Drafting Any Adjustments |
+| `plain_language_description` | string | no | Before candidate adjustments are drafted, the arriving case material is put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because adjustments drafted to answer a shaky case would send the strategy chasing a problem it does not have. |
+| `practical_context` | string | no | It opens once the intake is registered and the case can be challenged, and it closes with its shortfalls written down … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

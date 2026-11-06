@@ -74,3 +74,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Training Completion Evidence'
+plain_language_description: 'With the package registered, the verification custodian reads the completion evidence against what the role''s training plan demanded. Supervised hours, sign-offs, and course coverage are compared with the requirement, and any shortfall is written down for the evidence to be rejected or put right.'
+business_purpose: 'It exists so a training completion is only recognised when the evidence truly matches what the plan required.'
+practical_context: 'It runs once registration is done and the evidence can be checked against the activity''s requirements, and it finishes with the evidence verified or its shortcomings recorded for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian checks a completion certificate against the role''s training plan, notices the final supervised module is undocumented, and records the gap for remediation.'

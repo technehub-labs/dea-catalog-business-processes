@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Install Technology Assets Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Install Technology Assets** (`processes:activity-eo-build-a5trnu`). Its canonical ID is `processes:task-eo-build-transform-afusez`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the deliveries verified, the processing custodian does the installation itself: each asset is installed into its place in the target environments, and the installed assets are set down in the form the activity defines. Working papers from the installation are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assets in crates change nothing - installation is where the procurement starts to become capability.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified deliveries are ready to be installed, and it ends with the installed assets produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management places each asset into its position in the target environments, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Put the Procured Assets into Their Environments |
+| `plain_language_description` | string | no | With the deliveries verified, the processing custodian does the installation itself: each asset is installed into its … |
+| `business_purpose` | string | no | It exists because assets in crates change nothing - installation is where the procurement starts to become capability. |
+| `practical_context` | string | no | It starts once checking is complete and the verified deliveries are ready to be installed, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

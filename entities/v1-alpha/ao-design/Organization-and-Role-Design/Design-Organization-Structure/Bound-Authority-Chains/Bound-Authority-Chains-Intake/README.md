@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Bound Authority Chains Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Bound Authority Chains** (`processes:activity-ao-design-3dpt54`). Its canonical ID is `processes:task-ao-design-intake-5nfdj9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Authority bounding opens when the drafted organizational architecture is handed over as the structure the chains must run through. The intake custodian accepts it, registers the handover with audit identifiers, and starts the bounding work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so authority chains are bounded over a registered architecture rather than over informal lines.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the drafted architecture is presented for the authority work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the drafted architecture as the authority baseline, with audit references, and opens the bounding work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Drafted Architecture for Authority Work |
+| `plain_language_description` | string | no | Authority bounding opens when the drafted organizational architecture is handed over as the structure the chains must … |
+| `business_purpose` | string | no | It exists so authority chains are bounded over a registered architecture rather than over informal lines. |
+| `practical_context` | string | no | It opens when the drafted architecture is presented for the authority work, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

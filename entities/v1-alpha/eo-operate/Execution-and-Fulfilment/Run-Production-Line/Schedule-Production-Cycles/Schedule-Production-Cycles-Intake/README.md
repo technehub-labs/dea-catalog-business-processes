@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Schedule Production Cycles Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Schedule Production Cycles** (`processes:activity-eo-operate-gmkpny`). Its canonical ID is `processes:task-eo-operate-intake-dk6es4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Scheduling opens when the production plan, the line's capacity, and the material positions are handed over together as the three sides the cycles must be sequenced between. The intake custodian accepts them, registers them with audit identifiers, and starts the scheduling from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cycles are sequenced from registered reality rather than from the whiteboard's wish list.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the plan, capacity, and materials are presented for scheduling, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the plan, line capacity, and material positions as the scheduling baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Plan, Capacity, and Material Positions |
+| `plain_language_description` | string | no | Scheduling opens when the production plan, the line's capacity, and the material positions are handed over together as … |
+| `business_purpose` | string | no | It exists so cycles are sequenced from registered reality rather than from the whiteboard's wish list. |
+| `practical_context` | string | no | It opens when the plan, capacity, and materials are presented for scheduling, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

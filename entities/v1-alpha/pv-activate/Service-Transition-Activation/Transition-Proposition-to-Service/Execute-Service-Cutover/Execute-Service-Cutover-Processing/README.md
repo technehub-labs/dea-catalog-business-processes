@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-activate-t
 
 This is a **Task** (level L4), named **Execute Service Cutover Processing**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Execute Service Cutover** (`processes:activity-pv-activate-fd922j`). Its canonical ID is `processes:task-pv-activate-transform-q9fy25`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checks done, the processing custodian performs the activation, producing the transitioned service in the form the activity's definition specifies. The working papers from the switch are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a proposition only becomes a service when it actually runs in the operational environment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian of the proposition design authority carries out the cutover and hands over the running service.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Switch the Proposition into Live Service |
+| `plain_language_description` | string | no | With the checks done, the processing custodian performs the activation, producing the transitioned service in the form … |
+| `business_purpose` | string | no | It exists because a proposition only becomes a service when it actually runs in the operational environment. |
+| `practical_context` | string | no | It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

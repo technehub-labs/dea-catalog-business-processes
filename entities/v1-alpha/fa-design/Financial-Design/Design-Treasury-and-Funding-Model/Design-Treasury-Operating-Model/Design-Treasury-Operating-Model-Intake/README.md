@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-int
 
 This is a **Task** (level L4), named **Design Treasury Operating Model Intake**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury Operating Model** (`processes:activity-fa-design-d4rea9`). Its canonical ID is `processes:task-fa-design-intake-q5795s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Operating model work opens when the liquidity policy and the funding structure are handed over together as the regimes the treasury must be built to execute. The intake custodian accepts both, registers them with audit identifiers, and starts the designing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so treasury is built to execute registered regimes rather than to local habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the policy and structure are presented for the operating model work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the liquidity policy and funding structure as the operating model baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Liquidity Policy and Funding Structure |
+| `plain_language_description` | string | no | Operating model work opens when the liquidity policy and the funding structure are handed over together as the regimes … |
+| `business_purpose` | string | no | It exists so treasury is built to execute registered regimes rather than to local habit. |
+| `practical_context` | string | no | It opens when the policy and structure are presented for the operating model work, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Execute Filings and Registrations Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Execute Filings and Registrations** (`processes:activity-fa-build-daw35b`). Its canonical ID is `processes:task-fa-build-intake-hdgy2z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Execution opens when the new regime's requirements are handed over as the filings and registrations the enterprise must complete to stand there. The intake custodian accepts them, registers them with audit identifiers, and starts the execution from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so papers are filed against registered requirements rather than against best guesses.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the regime requirements are presented for the execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function registers the regime's requirements as the filing baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Regime's Requirements for Presence |
+| `plain_language_description` | string | no | Execution opens when the new regime's requirements are handed over as the filings and registrations the enterprise must … |
+| `business_purpose` | string | no | It exists so papers are filed against registered requirements rather than against best guesses. |
+| `practical_context` | string | no | It opens when the regime requirements are presented for the execution, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

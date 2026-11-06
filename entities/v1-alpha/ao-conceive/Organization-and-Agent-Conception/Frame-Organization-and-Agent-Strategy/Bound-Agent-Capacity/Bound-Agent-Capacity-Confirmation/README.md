@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-c
 
 This is a **Task** (level L4), named **Bound Agent Capacity Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Agent Capacity** (`processes:activity-ao-conceive-36aux4`). Its canonical ID is `processes:task-ao-conceive-confirm-zzeaqr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the capacity stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The drafting step that follows learns the capacity is fixed and the strategy can be drafted within it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy is drafted only within capacity confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the bounded capacity awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the bounded capacity against the activity's intended outcome and issues the confirmation the drafting step waits on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Bounded Agent Capacity |
+| `plain_language_description` | string | no | When the capacity stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the strategy is drafted only within capacity confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the bounded capacity awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Attest Fitness-And-Propriety For Pool Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Attest Fitness-And-Propriety For Pool** (`processes:activity-ao-build-w2n8p4`). Its canonical ID is `processes:task-ao-build-intake-brt26j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Pool building turns to fitness here: the verified candidate list and the attestation regime it will be judged under arrive together. The intake custodian accepts both, registers them with audit identifiers, and puts the attestation work on a traceable footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so pool fitness attestations start from a registered candidate list and a registered regime, not from loose assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified candidates and the attestation regime are presented for the activity, with the activity owner alerted to their arrival, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the verified candidate list alongside the attestation regime, with audit references, and opens the fitness work for the pool.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Candidates and Attestation Regime |
+| `plain_language_description` | string | no | Pool building turns to fitness here: the verified candidate list and the attestation regime it will be judged under … |
+| `business_purpose` | string | no | It exists so pool fitness attestations start from a registered candidate list and a registered regime, not from loose … |
+| `practical_context` | string | no | It opens when the verified candidates and the attestation regime are presented for the activity, with the activity … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

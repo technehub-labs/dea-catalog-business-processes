@@ -1,0 +1,582 @@
+{
+ "processes:task-ge-operate-intake-bttmdg": {
+  "plain_language_name": "Take Charge of the Decision Paperwork",
+  "plain_language_description": "When the governance round opens, the intake custodian receives everything the recording work depends on: the meeting timetable for the board and its committees, the queue of assurance material, the diary of risk reviews, and the plan for compliance audits. Each item is logged so the operating case file shows exactly what the round started with.",
+  "business_purpose": "It exists so the recording of governance decisions starts from a complete, accounted-for set of inputs rather than loose papers.",
+  "practical_context": "It opens when the Operate-stage pack is handed over at the start of the activity, and it closes once the manifest is on file and the verification custodian takes over.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the compliance function logs the board timetable, the assurance queue, and the audit plan against the case file before handing the pack to the verification custodian."
+  }
+ },
+ "processes:task-ge-operate-verify-m48wf8": {
+  "plain_language_name": "Check the Governance Inputs Against Their Standards",
+  "plain_language_description": "Before any recording work starts, the verification custodian tests the incoming pack against the rules that govern it: how often the board must meet, what good assurance evidence looks like, and how risk reviews are to be run. Where the pack falls short, the shortfalls are named and a fix is set out.",
+  "business_purpose": "It exists because recording decisions on flawed inputs would put the decision record of record on shaky ground.",
+  "practical_context": "It starts once the manifest is registered and the pack is ready for scrutiny, and it ends with a certificate that states what was checked, what deviated, and what was remediated.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian from the risk function confirms the meeting timetable satisfies the statutory frequency rules and flags a missing assurance item for correction."
+  }
+ },
+ "processes:task-ge-operate-transform-88yh2y": {
+  "plain_language_name": "Carry Out the Governance Workload and Assemble the Results",
+  "plain_language_description": "This is where the governance round actually happens: meetings are convened on schedule, the risk registers are kept current, exposures are raised, reviews and audits are run, and the assurance material is gathered. Everything the round produced is brought together into one results pack ready for sign-off.",
+  "business_purpose": "It exists because the decisions the board and its committees make only become a durable record if the underlying work is actually performed and captured.",
+  "practical_context": "It opens when the verification certificate clears the pack for work, and it closes with the results pack produced and custody handed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function convenes the scheduled committee meetings, updates the risk registers, and gathers the assurance evidence into the results pack."
+  }
+ },
+ "processes:task-ge-operate-confirm-w4n6nf": {
+  "plain_language_name": "Sign Off the Governance Operating Round",
+  "plain_language_description": "With the results pack in hand, the confirmation custodian checks it against what the cycle demanded and what the assurance standards expect. Once the reconciliation holds, the board secretary and the governance custodian receive the completion sign-off, and the confirmation is logged.",
+  "business_purpose": "It exists so completion of the round is formally acknowledged before the file passes into record-keeping, closing the custody chain.",
+  "practical_context": "It starts once the results pack is produced, and it closes when the acknowledgement is back and the records custodian takes over the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian reconciles the pack against the meeting calendar and assurance standards, then logs the sign-off acknowledged by the board secretary."
+  }
+ },
+ "processes:task-ge-operate-intake-u3p2va": {
+  "plain_language_name": "Receive the Cycle Pack and Open the File",
+  "plain_language_description": "At the top of each cycle round, the intake custodian takes delivery of the working pack: the timetable of board and committee meetings, the queue of assurance material, the diary of risk reviews, and the compliance audit plan. Every item is logged into the cycle's case file so nothing enters the round unaccounted.",
+  "business_purpose": "It exists so the cycles run from a controlled, fully logged starting point rather than ad-hoc papers.",
+  "practical_context": "It opens when the Operate-stage pack is ready to be handed over, and it closes with the manifest registered and the verification custodian holding custody.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the risk function logs the meeting timetable and assurance queue into the cycle file, then passes the pack to the verification custodian."
+  }
+ },
+ "processes:task-ge-operate-verify-tpbrgp": {
+  "plain_language_name": "Check the Cycle Pack Against Meeting Rules and Methods",
+  "plain_language_description": "The verification custodian tests the pack before the round begins: do the scheduled meetings satisfy the legal frequency requirements, does the assurance material meet the professional standards, and do the risk reviews follow the agreed method? Any deviation is written up with its remedy.",
+  "business_purpose": "It exists because a cycle run on non-conforming inputs would compromise every decision taken in it.",
+  "practical_context": "It starts once the intake manifest is on file, and it ends when the certificate is issued, deviations are remediated, and the processing custodian takes custody.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian from the compliance function checks the draft meeting schedule against the statutory frequency rules and clears the pack for the round."
+  }
+ },
+ "processes:task-ge-operate-transform-922twd": {
+  "plain_language_name": "Run the Meetings and Keep the Governance Machinery Turning",
+  "plain_language_description": "This is the round itself: the board and its committees convene as scheduled, the risk registers stay current, exposures are brought forward, reviews and audits are executed, and the assurance material is assembled. What the round yields is consolidated into a results pack ready for formal sign-off.",
+  "business_purpose": "It exists so the obligations carried by the charters and operating calendars are actually discharged, cycle after cycle.",
+  "practical_context": "It opens on the strength of the verification certificate, and it closes when the results pack exists and custody moves to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the governance secretariat convenes the scheduled meetings, refreshes the risk registers, and consolidates the round's outputs."
+  }
+ },
+ "processes:task-ge-operate-confirm-pzakrz": {
+  "plain_language_name": "Confirm the Cycle Round Is Complete",
+  "plain_language_description": "The confirmation custodian reconciles what the round produced with what the cycle contract and assurance standards demanded, then closes the round out. The board secretary and the governance custodian receive the completion confirmation, and it is logged before the file moves on.",
+  "business_purpose": "It exists so the end of each cycle round is evidenced, and custody passes onward with a clean handover.",
+  "practical_context": "It starts with the produced results pack, and it closes once acknowledgements are back and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian checks the round's outputs against the cycle contract, then logs the confirmation acknowledged by the governance custodian."
+  }
+ },
+ "processes:task-ge-operate-record-8gnux8": {
+  "plain_language_name": "Archive the Cycle File for the Long Term",
+  "plain_language_description": "Once the round is confirmed, the records custodian places the whole file - manifest, verification report, results pack, sign-off, and any remediation notes - into retention under the governance operating schedule, protected against tampering. The file stays retrievable for as long as the rules require.",
+  "business_purpose": "It exists so the cycle's history can be evidenced years later - what was decided, on what evidence, and with what corrections.",
+  "practical_context": "It opens when the completion confirmation is issued and retention may begin, and it closes with the file stored at its retention tier and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian seals the cycle file into retention with tamper protection and sets the retrieval handles an auditor would use."
+  }
+ },
+ "processes:task-ge-retire-intake-ztxh6t": {
+  "plain_language_name": "Collect the Wind-Down Papers at Intake",
+  "plain_language_description": "The wind-down opens with paperwork: the regulator or court order itself, the inventory of records that must survive dissolution, and the drafts of the dissolution filings. The intake custodian logs each item against the wind-down file so the scope work starts from a documented set.",
+  "business_purpose": "It exists because interpreting a binding order is only defensible when the order text, the records inventory, and the filing drafts are all accounted for from the outset.",
+  "practical_context": "It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the finance function logs the regulator's order, the records inventory, and the filing drafts into the wind-down file."
+  }
+ },
+ "processes:task-ge-retire-verify-kr8vfg": {
+  "plain_language_name": "Check the Wind-Down Papers Against Dissolution Law",
+  "plain_language_description": "The verification custodian tests the pack against the statute that governs dissolution, the quorum the wind-down regime must retain, and the custodianship arrangements for the records that will outlive the entity. Shortfalls are written up with their remedies before any scope work proceeds.",
+  "business_purpose": "It exists because a scope assessment built on papers that breach the statute would misdirect the entire unwind.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the certificate issued, any deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the operations function confirms the retained-records inventory satisfies the custodianship contract and flags a gap for remediation."
+  }
+ },
+ "processes:task-ge-retire-transform-acer4t": {
+  "plain_language_name": "Work Through the Wind-Down Steps and Bundle the Evidence",
+  "plain_language_description": "With the certificate in hand, the processing custodian executes the unwind: the order's reach is assessed, custodianship of the retained records is arranged, governance is scaled back to the quorum the wind-down requires, and the dissolution filings go in. The resulting record pack is bundled for formal confirmation.",
+  "business_purpose": "It exists so the binding order is answered step by step, with each step's evidence gathered into one defensible pack.",
+  "practical_context": "It opens once the verification certificate clears the pack, and it closes with the record pack produced and custody handed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the operations function assesses the order's reach, arranges custodianship for retained records, and bundles the evidence for confirmation."
+  }
+ },
+ "processes:task-ge-retire-confirm-79s5hs": {
+  "plain_language_name": "Give the Wind-Down the Formal Green Light",
+  "plain_language_description": "The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the retained records. When everything lines up, the completion confirmation goes out, received by the governance custodian and by the registrar of companies. The confirmation is logged.",
+  "business_purpose": "It exists so the wind-down's completion is formally acknowledged by the parties that must accept it before the file is retired into record-keeping.",
+  "practical_context": "It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the finance function completes the reconciliation, and acknowledgements come back from the registrar of companies as well as the governance custodian before the confirmation is logged."
+  }
+ },
+ "processes:task-ge-retire-record-ataxrx": {
+  "plain_language_name": "Preserve the Wind-Down Case File Under the Retention Rules",
+  "plain_language_description": "After confirmation, the records custodian secures the complete wind-down file - manifest, verification report, record pack, completion confirmation, and remediation notes - under the retention schedule for dissolved entities, protected against tampering. It must remain intact for the whole statutory retention horizon.",
+  "business_purpose": "It exists because a dissolved entity's records must stay provable for years after the organisation itself is gone.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the case file retained at its tier and the statutory horizon applied.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian seals the wind-down file into tamper-protected retention and applies the multi-year horizon the dissolution rules demand."
+  }
+ },
+ "processes:task-ge-retire-intake-aa2bv5": {
+  "plain_language_name": "Log the Custodianship Papers at the Start",
+  "plain_language_description": "This intake gathers what the custodianship decision rests on: the order reference, the inventory of records the entity must keep, and the drafts of the dissolution filings. The intake custodian logs each item into the wind-down file so the designation work starts accounted for.",
+  "business_purpose": "It exists so the choice of custodian is made against a complete and logged record set, not a partial one.",
+  "practical_context": "It opens when the Retire-stage pack arrives for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the workforce management function logs the order reference and the records inventory into the case file before verification begins."
+  }
+ },
+ "processes:task-ge-retire-verify-x2rtfs": {
+  "plain_language_name": "Check the Custodianship Arrangement Against the Statute",
+  "plain_language_description": "Before the designation proceeds, the verification custodian tests the papers against dissolution law, the quorum the reduced governance must keep, and the contract for who holds the retained records. Any statutory shortfall is named and scheduled for remediation.",
+  "business_purpose": "It exists because a custodian designation that fails the statute would leave the dissolved entity's records without a lawful home.",
+  "practical_context": "It starts once the manifest is registered, and it ends with the certificate issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian from the finance function checks the draft designation against the statutory retention requirements and clears it for processing."
+  }
+ },
+ "processes:task-ge-retire-transform-jcgs9j": {
+  "plain_language_name": "Carry Out the Custodianship Work and Assemble the Pack",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the unwind: the order's scope is assessed, the retained records find their designated custodian, governance shrinks to its wind-down minimum, and the dissolution filings are lodged. Everything produced is bundled into the record pack for confirmation.",
+  "business_purpose": "It exists so the records that must outlive the entity pass into a designated custodian's hands as part of a defensible, evidenced unwind.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody moving to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the operations function secures the custodian designation and lodges the filings, bundling the evidence into the record pack."
+  }
+ },
+ "processes:task-ge-retire-confirm-7en975": {
+  "plain_language_name": "Confirm the Records Have a Settled Home",
+  "plain_language_description": "The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the retained records. When everything lines up, the completion confirmation is acknowledged by the governance custodian and by the registrar of companies. The confirmation is logged.",
+  "business_purpose": "It exists so the regulator, the court, and the entity's own governance can all rely on one formal completion signal.",
+  "practical_context": "It starts with the produced record pack, and it closes when the acknowledgements are logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian finishes the reconciliation and logs the confirmation once the registrar of companies acknowledges it."
+  }
+ },
+ "processes:task-ge-retire-record-wbjrn5": {
+  "plain_language_name": "Secure the Custodianship File for the Statutory Years",
+  "plain_language_description": "Once the designation is confirmed, the records custodian seals the wind-down file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the dissolved-entity schedule, protected against tampering for the full statutory horizon.",
+  "business_purpose": "It exists because the custodianship decision itself must remain provable for as long as the records it covers are retained.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory horizon applied.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian locks the custodianship file into tamper-protected retention and records the statutory horizon on the retention record."
+  }
+ },
+ "processes:task-ge-retire-intake-sqdsxj": {
+  "plain_language_name": "Take In the Downscaling Papers",
+  "plain_language_description": "The intake for the governance reduction collects the order reference, the inventory of records to be retained, and the drafts of the dissolution filings into one accounted-for pack. The intake custodian logs them against the wind-down file at the outset.",
+  "business_purpose": "It exists so the reduction of the governance regime starts from a documented, complete paper set.",
+  "practical_context": "It opens when the Retire-stage pack is handed over, and it closes with the manifest registered and the verification custodian in custody.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the operations function logs the order reference and retained-records inventory against the case file, then hands the pack on."
+  }
+ },
+ "processes:task-ge-retire-verify-tj9wv3": {
+  "plain_language_name": "Check the Downscaling Plan Against Quorum Rules",
+  "plain_language_description": "The verification custodian examines the pack before the reduction executes: does it satisfy the dissolution statute, does it preserve the quorum the wind-down regime needs, and does it respect the custodianship contract for retained records? Deviations are reported with their fixes.",
+  "business_purpose": "It exists because stripping governance below the required quorum, or misreading the statute, would invalidate the reduced regime's decisions.",
+  "practical_context": "It starts once the manifest is registered, and it ends when the certificate is out, deviations are remediated, and the processing custodian takes over.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function confirms the downscaling plan keeps the wind-down quorum intact and clears the pack."
+  }
+ },
+ "processes:task-ge-retire-transform-kx5rv3": {
+  "plain_language_name": "Shrink the Governance Bodies and Sunset the Policies",
+  "plain_language_description": "This is the reduction itself: the order's scope is assessed, custodianship of the retained records is settled, the governance apparatus is thinned to the quorum the wind-down needs, and the statutory dissolution filings are submitted. The evidence from every step is bundled into the record pack.",
+  "business_purpose": "It exists so the entity keeps exactly the governance the binding order allows - no more, and not a member less.",
+  "practical_context": "It opens on the verification certificate, and it closes with the record pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the workforce management function winds down the surplus board seats and policy instruments, then bundles the evidence."
+  }
+ },
+ "processes:task-ge-retire-confirm-jd9jz5": {
+  "plain_language_name": "Confirm the Slimmed Governance Can Still Act",
+  "plain_language_description": "The confirmation custodian reconciles the record pack with dissolution law and with the custodianship contract for retained records. Once satisfied, the completion confirmation is received by the governance custodian and by the registrar of companies. It is logged into the case file.",
+  "business_purpose": "It exists so the reduced regime begins life with a formal, logged completion behind it.",
+  "practical_context": "It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the finance function signs the reconciliation off, and the governance custodian acknowledges completion before logging."
+  }
+ },
+ "processes:task-ge-retire-record-7qykr3": {
+  "plain_language_name": "File the Downscaling Record for the Retention Period",
+  "plain_language_description": "With confirmation done, the records custodian places the entire wind-down file under the retention schedule for dissolved entities, with tamper protection applied. The file must survive readable for the full statutory period the dissolution regime demands.",
+  "business_purpose": "It exists so the story of how the governance regime was reduced can be evidenced to regulators and courts years later.",
+  "practical_context": "It opens when the completion confirmation lands, and it closes with the file retained at its tier and the statutory horizon applied.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the downscaling file with tamper protection and sets the retrieval handles for a future regulatory inquiry."
+  }
+ },
+ "processes:task-ge-retire-intake-g4unb8": {
+  "plain_language_name": "Gather the Filing Papers for Dissolution",
+  "plain_language_description": "The filing round starts with intake: the order reference, the inventory of records to be kept, and the drafts of the dissolution filings are collected and logged. The intake custodian logs each item against the wind-down file before any filing work begins.",
+  "business_purpose": "It exists because statutory filings fail on incomplete paperwork, and this step guarantees the pack is whole before it moves.",
+  "practical_context": "It opens when the Retire-stage pack is delivered for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the finance function logs the order reference and filing drafts against the case file ahead of the statutory checks."
+  }
+ },
+ "processes:task-ge-retire-verify-gypyqm": {
+  "plain_language_name": "Check the Filing Papers Against the Statute",
+  "plain_language_description": "Before anything is filed, the verification custodian tests the pack for the filings against dissolution law, the quorum requirements of the wind-down regime, and the custodianship contract covering the retained records. Statutory deviations are named with their remediation.",
+  "business_purpose": "It exists because a defective filing to a regulator or court risks rejection and delays the entire unwind.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the certificate issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian from the operations function checks the draft dissolution filings against the statute and clears them for submission."
+  }
+ },
+ "processes:task-ge-retire-transform-ahrttj": {
+  "plain_language_name": "Prepare and Lodge the Dissolution Filings",
+  "plain_language_description": "With the certificate in hand, the processing custodian drives the unwind through its filing steps: the order's scope is assessed, retained records are placed with their custodian, governance is reduced to the quorum the wind-down requires, and the statutory filings go to the registry and the regulators. The evidence is bundled into the record pack.",
+  "business_purpose": "It exists because the entity cannot be dissolved until the statute's filings are actually made and evidenced.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody handed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the finance function lodges the corporate dissolution filing and the authorisation surrender, bundling receipts into the record pack."
+  }
+ },
+ "processes:task-ge-retire-confirm-gmmp22": {
+  "plain_language_name": "Confirm the Filings Are Complete and Lodged",
+  "plain_language_description": "The confirmation custodian checks the record pack against dissolution law and the custodianship arrangements for retained records. With the reconciliation clean, the completion confirmation is received by the governance custodian and by the registrar of companies, which is then logged.",
+  "business_purpose": "It exists so the filings' completion is acknowledged by the parties with standing to demand it, before the file is retired.",
+  "practical_context": "It starts once the record pack exists, and it closes when the acknowledgements are logged and custody passes to the records custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation and logs the confirmation acknowledged by the governance custodian."
+  }
+ },
+ "processes:task-ge-retire-record-jkgdu7": {
+  "plain_language_name": "Retain the Filing Receipts for the Statutory Term",
+  "plain_language_description": "After confirmation, the records custodian seals the whole wind-down file - including every filing receipt - under the dissolved-entity retention schedule with tamper protection. The file must last for the entire retention horizon the statute sets.",
+  "business_purpose": "It exists because the receipts proving that dissolution filings were properly made may be demanded long after the entity ceases.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory horizon applied.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian files the dissolution receipts into tamper-protected retention and notes the statutory horizon on the custody record."
+  }
+ },
+ "processes:task-pr-activate-intake-frjubr": {
+  "plain_language_name": "Receive the Applicant's Onboarding Papers",
+  "plain_language_description": "Risk classification begins with delivery: the applicant's party record, the identity documents, and the onboarding request all arrive with the intake custodian. Each is logged into the activation case file so the rating work starts from an accounted-for set.",
+  "business_purpose": "It exists so the risk rating rests on a complete, logged application rather than whatever happens to be at hand.",
+  "practical_context": "It opens when the Activate-stage pack is handed over for the applicant, and it closes with the manifest registered and the verification custodian in custody.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs a corporate applicant's documents and request packet into the activation case file."
+  }
+ },
+ "processes:task-pr-activate-verify-843xk8": {
+  "plain_language_name": "Run the Identity, Sanctions, and Screening Checks",
+  "plain_language_description": "The verification custodian puts the application through its checks: identity is confirmed through multiple factors, the parties are screened for sanctions and politically exposed status, and adverse media is searched. The results are reconciled into a certificate that states exactly which checks were run.",
+  "business_purpose": "It exists because no risk rating can be defended if the identity and background behind it have not been properly screened.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function screens a new applicant against sanctions lists and adverse media, then issues the certificate."
+  }
+ },
+ "processes:task-pr-activate-transform-buxbcw": {
+  "plain_language_name": "Rate the Applicant's Risk and Set the Diligence Tier",
+  "plain_language_description": "With the certificate in hand, the processing custodian turns verification results into a rating: the party identifier is pinned down, the risk classification is computed, and the diligence tier follows from it. The output is a party record that meets the master-data standard.",
+  "business_purpose": "It exists so the enterprise treats each applicant according to the risk they actually present, with the tier driving how much scrutiny follows.",
+  "practical_context": "It opens when the verification certificate clears the application, and it closes with the rated party record produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the risk function rates a new corporate applicant, sets the enhanced-diligence tier, and produces the party record."
+  }
+ },
+ "processes:task-pr-activate-confirm-fwg57j": {
+  "plain_language_name": "Sign Off the Risk Rating with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the rated party record with the criteria for the onboarding decision and with the verification certificate. When the two agree, the relationship custodian receives the confirmation and the applicant is notified, and the confirmation is written into the case file.",
+  "business_purpose": "It exists so the rating that will govern the relationship is confirmed by the person accountable for it before activation proceeds.",
+  "practical_context": "It starts once the rated record is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian checks the rating against the decision criteria, and the relationship custodian acknowledges before it is logged."
+  }
+ },
+ "processes:task-pr-activate-record-eenzec": {
+  "plain_language_name": "Store the Risk Case File Under Retention Rules",
+  "plain_language_description": "Once confirmed, the records custodian places the onboarding file - manifest, certificate, party record, acknowledgement, plus the reasoning behind any adverse call - into retention under the schedule for party records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the reasoning behind a risk rating - accepted or refused - can be evidenced to the regulator years later.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the risk function archives a refused applicant's file with the adverse-decision reasoning preserved for the regulator."
+  }
+ },
+ "processes:task-pr-activate-intake-tpetg5": {
+  "plain_language_name": "Collect the Approval Case Papers",
+  "plain_language_description": "The decision round starts with intake: the applicant's party record, the identity documents, and the request packet are taken in and logged. The intake custodian logs them against the activation case file so the approvers work from one accounted-for set.",
+  "business_purpose": "It exists because an approval decision is only as good as the completeness of the case placed before the approvers.",
+  "practical_context": "It opens when the Activate-stage pack arrives, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the applicant's papers against the activation case file before the checks begin."
+  }
+ },
+ "processes:task-pr-activate-verify-cfkhv2": {
+  "plain_language_name": "Recheck the Applicant Before the Decision",
+  "plain_language_description": "Before approvers are asked to decide, the verification custodian runs the identity, sanctions, and adverse-media checks over the logged application and reconciles the outcomes. The certificate that results names precisely which checks were applied.",
+  "business_purpose": "It exists so the approvers sign a decision that rests on verified facts rather than untested claims.",
+  "practical_context": "It starts once the manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function reruns the sanctions screening before the four-eye approval, and issues the certificate."
+  }
+ },
+ "processes:task-pr-activate-transform-4xbcbz": {
+  "plain_language_name": "Build the Approved Party Record",
+  "plain_language_description": "With verification complete, the processing custodian assembles the record the decision will act on: the party identifier is resolved, the risk classification computed, and the diligence tier derived. The finished record conforms to the enterprise's master-data standard.",
+  "business_purpose": "It exists so activation or refusal lands on a single, well-formed record the onboarding systems can trust.",
+  "practical_context": "It opens when the verification certificate is in hand, and it closes with the party record produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian builds the approved party record for a cleared applicant and hands it to the confirmation custodian."
+  }
+ },
+ "processes:task-pr-activate-confirm-6ntqyv": {
+  "plain_language_name": "Log the Approver's Confirmation",
+  "plain_language_description": "The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the verification certificate, then issues the confirmation. The relationship custodian receives it, the applicant is notified, and the confirmation is written into the case file.",
+  "business_purpose": "It exists so the four-eye regime leaves an evidenced trail: who confirmed, against what, and when.",
+  "practical_context": "It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the records custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the sign-off after the relationship custodian acknowledges the completed reconciliation."
+  }
+ },
+ "processes:task-pr-activate-record-rxv33e": {
+  "plain_language_name": "Keep the Decision File for the Required Years",
+  "plain_language_description": "With the decision confirmed, the records custodian places the onboarding file into retention under the schedule for party records, protected against tampering. It holds the manifest, the certificate, the record, the acknowledgement, and the reasoning behind any refusal.",
+  "business_purpose": "It exists because regulators and courts may later ask who approved a relationship, when, and on what evidence.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives an approval file, keeping the approver identities and rationale retrievable for the retention period."
+  }
+ },
+ "processes:task-pr-activate-intake-t7vzqw": {
+  "plain_language_name": "Take In the Ownership Declarations",
+  "plain_language_description": "Ownership work opens with intake: the applicant's party record, the identity documents, and the request packet are received and logged. The intake custodian logs the request against the activation case file so the ownership chain work starts from a documented base.",
+  "business_purpose": "It exists because a beneficial-ownership resolution is only credible when the declarations and documents behind it are accounted for.",
+  "practical_context": "It opens when the Activate-stage pack is handed over, and it closes with the manifest registered and the verification custodian in custody.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs a holding company's ownership declarations against the activation case file."
+  }
+ },
+ "processes:task-pr-activate-verify-w58mmf": {
+  "plain_language_name": "Screen the Owners Behind the Entity",
+  "plain_language_description": "The verification custodian checks who stands behind the applying entity: identity through multiple factors, sanctions and politically-exposed screening, and adverse media on the controllers. Results are reconciled and captured in a certificate naming the checks applied.",
+  "business_purpose": "It exists because hidden controllers are where onboarding risk concentrates, and screening them is the control that surfaces it.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function screens the named controllers of an applicant trust against sanctions and adverse media sources."
+  }
+ },
+ "processes:task-pr-activate-transform-cc5wce": {
+  "plain_language_name": "Map the Ownership Chain and Record the Controllers",
+  "plain_language_description": "With the certificate in hand, the processing custodian resolves the party identifier, computes the risk classification, and derives the diligence tier from the ownership picture. The resulting party record is produced to the master-data standard.",
+  "business_purpose": "It exists so every natural person who ultimately owns or controls the applicant is identified to the regime's threshold and carried on the record.",
+  "practical_context": "It opens when the verification certificate clears the application, and it closes with the party record produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian traces a layered holding structure to its natural-person controllers and writes the chain into the party record."
+  }
+ },
+ "processes:task-pr-activate-confirm-acbshd": {
+  "plain_language_name": "Confirm the Ownership Picture Is Settled",
+  "plain_language_description": "The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the verification certificate. Once aligned, the relationship custodian receives the confirmation, the applicant is told, and the confirmation is logged.",
+  "business_purpose": "It exists so the ownership resolution is formally accepted by the accountable relationship owner before the relationship advances.",
+  "practical_context": "It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the records custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian closes out the ownership reconciliation, and the relationship custodian acknowledges before the confirmation is logged."
+  }
+ },
+ "processes:task-pr-activate-record-bvte4g": {
+  "plain_language_name": "Preserve the Ownership File Under Retention Rules",
+  "plain_language_description": "After confirmation, the records custodian secures the onboarding file into retention under the schedule for party records, with tamper protection. The file keeps the manifest, the certificate, the record, the acknowledgement, and the reasoning for any adverse call.",
+  "business_purpose": "It exists because questions about who controlled an on-boarded entity can arrive years later, and the evidence must still exist.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian preserves the ownership file of a dissolved partnership so the controller evidence stays retrievable."
+  }
+ },
+ "processes:task-pr-activate-intake-yz358p": {
+  "plain_language_name": "Receive the Identity Documents",
+  "plain_language_description": "Identity verification starts with reception: the applicant's party record, the identity documents, and the request packet arrive and are logged. The intake custodian registers them against the activation case file so the checking work begins accounted for.",
+  "business_purpose": "It exists because identity verification is only as strong as the documents and traces it starts from.",
+  "practical_context": "It opens when the Activate-stage pack arrives for the applicant, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs a passport scan and request packet against the activation case file."
+  }
+ },
+ "processes:task-pr-activate-verify-w4m5qv": {
+  "plain_language_name": "Verify Who the Applicant Really Is",
+  "plain_language_description": "The verification custodian establishes who the applicant is to the standard the regime demands: multi-factor identity confirmation, sanctions and politically-exposed screening, and adverse-media searches. The reconciled results are issued as a certificate naming the checks performed.",
+  "business_purpose": "It exists so the enterprise never opens a relationship with someone it cannot prove exists as claimed.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function confirms an applicant's identity from documents and electronic traces, then issues the certificate."
+  }
+ },
+ "processes:task-pr-activate-transform-uvgjbd": {
+  "plain_language_name": "Turn the Verified Identity into the Party Record",
+  "plain_language_description": "With the certificate in hand, the processing custodian resolves the party identifier, computes the risk classification, and sets the diligence tier. The verified identity becomes a party record built to the master-data standard.",
+  "business_purpose": "It exists so downstream onboarding steps act on one authoritative record rather than scattered verification artefacts.",
+  "practical_context": "It opens when the verification certificate is issued, and it closes with the party record produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian converts a newly verified identity into the master party record for the onboarding flow."
+  }
+ },
+ "processes:task-pr-activate-confirm-sdmssx": {
+  "plain_language_name": "Close Out the Identity Verification with a Sign-Off",
+  "plain_language_description": "The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the verification certificate. When they agree, the relationship custodian receives the confirmation, the applicant is notified, and the confirmation is logged.",
+  "business_purpose": "It exists so identity work ends with an accountable signature, not simply an unfinished file.",
+  "practical_context": "It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the records custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian signs off the reconciliation, and the relationship custodian acknowledges the identity outcome."
+  }
+ },
+ "processes:task-pr-activate-record-pr8yj4": {
+  "plain_language_name": "Archive the Identity Case File",
+  "plain_language_description": "Once confirmed, the records custodian places the onboarding file into retention under the schedule for party records, protected against tampering. It preserves the manifest, the certificate, the record, the acknowledgement, and the reasoning behind any adverse call.",
+  "business_purpose": "It exists because proof of who was verified, how, and with what confidence must outlive the onboarding itself.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the identity file of an onboarded customer with the verification certificate attached."
+  }
+ },
+ "processes:task-pr-build-intake-774sys": {
+  "plain_language_name": "Take Delivery of the Engine Build Brief",
+  "plain_language_description": "The engine build opens with the design brief: the channel mix, the demand-program specification, and the asset library manifest. The intake custodian confirms the scope of the build with the owners of the channels and demand programmes, then logs the pack into the case file.",
+  "business_purpose": "It exists so engine construction starts from a brief its owners - the people accountable for the channels and the demand programmes - have actually agreed to.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function walks the channel owner through the design brief and logs the agreed scope."
+  }
+ },
+ "processes:task-pr-build-verify-9ssk4z": {
+  "plain_language_name": "Check the Build Plan Against Consent and Privacy Rules",
+  "plain_language_description": "Before construction starts, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.",
+  "business_purpose": "It exists because an acquisition engine that mishandles consent or personal data creates regulatory exposure the moment it runs.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the engine design against the consent-capture rules and flags a data-quality gap."
+  }
+ },
+ "processes:task-pr-build-transform-ah9wtw": {
+  "plain_language_name": "Assemble the Acquisition Engines",
+  "plain_language_description": "With the report in hand, the processing custodian builds: the channel-integration surface is provisioned, the demand-program assets are instantiated, and the attribution model is calibrated. The finished components are captured as a build-ready asset inventory.",
+  "business_purpose": "It exists so the enterprise can actively acquire customers through its channels rather than simply maintain a presence on them.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function provisions the integration surface, stands up the campaign assets, and calibrates attribution."
+  }
+ },
+ "processes:task-pr-build-confirm-umczkg": {
+  "plain_language_name": "Sign Off the Built Engines with the Channel Owners",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the build holds up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so engine go-live happens only when the people accountable for the channels accept the build.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the channel custodian acknowledges the build before it is logged."
+  }
+ },
+ "processes:task-pr-build-record-8khwgh": {
+  "plain_language_name": "Retain the Build File with Its Audit Trail",
+  "plain_language_description": "After confirmation, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the acquisition-engine schedule with tamper protection. Where storage limits bite, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the provenance of every acquisition engine - what was built, checked, and accepted - stays provable.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the engine build file with its verification report and remediation notes for future audits."
+  }
+ },
+ "processes:task-pr-build-intake-srjxnb": {
+  "plain_language_name": "Accept the Integration Brief and Open the File",
+  "plain_language_description": "Integration work starts with the design brief in hand: the mix of channels, the specification for the demand programmes, and the manifest of the asset library. The intake custodian agrees the scope of the build with the owners of the channels and demand programmes, then registers the pack.",
+  "business_purpose": "It exists so the wiring of channels to experience begins from a scope the owners have confirmed.",
+  "practical_context": "It opens when the Build-stage pack arrives, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management confirms the integration scope with the channel owner and registers the manifest."
+  }
+ },
+ "processes:task-pr-build-transform-b8x2nx": {
+  "plain_language_name": "Wire the Channels to the Designed Experience",
+  "plain_language_description": "With the report in hand, the processing custodian does the integration: the channel-integration surface is provisioned, the demand-program assets are instantiated, and the attribution model is calibrated until the journey works end to end. The result is a build-ready asset inventory.",
+  "business_purpose": "It exists because a channel that is not wired to the designed experience cannot deliver the journey customers were promised.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian connects the new sign-up journey to the provisioned channels and calibrates attribution across the flow."
+  }
+ },
+ "processes:task-pr-build-confirm-vrtaay": {
+  "plain_language_name": "Confirm the Connected Experience Is Ready",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. Once the build passes, the custodians of the channels and demand programmes receive the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the integrated experience goes live only with a formal, logged acceptance behind it.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and custody passes to the records custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian signs off the integrated journey, and the demand-program custodian acknowledges completion."
+  }
+ },
+ "processes:task-pr-build-record-8mwbey": {
+  "plain_language_name": "Keep the Integration File for Future Audits",
+  "plain_language_description": "With acceptance logged, the records custodian places the build package into retention under the acquisition-engine schedule with tamper protection - the manifest, the report, the asset inventory, the confirmation, and any remediation notes. A destruction attestation is recorded where storage limits apply.",
+  "business_purpose": "It exists so future teams can trace how the channels were connected and on what contractual basis.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the integration file so a later channel rebuild can consult the original contracts and receipts."
+  }
+ }
+}

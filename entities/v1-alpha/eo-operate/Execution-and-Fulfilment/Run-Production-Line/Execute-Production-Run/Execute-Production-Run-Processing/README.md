@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Execute Production Run Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Production Run** (`processes:activity-eo-operate-vs8xnq`). Its canonical ID is `processes:task-eo-operate-transform-kv3sgy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the schedule verified, the processing custodian does the running itself: the line is worked through each scheduled cycle, its inputs consumed and its output made, and the run cycles are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a production line earns nothing standing still - the running is where the whole investment actually produces.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified schedule is ready to be run, and it ends with the run cycles produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management runs the line through each cycle in its turn, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Line Through Its Cycles |
+| `plain_language_description` | string | no | With the schedule verified, the processing custodian does the running itself: the line is worked through each scheduled … |
+| `business_purpose` | string | no | It exists because a production line earns nothing standing still - the running is where the whole investment actually … |
+| `practical_context` | string | no | It starts once checking is complete and the verified schedule is ready to be run, and it ends with the run cycles … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

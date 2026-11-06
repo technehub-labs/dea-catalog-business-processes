@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Plans Before Running the Trials'
+plain_language_description: 'Before any trial runs, the verification custodian checks the plans against what the trials require - that each planned run states what the line must produce and at what rate. Defects are logged for rejection or repair before any trial is run.'
+business_purpose: 'It exists so trials never run without a stated target to measure them against.'
+practical_context: 'It runs once the intake is registered and the plans can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a trial plan with no rate stated and logs the defect before that trial runs.'

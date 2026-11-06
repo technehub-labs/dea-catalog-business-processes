@@ -117,3 +117,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Run the Registry Checks on Each Candidate'
+plain_language_description: 'With the list verified, the processing custodian consults the regulator licence registry for each candidate and confirms the licence position the activity promises. The verified candidate list - each candidate''s licence record attached - is set down in the form the activity defines, working papers preserved.'
+business_purpose: 'It exists because a pool claiming regulator readiness must rest on licences checked against the registry itself.'
+practical_context: 'It starts once checking is complete and the verified list is ready to be worked from, and it ends with the verified-candidate list produced and the working papers kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian checks each candidate against the regulator licence registry and attaches the licence records to the verified list.'

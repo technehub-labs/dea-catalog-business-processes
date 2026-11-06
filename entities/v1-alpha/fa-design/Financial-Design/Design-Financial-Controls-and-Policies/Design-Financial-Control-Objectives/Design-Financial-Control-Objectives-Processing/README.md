@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Design Financial Control Objectives Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Control Objectives** (`processes:activity-fa-design-2qrkhv`). Its canonical ID is `processes:task-fa-design-transform-h29ej7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the gaps verified, the processing custodian does the designing itself: the objective each bounded gap demands is worked out within the approved architecture, and the objective set is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a gap without a stated target invites a control aimed at nothing - the objective is where the fix gets its bullseye.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified gaps are ready to be answered, and it ends with the objective set produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority states what each gap's control must achieve, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set What Each Gap Must Close Against |
+| `plain_language_description` | string | no | With the gaps verified, the processing custodian does the designing itself: the objective each bounded gap demands is … |
+| `business_purpose` | string | no | It exists because a gap without a stated target invites a control aimed at nothing - the objective is where the fix … |
+| `practical_context` | string | no | It starts once checking is complete and the verified gaps are ready to be answered, and it ends with the objective set … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

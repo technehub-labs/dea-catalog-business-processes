@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Disburse Payroll Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Disburse Payroll** (`processes:activity-fa-operate-he4rxk`). Its canonical ID is `processes:task-fa-operate-intake-hw6abd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Disbursement opens when the net pay register is handed over as the figures to be paid out. The intake custodian accepts it, registers it with audit identifiers, and puts the payment run on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so people are paid from the registered net figures, not from side arrangements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the net pay register is presented for disbursement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the net pay register as the disbursement baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Net Pay Register for the Cycle |
+| `plain_language_description` | string | no | Disbursement opens when the net pay register is handed over as the figures to be paid out. The intake custodian accepts … |
+| `business_purpose` | string | no | It exists so people are paid from the registered net figures, not from side arrangements. |
+| `practical_context` | string | no | It opens when the net pay register is presented for disbursement, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Design Treasury Operating Model Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury Operating Model** (`processes:activity-fa-design-d4rea9`). Its canonical ID is `processes:task-fa-design-transform-ve9b9e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the designing itself: the roles, mandates, and systems that will execute the cash and funding regimes are worked out and set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a policy without hands is a wish - the operating model is what gives the treasury its people, authority, and tools.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be built from, and it ends with the treasury operating model produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority designs the roles, mandates, and systems that will execute the regimes, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Give the Policies Their Hands |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the designing itself: the roles, mandates, and systems that … |
+| `business_purpose` | string | no | It exists because a policy without hands is a wish - the operating model is what gives the treasury its people … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be built from, and it ends with the treasury … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

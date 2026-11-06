@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-in
 
 This is a **Task** (level L4), named **Assess Churn Risk Intake**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Assess Churn Risk** (`processes:activity-pr-improve-6atff5`). Its canonical ID is `processes:task-pr-improve-intake-d2uj2a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The churn work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer feedback, and the candidate retention actions. The intake custodian logs each item against the improvement file so the assessment starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because retention effort is wasted unless it is aimed at the customers actually about to leave.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the risk register and feedback stream into the improvement case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Churn-Risk Case File |
+| `plain_language_description` | string | no | The churn work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer … |
+| `business_purpose` | string | no | It exists because retention effort is wasted unless it is aimed at the customers actually about to leave. |
+| `practical_context` | string | no | It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

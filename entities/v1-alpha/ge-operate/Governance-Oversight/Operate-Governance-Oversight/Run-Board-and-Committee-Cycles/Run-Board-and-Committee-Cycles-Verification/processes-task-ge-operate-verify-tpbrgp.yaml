@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Run Board and Committee Cycles naming verification methods applied and any deviations remediated; verification custodian …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Cycle Pack Against Meeting Rules and Methods'
+plain_language_description: 'The verification custodian tests the pack before the round begins: do the scheduled meetings satisfy the legal frequency requirements, does the assurance material meet the professional standards, and do the risk reviews follow the agreed method? Any deviation is written up with its remedy.'
+business_purpose: 'It exists because a cycle run on non-conforming inputs would compromise every decision taken in it.'
+practical_context: 'It starts once the intake manifest is on file, and it ends when the certificate is issued, deviations are remediated, and the processing custodian takes custody.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian from the compliance function checks the draft meeting schedule against the statutory frequency rules and clears the pack for the round.'

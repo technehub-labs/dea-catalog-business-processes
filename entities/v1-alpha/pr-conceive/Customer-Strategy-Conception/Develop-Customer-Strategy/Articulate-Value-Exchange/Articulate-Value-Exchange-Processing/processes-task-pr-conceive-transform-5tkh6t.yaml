@@ -73,3 +73,18 @@ outputs:
   description: Bounded-work artefact produced for Articulate Value Exchange conforming to the Conceive schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Set Down What the Enterprise Gives and Gets'
+plain_language_description: 'With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The whole is produced as a thesis package ready for confirmation.'
+business_purpose: 'It exists so the enterprise can state plainly what it offers its chosen customers and what it expects in return.'
+practical_context: 'It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function writes down the give-and-get of the relationship and assembles the thesis package.'

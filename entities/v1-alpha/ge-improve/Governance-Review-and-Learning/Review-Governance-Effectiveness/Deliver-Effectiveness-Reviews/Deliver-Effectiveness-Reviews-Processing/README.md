@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-tr
 
 This is a **Task** (level L4), named **Deliver Effectiveness Reviews Processing**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Deliver Effectiveness Reviews** (`processes:activity-ge-improve-adkxr6`). Its canonical ID is `processes:task-ge-improve-transform-atv8as`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the improvement for the delivery: the consolidated effectiveness reviews are made ready for the governance bodies they are addressed to, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a review that never reaches the body it addresses reviews nothing - the making-ready is what turns the review into governance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the audit function consolidates the effectiveness reviews and makes them ready for the bodies they address.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Make the Reviews Ready for the Bodies |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the improvement for the delivery: the consolidated … |
+| `business_purpose` | string | no | It exists because a review that never reaches the body it addresses reviews nothing - the making-ready is what turns … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

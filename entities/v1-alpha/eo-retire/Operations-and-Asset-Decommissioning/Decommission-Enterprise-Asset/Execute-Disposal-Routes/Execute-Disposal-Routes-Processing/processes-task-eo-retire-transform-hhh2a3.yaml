@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Send Each Asset Down Its Agreed Path'
+plain_language_description: 'With the loads verified, the processing custodian does the disposal itself: each withdrawn asset is sent down its approved route - sold, recycled, destroyed, or returned - and the executed disposals with their evidence are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because an asset out of service is not yet out of the enterprise''s story - the route is where its ending is made proper.'
+practical_context: 'It starts once checking is complete and the verified loads are ready to be routed, and it ends with the executed disposals produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management sends each withdrawn asset down its approved route and gathers the evidence, keeping the working papers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 
 This is a **Task** (level L4), named **Commit Policy and Control Design Processing**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Commit Policy and Control Design** (`processes:activity-ge-design-t3muvd`). Its canonical ID is `processes:task-ge-design-transform-yx7yqp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the design for the commitment: the policy artefacts, the control objectives, and the compliance regime are consolidated into the committed design, ready for codification and build, and the design-ready artefact is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because policies, objectives, and enforcement in separate papers control nothing - the commit is where they become one design ready to be built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function binds the artefacts, objectives, and regime into the committed design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bind Policies, Objectives, and the Regime into One Design |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the design for the commitment: the policy artefacts … |
+| `business_purpose` | string | no | It exists because policies, objectives, and enforcement in separate papers control nothing - the commit is where they … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

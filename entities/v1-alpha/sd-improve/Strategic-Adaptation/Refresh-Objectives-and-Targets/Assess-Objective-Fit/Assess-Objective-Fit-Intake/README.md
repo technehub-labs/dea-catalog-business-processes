@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-in
 
 This is a **Task** (level L4), named **Assess Objective Fit Intake**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Assess Objective Fit** (`processes:activity-sd-improve-e2c2ue`). Its canonical ID is `processes:task-sd-improve-intake-atfrjk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The assessment opens as its material arrives: the gathered performance evidence set against the current objectives and targets. The intake custodian logs it against the assessment file so the assessment starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the fit judgement covers the whole evidence set as registered, not a convenient slice of it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the gathered evidence is presented for assessment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the gathered evidence pack into the assessment file, so the work of judging the current objectives starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Performance Evidence for the Fit Assessment |
+| `plain_language_description` | string | no | The assessment opens as its material arrives: the gathered performance evidence set against the current objectives and … |
+| `business_purpose` | string | no | It exists so the fit judgement covers the whole evidence set as registered, not a convenient slice of it. |
+| `practical_context` | string | no | It opens when the gathered evidence is presented for assessment, with the activity's owner told that it has landed, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

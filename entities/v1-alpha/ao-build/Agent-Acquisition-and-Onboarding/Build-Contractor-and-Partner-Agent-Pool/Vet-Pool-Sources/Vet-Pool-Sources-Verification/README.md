@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Vet Pool Sources Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Vet Pool Sources** (`processes:activity-ao-build-9bwc8j`). Its canonical ID is `processes:task-ao-build-verify-tffhp9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the candidate sources booked in, the verification custodian examines each one against what vetting requires of a source the pool can trust. A source that cannot show its standing is written up as a shortfall to reject or remedy, so the pool is never built on an unqualified name.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only sources that measure up to the vetting requirement are carried into the pool's foundations.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and each source can be compared with the activity's requirements, and it finishes with the sources verified or their shortfalls logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a candidate source unable to evidence its standing and logs the shortfall for remediation before any pool route is built on it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Sources Against the Vetting Requirements |
+| `plain_language_description` | string | no | With the candidate sources booked in, the verification custodian examines each one against what vetting requires of a … |
+| `business_purpose` | string | no | It exists so only sources that measure up to the vetting requirement are carried into the pool's foundations. |
+| `practical_context` | string | no | It runs once the intake is registered and each source can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

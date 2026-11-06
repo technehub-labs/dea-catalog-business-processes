@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Agents Against the Integration Requirements'
+plain_language_description: 'Before anyone is placed, the verification custodian compares each onboarded agent with what integration into the organisation requires of it. An agent that arrives short of the mark is written up as a shortfall to fix or refuse, keeping weak placements out of the teams.'
+business_purpose: 'It exists so only agents genuinely ready for placement are allowed into the organisation''s teams.'
+practical_context: 'It runs once the intake is registered and each agent can be compared with the activity''s requirements, and it finishes with the agents verified or their shortcomings logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds one onboarded agent missing a required competency and records the shortfall for remediation before any team placement happens.'

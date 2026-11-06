@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Bound Coordination Boundaries Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Coordination Boundaries** (`processes:activity-ao-conceive-ycwkts`). Its canonical ID is `processes:task-ao-conceive-intake-74qbkn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Boundary drawing opens when the bounded reporting spans are handed over as the frame the boundaries must sit within. The intake custodian accepts them, registers the handover with audit identifiers, and starts the boundary work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so coordination boundaries are drawn from a registered span frame rather than from informal lines.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the reporting spans are presented for the boundary work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the bounded reporting spans as the boundary baseline, with audit references, and opens the drawing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Reporting Spans for Boundary Work |
+| `plain_language_description` | string | no | Boundary drawing opens when the bounded reporting spans are handed over as the frame the boundaries must sit within … |
+| `business_purpose` | string | no | It exists so coordination boundaries are drawn from a registered span frame rather than from informal lines. |
+| `practical_context` | string | no | It opens when the reporting spans are presented for the boundary work, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-t
 
 This is a **Task** (level L4), named **Activate Communications Plan Under Regulator Continuing Supervision Processing**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Activate Communications Plan Under Regulator Continuing Supervision** (`processes:activity-sd-activate-jz6u3q`). Its canonical ID is `processes:task-sd-activate-transform-df37sq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the activation proper begins. The processing custodian stands up the disclosure controls, the investor-relations briefing and the regulated-entity announcement under the mandated framework, producing the activated communications plan in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a supervisor-acknowledged plan only takes effect publicly once its disclosure controls, briefings and announcements are actually activated.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the activated communications plan produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function activates the disclosure controls, prepares the investor-relations briefing and issues the regulated-entity announcement, preserving the activated communications plan on the regulated strategic-plan record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Disclosure Controls, Briefings and Announcements to Life |
+| `plain_language_description` | string | no | With the inputs verified, the activation proper begins. The processing custodian stands up the disclosure controls, the … |
+| `business_purpose` | string | no | It exists because a supervisor-acknowledged plan only takes effect publicly once its disclosure controls, briefings and … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the activated communications plan … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

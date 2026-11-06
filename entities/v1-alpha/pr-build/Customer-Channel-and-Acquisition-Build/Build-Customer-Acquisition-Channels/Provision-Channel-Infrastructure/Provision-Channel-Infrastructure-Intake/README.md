@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 This is a **Task** (level L4), named **Provision Channel Infrastructure Intake**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Provision Channel Infrastructure** (`processes:activity-pr-build-ncrg72`). Its canonical ID is `processes:task-pr-build-intake-kavfwv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Provisioning opens with the design brief in hand: which channels are in the mix, what the demand programmes call for, and what the asset library already holds. The intake custodian settles the scope of the build with the owners of the channels and the demand programmes, then logs the pack.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the infrastructure work starts from a brief the channel and programme owners have actually agreed to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function walks the channel owner through the design brief and logs the agreed scope for the stand-up.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take Charge of the Infrastructure Build Pack |
+| `plain_language_description` | string | no | Provisioning opens with the design brief in hand: which channels are in the mix, what the demand programmes call for … |
+| `business_purpose` | string | no | It exists so the infrastructure work starts from a brief the channel and programme owners have actually agreed to. |
+| `practical_context` | string | no | It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

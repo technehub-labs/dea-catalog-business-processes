@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Derive Structure Principles Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Derive Structure Principles** (`processes:activity-ao-conceive-5fytar`). Its canonical ID is `processes:task-ao-conceive-transform-74yerj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the strategy verified, the processing custodian makes the derivation itself: the structure principles the framed model will enforce are drawn out of the committed strategy and set down in the form the activity defines. Working papers behind the derivation are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategy only shapes the organisation once its intent has been turned into enforceable principles.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified strategy is ready to be drawn from, and it ends with the derived structure principles produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function draws the structure principles out of the committed strategy, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Structure Principles from the Strategy |
+| `plain_language_description` | string | no | With the strategy verified, the processing custodian makes the derivation itself: the structure principles the framed … |
+| `business_purpose` | string | no | It exists because a strategy only shapes the organisation once its intent has been turned into enforceable principles. |
+| `practical_context` | string | no | It starts once checking is complete and the verified strategy is ready to be drawn from, and it ends with the derived … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

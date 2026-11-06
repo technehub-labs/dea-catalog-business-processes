@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-improve-transform-8f3jk3": {
+    "plain_language_name": "Run the Transition Steps Across Units, Roles, and Agents",
+    "plain_language_description": "With the sequence verified, the processing custodian runs the transition itself: each sequenced step is carried out across the affected units, roles, and agents, and the executed transition is set down in the form the activity defines. Working papers from the execution are preserved.",
+    "business_purpose": "It exists because a sequenced change only happens when somebody actually runs its steps in order.",
+    "practical_context": "It starts once checking is complete and the verified sequence is ready to be run, and it ends with the executed structure transition produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian runs each transition step in its order across the affected units, roles, and agents, recording what was executed."
+    }
+  },
+  "processes:task-ao-improve-verify-3jd7uv": {
+    "plain_language_name": "Check the Sequence Before Running the Steps",
+    "plain_language_description": "Before any step runs, the verification custodian checks the sequenced transition against what execution requires - that the steps are complete, ordered without gaps, and ready to move the organisation through the bounded change. Defects are logged for rejection or repair before any step runs.",
+    "business_purpose": "It exists so the organisation is never moved by a sequence that was incomplete or out of order.",
+    "practical_context": "It runs once the intake is registered and the sequence can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the sequence jumping from one step to another with no handover between and logs the defect before anything runs."
+    }
+  },
+  "processes:task-ao-improve-record-mb7s4u": {
+    "plain_language_name": "File the Accountability Handover Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the handover trail at its required retention tier and sets the retrieval handles for it. Who answered for what before, and who answers now, stays readable from the record whenever responsibility is queried after the change.",
+    "business_purpose": "It exists so the accountability movements of the reorganization can be evidenced long after the change has settled.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the handover trail at its retention tier and sets the retrieval handles a responsibility query would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-vkuayw": {
+    "plain_language_name": "Confirm the Recorded Accountability Handovers",
+    "plain_language_description": "When the handovers stand logged, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The operating organisation learns every accountability movement is on record and nothing is orphaned.",
+    "business_purpose": "It exists so the post-change organisation relies only on handovers confirmed as logged.",
+    "practical_context": "It begins once preparation is complete and the recorded handovers await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the logged handovers against the activity's intended outcome and issues the confirmation the operating organisation needs."
+    }
+  },
+  "processes:task-ao-improve-intake-dezn3h": {
+    "plain_language_name": "Receive the Executed Transition for Handover Recording",
+    "plain_language_description": "Handover recording opens when the executed structure transition is handed over as the change whose accountability movements must be logged. The intake custodian accepts it, registers it with audit identifiers, and starts the recording from a recorded baseline.",
+    "business_purpose": "It exists so accountability movements are logged from the registered record of what was actually executed.",
+    "practical_context": "It opens when the executed transition is presented for the handover recording, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the executed transition as the recording baseline, with audit references, and opens the handover work."
+    }
+  },
+  "processes:task-ao-improve-transform-38kcek": {
+    "plain_language_name": "Log Each Accountability Handover from the Transition",
+    "plain_language_description": "With the transition verified, the processing custodian does the recording itself: each accountability handover the transition produced is logged against it, and the recorded handovers are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because after a reorganization the first question is always who now answers for what - and the log is the answer.",
+    "practical_context": "It starts once checking is complete and the verified transition is ready to be logged from, and it ends with the recorded handovers produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian logs every accountability that changed hands during the transition, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-improve-verify-9a8k9t": {
+    "plain_language_name": "Check the Transition Record Before Logging the Handovers",
+    "plain_language_description": "Before any handover is logged, the verification custodian checks the executed transition against what recording requires - that the record shows every accountability that moved and who it moved to. Defects are logged for rejection or repair before the handovers are written.",
+    "business_purpose": "It exists so no handover goes unlogged because the transition record missed the movement.",
+    "practical_context": "It runs once the intake is registered and the transition can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a role whose accountability moved without appearing in the record and logs the defect before handovers are written."
+    }
+  },
+  "processes:task-ao-improve-record-m327py": {
+    "plain_language_name": "File the Transition Sequence Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the sequencing trail at its required retention tier and sets the retrieval handles for it. Why the steps run in the order they do stays readable whenever the transition's conduct is examined.",
+    "business_purpose": "It exists so the chosen order of the change can be evidenced whenever its conduct is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the sequence trail at its retention tier and sets the retrieval handles a change review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-ga6jvv": {
+    "plain_language_name": "Confirm the Sequenced Structure Transition",
+    "plain_language_description": "When the steps stand ordered, the confirmation custodian reconciles the sequence against the outcome the activity set out to reach and issues the confirmation. The execution step that follows learns the sequence is settled and ready to be run.",
+    "business_purpose": "It exists so the transition is executed only from a sequence confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the sequenced transition awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the sequenced transition against the activity's intended outcome and issues the confirmation the execution step needs."
+    }
+  },
+  "processes:task-ao-improve-intake-txc9pw": {
+    "plain_language_name": "Receive the Bounded Scope for Sequencing",
+    "plain_language_description": "Sequencing opens when the bounded reorganization scope is handed over as the change the steps must be ordered around. The intake custodian accepts it, registers it with audit identifiers, and starts the sequencing from a recorded baseline.",
+    "business_purpose": "It exists so the structural change runs in a deliberate order rather than all at once.",
+    "practical_context": "It opens when the bounded scope is presented for sequencing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the organization design authority registers the bounded scope as the sequencing baseline, with audit references."
+    }
+  },
+  "processes:task-ao-improve-transform-gd68fs": {
+    "plain_language_name": "Order the Transition Steps for the Bounded Change",
+    "plain_language_description": "With the scope verified, the processing custodian does the sequencing itself: the steps that move the organisation through the bounded change are worked out in their working order and set down in the form the activity defines. Working papers behind the order are preserved.",
+    "business_purpose": "It exists because structural change done out of order strands people and roles between arrangements.",
+    "practical_context": "It starts once checking is complete and the verified scope is ready to be sequenced from, and it ends with the sequenced transition produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian orders the transition steps so no unit or role is left stranded between arrangements, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-tbqrdh": {
+    "plain_language_name": "Check the Scope Before Ordering the Steps",
+    "plain_language_description": "Before any step is ordered, the verification custodian checks the bounded scope against what sequencing requires - that the change is fully bounded and nothing in it is left ambiguous. Defects are logged for rejection or repair before the steps are ordered.",
+    "business_purpose": "It exists so the transition is never sequenced around a change that was never fully bounded.",
+    "practical_context": "It runs once the intake is registered and the scope can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the scope leaving one unit's fate undecided and logs the defect before any steps are ordered."
+    }
+  },
+  "processes:task-ao-operate-record-k2g7bk": {
+    "plain_language_name": "File the Cross-Team Interaction Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the facilitation trail at its required retention tier and sets the retrieval handles for it. Which interactions were facilitated, between whom, and under which norms, stays readable whenever cross-team working is examined.",
+    "business_purpose": "It exists so the facilitated exchanges between teams can be evidenced whenever collaboration is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the facilitation trail at its retention tier and sets the retrieval handles a collaboration review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-n33erb": {
+    "plain_language_name": "Confirm the Facilitated Cross-Team Interactions",
+    "plain_language_description": "When the interactions stand facilitated, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The friction work that follows learns the interactions are on record and ready to be examined for frictions.",
+    "business_purpose": "It exists so frictions are resolved only over interactions confirmed as facilitated.",
+    "practical_context": "It begins once preparation is complete and the facilitated interactions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the facilitated interactions against the activity's intended outcome and issues the confirmation the friction work needs."
+    }
+  },
+  "processes:task-ao-operate-intake-u5snh7": {
+    "plain_language_name": "Receive the Maintained Norms for Facilitation",
+    "plain_language_description": "Facilitation opens when the maintained interaction norms are handed over as the rules the interactions will run under. The intake custodian accepts the handover, registers it with audit identifiers, and starts the facilitation from a recorded baseline.",
+    "business_purpose": "It exists so cross-team interactions are facilitated under a registered set of norms rather than ad hoc.",
+    "practical_context": "It opens when the maintained norms are presented for facilitation, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the maintained norms as the facilitation baseline, with audit references, and opens the facilitation work."
+    }
+  },
+  "processes:task-ao-operate-transform-yvse3j": {
+    "plain_language_name": "Keep Agents and Teams Interacting Across Boundaries",
+    "plain_language_description": "With the norms verified, the processing custodian does the facilitation itself: the interactions between agents and teams across the organization are facilitated under the norms, and the facilitated interactions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because cross-boundary work rarely starts on its own - someone has to make the introductions happen and keep them moving.",
+    "practical_context": "It starts once checking is complete and the verified norms are ready to be facilitated under, and it ends with the facilitated interactions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management brings agents and teams together across their boundaries and keeps the interactions moving, recording the facilitated exchanges."
+    }
+  },
+  "processes:task-ao-operate-verify-sygx8y": {
+    "plain_language_name": "Check the Norms Before Facilitating the Interactions",
+    "plain_language_description": "Before any interaction is facilitated, the verification custodian checks the maintained norms against what facilitation requires - that every cross-team pattern in play has a norm to run under. Gaps are logged for rejection or repair before the facilitation proceeds.",
+    "business_purpose": "It exists so agents and teams are never pushed into interactions that have no rules to run under.",
+    "practical_context": "It runs once the intake is registered and the norms can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds two teams about to interact with no shared norm covering the exchange and logs the gap first."
+    }
+  },
+  "processes:task-ao-operate-record-ayrww7": {
+    "plain_language_name": "File the Interaction Norms Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the maintenance trail at its required retention tier and sets the retrieval handles for it. What each space's norms required, and when they were adjusted, stays readable whenever a way of working is disputed.",
+    "business_purpose": "It exists so the norms behind shared work can be evidenced whenever a working pattern is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the norms trail at its retention tier and sets the retrieval handles a collaboration review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-sgez8y": {
+    "plain_language_name": "Confirm the Maintained Interaction Norms",
+    "plain_language_description": "When the norms stand maintained, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The facilitation work that follows learns the norms are current and interactions can run under them.",
+    "business_purpose": "It exists so interactions are facilitated only under norms confirmed as maintained.",
+    "practical_context": "It begins once preparation is complete and the maintained norms await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the maintained norms against the activity's intended outcome and issues the confirmation the facilitation step needs."
+    }
+  },
+  "processes:task-ao-operate-intake-pcy54f": {
+    "plain_language_name": "Receive the Provisioned Workspaces for Norm Work",
+    "plain_language_description": "Norm maintenance opens when the provisioned collaboration workspaces are handed over as the spaces whose ways of working must be kept healthy. The intake custodian accepts the handover, registers it with audit identifiers, and starts the maintenance from a recorded baseline.",
+    "business_purpose": "It exists so norms are maintained over a registered set of workspaces rather than over assumptions.",
+    "practical_context": "It opens when the provisioned workspaces are presented for the norm work, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the provisioned workspaces as the norm baseline, with audit references, and opens the maintenance work."
+    }
+  },
+  "processes:task-ao-operate-transform-yexqsh": {
+    "plain_language_name": "Keep the Norms Governing Shared Work Healthy",
+    "plain_language_description": "With the workspaces verified, the processing custodian does the maintenance itself: the interaction norms governing work in the shared spaces are kept current, adjusted as working patterns shift, and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because shared spaces decay without tended norms - hand-offs blur, escalations stall, and the work suffers quietly.",
+    "practical_context": "It starts once checking is complete and the verified workspaces are ready to be maintained, and it ends with the maintained norms produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management keeps each shared workspace's norms current as working patterns shift, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-tdv92a": {
+    "plain_language_name": "Check the Workspaces Before Maintaining the Norms",
+    "plain_language_description": "Before any norm is worked on, the verification custodian checks the workspaces against what maintenance requires - that each space is live and its working pattern is known. Defects are logged for rejection or repair before the norms are touched.",
+    "business_purpose": "It exists so norms are never adjusted for workspaces nobody actually uses.",
+    "practical_context": "It runs once the intake is registered and the workspaces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a workspace with no active occupants and logs the defect before norms are adjusted for it."
+    }
+  },
+  "processes:task-ao-operate-record-wzy6we": {
+    "plain_language_name": "File the Workspace Provisioning Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the provisioning trail at its required retention tier and sets the retrieval handles for it. Which workspaces were stood up for which teams, and on what basis, stays provable whenever workspace sprawl is examined.",
+    "business_purpose": "It exists so the provisioning of shared workspaces can be evidenced whenever their use is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the provisioning trail at its retention tier and sets the retrieval handles a workspace review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-rbat9e": {
+    "plain_language_name": "Confirm the Provisioned Collaboration Workspaces",
+    "plain_language_description": "When the workspaces stand provisioned, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The norms work that follows learns the workspaces are ready to be governed.",
+    "business_purpose": "It exists so norms are maintained only over workspaces confirmed as provisioned.",
+    "practical_context": "It begins once preparation is complete and the provisioned workspaces await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the provisioned workspaces against the activity's intended outcome and issues the confirmation the norms work needs."
+    }
+  },
+  "processes:task-ao-operate-intake-uf44dj": {
+    "plain_language_name": "Receive the Operating Organization and Its Teams",
+    "plain_language_description": "Provisioning opens when the operating organization and its teams are handed over as the ground the shared workspaces must serve. The intake custodian accepts the handover, registers it with audit identifiers, and starts the provisioning from a recorded baseline.",
+    "business_purpose": "It exists so workspaces are provisioned for the teams that actually exist, not for an old org chart.",
+    "practical_context": "It opens when the operating organization and its teams are presented for provisioning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management registers the operating teams as the provisioning baseline, with audit references, and opens the workspace work."
+    }
+  },
+  "processes:task-ao-operate-transform-nf9nrc": {
+    "plain_language_name": "Stand Up the Shared Workspaces the Teams Need",
+    "plain_language_description": "With the list verified, the processing custodian does the provisioning itself: the shared workspaces the agents and teams require to work coherently are provisioned and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because collaboration needs somewhere to happen - the workspace is where cross-team work becomes possible.",
+    "practical_context": "It starts once checking is complete and the verified list is ready to be provisioned from, and it ends with the provisioned workspaces produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management stands up the shared workspaces each operating team needs, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-764wea": {
+    "plain_language_name": "Check the Teams Before Provisioning the Workspaces",
+    "plain_language_description": "Before any workspace is provisioned, the verification custodian checks the organization and team list against what provisioning requires - that every team is current and its working needs are stated. Defects are logged for rejection or repair before any workspace is stood up.",
+    "business_purpose": "It exists so no team works without a home because the list missed it, and no ghost workspace outlives its team.",
+    "practical_context": "It runs once the intake is registered and the list can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a team stood down last month still on the list and logs the defect before workspaces are provisioned."
+    }
+  },
+  "processes:task-ao-operate-record-37xp45": {
+    "plain_language_name": "File the Friction Resolution Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the resolution trail at its required retention tier and sets the retrieval handles for it. What frictions surfaced, where they sat, and how they were cleared stays readable whenever the same snag reappears.",
+    "business_purpose": "It exists so the clearing of each friction can be evidenced whenever the snag resurfaces or is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the resolution trail at its retention tier and sets the retrieval handles a collaboration review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-cn5phw": {
+    "plain_language_name": "Confirm the Resolved Collaboration Frictions",
+    "plain_language_description": "When the frictions stand resolved, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The collaboration chain learns the frictions are cleared and the exchanges can run clean again.",
+    "business_purpose": "It exists so collaboration continues only over frictions confirmed as resolved.",
+    "practical_context": "It begins once preparation is complete and the resolved frictions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the resolved frictions against the activity's intended outcome and issues the confirmation the collaboration chain needs."
+    }
+  },
+  "processes:task-ao-operate-intake-wyecqc": {
+    "plain_language_name": "Receive the Facilitated Interactions for Friction Work",
+    "plain_language_description": "Friction work opens when the facilitated cross-team interactions are handed over as the exchanges to be examined for friction. The intake custodian accepts the handover, registers it with audit identifiers, and starts the resolution work from a recorded baseline.",
+    "business_purpose": "It exists so frictions are resolved from a registered record of the interactions rather than from complaints alone.",
+    "practical_context": "It opens when the facilitated interactions are presented for the friction work, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the facilitated interactions as the friction baseline, with audit references, and opens the resolution work."
+    }
+  },
+  "processes:task-ao-operate-transform-frr4de": {
+    "plain_language_name": "Work Out and Clear the Cross-Team Frictions",
+    "plain_language_description": "With the interactions verified, the processing custodian does the resolution itself: the frictions surfacing in cross-team collaboration are located, worked out, and cleared, and the resolved frictions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because small frictions left alone harden into the reasons teams stop talking to each other.",
+    "practical_context": "It starts once checking is complete and the verified interactions are ready to be examined, and it ends with the resolved frictions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management locates where a cross-team exchange keeps snagging and clears the friction, recording the resolution."
+    }
+  },
+  "processes:task-ao-operate-verify-69265b": {
+    "plain_language_name": "Check the Interactions Before Resolving the Frictions",
+    "plain_language_description": "Before any friction is resolved, the verification custodian checks the facilitated interactions against what resolution requires - that the record shows enough of each exchange to locate where the friction actually sits. Defects are logged for rejection or repair before any friction is worked on.",
+    "business_purpose": "It exists so frictions are never fixed at the wrong boundary because the record was too thin to locate them.",
+    "practical_context": "It runs once the intake is registered and the interactions can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the record of one exchange too thin to locate its friction and logs the defect before resolution proceeds."
+    }
+  },
+  "processes:task-ao-operate-record-c5nymu": {
+    "plain_language_name": "File the Performance Exception Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the handling trail at its required retention tier and sets the retrieval handles for it. Which exceptions surfaced, what was done about each, stays readable whenever a handling decision is later queried.",
+    "business_purpose": "It exists so the handling of each exception can be evidenced whenever the response is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the exception trail at its retention tier and sets the retrieval handles a performance review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-grsjvp": {
+    "plain_language_name": "Confirm the Addressed Performance Exceptions",
+    "plain_language_description": "When the exceptions stand addressed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The review cycle that follows learns the exceptions are handled and the outcomes can be judged whole.",
+    "business_purpose": "It exists so the review cycle judges performance only once its exceptions are confirmed as addressed.",
+    "practical_context": "It begins once preparation is complete and the addressed exceptions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the addressed exceptions against the activity's intended outcome and issues the confirmation the review cycle needs."
+    }
+  },
+  "processes:task-ao-operate-intake-uanxfs": {
+    "plain_language_name": "Receive the Monitored Performance for Exception Work",
+    "plain_language_description": "Exception handling opens when the monitored agent performance is handed over as the record whose exceptions must be addressed. The intake custodian accepts the handover, registers it with audit identifiers, and starts the handling from a recorded baseline.",
+    "business_purpose": "It exists so exceptions are addressed from a registered monitoring record rather than from hearsay.",
+    "practical_context": "It opens when the monitored performance is presented for the exception work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the monitored performance as the exception baseline, with audit references, and opens the handling work."
+    }
+  },
+  "processes:task-ao-operate-transform-24bsd8": {
+    "plain_language_name": "Deal with Each Performance Exception Monitoring Surfaces",
+    "plain_language_description": "With the monitoring verified, the processing custodian does the handling itself: each performance exception is addressed - corrected, coached, or escalated as the case demands - and the addressed exceptions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because monitoring without follow-through is theatre; the exception is where performance is actually managed.",
+    "practical_context": "It starts once checking is complete and the verified monitoring is ready to be addressed from, and it ends with the addressed exceptions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management works each surfaced exception to a conclusion - correction, coaching, or escalation - recording what was done."
+    }
+  },
+  "processes:task-ao-operate-verify-bwhbpq": {
+    "plain_language_name": "Check the Monitoring Before Addressing the Exceptions",
+    "plain_language_description": "Before any exception is addressed, the verification custodian checks the monitoring against what handling requires - that each flagged exception is real under the expectation it breaches. Defects are logged for rejection or repair before any exception is addressed.",
+    "business_purpose": "It exists so agents are never pulled up over exceptions the monitoring raised in error.",
+    "practical_context": "It runs once the intake is registered and the monitoring can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an exception flagged against an expectation that was never set for that agent and logs the defect first."
+    }
+  },
+  "processes:task-ao-operate-record-wekzgs": {
+    "plain_language_name": "File the Performance Monitoring Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the monitoring trail at its required retention tier and sets the retrieval handles for it. What each agent's performance showed over the period, measured against its own expectations, stays readable whenever a judgement is revisited.",
+    "business_purpose": "It exists so the monitoring behind every performance judgement can be evidenced whenever it is challenged.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the monitoring trail at its retention tier and sets the retrieval handles a performance review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-bdxg44": {
+    "plain_language_name": "Confirm the Monitored Agent Performance",
+    "plain_language_description": "When the monitoring stands done, the confirmation custodian reconciles the monitored performance against the outcome the activity set out to reach and issues the confirmation. The exception handling that follows learns the monitoring is settled and exceptions can be read off it.",
+    "business_purpose": "It exists so exceptions are addressed only over monitoring confirmed as done.",
+    "practical_context": "It begins once preparation is complete and the monitored performance awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the monitored performance against the activity's intended outcome and issues the confirmation the exception step needs."
+    }
+  },
+  "processes:task-ao-operate-intake-a3r98v": {
+    "plain_language_name": "Receive the Set Expectations for Monitoring",
+    "plain_language_description": "Monitoring opens when the set performance expectations are handed over as the standards each agent's work will be watched against. The intake custodian accepts the handover, registers it with audit identifiers, and starts the monitoring from a recorded baseline.",
+    "business_purpose": "It exists so performance is monitored against a registered set of expectations rather than against mood.",
+    "practical_context": "It opens when the set expectations are presented for monitoring, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the set expectations as the monitoring baseline, with audit references, and opens the monitoring work."
+    }
+  },
+  "processes:task-ao-operate-transform-fw9kzg": {
+    "plain_language_name": "Track Each Agent's Work Against Its Expectations",
+    "plain_language_description": "With the expectations verified, the processing custodian does the monitoring itself: each agent's performance is tracked against its expectations - whatever the agent's substrate - and the monitored performance is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because expectations only discipline performance when somebody is actually watching, and watching evenly across every substrate.",
+    "practical_context": "It starts once checking is complete and the verified expectations are ready to be monitored from, and it ends with the monitored performance produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management tracks each agent's work against its expectations, the same yardstick whatever the agent's makeup, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-3ynv3g": {
+    "plain_language_name": "Check the Expectations Before Monitoring the Performance",
+    "plain_language_description": "Before any performance is monitored, the verification custodian checks the expectations against what monitoring requires - that every agent in operation carries an expectation to be watched against. Gaps are logged for rejection or repair before the monitoring proceeds.",
+    "business_purpose": "It exists so no agent's work goes unwatched, and none is watched against a standard that was never set.",
+    "practical_context": "It runs once the intake is registered and the expectations can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an agent in operation with no expectation to measure against and logs the gap before monitoring proceeds."
+    }
+  },
+  "processes:task-ao-operate-record-38e2pr": {
+    "plain_language_name": "File the Performance Cycle Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the cycle trail at its required retention tier and sets the retrieval handles for it. What was judged in each cycle, for whom, and on what record, stays readable whenever a past judgement is revisited.",
+    "business_purpose": "It exists so the cycle's judgements can be evidenced against the record they were made from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the cycle trail at its retention tier and sets the retrieval handles a past-judgement review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-kbjya3": {
+    "plain_language_name": "Confirm the Reviewed Performance Cycle Outcomes",
+    "plain_language_description": "When the cycle stands judged, the confirmation custodian reconciles the outcomes against the result the activity set out to reach and issues the confirmation. The improvement and development work downstream learns the cycle's outcomes are committed and available.",
+    "business_purpose": "It exists so downstream development acts only on cycle outcomes confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the reviewed outcomes await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the cycle outcomes against the activity's intended result and issues the confirmation the downstream development waits on."
+    }
+  },
+  "processes:task-ao-operate-intake-mkzye4": {
+    "plain_language_name": "Receive the Monitoring and Exceptions for the Review Cycle",
+    "plain_language_description": "The review cycle opens when the monitored performance and the addressed exceptions are handed over together as the record the period's judgement will be made from. The intake custodian accepts both, registers them with audit identifiers, and starts the review from a recorded baseline.",
+    "business_purpose": "It exists so the cycle's judgement is made over the full registered record, monitoring and handling alike.",
+    "practical_context": "It opens when the monitoring and exceptions are presented for the review cycle, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the monitoring record and addressed exceptions as the review baseline, with audit references, and opens the cycle."
+    }
+  },
+  "processes:task-ao-operate-transform-r3apff": {
+    "plain_language_name": "Run the Periodic Performance Review Cycle",
+    "plain_language_description": "With the record verified, the processing custodian conducts the cycle itself: the period's performance is judged per agent and the cycle's outcomes are committed, set down in the form the activity defines. Working papers behind the judgements are preserved for audit.",
+    "business_purpose": "It exists because performance only steers the organisation when it is periodically judged and the judgement is committed.",
+    "practical_context": "It starts once checking is complete and the verified record is ready to be judged from, and it ends with the reviewed cycle outcomes produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management judges the period's performance for each agent and commits the cycle's outcomes, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-byrz9j": {
+    "plain_language_name": "Check the Record Before Running the Review Cycle",
+    "plain_language_description": "Before any outcome is judged, the verification custodian checks the monitoring and exceptions against what the cycle requires - that together they cover the whole period and every agent in it. Defects are logged for rejection or repair before the review is made.",
+    "business_purpose": "It exists so no agent's period is judged over a record with holes in it.",
+    "practical_context": "It runs once the intake is registered and the record can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one agent's monitoring record ending mid-period and logs the defect before the review judges it."
+    }
+  },
+  "processes:task-ao-operate-record-tc6zwy": {
+    "plain_language_name": "File the Performance Expectations Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the setting trail at its required retention tier and sets the retrieval handles for it. What each agent was expected to do on entering operation stays readable whenever performance is later judged.",
+    "business_purpose": "It exists so the expectations behind every performance judgement can be evidenced from the day the agent started.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the expectations trail at its retention tier and sets the retrieval handles a performance review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-ftqhus": {
+    "plain_language_name": "Confirm the Set Performance Expectations",
+    "plain_language_description": "When the expectations stand set, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The monitoring that follows learns the expectations are settled and performance can be measured against them.",
+    "business_purpose": "It exists so performance is monitored only against expectations confirmed as set.",
+    "practical_context": "It begins once preparation is complete and the set expectations await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the set expectations against the activity's intended outcome and issues the confirmation the monitoring step needs."
+    }
+  },
+  "processes:task-ao-operate-intake-3ns82g": {
+    "plain_language_name": "Receive the Onboarded Agents and Their Roles",
+    "plain_language_description": "Expectation setting opens when the onboarded agents and their roles are handed over as the people to be set up for active operation. The intake custodian accepts the handover, registers it with audit identifiers, and starts the setting work from a recorded baseline.",
+    "business_purpose": "It exists so expectations are set for agents entering operation, not retrofitted after the fact.",
+    "practical_context": "It opens when the onboarded agents and their roles are presented for the setting, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the onboarded agents and their roles as the setting baseline, with audit references, and opens the expectation work."
+    }
+  },
+  "processes:task-ao-operate-transform-4nfah8": {
+    "plain_language_name": "Set What Each Agent in Operation Is Expected to Do",
+    "plain_language_description": "With the roles verified, the processing custodian does the setting itself: the performance expectations for each agent entering active operation are worked out from its role and set down in the form the activity defines. Working papers behind each expectation are preserved.",
+    "business_purpose": "It exists because an agent cannot be held to a standard that was never made explicit at the start.",
+    "practical_context": "It starts once checking is complete and the verified roles are ready to be set from, and it ends with the set expectations produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management sets what each newly operating agent is expected to do from its role, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-92fttz": {
+    "plain_language_name": "Check the Agents and Roles Before Setting Expectations",
+    "plain_language_description": "Before any expectation is set, the verification custodian checks the agents and roles against what setting requires - that each agent carries a settled role whose performance can be expected of it. Defects are logged for rejection or repair before any expectation is fixed.",
+    "business_purpose": "It exists so expectations are never set against a role that was never fully settled for the agent.",
+    "practical_context": "It runs once the intake is registered and the roles can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an agent whose role assignment is still provisional and logs the defect before expectations are set."
+    }
+  },
+  "processes:task-ao-operate-record-g5my4m": {
+    "plain_language_name": "File the Learning Delivery Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the delivery trail at its required retention tier and sets the retrieval handles for it. Which sessions were delivered, to which agents, and from which programmes, stays readable whenever learning delivery is examined.",
+    "business_purpose": "It exists so the delivery of scheduled learning can be evidenced whenever its reach is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the delivery trail at its retention tier and sets the retrieval handles a learning review would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-vk643b": {
+    "plain_language_name": "Confirm the Delivered Learning Sessions",
+    "plain_language_description": "When the sessions stand delivered, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The programme evaluation that follows learns the completions are on record and ready to be weighed.",
+    "business_purpose": "It exists so programmes are evaluated only over sessions confirmed as delivered.",
+    "practical_context": "It begins once preparation is complete and the delivered sessions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the delivered sessions against the activity's intended outcome and issues the confirmation the evaluation step needs."
+    }
+  },
+  "processes:task-ao-operate-intake-hsv8h8": {
+    "plain_language_name": "Receive the Scheduled Development Programmes for Delivery",
+    "plain_language_description": "Delivery opens when the scheduled development programmes are handed over as the sessions to be run across the agentive mix. The intake custodian accepts the handover, registers it with audit identifiers, and starts the delivery from a recorded baseline.",
+    "business_purpose": "It exists so learning is delivered from a registered schedule rather than from whatever anyone feels like running.",
+    "practical_context": "It opens when the scheduled programmes are presented for delivery, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management registers the scheduled development programmes as the delivery baseline, with audit references."
+    }
+  },
+  "processes:task-ao-operate-transform-vwunqx": {
+    "plain_language_name": "Deliver the Scheduled Sessions Across the Agentive Mix",
+    "plain_language_description": "With the schedule verified, the processing custodian does the delivery itself: the scheduled learning sessions are delivered across the agentive mix, and the delivered sessions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a schedule of learning develops nobody until the sessions are actually delivered to the agents.",
+    "practical_context": "It starts once checking is complete and the verified schedule is ready to be delivered from, and it ends with the delivered sessions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian delivers each scheduled learning session across the mix and records what was delivered, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-7zbf5u": {
+    "plain_language_name": "Check the Schedule Before Delivering the Sessions",
+    "plain_language_description": "Before any session is delivered, the verification custodian checks the schedule against what delivery requires - that each session is matched to the agents it was scheduled for and the programme behind it is the committed one. Defects are logged for rejection or repair before any session runs.",
+    "business_purpose": "It exists so no agent sits in a session that was never meant for them, and no programme runs from a superseded schedule.",
+    "practical_context": "It runs once the intake is registered and the schedule can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds sessions scheduled from a superseded programme and logs the defect before any of them run."
+    }
+  },
+  "processes:task-ao-operate-record-d5xcgd": {
+    "plain_language_name": "File the Programme Evaluation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the evaluation trail at its required retention tier and sets the retrieval handles for it. How each completed programme measured against the gaps it targeted stays readable whenever the learning investment is questioned.",
+    "business_purpose": "It exists so the effectiveness judgements behind the learning spend can be evidenced whenever they are challenged.",
+    "practical_context": "It starts once the evaluation confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the evaluation trail at its retention tier and sets the retrieval handles a learning investment review would consult."
+    }
+  }
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-con
 
 This is a **Task** (level L4), named **Assign Retained-Records Custodianship Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assign Retained-Records Custodianship** (`processes:activity-ge-retire-rzhc83`). Its canonical ID is `processes:task-ge-retire-confirm-7en975`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the retained records. When everything lines up, the completion confirmation is acknowledged by the governance custodian and by the registrar of companies. The confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the regulator, the court, and the entity's own governance can all rely on one formal completion signal.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts with the produced record pack, and it closes when the acknowledgements are logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian finishes the reconciliation and logs the confirmation once the registrar of companies acknowledges it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Records Have a Settled Home |
+| `plain_language_description` | string | no | The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the … |
+| `business_purpose` | string | no | It exists so the regulator, the court, and the entity's own governance can all rely on one formal completion signal. |
+| `practical_context` | string | no | It starts with the produced record pack, and it closes when the acknowledgements are logged and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

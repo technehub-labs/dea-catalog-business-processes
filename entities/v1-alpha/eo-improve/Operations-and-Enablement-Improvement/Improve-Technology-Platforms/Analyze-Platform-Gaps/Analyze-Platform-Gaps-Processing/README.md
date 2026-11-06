@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Analyze Platform Gaps Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Analyze Platform Gaps** (`processes:activity-eo-improve-uvzvt8`). Its canonical ID is `processes:task-eo-improve-transform-4e5qmd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the analysis itself: the platform record and its incidents are read for where reliability, capacity, and capability fall short, and the gap analysis is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because platforms decay quietly until the day they fail publicly - the analysis is what finds the shortfall while it is still cheap.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be read, and it ends with the gap analysis produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function reads the platform record and its incidents for shortfall and bounds the gaps, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound Where the Platforms Fall Short |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the analysis itself: the platform record and its incidents … |
+| `business_purpose` | string | no | It exists because platforms decay quietly until the day they fail publicly - the analysis is what finds the shortfall … |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be read, and it ends with the gap analysis … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

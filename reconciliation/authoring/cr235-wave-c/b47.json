@@ -1,0 +1,582 @@
+{
+ "processes:task-sd-design-verify-7pcjse": {
+  "plain_language_name": "Test the Intent and Trade-offs Before Bounding the Design Space",
+  "plain_language_description": "Before the option design space is drawn, the arriving intent and trade-off material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a design space bounded over an unverified intent or half-scoped trade-offs fences the options around the wrong centre.",
+  "practical_context": "It opens once the intake is registered and the bounding material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged intent and trade-offs against what the activity requires, and writes up a trade-off boundary still marked provisional as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-dmkpkg": {
+  "plain_language_name": "Draw the Design Space the Intent and Trade-offs Permit",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian marks out what the committed intent and the scoped trade-offs permit the option designers to explore, producing the bounded design space in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because options designed without a bounded space wander past what the intent will wear and the trade-offs allow.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the bounded design space produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function marks the edges of what the option designers may explore, reading the verified intent against the scoped trade-offs, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-intake-8zsun4": {
+  "plain_language_name": "Take In the Drafted Options and Their Evaluation Criteria",
+  "plain_language_description": "The committing opens as its material arrives: the drafted strategic options together with the criteria they will be judged by. The intake custodian logs them against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the option designs are committed as logged material with their criteria, not as sketches still being redrawn.",
+  "practical_context": "It opens when the drafted options and the criteria are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted options and their evaluation criteria into the commitment file, so the commitment work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-2v52ye": {
+  "plain_language_name": "Test the Option Designs and Criteria Before Committing Them",
+  "plain_language_description": "Before the option designs are committed for downstream evaluation, the arriving design and criteria material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because evaluation over uncommitted designs and loose criteria produces verdicts nobody can reproduce.",
+  "practical_context": "It opens once the intake is registered and the design material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged designs and criteria against what the activity requires, and writes up an option with no stated trade-offs as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-dduzut": {
+  "plain_language_name": "Commit the Option Designs with Their Trade-offs and Criteria",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian fixes the option designs with their bounded trade-offs and evaluation criteria for the downstream evaluation, producing the committed option designs in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because downstream evaluation needs one settled design set; moving options make any comparison unfair.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed option designs produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function commits the verified option designs with their trade-offs and criteria for evaluation, keeping the committing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-v8jnd3": {
+  "plain_language_name": "Release the Committed Option Designs to the Evaluation Teams",
+  "plain_language_description": "The confirming opens once the option designs are committed. The confirmation custodian tells the downstream teams the committed option designs are available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so the evaluation teams start from one confirmed design set rather than from competing drafts.",
+  "practical_context": "It opens when the committed option designs are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function releases the committed option designs to the evaluation teams, reconciles them against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-jc2bp5": {
+  "plain_language_name": "File the Option Design Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which designs were committed, with which criteria, stays provable when the evaluation verdicts are later questioned.",
+  "business_purpose": "It exists because a fair comparison can only be defended by showing what was committed into it.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so a challenged evaluation is checked against the record's committed designs."
+  }
+ },
+ "processes:task-sd-design-intake-vx38fh": {
+  "plain_language_name": "Take In the Bounded Design Space for Option Drafting",
+  "plain_language_description": "The drafting opens as its material arrives: the bounded design space that says what the options may explore. The intake custodian logs it against the drafting file so the drafting starts accounted for.",
+  "business_purpose": "It exists so the options are drafted inside the logged space rather than wherever each drafter's imagination wanders.",
+  "practical_context": "It opens when the bounded design space is presented for drafting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded design space into the drafting file, so the option drafting starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-de8c2u": {
+  "plain_language_name": "Test the Design Space Before Drafting the Options",
+  "plain_language_description": "Before any option is drafted, the arriving space material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because options drafted over a badly bounded space either fence in good ideas or licence wild ones.",
+  "practical_context": "It opens once the intake is registered and the space material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged space against what the activity requires, and writes up an edge that contradicts a scoped trade-off as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-k3zuz5": {
+  "plain_language_name": "Draft the Strategic Options Within the Bounded Space",
+  "plain_language_description": "With the inputs verified, the drafting proper begins. The processing custodian works out the distinct courses the space allows, each with its shape and its price, producing the drafted option set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a choice is only real when there are genuinely distinct options on the table to choose between.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the drafted option set produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function drafts the distinct options the verified space allows, each stated with its shape and its price, and keeps the drafting workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-wcqtgg": {
+  "plain_language_name": "Hand the Drafted Option Set to the Criteria Framing",
+  "plain_language_description": "The confirming opens once the options are drafted. The confirmation custodian tells the downstream teams the drafted option set is available, and closes the reconciliation against what the activity promised for the drafting.",
+  "business_purpose": "It exists so criteria are framed against a confirmed option set rather than against options still being invented.",
+  "practical_context": "It opens when the drafted option set is ready to hand on, and it closes with the confirmation issued and the drafting's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the drafted option set to the criteria team, reconciles it against what the drafting promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-zcy32e": {
+  "plain_language_name": "File the Option Drafting Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what options were drafted, and what was left undrafted, stays answerable when the choice is later examined.",
+  "business_purpose": "It exists because the option set defines the range of the possible choice, and its evidence must hold up at review.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the drafting evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the drafting evidence at its required retention tier and sets the retrieval handles, so the range of options considered is always traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-8cgfpm": {
+  "plain_language_name": "Take In the Option Set and the Bounded Space for the Criteria Work",
+  "plain_language_description": "The framing opens as its material arrives: the drafted option set together with the bounded design space the criteria must respect. The intake custodian logs them against the framing file so the framing starts accounted for.",
+  "business_purpose": "It exists so the criteria are framed over the logged options and space rather than over measures that flatter one option.",
+  "practical_context": "It opens when the option set and the bounded space are presented for framing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted options and the bounded space into the framing file, so the criteria work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-sw6qy5": {
+  "plain_language_name": "Test the Option Set Before Framing the Evaluation Criteria",
+  "plain_language_description": "Before any criterion is framed, the arriving option material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because criteria framed over a partial view of the options quietly pre-decide the comparison.",
+  "practical_context": "It opens once the intake is registered and the criteria material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged options and space against what the activity requires, and writes up an option missing its trade-off statement as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-qcvtta": {
+  "plain_language_name": "Frame the Criteria the Options Will Be Judged By",
+  "plain_language_description": "With the inputs verified, the framing proper begins. The processing custodian sets out the measures each drafted option will be judged against, producing the evaluation criteria in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because options judged by unframed criteria are judged by whoever speaks last.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the evaluation criteria produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function frames the measures the drafted options will be judged against, chosen so no option is pre-favoured, and keeps the framing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-xs4uch": {
+  "plain_language_name": "Hand the Evaluation Criteria to the Scope Bounding",
+  "plain_language_description": "The confirming opens once the criteria are framed. The confirmation custodian tells the downstream teams the evaluation criteria are available, and closes the reconciliation against what the activity promised for the framing.",
+  "business_purpose": "It exists so the evaluation is scoped over confirmed criteria rather than over a scorecard still being argued.",
+  "practical_context": "It opens when the evaluation criteria are ready to hand on, and it closes with the confirmation issued and the framing's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the framed criteria to the evaluation scoping team, reconciles them against what the framing promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-b7bar8": {
+  "plain_language_name": "File the Evaluation Criteria Framing Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why those measures were chosen, and others rejected, stays answerable when the verdict is contested.",
+  "business_purpose": "It exists because the choice of yardstick is where most arguments about the verdict really start, and it deserves evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the framing evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the framing evidence at its required retention tier and sets the retrieval handles, so a contested verdict can be traced back to the agreed yardsticks."
+  }
+ },
+ "processes:task-sd-design-intake-4muj22": {
+  "plain_language_name": "Take In the Committed Options and the Environment Cues",
+  "plain_language_description": "The bounding opens as its material arrives: the committed strategic options together with the environment cues they must be stress-tested against. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the assumptions are bounded from logged options and cues rather than from whatever worries the room today.",
+  "practical_context": "It opens when the committed options and the cues are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed options and the environment cues into the bounding file, so the assumption work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-cgca3c": {
+  "plain_language_name": "Test the Options and Cues Before Bounding the Assumptions",
+  "plain_language_description": "Before any assumption is bounded, the arriving option and cue material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because assumptions bounded from stale cues test the options against a world that has already moved.",
+  "practical_context": "It opens once the intake is registered and the bounding material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged options and cues against what the activity requires, and writes up a cue citing an outdated market reading as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-exfy2h": {
+  "plain_language_name": "Bound the Assumptions the Options Must Be Stress-Tested Against",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian fixes the assumption set the committed options must survive, reading the options against the environment cues, producing the bounded assumptions in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because options that have never faced their worst reasonable world are hopes, not strategies.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the bounded assumptions produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function fixes the assumptions the committed options must survive, reading each against the verified cues, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-jne7pd": {
+  "plain_language_name": "Hand the Bounded Assumptions to the Scenario Drafting",
+  "plain_language_description": "The confirming opens once the assumptions are bounded. The confirmation custodian tells the downstream teams the bounded assumptions are available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so the scenarios are drafted inside a confirmed assumption set rather than inside fears still being listed.",
+  "practical_context": "It opens when the bounded assumptions are ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the bounded assumptions to the scenario drafting team, reconciles them against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-cmq5ke": {
+  "plain_language_name": "File the Scenario Assumption Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which assumptions the options were tested against stays answerable when a scenario later fails to hold.",
+  "business_purpose": "It exists because when the world breaks a scenario, the first question is what it assumed, and that must be retrievable.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a failed scenario's assumptions are traced from the record."
+  }
+ },
+ "processes:task-sd-design-intake-mun4hq": {
+  "plain_language_name": "Take In the Drafted Scenarios and Their Signposts",
+  "plain_language_description": "The committing opens as its material arrives: the drafted scenarios together with the signposts they will be monitored by. The intake custodian logs them against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the scenarios are committed as logged material with their monitors rather than as stories told in decks.",
+  "practical_context": "It opens when the drafted scenarios and signposts are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted scenarios and their signposts into the commitment file, so the commitment work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-jvukpk": {
+  "plain_language_name": "Test the Scenarios and Signposts Before Committing Them",
+  "plain_language_description": "Before the scenarios are committed for operation, the arriving scenario and signpost material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a scenario committed without workable signposts can never be watched, only remembered.",
+  "practical_context": "It opens once the intake is registered and the scenario material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged scenarios and signposts against what the activity requires, and writes up a scenario with no observable signpost as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-rnh45w": {
+  "plain_language_name": "Commit the Scenarios with Their Assumptions and Signposts",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian fixes the designed scenarios with their bounded assumptions and signposts for scenario operation, producing the committed scenarios in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because scenarios only help once they are committed as the worlds the enterprise will watch for and answer to.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed scenarios produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function commits the verified scenarios with their assumptions and signposts for operation, keeping the committing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-4es8q4": {
+  "plain_language_name": "Release the Committed Scenarios to the Monitoring Teams",
+  "plain_language_description": "The confirming opens once the scenarios are committed. The confirmation custodian tells the downstream teams the committed scenarios are available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so scenario operation runs from one confirmed set rather than from whichever story resonated last.",
+  "practical_context": "It opens when the committed scenarios are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function releases the committed scenarios to the monitoring teams, reconciles them against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-t9xxar": {
+  "plain_language_name": "File the Scenario Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which scenarios the enterprise committed to watch stays provable when the world turns and plans must bend.",
+  "business_purpose": "It exists because a scenario's value shows only in hindsight, and hindsight needs the committed evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so the scenarios once committed are always retrievable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-7yxz48": {
+  "plain_language_name": "Take In the Drafted Scenarios for the Signpost Work",
+  "plain_language_description": "The designing opens as its material arrives: the drafted scenarios that must each be watched for their moment. The intake custodian logs them against the designing file so the designing starts accounted for.",
+  "business_purpose": "It exists so the signposts are designed over logged scenarios rather than over vague senses of what change looks like.",
+  "practical_context": "It opens when the drafted scenarios are presented for the signpost work, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted scenarios into the designing file, so the signpost work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-jmxhwx": {
+  "plain_language_name": "Test the Drafted Scenarios Before Designing the Signposts",
+  "plain_language_description": "Before any signpost is designed, the arriving scenario material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because signposts designed for a half-drawn scenario watch for a world nobody defined.",
+  "practical_context": "It opens once the intake is registered and the scenario material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged scenarios against what the activity requires, and writes up a scenario whose boundary conditions are unstated as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-q53rw4": {
+  "plain_language_name": "Design the Signposts Each Scenario Will Be Watched By",
+  "plain_language_description": "With the inputs verified, the designing proper begins. The processing custodian designs the observable signals that announce each scenario arriving, producing the signpost designs in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a scenario only protects the strategy if someone can see it coming; the signposts are how.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the signpost designs produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function designs the observable signals that announce each verified scenario arriving, and keeps the signpost workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-verny5": {
+  "plain_language_name": "Hand the Signpost Designs to the Scenario Commitment",
+  "plain_language_description": "The confirming opens once the signposts are designed. The confirmation custodian tells the downstream teams the signpost designs are available, and closes the reconciliation against what the activity promised for the designing.",
+  "business_purpose": "It exists so scenarios are committed with confirmed monitors rather than with watchers still being sketched.",
+  "practical_context": "It opens when the signpost designs are ready to hand on, and it closes with the confirmation issued and the designing's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the signpost designs to the scenario commitment team, reconciles them against what the designing promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-ttkq6q": {
+  "plain_language_name": "File the Signpost Design Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why each signal was chosen to stand watch stays answerable when a signpost is later accused of silence.",
+  "business_purpose": "It exists because missed warnings get retraced, and the retrace must find evidence rather than shrugs.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the designing evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the signpost evidence at its required retention tier and sets the retrieval handles, so every watching choice is traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-me88ru": {
+  "plain_language_name": "Take In the Bounded Assumption Set for Scenario Drafting",
+  "plain_language_description": "The drafting opens as its material arrives: the bounded assumption set that says which worlds the scenarios must cover. The intake custodian logs it against the drafting file so the drafting starts accounted for.",
+  "business_purpose": "It exists so the scenarios are drafted over the logged assumptions rather than over whichever future fascinates the writers.",
+  "practical_context": "It opens when the bounded assumption set is presented for drafting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded assumption set into the drafting file, so the scenario drafting starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-s5dk4t": {
+  "plain_language_name": "Test the Assumption Set Before Drafting the Scenarios",
+  "plain_language_description": "Before any scenario is drafted, the arriving assumption material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because scenarios drafted over a thin assumption set rehearse only the futures nobody fears.",
+  "practical_context": "It opens once the intake is registered and the assumption material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged assumptions against what the activity requires, and writes up an assumption missing its stress extreme as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-3a9v5n": {
+  "plain_language_name": "Draft the Scenarios Within the Bounded Assumptions",
+  "plain_language_description": "With the inputs verified, the drafting proper begins. The processing custodian works the bounded assumptions into distinct, coherent worlds the options must survive, producing the drafted scenarios in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a strategy proved in only one future is a bet; scenarios are how the other futures get their say.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the drafted scenarios produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function works the verified assumptions into distinct and coherent scenario worlds, and keeps the drafting workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-r44cn5": {
+  "plain_language_name": "Hand the Drafted Scenarios to the Signpost Designing",
+  "plain_language_description": "The confirming opens once the scenarios are drafted. The confirmation custodian tells the downstream teams the drafted scenarios are available, and closes the reconciliation against what the activity promised for the drafting.",
+  "business_purpose": "It exists so the signposts are designed for confirmed scenarios rather than for worlds still being imagined.",
+  "practical_context": "It opens when the drafted scenarios are ready to hand on, and it closes with the confirmation issued and the drafting's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the drafted scenarios to the signpost team, reconciles them against what the drafting promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-yvvmu5": {
+  "plain_language_name": "File the Scenario Drafting Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which futures were written down, and which were left out, stays answerable when events make the choice look wise or blind.",
+  "business_purpose": "It exists because the futures a strategy ignored are as telling as the ones it rehearsed, and both deserve evidence.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the drafting evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the drafting evidence at its required retention tier and sets the retrieval handles, so the imagined futures and the omitted ones are traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-hpm5ku": {
+  "plain_language_name": "Take In the Comparison Results for the Preference Work",
+  "plain_language_description": "The articulation opens as its material arrives: the comparison results that say how each option fared against the criteria. The intake custodian logs them against the articulation file so the articulating starts accounted for.",
+  "business_purpose": "It exists so the preference is articulated over logged results rather than over the loudest advocate's summary.",
+  "practical_context": "It opens when the comparison results are presented for articulation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the comparison results into the articulation file, so the preference work starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-bwq35j": {
+  "plain_language_name": "Test the Comparison Results Before Articulating the Preference",
+  "plain_language_description": "Before any preference is stated, the arriving results material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a preference built on partial results crowns an option before the evidence is all in.",
+  "practical_context": "It opens once the intake is registered and the results material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged results against what the activity requires, and writes up a comparison missing one option's scores as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-c5jvgz": {
+  "plain_language_name": "State the Preferred Option and the Trade-Offs It Accepts",
+  "plain_language_description": "With the inputs verified, the articulating proper begins. The processing custodian reads the comparison results into one preferred option and names plainly what that choice gives up, producing the articulated preference in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a choice whose costs go unstated is a choice nobody has really made.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the articulated preference produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function reads the verified results into a preferred option, writing down the trade-offs it accepts in plain terms, and keeps the articulation workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-cykc3n": {
+  "plain_language_name": "Hand the Articulated Preference to the Choice Commitment",
+  "plain_language_description": "The confirming opens once the preference is articulated. The confirmation custodian tells the downstream teams the articulated preference is available, and closes the reconciliation against what the activity promised for the articulation.",
+  "business_purpose": "It exists so the strategic choice is committed over a stated preference rather than over a hunch between meetings.",
+  "practical_context": "It opens when the articulated preference is ready to hand on, and it closes with the confirmation issued and the articulation's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the articulated preference to the commitment team, reconciles it against what the articulation promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-e8qr6e": {
+  "plain_language_name": "File the Strategic Preference Articulation Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the preference gave up, and why that was accepted, stays answerable when the trade-offs later bite.",
+  "business_purpose": "It exists because accepted trade-offs come due eventually, and the acceptance must be provable when they do.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the articulation evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the articulation evidence at its required retention tier and sets the retrieval handles, so the accepted trade-offs and their reasoning are traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-wjsqsp": {
+  "plain_language_name": "Take In the Committed Option Designs and the Evaluation Criteria",
+  "plain_language_description": "The bounding opens as its material arrives: the committed option designs together with the criteria they must be judged by. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the evaluation is bounded over logged designs and criteria rather than over whatever comparison is convenient.",
+  "practical_context": "It opens when the committed designs and the criteria are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed option designs and the evaluation criteria into the bounding file, so the evaluation scoping starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-8fd48z": {
+  "plain_language_name": "Test the Designs and Criteria Before Bounding the Evaluation",
+  "plain_language_description": "Before the evaluation scope is drawn, the arriving design and criteria material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because an evaluation bounded over loose criteria or missing designs compares apples with apologies.",
+  "practical_context": "It opens once the intake is registered and the bounding material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged designs and criteria against what the activity requires, and writes up a criterion without a defined measure as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-w73kp4": {
+  "plain_language_name": "Bound the Scope of the Strategic Alternatives Evaluation",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian fixes how far the comparison will run: which options, which criteria, at what depth, producing the bounded evaluation scope in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an unbounded comparison either drowns in detail or stops the moment one option looks good.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the bounded evaluation scope produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function fixes how far the comparison will run, marking the options, criteria and depth it covers, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-an64vw": {
+  "plain_language_name": "Hand the Bounded Evaluation Scope to the Comparison",
+  "plain_language_description": "The confirming opens once the scope is bounded. The confirmation custodian tells the downstream teams the bounded evaluation scope is available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so the comparison runs inside a confirmed scope rather than inside terms still being negotiated.",
+  "practical_context": "It opens when the bounded evaluation scope is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the bounded scope to the comparison team, reconciles it against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-tpsab2": {
+  "plain_language_name": "File the Evaluation Scope Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the evaluation covered, and what it left out, stays answerable when the verdict is challenged.",
+  "business_purpose": "It exists because every challenge to a verdict begins with what was compared, and that must be provable.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a contested verdict's coverage is settled from the record."
+  }
+ },
+ "processes:task-sd-design-intake-pdyjxp": {
+  "plain_language_name": "Take In the Articulated Preference for the Choice Commitment",
+  "plain_language_description": "The committing opens as its material arrives: the articulated preference that names the option to carry forward. The intake custodian logs it against the commitment file so the committing starts accounted for.",
+  "business_purpose": "It exists so the strategic choice is committed over logged preference material rather than over momentum.",
+  "practical_context": "It opens when the articulated preference is presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the articulated preference into the commitment file, so the choice commitment starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-8amgyt": {
+  "plain_language_name": "Test the Articulated Preference Before Committing the Choice",
+  "plain_language_description": "Before the preference is committed as the strategic choice, the arriving preference material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because the committed choice steers everything downstream, and a flawed preference committed now shapes years of work wrongly.",
+  "practical_context": "It opens once the intake is registered and the preference material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged preference against what the activity requires, and writes up an accepted trade-off never stated in the comparison as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-4u5nbj": {
+  "plain_language_name": "Commit the Preferred Option as the Strategic Choice",
+  "plain_language_description": "With the inputs verified, the committing proper begins. The processing custodian fixes the preferred option as the strategic choice the downstream plan build will carry, producing the committed strategic choice in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because preference without commitment changes nothing; the enterprise only moves when the choice is fixed.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the committed strategic choice produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function commits the verified preference as the strategic choice for the plan build, keeping the committing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-th8wjc": {
+  "plain_language_name": "Tell the Plan Build the Strategic Choice Is Made",
+  "plain_language_description": "The confirming opens once the choice is committed. The confirmation custodian tells the downstream teams the committed strategic choice is available, and closes the reconciliation against what the activity promised for the commitment.",
+  "business_purpose": "It exists so the plan build starts from one announced choice rather than from betting on which option won.",
+  "practical_context": "It opens when the committed strategic choice is ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the plan build team the strategic choice is made, reconciles the delivered choice against what the commitment promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-g5pnx2": {
+  "plain_language_name": "File the Strategic Choice Commitment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which option was committed, against which comparison, stays provable for as long as the choice steers the enterprise.",
+  "business_purpose": "It exists because the committed choice is the trunk every later plan grows from, and its evidence must be durable.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the commitment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the commitment evidence at its required retention tier and sets the retrieval handles, so the choice that steers the enterprise is always traceable from the record."
+  }
+ },
+ "processes:task-sd-design-intake-nnrztu": {
+  "plain_language_name": "Take In the Option Designs and Criteria Within the Evaluation Scope",
+  "plain_language_description": "The comparing opens as its material arrives: the committed option designs and the criteria within the bounded evaluation scope. The intake custodian logs them against the comparison file so the comparing starts accounted for.",
+  "business_purpose": "It exists so the comparison runs over logged designs and criteria rather than over summaries prepared to persuade.",
+  "practical_context": "It opens when the designs and criteria are presented for comparison, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the option designs and criteria within the bounded scope into the comparison file, so the comparing starts accounted for."
+  }
+ },
+ "processes:task-sd-design-verify-dq3zxj": {
+  "plain_language_name": "Test the Designs and Criteria Before Running the Comparison",
+  "plain_language_description": "Before any option is scored, the arriving comparison material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because scoring options against wrong or missing criteria wastes the whole comparison and misleads the preference.",
+  "practical_context": "It opens once the intake is registered and the comparison material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged designs and criteria against what the activity requires, and writes up an option that sits outside the bounded scope as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-design-transform-7c9b6h": {
+  "plain_language_name": "Score the Options Against the Criteria Within the Scope",
+  "plain_language_description": "With the inputs verified, the comparing proper begins. The processing custodian runs each option against the criteria inside the bounded scope, producing the comparison results in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because preference needs evidence; the comparison is where the options are finally made to face the same questions.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the comparison results produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function runs each verified option against the agreed criteria within the bounded scope, scoring them on the same terms, and keeps the comparison workings for the audit trail."
+  }
+ },
+ "processes:task-sd-design-confirm-3rgyaj": {
+  "plain_language_name": "Hand the Comparison Results to the Preference Articulation",
+  "plain_language_description": "The confirming opens once the comparison stands. The confirmation custodian tells the downstream teams the comparison results are available, and closes the reconciliation against what the activity promised for the comparing.",
+  "business_purpose": "It exists so the preference is read from confirmed results rather than from a scorecard still being tallied.",
+  "practical_context": "It opens when the comparison results are ready to hand on, and it closes with the confirmation issued and the comparing's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function hands the comparison results to the articulation team, reconciles them against what the comparing promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-design-record-3uafkp": {
+  "plain_language_name": "File the Strategic Comparison Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so how each option scored, and on what evidence, stays answerable long after the choice is made.",
+  "business_purpose": "It exists because the scores behind the preference must stay reconstructable for the life of the strategy.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the comparison evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the comparison evidence at its required retention tier and sets the retrieval handles, so the scoring behind the preference is always reconstructable from the record."
+  }
+ },
+ "processes:task-sd-improve-record-dc8xg4": {
+  "plain_language_name": "File the Adjustment Implications Assessment Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what each candidate adjustment would cost the objectives, targets, plan and portfolio stays answerable when the direction debate resumes.",
+  "business_purpose": "It exists because adjustment debates recur, and the assessed implications must be retrievable rather than re-argued from scratch.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the assessment evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the assessment evidence at its required retention tier and sets the retrieval handles, so each adjustment's known cost to the plan and portfolio is traceable from the record."
+  }
+ }
+}

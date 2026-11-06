@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-ver
 
 This is a **Task** (level L4), named **Specify Platform Components Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Specify Platform Components** (`processes:activity-eo-design-m29ghr`). Its canonical ID is `processes:task-eo-design-verify-4tetr9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is specified, the verification custodian checks the enablement approach against what specification requires - that every family in the register is covered by the framed direction. Defects are logged for rejection or repair before the specification is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no family is left without components because the approach skipped it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the approach can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a register family the approach never addresses and logs the defect before components are specified.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Approach Before Specifying the Components |
+| `plain_language_description` | string | no | Before anything is specified, the verification custodian checks the enablement approach against what specification … |
+| `business_purpose` | string | no | It exists so no family is left without components because the approach skipped it. |
+| `practical_context` | string | no | It runs once the intake is registered and the approach can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

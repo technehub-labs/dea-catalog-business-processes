@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-improve-record-yy8q4e": {
+    "plain_language_name": "File the Upgrade Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each upgrade was drawn to fix, and against which gap, stays readable whenever an implemented upgrade is traced back.",
+    "business_purpose": "It exists so the design behind each upgrade can be evidenced whenever its intent is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles an upgrade review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-s3dyaz": {
+    "plain_language_name": "Confirm the Upgrade Designs",
+    "plain_language_description": "When the designs stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the upgrades are drawn and ready to be adopted.",
+    "business_purpose": "It exists so upgrades are committed only over designs confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the upgrade designs await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the upgrade designs against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-eo-improve-intake-e5gdzk": {
+    "plain_language_name": "Receive the Bounded Gaps for Upgrade Design",
+    "plain_language_description": "Upgrade design opens when the bounded platform gaps are handed over as the shortfalls the upgrades must close. The intake custodian accepts them, registers them with audit identifiers, and starts the design work from a recorded baseline.",
+    "business_purpose": "It exists so upgrades are drawn against registered gaps rather than against shiny new things.",
+    "practical_context": "It opens when the bounded gaps are presented for the design work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded gaps as the design baseline, with audit references, and opens the drawing work."
+    }
+  },
+  "processes:task-eo-improve-transform-fn925n": {
+    "plain_language_name": "Draw the Upgrades That Close Each Gap",
+    "plain_language_description": "With the gaps verified, the processing custodian does the design itself: the upgrade for each bounded shortfall is drawn within the platform architecture's frame, and the upgrade designs are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a bounded gap is a diagnosis - the design is where the cure takes shape.",
+    "practical_context": "It starts once checking is complete and the verified gaps are ready to be designed from, and it ends with the upgrade designs produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function draws the upgrade each gap calls for within the architecture's frame, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-d8vcxm": {
+    "plain_language_name": "Check the Gaps Before Drawing the Upgrades",
+    "plain_language_description": "Before anything is drawn, the verification custodian checks the bounded gaps against what design requires - that each gap is quantified and traceable to the evidence behind it. Defects are logged for rejection or repair before the drawing begins.",
+    "business_purpose": "It exists so upgrades are never drawn for gaps that were never truly established.",
+    "practical_context": "It runs once the intake is registered and the gaps can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a gap asserted without evidence and logs the defect before any upgrade is drawn."
+    }
+  },
+  "processes:task-eo-improve-record-s4w6xn": {
+    "plain_language_name": "File the Improvement Measurement Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the measurement trail at its required retention tier and sets the retrieval handles for it. What the upgrades actually improved, against the baseline they answered, stays readable whenever the platform's progress is examined.",
+    "business_purpose": "It exists so the judgement of each upgrade can be evidenced whenever its worth is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the measurement trail at its retention tier and sets the retrieval handles a platform review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-ad7evz": {
+    "plain_language_name": "Confirm the Improvement Measurement",
+    "plain_language_description": "When the measurement stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The improvement loop learns which upgrades paid off and where the platforms still fall short.",
+    "business_purpose": "It exists so the loop closes only over measurements confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the improvement measurement awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the improvement measurement against the activity's intended outcome and issues the confirmation that closes the loop."
+    }
+  },
+  "processes:task-eo-improve-intake-kfuq3j": {
+    "plain_language_name": "Receive the Implemented Upgrades for Measurement",
+    "plain_language_description": "Measurement opens when the implemented upgrades are handed over together with the gap baseline they were meant to move. The intake custodian accepts both, registers them with audit identifiers, and starts the measurement from a recorded base.",
+    "business_purpose": "It exists so upgrades are judged against the registered baseline they were promised on.",
+    "practical_context": "It opens when the implemented upgrades and baseline are presented for measurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the implemented upgrades and the baseline as the measurement baseline, with audit references, and opens the judging work."
+    }
+  },
+  "processes:task-eo-improve-transform-y72anm": {
+    "plain_language_name": "Measure What the Upgrades Actually Improved",
+    "plain_language_description": "With the inputs verified, the processing custodian does the measurement itself: what each committed and implemented upgrade actually moved is measured against the gap baseline, and the improvement measurement is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an upgrade installed is not an upgrade proven - measurement is where the promise is settled.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the improvement measurement produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function measures each implemented upgrade against the gap baseline and records the result, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-npqte5": {
+    "plain_language_name": "Check the Baseline Before Measuring the Improvement",
+    "plain_language_description": "Before anything is judged, the verification custodian checks the baseline and upgrades against what measurement requires - that the baseline is the one the gaps were bounded on and every implemented upgrade is covered. Defects are logged for rejection or repair before the measuring begins.",
+    "business_purpose": "It exists so no upgrade is judged against a baseline it was never promised on.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the measurement set skipping one implemented upgrade and logs the defect before the judging begins."
+    }
+  },
+  "processes:task-eo-improve-record-4xnd7a": {
+    "plain_language_name": "File the Utilization Analysis Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the analysis trail at its required retention tier and sets the retrieval handles for it. Which assets sit idle and which strain, and on what evidence, stays readable whenever a redeployment's motive is examined.",
+    "business_purpose": "It exists so the analysis behind each redeployment can be evidenced whenever its motive is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the analysis trail at its retention tier and sets the retrieval handles a redeployment review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-kgpze3": {
+    "plain_language_name": "Confirm the Utilization Analysis",
+    "plain_language_description": "When the analysis stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The option work that follows learns the utilization picture is settled and options can be drawn against it.",
+    "business_purpose": "It exists so options are drawn only against an analysis confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the utilization analysis awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the utilization analysis against the activity's intended outcome and issues the confirmation the option work needs."
+    }
+  },
+  "processes:task-eo-improve-intake-ekp65j": {
+    "plain_language_name": "Receive the Maintenance Records and Production Performance",
+    "plain_language_description": "Analysis opens when the maintenance records and the production performance data are handed over together as the evidence the utilization picture will be read from. The intake custodian accepts both, registers them with audit identifiers, and starts the analysis from a recorded baseline.",
+    "business_purpose": "It exists so the picture of asset use is read from registered evidence rather than from anecdote.",
+    "practical_context": "It opens when the records and performance data are presented for the analysis, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the maintenance records and production performance as the analysis baseline, with audit references."
+    }
+  },
+  "processes:task-eo-improve-transform-4w9zqn": {
+    "plain_language_name": "Find the Assets Sitting Idle or Straining",
+    "plain_language_description": "With the evidence verified, the processing custodian does the analysis itself: the maintenance and production record is read for which assets sit underused and which are buckling under load, and the utilization analysis is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because misused assets hide in plain sight - the analysis is what makes the idle ones and the overloaded ones visible at once.",
+    "practical_context": "It starts once checking is complete and the verified evidence is ready to be read, and it ends with the utilization analysis produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function reads the maintenance and production record and bounds which assets idle and which strain, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-vrnvca": {
+    "plain_language_name": "Check the Evidence Before Reading the Utilization",
+    "plain_language_description": "Before anything is read, the verification custodian checks the records and performance data against what analysis requires - that they cover the assets in scope and the period the picture must rest on. Defects are logged for rejection or repair before the analysis is made.",
+    "business_purpose": "It exists so the utilization picture is never drawn from evidence that missed part of the fleet.",
+    "practical_context": "It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the performance data missing a whole asset class and logs the defect before the analysis is made."
+    }
+  },
+  "processes:task-eo-improve-record-ryh8nh": {
+    "plain_language_name": "File the Redeployment Decision Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. Which redeployments were decided, on whose confirmation, stays readable whenever an asset is later moved again.",
+    "business_purpose": "It exists so the decision behind each asset move can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles an asset review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-hgs4sx": {
+    "plain_language_name": "Confirm the Committed Redeployment Decisions",
+    "plain_language_description": "When the decisions stand committed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The measurement work that follows learns which redeployments are adopted and ready to be judged.",
+    "business_purpose": "It exists so outcomes are measured only over decisions confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed decisions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed decisions against the activity's intended outcome and issues the confirmation the measurement work needs."
+    }
+  },
+  "processes:task-eo-improve-intake-xfauyr": {
+    "plain_language_name": "Receive the Assessed Options for Commitment",
+    "plain_language_description": "Commitment opens when the assessed option set is handed over as the choices the asset fleet will be asked to act on. The intake custodian accepts it, registers it with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so redeployments are decided from registered, weighed options rather than from whoever shouts first.",
+    "practical_context": "It opens when the assessed options are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the assessed option set as the commitment baseline, with audit references, and opens the deciding work."
+    }
+  },
+  "processes:task-eo-improve-transform-nad2ry": {
+    "plain_language_name": "Commit the Chosen Redeployments for Action",
+    "plain_language_description": "With the options verified, the processing custodian does the commitment itself: each selected redeployment is ratified for the fleet to carry out, and the committed decisions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a weighed option is still a suggestion - commitment is what tells the fleet to actually move.",
+    "practical_context": "It starts once checking is complete and the verified options are ready to be committed, and it ends with the committed decisions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function ratifies each chosen redeployment and records the committed decisions, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-7ewcrp": {
+    "plain_language_name": "Check the Options Before Committing the Decisions",
+    "plain_language_description": "Before anything is decided, the verification custodian checks the assessed options against what commitment requires - that each option is complete and carries its assessment of impact and feasibility. Defects are logged for rejection or repair before any decision is made.",
+    "business_purpose": "It exists so the fleet never acts on an option whose consequences were never weighed.",
+    "practical_context": "It runs once the intake is registered and the options can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an option with no impact assessment behind it and logs the defect before any decision is made."
+    }
+  },
+  "processes:task-eo-improve-record-xg4j96": {
+    "plain_language_name": "File the Option Set Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each option proposed, and against which utilization issue, stays readable whenever a chosen path is traced back.",
+    "business_purpose": "It exists so the options behind each decision can be evidenced whenever the choice is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles a decision review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-8haz37": {
+    "plain_language_name": "Confirm the Redeployment Option Set",
+    "plain_language_description": "When the options stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the options are ready to be chosen from.",
+    "business_purpose": "It exists so decisions are made only over options confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the option set awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the option set against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-eo-improve-intake-w8mreb": {
+    "plain_language_name": "Receive the Utilization Analysis for Option Work",
+    "plain_language_description": "Option design opens when the utilization analysis is handed over as the picture of idle and overloaded assets the options must resolve. The intake custodian accepts it, registers it with audit identifiers, and starts the design work from a recorded baseline.",
+    "business_purpose": "It exists so options are drawn against a registered picture rather than against hunches.",
+    "practical_context": "It opens when the utilization analysis is presented for the option work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the utilization analysis as the option baseline, with audit references, and opens the drawing work."
+    }
+  },
+  "processes:task-eo-improve-transform-sqs9qy": {
+    "plain_language_name": "Draw the Options That Resolve Each Issue",
+    "plain_language_description": "With the analysis verified, the processing custodian does the design itself: the ways each utilization issue could be resolved are drawn within the capacity envelopes and the demand model, and the option set is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an identified problem changes nothing by itself - the options are where its possible cures take shape.",
+    "practical_context": "It starts once checking is complete and the verified analysis is ready to be designed from, and it ends with the option set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function draws the ways each idle or overloaded asset could be better placed, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-2n5mgd": {
+    "plain_language_name": "Check the Analysis Before Drawing the Options",
+    "plain_language_description": "Before anything is drawn, the verification custodian checks the utilization analysis against what design requires - that each issue is bounded and traceable to the evidence. Defects are logged for rejection or repair before the drawing begins.",
+    "business_purpose": "It exists so options are never drawn for issues that were never truly established.",
+    "practical_context": "It runs once the intake is registered and the analysis can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an issue asserted without evidence and logs the defect before any option is drawn."
+    }
+  },
+  "processes:task-eo-improve-record-eg5cpm": {
+    "plain_language_name": "File the Utilization Outcome Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the measurement trail at its required retention tier and sets the retrieval handles for it. What each redeployment actually changed, against the baseline it answered, stays readable whenever the fleet's story is examined.",
+    "business_purpose": "It exists so the judgement of each decision can be evidenced whenever its worth is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the measurement trail at its retention tier and sets the retrieval handles a fleet review would consult."
+    }
+  },
+  "processes:task-eo-improve-confirm-r28xme": {
+    "plain_language_name": "Confirm the Utilization Outcome Measurement",
+    "plain_language_description": "When the measurement stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The optimization loop learns which redeployments paid off and which must be revisited.",
+    "business_purpose": "It exists so the loop closes only over measurements confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the outcome measurement awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the outcome measurement against the activity's intended outcome and issues the confirmation that closes the loop."
+    }
+  },
+  "processes:task-eo-improve-intake-s5dtcr": {
+    "plain_language_name": "Receive the Committed Decisions and the Baseline",
+    "plain_language_description": "Measurement opens when the committed redeployment decisions are handed over together with the pre-decision utilization baseline. The intake custodian accepts both, registers them with audit identifiers, and starts the measurement from a recorded base.",
+    "business_purpose": "It exists so decisions are judged against the registered baseline they were made on.",
+    "practical_context": "It opens when the committed decisions and baseline are presented for measurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed decisions and the baseline as the measurement baseline, with audit references, and opens the judging work."
+    }
+  },
+  "processes:task-eo-improve-transform-swe7et": {
+    "plain_language_name": "Measure What Each Redeployment Actually Changed",
+    "plain_language_description": "With the inputs verified, the processing custodian does the measurement itself: how each committed decision moved the fleet's working pattern is measured against the pre-decision baseline, and the outcome measurement is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an asset moved is not an asset improved - measurement is where the move is judged.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the outcome measurement produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function measures each redeployment against the pre-decision baseline and records the result, keeping the working papers."
+    }
+  },
+  "processes:task-eo-improve-verify-7v4k3w": {
+    "plain_language_name": "Check the Baseline Before Measuring the Outcomes",
+    "plain_language_description": "Before anything is judged, the verification custodian checks the baseline and decisions against what measurement requires - that the baseline is the pre-decision one and every committed decision is covered. Defects are logged for rejection or repair before the measuring begins.",
+    "business_purpose": "It exists so no decision is judged against a baseline it was never made on.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the measurement set skipping one committed decision and logs the defect before the judging begins."
+    }
+  },
+  "processes:task-eo-operate-record-4vpx6k": {
+    "plain_language_name": "File the Maintenance Execution Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval handles for it. Which tasks were performed, on which assets, and to what result, stays readable whenever an asset's service history is examined.",
+    "business_purpose": "It exists so the performance of each scheduled task can be evidenced whenever an asset's history is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the execution trail at its retention tier and sets the retrieval handles a service history query would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-wspw2q": {
+    "plain_language_name": "Confirm the Completed Maintenance Work",
+    "plain_language_description": "When the tasks stand done, the confirmation custodian reconciles the completed work against the outcome the activity set out to reach and issues the confirmation. The availability record learns which assets are serviced and the schedule can roll forward.",
+    "business_purpose": "It exists so assets are treated as maintained only once the work is confirmed as done.",
+    "practical_context": "It begins once preparation is complete and the completed work awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the completed maintenance against the activity's intended outcome and issues the confirmation the availability record needs."
+    }
+  },
+  "processes:task-eo-operate-intake-7buefn": {
+    "plain_language_name": "Receive the Maintenance Schedule for Execution",
+    "plain_language_description": "Execution opens when the maintenance schedule is handed over as the plan of tasks the crews will work through. The intake custodian accepts it, registers it with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so maintenance is performed from a registered schedule rather than from whoever's shift notices a need.",
+    "practical_context": "It opens when the maintenance schedule is presented for execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the maintenance schedule as the execution baseline, with audit references, and opens the task work."
+    }
+  },
+  "processes:task-eo-operate-transform-v87hy8": {
+    "plain_language_name": "Carry Out the Scheduled Maintenance Tasks",
+    "plain_language_description": "With the schedule verified, the processing custodian does the execution itself: each planned task is performed on its asset by the crews with the parts and tooling it needs, and the completed work is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a schedule on paper maintains nothing - execution is where the assets actually get the care their condition calls for.",
+    "practical_context": "It starts once checking is complete and the verified schedule is ready to be worked, and it ends with the completed maintenance produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management runs the crews through each scheduled task as it falls due, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-wg6j8d": {
+    "plain_language_name": "Check the Schedule Before Running the Tasks",
+    "plain_language_description": "Before any task is worked, the verification custodian checks the schedule against what execution requires - that every task names its asset, its interval, and the resources it will consume. Defects are logged for rejection or repair before any task is run.",
+    "business_purpose": "It exists so crews are never dispatched to tasks that were never fully planned.",
+    "practical_context": "It runs once the intake is registered and the schedule can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a task with no parts allocation behind it and logs the defect before it is run."
+    }
+  },
+  "processes:task-eo-operate-record-y3eqh5": {
+    "plain_language_name": "File the Maintenance Schedule Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the planning trail at its required retention tier and sets the retrieval handles for it. What each asset's care was planned around, and when, stays readable whenever the schedule's reasoning is examined.",
+    "business_purpose": "It exists so the planning behind the schedule can be evidenced whenever its choices are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the planning trail at its retention tier and sets the retrieval handles a maintenance review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-rpmwk2": {
+    "plain_language_name": "Confirm the Maintenance Schedule",
+    "plain_language_description": "When the schedule stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The execution work that follows learns the care plan is settled and the tasks can be run.",
+    "business_purpose": "It exists so maintenance is executed only from a schedule confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the maintenance schedule awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drawn schedule against the activity's intended outcome and issues the confirmation the execution work needs."
+    }
+  },
+  "processes:task-eo-operate-intake-uu37wc": {
+    "plain_language_name": "Receive the Asset Register and Condition Data",
+    "plain_language_description": "Planning opens when the asset register and the condition and usage data are handed over together as the ground the schedule will be built from. The intake custodian accepts both, registers them with audit identifiers, and starts the planning from a recorded baseline.",
+    "business_purpose": "It exists so maintenance is planned from registered asset reality rather than from habit.",
+    "practical_context": "It opens when the register and condition data are presented for planning, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the asset register and condition data as the planning baseline, with audit references, and opens the schedule work."
+    }
+  },
+  "processes:task-eo-operate-transform-zy8ydz": {
+    "plain_language_name": "Turn Condition and Usage into the Schedule",
+    "plain_language_description": "With the inputs verified, the processing custodian does the planning itself: what each asset's condition, usage, and the maker's guidance call for is converted into a calendar of care, and the maintenance schedule is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because assets age at different speeds - the schedule is what gives each one the care its own wear demands.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be planned from, and it ends with the maintenance schedule produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management turns each asset's condition, usage, and the maker's guidance into its place on the care calendar, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-mfrrgn": {
+    "plain_language_name": "Check the Inputs Before Drawing the Schedule",
+    "plain_language_description": "Before anything is planned, the verification custodian checks the register and data against what planning requires - that every asset is on the register and its condition and usage are current. Defects are logged for rejection or repair before the schedule is drawn.",
+    "business_purpose": "It exists so no asset's care is planned from stale condition data.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an asset whose condition data is a season old and logs the defect before the schedule is drawn."
+    }
+  },
+  "processes:task-eo-operate-record-55yn4u": {
+    "plain_language_name": "File the Asset Availability Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the record-keeping trail at its required retention tier and sets the retrieval handles for it. Each asset's running story of service and downtime stays readable whenever a readiness claim is examined.",
+    "business_purpose": "It exists so every asset's availability history can be evidenced whenever its readiness is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the record-keeping trail at its retention tier and sets the retrieval handles a readiness review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-gzt9f4": {
+    "plain_language_name": "Confirm the Maintained Availability Record",
+    "plain_language_description": "When the record stands current, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The maintenance planning that follows learns the availability picture is trustworthy to plan from.",
+    "business_purpose": "It exists so planning and oversight proceed only over a record confirmed as current.",
+    "practical_context": "It begins once preparation is complete and the maintained record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the availability record against the activity's intended outcome and issues the confirmation the planning work needs."
+    }
+  },
+  "processes:task-eo-operate-intake-ms6r2s": {
+    "plain_language_name": "Receive the Maintenance Events for the Record",
+    "plain_language_description": "Record-keeping opens when the maintenance events from the scheduled and reactive sides are handed over as the material each asset's availability story must be kept true from. The intake custodian accepts them, registers them with audit identifiers, and starts the recording from a recorded baseline.",
+    "business_purpose": "It exists so the availability story is kept from registered events rather than from memory.",
+    "practical_context": "It opens when the maintenance events are presented for the record, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the maintenance events from both sides of the house as the record baseline, with audit references."
+    }
+  },
+  "processes:task-eo-operate-transform-pkqr56": {
+    "plain_language_name": "Keep Each Asset's Availability True on the Record",
+    "plain_language_description": "With the events verified, the processing custodian does the recording itself: every maintenance event is written onto its asset's availability story, whatever side of the house it came from, and the kept record is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an availability record that misses events lies by omission - keeping it true is what makes every downstream judgement honest.",
+    "practical_context": "It starts once checking is complete and the verified events are ready to be recorded, and it ends with the maintained record produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management writes every maintenance event, planned or sudden, onto its asset's availability story, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-akzmvm": {
+    "plain_language_name": "Check the Events Before Updating the Record",
+    "plain_language_description": "Before anything is written on, the verification custodian checks the events against what recording requires - that each event names its asset and states what was done and when. Defects are logged for rejection or repair before the record is updated.",
+    "business_purpose": "It exists so no asset's story gains an event it cannot actually evidence.",
+    "practical_context": "It runs once the intake is registered and the events can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an event missing its completion detail and logs the defect before the record is updated."
+    }
+  },
+  "processes:task-eo-operate-record-bc53z6": {
+    "plain_language_name": "File the Reactive Work Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the response trail at its required retention tier and sets the retrieval handles for it. What failed, how it was brought back, and how long it took, stays readable whenever the pattern of failures is examined.",
+    "business_purpose": "It exists so the response to each failure can be evidenced whenever the failure pattern is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the response trail at its retention tier and sets the retrieval handles a reliability review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-r54avg": {
+    "plain_language_name": "Confirm the Restored Assets",
+    "plain_language_description": "When the breakdowns stand answered, the confirmation custodian reconciles the restored assets against the outcome the activity set out to reach and issues the confirmation. The availability record learns which assets are back and the reactive work is on file.",
+    "business_purpose": "It exists so assets are treated as available only once their restoration is confirmed.",
+    "practical_context": "It begins once preparation is complete and the restored assets await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the restored assets against the activity's intended outcome and issues the confirmation the availability record needs."
+    }
+  },
+  "processes:task-eo-operate-intake-bnxpbj": {
+    "plain_language_name": "Receive the Breakdown Events for Response",
+    "plain_language_description": "Response opens when the breakdown events are handed over as the failures the crews must answer. The intake custodian accepts them, registers them with audit identifiers, and starts the response from a recorded baseline.",
+    "business_purpose": "It exists so failures are answered from a registered event list rather than from whoever hears the alarm first.",
+    "practical_context": "It opens when the breakdown events are presented for response, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the breakdown events as the response baseline, with audit references, and opens the answering work."
+    }
+  },
+  "processes:task-eo-operate-transform-tkr84b": {
+    "plain_language_name": "Get the Failed Assets Working Again",
+    "plain_language_description": "With the events verified, the processing custodian does the response itself: each failed asset is brought back into service as fast as good practice allows, and the restoration with its reactive work is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a broken asset stops more than itself - the response is what buys the operation's time back.",
+    "practical_context": "It starts once checking is complete and the verified events are ready to be answered, and it ends with the restored assets produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management gets each failed asset back into service and records the reactive work, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-8s5yn7": {
+    "plain_language_name": "Check the Events Before Responding to Them",
+    "plain_language_description": "Before any crew is sent, the verification custodian checks the breakdown events against what response requires - that each event identifies the asset and the failure observed. Defects are logged for rejection or repair before any response is made.",
+    "business_purpose": "It exists so crews are never dispatched to failures that were never properly reported.",
+    "practical_context": "It runs once the intake is registered and the events can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an event that names no asset and logs the defect before any crew is sent."
+    }
+  },
+  "processes:task-eo-operate-record-8jj5eh": {
+    "plain_language_name": "File the Inspection Findings Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the inspection trail at its required retention tier and sets the retrieval handles for it. What each walk found, and where it was sent, stays readable whenever a facility's condition history is examined.",
+    "business_purpose": "It exists so the findings behind each work order can be evidenced whenever their basis is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the inspection trail at its retention tier and sets the retrieval handles a facilities review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-agyfbh": {
+    "plain_language_name": "Confirm the Inspection Findings",
+    "plain_language_description": "When the rounds stand done, the confirmation custodian reconciles the findings against the outcome the activity set out to reach and issues the confirmation. The work-order side learns what the walks found and what needs fixing first.",
+    "business_purpose": "It exists so work orders are raised only over findings confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the inspection findings await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the inspection findings against the activity's intended outcome and issues the confirmation the work-order side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-tuw5mm": {
+    "plain_language_name": "Receive the Facilities and the Inspection Calendar",
+    "plain_language_description": "Inspection opens when the facilities and their inspection calendar are handed over as the ground the rounds will be walked on. The intake custodian accepts both, registers them with audit identifiers, and starts the inspection from a recorded baseline.",
+    "business_purpose": "It exists so facilities are walked on a registered rhythm rather than whenever someone happens to look.",
+    "practical_context": "It opens when the facilities and calendar are presented for inspection, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the facilities and their calendar as the inspection baseline, with audit references, and opens the rounds."
+    }
+  },
+  "processes:task-eo-operate-transform-jqp7fh": {
+    "plain_language_name": "Walk the Facilities and Note What Needs Fixing",
+    "plain_language_description": "With the calendar verified, the processing custodian does the inspection itself: each facility is walked on its due rhythm, what the walk finds is written down, and the findings that will feed the work orders and safety work are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because buildings decay quietly - the rounds are what find the small faults before they become the closed floors.",
+    "practical_context": "It starts once checking is complete and the verified calendar is ready to be walked, and it ends with the inspection findings produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management walks each facility on its due rhythm and notes what needs fixing, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-xzh8xu": {
+    "plain_language_name": "Check the Calendar Before Walking the Rounds",
+    "plain_language_description": "Before any walk is made, the verification custodian checks the facilities and calendar against what inspection requires - that every facility carries its next due walk and the calendar covers the whole estate. Defects are logged for rejection or repair before any round is walked.",
+    "business_purpose": "It exists so no facility goes unwalked because the calendar missed it.",
+    "practical_context": "It runs once the intake is registered and the calendar can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a facility missing from the calendar and logs the defect before the rounds begin."
+    }
+  },
+  "processes:task-eo-operate-record-3y9sfm": {
+    "plain_language_name": "File the Work Order Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval handles for it. Which orders were worked, by whom, and to what result, stays readable whenever the facility's upkeep history is examined.",
+    "business_purpose": "It exists so the completion of each order can be evidenced whenever the upkeep history is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the execution trail at its retention tier and sets the retrieval handles an upkeep review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-etv9vv": {
+    "plain_language_name": "Confirm the Completed Facility Work",
+    "plain_language_description": "When the orders stand worked, the confirmation custodian reconciles the completed facility work against the outcome the activity set out to reach and issues the confirmation. The facility management chain learns what is fixed and what still stands open.",
+    "business_purpose": "It exists so facilities are treated as cared for only once the work is confirmed as done.",
+    "practical_context": "It begins once preparation is complete and the completed work awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the completed work against the activity's intended outcome and issues the confirmation the facility management chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-s4uedd": {
+    "plain_language_name": "Receive the Issued Work Orders",
+    "plain_language_description": "Execution opens when the issued work orders are handed over as the jobs the crews and contractors will work through, scheduled and reactive alike. The intake custodian accepts them, registers them with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so facility work is performed from issued orders rather than from informal requests.",
+    "practical_context": "It opens when the issued orders are presented for execution, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the issued work orders as the execution baseline, with audit references, and opens the working queue."
+    }
+  }
+}

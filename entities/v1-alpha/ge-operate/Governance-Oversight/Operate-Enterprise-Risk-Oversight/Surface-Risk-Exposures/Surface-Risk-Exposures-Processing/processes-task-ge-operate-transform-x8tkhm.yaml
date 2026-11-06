@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Surface Risk Exposures conforming to the Operate schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bring the Hidden Risks into the Light'
+plain_language_description: 'With the certificate in hand, the processing custodian executes the operating for the surfacing: what the executed reviews and the monitoring have revealed is surfaced and named, and the outcomes pack is produced for confirmation.'
+business_purpose: 'It exists because a risk that stays buried grows in the dark - the surfacing is what drags it into the governance daylight.'
+practical_context: 'It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the risk function surfaces and names what the executed reviews and monitoring have revealed.'

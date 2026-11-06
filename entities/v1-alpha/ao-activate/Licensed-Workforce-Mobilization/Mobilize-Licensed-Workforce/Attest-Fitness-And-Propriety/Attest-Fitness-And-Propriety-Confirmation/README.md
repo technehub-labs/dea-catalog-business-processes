@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-c
 
 This is a **Task** (level L4), named **Attest Fitness And Propriety Confirmation**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Attest Fitness And Propriety** (`processes:activity-ao-activate-x9hy5e`). Its canonical ID is `processes:task-ao-activate-confirm-utnna8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the attested record exists, the confirmation custodian reconciles it against what the activity promised and then says so formally. Everyone waiting on the attestation - the continuing supervisor among them - hears that the fitness record is ready and where it stands.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the attestation is not treated as finished until it has been checked against the intended result and announced onward.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the attested record is ready for those who depend on it, and it closes with the confirmation issued, the dependants informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian confirms the finished attestation against the activity's promised result and notifies the continuing supervisor that the fitness record is in place.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Recorded Fitness Attestation |
+| `plain_language_description` | string | no | When the attested record exists, the confirmation custodian reconciles it against what the activity promised and then … |
+| `business_purpose` | string | no | It exists so the attestation is not treated as finished until it has been checked against the intended result and … |
+| `practical_context` | string | no | It begins once preparation is complete and the attested record is ready for those who depend on it, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

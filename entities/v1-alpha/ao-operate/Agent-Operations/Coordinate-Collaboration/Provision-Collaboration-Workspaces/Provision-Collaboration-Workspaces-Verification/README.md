@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Provision Collaboration Workspaces Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Provision Collaboration Workspaces** (`processes:activity-ao-operate-pxxmge`). Its canonical ID is `processes:task-ao-operate-verify-764wea`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any workspace is provisioned, the verification custodian checks the organization and team list against what provisioning requires - that every team is current and its working needs are stated. Defects are logged for rejection or repair before any workspace is stood up.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no team works without a home because the list missed it, and no ghost workspace outlives its team.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the list can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a team stood down last month still on the list and logs the defect before workspaces are provisioned.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Teams Before Provisioning the Workspaces |
+| `plain_language_description` | string | no | Before any workspace is provisioned, the verification custodian checks the organization and team list against what … |
+| `business_purpose` | string | no | It exists so no team works without a home because the list missed it, and no ghost workspace outlives its team. |
+| `practical_context` | string | no | It runs once the intake is registered and the list can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

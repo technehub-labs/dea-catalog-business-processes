@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-ver
 
 This is a **Task** (level L4), named **Design Governance Integration Verification**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Governance Integration** (`processes:activity-ge-design-u5gpsy`). Its canonical ID is `processes:task-ge-design-verify-wnbzp7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an integration designed short of the standards would connect the wrong doors from day one - the reading is what keeps it honest.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hold the Integration Against the Standards Before It Connects |
+| `plain_language_description` | string | no | With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and … |
+| `business_purpose` | string | no | It exists because an integration designed short of the standards would connect the wrong doors from day one - the … |
+| `practical_context` | string | no | It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

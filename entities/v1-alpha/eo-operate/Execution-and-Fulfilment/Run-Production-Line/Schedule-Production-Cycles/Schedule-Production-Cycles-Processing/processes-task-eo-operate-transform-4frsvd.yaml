@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Turn the Plan into an Orderly Queue of Cycles'
+plain_language_description: 'With the inputs verified, the processing custodian does the scheduling itself: the production plan is sequenced into resourced cycles the line can actually run, and the cycle schedule is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a plan without a queue is an ambition - the schedule is where the line learns what to run, and when.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be sequenced, and it ends with the cycle schedule produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management turns the plan into a resourced queue of cycles for the line, keeping the working papers.'

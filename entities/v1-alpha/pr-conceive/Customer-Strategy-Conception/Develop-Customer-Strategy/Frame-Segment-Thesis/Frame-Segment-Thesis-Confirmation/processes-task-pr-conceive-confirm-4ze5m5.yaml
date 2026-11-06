@@ -73,3 +73,18 @@ outputs:
   description: Completion confirmation issued for Frame Segment Thesis and acknowledged by the relationship custodian and any governing-party notify-list; confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Chosen Segment'
+plain_language_description: 'The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.'
+business_purpose: 'It exists so the chosen segment is formally accepted before the exchange and demand work builds on it.'
+practical_context: 'It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian completes the reconciliation, and the strategy custodian acknowledges the chosen segment.'

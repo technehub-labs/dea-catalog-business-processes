@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Track Hours-Of-Work And Rest-Rule Compliance Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Track Hours-Of-Work And Rest-Rule Compliance** (`processes:activity-ao-operate-8pqgha`). Its canonical ID is `processes:task-ao-operate-intake-dxpemv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Tracking opens when the live role list and the hours-of-work recording are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the compliance tracking will run from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so hours-and-rest compliance runs from a registered role list against a registered recording.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the role list and hours recording are presented for the tracking, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the live role list and hours recording as the tracking baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Live Role List and the Hours Recording |
+| `plain_language_description` | string | no | Tracking opens when the live role list and the hours-of-work recording are handed to the intake custodian. Both are … |
+| `business_purpose` | string | no | It exists so hours-and-rest compliance runs from a registered role list against a registered recording. |
+| `practical_context` | string | no | It opens when the role list and hours recording are presented for the tracking, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-ver
 
 This is a **Task** (level L4), named **Position Network Nodes Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Position Network Nodes** (`processes:activity-eo-design-fcqpn4`). Its canonical ID is `processes:task-eo-design-verify-w4n6ma`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any node is placed, the verification custodian checks the delivery model design and the demand geography against what positioning requires - that the design is the committed one and the geography is current. Defects are logged for rejection or repair before any node is positioned.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nodes are never placed against a design that was superseded or a geography that has moved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the geography a cycle behind the demand picture and logs the defect before any node is placed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Design and Geography Before Placing the Nodes |
+| `plain_language_description` | string | no | Before any node is placed, the verification custodian checks the delivery model design and the demand geography against … |
+| `business_purpose` | string | no | It exists so nodes are never placed against a design that was superseded or a geography that has moved. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

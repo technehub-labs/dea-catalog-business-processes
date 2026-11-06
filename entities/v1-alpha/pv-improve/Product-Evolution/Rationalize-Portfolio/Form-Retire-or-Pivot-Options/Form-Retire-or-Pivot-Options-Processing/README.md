@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-tr
 
 This is a **Task** (level L4), named **Form Retire-or-Pivot Options Processing**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Form Retire-or-Pivot Options** (`processes:activity-pv-improve-vaxgzn`). Its canonical ID is `processes:task-pv-improve-transform-4x8apr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the justification assessment checked, the option work proper begins. The processing custodian works each failing proposition into its candidate paths, producing the retire-or-pivot option set in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a proposition that failed its justification needs concrete retirement and pivot paths on the table before any rationalization decision can be committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checked justification material is ready to be worked, and it closes with the option set produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management takes the checked assessment for an underperforming proposition and drafts its two paths, retire with the offering withdrawn or pivot with a repositioned proposition, keeping the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw Up the Retire-or-Pivot Options for Each Failing Proposition |
+| `plain_language_description` | string | no | With the justification assessment checked, the option work proper begins. The processing custodian works each failing … |
+| `business_purpose` | string | no | It exists because a proposition that failed its justification needs concrete retirement and pivot paths on the table … |
+| `practical_context` | string | no | It opens when the checked justification material is ready to be worked, and it closes with the option set produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

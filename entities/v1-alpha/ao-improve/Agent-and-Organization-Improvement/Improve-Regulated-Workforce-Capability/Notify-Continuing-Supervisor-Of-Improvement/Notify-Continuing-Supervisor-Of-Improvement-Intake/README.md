@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Notify Continuing Supervisor Of Improvement Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Notify Continuing Supervisor Of Improvement** (`processes:activity-ao-improve-uudtp5`). Its canonical ID is `processes:task-ao-improve-intake-2p6kkf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Notification opens when the improvement record and the supervisor notification path are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the notifications will be made from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so supervisor notifications are made from a registered improvement record along a registered path.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the improvement record and notification path are presented for the notification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the improvement record and notification path as the notification baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Improvement Record and Notification Path |
+| `plain_language_description` | string | no | Notification opens when the improvement record and the supervisor notification path are handed to the intake custodian … |
+| `business_purpose` | string | no | It exists so supervisor notifications are made from a registered improvement record along a registered path. |
+| `practical_context` | string | no | It opens when the improvement record and notification path are presented for the notification, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

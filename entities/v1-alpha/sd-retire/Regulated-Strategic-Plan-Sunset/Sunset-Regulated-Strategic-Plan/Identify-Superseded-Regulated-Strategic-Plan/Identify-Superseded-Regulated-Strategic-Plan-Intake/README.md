@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-int
 
 This is a **Task** (level L4), named **Identify Superseded Regulated Strategic Plan Intake**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Identify Superseded Regulated Strategic Plan** (`processes:activity-sd-retire-6azc3g`). Its canonical ID is `processes:task-sd-retire-intake-8gwtes`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The identification opens as its material arrives: the regulated strategic-plan record and the recorded directive naming the plan to be retired. The intake custodian logs them against the identification file so the identification starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supersession is settled on the registered record, with the successor plan named and linked from the start.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the plan record and directive are presented for identification, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the plan record and the recorded directive into the identification file, so the work of naming the superseded plan starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Plan Record and Directive for the Supersession Work |
+| `plain_language_description` | string | no | The identification opens as its material arrives: the regulated strategic-plan record and the recorded directive naming … |
+| `business_purpose` | string | no | It exists so the supersession is settled on the registered record, with the successor plan named and linked from the … |
+| `practical_context` | string | no | It opens when the plan record and directive are presented for identification, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

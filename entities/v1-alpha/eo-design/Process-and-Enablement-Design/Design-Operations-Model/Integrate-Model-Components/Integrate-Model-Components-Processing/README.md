@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Integrate Model Components Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Integrate Model Components** (`processes:activity-eo-design-fxpw5z`). Its canonical ID is `processes:task-eo-design-transform-n5a458`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the designs verified, the processing custodian does the integration itself: the delivery model, the platform architecture, the facility blueprint, and the logistics routing are joined into a single coherent model, and the integrated model is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because each component design optimizes alone; integration is where their seams are found and closed before anything is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified designs are ready to be joined, and it ends with the integrated model produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function fits the four designs together into one working model, closing the seams between them, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fit the Component Designs into One Working Whole |
+| `plain_language_description` | string | no | With the designs verified, the processing custodian does the integration itself: the delivery model, the platform … |
+| `business_purpose` | string | no | It exists because each component design optimizes alone; integration is where their seams are found and closed before … |
+| `practical_context` | string | no | It starts once checking is complete and the verified designs are ready to be joined, and it ends with the integrated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

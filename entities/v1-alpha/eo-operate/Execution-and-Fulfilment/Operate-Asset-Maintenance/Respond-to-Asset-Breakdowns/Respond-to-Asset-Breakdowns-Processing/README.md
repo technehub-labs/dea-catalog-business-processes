@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Respond to Asset Breakdowns Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Respond to Asset Breakdowns** (`processes:activity-eo-operate-x3jh4n`). Its canonical ID is `processes:task-eo-operate-transform-tkr84b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the events verified, the processing custodian does the response itself: each failed asset is brought back into service as fast as good practice allows, and the restoration with its reactive work is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a broken asset stops more than itself - the response is what buys the operation's time back.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified events are ready to be answered, and it ends with the restored assets produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management gets each failed asset back into service and records the reactive work, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Get the Failed Assets Working Again |
+| `plain_language_description` | string | no | With the events verified, the processing custodian does the response itself: each failed asset is brought back into … |
+| `business_purpose` | string | no | It exists because a broken asset stops more than itself - the response is what buys the operation's time back. |
+| `practical_context` | string | no | It starts once checking is complete and the verified events are ready to be answered, and it ends with the restored … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Keep the Norms Governing Shared Work Healthy'
+plain_language_description: 'With the workspaces verified, the processing custodian does the maintenance itself: the interaction norms governing work in the shared spaces are kept current, adjusted as working patterns shift, and set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because shared spaces decay without tended norms - hand-offs blur, escalations stall, and the work suffers quietly.'
+practical_context: 'It starts once checking is complete and the verified workspaces are ready to be maintained, and it ends with the maintained norms produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in workforce management keeps each shared workspace''s norms current as working patterns shift, keeping the working papers.'

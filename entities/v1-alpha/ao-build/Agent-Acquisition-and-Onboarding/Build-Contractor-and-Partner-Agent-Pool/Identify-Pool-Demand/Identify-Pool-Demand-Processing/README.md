@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Identify Pool Demand Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Identify Pool Demand** (`processes:activity-ao-build-yjbucg`). Its canonical ID is `processes:task-ao-build-transform-gdhueq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the plan verified, the processing custodian reads demand out of it: the surge and specialist needs that direct acquisition cannot serve are drawn out and set down as the identified pool demand, in the form the activity defines. Working papers from the reading are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the pool can only be built for demand somebody has actually identified and written down.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified plan is ready to be read, and it ends with the identified demand produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian reads the verified plan and sets down the surge and specialist demands that direct acquisition cannot serve, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Out Where the Pool Demand Sits |
+| `plain_language_description` | string | no | With the plan verified, the processing custodian reads demand out of it: the surge and specialist needs that direct … |
+| `business_purpose` | string | no | It exists because the pool can only be built for demand somebody has actually identified and written down. |
+| `practical_context` | string | no | It starts once checking is complete and the verified plan is ready to be read, and it ends with the identified demand … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

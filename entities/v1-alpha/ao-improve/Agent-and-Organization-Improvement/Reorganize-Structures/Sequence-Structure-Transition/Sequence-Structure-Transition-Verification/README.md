@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Sequence Structure Transition Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Sequence Structure Transition** (`processes:activity-ao-improve-rnkywc`). Its canonical ID is `processes:task-ao-improve-verify-tbqrdh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any step is ordered, the verification custodian checks the bounded scope against what sequencing requires - that the change is fully bounded and nothing in it is left ambiguous. Defects are logged for rejection or repair before the steps are ordered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the transition is never sequenced around a change that was never fully bounded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the scope can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the scope leaving one unit's fate undecided and logs the defect before any steps are ordered.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Scope Before Ordering the Steps |
+| `plain_language_description` | string | no | Before any step is ordered, the verification custodian checks the bounded scope against what sequencing requires - that … |
+| `business_purpose` | string | no | It exists so the transition is never sequenced around a change that was never fully bounded. |
+| `practical_context` | string | no | It runs once the intake is registered and the scope can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Maintain Procurement Compliance Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Procurement Compliance** (`processes:activity-eo-operate-37uk3c`). Its canonical ID is `processes:task-eo-operate-transform-8xjkc7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the watching itself: the operating buying flow is read against the policy, drifts are put right as they are found, and the maintained position is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because purchasing drifts one convenient shortcut at a time - the watch is what keeps the buying honest.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be watched, and it ends with the maintained position produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management reads the buying against the policy and puts each drift right as it is found, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Watch the Buying and Put Right What Drifts |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the watching itself: the operating buying flow is read against … |
+| `business_purpose` | string | no | It exists because purchasing drifts one convenient shortcut at a time - the watch is what keeps the buying honest. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be watched, and it ends with the maintained … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-t
 
 This is a **Task** (level L4), named **Assess Enablement Fit Processing**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Assess Enablement Fit** (`processes:activity-eo-conceive-fjcmnb`). Its canonical ID is `processes:task-eo-conceive-transform-hkmp7x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the assessment itself: how each platform family fits the operating model the strategy mandates is tested and set down in the form the activity defines. Working papers behind the fit judgements are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a platform that fits badly is a tax paid every day - the fit assessment is where the mismatch is caught early.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be tested, and it ends with the fit assessment produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function tests each platform family against the operating model's requirements and records the fit assessment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Platform Families Against the Operating Model |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the assessment itself: how each platform family fits the … |
+| `business_purpose` | string | no | It exists because a platform that fits badly is a tax paid every day - the fit assessment is where the mismatch is … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be tested, and it ends with the fit assessment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

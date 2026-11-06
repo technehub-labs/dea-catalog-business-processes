@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Agents Delivering Service for Capture'
+plain_language_description: 'Capture opens when the agents delivering service are handed over as the workforce whose time and attendance must be recorded. The intake custodian accepts the handover, registers it with audit identifiers, and starts the capture from a recorded baseline.'
+business_purpose: 'It exists so time is captured for the agents actually delivering service, not for an assumed roster.'
+practical_context: 'It opens when the delivering agents are presented for capture, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the agents delivering service as the capture baseline, with audit references, and opens the capture work.'

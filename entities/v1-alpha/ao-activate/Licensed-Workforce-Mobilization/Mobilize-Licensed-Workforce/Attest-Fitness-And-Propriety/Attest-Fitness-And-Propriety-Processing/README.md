@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-t
 
 This is a **Task** (level L4), named **Attest Fitness And Propriety Processing**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Attest Fitness And Propriety** (`processes:activity-ao-activate-x9hy5e`). Its canonical ID is `processes:task-ao-activate-transform-kk4rwa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the evidence has measured up, the processing custodian turns the checked attestation into the fitness record the activity set out to produce, in the exact shape the regulated personnel record expects. The papers worked from along the way are kept, so the path from evidence to record stays visible.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because fitness only counts once the checked evidence has been shaped into the standing record the organisation relies on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts when checking is complete and the verified evidence is ready to be worked into its final form, and it ends with the attested record produced and the working papers preserved for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian assembles the checked fitness evidence into the personnel-record attestation, keeping each working paper so the trail from evidence to record stays visible.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare the Attested Fitness Record |
+| `plain_language_description` | string | no | Once the evidence has measured up, the processing custodian turns the checked attestation into the fitness record the … |
+| `business_purpose` | string | no | It exists because fitness only counts once the checked evidence has been shaped into the standing record the … |
+| `practical_context` | string | no | It starts when checking is complete and the verified evidence is ready to be worked into its final form, and it ends … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

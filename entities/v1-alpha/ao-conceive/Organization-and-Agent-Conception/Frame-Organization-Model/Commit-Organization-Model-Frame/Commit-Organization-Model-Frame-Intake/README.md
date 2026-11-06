@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Commit Organization Model Frame Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Organization Model Frame** (`processes:activity-ao-conceive-rcyn7u`). Its canonical ID is `processes:task-ao-conceive-intake-28bbvx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Consolidation opens when the bounded coordination boundaries are handed over as the last pieces of the model frame. The intake custodian accepts them, registers the handover with audit identifiers, and puts the consolidation on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the frame is consolidated from a registered set of boundaries rather than from loose pieces.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded boundaries are presented for consolidation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the bounded coordination boundaries as the consolidation baseline, with audit references, and opens the assembly.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Bounded Boundaries for Consolidation |
+| `plain_language_description` | string | no | Consolidation opens when the bounded coordination boundaries are handed over as the last pieces of the model frame. The … |
+| `business_purpose` | string | no | It exists so the frame is consolidated from a registered set of boundaries rather than from loose pieces. |
+| `practical_context` | string | no | It opens when the bounded boundaries are presented for consolidation, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

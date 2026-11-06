@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Execute Picking and Dispatch Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Picking and Dispatch** (`processes:activity-eo-operate-tbh9q7`). Its canonical ID is `processes:task-eo-operate-transform-zkn7gn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the requests verified, the processing custodian does the fulfilment itself: each demand is picked from its location and dispatched onward to production or to delivery, and the fulfilled requests are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because stock on a shelf serves nobody - picking and dispatch is where the warehouse's purpose is actually delivered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified requests are ready to be filled, and it ends with the dispatched stock produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management picks each request from its location and sends the stock onward, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pick the Stock and Send It on Its Way |
+| `plain_language_description` | string | no | With the requests verified, the processing custodian does the fulfilment itself: each demand is picked from its … |
+| `business_purpose` | string | no | It exists because stock on a shelf serves nobody - picking and dispatch is where the warehouse's purpose is actually … |
+| `practical_context` | string | no | It starts once checking is complete and the verified requests are ready to be filled, and it ends with the dispatched … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

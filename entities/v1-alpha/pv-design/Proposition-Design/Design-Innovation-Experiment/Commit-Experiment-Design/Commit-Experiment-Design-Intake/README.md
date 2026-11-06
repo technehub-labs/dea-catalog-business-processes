@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-design-int
 
 This is a **Task** (level L4), named **Commit Experiment Design Intake**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Commit Experiment Design** (`processes:activity-pv-design-mhyxnp`). Its canonical ID is `processes:task-pv-design-intake-7qyta8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Bringing the experiment design together starts with intake: the hypothesis, criteria, and timebox arrive to be consolidated. The intake custodian logs them against the design file so the consolidation works from one accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a committed design is only as sound as the completeness of what fed it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the hypothesis, criteria, and timebox into the experiment design file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect the Experiment Consolidation Papers |
+| `plain_language_description` | string | no | Bringing the experiment design together starts with intake: the hypothesis, criteria, and timebox arrive to be … |
+| `business_purpose` | string | no | It exists because a committed design is only as sound as the completeness of what fed it. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

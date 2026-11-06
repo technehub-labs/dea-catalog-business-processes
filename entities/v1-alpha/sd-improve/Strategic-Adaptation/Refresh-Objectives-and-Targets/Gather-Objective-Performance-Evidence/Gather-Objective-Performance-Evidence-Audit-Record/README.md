@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-re
 
 This is a **Task** (level L4), named **Gather Objective Performance Evidence Audit Record**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Gather Objective Performance Evidence** (`processes:activity-sd-improve-6tdndg`). Its canonical ID is `processes:task-sd-improve-record-x6w3d7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that when the refreshed objectives are later questioned, the performance evidence behind the judgement can be produced intact.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the evidence record preserved at its required tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the gathered evidence pack at the agreed retention tier and tags it by objective, so a later review can pull exactly what the judgement rested on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Evidence Pack for Later Judgement of the Objectives |
+| `plain_language_description` | string | no | After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention … |
+| `business_purpose` | string | no | It exists so that when the refreshed objectives are later questioned, the performance evidence behind the judgement can … |
+| `practical_context` | string | no | It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the evidence … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

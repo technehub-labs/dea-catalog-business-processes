@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Maintain Stock Accuracy Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Stock Accuracy** (`processes:activity-eo-operate-rrg5cv`). Its canonical ID is `processes:task-eo-operate-transform-jscjts`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the reconciling itself: each variance between the record's claim and the shelf's reality is worked to a correction, and the true positions are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a record that quietly disagrees with the shelves poisons every decision downstream - reconciling is what keeps them telling one story.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be reconciled, and it ends with the true positions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management works each variance to a correction until record and shelves agree, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reconcile What the Record Says with What the Shelves Hold |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the reconciling itself: each variance between the record's … |
+| `business_purpose` | string | no | It exists because a record that quietly disagrees with the shelves poisons every decision downstream - reconciling is … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be reconciled, and it ends with the true … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

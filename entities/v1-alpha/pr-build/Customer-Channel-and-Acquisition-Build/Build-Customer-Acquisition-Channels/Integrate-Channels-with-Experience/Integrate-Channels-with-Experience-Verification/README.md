@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-veri
 
 This is a **Task** (level L4), named **Integrate Channels with Experience Verification**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Integrate Channels with Experience** (`processes:activity-pr-build-d3pku9`). Its canonical ID is `processes:task-pr-build-verify-ja3guj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the wiring done, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Any contract violation is written up with its remedy.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a journey that mishandles consent or personal data would poison every acquisition that flows through it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered and the pack is ready for scrutiny, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function walks the connected sign-up journey against the consent and privacy rules and flags one integration gap.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Wiring Against the Integration Rules |
+| `plain_language_description` | string | no | With the wiring done, the verification custodian tests the package for the build against the integration contract for … |
+| `business_purpose` | string | no | It exists because a journey that mishandles consent or personal data would poison every acquisition that flows through … |
+| `practical_context` | string | no | It starts once the intake manifest is registered and the pack is ready for scrutiny, and it ends with the report … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

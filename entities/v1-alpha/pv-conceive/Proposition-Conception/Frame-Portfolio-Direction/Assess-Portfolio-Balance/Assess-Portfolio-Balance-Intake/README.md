@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-i
 
 This is a **Task** (level L4), named **Assess Portfolio Balance Intake**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Assess Portfolio Balance** (`processes:activity-pv-conceive-v37tza`). Its canonical ID is `processes:task-pv-conceive-intake-vavejy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The balance work opens with the priority ordering and proposition theses arriving to be weighed. The intake custodian logs them against the balance file so the assessment starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because balance assessed from an incomplete file balances the wrong things.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian of the proposition design authority logs the priority ordering and proposition theses into the balance file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Balance Assessment File |
+| `plain_language_description` | string | no | The balance work opens with the priority ordering and proposition theses arriving to be weighed. The intake custodian … |
+| `business_purpose` | string | no | It exists because balance assessed from an incomplete file balances the wrong things. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

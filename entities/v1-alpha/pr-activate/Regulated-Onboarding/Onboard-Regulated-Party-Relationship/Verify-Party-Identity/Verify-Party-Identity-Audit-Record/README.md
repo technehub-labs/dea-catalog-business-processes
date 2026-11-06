@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-r
 
 This is a **Task** (level L4), named **Verify Party Identity Audit Record**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Verify Party Identity** (`processes:activity-pr-activate-y46zs2`). Its canonical ID is `processes:task-pr-activate-record-pr8yj4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once confirmed, the records custodian places the onboarding file into retention under the schedule for party records, protected against tampering. It preserves the manifest, the certificate, the record, the acknowledgement, and the reasoning behind any adverse call.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because proof of who was verified, how, and with what confidence must outlive the onboarding itself.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the identity file of an onboarded customer with the verification certificate attached.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Archive the Identity Case File |
+| `plain_language_description` | string | no | Once confirmed, the records custodian places the onboarding file into retention under the schedule for party records … |
+| `business_purpose` | string | no | It exists because proof of who was verified, how, and with what confidence must outlive the onboarding itself. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained and any destruction … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

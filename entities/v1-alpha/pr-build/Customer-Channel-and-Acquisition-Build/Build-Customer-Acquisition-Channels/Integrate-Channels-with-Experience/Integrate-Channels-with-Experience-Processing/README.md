@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-tran
 
 This is a **Task** (level L4), named **Integrate Channels with Experience Processing**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Integrate Channels with Experience** (`processes:activity-pr-build-d3pku9`). Its canonical ID is `processes:task-pr-build-transform-b8x2nx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the report in hand, the processing custodian does the integration: the channel-integration surface is provisioned, the demand-program assets are instantiated, and the attribution model is calibrated until the journey works end to end. The result is a build-ready asset inventory.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a channel that is not wired to the designed experience cannot deliver the journey customers were promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian connects the new sign-up journey to the provisioned channels and calibrates attribution across the flow.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Wire the Channels to the Designed Experience |
+| `plain_language_description` | string | no | With the report in hand, the processing custodian does the integration: the channel-integration surface is provisioned … |
+| `business_purpose` | string | no | It exists because a channel that is not wired to the designed experience cannot deliver the journey customers were … |
+| `practical_context` | string | no | It opens when the verification report clears the build, and it closes with the asset inventory produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

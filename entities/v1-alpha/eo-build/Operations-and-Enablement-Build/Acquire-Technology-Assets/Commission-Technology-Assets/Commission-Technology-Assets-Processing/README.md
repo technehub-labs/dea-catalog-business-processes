@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Commission Technology Assets Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Technology Assets** (`processes:activity-eo-build-xy53fb`). Its canonical ID is `processes:task-eo-build-transform-fypdss`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the set verified, the processing custodian does the commissioning itself: each installed asset is tested and brought to readiness against the architecture's acceptance criteria, and the commissioned assets are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because installed is not the same as usable - commissioning is the proof that an asset actually works as bought.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified set is ready to be commissioned, and it ends with the commissioned assets produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management tests each installed asset to the acceptance criteria and records the commissioned set, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Installed Assets to Operational Readiness |
+| `plain_language_description` | string | no | With the set verified, the processing custodian does the commissioning itself: each installed asset is tested and … |
+| `business_purpose` | string | no | It exists because installed is not the same as usable - commissioning is the proof that an asset actually works as … |
+| `practical_context` | string | no | It starts once checking is complete and the verified set is ready to be commissioned, and it ends with the commissioned … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

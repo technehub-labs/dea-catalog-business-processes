@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Assess Agent Alignment Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Assess Agent Alignment** (`processes:activity-ao-improve-ceqsy3`). Its canonical ID is `processes:task-ao-improve-transform-8wuc64`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the signals verified, the processing custodian makes the assessment itself: how far the agents remain aligned to the current direction is read out of the evidence and set down as the agent alignment assessment, in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because drift is invisible until somebody measures how far the population has moved off the course that was set.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified signals are ready to be assessed, and it ends with the agent alignment assessment produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority reads the collected evidence and assesses how far the agents remain aligned to the direction, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess How Far the Agents Remain Aligned to the Direction |
+| `plain_language_description` | string | no | With the signals verified, the processing custodian makes the assessment itself: how far the agents remain aligned to … |
+| `business_purpose` | string | no | It exists because drift is invisible until somebody measures how far the population has moved off the course that was … |
+| `practical_context` | string | no | It starts once checking is complete and the verified signals are ready to be assessed, and it ends with the agent … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

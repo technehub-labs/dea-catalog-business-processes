@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-conceive-c
 
 This is a **Task** (level L4), named **Commit Finance Strategy Confirmation**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Commit Finance Strategy** (`processes:activity-fa-conceive-wt82fh`). Its canonical ID is `processes:task-fa-conceive-confirm-vsy3dv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the strategy stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed finance direction is ready to be received.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so build starts only from a strategy confirmed as committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the committed strategy awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the committed strategy against the activity's intended outcome and issues the confirmation the build work waits on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Committed Finance Direction |
+| `plain_language_description` | string | no | When the strategy stands committed, the confirmation custodian reconciles it against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so build starts only from a strategy confirmed as committed. |
+| `practical_context` | string | no | It begins once preparation is complete and the committed strategy awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

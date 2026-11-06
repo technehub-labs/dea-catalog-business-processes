@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 
 This is a **Task** (level L4), named **Execute Communications Plan for Regulated Strategic Plan Sunset Verification**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Communications Plan for Regulated Strategic Plan Sunset** (`processes:activity-sd-retire-r5tcp2`). Its canonical ID is `processes:task-sd-retire-verify-9mmpk3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any sunset message goes out, the arriving plan material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a message sent off the regulator's prescribed wording would put the entity wrong with its supervisor mid-sunset.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the filed plan can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the filed plan against what the execution needs, and writes up an audience list that misses a regulated subsidiary as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Filed Plan Before Any Sunset Message Goes Out |
+| `plain_language_description` | string | no | Before any sunset message goes out, the arriving plan material is put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because a message sent off the regulator's prescribed wording would put the entity wrong with its supervisor … |
+| `practical_context` | string | no | It opens once the intake is registered and the filed plan can be challenged, and it closes with its shortfalls written … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

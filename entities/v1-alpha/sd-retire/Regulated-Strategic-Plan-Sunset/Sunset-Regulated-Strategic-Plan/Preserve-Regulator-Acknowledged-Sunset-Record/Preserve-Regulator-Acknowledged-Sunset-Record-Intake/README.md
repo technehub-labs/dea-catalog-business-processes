@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-int
 
 This is a **Task** (level L4), named **Preserve Regulator-Acknowledged Sunset Record Intake**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Preserve Regulator-Acknowledged Sunset Record** (`processes:activity-sd-retire-a364uh`). Its canonical ID is `processes:task-sd-retire-intake-6rkuwf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The preservation opens as its material arrives: the directive, the supersession and the register update that together make up the sunset's story on the plan record. The intake custodian logs them against the preservation file so the preservation starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the preservation gathers the whole sunset story as registered, leaving no piece of the record to be reconstructed from memory.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the sunset materials are presented for preservation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function logs the directive, the supersession and the register update into the preservation file, so the assembling of the sunset record starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Sunset Materials for the Preservation Work |
+| `plain_language_description` | string | no | The preservation opens as its material arrives: the directive, the supersession and the register update that together … |
+| `business_purpose` | string | no | It exists so the preservation gathers the whole sunset story as registered, leaving no piece of the record to be … |
+| `practical_context` | string | no | It opens when the sunset materials are presented for preservation, with the activity's owner told that it has landed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Integrate Delivery Capability Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Integrate Delivery Capability** (`processes:activity-eo-build-5acbks`). Its canonical ID is `processes:task-eo-build-intake-qg4edh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Integration opens when the stood-up components are handed over as the parts that must become one working capability. The intake custodian accepts them, registers them with audit identifiers, and starts the integration from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so integration runs over a registered set of components rather than over whatever is ready first.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the stood-up components are presented for integration, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the stood-up components as the integration baseline, with audit references, and opens the joining work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Stood-Up Components for Integration |
+| `plain_language_description` | string | no | Integration opens when the stood-up components are handed over as the parts that must become one working capability … |
+| `business_purpose` | string | no | It exists so integration runs over a registered set of components rather than over whatever is ready first. |
+| `practical_context` | string | no | It opens when the stood-up components are presented for integration, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

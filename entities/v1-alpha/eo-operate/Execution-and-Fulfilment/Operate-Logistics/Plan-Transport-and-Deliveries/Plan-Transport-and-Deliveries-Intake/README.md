@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Plan Transport and Deliveries Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Plan Transport and Deliveries** (`processes:activity-eo-operate-zdw2by`). Its canonical ID is `processes:task-eo-operate-intake-cnvesv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Planning opens when the delivery demand and the network's capacity are handed over together as the two sides the transport plans must reconcile. The intake custodian accepts both, registers them with audit identifiers, and starts the planning from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so runs are planned against registered demand over registered capacity rather than against hope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the demand and capacity are presented for planning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the delivery demand and network capacity as the planning baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Delivery Demand and Network Capacity |
+| `plain_language_description` | string | no | Planning opens when the delivery demand and the network's capacity are handed over together as the two sides the … |
+| `business_purpose` | string | no | It exists so runs are planned against registered demand over registered capacity rather than against hope. |
+| `practical_context` | string | no | It opens when the demand and capacity are presented for planning, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

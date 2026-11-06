@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-re
 
 This is a **Task** (level L4), named **Capture Time and Attendance Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Capture Time and Attendance** (`processes:activity-ao-operate-kyup4x`). Its canonical ID is `processes:task-ao-operate-record-jf6bk7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the capture trail at its required retention tier and sets the retrieval handles for it. What each agent's time showed at capture stays readable whenever a downstream figure is traced back to its source.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the captured time behind every pay and compliance figure can be evidenced at source.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the capture trail at its retention tier and sets the retrieval handles a time-data query would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Time Capture Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the capture trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the captured time behind every pay and compliance figure can be evidenced at source. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

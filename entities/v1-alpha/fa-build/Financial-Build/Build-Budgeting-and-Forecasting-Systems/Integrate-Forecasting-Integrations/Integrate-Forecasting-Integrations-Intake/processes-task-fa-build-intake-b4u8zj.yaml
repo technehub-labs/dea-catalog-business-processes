@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Operational Data Sources for the Feeds'
+plain_language_description: 'Integration opens when the operational data sources are handed over as the wells the planning feeds will draw from. The intake custodian accepts them, registers them with audit identifiers, and starts the laying from a recorded baseline.'
+business_purpose: 'It exists so the planning models drink from registered wells rather than from whatever spreadsheet is at hand.'
+practical_context: 'It opens when the data sources are presented for the feeds, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the finance function registers the operational data sources as the feed baseline, with audit references.'

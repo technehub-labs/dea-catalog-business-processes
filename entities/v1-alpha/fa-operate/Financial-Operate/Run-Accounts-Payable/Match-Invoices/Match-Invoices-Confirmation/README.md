@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-co
 
 This is a **Task** (level L4), named **Match Invoices Confirmation**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Match Invoices** (`processes:activity-fa-operate-f3c2rt`). Its canonical ID is `processes:task-fa-operate-confirm-qtxrrw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the matching stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The approval work that follows learns which bills are proved and can be authorized.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so approvals are recorded only over bills confirmed as matched.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the matched invoices await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the matched invoices against the activity's intended outcome and issues the confirmation the approval work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Matched Invoices |
+| `plain_language_description` | string | no | When the matching stands done, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so approvals are recorded only over bills confirmed as matched. |
+| `practical_context` | string | no | It begins once preparation is complete and the matched invoices await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

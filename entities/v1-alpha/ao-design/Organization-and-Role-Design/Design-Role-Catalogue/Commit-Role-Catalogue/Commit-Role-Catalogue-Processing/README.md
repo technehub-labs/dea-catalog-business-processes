@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Commit Role Catalogue Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Commit Role Catalogue** (`processes:activity-ao-design-tfhe6e`). Its canonical ID is `processes:task-ao-design-transform-5x7fd7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the accountabilities verified, the processing custodian consolidates the catalogue itself: families, levels, and bounded accountabilities are brought together, ratified, and set down in the form the activity defines as the canonical reference downstream provisioning will work from. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because roles only staff the organisation once the catalogue stands as one committed reference instead of many drafts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified accountabilities are ready to be consolidated, and it ends with the committed role catalogue produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority consolidates the catalogue into the canonical reference provisioning will work from, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Catalogue as the Canonical Reference |
+| `plain_language_description` | string | no | With the accountabilities verified, the processing custodian consolidates the catalogue itself: families, levels, and … |
+| `business_purpose` | string | no | It exists because roles only staff the organisation once the catalogue stands as one committed reference instead of … |
+| `practical_context` | string | no | It starts once checking is complete and the verified accountabilities are ready to be consolidated, and it ends with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

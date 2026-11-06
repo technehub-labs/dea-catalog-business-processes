@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Coordinate Daily Service Operations Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Coordinate Daily Service Operations** (`processes:activity-eo-operate-xj922z`). Its canonical ID is `processes:task-eo-operate-transform-4255z3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the status verified, the processing custodian does the coordination itself: the day's production, delivery, logistics, platform, facility, and procurement work is drawn into one operating plan, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because six engines pulling separately tear the day apart - coordination is what makes them pull as one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified status is ready to be drawn from, and it ends with the coordinated operation produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management draws the six engines' work into one plan for the day, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Engines into One Daily Plan |
+| `plain_language_description` | string | no | With the status verified, the processing custodian does the coordination itself: the day's production, delivery … |
+| `business_purpose` | string | no | It exists because six engines pulling separately tear the day apart - coordination is what makes them pull as one. |
+| `practical_context` | string | no | It starts once checking is complete and the verified status is ready to be drawn from, and it ends with the coordinated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

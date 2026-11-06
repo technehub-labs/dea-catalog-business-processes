@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Roster and Programmes Before Arranging the Supports'
+plain_language_description: 'Before any support is arranged, the verification custodian checks the roster and programmes against what coordination requires - that every affected employee is on the roster and the programmes listed are actually available. Defects are logged for rejection or repair before any support is offered.'
+business_purpose: 'It exists so nobody is offered a support that does not exist, and nobody is missed off the roster entirely.'
+practical_context: 'It runs once the intake is registered and the material can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a programme listed that has closed to referrals and logs the defect before supports are offered.'

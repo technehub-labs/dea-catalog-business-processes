@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Select Transport Modes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Select Transport Modes** (`processes:activity-eo-design-m66m45`). Its canonical ID is `processes:task-eo-design-transform-jxj3r2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the selection itself: the ways the network will move goods - road, rail, sea, air, or blends of them - are weighed and chosen, and the mode selection with its rationale is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a network without chosen ways of moving goods is a map with no vehicles - the selection is what makes transport real.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be chosen from, and it ends with the mode selection produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function weighs road, rail, sea, and air against the design's needs and records the chosen modes with their rationale.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Choose How Goods Will Travel |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the selection itself: the ways the network will move goods - … |
+| `business_purpose` | string | no | It exists because a network without chosen ways of moving goods is a map with no vehicles - the selection is what makes … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be chosen from, and it ends with the mode … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

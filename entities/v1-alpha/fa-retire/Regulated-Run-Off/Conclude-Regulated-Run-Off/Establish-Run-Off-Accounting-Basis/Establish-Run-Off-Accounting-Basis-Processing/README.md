@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-tra
 
 This is a **Task** (level L4), named **Establish Run-Off Accounting Basis Processing**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Establish Run-Off Accounting Basis** (`processes:activity-fa-retire-t3uyxp`). Its canonical ID is `processes:task-fa-retire-transform-88ks4t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the transitioning itself: recognition, liability measurement, and asset admissibility are restated under the run-off rules, and the restated accounts with their transition adjustments are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an enterprise closing down must keep its books honest in a new grammar - the transition is what teaches the old books the new language.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be restated, and it ends with the restated accounts produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function restates the books to the run-off grammar and records every adjustment, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Move the Books from Going Concern to Run-Off |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the transitioning itself: recognition, liability measurement … |
+| `business_purpose` | string | no | It exists because an enterprise closing down must keep its books honest in a new grammar - the transition is what … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be restated, and it ends with the restated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

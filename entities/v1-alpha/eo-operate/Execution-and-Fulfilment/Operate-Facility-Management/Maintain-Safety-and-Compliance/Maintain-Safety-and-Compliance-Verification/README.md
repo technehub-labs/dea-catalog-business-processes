@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-ve
 
 This is a **Task** (level L4), named **Maintain Safety and Compliance Verification**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Safety and Compliance** (`processes:activity-eo-operate-gtt587`). Its canonical ID is `processes:task-eo-operate-verify-sjpf9s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the watch begins, the verification custodian checks the requirements against what the keeping work demands - that every facility in the estate is covered and each duty is stated concretely enough to hold. Defects are logged for rejection or repair before the watch starts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no facility is held to duties that were never stated for it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the requirements can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds one facility with no duties stated against it and logs the defect before the watch starts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Requirements Before Holding the Facilities to Them |
+| `plain_language_description` | string | no | Before the watch begins, the verification custodian checks the requirements against what the keeping work demands - … |
+| `business_purpose` | string | no | It exists so no facility is held to duties that were never stated for it. |
+| `practical_context` | string | no | It runs once the intake is registered and the requirements can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

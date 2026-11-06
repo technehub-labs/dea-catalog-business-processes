@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Report Portfolio Performance Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Report Portfolio Performance** (`processes:activity-pv-operate-nzj8xu`). Its canonical ID is `processes:task-pv-operate-verify-sedevc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the report is drafted, its inputs are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because governance and strategy consumers act on the report, and a figure that slips through unchecked misleads them at the top table.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the cycle inputs, and it closes with them verified fit for the report or their defects logged.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks the cycle's performance figures before drafting begins, notices one envelope's spend counted twice, and writes the shortfall down for the feed owner to put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Report Inputs Before Drafting |
+| `plain_language_description` | string | no | Before the report is drafted, its inputs are put to the test. The verification custodian tests the arriving material … |
+| `business_purpose` | string | no | It exists because governance and strategy consumers act on the report, and a figure that slips through unchecked … |
+| `practical_context` | string | no | It opens once intake has registered the cycle inputs, and it closes with them verified fit for the report or their … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

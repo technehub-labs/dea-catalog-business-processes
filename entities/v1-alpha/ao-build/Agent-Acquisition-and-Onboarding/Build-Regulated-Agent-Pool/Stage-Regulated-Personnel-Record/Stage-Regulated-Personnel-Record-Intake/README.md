@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Stage Regulated Personnel Record Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Stage Regulated Personnel Record** (`processes:activity-ao-build-r6h2t8`). Its canonical ID is `processes:task-ao-build-intake-a8w9me`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Staging begins when the screened candidate list arrives, together with the structure the personnel records must be built to. The intake custodian accepts both, registers them with audit identifiers, and lays the staging work on a traceable base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so personnel records are staged from a registered candidate list against a registered record structure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the cleared candidates and the record structure are presented for staging, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the screened candidate list and the personnel-record structure as the staging baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Cleared Candidates for Staging |
+| `plain_language_description` | string | no | Staging begins when the screened candidate list arrives, together with the structure the personnel records must be … |
+| `business_purpose` | string | no | It exists so personnel records are staged from a registered candidate list against a registered record structure. |
+| `practical_context` | string | no | It opens when the cleared candidates and the record structure are presented for staging, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

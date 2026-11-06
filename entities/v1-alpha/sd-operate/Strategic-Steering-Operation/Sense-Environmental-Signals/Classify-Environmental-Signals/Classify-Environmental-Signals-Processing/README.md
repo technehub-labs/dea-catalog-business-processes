@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Classify Environmental Signals Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Classify Environmental Signals** (`processes:activity-sd-operate-acwkkr`). Its canonical ID is `processes:task-sd-operate-transform-vtr8ub`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the classification proper begins. The processing custodian types each tested signal as drift, disruption or opportunity for the operating strategy, producing the classified environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the routes downstream differ by type; an untyped signal has nowhere to go and a mistyped one goes somewhere wrong.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified survivors are ready to be worked, and it closes with the classified environmental signals produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function types each tested signal as drift, disruption or opportunity, recording the evidence behind each call with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Type Each Signal as Drift, Disruption or Opportunity |
+| `plain_language_description` | string | no | With the inputs verified, the classification proper begins. The processing custodian types each tested signal as drift … |
+| `business_purpose` | string | no | It exists because the routes downstream differ by type; an untyped signal has nowhere to go and a mistyped one goes … |
+| `practical_context` | string | no | It opens when the verified survivors are ready to be worked, and it closes with the classified environmental signals … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

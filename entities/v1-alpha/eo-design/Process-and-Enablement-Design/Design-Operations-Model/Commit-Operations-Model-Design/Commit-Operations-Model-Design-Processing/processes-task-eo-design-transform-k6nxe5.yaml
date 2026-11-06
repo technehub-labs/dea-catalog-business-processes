@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Consolidate the Operations Model Design for Build'
+plain_language_description: 'With the pieces verified, the processing custodian does the consolidation itself: structure, components, and rhythms are brought together and the design is set down in the form the activity defines, ready for build. Working papers are preserved for audit.'
+business_purpose: 'It exists because framings scattered across documents build nothing - the commit is where the model becomes one authority ready for build.'
+practical_context: 'It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed design produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the operations function consolidates the pieces into the committed model design, ready for build, keeping the working papers.'

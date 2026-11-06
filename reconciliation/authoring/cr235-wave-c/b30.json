@@ -1,0 +1,582 @@
+{
+  "processes:task-ge-design-intake-adycsz": {
+    "plain_language_name": "Take Custody of the Rights Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the rights are specified from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-mmkr5g": {
+    "plain_language_name": "Say Who Decides What, and With Whose Consultation",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the rights: what each body and role may decide, and with whose consultation, is specified against the delegation design, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because a delegation that cannot say who decides is a delegation that decides nothing.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function specifies what each body and role may decide and with whose consultation."
+    }
+  },
+  "processes:task-ge-design-verify-2hen8h": {
+    "plain_language_name": "Read the Pack Against the Standards Before the Rights",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because rights specified short of the standards would misdirect decisions from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-hw8hwh": {
+    "plain_language_name": "Lay the Policy-and-Control Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The design's making stays provable for as long as the system endures.",
+    "business_purpose": "It exists so the design's making can be evidenced for as long as the system endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a codification review would draw on."
+    }
+  },
+  "processes:task-ge-design-confirm-2ku7ve": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Policy-and-Control Design",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because a design nobody has confirmed is a design nobody can codify.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-fcb7bj": {
+    "plain_language_name": "Take Custody of the Policy-and-Control Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the commitment begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-yx7yqp": {
+    "plain_language_name": "Bind Policies, Objectives, and the Regime into One Design",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the commitment: the policy artefacts, the control objectives, and the compliance regime are consolidated into the committed design, ready for codification and build, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because policies, objectives, and enforcement in separate papers control nothing - the commit is where they become one design ready to be built.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function binds the artefacts, objectives, and regime into the committed design."
+    }
+  },
+  "processes:task-ge-design-verify-69zwyc": {
+    "plain_language_name": "Hold the Design Against the Standards Before Codification",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a design committed short of the standards would codify loosely from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-z4fnv6": {
+    "plain_language_name": "Lay the Objectives Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The objectives' defining stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the objectives' defining can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-6q4rz3": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Objectives",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because objectives nobody has confirmed are objectives nobody can design to.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-dawtnv": {
+    "plain_language_name": "Take Custody of the Objectives Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the objectives begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-neef8k": {
+    "plain_language_name": "Set What Each Designed Policy Must Achieve",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the objectives: what each designed policy must satisfy is worked out against the artefact designs and the tolerance bands, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because a policy without a stated achievement is a policy that cannot be tested - the objectives are what make the policies checkable.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function sets what each designed policy must achieve against the artefact designs and tolerance bands."
+    }
+  },
+  "processes:task-ge-design-verify-qn6vgu": {
+    "plain_language_name": "Hold the Objectives Against the Bands Before They Bind",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because objectives set short of the standards would test the wrong things from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-m43jaq": {
+    "plain_language_name": "Lay the Regime Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The regime's design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the regime's design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a compliance review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-3bcebh": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Regime",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because a regime nobody has confirmed is a regime nobody can enforce by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-kztrkv": {
+    "plain_language_name": "Take Custody of the Regime Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the regime begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-xh7zch": {
+    "plain_language_name": "Design How Compliance Is Produced and Proved",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the regime: the attestations, monitoring, and consequence structure that enforce the policies and controls are designed, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because policies obeyed by choice are policies obeyed by luck - the regime is what makes compliance produced, not merely hoped for.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function designs the attestations, monitoring, and consequence structure that enforce the policies."
+    }
+  },
+  "processes:task-ge-design-verify-kce46y": {
+    "plain_language_name": "Hold the Regime Against the Standards Before It Enforces",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a regime designed short of the standards would enforce by accident from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-nfa96w": {
+    "plain_language_name": "Lay the Artifacts Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The artefacts' design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the artefacts' design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a policy review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-kj4fdm": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Artifacts",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because artefacts nobody has confirmed are artefacts nobody can codify from.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-naz9qj": {
+    "plain_language_name": "Take Custody of the Artifacts Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the artefacts begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-6bwfwv": {
+    "plain_language_name": "Shape the Initiated Policies into Working Artefacts",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the artefacts: the initiated policy documents are shaped into designed artefacts under the governance system design, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because an initiated policy is an intention - the artefacts are where the intention takes a form that can be codified and lived by.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function shapes each initiated policy into its designed artefact form."
+    }
+  },
+  "processes:task-ge-design-verify-qqzusy": {
+    "plain_language_name": "Hold the Artifacts Against the Standards Before They Land",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because artefacts designed short of the standards would land half-formed from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-es4mt7": {
+    "plain_language_name": "Lay the Framework Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The framework's design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the framework's design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a risk review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-5uhqgk": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Framework",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because a framework nobody has confirmed is a framework nobody can build.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-w7z68r": {
+    "plain_language_name": "Take Custody of the Framework Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the framework begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-95beht": {
+    "plain_language_name": "Bind Taxonomy, Scales, and Integration into One Framework",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the framework: the taxonomy, the assessment scales, and the governance integration are consolidated into the committed design, approved for build, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because a taxonomy without scales and integration is a filing system for worries - the commit is where they become one framework ready to build.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function binds the taxonomy, scales, and integration into the committed framework design."
+    }
+  },
+  "processes:task-ge-design-verify-s2cttm": {
+    "plain_language_name": "Hold the Framework Against the Standards Before Approval",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a framework approved short of the standards would misdirect the build from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-kbuvzf": {
+    "plain_language_name": "Lay the Scales Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The scales' design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the scales' design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a risk review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-ptdrst": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Scales",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because scales nobody has confirmed are scales nobody can measure by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-juuxbs": {
+    "plain_language_name": "Take Custody of the Scales Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the scales begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-4xtk9k": {
+    "plain_language_name": "Set How Each Classified Risk Will Be Measured",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the scales: the likelihood, impact, and velocity measures used to evaluate the classified risks are designed against the taxonomy and the tolerance bands, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because a risk classified but unmeasurable is a risk argued about forever - the scales are what make the arguments end.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function designs the likelihood, impact, and velocity measures against the taxonomy and tolerance bands."
+    }
+  },
+  "processes:task-ge-design-verify-jnaabw": {
+    "plain_language_name": "Hold the Scales Against the Standards Before They Weigh",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because scales designed short of the standards would weigh unfairly from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-cz5anh": {
+    "plain_language_name": "Lay the Integration Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The integration's design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the integration's design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-tj7g3d": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Integration",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because an integration nobody has confirmed is an integration nobody can build.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-sbjv44": {
+    "plain_language_name": "Take Custody of the Integration Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the integration begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-gdhcse": {
+    "plain_language_name": "Wire the Risk Framework into the Governance System",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the integration: the reporting lines, escalation paths, and body mandates through which the risk framework reaches the governance system are designed, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because a risk framework that stops at the risk team is a framework that warns nobody who can act - the integration is what wires it to the people who can.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function designs the reporting lines, escalation paths, and body mandates that wire the framework to governance."
+    }
+  },
+  "processes:task-ge-design-verify-wnbzp7": {
+    "plain_language_name": "Hold the Integration Against the Standards Before It Connects",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because an integration designed short of the standards would connect the wrong doors from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-design-record-t3zad2": {
+    "plain_language_name": "Lay the Taxonomy Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the design-ready artefact, the completion confirmation, and whatever remediations were raised. The taxonomy's design stays provable for as long as the design endures.",
+    "business_purpose": "It exists so the taxonomy's design can be evidenced for as long as the design endures.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a risk review would consult."
+    }
+  },
+  "processes:task-ge-design-confirm-k4h6a7": {
+    "plain_language_name": "Reconcile the Artefact and Confirm the Taxonomy",
+    "plain_language_description": "When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.",
+    "business_purpose": "It exists because a taxonomy nobody has confirmed is a taxonomy nobody can classify by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance."
+    }
+  },
+  "processes:task-ge-design-intake-ayxmj6": {
+    "plain_language_name": "Take Custody of the Taxonomy Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the design pack \u2014 the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements \u2014 and writes the manifest that ties the pack into the case file for the design.",
+    "business_purpose": "It exists so the taxonomy begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-design-transform-b5t7p4": {
+    "plain_language_name": "Give the Enterprise's Risks Their Classes",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the design for the taxonomy: the classes and structure by which the enterprise's risks will be organised are designed under the committed direction, and the design-ready artefact is produced for confirmation.",
+    "business_purpose": "It exists because risks that share no language cannot be compared, aggregated, or governed together - the taxonomy is that language.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function designs the classes and structure that organise the enterprise's risks."
+    }
+  },
+  "processes:task-ge-design-verify-wghuey": {
+    "plain_language_name": "Hold the Taxonomy Against the Standards Before It Classifies",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the architecture's standards and the delegation contract, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a taxonomy designed short of the standards would misclassify from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the strategy function reads the pack against the architecture's standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-khr28p": {
+    "plain_language_name": "Lay the Improvement Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The improvement's making stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the improvement's making can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-tvyxvs": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Improvements",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because improvements nobody has confirmed are improvements nobody can adopt.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-npr937": {
+    "plain_language_name": "Take Custody of the Improvement Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack \u2014 the finding register, the effectiveness-review scope, and the policy-gap inventory \u2014 and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the improvement begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-v8265y": {
+    "plain_language_name": "Bind the Gaps, the Standards, and the Posture into One Commitment",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the commitment: the measured gaps, the standard updates, and the strengthened posture are consolidated into the committed improvements, ready for adoption, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because gaps, standards, and posture reviewed separately improve nothing - the commit is where they become one set of changes the enterprise adopts.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function binds the measured gaps, standard updates, and posture strengthening into the committed improvements."
+    }
+  },
+  "processes:task-ge-improve-verify-mndyf9": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Commit",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because improvements committed short of the audit method would unravel under the first real review - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-sucudk": {
+    "plain_language_name": "Lay the Gaps Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The gaps' measuring stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the gaps' measuring can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-v9cu3e": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Gaps",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because gaps nobody has confirmed are gaps nobody can close.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-y4gcfq": {
+    "plain_language_name": "Take Custody of the Gaps Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack \u2014 the finding register, the effectiveness-review scope, and the policy-gap inventory \u2014 and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the gaps are measured from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-a62339": {
+    "plain_language_name": "Bound What the Findings Say the Policies Lack",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the gaps: what the audit findings and the operating evidence reveal the policies to lack is measured and bounded into the gap register, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a gap felt but unmeasured is a gap argued about forever - the measuring is what turns the feeling into a workable number.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function measures what the findings and operating evidence reveal the policies to lack."
+    }
+  },
+  "processes:task-ge-improve-verify-w8wsvn": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Gaps",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because gaps measured short of the audit method would misdirect the improving from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-9q4p6u": {
+    "plain_language_name": "Lay the Posture Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The posture's strengthening stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the posture's strengthening can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-wpsu74": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Posture",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because a posture nobody has confirmed is a posture nobody can stand on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-hznbyk": {
+    "plain_language_name": "Take Custody of the Posture Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack \u2014 the finding register, the effectiveness-review scope, and the policy-gap inventory \u2014 and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the posture begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-sdwufa": {
+    "plain_language_name": "Raise the Compliance the Updated Standards Demand",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the posture: the compliance stance is strengthened in light of the updated standards and the measured gaps, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because standards move and postures stay - the strengthening is what closes the distance before the regime notices.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function strengthens the compliance stance against the updated standards and the measured gaps."
+    }
+  },
+  "processes:task-ge-improve-verify-fatqaz": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Posture",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a posture strengthened short of the audit method would wobble under the first review - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  }
+}

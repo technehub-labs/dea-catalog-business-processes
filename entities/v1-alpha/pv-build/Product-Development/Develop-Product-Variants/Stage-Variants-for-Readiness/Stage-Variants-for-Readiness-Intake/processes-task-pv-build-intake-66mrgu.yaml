@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Verified Variants'
+plain_language_description: 'The staging work opens with the verified variants arriving to be made ready for market preparation. The intake custodian logs them against the staging file so the staging starts accounted for.'
+business_purpose: 'It exists because variants staged from an unverified set carry defects into market preparation.'
+practical_context: 'It opens when the activity''s input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in product management logs the verified variants into the staging file.'

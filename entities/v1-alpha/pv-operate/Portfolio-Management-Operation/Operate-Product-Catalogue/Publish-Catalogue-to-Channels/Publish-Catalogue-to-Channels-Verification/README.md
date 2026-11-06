@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Publish Catalogue to Channels Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Publish Catalogue to Channels** (`processes:activity-pv-operate-pv7jqd`). Its canonical ID is `processes:task-pv-operate-verify-9myq93`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything reaches a selling channel, the arriving catalogue and setups are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to stop a faulty catalogue or a wrong channel setup from being published to the places where customers buy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the publishing material is ready to be challenged, and it closes with every shortfall written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks the logged catalogue against each channel's setup requirements, and records an incomplete shop-front configuration as a shortfall to be put right before publishing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Catalogue and Channel Setups Before Pushing Them Out |
+| `plain_language_description` | string | no | Before anything reaches a selling channel, the arriving catalogue and setups are put to the test. The verification … |
+| `business_purpose` | string | no | It exists to stop a faulty catalogue or a wrong channel setup from being published to the places where customers buy. |
+| `practical_context` | string | no | It opens once the intake is registered and the publishing material is ready to be challenged, and it closes with every … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

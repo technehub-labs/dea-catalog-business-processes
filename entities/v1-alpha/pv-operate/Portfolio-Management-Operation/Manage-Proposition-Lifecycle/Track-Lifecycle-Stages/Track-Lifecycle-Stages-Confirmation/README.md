@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Track Lifecycle Stages Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Track Lifecycle Stages** (`processes:activity-pv-operate-zk8rc3`). Its canonical ID is `processes:task-pv-operate-confirm-skckdn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the positions are set down, the teams who plan by them are told. The confirmation custodian tells the downstream teams the stage tracking record is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because transition cases and gate preparation both start from the tracked positions, so their users must know when the record has moved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the tracking, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the lifecycle planning teams the refreshed stage tracking record is ready, and closes the reconciliation against what the tracking work promised before the round closes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Stage Tracking Record On |
+| `plain_language_description` | string | no | Once the positions are set down, the teams who plan by them are told. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because transition cases and gate preparation both start from the tracked positions, so their users must know … |
+| `practical_context` | string | no | It opens when processing has finished the tracking, and it closes with confirmation issued, the downstream teams told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

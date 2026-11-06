@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-conceive-v
 
 This is a **Task** (level L4), named **Assess Finance Strategy Context Verification**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Assess Finance Strategy Context** (`processes:activity-fa-conceive-hebg2g`). Its canonical ID is `processes:task-fa-conceive-verify-devvev`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the context is read, the verification custodian checks the state and signals against what assessment requires - that the signals are current and the state reading is complete. Defects are flagged for rejection or repair before the assessment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy is never framed from stale signals about a moving enterprise.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a market signal already superseded and flags the defect before the context is read.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Signals Before Reading the Context |
+| `plain_language_description` | string | no | Before the context is read, the verification custodian checks the state and signals against what assessment requires - … |
+| `business_purpose` | string | no | It exists so the strategy is never framed from stale signals about a moving enterprise. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

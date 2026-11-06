@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-v
 
 This is a **Task** (level L4), named **Align Horizons with Intent Verification**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Align Horizons with Intent** (`processes:activity-sd-conceive-6dbxtu`). Its canonical ID is `processes:task-sd-conceive-verify-tpbxsw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the horizons are aligned, the arriving timeframe and intent material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because aligning horizons against a half-present intent produces timeframes that serve no stated aim.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the alignment material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged timeframes and intent against what the activity requires, and writes up a timeframe missing its milestone set as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Alignment Material Before Aligning the Horizons |
+| `plain_language_description` | string | no | Before the horizons are aligned, the arriving timeframe and intent material is put to the test. The verification … |
+| `business_purpose` | string | no | It exists because aligning horizons against a half-present intent produces timeframes that serve no stated aim. |
+| `practical_context` | string | no | It opens once the intake is registered and the alignment material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

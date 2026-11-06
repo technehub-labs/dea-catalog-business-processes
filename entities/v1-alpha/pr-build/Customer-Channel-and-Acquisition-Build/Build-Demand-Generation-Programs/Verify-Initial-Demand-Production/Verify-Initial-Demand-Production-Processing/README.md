@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-tran
 
 This is a **Task** (level L4), named **Verify Initial Demand Production Processing**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Verify Initial Demand Production** (`processes:activity-pr-build-ppw8cp`). Its canonical ID is `processes:task-pr-build-transform-vzxbj3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the report in hand, the processing custodian produces and measures: the integration surface for the channels carries the programmes, the programme assets are instantiated, and the attribution model is calibrated against the first responses. The evidence is captured as an inventory of build-ready assets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns whether the engine actually generates demand, not merely that it is switched on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function runs the programmes, measures the first demand, and gathers the evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Produce the First Demand and Measure It |
+| `plain_language_description` | string | no | With the report in hand, the processing custodian produces and measures: the integration surface for the channels … |
+| `business_purpose` | string | no | It exists so the enterprise learns whether the engine actually generates demand, not merely that it is switched on. |
+| `practical_context` | string | no | It opens when the verification report clears the build, and it closes with the asset inventory produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

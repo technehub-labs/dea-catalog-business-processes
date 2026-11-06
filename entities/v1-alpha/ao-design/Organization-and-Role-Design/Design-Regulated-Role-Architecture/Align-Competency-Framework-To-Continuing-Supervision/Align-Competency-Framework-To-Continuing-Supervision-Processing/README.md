@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Align Competency Framework To Continuing-Supervision Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Align Competency Framework To Continuing-Supervision** (`processes:activity-ao-design-wnqz3k`). Its canonical ID is `processes:task-ao-design-transform-7ydjtm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the alignment itself: for each licensed role, the competency statements, the assessment cadence, who assesses, and how the entries tie into the continuing-competence programme are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because supervision only has teeth when each licensed role's competencies are aligned to it in writing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be aligned from, and it ends with the aligned competency framework entries produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority aligns each licensed role's competency statements and assessment cadence to the supervision framework, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Align the Competency Entries to the Supervision Framework |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the alignment itself: for each licensed role, the competency … |
+| `business_purpose` | string | no | It exists because supervision only has teeth when each licensed role's competencies are aligned to it in writing. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be aligned from, and it ends with the aligned … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

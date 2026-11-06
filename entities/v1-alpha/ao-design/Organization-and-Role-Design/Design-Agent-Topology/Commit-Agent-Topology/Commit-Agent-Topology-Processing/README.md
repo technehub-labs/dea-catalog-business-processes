@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Commit Agent Topology Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Commit Agent Topology** (`processes:activity-ao-design-pc9dh3`). Its canonical ID is `processes:task-ao-design-transform-tya739`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the design verified, the processing custodian consolidates the topology itself: the designed arrangement is brought together, ratified, and set down in the form the activity defines as the canonical reference downstream activation will work from. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a topology only steers the organisation once it is one committed reference instead of many drafts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified design is ready to be consolidated, and it ends with the committed agent topology produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority consolidates the designed topology into the canonical reference activation will work from, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Topology into the Canonical Reference |
+| `plain_language_description` | string | no | With the design verified, the processing custodian consolidates the topology itself: the designed arrangement is … |
+| `business_purpose` | string | no | It exists because a topology only steers the organisation once it is one committed reference instead of many drafts. |
+| `practical_context` | string | no | It starts once checking is complete and the verified design is ready to be consolidated, and it ends with the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

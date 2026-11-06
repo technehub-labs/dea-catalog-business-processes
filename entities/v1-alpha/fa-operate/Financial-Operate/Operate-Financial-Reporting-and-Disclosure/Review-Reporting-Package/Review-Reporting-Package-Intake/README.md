@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Review Reporting Package Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Review Reporting Package** (`processes:activity-fa-operate-mceyb8`). Its canonical ID is `processes:task-fa-operate-intake-csw9h4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Review opens when the prepared statements, footnotes, and disclosures are handed over together as the package the harsh read will be made over. The intake custodian accepts them, registers them with audit identifiers, and starts the review from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the package is read whole rather than page by trusting page.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the statements, footnotes, and disclosures are presented for the review, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the statements, footnotes, and disclosures as the review baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Statements, Footnotes, and Disclosures |
+| `plain_language_description` | string | no | Review opens when the prepared statements, footnotes, and disclosures are handed over together as the package the harsh … |
+| `business_purpose` | string | no | It exists so the package is read whole rather than page by trusting page. |
+| `practical_context` | string | no | It opens when the statements, footnotes, and disclosures are presented for the review, with the activity owner alerted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

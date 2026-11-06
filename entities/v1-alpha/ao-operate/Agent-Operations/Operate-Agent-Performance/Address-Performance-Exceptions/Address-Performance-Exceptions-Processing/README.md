@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Address Performance Exceptions Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Address Performance Exceptions** (`processes:activity-ao-operate-yyqtzw`). Its canonical ID is `processes:task-ao-operate-transform-24bsd8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the monitoring verified, the processing custodian does the handling itself: each performance exception is addressed - corrected, coached, or escalated as the case demands - and the addressed exceptions are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because monitoring without follow-through is theatre; the exception is where performance is actually managed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified monitoring is ready to be addressed from, and it ends with the addressed exceptions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management works each surfaced exception to a conclusion - correction, coaching, or escalation - recording what was done.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deal with Each Performance Exception Monitoring Surfaces |
+| `plain_language_description` | string | no | With the monitoring verified, the processing custodian does the handling itself: each performance exception is … |
+| `business_purpose` | string | no | It exists because monitoring without follow-through is theatre; the exception is where performance is actually managed. |
+| `practical_context` | string | no | It starts once checking is complete and the verified monitoring is ready to be addressed from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

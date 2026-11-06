@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-i
 
 This is a **Task** (level L4), named **Resolve Beneficial Ownership Intake**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Resolve Beneficial Ownership** (`processes:activity-pr-activate-ncn924`). Its canonical ID is `processes:task-pr-activate-intake-t7vzqw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Ownership work opens with intake: the applicant's party record, the identity documents, and the request packet are received and logged. The intake custodian logs the request against the activation case file so the ownership chain work starts from a documented base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a beneficial-ownership resolution is only credible when the declarations and documents behind it are accounted for.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Activate-stage pack is handed over, and it closes with the manifest registered and the verification custodian in custody.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs a holding company's ownership declarations against the activation case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Ownership Declarations |
+| `plain_language_description` | string | no | Ownership work opens with intake: the applicant's party record, the identity documents, and the request packet are … |
+| `business_purpose` | string | no | It exists because a beneficial-ownership resolution is only credible when the declarations and documents behind it are … |
+| `practical_context` | string | no | It opens when the Activate-stage pack is handed over, and it closes with the manifest registered and the verification … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

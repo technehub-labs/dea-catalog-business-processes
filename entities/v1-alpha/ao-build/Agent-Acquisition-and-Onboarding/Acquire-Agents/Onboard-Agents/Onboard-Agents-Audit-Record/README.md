@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 This is a **Task** (level L4), named **Onboard Agents Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Onboard Agents** (`processes:activity-ao-build-gceqs6`). Its canonical ID is `processes:task-ao-build-record-szc6re`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close, the records custodian preserves the onboarding's audit trail at its required retention tier and establishes the retrieval handles that keep it findable. Each agent's route from acquisition to working readiness stays on file, evidence intact.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each agent's onboarding history remains provable for as long as the evidence must be kept.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian stores the onboarding trail at its retention tier and sets the retrieval handles so a later review can trace any agent's route to readiness.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Onboarding Audit Record |
+| `plain_language_description` | string | no | At the close, the records custodian preserves the onboarding's audit trail at its required retention tier and … |
+| `business_purpose` | string | no | It exists so each agent's onboarding history remains provable for as long as the evidence must be kept. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

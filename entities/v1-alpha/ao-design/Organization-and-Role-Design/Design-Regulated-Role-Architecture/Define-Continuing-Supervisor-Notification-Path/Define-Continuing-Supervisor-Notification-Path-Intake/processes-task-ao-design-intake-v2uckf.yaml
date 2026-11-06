@@ -117,3 +117,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Role Catalogue and Supervision Matrix'
+plain_language_description: 'Path definition opens when the regulator-tied role catalogue and the supervision matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the paths will be defined from.'
+business_purpose: 'It exists so notification paths are defined from a registered catalogue against a registered supervision matrix.'
+practical_context: 'It opens when the role catalogue and supervision matrix are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the role catalogue and supervision matrix as the definition baseline, with audit references.'

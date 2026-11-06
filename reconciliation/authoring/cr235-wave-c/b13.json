@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-conceive-confirm-8ek2hs": {
+    "plain_language_name": "Confirm the Identified Platform Families",
+    "plain_language_description": "When the families stand identified, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The sourcing framing that follows learns the register is settled and the postures can be framed for each family.",
+    "business_purpose": "It exists so sourcing postures are framed only over a register confirmed as identified.",
+    "practical_context": "It begins once preparation is complete and the identified families await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the identified families against the activity's intended outcome and issues the confirmation the sourcing framing needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-fs565y": {
+    "plain_language_name": "Receive the Strategy and Envelope for Family Identification",
+    "plain_language_description": "Family identification opens when the operations strategy and the delivery model envelope are handed over together as the ground the platform families will be identified from. The intake custodian accepts both, registers them with audit identifiers, and starts the identification from a recorded baseline.",
+    "business_purpose": "It exists so platform families are identified from a registered strategy and envelope rather than from vendor catalogues.",
+    "practical_context": "It opens when the strategy and envelope are presented for the identification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the strategy and envelope as the identification baseline, with audit references."
+    }
+  },
+  "processes:task-eo-conceive-transform-w7fhqf": {
+    "plain_language_name": "Name the Platform Families That Will Enable the Model",
+    "plain_language_description": "With the inputs verified, the processing custodian does the identification itself: the technology platform families that will enable the operating model are identified from the strategy and envelope, and the platform family register is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because enablement begins with naming what will do the enabling - the register is where that naming is collected.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be identified from, and it ends with the platform family register produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function identifies the platform families the operating model needs and records the register, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-vg34d9": {
+    "plain_language_name": "Check the Strategy and Envelope Before Naming the Families",
+    "plain_language_description": "Before any family is named, the verification custodian checks the strategy and envelope against what identification requires - that the strategy is the committed one and the envelope bounds are stated. Defects are flagged for rejection or repair before the naming is made.",
+    "business_purpose": "It exists so platform families are never identified against a superseded strategy.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the envelope bounding a superseded strategy and flags the defect before any families are named."
+    }
+  },
+  "processes:task-eo-design-record-thebbs": {
+    "plain_language_name": "File the Delivery Model Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed design contains, and from which pieces it was consolidated, stays on file for the life of the delivery model.",
+    "business_purpose": "It exists so the design's standing as committed authority can be evidenced whenever build leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a build review would draw on."
+    }
+  },
+  "processes:task-eo-design-confirm-t6juf5": {
+    "plain_language_name": "Confirm the Committed Delivery Model Design",
+    "plain_language_description": "When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed design is ready to be received.",
+    "business_purpose": "It exists so build starts only from a design confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed design against the activity's intended outcome and issues the confirmation the build work waits on."
+    }
+  },
+  "processes:task-eo-design-intake-8hrdpe": {
+    "plain_language_name": "Receive the Designed Pieces for the Design Commit",
+    "plain_language_description": "The commit opens when the channel configurations, service-level specification, and fulfilment flow designs are handed over together as the pieces the design must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the design is committed from registered pieces rather than from a loose sheaf of drawings.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the configurations, specification, and flow designs as the commitment baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-eo-design-transform-qkpe5j": {
+    "plain_language_name": "Consolidate the Design into the Committed Delivery Model",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: channels, service levels, and fulfilment flows are brought together into the committed delivery model design, and the committed design is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because designs scattered across documents build nothing - the commit is where the design becomes one authority ready for build.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function consolidates the pieces into the committed delivery model design, ready for build, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-vyb95f": {
+    "plain_language_name": "Check the Pieces Before Committing the Design",
+    "plain_language_description": "Before the design is committed, the verification custodian checks the pieces against what commitment requires - that configurations, service levels, and flows are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the design is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a flow design still carrying open paths and logs the defect before the design is committed."
+    }
+  },
+  "processes:task-eo-design-record-7bejh9": {
+    "plain_language_name": "File the Channel Configuration Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the configuration trail at its required retention tier and sets the retrieval handles for it. How each conceived pattern was bounded into a configuration stays readable whenever a channel's workings are examined.",
+    "business_purpose": "It exists so the configuration of each channel can be evidenced whenever its workings are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the configuration trail at its retention tier and sets the retrieval handles a channel review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-f56n4r": {
+    "plain_language_name": "Confirm the Channel Configuration Set",
+    "plain_language_description": "When the configurations stand made, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The service-level design that follows learns the channels are configured and can be specified against.",
+    "business_purpose": "It exists so service levels are designed only over channels confirmed as configured.",
+    "practical_context": "It begins once preparation is complete and the configuration set awaits their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the configuration set against the activity's intended outcome and issues the confirmation the service-level design needs."
+    }
+  },
+  "processes:task-eo-design-intake-2tggjq": {
+    "plain_language_name": "Receive the Conceived Channel Patterns for Configuration",
+    "plain_language_description": "Configuration opens when the conceived channel patterns are handed over as the patterns to be bounded into working configurations. The intake custodian accepts them, registers them with audit identifiers, and starts the configuration from a recorded baseline.",
+    "business_purpose": "It exists so channels are configured from the conceived patterns rather than from whichever channel is easiest.",
+    "practical_context": "It opens when the conceived patterns are presented for configuration, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the conceived channel patterns as the configuration baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-p96wpq": {
+    "plain_language_name": "Turn the Conceived Patterns into Bounded Configurations",
+    "plain_language_description": "With the patterns verified, the processing custodian does the configuration itself: each conceived channel pattern is bounded into a working channel configuration, and the configuration set is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a conceived pattern promises a way in - the configuration is what decides exactly how the door works.",
+    "practical_context": "It starts once checking is complete and the verified patterns are ready to be configured, and it ends with the channel configuration set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function bounds each conceived channel pattern into a working configuration, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-5d2b8b": {
+    "plain_language_name": "Check the Patterns Before Configuring the Channels",
+    "plain_language_description": "Before anything is configured, the verification custodian checks the patterns against what configuration requires - that every conceived pattern is present and none arrived half-framed. Defects are logged for rejection or repair before any configuration is made.",
+    "business_purpose": "It exists so channels are never configured from patterns that were only partly conceived.",
+    "practical_context": "It runs once the intake is registered and the patterns can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one pattern still carrying open options and logs the defect before any configuration is made."
+    }
+  },
+  "processes:task-eo-design-record-aau6k9": {
+    "plain_language_name": "File the Fulfilment Flow Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the flow-design trail at its required retention tier and sets the retrieval handles for it. Which paths were drawn, between which patterns and configurations, stays readable whenever an order's route is examined.",
+    "business_purpose": "It exists so the flows behind the delivery model can be evidenced whenever a route is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the flow trail at its retention tier and sets the retrieval handles a delivery model review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-aquyt9": {
+    "plain_language_name": "Confirm the Fulfilment Flow Designs",
+    "plain_language_description": "When the flows stand designed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the flows are drawn and the design can be committed.",
+    "business_purpose": "It exists so the design is committed only over flows confirmed as designed.",
+    "practical_context": "It begins once preparation is complete and the flow designs await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the flow designs against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-eo-design-intake-gnsp6m": {
+    "plain_language_name": "Receive the Patterns and Channel Configurations for Flow Design",
+    "plain_language_description": "Flow design opens when the fulfilment patterns and the channel configurations are handed over together as the two inputs the order-to-delivery paths will be drawn between. The intake custodian accepts both, registers them with audit identifiers, and starts the design from a recorded baseline.",
+    "business_purpose": "It exists so flows are designed between registered patterns and registered configurations rather than sketched freehand.",
+    "practical_context": "It opens when the patterns and configurations are presented for the flow design, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the fulfilment patterns and channel configurations as the flow-design baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-etfpy2": {
+    "plain_language_name": "Draw the Paths from Order to Delivery",
+    "plain_language_description": "With the inputs verified, the processing custodian does the design itself: the fulfilment flows realizing the framed patterns are drawn across the channel configurations, and the flow designs are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because patterns and channels only promise - the flows are where an order is shown its actual path to delivery.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be designed across, and it ends with the fulfilment flow designs produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function draws each order-to-delivery path across the configured channels, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-ehpht6": {
+    "plain_language_name": "Check the Inputs Before Drawing the Flows",
+    "plain_language_description": "Before any flow is drawn, the verification custodian checks the patterns and configurations against what flow design requires - that every pattern has its channel configurations to realize it through. Gaps are logged for rejection or repair before the drawing begins.",
+    "business_purpose": "It exists so no flow is drawn between inputs that were never fully settled.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a pattern with no configuration to realize it and logs the gap before the flows are drawn."
+    }
+  },
+  "processes:task-eo-design-record-67unkj": {
+    "plain_language_name": "File the Service-Level Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What targets, measures, and tolerances were set within each envelope stays readable whenever a service promise is examined.",
+    "business_purpose": "It exists so the service levels behind the delivery model can be evidenced whenever a promise is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles a service review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-3e98xw": {
+    "plain_language_name": "Confirm the Service-Level Specification",
+    "plain_language_description": "When the specification stands designed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The fulfilment flow design that follows learns the service levels are specified and the flows can be drawn to meet them.",
+    "business_purpose": "It exists so flows are designed only against service levels confirmed as specified.",
+    "practical_context": "It begins once preparation is complete and the specification awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the service-level specification against the activity's intended outcome and issues the confirmation the flow design needs."
+    }
+  },
+  "processes:task-eo-design-intake-6yh5hj": {
+    "plain_language_name": "Receive the Framed Envelopes for Service-Level Design",
+    "plain_language_description": "Service-level design opens when the framed service-level envelopes are handed over as the bounds the design must stay within. The intake custodian accepts them, registers them with audit identifiers, and starts the design from a recorded baseline.",
+    "business_purpose": "It exists so service levels are designed within the framed bounds rather than beyond them.",
+    "practical_context": "It opens when the framed envelopes are presented for the design, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the framed envelopes as the design baseline, with audit references, and opens the specification work."
+    }
+  },
+  "processes:task-eo-design-transform-98hyq9": {
+    "plain_language_name": "Turn the Envelopes into Measurable Service Levels",
+    "plain_language_description": "With the envelopes verified, the processing custodian does the design itself: targets, measures, and tolerances are worked out within the framed bounds, and the service-level specification is set down in the form the activity defines. Working papers behind the specification are preserved.",
+    "business_purpose": "It exists because an envelope that says only 'fast enough' commits nothing - the design is where bounds become numbers someone can be held to.",
+    "practical_context": "It starts once checking is complete and the verified envelopes are ready to be designed within, and it ends with the service-level specification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function turns each framed envelope into targets, measures, and tolerances, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-k8h872": {
+    "plain_language_name": "Check the Envelopes Before Designing the Service Levels",
+    "plain_language_description": "Before anything is designed, the verification custodian checks the envelopes against what design requires - that each envelope states its response, quality, and availability bounds completely. Defects are logged for rejection or repair before the design is made.",
+    "business_purpose": "It exists so service levels are never designed within bounds that were only partly framed.",
+    "practical_context": "It runs once the intake is registered and the envelopes can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an envelope missing its availability bound and logs the defect before the design begins."
+    }
+  },
+  "processes:task-eo-design-record-64yg2c": {
+    "plain_language_name": "File the Facility Blueprint Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed blueprint contains, and from which pieces it was consolidated, stays on file for the life of the facilities.",
+    "business_purpose": "It exists so the blueprint's standing as committed authority can be evidenced whenever build leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a build review would draw on."
+    }
+  },
+  "processes:task-eo-design-confirm-heacn4": {
+    "plain_language_name": "Confirm the Committed Facility Blueprint",
+    "plain_language_description": "When the blueprint stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed blueprint is ready to be received.",
+    "business_purpose": "It exists so build starts only from a blueprint confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed blueprint awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed blueprint against the activity's intended outcome and issues the confirmation the build work waits on."
+    }
+  },
+  "processes:task-eo-design-intake-m9429c": {
+    "plain_language_name": "Receive the Designed Pieces for the Blueprint Commit",
+    "plain_language_description": "The commit opens when the layout designs, equipment specification, and capacity envelope model are handed over together as the pieces the blueprint must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the blueprint is committed from registered pieces rather than from a loose sheaf of drawings.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the layouts, equipment specification, and capacity model as the commitment baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-eo-design-transform-tfduzv": {
+    "plain_language_name": "Consolidate the Blueprint for the Build",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: layouts, equipment, and capacity are brought together into the committed facility and asset blueprint, and the committed blueprint is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because designs scattered across documents build nothing - the commit is where the blueprint becomes one authority ready for build.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed blueprint produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function consolidates the pieces into the committed facility and asset blueprint, ready for build, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-95tn7j": {
+    "plain_language_name": "Check the Pieces Before Committing the Blueprint",
+    "plain_language_description": "Before the blueprint is committed, the verification custodian checks the pieces against what commitment requires - that layouts, equipment, and capacity are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the blueprint is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the capacity model resting on an earlier layout and logs the defect before the blueprint is committed."
+    }
+  },
+  "processes:task-eo-design-record-6y2emb": {
+    "plain_language_name": "File the Facility Layout Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. How each facility's space was organized, under which principles, stays readable whenever a layout decision is examined.",
+    "business_purpose": "It exists so the layouts behind the blueprint can be evidenced whenever a layout decision is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the layout trail at its retention tier and sets the retrieval handles a facilities review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-mg3cya": {
+    "plain_language_name": "Confirm the Layout Designs",
+    "plain_language_description": "When the layouts stand designed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The equipment specification that follows learns the layouts are settled and equipment can be specified into them.",
+    "business_purpose": "It exists so equipment is specified only into layouts confirmed as designed.",
+    "practical_context": "It begins once preparation is complete and the layout designs await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the layout designs against the activity's intended outcome and issues the confirmation the equipment specification needs."
+    }
+  },
+  "processes:task-eo-design-intake-pf393c": {
+    "plain_language_name": "Receive the Footprint Principles and Operations Model",
+    "plain_language_description": "Layout design opens when the footprint principles and the operations model are handed over together as the ground the layouts will be organized from. The intake custodian accepts both, registers them with audit identifiers, and starts the design from a recorded baseline.",
+    "business_purpose": "It exists so layouts are organized from registered principles and the model rather than from floor-plan habit.",
+    "practical_context": "It opens when the principles and model are presented for layout design, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the footprint principles and operations model as the layout baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-z34pum": {
+    "plain_language_name": "Arrange the Space Each Facility Needs",
+    "plain_language_description": "With the inputs verified, the processing custodian does the design itself: each facility's space is organized to the operating model under the footprint principles, and the layout designs are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because space organized badly taxes every hour worked in it - the layout is where the operating model meets the floor.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be designed from, and it ends with the layout designs produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function organizes each facility's space to the operating model under the principles, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-c85wwy": {
+    "plain_language_name": "Check the Inputs Before Designing the Layouts",
+    "plain_language_description": "Before any layout is designed, the verification custodian checks the principles and model against what layout design requires - that the principles are the framed set and the model states what each facility must host. Defects are logged for rejection or repair before the design is made.",
+    "business_purpose": "It exists so layouts are never organized around a model that was only partly stated.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the model silent on one facility's purpose and logs the defect before layouts are designed."
+    }
+  },
+  "processes:task-eo-design-record-m2kqh6": {
+    "plain_language_name": "File the Capacity Model Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the modelling trail at its required retention tier and sets the retrieval handles for it. What throughput bounds and scaling limits were modelled, and from which inputs, stays readable whenever the blueprint's limits are examined.",
+    "business_purpose": "It exists so the capacity model behind the blueprint can be evidenced whenever its limits are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the modelling trail at its retention tier and sets the retrieval handles a capacity review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-k95drt": {
+    "plain_language_name": "Confirm the Capacity Envelope Model",
+    "plain_language_description": "When the model stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the capacity is modelled and the blueprint can be committed.",
+    "business_purpose": "It exists so the blueprint is committed only over capacity confirmed as modelled.",
+    "practical_context": "It begins once preparation is complete and the capacity model awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the capacity model against the activity's intended outcome and issues the confirmation the blueprint commit needs."
+    }
+  },
+  "processes:task-eo-design-intake-qvjmg4": {
+    "plain_language_name": "Receive the Layouts, Equipment, and Demand Model",
+    "plain_language_description": "Capacity modelling opens when the layout designs, equipment specifications, and demand model are handed over together as the inputs the capacity envelopes will be modelled from. The intake custodian accepts them, registers them with audit identifiers, and starts the modelling from a recorded baseline.",
+    "business_purpose": "It exists so capacity is modelled from the designed arrangements against the demand they must serve.",
+    "practical_context": "It opens when the inputs are presented for the modelling, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the layouts, equipment specification, and demand model as the modelling baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-zknr36": {
+    "plain_language_name": "Work Out What the Blueprint Can Hold",
+    "plain_language_description": "With the inputs verified, the processing custodian does the modelling itself: the throughput bounds and scaling limits of the designed facilities and assets are modelled from the layouts, equipment, and demand, and the capacity envelope model is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a facility without modelled capacity surprises everyone the first busy season - the model is where the limits are found on paper first.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be modelled from, and it ends with the capacity envelope model produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function models the throughput bounds and scaling limits of each designed facility, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-yd7x8b": {
+    "plain_language_name": "Check the Inputs Before Modelling the Capacity",
+    "plain_language_description": "Before any capacity is modelled, the verification custodian checks the inputs against what modelling requires - that the layouts and equipment are the designed sets and the demand model is the current one. Defects are logged for rejection or repair before the modelling begins.",
+    "business_purpose": "It exists so capacity is never modelled from superseded layouts or a stale demand picture.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the demand model a season behind and logs the defect before any capacity is modelled."
+    }
+  },
+  "processes:task-eo-design-record-stym32": {
+    "plain_language_name": "File the Equipment Specification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the specification trail at its required retention tier and sets the retrieval handles for it. Which equipment was specified for which layout, to what standard, stays readable whenever a procurement choice is examined.",
+    "business_purpose": "It exists so the specification behind every procurement can be evidenced whenever a choice is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the specification trail at its retention tier and sets the retrieval handles a procurement review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-nfah3v": {
+    "plain_language_name": "Confirm the Equipment Specification",
+    "plain_language_description": "When the specification stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The capacity modelling that follows learns the equipment is specified and the envelopes can be modelled from it.",
+    "business_purpose": "It exists so capacity is modelled only over equipment confirmed as specified.",
+    "practical_context": "It begins once preparation is complete and the specification awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the equipment specification against the activity's intended outcome and issues the confirmation the capacity modelling needs."
+    }
+  },
+  "processes:task-eo-design-intake-nmmguw": {
+    "plain_language_name": "Receive the Layout Designs and Lifecycle Envelopes",
+    "plain_language_description": "Specification opens when the layout designs and the asset lifecycle envelopes are handed over together as the frame each piece of equipment must be specified within. The intake custodian accepts both, registers them with audit identifiers, and starts the specification from a recorded baseline.",
+    "business_purpose": "It exists so equipment is specified into designed layouts under the lifecycle postures, not bought ad hoc.",
+    "practical_context": "It opens when the layouts and envelopes are presented for specification, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the layout designs and lifecycle envelopes as the specification baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-3mah3f": {
+    "plain_language_name": "State Which Equipment Fills Each Layout",
+    "plain_language_description": "With the inputs verified, the processing custodian does the specification itself: the equipment populating each designed layout is specified to the standard the lifecycle envelopes demand, and the equipment specification is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because layouts with unspecified equipment are empty rooms - the specification is what names every piece that fills them.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be specified from, and it ends with the equipment specification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function names every piece of equipment each layout needs, to the standard the envelopes demand, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-xsnx4h": {
+    "plain_language_name": "Check the Layouts and Envelopes Before Specifying Equipment",
+    "plain_language_description": "Before anything is specified, the verification custodian checks the layouts and envelopes against what specification requires - that every layout position has a purpose and the envelopes cover the equipment classes involved. Defects are logged for rejection or repair before the specification is made.",
+    "business_purpose": "It exists so equipment is never specified into layouts that were never fully designed.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a layout position with no stated purpose and logs the defect before equipment is specified."
+    }
+  },
+  "processes:task-eo-design-record-vvz5sp": {
+    "plain_language_name": "File the Logistics Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed design contains, and from which pieces it was consolidated, stays on file for the life of the network.",
+    "business_purpose": "It exists so the logistics design's standing as committed authority can be evidenced whenever build leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a build review would draw on."
+    }
+  },
+  "processes:task-eo-design-confirm-6c8xz9": {
+    "plain_language_name": "Confirm the Committed Logistics Design",
+    "plain_language_description": "When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed logistics design is ready to be received.",
+    "business_purpose": "It exists so build starts only from a logistics design confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed logistics design against the activity's intended outcome and issues the confirmation the build work waits on."
+    }
+  },
+  "processes:task-eo-design-intake-pgz4m8": {
+    "plain_language_name": "Receive the Designed Pieces for the Logistics Commit",
+    "plain_language_description": "The commit opens when the transport modes, routing logic, and node positions are handed over together as the pieces the logistics design must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the design is committed from registered pieces rather than from a loose sheaf of drawings.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the transport modes, routing logic, and node positions as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-eo-design-transform-q96uev": {
+    "plain_language_name": "Consolidate the Logistics Design for the Build",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: transport modes, routing logic, and node positions are brought together into the committed logistics and routing design, and the committed design is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because designs scattered across documents build nothing - the commit is where the logistics design becomes one authority ready for build.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed logistics design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function consolidates the pieces into the committed logistics and routing design, ready for build, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-5kf4yu": {
+    "plain_language_name": "Check the Pieces Before Committing the Logistics Design",
+    "plain_language_description": "Before the design is committed, the verification custodian checks the pieces against what commitment requires - that modes, routing, and positions are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the design is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the node positions still carrying alternatives and logs the defect before the design is committed."
+    }
+  },
+  "processes:task-eo-design-record-zn4ddp": {
+    "plain_language_name": "File the Routing Logic Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What rules were set, honouring which commitments, stays readable whenever a routing decision is examined.",
+    "business_purpose": "It exists so the routing logic behind the network's behaviour can be evidenced whenever a routing decision is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the routing trail at its retention tier and sets the retrieval handles a logistics review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-tf4y8r": {
+    "plain_language_name": "Confirm the Routing Logic Specification",
+    "plain_language_description": "When the logic stands designed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the routing is specified and the design can be committed.",
+    "business_purpose": "It exists so the design is committed only over logic confirmed as specified.",
+    "practical_context": "It begins once preparation is complete and the routing specification awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the routing specification against the activity's intended outcome and issues the confirmation the design commit needs."
+    }
+  },
+  "processes:task-eo-design-intake-vf2j2z": {
+    "plain_language_name": "Receive the Mode Selections and Service-Level Designs",
+    "plain_language_description": "Routing design opens when the transport mode selections and service-level designs are handed over as the requirements the routing logic must honour. The intake custodian accepts them, registers them with audit identifiers, and starts the design from a recorded baseline.",
+    "business_purpose": "It exists so routing logic is designed against registered mode and service commitments rather than against habit.",
+    "practical_context": "It opens when the mode selections and designs are presented for routing design, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the mode selections and service-level designs as the routing baseline, with audit references, and opens the design work."
+    }
+  },
+  "processes:task-eo-design-transform-n5qx6u": {
+    "plain_language_name": "Set the Rules for How Flows Traverse the Network",
+    "plain_language_description": "With the requirements verified, the processing custodian does the design itself: the routing rules and algorithms governing how flows traverse the network are worked out and set down in the form the activity defines. Working papers behind the logic are preserved.",
+    "business_purpose": "It exists because nodes and carriers only move goods when the routing tells them how - the logic is the network's mind.",
+    "practical_context": "It starts once checking is complete and the verified requirements are ready to be designed from, and it ends with the routing logic specification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function sets the rules each flow follows through the network, honouring the mode and service commitments, keeping the working papers."
+    }
+  },
+  "processes:task-eo-design-verify-d2djdx": {
+    "plain_language_name": "Check the Requirements Before Designing the Routing",
+    "plain_language_description": "Before any routing is designed, the verification custodian checks the mode selections and designs against what routing design requires - that every designed mode carries its service level and none is left unstated. Defects are logged for rejection or repair before the design is made.",
+    "business_purpose": "It exists so routing is never designed against commitments that were only partly stated.",
+    "practical_context": "It runs once the intake is registered and the requirements can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a mode with no service level behind it and logs the defect before routing is designed."
+    }
+  },
+  "processes:task-eo-design-record-sznnbz": {
+    "plain_language_name": "File the Node Position Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the positioning trail at its required retention tier and sets the retrieval handles for it. Where each node was placed, and from which design and geography, stays readable whenever the network's footprint is examined.",
+    "business_purpose": "It exists so the placement of each node can be evidenced whenever the network's footprint is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the positioning trail at its retention tier and sets the retrieval handles a logistics review would consult."
+    }
+  },
+  "processes:task-eo-design-confirm-vcjktc": {
+    "plain_language_name": "Confirm the Node Position Plan",
+    "plain_language_description": "When the nodes stand positioned, the confirmation custodian reconciles the position plan against the outcome the activity set out to reach and issues the confirmation. The routing design that follows learns the nodes are placed and the logic can be designed across them.",
+    "business_purpose": "It exists so routing is designed only over a position plan confirmed as placed.",
+    "practical_context": "It begins once preparation is complete and the position plan awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the node position plan against the activity's intended outcome and issues the confirmation the routing design needs."
+    }
+  },
+  "processes:task-eo-design-intake-quw8rm": {
+    "plain_language_name": "Receive the Delivery Model Design and Demand Geography",
+    "plain_language_description": "Node positioning opens when the delivery model design and the demand geography are handed over together as the two inputs the node positions will be planned from. The intake custodian accepts both, registers them with audit identifiers, and starts the positioning from a recorded baseline.",
+    "business_purpose": "It exists so nodes are positioned from the design and the demand rather than from available real estate.",
+    "practical_context": "It opens when the design and geography are presented for positioning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the delivery model design and demand geography as the positioning baseline, with audit references."
+    }
+  },
+  "processes:task-eo-design-transform-6dsd5y": {
+    "plain_language_name": "Place the Nodes the Logistics Design Requires",
+    "plain_language_description": "With the inputs verified, the processing custodian does the positioning itself: the warehouses, hubs, and cross-docks the logistics design requires are positioned against the demand geography, and the node position plan is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because goods cannot flow through a network whose nodes were never placed - positioning is where the network gets its skeleton.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be positioned from, and it ends with the node position plan produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function places the warehouses, hubs, and cross-docks against the demand geography, keeping the working papers."
+    }
+  }
+}

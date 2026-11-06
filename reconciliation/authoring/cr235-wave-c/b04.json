@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-design-verify-zau576": {
+    "plain_language_name": "Check the Candidates Before Deciding the Placements",
+    "plain_language_description": "Before any placement is decided, the verification custodian checks the classified candidates against what deciding requires - that every candidate carries its classification and enough context to be placed with confidence. Shortfalls are written up for rejection or repair before any placement is made.",
+    "business_purpose": "It exists so substrate decisions are never made over candidates that arrived incompletely classified.",
+    "practical_context": "It runs once the intake is registered and the candidates can be compared with the activity's requirements, and it finishes with them verified or their shortfalls logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a candidate whose classification note is missing and logs the shortfall before any placement is decided."
+    }
+  },
+  "processes:task-ao-design-record-zyg6gk": {
+    "plain_language_name": "File the Coordination Pattern Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the pattern-design trail at its required retention tier and sets the retrieval handles for it. How the placed agents were designed to work together stays readable whenever coordination in the live topology is examined.",
+    "business_purpose": "It exists so the designed patterns behind the topology can be evidenced whenever coordination is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the pattern trail at its retention tier and sets the retrieval handles a topology review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-3nfstf": {
+    "plain_language_name": "Confirm the Designed Coordination Patterns",
+    "plain_language_description": "When the patterns stand designed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The topology consolidation that follows learns the patterns are settled and ready to be committed into the canonical reference.",
+    "business_purpose": "It exists so the topology is committed only over patterns confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the designed patterns await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the designed patterns against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-ao-design-intake-mf3f4b": {
+    "plain_language_name": "Receive the Decided Placements for Pattern Design",
+    "plain_language_description": "Pattern design opens when the decided substrate placements are handed over as the arrangement the patterns must connect. The intake custodian accepts the handover, registers it with audit identifiers, and starts the design work from a recorded baseline.",
+    "business_purpose": "It exists so coordination patterns are designed over a registered placement arrangement rather than an assumed one.",
+    "practical_context": "It opens when the decided placements are presented for pattern design, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the decided placements as the pattern-design baseline, with audit references, and opens the design work."
+    }
+  },
+  "processes:task-ao-design-transform-7ujjjv": {
+    "plain_language_name": "Design the Patterns Between the Placed Agents",
+    "plain_language_description": "With the placements verified, the processing custodian designs the patterns themselves: how the placed human, artificial, and hybrid agents hand work to each other, escalate, and stay in step is worked out and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because placements are only a roster until the patterns of working together are designed.",
+    "practical_context": "It starts once checking is complete and the verified placements are ready to be designed over, and it ends with the designed coordination patterns produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority designs how the placed agents hand over, escalate, and stay in step, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-qzmjhx": {
+    "plain_language_name": "Check the Placements Before Designing the Patterns",
+    "plain_language_description": "Before any pattern is designed, the verification custodian checks the decided placements against what pattern design requires - that each placed agent is settled enough to be connected to others. Defects are logged for rejection or repair before any pattern is drawn.",
+    "business_purpose": "It exists so coordination is never designed around placements that were not settled to begin with.",
+    "practical_context": "It runs once the intake is registered and the placements can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one placement still marked provisional and logs the defect before any pattern is designed around it."
+    }
+  },
+  "processes:task-ao-design-record-bn4ud5": {
+    "plain_language_name": "File the Assessment Anchoring Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the anchoring trail at its required retention tier and sets the retrieval handles for it. How each level's assessment was anchored stays readable whenever assessment outcomes are later disputed.",
+    "business_purpose": "It exists so the anchors behind every assessment can be evidenced whenever a result is challenged.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the anchoring trail at its retention tier and sets the retrieval handles a disputed assessment review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-bzxs5w": {
+    "plain_language_name": "Confirm the Anchored Competency Assessment",
+    "plain_language_description": "When the anchors stand set, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The framework consolidation that follows learns the anchored assessment is ready to be committed.",
+    "business_purpose": "It exists so the framework is committed only with assessment anchors confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the anchored assessment awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the anchored assessment against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-ao-design-intake-b4mktb": {
+    "plain_language_name": "Receive the Proficiency Levels for Assessment Anchoring",
+    "plain_language_description": "Anchoring opens when the defined proficiency levels are handed over as the scale the assessments must be pinned to. The intake custodian accepts them, registers the handover with audit identifiers, and starts the anchoring work from a recorded baseline.",
+    "business_purpose": "It exists so assessments are anchored to a registered set of levels rather than to judgement alone.",
+    "practical_context": "It opens when the proficiency levels are presented for the anchoring, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the defined levels as the anchoring baseline, with audit references, and opens the anchoring work."
+    }
+  },
+  "processes:task-ao-design-transform-yvnzxg": {
+    "plain_language_name": "Anchor How Proficiency Is Assessed at Each Level",
+    "plain_language_description": "With the levels verified, the processing custodian sets the anchors themselves: how proficiency is assessed at each defined level is worked out and set down in the form the activity defines. Working papers behind the anchors are preserved for audit.",
+    "business_purpose": "It exists because levels only mean something once the evidence for holding each one is fixed in advance.",
+    "practical_context": "It starts once checking is complete and the verified levels are ready to be anchored, and it ends with the anchored competency assessment produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian pins the assessment evidence to each proficiency level, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-design-verify-wkeahr": {
+    "plain_language_name": "Check the Levels Before Anchoring the Assessment",
+    "plain_language_description": "Before any anchor is set, the verification custodian checks the proficiency levels against what anchoring requires - that each level is distinct enough to anchor an assessment to. Defects are logged for rejection or repair before any anchor is placed.",
+    "business_purpose": "It exists so assessments are never pinned to levels that blur into one another.",
+    "practical_context": "It runs once the intake is registered and the levels can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds two adjacent levels described almost identically and logs the defect before anchors are placed."
+    }
+  },
+  "processes:task-ao-design-record-rprfb5": {
+    "plain_language_name": "File the Competency Framework Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the consolidation trail at its required retention tier and sets the retrieval handles for it. What was committed as the framework, and on whose confirmation, stays on file for the life of the framework.",
+    "business_purpose": "It exists so the framework's standing as committed guidance can be evidenced whenever capability is assessed against it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the consolidation trail at its retention tier and sets the retrieval handles a capability review would draw on."
+    }
+  },
+  "processes:task-ao-design-confirm-xrgxfr": {
+    "plain_language_name": "Confirm the Committed Competency Framework",
+    "plain_language_description": "When the framework stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work downstream learns the committed framework is ready to be received.",
+    "business_purpose": "It exists so downstream design starts only from a framework confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed framework awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed framework against the activity's intended outcome and issues the confirmation the downstream design waits on."
+    }
+  },
+  "processes:task-ao-design-intake-pwbwyx": {
+    "plain_language_name": "Receive the Anchored Assessment for Framework Consolidation",
+    "plain_language_description": "Consolidation opens when the anchored competency assessment is handed over as the last piece of the framework. The intake custodian accepts it, registers the handover with audit identifiers, and puts the consolidation on a recorded footing.",
+    "business_purpose": "It exists so the framework is consolidated from a registered set of pieces rather than from loose papers.",
+    "practical_context": "It opens when the anchored assessment is presented for consolidation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the anchored assessment as the consolidation baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-ao-design-transform-s9agsy": {
+    "plain_language_name": "Consolidate the Competency Framework",
+    "plain_language_description": "With the assessment verified, the processing custodian consolidates the framework itself: domains, levels, and anchors are brought together, ratified, and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because domains and levels only govern capability once they stand as one committed framework.",
+    "practical_context": "It starts once checking is complete and the verified assessment is ready to be consolidated, and it ends with the committed competency framework produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority brings domains, levels, and anchors together into the committed framework, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-p4mvsz": {
+    "plain_language_name": "Check the Assessment Before Consolidating the Framework",
+    "plain_language_description": "Before the framework is consolidated, the verification custodian checks the anchored assessment against what consolidation requires - that domains, levels, and anchors together make a complete, coherent framework. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the organisation never commits a competency framework assembled from incomplete pieces.",
+    "practical_context": "It runs once the intake is registered and the assessment can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a domain whose levels lack anchors and logs the defect before the framework is consolidated."
+    }
+  },
+  "processes:task-ao-design-record-9nsj3m": {
+    "plain_language_name": "File the Proficiency Level Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the definition trail at its required retention tier and sets the retrieval handles for it. What levels were set within each domain, and on what basis, remains readable whenever the scales are applied or challenged.",
+    "business_purpose": "It exists so the levels within each domain can be evidenced whenever assessments against them are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the definition trail at its retention tier and sets the retrieval handles an assessment review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-j2dwmn": {
+    "plain_language_name": "Confirm the Defined Proficiency Levels",
+    "plain_language_description": "When the levels stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The assessment work that follows learns the levels are settled and ready to be anchored.",
+    "business_purpose": "It exists so assessment is anchored only to levels confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the defined levels await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the defined levels against the activity's intended outcome and issues the confirmation the anchoring step depends on."
+    }
+  },
+  "processes:task-ao-design-intake-t8jfr5": {
+    "plain_language_name": "Receive the Competency Domains for Level Definition",
+    "plain_language_description": "Level definition opens when the identified competency domains are handed over as the ground the levels will be cut into. The intake custodian accepts them, registers the handover with audit identifiers, and starts the definition work on a recorded footing.",
+    "business_purpose": "It exists so proficiency levels are defined within a registered set of domains rather than free-floating.",
+    "practical_context": "It opens when the competency domains are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the identified domains as the definition baseline, with audit references, and opens the levelling work."
+    }
+  },
+  "processes:task-ao-design-transform-yk42nn": {
+    "plain_language_name": "Define the Proficiency Levels Within Each Domain",
+    "plain_language_description": "With the domains verified, the processing custodian does the definition itself: the proficiency levels within each competency domain are worked out and set down in the form the activity defines. The working papers behind each scale are preserved for audit.",
+    "business_purpose": "It exists because a domain without levels cannot say how well anyone actually performs within it.",
+    "practical_context": "It starts once checking is complete and the verified domains are ready to be levelled, and it ends with the defined proficiency levels produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian cuts the proficiency scale within each competency domain, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-design-verify-ybxqa5": {
+    "plain_language_name": "Check the Domains Before Defining the Levels",
+    "plain_language_description": "Before any level is defined, the verification custodian checks the competency domains against what definition requires - that each domain is settled enough to carry a scale of proficiency. Gaps are logged for rejection or repair before any level is cut.",
+    "business_purpose": "It exists so no domain ends up levelled before it has been settled as a domain.",
+    "practical_context": "It runs once the intake is registered and the domains can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one domain described too loosely to level and logs the gap before definition proceeds."
+    }
+  },
+  "processes:task-ao-design-record-krw3ga": {
+    "plain_language_name": "File the Competency Domain Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the identification trail at its required retention tier and sets the retrieval handles for it. Which domains were identified, and from what structure reading, stays provable whenever the framework is examined.",
+    "business_purpose": "It exists so the domains behind the framework can be evidenced against the structure that required them.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the identification trail at its retention tier and sets the retrieval handles a framework review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-mdn6mm": {
+    "plain_language_name": "Confirm the Identified Competency Domains",
+    "plain_language_description": "When the domains stand identified, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The proficiency work that follows learns the domains are settled and available to be levelled.",
+    "business_purpose": "It exists so proficiency levels are defined only over domains confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the identified domains await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the identified domains against the activity's intended outcome and issues the confirmation the proficiency step needs."
+    }
+  },
+  "processes:task-ao-design-intake-38e936": {
+    "plain_language_name": "Receive the Structure Design for Domain Identification",
+    "plain_language_description": "The framework work opens when the committed organization structure design is handed over as the structure whose competency domains must be identified. The intake custodian accepts it, registers it with audit identifiers, and starts the identification from a recorded baseline.",
+    "business_purpose": "It exists so competency domains are identified from the committed structure rather than from a generic list.",
+    "practical_context": "It opens when the structure design is presented for the identification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed structure design as the identification baseline, with audit references, and opens the framework work."
+    }
+  },
+  "processes:task-ao-design-transform-jrvse3": {
+    "plain_language_name": "Identify the Competency Domains the Structure Requires",
+    "plain_language_description": "With the design verified, the processing custodian makes the identification itself: the competency domains the designed organization structure requires are read off the design and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a structure only performs when the capabilities it depends on have been named and grouped.",
+    "practical_context": "It starts once checking is complete and the verified design is ready to be read from, and it ends with the identified competency domains produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority reads the competency domains the structure requires off the committed design, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-wjb4rn": {
+    "plain_language_name": "Check the Structure Design Before Identifying the Domains",
+    "plain_language_description": "Before any domain is identified, the verification custodian checks the structure design against what identification requires - that its roles and units are settled enough for their competency needs to be read off. Gaps are logged for rejection or repair before any domain is named.",
+    "business_purpose": "It exists so the framework is never built on domains read from an unsettled structure.",
+    "practical_context": "It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a new unit the design does not yet describe and logs the gap before any domain is identified for it."
+    }
+  },
+  "processes:task-ao-design-record-n46zr7": {
+    "plain_language_name": "File the Authority Chain Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the bounding trail at its required retention tier and sets the retrieval handles for it. Where each chain runs and how far delegation reaches stays readable whenever authority in the structure is questioned.",
+    "business_purpose": "It exists so the authority and delegation limits set for the structure can be evidenced whenever they are tested.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the authority trail at its retention tier and sets the retrieval handles a governance review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-v7vrz2": {
+    "plain_language_name": "Confirm the Bounded Authority Chains",
+    "plain_language_description": "When the chains stand bounded, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The review step that follows learns the chains are fixed and the structure is ready to be reviewed against the model.",
+    "business_purpose": "It exists so the structure is reviewed only once its authority has been confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded chains await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded chains against the activity's intended outcome and issues the confirmation the review step depends on."
+    }
+  },
+  "processes:task-ao-design-intake-5nfdj9": {
+    "plain_language_name": "Receive the Drafted Architecture for Authority Work",
+    "plain_language_description": "Authority bounding opens when the drafted organizational architecture is handed over as the structure the chains must run through. The intake custodian accepts it, registers the handover with audit identifiers, and starts the bounding work on a recorded footing.",
+    "business_purpose": "It exists so authority chains are bounded over a registered architecture rather than over informal lines.",
+    "practical_context": "It opens when the drafted architecture is presented for the authority work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the drafted architecture as the authority baseline, with audit references, and opens the bounding work."
+    }
+  },
+  "processes:task-ao-design-transform-twym52": {
+    "plain_language_name": "Bound the Authority Chains and Delegation Limits",
+    "plain_language_description": "With the architecture verified, the processing custodian bounds the chains themselves: the lines of authority and the delegation limits across the drafted architecture are worked out and fixed in the form the activity defines. Working papers behind each bound are preserved.",
+    "business_purpose": "It exists because an architecture without settled authority invites every decision to become an argument.",
+    "practical_context": "It starts once checking is complete and the verified architecture is ready to be bounded, and it ends with the bounded authority chains produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian fixes the authority lines and delegation limits across the drafted architecture, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-design-verify-ujng66": {
+    "plain_language_name": "Check the Architecture Before Bounding the Chains",
+    "plain_language_description": "Before any chain is bounded, the verification custodian checks the drafted architecture against what the authority work requires - that every unit sits in a settled place from which a chain of authority can run. Defects are logged for rejection or repair before any chain is fixed.",
+    "business_purpose": "It exists so authority is never bounded through a unit whose place in the architecture was never settled.",
+    "practical_context": "It runs once the intake is registered and the architecture can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a unit hanging outside any settled arrangement and logs the defect before chains are bounded through it."
+    }
+  },
+  "processes:task-ao-design-record-54wxn4": {
+    "plain_language_name": "File the Structure Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What structure was committed, within which bounds, and on whose confirmation, stays on file for the life of the design.",
+    "business_purpose": "It exists so the structure's standing as committed design can be evidenced whenever the enterprise built on it is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a later design review would draw on."
+    }
+  },
+  "processes:task-ao-design-confirm-hqgx6s": {
+    "plain_language_name": "Confirm the Committed Organization Structure Design",
+    "plain_language_description": "When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The catalogue, framework, and topology work downstream learns the committed structure is ready to be received.",
+    "business_purpose": "It exists so downstream design starts only from a structure confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed structure against the activity's intended outcome and issues the confirmation the downstream design waits on."
+    }
+  },
+  "processes:task-ao-design-intake-vb796d": {
+    "plain_language_name": "Receive the Reviewed Design for Structure Commitment",
+    "plain_language_description": "Commitment opens when the reviewed structure design is handed over as the arrangement the enterprise will build on. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.",
+    "business_purpose": "It exists so the structure is committed from a registered reviewed design rather than from a working draft.",
+    "practical_context": "It opens when the reviewed design is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the reviewed design as the commitment baseline, with audit references, and opens the commitment work."
+    }
+  },
+  "processes:task-ao-design-transform-nz53k3": {
+    "plain_language_name": "Commit the Structure Design for Catalogue, Framework, and Topology Work",
+    "plain_language_description": "With the design verified, the processing custodian works the commitment itself: the reviewed structure design is ratified and set down in the form the activity defines, ready to be handed onward to role catalogue, competency framework, and agent topology design. Working papers are preserved.",
+    "business_purpose": "It exists because the structure only directs the rest of design once it is committed and handed onward.",
+    "practical_context": "It starts once checking is complete and the verified design is ready to be committed, and it ends with the committed organization structure design produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian ratifies the reviewed structure and sets it down for role catalogue, competency, and topology design to receive, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-cud338": {
+    "plain_language_name": "Check the Reviewed Design Before Structure Commitment",
+    "plain_language_description": "Before the structure is committed, the verification custodian checks the reviewed design against what commitment requires - that the review's findings have been resolved and the design hangs together as one coherent arrangement. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the enterprise never builds on a structure design committed with its review unresolved.",
+    "practical_context": "It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a review finding left unresolved and logs it for repair before the structure is committed."
+    }
+  },
+  "processes:task-ao-design-record-43apat": {
+    "plain_language_name": "File the Architecture Draft Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the drafting trail at its required retention tier and sets the retrieval handles for it. How the units were arranged within the frame stays readable from the record alone.",
+    "business_purpose": "It exists so the drafted architecture can be evidenced against the model frame it was drawn within.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the drafting trail at its retention tier and sets the retrieval handles a later structure review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-n4nb27": {
+    "plain_language_name": "Confirm the Drafted Organizational Architecture",
+    "plain_language_description": "When the architecture stands drafted, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The authority work that follows learns the drafted architecture is ready to be bounded.",
+    "business_purpose": "It exists so authority chains are bounded only over an architecture confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the drafted architecture awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drafted architecture against the activity's intended outcome and issues the confirmation the authority step needs."
+    }
+  },
+  "processes:task-ao-design-intake-vagtwn": {
+    "plain_language_name": "Receive the Model Frame for Architecture Drafting",
+    "plain_language_description": "Structure design opens when the committed organization model frame is handed over as the frame the architecture must be drafted within. The intake custodian accepts it, registers it with audit identifiers, and starts the drafting from a recorded baseline.",
+    "business_purpose": "It exists so the architecture is drafted within a registered model frame rather than freehand.",
+    "practical_context": "It opens when the model frame is presented for the drafting, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed model frame as the drafting baseline, with audit references, and opens the architecture work."
+    }
+  },
+  "processes:task-ao-design-transform-cwksqv": {
+    "plain_language_name": "Draft the Units and Their Arrangement",
+    "plain_language_description": "With the frame verified, the processing custodian does the drafting itself: the organizational architecture of units and their arrangement is drawn from the framed model and set down in the form the activity defines. Drafting working papers are preserved for audit.",
+    "business_purpose": "It exists because a model frame only becomes an organisation once its units are actually arranged.",
+    "practical_context": "It starts once checking is complete and the verified frame is ready to be drafted within, and it ends with the drafted organizational architecture produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority drafts the units and their arrangement from the framed model, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-jhynku": {
+    "plain_language_name": "Check the Model Frame Before Drafting the Architecture",
+    "plain_language_description": "Before any unit is drawn, the verification custodian checks the model frame against what drafting requires - that its principles, spans, and boundaries are settled enough to arrange units within. Defects are logged for rejection or repair before any drafting is attempted.",
+    "business_purpose": "It exists so the architecture is never drafted inside a frame that was not settled to begin with.",
+    "practical_context": "It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the frame's boundaries leaving one unit's place unset and logs the defect before drafting begins."
+    }
+  },
+  "processes:task-ao-design-record-jyk53v": {
+    "plain_language_name": "File the Structure Review Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the review trail at its required retention tier and sets the retrieval handles for it. What the review checked, and what it found, remains readable whenever departures between structure and model are argued over.",
+    "business_purpose": "It exists so the structure review can be evidenced whenever the design's fit to the model is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the review trail at its retention tier and sets the retrieval handles a model-conformance review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-a8j9jm": {
+    "plain_language_name": "Confirm the Reviewed Structure Design",
+    "plain_language_description": "When the review stands complete, the confirmation custodian reconciles the reviewed design against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the structure is reviewed and ready to be committed.",
+    "business_purpose": "It exists so the structure is committed only after a review confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the reviewed design awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the reviewed design against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-ao-design-intake-wg4qzc": {
+    "plain_language_name": "Receive the Bounded Chains for the Structure Review",
+    "plain_language_description": "The review opens when the bounded authority chains are handed over as the structure to be checked against the framed model. The intake custodian accepts them, registers the handover with audit identifiers, and starts the review from a recorded baseline.",
+    "business_purpose": "It exists so the structure review runs over a registered design rather than over working assumptions.",
+    "practical_context": "It opens when the bounded chains are presented for the review, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded chains as the review baseline, with audit references, and opens the structure review."
+    }
+  },
+  "processes:task-ao-design-transform-jh6bqa": {
+    "plain_language_name": "Review the Structure Against the Framed Model",
+    "plain_language_description": "With the chains verified, the processing custodian carries out the review itself: the drafted structure is read against the framed model's principles, spans, and coordination boundaries, and the reviewed structure design is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a structure that quietly departs from its model will drift the whole organisation with it.",
+    "practical_context": "It starts once checking is complete and the verified chains are ready to be reviewed, and it ends with the reviewed structure design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian reads the drafted structure against the model's principles, spans, and boundaries, and records the reviewed design."
+    }
+  },
+  "processes:task-ao-design-verify-u57xc2": {
+    "plain_language_name": "Check the Chains Before Reviewing the Structure",
+    "plain_language_description": "Before the review begins, the verification custodian checks the bounded chains against what the review requires - that the structure they run through is complete enough to be checked against the model. Defects are logged for rejection or repair before the review is made.",
+    "business_purpose": "It exists so the model is never used to judge a structure that was handed over half-formed.",
+    "practical_context": "It runs once the intake is registered and the chains can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the chains covering only part of the drafted units and logs the defect before the review begins."
+    }
+  },
+  "processes:task-ao-design-record-uj2gvu": {
+    "plain_language_name": "File the Competency Alignment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the alignment trail at its required retention tier and sets the retrieval handles for it. How each role's competencies were tied to continuing supervision stays readable whenever the alignment's adequacy is examined.",
+    "business_purpose": "It exists so the competency alignment for each role can be evidenced whenever supervision arrangements are reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the alignment trail at its retention tier and sets the retrieval handles a supervision review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-kzcxkj": {
+    "plain_language_name": "Confirm the Aligned Competency Framework Entries",
+    "plain_language_description": "When the alignment stands complete, the confirmation custodian reconciles the aligned entries against the outcome the activity set out to reach and issues the confirmation. The mobilization design downstream learns the competency entries are aligned and available.",
+    "business_purpose": "It exists so downstream regulated-role design builds only over alignment confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the aligned entries await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the aligned entries against the activity's intended outcome and issues the confirmation the downstream work depends on."
+    }
+  },
+  "processes:task-ao-design-intake-z2b5u6": {
+    "plain_language_name": "Receive the Role Catalogue and Framework Skeleton",
+    "plain_language_description": "Alignment opens when the regulator-tied role catalogue and the competency framework skeleton are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the framework entries will be aligned from.",
+    "business_purpose": "It exists so competency entries are aligned from a registered catalogue against a registered framework skeleton.",
+    "practical_context": "It opens when the role catalogue and framework skeleton are presented for the alignment, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the role catalogue and framework skeleton as the alignment baseline, with audit references."
+    }
+  },
+  "processes:task-ao-design-transform-7ydjtm": {
+    "plain_language_name": "Align the Competency Entries to the Supervision Framework",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the alignment itself: for each licensed role, the competency statements, the assessment cadence, who assesses, and how the entries tie into the continuing-competence programme are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because supervision only has teeth when each licensed role's competencies are aligned to it in writing.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be aligned from, and it ends with the aligned competency framework entries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority aligns each licensed role's competency statements and assessment cadence to the supervision framework, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-rcwfmv": {
+    "plain_language_name": "Check the Alignment Inputs Before Aligning",
+    "plain_language_description": "Before any entry is aligned, the verification custodian checks the catalogue and skeleton against what alignment requires - that each licensed role in the catalogue has a framework place to be aligned into. Gaps are flagged for rejection or repair before the alignment is made.",
+    "business_purpose": "It exists so no licensed role's competency entry is left floating outside the continuing-supervision framework.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a licensed role missing its framework slot and flags the gap before any entry is aligned."
+    }
+  },
+  "processes:task-ao-design-record-yq9m6a": {
+    "plain_language_name": "File the Role Catalogue Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the cataloguing trail at its required retention tier and sets the retrieval handles for it. What ties were recorded for each role, and on what declaration basis, stays provable whenever the catalogue is relied on.",
+    "business_purpose": "It exists so the regulator ties recorded for each role can be evidenced whenever the catalogue is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the cataloguing trail at its retention tier and sets the retrieval handles a role governance review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-txfv3t": {
+    "plain_language_name": "Confirm the Regulator-Tied Role Catalogue Entries",
+    "plain_language_description": "When the entries stand catalogued, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The alignment and notification work that follows learns the catalogue entries are settled and available.",
+    "business_purpose": "It exists so downstream regulated-role work proceeds only over catalogue entries confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the catalogued entries await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the catalogued entries against the activity's intended outcome and issues the confirmation the alignment step needs."
+    }
+  },
+  "processes:task-ao-design-intake-n66qsv": {
+    "plain_language_name": "Receive the Scope Declaration and Catalogue Skeleton",
+    "plain_language_description": "Cataloguing opens when the regulated-scope declaration and the role catalogue skeleton are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the entries will be catalogued from.",
+    "business_purpose": "It exists so regulator-tied role entries are catalogued from a registered declaration against a registered catalogue skeleton.",
+    "practical_context": "It opens when the declaration and catalogue skeleton are presented for cataloguing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the scope declaration and catalogue skeleton as the cataloguing baseline, with audit references."
+    }
+  },
+  "processes:task-ao-design-transform-jyfmbk": {
+    "plain_language_name": "Catalogue the Regulator-Tied Role Entries",
+    "plain_language_description": "With the inputs verified, the processing custodian does the cataloguing itself: for each declared role, its authority, its signing capacity, its controlled-function designation, its licensing basis, and its regulator-tied scope are written into the role catalogue in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a licensed role can only be governed, staffed, and activated once its regulator ties are catalogued.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be catalogued from, and it ends with the regulator-tied role entries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority writes each declared role's authority, signing capacity, and tied scope into the catalogue, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-hkjsx6": {
+    "plain_language_name": "Check the Catalogue Inputs Before Cataloguing",
+    "plain_language_description": "Before any entry is catalogued, the verification custodian checks the declaration and skeleton against what cataloguing requires - that every declared role has a place in the skeleton to be catalogued into. Defects are flagged for rejection or repair before the entries are written.",
+    "business_purpose": "It exists so no declared role is left uncatalogued because its skeleton slot was never settled.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a declared role with no catalogue slot and flags the defect before the entries are written."
+    }
+  },
+  "processes:task-ao-design-record-tq7syq": {
+    "plain_language_name": "File the Notification Path Definition Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the definition trail at its required retention tier and sets the retrieval handles for it. For each licensed role - who is notified, how often, with what content, and through which escalation - the record keeps the whole arrangement readable.",
+    "business_purpose": "It exists so the notification arrangements designed for each role can be evidenced whenever they are reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the definition trail at its retention tier and sets the retrieval handles a supervision review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-mhqjvd": {
+    "plain_language_name": "Confirm the Defined Notification Paths",
+    "plain_language_description": "When the notification paths stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. Whoever plans supervision around the designed roles learns the paths are settled and available.",
+    "business_purpose": "It exists so supervision is planned around notification paths confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the defined paths await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the defined notification paths against the activity's intended outcome and issues the confirmation supervision planning waits on."
+    }
+  }
+}

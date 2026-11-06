@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 
 This is a **Task** (level L4), named **Commit Policy Initiation Processing**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Commit Policy Initiation** (`processes:activity-ge-conceive-5j83mc`). Its canonical ID is `processes:task-ge-conceive-transform-rtrubb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the conception for the commitment: the initial document is committed and the initiative is turned toward design and codification, and the conception-ready package is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an initiative that never commits is a policy that never happens - the commit is where the conception hands over to the builders.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded conception may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function commits the initial document and turns the initiative toward design and codification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Initiative Toward Design and Codification |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the conception for the commitment: the initial document … |
+| `business_purpose` | string | no | It exists because an initiative that never commits is a policy that never happens - the commit is where the conception … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded conception may be executed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

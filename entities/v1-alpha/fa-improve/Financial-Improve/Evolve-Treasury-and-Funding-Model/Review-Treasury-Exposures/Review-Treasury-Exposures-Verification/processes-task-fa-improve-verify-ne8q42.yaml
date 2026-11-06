@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Shifts Before Weighing Their Cost'
+plain_language_description: 'Before anything is weighed, the verification custodian checks the assessed shifts against what review requires - that each names the model surfaces it touches. Defects are logged for rejection or repair before the weighing begins.'
+business_purpose: 'It exists so no cost is weighed for a shift that never touched the model.'
+practical_context: 'It runs once the intake is registered and the shifts can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a shift mapped to no model surface and logs the defect before the weighing begins.'

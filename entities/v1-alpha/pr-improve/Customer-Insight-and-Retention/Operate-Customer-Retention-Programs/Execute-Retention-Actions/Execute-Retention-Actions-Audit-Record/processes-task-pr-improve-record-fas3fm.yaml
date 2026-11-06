@@ -73,3 +73,18 @@ outputs:
   description: Closure case file retained for Execute Retention Actions under the records retention schedule with cryptographic integrity protection; cryptographic …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Store the Retention Action File'
+plain_language_description: 'Once confirmed, the records custodian places the improvement file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for customer-improvement records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.'
+business_purpose: 'It exists so what was tried, on whom, and with what effect stays provable for the next round.'
+practical_context: 'It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian archives the intervention file so future retention design can learn from what worked.'

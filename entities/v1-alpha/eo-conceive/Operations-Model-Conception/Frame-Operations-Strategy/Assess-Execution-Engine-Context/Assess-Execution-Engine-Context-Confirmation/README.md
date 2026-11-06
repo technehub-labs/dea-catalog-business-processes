@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-c
 
 This is a **Task** (level L4), named **Assess Execution Engine Context Confirmation**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Assess Execution Engine Context** (`processes:activity-eo-conceive-r26ukv`). Its canonical ID is `processes:task-eo-conceive-confirm-akraac`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the context stands assessed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The envelope work that follows learns the context is settled and the strategy can be bounded within it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy is bounded only within a context confirmed as assessed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the assessed context awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the assessed context against the activity's intended outcome and issues the confirmation the envelope work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Assessed Strategy Context |
+| `plain_language_description` | string | no | When the context stands assessed, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the strategy is bounded only within a context confirmed as assessed. |
+| `practical_context` | string | no | It begins once preparation is complete and the assessed context awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

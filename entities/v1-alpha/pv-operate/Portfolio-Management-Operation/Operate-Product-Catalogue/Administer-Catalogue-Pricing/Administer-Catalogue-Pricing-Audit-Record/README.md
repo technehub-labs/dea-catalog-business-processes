@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Administer Catalogue Pricing Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Administer Catalogue Pricing** (`processes:activity-pv-operate-kwm3wt`). Its canonical ID is `processes:task-pv-operate-record-v9qpy9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the pricing round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Every price shown to buyers can then be traced to its authority.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because prices carry commercial and regulatory weight, and the authority behind each one must stay retrievable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the pricing audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the audit record for the administered pricing at its required retention tier and sets the retrieval handles, so any price on the catalogue can later be traced to its launch pricing or rule authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Catalogue Pricing Audit Record |
+| `plain_language_description` | string | no | After confirmation, the pricing round is put beyond doubt for later scrutiny. The records custodian preserves the audit … |
+| `business_purpose` | string | no | It exists because prices carry commercial and regulatory weight, and the authority behind each one must stay … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the pricing audit record held at its required retention … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

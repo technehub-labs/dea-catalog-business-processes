@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-in
 
 This is a **Task** (level L4), named **Deliver Improvement Projects Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Deliver Improvement Projects** (`processes:activity-eo-improve-gtarnw`). Its canonical ID is `processes:task-eo-improve-intake-64p36c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Delivery opens when the selected project portfolio is handed over as the work the programme has committed to run. The intake custodian accepts it, registers it with audit identifiers, and starts the delivery from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so projects are delivered from a registered portfolio rather than from enthusiasm.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the selected portfolio is presented for delivery, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the operations function registers the selected portfolio as the delivery baseline, with audit references, and opens the project work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Selected Projects for Delivery |
+| `plain_language_description` | string | no | Delivery opens when the selected project portfolio is handed over as the work the programme has committed to run. The … |
+| `business_purpose` | string | no | It exists so projects are delivered from a registered portfolio rather than from enthusiasm. |
+| `practical_context` | string | no | It opens when the selected portfolio is presented for delivery, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

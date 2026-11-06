@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Vet Pool Sources Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Vet Pool Sources** (`processes:activity-ao-build-9bwc8j`). Its canonical ID is `processes:task-ao-build-transform-amwttu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the sources verified, the processing custodian performs the vetting itself: each contractor and partner source is qualified, and the vetted sources are set down in the form the activity defines. The working papers behind each judgement are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because demand can only be served by sources somebody has actually qualified and written down.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified sources are ready to be vetted, and it ends with the vetted source list produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian qualifies each candidate source for the governing board's pool effort and records the vetted list with its working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Vetting on Each Pool Source |
+| `plain_language_description` | string | no | With the sources verified, the processing custodian performs the vetting itself: each contractor and partner source is … |
+| `business_purpose` | string | no | It exists because demand can only be served by sources somebody has actually qualified and written down. |
+| `practical_context` | string | no | It starts once checking is complete and the verified sources are ready to be vetted, and it ends with the vetted source … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

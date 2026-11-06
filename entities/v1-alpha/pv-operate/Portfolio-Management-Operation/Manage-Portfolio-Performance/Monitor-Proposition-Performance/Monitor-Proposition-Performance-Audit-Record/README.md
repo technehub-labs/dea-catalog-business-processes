@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Monitor Proposition Performance Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Proposition Performance** (`processes:activity-pv-operate-unuyxe`). Its canonical ID is `processes:task-pv-operate-record-a8d3w3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the monitoring round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The evidence behind each performance reading therefore stays retrievable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because performance readings that later drive rebalancing calls must have retrievable evidence standing behind them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the monitoring audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the audit record behind the quarter's performance readings at its required retention tier and sets the retrieval handles, so any later challenge to a rebalancing call can be answered from the evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Performance Monitoring Audit Record |
+| `plain_language_description` | string | no | After confirmation, the monitoring round is put beyond doubt for later scrutiny. The records custodian preserves the … |
+| `business_purpose` | string | no | It exists because performance readings that later drive rebalancing calls must have retrievable evidence standing … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the monitoring audit record held at its required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

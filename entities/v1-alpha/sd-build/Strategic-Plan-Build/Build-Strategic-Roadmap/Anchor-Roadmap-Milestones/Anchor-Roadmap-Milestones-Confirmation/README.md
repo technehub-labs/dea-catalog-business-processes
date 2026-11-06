@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Anchor Roadmap Milestones Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Anchor Roadmap Milestones** (`processes:activity-sd-build-yvecqq`). Its canonical ID is `processes:task-sd-build-confirm-ha96m7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the milestones are anchored. The confirmation custodian tells the downstream teams the anchored milestones are available, and closes the reconciliation against what the activity promised for the anchoring.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the roadmap is assembled from confirmed milestone anchors rather than from dates still being moved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the anchored milestones are ready to hand on, and it closes with the confirmation issued and the anchoring's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the anchored milestones to the roadmap assembly team, reconciles the anchors against what the anchoring promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Anchored Milestones to the Roadmap Assemblers |
+| `plain_language_description` | string | no | The confirming opens once the milestones are anchored. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so the roadmap is assembled from confirmed milestone anchors rather than from dates still being moved. |
+| `practical_context` | string | no | It opens when the anchored milestones are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

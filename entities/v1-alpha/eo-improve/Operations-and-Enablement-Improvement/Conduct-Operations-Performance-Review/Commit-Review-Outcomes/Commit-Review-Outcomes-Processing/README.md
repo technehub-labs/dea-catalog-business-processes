@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Commit Review Outcomes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Commit Review Outcomes** (`processes:activity-eo-improve-53zgb8`). Its canonical ID is `processes:task-eo-improve-transform-t75c7j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the consolidation itself: findings and routings are brought together into the committed review record, set down in the form the activity defines and ready for the tracks to act on. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because findings that stop at the page change nothing - the commit is what turns the review's conclusions into instructions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed review record produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function consolidates the findings and their destinations into the committed review record, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Findings into the Committed Record |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the consolidation itself: findings and routings are brought … |
+| `business_purpose` | string | no | It exists because findings that stop at the page change nothing - the commit is what turns the review's conclusions … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

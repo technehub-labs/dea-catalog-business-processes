@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Assemble Strategic Roadmap Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Assemble Strategic Roadmap** (`processes:activity-sd-build-htapw4`). Its canonical ID is `processes:task-sd-build-intake-umb6y3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The assembly opens as its material arrives: the initiative sequence together with the anchored milestones it must deliver. The intake custodian logs them against the assembly file so the assembling starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the roadmap is assembled from logged sequence and anchors rather than from a sketch on a whiteboard.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the sequence and the anchored milestones are presented for assembly, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the initiative sequence and its anchored milestones into the assembly file, so the roadmap assembly starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Initiative Sequence and Its Anchored Milestones |
+| `plain_language_description` | string | no | The assembly opens as its material arrives: the initiative sequence together with the anchored milestones it must … |
+| `business_purpose` | string | no | It exists so the roadmap is assembled from logged sequence and anchors rather than from a sketch on a whiteboard. |
+| `practical_context` | string | no | It opens when the sequence and the anchored milestones are presented for assembly, with the activity's owner told that … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

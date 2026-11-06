@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Set Performance Expectations Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Set Performance Expectations** (`processes:activity-ao-operate-duu9yw`). Its canonical ID is `processes:task-ao-operate-transform-4nfah8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the roles verified, the processing custodian does the setting itself: the performance expectations for each agent entering active operation are worked out from its role and set down in the form the activity defines. Working papers behind each expectation are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an agent cannot be held to a standard that was never made explicit at the start.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified roles are ready to be set from, and it ends with the set expectations produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management sets what each newly operating agent is expected to do from its role, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set What Each Agent in Operation Is Expected to Do |
+| `plain_language_description` | string | no | With the roles verified, the processing custodian does the setting itself: the performance expectations for each agent … |
+| `business_purpose` | string | no | It exists because an agent cannot be held to a standard that was never made explicit at the start. |
+| `practical_context` | string | no | It starts once checking is complete and the verified roles are ready to be set from, and it ends with the set … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

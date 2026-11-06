@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Verify Party Identity naming verification methods applied and any deviations remediated; verification custodian passes …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Verify Who the Applicant Really Is'
+plain_language_description: 'The verification custodian establishes who the applicant is to the standard the regime demands: multi-factor identity confirmation, sanctions and politically-exposed screening, and adverse-media searches. The reconciled results are issued as a certificate naming the checks performed.'
+business_purpose: 'It exists so the enterprise never opens a relationship with someone it cannot prove exists as claimed.'
+practical_context: 'It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in the risk function confirms an applicant''s identity from documents and electronic traces, then issues the certificate.'

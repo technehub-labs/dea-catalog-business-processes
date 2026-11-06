@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-con
 
 This is a **Task** (level L4), named **Execute Communications Plan for Regulated Strategic Plan Sunset Confirmation**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Communications Plan for Regulated Strategic Plan Sunset** (`processes:activity-sd-retire-r5tcp2`). Its canonical ID is `processes:task-sd-retire-confirm-d5ezgv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The communications have run and the execution must now travel. The confirmation custodian tells the downstream teams the executed communications plan is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the retained-records work needs the formal word that the communications leg is complete and evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the execution work is finished and the evidence is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the records team the executed communications plan and its evidence are available, then closes the handover against what the execution promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Records Team the Sunset Communications Have Run |
+| `plain_language_description` | string | no | The communications have run and the execution must now travel. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists because the retained-records work needs the formal word that the communications leg is complete and evidenced. |
+| `practical_context` | string | no | It opens when the execution work is finished and the evidence is ready to travel, and it closes with the downstream … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

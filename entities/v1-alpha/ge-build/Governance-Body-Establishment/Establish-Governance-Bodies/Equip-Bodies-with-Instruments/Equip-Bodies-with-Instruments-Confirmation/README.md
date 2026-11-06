@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 
 This is a **Task** (level L4), named **Equip Bodies with Instruments Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Equip Bodies with Instruments** (`processes:activity-ge-build-p29x52`). Its canonical ID is `processes:task-ge-build-confirm-yu72tz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because bodies nobody has confirmed as equipped are bodies that would govern unarmed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian sets the inventory beside the framework's contract and the completeness rules and issues the apparatus confirmation to the custodian of governance.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reconcile the Inventory and Confirm the Bodies Are Equipped |
+| `plain_language_description` | string | no | When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework's contract and … |
+| `business_purpose` | string | no | It exists because bodies nobody has confirmed as equipped are bodies that would govern unarmed. |
+| `practical_context` | string | no | It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

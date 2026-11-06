@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Execute Period-End Entries Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Period-End Entries** (`processes:activity-fa-operate-ayt4aq`). Its canonical ID is `processes:task-fa-operate-transform-rtxd63`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the frame verified, the processing custodian does the entry work itself: the accruals, deferrals, and adjustments that close the period are made on schedule under the policies, and the executed entries are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a period does not end until its loose ends are stitched - the entries are the stitching.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified frame is ready to be worked from, and it ends with the executed entries produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function makes each accrual, deferral, and adjustment on schedule under the policies, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Make the Entries That End the Period |
+| `plain_language_description` | string | no | With the frame verified, the processing custodian does the entry work itself: the accruals, deferrals, and adjustments … |
+| `business_purpose` | string | no | It exists because a period does not end until its loose ends are stitched - the entries are the stitching. |
+| `practical_context` | string | no | It starts once checking is complete and the verified frame is ready to be worked from, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

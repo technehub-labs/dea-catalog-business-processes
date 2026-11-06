@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-rec
 
 This is a **Task** (level L4), named **Assess Regulator Or Court Order Scope Audit Record**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assess Regulator Or Court Order Scope** (`processes:activity-ge-retire-k5amzf`). Its canonical ID is `processes:task-ge-retire-record-ataxrx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian secures the complete wind-down file - manifest, verification report, record pack, completion confirmation, and remediation notes - under the retention schedule for dissolved entities, protected against tampering. It must remain intact for the whole statutory retention horizon.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a dissolved entity's records must stay provable for years after the organisation itself is gone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the case file retained at its tier and the statutory horizon applied.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian seals the wind-down file into tamper-protected retention and applies the multi-year horizon the dissolution rules demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Preserve the Wind-Down Case File Under the Retention Rules |
+| `plain_language_description` | string | no | After confirmation, the records custodian secures the complete wind-down file - manifest, verification report, record … |
+| `business_purpose` | string | no | It exists because a dissolved entity's records must stay provable for years after the organisation itself is gone. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the case file retained at its tier and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

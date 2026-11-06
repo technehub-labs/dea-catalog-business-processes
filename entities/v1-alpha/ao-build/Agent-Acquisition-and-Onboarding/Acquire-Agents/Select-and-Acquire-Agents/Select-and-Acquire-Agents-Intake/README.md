@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Select and Acquire Agents Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Select and Acquire Agents** (`processes:activity-ao-build-4vccpu`). Its canonical ID is `processes:task-ao-build-intake-2rzeqj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Selection begins when the provisioned agent capacity is handed over as the requirement to be filled. The intake custodian accepts the handover, registers it with audit identifiers, and opens the selection work from a traceable baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so selection works from a registered statement of the capacity it is meant to fill.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the provisioned capacity is presented as the selection requirement, with the activity owner alerted, and it closes with the intake registered and the checking and choosing steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the provisioned capacity handover as the selection baseline, with audit references, and opens the choosing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Provisioned Capacity for Selection |
+| `plain_language_description` | string | no | Selection begins when the provisioned agent capacity is handed over as the requirement to be filled. The intake … |
+| `business_purpose` | string | no | It exists so selection works from a registered statement of the capacity it is meant to fill. |
+| `practical_context` | string | no | It opens when the provisioned capacity is presented as the selection requirement, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

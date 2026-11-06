@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 This is a **Task** (level L4), named **Integrate Channels with Experience Intake**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Integrate Channels with Experience** (`processes:activity-pr-build-d3pku9`). Its canonical ID is `processes:task-pr-build-intake-srjxnb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Integration work starts with the design brief in hand: the mix of channels, the specification for the demand programmes, and the manifest of the asset library. The intake custodian agrees the scope of the build with the owners of the channels and demand programmes, then registers the pack.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the wiring of channels to experience begins from a scope the owners have confirmed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Build-stage pack arrives, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management confirms the integration scope with the channel owner and registers the manifest.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Accept the Integration Brief and Open the File |
+| `plain_language_description` | string | no | Integration work starts with the design brief in hand: the mix of channels, the specification for the demand … |
+| `business_purpose` | string | no | It exists so the wiring of channels to experience begins from a scope the owners have confirmed. |
+| `practical_context` | string | no | It opens when the Build-stage pack arrives, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

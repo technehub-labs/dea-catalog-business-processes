@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Install Technology Assets Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Install Technology Assets** (`processes:activity-eo-build-a5trnu`). Its canonical ID is `processes:task-eo-build-intake-xfn7md`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Installation opens when the delivered assets and the deployment topology are handed over together as the brief the placing-in must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the installation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assets are installed into their intended places in the topology, not wherever is convenient.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the delivered assets and topology are presented for installation, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management registers the delivered assets and the deployment topology as the installation brief, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Delivered Assets and the Deployment Topology |
+| `plain_language_description` | string | no | Installation opens when the delivered assets and the deployment topology are handed over together as the brief the … |
+| `business_purpose` | string | no | It exists so assets are installed into their intended places in the topology, not wherever is convenient. |
+| `practical_context` | string | no | It opens when the delivered assets and topology are presented for installation, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

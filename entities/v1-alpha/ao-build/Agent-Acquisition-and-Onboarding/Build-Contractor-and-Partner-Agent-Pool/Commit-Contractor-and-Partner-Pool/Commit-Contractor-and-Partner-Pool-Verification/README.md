@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Commit Contractor and Partner Pool Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Commit Contractor and Partner Pool** (`processes:activity-ao-build-cxafrf`). Its canonical ID is `processes:task-ao-build-verify-yruq7a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the pool is committed, the verification custodian checks the established paths against what commitment demands of them - that together they can actually carry the pool as operational capacity. Anything found wanting is written up for rejection or repair before the commitment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation never commits itself to a pool resting on paths that would not hold.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the paths can be compared with the activity's requirements, and it finishes with the paths verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian tests the established paths for their ability to carry the pool and logs one weak route for remediation before commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Paths Before Committing the Pool |
+| `plain_language_description` | string | no | Before the pool is committed, the verification custodian checks the established paths against what commitment demands … |
+| `business_purpose` | string | no | It exists so the organisation never commits itself to a pool resting on paths that would not hold. |
+| `practical_context` | string | no | It runs once the intake is registered and the paths can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Negotiate Funding Lines Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Negotiate Funding Lines** (`processes:activity-fa-build-hkt2qs`). Its canonical ID is `processes:task-fa-build-transform-x46qzg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the design verified, the processing custodian does the negotiation itself: the talks are carried to committed lines that sit inside the structure's frame, and the negotiated funding lines are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a funding need on paper funds nothing - the negotiation is where the need becomes committed money.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified design is ready to be negotiated within, and it ends with the negotiated lines produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function carries the talks to lines that sit inside the structure's frame, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Talk the Lenders to Committed Lines |
+| `plain_language_description` | string | no | With the design verified, the processing custodian does the negotiation itself: the talks are carried to committed … |
+| `business_purpose` | string | no | It exists because a funding need on paper funds nothing - the negotiation is where the need becomes committed money. |
+| `practical_context` | string | no | It starts once checking is complete and the verified design is ready to be negotiated within, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

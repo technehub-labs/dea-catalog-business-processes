@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Stand Up Delivery Components Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Stand Up Delivery Components** (`processes:activity-eo-build-tq634n`). Its canonical ID is `processes:task-eo-build-transform-3jn2yz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the designs verified, the processing custodian coordinates the stand-up itself: the production lines, logistics network, technology, and facilities the operations model requires are stood up from their designs, and the stood-up components are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because designs deliver nothing by themselves - the stand-up is where paper components become working ones.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified designs are ready to be stood up from, and it ends with the stood-up components produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management stands up the production lines, logistics, technology, and facilities the model requires, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Bounded Delivery Components to Life |
+| `plain_language_description` | string | no | With the designs verified, the processing custodian coordinates the stand-up itself: the production lines, logistics … |
+| `business_purpose` | string | no | It exists because designs deliver nothing by themselves - the stand-up is where paper components become working ones. |
+| `practical_context` | string | no | It starts once checking is complete and the verified designs are ready to be stood up from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Define Proficiency Levels Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Define Proficiency Levels** (`processes:activity-ao-design-amjqu5`). Its canonical ID is `processes:task-ao-design-intake-t8jfr5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Level definition opens when the identified competency domains are handed over as the ground the levels will be cut into. The intake custodian accepts them, registers the handover with audit identifiers, and starts the definition work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so proficiency levels are defined within a registered set of domains rather than free-floating.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the competency domains are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the identified domains as the definition baseline, with audit references, and opens the levelling work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Competency Domains for Level Definition |
+| `plain_language_description` | string | no | Level definition opens when the identified competency domains are handed over as the ground the levels will be cut … |
+| `business_purpose` | string | no | It exists so proficiency levels are defined within a registered set of domains rather than free-floating. |
+| `practical_context` | string | no | It opens when the competency domains are presented for the definition, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

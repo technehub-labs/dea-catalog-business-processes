@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Commit Engagement Review Findings Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Commit Engagement Review Findings** (`processes:activity-ao-improve-ab6gqb`). Its canonical ID is `processes:task-ao-improve-intake-qzdkpq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the formulated engagement findings are handed over as the review's conclusions awaiting ratification. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the findings are committed from a registered formulation rather than from informal conclusions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the formulated findings are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the formulated findings as the commitment baseline, with audit references, and opens the commitment work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Formulated Findings for Commitment |
+| `plain_language_description` | string | no | Commitment opens when the formulated engagement findings are handed over as the review's conclusions awaiting … |
+| `business_purpose` | string | no | It exists so the findings are committed from a registered formulation rather than from informal conclusions. |
+| `practical_context` | string | no | It opens when the formulated findings are presented for commitment, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-v
 
 This is a **Task** (level L4), named **Frame Ambition Envelope Verification**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Ambition Envelope** (`processes:activity-sd-conceive-9672ug`). Its canonical ID is `processes:task-sd-conceive-verify-ketmny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any envelope is framed, the arriving purpose and cue material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an ambition framed on misread cues promises more than the enterprise can credibly reach.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the framing material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged purpose and cues against what the activity requires, and writes up a market cue past its date as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Purpose and Cues Before Framing the Ambition |
+| `plain_language_description` | string | no | Before any envelope is framed, the arriving purpose and cue material is put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because an ambition framed on misread cues promises more than the enterprise can credibly reach. |
+| `practical_context` | string | no | It opens once the intake is registered and the framing material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

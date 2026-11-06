@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-i
 
 This is a **Task** (level L4), named **Commit Strategic Intent Intake**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Commit Strategic Intent** (`processes:activity-sd-conceive-nb772h`). Its canonical ID is `processes:task-sd-conceive-intake-p3hgbc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The committing opens as its material arrives: the framed intent narrative together with the trade-offs it has been scoped to navigate. The intake custodian logs them against the commitment file so the committing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the intent is committed over logged framing and trade-offs rather than over a speech someone half remembers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the framed intent and scoped trade-offs are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the framed intent narrative and the scoped trade-offs into the commitment file, so the commitment work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Framed Intent and the Scoped Trade-offs |
+| `plain_language_description` | string | no | The committing opens as its material arrives: the framed intent narrative together with the trade-offs it has been … |
+| `business_purpose` | string | no | It exists so the intent is committed over logged framing and trade-offs rather than over a speech someone half … |
+| `practical_context` | string | no | It opens when the framed intent and scoped trade-offs are presented for commitment, with the activity's owner told that … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

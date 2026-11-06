@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Design Financial Controls Framework Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Controls Framework** (`processes:activity-fa-design-bn5x7x`). Its canonical ID is `processes:task-fa-design-transform-usavdd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the designing itself: the controls that keep the structure honest are designed into the chart and allocation model rather than around them, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because controls bolted on afterwards are controls that leak - weaving them in is what makes the structure safe by construction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be woven through, and it ends with the embedded controls produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority designs the safeguards into the chart and allocation model's bones, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Weave the Safeguards into the Structure's Bones |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the designing itself: the controls that keep the structure … |
+| `business_purpose` | string | no | It exists because controls bolted on afterwards are controls that leak - weaving them in is what makes the structure … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be woven through, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Anchor Competency Assessment Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Anchor Competency Assessment** (`processes:activity-ao-design-749rxd`). Its canonical ID is `processes:task-ao-design-verify-wkeahr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any anchor is set, the verification custodian checks the proficiency levels against what anchoring requires - that each level is distinct enough to anchor an assessment to. Defects are logged for rejection or repair before any anchor is placed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assessments are never pinned to levels that blur into one another.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the levels can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds two adjacent levels described almost identically and logs the defect before anchors are placed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Levels Before Anchoring the Assessment |
+| `plain_language_description` | string | no | Before any anchor is set, the verification custodian checks the proficiency levels against what anchoring requires - … |
+| `business_purpose` | string | no | It exists so assessments are never pinned to levels that blur into one another. |
+| `practical_context` | string | no | It runs once the intake is registered and the levels can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

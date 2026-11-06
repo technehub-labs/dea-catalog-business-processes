@@ -68,3 +68,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Inputs Before Setting the Plan'
+plain_language_description: 'Before anything is planned, the verification custodian checks the specifications, standards, and schedule against what planning requires - that the specification is the current one and the schedule covers the batches in scope. Defects are logged for rejection or repair before the plan is set.'
+business_purpose: 'It exists so no batch is planned against a superseded specification.'
+practical_context: 'It runs once the intake is registered and the inputs can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds the schedule missing a newly scheduled batch and logs the defect before the plan is set.'

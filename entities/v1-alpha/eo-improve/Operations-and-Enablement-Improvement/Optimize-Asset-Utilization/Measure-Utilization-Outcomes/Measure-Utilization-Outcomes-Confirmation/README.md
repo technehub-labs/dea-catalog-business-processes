@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-co
 
 This is a **Task** (level L4), named **Measure Utilization Outcomes Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Measure Utilization Outcomes** (`processes:activity-eo-improve-zxt423`). Its canonical ID is `processes:task-eo-improve-confirm-r28xme`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the measurement stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The optimization loop learns which redeployments paid off and which must be revisited.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the loop closes only over measurements confirmed as made.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the outcome measurement awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the outcome measurement against the activity's intended outcome and issues the confirmation that closes the loop.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Utilization Outcome Measurement |
+| `plain_language_description` | string | no | When the measurement stands made, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the loop closes only over measurements confirmed as made. |
+| `practical_context` | string | no | It begins once preparation is complete and the outcome measurement awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

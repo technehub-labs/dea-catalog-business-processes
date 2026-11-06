@@ -73,3 +73,18 @@ outputs:
   description: Bounded-work artefact produced for Coordinate Renewals conforming to the Operate schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Keep the Renewals Moving on Schedule'
+plain_language_description: 'With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. The approaching terms are prepared and executed, and the results are produced as an outcomes pack ready for confirmation.'
+business_purpose: 'It exists because a renewal missed at term is a relationship lost by calendar, not by choice.'
+practical_context: 'It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in customer relationship management tracks the renewal calendar and keeps each approaching term on track.'

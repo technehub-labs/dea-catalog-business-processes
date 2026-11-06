@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bring the Agents into Their Roles and Competencies'
+plain_language_description: 'With each agent verified, the processing custodian does the onboarding itself: the agent is worked into its role and brought up to the competencies the role rests on, in the form the activity defines. Working notes from the onboarding are preserved so the preparation stays auditable.'
+business_purpose: 'It exists because acquisition only delivers potential until onboarding turns each agent into a working participant.'
+practical_context: 'It starts when checking is complete and the verified agents are ready to be worked into their roles, and it ends with the onboarded agents produced and the working notes preserved for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian brings each verified agent into its role and builds the competencies the role needs, keeping notes of the onboarding for audit.'

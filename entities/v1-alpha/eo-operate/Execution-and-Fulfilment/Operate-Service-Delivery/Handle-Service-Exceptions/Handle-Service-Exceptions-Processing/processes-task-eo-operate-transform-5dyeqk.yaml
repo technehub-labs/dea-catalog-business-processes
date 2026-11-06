@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Answer Each Exception and Get the Day Back on Plan'
+plain_language_description: 'With the deviations verified, the processing custodian does the recovery itself: each exception is worked to a remedy that puts the operation back on its plan, and the restored positions are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a service promise slips quietly unless somebody pulls it back - the recovery is what keeps the day''s word.'
+practical_context: 'It starts once checking is complete and the verified deviations are ready to be answered, and it ends with the restored operation produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management works each flagged snag to a remedy that puts the day back on plan, keeping the working papers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-tra
 
 This is a **Task** (level L4), named **Execute Service Withdrawal Processing**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Execute Service Withdrawal** (`processes:activity-pv-retire-6hqeys`). Its canonical ID is `processes:task-pv-retire-transform-4rw7pj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the withdrawal proper begins. The processing custodian works the plan step by step, removing the proposition from operational reliance and producing the withdrawn service in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a retirement decision stays on paper until someone actually takes the service out of operational reliance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified plan is ready to be worked, and it closes with the withdrawn service produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the proposition design authority executes the verified plan, switching off the offering's operational reliance step by step, and hands over the withdrawn service with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Withdrawal and Take the Service Out of Reliance |
+| `plain_language_description` | string | no | With the inputs verified, the withdrawal proper begins. The processing custodian works the plan step by step, removing … |
+| `business_purpose` | string | no | It exists because a retirement decision stays on paper until someone actually takes the service out of operational … |
+| `practical_context` | string | no | It opens when the verified plan is ready to be worked, and it closes with the withdrawn service produced in the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Commit Organization and Agent Strategy Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Organization and Agent Strategy** (`processes:activity-ao-conceive-476rpj`). Its canonical ID is `processes:task-ao-conceive-transform-ak27hu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the draft verified, the processing custodian works the commitment itself: the organization and agent strategy is ratified and set down in the form the activity defines, ready to be handed onward to organization model framing and mix conception. Working papers from the commitment are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategy only steers the enterprise once it is committed and handed to the work it directs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified draft is ready to be committed, and it ends with the committed strategy produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian ratifies the strategy and sets it down for model framing and mix conception to receive, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Strategy for Framing and Mix Conception |
+| `plain_language_description` | string | no | With the draft verified, the processing custodian works the commitment itself: the organization and agent strategy is … |
+| `business_purpose` | string | no | It exists because a strategy only steers the enterprise once it is committed and handed to the work it directs. |
+| `practical_context` | string | no | It starts once checking is complete and the verified draft is ready to be committed, and it ends with the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

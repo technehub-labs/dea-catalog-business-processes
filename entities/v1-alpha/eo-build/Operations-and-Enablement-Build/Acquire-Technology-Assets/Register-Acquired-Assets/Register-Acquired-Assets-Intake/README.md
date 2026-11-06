@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Register Acquired Assets Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Register Acquired Assets** (`processes:activity-eo-build-6335m6`). Its canonical ID is `processes:task-eo-build-intake-qdc962`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Registration opens when the commissioning evidence is handed over as the proof each acquired, installed, and commissioned asset must be entered on. The intake custodian accepts it, registers it with audit identifiers, and starts the registration from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so asset entries are created from registered commissioning evidence rather than from informal lists.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the commissioning evidence is presented for registration, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the commissioning evidence as the registration baseline, with audit references, and opens the entry work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Commissioning Evidence for Asset Registration |
+| `plain_language_description` | string | no | Registration opens when the commissioning evidence is handed over as the proof each acquired, installed, and … |
+| `business_purpose` | string | no | It exists so asset entries are created from registered commissioning evidence rather than from informal lists. |
+| `practical_context` | string | no | It opens when the commissioning evidence is presented for registration, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

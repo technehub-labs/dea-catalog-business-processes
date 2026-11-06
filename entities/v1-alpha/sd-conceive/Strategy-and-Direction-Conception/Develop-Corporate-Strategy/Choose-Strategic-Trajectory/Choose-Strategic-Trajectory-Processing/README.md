@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-t
 
 This is a **Task** (level L4), named **Choose Strategic Trajectory Processing**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Choose Strategic Trajectory** (`processes:activity-sd-conceive-uvhsrz`). Its canonical ID is `processes:task-sd-conceive-transform-y9fn3a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the choosing proper begins. The processing custodian weighs the articulated trajectories against the synthesized direction and fixes the one course the enterprise will follow, producing the chosen trajectory in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a direction stays a wish until one course of travel is actually chosen over the alternatives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the chosen trajectory produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function weighs the verified trajectories against the direction, settles on the one the enterprise will follow, and keeps the choosing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Choose the Trajectory the Synthesized Direction Commits To |
+| `plain_language_description` | string | no | With the inputs verified, the choosing proper begins. The processing custodian weighs the articulated trajectories … |
+| `business_purpose` | string | no | It exists because a direction stays a wish until one course of travel is actually chosen over the alternatives. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the chosen trajectory produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

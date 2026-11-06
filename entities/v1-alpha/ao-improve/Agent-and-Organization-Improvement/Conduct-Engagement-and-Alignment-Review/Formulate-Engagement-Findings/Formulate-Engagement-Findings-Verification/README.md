@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Formulate Engagement Findings Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Formulate Engagement Findings** (`processes:activity-ao-improve-zzszrd`). Its canonical ID is `processes:task-ao-improve-verify-n7gxp7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is written down as a finding, the verification custodian checks the alignment assessment against what formulation requires - that it rests on the collected evidence and is complete enough to draw findings from. Defects are flagged for rejection or repair before the findings are drawn.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review never publishes findings that outrun the assessment behind them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the assessment can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the assessment resting on signals that were never collected and flags the defect before findings are drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Assessment Before Drawing the Findings |
+| `plain_language_description` | string | no | Before anything is written down as a finding, the verification custodian checks the alignment assessment against what … |
+| `business_purpose` | string | no | It exists so the review never publishes findings that outrun the assessment behind them. |
+| `practical_context` | string | no | It runs once the intake is registered and the assessment can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

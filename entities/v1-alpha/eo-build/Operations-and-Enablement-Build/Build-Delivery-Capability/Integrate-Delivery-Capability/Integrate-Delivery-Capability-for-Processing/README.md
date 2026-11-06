@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Integrate Delivery Capability for Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Integrate Delivery Capability** (`processes:activity-eo-build-5acbks`). Its canonical ID is `processes:task-eo-build-transform-kebf6w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the components verified, the processing custodian does the integration itself: the stood-up components are joined into one working delivery capability, and the integrated capability is set down in the form the activity defines. Working papers from the joining are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because working parts beside each other are still not a capability - integration is where they start working as one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified components are ready to be joined, and it ends with the integrated capability produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management fits the stood-up components together into one working delivery capability, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fit the Stood-Up Components Together into One Capability |
+| `plain_language_description` | string | no | With the components verified, the processing custodian does the integration itself: the stood-up components are joined … |
+| `business_purpose` | string | no | It exists because working parts beside each other are still not a capability - integration is where they start working … |
+| `practical_context` | string | no | It starts once checking is complete and the verified components are ready to be joined, and it ends with the integrated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

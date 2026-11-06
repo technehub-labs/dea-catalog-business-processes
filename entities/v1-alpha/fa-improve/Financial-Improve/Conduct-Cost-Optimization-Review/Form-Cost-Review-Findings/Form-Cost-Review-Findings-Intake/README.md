@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Form Cost Review Findings Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Form Cost Review Findings** (`processes:activity-fa-improve-rqws4s`). Its canonical ID is `processes:task-fa-improve-intake-6mb9s3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Finding work opens when the assembled cost evidence is handed over as the body of proof the review's conclusions will be drawn from. The intake custodian accepts it, registers it with audit identifiers, and starts the formulation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so conclusions are drawn from a registered evidence pack rather than from fragments of it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the cost evidence is presented for the finding work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the assembled cost evidence as the finding baseline, with audit references, and opens the formulation work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Assembled Cost Evidence for Findings |
+| `plain_language_description` | string | no | Finding work opens when the assembled cost evidence is handed over as the body of proof the review's conclusions will … |
+| `business_purpose` | string | no | It exists so conclusions are drawn from a registered evidence pack rather than from fragments of it. |
+| `practical_context` | string | no | It opens when the cost evidence is presented for the finding work, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

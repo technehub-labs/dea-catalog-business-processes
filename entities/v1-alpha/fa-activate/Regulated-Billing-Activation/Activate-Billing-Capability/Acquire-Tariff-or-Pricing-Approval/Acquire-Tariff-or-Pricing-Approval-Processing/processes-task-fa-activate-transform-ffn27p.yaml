@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Win the Approval to Charge What the Filing Says'
+plain_language_description: 'With the material verified, the processing custodian makes the acquisition itself: the pricing submission is filed, the tariff or pricing permission is secured, and the granted approval is preserved on the regulated billing record in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a price without permission is a debt without a leg to stand on - this is the permission being won, recorded.'
+practical_context: 'It starts once checking is complete and the verified material is ready to be filed, and it ends with the granted approval preserved and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the audit function files the submission and preserves the granted approval on the billing record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Commit Portfolio Rebalancing Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Commit Portfolio Rebalancing** (`processes:activity-sd-operate-th587n`). Its canonical ID is `processes:task-sd-operate-transform-grsryj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the commitment proper begins. The processing custodian settles which rebalancing decisions are ratified and prepares the handoff to initiative governance, producing the committed rebalancing decisions in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because drawn options steer nothing until they are selected, ratified and formally handed to the governance that will execute them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified options are ready to be worked, and it closes with the committed rebalancing decisions produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function records which rebalancing decisions the leadership ratified and prepares the handoff pack for initiative governance, workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Settle the Selected Rebalancing and Ready the Handoff |
+| `plain_language_description` | string | no | With the inputs verified, the commitment proper begins. The processing custodian settles which rebalancing decisions … |
+| `business_purpose` | string | no | It exists because drawn options steer nothing until they are selected, ratified and formally handed to the governance … |
+| `practical_context` | string | no | It opens when the verified options are ready to be worked, and it closes with the committed rebalancing decisions … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

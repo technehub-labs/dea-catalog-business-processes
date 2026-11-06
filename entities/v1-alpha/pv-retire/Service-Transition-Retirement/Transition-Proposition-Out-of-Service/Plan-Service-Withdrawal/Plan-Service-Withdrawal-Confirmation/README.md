@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-con
 
 This is a **Task** (level L4), named **Plan Service Withdrawal Confirmation**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Plan Service Withdrawal** (`processes:activity-pv-retire-vbn7s6`). Its canonical ID is `processes:task-pv-retire-confirm-h2ahnu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the plan stands. The confirmation custodian tells the downstream teams the plan is available, and closes the reconciliation against what the activity promised for the planning.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so execution starts from an issued plan everyone can point to, not from a draft circulating by email.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the plan is complete and ready to hand on, and it closes with the confirmation issued and the planning's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the proposition design authority hands the finished withdrawal plan to the execution and communications teams, checks it against what the planning promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue the Withdrawal Plan to the Teams Who Will Execute It |
+| `plain_language_description` | string | no | The confirming opens once the plan stands. The confirmation custodian tells the downstream teams the plan is available … |
+| `business_purpose` | string | no | It exists so execution starts from an issued plan everyone can point to, not from a draft circulating by email. |
+| `practical_context` | string | no | It opens when the plan is complete and ready to hand on, and it closes with the confirmation issued and the planning's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

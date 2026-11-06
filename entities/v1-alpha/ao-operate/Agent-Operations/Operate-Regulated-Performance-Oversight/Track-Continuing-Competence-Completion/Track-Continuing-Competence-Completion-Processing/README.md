@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Track Continuing-Competence Completion Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Track Continuing-Competence Completion** (`processes:activity-ao-operate-b5v2k9`). Its canonical ID is `processes:task-ao-operate-transform-q5dk3v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the tracking itself: each licensed role's continuing-competence completions are tracked against the plan, and the completion record is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because competence lapses quietly - the tracking is what keeps every role visibly current or visibly short.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be tracked from, and it ends with the completion record produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian tracks each licensed role's competence completions against the plan and records who is current and who is short.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep Count of Each Role's Continuing Competence |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the tracking itself: each licensed role's continuing-competence … |
+| `business_purpose` | string | no | It exists because competence lapses quietly - the tracking is what keeps every role visibly current or visibly short. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be tracked from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

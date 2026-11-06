@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Administer Catalogue Pricing Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Administer Catalogue Pricing** (`processes:activity-pv-operate-kwm3wt`). Its canonical ID is `processes:task-pv-operate-intake-qmfamc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The pricing work opens as the material that sets or moves catalogue prices arrives, chiefly launch pricing and rule updates. The intake custodian logs them against the pricing file so the administering starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the prices buyers see must be traceable to logged and authorised inputs from the very first step.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when pricing material is presented for administration with the activity's owner told that it has landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs a new product's launch pricing and a seasonal rule change into the pricing file, so the administering of catalogue prices starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Book In the Arriving Pricing Papers |
+| `plain_language_description` | string | no | The pricing work opens as the material that sets or moves catalogue prices arrives, chiefly launch pricing and rule … |
+| `business_purpose` | string | no | It exists because the prices buyers see must be traceable to logged and authorised inputs from the very first step. |
+| `practical_context` | string | no | It opens when pricing material is presented for administration with the activity's owner told that it has landed, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Run Board and Committee Cycles and acknowledged by the governance custodian and any governing-party notify-list …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Cycle Round Is Complete'
+plain_language_description: 'The confirmation custodian reconciles what the round produced with what the cycle contract and assurance standards demanded, then closes the round out. The board secretary and the governance custodian receive the completion confirmation, and it is logged before the file moves on.'
+business_purpose: 'It exists so the end of each cycle round is evidenced, and custody passes onward with a clean handover.'
+practical_context: 'It starts with the produced results pack, and it closes once acknowledgements are back and the records custodian receives the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian checks the round''s outputs against the cycle contract, then logs the confirmation acknowledged by the governance custodian.'

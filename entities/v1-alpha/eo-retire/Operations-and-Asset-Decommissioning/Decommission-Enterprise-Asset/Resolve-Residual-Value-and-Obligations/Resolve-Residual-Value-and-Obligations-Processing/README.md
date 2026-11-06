@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-tra
 
 This is a **Task** (level L4), named **Resolve Residual Value and Obligations Processing**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Resolve Residual Value and Obligations** (`processes:activity-eo-retire-zkt7eq`). Its canonical ID is `processes:task-eo-retire-transform-gp99wg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the settling itself: whatever value the asset still holds is recovered, its data is sanitized beyond recovery, its outstanding obligations are closed off, and the settled state is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an asset's ghost lingers in value unclaimed, data unwiped, and obligations unclosed - the settling is what lays it to rest.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be settled, and it ends with the settled residuals produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management recovers the last value, wipes the data, and closes the obligations, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Recover the Value, Wipe the Data, Close the Debts |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the settling itself: whatever value the asset still holds is … |
+| `business_purpose` | string | no | It exists because an asset's ghost lingers in value unclaimed, data unwiped, and obligations unclosed - the settling is … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be settled, and it ends with the settled … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

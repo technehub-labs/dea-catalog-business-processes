@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Bound Agent Capacity Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Agent Capacity** (`processes:activity-ao-conceive-36aux4`). Its canonical ID is `processes:task-ao-conceive-transform-pvk8v9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the imperatives verified, the processing custodian bounds the capacity itself: the agent capacity the organization and agent strategy will commit is worked out and fixed in the form the activity defines. Working papers behind the bound are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategy that names no capacity commits to nothing and delivers accordingly.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified imperatives are ready to be sized from, and it ends with the bounded agent capacity produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function fixes the agent capacity the strategy will commit, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound the Agent Capacity the Strategy Will Commit |
+| `plain_language_description` | string | no | With the imperatives verified, the processing custodian bounds the capacity itself: the agent capacity the organization … |
+| `business_purpose` | string | no | It exists because a strategy that names no capacity commits to nothing and delivers accordingly. |
+| `practical_context` | string | no | It starts once checking is complete and the verified imperatives are ready to be sized from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

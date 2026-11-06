@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 
 This is a **Task** (level L4), named **Resolve Attendance Exceptions Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Resolve Attendance Exceptions** (`processes:activity-ao-operate-c7xad6`). Its canonical ID is `processes:task-ao-operate-confirm-dfkunc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the exceptions stand resolved, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The payroll feed that follows learns the record is clean and ready to be handed over.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so payroll receives time data only once its exceptions are confirmed as resolved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the resolved exceptions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the resolved exceptions against the activity's intended outcome and issues the confirmation the payroll feed needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Resolved Attendance Exceptions |
+| `plain_language_description` | string | no | When the exceptions stand resolved, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so payroll receives time data only once its exceptions are confirmed as resolved. |
+| `practical_context` | string | no | It begins once preparation is complete and the resolved exceptions await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

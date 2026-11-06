@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Declare Regulator-Licensed Role Mix Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Declare Regulator-Licensed Role Mix** (`processes:activity-ao-conceive-cqkwrm`). Its canonical ID is `processes:task-ao-conceive-intake-hb8x2r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The declaration opens when the capacity strategy for agents and the regulator licensing taxonomy are handed over together. The intake custodian accepts both, registers them with audit identifiers, and opens the declaration work from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the role mix is declared from a registered strategy read against a registered taxonomy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the strategy and taxonomy are presented for the declaration, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function registers the capacity strategy and licensing taxonomy as the declaration baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Capacity Strategy and Licensing Taxonomy |
+| `plain_language_description` | string | no | The declaration opens when the capacity strategy for agents and the regulator licensing taxonomy are handed over … |
+| `business_purpose` | string | no | It exists so the role mix is declared from a registered strategy read against a registered taxonomy. |
+| `practical_context` | string | no | It opens when the strategy and taxonomy are presented for the declaration, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

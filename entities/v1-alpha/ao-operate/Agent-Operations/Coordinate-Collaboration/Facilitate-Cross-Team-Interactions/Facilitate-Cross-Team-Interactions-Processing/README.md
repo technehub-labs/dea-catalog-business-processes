@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Facilitate Cross-Team Interactions Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Facilitate Cross-Team Interactions** (`processes:activity-ao-operate-xnd6yx`). Its canonical ID is `processes:task-ao-operate-transform-yvse3j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the norms verified, the processing custodian does the facilitation itself: the interactions between agents and teams across the organization are facilitated under the norms, and the facilitated interactions are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because cross-boundary work rarely starts on its own - someone has to make the introductions happen and keep them moving.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified norms are ready to be facilitated under, and it ends with the facilitated interactions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management brings agents and teams together across their boundaries and keeps the interactions moving, recording the facilitated exchanges.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep Agents and Teams Interacting Across Boundaries |
+| `plain_language_description` | string | no | With the norms verified, the processing custodian does the facilitation itself: the interactions between agents and … |
+| `business_purpose` | string | no | It exists because cross-boundary work rarely starts on its own - someone has to make the introductions happen and keep … |
+| `practical_context` | string | no | It starts once checking is complete and the verified norms are ready to be facilitated under, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

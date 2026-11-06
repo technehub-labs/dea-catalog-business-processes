@@ -75,3 +75,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Plan Before Paying the Suppliers'
+plain_language_description: 'Before anything is paid, the verification custodian checks the invoices and plan against what execution requires - that every invoice paid is approved and the plan''s ordering holds. Defects are logged for rejection or repair before any payment is made.'
+business_purpose: 'It exists so no payment leaves for an invoice that was never approved.'
+practical_context: 'It runs once the intake is registered and the inputs can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds an unapproved invoice sitting in the payment run and logs the defect before any payment is made.'

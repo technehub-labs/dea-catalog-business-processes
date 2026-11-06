@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Commit Strategic Option Designs Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Strategic Option Designs** (`processes:activity-sd-design-47gv45`). Its canonical ID is `processes:task-sd-design-transform-dduzut`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the committing proper begins. The processing custodian fixes the option designs with their bounded trade-offs and evaluation criteria for the downstream evaluation, producing the committed option designs in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because downstream evaluation needs one settled design set; moving options make any comparison unfair.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the committed option designs produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function commits the verified option designs with their trade-offs and criteria for evaluation, keeping the committing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Option Designs with Their Trade-offs and Criteria |
+| `plain_language_description` | string | no | With the inputs verified, the committing proper begins. The processing custodian fixes the option designs with their … |
+| `business_purpose` | string | no | It exists because downstream evaluation needs one settled design set; moving options make any comparison unfair. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the committed option designs produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

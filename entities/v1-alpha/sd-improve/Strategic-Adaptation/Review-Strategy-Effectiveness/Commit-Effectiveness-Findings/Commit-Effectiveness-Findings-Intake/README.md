@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-in
 
 This is a **Task** (level L4), named **Commit Effectiveness Findings Intake**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Commit Effectiveness Findings** (`processes:activity-sd-improve-mu6upn`). Its canonical ID is `processes:task-sd-improve-intake-8zhazq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The commitment opens as its material arrives: the formulated findings and recommendations from the strategy review. The intake custodian logs them against the commitment file so the commitment starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every finding enters the routing step on the register, with none lost between drafting and decision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the formulated findings are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the drafted findings and recommendations into the commitment file, so the routing work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Drafted Findings for Routing |
+| `plain_language_description` | string | no | The commitment opens as its material arrives: the formulated findings and recommendations from the strategy review. The … |
+| `business_purpose` | string | no | It exists so every finding enters the routing step on the register, with none lost between drafting and decision. |
+| `practical_context` | string | no | It opens when the formulated findings are presented for commitment, with the activity's owner told that it has landed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

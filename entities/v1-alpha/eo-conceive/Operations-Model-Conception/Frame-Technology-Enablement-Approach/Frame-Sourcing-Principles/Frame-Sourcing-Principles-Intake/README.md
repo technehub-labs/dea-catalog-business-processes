@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-i
 
 This is a **Task** (level L4), named **Frame Sourcing Principles Intake**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Sourcing Principles** (`processes:activity-eo-conceive-99pug6`). Its canonical ID is `processes:task-eo-conceive-intake-wdaqpv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Sourcing framing opens when the platform families are handed over as the subjects the sourcing postures will be framed for. The intake custodian accepts them, registers them with audit identifiers, and starts the framing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so sourcing postures are framed for a registered set of platform families rather than in the abstract.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the platform families are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the identified platform families as the framing baseline, with audit references, and opens the sourcing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Platform Families for Sourcing Framing |
+| `plain_language_description` | string | no | Sourcing framing opens when the platform families are handed over as the subjects the sourcing postures will be framed … |
+| `business_purpose` | string | no | It exists so sourcing postures are framed for a registered set of platform families rather than in the abstract. |
+| `practical_context` | string | no | It opens when the platform families are presented for the framing, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

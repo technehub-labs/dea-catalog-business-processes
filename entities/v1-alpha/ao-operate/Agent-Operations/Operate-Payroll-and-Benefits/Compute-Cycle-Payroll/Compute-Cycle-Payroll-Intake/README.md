@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Compute Cycle Payroll Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Compute Cycle Payroll** (`processes:activity-ao-operate-gxarb3`). Its canonical ID is `processes:task-ao-operate-intake-z9at57`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The payroll cycle opens when the validated time and attendance data is handed over as the input the cycle's pay will be computed from. The intake custodian accepts it, registers it with audit identifiers, and starts the computation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so pay is computed from validated time data, never from guesswork or unvalidated figures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the validated time data is presented for the cycle, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in workforce management registers the validated time data as the payroll baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Validated Time Data for the Cycle |
+| `plain_language_description` | string | no | The payroll cycle opens when the validated time and attendance data is handed over as the input the cycle's pay will be … |
+| `business_purpose` | string | no | It exists so pay is computed from validated time data, never from guesswork or unvalidated figures. |
+| `practical_context` | string | no | It opens when the validated time data is presented for the cycle, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

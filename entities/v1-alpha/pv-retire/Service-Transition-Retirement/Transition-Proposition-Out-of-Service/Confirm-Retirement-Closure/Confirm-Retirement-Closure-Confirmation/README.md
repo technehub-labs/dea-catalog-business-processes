@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-con
 
 This is a **Task** (level L4), named **Confirm Retirement Closure Confirmation**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Confirm Retirement Closure** (`processes:activity-pv-retire-mqkper`). Its canonical ID is `processes:task-pv-retire-confirm-bpwkag`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the closure record stands. The confirmation custodian tells the downstream teams the closure is available, and closes the reconciliation against what the activity promised for the retirement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so support, archive and catalogue teams all hear one authoritative word that the retirement is closed, not rumour.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the closure record is complete and ready to hand on, and it closes with the confirmation issued and the closure's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the proposition design authority issues the closure confirmation to the support and catalogue teams, reconciles what was delivered against what the retirement promised, and closes the matter.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue the Retirement Closure to the Teams Still Holding Residuals |
+| `plain_language_description` | string | no | The confirming opens once the closure record stands. The confirmation custodian tells the downstream teams the closure … |
+| `business_purpose` | string | no | It exists so support, archive and catalogue teams all hear one authoritative word that the retirement is closed, not … |
+| `practical_context` | string | no | It opens when the closure record is complete and ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

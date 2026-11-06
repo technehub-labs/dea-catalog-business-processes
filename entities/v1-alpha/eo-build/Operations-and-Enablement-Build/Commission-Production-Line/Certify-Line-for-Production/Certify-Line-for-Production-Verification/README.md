@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Certify Line for Production Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Certify Line for Production** (`processes:activity-eo-build-7bmbzy`). Its canonical ID is `processes:task-eo-build-verify-8k4anb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is certified, the verification custodian checks the trial evidence against what certification requires - that the evidence covers the runs and measures the quality criteria the certification depends on. Defects are logged for rejection or repair before the judgement is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the line is never certified on evidence that missed part of the criteria.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the trial evidence missing one quality criterion's measurements and logs the defect before certification proceeds.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Evidence Before Certifying the Line |
+| `plain_language_description` | string | no | Before anything is certified, the verification custodian checks the trial evidence against what certification requires … |
+| `business_purpose` | string | no | It exists so the line is never certified on evidence that missed part of the criteria. |
+| `practical_context` | string | no | It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

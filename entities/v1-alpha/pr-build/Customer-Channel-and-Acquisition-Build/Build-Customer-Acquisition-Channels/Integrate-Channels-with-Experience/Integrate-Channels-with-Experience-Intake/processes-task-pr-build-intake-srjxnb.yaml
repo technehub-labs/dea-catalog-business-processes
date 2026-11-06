@@ -73,3 +73,18 @@ outputs:
   description: Intake manifest registered and bound to the Integrate Channels with Experience case file; registered intake custodian passes custody to the verification …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Accept the Integration Brief and Open the File'
+plain_language_description: 'Integration work starts with the design brief in hand: the mix of channels, the specification for the demand programmes, and the manifest of the asset library. The intake custodian agrees the scope of the build with the owners of the channels and demand programmes, then registers the pack.'
+business_purpose: 'It exists so the wiring of channels to experience begins from a scope the owners have confirmed.'
+practical_context: 'It opens when the Build-stage pack arrives, and it closes with the manifest registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in customer relationship management confirms the integration scope with the channel owner and registers the manifest.'

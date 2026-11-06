@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Plan Agent Development Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Plan Agent Development** (`processes:activity-ao-improve-eq6pbr`). Its canonical ID is `processes:task-ao-improve-transform-kdd8f8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the drivers verified, the processing custodian makes the plan itself: the development actions for the agent population and the organization are matched to the gathered drivers and set down in the form the activity defines. Working papers behind the plan are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because drivers only improve the organisation when the actions that answer them are actually planned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified drivers are ready to be planned against, and it ends with the development plan produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority matches development actions to each gathered driver and records the plan, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan the Development Actions Against the Drivers |
+| `plain_language_description` | string | no | With the drivers verified, the processing custodian makes the plan itself: the development actions for the agent … |
+| `business_purpose` | string | no | It exists because drivers only improve the organisation when the actions that answer them are actually planned. |
+| `practical_context` | string | no | It starts once checking is complete and the verified drivers are ready to be planned against, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

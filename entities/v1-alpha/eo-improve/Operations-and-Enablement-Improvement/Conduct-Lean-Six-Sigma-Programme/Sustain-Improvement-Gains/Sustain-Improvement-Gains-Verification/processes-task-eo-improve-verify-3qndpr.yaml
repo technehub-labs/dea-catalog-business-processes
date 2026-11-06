@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Outcomes Before Holding the Gains'
+plain_language_description: 'Before any gain is tended, the verification custodian checks the delivered outcomes against what sustainment requires - that each outcome states the gain it realized and how it will be measured. Defects are logged for rejection or repair before the holding begins.'
+business_purpose: 'It exists so effort is never spent tending gains that were never truly realized.'
+practical_context: 'It runs once the intake is registered and the outcomes can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds an outcome with no measurable gain behind it and logs the defect before sustainment begins.'

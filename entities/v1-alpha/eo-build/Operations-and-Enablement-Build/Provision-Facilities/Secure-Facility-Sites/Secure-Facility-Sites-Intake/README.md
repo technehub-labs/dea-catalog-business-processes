@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Secure Facility Sites Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Secure Facility Sites** (`processes:activity-eo-build-neek9x`). Its canonical ID is `processes:task-eo-build-intake-9d7zqr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Site securing opens when the committed facility blueprint is handed over as the plan whose positions must be secured. The intake custodian accepts it, registers it with audit identifiers, and starts the securing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so sites are secured at the positions the blueprint chose, under registered control.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the blueprint is presented for site securing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management registers the committed blueprint as the securing baseline, with audit references, and opens the site work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Committed Facility Blueprint for Site Securing |
+| `plain_language_description` | string | no | Site securing opens when the committed facility blueprint is handed over as the plan whose positions must be secured … |
+| `business_purpose` | string | no | It exists so sites are secured at the positions the blueprint chose, under registered control. |
+| `practical_context` | string | no | It opens when the blueprint is presented for site securing, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

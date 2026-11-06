@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-t
 
 This is a **Task** (level L4), named **Frame Enablement and Asset Direction Processing**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Enablement and Asset Direction** (`processes:activity-eo-conceive-ettdc2`). Its canonical ID is `processes:task-eo-conceive-transform-r22rgx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the envelope verified, the processing custodian frames the directions themselves: the technology enablement approach and the physical asset approach the strategy commits to are worked out as directions and set down in the form the activity defines. Working papers behind the directions are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an envelope says what the model must do - the directions say what technology and assets will do it with.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified envelope is ready to be framed from, and it ends with the two directions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function sets the technology and asset postures the strategy commits to within the envelope, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Technology and Asset Postures the Strategy Commits To |
+| `plain_language_description` | string | no | With the envelope verified, the processing custodian frames the directions themselves: the technology enablement … |
+| `business_purpose` | string | no | It exists because an envelope says what the model must do - the directions say what technology and assets will do it … |
+| `practical_context` | string | no | It starts once checking is complete and the verified envelope is ready to be framed from, and it ends with the two … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Submit Statutory Dissolution Filings conforming to the Retire schema; processing custodian passes custody to the …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Prepare and Lodge the Dissolution Filings'
+plain_language_description: 'With the certificate in hand, the processing custodian drives the unwind through its filing steps: the order''s scope is assessed, retained records are placed with their custodian, governance is reduced to the quorum the wind-down requires, and the statutory filings go to the registry and the regulators. The evidence is bundled into the record pack.'
+business_purpose: 'It exists because the entity cannot be dissolved until the statute''s filings are actually made and evidenced.'
+practical_context: 'It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody handed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the finance function lodges the corporate dissolution filing and the authorisation surrender, bundling receipts into the record pack.'

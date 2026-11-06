@@ -1,0 +1,632 @@
+{
+  "processes:task-ge-improve-record-hugab3": {
+    "plain_language_name": "Lay the Standards Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The standards' updating stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the standards' updating can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-9q9heh": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Updated Standards",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because revised standards nobody has confirmed are revisions nobody can govern by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-ncpt4n": {
+    "plain_language_name": "Take Custody of the Standards Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the updating begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-4y3ar8": {
+    "plain_language_name": "Revise the Standards Until the Gaps Close",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the standards: the codified policy instruments are revised until the measured gaps close, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a gap that outlives its standard is a gap the enterprise has chosen to keep - the revising is what closes it instead.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function revises the codified policy instruments against the measured gaps, keeping the working papers."
+    }
+  },
+  "processes:task-ge-improve-verify-mufr9x": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Revision",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because standards revised short of the audit method would wobble under the first real review - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-6d9qqh": {
+    "plain_language_name": "Lay the Performance Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The measurement stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the measurement can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-h7rejp": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Measurement",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because a measurement nobody has confirmed is a measurement nobody can learn from.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-6pkgv5": {
+    "plain_language_name": "Take Custody of the Performance Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the measurement begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-ar3ba3": {
+    "plain_language_name": "Judge the Governance Against Its Own Strategy",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the measurement: how the operating governance performs against its committed strategy is judged from the body records and the decision logs, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because governance that never measures itself against its own strategy is governance steering by faith.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function judges the operating governance against the committed strategy from the body records and decision logs."
+    }
+  },
+  "processes:task-ge-improve-verify-82mupm": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Judgement",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a judgement made short of the audit method would mislead every lesson drawn from it - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-wm3aet": {
+    "plain_language_name": "Lay the Lessons Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The lessons' capture stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the lessons' capture can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-7hkzh2": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Lessons",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because lessons nobody has confirmed are lessons nobody can teach onward.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-qbgu2g": {
+    "plain_language_name": "Take Custody of the Lessons Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the lessons begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-bhwmhu": {
+    "plain_language_name": "Turn the Measured Performance into Lessons Worth Keeping",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the lessons: what the measured performance teaches is drawn out and written into the lessons record, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because performance measured but never learned from is performance paid for twice - the capture is what banks the teaching.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function draws what the measured performance teaches into the lessons record, keeping the working papers."
+    }
+  },
+  "processes:task-ge-improve-verify-gg96m4": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Lessons",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because lessons captured short of the audit method would teach the wrong things - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-w3mv9c": {
+    "plain_language_name": "Lay the Reviews Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The reviews' delivery stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the reviews' delivery can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-2fuqvu": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Reviews",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because reviews nobody has confirmed are reviews nobody can act on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-kszqn4": {
+    "plain_language_name": "Take Custody of the Reviews Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the delivery begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-atv8as": {
+    "plain_language_name": "Make the Reviews Ready for the Bodies",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the delivery: the consolidated effectiveness reviews are made ready for the governance bodies they are addressed to, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a review that never reaches the body it addresses reviews nothing - the making-ready is what turns the review into governance.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function consolidates the effectiveness reviews and makes them ready for the bodies they address."
+    }
+  },
+  "processes:task-ge-improve-verify-p68daq": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Delivery",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because reviews delivered short of the audit method would misdirect the bodies from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-yq2v37": {
+    "plain_language_name": "Lay the Recommendations Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The recommendations' formulation stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the recommendations' formulation can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-tfhg3z": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Recommendations",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because recommendations nobody has confirmed are recommendations nobody would act on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-pkedss": {
+    "plain_language_name": "Take Custody of the Recommendations Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the recommendations begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-nwf9w6": {
+    "plain_language_name": "Turn the Lessons into Recommendations Worth Acting On",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the recommendations: the recommendations worth acting on are formulated from the measured performance and the captured lessons, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a lesson without a recommendation is a lesson that will be paid for again - the formulating is what turns teaching into action.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function formulates the recommendations worth acting on from the measured performance and captured lessons."
+    }
+  },
+  "processes:task-ge-improve-verify-hbrp6k": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Recommendations",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because recommendations formed short of the audit method would misdirect the acting from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-6d9qqh": {
+    "plain_language_name": "Lay the Performance Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The measurement stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the measurement can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-h7rejp": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Measurement",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because a measurement nobody has confirmed is a measurement nobody can learn from.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-6pkgv5": {
+    "plain_language_name": "Take Custody of the Performance Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the measurement begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-ar3ba3": {
+    "plain_language_name": "Judge the Governance Against Its Own Strategy",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the measurement: how the operating governance performs against its committed strategy is judged from the body records and the decision logs, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because governance that never measures itself against its own strategy is governance steering by faith.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function judges the operating governance against the committed strategy from the body records and decision logs."
+    }
+  },
+  "processes:task-ge-improve-verify-82mupm": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Judgement",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a judgement made short of the audit method would mislead every lesson drawn from it - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-2vy4rd": {
+    "plain_language_name": "Lay the Recurrence Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The recurrence assessing stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the recurrence assessing can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-s8e7ge": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Recurrence",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because recurrence nobody has confirmed is recurrence nobody can break.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-pqvr52": {
+    "plain_language_name": "Take Custody of the Recurrence Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the recurrence assessing begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-w7ytqv": {
+    "plain_language_name": "Check Each Finding Against Its Own History",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the recurrence: each finding is checked against the historical record for whether it has happened before, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a finding that repeats is not new information - it is an old fix that failed, and the recurrence check is what says so out loud.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function checks each finding against the historical record for whether it has happened before."
+    }
+  },
+  "processes:task-ge-improve-verify-8gvt5d": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the History Check",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a history check made short of the audit method would miss the repeats that matter - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function checks each finding against the historical record for whether it has happened before."
+    }
+  },
+  "processes:task-ge-improve-record-x2jbvc": {
+    "plain_language_name": "Lay the Severity Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The scoring stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the scoring can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-fmd8uz": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Severity",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because a severity nobody has confirmed is a severity nobody can prioritize by.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-jete2r": {
+    "plain_language_name": "Take Custody of the Severity Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the scoring begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-t2nd3a": {
+    "plain_language_name": "Grade Every Finding by Its Weight",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the scoring: each delivered finding is graded by its weight under the framework rubric and the assurance thresholds, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because findings treated as equals swallow the ones that matter - the grading is what gives each finding its true weight.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function grades each delivered finding by its weight under the framework rubric and the assurance thresholds."
+    }
+  },
+  "processes:task-ge-improve-verify-c2k22d": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Grading",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a grade given short of the audit method would weight the findings wrong from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-b4ykxq": {
+    "plain_language_name": "Lay the Delta Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The measuring stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the measuring can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-fc5d6h": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Delta",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because a delta nobody has confirmed is a delta nobody can close.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-v62xhq": {
+    "plain_language_name": "Take Custody of the Delta Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the measuring begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-9ubkdz": {
+    "plain_language_name": "Measure the Distance Between Finding and Standard",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the delta: each scored finding is set against the codified standards and the compliance delta is bounded, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a finding and a standard are two different things until somebody measures the space between - the delta is what makes the gap closable.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function sets each scored finding against the codified standards and bounds the delta."
+    }
+  },
+  "processes:task-ge-improve-verify-2ybx2z": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Distance",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a distance measured short of the audit method would misstate the gap from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-improve-record-srspb9": {
+    "plain_language_name": "Lay the Trends Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The trends' reporting stays provable for as long as the assurance demands.",
+    "business_purpose": "It exists so the trends' reporting can be evidenced for as long as the assurance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an assurance review would consult."
+    }
+  },
+  "processes:task-ge-improve-confirm-z2j4vk": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Trends",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.",
+    "business_purpose": "It exists because trends nobody has confirmed are trends nobody would act on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee."
+    }
+  },
+  "processes:task-ge-improve-intake-hbfx9h": {
+    "plain_language_name": "Take Custody of the Trends Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the improvement pack — the finding register, the effectiveness-review scope, and the policy-gap inventory — and writes the manifest that ties the pack into the case file for the improvement.",
+    "business_purpose": "It exists so the trends begin from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the audit function takes charge of the finding register, review scope, and gap inventory, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-improve-transform-5rmvns": {
+    "plain_language_name": "Read the Scores Over Time and Say Where Quality Drifts",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the improvement for the trends: the scored and measured findings are read across time, the drifts in quality are named for the governance bodies, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because one finding is an event but a trend is a diagnosis - the reading across time is what turns scores into direction.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the audit function reads the scores across time and names the drifts in quality for the governance bodies."
+    }
+  },
+  "processes:task-ge-improve-verify-2nf95k": {
+    "plain_language_name": "Read the Pack Against the Audit Method Before the Trends",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because trends reported short of the audit method would misdirect the bodies from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-operate-record-svwg6r": {
+    "plain_language_name": "Lay the Audit Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The audit's execution stays provable for as long as the governance demands.",
+    "business_purpose": "It exists so the audit's execution can be evidenced for as long as the governance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-ge-operate-confirm-uztzzq": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Audit",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the cycle's contract and the evidence standards for assurance, reconciles the two, and issues the operating confirmation to the custodian of governance and the board secretary, logging it into the case file.",
+    "business_purpose": "It exists because an audit nobody has confirmed is an audit nobody can act on.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the cycle's contract and the assurance standards and issues the operating confirmation to the custodian of governance and the board secretary."
+    }
+  },
+  "processes:task-ge-operate-intake-cwqtc8": {
+    "plain_language_name": "Take Custody of the Audit Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the operating pack — the board and committee cycles, the assurance-evidence queue, the risk-review calendar, and the audit plan — and writes the manifest that ties the pack into the case file for the operating.",
+    "business_purpose": "It exists so the audit begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the risk function takes charge of the cycles, queue, calendar, and plan, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-operate-transform-q73jwg": {
+    "plain_language_name": "Run the Audits the Plan Ordered",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the operating for the audits: the planned audits are run against the codified policies and their evidence assembled, joined by the operating rhythm the pack carries, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because a policy nobody audits is a policy obeyed by luck - the running is what turns the plan into evidence.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the risk function runs each planned audit against the codified policies and assembles its evidence, keeping the working papers."
+    }
+  },
+  "processes:task-ge-operate-verify-cqqv4s": {
+    "plain_language_name": "Hold the Pack Against the Contracts Before the Audits Run",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the cycle's contract, the evidence standards for assurance, and the review methodology for risk, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because audits run short of their contracts would gather the wrong evidence from day one - the reading is what keeps them honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the risk function reads the pack against the cycle's contract and the assurance standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-operate-record-zw7r5z": {
+    "plain_language_name": "Lay the Plan Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The plan's making stays provable for as long as the governance demands.",
+    "business_purpose": "It exists so the plan's making can be evidenced for as long as the governance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-ge-operate-confirm-v9fdrk": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Plan",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the cycle's contract and the evidence standards for assurance, reconciles the two, and issues the operating confirmation to the custodian of governance and the board secretary, logging it into the case file.",
+    "business_purpose": "It exists because a plan nobody has confirmed is a plan nobody would run to.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the cycle's contract and the assurance standards and issues the operating confirmation to the custodian of governance and the board secretary."
+    }
+  },
+  "processes:task-ge-operate-intake-7p9y7z": {
+    "plain_language_name": "Take Custody of the Planning Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the operating pack — the board and committee cycles, the assurance-evidence queue, the risk-review calendar, and the audit plan — and writes the manifest that ties the pack into the case file for the operating.",
+    "business_purpose": "It exists so the planning begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the risk function takes charge of the cycles, queue, calendar, and plan, and writes the binding manifest."
+    }
+  },
+  "processes:task-ge-operate-transform-mcd6jp": {
+    "plain_language_name": "Draw the Audit Map for the Cycle Ahead",
+    "plain_language_description": "With the certificate in hand, the processing custodian executes the operating for the planning: the periodic audits that will verify compliance with the codified policies are planned, joined by the operating rhythm the pack carries, and the outcomes pack is produced for confirmation.",
+    "business_purpose": "It exists because compliance audited by accident covers only what someone noticed - the planning is what decides in advance what will be checked.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the risk function plans the periodic audits that will verify compliance with the codified policies."
+    }
+  },
+  "processes:task-ge-operate-verify-46t2t4": {
+    "plain_language_name": "Hold the Plan Against the Contracts Before It Runs",
+    "plain_language_description": "With the manifest registered, the verification custodian reads the whole pack against the cycle's contract, the evidence standards for assurance, and the review methodology for risk, and issues the report naming whatever deviates and how it will be mended.",
+    "business_purpose": "It exists because a plan drawn short of its contracts would audit the wrong things from day one - the reading is what keeps it honest.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in the risk function reads the pack against the cycle's contract and the assurance standards, naming whatever deviates and how it will be mended."
+    }
+  },
+  "processes:task-ge-operate-record-qh77m6": {
+    "plain_language_name": "Lay the Findings Report Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the outcomes pack, the completion confirmation, and whatever remediations were raised. The findings' reporting stays provable for as long as the governance demands.",
+    "business_purpose": "It exists so the findings' reporting can be evidenced for as long as the governance demands.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-ge-operate-confirm-9fqb7f": {
+    "plain_language_name": "Reconcile the Pack and Confirm the Report",
+    "plain_language_description": "When the outcomes pack exists, the confirmation custodian sets it beside the cycle's contract and the evidence standards for assurance, reconciles the two, and issues the operating confirmation to the custodian of governance and the board secretary, logging it into the case file.",
+    "business_purpose": "It exists because a report nobody has confirmed is a report nobody would receive.",
+    "practical_context": "It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the pack beside the cycle's contract and the assurance standards and issues the operating confirmation to the custodian of governance and the board secretary."
+    }
+  },
+  "processes:task-ge-operate-intake-kb2mmm": {
+    "plain_language_name": "Take Custody of the Reporting Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the operating pack — the board and committee cycles, the assurance-evidence queue, the risk-review calendar, and the audit plan — and writes the manifest that ties the pack into the case file for the operating.",
+    "business_purpose": "It exists so the reporting begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the risk function takes charge of the cycles, queue, calendar, and plan, and writes the binding manifest."
+    }
+  }
+}

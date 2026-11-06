@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-co
 
 This is a **Task** (level L4), named **Run Regulator-Mandated Recurrent Training Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Run Regulator-Mandated Recurrent Training** (`processes:activity-ao-improve-x7m4n2`). Its canonical ID is `processes:task-ao-improve-confirm-gs6k8z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the cycles stand run, the confirmation custodian reconciles the completion record against the outcome the activity set out to reach and issues the confirmation. The supervisor notification that follows learns the training completions are settled and available.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so completions are relied on only after the record is confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the completion record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the completion record against the activity's intended outcome and issues the confirmation the notification step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Recurrent Training Completion Record |
+| `plain_language_description` | string | no | When the cycles stand run, the confirmation custodian reconciles the completion record against the outcome the activity … |
+| `business_purpose` | string | no | It exists so completions are relied on only after the record is confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the completion record awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

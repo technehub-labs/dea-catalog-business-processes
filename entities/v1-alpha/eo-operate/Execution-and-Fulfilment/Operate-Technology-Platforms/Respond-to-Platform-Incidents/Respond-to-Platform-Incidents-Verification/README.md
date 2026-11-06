@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-ve
 
 This is a **Task** (level L4), named **Respond to Platform Incidents Verification**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Respond to Platform Incidents** (`processes:activity-eo-operate-ua7tgk`). Its canonical ID is `processes:task-eo-operate-verify-sfqm5w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is triaged, the verification custodian checks the detected platform deviations against what response requires - that each names its platform and states what actually failed. Defects are logged for rejection or repair before any incident is triaged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so effort is never spent triaging failures that were never properly detected.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the deviations can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a deviation that names no platform and logs the defect before any triage begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Deviations Before Triaging Them |
+| `plain_language_description` | string | no | Before anything is triaged, the verification custodian checks the detected platform deviations against what response … |
+| `business_purpose` | string | no | It exists so effort is never spent triaging failures that were never properly detected. |
+| `practical_context` | string | no | It runs once the intake is registered and the deviations can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

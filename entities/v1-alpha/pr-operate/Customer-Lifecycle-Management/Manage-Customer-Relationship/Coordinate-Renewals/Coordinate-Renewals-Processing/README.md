@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-operate-tr
 
 This is a **Task** (level L4), named **Coordinate Renewals Processing**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Coordinate Renewals** (`processes:activity-pr-operate-amg225`). Its canonical ID is `processes:task-pr-operate-transform-zrmu7y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. The approaching terms are prepared and executed, and the results are produced as an outcomes pack ready for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a renewal missed at term is a relationship lost by calendar, not by choice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in customer relationship management tracks the renewal calendar and keeps each approaching term on track.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Renewals Moving on Schedule |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts … |
+| `business_purpose` | string | no | It exists because a renewal missed at term is a relationship lost by calendar, not by choice. |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

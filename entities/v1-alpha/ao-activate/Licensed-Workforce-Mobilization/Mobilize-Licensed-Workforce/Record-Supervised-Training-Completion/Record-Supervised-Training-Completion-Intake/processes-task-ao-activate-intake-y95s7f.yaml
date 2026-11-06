@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Supervised-Training Completion Evidence'
+plain_language_description: 'The training completion papers - the role''s plan and the evidence that supervised training actually finished - arrive here first. The intake custodian accepts the package, logs it on the regulated personnel record, and issues acknowledgment references so the steps that follow can trace it.'
+business_purpose: 'It exists so completion evidence is booked in traceably before anyone acts on it.'
+practical_context: 'It opens when the training plan and completion evidence are presented, with the activity owner alerted, and it closes once the package is registered with audit identifiers and the remaining steps may go ahead.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in workforce management logs a licensee''s completion evidence and training plan against the personnel record and acknowledges receipt.'

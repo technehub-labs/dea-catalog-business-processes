@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-co
 
 This is a **Task** (level L4), named **Select Improvement Projects Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Select Improvement Projects** (`processes:activity-eo-improve-rdjvga`). Its canonical ID is `processes:task-eo-improve-confirm-e784er`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the portfolio stands selected, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The delivery step that follows learns the projects are chosen and ready to be run.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so delivery runs only over a portfolio confirmed as selected.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the selected portfolio awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the selected portfolio against the activity's intended outcome and issues the confirmation the delivery step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Selected Project Portfolio |
+| `plain_language_description` | string | no | When the portfolio stands selected, the confirmation custodian reconciles it against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so delivery runs only over a portfolio confirmed as selected. |
+| `practical_context` | string | no | It begins once preparation is complete and the selected portfolio awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

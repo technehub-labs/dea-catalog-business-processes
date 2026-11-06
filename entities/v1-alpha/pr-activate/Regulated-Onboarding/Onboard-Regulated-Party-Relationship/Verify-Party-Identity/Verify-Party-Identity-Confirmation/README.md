@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-c
 
 This is a **Task** (level L4), named **Verify Party Identity Confirmation**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Verify Party Identity** (`processes:activity-pr-activate-y46zs2`). Its canonical ID is `processes:task-pr-activate-confirm-sdmssx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the verification certificate. When they agree, the relationship custodian receives the confirmation, the applicant is notified, and the confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so identity work ends with an accountable signature, not simply an unfinished file.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the records custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian signs off the reconciliation, and the relationship custodian acknowledges the identity outcome.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Close Out the Identity Verification with a Sign-Off |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the … |
+| `business_purpose` | string | no | It exists so identity work ends with an accountable signature, not simply an unfinished file. |
+| `practical_context` | string | no | It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

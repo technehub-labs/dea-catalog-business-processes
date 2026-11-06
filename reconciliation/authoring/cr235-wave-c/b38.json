@@ -1,0 +1,582 @@
+{
+ "processes:task-pv-build-intake-zc2nax": {
+  "plain_language_name": "Open the Delivery Model Integration File",
+  "plain_language_description": "The integration work opens with the built service capability and the delivery model design arriving to be joined. The intake custodian logs them against the integration file so the wiring starts accounted for.",
+  "business_purpose": "It exists because a wiring job started from an unlogged pack joins the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the built capability and the delivery model design into the integration file."
+  }
+ },
+ "processes:task-pv-build-verify-egck9b": {
+  "plain_language_name": "Check the Integration Pack Against the Delivery Design",
+  "plain_language_description": "Before the wiring proceeds, the verification custodian tests the arriving material against what the activity requires. Gaps are written down, either for rejection or for putting right, before the joining begins.",
+  "business_purpose": "It exists because capability integrated against the wrong design serves no one.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the integration pack against the delivery model design before the joining."
+  }
+ },
+ "processes:task-pv-build-transform-gvfqa4": {
+  "plain_language_name": "Wire the Service into the Delivery Model",
+  "plain_language_description": "With the checks done, the processing custodian joins the built capability to the delivery model and channels, producing the integrated service in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a service that is not wired into the delivery model cannot reach a customer.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management joins the service capability to the delivery model and channels."
+  }
+ },
+ "processes:task-pv-build-confirm-ttjrjy": {
+  "plain_language_name": "Confirm the Integrated Service Capability",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the integrated service capability is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the integration is formally accepted before the market readiness work builds on it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the integrated capability and notifies the market readiness teams."
+  }
+ },
+ "processes:task-pv-build-intake-skvzmb": {
+  "plain_language_name": "Open the Personnel Preparation File",
+  "plain_language_description": "The preparation work opens with the service design and the standing delivery mechanism arriving for the team that will run them. The intake custodian logs them against the preparation file so the readiness work starts accounted for.",
+  "business_purpose": "It exists because a team readied from an unlogged brief trains on the wrong service.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the service design and the standing mechanism into the preparation file."
+  }
+ },
+ "processes:task-pv-build-verify-5jmecr": {
+  "plain_language_name": "Check the Team Before They Go Live",
+  "plain_language_description": "Before the team is readied, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before preparation proceeds.",
+  "business_purpose": "It exists because people sent to run a service they have not been checked against will learn on the customers.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the team's preparation against the service design before go-live."
+  }
+ },
+ "processes:task-pv-build-transform-b5vwk9": {
+  "plain_language_name": "Ready the People Who Will Run the Service",
+  "plain_language_description": "With the checks done, the processing custodian prepares the team, producing personnel ready to run the stood-up mechanism in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a standing mechanism without prepared people is machinery with no hands.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management trains and readies the people who will run the stood-up mechanism."
+  }
+ },
+ "processes:task-pv-build-confirm-xsnr33": {
+  "plain_language_name": "Confirm the Prepared Service Team",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the prepared personnel are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the prepared team is formally accepted before the capability is declared ready.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the prepared team and notifies the readiness check."
+  }
+ },
+ "processes:task-pv-build-record-9uqvkx": {
+  "plain_language_name": "Keep the Personnel Preparation Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The story of who was readied, and how, stays readable for the discipline's duration.",
+  "business_purpose": "It exists so who was prepared, on what design, stays answerable when service questions arise.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the personnel preparation record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-8fgxzu": {
+  "plain_language_name": "Open the Delivery Mechanism File",
+  "plain_language_description": "The stand-up opens with the designed proposition arriving to be turned into a working delivery mechanism. The intake custodian logs it against the stand-up file so the construction starts accounted for.",
+  "business_purpose": "It exists because a mechanism stood up from an unlogged proposition stands up the wrong service.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the designed proposition into the stand-up file."
+  }
+ },
+ "processes:task-pv-build-verify-2rbhsh": {
+  "plain_language_name": "Check the Stand-Up Pack Against the Proposition Design",
+  "plain_language_description": "Before the mechanism is stood up, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before construction begins.",
+  "business_purpose": "It exists because a mechanism built against a misread proposition delivers the wrong promise.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the stand-up pack against the proposition design before construction."
+  }
+ },
+ "processes:task-pv-build-transform-7zs6q7": {
+  "plain_language_name": "Stand Up the Delivery Mechanism",
+  "plain_language_description": "With the checks done, the processing custodian stands up the delivery mechanism, producing the working mechanism in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a designed proposition becomes real only when its delivery mechanism actually works.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management stands up the delivery mechanism that will carry the service."
+  }
+ },
+ "processes:task-pv-build-confirm-4xhuzc": {
+  "plain_language_name": "Confirm the Standing Delivery Mechanism",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the stood-up mechanism is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the standing mechanism is formally accepted before personnel and readiness work build on it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the standing mechanism and notifies the personnel team."
+  }
+ },
+ "processes:task-pv-build-record-y98qvk": {
+  "plain_language_name": "Retain the Stand-Up Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The mechanism's construction story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the mechanism's construction can be traced when the service misbehaves.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the stand-up record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-79bcc9": {
+  "plain_language_name": "Open the Capability Readiness File",
+  "plain_language_description": "The readiness check opens with the built capability and the proposition's service levels arriving to be judged. The intake custodian logs them against the readiness file so the verification starts accounted for.",
+  "business_purpose": "It exists because a readiness verdict given without its evidence file convinces no one.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the built capability and the service levels into the readiness file."
+  }
+ },
+ "processes:task-pv-build-verify-6b63na": {
+  "plain_language_name": "Test the Capability Against the Service Levels",
+  "plain_language_description": "Before the verdict is given, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the readiness call.",
+  "business_purpose": "It exists because a capability declared ready on unchecked inputs fails in front of customers.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the capability against the proposition's service levels before the verdict."
+  }
+ },
+ "processes:task-pv-build-transform-ygtdvt": {
+  "plain_language_name": "Make the Capability Readiness Call",
+  "plain_language_description": "With the checks done, the processing custodian makes the readiness call, producing the determination in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the enterprise launches on a stated verdict rather than on hope.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management makes the readiness call on the built capability."
+  }
+ },
+ "processes:task-pv-build-confirm-bk795m": {
+  "plain_language_name": "Confirm the Capability's Readiness Verdict",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the readiness determination is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the readiness call is formally issued before the market sees the offering.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management issues the readiness verdict and notifies the market preparation teams."
+  }
+ },
+ "processes:task-pv-build-record-3c2z4y": {
+  "plain_language_name": "Preserve the Readiness Determination",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The verdict and its grounds stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the readiness grounds can be revisited when early customers disagree.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the determination record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-7d793s": {
+  "plain_language_name": "Open the Variant Construction File",
+  "plain_language_description": "The variant build opens with the proposition and packaging designs arriving to be constructed. The intake custodian logs them against the build file so the construction starts accounted for.",
+  "business_purpose": "It exists because variants built from an unlogged design diverge from what the propositions promised.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the proposition and packaging designs into the variant build file."
+  }
+ },
+ "processes:task-pv-build-verify-mjbvt9": {
+  "plain_language_name": "Check the Variant Briefs Before Construction",
+  "plain_language_description": "Before the variants are built, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before construction begins.",
+  "business_purpose": "It exists because construction against a misread design builds the wrong product.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the variant briefs against the packaging designs before construction."
+  }
+ },
+ "processes:task-pv-build-transform-evzj5j": {
+  "plain_language_name": "Build Out the Product Variants",
+  "plain_language_description": "With the checks done, the processing custodian constructs the bounded variants, producing them in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the propositions become sellable only when their bounded variants actually exist.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management constructs the bounded variants the propositions require."
+  }
+ },
+ "processes:task-pv-build-confirm-qr5yj2": {
+  "plain_language_name": "Hand Over the Built Variants",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the constructed variants are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the built variants are formally handed to the conformance check.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management hands over the built variants to the conformance check."
+  }
+ },
+ "processes:task-pv-build-record-9h2ekw": {
+  "plain_language_name": "Preserve the Variant Build Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The variants' construction story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so each variant's build can be traced when a conformance question arises.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the variant build record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-37mw97": {
+  "plain_language_name": "Collect the Variant Papers",
+  "plain_language_description": "The documentation work opens with the construction and verification records arriving to be written up. The intake custodian logs them against the baseline file so the write-up starts accounted for.",
+  "business_purpose": "It exists because a baseline written from incomplete records baselines the wrong state.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the construction and verification records into the baseline file."
+  }
+ },
+ "processes:task-pv-build-verify-75pj54": {
+  "plain_language_name": "Check the Variant Papers Before the Write-Up",
+  "plain_language_description": "Before the baseline is written, the verification custodian tests the arriving records against what the activity requires. Gaps are written down, either for rejection or for putting right, before the write-up begins.",
+  "business_purpose": "It exists because a lifecycle managed against a shaky baseline manages nothing.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the variant papers for completeness before the write-up."
+  }
+ },
+ "processes:task-pv-build-transform-2447nz": {
+  "plain_language_name": "Write Down Each Variant's Baseline",
+  "plain_language_description": "With the checks done, the processing custodian writes down each variant's composition, configuration, and known state, producing the baseline document in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because every later change needs a known starting state to be measured against.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management writes down each variant's composition, configuration, and known state."
+  }
+ },
+ "processes:task-pv-build-confirm-ahue5g": {
+  "plain_language_name": "Confirm the Baseline Document Is Complete",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the variant baseline document is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the baseline is formally accepted as the reference for lifecycle management.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the baseline document and notifies the lifecycle owners."
+  }
+ },
+ "processes:task-pv-build-record-pa2hzd": {
+  "plain_language_name": "Keep the Variant Baseline on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The baseline's authority stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the baseline's authority survives every change that follows.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the baseline record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-66mrgu": {
+  "plain_language_name": "Receive the Verified Variants",
+  "plain_language_description": "The staging work opens with the verified variants arriving to be made ready for market preparation. The intake custodian logs them against the staging file so the staging starts accounted for.",
+  "business_purpose": "It exists because variants staged from an unverified set carry defects into market preparation.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the verified variants into the staging file."
+  }
+ },
+ "processes:task-pv-build-verify-r796kz": {
+  "plain_language_name": "Check the Variants Before They Are Staged",
+  "plain_language_description": "Before the variants are staged, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before staging proceeds.",
+  "business_purpose": "It exists because staging a non-conforming variant wastes every downstream effort.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the variants' conformance papers before staging."
+  }
+ },
+ "processes:task-pv-build-transform-ks9eps": {
+  "plain_language_name": "Stage the Conforming Variants",
+  "plain_language_description": "With the checks done, the processing custodian stages the conforming variants, producing them ready for market preparation in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because market preparation can only start once the good variants are set aside for it.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management stages the conforming variants for market readiness preparation."
+  }
+ },
+ "processes:task-pv-build-confirm-pp2p5r": {
+  "plain_language_name": "Confirm the Staged Variants",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the staged variants are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the staged set is formally accepted as the input to market readiness.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the staged set and notifies the market readiness teams."
+  }
+ },
+ "processes:task-pv-build-record-fncn7w": {
+  "plain_language_name": "Keep the Staging Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The staging story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so what was staged, and when, stays answerable during the launch.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the staging record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-dcftd7": {
+  "plain_language_name": "Open the Conformance Check File",
+  "plain_language_description": "The conformance work opens with the constructed variants and their configuration rules arriving to be judged. The intake custodian logs them against the conformance file so the checking starts accounted for.",
+  "business_purpose": "It exists because conformance judged from an incomplete file judges the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the constructed variants and configuration rules into the conformance file."
+  }
+ },
+ "processes:task-pv-build-verify-qtv86v": {
+  "plain_language_name": "Test the Variants Against the Configuration Rules",
+  "plain_language_description": "Before the determinations are made, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the judging begins.",
+  "business_purpose": "It exists because checking against rules nobody verified checks nothing.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the conformance pack against the acceptance criteria before judging."
+  }
+ },
+ "processes:task-pv-build-transform-jsha9m": {
+  "plain_language_name": "Judge Each Variant Against Its Design",
+  "plain_language_description": "With the checks done, the processing custodian judges each variant against its design and the configuration rules, producing the determinations in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a defective variant that slips through becomes a customer complaint instead.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management judges each variant against its design and records the determinations."
+  }
+ },
+ "processes:task-pv-build-confirm-pnac2s": {
+  "plain_language_name": "Confirm the Conformance Determinations",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the conformance determinations are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the determinations are formally issued before staging begins.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management issues the conformance determinations and notifies the staging team."
+  }
+ },
+ "processes:task-pv-build-record-rxqcbh": {
+  "plain_language_name": "Retain the Conformance Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The conformance calls stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the conformance evidence survives for every warranty or recall question.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the conformance record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-eymf9j": {
+  "plain_language_name": "Open the Launch Assets File",
+  "plain_language_description": "The assembly work opens with the built offering and its launch requirements arriving. The intake custodian logs them against the assets file so the assembly starts accounted for.",
+  "business_purpose": "It exists because assets assembled from an unlogged brief miss what the launch actually needs.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the built offering and its launch requirements into the assets file."
+  }
+ },
+ "processes:task-pv-build-verify-mwaprz": {
+  "plain_language_name": "Check the Asset Pack Before Assembly",
+  "plain_language_description": "Before the assets are assembled, the verification custodian tests the arriving material against what the activity requires. Gaps are written down, either for rejection or for putting right, before assembly begins.",
+  "business_purpose": "It exists because a launch asset that misstates the product becomes the first refund driver.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the asset pack against the launch requirements before assembly."
+  }
+ },
+ "processes:task-pv-build-transform-guzepf": {
+  "plain_language_name": "Put Together the Go-to-Market Assets",
+  "plain_language_description": "With the checks done, the processing custodian assembles the launch assets, producing the asset set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a launch without its assets is an announcement nobody can act on.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management assembles the go-to-market assets the launch requires."
+  }
+ },
+ "processes:task-pv-build-confirm-ggdnk8": {
+  "plain_language_name": "Confirm the Launch Asset Set",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the go-to-market asset set is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the asset set is formally accepted before certification and launch.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the asset set and notifies the certification team."
+  }
+ },
+ "processes:task-pv-build-record-4j2dcm": {
+  "plain_language_name": "Keep the Asset Set on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The asset set's assembly story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so what the market was told at launch can always be reproduced.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the asset set record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-th4c9k": {
+  "plain_language_name": "Open the Certification Case File",
+  "plain_language_description": "The certification work opens with the prepared offering and the readiness criteria arriving to be judged. The intake custodian logs them against the certification file so the assessment starts accounted for.",
+  "business_purpose": "It exists because a certificate granted without its case file convinces only its author.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the prepared offering and the readiness criteria into the certification file."
+  }
+ },
+ "processes:task-pv-build-verify-jb2net": {
+  "plain_language_name": "Test the Offering Against the Readiness Criteria",
+  "plain_language_description": "Before the certification is granted, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the assessment proceeds.",
+  "business_purpose": "It exists because readiness certified on unchecked criteria is discovered at the launch, not before.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the offering against the readiness criteria before certifying."
+  }
+ },
+ "processes:task-pv-build-transform-4a5nhg": {
+  "plain_language_name": "Certify the Offering Market-Ready",
+  "plain_language_description": "With the checks done, the processing custodian weighs the assets, pricing, and channels against the readiness criteria, producing the certification in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the enterprise needs one defensible yes before it spends on the launch.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management certifies the offering as market-ready on the assembled evidence."
+  }
+ },
+ "processes:task-pv-build-confirm-rgseqy": {
+  "plain_language_name": "Issue the Market Readiness Certificate",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the readiness certification is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the certification is formally issued to the parties who will rely on it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management issues the readiness certificate and notifies the launch teams."
+  }
+ },
+ "processes:task-pv-build-record-z5bkwg": {
+  "plain_language_name": "Preserve the Readiness Certification",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The certification's grounds stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the certificate's grounds stay consultable when the launch is questioned.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the certification record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-ck3qgx": {
+  "plain_language_name": "Open the Channel Setup File",
+  "plain_language_description": "The channel work opens with the channel infrastructure and launch assets arriving to be configured. The intake custodian logs them against the channel file so the setup starts accounted for.",
+  "business_purpose": "It exists because channels configured from an unlogged pack open in the wrong state.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the channel infrastructure and launch assets into the channel file."
+  }
+ },
+ "processes:task-pv-build-verify-7vhnjf": {
+  "plain_language_name": "Check the Channel Pack Against the Launch Plan",
+  "plain_language_description": "Before the channels are configured, the verification custodian tests the arriving material against what the activity requires. Gaps are written down, either for rejection or for putting right, before the setup begins.",
+  "business_purpose": "It exists because a channel that opens unready turns the launch's first customers away.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the channel pack against the launch plan before setup."
+  }
+ },
+ "processes:task-pv-build-transform-gpxjzx": {
+  "plain_language_name": "Set Up the Launch Channels",
+  "plain_language_description": "With the checks done, the processing custodian configures the launch channels, producing the configured channels in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because customers can only buy where the channels actually work.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management configures the channels through which the offering will launch."
+  }
+ },
+ "processes:task-pv-build-confirm-smcff4": {
+  "plain_language_name": "Confirm the Configured Channels",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the configured launch channels are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the configured channels are formally accepted before the launch date.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the configured channels and notifies the launch teams."
+  }
+ },
+ "processes:task-pv-build-record-rvqcd2": {
+  "plain_language_name": "Keep the Channel Configuration on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The channel setup story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the channel setup at launch can be traced when behavior questions arise.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the channel configuration record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-bsb8uy": {
+  "plain_language_name": "Open the Pricing Case File",
+  "plain_language_description": "The pricing work opens with the offering, the financial policy, and the demand levers arriving to be weighed. The intake custodian logs them against the pricing file so the setting starts accounted for.",
+  "business_purpose": "It exists because a price set without its policy file is a price nobody can defend.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the financial policy and demand levers into the pricing file."
+  }
+ },
+ "processes:task-pv-build-transform-nrrz6s": {
+  "plain_language_name": "Fix the Launch Price",
+  "plain_language_description": "With the checks done, the processing custodian weighs the financial policy and the demand levers, producing the launch pricing in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the launch price has to honour both the financial policy and the demand model.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management sets the launch price within the financial policy and the demand model."
+  }
+ },
+ "processes:task-pv-build-confirm-vg3k4m": {
+  "plain_language_name": "Sign Off the Launch Pricing",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the launch pricing is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the pricing is formally accepted before the market sees it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management signs off the launch pricing and notifies the certification team."
+  }
+ },
+ "processes:task-pv-build-record-36vyes": {
+  "plain_language_name": "Keep the Pricing Record on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The pricing rationale stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the pricing rationale survives the first quarter of second-guessing.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the pricing record at its retention tier and sets the retrieval handles."
+  }
+ }
+}

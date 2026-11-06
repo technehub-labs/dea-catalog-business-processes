@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Execute Regulator-Mandated Remediation Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Execute Regulator-Mandated Remediation** (`processes:activity-ao-improve-f2r6t4`). Its canonical ID is `processes:task-ao-improve-intake-8z5x37`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Remediation opens when the remediation trigger and the remediation plan are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the execution from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so remediation is executed from a registered trigger under a registered plan, not improvised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the trigger and plan are presented for remediation, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the remediation trigger and plan as the execution baseline, with audit references, and opens the remediation work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Remediation Trigger and Plan |
+| `plain_language_description` | string | no | Remediation opens when the remediation trigger and the remediation plan are handed over together. The intake custodian … |
+| `business_purpose` | string | no | It exists so remediation is executed from a registered trigger under a registered plan, not improvised. |
+| `practical_context` | string | no | It opens when the trigger and plan are presented for remediation, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

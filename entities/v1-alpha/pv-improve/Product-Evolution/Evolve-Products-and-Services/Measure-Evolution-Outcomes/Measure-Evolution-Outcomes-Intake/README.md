@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-in
 
 This is a **Task** (level L4), named **Measure Evolution Outcomes Intake**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Measure Evolution Outcomes** (`processes:activity-pv-improve-s34pap`). Its canonical ID is `processes:task-pv-improve-intake-yscqga`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The measurement work opens with the committed enhancements and their motivating drivers arriving to be judged. The intake custodian logs them against the measurement file so the measuring starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because outcomes measured from an unlogged baseline measure nothing at all.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the committed enhancements and their drivers into the measurement file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Outcome Measurement File |
+| `plain_language_description` | string | no | The measurement work opens with the committed enhancements and their motivating drivers arriving to be judged. The … |
+| `business_purpose` | string | no | It exists because outcomes measured from an unlogged baseline measure nothing at all. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

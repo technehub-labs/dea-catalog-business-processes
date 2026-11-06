@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Bound Allocation Envelopes Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Bound Allocation Envelopes** (`processes:activity-sd-build-sn9sky`). Its canonical ID is `processes:task-sd-build-confirm-qmh9yq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the envelopes are bounded. The confirmation custodian tells the downstream teams the bounded envelopes are available, and closes the reconciliation against what the activity promised for the bounding.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so allocation and prioritisation work from confirmed envelopes rather than from figures still under negotiation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded envelopes are ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the bounded envelopes to the allocation team, reconciles them against what the bounding promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Bounded Envelopes to the Allocators |
+| `plain_language_description` | string | no | The confirming opens once the envelopes are bounded. The confirmation custodian tells the downstream teams the bounded … |
+| `business_purpose` | string | no | It exists so allocation and prioritisation work from confirmed envelopes rather than from figures still under … |
+| `practical_context` | string | no | It opens when the bounded envelopes are ready to hand on, and it closes with the confirmation issued and the bounding's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-i
 
 This is a **Task** (level L4), named **Activate Signing Authority Or Controlled-Function Designation Intake**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Activate Signing Authority Or Controlled-Function Designation** (`processes:activity-ao-activate-sq2zfw`). Its canonical ID is `processes:task-ao-activate-intake-b6qpzx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a request to confer signing authority or a controlled function arrives, the intake custodian brings it into the activation workflow, logs it against the individual's record on the regulated personnel file, and stamps it with audit references so every later step can be traced. Nothing is judged or reshaped at this point - the request is simply booked in and held safely for checking.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so activation work starts from a logged, traceable request rather than loose paperwork.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins the moment the designation request is presented, with the activity owner told of its arrival, and it closes once the request is registered with audit identifiers and the checking steps are free to start.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* A workforce management intake custodian receives a designation request for a newly approved executive, books it onto the personnel record with its audit references, and lets the approver know it has landed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Register the Signing-Authority Activation Request |
+| `plain_language_description` | string | no | When a request to confer signing authority or a controlled function arrives, the intake custodian brings it into the … |
+| `business_purpose` | string | no | It exists so activation work starts from a logged, traceable request rather than loose paperwork. |
+| `practical_context` | string | no | It begins the moment the designation request is presented, with the activity owner told of its arrival, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

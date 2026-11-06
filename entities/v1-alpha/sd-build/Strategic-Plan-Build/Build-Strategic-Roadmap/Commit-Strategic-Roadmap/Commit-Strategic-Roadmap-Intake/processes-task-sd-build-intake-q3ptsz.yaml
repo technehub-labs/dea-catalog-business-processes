@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Assembled Roadmap for Commitment'
+plain_language_description: 'The committing opens as its material arrives: the assembled roadmap with its sequenced initiatives and milestone anchors. The intake custodian logs it against the commitment file so the committing starts accounted for.'
+business_purpose: 'It exists so the roadmap is committed from logged assembled material, not from a version still being edited.'
+practical_context: 'It opens when the assembled roadmap is presented for commitment, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the assembled roadmap with its sequenced initiatives and milestone anchors into the commitment file, so the commitment work starts accounted for.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Run the Transition Steps Across Units, Roles, and Agents'
+plain_language_description: 'With the sequence verified, the processing custodian runs the transition itself: each sequenced step is carried out across the affected units, roles, and agents, and the executed transition is set down in the form the activity defines. Working papers from the execution are preserved.'
+business_purpose: 'It exists because a sequenced change only happens when somebody actually runs its steps in order.'
+practical_context: 'It starts once checking is complete and the verified sequence is ready to be run, and it ends with the executed structure transition produced and the working papers kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian runs each transition step in its order across the affected units, roles, and agents, recording what was executed.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 
 This is a **Task** (level L4), named **Define Control Objectives Processing**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Define Control Objectives** (`processes:activity-ge-design-ewsksx`). Its canonical ID is `processes:task-ge-design-transform-neef8k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the design for the objectives: what each designed policy must satisfy is worked out against the artefact designs and the tolerance bands, and the design-ready artefact is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a policy without a stated achievement is a policy that cannot be tested - the objectives are what make the policies checkable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function sets what each designed policy must achieve against the artefact designs and tolerance bands.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set What Each Designed Policy Must Achieve |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the design for the objectives: what each designed … |
+| `business_purpose` | string | no | It exists because a policy without a stated achievement is a policy that cannot be tested - the objectives are what … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

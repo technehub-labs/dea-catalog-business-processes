@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-ve
 
 This is a **Task** (level L4), named **Issue Purchase Orders Verification**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Issue Purchase Orders** (`processes:activity-eo-operate-n5fq6h`). Its canonical ID is `processes:task-eo-operate-verify-wkr4d3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is placed, the verification custodian checks the requisitions against what placement requires - that each is genuinely approved and within its budget line. Defects are logged for rejection or repair before any order is placed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so suppliers are never handed obligations the enterprise never actually approved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the requisitions can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a requisition approved past its budget line and logs the defect before any order is placed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Approvals Before Placing the Orders |
+| `plain_language_description` | string | no | Before anything is placed, the verification custodian checks the requisitions against what placement requires - that … |
+| `business_purpose` | string | no | It exists so suppliers are never handed obligations the enterprise never actually approved. |
+| `practical_context` | string | no | It runs once the intake is registered and the requisitions can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

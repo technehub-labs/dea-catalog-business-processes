@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-i
 
 This is a **Task** (level L4), named **Select Innovation Focus Areas Intake**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Select Innovation Focus Areas** (`processes:activity-pv-conceive-f7anqj`). Its canonical ID is `processes:task-pv-conceive-intake-cckkah`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The selection work opens with the strategy and market intelligence arriving to be weighed. The intake custodian logs them against the selection file so the choosing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because focus areas chosen from an unlogged pack choose the wrong ground.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian of the proposition design authority logs the strategy and market intelligence into the selection file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Focus-Area Selection Pack |
+| `plain_language_description` | string | no | The selection work opens with the strategy and market intelligence arriving to be weighed. The intake custodian logs … |
+| `business_purpose` | string | no | It exists because focus areas chosen from an unlogged pack choose the wrong ground. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

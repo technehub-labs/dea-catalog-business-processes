@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-ver
 
 This is a **Task** (level L4), named **Resolve Residual Obligations Verification**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Resolve Residual Obligations** (`processes:activity-pv-retire-6b3zth`). Its canonical ID is `processes:task-pv-retire-verify-wzs534`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a single obligation is routed, the arriving commitments material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a misread commitment routed to the wrong team leaves a customer promise quietly broken.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the commitments material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the proposition design authority tests the logged commitments against what the activity requires, and writes up an undocumented data-retention duty as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Outstanding Commitments Before Routing Any of Them |
+| `plain_language_description` | string | no | Before a single obligation is routed, the arriving commitments material is put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because a misread commitment routed to the wrong team leaves a customer promise quietly broken. |
+| `practical_context` | string | no | It opens once the intake is registered and the commitments material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-int
 
 This is a **Task** (level L4), named **Bound Evaluation Scope Intake**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Bound Evaluation Scope** (`processes:activity-sd-design-h56x3t`). Its canonical ID is `processes:task-sd-design-intake-wjsqsp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The bounding opens as its material arrives: the committed option designs together with the criteria they must be judged by. The intake custodian logs them against the bounding file so the bounding starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the evaluation is bounded over logged designs and criteria rather than over whatever comparison is convenient.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed designs and the criteria are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the committed option designs and the evaluation criteria into the bounding file, so the evaluation scoping starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Committed Option Designs and the Evaluation Criteria |
+| `plain_language_description` | string | no | The bounding opens as its material arrives: the committed option designs together with the criteria they must be judged … |
+| `business_purpose` | string | no | It exists so the evaluation is bounded over logged designs and criteria rather than over whatever comparison is … |
+| `practical_context` | string | no | It opens when the committed designs and the criteria are presented for bounding, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-tr
 
 This is a **Task** (level L4), named **Redraft Objectives and Targets Processing**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Redraft Objectives and Targets** (`processes:activity-sd-improve-ygmzmg`). Its canonical ID is `processes:task-sd-improve-transform-2stcsp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the rewriting proper begins. The processing custodian redrafts the objectives and targets that the verdicts have overtaken, producing the redrafted set in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because objectives that no longer match the direction or the evidence quietly misdirect every plan built on them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified verdicts are ready to be worked, and it closes with the redrafted objectives and targets produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function rewrites the objectives the evidence has overtaken and recalibrates their targets, keeping the before-and-after workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Rewrite the Objectives and Targets to Fit the New Direction |
+| `plain_language_description` | string | no | With the inputs verified, the rewriting proper begins. The processing custodian redrafts the objectives and targets … |
+| `business_purpose` | string | no | It exists because objectives that no longer match the direction or the evidence quietly misdirect every plan built on … |
+| `practical_context` | string | no | It opens when the verified verdicts are ready to be worked, and it closes with the redrafted objectives and targets … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

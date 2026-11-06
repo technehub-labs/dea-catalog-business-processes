@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-ver
 
 This is a **Task** (level L4), named **Resolve Records and Rights Verification**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Resolve Records and Rights** (`processes:activity-pr-retire-5k7ngj`). Its canonical ID is `processes:task-pr-retire-verify-mydkzs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the dispositions are decided, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because keeping data past its lawful horizon, or erasing what must be kept, are both failures discovered too late.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in customer relationship management tests the disposition pack against the storage-limitation rules.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Disposition Plan Against the Storage Rules |
+| `plain_language_description` | string | no | Before the dispositions are decided, the verification custodian tests the pack against the schedule for how long … |
+| `business_purpose` | string | no | It exists because keeping data past its lawful horizon, or erasing what must be kept, are both failures discovered too … |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

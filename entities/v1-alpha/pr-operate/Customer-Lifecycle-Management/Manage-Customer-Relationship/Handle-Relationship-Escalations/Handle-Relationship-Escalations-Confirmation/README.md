@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-operate-co
 
 This is a **Task** (level L4), named **Handle Relationship Escalations Confirmation**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Handle Relationship Escalations** (`processes:activity-pr-operate-w753mv`). Its canonical ID is `processes:task-pr-operate-confirm-rnpxjz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with the terms for executing renewals. Once satisfied, the relationship custodian receives the completion confirmation, and it is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the resolutions are formally accepted before the relationships are declared recovered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the escalation resolutions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Escalation Round with the Relationship Owner |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with … |
+| `business_purpose` | string | no | It exists so the resolutions are formally accepted before the relationships are declared recovered. |
+| `practical_context` | string | no | It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

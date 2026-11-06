@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Configure Channels Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Configure Channels** (`processes:activity-eo-design-tsyfd5`). Its canonical ID is `processes:task-eo-design-transform-p96wpq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the patterns verified, the processing custodian does the configuration itself: each conceived channel pattern is bounded into a working channel configuration, and the configuration set is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a conceived pattern promises a way in - the configuration is what decides exactly how the door works.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified patterns are ready to be configured, and it ends with the channel configuration set produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function bounds each conceived channel pattern into a working configuration, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn the Conceived Patterns into Bounded Configurations |
+| `plain_language_description` | string | no | With the patterns verified, the processing custodian does the configuration itself: each conceived channel pattern is … |
+| `business_purpose` | string | no | It exists because a conceived pattern promises a way in - the configuration is what decides exactly how the door works. |
+| `practical_context` | string | no | It starts once checking is complete and the verified patterns are ready to be configured, and it ends with the channel … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

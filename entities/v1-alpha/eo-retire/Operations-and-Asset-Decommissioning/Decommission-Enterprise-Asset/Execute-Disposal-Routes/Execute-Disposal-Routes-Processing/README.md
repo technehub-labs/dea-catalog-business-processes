@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-tra
 
 This is a **Task** (level L4), named **Execute Disposal Routes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Execute Disposal Routes** (`processes:activity-eo-retire-2xjudv`). Its canonical ID is `processes:task-eo-retire-transform-hhh2a3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the loads verified, the processing custodian does the disposal itself: each withdrawn asset is sent down its approved route - sold, recycled, destroyed, or returned - and the executed disposals with their evidence are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an asset out of service is not yet out of the enterprise's story - the route is where its ending is made proper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified loads are ready to be routed, and it ends with the executed disposals produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management sends each withdrawn asset down its approved route and gathers the evidence, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Send Each Asset Down Its Agreed Path |
+| `plain_language_description` | string | no | With the loads verified, the processing custodian does the disposal itself: each withdrawn asset is sent down its … |
+| `business_purpose` | string | no | It exists because an asset out of service is not yet out of the enterprise's story - the route is where its ending is … |
+| `practical_context` | string | no | It starts once checking is complete and the verified loads are ready to be routed, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

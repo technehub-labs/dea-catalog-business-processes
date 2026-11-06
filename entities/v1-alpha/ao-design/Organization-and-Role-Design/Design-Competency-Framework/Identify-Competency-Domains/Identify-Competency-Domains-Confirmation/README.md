@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-con
 
 This is a **Task** (level L4), named **Identify Competency Domains Confirmation**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Identify Competency Domains** (`processes:activity-ao-design-e63vge`). Its canonical ID is `processes:task-ao-design-confirm-mdn6mm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the domains stand identified, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The proficiency work that follows learns the domains are settled and available to be levelled.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so proficiency levels are defined only over domains confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the identified domains await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the identified domains against the activity's intended outcome and issues the confirmation the proficiency step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Identified Competency Domains |
+| `plain_language_description` | string | no | When the domains stand identified, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so proficiency levels are defined only over domains confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the identified domains await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

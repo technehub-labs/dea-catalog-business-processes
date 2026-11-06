@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-r
 
 This is a **Task** (level L4), named **Effect Instrument Commencement Audit Record**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Effect Instrument Commencement** (`processes:activity-ge-activate-mqvn32`). Its canonical ID is `processes:task-ge-activate-record-nhgx8k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The commencement's making stays provable for as long as the law requires.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the commencement's making can be evidenced for as long as the law requires.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Lay the Commencement Case Down for Keeps |
+| `plain_language_description` | string | no | At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest … |
+| `business_purpose` | string | no | It exists so the commencement's making can be evidenced for as long as the law requires. |
+| `practical_context` | string | no | It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

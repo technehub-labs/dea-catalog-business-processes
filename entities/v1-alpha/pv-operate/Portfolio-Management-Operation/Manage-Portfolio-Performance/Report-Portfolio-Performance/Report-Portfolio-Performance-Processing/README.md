@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Report Portfolio Performance Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Report Portfolio Performance** (`processes:activity-pv-operate-nzj8xu`). Its canonical ID is `processes:task-pv-operate-transform-mktm7k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the report itself is written. The processing custodian shapes the cycle's material for the governance and strategy consumers, producing the portfolio performance report in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the people who govern and steer the portfolio can only act on performance they can actually read.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified inputs are ready to be shaped, and it closes with the report produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management drafts the quarterly portfolio performance report, turning the verified cycle figures into a readable account for the governance and strategy consumers with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Portfolio Performance Report |
+| `plain_language_description` | string | no | With the inputs verified, the report itself is written. The processing custodian shapes the cycle's material for the … |
+| `business_purpose` | string | no | It exists because the people who govern and steer the portfolio can only act on performance they can actually read. |
+| `practical_context` | string | no | It opens when the verified inputs are ready to be shaped, and it closes with the report produced in the agreed form and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

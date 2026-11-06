@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Manage Line Changeovers Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Manage Line Changeovers** (`processes:activity-eo-operate-snhadj`). Its canonical ID is `processes:task-eo-operate-transform-9h3ztf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the changes verified, the processing custodian does the transition itself: the line is prepared, switched, and proven in its next configuration between cycles, and the executed changeovers are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because every switch is downtime - the changeover discipline is what buys the schedule back.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified changes are ready to be made, and it ends with the executed changeovers produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management turns the line over between cycles without losing the schedule, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn the Line Over from One Product to the Next |
+| `plain_language_description` | string | no | With the changes verified, the processing custodian does the transition itself: the line is prepared, switched, and … |
+| `business_purpose` | string | no | It exists because every switch is downtime - the changeover discipline is what buys the schedule back. |
+| `practical_context` | string | no | It starts once checking is complete and the verified changes are ready to be made, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

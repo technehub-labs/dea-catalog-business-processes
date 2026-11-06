@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-con
 
 This is a **Task** (level L4), named **Assess Regulator Or Court Order Scope Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assess Regulator Or Court Order Scope** (`processes:activity-ge-retire-k5amzf`). Its canonical ID is `processes:task-ge-retire-confirm-79s5hs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the retained records. When everything lines up, the completion confirmation goes out, received by the governance custodian and by the registrar of companies. The confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the wind-down's completion is formally acknowledged by the parties that must accept it before the file is retired into record-keeping.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the finance function completes the reconciliation, and acknowledgements come back from the registrar of companies as well as the governance custodian before the confirmation is logged.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Give the Wind-Down the Formal Green Light |
+| `plain_language_description` | string | no | The confirmation custodian checks the record pack against dissolution law and the custodianship contract for the … |
+| `business_purpose` | string | no | It exists so the wind-down's completion is formally acknowledged by the parties that must accept it before the file is … |
+| `practical_context` | string | no | It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

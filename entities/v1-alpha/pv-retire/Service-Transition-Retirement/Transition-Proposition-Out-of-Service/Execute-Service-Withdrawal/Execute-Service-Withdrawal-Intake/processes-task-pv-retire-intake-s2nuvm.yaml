@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Withdrawal Plan for Execution'
+plain_language_description: 'The withdrawing opens as its material arrives: the service withdrawal plan that says how the proposition comes out of operational reliance. The intake custodian logs it against the withdrawal file so the executing starts accounted for.'
+business_purpose: 'It exists so the removal of a live service starts from one logged plan rather than from verbal instructions drifting across teams.'
+practical_context: 'It opens when the withdrawal plan is presented for execution, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the proposition design authority receives the approved withdrawal plan for a sunset offering, logs it into the withdrawal file, and signals that the removal work can start accounted for.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-reco
 
 This is a **Task** (level L4), named **Build Demand Program Assets Audit Record**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Program Assets** (`processes:activity-pr-build-da7r6t`). Its canonical ID is `processes:task-pr-build-record-8fd24p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once confirmed, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the schedule for acquisition-engine records, protected against tampering. Where storage limits bite, a destruction attestation is recorded.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the lineage of every campaign asset - what was built and accepted - can be traced later.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the asset build file with its receipts for a future campaign audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Asset Build Record |
+| `plain_language_description` | string | no | Once confirmed, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and … |
+| `business_purpose` | string | no | It exists so the lineage of every campaign asset - what was built and accepted - can be traced later. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Signals Before Reading the Imperatives'
+plain_language_description: 'Before any imperative is read, the verification custodian checks the strategy and signals against what the sensing requires - that the signals are current and the strategy reading is complete. Defects are flagged for rejection or repair before the sensing is made.'
+business_purpose: 'It exists so the strategy work never sets out from stale signals or a half-read strategy.'
+practical_context: 'It runs once the intake is registered and the inputs can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds one substrate signal out of date and flags the defect before the imperatives are read.'

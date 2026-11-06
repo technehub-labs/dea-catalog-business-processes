@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-conf
 
 This is a **Task** (level L4), named **Implement Planning Controls Confirmation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Planning Controls** (`processes:activity-fa-build-dsxzrc`). Its canonical ID is `processes:task-fa-build-confirm-bmcn2g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the guard-rails stand fitted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The integration and readiness work that follows learns the systems are governed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so systems are fed and proven only once their controls are confirmed as fitted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the implemented controls await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the fitted guard-rails against the activity's intended outcome and issues the confirmation the integration work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Implemented Planning Controls |
+| `plain_language_description` | string | no | When the guard-rails stand fitted, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so systems are fed and proven only once their controls are confirmed as fitted. |
+| `practical_context` | string | no | It begins once preparation is complete and the implemented controls await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

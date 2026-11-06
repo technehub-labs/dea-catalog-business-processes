@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Certify Period Close Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Certify Period Close** (`processes:activity-fa-operate-5dufzc`). Its canonical ID is `processes:task-fa-operate-transform-k99zmt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checklist verified, the processing custodian does the certifying itself: the closed period is judged against the checklist and the control requirements, and the certified close is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a period released uncertified releases every doubt with it - the certification is what lets reporting speak with one voice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified checklist is ready to be judged from, and it ends with the certified close produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function judges the period against the checklist and signs it off, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sign the Period Off as Done and Right |
+| `plain_language_description` | string | no | With the checklist verified, the processing custodian does the certifying itself: the closed period is judged against … |
+| `business_purpose` | string | no | It exists because a period released uncertified releases every doubt with it - the certification is what lets reporting … |
+| `practical_context` | string | no | It starts once checking is complete and the verified checklist is ready to be judged from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

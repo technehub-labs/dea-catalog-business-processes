@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-tra
 
 This is a **Task** (level L4), named **Resolve Residual Obligations Processing**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Resolve Residual Obligations** (`processes:activity-pv-retire-6b3zth`). Its canonical ID is `processes:task-pv-retire-transform-p2ny7y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the resolving proper begins. The processing custodian identifies each warranty, support commitment and data retention duty and sends it to its owning team, producing the routed residual obligations in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because retiring the offering does not retire the promises made with it; each one must be identified and given an owner.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified commitments are ready to be worked, and it closes with the identified and routed obligations produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the proposition design authority works through the verified commitments, routing the outstanding warranties to support and the retention duties to records management, and keeps the routing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify and Route the Warranties, Support and Retention Duties |
+| `plain_language_description` | string | no | With the inputs verified, the resolving proper begins. The processing custodian identifies each warranty, support … |
+| `business_purpose` | string | no | It exists because retiring the offering does not retire the promises made with it; each one must be identified and … |
+| `practical_context` | string | no | It opens when the verified commitments are ready to be worked, and it closes with the identified and routed obligations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

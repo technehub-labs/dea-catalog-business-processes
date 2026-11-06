@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Validate Attendance Records Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Validate Attendance Records** (`processes:activity-ao-operate-yzn584`). Its canonical ID is `processes:task-ao-operate-transform-cdmc58`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the capture verified, the processing custodian does the validation itself: each captured record is checked for accuracy, corrections are marked where needed, and the validated attendance records are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because payroll figures are only as good as the time behind them - validation is where accuracy is actually proven.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified capture is ready to be validated, and it ends with the validated records produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian checks each captured record for accuracy and sets down the validated set, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Captured Records Are Accurate |
+| `plain_language_description` | string | no | With the capture verified, the processing custodian does the validation itself: each captured record is checked for … |
+| `business_purpose` | string | no | It exists because payroll figures are only as good as the time behind them - validation is where accuracy is actually … |
+| `practical_context` | string | no | It starts once checking is complete and the verified capture is ready to be validated, and it ends with the validated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

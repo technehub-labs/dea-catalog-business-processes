@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Deliver Learning Sessions Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Deliver Learning Sessions** (`processes:activity-ao-operate-f669fn`). Its canonical ID is `processes:task-ao-operate-transform-vwunqx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the schedule verified, the processing custodian does the delivery itself: the scheduled learning sessions are delivered across the agentive mix, and the delivered sessions are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a schedule of learning develops nobody until the sessions are actually delivered to the agents.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified schedule is ready to be delivered from, and it ends with the delivered sessions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian delivers each scheduled learning session across the mix and records what was delivered, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver the Scheduled Sessions Across the Agentive Mix |
+| `plain_language_description` | string | no | With the schedule verified, the processing custodian does the delivery itself: the scheduled learning sessions are … |
+| `business_purpose` | string | no | It exists because a schedule of learning develops nobody until the sessions are actually delivered to the agents. |
+| `practical_context` | string | no | It starts once checking is complete and the verified schedule is ready to be delivered from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

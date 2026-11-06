@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Delivered Sessions Before Logging the Completions'
+plain_language_description: 'Before any completion is logged, the verification custodian checks the delivered sessions against what logging requires - that each session''s record shows who attended and under which programme. Defects are logged for rejection or repair before the completions are written.'
+business_purpose: 'It exists so no agent is credited with learning the record cannot actually show.'
+practical_context: 'It runs once the intake is registered and the sessions can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a delivered session missing its attendance record and logs the defect before completions are written for it.'

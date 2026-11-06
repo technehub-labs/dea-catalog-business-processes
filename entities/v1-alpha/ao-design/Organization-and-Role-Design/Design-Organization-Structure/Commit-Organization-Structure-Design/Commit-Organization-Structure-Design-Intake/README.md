@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Commit Organization Structure Design Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Commit Organization Structure Design** (`processes:activity-ao-design-qp6pxn`). Its canonical ID is `processes:task-ao-design-intake-vb796d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the reviewed structure design is handed over as the arrangement the enterprise will build on. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the structure is committed from a registered reviewed design rather than from a working draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the reviewed design is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the reviewed design as the commitment baseline, with audit references, and opens the commitment work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Reviewed Design for Structure Commitment |
+| `plain_language_description` | string | no | Commitment opens when the reviewed structure design is handed over as the arrangement the enterprise will build on. The … |
+| `business_purpose` | string | no | It exists so the structure is committed from a registered reviewed design rather than from a working draft. |
+| `practical_context` | string | no | It opens when the reviewed design is presented for commitment, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

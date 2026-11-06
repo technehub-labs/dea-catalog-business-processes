@@ -1,0 +1,582 @@
+{
+  "processes:task-fa-improve-verify-a6r5c3": {
+    "plain_language_name": "Check the Exposures Before Shaping the Answers",
+    "plain_language_description": "Before anything is shaped, the verification custodian checks the reviewed exposures against what design work requires - that each exposure is reviewed completely enough to be answered by a model change. Defects are logged for rejection or repair before the shaping begins.",
+    "business_purpose": "It exists so no evolution is designed for an exposure that was only partly reviewed.",
+    "practical_context": "It runs once the intake is registered and the exposures can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an exposure whose review skipped one funding line and logs the defect before the shaping begins."
+    }
+  },
+  "processes:task-fa-improve-record-v5f7vm": {
+    "plain_language_name": "File the Shift Assessment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the watching trail at its required retention tier and sets the retrieval handles for it. What the outside was doing, and how it was read, stays readable whenever a model change's trigger is examined.",
+    "business_purpose": "It exists so the watching behind every model change can be evidenced whenever its trigger is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the watching trail at its retention tier and sets the retrieval handles a treasury review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-pyj7v5": {
+    "plain_language_name": "Confirm the Assessed Shifts",
+    "plain_language_description": "When the watching stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The exposure review that follows learns which outside moves are real and can be weighed.",
+    "business_purpose": "It exists so exposures are weighed only over shifts confirmed as assessed.",
+    "practical_context": "It begins once preparation is complete and the assessed shifts await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the assessed shifts against the activity's intended outcome and issues the confirmation the exposure review needs."
+    }
+  },
+  "processes:task-fa-improve-intake-5mq9q7": {
+    "plain_language_name": "Receive the Market Data and Funding Posture",
+    "plain_language_description": "Watching opens when the market data and the funding posture state are handed over together as the two sides the shifts will be read between. The intake custodian accepts both, registers them with audit identifiers, and starts the monitoring from a recorded baseline.",
+    "business_purpose": "It exists so shifts are read from registered data over a registered posture rather than from the morning's headlines.",
+    "practical_context": "It opens when the data and posture are presented for the watching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the market data and funding posture as the watching baseline, with audit references."
+    }
+  },
+  "processes:task-fa-improve-transform-nu2t8r": {
+    "plain_language_name": "Read the Outside Moves That Will Demand Change",
+    "plain_language_description": "With the inputs verified, the processing custodian does the monitoring itself: the market's moves and the posture's drift are read for what they will demand of the model, and the shift assessment is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because the outside never announces what it will cost the model - the watching is what hears it coming.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be read, and it ends with the shift assessment produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority reads the market's moves against the posture and assesses what each will demand, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-4t4236": {
+    "plain_language_name": "Check the Data Before Reading the Moves",
+    "plain_language_description": "Before anything is read, the verification custodian checks the market data and posture against what monitoring requires - that the data is current and the posture reflects the model as it actually stands. Defects are flagged for rejection or repair before the reading begins.",
+    "business_purpose": "It exists so shifts are never read against a posture the model outgrew.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the posture snapshot predating the last model change and flags the defect before the reading begins."
+    }
+  },
+  "processes:task-fa-improve-record-dwrznw": {
+    "plain_language_name": "File the Exposure Review Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the review trail at its required retention tier and sets the retrieval handles for it. What the shifts were found to cost the model stays readable whenever an evolution's motive is examined.",
+    "business_purpose": "It exists so the review behind each evolution can be evidenced whenever its motive is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the review trail at its retention tier and sets the retrieval handles an evolution review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-7tmn72": {
+    "plain_language_name": "Confirm the Reviewed Treasury Exposures",
+    "plain_language_description": "When the review stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work that follows learns the exposures are weighed and can be answered.",
+    "business_purpose": "It exists so evolutions are designed only over exposures confirmed as reviewed.",
+    "practical_context": "It begins once preparation is complete and the exposure review awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the reviewed exposures against the activity's intended outcome and issues the confirmation the design work needs."
+    }
+  },
+  "processes:task-fa-improve-intake-sy2ey8": {
+    "plain_language_name": "Receive the Assessed Shifts and the Current Model",
+    "plain_language_description": "Review opens when the assessed shifts and the current treasury model are handed over together as the two sides the exposures will be weighed between. The intake custodian accepts both, registers them with audit identifiers, and starts the review from a recorded baseline.",
+    "business_purpose": "It exists so exposures are weighed against the registered model rather than against memory of it.",
+    "practical_context": "It opens when the shifts and model are presented for the review, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the assessed shifts and current model as the review baseline, with audit references."
+    }
+  },
+  "processes:task-fa-improve-transform-qb5tsg": {
+    "plain_language_name": "Weigh What the Shifts Cost the Model",
+    "plain_language_description": "With the inputs verified, the processing custodian does the review itself: each assessed shift is weighed against the model as it stands, and the exposure picture is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a shift only matters for what it moves - the review is what prices the outside in model terms.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be weighed, and it ends with the exposure review produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority weighs each shift's cost against the current model, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-ne8q42": {
+    "plain_language_name": "Check the Shifts Before Weighing Their Cost",
+    "plain_language_description": "Before anything is weighed, the verification custodian checks the assessed shifts against what review requires - that each names the model surfaces it touches. Defects are logged for rejection or repair before the weighing begins.",
+    "business_purpose": "It exists so no cost is weighed for a shift that never touched the model.",
+    "practical_context": "It runs once the intake is registered and the shifts can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a shift mapped to no model surface and logs the defect before the weighing begins."
+    }
+  },
+  "processes:task-fa-improve-record-th9vu2": {
+    "plain_language_name": "File the Control Analysis Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the analysis trail at its required retention tier and sets the retrieval handles for it. What the finding was read down to, and on what evidence, stays readable whenever a refinement's motive is examined.",
+    "business_purpose": "It exists so the analysis behind each refinement can be evidenced whenever its motive is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the analysis trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-6r88ta": {
+    "plain_language_name": "Confirm the Bounded Refinement Need",
+    "plain_language_description": "When the analysis stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work that follows learns the refinement need is bounded and can be answered.",
+    "business_purpose": "It exists so refinements are designed only over needs confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded need awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded need against the activity's intended outcome and issues the confirmation the design work needs."
+    }
+  },
+  "processes:task-fa-improve-intake-uytxct": {
+    "plain_language_name": "Receive the Audit Findings and Control Incidents",
+    "plain_language_description": "Analysis opens when the audit findings and the control incidents are handed over together as the material the refinement need will be read from. The intake custodian accepts them, registers them with audit identifiers, and starts the analysis from a recorded baseline.",
+    "business_purpose": "It exists so refinements answer registered findings rather than recurring hunches.",
+    "practical_context": "It opens when the findings and incidents are presented for the analysis, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the audit findings and control incidents as the analysis baseline, with audit references."
+    }
+  },
+  "processes:task-fa-improve-transform-6gd5mc": {
+    "plain_language_name": "Read Down What the Finding Exposes",
+    "plain_language_description": "With the material verified, the processing custodian does the analysis itself: the finding or incident is read down to what its fix must actually cover, and the bounded analysis is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a finding read loosely invites a fix aimed nowhere - reading it down is what makes the refinement answerable.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be read, and it ends with the bounded analysis produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority reads the finding down to what its fix must cover, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-f3gg2a": {
+    "plain_language_name": "Check the Findings Before Reading Them Down",
+    "plain_language_description": "Before anything is read, the verification custodian checks the findings and incidents against what analysis requires - that each is described concretely enough to be bounded. Defects are flagged for rejection or repair before the reading begins.",
+    "business_purpose": "It exists so no need is bounded from a finding too thin to trust.",
+    "practical_context": "It runs once the intake is registered and the findings can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a finding described without its affected controls and flags the defect before the reading begins."
+    }
+  },
+  "processes:task-fa-improve-record-a4qs5p": {
+    "plain_language_name": "File the Refinement Commitment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. Which refinements were adopted, through which review, stays readable whenever a control's standing is examined.",
+    "business_purpose": "It exists so the adoption of each refinement can be evidenced whenever a control's standing is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-wdhbua": {
+    "plain_language_name": "Confirm the Adopted Refinements",
+    "plain_language_description": "When the refinements stand adopted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The effectiveness work that follows learns which refinements are live and can be judged.",
+    "business_purpose": "It exists so effectiveness is measured only over refinements confirmed as adopted.",
+    "practical_context": "It begins once preparation is complete and the adopted refinements await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the adopted refinements against the activity's intended outcome and issues the confirmation the effectiveness work needs."
+    }
+  },
+  "processes:task-fa-improve-intake-hq2qfu": {
+    "plain_language_name": "Receive the Designed Refinements for Adoption",
+    "plain_language_description": "Adoption opens when the designed refinements are handed over as the changes the policy review will be asked to approve. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded baseline.",
+    "business_purpose": "It exists so controls change through a registered review rather than by quiet adjustment.",
+    "practical_context": "It opens when the designed refinements are presented for adoption, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the designed refinements as the adoption baseline, with audit references, and opens the review work."
+    }
+  },
+  "processes:task-fa-improve-transform-4wccsc": {
+    "plain_language_name": "Adopt the Refined Rules Through the Review Cycle",
+    "plain_language_description": "With the designs verified, the processing custodian does the adoption itself: each refinement is put through the policy review cycle and adopted into the standing rules, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a refinement adopted by accretion is a control nobody owns - the review cycle is what makes the change deliberate.",
+    "practical_context": "It starts once checking is complete and the verified designs are ready to be adopted, and it ends with the committed refinements produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority carries each refinement through the review cycle into the standing rules, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-pmd6jk": {
+    "plain_language_name": "Check the Designs Before Adopting the Rules",
+    "plain_language_description": "Before anything is adopted, the verification custodian checks the designed refinements against what adoption requires - that each names the controls it refines and the review it needs. Defects are logged for rejection or repair before any refinement is adopted.",
+    "business_purpose": "It exists so no rule changes through a review that was never properly opened.",
+    "practical_context": "It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a refinement that names no control it refines and logs the defect before adoption."
+    }
+  },
+  "processes:task-fa-improve-record-gz5ga4": {
+    "plain_language_name": "File the Refinement Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each refinement was drawn to close, and against which finding, stays readable whenever a control's shape is examined.",
+    "business_purpose": "It exists so the design behind each refinement can be evidenced whenever a control's shape is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-4nwy7j": {
+    "plain_language_name": "Confirm the Designed Refinements",
+    "plain_language_description": "When the refinements stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The adoption work that follows learns the refinements are drawn and ready for review.",
+    "business_purpose": "It exists so refinements are adopted only over designs confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the designed refinements await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the designed refinements against the activity's intended outcome and issues the confirmation the adoption work needs."
+    }
+  },
+  "processes:task-fa-improve-intake-dhjfr8": {
+    "plain_language_name": "Receive the Analyzed Findings for Refinement Work",
+    "plain_language_description": "Design work opens when the analyzed findings are handed over as the bounded needs the refinements must close. The intake custodian accepts them, registers them with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so refinements are drawn against a registered analysis rather than against a memo's tone.",
+    "practical_context": "It opens when the analyzed findings are presented for the refinement work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the analyzed findings as the design baseline, with audit references, and opens the reworking."
+    }
+  },
+  "processes:task-fa-improve-transform-7n4e6f": {
+    "plain_language_name": "Rework the Rules So the Findings Close",
+    "plain_language_description": "With the findings verified, the processing custodian does the designing itself: the refinement each analyzed finding demands is drawn within the existing controls design, and the refinement designs are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a finding that keeps recurring is a fix that never landed - the design is where the cure is actually shaped.",
+    "practical_context": "It starts once checking is complete and the verified findings are ready to be answered, and it ends with the refinement designs produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority reworks each finding's control until the finding closes, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-xm9398": {
+    "plain_language_name": "Check the Findings Before Reworking the Rules",
+    "plain_language_description": "Before anything is reworked, the verification custodian checks the analyzed findings against what designing requires - that each is bounded completely enough to be closed by a refinement. Defects are logged for rejection or repair before the reworking begins.",
+    "business_purpose": "It exists so no refinement is drawn against a finding that was only partly analyzed.",
+    "practical_context": "It runs once the intake is registered and the findings can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a finding whose boundary is unstated and logs the defect before the reworking begins."
+    }
+  },
+  "processes:task-fa-improve-record-ymhapj": {
+    "plain_language_name": "File the Effectiveness Measurement Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the measurement trail at its required retention tier and sets the retrieval handles for it. What each refinement actually changed, against the finding it answered, stays readable whenever the controls' progress is examined.",
+    "business_purpose": "It exists so the judgement of each refinement can be evidenced whenever the controls' progress is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the measurement trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-improve-confirm-8rvm77": {
+    "plain_language_name": "Confirm the Effectiveness Measurement",
+    "plain_language_description": "When the measurement stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The controls story learns which refinements held and which must be tried again.",
+    "business_purpose": "It exists so the refinement cycle closes only over measurements confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the effectiveness measurement awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the effectiveness measurement against the activity's intended outcome and issues the confirmation that closes the cycle."
+    }
+  },
+  "processes:task-fa-improve-intake-mr49v3": {
+    "plain_language_name": "Receive the Committed Refinements and Their Baseline",
+    "plain_language_description": "Measurement opens when the committed refinements and the finding baseline are handed over together as the two sides the effectiveness will be judged between. The intake custodian accepts both, registers them with audit identifiers, and starts the measurement from a recorded base.",
+    "business_purpose": "It exists so refinements are judged against the registered findings they were promised on.",
+    "practical_context": "It opens when the refinements and baseline are presented for measurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed refinements and the finding baseline as the measurement baseline, with audit references."
+    }
+  },
+  "processes:task-fa-improve-transform-xd52k6": {
+    "plain_language_name": "Ask Whether the Fix Actually Fixed It",
+    "plain_language_description": "With the inputs verified, the processing custodian does the measuring itself: what each committed refinement actually changed is measured against the finding that prompted it, and the effectiveness measurement is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a refinement adopted is not a finding closed - the measurement is where the difference is settled.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the effectiveness measurement produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority measures each refinement against the finding it answered and records the result, keeping the working papers."
+    }
+  },
+  "processes:task-fa-improve-verify-sp8tr5": {
+    "plain_language_name": "Check the Baseline Before Judging the Fixes",
+    "plain_language_description": "Before anything is judged, the verification custodian checks the refinements and baseline against what measurement requires - that the baseline is the finding record the refinements were promised on. Defects are logged for rejection or repair before the measuring begins.",
+    "business_purpose": "It exists so no fix is judged against a baseline it was never promised on.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the baseline missing one finding's original record and logs the defect before the measuring begins."
+    }
+  },
+  "processes:task-fa-operate-record-zhrkhr": {
+    "plain_language_name": "File the Compensation Calculation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the calculation trail at its required retention tier and sets the retrieval handles for it. How each person's pay was worked out stays readable whenever a figure is queried.",
+    "business_purpose": "It exists so every pay figure can be evidenced back to the time and terms behind it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the calculation trail at its retention tier and sets the retrieval handles a pay query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-vcc26r": {
+    "plain_language_name": "Confirm the Calculated Compensation",
+    "plain_language_description": "When the figures stand worked out, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The deductions work that follows learns the gross figures are settled and can be taken from.",
+    "business_purpose": "It exists so deductions are taken only from figures confirmed as calculated.",
+    "practical_context": "It begins once preparation is complete and the calculated compensation awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the calculated figures against the activity's intended outcome and issues the confirmation the deductions work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-ns382j": {
+    "plain_language_name": "Receive the Time, Attendance, and Compensation Terms",
+    "plain_language_description": "Calculation opens when the time records, the attendance data, and the agreed compensation terms are handed over together as the inputs the pay will be worked out from. The intake custodian accepts them, registers them with audit identifiers, and starts the calculation from a recorded baseline.",
+    "business_purpose": "It exists so pay is computed from registered inputs rather than from a manager's note.",
+    "practical_context": "It opens when the time, attendance, and terms are presented for the calculation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the time, attendance, and terms as the calculation baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-fn2s8c": {
+    "plain_language_name": "Work Out What Each Person Is Owed",
+    "plain_language_description": "With the inputs verified, the processing custodian does the calculation itself: each person's pay is worked out for the cycle under the agreed schedule, with deductions and statutory adjustments applied, and the calculated compensation is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because being owed and being paid are different events - the calculation is what turns the promise into a number.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be computed from, and it ends with the calculated compensation produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function works out each person's pay under the agreed schedule, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-sntha6": {
+    "plain_language_name": "Check the Inputs Before Working Out the Pay",
+    "plain_language_description": "Before anything is computed, the verification custodian checks the time, attendance, and terms against what calculation requires - that the time covers the full cycle and the terms are the agreed ones. Defects are logged for rejection or repair before the computing begins.",
+    "business_purpose": "It exists so nobody's pay is computed from time nobody actually recorded.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a team's time records ending mid-cycle and logs the defect before the computing begins."
+    }
+  },
+  "processes:task-fa-operate-record-5qp3wn": {
+    "plain_language_name": "File the Withholdings Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the computation trail at its required retention tier and sets the retrieval handles for it. What was taken from each person's pay, and under what authority, stays readable whenever a deduction is queried.",
+    "business_purpose": "It exists so every deduction can be evidenced back to the tables and positions behind it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the withholding trail at its retention tier and sets the retrieval handles a deduction query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-9t4dhs": {
+    "plain_language_name": "Confirm the Computed Withholdings",
+    "plain_language_description": "When the deductions stand computed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The disbursement that follows learns the net figures are settled and can be paid.",
+    "business_purpose": "It exists so pay is disbursed only from net figures confirmed as computed.",
+    "practical_context": "It begins once preparation is complete and the computed withholdings await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the computed deductions against the activity's intended outcome and issues the confirmation the disbursement needs."
+    }
+  },
+  "processes:task-fa-operate-intake-xqjd8t": {
+    "plain_language_name": "Receive the Calculated Compensation for the Deductions",
+    "plain_language_description": "Deduction work opens when the calculated compensation is handed over as the gross the withholdings will be taken from. The intake custodian accepts it, registers it with audit identifiers, and starts the computation from a recorded baseline.",
+    "business_purpose": "It exists so deductions are taken from registered gross figures rather than from estimates.",
+    "practical_context": "It opens when the calculated compensation is presented for the deductions, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the calculated compensation as the deduction baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-tud8nb": {
+    "plain_language_name": "Take Out What Must Be Taken Out",
+    "plain_language_description": "With the compensation verified, the processing custodian does the computation itself: each person's statutory and voluntary deductions are computed from the gross under the tables and positions that govern them, and the computed withholdings are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because the money taken from a payslip is taken on the state's and the person's behalf - the computation is what makes every taking lawful and exact.",
+    "practical_context": "It starts once checking is complete and the verified gross is ready to be computed from, and it ends with the computed withholdings produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function computes each person's statutory and voluntary deductions from the gross, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-8u4hey": {
+    "plain_language_name": "Check the Compensation Before Taking Out the Deductions",
+    "plain_language_description": "Before anything is taken, the verification custodian checks the compensation and the governing tables against what computation requires - that the gross is the confirmed set and the tables are the current ones. Defects are logged for rejection or repair before the taking begins.",
+    "business_purpose": "It exists so nobody's pay is docked on tables that were superseded.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the deduction tables a year behind and logs the defect before any taking begins."
+    }
+  },
+  "processes:task-fa-operate-record-477s6f": {
+    "plain_language_name": "File the Payroll Disbursement Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the disbursement trail at its required retention tier and sets the retrieval handles for it. What was paid, to whom, through which channel, stays readable whenever a payment is queried.",
+    "business_purpose": "It exists so every payment can be evidenced whenever a payment is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the disbursement trail at its retention tier and sets the retrieval handles a payment query would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-p22n49": {
+    "plain_language_name": "Confirm the Paid Employees",
+    "plain_language_description": "When the payments stand made, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The statutory work that follows learns what was paid and can report from it.",
+    "business_purpose": "It exists so obligations are reported only over payments confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the paid employees await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the made payments against the activity's intended outcome and issues the confirmation the statutory work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-hw6abd": {
+    "plain_language_name": "Receive the Net Pay Register for the Cycle",
+    "plain_language_description": "Disbursement opens when the net pay register is handed over as the figures to be paid out. The intake custodian accepts it, registers it with audit identifiers, and puts the payment run on a recorded footing.",
+    "business_purpose": "It exists so people are paid from the registered net figures, not from side arrangements.",
+    "practical_context": "It opens when the net pay register is presented for disbursement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the net pay register as the disbursement baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-baztk2": {
+    "plain_language_name": "Pay the People What They Are Owed",
+    "plain_language_description": "With the register verified, the processing custodian does the disbursement itself: each person's net pay is routed down its channel and paid, reconciled as it lands, and the executed payments are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because everything before this was arithmetic - disbursement is where the enterprise actually keeps its word to its people.",
+    "practical_context": "It starts once checking is complete and the verified register is ready to be paid from, and it ends with the executed payments produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function routes and reconciles each payment as it lands, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-aq5d2r": {
+    "plain_language_name": "Check the Register Before Paying the People",
+    "plain_language_description": "Before anything is paid, the verification custodian checks the register against what disbursement requires - that every net figure is confirmed and every person is on it exactly once. Defects are logged for rejection or repair before any payment runs.",
+    "business_purpose": "It exists so nobody is paid twice and nobody is paid from a figure that was never confirmed.",
+    "practical_context": "It runs once the intake is registered and the register can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a person listed twice on the register and logs the defect before any payment runs."
+    }
+  },
+  "processes:task-fa-operate-record-485667": {
+    "plain_language_name": "File the Statutory Filings Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the filing trail at its required retention tier and sets the retrieval handles for it. What was filed, for which cycle, and from which figures, stays provable whenever the authorities come asking.",
+    "business_purpose": "It exists so the filing of each cycle's obligations can be evidenced whenever an authority inquiry arrives.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the filing trail at its retention tier and sets the retrieval handles an authority inquiry would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-dqy8vy": {
+    "plain_language_name": "Confirm the Produced Statutory Filings",
+    "plain_language_description": "When the filings stand produced, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The cycle closes with its obligations to the authorities discharged and on record.",
+    "business_purpose": "It exists so the cycle is treated as closed only once its filings are confirmed as produced.",
+    "practical_context": "It begins once preparation is complete and the produced filings await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the produced filings against the activity's intended outcome and issues the confirmation that closes the cycle."
+    }
+  },
+  "processes:task-fa-operate-intake-hsux39": {
+    "plain_language_name": "Receive the Cycle's Withholding and Compensation Records",
+    "plain_language_description": "Filing work opens when the withholding and compensation records are handed over as the material the cycle's statutory filings must be prepared from. The intake custodian accepts them, registers them with audit identifiers, and starts the producing from a recorded baseline.",
+    "business_purpose": "It exists so statutory filings are prepared from registered records rather than from estimates.",
+    "practical_context": "It opens when the records are presented for the filing work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the withholding and compensation records as the filing baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-ygd74s": {
+    "plain_language_name": "Tell the Authorities What Was Paid and Withheld",
+    "plain_language_description": "With the records verified, the processing custodian does the producing itself: the filings each cycle owes the authorities are prepared from the withholding and compensation records, and the produced filings are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because the payroll obligation does not end at payment - the authorities must receive what each cycle owes them.",
+    "practical_context": "It starts once checking is complete and the verified records are ready to be filed from, and it ends with the produced filings and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function prepares each cycle's filings from the records and produces them, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-uteme6": {
+    "plain_language_name": "Check the Records Before Telling the Authorities",
+    "plain_language_description": "Before anything is filed, the verification custodian checks the records against what producing requires - that both sides are the confirmed, complete set for the cycle. Defects are logged for rejection or repair before any filing is prepared.",
+    "business_purpose": "It exists so the filings the authorities receive are never built on incomplete figures.",
+    "practical_context": "It runs once the intake is registered and the records can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the compensation records missing a late adjustment and logs the defect before any filing is prepared."
+    }
+  },
+  "processes:task-fa-operate-record-ahyhhu": {
+    "plain_language_name": "File the Investment Execution Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the execution trail at its required retention tier and sets the retrieval handles for it. What was invested, under which limits, stays readable whenever a position is examined.",
+    "business_purpose": "It exists so the placing of every surplus can be evidenced whenever a position is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the execution trail at its retention tier and sets the retrieval handles a treasury review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-4dcmc5": {
+    "plain_language_name": "Confirm the Executed Investments",
+    "plain_language_description": "When the placements stand made, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The liquidity picture learns which surplus is working and where it sits.",
+    "business_purpose": "It exists so the liquidity picture counts only surplus confirmed as placed.",
+    "practical_context": "It begins once preparation is complete and the executed investments await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the made placements against the activity's intended outcome and issues the confirmation the liquidity picture needs."
+    }
+  },
+  "processes:task-fa-operate-intake-kuzqf7": {
+    "plain_language_name": "Receive the Surplus Positions and the Policy Limits",
+    "plain_language_description": "Execution opens when the surplus positions and the treasury policy limits are handed over together as the two sides the placements will be made between. The intake custodian accepts both, registers them with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so surplus is placed within registered limits rather than within whoever's optimism.",
+    "practical_context": "It opens when the positions and limits are presented for the execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the surplus positions and policy limits as the execution baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-hqadft": {
+    "plain_language_name": "Put the Idle Cash to Work",
+    "plain_language_description": "With the inputs verified, the processing custodian does the execution itself: each surplus position is invested down the channels the policy allows, and the executed placements are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because cash sitting idle is cash quietly shrinking - the execution is what makes the surplus earn its keep within the rules.",
+    "practical_context": "It starts once checking is complete and the verified positions are ready to be placed, and it ends with the executed investments produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function places each idle position within the policy's channels, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-nf49mm": {
+    "plain_language_name": "Check the Limits Before Putting the Cash to Work",
+    "plain_language_description": "Before anything is placed, the verification custodian checks the positions and limits against what execution requires - that the surplus is real and every placement stays inside the policy's lines. Defects are logged for rejection or repair before any placement is made.",
+    "business_purpose": "It exists so no placement is made that the policy would never allow.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a placement that would breach a policy line and logs the defect before it is made."
+    }
+  },
+  "processes:task-fa-operate-record-gaegqp": {
+    "plain_language_name": "File the Liquidity Forecast Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the forecasting trail at its required retention tier and sets the retrieval handles for it. What the outlook said, and from which positions and obligations, stays readable whenever a shortfall surprises anyone.",
+    "business_purpose": "It exists so the foresight behind every liquidity decision can be evidenced whenever a shortfall surprises anyone.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the forecasting trail at its retention tier and sets the retrieval handles a treasury review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-bb4bqk": {
+    "plain_language_name": "Confirm the Liquidity Forecast",
+    "plain_language_description": "When the outlook stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The cash decisions that follow learn what is coming and can plan against it.",
+    "business_purpose": "It exists so cash decisions are taken only over an outlook confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the liquidity forecast awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drawn outlook against the activity's intended outcome and issues the confirmation the cash decisions need."
+    }
+  }
+}

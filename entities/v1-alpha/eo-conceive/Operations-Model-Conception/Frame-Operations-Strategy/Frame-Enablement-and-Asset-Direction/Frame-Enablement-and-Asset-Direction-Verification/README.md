@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-v
 
 This is a **Task** (level L4), named **Frame Enablement and Asset Direction Verification**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Enablement and Asset Direction** (`processes:activity-eo-conceive-ettdc2`). Its canonical ID is `processes:task-eo-conceive-verify-x4ux55`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any direction is framed, the verification custodian checks the envelope against what framing requires - that its bounds are complete enough to set both postures within. Defects are flagged for rejection or repair before any direction is framed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so technology and asset postures are never set inside an envelope that was only partly drawn.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the envelope can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the envelope's bounds unstated for one dimension and flags the defect before directions are framed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Envelope Before Framing the Directions |
+| `plain_language_description` | string | no | Before any direction is framed, the verification custodian checks the envelope against what framing requires - that its … |
+| `business_purpose` | string | no | It exists so technology and asset postures are never set inside an envelope that was only partly drawn. |
+| `practical_context` | string | no | It runs once the intake is registered and the envelope can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

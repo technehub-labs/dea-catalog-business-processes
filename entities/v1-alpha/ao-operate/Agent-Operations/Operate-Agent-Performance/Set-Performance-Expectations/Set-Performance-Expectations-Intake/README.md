@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Set Performance Expectations Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Set Performance Expectations** (`processes:activity-ao-operate-duu9yw`). Its canonical ID is `processes:task-ao-operate-intake-3ns82g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Expectation setting opens when the onboarded agents and their roles are handed over as the people to be set up for active operation. The intake custodian accepts the handover, registers it with audit identifiers, and starts the setting work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so expectations are set for agents entering operation, not retrofitted after the fact.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the onboarded agents and their roles are presented for the setting, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the onboarded agents and their roles as the setting baseline, with audit references, and opens the expectation work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Onboarded Agents and Their Roles |
+| `plain_language_description` | string | no | Expectation setting opens when the onboarded agents and their roles are handed over as the people to be set up for … |
+| `business_purpose` | string | no | It exists so expectations are set for agents entering operation, not retrofitted after the fact. |
+| `practical_context` | string | no | It opens when the onboarded agents and their roles are presented for the setting, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-tra
 
 This is a **Task** (level L4), named **Withdraw Asset from Operation Processing**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Withdraw Asset from Operation** (`processes:activity-eo-retire-h2dzg3`). Its canonical ID is `processes:task-eo-retire-transform-qe7y2h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the plan verified, the processing custodian does the withdrawal itself: the asset is powered down, disconnected from everything it fed, and fenced off from operational use, and the withdrawn state is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an asset still wired in is an asset still relied on - the withdrawal is what makes the ending real.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified plan is ready to be executed, and it ends with the withdrawn asset produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management powers the asset down, unplugs it, and fences it off from use, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Shut It Down, Unplug It, Fence It Off |
+| `plain_language_description` | string | no | With the plan verified, the processing custodian does the withdrawal itself: the asset is powered down, disconnected … |
+| `business_purpose` | string | no | It exists because an asset still wired in is an asset still relied on - the withdrawal is what makes the ending real. |
+| `practical_context` | string | no | It starts once checking is complete and the verified plan is ready to be executed, and it ends with the withdrawn asset … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

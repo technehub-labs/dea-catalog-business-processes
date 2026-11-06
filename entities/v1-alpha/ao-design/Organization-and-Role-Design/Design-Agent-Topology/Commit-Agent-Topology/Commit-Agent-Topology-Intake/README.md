@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Commit Agent Topology Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Commit Agent Topology** (`processes:activity-ao-design-pc9dh3`). Its canonical ID is `processes:task-ao-design-intake-k4xv7a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the designed agent topology is handed over as the arrangement the enterprise will run on. The intake custodian accepts the handover, registers it with audit identifiers, and puts the consolidation on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the topology is committed from a registered design rather than from working drafts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the designed topology is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the designed agent topology as the consolidation baseline, with audit references, and opens the commitment work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Designed Topology for Commitment |
+| `plain_language_description` | string | no | Commitment opens when the designed agent topology is handed over as the arrangement the enterprise will run on. The … |
+| `business_purpose` | string | no | It exists so the topology is committed from a registered design rather than from working drafts. |
+| `practical_context` | string | no | It opens when the designed topology is presented for commitment, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

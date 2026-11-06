@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Bound Evaluation Scope Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Bound Evaluation Scope** (`processes:activity-sd-design-h56x3t`). Its canonical ID is `processes:task-sd-design-transform-w73kp4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the bounding proper begins. The processing custodian fixes how far the comparison will run: which options, which criteria, at what depth, producing the bounded evaluation scope in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an unbounded comparison either drowns in detail or stops the moment one option looks good.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the bounded evaluation scope produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function fixes how far the comparison will run, marking the options, criteria and depth it covers, and keeps the bounding workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound the Scope of the Strategic Alternatives Evaluation |
+| `plain_language_description` | string | no | With the inputs verified, the bounding proper begins. The processing custodian fixes how far the comparison will run … |
+| `business_purpose` | string | no | It exists because an unbounded comparison either drowns in detail or stops the moment one option looks good. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the bounded evaluation scope produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

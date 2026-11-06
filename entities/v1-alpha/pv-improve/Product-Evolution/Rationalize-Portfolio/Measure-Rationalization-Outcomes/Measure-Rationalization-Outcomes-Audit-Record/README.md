@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-re
 
 This is a **Task** (level L4), named **Measure Rationalization Outcomes Audit Record**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Measure Rationalization Outcomes** (`processes:activity-pv-improve-k3hy7t`). Its canonical ID is `processes:task-pv-improve-record-bqarsg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the measurement work is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The realized-outcome evidence therefore outlives the wave that produced it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the evidence of what rationalization actually delivered must stay retrievable long after the decisions and their makers have moved on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the measurement's audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the outcome measurement dossier for a completed rationalization wave at its required retention tier and sets the retrieval handles, so an auditor can pull the evidence years later.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Outcome Measurement Audit Record |
+| `plain_language_description` | string | no | After confirmation, the measurement work is put beyond doubt for later scrutiny. The records custodian preserves the … |
+| `business_purpose` | string | no | It exists because the evidence of what rationalization actually delivered must stay retrievable long after the … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the measurement's audit record held at its required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

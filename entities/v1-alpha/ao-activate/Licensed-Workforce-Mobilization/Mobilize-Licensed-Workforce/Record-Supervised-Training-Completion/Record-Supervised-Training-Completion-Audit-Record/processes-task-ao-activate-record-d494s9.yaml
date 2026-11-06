@@ -74,3 +74,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Training Completion Audit Record'
+plain_language_description: 'After confirmation, the records custodian consigns the completion''s audit trail to retention at its required tier and establishes the means of finding it again. The training story - plan, evidence, entry, confirmation - stays retrievable as one coherent history.'
+business_purpose: 'It exists so supervised training can be evidenced as completed for as long as the record must live.'
+practical_context: 'It begins when the confirmation has gone out and retention may begin under the activity''s evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian files the completion''s audit trail at its retention tier and sets the handles so a later supervision review can retrieve the whole history.'

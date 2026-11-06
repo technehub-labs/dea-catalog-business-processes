@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Audit Conduct-Rule Compliance Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Audit Conduct-Rule Compliance** (`processes:activity-ao-operate-z4n9m2`). Its canonical ID is `processes:task-ao-operate-intake-f7sgdj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The audit opens when the live regulator-licensed role list and the conduct-rule matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the compliance audit will run from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so conduct audits run from a registered role list against a registered rule matrix.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the role list and conduct-rule matrix are presented for the audit, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the live role list and conduct-rule matrix as the audit baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Live Role List and Conduct-Rule Matrix |
+| `plain_language_description` | string | no | The audit opens when the live regulator-licensed role list and the conduct-rule matrix are handed to the intake … |
+| `business_purpose` | string | no | It exists so conduct audits run from a registered role list against a registered rule matrix. |
+| `practical_context` | string | no | It opens when the role list and conduct-rule matrix are presented for the audit, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

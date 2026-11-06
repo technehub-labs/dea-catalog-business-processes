@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-veri
 
 This is a **Task** (level L4), named **Commit Strategic Initiatives Verification**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Commit Strategic Initiatives** (`processes:activity-sd-build-u85tt9`). Its canonical ID is `processes:task-sd-build-verify-4ayvxc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the bounded initiatives are committed for sequencing and resourcing, the arriving set is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because committing an initiative whose scope or fit is unsettled passes the unsettledness downstream to sequencing and resourcing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the initiative set is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged initiative set against what the activity requires, and writes up an initiative still carrying an open scope question as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Bounded Initiatives Before Committing Them |
+| `plain_language_description` | string | no | Before the bounded initiatives are committed for sequencing and resourcing, the arriving set is put to the test. The … |
+| `business_purpose` | string | no | It exists because committing an initiative whose scope or fit is unsettled passes the unsettledness downstream to … |
+| `practical_context` | string | no | It opens once the intake is registered and the initiative set is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

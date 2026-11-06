@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Bound Reporting Spans Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Reporting Spans** (`processes:activity-ao-conceive-m77sb9`). Its canonical ID is `processes:task-ao-conceive-transform-vfnn2q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the principles verified, the processing custodian sets the spans themselves: the reporting limits the organization model will permit are worked out and fixed in the form the activity defines. Working papers behind each limit are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a model without settled reporting spans invites the sprawl the principles were drawn to prevent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the bounded reporting spans produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management fixes the reporting spans the model will permit, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Reporting Spans the Model Will Permit |
+| `plain_language_description` | string | no | With the principles verified, the processing custodian sets the spans themselves: the reporting limits the organization … |
+| `business_purpose` | string | no | It exists because a model without settled reporting spans invites the sprawl the principles were drawn to prevent. |
+| `practical_context` | string | no | It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

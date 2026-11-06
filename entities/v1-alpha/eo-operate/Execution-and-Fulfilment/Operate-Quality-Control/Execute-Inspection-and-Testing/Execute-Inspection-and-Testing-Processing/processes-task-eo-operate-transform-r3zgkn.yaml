@@ -68,3 +68,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Run the Tests and Capture the Measurements'
+plain_language_description: 'With the plan verified, the processing custodian does the inspection itself: each batch is put through the plan''s tests on the bench and instruments, its measurements captured as they are taken, and the executed inspection is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because quality claimed without measurement is quality imagined - the bench is where the truth about each batch is actually taken.'
+practical_context: 'It starts once checking is complete and the verified plan is ready to be run, and it ends with the executed inspection produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management puts each batch through the plan''s tests and captures every measurement as it lands, keeping the working papers.'

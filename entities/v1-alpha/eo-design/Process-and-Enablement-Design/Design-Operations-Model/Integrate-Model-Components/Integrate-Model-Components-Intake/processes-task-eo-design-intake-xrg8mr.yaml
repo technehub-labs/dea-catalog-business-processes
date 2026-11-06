@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Component Designs for Integration'
+plain_language_description: 'Integration opens when the four component designs - the delivery model, the platform architecture, the facility blueprint, and the logistics routing - are handed over together as the parts that must become one model. The intake custodian accepts them, registers them with audit identifiers, and starts the integration from a recorded baseline.'
+business_purpose: 'It exists because four good designs beside each other are still four designs - integration is where they start working as one model.'
+practical_context: 'It opens when the component designs are presented for integration, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the four component designs as the integration baseline, with audit references, and opens the joining work.'

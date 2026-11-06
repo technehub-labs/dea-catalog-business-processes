@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Health Signals and the Agreed Targets'
+plain_language_description: 'Watching opens when the platform health signals and the agreed availability targets are handed over together as the two sides the watching will read between. The intake custodian accepts both, registers them with audit identifiers, and starts the monitoring from a recorded baseline.'
+business_purpose: 'It exists so platforms are watched against registered targets rather than against optimism.'
+practical_context: 'It opens when the health signals and targets are presented for the watching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the health signals and agreed targets as the watching baseline, with audit references.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Publish Catalogue to Channels Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Publish Catalogue to Channels** (`processes:activity-pv-operate-pv7jqd`). Its canonical ID is `processes:task-pv-operate-transform-hdjynx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the publishing proper begins. The processing custodian carries the maintained catalogue to each channel under its setup, producing the published catalogue state per channel in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because customers buy through the channels, so the maintained catalogue only earns its keep once it is live in every one of them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the published state for each channel produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management publishes the verified catalogue to the web shop and the shop-front channel under their setups, records the resulting published state per channel, and keeps the publish workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Push the Catalogue Out to Each Selling Channel |
+| `plain_language_description` | string | no | With the inputs verified, the publishing proper begins. The processing custodian carries the maintained catalogue to … |
+| `business_purpose` | string | no | It exists because customers buy through the channels, so the maintained catalogue only earns its keep once it is live … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the published state for each channel … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

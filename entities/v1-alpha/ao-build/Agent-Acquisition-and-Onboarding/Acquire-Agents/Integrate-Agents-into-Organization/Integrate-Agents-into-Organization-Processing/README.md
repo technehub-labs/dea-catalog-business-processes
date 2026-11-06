@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Integrate Agents into Organization Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Integrate Agents into Organization** (`processes:activity-ao-build-khtsgv`). Its canonical ID is `processes:task-ao-build-transform-3z9zqu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With readiness confirmed, the processing custodian carries out the integration itself: each verified agent is placed into its team and slotted into the coordination patterns the organisation works by. The placement working papers are kept so the resulting arrangement can be traced.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because onboarding only pays off once agents are actually woven into the teams they will work within.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once checking is complete and the verified agents are ready for placement, and it ends with the integrated arrangement produced and the working papers preserved.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian places verified agents into their designated teams and sets the coordination patterns each will follow, keeping notes of every placement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Place the Agents into Teams and Working Patterns |
+| `plain_language_description` | string | no | With readiness confirmed, the processing custodian carries out the integration itself: each verified agent is placed … |
+| `business_purpose` | string | no | It exists because onboarding only pays off once agents are actually woven into the teams they will work within. |
+| `practical_context` | string | no | It begins once checking is complete and the verified agents are ready for placement, and it ends with the integrated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

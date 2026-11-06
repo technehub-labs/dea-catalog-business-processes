@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-tr
 
 This is a **Task** (level L4), named **Analyze Control Findings Processing**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Analyze Control Findings** (`processes:activity-fa-improve-6j2xpt`). Its canonical ID is `processes:task-fa-improve-transform-6gd5mc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the material verified, the processing custodian does the analysis itself: the finding or incident is read down to what its fix must actually cover, and the bounded analysis is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a finding read loosely invites a fix aimed nowhere - reading it down is what makes the refinement answerable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified material is ready to be read, and it ends with the bounded analysis produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority reads the finding down to what its fix must cover, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read Down What the Finding Exposes |
+| `plain_language_description` | string | no | With the material verified, the processing custodian does the analysis itself: the finding or incident is read down to … |
+| `business_purpose` | string | no | It exists because a finding read loosely invites a fix aimed nowhere - reading it down is what makes the refinement … |
+| `practical_context` | string | no | It starts once checking is complete and the verified material is ready to be read, and it ends with the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

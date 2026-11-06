@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 
 This is a **Task** (level L4), named **Classify Party Risk Verification**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Classify Party Risk** (`processes:activity-pr-activate-p53h54`). Its canonical ID is `processes:task-pr-activate-verify-843xk8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian puts the application through its checks: identity is confirmed through multiple factors, the parties are screened for sanctions and politically exposed status, and adverse media is searched. The results are reconciled into a certificate that states exactly which checks were run.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because no risk rating can be defended if the identity and background behind it have not been properly screened.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the risk function screens a new applicant against sanctions lists and adverse media, then issues the certificate.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Identity, Sanctions, and Screening Checks |
+| `plain_language_description` | string | no | The verification custodian puts the application through its checks: identity is confirmed through multiple factors, the … |
+| `business_purpose` | string | no | It exists because no risk rating can be defended if the identity and background behind it have not been properly … |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

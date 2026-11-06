@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-re
 
 This is a **Task** (level L4), named **Design Control Refinements Audit Record**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Design Control Refinements** (`processes:activity-fa-improve-g6x3fj`). Its canonical ID is `processes:task-fa-improve-record-gz5ga4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each refinement was drawn to close, and against which finding, stays readable whenever a control's shape is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the design behind each refinement can be evidenced whenever a control's shape is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the design trail at its retention tier and sets the retrieval handles a controls review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Refinement Design Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the design behind each refinement can be evidenced whenever a control's shape is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -71,3 +71,18 @@ outputs:
   description: Intake manifest registered and bound to the Assign Retained-Records Custodianship case file; registered intake custodian passes custody to the verification …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Log the Custodianship Papers at the Start'
+plain_language_description: 'This intake gathers what the custodianship decision rests on: the order reference, the inventory of records the entity must keep, and the drafts of the dissolution filings. The intake custodian logs each item into the wind-down file so the designation work starts accounted for.'
+business_purpose: 'It exists so the choice of custodian is made against a complete and logged record set, not a partial one.'
+practical_context: 'It opens when the Retire-stage pack arrives for the activity, and it closes with the manifest registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the workforce management function logs the order reference and the records inventory into the case file before verification begins.'

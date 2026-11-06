@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Publish Catalogue to Channels Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Publish Catalogue to Channels** (`processes:activity-pv-operate-pv7jqd`). Its canonical ID is `processes:task-pv-operate-confirm-wnx2ba`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the catalogue is live in the channels. The confirmation custodian tells the downstream teams the published state is available, and closes the reconciliation against what the activity promised for the push.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so everyone who trades on the catalogue knows the channel publishing is complete and official rather than still in progress.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the published states are complete and ready to hand on, and it closes with the confirmation issued and the publishing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management announces to the sales and support teams that the catalogue is live in every channel, checks the delivered published states against what the publishing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Channel Publishing and Tell the Downstream Teams |
+| `plain_language_description` | string | no | The confirming opens once the catalogue is live in the channels. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists so everyone who trades on the catalogue knows the channel publishing is complete and official rather than … |
+| `practical_context` | string | no | It opens when the published states are complete and ready to hand on, and it closes with the confirmation issued and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Run Board and Committee Cycles Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Run Board and Committee Cycles** (`processes:activity-ge-operate-bjfkws`). Its canonical ID is `processes:task-ge-operate-transform-922twd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the round itself: the board and its committees convene as scheduled, the risk registers stay current, exposures are brought forward, reviews and audits are executed, and the assurance material is assembled. What the round yields is consolidated into a results pack ready for formal sign-off.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the obligations carried by the charters and operating calendars are actually discharged, cycle after cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens on the strength of the verification certificate, and it closes when the results pack exists and custody moves to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the governance secretariat convenes the scheduled meetings, refreshes the risk registers, and consolidates the round's outputs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Meetings and Keep the Governance Machinery Turning |
+| `plain_language_description` | string | no | This is the round itself: the board and its committees convene as scheduled, the risk registers stay current, exposures … |
+| `business_purpose` | string | no | It exists so the obligations carried by the charters and operating calendars are actually discharged, cycle after cycle. |
+| `practical_context` | string | no | It opens on the strength of the verification certificate, and it closes when the results pack exists and custody moves … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Bound Reorganization Scope Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Bound Reorganization Scope** (`processes:activity-ao-improve-evxkz9`). Its canonical ID is `processes:task-ao-improve-intake-xkb7sw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Scoping opens when the committed review findings and the direction changes are handed over together as the material the reorganization's bounds must be read from. The intake custodian accepts both, registers them with audit identifiers, and starts the scoping on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the reorganization is scoped from registered findings and registered direction, not from rumour.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the findings and direction changes are presented for scoping, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the committed review findings and direction changes as the scoping baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Findings and Direction Changes for Scoping |
+| `plain_language_description` | string | no | Scoping opens when the committed review findings and the direction changes are handed over together as the material the … |
+| `business_purpose` | string | no | It exists so the reorganization is scoped from registered findings and registered direction, not from rumour. |
+| `practical_context` | string | no | It opens when the findings and direction changes are presented for scoping, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

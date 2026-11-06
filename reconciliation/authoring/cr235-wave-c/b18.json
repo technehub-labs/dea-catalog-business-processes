@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-operate-confirm-pvayd5": {
+    "plain_language_name": "Confirm the Completed Inspections",
+    "plain_language_description": "When the tests stand run, the confirmation custodian reconciles the completed inspections against the outcome the activity set out to reach and issues the confirmation. The recording side learns which batches have their measurements and can be written up.",
+    "business_purpose": "It exists so batches are treated as inspected only once the work is confirmed as done.",
+    "practical_context": "It begins once preparation is complete and the completed inspections await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the completed inspections against the activity's intended outcome and issues the confirmation the recording side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-vjagg3": {
+    "plain_language_name": "Receive the Approved Inspection Plan for the Batch",
+    "plain_language_description": "Testing opens when the approved inspection plan is handed over together with the batch samples it will be worked on. The intake custodian accepts both, registers them with audit identifiers, and starts the inspection from a recorded baseline.",
+    "business_purpose": "It exists so output is inspected to an approved plan rather than to whatever the bench feels like testing.",
+    "practical_context": "It opens when the plan and samples are presented for inspection, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the approved plan and its batch samples as the testing baseline, with audit references."
+    }
+  },
+  "processes:task-eo-operate-transform-r3zgkn": {
+    "plain_language_name": "Run the Tests and Capture the Measurements",
+    "plain_language_description": "With the plan verified, the processing custodian does the inspection itself: each batch is put through the plan's tests on the bench and instruments, its measurements captured as they are taken, and the executed inspection is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because quality claimed without measurement is quality imagined - the bench is where the truth about each batch is actually taken.",
+    "practical_context": "It starts once checking is complete and the verified plan is ready to be run, and it ends with the executed inspection produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management puts each batch through the plan's tests and captures every measurement as it lands, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-ss6k68": {
+    "plain_language_name": "Check the Plan Before Running the Tests",
+    "plain_language_description": "Before anything is tested, the verification custodian checks the plan against what inspection requires - that each batch's tests, tolerances, and sampling are stated and the equipment is matched to them. Defects are logged for rejection or repair before any test runs.",
+    "business_purpose": "It exists so no batch is tested to a plan that was never fully approved.",
+    "practical_context": "It runs once the intake is registered and the plan can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a batch whose sampling is unstated and logs the defect before any test runs."
+    }
+  },
+  "processes:task-eo-operate-record-3z5qwn": {
+    "plain_language_name": "File the Inspection Plan Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the planning trail at its required retention tier and sets the retrieval handles for it. What each batch was set to be checked for, and how, stays readable whenever an inspection's basis is examined.",
+    "business_purpose": "It exists so the plan behind every inspection can be evidenced whenever its basis is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the planning trail at its retention tier and sets the retrieval handles an inspection review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-s9ghmg": {
+    "plain_language_name": "Confirm the Inspection Plan",
+    "plain_language_description": "When the plan stands set, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The testing side learns what each batch will be checked for and can begin.",
+    "business_purpose": "It exists so output is tested only to a plan confirmed as set.",
+    "practical_context": "It begins once preparation is complete and the inspection plan awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the inspection plan against the activity's intended outcome and issues the confirmation the testing side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-mnk8x5": {
+    "plain_language_name": "Receive the Specifications, Standards, and Production Schedule",
+    "plain_language_description": "Planning opens when the specifications, the sampling standards, and the production schedule are handed over together as the ground each batch's inspection will be set from. The intake custodian accepts them, registers them with audit identifiers, and starts the planning from a recorded baseline.",
+    "business_purpose": "It exists so inspections are planned from registered specifications rather than from bench habit.",
+    "practical_context": "It opens when the specifications, standards, and schedule are presented for planning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the specifications, standards, and production schedule as the planning baseline, with audit references."
+    }
+  },
+  "processes:task-eo-operate-transform-ddw6ap": {
+    "plain_language_name": "Set What, How, and When Each Batch Is Checked",
+    "plain_language_description": "With the inputs verified, the processing custodian does the planning itself: the sampling scheme is selected, the applicable specification and its tolerances are resolved, and the inspection is placed against the production schedule, all set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because inspection improvised at the bench proves nothing - the plan is what makes every measurement mean the same thing.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be planned from, and it ends with the inspection plan produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management sets each batch's sampling, tolerances, and inspection slot before any measurement exists, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-jadwaz": {
+    "plain_language_name": "Check the Inputs Before Setting the Plan",
+    "plain_language_description": "Before anything is planned, the verification custodian checks the specifications, standards, and schedule against what planning requires - that the specification is the current one and the schedule covers the batches in scope. Defects are logged for rejection or repair before the plan is set.",
+    "business_purpose": "It exists so no batch is planned against a superseded specification.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the schedule missing a newly scheduled batch and logs the defect before the plan is set."
+    }
+  },
+  "processes:task-eo-operate-record-yzrg6n": {
+    "plain_language_name": "File the Inspection Lot Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the record-keeping trail at its required retention tier and sets the retrieval handles for it. Each batch's authoritative quality story stays readable whenever a later claim turns on it.",
+    "business_purpose": "It exists so each batch's quality story can be evidenced whenever a later claim turns on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the record-keeping trail at its retention tier and sets the retrieval handles a batch inquiry would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-bcm6ws": {
+    "plain_language_name": "Confirm the Per-Batch Quality Record",
+    "plain_language_description": "When the record stands written, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The disposition and reporting sides learn every batch's quality story is authoritative and usable.",
+    "business_purpose": "It exists so dispositions are made only over a record confirmed as authoritative.",
+    "practical_context": "It begins once preparation is complete and the quality record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the quality record against the activity's intended outcome and issues the confirmation the disposition side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-s8eyu5": {
+    "plain_language_name": "Receive the Completed Inspections for the Record",
+    "plain_language_description": "Recording opens when the completed inspections are handed over as the raw material each batch's quality story will be written from. The intake custodian accepts them, registers them with audit identifiers, and starts the recording from a recorded baseline.",
+    "business_purpose": "It exists so the record is written from the bench's actual results rather than from recollection.",
+    "practical_context": "It opens when the completed inspections are presented for recording, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the completed inspections as the recording baseline, with audit references, and opens the writing work."
+    }
+  },
+  "processes:task-eo-operate-transform-kmga55": {
+    "plain_language_name": "Write the Raw Measurements into the Quality Record",
+    "plain_language_description": "With the results verified, the processing custodian does the recording itself: each batch's raw measurements are registered into its authoritative quality story, and the per-batch record is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a measurement on a scrap of paper protects nobody - the record is what makes the bench's truth last.",
+    "practical_context": "It starts once checking is complete and the verified results are ready to be written, and it ends with the quality record produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management writes each batch's raw measurements into its quality story, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-hxtfvg": {
+    "plain_language_name": "Check the Measurements Before They Enter the Record",
+    "plain_language_description": "Before anything is written, the verification custodian checks the results against what recording requires - that each measurement names its batch and its test. Defects are logged for rejection or repair before the record is touched.",
+    "business_purpose": "It exists so no batch's story gains a measurement nobody can attribute.",
+    "practical_context": "It runs once the intake is registered and the results can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a measurement that names no test and logs the defect before the record is touched."
+    }
+  },
+  "processes:task-eo-operate-record-2mskxx": {
+    "plain_language_name": "File the Quality Reporting Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the reporting trail at its required retention tier and sets the retrieval handles for it. What the quality picture showed, and from which batches, stays readable whenever the numbers are later questioned.",
+    "business_purpose": "It exists so the quality picture presented onward can be evidenced whenever its numbers are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the reporting trail at its retention tier and sets the retrieval handles a quality review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-xehr9g": {
+    "plain_language_name": "Confirm the Quality Performance Report",
+    "plain_language_description": "When the picture stands rolled up, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The owning chain learns how the batches actually performed and where the yield sits.",
+    "business_purpose": "It exists so decisions are taken only over a report confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the quality report awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the quality report against the activity's intended outcome and issues the confirmation the owning chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-fke3jj": {
+    "plain_language_name": "Receive the Per-Batch Records for the Quality Report",
+    "plain_language_description": "Reporting opens when the per-batch quality records are handed over as the material the performance picture will be rolled up from. The intake custodian accepts them, registers them with audit identifiers, and starts the aggregation from a recorded baseline.",
+    "business_purpose": "It exists so the report is built from authoritative batch records rather than from spot impressions.",
+    "practical_context": "It opens when the batch records are presented for the report, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the per-batch records as the reporting baseline, with audit references, and opens the aggregation."
+    }
+  },
+  "processes:task-eo-operate-transform-dnp97s": {
+    "plain_language_name": "Roll the Batch Records Up into the Quality Picture",
+    "plain_language_description": "With the records verified, the processing custodian does the aggregation itself: the batch records are rolled up into the performance picture - yield, defect rates, and their movement - set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a hundred good batch records still say nothing until they are read together - the roll-up is where quality becomes visible.",
+    "practical_context": "It starts once checking is complete and the verified records are ready to be rolled up, and it ends with the quality report produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management rolls the batch records into the yield and defect picture, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-p4qajj": {
+    "plain_language_name": "Check the Records Before Rolling Them Up",
+    "plain_language_description": "Before anything is aggregated, the verification custodian checks the batch records against what reporting requires - that they cover the batches in the period completely. Gaps are logged for rejection or repair before the roll-up begins.",
+    "business_purpose": "It exists so the picture is never drawn over batch records with holes in them.",
+    "practical_context": "It runs once the intake is registered and the records can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the records missing one shift's batches and logs the gap before the roll-up begins."
+    }
+  },
+  "processes:task-eo-operate-record-xkptst": {
+    "plain_language_name": "File the Daily Coordination Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the coordination trail at its required retention tier and sets the retrieval handles for it. How each day was drawn together, and around which plan, stays readable whenever the day's choices are examined.",
+    "business_purpose": "It exists so the shape of each operating day can be evidenced whenever its choices are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the coordination trail at its retention tier and sets the retrieval handles an operations review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-p55nc5": {
+    "plain_language_name": "Confirm the Day's Coordinated Operation",
+    "plain_language_description": "When the day stands drawn together, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The engines learn the plan they run to and the exceptions side learns what to watch.",
+    "business_purpose": "It exists so the engines run to a plan confirmed as drawn, not to five private ones.",
+    "practical_context": "It begins once preparation is complete and the coordinated operation awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the coordinated day against the activity's intended outcome and issues the confirmation the engines run on."
+    }
+  },
+  "processes:task-eo-operate-intake-reptbz": {
+    "plain_language_name": "Receive the Engines' Current Operating Status",
+    "plain_language_description": "Coordination opens when the engines' current operating status is handed over as the picture the day must be drawn from. The intake custodian accepts it, registers it with audit identifiers, and starts the coordination from a recorded baseline.",
+    "business_purpose": "It exists so the day is planned from where the engines actually are, not from where yesterday ended.",
+    "practical_context": "It opens when the operating status is presented for coordination, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the engines' operating status as the coordination baseline, with audit references, and opens the drawing work."
+    }
+  },
+  "processes:task-eo-operate-transform-4255z3": {
+    "plain_language_name": "Draw the Engines into One Daily Plan",
+    "plain_language_description": "With the status verified, the processing custodian does the coordination itself: the day's production, delivery, logistics, platform, facility, and procurement work is drawn into one operating plan, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because six engines pulling separately tear the day apart - coordination is what makes them pull as one.",
+    "practical_context": "It starts once checking is complete and the verified status is ready to be drawn from, and it ends with the coordinated operation produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management draws the six engines' work into one plan for the day, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-42phyy": {
+    "plain_language_name": "Check the Status Before Drawing the Plan",
+    "plain_language_description": "Before the day is drawn, the verification custodian checks the operating status against what coordination requires - that every engine's position is reported and none is stale. Defects are logged for rejection or repair before the plan is drawn.",
+    "business_purpose": "It exists so the day is never planned around an engine whose position nobody actually knows.",
+    "practical_context": "It runs once the intake is registered and the status can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one engine's status missing from the picture and logs the defect before the plan is drawn."
+    }
+  },
+  "processes:task-eo-operate-record-afg86u": {
+    "plain_language_name": "File the Service Recovery Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the recovery trail at its required retention tier and sets the retrieval handles for it. What went wrong for the customer, and how the day was bought back, stays readable whenever the same snag returns.",
+    "business_purpose": "It exists so the answering of each exception can be evidenced whenever the snag returns.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the recovery trail at its retention tier and sets the retrieval handles a service review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-jcspyu": {
+    "plain_language_name": "Confirm the Restored Service Operation",
+    "plain_language_description": "When the exceptions stand answered, the confirmation custodian reconciles the restored operation against the outcome the activity set out to reach and issues the confirmation. The service chain learns which promises hold again and which are still exposed.",
+    "business_purpose": "It exists so the day is treated as back on plan only once the restoration is confirmed.",
+    "practical_context": "It begins once preparation is complete and the restored operation awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the restored operation against the activity's intended outcome and issues the confirmation the service chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-unmadm": {
+    "plain_language_name": "Receive the Flagged Deviations for Recovery",
+    "plain_language_description": "Recovery opens when the flagged service-level deviations are handed over as the snags the day must answer. The intake custodian accepts them, registers them with audit identifiers, and starts the recovery from a recorded baseline.",
+    "business_purpose": "It exists so exceptions are answered from a registered list rather than from whoever shouts first.",
+    "practical_context": "It opens when the flagged deviations are presented for recovery, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the flagged deviations as the recovery baseline, with audit references, and opens the answering work."
+    }
+  },
+  "processes:task-eo-operate-transform-5dyeqk": {
+    "plain_language_name": "Answer Each Exception and Get the Day Back on Plan",
+    "plain_language_description": "With the deviations verified, the processing custodian does the recovery itself: each exception is worked to a remedy that puts the operation back on its plan, and the restored positions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a service promise slips quietly unless somebody pulls it back - the recovery is what keeps the day's word.",
+    "practical_context": "It starts once checking is complete and the verified deviations are ready to be answered, and it ends with the restored operation produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management works each flagged snag to a remedy that puts the day back on plan, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-ffetd9": {
+    "plain_language_name": "Check the Flags Before Answering Them",
+    "plain_language_description": "Before anything is answered, the verification custodian checks the flagged deviations against what recovery requires - that each names its service and states what actually slipped. Defects are logged for rejection or repair before any recovery is made.",
+    "business_purpose": "It exists so effort is never spent answering flags that were never properly raised.",
+    "practical_context": "It runs once the intake is registered and the flags can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a flag that names no service and logs the defect before any recovery is made."
+    }
+  },
+  "processes:task-eo-operate-record-prrput": {
+    "plain_language_name": "File the Service-Level Monitoring Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the monitoring trail at its required retention tier and sets the retrieval handles for it. What the actuals showed against the promises, window by window, stays readable whenever a level is disputed.",
+    "business_purpose": "It exists so the watching behind every level dispute can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the monitoring trail at its retention tier and sets the retrieval handles a service dispute would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-c64g4n": {
+    "plain_language_name": "Confirm the Service-Level Position",
+    "plain_language_description": "When the watching stands done, the confirmation custodian reconciles the position against the outcome the activity set out to reach and issues the confirmation. The recovery side learns which levels are holding and which are slipping.",
+    "business_purpose": "It exists so recovery acts only on a position confirmed as watched.",
+    "practical_context": "It begins once preparation is complete and the service-level position awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the service-level position against the activity's intended outcome and issues the confirmation the recovery side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-b9vkt9": {
+    "plain_language_name": "Receive the Agreed Service Levels for Watching",
+    "plain_language_description": "Watching opens when the agreed service levels are handed over as the promises the actuals will be read against. The intake custodian accepts them, registers them with audit identifiers, and starts the monitoring from a recorded baseline.",
+    "business_purpose": "It exists so actuals are read against registered promises rather than against shifting expectations.",
+    "practical_context": "It opens when the agreed levels are presented for the watching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the agreed service levels as the monitoring baseline, with audit references, and opens the watching work."
+    }
+  },
+  "processes:task-eo-operate-transform-rtvuv4": {
+    "plain_language_name": "Watch the Actuals Against the Promises",
+    "plain_language_description": "With the levels verified, the processing custodian does the monitoring itself: each window's actual delivery is read against its promised level, and anything off the mark is flagged, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a promise nobody measures is a promise quietly broken - the watching is what keeps the levels honest.",
+    "practical_context": "It starts once checking is complete and the verified levels are ready to be watched, and it ends with the service-level position produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management reads each window's actuals against its promised level and flags what slips, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-khxkg3": {
+    "plain_language_name": "Check the Levels Before Watching the Actuals",
+    "plain_language_description": "Before anything is watched, the verification custodian checks the levels against what monitoring requires - that each is stated concretely enough to measure against. Defects are logged for rejection or repair before the watching begins.",
+    "business_purpose": "It exists so nobody watches against a promise too vague to measure.",
+    "practical_context": "It runs once the intake is registered and the levels can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a level stated as 'prompt' with no figure behind it and logs the defect before the watching begins."
+    }
+  },
+  "processes:task-eo-operate-record-7jz35p": {
+    "plain_language_name": "File the Service Performance Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the reporting trail at its required retention tier and sets the retrieval handles for it. What the windows actually delivered, and from which actuals, stays readable whenever the delivery story is examined.",
+    "business_purpose": "It exists so the delivery story presented onward can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the reporting trail at its retention tier and sets the retrieval handles a service review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-mkdw44": {
+    "plain_language_name": "Confirm the Service Delivery Report",
+    "plain_language_description": "When the picture stands rolled up, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The owning chain learns how the service actually delivered across the windows.",
+    "business_purpose": "It exists so decisions are taken only over a report confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the delivery report awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the delivery report against the activity's intended outcome and issues the confirmation the owning chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-je5hzt": {
+    "plain_language_name": "Receive the Operating-Window Actuals for the Report",
+    "plain_language_description": "Reporting opens when the operating-window actuals are handed over as the material the delivery picture will be rolled up from. The intake custodian accepts them, registers them with audit identifiers, and starts the aggregation from a recorded baseline.",
+    "business_purpose": "It exists so the report is built from watched actuals rather than from impressions of the week.",
+    "practical_context": "It opens when the window actuals are presented for the report, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the window actuals as the reporting baseline, with audit references, and opens the aggregation."
+    }
+  },
+  "processes:task-eo-operate-transform-75w8th": {
+    "plain_language_name": "Roll the Window's Actuals into the Delivery Picture",
+    "plain_language_description": "With the actuals verified, the processing custodian does the aggregation itself: the windows' actuals are rolled up into the delivery performance picture, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because window after window of watching still says nothing until it is read together - the roll-up is where service becomes visible.",
+    "practical_context": "It starts once checking is complete and the verified actuals are ready to be rolled up, and it ends with the delivery report produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management rolls the windows' actuals into the delivery performance picture, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-gkz4cy": {
+    "plain_language_name": "Check the Actuals Before the Roll-Up",
+    "plain_language_description": "Before anything is aggregated, the verification custodian checks the actuals against what reporting requires - that they cover the windows in the period completely. Gaps are logged for rejection or repair before the roll-up begins.",
+    "business_purpose": "It exists so the delivery picture is never drawn over windows with holes in them.",
+    "practical_context": "It runs once the intake is registered and the actuals can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the actuals missing one whole window and logs the gap before the roll-up begins."
+    }
+  },
+  "processes:task-eo-operate-record-j43ngy": {
+    "plain_language_name": "File the Routine Execution Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the routine trail at its required retention tier and sets the retrieval handles for it. Which routines ran, on which platforms, and when, stays readable whenever a platform's upkeep history is examined.",
+    "business_purpose": "It exists so the performance of each routine can be evidenced whenever the platform's upkeep is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the routine trail at its retention tier and sets the retrieval handles an upkeep review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-z87ewk": {
+    "plain_language_name": "Confirm the Completed Platform Routines",
+    "plain_language_description": "When the routines stand run, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The availability watch learns the platforms' housekeeping is current and the platforms stand servable.",
+    "business_purpose": "It exists so platforms are treated as tended only once the routines are confirmed as run.",
+    "practical_context": "It begins once preparation is complete and the completed routines await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the completed routines against the activity's intended outcome and issues the confirmation the availability watch needs."
+    }
+  },
+  "processes:task-eo-operate-intake-k4kj7w": {
+    "plain_language_name": "Receive the Operations Calendar for the Routines",
+    "plain_language_description": "Execution opens when the operations calendar is handed over as the rhythm the platform routines will be run on. The intake custodian accepts it, registers it with audit identifiers, and starts the execution from a recorded baseline.",
+    "business_purpose": "It exists so routines run on a registered rhythm rather than whenever someone remembers them.",
+    "practical_context": "It opens when the operations calendar is presented for the routines, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the operations calendar as the routine baseline, with audit references, and opens the execution work."
+    }
+  },
+  "processes:task-eo-operate-transform-ure72w": {
+    "plain_language_name": "Run the Backups, Renewals, and Housekeeping on Time",
+    "plain_language_description": "With the calendar verified, the processing custodian does the execution itself: each planned routine - the backups, the rotations, the certificate renewals, the housekeeping - is run on its due date, and the completed routines are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because platforms rot quietly between the noticeable events - the routines are what keep them servable between times.",
+    "practical_context": "It starts once checking is complete and the verified calendar is ready to be run, and it ends with the completed routines produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management runs each due routine - backups, rotations, renewals, housekeeping - on its date, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-6cvgau": {
+    "plain_language_name": "Check the Calendar Before Running the Routines",
+    "plain_language_description": "Before anything runs, the verification custodian checks the calendar against what execution requires - that every platform's routines are on it and none has lapsed past its date. Defects are logged for rejection or repair before any routine is run.",
+    "business_purpose": "It exists so no platform's care lapses because the calendar missed it.",
+    "practical_context": "It runs once the intake is registered and the calendar can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a platform's renewals missing from the calendar and logs the defect before any routine runs."
+    }
+  },
+  "processes:task-eo-operate-record-wseve3": {
+    "plain_language_name": "File the Capacity Posture Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the balancing trail at its required retention tier and sets the retrieval handles for it. What the demand was doing, and how the platforms were tuned to meet it, stays readable whenever a slowdown is examined.",
+    "business_purpose": "It exists so the tuning behind the platforms' behaviour can be evidenced whenever a slowdown is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the balancing trail at its retention tier and sets the retrieval handles a platform review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-39pkt2": {
+    "plain_language_name": "Confirm the Capacity and Performance Posture",
+    "plain_language_description": "When the balancing stands done, the confirmation custodian reconciles the posture against the outcome the activity set out to reach and issues the confirmation. The platform chain learns where the headroom sits and where the pressure builds.",
+    "business_purpose": "It exists so the platforms are treated as tuned only once the posture is confirmed.",
+    "practical_context": "It begins once preparation is complete and the capacity posture awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the capacity posture against the activity's intended outcome and issues the confirmation the platform chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-eeu6cm": {
+    "plain_language_name": "Receive the Usage and Performance Telemetry",
+    "plain_language_description": "Balancing opens when the usage and performance telemetry is handed over as the reading the platforms' posture will be set from. The intake custodian accepts it, registers it with audit identifiers, and starts the balancing from a recorded baseline.",
+    "business_purpose": "It exists so the platforms are tuned from measured reality rather than from feel.",
+    "practical_context": "It opens when the telemetry is presented for the balancing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the usage and performance telemetry as the balancing baseline, with audit references."
+    }
+  },
+  "processes:task-eo-operate-transform-nqk5fa": {
+    "plain_language_name": "Balance the Load Against What the Platforms Can Carry",
+    "plain_language_description": "With the telemetry verified, the processing custodian does the balancing itself: the demand's pull is read against what the platforms can carry, the operating parameters are tuned where they must be, and the posture is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a platform at its limit fails at the worst moment - the balancing is what finds the limit before the limit finds you.",
+    "practical_context": "It starts once checking is complete and the verified telemetry is ready to be read, and it ends with the capacity posture produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management reads the demand against the platforms' headroom and tunes the parameters where they must move, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-kv7a66": {
+    "plain_language_name": "Check the Telemetry Before Balancing the Load",
+    "plain_language_description": "Before anything is tuned, the verification custodian checks the telemetry against what balancing requires - that it covers the platforms in scope and the reading is current. Defects are logged for rejection or repair before the tuning begins.",
+    "business_purpose": "It exists so the platforms are never tuned from telemetry that stopped last week.",
+    "practical_context": "It runs once the intake is registered and the telemetry can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the telemetry stale for one platform and logs the defect before any tuning begins."
+    }
+  },
+  "processes:task-eo-operate-record-68ucw6": {
+    "plain_language_name": "File the Availability Monitoring Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the watching trail at its required retention tier and sets the retrieval handles for it. How each platform stood against its target, window by window, stays readable whenever an availability claim is examined.",
+    "business_purpose": "It exists so the watching behind every availability claim can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the watching trail at its retention tier and sets the retrieval handles an availability dispute would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-axveus": {
+    "plain_language_name": "Confirm the Availability Picture",
+    "plain_language_description": "When the watching stands done, the confirmation custodian reconciles the availability picture against the outcome the activity set out to reach and issues the confirmation. The incident side learns which platforms are healthy and which are sliding.",
+    "business_purpose": "It exists so incidents are answered only over a picture confirmed as watched.",
+    "practical_context": "It begins once preparation is complete and the availability picture awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the availability picture against the activity's intended outcome and issues the confirmation the incident side needs."
+    }
+  },
+  "processes:task-eo-operate-intake-f5bp8x": {
+    "plain_language_name": "Receive the Health Signals and the Agreed Targets",
+    "plain_language_description": "Watching opens when the platform health signals and the agreed availability targets are handed over together as the two sides the watching will read between. The intake custodian accepts both, registers them with audit identifiers, and starts the monitoring from a recorded baseline.",
+    "business_purpose": "It exists so platforms are watched against registered targets rather than against optimism.",
+    "practical_context": "It opens when the health signals and targets are presented for the watching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the health signals and agreed targets as the watching baseline, with audit references."
+    }
+  },
+  "processes:task-eo-operate-transform-b8yje4": {
+    "plain_language_name": "Watch Each Platform's Pulse Across the Window",
+    "plain_language_description": "With the signals verified, the processing custodian does the watching itself: each platform's health is read against its agreed target across the service window, and the availability picture is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an outage announces itself late - the watching is what catches the slide while there is still time to act.",
+    "practical_context": "It starts once checking is complete and the verified signals are ready to be watched, and it ends with the availability picture produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management reads each platform's pulse against its target across the window, keeping the working papers."
+    }
+  },
+  "processes:task-eo-operate-verify-zh6n3p": {
+    "plain_language_name": "Check the Signals Before Watching the Platforms",
+    "plain_language_description": "Before anything is watched, the verification custodian checks the health signals against what monitoring requires - that they cover the platforms in scope and are flowing for the window ahead. Defects are logged for rejection or repair before the watching begins.",
+    "business_purpose": "It exists so no platform goes unwatched because its signals went quietly dark.",
+    "practical_context": "It runs once the intake is registered and the signals can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one platform's signals stopped flowing and logs the defect before the watching begins."
+    }
+  },
+  "processes:task-eo-operate-record-gnc9jw": {
+    "plain_language_name": "File the Incident Response Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the response trail at its required retention tier and sets the retrieval handles for it. What failed, how it was worked around, and how long service was away, stays readable whenever the pattern of failures is examined.",
+    "business_purpose": "It exists so the answer to each incident can be evidenced whenever the failure pattern is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the response trail at its retention tier and sets the retrieval handles a reliability review would consult."
+    }
+  },
+  "processes:task-eo-operate-confirm-k3zt2m": {
+    "plain_language_name": "Confirm the Restored Platforms",
+    "plain_language_description": "When the incidents stand answered, the confirmation custodian reconciles the restored platforms against the outcome the activity set out to reach and issues the confirmation. The platform chain learns which services are back and which are still degraded.",
+    "business_purpose": "It exists so platforms are treated as healthy only once their restoration is confirmed.",
+    "practical_context": "It begins once preparation is complete and the restored platforms await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the restored platforms against the activity's intended outcome and issues the confirmation the platform chain needs."
+    }
+  },
+  "processes:task-eo-operate-intake-33v2th": {
+    "plain_language_name": "Receive the Detected Platform Deviations",
+    "plain_language_description": "Response opens when the detected platform deviations are handed over as the failures the operators must answer. The intake custodian accepts them, registers them with audit identifiers, and starts the response from a recorded baseline.",
+    "business_purpose": "It exists so incidents are answered from a registered list rather than from whoever sees the alarm first.",
+    "practical_context": "It opens when the detected deviations are presented for response, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the detected deviations as the response baseline, with audit references, and opens the answering work."
+    }
+  },
+  "processes:task-eo-operate-transform-crz922": {
+    "plain_language_name": "Triage, Work Around, and Restore Each Failure",
+    "plain_language_description": "With the deviations verified, the processing custodian does the response itself: each incident is triaged, worked around where a fix must wait, and restored to service, with the incident recorded in its window, all set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a platform failure stops more than the platform - the response is what buys the operation's time back.",
+    "practical_context": "It starts once checking is complete and the verified deviations are ready to be answered, and it ends with the restored platforms produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management triages each incident, works the workaround, and brings the service back, keeping the working papers."
+    }
+  }
+}

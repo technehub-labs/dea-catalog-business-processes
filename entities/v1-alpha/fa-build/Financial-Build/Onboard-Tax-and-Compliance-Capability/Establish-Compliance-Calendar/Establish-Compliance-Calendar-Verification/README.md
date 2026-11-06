@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-veri
 
 This is a **Task** (level L4), named **Establish Compliance Calendar Verification**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Establish Compliance Calendar** (`processes:activity-fa-build-b3qxke`). Its canonical ID is `processes:task-fa-build-verify-t3ga9r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is placed, the verification custodian checks the obligations against what calendar building requires - that each is current and carries its true deadline. Defects are logged for rejection or repair before the calendar is built.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no deadline is booked from an obligation that has since changed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the obligations can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an obligation whose deadline moved and logs the defect before the calendar is built.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Obligations Before Building the Calendar |
+| `plain_language_description` | string | no | Before anything is placed, the verification custodian checks the obligations against what calendar building requires - … |
+| `business_purpose` | string | no | It exists so no deadline is booked from an obligation that has since changed. |
+| `practical_context` | string | no | It runs once the intake is registered and the obligations can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

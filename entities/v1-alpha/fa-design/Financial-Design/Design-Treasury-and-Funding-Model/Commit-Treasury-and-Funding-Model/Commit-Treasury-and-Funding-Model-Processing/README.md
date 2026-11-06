@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Commit Treasury and Funding Model Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Commit Treasury and Funding Model** (`processes:activity-fa-design-r4hzb6`). Its canonical ID is `processes:task-fa-design-transform-ndnf4g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the consolidation itself: policy, structure, and operating model are brought together into the committed treasury model, ready for facility securing and operation, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because treasury thinking scattered across documents secures nothing - the commit is where the model becomes one authority ready to be acted on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed model produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority consolidates the pieces into the committed treasury model, ready for the facilities work, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Treasury Thinking into the Committed Model |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the consolidation itself: policy, structure, and operating … |
+| `business_purpose` | string | no | It exists because treasury thinking scattered across documents secures nothing - the commit is where the model becomes … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

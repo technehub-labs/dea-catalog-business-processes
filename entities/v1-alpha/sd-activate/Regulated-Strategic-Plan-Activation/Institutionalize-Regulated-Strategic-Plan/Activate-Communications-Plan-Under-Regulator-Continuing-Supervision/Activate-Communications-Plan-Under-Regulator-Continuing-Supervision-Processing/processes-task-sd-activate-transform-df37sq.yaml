@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bring the Disclosure Controls, Briefings and Announcements to Life'
+plain_language_description: 'With the inputs verified, the activation proper begins. The processing custodian stands up the disclosure controls, the investor-relations briefing and the regulated-entity announcement under the mandated framework, producing the activated communications plan in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because a supervisor-acknowledged plan only takes effect publicly once its disclosure controls, briefings and announcements are actually activated.'
+practical_context: 'It opens when the verified material is ready to be worked, and it closes with the activated communications plan produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function activates the disclosure controls, prepares the investor-relations briefing and issues the regulated-entity announcement, preserving the activated communications plan on the regulated strategic-plan record.'

@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Effect Instrument Commencement conforming to the Activate schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Effect the Commencement the Statute Provides'
+plain_language_description: 'With the certificate in hand, the processing custodian effects the commencement the statute provides for: the instrument is registered with the authority competent for it, the baseline is set in force, and the activated record is produced for confirmation.'
+business_purpose: 'It exists because an instrument verified but never effected governs nothing - the effecting is where the instrument starts to bind.'
+practical_context: 'It opens once the verification certificate is in hand and the bounded work may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the governance design authority effects the commencement by registering the instrument and producing the activated record.'

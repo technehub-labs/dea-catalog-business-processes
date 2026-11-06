@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-ve
 
 This is a **Task** (level L4), named **Review Treasury Exposures Verification**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Review Treasury Exposures** (`processes:activity-fa-improve-grdfaj`). Its canonical ID is `processes:task-fa-improve-verify-ne8q42`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is weighed, the verification custodian checks the assessed shifts against what review requires - that each names the model surfaces it touches. Defects are logged for rejection or repair before the weighing begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no cost is weighed for a shift that never touched the model.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the shifts can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a shift mapped to no model surface and logs the defect before the weighing begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Shifts Before Weighing Their Cost |
+| `plain_language_description` | string | no | Before anything is weighed, the verification custodian checks the assessed shifts against what review requires - that … |
+| `business_purpose` | string | no | It exists so no cost is weighed for a shift that never touched the model. |
+| `practical_context` | string | no | It runs once the intake is registered and the shifts can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

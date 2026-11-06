@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Monitor Ledger Health Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Monitor Ledger Health** (`processes:activity-fa-operate-ksg7yj`). Its canonical ID is `processes:task-fa-operate-intake-g62vfq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Watching opens when the ledger telemetry is handed over as the readings the health posture will be kept from. The intake custodian accepts it, registers it with audit identifiers, and starts the monitoring from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the books' machinery is watched from measured readings rather than from silence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the telemetry is presented for the watch, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the ledger telemetry as the watch baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Ledger Telemetry for the Watch |
+| `plain_language_description` | string | no | Watching opens when the ledger telemetry is handed over as the readings the health posture will be kept from. The … |
+| `business_purpose` | string | no | It exists so the books' machinery is watched from measured readings rather than from silence. |
+| `practical_context` | string | no | It opens when the telemetry is presented for the watch, with the activity owner alerted, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

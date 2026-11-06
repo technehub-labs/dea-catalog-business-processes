@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Run Fit-And-Proper Re-Assessment Cycle Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Run Fit-And-Proper Re-Assessment Cycle** (`processes:activity-ao-improve-k9w5p8`). Its canonical ID is `processes:task-ao-improve-intake-2kywd9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The re-assessment cycle opens when the live role list and the re-assessment calendar are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the cycle will be run from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fitness re-assessments run from a registered role list against a registered calendar.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the live role list and calendar are presented for the cycle, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the live role list and re-assessment calendar as the cycle baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Live Role List and Re-Assessment Calendar |
+| `plain_language_description` | string | no | The re-assessment cycle opens when the live role list and the re-assessment calendar are handed to the intake … |
+| `business_purpose` | string | no | It exists so fitness re-assessments run from a registered role list against a registered calendar. |
+| `practical_context` | string | no | It opens when the live role list and calendar are presented for the cycle, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

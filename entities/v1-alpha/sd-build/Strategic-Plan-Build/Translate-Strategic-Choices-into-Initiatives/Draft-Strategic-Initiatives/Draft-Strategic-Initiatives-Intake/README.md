@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Draft Strategic Initiatives Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Draft Strategic Initiatives** (`processes:activity-sd-build-547hm5`). Its canonical ID is `processes:task-sd-build-intake-pmry22`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The drafting opens as its material arrives: the bounded scope that says what the initiatives must cover. The intake custodian logs it against the drafting file so the drafting starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the initiative set is drafted over a logged scope rather than over everyone's private reading of the choice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded scope is presented for drafting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the bounded scope into the drafting file, so the initiative drafting starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Bounded Scope for Initiative Drafting |
+| `plain_language_description` | string | no | The drafting opens as its material arrives: the bounded scope that says what the initiatives must cover. The intake … |
+| `business_purpose` | string | no | It exists so the initiative set is drafted over a logged scope rather than over everyone's private reading of the … |
+| `practical_context` | string | no | It opens when the bounded scope is presented for drafting, with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

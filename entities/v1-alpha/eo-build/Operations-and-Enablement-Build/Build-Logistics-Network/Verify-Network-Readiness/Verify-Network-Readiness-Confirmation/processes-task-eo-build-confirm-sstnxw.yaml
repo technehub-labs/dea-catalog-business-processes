@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Network Readiness Determination'
+plain_language_description: 'When the determination stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The network''s users learn it is ready - or knows exactly what must still be fixed.'
+business_purpose: 'It exists so the network is used only once readiness is confirmed by determination.'
+practical_context: 'It begins once preparation is complete and the readiness determination awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the readiness determination against the activity''s intended outcome and issues the confirmation the network''s users wait on.'

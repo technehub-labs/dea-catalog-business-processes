@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Commit Model Evolutions Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Commit Model Evolutions** (`processes:activity-fa-improve-4mju3t`). Its canonical ID is `processes:task-fa-improve-intake-w9qeqq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the designed model evolutions are handed over as the changes the treasury will be asked to adopt. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the model moves from registered designs rather than from shifting preference.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the evolution designs are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the evolution designs as the commitment baseline, with audit references, and opens the adoption work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Evolution Designs for Commitment |
+| `plain_language_description` | string | no | Commitment opens when the designed model evolutions are handed over as the changes the treasury will be asked to adopt … |
+| `business_purpose` | string | no | It exists so the model moves from registered designs rather than from shifting preference. |
+| `practical_context` | string | no | It opens when the evolution designs are presented for commitment, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

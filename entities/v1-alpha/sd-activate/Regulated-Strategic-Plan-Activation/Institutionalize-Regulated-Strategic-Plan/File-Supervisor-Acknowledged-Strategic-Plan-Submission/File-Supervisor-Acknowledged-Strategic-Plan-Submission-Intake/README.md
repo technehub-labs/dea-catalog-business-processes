@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-i
 
 This is a **Task** (level L4), named **File Supervisor-Acknowledged Strategic-Plan Submission Intake**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **File Supervisor-Acknowledged Strategic-Plan Submission** (`processes:activity-sd-activate-4gefj3`). Its canonical ID is `processes:task-sd-activate-intake-z8vc3f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The filing work opens as its material arrives: the board-approved strategic plan together with the regulator-mandated filing format. The intake custodian logs them against the filing file so the filing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the regulatory submission proceeds over logged approved material in the mandated format, not over an unapproved draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the approved plan and the filing format are presented for the submission, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the board-approved strategic plan and the regulator-mandated filing format into the filing file, so the submission work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Board-Approved Plan and the Mandated Filing Format |
+| `plain_language_description` | string | no | The filing work opens as its material arrives: the board-approved strategic plan together with the regulator-mandated … |
+| `business_purpose` | string | no | It exists so the regulatory submission proceeds over logged approved material in the mandated format, not over an … |
+| `practical_context` | string | no | It opens when the approved plan and the filing format are presented for the submission, with the activity's owner told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

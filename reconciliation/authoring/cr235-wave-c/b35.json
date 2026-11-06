@@ -1,0 +1,582 @@
+{
+ "processes:task-pr-conceive-intake-6bzh2j": {
+  "plain_language_name": "Open the Test-Design Case File",
+  "plain_language_description": "The test-design work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the test design starts accounted for.",
+  "business_purpose": "It exists so the test designs are drawn from a complete, logged evidence set.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the hypothesis set and research papers into the conception file before verification begins."
+  }
+ },
+ "processes:task-pr-conceive-transform-tyuxvu": {
+  "plain_language_name": "Turn Each Hypothesis into a Testable Design",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The test designs that will judge each hypothesis are produced as a thesis package ready for confirmation.",
+  "business_purpose": "It exists because a hypothesis without an executable test can never be validated or falsified.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function turns each demand hypothesis into a test the team can actually run."
+  }
+ },
+ "processes:task-pr-conceive-verify-q4y6hy": {
+  "plain_language_name": "Check the Test Designs Against the Method",
+  "plain_language_description": "Before the tests are designed, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists so the test designs rest on evidence that has passed the quality bar.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the test-design pack against the framing method and flags one evidence gap."
+  }
+ },
+ "processes:task-pr-conceive-intake-yppww4": {
+  "plain_language_name": "Receive the Hypothesis Research Pack",
+  "plain_language_description": "The hypothesis work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the formulation starts accounted for.",
+  "business_purpose": "It exists because a hypothesis is only as testable as the evidence it was drawn from.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the scan record and research artefacts into the hypothesis case file."
+  }
+ },
+ "processes:task-pr-conceive-verify-5xk97k": {
+  "plain_language_name": "Check the Signals Before They Become Hypotheses",
+  "plain_language_description": "Before the hypotheses are written, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack falls short, the shortfall is named and a remediation set out.",
+  "business_purpose": "It exists so weak signals never harden into hypotheses the tests will waste time on.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the scan-derived signals against the framing method before formulation begins."
+  }
+ },
+ "processes:task-pr-conceive-transform-cqyc7t": {
+  "plain_language_name": "Convert the Scanned Signals into Hypotheses",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. Each scanned signal becomes a statement that can be tested, and the whole is produced as a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the enterprise's beliefs about demand become statements a test could prove wrong.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function converts the scan's signals into testable demand hypotheses and assembles the package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-e4pw6f": {
+  "plain_language_name": "Sign Off the Hypothesis Set with the Strategy Owner",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once aligned, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the hypothesis set enters test design with a logged acceptance behind it.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the strategy custodian acknowledges the hypothesis set before logging."
+  }
+ },
+ "processes:task-pr-conceive-record-rqj8qv": {
+  "plain_language_name": "Keep the Hypothesis Work on File",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the hypothesis set and its evidence remain consultable when the test results arrive.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the hypothesis file so each test outcome can be traced back to its statement."
+  }
+ },
+ "processes:task-pr-conceive-intake-awrdae": {
+  "plain_language_name": "Take In the Market Scan Pack",
+  "plain_language_description": "The market scan opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the scanning starts accounted for.",
+  "business_purpose": "It exists because a scan that misses half the market produces an intelligence record that misleads.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the scan pack into the conception file at the start of the cycle."
+  }
+ },
+ "processes:task-pr-conceive-verify-ckt64t": {
+  "plain_language_name": "Check the Scan Outputs Against the Method",
+  "plain_language_description": "Before the scan findings are used, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Deviations are reported with their fixes.",
+  "business_purpose": "It exists so the gathered signals meet the method before they feed the thesis.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the scan outputs against the framing method and clears them for use."
+  }
+ },
+ "processes:task-pr-conceive-transform-3s9e4e": {
+  "plain_language_name": "Gather the Market and Segment Signals",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The market structure, segment, and demand-side signals are gathered into a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the market's structure and demand-side signals are captured systematically, not anecdotally.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function gathers the market-structure and segment signals into the intelligence record."
+  }
+ },
+ "processes:task-pr-conceive-confirm-4esp8u": {
+  "plain_language_name": "Confirm the Scan Results with the Strategy Owner",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the scan's findings are formally accepted before hypotheses are drawn from them.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian closes the reconciliation, and the strategy custodian acknowledges the scan results."
+  }
+ },
+ "processes:task-pr-conceive-record-3nactg": {
+  "plain_language_name": "Store the Market Scan Record",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the scan record survives for the next conception cycle to build on.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the scan record so the next cycle can compare its signals against this round's."
+  }
+ },
+ "processes:task-pr-design-intake-rzz8sa": {
+  "plain_language_name": "Open the Principles File with the Strategy in Hand",
+  "plain_language_description": "The principles work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the principle setting starts accounted for.",
+  "business_purpose": "It exists so the principles are set from the committed strategy rather than personal taste.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed strategy reference and the criteria pack into the design file."
+  }
+ },
+ "processes:task-pr-design-verify-fduagb": {
+  "plain_language_name": "Check the Principles Pack Against the Quality Bar",
+  "plain_language_description": "Before the principles are set down, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Any shortfall against the criteria is named with its fix.",
+  "business_purpose": "It exists because principles drawn from a weak pack would misdirect every later design choice.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the principles pack against the quality bar and flags one criterion gap."
+  }
+ },
+ "processes:task-pr-design-transform-2t47ef": {
+  "plain_language_name": "Set Down the Principles the Experience Must Honour",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The principles that will govern every later choice are set down as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so every later design choice inherits the same governing principles rather than ad-hoc taste.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes down the principles every touchpoint and journey choice must honour."
+  }
+ },
+ "processes:task-pr-design-confirm-vafzny": {
+  "plain_language_name": "Sign Off the Principle Set with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the principles that bind all later design carry a logged acceptance.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the principle set before logging."
+  }
+ },
+ "processes:task-pr-design-record-9a72v2": {
+  "plain_language_name": "Keep the Principle Set on Record",
+  "plain_language_description": "Once confirmed, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the principles governing the experience stay consultable for every design round that follows.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the principle set so later touchpoint and journey work can cite its authority."
+  }
+ },
+ "processes:task-pr-design-intake-vzpeb7": {
+  "plain_language_name": "Receive the Touchpoint Design Pack",
+  "plain_language_description": "The touchpoint work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the touchpoint design starts accounted for.",
+  "business_purpose": "It exists so the points of contact are designed from the agreed criteria, not improvised.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the design pack for the touchpoint round into the design file."
+  }
+ },
+ "processes:task-pr-design-verify-vmxxgh": {
+  "plain_language_name": "Check the Touchpoint Work Against the Quality Bar",
+  "plain_language_description": "Before the touchpoints are designed, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because a touchpoint designed outside the taxonomy would fragment the whole experience.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the touchpoint pack against the classification contract and flags one gap."
+  }
+ },
+ "processes:task-pr-design-transform-fyvzmd": {
+  "plain_language_name": "Design the Points Where Customer Meets Enterprise",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The points where customer and enterprise meet are produced as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists because the exchange is realised at specific points of contact, and each must be designed deliberately.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function designs each point of contact and assembles the touchpoint inventory."
+  }
+ },
+ "processes:task-pr-design-confirm-p35ndy": {
+  "plain_language_name": "Confirm the Touchpoint Designs with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the touchpoint designs go forward only with a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian signs off the touchpoint reconciliation, and the experience custodian acknowledges the designs."
+  }
+ },
+ "processes:task-pr-design-record-45e5rv": {
+  "plain_language_name": "File the Touchpoint Design Record",
+  "plain_language_description": "Once accepted, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the touchpoint inventory and its designs remain the reference for everything built on them.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the touchpoint record so the build teams design against the same points of contact."
+  }
+ },
+ "processes:task-pr-design-intake-jyg7hm": {
+  "plain_language_name": "Collect the Criteria-Setting Pack",
+  "plain_language_description": "The criteria work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the criteria setting starts accounted for.",
+  "business_purpose": "It exists so the measurable definition of good experience starts from the agreed references.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the principle set and criteria references into the design file."
+  }
+ },
+ "processes:task-pr-design-verify-bq2zjk": {
+  "plain_language_name": "Check the Criteria Work Against the Quality Bar",
+  "plain_language_description": "Before the criteria are fixed, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Any shortfall against the criteria is named with its fix.",
+  "business_purpose": "It exists because criteria set from a flawed pack would certify an experience that disappoints.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the criteria pack against the quality bar and clears it for setting."
+  }
+ },
+ "processes:task-pr-design-transform-qvg3a5": {
+  "plain_language_name": "Define What Good Experience Means Measurably",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The measurable tests of what good experience means are produced as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so good experience stops being an opinion and becomes something the build can be judged against.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function turns the experience principles into measurable criteria the build must satisfy."
+  }
+ },
+ "processes:task-pr-design-confirm-cbeyp4": {
+  "plain_language_name": "Confirm the Quality Criteria with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the criteria that will judge the build are accepted by the accountable owner first.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the measurable criteria."
+  }
+ },
+ "processes:task-pr-design-record-cbwe62": {
+  "plain_language_name": "Retain the Quality Criteria File",
+  "plain_language_description": "After confirmation, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the criteria the build will be judged by survive with their full reasoning.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the criteria file so the build's acceptance testing cites the same measures."
+  }
+ },
+ "processes:task-pr-design-intake-p67fce": {
+  "plain_language_name": "Accept the Pattern Catalogue Pack",
+  "plain_language_description": "The pattern work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the pattern specification starts accounted for.",
+  "business_purpose": "It exists so the catalogue of interaction behaviours starts from what already exists and what the criteria demand.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the pattern library and criteria pack into the design file."
+  }
+ },
+ "processes:task-pr-design-verify-q27jvp": {
+  "plain_language_name": "Check the Pattern Work Against the Quality Bar",
+  "plain_language_description": "Before the patterns are specified, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because patterns specified outside the taxonomy would behave differently at every touchpoint.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the pattern pack against the quality bar and flags one classification gap."
+  }
+ },
+ "processes:task-pr-design-transform-duux7t": {
+  "plain_language_name": "Specify How Interactions Behave Across Touchpoints",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The repeatable behaviours for interactions across touchpoints are specified as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so customers meet the same interaction behaviour wherever they touch the enterprise.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes the repeatable interaction patterns into the catalogue."
+  }
+ },
+ "processes:task-pr-design-confirm-tcqveq": {
+  "plain_language_name": "Sign Off the Pattern Catalogue with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the patterns every touchpoint will follow carry a logged acceptance.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the pattern catalogue."
+  }
+ },
+ "processes:task-pr-design-record-rqgj7g": {
+  "plain_language_name": "Keep the Pattern Catalogue on File",
+  "plain_language_description": "Once accepted, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the catalogue stays the single authority for how interactions behave.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the catalogue so future touchpoint designs reuse the same interaction patterns."
+  }
+ },
+ "processes:task-pr-design-intake-tg4peh": {
+  "plain_language_name": "Gather the Journey Consolidation Papers",
+  "plain_language_description": "Bringing the journey together starts with intake: the segment thesis the design serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian binds the pack to the design file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed journey is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the stage maps, moment registers, and handoff designs into the journey file."
+  }
+ },
+ "processes:task-pr-design-verify-gpau38": {
+  "plain_language_name": "Check the Journey Inputs Before Commitment",
+  "plain_language_description": "Before the journey is committed, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Deviations are reported with their fixes.",
+  "business_purpose": "It exists so the approvers commit a journey whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the journey inputs against the quality bar before the commitment round."
+  }
+ },
+ "processes:task-pr-design-transform-wmravx": {
+  "plain_language_name": "Consolidate the Journey into One Design",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. Stages, critical moments, and handoffs are consolidated as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the built journey carries one committed design rather than scattered artefacts.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function consolidates the stages, moments, and handoffs into the journey design document."
+  }
+ },
+ "processes:task-pr-design-confirm-fcn6xq": {
+  "plain_language_name": "Log the Journey Design Confirmation",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the committed journey carries an evidenced trail of who accepted it and against what.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the sign-off after the experience custodian acknowledges the completed journey design."
+  }
+ },
+ "processes:task-pr-design-record-7ha34w": {
+  "plain_language_name": "Preserve the Committed Journey File",
+  "plain_language_description": "After commitment, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists because the committed journey's evidence must survive to answer later drift or challenge.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the committed journey file with its verification trail for the build teams and future rounds."
+  }
+ },
+ "processes:task-pr-design-intake-ems924": {
+  "plain_language_name": "Take In the Handoff Design Pack",
+  "plain_language_description": "The handoff work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the handoff design starts accounted for.",
+  "business_purpose": "It exists so the transitions between stages are designed from the stage map rather than guessed at.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the stage map and moment register into the handoff design file."
+  }
+ },
+ "processes:task-pr-design-verify-jka3c3": {
+  "plain_language_name": "Check the Handoff Work Against the Quality Bar",
+  "plain_language_description": "Before the handoffs are designed, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Any shortfall against the criteria is named with its fix.",
+  "business_purpose": "It exists because a handoff designed outside the criteria is where customers quietly give up.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the handoff pack against the quality bar and flags one transition gap."
+  }
+ },
+ "processes:task-pr-design-transform-mxxv6r": {
+  "plain_language_name": "Design the Transitions Between Journey Stages",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The transitions from stage to stage are produced as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists because customers lose trust at seams - the handoffs must be designed, not left to chance.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function designs each stage-to-stage transition, including the cross-process handoff points."
+  }
+ },
+ "processes:task-pr-design-confirm-3zzb7u": {
+  "plain_language_name": "Confirm the Handoff Designs with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the handoff designs are formally accepted before the journey consolidates around them.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the handoff designs."
+  }
+ },
+ "processes:task-pr-design-record-a4hsqn": {
+  "plain_language_name": "Store the Handoff Design File",
+  "plain_language_description": "Once confirmed, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the handoff designs remain the reference when processes change on either side of a seam.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the handoff file so a process change can be checked against the designed transitions."
+  }
+ },
+ "processes:task-pr-design-intake-dxmfbv": {
+  "plain_language_name": "Receive the Critical-Moments Pack",
+  "plain_language_description": "The moment-identification work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the moment identification starts accounted for.",
+  "business_purpose": "It exists so the hunt for decisive interactions starts from the full stage map.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the stage map and criteria pack into the moment-identification file."
+  }
+ },
+ "processes:task-pr-design-verify-vmjhqx": {
+  "plain_language_name": "Check the Critical-Moments Work Against the Quality Bar",
+  "plain_language_description": "Before the moments are registered, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because moments of truth misidentified from a weak pack would misplace the design effort.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the critical-moments pack against the quality bar and flags one gap."
+  }
+ },
+ "processes:task-pr-design-transform-z8dhzu": {
+  "plain_language_name": "Mark Where the Relationship Is Won or Lost",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The moments that decide the relationship are registered as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists because a few interactions decide the whole relationship, and they deserve disproportionate care.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function registers each decisive interaction and the stakes it carries."
+  }
+ },
+ "processes:task-pr-design-confirm-c2nscc": {
+  "plain_language_name": "Confirm the Moments of Truth with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the registered moments are formally accepted before handoffs and designs build on them.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the moments-of-truth register."
+  }
+ },
+ "processes:task-pr-design-record-vkaxk7": {
+  "plain_language_name": "Keep the Moments-of-Truth Register",
+  "plain_language_description": "Once accepted, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the register of decisive interactions stays authoritative as the journey evolves.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the register so later journey changes re-examine every decisive interaction."
+  }
+ },
+ "processes:task-pr-design-intake-u26p8p": {
+  "plain_language_name": "Open the Stage-Mapping File",
+  "plain_language_description": "The stage-mapping work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the stage mapping starts accounted for.",
+  "business_purpose": "It exists because a path can only be managed once its stages are named and agreed.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the experience and touchpoint designs into the stage-mapping file."
+  }
+ },
+ "processes:task-pr-design-verify-gdn83u": {
+  "plain_language_name": "Check the Stage-Map Work Against the Quality Bar",
+  "plain_language_description": "Before the stages are drawn, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Any shortfall against the criteria is named with its fix.",
+  "business_purpose": "It exists because a stage map built on a weak pack would misroute every later design decision.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the stage-map pack against the quality bar and clears it for mapping."
+  }
+ },
+ "processes:task-pr-design-transform-evp42q": {
+  "plain_language_name": "Break the Customer Path into Stages",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The end-to-end customer path is broken into articulated stages and produced as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the journey can be designed, measured, and improved stage by stage rather than as a blur.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function breaks the end-to-end path into named stages and draws the stage map."
+  }
+ },
+ "processes:task-pr-design-confirm-d27dww": {
+  "plain_language_name": "Confirm the Stage Map with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the stage map everyone will design against carries a logged acceptance.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the stage map."
+  }
+ },
+ "processes:task-pr-design-record-4rt9m6": {
+  "plain_language_name": "Retain the Stage Map File",
+  "plain_language_description": "After confirmation, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the agreed stage structure stays consultable as moments, handoffs, and builds accumulate.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the stage map so every later journey artefact cites the same stage structure."
+  }
+ },
+ "processes:task-pr-design-intake-b422kk": {
+  "plain_language_name": "Take Delivery of the Supply-Path Pack",
+  "plain_language_description": "The supply-path work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the supply-path work starts accounted for.",
+  "business_purpose": "It exists so the conversion of need into supply is articulated from the committed demand thesis.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed demand thesis into the supply-path design file."
+  }
+ },
+ "processes:task-pr-design-verify-gwpsuz": {
+  "plain_language_name": "Check the Supply-Path Work Against the Quality Bar",
+  "plain_language_description": "Before the paths are articulated, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because supply paths drawn from a weak pack would promise supply the enterprise cannot deliver.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the supply-path pack against the quality bar and flags one gap."
+  }
+ },
+ "processes:task-pr-design-transform-ve33fx": {
+  "plain_language_name": "Map How Customer Need Becomes Supply",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The paths along which customer need becomes enterprise supply are articulated as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the enterprise can see exactly how a customer's need turns into what it supplies.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function traces each need-to-supply path and draws the supply path map."
+  }
+ },
+ "processes:task-pr-design-confirm-x47ebn": {
+  "plain_language_name": "Confirm the Supply Paths with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the demand model builds only on supply paths formally accepted as deliverable.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the supply path map."
+  }
+ },
+ "processes:task-pr-design-record-nzju4s": {
+  "plain_language_name": "File the Supply-Path Record",
+  "plain_language_description": "Once confirmed, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the supply path map remains the reference when capacity or demand assumptions are revisited.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the supply-path record so the demand model's paths can be traced to their sources."
+  }
+ }
+}

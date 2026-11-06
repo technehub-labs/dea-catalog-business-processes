@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-int
 
 This is a **Task** (level L4), named **Execute Retained-Records Plan for Regulated Entity Intake**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Retained-Records Plan for Regulated Entity** (`processes:activity-sd-retire-48khkt`). Its canonical ID is `processes:task-sd-retire-intake-bmr5a6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The execution opens as its material arrives: the retired plan's records and the retention policy whose schedule now governs them. The intake custodian logs them against the execution file so the execution starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every record of the retired plan is on the retention register from day one, none drifting loose after the sunset.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the retired plan's records are presented for the retention work, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function logs the retired plan's records and the retention schedule into the execution file, so the cataloguing and preservation start accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Retired Plan's Records for the Retention Work |
+| `plain_language_description` | string | no | The execution opens as its material arrives: the retired plan's records and the retention policy whose schedule now … |
+| `business_purpose` | string | no | It exists so every record of the retired plan is on the retention register from day one, none drifting loose after the … |
+| `practical_context` | string | no | It opens when the retired plan's records are presented for the retention work, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

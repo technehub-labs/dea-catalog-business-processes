@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Exposures, Positions, and Strategy'
+plain_language_description: 'The commit opens when the exposure assessment, the documented positions, and the strategy design are handed over together as the pieces the tax design must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.'
+business_purpose: 'It exists so the design is committed from registered pieces rather than from a loose sheaf of documents.'
+practical_context: 'It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the exposures, positions, and strategy as the commitment baseline, with audit references, and opens the consolidation.'

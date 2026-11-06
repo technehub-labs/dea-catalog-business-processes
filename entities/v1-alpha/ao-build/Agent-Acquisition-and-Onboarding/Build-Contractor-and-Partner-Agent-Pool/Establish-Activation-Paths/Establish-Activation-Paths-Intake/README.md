@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Establish Activation Paths Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Establish Activation Paths** (`processes:activity-ao-build-jgtegj`). Its canonical ID is `processes:task-ao-build-intake-aae2cz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Path setup begins when the vetted pool sources are handed over as the material the routes will be built through. The intake custodian accepts the handover, registers it with audit identifiers, and starts the establishment work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so engagement routes are built over a registered set of sources rather than an informal list.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the vetted sources are presented for path setup, with the activity owner told of the handover, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the vetted sources as the path-building baseline, with audit references, and lets the establishment work begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Vetted Sources for Path Setup |
+| `plain_language_description` | string | no | Path setup begins when the vetted pool sources are handed over as the material the routes will be built through. The … |
+| `business_purpose` | string | no | It exists so engagement routes are built over a registered set of sources rather than an informal list. |
+| `practical_context` | string | no | It opens when the vetted sources are presented for path setup, with the activity owner told of the handover, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

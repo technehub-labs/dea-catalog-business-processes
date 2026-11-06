@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Book In the Arriving Pricing Papers'
+plain_language_description: 'The pricing work opens as the material that sets or moves catalogue prices arrives, chiefly launch pricing and rule updates. The intake custodian logs them against the pricing file so the administering starts accounted for.'
+business_purpose: 'It exists because the prices buyers see must be traceable to logged and authorised inputs from the very first step.'
+practical_context: 'It opens when pricing material is presented for administration with the activity''s owner told that it has landed, and it closes with the intake registered.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in product management logs a new product''s launch pricing and a seasonal rule change into the pricing file, so the administering of catalogue prices starts accounted for.'

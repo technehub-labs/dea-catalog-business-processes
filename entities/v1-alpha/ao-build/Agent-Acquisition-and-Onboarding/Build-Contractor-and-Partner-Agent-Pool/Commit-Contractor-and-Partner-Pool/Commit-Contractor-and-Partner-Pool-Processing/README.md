@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Commit Contractor and Partner Pool Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Commit Contractor and Partner Pool** (`processes:activity-ao-build-cxafrf`). Its canonical ID is `processes:task-ao-build-transform-cr4mbu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the paths verified, the processing custodian works the commitment itself: the contractor and partner pool is prepared and set down as operational capacity alongside direct acquisition, in the form the activity defines. Working papers from the preparation are preserved so the commitment can be audited.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because verified paths become value only when the pool is actually committed as capacity the organisation can draw on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified paths are ready to be committed over, and it ends with the committed pool produced in its final form and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian sets the contractor and partner pool down as operational capacity alongside direct acquisition, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare the Pool for Operational Commitment |
+| `plain_language_description` | string | no | With the paths verified, the processing custodian works the commitment itself: the contractor and partner pool is … |
+| `business_purpose` | string | no | It exists because verified paths become value only when the pool is actually committed as capacity the organisation can … |
+| `practical_context` | string | no | It starts once checking is complete and the verified paths are ready to be committed over, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

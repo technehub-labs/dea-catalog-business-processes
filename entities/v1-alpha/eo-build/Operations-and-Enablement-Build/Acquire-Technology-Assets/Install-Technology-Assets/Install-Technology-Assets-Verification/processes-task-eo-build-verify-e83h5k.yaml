@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Deliveries Before Installing the Assets'
+plain_language_description: 'Before anything is installed, the verification custodian checks the deliveries against what installation requires - that what arrived matches what was procured and the topology states where each asset belongs. Defects are logged for rejection or repair before any placing-in begins.'
+business_purpose: 'It exists so nothing is installed from a delivery that was wrong, into a place the topology never defined.'
+practical_context: 'It runs once the intake is registered and the deliveries can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a delivery short of its ordered configuration and logs the defect before any installation begins.'

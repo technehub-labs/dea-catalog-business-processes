@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Monitoring Before Addressing the Exceptions'
+plain_language_description: 'Before any exception is addressed, the verification custodian checks the monitoring against what handling requires - that each flagged exception is real under the expectation it breaches. Defects are logged for rejection or repair before any exception is addressed.'
+business_purpose: 'It exists so agents are never pulled up over exceptions the monitoring raised in error.'
+practical_context: 'It runs once the intake is registered and the monitoring can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds an exception flagged against an expectation that was never set for that agent and logs the defect first.'

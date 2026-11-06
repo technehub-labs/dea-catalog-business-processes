@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-activate-intake-b6qpzx": {
+    "plain_language_name": "Register the Signing-Authority Activation Request",
+    "plain_language_description": "When a request to confer signing authority or a controlled function arrives, the intake custodian brings it into the activation workflow, logs it against the individual's record on the regulated personnel file, and stamps it with audit references so every later step can be traced. Nothing is judged or reshaped at this point - the request is simply booked in and held safely for checking.",
+    "business_purpose": "It exists so activation work starts from a logged, traceable request rather than loose paperwork.",
+    "practical_context": "It begins the moment the designation request is presented, with the activity owner told of its arrival, and it closes once the request is registered with audit identifiers and the checking steps are free to start.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management intake custodian receives a designation request for a newly approved executive, books it onto the personnel record with its audit references, and lets the approver know it has landed."
+    }
+  },
+  "processes:task-ao-activate-verify-2zvpak": {
+    "plain_language_name": "Check the Activation Request for Completeness",
+    "plain_language_description": "With the request booked in, the verification custodian goes through it against what the activity requires before any activation happens. Licence details, the designation being sought, and the supporting particulars are compared line by line; anything that falls short is written down for correction or refusal rather than waved through.",
+    "business_purpose": "It exists so a defective request is caught on paper, before it can turn into an activation that should not happen.",
+    "practical_context": "It starts once intake is registered and checking against the activity's requirements can begin, and it closes with the request found conformant or the shortfalls logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian in workforce management compares an executive's designation request against the activity's checklist, finds the supervisor's endorsement missing, and records the shortfall for remediation."
+    }
+  },
+  "processes:task-ao-activate-transform-jbu68h": {
+    "plain_language_name": "Prepare the Activation for the Personnel Record",
+    "plain_language_description": "Once the request has passed checking, the processing custodian turns it into the activated entry the activity promises: the signing authority is set out in the shape the personnel record expects, with the continuing-supervisor notification drafted alongside it. Working notes from the preparation are kept, so the trail from request to activation stays auditable.",
+    "business_purpose": "It exists because a checked request only becomes real authority once it is shaped into the record and notification the organisation works from.",
+    "practical_context": "It runs after checking is complete and the verified request is ready to be worked into its final form, and it ends when the activation output exists in its agreed shape with the working notes preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function converts the checked designation into the personnel-record entry and drafts the continuing-supervisor notification for issue."
+    }
+  },
+  "processes:task-ao-activate-confirm-e55pff": {
+    "plain_language_name": "Confirm the Activated Signing Authority",
+    "plain_language_description": "When preparation is finished, the confirmation custodian makes sure what was produced actually matches what the activity set out to deliver, then issues the confirmation. The supervisor and any other waiting consumers are told the activated authority is ready, and the result is reconciled against what the activity promised.",
+    "business_purpose": "It exists so no activation is treated as done until someone has confirmed it against the intended result and said so onward.",
+    "practical_context": "It begins when preparation is complete and the output is ready for those waiting on it, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian checks the newly prepared authority against the activity's intended result and tells the continuing supervisor that the designation is live."
+    }
+  },
+  "processes:task-ao-activate-record-4szntk": {
+    "plain_language_name": "File the Activation Audit Record",
+    "plain_language_description": "After the confirmation has gone out, the records custodian preserves the audit trail of the activation: the record is stored at its required retention tier and given retrieval handles so it can be found again years later. Once filed, the activation can withstand scrutiny without anyone having to reconstruct it from memory.",
+    "business_purpose": "It exists so the activation leaves behind durable, findable evidence of what was done and on whose authority.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the completed activation trail at its retention tier and sets the retrieval handles so a future reviewer can pull the whole history on demand."
+    }
+  },
+  "processes:task-ao-activate-intake-v3pg86": {
+    "plain_language_name": "Register the Incoming Fitness Attestation",
+    "plain_language_description": "When a licensed role's fitness papers arrive, the intake custodian takes them in, logs them against the individual's regulated personnel record, and gives the package its audit references. Nothing is weighed or altered yet - the attestation is simply accepted, booked, and held ready for scrutiny.",
+    "business_purpose": "It exists so the fitness attestation enters the activity as a logged, traceable package rather than loose papers.",
+    "practical_context": "It opens when the licensed role and its fitness evidence are presented for attestation, with the activity owner alerted to their arrival, and it closes with the package registered under audit identifiers and the checking step free to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management logs a senior hire's fitness papers against the personnel record and confirms receipt so the attestation can move to checking."
+    }
+  },
+  "processes:task-ao-activate-verify-uuszhj": {
+    "plain_language_name": "Check the Fitness Evidence",
+    "plain_language_description": "With the attestation logged, the verification custodian examines the fitness evidence against what the activity requires of the role in question. Gaps, stale documents, or mismatches are written up as shortfalls to be remedied or refused - nothing defective slides forward on trust.",
+    "business_purpose": "It exists so an attestation is only carried forward on evidence that genuinely measures up to the role's fitness requirement.",
+    "practical_context": "It runs once the attestation is registered and the evidence can be compared with the activity's requirements, and it finishes with the evidence found conformant or the shortfalls logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian spots a fitness document past its expiry during the review, records the shortfall, and sends it back for the licensee to remedy before the attestation proceeds."
+    }
+  },
+  "processes:task-ao-activate-transform-kk4rwa": {
+    "plain_language_name": "Prepare the Attested Fitness Record",
+    "plain_language_description": "Once the evidence has measured up, the processing custodian turns the checked attestation into the fitness record the activity set out to produce, in the exact shape the regulated personnel record expects. The papers worked from along the way are kept, so the path from evidence to record stays visible.",
+    "business_purpose": "It exists because fitness only counts once the checked evidence has been shaped into the standing record the organisation relies on.",
+    "practical_context": "It starts when checking is complete and the verified evidence is ready to be worked into its final form, and it ends with the attested record produced and the working papers preserved for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian assembles the checked fitness evidence into the personnel-record attestation, keeping each working paper so the trail from evidence to record stays visible."
+    }
+  },
+  "processes:task-ao-activate-confirm-utnna8": {
+    "plain_language_name": "Confirm the Recorded Fitness Attestation",
+    "plain_language_description": "When the attested record exists, the confirmation custodian reconciles it against what the activity promised and then says so formally. Everyone waiting on the attestation - the continuing supervisor among them - hears that the fitness record is ready and where it stands.",
+    "business_purpose": "It exists so the attestation is not treated as finished until it has been checked against the intended result and announced onward.",
+    "practical_context": "It begins once preparation is complete and the attested record is ready for those who depend on it, and it closes with the confirmation issued, the dependants informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian confirms the finished attestation against the activity's promised result and notifies the continuing supervisor that the fitness record is in place."
+    }
+  },
+  "processes:task-ao-activate-record-c3era6": {
+    "plain_language_name": "File the Fitness Attestation Audit Record",
+    "plain_language_description": "With the confirmation out, the records custodian puts the attestation's audit trail into long-term keeping at the tier it must be retained at, and sets the handles that will find it again on demand. The point is simple: years later, the fitness position can be evidenced without reconstruction.",
+    "business_purpose": "It exists so the attested fitness position can be proven on demand long after the work itself has moved on.",
+    "practical_context": "It starts when the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its retention tier and its retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the attestation trail at its required tier and sets the retrieval handles an evidence review would use to call it up years later."
+    }
+  },
+  "processes:task-ao-activate-intake-y95s7f": {
+    "plain_language_name": "Receive the Supervised-Training Completion Evidence",
+    "plain_language_description": "The training completion papers - the role's plan and the evidence that supervised training actually finished - arrive here first. The intake custodian accepts the package, logs it on the regulated personnel record, and issues acknowledgment references so the steps that follow can trace it.",
+    "business_purpose": "It exists so completion evidence is booked in traceably before anyone acts on it.",
+    "practical_context": "It opens when the training plan and completion evidence are presented, with the activity owner alerted, and it closes once the package is registered with audit identifiers and the remaining steps may go ahead.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management logs a licensee's completion evidence and training plan against the personnel record and acknowledges receipt."
+    }
+  },
+  "processes:task-ao-activate-verify-s6xcqs": {
+    "plain_language_name": "Check the Training Completion Evidence",
+    "plain_language_description": "With the package registered, the verification custodian reads the completion evidence against what the role's training plan demanded. Supervised hours, sign-offs, and course coverage are compared with the requirement, and any shortfall is written down for the evidence to be rejected or put right.",
+    "business_purpose": "It exists so a training completion is only recognised when the evidence truly matches what the plan required.",
+    "practical_context": "It runs once registration is done and the evidence can be checked against the activity's requirements, and it finishes with the evidence verified or its shortcomings recorded for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks a completion certificate against the role's training plan, notices the final supervised module is undocumented, and records the gap for remediation."
+    }
+  },
+  "processes:task-ao-activate-transform-rpswjw": {
+    "plain_language_name": "Prepare the Training Completion Entry",
+    "plain_language_description": "With the evidence verified, the processing custodian shapes it into the completion entry the personnel record will carry, in the settled form the activity calls for. The working papers behind the entry are preserved, keeping the route from evidence to record open for later inspection.",
+    "business_purpose": "It exists so the verified completion becomes a standing entry on the personnel record rather than a loose verified paper.",
+    "practical_context": "It begins once checking is complete and the verified evidence is ready for shaping, and it ends when the entry exists in its final agreed form with the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian turns the verified completion evidence into the personnel-record entry, keeping the working papers so an auditor can retrace every step."
+    }
+  },
+  "processes:task-ao-activate-confirm-r33pq9": {
+    "plain_language_name": "Confirm the Recorded Training Completion",
+    "plain_language_description": "When the entry is prepared, the confirmation custodian checks it against the result the activity set out to reach and then issues the formal confirmation. Whoever depends on the completion - the continuing supervisor, the teams awaiting a fully trained colleague - is told the record is ready.",
+    "business_purpose": "It exists so a completion is announced as done only after it has been reconciled to the activity's intended result.",
+    "practical_context": "It starts once preparation is complete and the entry awaits its consumers, and it closes with the confirmation issued, the dependants told, and the outcome reconciled against the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the new completion entry to the activity's intended result and confirms onward that the record is available to those who rely on it."
+    }
+  },
+  "processes:task-ao-activate-record-d494s9": {
+    "plain_language_name": "File the Training Completion Audit Record",
+    "plain_language_description": "After confirmation, the records custodian consigns the completion's audit trail to retention at its required tier and establishes the means of finding it again. The training story - plan, evidence, entry, confirmation - stays retrievable as one coherent history.",
+    "business_purpose": "It exists so supervised training can be evidenced as completed for as long as the record must live.",
+    "practical_context": "It begins when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the completion's audit trail at its retention tier and sets the handles so a later supervision review can retrieve the whole history."
+    }
+  },
+  "processes:task-ao-activate-intake-rwb8vd": {
+    "plain_language_name": "Receive the Licence for Verification",
+    "plain_language_description": "A licence or registration needing verification arrives here together with the role it is meant to cover. The intake custodian accepts both, logs them with audit references on the personnel-record trail, and signals that the checking steps may begin.",
+    "business_purpose": "It exists so licence verification starts from a registered, traceable package rather than an untracked document.",
+    "practical_context": "It opens when the licence record and the role it must serve are presented for verification, with the activity owner alerted, and it closes with the intake registered under audit identifiers and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function receives a practitioner's licence document with the live role it covers, registers both on the trail, and alerts the checking step."
+    }
+  },
+  "processes:task-ao-activate-verify-7wu8bx": {
+    "plain_language_name": "Check the Licence Details Against the Role's Requirement",
+    "plain_language_description": "This is the heart of the activity: the verification custodian confirms the licence is current, in good standing, and actually matches the designation or authority the live role needs. Anything less - an expired document, a scope that misses the role - is written up as a nonconformance for refusal or repair.",
+    "business_purpose": "It exists so nobody relies on a licence that turns out to be lapsed, mismatched, or short of the role's true requirement.",
+    "practical_context": "It runs once intake is registered and the licence can be compared against the activity's requirements, and it finishes with the licence verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks a practitioner's licence currency and scope against the role's needs, finds the scope narrower than the role requires, and logs the nonconformance for follow-up."
+    }
+  },
+  "processes:task-ao-activate-transform-prfsve": {
+    "plain_language_name": "Prepare the Verified Licence Record",
+    "plain_language_description": "Once the licence has measured up, the processing custodian shapes the finding into the verified licence record the activity promises, together with the scope-of-practice attestation that travels with it. The comparison working papers are preserved so the verification can be retraced later.",
+    "business_purpose": "It exists so a licence check becomes a usable, evidenced record rather than a conclusion somebody remembers.",
+    "practical_context": "It starts when checking is complete and the verified findings are ready to be worked into their final form, and it ends with the licence record and scope attestation produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian turns the completed licence checks into the verified licence record and its scope attestation, filing the working papers behind them."
+    }
+  },
+  "processes:task-ao-activate-confirm-nffyt3": {
+    "plain_language_name": "Confirm the Licence Verification Result",
+    "plain_language_description": "With the verified record in hand, the confirmation custodian reconciles it against the result the activity set out to reach, then issues the confirmation. Those waiting to put the person live - and the continuing supervision chain - learn that the licence position is settled.",
+    "business_purpose": "It exists so the verification is treated as settled only once it has been confirmed against the intended result and announced.",
+    "practical_context": "It begins once preparation is complete and the verified record awaits its consumers, and it closes with the confirmation issued, consumers told, and the outcome reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the verified licence record to the activity's intended result and issues the confirmation that lets the live-role decision proceed."
+    }
+  },
+  "processes:task-ao-activate-record-8v2www": {
+    "plain_language_name": "File the Licence Verification Audit Record",
+    "plain_language_description": "Finally the records custodian preserves the whole verification trail - licence in, checks run, record out, confirmation given - at the retention tier the evidence rules demand, with retrieval handles set for the day it is needed.",
+    "business_purpose": "It exists so the licence verification can be evidenced, end to end, for as long as the retention rules require.",
+    "practical_context": "It starts when the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and its retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the verification trail at its required tier and sets the retrieval handles a supervision review would use to call up the licence history."
+    }
+  },
+  "processes:task-ao-build-intake-xhmpqf": {
+    "plain_language_name": "Receive the Onboarded Agents for Integration",
+    "plain_language_description": "Agents that have finished onboarding arrive here to begin the move into the working organisation. The intake custodian accepts each one, registers the arrival with audit identifiers, and lets the placement work start from a clean, traceable list.",
+    "business_purpose": "It exists so integration begins from a registered roster rather than whoever happens to turn up.",
+    "practical_context": "It opens when the onboarded agents are handed over for placement, with the activity owner told of their arrival, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian logs the freshly onboarded agents onto the integration roster with audit references and confirms the handover so placement work can begin."
+    }
+  },
+  "processes:task-ao-build-verify-9trtn4": {
+    "plain_language_name": "Check the Agents Against the Integration Requirements",
+    "plain_language_description": "Before anyone is placed, the verification custodian compares each onboarded agent with what integration into the organisation requires of it. An agent that arrives short of the mark is written up as a shortfall to fix or refuse, keeping weak placements out of the teams.",
+    "business_purpose": "It exists so only agents genuinely ready for placement are allowed into the organisation's teams.",
+    "practical_context": "It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes with the agents verified or their shortcomings logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one onboarded agent missing a required competency and records the shortfall for remediation before any team placement happens."
+    }
+  },
+  "processes:task-ao-build-transform-3z9zqu": {
+    "plain_language_name": "Place the Agents into Teams and Working Patterns",
+    "plain_language_description": "With readiness confirmed, the processing custodian carries out the integration itself: each verified agent is placed into its team and slotted into the coordination patterns the organisation works by. The placement working papers are kept so the resulting arrangement can be traced.",
+    "business_purpose": "It exists because onboarding only pays off once agents are actually woven into the teams they will work within.",
+    "practical_context": "It begins once checking is complete and the verified agents are ready for placement, and it ends with the integrated arrangement produced and the working papers preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian places verified agents into their designated teams and sets the coordination patterns each will follow, keeping notes of every placement."
+    }
+  },
+  "processes:task-ao-build-confirm-atwary": {
+    "plain_language_name": "Confirm the Completed Integration",
+    "plain_language_description": "Once placements are made, the confirmation custodian reconciles the integrated arrangement against what the activity set out to deliver and issues the confirmation. The teams affected, and whoever depends on the integration, learn the agents are in place and working.",
+    "business_purpose": "It exists so an integration is declared complete only after reconciliation to the intended result and a formal announcement.",
+    "practical_context": "It starts when preparation is complete and the integrated agents are ready for those depending on them, and it closes with confirmation issued, dependants informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian checks the finished placements against the activity's intended result and confirms onward that the integrated agents are in place."
+    }
+  },
+  "processes:task-ao-build-record-72ph2w": {
+    "plain_language_name": "File the Integration Audit Record",
+    "plain_language_description": "The records custodian closes the activity by preserving the integration's audit trail at the retention tier its evidence rules set, with retrieval handles ready for later inspection. Who was placed where, and on what basis, stays answerable long after the placement work has moved on.",
+    "business_purpose": "It exists so the integration of agents into the organisation remains evidenced and retrievable for future scrutiny.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin, and it ends with the audit record stored at its tier and retrieval handles established.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the integration trail at its retention tier and sets the retrieval handles a future review would use to see who was placed where."
+    }
+  },
+  "processes:task-ao-build-intake-xwyg22": {
+    "plain_language_name": "Receive the Acquired Agents for Onboarding",
+    "plain_language_description": "Newly acquired agents arrive here to start becoming effective. The intake custodian accepts each arrival, logs it with audit identifiers, and sets the onboarding steps running from a registered list rather than a loose handover.",
+    "business_purpose": "It exists so onboarding starts from a traceable intake of exactly the agents acquisition delivered.",
+    "practical_context": "It opens when the acquired agents are presented for onboarding, with the activity owner told of their arrival, and it closes with the intake registered under audit identifiers and the remaining steps free to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the newly acquired agents onto the onboarding list with audit references and confirms receipt to the acquiring side."
+    }
+  },
+  "processes:task-ao-build-verify-6vzk4d": {
+    "plain_language_name": "Check the Acquired Agents Before Onboarding",
+    "plain_language_description": "The verification custodian examines each acquired agent against what its intended role and competencies demand before any onboarding work is invested. An agent that misses the requirement is logged as a shortfall for rejection or repair, so effort is not spent on the wrong material.",
+    "business_purpose": "It exists so onboarding effort is spent only on agents that genuinely fit the roles awaiting them.",
+    "practical_context": "It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes with the agents verified or their gaps recorded for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks each acquired agent against its intended role's competencies and logs one shortfall where an agent lacks a required skill."
+    }
+  },
+  "processes:task-ao-build-transform-nc3v6f": {
+    "plain_language_name": "Bring the Agents into Their Roles and Competencies",
+    "plain_language_description": "With each agent verified, the processing custodian does the onboarding itself: the agent is worked into its role and brought up to the competencies the role rests on, in the form the activity defines. Working notes from the onboarding are preserved so the preparation stays auditable.",
+    "business_purpose": "It exists because acquisition only delivers potential until onboarding turns each agent into a working participant.",
+    "practical_context": "It starts when checking is complete and the verified agents are ready to be worked into their roles, and it ends with the onboarded agents produced and the working notes preserved for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian brings each verified agent into its role and builds the competencies the role needs, keeping notes of the onboarding for audit."
+    }
+  },
+  "processes:task-ao-build-confirm-kawybm": {
+    "plain_language_name": "Confirm the Completed Onboarding",
+    "plain_language_description": "When onboarding work is done, the confirmation custodian reconciles the onboarded agents against the outcome the activity promised and issues the confirmation. The teams waiting for capable colleagues hear that the onboarding has landed and the agents are ready.",
+    "business_purpose": "It exists so the hand-off from onboarding rests on a confirmed reconciliation, not an assumption of readiness.",
+    "practical_context": "It begins once preparation is complete and the onboarded agents are ready for their consumers, and it closes with the confirmation issued, consumers notified, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the onboarded agents against the activity's promised outcome and issues the confirmation the receiving teams are waiting on."
+    }
+  },
+  "processes:task-ao-build-record-szc6re": {
+    "plain_language_name": "File the Onboarding Audit Record",
+    "plain_language_description": "At the close, the records custodian preserves the onboarding's audit trail at its required retention tier and establishes the retrieval handles that keep it findable. Each agent's route from acquisition to working readiness stays on file, evidence intact.",
+    "business_purpose": "It exists so each agent's onboarding history remains provable for as long as the evidence must be kept.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian stores the onboarding trail at its retention tier and sets the retrieval handles so a later review can trace any agent's route to readiness."
+    }
+  },
+  "processes:task-ao-build-intake-yy9kw6": {
+    "plain_language_name": "Receive the Structure Design for Provisioning",
+    "plain_language_description": "Provisioning starts when the committed organisation structure design lands with the intake custodian. The design is accepted, registered with audit identifiers, and logged as the standing reference the capacity work will be built from.",
+    "business_purpose": "It exists so capacity is provisioned from a registered, traceable design rather than an informal sketch.",
+    "practical_context": "It opens when the committed structure design is presented for provisioning, with the activity owner alerted to its arrival, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed structure design as the provisioning baseline, complete with audit identifiers, and signals the capacity work to begin."
+    }
+  },
+  "processes:task-ao-build-verify-we37nj": {
+    "plain_language_name": "Check the Design Against the Provisioning Requirements",
+    "plain_language_description": "Before capacity is committed, the verification custodian tests the design against what provisioning requires of it - completeness, consistency, and fitness to be built. Defects are written up as nonconformances for rejection or repair, so no capacity gets built on a flawed base.",
+    "business_purpose": "It exists so the organisation never provisions capacity from a design that would not survive scrutiny.",
+    "practical_context": "It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with the design verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks the committed design for completeness and consistency, finds a capacity line left unspecified, and records the defect for repair."
+    }
+  },
+  "processes:task-ao-build-transform-xrmfg2": {
+    "plain_language_name": "Build the Agent Capacity the Design Calls For",
+    "plain_language_description": "With the design verified, the processing custodian provisions the capacity itself, producing the agent capacity in exactly the shape the design commits to. The intermediate working artifacts are preserved along the way, so every capacity decision can be audited later.",
+    "business_purpose": "It exists because a design on paper staffs nothing until the capacity it calls for is actually provisioned.",
+    "practical_context": "It starts once checking is complete and the verified design is ready to be built from, and it ends with the capacity produced in its committed shape and the working artifacts kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian provisions the agent capacity line by line from the verified design, preserving the working artifacts behind each decision."
+    }
+  },
+  "processes:task-ao-build-confirm-fez4ve": {
+    "plain_language_name": "Confirm the Provisioned Capacity",
+    "plain_language_description": "When the capacity stands ready, the confirmation custodian reconciles what was provisioned against the outcome the activity set out to reach and issues the confirmation. The acquisition steps that draw on this capacity learn it is ready to be used.",
+    "business_purpose": "It exists so later acquisition proceeds against capacity that has been confirmed, not merely produced.",
+    "practical_context": "It begins once preparation is complete and the provisioned capacity awaits its consumers, and it closes with confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the provisioned capacity against the design's promised outcome and issues the confirmation the acquisition steps depend on."
+    }
+  },
+  "processes:task-ao-build-record-u3n4bv": {
+    "plain_language_name": "File the Provisioning Audit Record",
+    "plain_language_description": "To close, the records custodian preserves the provisioning trail - design in, checks run, capacity out, confirmation given - at the retention tier the evidence rules set, with retrieval handles ready for the day the capacity decisions are questioned.",
+    "business_purpose": "It exists so the provisioning of agent capacity stays evidenced and retrievable long after the work is done.",
+    "practical_context": "It starts when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and its retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the provisioning trail at its retention tier and sets the retrieval handles a future capacity review would rely on."
+    }
+  },
+  "processes:task-ao-build-intake-2rzeqj": {
+    "plain_language_name": "Receive the Provisioned Capacity for Selection",
+    "plain_language_description": "Selection begins when the provisioned agent capacity is handed over as the requirement to be filled. The intake custodian accepts the handover, registers it with audit identifiers, and opens the selection work from a traceable baseline.",
+    "business_purpose": "It exists so selection works from a registered statement of the capacity it is meant to fill.",
+    "practical_context": "It opens when the provisioned capacity is presented as the selection requirement, with the activity owner alerted, and it closes with the intake registered and the checking and choosing steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the provisioned capacity handover as the selection baseline, with audit references, and opens the choosing work."
+    }
+  },
+  "processes:task-ao-build-verify-8dyuy4": {
+    "plain_language_name": "Check the Requirement and the Candidate Agents",
+    "plain_language_description": "The verification custodian checks both sides of the match: the capacity requirement as handed over, and the candidate agents offered against it. Where a candidate falls short of the requirement, the defect is logged for rejection or repair rather than quietly accepted.",
+    "business_purpose": "It exists so agents are only acquired against a requirement that has itself been checked and found sound.",
+    "practical_context": "It runs once the intake is registered and both requirement and candidates can be compared with the activity's requirements, and it finishes with them verified or the defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests each candidate agent against the handed-over capacity requirement and logs one candidate as short of the mark for remediation."
+    }
+  },
+  "processes:task-ao-build-transform-g4vkyd": {
+    "plain_language_name": "Select and Bring In the Agents",
+    "plain_language_description": "With both sides verified, the processing custodian makes the selections and brings the chosen agents in - taking each on its fitness for the capacity rather than on what it happens to be made of. The selection working papers are preserved for audit.",
+    "business_purpose": "It exists because a checked requirement is still an empty seat until the right agents are chosen and brought in.",
+    "practical_context": "It starts once checking is complete and the verified requirement is ready to be filled, and it ends with the acquired agents produced in the form the activity defines and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian selects the agents that best fill the verified capacity and acquires them, keeping the selection papers for audit."
+    }
+  },
+  "processes:task-ao-build-confirm-7mmnjv": {
+    "plain_language_name": "Confirm the Acquired Agents",
+    "plain_language_description": "Once the agents are in, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The onboarding steps that come next learn the acquired agents are ready to be received.",
+    "business_purpose": "It exists so onboarding receives agents whose acquisition has been confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the acquired agents await their consumers, and it closes with the confirmation issued, consumers told, and the outcome reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the newly acquired agents against the activity's intended outcome and issues the confirmation onboarding is waiting for."
+    }
+  },
+  "processes:task-ao-build-record-2nmbeu": {
+    "plain_language_name": "File the Acquisition Audit Record",
+    "plain_language_description": "The records custodian ends the activity by preserving the acquisition trail at its required retention tier and establishing the retrieval handles that keep it reachable. Who was selected, against what requirement, and why, remains answerable from the record alone.",
+    "business_purpose": "It exists so every acquisition decision stays evidenced and retrievable for later scrutiny.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the acquisition trail at its retention tier and sets the retrieval handles a future audit would use to see why each agent was chosen."
+    }
+  },
+  "processes:task-ao-build-intake-sn4x23": {
+    "plain_language_name": "Receive the Capacity Plan for Demand Review",
+    "plain_language_description": "The demand review opens when the committed structure design and its capacity plan are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the baseline the demand reading will be made against.",
+    "business_purpose": "It exists so demand is identified against a registered plan rather than against impressions of need.",
+    "practical_context": "It opens when the design and capacity plan are presented for the demand review, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed design and capacity plan as the demand baseline, with audit references, and signals the review to begin."
+    }
+  },
+  "processes:task-ao-build-verify-s5v5r8": {
+    "plain_language_name": "Check the Plan Before Reading the Demand",
+    "plain_language_description": "Before demand is read, the verification custodian checks the design and plan against what the demand work requires of them. A plan with gaps would mislead the whole pool effort, so defects are flagged for rejection or repair at this early point.",
+    "business_purpose": "It exists so the pool effort is never steered by a capacity plan that has not itself been checked.",
+    "practical_context": "It runs once the intake is registered and the design and plan can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the capacity plan missing its specialist-demand lines and records the defect so the demand reading is not built on gaps."
+    }
+  },
+  "processes:task-ao-build-transform-gdhueq": {
+    "plain_language_name": "Work Out Where the Pool Demand Sits",
+    "plain_language_description": "With the plan verified, the processing custodian reads demand out of it: the surge and specialist needs that direct acquisition cannot serve are drawn out and set down as the identified pool demand, in the form the activity defines. Working papers from the reading are preserved for audit.",
+    "business_purpose": "It exists because the pool can only be built for demand somebody has actually identified and written down.",
+    "practical_context": "It starts once checking is complete and the verified plan is ready to be read, and it ends with the identified demand produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian reads the verified plan and sets down the surge and specialist demands that direct acquisition cannot serve, keeping the working papers."
+    }
+  },
+  "processes:task-ao-build-confirm-89qahu": {
+    "plain_language_name": "Confirm the Identified Pool Demand",
+    "plain_language_description": "When the demand reading is complete, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The sourcing and vetting work that comes next learns exactly what demand it is being asked to serve.",
+    "business_purpose": "It exists so the pool is sourced against demand that has been confirmed, not against a first reading.",
+    "practical_context": "It begins once preparation is complete and the identified demand awaits its consumers, and it closes with confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the identified demand against the activity's intended outcome and issues the confirmation the vetting work needs before sourcing."
+    }
+  },
+  "processes:task-ao-build-record-yyq4b4": {
+    "plain_language_name": "File the Demand Identification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the demand-reading trail at its required retention tier and establishes the retrieval handles for it. What demand was expected, and on what plan it was based, stays provable when the pool's shape is later questioned.",
+    "business_purpose": "It exists so the demand behind the pool can be evidenced against the plan it was read from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the demand-reading trail at its retention tier and sets the retrieval handles a later pool review would consult."
+    }
+  },
+  "processes:task-ao-build-intake-4bu7j3": {
+    "plain_language_name": "Receive the Candidate Pool Sources",
+    "plain_language_description": "Vetting opens when the candidate contractor and partner sources arrive, together with the identified demand they are meant to serve. The intake custodian accepts the package, registers it with audit identifiers, and puts the vetting work on a traceable footing.",
+    "business_purpose": "It exists so source vetting starts from a registered list tied to the demand it must answer.",
+    "practical_context": "It opens when the candidate sources and the identified demand are presented for vetting, with the activity owner alerted, and it closes with the intake registered and the later steps free to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the candidate contractor sources against the identified demand, with audit references, and hands a clean list to vetting."
+    }
+  },
+  "processes:task-ao-build-confirm-e57q4e": {
+    "plain_language_name": "Confirm the Vetted Pool Sources",
+    "plain_language_description": "When vetting has run its course, the confirmation custodian reconciles the vetted sources against the outcome the activity set out to reach and issues the confirmation. The path-building work that comes next learns which sources it can safely build engagement routes around.",
+    "business_purpose": "It exists so engagement paths are built only over sources whose vetting has been confirmed.",
+    "practical_context": "It begins once preparation is complete and the vetted sources await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the vetted source list against the activity's intended outcome and issues the confirmation the path-building work depends on."
+    }
+  },
+  "processes:task-ao-build-record-c8h2pq": {
+    "plain_language_name": "File the Source Vetting Audit Record",
+    "plain_language_description": "Finally the records custodian preserves the vetting trail at its required retention tier, with retrieval handles set for later reference. Why each source was trusted - or passed over - remains readable from the record long after the vetting itself.",
+    "business_purpose": "It exists so the trust placed in pool sources can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the vetting trail at its retention tier and sets the retrieval handles that show why each source was accepted or set aside."
+    }
+  },
+  "processes:task-ao-build-intake-aae2cz": {
+    "plain_language_name": "Receive the Vetted Sources for Path Setup",
+    "plain_language_description": "Path setup begins when the vetted pool sources are handed over as the material the routes will be built through. The intake custodian accepts the handover, registers it with audit identifiers, and starts the establishment work from a recorded baseline.",
+    "business_purpose": "It exists so engagement routes are built over a registered set of sources rather than an informal list.",
+    "practical_context": "It opens when the vetted sources are presented for path setup, with the activity owner told of the handover, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the vetted sources as the path-building baseline, with audit references, and lets the establishment work begin."
+    }
+  },
+  "processes:task-ao-build-verify-kdycrh": {
+    "plain_language_name": "Check the Sources Against the Path Requirements",
+    "plain_language_description": "Before routes are laid, the verification custodian checks the vetted sources against what establishing activation paths requires - that each source can actually carry engagement as intended. Shortfalls are written up for rejection or repair, so no route is built on a source that cannot serve it.",
+    "business_purpose": "It exists so the routes into the pool rest on sources confirmed able to carry the engagement.",
+    "practical_context": "It runs once the intake is registered and each source can be compared with the activity's requirements, and it finishes with the sources verified or the shortfalls logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian checks each vetted source's readiness to carry engagement and logs one source as unable to serve its route, for remediation."
+    }
+  },
+  "processes:task-ao-build-transform-frhu2h": {
+    "plain_language_name": "Set Up the Routes from Sources to Engagement",
+    "plain_language_description": "With the sources verified, the processing custodian establishes the activation paths themselves: each route from a vetted source to actual engagement is worked out and set down in the form the activity defines. The working papers behind the routes are preserved for audit.",
+    "business_purpose": "It exists because vetted sources idle until a defined route exists for turning them into working capacity.",
+    "practical_context": "It starts once checking is complete and the verified sources are ready to be built through, and it ends with the established paths produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian sets down the route each vetted source will follow into engagement, keeping the working papers so the paths can be retraced."
+    }
+  },
+  "processes:task-ao-build-confirm-syxf6c": {
+    "plain_language_name": "Confirm the Established Activation Paths",
+    "plain_language_description": "When the paths stand established, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The commitment step that comes next learns the routes are ready for the pool to be committed over them.",
+    "business_purpose": "It exists so the pool is committed only over paths that have been confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the established paths await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the established paths against the activity's intended outcome and issues the confirmation the commitment step is waiting on."
+    }
+  },
+  "processes:task-ao-build-record-6jmk5q": {
+    "plain_language_name": "File the Activation Path Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the path-establishment trail at its required retention tier and sets the retrieval handles for it. Which route each source travels, and on what basis it was laid, stays readable whenever the pool's engagement routes come into question.",
+    "business_purpose": "It exists so the routes into the pool remain evidenced and retrievable for as long as the pool operates.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the path trail at its retention tier and sets the retrieval handles a later engagement review would consult."
+    }
+  },
+  "processes:task-ao-build-intake-sbqun9": {
+    "plain_language_name": "Receive the Established Paths for Commitment",
+    "plain_language_description": "Commitment opens when the established activation paths are handed over as the foundation the pool will be committed on. The intake custodian accepts them, registers the handover with audit identifiers, and puts the commitment work on a recorded footing.",
+    "business_purpose": "It exists so the pool is committed from a registered baseline of paths rather than from loose assurances.",
+    "practical_context": "It opens when the established paths are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the established paths as the commitment baseline, with audit references, and opens the commitment work."
+    }
+  },
+  "processes:task-ao-build-verify-yruq7a": {
+    "plain_language_name": "Check the Paths Before Committing the Pool",
+    "plain_language_description": "Before the pool is committed, the verification custodian checks the established paths against what commitment demands of them - that together they can actually carry the pool as operational capacity. Anything found wanting is written up for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the organisation never commits itself to a pool resting on paths that would not hold.",
+    "practical_context": "It runs once the intake is registered and the paths can be compared with the activity's requirements, and it finishes with the paths verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests the established paths for their ability to carry the pool and logs one weak route for remediation before commitment."
+    }
+  },
+  "processes:task-ao-build-transform-cr4mbu": {
+    "plain_language_name": "Prepare the Pool for Operational Commitment",
+    "plain_language_description": "With the paths verified, the processing custodian works the commitment itself: the contractor and partner pool is prepared and set down as operational capacity alongside direct acquisition, in the form the activity defines. Working papers from the preparation are preserved so the commitment can be audited.",
+    "business_purpose": "It exists because verified paths become value only when the pool is actually committed as capacity the organisation can draw on.",
+    "practical_context": "It starts once checking is complete and the verified paths are ready to be committed over, and it ends with the committed pool produced in its final form and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian sets the contractor and partner pool down as operational capacity alongside direct acquisition, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-build-confirm-n2tkeb": {
+    "plain_language_name": "Confirm the Committed Pool",
+    "plain_language_description": "Once the pool stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The wider organisation learns the pool is available as capacity alongside what direct acquisition supplies.",
+    "business_purpose": "It exists so reliance on the pool begins only from a confirmed, announced commitment.",
+    "practical_context": "It begins once preparation is complete and the committed pool awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed pool against the activity's intended outcome and issues the confirmation that opens it for use."
+    }
+  },
+  "processes:task-ao-build-record-8jdc4m": {
+    "plain_language_name": "File the Pool Commitment Audit Record",
+    "plain_language_description": "To close, the records custodian preserves the commitment trail at its required retention tier and establishes the retrieval handles for it. What was committed, over which paths, and on whose confirmation remains on file for the whole life of the pool.",
+    "business_purpose": "It exists so the pool's standing as committed capacity can be evidenced whenever its use is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a pool review would draw on years later."
+    }
+  }
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 This is a **Task** (level L4), named **Integrate Agents into Organization Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Integrate Agents into Organization** (`processes:activity-ao-build-khtsgv`). Its canonical ID is `processes:task-ao-build-record-72ph2w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The records custodian closes the activity by preserving the integration's audit trail at the retention tier its evidence rules set, with retrieval handles ready for later inspection. Who was placed where, and on what basis, stays answerable long after the placement work has moved on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the integration of agents into the organisation remains evidenced and retrievable for future scrutiny.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin, and it ends with the audit record stored at its tier and retrieval handles established.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the integration trail at its retention tier and sets the retrieval handles a future review would use to see who was placed where.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Integration Audit Record |
+| `plain_language_description` | string | no | The records custodian closes the activity by preserving the integration's audit trail at the retention tier its … |
+| `business_purpose` | string | no | It exists so the integration of agents into the organisation remains evidenced and retrievable for future scrutiny. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin, and it ends with the audit record stored at … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-activate-c
 
 This is a **Task** (level L4), named **Execute Service Cutover Confirmation**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Execute Service Cutover** (`processes:activity-pv-activate-fd922j`). Its canonical ID is `processes:task-pv-activate-confirm-tgq55b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian issues the completion confirmation, lets the downstream teams know the transitioned service is available, and closes the reconciliation against what the activity promised. The confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the operations teams take the service on an evidenced handover, not a rumour.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian of the proposition design authority confirms the cutover and notifies the teams who will run the service.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Cutover to the Downstream Teams |
+| `plain_language_description` | string | no | The confirmation custodian issues the completion confirmation, lets the downstream teams know the transitioned service … |
+| `business_purpose` | string | no | It exists so the operations teams take the service on an evidenced handover, not a rumour. |
+| `practical_context` | string | no | It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

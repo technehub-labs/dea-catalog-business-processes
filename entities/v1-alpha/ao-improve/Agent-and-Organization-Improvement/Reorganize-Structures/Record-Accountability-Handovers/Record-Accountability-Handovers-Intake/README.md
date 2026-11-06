@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Record Accountability Handovers Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Record Accountability Handovers** (`processes:activity-ao-improve-gtc9k8`). Its canonical ID is `processes:task-ao-improve-intake-dezn3h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Handover recording opens when the executed structure transition is handed over as the change whose accountability movements must be logged. The intake custodian accepts it, registers it with audit identifiers, and starts the recording from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so accountability movements are logged from the registered record of what was actually executed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the executed transition is presented for the handover recording, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the executed transition as the recording baseline, with audit references, and opens the handover work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Executed Transition for Handover Recording |
+| `plain_language_description` | string | no | Handover recording opens when the executed structure transition is handed over as the change whose accountability … |
+| `business_purpose` | string | no | It exists so accountability movements are logged from the registered record of what was actually executed. |
+| `practical_context` | string | no | It opens when the executed transition is presented for the handover recording, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

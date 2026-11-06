@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Vetted Sources for Path Setup'
+plain_language_description: 'Path setup begins when the vetted pool sources are handed over as the material the routes will be built through. The intake custodian accepts the handover, registers it with audit identifiers, and starts the establishment work from a recorded baseline.'
+business_purpose: 'It exists so engagement routes are built over a registered set of sources rather than an informal list.'
+practical_context: 'It opens when the vetted sources are presented for path setup, with the activity owner told of the handover, and it closes with the intake registered and the remaining steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the vetted sources as the path-building baseline, with audit references, and lets the establishment work begin.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Entries Flowing In Day by Day'
+plain_language_description: 'Processing opens when the journal entries are handed over as the daily diet the books must digest. The intake custodian accepts them, registers them with audit identifiers, and starts the posting from a recorded baseline.'
+business_purpose: 'It exists so entries enter the books through a registered gate rather than around it.'
+practical_context: 'It opens when the entries are presented for the processing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the compliance function registers the arriving entries as the posting baseline, with audit references.'

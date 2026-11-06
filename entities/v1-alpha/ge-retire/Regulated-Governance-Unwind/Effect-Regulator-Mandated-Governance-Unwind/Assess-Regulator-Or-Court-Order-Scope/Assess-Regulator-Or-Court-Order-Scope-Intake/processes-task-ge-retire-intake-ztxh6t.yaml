@@ -71,3 +71,18 @@ outputs:
   description: Intake manifest registered and bound to the Assess Regulator Or Court Order Scope case file; registered intake custodian passes custody to the verification …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Collect the Wind-Down Papers at Intake'
+plain_language_description: 'The wind-down opens with paperwork: the regulator or court order itself, the inventory of records that must survive dissolution, and the drafts of the dissolution filings. The intake custodian logs each item against the wind-down file so the scope work starts from a documented set.'
+business_purpose: 'It exists because interpreting a binding order is only defensible when the order text, the records inventory, and the filing drafts are all accounted for from the outset.'
+practical_context: 'It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the finance function logs the regulator''s order, the records inventory, and the filing drafts into the wind-down file.'

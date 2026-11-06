@@ -68,3 +68,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Approved Inspection Plan for the Batch'
+plain_language_description: 'Testing opens when the approved inspection plan is handed over together with the batch samples it will be worked on. The intake custodian accepts both, registers them with audit identifiers, and starts the inspection from a recorded baseline.'
+business_purpose: 'It exists so output is inspected to an approved plan rather than to whatever the bench feels like testing.'
+practical_context: 'It opens when the plan and samples are presented for inspection, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the approved plan and its batch samples as the testing baseline, with audit references.'

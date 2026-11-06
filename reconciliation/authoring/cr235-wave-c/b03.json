@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-conceive-confirm-d3yud2": {
+    "plain_language_name": "Confirm the Drafted Workforce and Agent Mix",
+    "plain_language_description": "When the draft stands composed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the drafted mix is ready to be ratified.",
+    "business_purpose": "It exists so the mix is ratified only from a draft confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the drafted mix awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drafted mix against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-ao-conceive-intake-82prfy": {
+    "plain_language_name": "Receive the Bounded Envelopes for Drafting",
+    "plain_language_description": "Drafting opens when the bounded capacity envelopes are handed over as the frame the mix must be composed within. The intake custodian accepts them, registers the handover with audit identifiers, and starts the drafting work from a recorded baseline.",
+    "business_purpose": "It exists so the mix is drafted within a registered set of envelopes rather than freehand.",
+    "practical_context": "It opens when the bounded envelopes are presented for the drafting, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the bounded capacity envelopes as the drafting baseline, with audit references, and opens the composition work."
+    }
+  },
+  "processes:task-ao-conceive-transform-k599zn": {
+    "plain_language_name": "Compose the Workforce and Agent Mix Draft",
+    "plain_language_description": "With the envelopes verified, the processing custodian does the composition itself: the workforce and agent mix is drafted to sit within its bounded proportions and envelopes, in the form the activity defines. The drafting working papers are preserved for audit.",
+    "business_purpose": "It exists because proportions and envelopes only become an organisation once somebody composes the actual mix within them.",
+    "practical_context": "It starts once checking is complete and the verified envelopes are ready to be composed within, and it ends with the drafted mix produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management composes the mix draft within the bounded envelopes, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-conceive-verify-ffu4cz": {
+    "plain_language_name": "Check the Envelopes Before Drafting the Mix",
+    "plain_language_description": "Before composition begins, the verification custodian checks the bounded envelopes against what drafting requires - that every substrate proportion carries a capacity envelope it can be drafted within. Defects are logged for rejection or repair before any composition is attempted.",
+    "business_purpose": "It exists so the mix is never composed inside a frame that was incomplete to begin with.",
+    "practical_context": "It runs once the intake is registered and the envelopes can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one bounded envelope missing for a substrate proportion and logs the defect before drafting begins."
+    }
+  },
+  "processes:task-ao-conceive-record-35mq4u": {
+    "plain_language_name": "File the Coordination Boundary Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the boundary trail at its required retention tier and sets the retrieval handles for it. Where each boundary was drawn, and within which spans, stays readable whenever coordination between units and substrates comes into question.",
+    "business_purpose": "It exists so the boundaries between units and substrates can be evidenced whenever coordination is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the boundary trail at its retention tier and sets the retrieval handles a coordination review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-kuwh5f": {
+    "plain_language_name": "Confirm the Bounded Coordination Boundaries",
+    "plain_language_description": "When the boundaries stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the boundaries are settled and the model frame can be assembled.",
+    "business_purpose": "It exists so the model frame is consolidated only over boundaries confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the bounded boundaries await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drawn boundaries against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-ao-conceive-intake-74qbkn": {
+    "plain_language_name": "Receive the Reporting Spans for Boundary Work",
+    "plain_language_description": "Boundary drawing opens when the bounded reporting spans are handed over as the frame the boundaries must sit within. The intake custodian accepts them, registers the handover with audit identifiers, and starts the boundary work on a recorded footing.",
+    "business_purpose": "It exists so coordination boundaries are drawn from a registered span frame rather than from informal lines.",
+    "practical_context": "It opens when the reporting spans are presented for the boundary work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded reporting spans as the boundary baseline, with audit references, and opens the drawing work."
+    }
+  },
+  "processes:task-ao-conceive-transform-u8de85": {
+    "plain_language_name": "Draw the Coordination Boundaries Between Units and Substrates",
+    "plain_language_description": "With the spans verified, the processing custodian draws the boundaries themselves: where each organizational unit ends and each substrate begins, and how they coordinate across the line, is worked out and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because units and substrates only cooperate cleanly once the line between them is drawn and agreed.",
+    "practical_context": "It starts once checking is complete and the verified spans are ready to be drawn within, and it ends with the bounded coordination boundaries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management draws the coordination boundaries between units and substrates, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-conceive-verify-x4jqga": {
+    "plain_language_name": "Check the Spans Before Drawing the Boundaries",
+    "plain_language_description": "Before any boundary is drawn, the verification custodian checks the reporting spans against what the boundary work requires - that each unit and substrate can be placed against a settled span. Defects are logged for rejection or repair before any boundary is fixed.",
+    "business_purpose": "It exists so the units and substrates are never separated by boundaries drawn over unsettled spans.",
+    "practical_context": "It runs once the intake is registered and the spans can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a substrate with no settled span to sit against and logs the defect before boundaries are drawn."
+    }
+  },
+  "processes:task-ao-conceive-record-93y2fw": {
+    "plain_language_name": "File the Reporting Span Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the span trail at its required retention tier and sets the retrieval handles for it. Where each span limit was set, and on what principles, remains readable whenever the model's reporting lines are questioned.",
+    "business_purpose": "It exists so the reporting limits set for the model can be evidenced whenever they are tested.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the span trail at its retention tier and sets the retrieval handles a later governance review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-rdnemf": {
+    "plain_language_name": "Confirm the Bounded Reporting Spans",
+    "plain_language_description": "When the spans stand bounded, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The boundary step that follows learns the spans are fixed and available to bound the units against.",
+    "business_purpose": "It exists so coordination boundaries are drawn only over spans confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the bounded spans await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded spans against the activity's intended outcome and issues the confirmation the boundary work depends on."
+    }
+  },
+  "processes:task-ao-conceive-intake-w93vm2": {
+    "plain_language_name": "Receive the Structure Principles for Span Work",
+    "plain_language_description": "Span bounding opens when the derived structure principles are handed over as the rules the spans must respect. The intake custodian accepts them, registers the handover with audit identifiers, and starts the span work from a recorded baseline.",
+    "business_purpose": "It exists so reporting spans are bounded from a registered set of principles rather than from habit.",
+    "practical_context": "It opens when the structure principles are presented for the span work, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the derived principles as the span baseline, with audit references, and opens the bounding work."
+    }
+  },
+  "processes:task-ao-conceive-transform-vfnn2q": {
+    "plain_language_name": "Set the Reporting Spans the Model Will Permit",
+    "plain_language_description": "With the principles verified, the processing custodian sets the spans themselves: the reporting limits the organization model will permit are worked out and fixed in the form the activity defines. Working papers behind each limit are preserved for audit.",
+    "business_purpose": "It exists because a model without settled reporting spans invites the sprawl the principles were drawn to prevent.",
+    "practical_context": "It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the bounded reporting spans produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management fixes the reporting spans the model will permit, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-conceive-verify-2b42z3": {
+    "plain_language_name": "Check the Principles Before Bounding the Spans",
+    "plain_language_description": "Before any span is bounded, the verification custodian checks the structure principles against what the span work requires - that they are complete enough to bound spans against. Gaps are logged for rejection or repair before any limit is fixed.",
+    "business_purpose": "It exists so reporting limits are never set on principles that leave the question half answered.",
+    "practical_context": "It runs once the intake is registered and the principles can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the principles silent on one reporting relationship and logs the gap before any span is bounded."
+    }
+  },
+  "processes:task-ao-conceive-record-qcrv2x": {
+    "plain_language_name": "File the Model Frame Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the consolidation trail at its required retention tier and sets the retrieval handles for it. What went into the committed frame, and on whose confirmation, stays on file for the life of the model.",
+    "business_purpose": "It exists so the model frame's standing as committed guidance can be evidenced whenever design leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the consolidation trail at its retention tier and sets the retrieval handles a design review would draw on."
+    }
+  },
+  "processes:task-ao-conceive-confirm-uwmbev": {
+    "plain_language_name": "Confirm the Committed Organization Model Frame",
+    "plain_language_description": "When the frame stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work downstream learns the committed frame is ready to be received.",
+    "business_purpose": "It exists so structure design starts only from a frame that has been confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed frame awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed frame against the activity's intended outcome and issues the confirmation structure design is waiting on."
+    }
+  },
+  "processes:task-ao-conceive-intake-28bbvx": {
+    "plain_language_name": "Receive the Bounded Boundaries for Consolidation",
+    "plain_language_description": "Consolidation opens when the bounded coordination boundaries are handed over as the last pieces of the model frame. The intake custodian accepts them, registers the handover with audit identifiers, and puts the consolidation on a recorded footing.",
+    "business_purpose": "It exists so the frame is consolidated from a registered set of boundaries rather than from loose pieces.",
+    "practical_context": "It opens when the bounded boundaries are presented for consolidation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded coordination boundaries as the consolidation baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-ao-conceive-transform-pp9z4f": {
+    "plain_language_name": "Consolidate the Organization Model Frame",
+    "plain_language_description": "With the boundaries verified, the processing custodian consolidates the frame itself: principles, spans, and boundaries are brought together into the framed organization model and set down in the form the activity defines, ready for structure design. Working papers are preserved for audit.",
+    "business_purpose": "It exists because principles, spans, and boundaries only govern once they are consolidated into one committed frame.",
+    "practical_context": "It starts once checking is complete and the verified boundaries are ready to be consolidated, and it ends with the committed organization model frame produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian brings the principles, spans, and boundaries together into the framed model and sets it down for structure design, keeping the working papers."
+    }
+  },
+  "processes:task-ao-conceive-verify-jd8auf": {
+    "plain_language_name": "Check the Boundaries Before Consolidating the Frame",
+    "plain_language_description": "Before the frame is consolidated, the verification custodian checks the bounded boundaries against what consolidation requires - that the pieces together make a complete, coherent model frame. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the organisation never commits a model frame assembled from incomplete pieces.",
+    "practical_context": "It runs once the intake is registered and the boundaries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds two boundary sets that overlap unstably and logs the defect before the frame is consolidated."
+    }
+  },
+  "processes:task-ao-conceive-record-5v86ga": {
+    "plain_language_name": "File the Structure Principles Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the derivation trail at its required retention tier and sets the retrieval handles for it. Which principles were drawn, and from what strategy reading, stays provable whenever the framed model is examined.",
+    "business_purpose": "It exists so the principles behind the model frame can be evidenced against the strategy that produced them.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the derivation trail at its retention tier and sets the retrieval handles a later design review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-umqt6v": {
+    "plain_language_name": "Confirm the Derived Structure Principles",
+    "plain_language_description": "When the principles stand derived, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The span-bounding step that follows learns the principles are settled and available to bound against.",
+    "business_purpose": "It exists so the model is framed over principles that have been confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the derived principles await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the derived principles against the activity's intended outcome and issues the confirmation the span work depends on."
+    }
+  },
+  "processes:task-ao-conceive-intake-wkpzyw": {
+    "plain_language_name": "Receive the Committed Strategy for Principle Work",
+    "plain_language_description": "The framing work begins here: the committed organization and agent strategy is handed over as the source the structure principles will be drawn from. The intake custodian accepts it, registers it with audit identifiers, and lays the derivation on a recorded base.",
+    "business_purpose": "It exists so structure principles are derived from a registered strategy rather than from preference.",
+    "practical_context": "It opens when the committed strategy is presented for the derivation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the committed strategy as the derivation baseline, with audit references, and opens the principles work."
+    }
+  },
+  "processes:task-ao-conceive-transform-74yerj": {
+    "plain_language_name": "Draw the Structure Principles from the Strategy",
+    "plain_language_description": "With the strategy verified, the processing custodian makes the derivation itself: the structure principles the framed model will enforce are drawn out of the committed strategy and set down in the form the activity defines. Working papers behind the derivation are preserved.",
+    "business_purpose": "It exists because a strategy only shapes the organisation once its intent has been turned into enforceable principles.",
+    "practical_context": "It starts once checking is complete and the verified strategy is ready to be drawn from, and it ends with the derived structure principles produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function draws the structure principles out of the committed strategy, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-conceive-verify-hrrppt": {
+    "plain_language_name": "Check the Strategy Before Deriving the Principles",
+    "plain_language_description": "Before any principle is drawn, the verification custodian checks the strategy against what the derivation requires - that its direction can actually be read into structure principles. Defects are flagged for rejection or repair before the derivation is made.",
+    "business_purpose": "It exists so the framed model never rests on principles drawn from an unsound strategy.",
+    "practical_context": "It runs once the intake is registered and the strategy can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the strategy's direction ambiguous on a key point and flags the defect before any principle is drawn."
+    }
+  },
+  "processes:task-ao-conceive-record-64h33j": {
+    "plain_language_name": "File the Agent Capacity Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the capacity trail at its required retention tier and sets the retrieval handles for it. How much capacity was committed, and against which imperatives, remains readable whenever the strategy's reach is questioned.",
+    "business_purpose": "It exists so the capacity behind the strategy can be evidenced against the imperatives it answers.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the capacity trail at its retention tier and sets the retrieval handles a later strategy review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-zzeaqr": {
+    "plain_language_name": "Confirm the Bounded Agent Capacity",
+    "plain_language_description": "When the capacity stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The drafting step that follows learns the capacity is fixed and the strategy can be drafted within it.",
+    "business_purpose": "It exists so the strategy is drafted only within capacity confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the bounded capacity awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded capacity against the activity's intended outcome and issues the confirmation the drafting step waits on."
+    }
+  },
+  "processes:task-ao-conceive-intake-m6n7dw": {
+    "plain_language_name": "Receive the Sensed Imperatives for Capacity Work",
+    "plain_language_description": "Capacity bounding opens when the sensed organization imperatives are handed over as the demands the capacity must answer. The intake custodian accepts them, registers the handover with audit identifiers, and starts the bounding work from a recorded baseline.",
+    "business_purpose": "It exists so agent capacity is bounded against a registered set of imperatives rather than against appetite.",
+    "practical_context": "It opens when the sensed imperatives are presented for the capacity work, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the sensed imperatives as the capacity baseline, with audit references, and opens the bounding work."
+    }
+  },
+  "processes:task-ao-conceive-transform-pvk8v9": {
+    "plain_language_name": "Bound the Agent Capacity the Strategy Will Commit",
+    "plain_language_description": "With the imperatives verified, the processing custodian bounds the capacity itself: the agent capacity the organization and agent strategy will commit is worked out and fixed in the form the activity defines. Working papers behind the bound are preserved for audit.",
+    "business_purpose": "It exists because a strategy that names no capacity commits to nothing and delivers accordingly.",
+    "practical_context": "It starts once checking is complete and the verified imperatives are ready to be sized from, and it ends with the bounded agent capacity produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function fixes the agent capacity the strategy will commit, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-conceive-verify-3xm4az": {
+    "plain_language_name": "Check the Imperatives Before Bounding the Capacity",
+    "plain_language_description": "Before any capacity is bounded, the verification custodian checks the sensed imperatives against what the capacity work requires - that each imperative is concrete enough to size capacity against. Gaps are logged for rejection or repair before any bound is fixed.",
+    "business_purpose": "It exists so the capacity the strategy commits is never sized against imperatives that were never fully read.",
+    "practical_context": "It runs once the intake is registered and the imperatives can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one imperative too vague to size against and logs the gap before the capacity bound is fixed."
+    }
+  },
+  "processes:task-ao-conceive-record-b5duf6": {
+    "plain_language_name": "File the Strategy Commitment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What direction was committed, within which capacity, and on whose confirmation, stays on file for the life of the strategy.",
+    "business_purpose": "It exists so the strategy's standing as committed direction can be evidenced whenever its consequences are reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a strategy review would draw on."
+    }
+  },
+  "processes:task-ao-conceive-confirm-nyzkbc": {
+    "plain_language_name": "Confirm the Committed Organization and Agent Strategy",
+    "plain_language_description": "When the strategy stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The framing and conception work downstream learns the committed strategy is ready to be received.",
+    "business_purpose": "It exists so framing and conception start only from a strategy confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed strategy awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed strategy against the activity's intended outcome and issues the confirmation the framing work is waiting on."
+    }
+  },
+  "processes:task-ao-conceive-intake-nkc5qc": {
+    "plain_language_name": "Receive the Drafted Strategy for Commitment",
+    "plain_language_description": "Commitment opens when the drafted organization and agent strategy is handed over as the direction the enterprise will be asked to stand behind. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.",
+    "business_purpose": "It exists so the strategy is committed from a registered draft rather than from an informal proposal.",
+    "practical_context": "It opens when the drafted strategy is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the drafted strategy as the commitment baseline, with audit references, and opens the commitment work."
+    }
+  },
+  "processes:task-ao-conceive-transform-ak27hu": {
+    "plain_language_name": "Commit the Strategy for Framing and Mix Conception",
+    "plain_language_description": "With the draft verified, the processing custodian works the commitment itself: the organization and agent strategy is ratified and set down in the form the activity defines, ready to be handed onward to organization model framing and mix conception. Working papers from the commitment are preserved.",
+    "business_purpose": "It exists because a strategy only steers the enterprise once it is committed and handed to the work it directs.",
+    "practical_context": "It starts once checking is complete and the verified draft is ready to be committed, and it ends with the committed strategy produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian ratifies the strategy and sets it down for model framing and mix conception to receive, keeping the working papers."
+    }
+  },
+  "processes:task-ao-conceive-verify-n5bgj6": {
+    "plain_language_name": "Check the Drafted Strategy Before Commitment",
+    "plain_language_description": "Before the enterprise commits, the verification custodian checks the drafted strategy against what commitment requires - that it sits within the bounded capacity and settles the direction for both the model and the mix. Anything out of bounds is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the enterprise never commits a strategy that breaks its own capacity bounds.",
+    "practical_context": "It runs once the intake is registered and the draft can be compared with the activity's requirements, and it finishes with the draft verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the drafted strategy reaching past its capacity bound and logs the breach for repair before commitment."
+    }
+  },
+  "processes:task-ao-conceive-record-cp6w7c": {
+    "plain_language_name": "File the Strategy Draft Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the drafting trail at its required retention tier and sets the retrieval handles for it. How the strategy was written within its capacity bound stays readable from the record alone.",
+    "business_purpose": "It exists so the drafted strategy can be evidenced against the capacity it was written within.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the drafting trail at its retention tier and sets the retrieval handles a later strategy review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-xbvh32": {
+    "plain_language_name": "Confirm the Drafted Organization and Agent Strategy",
+    "plain_language_description": "When the draft stands written, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the drafted strategy is ready to be ratified.",
+    "business_purpose": "It exists so the strategy is ratified only from a draft confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the drafted strategy awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drafted strategy against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-ao-conceive-intake-r7mpxu": {
+    "plain_language_name": "Receive the Bounded Capacity for Strategy Drafting",
+    "plain_language_description": "Strategy drafting opens when the bounded agent capacity is handed over as the envelope the strategy must be written within. The intake custodian accepts the handover, registers it with audit identifiers, and puts the drafting on a recorded footing.",
+    "business_purpose": "It exists so the strategy is drafted within a registered capacity bound rather than beyond it.",
+    "practical_context": "It opens when the bounded capacity is presented for the drafting, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded capacity as the drafting baseline, with audit references, and opens the strategy work."
+    }
+  },
+  "processes:task-ao-conceive-transform-webqte": {
+    "plain_language_name": "Draft the Organization and Agent Strategy",
+    "plain_language_description": "With the capacity verified, the processing custodian does the drafting itself: the strategy direction for the organization model and the workforce-and-agent mix is written within the bounded capacity, in the form the activity defines. Drafting working papers are preserved for audit.",
+    "business_purpose": "It exists because capacity without direction idles, and direction without capacity overcommits - the draft is where the two are reconciled.",
+    "practical_context": "It starts once checking is complete and the verified capacity is ready to be written within, and it ends with the drafted strategy produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function writes the strategy draft - direction for the model and the mix - within the bounded capacity, keeping the working papers."
+    }
+  },
+  "processes:task-ao-conceive-verify-hxbqbz": {
+    "plain_language_name": "Check the Capacity Before Drafting the Strategy",
+    "plain_language_description": "Before drafting begins, the verification custodian checks the bounded capacity against what the drafting requires - that the capacity is settled enough for a direction to be written within it. Defects are logged for rejection or repair before any drafting is attempted.",
+    "business_purpose": "It exists so the strategy is never written into an envelope that was not settled to begin with.",
+    "practical_context": "It runs once the intake is registered and the capacity can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the capacity bound leaving a substrate unaddressed and logs the defect before drafting begins."
+    }
+  },
+  "processes:task-ao-conceive-record-xemrvs": {
+    "plain_language_name": "File the Imperatives Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the sensing trail at its required retention tier and sets the retrieval handles for it. What imperatives were sensed, and from which signals, stays provable whenever the strategy's origins are examined.",
+    "business_purpose": "It exists so the imperatives behind the strategy can be evidenced against the signals that produced them.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the sensing trail at its retention tier and sets the retrieval handles a later strategy review would consult."
+    }
+  },
+  "processes:task-ao-conceive-confirm-n3yt6g": {
+    "plain_language_name": "Confirm the Sensed Organization Imperatives",
+    "plain_language_description": "When the imperatives stand sensed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The capacity bounding that follows learns the imperatives are settled and available to bound against.",
+    "business_purpose": "It exists so capacity is bounded against imperatives that have been confirmed, not against a first reading.",
+    "practical_context": "It begins once preparation is complete and the sensed imperatives await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the sensed imperatives against the activity's intended outcome and issues the confirmation the capacity work needs."
+    }
+  },
+  "processes:task-ao-conceive-intake-7cqf6y": {
+    "plain_language_name": "Receive the Enterprise Strategy and Substrate Signals",
+    "plain_language_description": "Sensing opens when the enterprise strategy and the substrate signals around it are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the imperatives will be read from.",
+    "business_purpose": "It exists so imperatives are sensed from a registered strategy and registered signals rather than from impressions.",
+    "practical_context": "It opens when the strategy and signals are presented for the sensing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the enterprise strategy and substrate signals as the sensing baseline, with audit references."
+    }
+  },
+  "processes:task-ao-conceive-transform-tar56c": {
+    "plain_language_name": "Read the Imperatives Driving the Agentive Fabric",
+    "plain_language_description": "With the inputs verified, the processing custodian does the sensing itself: the imperatives driving a new or reframed agentive fabric - substrate shifts among them - are read out and set down as the sensed imperatives, in the form the activity defines. Working papers are preserved.",
+    "business_purpose": "It exists because strategy work can only answer imperatives somebody has actually read and written down.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the sensed imperatives produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function reads the imperatives behind the reframe - substrate shifts included - and sets down the sensed list."
+    }
+  },
+  "processes:task-ao-conceive-verify-a8sbgj": {
+    "plain_language_name": "Check the Signals Before Reading the Imperatives",
+    "plain_language_description": "Before any imperative is read, the verification custodian checks the strategy and signals against what the sensing requires - that the signals are current and the strategy reading is complete. Defects are flagged for rejection or repair before the sensing is made.",
+    "business_purpose": "It exists so the strategy work never sets out from stale signals or a half-read strategy.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one substrate signal out of date and flags the defect before the imperatives are read."
+    }
+  },
+  "processes:task-ao-design-record-5qjm8t": {
+    "plain_language_name": "File the Placement Classification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the classification trail at its required retention tier and sets the retrieval handles for it. How each role and work item was typed, and against what frame, stays readable whenever placements are later questioned.",
+    "business_purpose": "It exists so the typing behind each placement can be evidenced whenever the topology is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the classification trail at its retention tier and sets the retrieval handles a topology review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-mpyusn": {
+    "plain_language_name": "Confirm the Classified Placement Candidates",
+    "plain_language_description": "When the typing is complete, the confirmation custodian reconciles the classified candidates against the outcome the activity set out to reach and issues the confirmation. The placement decisions that follow learn the candidates are typed and ready to be decided.",
+    "business_purpose": "It exists so placement is decided only over candidates confirmed as fully classified.",
+    "practical_context": "It begins once preparation is complete and the classified candidates await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the classified candidates against the activity's intended outcome and issues the confirmation the placement step needs."
+    }
+  },
+  "processes:task-ao-design-intake-phd29j": {
+    "plain_language_name": "Receive the Model Frame for Classification",
+    "plain_language_description": "Classification opens when the committed organization model frame is handed over as the structure whose roles and work items will be typed. The intake custodian accepts it, registers it with audit identifiers, and starts the classification from a recorded baseline.",
+    "business_purpose": "It exists so placement candidates are classified from a registered model frame rather than from ad hoc lists.",
+    "practical_context": "It opens when the model frame is presented for classification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed model frame as the classification baseline, with audit references, and opens the typing work."
+    }
+  },
+  "processes:task-ao-design-transform-w96a2p": {
+    "plain_language_name": "Type Each Role and Work Item as a Placement Candidate",
+    "plain_language_description": "With the frame verified, the processing custodian makes the classification itself: each role and work item is typed as a candidate for human, artificial, or hybrid placement, and the classified list is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because placement can only be decided well when the candidates have first been typed honestly.",
+    "practical_context": "It starts once checking is complete and the verified frame is ready to be classified from, and it ends with the classified placement candidates produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority types every role and work item in the frame as a human, artificial, or hybrid candidate."
+    }
+  },
+  "processes:task-ao-design-verify-fq9vmu": {
+    "plain_language_name": "Check the Model Frame Before Classification",
+    "plain_language_description": "Before any candidate is typed, the verification custodian checks the model frame against what classification requires - that its roles and work items are enumerated fully enough to classify. Gaps are logged for rejection or repair before any typing is done.",
+    "business_purpose": "It exists so no role or work item escapes classification because the frame was read incompletely.",
+    "practical_context": "It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the frame enumerating only part of a unit's work items and logs the gap before classification proceeds."
+    }
+  },
+  "processes:task-ao-design-record-q6xez9": {
+    "plain_language_name": "File the Agent Topology Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the consolidation trail at its required retention tier and sets the retrieval handles for it. What was committed as the canonical topology, and on whose confirmation, stays on file for the life of the arrangement.",
+    "business_purpose": "It exists so the topology's standing as the canonical reference can be evidenced whenever activation leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the consolidation trail at its retention tier and sets the retrieval handles an activation review would draw on."
+    }
+  },
+  "processes:task-ao-design-confirm-hcwv62": {
+    "plain_language_name": "Confirm the Committed Agent Topology",
+    "plain_language_description": "When the topology stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The activation work downstream learns the canonical reference is ready to be received.",
+    "business_purpose": "It exists so activation starts only from a topology confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed topology awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed topology against the activity's intended outcome and issues the confirmation activation is waiting on."
+    }
+  },
+  "processes:task-ao-design-intake-k4xv7a": {
+    "plain_language_name": "Receive the Designed Topology for Commitment",
+    "plain_language_description": "Commitment opens when the designed agent topology is handed over as the arrangement the enterprise will run on. The intake custodian accepts the handover, registers it with audit identifiers, and puts the consolidation on a recorded footing.",
+    "business_purpose": "It exists so the topology is committed from a registered design rather than from working drafts.",
+    "practical_context": "It opens when the designed topology is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the designed agent topology as the consolidation baseline, with audit references, and opens the commitment work."
+    }
+  },
+  "processes:task-ao-design-transform-tya739": {
+    "plain_language_name": "Consolidate the Topology into the Canonical Reference",
+    "plain_language_description": "With the design verified, the processing custodian consolidates the topology itself: the designed arrangement is brought together, ratified, and set down in the form the activity defines as the canonical reference downstream activation will work from. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a topology only steers the organisation once it is one committed reference instead of many drafts.",
+    "practical_context": "It starts once checking is complete and the verified design is ready to be consolidated, and it ends with the committed agent topology produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority consolidates the designed topology into the canonical reference activation will work from, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-ufmeb2": {
+    "plain_language_name": "Check the Designed Topology Before Commitment",
+    "plain_language_description": "Before the topology is committed, the verification custodian checks it against what commitment requires - that the design hangs together as one coherent arrangement ready to serve as the canonical reference. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so activation never runs against a topology committed in an incoherent state.",
+    "practical_context": "It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds two coordination patterns contradicting each other and logs the defect before the topology is committed."
+    }
+  },
+  "processes:task-ao-design-record-asz7z4": {
+    "plain_language_name": "File the Substrate Placement Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the placement trail at its required retention tier and sets the retrieval handles for it. Why each candidate was placed human, artificial, or hybrid stays readable whenever the topology's balance is examined.",
+    "business_purpose": "It exists so the reasoning behind each placement can be evidenced whenever the topology is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the placement trail at its retention tier and sets the retrieval handles a later balance review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-ekthzw": {
+    "plain_language_name": "Confirm the Decided Substrate Placements",
+    "plain_language_description": "When the placements stand decided, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the placements are settled and the topology can be assembled.",
+    "business_purpose": "It exists so the topology is assembled only over placements confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the decided placements await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the decided placements against the activity's intended outcome and issues the confirmation the consolidation step depends on."
+    }
+  },
+  "processes:task-ao-design-intake-a44ny6": {
+    "plain_language_name": "Receive the Classified Candidates for Placement",
+    "plain_language_description": "Placement opens when the classified candidates are handed over as the roles and work items awaiting their substrate decisions. The intake custodian accepts the handover, registers it with audit identifiers, and starts the deciding work from a recorded baseline.",
+    "business_purpose": "It exists so placement decisions are made over a registered candidate list rather than ad hoc.",
+    "practical_context": "It opens when the classified candidates are presented for placement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the classified candidates as the placement baseline, with audit references, and opens the deciding work."
+    }
+  },
+  "processes:task-ao-design-transform-4rpycs": {
+    "plain_language_name": "Decide Each Candidate's Human, Artificial, or Hybrid Placement",
+    "plain_language_description": "With the candidates registered and checked, the processing custodian makes the placement decisions themselves: each classified candidate is assigned its human, artificial, or hybrid substrate, and the decided placements are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because classification only names the question - placement is where the topology actually gets decided.",
+    "practical_context": "It starts once checking is complete and the verified candidates are ready to be decided, and it ends with the decided placements produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority assigns each classified candidate its substrate - human, artificial, or hybrid - keeping the working papers."
+    }
+  }
+}

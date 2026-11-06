@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-con
 
 This is a **Task** (level L4), named **Design Risk Taxonomy Confirmation**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Risk Taxonomy** (`processes:activity-ge-design-q5tqn5`). Its canonical ID is `processes:task-ge-design-confirm-k4h6a7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a taxonomy nobody has confirmed is a taxonomy nobody can classify by.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reconcile the Artefact and Confirm the Taxonomy |
+| `plain_language_description` | string | no | When the design-ready artefact exists, the confirmation custodian sets it beside the architecture's standards and the … |
+| `business_purpose` | string | no | It exists because a taxonomy nobody has confirmed is a taxonomy nobody can classify by. |
+| `practical_context` | string | no | It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

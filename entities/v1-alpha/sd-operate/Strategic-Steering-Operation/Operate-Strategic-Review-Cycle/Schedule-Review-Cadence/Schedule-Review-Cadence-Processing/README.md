@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Schedule Review Cadence Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Schedule Review Cadence** (`processes:activity-sd-operate-4yw98f`). Its canonical ID is `processes:task-sd-operate-transform-ya3f8z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the scheduling proper begins. The processing custodian sets the review dates, depth and owners that will stand until revised, producing the scheduled review cadence in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because reviews that are not on a standing calendar quietly stop happening, and the strategy drifts unwatched.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified mandate is ready to be worked, and it closes with the scheduled review cadence produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function fixes the quarterly and mid-cycle review dates with their depth and owners, keeping the scheduling workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fix the Standing Calendar of Strategic Reviews |
+| `plain_language_description` | string | no | With the inputs verified, the scheduling proper begins. The processing custodian sets the review dates, depth and … |
+| `business_purpose` | string | no | It exists because reviews that are not on a standing calendar quietly stop happening, and the strategy drifts unwatched. |
+| `practical_context` | string | no | It opens when the verified mandate is ready to be worked, and it closes with the scheduled review cadence produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

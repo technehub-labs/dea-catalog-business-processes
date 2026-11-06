@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-ve
 
 This is a **Task** (level L4), named **Deliver Improvement Projects Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Deliver Improvement Projects** (`processes:activity-eo-improve-gtarnw`). Its canonical ID is `processes:task-eo-improve-verify-nrm7uw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any project runs, the verification custodian checks the portfolio against what delivery requires - that each project is chartered with a bounded scope and a measurable aim. Defects are logged for rejection or repair before any project starts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so effort is never spent running projects that were never properly bounded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the portfolio can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a project whose aim cannot be measured and logs the defect before it starts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Charters Before the Projects Run |
+| `plain_language_description` | string | no | Before any project runs, the verification custodian checks the portfolio against what delivery requires - that each … |
+| `business_purpose` | string | no | It exists so effort is never spent running projects that were never properly bounded. |
+| `practical_context` | string | no | It runs once the intake is registered and the portfolio can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-activate-i
 
 This is a **Task** (level L4), named **Bring Operational Controls Live on the Regulated Billing Record Intake**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Bring Operational Controls Live on the Regulated Billing Record** (`processes:activity-fa-activate-utzqpn`). Its canonical ID is `processes:task-fa-activate-intake-anjpep`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The go-live opens when the regulator-mandated control framework and the billing authorization are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the bring-live work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so controls go live from the mandated framework over an issued authorization, not from local improvisation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the framework and authorization are presented for the bring-live, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the audit function registers the mandated framework and billing authorization as the bring-live baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Control Framework and the Billing Authorization |
+| `plain_language_description` | string | no | The go-live opens when the regulator-mandated control framework and the billing authorization are handed over together … |
+| `business_purpose` | string | no | It exists so controls go live from the mandated framework over an issued authorization, not from local improvisation. |
+| `practical_context` | string | no | It opens when the framework and authorization are presented for the bring-live, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

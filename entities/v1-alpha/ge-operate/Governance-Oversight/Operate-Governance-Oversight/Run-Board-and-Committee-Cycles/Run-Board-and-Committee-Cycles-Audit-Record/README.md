@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-re
 
 This is a **Task** (level L4), named **Run Board and Committee Cycles Audit Record**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Run Board and Committee Cycles** (`processes:activity-ge-operate-bjfkws`). Its canonical ID is `processes:task-ge-operate-record-8gnux8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the round is confirmed, the records custodian places the whole file - manifest, verification report, results pack, sign-off, and any remediation notes - into retention under the governance operating schedule, protected against tampering. The file stays retrievable for as long as the rules require.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cycle's history can be evidenced years later - what was decided, on what evidence, and with what corrections.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued and retention may begin, and it closes with the file stored at its retention tier and retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian seals the cycle file into retention with tamper protection and sets the retrieval handles an auditor would use.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Archive the Cycle File for the Long Term |
+| `plain_language_description` | string | no | Once the round is confirmed, the records custodian places the whole file - manifest, verification report, results pack … |
+| `business_purpose` | string | no | It exists so the cycle's history can be evidenced years later - what was decided, on what evidence, and with what … |
+| `practical_context` | string | no | It opens when the completion confirmation is issued and retention may begin, and it closes with the file stored at its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

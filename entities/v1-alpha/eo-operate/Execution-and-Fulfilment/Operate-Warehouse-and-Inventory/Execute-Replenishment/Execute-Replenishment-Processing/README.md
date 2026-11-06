@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Execute Replenishment Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Replenishment** (`processes:activity-eo-operate-9sdchy`). Its canonical ID is `processes:task-eo-operate-transform-njdkjy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the replenishment itself: each location the demand has drawn down is refilled from bulk stock, and the replenished locations are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an empty pick face stops the whole line behind it - replenishment is what keeps the picking flowing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified signals are ready to be answered, and it ends with the replenished locations produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management refills each drawn-down face from bulk before the pickers arrive, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fill the Pick Faces Back Up |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the replenishment itself: each location the demand has drawn … |
+| `business_purpose` | string | no | It exists because an empty pick face stops the whole line behind it - replenishment is what keeps the picking flowing. |
+| `practical_context` | string | no | It starts once checking is complete and the verified signals are ready to be answered, and it ends with the replenished … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Administer Benefits Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Administer Benefits** (`processes:activity-ao-operate-8sc5gr`). Its canonical ID is `processes:task-ao-operate-transform-4ayy2t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the entitlements verified, the processing custodian does the administration itself: each in-service agent's benefits are administered for the cycle and the administered benefits are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because benefits are part of the deal an agent signed up for - administered carelessly, the deal breaks.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified entitlements are ready to be administered from, and it ends with the administered benefits produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management administers each in-service agent's benefits for the cycle, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep Each Agent's Benefits Entitlements Right Each Cycle |
+| `plain_language_description` | string | no | With the entitlements verified, the processing custodian does the administration itself: each in-service agent's … |
+| `business_purpose` | string | no | It exists because benefits are part of the deal an agent signed up for - administered carelessly, the deal breaks. |
+| `practical_context` | string | no | It starts once checking is complete and the verified entitlements are ready to be administered from, and it ends with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

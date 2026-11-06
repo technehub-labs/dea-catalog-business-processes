@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-conf
 
 This is a **Task** (level L4), named **Provision Agent Capacity Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Provision Agent Capacity** (`processes:activity-ao-build-7xrz4d`). Its canonical ID is `processes:task-ao-build-confirm-fez4ve`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the capacity stands ready, the confirmation custodian reconciles what was provisioned against the outcome the activity set out to reach and issues the confirmation. The acquisition steps that draw on this capacity learn it is ready to be used.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so later acquisition proceeds against capacity that has been confirmed, not merely produced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the provisioned capacity awaits its consumers, and it closes with confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the provisioned capacity against the design's promised outcome and issues the confirmation the acquisition steps depend on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Provisioned Capacity |
+| `plain_language_description` | string | no | When the capacity stands ready, the confirmation custodian reconciles what was provisioned against the outcome the … |
+| `business_purpose` | string | no | It exists so later acquisition proceeds against capacity that has been confirmed, not merely produced. |
+| `practical_context` | string | no | It begins once preparation is complete and the provisioned capacity awaits its consumers, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

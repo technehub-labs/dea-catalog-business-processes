@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 
 This is a **Task** (level L4), named **Assign Retained-Records Custodianship Intake**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assign Retained-Records Custodianship** (`processes:activity-ge-retire-rzhc83`). Its canonical ID is `processes:task-ge-retire-intake-aa2bv5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This intake gathers what the custodianship decision rests on: the order reference, the inventory of records the entity must keep, and the drafts of the dissolution filings. The intake custodian logs each item into the wind-down file so the designation work starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the choice of custodian is made against a complete and logged record set, not a partial one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Retire-stage pack arrives for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the workforce management function logs the order reference and the records inventory into the case file before verification begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Custodianship Papers at the Start |
+| `plain_language_description` | string | no | This intake gathers what the custodianship decision rests on: the order reference, the inventory of records the entity … |
+| `business_purpose` | string | no | It exists so the choice of custodian is made against a complete and logged record set, not a partial one. |
+| `practical_context` | string | no | It opens when the Retire-stage pack arrives for the activity, and it closes with the manifest registered and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

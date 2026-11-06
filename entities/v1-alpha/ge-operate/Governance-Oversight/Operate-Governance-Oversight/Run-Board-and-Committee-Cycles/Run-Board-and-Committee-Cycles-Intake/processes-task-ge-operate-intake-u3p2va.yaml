@@ -71,3 +71,18 @@ outputs:
   description: Intake manifest registered and bound to the Run Board and Committee Cycles case file; registered intake custodian passes custody to the verification custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Cycle Pack and Open the File'
+plain_language_description: 'At the top of each cycle round, the intake custodian takes delivery of the working pack: the timetable of board and committee meetings, the queue of assurance material, the diary of risk reviews, and the compliance audit plan. Every item is logged into the cycle''s case file so nothing enters the round unaccounted.'
+business_purpose: 'It exists so the cycles run from a controlled, fully logged starting point rather than ad-hoc papers.'
+practical_context: 'It opens when the Operate-stage pack is ready to be handed over, and it closes with the manifest registered and the verification custodian holding custody.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the risk function logs the meeting timetable and assurance queue into the cycle file, then passes the pack to the verification custodian.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Draw the Retirement Closure Together with Its Evidence'
+plain_language_description: 'With the inputs verified, the closure proper begins. The processing custodian gathers the evidence that the service is gone and the residuals are routed, completing the archive and the catalogue de-listing, and produces the retirement closure record in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because a retirement is only truly finished when its evidence, archive and catalogue de-listing are gathered into one closure record.'
+practical_context: 'It opens when the verified closure material is ready to be worked, and it closes with the retirement closure record produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the proposition design authority works the verified material into the closure record, completing the archive of the withdrawn service and the de-listing from the catalogue, and keeps the workings for the audit trail.'

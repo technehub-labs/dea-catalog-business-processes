@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Sunset Materials for the Preservation Work'
+plain_language_description: 'The preservation opens as its material arrives: the directive, the supersession and the register update that together make up the sunset''s story on the plan record. The intake custodian logs them against the preservation file so the preservation starts accounted for.'
+business_purpose: 'It exists so the preservation gathers the whole sunset story as registered, leaving no piece of the record to be reconstructed from memory.'
+practical_context: 'It opens when the sunset materials are presented for preservation, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the finance function logs the directive, the supersession and the register update into the preservation file, so the assembling of the sunset record starts accounted for.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-tra
 
 This is a **Task** (level L4), named **Notify Affected Business Units Under Regulator Continuing Supervision Processing**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Notify Affected Business Units Under Regulator Continuing Supervision** (`processes:activity-sd-retire-8yt6ar`). Its canonical ID is `processes:task-sd-retire-transform-uayn6f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the notification proper begins. The processing custodian sends each tested notice on the prescribed cadence and records the acknowledgements as they return, producing the notified business units in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the affected units must hear of the sunset from the entity, on the regulator's terms, before they hear of it anywhere else.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified list is ready to be worked, and it closes with the business units notified in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function sends each tested notice on the prescribed cadence and logs the returning acknowledgements, keeping the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Send the Prescribed Notices to the Affected Business Units |
+| `plain_language_description` | string | no | With the inputs verified, the notification proper begins. The processing custodian sends each tested notice on the … |
+| `business_purpose` | string | no | It exists because the affected units must hear of the sunset from the entity, on the regulator's terms, before they … |
+| `practical_context` | string | no | It opens when the verified list is ready to be worked, and it closes with the business units notified in the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

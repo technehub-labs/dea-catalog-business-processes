@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-conf
 
 This is a **Task** (level L4), named **Commit Contractor and Partner Pool Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Commit Contractor and Partner Pool** (`processes:activity-ao-build-cxafrf`). Its canonical ID is `processes:task-ao-build-confirm-n2tkeb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the pool stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The wider organisation learns the pool is available as capacity alongside what direct acquisition supplies.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so reliance on the pool begins only from a confirmed, announced commitment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the committed pool awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the committed pool against the activity's intended outcome and issues the confirmation that opens it for use.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Committed Pool |
+| `plain_language_description` | string | no | Once the pool stands committed, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so reliance on the pool begins only from a confirmed, announced commitment. |
+| `practical_context` | string | no | It begins once preparation is complete and the committed pool awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

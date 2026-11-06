@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Tell the Committing Team the Findings Are Ready to Route'
+plain_language_description: 'The findings are drafted and must now travel. The confirmation custodian tells the downstream teams the formulated effectiveness findings are available, and closes the reconciliation against what the activity promised.'
+business_purpose: 'It exists because the routing step needs the formal word that the findings are complete and drafted to the agreed shape.'
+practical_context: 'It opens when the drafting work is finished and the findings are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity''s promise closed out.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function tells the committing team the formulated findings are available for routing into the adaptation cycle, then closes the handover against what the formulation promised.'

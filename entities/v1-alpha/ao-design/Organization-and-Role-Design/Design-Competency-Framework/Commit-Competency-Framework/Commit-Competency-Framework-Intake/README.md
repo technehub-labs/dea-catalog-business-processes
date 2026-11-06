@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Commit Competency Framework Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Commit Competency Framework** (`processes:activity-ao-design-3ebtma`). Its canonical ID is `processes:task-ao-design-intake-pwbwyx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Consolidation opens when the anchored competency assessment is handed over as the last piece of the framework. The intake custodian accepts it, registers the handover with audit identifiers, and puts the consolidation on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework is consolidated from a registered set of pieces rather than from loose papers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the anchored assessment is presented for consolidation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the anchored assessment as the consolidation baseline, with audit references, and opens the assembly.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Anchored Assessment for Framework Consolidation |
+| `plain_language_description` | string | no | Consolidation opens when the anchored competency assessment is handed over as the last piece of the framework. The … |
+| `business_purpose` | string | no | It exists so the framework is consolidated from a registered set of pieces rather than from loose papers. |
+| `practical_context` | string | no | It opens when the anchored assessment is presented for consolidation, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

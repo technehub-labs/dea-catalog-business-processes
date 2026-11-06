@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-c
 
 This is a **Task** (level L4), named **Activate Signing Authority Or Controlled-Function Designation Confirmation**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Activate Signing Authority Or Controlled-Function Designation** (`processes:activity-ao-activate-sq2zfw`). Its canonical ID is `processes:task-ao-activate-confirm-e55pff`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When preparation is finished, the confirmation custodian makes sure what was produced actually matches what the activity set out to deliver, then issues the confirmation. The supervisor and any other waiting consumers are told the activated authority is ready, and the result is reconciled against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no activation is treated as done until someone has confirmed it against the intended result and said so onward.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins when preparation is complete and the output is ready for those waiting on it, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian checks the newly prepared authority against the activity's intended result and tells the continuing supervisor that the designation is live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Activated Signing Authority |
+| `plain_language_description` | string | no | When preparation is finished, the confirmation custodian makes sure what was produced actually matches what the … |
+| `business_purpose` | string | no | It exists so no activation is treated as done until someone has confirmed it against the intended result and said so … |
+| `practical_context` | string | no | It begins when preparation is complete and the output is ready for those waiting on it, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

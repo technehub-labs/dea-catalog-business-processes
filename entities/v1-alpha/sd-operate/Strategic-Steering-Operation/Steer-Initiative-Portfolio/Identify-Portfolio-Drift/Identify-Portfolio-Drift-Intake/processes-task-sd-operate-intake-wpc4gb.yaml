@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Alignment Verdicts for the Drift Work'
+plain_language_description: 'The identification opens as its material arrives: the initiative alignment assessment showing how each in-flight initiative sits with the strategy. The intake custodian logs it against the drift file so the identification starts accounted for.'
+business_purpose: 'It exists so drift is surfaced from the registered verdicts rather than from whichever misalignment someone noticed first.'
+practical_context: 'It opens when the alignment assessment is presented for the drift work, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the alignment assessment into the drift file, so the surfacing of portfolio drift starts accounted for.'

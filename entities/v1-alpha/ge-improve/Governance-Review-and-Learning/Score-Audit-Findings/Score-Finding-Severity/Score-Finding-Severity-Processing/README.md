@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-tr
 
 This is a **Task** (level L4), named **Score Finding Severity Processing**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Score Finding Severity** (`processes:activity-ge-improve-nz4rpa`). Its canonical ID is `processes:task-ge-improve-transform-t2nd3a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the improvement for the scoring: each delivered finding is graded by its weight under the framework rubric and the assurance thresholds, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because findings treated as equals swallow the ones that matter - the grading is what gives each finding its true weight.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the audit function grades each delivered finding by its weight under the framework rubric and the assurance thresholds.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Grade Every Finding by Its Weight |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the improvement for the scoring: each delivered finding … |
+| `business_purpose` | string | no | It exists because findings treated as equals swallow the ones that matter - the grading is what gives each finding its … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

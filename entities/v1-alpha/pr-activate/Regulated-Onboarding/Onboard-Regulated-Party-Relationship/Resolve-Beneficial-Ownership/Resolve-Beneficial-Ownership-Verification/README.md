@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 
 This is a **Task** (level L4), named **Resolve Beneficial Ownership Verification**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Resolve Beneficial Ownership** (`processes:activity-pr-activate-ncn924`). Its canonical ID is `processes:task-pr-activate-verify-w58mmf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian checks who stands behind the applying entity: identity through multiple factors, sanctions and politically-exposed screening, and adverse media on the controllers. Results are reconciled and captured in a certificate naming the checks applied.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because hidden controllers are where onboarding risk concentrates, and screening them is the control that surfaces it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the risk function screens the named controllers of an applicant trust against sanctions and adverse media sources.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Screen the Owners Behind the Entity |
+| `plain_language_description` | string | no | The verification custodian checks who stands behind the applying entity: identity through multiple factors, sanctions … |
+| `business_purpose` | string | no | It exists because hidden controllers are where onboarding risk concentrates, and screening them is the control that … |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

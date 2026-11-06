@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-v
 
 This is a **Task** (level L4), named **Formulate Demand Thesis Verification**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Formulate Demand Thesis** (`processes:activity-pr-conceive-8frfby`). Its canonical ID is `processes:task-pr-conceive-verify-ewg2ta`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the thesis is written, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack falls short, the shortfall is named and a remediation set out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a demand thesis resting on weak evidence would misdirect every downstream build decision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the demand research against the framing method and clears it for writing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Demand Research Against the Method |
+| `plain_language_description` | string | no | Before the thesis is written, the verification custodian tests the pack against the methodology for framing the segment … |
+| `business_purpose` | string | no | It exists because a demand thesis resting on weak evidence would misdirect every downstream build decision. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

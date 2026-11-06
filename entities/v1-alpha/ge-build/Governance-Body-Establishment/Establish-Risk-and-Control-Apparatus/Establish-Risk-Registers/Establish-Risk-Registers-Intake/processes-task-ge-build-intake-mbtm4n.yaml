@@ -71,3 +71,18 @@ outputs:
   description: Intake manifest registered and bound to the Establish Risk Registers case file; registered intake custodian passes custody to the verification custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take Custody of the Registers Input Pack'
+plain_language_description: 'The intake custodian takes charge of the pack — the charter drafts, the policy drafts, the body-constitution proposals, the tooling specifications — and writes the manifest that ties the pack into the case file for the build.'
+business_purpose: 'It exists so the registers begin from a registered pack rather than from loose drafts.'
+practical_context: 'It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian takes charge of the drafts, proposals, and specifications, and writes the manifest that ties them into the case file.'

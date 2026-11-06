@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-ve
 
 This is a **Task** (level L4), named **Collect Strategic Performance Measures Verification**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Collect Strategic Performance Measures** (`processes:activity-sd-operate-fjj2yt`). Its canonical ID is `processes:task-sd-operate-verify-kzabsd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the measures are taken into the strategic picture, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategic picture assembled from a measure with the wrong basis or a missing period misleads every review downstream.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the measures can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests each arriving measure set against what the collection needs, and writes up one measure missing its reporting period as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Arriving Measures Before They Enter the Strategic Picture |
+| `plain_language_description` | string | no | Before the measures are taken into the strategic picture, the arriving material is put to the test. The verification … |
+| `business_purpose` | string | no | It exists because a strategic picture assembled from a measure with the wrong basis or a missing period misleads every … |
+| `practical_context` | string | no | It opens once the intake is registered and the measures can be challenged, and it closes with its shortfalls written … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

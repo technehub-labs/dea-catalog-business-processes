@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-t
 
 This is a **Task** (level L4), named **Sense Purpose Imperatives Processing**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Sense Purpose Imperatives** (`processes:activity-sd-conceive-28242h`). Its canonical ID is `processes:task-sd-conceive-transform-mkr9tw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the sensing proper begins. The processing custodian reads the establishment context and mandate signals for what they demand of the enterprise's reason for being, whether establishment, reframe or mandate, producing the sensed imperative set in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because purpose is not chosen in a vacuum; it answers establishment facts, reframing needs and mandates received.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the sensed imperative set produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function reads the verified context and mandates into a named set of purpose imperatives, marking each as establishment, reframe or mandate, and keeps the sensing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read the Imperatives Driving the Purpose Definition |
+| `plain_language_description` | string | no | With the inputs verified, the sensing proper begins. The processing custodian reads the establishment context and … |
+| `business_purpose` | string | no | It exists because purpose is not chosen in a vacuum; it answers establishment facts, reframing needs and mandates … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the sensed imperative set produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

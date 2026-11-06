@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-t
 
 This is a **Task** (level L4), named **Commit Market and Demand Thesis Processing**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Commit Market and Demand Thesis** (`processes:activity-pr-conceive-hx3r6g`). Its canonical ID is `processes:task-pr-conceive-transform-6czwmg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. Scans, hypotheses, and test plans are consolidated into a thesis package ready for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the market's lessons become one committed thesis the test design can work from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function consolidates the scans, hypotheses, and test plans into the committed thesis package.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Market and Demand Thesis |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the … |
+| `business_purpose` | string | no | It exists so the market's lessons become one committed thesis the test design can work from. |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

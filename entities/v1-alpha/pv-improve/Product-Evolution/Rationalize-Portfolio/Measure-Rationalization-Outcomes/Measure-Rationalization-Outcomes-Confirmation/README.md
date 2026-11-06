@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-co
 
 This is a **Task** (level L4), named **Measure Rationalization Outcomes Confirmation**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Measure Rationalization Outcomes** (`processes:activity-pv-improve-k3hy7t`). Its canonical ID is `processes:task-pv-improve-confirm-q9gp5d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the measuring done, the result is readied for whoever acts on it. The confirmation custodian tells the downstream teams the outcome measurement is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a measurement that sits unannounced cannot inform the next round of rationalization decisions or close out the ones already taken.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the measurement, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management announces to the portfolio review teams that the outcome measurement for the latest rationalization wave is ready, and reconciles what was produced against what the activity promised before standing the work down.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Outcome Measurements and Hand Them On |
+| `plain_language_description` | string | no | With the measuring done, the result is readied for whoever acts on it. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because a measurement that sits unannounced cannot inform the next round of rationalization decisions or … |
+| `practical_context` | string | no | It opens when processing has finished the measurement, and it closes with confirmation issued, the downstream teams … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

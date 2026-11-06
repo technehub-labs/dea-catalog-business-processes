@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-activate-c
 
 This is a **Task** (level L4), named **Activate Continuing-Supervisor Notification (Billing) Confirmation**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Continuing-Supervisor Notification (Billing)** (`processes:activity-fa-activate-6j9me8`). Its canonical ID is `processes:task-fa-activate-confirm-dw6kf3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the notification stands issued, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The oversight chain learns the notification is live and supervision of the billing can proceed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so live billing proceeds only once the notification is confirmed as issued.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the issued notification awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the issued notification against the activity's intended outcome and issues the confirmation the oversight chain needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Issued Billing Notification |
+| `plain_language_description` | string | no | When the notification stands issued, the confirmation custodian reconciles it against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so live billing proceeds only once the notification is confirmed as issued. |
+| `practical_context` | string | no | It begins once preparation is complete and the issued notification awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-t
 
 This is a **Task** (level L4), named **Bound Asset Lifecycle Envelopes Processing**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Bound Asset Lifecycle Envelopes** (`processes:activity-eo-conceive-jgb89z`). Its canonical ID is `processes:task-eo-conceive-transform-cd9bcv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the principles verified, the processing custodian does the bounding itself: the acquisition, renewal, and retirement postures within which asset decisions will be made are worked out and set down in the form the activity defines. Working papers behind the envelopes are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assets drift without lifecycle postures - bought on impulse, renewed out of habit, retired too late or never.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the lifecycle envelopes produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian draws how assets will be acquired, renewed, and retired within the footprint principles, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set How Assets Will Be Bought, Refreshed, and Retired |
+| `plain_language_description` | string | no | With the principles verified, the processing custodian does the bounding itself: the acquisition, renewal, and … |
+| `business_purpose` | string | no | It exists because assets drift without lifecycle postures - bought on impulse, renewed out of habit, retired too late … |
+| `practical_context` | string | no | It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

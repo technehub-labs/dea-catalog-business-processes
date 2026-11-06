@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-inta
 
 This is a **Task** (level L4), named **Assemble Go-to-Market Assets Intake**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Assemble Go-to-Market Assets** (`processes:activity-pv-build-d5873p`). Its canonical ID is `processes:task-pv-build-intake-eymf9j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The assembly work opens with the built offering and its launch requirements arriving. The intake custodian logs them against the assets file so the assembly starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assets assembled from an unlogged brief miss what the launch actually needs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the built offering and its launch requirements into the assets file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Launch Assets File |
+| `plain_language_description` | string | no | The assembly work opens with the built offering and its launch requirements arriving. The intake custodian logs them … |
+| `business_purpose` | string | no | It exists because assets assembled from an unlogged brief miss what the launch actually needs. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

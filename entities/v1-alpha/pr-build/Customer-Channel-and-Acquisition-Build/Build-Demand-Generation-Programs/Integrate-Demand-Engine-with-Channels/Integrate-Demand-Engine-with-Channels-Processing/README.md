@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-tran
 
 This is a **Task** (level L4), named **Integrate Demand Engine with Channels Processing**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Integrate Demand Engine with Channels** (`processes:activity-pr-build-pd7paf`). Its canonical ID is `processes:task-pr-build-transform-cy5r6w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian connects: the integration surface for the channels is provisioned, the programme assets are slotted into place, and the attribution model is calibrated across the joined path. The result is captured as an inventory of build-ready assets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a demand engine that cannot reach the market through the channels produces nothing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function connects the engine to the channels and calibrates attribution across the path.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Connect the Engine to the Channels |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian connects: the integration surface for the channels is … |
+| `business_purpose` | string | no | It exists because a demand engine that cannot reach the market through the channels produces nothing. |
+| `practical_context` | string | no | It opens when the verification report clears the build, and it closes with the asset inventory produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

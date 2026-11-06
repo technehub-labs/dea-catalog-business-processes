@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Execute Disbursements Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Execute Disbursements** (`processes:activity-ao-operate-h6hmqm`). Its canonical ID is `processes:task-ao-operate-transform-devvng`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the payroll verified, the processing custodian executes the disbursements themselves: each computed amount is paid out accurately and on schedule, and the executed disbursements are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the payroll promise is only kept when the money actually arrives, right and on time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified payroll is ready to be paid from, and it ends with the executed disbursements produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian pays out each computed amount on schedule and records the executed disbursements, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pay Out the Computed Disbursements Accurately and on Time |
+| `plain_language_description` | string | no | With the payroll verified, the processing custodian executes the disbursements themselves: each computed amount is paid … |
+| `business_purpose` | string | no | It exists because the payroll promise is only kept when the money actually arrives, right and on time. |
+| `practical_context` | string | no | It starts once checking is complete and the verified payroll is ready to be paid from, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-conf
 
 This is a **Task** (level L4), named **Stage Regulated Personnel Record Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Stage Regulated Personnel Record** (`processes:activity-ao-build-r6h2t8`). Its canonical ID is `processes:task-ao-build-confirm-hdn7za`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the staged records stand ready, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The activation work that follows learns the records are staged and ready for live use.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so activation begins only over records whose staging has been confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the staged records await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the staged records against the activity's intended outcome and issues the confirmation activation is waiting for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Staged Personnel Records |
+| `plain_language_description` | string | no | When the staged records stand ready, the confirmation custodian reconciles them against the outcome the activity set … |
+| `business_purpose` | string | no | It exists so activation begins only over records whose staging has been confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the staged records await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

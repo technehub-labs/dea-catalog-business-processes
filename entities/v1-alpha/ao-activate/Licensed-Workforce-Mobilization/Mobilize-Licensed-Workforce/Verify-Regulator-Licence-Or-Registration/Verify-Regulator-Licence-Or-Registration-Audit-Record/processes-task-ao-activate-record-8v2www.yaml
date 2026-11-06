@@ -74,3 +74,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Licence Verification Audit Record'
+plain_language_description: 'Finally the records custodian preserves the whole verification trail - licence in, checks run, record out, confirmation given - at the retention tier the evidence rules demand, with retrieval handles set for the day it is needed.'
+business_purpose: 'It exists so the licence verification can be evidenced, end to end, for as long as the retention rules require.'
+practical_context: 'It starts when the confirmation has been issued and retention may begin under the activity''s evidence requirements, and it ends with the audit record held at its tier and its retrieval handles in place.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian files the verification trail at its required tier and sets the retrieval handles a supervision review would use to call up the licence history.'

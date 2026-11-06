@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-conceive-t
 
 This is a **Task** (level L4), named **Commit Finance Strategy Processing**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Commit Finance Strategy** (`processes:activity-fa-conceive-wt82fh`). Its canonical ID is `processes:task-fa-conceive-transform-8ff8r4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the pieces verified, the processing custodian does the consolidation itself: the monetary model and the funding approach are brought together into the committed strategy, set down in the form the activity defines and ready for build. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because framings scattered across documents direct nobody - the commit is where the strategy becomes one authority ready for build.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed strategy produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function consolidates the framings into the committed money strategy, ready for build, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Framings into the Committed Strategy |
+| `plain_language_description` | string | no | With the pieces verified, the processing custodian does the consolidation itself: the monetary model and the funding … |
+| `business_purpose` | string | no | It exists because framings scattered across documents direct nobody - the commit is where the strategy becomes one … |
+| `practical_context` | string | no | It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

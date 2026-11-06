@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Update the Stage Positions of the Propositions'
+plain_language_description: 'With the signals verified, the positions themselves are read and set down. The processing custodian reads each proposition against introduction, growth, maturity, and decline, producing the stage tracking record in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because every lifecycle decision starts from where a proposition actually sits, and this step keeps that answer current.'
+practical_context: 'It opens when the verified signals are ready to be read, and it closes with the stage tracking record produced in the agreed form and the workings retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management reads the verified signals and updates the stage tracking record, holding one proposition in growth and moving another into maturity, with the workings kept for the audit trail.'

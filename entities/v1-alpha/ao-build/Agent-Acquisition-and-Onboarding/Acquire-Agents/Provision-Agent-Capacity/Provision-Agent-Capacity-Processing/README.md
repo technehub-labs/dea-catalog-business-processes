@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Provision Agent Capacity Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Provision Agent Capacity** (`processes:activity-ao-build-7xrz4d`). Its canonical ID is `processes:task-ao-build-transform-xrmfg2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the design verified, the processing custodian provisions the capacity itself, producing the agent capacity in exactly the shape the design commits to. The intermediate working artifacts are preserved along the way, so every capacity decision can be audited later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a design on paper staffs nothing until the capacity it calls for is actually provisioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified design is ready to be built from, and it ends with the capacity produced in its committed shape and the working artifacts kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian provisions the agent capacity line by line from the verified design, preserving the working artifacts behind each decision.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Agent Capacity the Design Calls For |
+| `plain_language_description` | string | no | With the design verified, the processing custodian provisions the capacity itself, producing the agent capacity in … |
+| `business_purpose` | string | no | It exists because a design on paper staffs nothing until the capacity it calls for is actually provisioned. |
+| `practical_context` | string | no | It starts once checking is complete and the verified design is ready to be built from, and it ends with the capacity … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Schedule Facility Work Orders Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Schedule Facility Work Orders** (`processes:activity-eo-operate-xzs7d8`). Its canonical ID is `processes:task-eo-operate-transform-yn3qrc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the scheduling itself: facility demand, the preventive calendar, and crew availability are converted into the scheduled, resourced book of orders, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because unbooked demand and unstaffed prevention compete for the same crews - the schedule is where they are reconciled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be scheduled from, and it ends with the scheduled book produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management books the demand and prevention around the crews that can actually do them, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn Demand and the Preventive Calendar into a Resourced Book |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the scheduling itself: facility demand, the preventive … |
+| `business_purpose` | string | no | It exists because unbooked demand and unstaffed prevention compete for the same crews - the schedule is where they are … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be scheduled from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

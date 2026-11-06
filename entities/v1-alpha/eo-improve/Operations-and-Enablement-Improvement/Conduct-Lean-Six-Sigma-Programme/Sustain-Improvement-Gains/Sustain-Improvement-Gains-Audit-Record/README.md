@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-re
 
 This is a **Task** (level L4), named **Sustain Improvement Gains Audit Record**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Sustain Improvement Gains** (`processes:activity-eo-improve-m7paec`). Its canonical ID is `processes:task-eo-improve-record-h8c667`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the sustainment trail at its required retention tier and sets the retrieval handles for it. Which gains were held, under which controls, stays readable whenever a claimed improvement is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the holding of each gain can be evidenced whenever an improvement's durability is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the sustainment trail at its retention tier and sets the retrieval handles a benefits review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Gain Sustainment Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the sustainment trail at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so the holding of each gain can be evidenced whenever an improvement's durability is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

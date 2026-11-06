@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Commission Facility Services Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Facility Services** (`processes:activity-eo-build-napwac`). Its canonical ID is `processes:task-eo-build-transform-tkpynu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the commissioning itself: the utilities, safety systems, and environmental controls are brought to operational readiness against the specifications, and the commissioned services are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a fitted building is still inert - the services commissioning is what makes it live, safe, and habitable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be commissioned, and it ends with the commissioned services produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management brings the utilities, safety systems, and environmental controls to readiness per the specifications, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Facility Services to Operational Readiness |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the commissioning itself: the utilities, safety systems, and … |
+| `business_purpose` | string | no | It exists because a fitted building is still inert - the services commissioning is what makes it live, safe, and … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be commissioned, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

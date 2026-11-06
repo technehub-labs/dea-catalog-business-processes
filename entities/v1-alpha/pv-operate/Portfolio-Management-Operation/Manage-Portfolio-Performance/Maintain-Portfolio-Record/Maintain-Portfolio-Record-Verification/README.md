@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Maintain Portfolio Record Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Portfolio Record** (`processes:activity-pv-operate-38waaf`). Its canonical ID is `processes:task-pv-operate-verify-h382u5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything moves the record, the arriving changes are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an allocation or stage change entered unchecked would leave the record stating a portfolio that does not exist.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has booked the changes in, and it closes with them verified against what the maintenance requires or their defects written down.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks an incoming allocation change against the signed rebalancing decision, finds the envelope figures do not tie out, and writes the shortfall down for rejection or for the source team to put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Portfolio Changes Before They Enter the Record |
+| `plain_language_description` | string | no | Before anything moves the record, the arriving changes are put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because an allocation or stage change entered unchecked would leave the record stating a portfolio that does … |
+| `practical_context` | string | no | It opens once intake has booked the changes in, and it closes with them verified against what the maintenance requires … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Flag Performance Deviations Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Flag Performance Deviations** (`processes:activity-sd-operate-xtgshk`). Its canonical ID is `processes:task-sd-operate-confirm-pwa2wj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The flags are set and must now travel. The confirmation custodian tells the downstream teams the flagged performance deviations are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the performance report can only carry the deviations once the flagging is closed and formally handed on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the flagging work is finished and the flags are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the reporting team the flagged deviations are available for the performance report, then closes the handover against what the flagging promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Report Builders Which Deviations Are Flagged |
+| `plain_language_description` | string | no | The flags are set and must now travel. The confirmation custodian tells the downstream teams the flagged performance … |
+| `business_purpose` | string | no | It exists because the performance report can only carry the deviations once the flagging is closed and formally handed … |
+| `practical_context` | string | no | It opens when the flagging work is finished and the flags are ready to travel, and it closes with the downstream teams … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

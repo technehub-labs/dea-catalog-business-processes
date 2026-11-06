@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-rec
 
 This is a **Task** (level L4), named **Structure Operations Model Audit Record**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Structure Operations Model** (`processes:activity-eo-design-cc2c7f`). Its canonical ID is `processes:task-eo-design-record-qn6zt5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the structuring trail at its required retention tier and sets the retrieval handles for it. How the model was shaped, and from which strategy components, stays readable whenever the design's shape is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the shape given to the model can be evidenced whenever it is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the structuring trail at its retention tier and sets the retrieval handles a design review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Model Structure Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the structuring trail at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so the shape given to the model can be evidenced whenever it is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

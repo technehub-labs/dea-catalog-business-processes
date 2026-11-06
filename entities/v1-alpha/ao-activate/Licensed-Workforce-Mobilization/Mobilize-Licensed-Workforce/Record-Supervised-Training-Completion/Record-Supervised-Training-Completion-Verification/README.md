@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-v
 
 This is a **Task** (level L4), named **Record Supervised-Training Completion Verification**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Record Supervised-Training Completion** (`processes:activity-ao-activate-bsjbfc`). Its canonical ID is `processes:task-ao-activate-verify-s6xcqs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the package registered, the verification custodian reads the completion evidence against what the role's training plan demanded. Supervised hours, sign-offs, and course coverage are compared with the requirement, and any shortfall is written down for the evidence to be rejected or put right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a training completion is only recognised when the evidence truly matches what the plan required.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once registration is done and the evidence can be checked against the activity's requirements, and it finishes with the evidence verified or its shortcomings recorded for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian checks a completion certificate against the role's training plan, notices the final supervised module is undocumented, and records the gap for remediation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Training Completion Evidence |
+| `plain_language_description` | string | no | With the package registered, the verification custodian reads the completion evidence against what the role's training … |
+| `business_purpose` | string | no | It exists so a training completion is only recognised when the evidence truly matches what the plan required. |
+| `practical_context` | string | no | It runs once registration is done and the evidence can be checked against the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

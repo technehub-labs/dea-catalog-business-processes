@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Sources Against the Path Requirements'
+plain_language_description: 'Before routes are laid, the verification custodian checks the vetted sources against what establishing activation paths requires - that each source can actually carry engagement as intended. Shortfalls are written up for rejection or repair, so no route is built on a source that cannot serve it.'
+business_purpose: 'It exists so the routes into the pool rest on sources confirmed able to carry the engagement.'
+practical_context: 'It runs once the intake is registered and each source can be compared with the activity''s requirements, and it finishes with the sources verified or the shortfalls logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian checks each vetted source''s readiness to carry engagement and logs one source as unable to serve its route, for remediation.'

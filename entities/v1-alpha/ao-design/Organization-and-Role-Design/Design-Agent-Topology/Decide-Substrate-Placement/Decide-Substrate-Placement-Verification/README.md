@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Decide Substrate Placement Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Decide Substrate Placement** (`processes:activity-ao-design-h3q5rc`). Its canonical ID is `processes:task-ao-design-verify-zau576`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any placement is decided, the verification custodian checks the classified candidates against what deciding requires - that every candidate carries its classification and enough context to be placed with confidence. Shortfalls are written up for rejection or repair before any placement is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so substrate decisions are never made over candidates that arrived incompletely classified.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the candidates can be compared with the activity's requirements, and it finishes with them verified or their shortfalls logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a candidate whose classification note is missing and logs the shortfall before any placement is decided.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Candidates Before Deciding the Placements |
+| `plain_language_description` | string | no | Before any placement is decided, the verification custodian checks the classified candidates against what deciding … |
+| `business_purpose` | string | no | It exists so substrate decisions are never made over candidates that arrived incompletely classified. |
+| `practical_context` | string | no | It runs once the intake is registered and the candidates can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

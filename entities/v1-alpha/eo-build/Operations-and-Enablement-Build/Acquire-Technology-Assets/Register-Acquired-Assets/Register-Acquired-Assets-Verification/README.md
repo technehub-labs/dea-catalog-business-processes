@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Register Acquired Assets Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Register Acquired Assets** (`processes:activity-eo-build-6335m6`). Its canonical ID is `processes:task-eo-build-verify-t5j9sh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any asset is entered, the verification custodian checks the commissioning evidence against what registration requires - that it covers every acquired asset and proves each one's readiness. Gaps are logged for rejection or repair before the entries are created.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the asset record never carries an entry no evidence stands behind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an asset with no commissioning proof behind it and logs the gap before entries are created.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Evidence Before Entering the Assets |
+| `plain_language_description` | string | no | Before any asset is entered, the verification custodian checks the commissioning evidence against what registration … |
+| `business_purpose` | string | no | It exists so the asset record never carries an entry no evidence stands behind. |
+| `practical_context` | string | no | It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

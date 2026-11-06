@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Requirement and the Candidate Agents'
+plain_language_description: 'The verification custodian checks both sides of the match: the capacity requirement as handed over, and the candidate agents offered against it. Where a candidate falls short of the requirement, the defect is logged for rejection or repair rather than quietly accepted.'
+business_purpose: 'It exists so agents are only acquired against a requirement that has itself been checked and found sound.'
+practical_context: 'It runs once the intake is registered and both requirement and candidates can be compared with the activity''s requirements, and it finishes with them verified or the defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian tests each candidate agent against the handed-over capacity requirement and logs one candidate as short of the mark for remediation.'

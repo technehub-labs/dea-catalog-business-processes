@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Verify Commencement Conditions and acknowledged by the governance custodian and any governing-party notify-list …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Reconcile the Record and Confirm the Checks'
+plain_language_description: 'When the activated record exists, the confirmation custodian sets it beside the instrument as constituted and the statute that governs it, reconciles the two, and issues the completion confirmation, which the governance custodian receives first and the parties now bound after, logging it into the case file.'
+business_purpose: 'It exists because checks nobody has confirmed are checks nobody can build on.'
+practical_context: 'It opens once the activated record is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian sets the record beside the instrument as constituted and the statute above it, reconciles the two, and confirms the checks to the custodian of governance and the bound parties.'

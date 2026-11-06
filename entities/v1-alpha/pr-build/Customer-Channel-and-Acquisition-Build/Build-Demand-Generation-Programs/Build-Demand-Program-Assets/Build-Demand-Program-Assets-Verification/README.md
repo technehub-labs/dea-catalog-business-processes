@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-veri
 
 This is a **Task** (level L4), named **Build Demand Program Assets Verification**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Program Assets** (`processes:activity-pr-build-da7r6t`). Its canonical ID is `processes:task-pr-build-verify-5b97a5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the assets are built, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because campaign assets that mishandle consent or personal data create exposure the moment they run.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function checks the asset plan against the privacy rules and flags a data-quality gap.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Asset Build Against Consent and Privacy Rules |
+| `plain_language_description` | string | no | Before the assets are built, the verification custodian tests the package for the build against the integration … |
+| `business_purpose` | string | no | It exists because campaign assets that mishandle consent or personal data create exposure the moment they run. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

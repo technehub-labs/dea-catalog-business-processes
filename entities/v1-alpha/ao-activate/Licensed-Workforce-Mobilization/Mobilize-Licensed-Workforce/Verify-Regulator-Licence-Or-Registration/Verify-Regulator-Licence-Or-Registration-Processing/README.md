@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-t
 
 This is a **Task** (level L4), named **Verify Regulator Licence Or Registration Processing**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Verify Regulator Licence Or Registration** (`processes:activity-ao-activate-z4yhzy`). Its canonical ID is `processes:task-ao-activate-transform-prfsve`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the licence has measured up, the processing custodian shapes the finding into the verified licence record the activity promises, together with the scope-of-practice attestation that travels with it. The comparison working papers are preserved so the verification can be retraced later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a licence check becomes a usable, evidenced record rather than a conclusion somebody remembers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts when checking is complete and the verified findings are ready to be worked into their final form, and it ends with the licence record and scope attestation produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian turns the completed licence checks into the verified licence record and its scope attestation, filing the working papers behind them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare the Verified Licence Record |
+| `plain_language_description` | string | no | Once the licence has measured up, the processing custodian shapes the finding into the verified licence record the … |
+| `business_purpose` | string | no | It exists so a licence check becomes a usable, evidenced record rather than a conclusion somebody remembers. |
+| `practical_context` | string | no | It starts when checking is complete and the verified findings are ready to be worked into their final form, and it ends … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

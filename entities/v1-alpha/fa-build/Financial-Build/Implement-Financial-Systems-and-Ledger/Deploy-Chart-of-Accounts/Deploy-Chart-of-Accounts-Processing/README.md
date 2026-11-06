@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Deploy Chart of Accounts Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Deploy Chart of Accounts** (`processes:activity-fa-build-napuha`). Its canonical ID is `processes:task-fa-build-transform-jf33mp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the structure verified, the processing custodian does the deployment itself: the designed chart is stood up inside the financial systems and made live, and the deployed chart is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a chart on paper classifies nothing - deployment is where the enterprise's financial language actually starts working.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified structure is ready to be stood up, and it ends with the deployed chart produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function stands the designed account structure up live inside the systems, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stand the Account Structure Up in the Systems |
+| `plain_language_description` | string | no | With the structure verified, the processing custodian does the deployment itself: the designed chart is stood up inside … |
+| `business_purpose` | string | no | It exists because a chart on paper classifies nothing - deployment is where the enterprise's financial language … |
+| `practical_context` | string | no | It starts once checking is complete and the verified structure is ready to be stood up, and it ends with the deployed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Identify Capability Gaps Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Identify Capability Gaps** (`processes:activity-ao-improve-eyvh62`). Its canonical ID is `processes:task-ao-improve-transform-pjf8cs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the baseline verified, the processing custodian makes the identification itself: where the population's measured competencies fall short of the framework's requirements is read out and set down as the identified capability gaps, in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because development can only be aimed at shortfalls somebody has actually identified and recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified baseline is ready to be read from, and it ends with the identified capability gaps produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian reads where the population falls short of the framework and records the identified gaps, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read the Gaps Between Baseline and Framework Requirements |
+| `plain_language_description` | string | no | With the baseline verified, the processing custodian makes the identification itself: where the population's measured … |
+| `business_purpose` | string | no | It exists because development can only be aimed at shortfalls somebody has actually identified and recorded. |
+| `practical_context` | string | no | It starts once checking is complete and the verified baseline is ready to be read from, and it ends with the identified … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

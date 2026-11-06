@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-con
 
 This is a **Task** (level L4), named **Resolve Residual Obligations Confirmation**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Resolve Residual Obligations** (`processes:activity-pv-retire-6b3zth`). Its canonical ID is `processes:task-pv-retire-confirm-emnknh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the obligations are routed. The confirmation custodian tells the downstream teams the routed residuals are available, and closes the reconciliation against what the activity promised for the resolution.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each owning team formally knows it now holds a duty for a retired offering, instead of discovering it when a claim arrives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the routed obligations are ready to hand on, and it closes with the confirmation issued and the resolution's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the proposition design authority notifies support and records management that their routed duties are on record, reconciles the routing against what the resolution promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Owning Teams Their Residual Duties Have Landed |
+| `plain_language_description` | string | no | The confirming opens once the obligations are routed. The confirmation custodian tells the downstream teams the routed … |
+| `business_purpose` | string | no | It exists so each owning team formally knows it now holds a duty for a retired offering, instead of discovering it when … |
+| `practical_context` | string | no | It opens when the routed obligations are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Draft Strategic Initiatives Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Draft Strategic Initiatives** (`processes:activity-sd-build-547hm5`). Its canonical ID is `processes:task-sd-build-transform-23bt2f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the drafting proper begins. The processing custodian sketches the initiative set the scope calls for, each with its intent and edge, producing the drafted initiatives in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a choice only becomes doable once someone gives it shape as concrete candidate initiatives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the drafted initiatives produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function drafts the candidate initiatives within the verified scope, stating each one's intent and boundary, and keeps the drafting workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Initiatives Within the Bounded Scope |
+| `plain_language_description` | string | no | With the inputs verified, the drafting proper begins. The processing custodian sketches the initiative set the scope … |
+| `business_purpose` | string | no | It exists because a choice only becomes doable once someone gives it shape as concrete candidate initiatives. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the drafted initiatives produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

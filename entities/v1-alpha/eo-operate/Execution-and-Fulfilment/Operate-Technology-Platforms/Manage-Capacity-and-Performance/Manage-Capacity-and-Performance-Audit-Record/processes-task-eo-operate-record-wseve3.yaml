@@ -74,3 +74,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Capacity Posture Audit Record'
+plain_language_description: 'At the close the records custodian preserves the balancing trail at its required retention tier and sets the retrieval handles for it. What the demand was doing, and how the platforms were tuned to meet it, stays readable whenever a slowdown is examined.'
+business_purpose: 'It exists so the tuning behind the platforms'' behaviour can be evidenced whenever a slowdown is questioned.'
+practical_context: 'It starts once the confirmation has been issued and retention may begin under the activity''s evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian files the balancing trail at its retention tier and sets the retrieval handles a platform review would consult.'

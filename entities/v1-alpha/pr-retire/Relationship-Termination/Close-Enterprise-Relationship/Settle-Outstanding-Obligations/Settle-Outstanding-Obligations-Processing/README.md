@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 
 This is a **Task** (level L4), named **Settle Outstanding Obligations Processing**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Settle Outstanding Obligations** (`processes:activity-pr-retire-zb4htq`). Its canonical ID is `processes:task-pr-retire-transform-bgb85e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. Each financial and contractual obligation is fulfilled or settled, and the evidence is produced as a record pack ready for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a relationship cannot close cleanly while either party still owes the other.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in supplier and partner management settles each outstanding obligation and records the settlement evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Settle What the Relationship Still Owes |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and … |
+| `business_purpose` | string | no | It exists because a relationship cannot close cleanly while either party still owes the other. |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

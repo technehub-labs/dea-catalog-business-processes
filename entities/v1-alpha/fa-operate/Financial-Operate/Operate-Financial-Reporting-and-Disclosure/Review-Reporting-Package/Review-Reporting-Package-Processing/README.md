@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Review Reporting Package Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Review Reporting Package** (`processes:activity-fa-operate-mceyb8`). Its canonical ID is `processes:task-fa-operate-transform-sav5mw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the package verified, the processing custodian does the reviewing itself: the assembled package is read the way a sceptical outsider would read it, its weaknesses found and mended, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the world reads kindly only after the enterprise has read harshly - the review is where that harshness is spent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified package is ready to be read, and it ends with the reviewed package produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function reads the package as its harshest reader and mends what the read finds, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read the Package as Its Harshest Reader |
+| `plain_language_description` | string | no | With the package verified, the processing custodian does the reviewing itself: the assembled package is read the way a … |
+| `business_purpose` | string | no | It exists because the world reads kindly only after the enterprise has read harshly - the review is where that … |
+| `practical_context` | string | no | It starts once checking is complete and the verified package is ready to be read, and it ends with the reviewed package … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

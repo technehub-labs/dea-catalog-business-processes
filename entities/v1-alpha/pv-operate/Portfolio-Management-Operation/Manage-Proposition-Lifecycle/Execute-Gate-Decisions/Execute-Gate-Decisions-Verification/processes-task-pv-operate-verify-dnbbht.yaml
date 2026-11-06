@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Gate Decisions Against Their Criteria'
+plain_language_description: 'Before a gate decision is acted on, the arriving papers are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.'
+business_purpose: 'It exists because executing a gate decision that does not line up with the stage criteria would advance or hold a proposition on shaky ground.'
+practical_context: 'It opens once intake has registered the decision papers, and it closes with them verified against the gate requirements or their defects logged.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in product management checks a gate decision against the criteria for its stage boundary, notices the paper omits the evidence the criteria call for, and writes the shortfall down for the review board to put right.'

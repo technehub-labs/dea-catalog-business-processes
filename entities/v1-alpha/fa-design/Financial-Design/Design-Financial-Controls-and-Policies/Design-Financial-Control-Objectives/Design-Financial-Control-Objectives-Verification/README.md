@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-ver
 
 This is a **Task** (level L4), named **Design Financial Control Objectives Verification**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Control Objectives** (`processes:activity-fa-design-2qrkhv`). Its canonical ID is `processes:task-fa-design-verify-e9cet7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is set, the verification custodian checks the bounded gaps against what designing requires - that each is bounded completely enough to be answered by an objective. Defects are logged for rejection or repair before the objectives are set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no objective is set against a gap that was only partly bounded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the gaps can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a gap whose boundary is unstated and logs the defect before the objectives are set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Gaps Before Setting the Objectives |
+| `plain_language_description` | string | no | Before anything is set, the verification custodian checks the bounded gaps against what designing requires - that each … |
+| `business_purpose` | string | no | It exists so no objective is set against a gap that was only partly bounded. |
+| `practical_context` | string | no | It runs once the intake is registered and the gaps can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)
