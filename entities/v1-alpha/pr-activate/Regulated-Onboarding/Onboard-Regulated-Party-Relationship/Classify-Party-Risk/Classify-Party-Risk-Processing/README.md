@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 
 This is a **Task** (level L4), named **Classify Party Risk Processing**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Classify Party Risk** (`processes:activity-pr-activate-p53h54`). Its canonical ID is `processes:task-pr-activate-transform-buxbcw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian turns verification results into a rating: the party identifier is pinned down, the risk classification is computed, and the diligence tier follows from it. The output is a party record that meets the master-data standard.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise treats each applicant according to the risk they actually present, with the tier driving how much scrutiny follows.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the application, and it closes with the rated party record produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the risk function rates a new corporate applicant, sets the enhanced-diligence tier, and produces the party record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Rate the Applicant's Risk and Set the Diligence Tier |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian turns verification results into a rating: the party identifier … |
+| `business_purpose` | string | no | It exists so the enterprise treats each applicant according to the risk they actually present, with the tier driving … |
+| `practical_context` | string | no | It opens when the verification certificate clears the application, and it closes with the rated party record produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

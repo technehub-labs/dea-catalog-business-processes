@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Verify Ledger Implementation Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Verify Ledger Implementation** (`processes:activity-fa-build-ee89qu`). Its canonical ID is `processes:task-fa-build-transform-btx3ja`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the build verified, the processing custodian does the proving itself: the systems and ledger are exercised against the plan structure and the controls design, and the readiness determination is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a ledger that was never exercised is a promise nobody has tested - proving is where the books are shown to hold.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified build is ready to be proven, and it ends with the readiness determination produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function exercises the books against the structure and controls and records the determination, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prove the Books Ready to Run |
+| `plain_language_description` | string | no | With the build verified, the processing custodian does the proving itself: the systems and ledger are exercised against … |
+| `business_purpose` | string | no | It exists because a ledger that was never exercised is a promise nobody has tested - proving is where the books are … |
+| `practical_context` | string | no | It starts once checking is complete and the verified build is ready to be proven, and it ends with the readiness … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

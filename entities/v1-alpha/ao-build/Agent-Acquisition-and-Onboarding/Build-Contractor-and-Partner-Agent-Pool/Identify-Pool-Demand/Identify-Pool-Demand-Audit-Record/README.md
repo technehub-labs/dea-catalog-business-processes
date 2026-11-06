@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 This is a **Task** (level L4), named **Identify Pool Demand Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Identify Pool Demand** (`processes:activity-ao-build-yjbucg`). Its canonical ID is `processes:task-ao-build-record-yyq4b4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the demand-reading trail at its required retention tier and establishes the retrieval handles for it. What demand was expected, and on what plan it was based, stays provable when the pool's shape is later questioned.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the demand behind the pool can be evidenced against the plan it was read from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the demand-reading trail at its retention tier and sets the retrieval handles a later pool review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Demand Identification Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the demand-reading trail at its required retention tier and establishes … |
+| `business_purpose` | string | no | It exists so the demand behind the pool can be evidenced against the plan it was read from. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

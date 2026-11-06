@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-t
 
 This is a **Task** (level L4), named **Assess Footprint Options Processing**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Assess Footprint Options** (`processes:activity-eo-conceive-9vsfbw`). Its canonical ID is `processes:task-eo-conceive-transform-8d6vrc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the assessment itself: the candidate footprint options are weighed against the framed principles over the market geography, and the assessed option set with its recommendation is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a footprint chosen without weighing the options is a commitment made blind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be weighed on, and it ends with the assessed option set produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function weighs each candidate footprint against the principles and records the assessed set with its recommendation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Weigh the Candidate Footprints Against the Principles |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the assessment itself: the candidate footprint options are … |
+| `business_purpose` | string | no | It exists because a footprint chosen without weighing the options is a commitment made blind. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be weighed on, and it ends with the assessed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

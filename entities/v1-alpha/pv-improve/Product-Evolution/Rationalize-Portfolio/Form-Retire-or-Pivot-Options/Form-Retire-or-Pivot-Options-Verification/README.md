@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-ve
 
 This is a **Task** (level L4), named **Form Retire-or-Pivot Options Verification**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Form Retire-or-Pivot Options** (`processes:activity-pv-improve-vaxgzn`). Its canonical ID is `processes:task-pv-improve-verify-ke92bq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any retire-or-pivot option is drawn up, the incoming justification assessments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because options drawn up on an unsound justification assessment would steer a failing proposition toward the wrong path.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the assessment material, and it closes with the material verified fit or its shortcomings written down for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management receives the justification assessment for a proposition that missed its targets and confirms it carries the evidence the option work needs before anything is drawn up.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Justification Assessments Feeding the Option Set |
+| `plain_language_description` | string | no | Before any retire-or-pivot option is drawn up, the incoming justification assessments are put to the test. The … |
+| `business_purpose` | string | no | It exists because options drawn up on an unsound justification assessment would steer a failing proposition toward the … |
+| `practical_context` | string | no | It opens once intake has registered the assessment material, and it closes with the material verified fit or its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

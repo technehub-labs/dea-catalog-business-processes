@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-con
 
 This is a **Task** (level L4), named **Commit Strategic Scenarios Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Strategic Scenarios** (`processes:activity-sd-design-jgwe2n`). Its canonical ID is `processes:task-sd-design-confirm-4es8q4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the scenarios are committed. The confirmation custodian tells the downstream teams the committed scenarios are available, and closes the reconciliation against what the activity promised for the commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so scenario operation runs from one confirmed set rather than from whichever story resonated last.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed scenarios are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function releases the committed scenarios to the monitoring teams, reconciles them against what the commitment promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Release the Committed Scenarios to the Monitoring Teams |
+| `plain_language_description` | string | no | The confirming opens once the scenarios are committed. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so scenario operation runs from one confirmed set rather than from whichever story resonated last. |
+| `practical_context` | string | no | It opens when the committed scenarios are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

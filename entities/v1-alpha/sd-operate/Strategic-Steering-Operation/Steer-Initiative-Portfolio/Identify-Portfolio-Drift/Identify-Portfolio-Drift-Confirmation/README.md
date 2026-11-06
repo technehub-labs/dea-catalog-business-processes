@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Identify Portfolio Drift Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Identify Portfolio Drift** (`processes:activity-sd-operate-sxnm8p`). Its canonical ID is `processes:task-sd-operate-confirm-sb22eq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The drift is named and must now travel. The confirmation custodian tells the downstream teams the identified portfolio drift is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the option work cannot start until it holds the formal, closed statement of what is out of line.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the identification work is finished and the drift statement is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the options team the identified drift is available for their rebalancing work, then closes the handover against what the identification promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Options Team Where the Drift Sits |
+| `plain_language_description` | string | no | The drift is named and must now travel. The confirmation custodian tells the downstream teams the identified portfolio … |
+| `business_purpose` | string | no | It exists because the option work cannot start until it holds the formal, closed statement of what is out of line. |
+| `practical_context` | string | no | It opens when the identification work is finished and the drift statement is ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

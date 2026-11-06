@@ -118,3 +118,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Definition Inputs Before Defining the Paths'
+plain_language_description: 'Before any path is defined, the verification custodian checks the catalogue and supervision matrix against what definition requires - that every licensed role in the catalogue has a supervision line to define against. Gaps are flagged for rejection or repair before the paths are written.'
+business_purpose: 'It exists so no licensed role is left without its notification path because its supervision line was missing.'
+practical_context: 'It runs once the intake is registered and the inputs can be compared with the activity''s requirements, and it finishes with them verified or their gaps logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a licensed role with no supervision line in the matrix and flags the gap before its path is defined.'

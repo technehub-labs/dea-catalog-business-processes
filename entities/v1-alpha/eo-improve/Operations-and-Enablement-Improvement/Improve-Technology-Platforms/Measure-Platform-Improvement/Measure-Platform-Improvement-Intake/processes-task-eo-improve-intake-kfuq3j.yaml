@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Implemented Upgrades for Measurement'
+plain_language_description: 'Measurement opens when the implemented upgrades are handed over together with the gap baseline they were meant to move. The intake custodian accepts both, registers them with audit identifiers, and starts the measurement from a recorded base.'
+business_purpose: 'It exists so upgrades are judged against the registered baseline they were promised on.'
+practical_context: 'It opens when the implemented upgrades and baseline are presented for measurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the implemented upgrades and the baseline as the measurement baseline, with audit references, and opens the judging work.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-con
 
 This is a **Task** (level L4), named **Execute Strategic Comparison Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Execute Strategic Comparison** (`processes:activity-sd-design-dgkmm5`). Its canonical ID is `processes:task-sd-design-confirm-3rgyaj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the comparison stands. The confirmation custodian tells the downstream teams the comparison results are available, and closes the reconciliation against what the activity promised for the comparing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the preference is read from confirmed results rather than from a scorecard still being tallied.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the comparison results are ready to hand on, and it closes with the confirmation issued and the comparing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the comparison results to the articulation team, reconciles them against what the comparing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Comparison Results to the Preference Articulation |
+| `plain_language_description` | string | no | The confirming opens once the comparison stands. The confirmation custodian tells the downstream teams the comparison … |
+| `business_purpose` | string | no | It exists so the preference is read from confirmed results rather than from a scorecard still being tallied. |
+| `practical_context` | string | no | It opens when the comparison results are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

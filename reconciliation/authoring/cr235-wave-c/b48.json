@@ -1,0 +1,582 @@
+{
+ "processes:task-sd-improve-intake-k7ukdu": {
+  "plain_language_name": "Log the Arriving Signals, Performance Figures and Review Findings",
+  "plain_language_description": "The consolidation opens as its material arrives: the environmental signals, the monitored performance figures and the review findings that all point the same way. The intake custodian logs them against the consolidation file so the consolidation starts accounted for.",
+  "business_purpose": "It exists so the case for changing direction is built from logged, counted material rather than from impressions that drift in and out of the room.",
+  "practical_context": "It opens when the signals, performance figures and review findings are presented for consolidation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the quarter's environmental signals, the monitored performance figures and the last review's findings into the consolidation file, so the work of building the adaptation case starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-5n2vea": {
+  "plain_language_name": "Test the Arriving Signals and Evidence Before Building the Case",
+  "plain_language_description": "Before any case for change is assembled, the arriving signals, performance evidence and findings are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a case for changing direction built on a misread signal or a stale figure would steer the whole adaptation on false ground.",
+  "practical_context": "It opens once the intake is registered and the arriving material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks each arriving signal and performance figure against what the consolidation requires, and writes up an out-of-date market reading as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-bfb4hs": {
+  "plain_language_name": "Build the Consolidated Case for Changing Direction",
+  "plain_language_description": "With the inputs verified, the consolidation proper begins. The processing custodian draws the tested signals, performance evidence and findings together into a single adaptation case, producing it in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because scattered signals and loose figures persuade no one; the direction change needs one case that carries the whole argument.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the consolidated adaptation case produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function brings the tested market signals, the performance figures and the review findings together into one adaptation case, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-xn96bq": {
+  "plain_language_name": "Hand the Consolidated Adaptation Case to the Next Team",
+  "plain_language_description": "The case is built and now must be passed on. The confirmation custodian tells the downstream teams the consolidated adaptation case is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the formulation work that follows cannot start until someone has formally said the case is complete and handed it over.",
+  "practical_context": "It opens when the consolidation work is finished and the case is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function lets the formulation team know the adaptation case is on their desk, then checks the delivered case back against what the consolidation promised before closing the handover."
+  }
+ },
+ "processes:task-sd-improve-record-qrsswk": {
+  "plain_language_name": "File the Adaptation Case Record Where It Can Be Found Again",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so that months later, when people ask what evidence drove the change of direction, the case and its workings can be produced.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the case record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the adaptation case with its supporting signals and figures at the agreed retention tier, and tags it so a reviewer can pull it up by name a year later."
+  }
+ },
+ "processes:task-sd-improve-intake-xpj72c": {
+  "plain_language_name": "Take In the Consolidated Case for Change",
+  "plain_language_description": "The formulation opens as its material arrives: the consolidated adaptation case that says why the direction must move. The intake custodian logs it against the formulation file so the formulation starts accounted for.",
+  "business_purpose": "It exists so the drafting of candidate adjustments begins from a registered case, not from a document circulating by email.",
+  "practical_context": "It opens when the consolidated adaptation case is presented for formulation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the arrival of the consolidated adaptation case in the formulation file, so the drafting of candidate adjustments starts from accounted-for material."
+  }
+ },
+ "processes:task-sd-improve-verify-ah9bb9": {
+  "plain_language_name": "Test the Case Before Drafting Any Adjustments",
+  "plain_language_description": "Before candidate adjustments are drafted, the arriving case material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because adjustments drafted to answer a shaky case would send the strategy chasing a problem it does not have.",
+  "practical_context": "It opens once the intake is registered and the case can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the adaptation case against what the formulation needs, and writes up a driver whose evidence is thin as a shortfall to be filled before drafting starts."
+  }
+ },
+ "processes:task-sd-improve-transform-h97z65": {
+  "plain_language_name": "Draft the Candidate Adjustments to the Strategic Direction",
+  "plain_language_description": "With the inputs verified, the drafting proper begins. The processing custodian works the tested case into concrete candidate adjustments, producing them in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a case for change on its own changes nothing; someone has to turn it into options the organisation can weigh.",
+  "practical_context": "It opens when the verified case is ready to be worked, and it closes with the candidate direction adjustments produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function turns the tested adaptation case into two or three candidate direction adjustments, each written up to the agreed shape with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-ha9bx7": {
+  "plain_language_name": "Tell the Assessors the Candidate Adjustments Are Ready",
+  "plain_language_description": "The drafting is done and the options must now travel. The confirmation custodian tells the downstream teams the candidate direction adjustments are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the implications assessment that follows needs to know exactly which candidates are on the table and that drafting has closed.",
+  "practical_context": "It opens when the drafting work is finished and the candidates are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the assessment team the candidate adjustments are available for their implications work, then reconciles the delivered set against what the formulation promised."
+  }
+ },
+ "processes:task-sd-improve-record-wvjf2e": {
+  "plain_language_name": "File the Drafting Record of the Candidate Adjustments",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show which candidates were drafted, on whose case, and why they took the shape they did.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the drafting record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the candidate adjustments with the case they answered, sets the retrieval handles, and leaves the trail ready for whoever reviews the decision next year."
+  }
+ },
+ "processes:task-sd-improve-intake-abu9a4": {
+  "plain_language_name": "Take In the Candidate Adjustments for Implications Work",
+  "plain_language_description": "The assessment opens as its material arrives: the candidate direction adjustments drafted against the adaptation case. The intake custodian logs them against the assessment file so the assessment starts accounted for.",
+  "business_purpose": "It exists so the implications work covers exactly the candidates on the register, with none slipping in or out unrecorded.",
+  "practical_context": "It opens when the candidate adjustments are presented for assessment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs each candidate direction adjustment into the assessment file, so the implications work starts with every candidate accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-x447pz": {
+  "plain_language_name": "Test the Candidate Adjustments Before Assessing Their Reach",
+  "plain_language_description": "Before implications are traced, the arriving candidate adjustments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because implications traced from a half-formed candidate would misstate the cost and reach of the change across plan and portfolio.",
+  "practical_context": "It opens once the intake is registered and the candidates can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests each arriving candidate against what the assessment needs, and writes up one candidate whose targets are unstated as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-gpryru": {
+  "plain_language_name": "Trace What Each Candidate Would Mean for Plan and Portfolio",
+  "plain_language_description": "With the inputs verified, the assessment proper begins. The processing custodian works each tested candidate through objectives, targets, the strategic plan and the initiative portfolio, producing the assessed implications in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the choice between candidates is blind until someone has traced what each would do to objectives, targets, plan and portfolio.",
+  "practical_context": "It opens when the verified candidates are ready to be worked, and it closes with the assessed adjustment implications produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function traces each candidate adjustment through the objectives, the targets, the plan and the live initiative portfolio, writing up the assessed implications with the workings kept."
+  }
+ },
+ "processes:task-sd-improve-confirm-zxdqgy": {
+  "plain_language_name": "Tell the Decision Makers the Implications Are Assessed",
+  "plain_language_description": "The tracing is done and the results must travel. The confirmation custodian tells the downstream teams the assessed adjustment implications are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the commitment decision needs to know the implications work is finished and what it concluded for each candidate.",
+  "practical_context": "It opens when the assessment work is finished and the implications are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the committing team the assessed implications are available for the direction decision, then reconciles the delivered assessment against what the activity promised."
+  }
+ },
+ "processes:task-sd-improve-intake-9dr6bv": {
+  "plain_language_name": "Take In the Assessed Implications for the Direction Decision",
+  "plain_language_description": "The commitment opens as its material arrives: the assessed implications of each candidate direction adjustment. The intake custodian logs them against the commitment file so the commitment starts accounted for.",
+  "business_purpose": "It exists so the direction decision is made on registered, complete implications rather than on whichever assessment reached the room last.",
+  "practical_context": "It opens when the assessed implications are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the assessed implications of every candidate into the commitment file, so the direction decision starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-p39b57": {
+  "plain_language_name": "Test the Assessed Implications Before the Direction Is Changed",
+  "plain_language_description": "Before the direction is committed, the arriving implications material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a direction committed on incomplete or untested implications commits the organisation to consequences nobody traced.",
+  "practical_context": "It opens once the intake is registered and the implications can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving implications against what the commitment needs, and writes up a candidate whose portfolio impact was never traced as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-e2ngzt": {
+  "plain_language_name": "Settle the Selected Direction and Prepare the Handoff",
+  "plain_language_description": "With the inputs verified, the commitment proper begins. The processing custodian settles which candidate becomes the direction and prepares the handoff for objectives refresh and effectiveness review, producing the committed adjustment in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because assessed options change nothing until one is selected, ratified and formally handed to the teams who must act on it.",
+  "practical_context": "It opens when the verified implications are ready to be worked, and it closes with the committed direction adjustment produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function records which candidate the leadership has ratified as the new direction, and prepares the handoff pack for the objectives refresh and the effectiveness review, workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-trcxdz": {
+  "plain_language_name": "Hand the Committed Direction to Refresh and Review Teams",
+  "plain_language_description": "The direction is settled and the handoff must be sealed. The confirmation custodian tells the downstream teams the committed direction adjustment is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the objectives refresh and the effectiveness review cannot start until someone has formally told them the new direction is in force.",
+  "practical_context": "It opens when the commitment work is finished and the new direction is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the objectives refresh and effectiveness review teams the committed direction is available, then closes the handover by reconciling it against what the commitment promised."
+  }
+ },
+ "processes:task-sd-improve-record-8cq2g9": {
+  "plain_language_name": "File the Record of the Direction Change",
+  "plain_language_description": "After the handoff, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can always show when the direction changed, on which assessed implications, and under whose commitment.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the commitment record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the committed direction with the implications it rested on, sets the retrieval handles, and leaves a trail any auditor can follow from decision to evidence."
+  }
+ },
+ "processes:task-sd-improve-intake-c52fz8": {
+  "plain_language_name": "Take In the Monitored Performance for the Evidence Gathering",
+  "plain_language_description": "The gathering opens as its material arrives: the monitored strategic performance that shows how the current objectives are really doing. The intake custodian logs it against the gathering file so the gathering starts accounted for.",
+  "business_purpose": "It exists so the evidence against which objectives will be judged is complete on arrival, not assembled from whatever reports happen to surface.",
+  "practical_context": "It opens when the monitored performance is presented for gathering, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the monitored performance reports into the gathering file, so the evidence work on the current objectives starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-mnzdf8": {
+  "plain_language_name": "Test the Performance Material Before It Judges the Objectives",
+  "plain_language_description": "Before the evidence is used to judge objectives, the arriving performance material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because objectives judged on miscounted or stale performance would be redrafted to answer the wrong story.",
+  "practical_context": "It opens once the intake is registered and the performance material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests each arriving performance report against what the gathering requires, and writes up one metric missing its baseline as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-fuknj3": {
+  "plain_language_name": "Assemble the Evidence Against Each Current Objective",
+  "plain_language_description": "With the inputs verified, the gathering proper begins. The processing custodian lines the tested performance up against each objective and target, producing the gathered evidence in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because raw monitoring tells nobody anything until it is arranged objective by objective and the comparison is ready to read.",
+  "practical_context": "It opens when the verified performance is ready to be worked, and it closes with the gathered objective performance evidence produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function arranges the tested performance figures against every current objective and target, producing the gathered evidence pack with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-b9rgk4": {
+  "plain_language_name": "Tell the Fit Assessors the Evidence Is Assembled",
+  "plain_language_description": "The evidence is gathered and must now travel. The confirmation custodian tells the downstream teams the gathered objective performance evidence is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the fit assessment cannot open until it knows the evidence set is complete and formally handed over.",
+  "practical_context": "It opens when the gathering work is finished and the evidence is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the fit assessment team the gathered evidence is available, then closes the handover by reconciling the delivered set against what the gathering promised."
+  }
+ },
+ "processes:task-sd-improve-record-x6w3d7": {
+  "plain_language_name": "File the Evidence Pack for Later Judgement of the Objectives",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so that when the refreshed objectives are later questioned, the performance evidence behind the judgement can be produced intact.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the evidence record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the gathered evidence pack at the agreed retention tier and tags it by objective, so a later review can pull exactly what the judgement rested on."
+  }
+ },
+ "processes:task-sd-improve-intake-atfrjk": {
+  "plain_language_name": "Take In the Performance Evidence for the Fit Assessment",
+  "plain_language_description": "The assessment opens as its material arrives: the gathered performance evidence set against the current objectives and targets. The intake custodian logs it against the assessment file so the assessment starts accounted for.",
+  "business_purpose": "It exists so the fit judgement covers the whole evidence set as registered, not a convenient slice of it.",
+  "practical_context": "It opens when the gathered evidence is presented for assessment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the gathered evidence pack into the assessment file, so the work of judging the current objectives starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-g7wmpg": {
+  "plain_language_name": "Test the Evidence Before the Objectives Are Judged",
+  "plain_language_description": "Before objectives and targets are judged against it, the arriving evidence is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a fit verdict delivered on evidence with holes would redraft objectives to chase phantoms.",
+  "practical_context": "It opens once the intake is registered and the evidence can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving evidence against what the fit assessment needs, and writes up a target whose measurement basis changed mid-year as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-bw7s9e": {
+  "plain_language_name": "Judge How Well Each Objective Still Fits the Evidence",
+  "plain_language_description": "With the inputs verified, the assessment proper begins. The processing custodian weighs every objective and target against the tested evidence, producing the objective fit assessment in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the redraft that follows needs to know precisely which objectives still hold and which the evidence has overtaken.",
+  "practical_context": "It opens when the verified evidence is ready to be worked, and it closes with the objective fit assessment produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function weighs each objective and target against the tested evidence and writes the fit verdict per objective, keeping the reasoning for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-dgnx9x": {
+  "plain_language_name": "Tell the Redrafters Which Objectives the Evidence Has Overtaken",
+  "plain_language_description": "The fit verdicts are in and must now travel. The confirmation custodian tells the downstream teams the objective fit assessment is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the redraft work needs the formal word that the assessment is closed and its verdicts stand ready for use.",
+  "practical_context": "It opens when the assessment work is finished and the fit verdicts are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the redrafting team the fit assessment is available, then reconciles the delivered verdicts against what the assessment promised before closing the handover."
+  }
+ },
+ "processes:task-sd-improve-record-pprxkr": {
+  "plain_language_name": "File the Fit Assessment Behind the Objectives Redraft",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show why each objective was kept, changed or dropped when the redraft landed.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the fit assessment record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the fit assessment with its per-objective verdicts and reasoning, sets the retrieval handles, and leaves the trail behind the redraft retrievable for years."
+  }
+ },
+ "processes:task-sd-improve-intake-rxcdp4": {
+  "plain_language_name": "Take In the Fit Verdicts for the Redraft",
+  "plain_language_description": "The redraft opens as its material arrives: the objective fit assessment saying which objectives the evidence has overtaken. The intake custodian logs it against the redraft file so the redraft starts accounted for.",
+  "business_purpose": "It exists so the rewriting starts from the registered verdicts rather than from memory of what the assessment said.",
+  "practical_context": "It opens when the fit assessment is presented for redrafting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the fit assessment into the redraft file, so the rewriting of objectives and targets starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-xau3vp": {
+  "plain_language_name": "Test the Fit Verdicts Before Any Objective Is Rewritten",
+  "plain_language_description": "Before objectives and targets are rewritten, the arriving fit verdicts are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because objectives rewritten off a misread verdict would drift away from both the evidence and the adapted direction.",
+  "practical_context": "It opens once the intake is registered and the verdicts can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving verdicts against what the redraft needs, and writes up a verdict that ignores the adapted direction as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-2stcsp": {
+  "plain_language_name": "Rewrite the Objectives and Targets to Fit the New Direction",
+  "plain_language_description": "With the inputs verified, the rewriting proper begins. The processing custodian redrafts the objectives and targets that the verdicts have overtaken, producing the redrafted set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because objectives that no longer match the direction or the evidence quietly misdirect every plan built on them.",
+  "practical_context": "It opens when the verified verdicts are ready to be worked, and it closes with the redrafted objectives and targets produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function rewrites the objectives the evidence has overtaken and recalibrates their targets, keeping the before-and-after workings for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-ewyh23": {
+  "plain_language_name": "Tell the Committing Team the Redrafted Objectives Are Ready",
+  "plain_language_description": "The rewriting is done and the new set must travel. The confirmation custodian tells the downstream teams the redrafted objectives and targets are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the ratification step needs the formal word that redrafting has closed and the new set is complete.",
+  "practical_context": "It opens when the rewriting work is finished and the new set is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the committing team the redrafted objectives and targets are available for ratification, then closes the handover against what the redraft promised."
+  }
+ },
+ "processes:task-sd-improve-record-bx5hgs": {
+  "plain_language_name": "File the Redraft Record with Its Before-and-After",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later reconstruct what the objectives used to say and why each line was redrafted.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the redraft record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the redrafted set with its before-and-after workings at the agreed retention tier, and sets the retrieval handles a later review will need."
+  }
+ },
+ "processes:task-sd-improve-intake-ewvx6y": {
+  "plain_language_name": "Take In the Redrafted Objectives for Ratification",
+  "plain_language_description": "The commitment opens as its material arrives: the redrafted objectives and targets ready to be ratified. The intake custodian logs them against the commitment file so the commitment starts accounted for.",
+  "business_purpose": "It exists so the ratification covers the registered redraft in full, with no rewritten objective arriving by side door.",
+  "practical_context": "It opens when the redrafted objectives are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the redrafted objectives and targets into the commitment file, so the ratification work starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-6uhwbh": {
+  "plain_language_name": "Test the Redrafted Set Before It Is Ratified",
+  "plain_language_description": "Before the refreshed set is ratified, the arriving redraft material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because objectives ratified with an untraceable target or a dropped line would hand planning a direction that does not hold.",
+  "practical_context": "It opens once the intake is registered and the redraft can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the redrafted set against what the commitment needs, and writes up one target with no owner or date as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-kmh5t8": {
+  "plain_language_name": "Ratify the Refreshed Objectives and Ready the Handoff",
+  "plain_language_description": "With the inputs verified, the commitment proper begins. The processing custodian settles the ratified refreshed set and prepares the handoff to planning and steering, producing the committed objectives in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because redrafted objectives govern nothing until they are ratified and formally placed in planning and steering hands.",
+  "practical_context": "It opens when the verified redraft is ready to be worked, and it closes with the committed refreshed objectives produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function finalises the ratified objective set and prepares the handoff pack for planning and steering, keeping the ratification workings for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-jkrqvn": {
+  "plain_language_name": "Hand the Refreshed Objectives to Planning and Steering",
+  "plain_language_description": "The objectives are ratified and must now travel. The confirmation custodian tells the downstream teams the committed refreshed objectives are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because planning and steering cannot align to the new objectives until they are formally told the set is in force.",
+  "practical_context": "It opens when the commitment work is finished and the refreshed set is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the planning and steering teams the refreshed objectives are available and in force, then closes the handover against what the commitment promised."
+  }
+ },
+ "processes:task-sd-improve-record-3j4add": {
+  "plain_language_name": "File the Ratification Record of the Refreshed Objectives",
+  "plain_language_description": "After the handoff, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can show who ratified the refreshed set, when it took force, and what it replaced.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the ratification record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the ratified objective set with the approval trail at the agreed retention tier, and sets the retrieval handles planning will use when questions arise."
+  }
+ },
+ "processes:task-sd-improve-intake-adqghq": {
+  "plain_language_name": "Take In the Performance and Review Records for the Evidence Build",
+  "plain_language_description": "The assembly opens as its material arrives: the monitored performance and the review-cycle records bearing on whether the direction is working. The intake custodian logs them against the assembly file so the assembly starts accounted for.",
+  "business_purpose": "It exists so the effectiveness review starts from a complete, counted record set rather than from whatever documents are at hand.",
+  "practical_context": "It opens when the performance and review records are presented for assembly, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the monitored performance reports and the review-cycle records into the assembly file, so the evidence build starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-8hwukb": {
+  "plain_language_name": "Test the Records Before They Speak for the Direction",
+  "plain_language_description": "Before the records are used to judge the direction, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a verdict on the strategy built from an incomplete record set would condemn or clear it on the wrong story.",
+  "practical_context": "It opens once the intake is registered and the records can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving records against what the assembly needs, and writes up a review cycle whose outcome notes are missing as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-3us69p": {
+  "plain_language_name": "Assemble the Outcome Evidence Against the Intended Results",
+  "plain_language_description": "With the inputs verified, the assembly proper begins. The processing custodian sets the tested records beside the outcomes the direction promised, producing the assembled evidence in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because effectiveness can only be judged where the intended outcomes and the delivered outcomes sit side by side.",
+  "practical_context": "It opens when the verified records are ready to be worked, and it closes with the assembled effectiveness evidence produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function lines the tested records up against each intended outcome of the current direction, producing the assembled evidence with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-wnq62m": {
+  "plain_language_name": "Tell the Evaluators the Effectiveness Evidence Is Assembled",
+  "plain_language_description": "The evidence is assembled and must now travel. The confirmation custodian tells the downstream teams the assembled effectiveness evidence is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the evaluation cannot open until it holds the formal, complete evidence set rather than fragments.",
+  "practical_context": "It opens when the assembly work is finished and the evidence is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the evaluation team the assembled evidence is available for their judgement, then closes the handover against what the assembly promised."
+  }
+ },
+ "processes:task-sd-improve-record-t9rasp": {
+  "plain_language_name": "File the Effectiveness Evidence Behind the Review",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the evidence behind every effectiveness verdict stays producible when later reviews revisit the same direction.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the evidence record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the assembled evidence at the agreed retention tier and sets retrieval handles by review cycle, so a later evaluation can retrieve exactly what this one saw."
+  }
+ },
+ "processes:task-sd-improve-intake-ppax9y": {
+  "plain_language_name": "Take In the Assembled Evidence for the Effectiveness Verdict",
+  "plain_language_description": "The evaluation opens as its material arrives: the assembled evidence on whether the current direction is delivering its intended outcomes. The intake custodian logs it against the evaluation file so the evaluation starts accounted for.",
+  "business_purpose": "It exists so the verdict is delivered on the registered evidence set in full, with no outcome line judged unseen.",
+  "practical_context": "It opens when the assembled evidence is presented for evaluation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the assembled evidence set into the evaluation file, so the work of judging the strategy starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-c4wwhs": {
+  "plain_language_name": "Test the Evidence Before the Strategy Is Judged",
+  "plain_language_description": "Before the verdict is reached, the arriving evidence is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a strategy judged on evidence that was never challenged receives a verdict it may not deserve.",
+  "practical_context": "It opens once the intake is registered and the evidence can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving evidence against what the evaluation needs, and writes up an outcome line measured against a moved baseline as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-8wrq9j": {
+  "plain_language_name": "Weigh the Evidence and Reach the Effectiveness Verdict",
+  "plain_language_description": "With the inputs verified, the evaluation proper begins. The processing custodian weighs the tested evidence against the outcomes the direction promised, producing the effectiveness evaluation in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because someone must move from assembled facts to a judgement the organisation can act on: effective, drifting, or failing.",
+  "practical_context": "It opens when the verified evidence is ready to be worked, and it closes with the effectiveness evaluation produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function weighs each outcome line of evidence and delivers a reasoned verdict on whether the strategy is effective, keeping the reasoning for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-449act": {
+  "plain_language_name": "Tell the Findings Team the Effectiveness Verdict Is In",
+  "plain_language_description": "The verdict is reached and must now travel. The confirmation custodian tells the downstream teams the effectiveness evaluation is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the findings and recommendations cannot be drafted until the evaluation is formally closed and its verdict stands.",
+  "practical_context": "It opens when the evaluation work is finished and the verdict is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the findings team the effectiveness evaluation is available, then closes the handover by reconciling the delivered verdict against what the evaluation promised."
+  }
+ },
+ "processes:task-sd-improve-record-2hu6gx": {
+  "plain_language_name": "File the Effectiveness Verdict with Its Reasoning",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the reasoning behind the verdict survives, ready for whoever must defend or revisit the judgement later.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the evaluation record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the verdict with its per-outcome reasoning at the agreed retention tier, and sets the retrieval handles the next review cycle will need."
+  }
+ },
+ "processes:task-sd-improve-intake-g99prz": {
+  "plain_language_name": "Take In the Effectiveness Verdict for the Findings Work",
+  "plain_language_description": "The formulation opens as its material arrives: the effectiveness evaluation with its verdict on the current strategy. The intake custodian logs it against the findings file so the formulation starts accounted for.",
+  "business_purpose": "It exists so the findings are drawn from the registered evaluation rather than from recollection of what the verdict said.",
+  "practical_context": "It opens when the effectiveness evaluation is presented for formulation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the effectiveness evaluation into the findings file, so the drafting of findings and recommendations starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-transform-a7euvz": {
+  "plain_language_name": "Draft the Review Findings and Recommendations",
+  "plain_language_description": "With the inputs verified, the drafting proper begins. The processing custodian turns the tested verdict into findings the organisation can read and recommendations it can act on, producing the formulated findings in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a verdict in a drawer changes nothing; it must become findings and recommendations with a route into the adaptation cycle.",
+  "practical_context": "It opens when the verified verdict is ready to be worked, and it closes with the formulated effectiveness findings produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes the review's findings from the tested verdict and attaches practical recommendations, keeping the drafting workings for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-fwy3ug": {
+  "plain_language_name": "Tell the Committing Team the Findings Are Ready to Route",
+  "plain_language_description": "The findings are drafted and must now travel. The confirmation custodian tells the downstream teams the formulated effectiveness findings are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the routing step needs the formal word that the findings are complete and drafted to the agreed shape.",
+  "practical_context": "It opens when the drafting work is finished and the findings are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the committing team the formulated findings are available for routing into the adaptation cycle, then closes the handover against what the formulation promised."
+  }
+ },
+ "processes:task-sd-improve-record-tawq3h": {
+  "plain_language_name": "File the Review Findings with Their Recommendations",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the review's words survive verbatim, ready to be checked against what the adaptation cycle later did with them.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the findings record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the findings and their recommendations at the agreed retention tier, sets the retrieval handles, and leaves the review's words retrievable for the next cycle."
+  }
+ },
+ "processes:task-sd-improve-intake-8zhazq": {
+  "plain_language_name": "Take In the Drafted Findings for Routing",
+  "plain_language_description": "The commitment opens as its material arrives: the formulated findings and recommendations from the strategy review. The intake custodian logs them against the commitment file so the commitment starts accounted for.",
+  "business_purpose": "It exists so every finding enters the routing step on the register, with none lost between drafting and decision.",
+  "practical_context": "It opens when the formulated findings are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drafted findings and recommendations into the commitment file, so the routing work starts accounted for."
+  }
+ },
+ "processes:task-sd-improve-verify-rjdunp": {
+  "plain_language_name": "Test the Findings Before They Enter the Adaptation Cycle",
+  "plain_language_description": "Before the findings are routed, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a finding routed with its recommendation missing would commit the adaptation cycle to act on half an argument.",
+  "practical_context": "It opens once the intake is registered and the findings can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving findings against what the commitment needs, and writes up a finding with no traceable recommendation as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-improve-transform-32zwr7": {
+  "plain_language_name": "Ratify the Findings and Set Their Route into Adaptation",
+  "plain_language_description": "With the inputs verified, the commitment proper begins. The processing custodian ratifies the tested findings and sets each one its route into the adaptation cycle, producing the committed findings in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because findings only matter when they are ratified and aimed at the work that will answer them.",
+  "practical_context": "It opens when the verified findings are ready to be worked, and it closes with the committed effectiveness findings produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function ratifies each finding and marks its route into the adaptation cycle, keeping the routing decisions for the audit trail."
+  }
+ },
+ "processes:task-sd-improve-confirm-r2xus6": {
+  "plain_language_name": "Tell the Adaptation Cycle the Findings Are Committed",
+  "plain_language_description": "The findings are committed and must now travel. The confirmation custodian tells the downstream teams the committed effectiveness findings are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the adaptation work downstream cannot pick up its queue until it is told the committed findings are in force.",
+  "practical_context": "It opens when the commitment work is finished and the findings are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the adaptation team the committed findings are available with their routes, then closes the handover against what the commitment promised."
+  }
+ },
+ "processes:task-sd-improve-record-ejaamk": {
+  "plain_language_name": "File the Committed Findings and Their Routes",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later trace which findings were committed, where each was routed, and what came of them.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the routing record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the committed findings with their adaptation routes at the agreed retention tier, and sets the retrieval handles a follow-up review will use."
+  }
+ }
+}

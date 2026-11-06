@@ -74,3 +74,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Schedule Before Running the Tasks'
+plain_language_description: 'Before any task is worked, the verification custodian checks the schedule against what execution requires - that every task names its asset, its interval, and the resources it will consume. Defects are logged for rejection or repair before any task is run.'
+business_purpose: 'It exists so crews are never dispatched to tasks that were never fully planned.'
+practical_context: 'It runs once the intake is registered and the schedule can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a task with no parts allocation behind it and logs the defect before it is run.'

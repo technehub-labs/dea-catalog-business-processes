@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-veri
 
 This is a **Task** (level L4), named **Verify Acquisition Readiness Verification**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Verify Acquisition Readiness** (`processes:activity-pr-build-p42qh7`). Its canonical ID is `processes:task-pr-build-verify-gd8h5w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the checks run, the verification custodian tests the pack against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Any violation is written up with its remedy.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a readiness verdict is worthless if the capability under test breaches its own contracts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function clears the pack for testing and flags a consent-capture gap for remediation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Built Capability Against the Design Intent |
+| `plain_language_description` | string | no | Before the checks run, the verification custodian tests the pack against the integration contract for the channels, the … |
+| `business_purpose` | string | no | It exists because a readiness verdict is worthless if the capability under test breaches its own contracts. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

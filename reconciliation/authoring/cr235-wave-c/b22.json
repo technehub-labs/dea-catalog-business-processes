@@ -1,0 +1,582 @@
+{
+  "processes:task-fa-conceive-transform-rdcjpp": {
+    "plain_language_name": "Frame How the Enterprise Will Be Capitalized",
+    "plain_language_description": "With the model verified, the processing custodian does the framing itself: where the money comes from, how it is structured, and what posture the enterprise holds are worked out within the bounded monetary model, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a monetary model without a capital answer is a ledger with no income - the framing is where the enterprise decides how it will be paid for.",
+    "practical_context": "It starts once checking is complete and the verified model is ready to be framed within, and it ends with the framed capital posture produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function frames the sources, structure, and posture for the enterprise's capital within the bounded model, keeping the working papers."
+    }
+  },
+  "processes:task-fa-conceive-verify-mrfsye": {
+    "plain_language_name": "Check the Model Before Framing the Capital Posture",
+    "plain_language_description": "Before anything is framed, the verification custodian checks the bounded monetary model against what framing requires - that its bounds are stated completely enough to frame a capital posture within. Defects are flagged for rejection or repair before the framing is made.",
+    "business_purpose": "It exists so the capital posture is never framed inside a model that was only partly bounded.",
+    "practical_context": "It runs once the intake is registered and the model can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the model's bounds unstated for one currency posture and flags the defect before the capital posture is framed."
+    }
+  },
+  "processes:task-fa-conceive-record-dna7zg": {
+    "plain_language_name": "File the Monetary Model Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. What the model bounded - currencies, conventions, recognition - stays readable whenever the enterprise's money story is examined.",
+    "business_purpose": "It exists so the money model behind every figure can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the model trail at its retention tier and sets the retrieval handles a strategy review would consult."
+    }
+  },
+  "processes:task-fa-conceive-confirm-es2pg7": {
+    "plain_language_name": "Confirm the Bounded Monetary Model",
+    "plain_language_description": "When the model stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The capital framing that follows learns the model is fixed and the posture can be framed within it.",
+    "business_purpose": "It exists so the capital posture is framed only within a model confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded model awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded model against the activity's intended outcome and issues the confirmation the capital framing needs."
+    }
+  },
+  "processes:task-fa-conceive-intake-w29pvr": {
+    "plain_language_name": "Receive the Enterprise Strategy and Jurisdictional Footprint",
+    "plain_language_description": "Model framing opens when the enterprise strategy and the jurisdictional footprint are handed over together as the ground the monetary model will be bounded from. The intake custodian accepts both, registers them with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so money is measured within a registered strategy over a registered footprint.",
+    "practical_context": "It opens when the strategy and footprint are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the enterprise strategy and footprint as the framing baseline, with audit references."
+    }
+  },
+  "processes:task-fa-conceive-transform-qt4v4e": {
+    "plain_language_name": "Set How Money Is Measured and Recognized",
+    "plain_language_description": "With the inputs verified, the processing custodian does the framing itself: the currency posture, the measurement conventions, and the basis on which value is recognized are bounded and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because every figure the enterprise will ever publish depends on how its money is measured - the model is where that is decided once, deliberately.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be bounded from, and it ends with the bounded model produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function bounds the currency posture, conventions, and recognition basis the enterprise will run under, keeping the working papers."
+    }
+  },
+  "processes:task-fa-conceive-verify-parxrx": {
+    "plain_language_name": "Check the Inputs Before Bounding the Model",
+    "plain_language_description": "Before anything is bounded, the verification custodian checks the strategy and footprint against what framing requires - that the footprint is current and the strategy reading is complete. Defects are flagged for rejection or repair before the bounding is made.",
+    "business_purpose": "It exists so the money model is never bounded from a footprint that has since moved.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the footprint missing a newly entered jurisdiction and flags the defect before the model is bounded."
+    }
+  },
+  "processes:task-fa-design-record-g7kpyy": {
+    "plain_language_name": "File the Gap Analysis Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the analysis trail at its required retention tier and sets the retrieval handles for it. What the gap was found to demand, and on what evidence, stays readable whenever the design's motive is examined.",
+    "business_purpose": "It exists so the analysis behind each design can be evidenced whenever its motive is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the analysis trail at its retention tier and sets the retrieval handles a design review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-8hhe9d": {
+    "plain_language_name": "Confirm the Bounded Gap Analysis",
+    "plain_language_description": "When the analysis stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The objectives work that follows learns the design need is bounded and can be answered.",
+    "business_purpose": "It exists so objectives are set only against an analysis confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the bounded analysis awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded analysis against the activity's intended outcome and issues the confirmation the objectives work needs."
+    }
+  },
+  "processes:task-fa-design-intake-g3w824": {
+    "plain_language_name": "Receive the Gap Identification and Audit Findings",
+    "plain_language_description": "Analysis opens when the gap identification and the audit findings are handed over together as the material the design need will be bounded from. The intake custodian accepts both, registers them with audit identifiers, and starts the analysis from a recorded baseline.",
+    "business_purpose": "It exists so the design need is bounded from registered findings rather than from impression.",
+    "practical_context": "It opens when the identification and findings are presented for the analysis, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the gap identification and audit findings as the analysis baseline, with audit references."
+    }
+  },
+  "processes:task-fa-design-transform-jrsf9d": {
+    "plain_language_name": "Bound What the Gap Actually Demands",
+    "plain_language_description": "With the material verified, the processing custodian does the analysis itself: the identified gap is read down to what its fix must actually cover, and the bounded analysis is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a gap described loosely invites a remedy aimed nowhere - bounding is what makes the design answerable.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be read, and it ends with the bounded analysis produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority reads the gap down to what its fix must cover, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-zxu5fh": {
+    "plain_language_name": "Check the Findings Before Bounding the Need",
+    "plain_language_description": "Before anything is bounded, the verification custodian checks the identification and findings against what analysis requires - that the gap is described concretely enough to bound. Defects are flagged for rejection or repair before the bounding is made.",
+    "business_purpose": "It exists so no design need is bounded from findings too thin to trust.",
+    "practical_context": "It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a gap described without its affected processes and flags the defect before the bounding is made."
+    }
+  },
+  "processes:task-fa-design-record-raadw9": {
+    "plain_language_name": "File the Controls Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed design contains, and from which pieces it was consolidated, stays on file for the life of the design.",
+    "business_purpose": "It exists so the design's standing as committed authority can be evidenced whenever implementation leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles an implementation review would draw on."
+    }
+  },
+  "processes:task-fa-design-confirm-fuj2zm": {
+    "plain_language_name": "Confirm the Committed Controls Design",
+    "plain_language_description": "When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The control implementation that follows learns the committed design is ready to be received.",
+    "business_purpose": "It exists so implementation starts only from a design confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed design against the activity's intended outcome and issues the confirmation the implementation waits on."
+    }
+  },
+  "processes:task-fa-design-intake-h8xrrj": {
+    "plain_language_name": "Receive the Analysis, Objectives, and Policies",
+    "plain_language_description": "The commit opens when the bounded analysis, the control objectives, and the policy designs are handed over together as the pieces the design must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the design is committed from registered pieces rather than from a loose sheaf of drawings.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the analysis, objectives, and policies as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-fa-design-transform-awd663": {
+    "plain_language_name": "Consolidate the Pieces into the Committed Controls Design",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: analysis, objectives, and policies are brought together into the committed controls design for implementation, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because pieces scattered across documents implement nothing - the commit is where the design becomes one authority ready for implementation.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority consolidates the pieces into the committed controls design, ready for implementation, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-bhnw5e": {
+    "plain_language_name": "Check the Pieces Before Committing the Design",
+    "plain_language_description": "Before the design is committed, the verification custodian checks the pieces against what commitment requires - that analysis, objectives, and policies are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the design is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a policy still carrying open questions and logs the defect before the design is committed."
+    }
+  },
+  "processes:task-fa-design-record-bu28z9": {
+    "plain_language_name": "File the Control Objective Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each objective was set to close, and against which gap, stays readable whenever a control's purpose is examined.",
+    "business_purpose": "It exists so the intent behind every control can be evidenced whenever a control's purpose is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the objective trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-6ua8sw": {
+    "plain_language_name": "Confirm the Control Objective Set",
+    "plain_language_description": "When the objectives stand set, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The policy work that follows learns the targets are settled and can be written toward.",
+    "business_purpose": "It exists so policies are written only over objectives confirmed as set.",
+    "practical_context": "It begins once preparation is complete and the objective set awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the objective set against the activity's intended outcome and issues the confirmation the policy work needs."
+    }
+  },
+  "processes:task-fa-design-intake-nnsrqq": {
+    "plain_language_name": "Receive the Bounded Gaps for the Objectives",
+    "plain_language_description": "Objective work opens when the bounded gaps are handed over as the shortfalls the objectives must close. The intake custodian accepts them, registers them with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so objectives are set against a registered analysis rather than against generic checklists.",
+    "practical_context": "It opens when the bounded gaps are presented for the objectives work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded gaps as the objective baseline, with audit references, and opens the designing work."
+    }
+  },
+  "processes:task-fa-design-transform-h29ej7": {
+    "plain_language_name": "Set What Each Gap Must Close Against",
+    "plain_language_description": "With the gaps verified, the processing custodian does the designing itself: the objective each bounded gap demands is worked out within the approved architecture, and the objective set is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a gap without a stated target invites a control aimed at nothing - the objective is where the fix gets its bullseye.",
+    "practical_context": "It starts once checking is complete and the verified gaps are ready to be answered, and it ends with the objective set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority states what each gap's control must achieve, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-e9cet7": {
+    "plain_language_name": "Check the Gaps Before Setting the Objectives",
+    "plain_language_description": "Before anything is set, the verification custodian checks the bounded gaps against what designing requires - that each is bounded completely enough to be answered by an objective. Defects are logged for rejection or repair before the objectives are set.",
+    "business_purpose": "It exists so no objective is set against a gap that was only partly bounded.",
+    "practical_context": "It runs once the intake is registered and the gaps can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a gap whose boundary is unstated and logs the defect before the objectives are set."
+    }
+  },
+  "processes:task-fa-design-record-f99r8j": {
+    "plain_language_name": "File the Policy Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. What each policy was written to require, and from which objective, stays readable whenever a policy's authority is examined.",
+    "business_purpose": "It exists so the writing behind every policy can be evidenced whenever a policy's authority is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles a policy review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-nenbzn": {
+    "plain_language_name": "Confirm the Designed Financial Policies",
+    "plain_language_description": "When the policies stand written, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the policies are drawn and the design can be committed.",
+    "business_purpose": "It exists so the design is committed only over policies confirmed as written.",
+    "practical_context": "It begins once preparation is complete and the designed policies await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the designed policies against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-fa-design-intake-j8jebh": {
+    "plain_language_name": "Receive the Control Objectives and Governance Posture",
+    "plain_language_description": "Policy work opens when the control objectives and the governance posture are handed over together as the two sides the policies will be written between. The intake custodian accepts both, registers them with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so policies are written from registered objectives under a registered posture.",
+    "practical_context": "It opens when the objectives and posture are presented for the policy work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the control objectives and governance posture as the policy baseline, with audit references."
+    }
+  },
+  "processes:task-fa-design-transform-bqspva": {
+    "plain_language_name": "Write the Rules the Objectives Imply",
+    "plain_language_description": "With the objectives verified, the processing custodian does the designing itself: each control objective is turned into the policy that makes it law inside the enterprise, and the policy designs are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an objective without a policy is a hope with vocabulary - the policy is where the objective becomes a rule people can follow.",
+    "practical_context": "It starts once checking is complete and the verified objectives are ready to be written from, and it ends with the policy designs produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority turns each objective into the rule that makes it binding, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-2v72jp": {
+    "plain_language_name": "Check the Objectives Before Writing the Policies",
+    "plain_language_description": "Before anything is written, the verification custodian checks the objectives against what policy work requires - that each is concrete enough to be instantiated as a rule. Defects are logged for rejection or repair before the writing begins.",
+    "business_purpose": "It exists so no policy is written from an objective too vague to legislate.",
+    "practical_context": "It runs once the intake is registered and the objectives can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an objective stated as an aspiration and logs the defect before the writing begins."
+    }
+  },
+  "processes:task-fa-design-record-cxmyj9": {
+    "plain_language_name": "File the Plan Structure Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed structure contains, and from which pieces it was consolidated, stays on file for the life of the structure.",
+    "business_purpose": "It exists so the structure's standing as committed authority can be evidenced whenever build leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a build review would draw on."
+    }
+  },
+  "processes:task-fa-design-confirm-5ac796": {
+    "plain_language_name": "Confirm the Committed Plan Structure",
+    "plain_language_description": "When the structure stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed structure is ready to be received.",
+    "business_purpose": "It exists so build starts only from a structure confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed structure awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed structure against the activity's intended outcome and issues the confirmation the build work waits on."
+    }
+  },
+  "processes:task-fa-design-intake-dygdac": {
+    "plain_language_name": "Receive the Chart, Allocation, and Controls Pieces",
+    "plain_language_description": "The commit opens when the chart design, the allocation model, and the controls design are handed over together as the pieces the structure must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the structure is committed from registered pieces rather than from a loose sheaf of drawings.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the chart, allocation, and controls pieces as the commitment baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-fa-design-transform-uqan5t": {
+    "plain_language_name": "Consolidate the Structure for the Build",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: chart, allocation, and controls are brought together into the committed plan structure for build, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because designs scattered across documents build nothing - the commit is where the structure becomes one authority ready for build.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed structure produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority consolidates the pieces into the committed plan structure, ready for build, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-hqebqm": {
+    "plain_language_name": "Check the Pieces Before Committing the Structure",
+    "plain_language_description": "Before the structure is committed, the verification custodian checks the pieces against what commitment requires - that chart, allocation, and controls are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the structure is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the allocation model resting on an earlier chart and logs the defect before the structure is committed."
+    }
+  },
+  "processes:task-fa-design-record-qbmdnb": {
+    "plain_language_name": "File the Chart Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. How the enterprise's financial record was organized, and under which strategy, stays readable whenever an account's purpose is examined.",
+    "business_purpose": "It exists so the organization behind the accounts can be evidenced whenever an account's purpose is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles an accounting review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-74w73n": {
+    "plain_language_name": "Confirm the Chart of Accounts Design",
+    "plain_language_description": "When the chart stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The allocation and controls work that follows learns the skeleton is settled and can be built against.",
+    "business_purpose": "It exists so allocation and controls proceed only over a chart confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the chart design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the drawn chart against the activity's intended outcome and issues the confirmation the allocation work needs."
+    }
+  },
+  "processes:task-fa-design-intake-kfcceh": {
+    "plain_language_name": "Receive the Framed Finance Strategy",
+    "plain_language_description": "Chart work opens when the framed finance strategy is handed over as the ground the accounts will be organized from. The intake custodian accepts it, registers it with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so accounts are organized from the committed strategy rather than from inherited habit.",
+    "practical_context": "It opens when the framed strategy is presented for the chart work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance design authority registers the framed strategy as the chart baseline, with audit references."
+    }
+  },
+  "processes:task-fa-design-transform-epkkj3": {
+    "plain_language_name": "Give the Financial Record Its Skeleton",
+    "plain_language_description": "With the strategy verified, the processing custodian does the designing itself: the accounts that will structure everything the enterprise records financially are drawn from the strategy, and the chart design is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a financial record without a chart is a drawer of receipts - the chart is what gives every entry a place and a meaning.",
+    "practical_context": "It starts once checking is complete and the verified strategy is ready to be drawn from, and it ends with the chart design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority draws the account skeleton the strategy implies, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-24hxk4": {
+    "plain_language_name": "Check the Strategy Before Drawing the Chart",
+    "plain_language_description": "Before anything is drawn, the verification custodian checks the strategy against what chart work requires - that it is the framed one and its intent covers what the accounts must classify. Defects are logged for rejection or repair before the chart is drawn.",
+    "business_purpose": "It exists so the record is never organized around a strategy that was superseded.",
+    "practical_context": "It runs once the intake is registered and the strategy can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the chart work starting from an unframed strategy draft and logs the defect before anything is drawn."
+    }
+  },
+  "processes:task-fa-design-record-cswk42": {
+    "plain_language_name": "File the Allocation Model Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. Who was made to carry which cost, and on what basis, stays readable whenever an allocation is disputed.",
+    "business_purpose": "It exists so the sharing-out of costs can be evidenced whenever an allocation is disputed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the allocation trail at its retention tier and sets the retrieval handles a cost review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-gbnck4": {
+    "plain_language_name": "Confirm the Cost Allocation Model",
+    "plain_language_description": "When the model stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The controls work that follows learns the cost bearers are settled and the structure can be safeguarded.",
+    "business_purpose": "It exists so controls are designed only over a model confirmed as drawn.",
+    "practical_context": "It begins once preparation is complete and the allocation model awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the allocation model against the activity's intended outcome and issues the confirmation the controls work needs."
+    }
+  },
+  "processes:task-fa-design-intake-bvuwfh": {
+    "plain_language_name": "Receive the Chart for the Allocation Work",
+    "plain_language_description": "Allocation work opens when the chart of accounts is handed over as the structure the costs will be shared across. The intake custodian accepts it, registers it with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so costs are shared across a registered structure rather than across guesswork.",
+    "practical_context": "It opens when the chart is presented for the allocation work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the chart of accounts as the allocation baseline, with audit references, and opens the designing work."
+    }
+  },
+  "processes:task-fa-design-transform-33qfc9": {
+    "plain_language_name": "Decide Who Carries Which Cost",
+    "plain_language_description": "With the chart verified, the processing custodian does the designing itself: how each cost finds its bearer across the enterprise is worked out over the chart, and the allocation model is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because costs unallocated are costs invisible - the model is what makes every part of the enterprise pay its own way on paper.",
+    "practical_context": "It starts once checking is complete and the verified chart is ready to be allocated across, and it ends with the allocation model produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority works out which bearer carries which cost over the chart, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-84v22e": {
+    "plain_language_name": "Check the Chart Before Deciding the Carriers",
+    "plain_language_description": "Before anything is allocated, the verification custodian checks the chart against what allocation requires - that its accounts are complete enough to receive every cost the enterprise generates. Defects are logged for rejection or repair before the designing begins.",
+    "business_purpose": "It exists so no cost is left homeless because the chart lacked its account.",
+    "practical_context": "It runs once the intake is registered and the chart can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a cost class with no receiving account and logs the defect before the designing begins."
+    }
+  },
+  "processes:task-fa-design-record-45h64a": {
+    "plain_language_name": "File the Controls Framework Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. Which safeguards were woven into the structure, and where, stays readable whenever the structure's integrity is examined.",
+    "business_purpose": "It exists so the safeguards built into the structure can be evidenced whenever its integrity is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles an integrity review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-h6ccwp": {
+    "plain_language_name": "Confirm the Embedded Controls Design",
+    "plain_language_description": "When the safeguards stand woven, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the structure is safeguarded and can be committed.",
+    "business_purpose": "It exists so the structure is committed only once its safeguards are confirmed as woven.",
+    "practical_context": "It begins once preparation is complete and the embedded design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the woven safeguards against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-fa-design-intake-y9spy9": {
+    "plain_language_name": "Receive the Chart and Allocation Model",
+    "plain_language_description": "Controls work opens when the chart of accounts and the allocation model are handed over together as the structure the safeguards must be woven into. The intake custodian accepts both, registers them with audit identifiers, and starts the designing from a recorded baseline.",
+    "business_purpose": "It exists so safeguards are woven into a registered structure rather than bolted on afterwards.",
+    "practical_context": "It opens when the chart and allocation model are presented for the controls work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the chart and allocation model as the controls baseline, with audit references, and opens the weaving work."
+    }
+  },
+  "processes:task-fa-design-transform-usavdd": {
+    "plain_language_name": "Weave the Safeguards into the Structure's Bones",
+    "plain_language_description": "With the pieces verified, the processing custodian does the designing itself: the controls that keep the structure honest are designed into the chart and allocation model rather than around them, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because controls bolted on afterwards are controls that leak - weaving them in is what makes the structure safe by construction.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be woven through, and it ends with the embedded controls produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority designs the safeguards into the chart and allocation model's bones, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-4sbv4s": {
+    "plain_language_name": "Check the Pieces Before Weaving the Safeguards",
+    "plain_language_description": "Before anything is woven, the verification custodian checks the chart and allocation model against what designing requires - that the structure is complete enough to carry safeguards through it. Defects are logged for rejection or repair before the weaving begins.",
+    "business_purpose": "It exists so safeguards are never woven through a structure that was only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the allocation model incomplete over one cost class and logs the defect before the weaving begins."
+    }
+  },
+  "processes:task-fa-design-record-pwmm9k": {
+    "plain_language_name": "File the Exposure Assessment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the assessment trail at its required retention tier and sets the retrieval handles for it. What the change was found to expose, and how it was bounded, stays readable whenever a position's origin is examined.",
+    "business_purpose": "It exists so the assessment behind each exposure can be evidenced whenever a position's origin is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the assessment trail at its retention tier and sets the retrieval handles a tax review would consult."
+    }
+  },
+  "processes:task-fa-design-confirm-vp98e7": {
+    "plain_language_name": "Confirm the Exposure Assessment",
+    "plain_language_description": "When the assessment stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The position work that follows learns the exposure is bounded and can be documented against.",
+    "business_purpose": "It exists so positions are documented only against an assessment confirmed as made.",
+    "practical_context": "It begins once preparation is complete and the exposure assessment awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the exposure assessment against the activity's intended outcome and issues the confirmation the position work needs."
+    }
+  },
+  "processes:task-fa-design-intake-9bwnpn": {
+    "plain_language_name": "Receive the Jurisdictional Change and Operating Footprint",
+    "plain_language_description": "Assessment opens when the jurisdictional change and the operating footprint are handed over together as the ground the exposure will be read from. The intake custodian accepts both, registers them with audit identifiers, and starts the assessment from a recorded baseline.",
+    "business_purpose": "It exists so exposures are read from the registered change over the registered footprint.",
+    "practical_context": "It opens when the change and footprint are presented for the assessment, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the finance design authority registers the jurisdictional change and footprint as the assessment baseline, with audit references."
+    }
+  },
+  "processes:task-fa-design-transform-8nhgtf": {
+    "plain_language_name": "Bound What the New Exposure Means",
+    "plain_language_description": "With the inputs verified, the processing custodian does the assessing itself: what the jurisdictional change actually exposes the enterprise to is read out and bounded, and the exposure assessment is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an exposure nobody has bounded is a bill nobody has budgeted - the assessment is what sizes the cost before it arrives.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the exposure assessment produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority reads the change down to its bounded exposure, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-y7eeqe": {
+    "plain_language_name": "Check the Change Before Bounding the Exposure",
+    "plain_language_description": "Before anything is bounded, the verification custodian checks the change and footprint against what assessing requires - that the change is the recorded one and the footprint is current. Defects are flagged for rejection or repair before the bounding is made.",
+    "business_purpose": "It exists so no exposure is bounded against a footprint that has since moved.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the footprint missing the change's second site and flags the defect before the bounding is made."
+    }
+  },
+  "processes:task-fa-design-record-hda2eg": {
+    "plain_language_name": "File the Tax Design Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed design contains, and from which pieces it was consolidated, stays on file for the life of the tax design.",
+    "business_purpose": "It exists so the design's standing as committed authority can be evidenced whenever tax planning leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a tax planning review would draw on."
+    }
+  },
+  "processes:task-fa-design-confirm-fkm8jt": {
+    "plain_language_name": "Confirm the Committed Tax Design",
+    "plain_language_description": "When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The tax planning and onboarding that follow learn the committed design is ready to be received.",
+    "business_purpose": "It exists so tax planning starts only from a design confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed design against the activity's intended outcome and issues the confirmation the tax planning waits on."
+    }
+  },
+  "processes:task-fa-design-intake-cbcqcr": {
+    "plain_language_name": "Receive the Exposures, Positions, and Strategy",
+    "plain_language_description": "The commit opens when the exposure assessment, the documented positions, and the strategy design are handed over together as the pieces the tax design must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the design is committed from registered pieces rather than from a loose sheaf of documents.",
+    "practical_context": "It opens when the designed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the exposures, positions, and strategy as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-fa-design-transform-ttcsse": {
+    "plain_language_name": "Consolidate the Tax Thinking into the Committed Design",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: exposures, positions, and strategy are brought together and the committed tax design is set down in the form the activity defines, ready for tax planning and onboarding. Working papers are preserved for audit.",
+    "business_purpose": "It exists because tax thinking scattered across documents obligates nobody - the commit is where the design becomes one authority ready for planning.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed tax design produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the finance design authority consolidates the tax thinking into the committed design, ready for planning, keeping the working papers."
+    }
+  },
+  "processes:task-fa-design-verify-t5hp86": {
+    "plain_language_name": "Check the Pieces Before Committing the Tax Design",
+    "plain_language_description": "Before the design is committed, the verification custodian checks the pieces against what commitment requires - that exposures, positions, and strategy are all settled and none arrived half-drawn. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the tax design is never committed from pieces that were only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a position still carrying open questions and logs the defect before the tax design is committed."
+    }
+  },
+  "processes:task-fa-design-record-xbyzv6": {
+    "plain_language_name": "File the Tax Strategy Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the design trail at its required retention tier and sets the retrieval handles for it. How the positions were coordinated into one strategy stays readable whenever a position's place in the whole is examined.",
+    "business_purpose": "It exists so the coordination behind the strategy can be evidenced whenever a position's place in the whole is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the design trail at its retention tier and sets the retrieval handles a tax review would consult."
+    }
+  }
+}

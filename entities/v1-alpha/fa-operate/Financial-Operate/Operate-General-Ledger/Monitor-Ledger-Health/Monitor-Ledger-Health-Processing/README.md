@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Monitor Ledger Health Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Monitor Ledger Health** (`processes:activity-fa-operate-ksg7yj`). Its canonical ID is `processes:task-fa-operate-transform-ehthgj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the telemetry verified, the processing custodian does the watching itself: how fast entries post, where errors gather, and which balances behave oddly is read continuously, and the health posture is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a ledger's sickness shows in its pulse long before it shows in its balances - the watching is what catches it early.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified telemetry is ready to be watched, and it ends with the health posture produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function watches the ledger's latency, errors, and odd balances through the day, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Watch the Books' Pulse Between the Entries |
+| `plain_language_description` | string | no | With the telemetry verified, the processing custodian does the watching itself: how fast entries post, where errors … |
+| `business_purpose` | string | no | It exists because a ledger's sickness shows in its pulse long before it shows in its balances - the watching is what … |
+| `practical_context` | string | no | It starts once checking is complete and the verified telemetry is ready to be watched, and it ends with the health … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

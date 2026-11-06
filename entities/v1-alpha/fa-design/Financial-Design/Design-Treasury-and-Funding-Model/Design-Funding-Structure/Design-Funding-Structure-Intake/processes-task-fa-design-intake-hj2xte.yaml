@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Capital Approach for the Structure'
+plain_language_description: 'Structure work opens when the framed capital approach is handed over as the direction the funding composition must be drawn within. The intake custodian accepts it, registers it with audit identifiers, and starts the designing from a recorded baseline.'
+business_purpose: 'It exists so funding is composed within the registered capital direction rather than against it.'
+practical_context: 'It opens when the capital approach is presented for the structure work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the framed capital approach as the structure baseline, with audit references, and opens the composing work.'

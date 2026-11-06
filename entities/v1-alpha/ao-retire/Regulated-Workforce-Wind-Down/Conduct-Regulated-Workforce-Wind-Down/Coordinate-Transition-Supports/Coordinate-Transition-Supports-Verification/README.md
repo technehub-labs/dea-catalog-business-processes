@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-retire-ver
 
 This is a **Task** (level L4), named **Coordinate Transition Supports Verification**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Coordinate Transition Supports** (`processes:activity-ao-retire-herzuz`). Its canonical ID is `processes:task-ao-retire-verify-xtm6yb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any support is arranged, the verification custodian checks the roster and programmes against what coordination requires - that every affected employee is on the roster and the programmes listed are actually available. Defects are logged for rejection or repair before any support is offered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody is offered a support that does not exist, and nobody is missed off the roster entirely.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a programme listed that has closed to referrals and logs the defect before supports are offered.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Roster and Programmes Before Arranging the Supports |
+| `plain_language_description` | string | no | Before any support is arranged, the verification custodian checks the roster and programmes against what coordination … |
+| `business_purpose` | string | no | It exists so nobody is offered a support that does not exist, and nobody is missed off the roster entirely. |
+| `practical_context` | string | no | It runs once the intake is registered and the material can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

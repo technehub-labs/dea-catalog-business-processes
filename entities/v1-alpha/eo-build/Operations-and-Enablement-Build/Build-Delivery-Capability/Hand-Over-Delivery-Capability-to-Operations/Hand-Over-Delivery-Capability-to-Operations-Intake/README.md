@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Hand Over Delivery Capability to Operations Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Hand Over Delivery Capability to Operations** (`processes:activity-eo-build-fnyeud`). Its canonical ID is `processes:task-eo-build-intake-e35e7k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The hand-over opens when the verified delivery capability is handed over as the build's finished product, ready to pass into steady-state operation. The intake custodian accepts it, registers it with audit identifiers, and starts the hand-over from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the hand-over runs over a registered verified capability rather than over a verbal assurance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified capability is presented for the hand-over, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the verified capability as the hand-over baseline, with audit references, and opens the hand-over work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Verified Capability for the Hand-Over |
+| `plain_language_description` | string | no | The hand-over opens when the verified delivery capability is handed over as the build's finished product, ready to pass … |
+| `business_purpose` | string | no | It exists so the hand-over runs over a registered verified capability rather than over a verbal assurance. |
+| `practical_context` | string | no | It opens when the verified capability is presented for the hand-over, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

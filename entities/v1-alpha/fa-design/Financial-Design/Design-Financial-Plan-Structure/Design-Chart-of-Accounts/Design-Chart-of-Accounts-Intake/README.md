@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-int
 
 This is a **Task** (level L4), named **Design Chart of Accounts Intake**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Chart of Accounts** (`processes:activity-fa-design-drznes`). Its canonical ID is `processes:task-fa-design-intake-kfcceh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Chart work opens when the framed finance strategy is handed over as the ground the accounts will be organized from. The intake custodian accepts it, registers it with audit identifiers, and starts the designing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so accounts are organized from the committed strategy rather than from inherited habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the framed strategy is presented for the chart work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance design authority registers the framed strategy as the chart baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Framed Finance Strategy |
+| `plain_language_description` | string | no | Chart work opens when the framed finance strategy is handed over as the ground the accounts will be organized from. The … |
+| `business_purpose` | string | no | It exists so accounts are organized from the committed strategy rather than from inherited habit. |
+| `practical_context` | string | no | It opens when the framed strategy is presented for the chart work, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

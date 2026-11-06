@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-operate-verify-hd5dbn": {
+    "plain_language_name": "Check the Captured Time Before It Moves On",
+    "plain_language_description": "Before the captured time moves downstream, the verification custodian checks it against what capture requires - that each delivering agent's time is recorded and complete for the period. Gaps are logged for rejection or repair before the records move on.",
+    "business_purpose": "It exists so downstream pay and compliance never inherit a capture that missed part of the workforce.",
+    "practical_context": "It runs once the intake is registered and the capture can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a delivering agent's time missing for part of the period and logs the gap before the records move on."
+    }
+  },
+  "processes:task-ao-operate-record-h98p3m": {
+    "plain_language_name": "File the Payroll Feed Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the feed trail at its required retention tier and sets the retrieval handles for it. What was handed to payroll each cycle, and from which validated record, stays readable whenever a downstream figure is traced back.",
+    "business_purpose": "It exists so the hand-off between time and payroll can be evidenced whenever either side is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the feed trail at its retention tier and sets the retrieval handles a payroll trace would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-gucseg": {
+    "plain_language_name": "Confirm the Payroll Time Data Feed",
+    "plain_language_description": "When the feed stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The payroll cycle that follows learns the time data is handed over and ready to be computed from.",
+    "business_purpose": "It exists so payroll computes only from a feed confirmed as handed over.",
+    "practical_context": "It begins once preparation is complete and the feed awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the time data feed against the activity's intended outcome and issues the confirmation the payroll cycle needs."
+    }
+  },
+  "processes:task-ao-operate-intake-fck5h3": {
+    "plain_language_name": "Receive the Clean Record for the Payroll Feed",
+    "plain_language_description": "The feed opens when the resolved exceptions and validated records are handed over together as the clean time data payroll will draw on. The intake custodian accepts them, registers them with audit identifiers, and starts the feed from a recorded baseline.",
+    "business_purpose": "It exists so payroll draws from one clean, registered hand-off rather than from piecemeal extracts.",
+    "practical_context": "It opens when the resolved record is presented for the feed, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the resolved exceptions and validated records as the feed baseline, with audit references."
+    }
+  },
+  "processes:task-ao-operate-transform-vpp8my": {
+    "plain_language_name": "Hand the Validated Time to Payroll Each Cycle",
+    "plain_language_description": "With the record verified, the processing custodian makes the feed itself: the validated time data is assembled for the cycle's payroll and handed over in the form the activity defines. Working papers from the hand-off are preserved.",
+    "business_purpose": "It exists because payroll can only compute as well as the time it is fed - this is the bridge between the two.",
+    "practical_context": "It starts once checking is complete and the verified record is ready to be fed from, and it ends with the time data feed produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management assembles the validated time for the cycle and hands it to payroll, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-whzdc9": {
+    "plain_language_name": "Check the Record Before Feeding Payroll",
+    "plain_language_description": "Before the feed runs, the verification custodian checks the record against what the feed requires - that exceptions are resolved and the validated set is complete for the cycle. Defects are logged for rejection or repair before the data is handed over.",
+    "business_purpose": "It exists so payroll never receives a feed with open exceptions still inside it.",
+    "practical_context": "It runs once the intake is registered and the record can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an unresolved exception still in the set and logs the defect before the feed hands anything over."
+    }
+  },
+  "processes:task-ao-operate-record-4x8k94": {
+    "plain_language_name": "File the Attendance Exception Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the resolution trail at its required retention tier and sets the retrieval handles for it. Which anomalies surfaced, how each was cleared, and which were escalated stays readable whenever a resolution is queried.",
+    "business_purpose": "It exists so the clearing of each exception can be evidenced whenever the resolution is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the exception trail at its retention tier and sets the retrieval handles a payroll dispute would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-dfkunc": {
+    "plain_language_name": "Confirm the Resolved Attendance Exceptions",
+    "plain_language_description": "When the exceptions stand resolved, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The payroll feed that follows learns the record is clean and ready to be handed over.",
+    "business_purpose": "It exists so payroll receives time data only once its exceptions are confirmed as resolved.",
+    "practical_context": "It begins once preparation is complete and the resolved exceptions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the resolved exceptions against the activity's intended outcome and issues the confirmation the payroll feed needs."
+    }
+  },
+  "processes:task-ao-operate-intake-v8auju": {
+    "plain_language_name": "Receive the Validated Records for Exception Work",
+    "plain_language_description": "Exception work opens when the validated attendance records are handed over as the set whose anomalies must be resolved. The intake custodian accepts them, registers them with audit identifiers, and starts the resolution from a recorded baseline.",
+    "business_purpose": "It exists so exceptions are resolved from a registered validated set rather than from scattered complaints.",
+    "practical_context": "It opens when the validated records are presented for the exception work, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the validated records as the exception baseline, with audit references, and opens the resolution work."
+    }
+  },
+  "processes:task-ao-operate-transform-gf4hs9": {
+    "plain_language_name": "Clear the Exceptions Validation Raises, Escalating Where the Rules Demand",
+    "plain_language_description": "With the set verified, the processing custodian does the resolution itself: each validation exception is cleared under people policy, escalated where the statutory rules demand it, and the resolved exceptions are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because unexplained anomalies in time records poison both pay and trust - clearing them is how the record stays honest.",
+    "practical_context": "It starts once checking is complete and the verified set is ready to be resolved from, and it ends with the resolved exceptions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management clears each anomaly under people policy, escalating the ones the statutory rules demand, and records the resolutions."
+    }
+  },
+  "processes:task-ao-operate-verify-ja7pd3": {
+    "plain_language_name": "Check the Validated Set Before Resolving the Exceptions",
+    "plain_language_description": "Before any exception is resolved, the verification custodian checks the validated set against what resolution requires - that the anomalies it flags are real against the validated record. Defects are logged for rejection or repair before any exception is worked.",
+    "business_purpose": "It exists so agents are never pulled into exception handling over anomalies the validation raised in error.",
+    "practical_context": "It runs once the intake is registered and the set can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an exception flagged against time that was never captured and logs the defect before it is worked."
+    }
+  },
+  "processes:task-ao-operate-record-c7wyh4": {
+    "plain_language_name": "File the Attendance Validation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the validation trail at its required retention tier and sets the retrieval handles for it. What was checked, and what was corrected, stays readable whenever a validated figure is later queried.",
+    "business_purpose": "It exists so the validation behind every payroll figure can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the validation trail at its retention tier and sets the retrieval handles a payroll query would consult."
+    }
+  },
+  "processes:task-ao-operate-confirm-r9r893": {
+    "plain_language_name": "Confirm the Validated Attendance Records",
+    "plain_language_description": "When the records stand validated, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The exception work that follows learns the validated set is ready to be examined for anomalies.",
+    "business_purpose": "It exists so exceptions are resolved only over records confirmed as validated.",
+    "practical_context": "It begins once preparation is complete and the validated records await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the validated records against the activity's intended outcome and issues the confirmation the exception work needs."
+    }
+  },
+  "processes:task-ao-operate-intake-2aexr6": {
+    "plain_language_name": "Receive the Captured Records for Validation",
+    "plain_language_description": "Validation opens when the captured time and attendance records are handed over as the raw material whose accuracy must be confirmed before payroll. The intake custodian accepts them, registers them with audit identifiers, and starts the validation from a recorded baseline.",
+    "business_purpose": "It exists so payroll receives validated time, never raw capture straight from the source.",
+    "practical_context": "It opens when the captured records are presented for validation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the captured time records as the validation baseline, with audit references, and opens the checking work."
+    }
+  },
+  "processes:task-ao-operate-transform-cdmc58": {
+    "plain_language_name": "Confirm the Captured Records Are Accurate",
+    "plain_language_description": "With the capture verified, the processing custodian does the validation itself: each captured record is checked for accuracy, corrections are marked where needed, and the validated attendance records are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because payroll figures are only as good as the time behind them - validation is where accuracy is actually proven.",
+    "practical_context": "It starts once checking is complete and the verified capture is ready to be validated, and it ends with the validated records produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian checks each captured record for accuracy and sets down the validated set, keeping the working papers."
+    }
+  },
+  "processes:task-ao-operate-verify-jvw62k": {
+    "plain_language_name": "Check the Capture Before Validating the Records",
+    "plain_language_description": "Before any record is validated, the verification custodian checks the capture against what validation requires - that it covers every agent in service for the period. Gaps are logged for rejection or repair before the validation proceeds.",
+    "business_purpose": "It exists so validation is never run over a capture that missed part of the ground.",
+    "practical_context": "It runs once the intake is registered and the capture can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the capture covering only part of the period and logs the gap before validation proceeds."
+    }
+  },
+  "processes:task-ao-retire-record-tr3ssq": {
+    "plain_language_name": "File the Statutory Liability Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the computation trail at its required retention tier and sets the retrieval handles for it. How each entitlement was calculated, and how the total was funded, stays readable whenever a settlement figure is queried.",
+    "business_purpose": "It exists so every entitlement figure can be evidenced back to the particulars and statute behind it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the liability trail at its retention tier and sets the retrieval handles a settlement query would consult."
+    }
+  },
+  "processes:task-ao-retire-confirm-jh4ycx": {
+    "plain_language_name": "Confirm the Entitlement Schedule and Funded Liability",
+    "plain_language_description": "When the computation stands made, the confirmation custodian reconciles the schedule and funded amount against the outcome the activity set out to reach and issues the confirmation. The wind-down learns every entitlement is calculated and the money is in place.",
+    "business_purpose": "It exists so settlement proceeds only over entitlements confirmed as computed and funded.",
+    "practical_context": "It begins once preparation is complete and the schedule and funded amount await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the entitlement schedule and funded liability against the activity's intended outcome and issues the confirmation settlement needs."
+    }
+  },
+  "processes:task-ao-retire-intake-7cdgw2": {
+    "plain_language_name": "Receive the Affected Employees' Entitlement Particulars",
+    "plain_language_description": "The computation opens when each affected employee's tenure, compensation, classification, and the controlling statute are handed over together. The intake custodian accepts them, registers them with audit identifiers, and starts the computation from a recorded base.",
+    "business_purpose": "It exists so severance liabilities are computed from registered particulars, never from rough estimates.",
+    "practical_context": "It opens when the particulars are presented for the computation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers each affected employee's particulars as the computation baseline, with audit references, and opens the liability work."
+    }
+  },
+  "processes:task-ao-retire-transform-sgsg37": {
+    "plain_language_name": "Work Out and Fund What Each Employee Is Owed",
+    "plain_language_description": "With the particulars verified, the processing custodian makes the computation itself: the statutory notice pay, severance, and benefits continuation owed to each employee are calculated, the total liability is reserved or funded for the severance date, and the entitlement schedule is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because people owed severance must be able to trust the number - and the money must actually be there on the day.",
+    "practical_context": "It starts once checking is complete and the verified particulars are ready to be computed from, and it ends with the entitlement schedule and funded liability produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management computes each employee's statutory entitlements, reserves the total, and records the funded liability, keeping the working papers."
+    }
+  },
+  "processes:task-ao-retire-verify-6kzc36": {
+    "plain_language_name": "Check the Particulars Before Computing the Liabilities",
+    "plain_language_description": "Before anything is computed, the verification custodian checks the particulars against what computation requires - that each employee's tenure, pay, and classification are complete and the controlling statute is identified for each. Defects are logged for rejection or repair before the computation runs.",
+    "business_purpose": "It exists so nobody's entitlement is computed from particulars that were wrong or missing.",
+    "practical_context": "It runs once the intake is registered and the particulars can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one employee's tenure recorded short and logs the defect before the liability is computed."
+    }
+  },
+  "processes:task-ao-retire-record-ue2bkn": {
+    "plain_language_name": "File the Consultation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the consultation trail at its required retention tier and sets the retrieval handles for it. Who was consulted, what was raised, and what was agreed or left unresolved stays provable whenever the consultation's adequacy is examined.",
+    "business_purpose": "It exists so the statutory consultation can be evidenced whenever its adequacy is challenged.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the consultation trail at its retention tier and sets the retrieval handles a statutory review would consult."
+    }
+  },
+  "processes:task-ao-retire-confirm-a2qkbs": {
+    "plain_language_name": "Confirm the Consultation Outcome Record",
+    "plain_language_description": "When the consultation stands concluded, the confirmation custodian reconciles the outcome record against the outcome the activity set out to reach and issues the confirmation. The severance and transition work that follows learns the consultation is discharged and its outcomes are known.",
+    "business_purpose": "It exists so the reduction proceeds only once consultation is confirmed as discharged.",
+    "practical_context": "It begins once preparation is complete and the consultation record awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the consultation outcome against the activity's intended outcome and issues the confirmation the severance work needs."
+    }
+  },
+  "processes:task-ao-retire-intake-yte23k": {
+    "plain_language_name": "Receive the Proposed Scope and Business Case for Consultation",
+    "plain_language_description": "Consultation opens when the proposed scope of the reduction, the business case, and the consultable alternatives are handed over together. The intake custodian accepts them, registers them with audit identifiers, and starts the consultation from a recorded base.",
+    "business_purpose": "It exists so consultation runs from a registered proposal rather than from a shifting story.",
+    "practical_context": "It opens when the scope, business case, and alternatives are presented for consultation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management registers the proposed scope, business case, and alternatives as the consultation baseline, with audit references."
+    }
+  },
+  "processes:task-ao-retire-transform-h8d4t7": {
+    "plain_language_name": "Consult the Representative Bodies Before the Reduction",
+    "plain_language_description": "With the proposal verified, the processing custodian conducts the consultation itself: the recognised unions, works councils, and elected representatives are consulted within the statutory period, and the consultation outcome record - positions, agreements, unresolved issues - is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because the law requires people's representatives to be heard before a reduction takes effect - and heard properly, not as a formality.",
+    "practical_context": "It starts once checking is complete and the verified proposal is ready to be consulted on, and it ends with the consultation outcome record produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian conducts the statutory consultation with the recognised unions and works councils within the required period, recording positions and agreements."
+    }
+  },
+  "processes:task-ao-retire-verify-49vtb9": {
+    "plain_language_name": "Check the Proposal Before Consultation Opens",
+    "plain_language_description": "Before consultation opens, the verification custodian checks the scope, business case, and alternatives against what consultation requires - that the proposal is complete enough for representatives to respond to meaningfully. Defects are logged for rejection or repair before the consultation begins.",
+    "business_purpose": "It exists so representatives are never consulted on a proposal too thin to respond to.",
+    "practical_context": "It runs once the intake is registered and the proposal can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the consultable alternatives section empty and logs the defect before consultation opens."
+    }
+  },
+  "processes:task-ao-retire-record-wzx6cj": {
+    "plain_language_name": "File the Transition Support Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the coordination trail at its required retention tier and sets the retrieval handles for it. What each employee was offered, what they took up, and what was delivered stays readable whenever the support effort is examined.",
+    "business_purpose": "It exists so the supports offered to each affected employee can be evidenced whenever the effort's adequacy is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the support trail at its retention tier and sets the retrieval handles a wind-down review would consult."
+    }
+  },
+  "processes:task-ao-retire-confirm-r2y6tf": {
+    "plain_language_name": "Confirm the Offered Support Packages",
+    "plain_language_description": "When the packages stand arranged, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The wind-down learns every affected employee has been offered their supports, with delivery and uptake on record.",
+    "business_purpose": "It exists so the wind-down closes only once the supports are confirmed as offered.",
+    "practical_context": "It begins once preparation is complete and the offered packages await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the offered packages against the activity's intended outcome and issues the confirmation the wind-down needs."
+    }
+  },
+  "processes:task-ao-retire-intake-rh2s54": {
+    "plain_language_name": "Receive the Affected Roster and the Support Programmes",
+    "plain_language_description": "Support coordination opens when the affected-employee roster and the available public and private support programmes are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the coordination from a recorded base.",
+    "business_purpose": "It exists so supports are arranged over a registered roster against registered programmes rather than piecemeal.",
+    "practical_context": "It opens when the roster and programmes are presented for coordination, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the affected roster and the support programmes as the coordination baseline, with audit references."
+    }
+  },
+  "processes:task-ao-retire-transform-hr9295": {
+    "plain_language_name": "Arrange the Supports Each Affected Employee Is Offered",
+    "plain_language_description": "With the material verified, the processing custodian arranges the supports themselves: the dislocated-worker referral, retraining, health-care continuation, and re-employment services are arranged into the package offered to each affected employee, with delivery and uptake evidence kept, and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because statutory money settles the debt; the supports are how the organisation helps people land afterwards.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be arranged from, and it ends with the offered support packages produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function arranges each affected employee's referral, retraining, and health-care continuation into an offered package, recording delivery and uptake."
+    }
+  },
+  "processes:task-ao-retire-verify-xtm6yb": {
+    "plain_language_name": "Check the Roster and Programmes Before Arranging the Supports",
+    "plain_language_description": "Before any support is arranged, the verification custodian checks the roster and programmes against what coordination requires - that every affected employee is on the roster and the programmes listed are actually available. Defects are logged for rejection or repair before any support is offered.",
+    "business_purpose": "It exists so nobody is offered a support that does not exist, and nobody is missed off the roster entirely.",
+    "practical_context": "It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a programme listed that has closed to referrals and logs the defect before supports are offered."
+    }
+  },
+  "processes:task-ao-retire-record-q7k64n": {
+    "plain_language_name": "File the Statutory Notice Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the notification trail at its required retention tier and sets the retrieval handles for it. What was served, to whom, and what was filed with the regulator stays provable for as long as the reduction's lawfulness can be questioned.",
+    "business_purpose": "It exists so the statutory notification of the reduction can be evidenced whenever its lawfulness is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the notice trail at its retention tier and sets the retrieval handles a statutory review would consult."
+    }
+  },
+  "processes:task-ao-retire-confirm-sva7mh": {
+    "plain_language_name": "Confirm the Served and Filed Notices",
+    "plain_language_description": "When the notices stand served and filed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consultation and severance work that follows learns the statutory notifications are discharged and on record.",
+    "business_purpose": "It exists so downstream wind-down steps proceed only once the notices are confirmed as served and filed.",
+    "practical_context": "It begins once preparation is complete and the notice record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the served and filed notices against the activity's intended outcome and issues the confirmation the consultation step needs."
+    }
+  },
+  "processes:task-ao-retire-intake-dehp2v": {
+    "plain_language_name": "Receive the Authorized Wind-Down and the Scoped Roster",
+    "plain_language_description": "Notification opens when the authorized wind-down event and the workforce roster scoped to the reduction are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the notification work from a recorded base.",
+    "business_purpose": "It exists so statutory notices are issued from an authorized event over a registered roster, never informally.",
+    "practical_context": "It opens when the authorized event and roster are presented for notification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in workforce management registers the authorized wind-down event and the scoped roster as the notification baseline, with audit references."
+    }
+  },
+  "processes:task-ao-retire-transform-k39qnx": {
+    "plain_language_name": "Give the Advance Notice the Law Requires",
+    "plain_language_description": "With the inputs verified, the processing custodian issues the notices themselves: the statutory advance-notice filings are made and the individual notifications served to each affected employee, and the served-and-filed record is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because the law gives people time to prepare for a reduction - the notice is that time, and serving it properly is the obligation.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be notified from, and it ends with the served and filed notices produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in workforce management serves each affected employee's notice and files the statutory advance notice, keeping the working papers."
+    }
+  },
+  "processes:task-ao-retire-verify-bwcuuj": {
+    "plain_language_name": "Check the Event and Roster Before the Notices Issue",
+    "plain_language_description": "Before any notice issues, the verification custodian checks the event and roster against what notification requires - that the reduction crosses the thresholds the controlling statute sets and the roster matches the authorized scope. Defects are logged for rejection or repair before any notice is served.",
+    "business_purpose": "It exists so statutory notices never issue on an unauthorized event or a roster that overshoots it.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the roster running wider than the authorized scope and logs the defect before any notice issues."
+    }
+  },
+  "processes:task-eo-activate-record-xtvzq8": {
+    "plain_language_name": "File the Operations Authorization Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the acquisition trail at its required retention tier and sets the retrieval handles for it. What was filed, what the regulator issued, and on what basis stays provable for the whole life of the authorization.",
+    "business_purpose": "It exists so the regulator's authorization can be evidenced, with its full history, whenever the authority to operate is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the authorization trail at its retention tier and sets the retrieval handles an authority-to-operate review would consult."
+    }
+  },
+  "processes:task-eo-activate-confirm-kb792y": {
+    "plain_language_name": "Confirm the Issued Operations Authorization",
+    "plain_language_description": "When the authorization stands obtained, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The activation steps that follow learn the authorization is on record and the capability may proceed.",
+    "business_purpose": "It exists so activation proceeds only over an authorization confirmed as issued and preserved.",
+    "practical_context": "It begins once preparation is complete and the issued authorization awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the issued authorization against the activity's intended outcome and issues the confirmation the activation steps need."
+    }
+  },
+  "processes:task-eo-activate-intake-u3z2mv": {
+    "plain_language_name": "Receive the Capability Description and Filing Format",
+    "plain_language_description": "The acquisition opens when the operations-capability description and the regulator-mandated filing format are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the application work from a recorded base.",
+    "business_purpose": "It exists so the authorization is applied for from a registered capability description in the format the regulator mandates.",
+    "practical_context": "It opens when the capability description and filing format are presented for the application, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the capability description and the mandated filing format as the application baseline, with audit references."
+    }
+  },
+  "processes:task-eo-activate-transform-jthh9z": {
+    "plain_language_name": "Obtain the Regulator's Operations Authorization",
+    "plain_language_description": "With the material verified, the processing custodian makes the acquisition itself: the application is filed, the regulator's authorization or certification is obtained, and the issued authorization is preserved on the regulated operations record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because live regulated operations cannot lawfully begin until the regulator has said yes - this is the saying yes, recorded.",
+    "practical_context": "It starts once checking is complete and the verified material is ready to be filed, and it ends with the issued authorization preserved and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function files the application, receives the regulator's authorization, and preserves it on the regulated operations record."
+    }
+  },
+  "processes:task-eo-activate-verify-5f2mhx": {
+    "plain_language_name": "Check the Application Material Before It Goes to the Regulator",
+    "plain_language_description": "Before anything is filed, the verification custodian checks the material against what the application requires - that the description is complete and the filing follows the regulator's mandated format exactly. Defects are logged for rejection or repair before the filing is made.",
+    "business_purpose": "It exists so the regulator never receives an application that would fail on form or completeness.",
+    "practical_context": "It runs once the intake is registered and the material can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the filing drifting from the mandated format and logs the defect before anything goes to the regulator."
+    }
+  },
+  "processes:task-eo-activate-record-qgmj5u": {
+    "plain_language_name": "File the Supervisor Notification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the activation trail at its required retention tier and sets the retrieval handles for it. When the notification was switched on, under which authorization, and for which supervisor stays provable for the life of the oversight.",
+    "business_purpose": "It exists so the start of continuing supervision can be evidenced whenever the oversight's coverage is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the notification trail at its retention tier and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-eo-activate-confirm-te8468": {
+    "plain_language_name": "Confirm the Issued Continuing-Supervisor Notification",
+    "plain_language_description": "When the notification stands issued, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The oversight chain learns the notification is live and supervision can proceed.",
+    "business_purpose": "It exists so live operations proceed only once the notification is confirmed as issued.",
+    "practical_context": "It begins once preparation is complete and the issued notification awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the issued notification against the activity's intended outcome and issues the confirmation the oversight chain needs."
+    }
+  },
+  "processes:task-eo-activate-intake-wh52hu": {
+    "plain_language_name": "Receive the Authorization and the Supervisor Relationship",
+    "plain_language_description": "The activation opens when the issued operations authorization and the supervisor relationship are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the notification work from a recorded baseline.",
+    "business_purpose": "It exists so the notification is activated from the issued authorization against a registered supervisor relationship.",
+    "practical_context": "It opens when the authorization and supervisor relationship are presented for activation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the issued authorization and the supervisor relationship as the activation baseline, with audit references."
+    }
+  },
+  "processes:task-eo-activate-transform-9fhapw": {
+    "plain_language_name": "Switch On the Continuing-Supervisor Notification",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the activation itself: the continuing-supervisor notification is activated under the regulator's continuing oversight, and the issued notification is set down on the regulated operations record in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an authorization is not the end - live operations run under continuing oversight, and the notification is where that oversight begins.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be activated from, and it ends with the issued notification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian activates the continuing-supervisor notification under the oversight regime and records it on the regulated operations record."
+    }
+  },
+  "processes:task-eo-activate-verify-8t3bqv": {
+    "plain_language_name": "Check the Authorization and Relationship Before Switching On",
+    "plain_language_description": "Before the notification is activated, the verification custodian checks the authorization and relationship against what activation requires - that the authorization covers the capability and the supervisor named is the one the oversight requires. Gaps are logged for rejection or repair before the switch is made.",
+    "business_purpose": "It exists so continuing supervision never starts against the wrong authorization or the wrong supervisor.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the supervisor named no longer holding the oversight role and logs the gap before the notification switches on."
+    }
+  },
+  "processes:task-eo-activate-record-3x3jub": {
+    "plain_language_name": "File the Operational Controls Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the go-live trail at its required retention tier and sets the retrieval handles for it. Which controls were brought live, from which framework, and on whose authorization stays provable for the life of the operations.",
+    "business_purpose": "It exists so the control arrangement behind live operations can be evidenced whenever its adequacy is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the go-live trail at its retention tier and sets the retrieval handles a controls review would consult."
+    }
+  },
+  "processes:task-eo-activate-confirm-2r3mqw": {
+    "plain_language_name": "Confirm the Operational Controls Live",
+    "plain_language_description": "When the controls stand live, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The manuals work that follows and the live operations beyond learn the controls are in place and running.",
+    "business_purpose": "It exists so live operations proceed only once the controls are confirmed as live.",
+    "practical_context": "It begins once preparation is complete and the live controls await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the live controls against the activity's intended outcome and issues the confirmation the remaining activation steps need."
+    }
+  },
+  "processes:task-eo-activate-intake-nne7az": {
+    "plain_language_name": "Receive the Control Framework and the Authorization",
+    "plain_language_description": "The go-live opens when the regulator-mandated control framework and the issued authorization are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the bring-live work from a recorded baseline.",
+    "business_purpose": "It exists so controls go live from the mandated framework over an issued authorization, not from local improvisation.",
+    "practical_context": "It opens when the control framework and authorization are presented for the bring-live, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the mandated control framework and the authorization as the bring-live baseline, with audit references."
+    }
+  },
+  "processes:task-eo-activate-transform-swxyr6": {
+    "plain_language_name": "Make the Operational Controls Live",
+    "plain_language_description": "With the framework verified, the processing custodian makes the go-live itself: each operational control is brought live and recorded onto the regulated operations record in the form the activity defines. Working papers from the launch are preserved for audit.",
+    "business_purpose": "It exists because controls on paper restrain nothing - the go-live is where the authorization starts to mean operational safety.",
+    "practical_context": "It starts once checking is complete and the verified framework is ready to be brought live, and it ends with the controls live and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function brings each mandated control live and records the arrangement onto the regulated operations record."
+    }
+  },
+  "processes:task-eo-activate-verify-cyg5gt": {
+    "plain_language_name": "Check the Framework Before Bringing the Controls Live",
+    "plain_language_description": "Before any control is brought live, the verification custodian checks the framework against what the go-live requires - that every mandated control is present and each is traceable to the authorization. Defects are logged for rejection or repair before any control is switched on.",
+    "business_purpose": "It exists so live operations never run on controls that only partially match what the regulator mandated.",
+    "practical_context": "It runs once the intake is registered and the framework can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a mandated control with no implementation behind it and logs the defect before any control goes live."
+    }
+  },
+  "processes:task-eo-activate-record-nu4fn2": {
+    "plain_language_name": "File the Operations Manuals Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the go-live trail at its required retention tier and sets the retrieval handles for it. Which manuals and runbooks went live, on whose approval, and when stays provable for the life of the operations.",
+    "business_purpose": "It exists so the authoritative document set behind live operations can be evidenced whenever its currency is examined.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the manuals trail at its retention tier and sets the retrieval handles a document review would consult."
+    }
+  },
+  "processes:task-eo-activate-confirm-c5adqk": {
+    "plain_language_name": "Confirm the Manuals and Runbooks Live",
+    "plain_language_description": "When the manuals stand live, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. Live operations learn the documents they work from are authoritative and in force.",
+    "business_purpose": "It exists so operations run only once the manuals are confirmed as live.",
+    "practical_context": "It begins once preparation is complete and the live manuals await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the live manuals against the activity's intended outcome and issues the confirmation live operations wait on."
+    }
+  },
+  "processes:task-eo-activate-intake-795evv": {
+    "plain_language_name": "Receive the Authorization and the Approved Manual Content",
+    "plain_language_description": "The go-live opens when the issued authorization and the regulator-approved manual content are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the bring-live work from a recorded baseline.",
+    "business_purpose": "It exists so manuals go live from approved content over the issued authorization, not from unapproved drafts.",
+    "practical_context": "It opens when the authorization and manual content are presented for the bring-live, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the issued authorization and approved manual content as the bring-live baseline, with audit references."
+    }
+  },
+  "processes:task-eo-activate-transform-heheg6": {
+    "plain_language_name": "Make the Manuals and Runbooks Live",
+    "plain_language_description": "With the content verified, the processing custodian makes the go-live itself: the operations manuals and runbooks are brought live and recorded onto the regulated operations record in the form the activity defines. Working papers from the launch are preserved for audit.",
+    "business_purpose": "It exists because an authorization to operate is unusable without the documents the operators actually work from - live and authoritative.",
+    "practical_context": "It starts once checking is complete and the verified content is ready to be brought live, and it ends with the manuals and runbooks live and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function brings the manuals and runbooks live on the record and notes the launch in the working papers."
+    }
+  },
+  "processes:task-eo-activate-verify-a4gsq7": {
+    "plain_language_name": "Check the Manual Content Before Bringing It Live",
+    "plain_language_description": "Before any manual goes live, the verification custodian checks the content against what the go-live requires - that every manual and runbook carries the regulator's approval and matches the authorized capability. Defects are logged for rejection or repair before anything is made live.",
+    "business_purpose": "It exists so crews and operators never work from manuals that were never approved.",
+    "practical_context": "It runs once the intake is registered and the content can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a runbook still in draft and logs the defect before the manual set goes live."
+    }
+  },
+  "processes:task-eo-build-record-97devu": {
+    "plain_language_name": "File the Technology Commissioning Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commissioning trail at its required retention tier and sets the retrieval handles for it. Which assets were commissioned, against which acceptance criteria, stays readable whenever a readiness claim is examined.",
+    "business_purpose": "It exists so the commissioning of each asset can be evidenced whenever its readiness is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commissioning trail at its retention tier and sets the retrieval handles a readiness review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-23vhjw": {
+    "plain_language_name": "Confirm the Commissioned Technology Assets",
+    "plain_language_description": "When the commissioning stands done, the confirmation custodian reconciles the commissioned assets against the outcome the activity set out to reach and issues the confirmation. The operational teams that will run them learn the assets are ready for use.",
+    "business_purpose": "It exists so operations leans only on assets confirmed as commissioned and ready.",
+    "practical_context": "It begins once preparation is complete and the commissioned assets await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the commissioned assets against the activity's intended outcome and issues the confirmation product management waits on."
+    }
+  }
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-in
 
 This is a **Task** (level L4), named **Design Platform Upgrades Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Design Platform Upgrades** (`processes:activity-eo-improve-hsurx5`). Its canonical ID is `processes:task-eo-improve-intake-e5gdzk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Upgrade design opens when the bounded platform gaps are handed over as the shortfalls the upgrades must close. The intake custodian accepts them, registers them with audit identifiers, and starts the design work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so upgrades are drawn against registered gaps rather than against shiny new things.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded gaps are presented for the design work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the bounded gaps as the design baseline, with audit references, and opens the drawing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Bounded Gaps for Upgrade Design |
+| `plain_language_description` | string | no | Upgrade design opens when the bounded platform gaps are handed over as the shortfalls the upgrades must close. The … |
+| `business_purpose` | string | no | It exists so upgrades are drawn against registered gaps rather than against shiny new things. |
+| `practical_context` | string | no | It opens when the bounded gaps are presented for the design work, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

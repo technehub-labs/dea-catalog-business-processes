@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Design Service Levels Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Service Levels** (`processes:activity-eo-design-r8q6n4`). Its canonical ID is `processes:task-eo-design-intake-6yh5hj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Service-level design opens when the framed service-level envelopes are handed over as the bounds the design must stay within. The intake custodian accepts them, registers them with audit identifiers, and starts the design from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so service levels are designed within the framed bounds rather than beyond them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the framed envelopes are presented for the design, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the framed envelopes as the design baseline, with audit references, and opens the specification work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Framed Envelopes for Service-Level Design |
+| `plain_language_description` | string | no | Service-level design opens when the framed service-level envelopes are handed over as the bounds the design must stay … |
+| `business_purpose` | string | no | It exists so service levels are designed within the framed bounds rather than beyond them. |
+| `practical_context` | string | no | It opens when the framed envelopes are presented for the design, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

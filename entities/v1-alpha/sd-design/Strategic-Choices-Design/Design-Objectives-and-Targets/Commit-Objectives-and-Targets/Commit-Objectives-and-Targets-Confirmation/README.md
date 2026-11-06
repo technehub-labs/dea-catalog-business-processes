@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-con
 
 This is a **Task** (level L4), named **Commit Objectives and Targets Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Objectives and Targets** (`processes:activity-sd-design-ec5thr`). Its canonical ID is `processes:task-sd-design-confirm-tkyyad`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the design is committed. The confirmation custodian tells the downstream teams the committed objectives and targets are available, and closes the reconciliation against what the activity promised for the commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the plan build assembles over a confirmed design rather than over the newest circulating version.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed objectives and targets are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function releases the committed objectives and targets to the plan build team, reconciles them against what the commitment promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Release the Committed Objectives and Targets to the Plan Build |
+| `plain_language_description` | string | no | The confirming opens once the design is committed. The confirmation custodian tells the downstream teams the committed … |
+| `business_purpose` | string | no | It exists so the plan build assembles over a confirmed design rather than over the newest circulating version. |
+| `practical_context` | string | no | It opens when the committed objectives and targets are ready to hand on, and it closes with the confirmation issued and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

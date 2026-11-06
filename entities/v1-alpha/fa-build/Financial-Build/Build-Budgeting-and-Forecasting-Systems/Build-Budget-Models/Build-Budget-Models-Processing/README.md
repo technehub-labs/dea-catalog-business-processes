@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-tran
 
 This is a **Task** (level L4), named **Build Budget Models Processing**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Build Budget Models** (`processes:activity-fa-build-v4regt`). Its canonical ID is `processes:task-fa-build-transform-amb826`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the structure verified, the processing custodian does the building itself: the budget models the scoped cycle requires are built to the plan structure, and the working models are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a planning cycle without models is a wish with a deadline - the models are where the cycle becomes computable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified structure is ready to be built from, and it ends with the working models produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function builds each model the cycle requires to the plan structure, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Models the Planning Cycle Calls For |
+| `plain_language_description` | string | no | With the structure verified, the processing custodian does the building itself: the budget models the scoped cycle … |
+| `business_purpose` | string | no | It exists because a planning cycle without models is a wish with a deadline - the models are where the cycle becomes … |
+| `practical_context` | string | no | It starts once checking is complete and the verified structure is ready to be built from, and it ends with the working … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

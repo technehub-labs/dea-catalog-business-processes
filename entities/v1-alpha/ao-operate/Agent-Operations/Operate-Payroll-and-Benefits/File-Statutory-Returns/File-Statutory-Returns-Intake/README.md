@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **File Statutory Returns Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **File Statutory Returns** (`processes:activity-ao-operate-7k8xwy`). Its canonical ID is `processes:task-ao-operate-intake-qrfmjv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Filing opens when the executed disbursements and administered benefits are handed over together as the material the cycle's statutory returns must be prepared from. The intake custodian accepts both, registers them with audit identifiers, and starts the filing from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so statutory returns are prepared from registered figures rather than from estimates.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the disbursements and benefits are presented for the filing, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the executed disbursements and administered benefits as the filing baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Disbursements and Benefits for the Returns |
+| `plain_language_description` | string | no | Filing opens when the executed disbursements and administered benefits are handed over together as the material the … |
+| `business_purpose` | string | no | It exists so statutory returns are prepared from registered figures rather than from estimates. |
+| `practical_context` | string | no | It opens when the disbursements and benefits are presented for the filing, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-r
 
 This is a **Task** (level L4), named **Commit Technology Enablement Approach Audit Record**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Commit Technology Enablement Approach** (`processes:activity-eo-conceive-b7qwwb`). Its canonical ID is `processes:task-eo-conceive-record-nrttfn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed approach contains, and from which framings it was consolidated, stays on file for the life of the approach.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the approach's standing as committed enablement direction can be evidenced whenever architecture design leans on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the commitment trail at its retention tier and sets the retrieval handles an architecture design review would draw on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Technology Enablement Approach Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the approach's standing as committed enablement direction can be evidenced whenever architecture design … |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

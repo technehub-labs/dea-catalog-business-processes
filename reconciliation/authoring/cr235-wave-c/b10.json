@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-build-intake-8rb6w4": {
+    "plain_language_name": "Receive the Installed Assets for Commissioning",
+    "plain_language_description": "Commissioning opens when the installed assets are handed over as the kit to be brought to operational readiness. The intake custodian accepts them, registers them with audit identifiers, and starts the commissioning from a recorded baseline.",
+    "business_purpose": "It exists so commissioning runs over a registered set of installed assets rather than over whatever is half-placed.",
+    "practical_context": "It opens when the installed assets are presented for commissioning, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the installed assets as the commissioning baseline, with audit references, and opens the readiness work."
+    }
+  },
+  "processes:task-eo-build-transform-fypdss": {
+    "plain_language_name": "Bring the Installed Assets to Operational Readiness",
+    "plain_language_description": "With the set verified, the processing custodian does the commissioning itself: each installed asset is tested and brought to readiness against the architecture's acceptance criteria, and the commissioned assets are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because installed is not the same as usable - commissioning is the proof that an asset actually works as bought.",
+    "practical_context": "It starts once checking is complete and the verified set is ready to be commissioned, and it ends with the commissioned assets produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management tests each installed asset to the acceptance criteria and records the commissioned set, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-vwgrxx": {
+    "plain_language_name": "Check the Installed Assets Before Commissioning Them",
+    "plain_language_description": "Before any asset is commissioned, the verification custodian checks the installed set against what commissioning requires - that every asset is in its environment and ready to be tested to the acceptance criteria. Defects are logged for rejection or repair before the commissioning begins.",
+    "business_purpose": "It exists so no asset is called operational-ready before it is even properly in place.",
+    "practical_context": "It runs once the intake is registered and the set can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an asset installed outside its designated environment and logs the defect before commissioning begins."
+    }
+  },
+  "processes:task-eo-build-record-yugy2m": {
+    "plain_language_name": "File the Technology Installation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the installation trail at its required retention tier and sets the retrieval handles for it. Which assets went where, per which topology, stays readable whenever an installed position is questioned.",
+    "business_purpose": "It exists so the placing of each asset can be evidenced whenever its position is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the installation trail at its retention tier and sets the retrieval handles an infrastructure review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-ks6bup": {
+    "plain_language_name": "Confirm the Installed Technology Assets",
+    "plain_language_description": "When the assets stand installed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The commissioning step that follows learns the assets are in place and ready to be brought to readiness.",
+    "business_purpose": "It exists so commissioning proceeds only over assets confirmed as installed.",
+    "practical_context": "It begins once preparation is complete and the installed assets await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the installed assets against the activity's intended outcome and issues the confirmation the commissioning step needs."
+    }
+  },
+  "processes:task-eo-build-intake-xfn7md": {
+    "plain_language_name": "Receive the Delivered Assets and the Deployment Topology",
+    "plain_language_description": "Installation opens when the delivered assets and the deployment topology are handed over together as the brief the placing-in must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the installation from a recorded baseline.",
+    "business_purpose": "It exists so assets are installed into their intended places in the topology, not wherever is convenient.",
+    "practical_context": "It opens when the delivered assets and topology are presented for installation, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the delivered assets and the deployment topology as the installation brief, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-afusez": {
+    "plain_language_name": "Put the Procured Assets into Their Environments",
+    "plain_language_description": "With the deliveries verified, the processing custodian does the installation itself: each asset is installed into its place in the target environments, and the installed assets are set down in the form the activity defines. Working papers from the installation are preserved.",
+    "business_purpose": "It exists because assets in crates change nothing - installation is where the procurement starts to become capability.",
+    "practical_context": "It starts once checking is complete and the verified deliveries are ready to be installed, and it ends with the installed assets produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management places each asset into its position in the target environments, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-e83h5k": {
+    "plain_language_name": "Check the Deliveries Before Installing the Assets",
+    "plain_language_description": "Before anything is installed, the verification custodian checks the deliveries against what installation requires - that what arrived matches what was procured and the topology states where each asset belongs. Defects are logged for rejection or repair before any placing-in begins.",
+    "business_purpose": "It exists so nothing is installed from a delivery that was wrong, into a place the topology never defined.",
+    "practical_context": "It runs once the intake is registered and the deliveries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a delivery short of its ordered configuration and logs the defect before any installation begins."
+    }
+  },
+  "processes:task-eo-build-record-a85q3w": {
+    "plain_language_name": "File the Procurement Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the procurement trail at its required retention tier and sets the retrieval handles for it. What was bought, against which specification, and under which principles stays readable whenever a purchase is examined.",
+    "business_purpose": "It exists so every purchase can be evidenced back to the specification and principles behind it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the procurement trail at its retention tier and sets the retrieval handles a purchase review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-hjnw24": {
+    "plain_language_name": "Confirm the Procured Hardware and Software",
+    "plain_language_description": "When the assets stand procured, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The installation step that follows learns the assets are bought and ready to be placed.",
+    "business_purpose": "It exists so installation proceeds only over assets confirmed as procured.",
+    "practical_context": "It begins once preparation is complete and the procured assets await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the procured assets against the activity's intended outcome and issues the confirmation the installation step needs."
+    }
+  },
+  "processes:task-eo-build-intake-rrqjrt": {
+    "plain_language_name": "Receive the Specification and Sourcing Principles",
+    "plain_language_description": "Procurement opens when the specification the platform architecture sets and the sourcing principles are handed over together as the brief the buying must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the procurement from a recorded baseline.",
+    "business_purpose": "It exists so assets are bought against the architecture's specification, not against whatever is on hand.",
+    "practical_context": "It opens when the specification and sourcing principles are presented for procurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the architecture specification and sourcing principles as the procurement brief, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-7ybs7h": {
+    "plain_language_name": "Buy the Hardware and Software the Architecture Specifies",
+    "plain_language_description": "With the brief verified, the processing custodian does the procurement itself: the specified hardware and software are sourced under the committed principles, procured, and set down in the form the activity defines. Working papers behind the purchases are preserved.",
+    "business_purpose": "It exists because an architecture on paper equips nobody - procurement is where the specification turns into delivered assets.",
+    "practical_context": "It starts once checking is complete and the verified brief is ready to be bought from, and it ends with the procured assets produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management sources and buys the specified hardware and software, keeping the working papers behind each purchase."
+    }
+  },
+  "processes:task-eo-build-verify-h5p7nk": {
+    "plain_language_name": "Check the Specification Before Buying the Assets",
+    "plain_language_description": "Before anything is bought, the verification custodian checks the specification and principles against what procurement requires - that the architecture's needs are fully stated and the sourcing rules are the committed ones. Defects are flagged for rejection or repair before the buying begins.",
+    "business_purpose": "It exists so the enterprise never buys assets the architecture did not actually ask for.",
+    "practical_context": "It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the specification silent on one environment's needs and flags the defect before any buying begins."
+    }
+  },
+  "processes:task-eo-build-record-efja7d": {
+    "plain_language_name": "File the Asset Registration Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the registration trail at its required retention tier and sets the retrieval handles for it. Which assets were entered, on what evidence, stays readable whenever an asset's provenance is examined.",
+    "business_purpose": "It exists so the entry of each asset can be evidenced whenever its provenance is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the registration trail at its retention tier and sets the retrieval handles an asset audit would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-unkzx2": {
+    "plain_language_name": "Confirm the Registered Asset Entries",
+    "plain_language_description": "When the entries stand made, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The acquisition closes with every asset on the record of record.",
+    "business_purpose": "It exists so the acquisition closes only over entries confirmed as registered.",
+    "practical_context": "It begins once preparation is complete and the registered entries await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the registered entries against the activity's intended outcome and issues the confirmation that closes the acquisition."
+    }
+  },
+  "processes:task-eo-build-intake-qdc962": {
+    "plain_language_name": "Receive the Commissioning Evidence for Asset Registration",
+    "plain_language_description": "Registration opens when the commissioning evidence is handed over as the proof each acquired, installed, and commissioned asset must be entered on. The intake custodian accepts it, registers it with audit identifiers, and starts the registration from a recorded baseline.",
+    "business_purpose": "It exists so asset entries are created from registered commissioning evidence rather than from informal lists.",
+    "practical_context": "It opens when the commissioning evidence is presented for registration, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the commissioning evidence as the registration baseline, with audit references, and opens the entry work."
+    }
+  },
+  "processes:task-eo-build-transform-td8k2u": {
+    "plain_language_name": "Enter Every Acquired Asset into the Asset Record",
+    "plain_language_description": "With the evidence verified, the processing custodian does the registration itself: each acquired, installed, and commissioned asset is entered into the enterprise asset record, and the registered entries are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because assets nobody recorded are assets nobody can account for - the entry is what makes each asset governable.",
+    "practical_context": "It starts once checking is complete and the verified evidence is ready to be entered from, and it ends with the registered entries produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management enters each commissioned asset into the enterprise asset record, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-t5j9sh": {
+    "plain_language_name": "Check the Evidence Before Entering the Assets",
+    "plain_language_description": "Before any asset is entered, the verification custodian checks the commissioning evidence against what registration requires - that it covers every acquired asset and proves each one's readiness. Gaps are logged for rejection or repair before the entries are created.",
+    "business_purpose": "It exists so the asset record never carries an entry no evidence stands behind.",
+    "practical_context": "It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an asset with no commissioning proof behind it and logs the gap before entries are created."
+    }
+  },
+  "processes:task-eo-build-record-kpxfv4": {
+    "plain_language_name": "File the Capability Hand-Over Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the hand-over trail at its required retention tier and sets the retrieval handles for it. What was handed over, on what proof, and who accepted it stays readable whenever the build-operate boundary is examined.",
+    "business_purpose": "It exists so the hand-over of the capability can be evidenced whenever the boundary between build and operate is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the hand-over trail at its retention tier and sets the retrieval handles a build-operate review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-k8363d": {
+    "plain_language_name": "Confirm the Accepted Operational Capability",
+    "plain_language_description": "When the acceptance stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build closes with its capability accepted and living in steady-state operation.",
+    "business_purpose": "It exists so the build is treated as done only once acceptance is confirmed.",
+    "practical_context": "It begins once preparation is complete and the accepted capability awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the accepted capability against the activity's intended outcome and issues the confirmation that closes the build."
+    }
+  },
+  "processes:task-eo-build-intake-e35e7k": {
+    "plain_language_name": "Receive the Verified Capability for the Hand-Over",
+    "plain_language_description": "The hand-over opens when the verified delivery capability is handed over as the build's finished product, ready to pass into steady-state operation. The intake custodian accepts it, registers it with audit identifiers, and starts the hand-over from a recorded baseline.",
+    "business_purpose": "It exists so the hand-over runs over a registered verified capability rather than over a verbal assurance.",
+    "practical_context": "It opens when the verified capability is presented for the hand-over, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the verified capability as the hand-over baseline, with audit references, and opens the hand-over work."
+    }
+  },
+  "processes:task-eo-build-transform-k4fn8e": {
+    "plain_language_name": "Hand the Verified Capability to Steady-State Operations",
+    "plain_language_description": "With the proof verified, the processing custodian makes the hand-over itself: the capability passes from build into steady-state operation, acceptance is recorded, and the accepted operational capability is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a capability built but never handed over helps nobody - the acceptance is where the build's work starts paying off.",
+    "practical_context": "It starts once checking is complete and the verified proof is ready to be handed over on, and it ends with the accepted capability produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management hands the proven capability to the operating teams and records their acceptance, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-vkzpcc": {
+    "plain_language_name": "Check the Proof Before Handing the Capability Over",
+    "plain_language_description": "Before the capability passes over, the verification custodian checks the proof against what the hand-over requires - that the verification is complete and covers what the operational teams will depend on. Defects are logged for rejection or repair before anything changes hands.",
+    "business_purpose": "It exists so operations never accepts a capability whose proof was thinner than it looked.",
+    "practical_context": "It runs once the intake is registered and the proof can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the proof skipping one service level the teams depend on and logs the defect before anything changes hands."
+    }
+  },
+  "processes:task-eo-build-record-umz2kx": {
+    "plain_language_name": "File the Capability Integration Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the integration trail at its required retention tier and sets the retrieval handles for it. How the components were joined, and into what, stays readable whenever the capability's composition is examined.",
+    "business_purpose": "It exists so the joining of the components can be evidenced whenever the capability's makeup is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the integration trail at its retention tier and sets the retrieval handles a build review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-yyr88b": {
+    "plain_language_name": "Confirm the Integrated Delivery Capability",
+    "plain_language_description": "When the capability stands integrated, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The verification step that follows learns the capability is whole and ready to be proven.",
+    "business_purpose": "It exists so verification proceeds only over a capability confirmed as integrated.",
+    "practical_context": "It begins once preparation is complete and the integrated capability awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the integrated capability against the activity's intended outcome and issues the confirmation the verification step needs."
+    }
+  },
+  "processes:task-eo-build-intake-qg4edh": {
+    "plain_language_name": "Receive the Stood-Up Components for Integration",
+    "plain_language_description": "Integration opens when the stood-up components are handed over as the parts that must become one working capability. The intake custodian accepts them, registers them with audit identifiers, and starts the integration from a recorded baseline.",
+    "business_purpose": "It exists so integration runs over a registered set of components rather than over whatever is ready first.",
+    "practical_context": "It opens when the stood-up components are presented for integration, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the stood-up components as the integration baseline, with audit references, and opens the joining work."
+    }
+  },
+  "processes:task-eo-build-verify-29m4zc": {
+    "plain_language_name": "Check the Components Before Fitting Them Together",
+    "plain_language_description": "Before anything is joined, the verification custodian checks the components against what integration requires - that every bounded component is present and standing, and none arrived half-finished. Defects are logged for rejection or repair before the joining begins.",
+    "business_purpose": "It exists so the capability is never integrated around a component that was never finished.",
+    "practical_context": "It runs once the intake is registered and the components can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one component still mid-build and logs the defect before the joining begins."
+    }
+  },
+  "processes:task-eo-build-transform-kebf6w": {
+    "plain_language_name": "Fit the Stood-Up Components Together into One Capability",
+    "plain_language_description": "With the components verified, the processing custodian does the integration itself: the stood-up components are joined into one working delivery capability, and the integrated capability is set down in the form the activity defines. Working papers from the joining are preserved.",
+    "business_purpose": "It exists because working parts beside each other are still not a capability - integration is where they start working as one.",
+    "practical_context": "It starts once checking is complete and the verified components are ready to be joined, and it ends with the integrated capability produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management fits the stood-up components together into one working delivery capability, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-record-b4hzje": {
+    "plain_language_name": "File the Component Stand-Up Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the stand-up trail at its required retention tier and sets the retrieval handles for it. Which components were stood up, from which designs, stays readable whenever a component's origin is examined.",
+    "business_purpose": "It exists so the stand-up of each component can be evidenced against the design it was built from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the stand-up trail at its retention tier and sets the retrieval handles a build review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-msnss5": {
+    "plain_language_name": "Confirm the Stood-Up Delivery Components",
+    "plain_language_description": "When the components stand up, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The integration step that follows learns the components are standing and ready to be joined.",
+    "business_purpose": "It exists so integration proceeds only over components confirmed as stood up.",
+    "practical_context": "It begins once preparation is complete and the stood-up components await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the stood-up components against the activity's intended outcome and issues the confirmation the integration step needs."
+    }
+  },
+  "processes:task-eo-build-intake-cfvyse": {
+    "plain_language_name": "Receive the Designs Behind the Delivery Components",
+    "plain_language_description": "The stand-up opens when the component designs are handed over as the plans the delivery components must be stood up from. The intake custodian accepts them, registers them with audit identifiers, and starts the work from a recorded baseline.",
+    "business_purpose": "It exists so components are stood up from registered designs rather than from improvisation on the floor.",
+    "practical_context": "It opens when the designs are presented for the stand-up, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the component designs as the stand-up baseline, with audit references, and opens the build work."
+    }
+  },
+  "processes:task-eo-build-transform-3jn2yz": {
+    "plain_language_name": "Bring the Bounded Delivery Components to Life",
+    "plain_language_description": "With the designs verified, the processing custodian coordinates the stand-up itself: the production lines, logistics network, technology, and facilities the operations model requires are stood up from their designs, and the stood-up components are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because designs deliver nothing by themselves - the stand-up is where paper components become working ones.",
+    "practical_context": "It starts once checking is complete and the verified designs are ready to be stood up from, and it ends with the stood-up components produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management stands up the production lines, logistics, technology, and facilities the model requires, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-q2bjx3": {
+    "plain_language_name": "Check the Designs Before Standing Up the Components",
+    "plain_language_description": "Before any component is stood up, the verification custodian checks the designs against what the stand-up requires - that every bounded component the operations model calls for has a design behind it. Defects are logged for rejection or repair before any stand-up begins.",
+    "business_purpose": "It exists so no component is built from a design that was never committed.",
+    "practical_context": "It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a bounded component with no design behind it and logs the defect before stand-up begins."
+    }
+  },
+  "processes:task-eo-build-record-pmmudp": {
+    "plain_language_name": "File the Capability Verification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the proving trail at its required retention tier and sets the retrieval handles for it. What was measured, against which service levels and envelopes, stays readable whenever the hand-over's basis is examined.",
+    "business_purpose": "It exists so the proof behind the hand-over can be evidenced whenever its basis is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the proving trail at its retention tier and sets the retrieval handles a hand-over review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-83guwp": {
+    "plain_language_name": "Confirm the Capability Verification",
+    "plain_language_description": "When the proving stands done, the confirmation custodian reconciles the verification against the outcome the activity set out to reach and issues the confirmation. The hand-over step that follows learns the capability is proven and ready to be handed over.",
+    "business_purpose": "It exists so the hand-over proceeds only over a capability confirmed as verified.",
+    "practical_context": "It begins once preparation is complete and the capability verification awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the capability verification against the activity's intended outcome and issues the confirmation the hand-over step needs."
+    }
+  },
+  "processes:task-eo-build-intake-g3d6qf": {
+    "plain_language_name": "Receive the Integrated Capability for Verification",
+    "plain_language_description": "Verification opens when the integrated delivery capability is handed over as the whole whose performance must be proven. The intake custodian accepts it, registers it with audit identifiers, and starts the proving work from a recorded baseline.",
+    "business_purpose": "It exists so the capability is proven over a registered whole rather than over working impressions.",
+    "practical_context": "It opens when the integrated capability is presented for verification, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the integrated capability as the verification baseline, with audit references, and opens the proving work."
+    }
+  },
+  "processes:task-eo-build-verify-9usps2": {
+    "plain_language_name": "Check the Integration Before Proving the Capability",
+    "plain_language_description": "Before any proving is done, the verification custodian checks the integration against what proving requires - that the capability is wholly assembled and its measurement points are in place. Defects are logged for rejection or repair before the proving begins.",
+    "business_purpose": "It exists so no capability is called proven over an integration that was only partly complete.",
+    "practical_context": "It runs once the intake is registered and the integration can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a measurement point missing from the assembled whole and logs the defect before proving begins."
+    }
+  },
+  "processes:task-eo-build-transform-wgh3ba": {
+    "plain_language_name": "Prove the Integrated Capability Performs to Design",
+    "plain_language_description": "With the integration verified, the processing custodian does the proving itself: the capability is run against the service levels, capacity envelopes, and delivery model design, and the capability verification is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a capability that was never proven is a promise nobody has tested - verification is where the design is shown to hold.",
+    "practical_context": "It starts once checking is complete and the verified capability is ready to be proven, and it ends with the capability verification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management runs the capability against its service levels and capacity envelopes and records the proof, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-record-awgtnk": {
+    "plain_language_name": "File the Carrier Contracting Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the contracting trail at its required retention tier and sets the retrieval handles for it. Which carriers were signed, to which service levels, stays readable whenever a carrier's obligations are examined.",
+    "business_purpose": "It exists so the contracting of each carrier can be evidenced whenever its obligations are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the contracting trail at its retention tier and sets the retrieval handles a carrier review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-uztycd": {
+    "plain_language_name": "Confirm the Contracted Carriers",
+    "plain_language_description": "When the carriers stand contracted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The readiness work that follows learns the network has its carriers and can be proven whole.",
+    "business_purpose": "It exists so readiness is verified only over carriers confirmed as contracted.",
+    "practical_context": "It begins once preparation is complete and the contracted carriers await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the contracted carriers against the activity's intended outcome and issues the confirmation the readiness step needs."
+    }
+  },
+  "processes:task-eo-build-intake-c52hx4": {
+    "plain_language_name": "Receive the Mode Selections and Service-Level Designs",
+    "plain_language_description": "Contracting opens when the transport mode selections and service-level designs are handed over as the requirements the carrier agreements must meet. The intake custodian accepts them, registers them with audit identifiers, and starts the contracting from a recorded baseline.",
+    "business_purpose": "It exists so carriers are contracted against registered designs rather than against whoever calls first.",
+    "practical_context": "It opens when the mode selections and service-level designs are presented for contracting, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the transport mode selections and service-level designs as the contracting baseline, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-ap5c3d": {
+    "plain_language_name": "Sign the Carriers the Transport Modes Need",
+    "plain_language_description": "With the designs verified, the processing custodian does the contracting itself: carriers for each designed transport mode are contracted to the designed service levels, and the contracted carriers are set down in the form the activity defines. Working papers behind each agreement are preserved.",
+    "business_purpose": "It exists because goods do not move on good intentions - the carriers are what make the designed routes real.",
+    "practical_context": "It starts once checking is complete and the verified designs are ready to be contracted from, and it ends with the contracted carriers produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management signs each mode's carriers to the designed service levels, keeping the working papers behind the agreements."
+    }
+  },
+  "processes:task-eo-build-verify-v8j3tq": {
+    "plain_language_name": "Check the Designs Before Signing the Carriers",
+    "plain_language_description": "Before any carrier is signed, the verification custodian checks the mode selections and service-level designs against what contracting requires - that every designed mode carries a service level to hold the carrier to. Gaps are logged for rejection or repair before any agreement is signed.",
+    "business_purpose": "It exists so no carrier is signed without a service level to hold it to, and no mode left without a carrier.",
+    "practical_context": "It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a designed mode with no service level attached and logs the gap before any carrier is signed."
+    }
+  },
+  "processes:task-eo-build-record-gn6hzz": {
+    "plain_language_name": "File the Network Node Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the establishment trail at its required retention tier and sets the retrieval handles for it. Which nodes were established, at which positions, stays readable whenever the network's footprint is examined.",
+    "business_purpose": "It exists so the establishment of each node can be evidenced against the position plan it followed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the node trail at its retention tier and sets the retrieval handles a network review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-rnzg83": {
+    "plain_language_name": "Confirm the Established Network Nodes",
+    "plain_language_description": "When the nodes stand established, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The capacity and carrier work that follows learns the nodes are standing and ready to be filled and served.",
+    "business_purpose": "It exists so capacity and carriers proceed only over nodes confirmed as established.",
+    "practical_context": "It begins once preparation is complete and the established nodes await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the established nodes against the activity's intended outcome and issues the confirmation the capacity and carrier steps need."
+    }
+  },
+  "processes:task-eo-build-intake-wt6wf5": {
+    "plain_language_name": "Receive the Node Position Plan for the Build",
+    "plain_language_description": "The node build opens when the node position plan is handed over as the plan the physical nodes must be established from. The intake custodian accepts it, registers it with audit identifiers, and starts the establishment from a recorded baseline.",
+    "business_purpose": "It exists so nodes are established at the positions the design chose, not wherever land was cheap.",
+    "practical_context": "It opens when the position plan is presented for the build, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the node position plan as the build baseline, with audit references, and opens the establishment work."
+    }
+  },
+  "processes:task-eo-build-transform-sjc3c2": {
+    "plain_language_name": "Build the Nodes the Logistics Design Positions",
+    "plain_language_description": "With the plan verified, the processing custodian does the establishment itself: the warehouses, hubs, and cross-docks the design positions are established at their planned locations, and the established nodes are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a logistics design is lines on a map until the nodes actually stand at the positions it chose.",
+    "practical_context": "It starts once checking is complete and the verified plan is ready to be built from, and it ends with the established nodes produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management establishes the warehouses, hubs, and cross-docks at their planned positions, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-tp3j9v": {
+    "plain_language_name": "Check the Position Plan Before Building the Nodes",
+    "plain_language_description": "Before any node is established, the verification custodian checks the position plan against what the build requires - that every positioned node is plannable and the plan covers the network's full footprint. Defects are logged for rejection or repair before any node is built.",
+    "business_purpose": "It exists so the network is never built around a position plan that left a hole in it.",
+    "practical_context": "It runs once the intake is registered and the plan can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the plan leaving a region without its positioned hub and logs the defect before any node is built."
+    }
+  },
+  "processes:task-eo-build-record-32fyyr": {
+    "plain_language_name": "File the Warehouse Capacity Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the provisioning trail at its required retention tier and sets the retrieval handles for it. What capacity was provided at which node, to which sizing, stays readable whenever the network's storage is examined.",
+    "business_purpose": "It exists so the provisioning of capacity can be evidenced whenever the network's storage is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the capacity trail at its retention tier and sets the retrieval handles a storage review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-58jh48": {
+    "plain_language_name": "Confirm the Provisioned Warehouse Capacity",
+    "plain_language_description": "When the capacity stands provisioned, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The readiness work that follows learns the nodes have their space and the network can be proven whole.",
+    "business_purpose": "It exists so readiness is verified only over capacity confirmed as provisioned.",
+    "practical_context": "It begins once preparation is complete and the provisioned capacity awaits their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the provisioned capacity against the activity's intended outcome and issues the confirmation the readiness step needs."
+    }
+  },
+  "processes:task-eo-build-intake-h6yg5b": {
+    "plain_language_name": "Receive the Node Capacity Sizing for Provisioning",
+    "plain_language_description": "Provisioning opens when the node capacity sizing is handed over as the statement of how much warehouse space each node needs. The intake custodian accepts it, registers it with audit identifiers, and starts the provisioning from a recorded baseline.",
+    "business_purpose": "It exists so capacity is provisioned from a registered sizing rather than from rough floor guesses.",
+    "practical_context": "It opens when the sizing is presented for provisioning, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the node capacity sizing as the provisioning baseline, with audit references, and opens the capacity work."
+    }
+  },
+  "processes:task-eo-build-transform-tc32nd": {
+    "plain_language_name": "Provide the Warehouse Capacity Each Node Needs",
+    "plain_language_description": "With the sizing verified, the processing custodian does the provisioning itself: the warehouse capacity each node requires is provisioned to its sizing, and the provisioned capacity is set down in the form the activity defines. Working papers behind each provision are preserved.",
+    "business_purpose": "It exists because a node without capacity is a pin on a map - provisioning is what turns positions into usable storage.",
+    "practical_context": "It starts once checking is complete and the verified sizing is ready to be provisioned from, and it ends with the provisioned capacity produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management provisions each node's warehouse capacity to its sizing, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-j5vhbu": {
+    "plain_language_name": "Check the Sizing Before Provisioning the Capacity",
+    "plain_language_description": "Before any capacity is provisioned, the verification custodian checks the sizing against what provisioning requires - that every established node carries a sizing and the figures are the committed ones. Defects are logged for rejection or repair before any capacity is provided.",
+    "business_purpose": "It exists so no node runs short of space because its sizing was never settled.",
+    "practical_context": "It runs once the intake is registered and the sizing can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an established node with no sizing behind it and logs the defect before capacity is provisioned."
+    }
+  },
+  "processes:task-eo-build-record-txbw3r": {
+    "plain_language_name": "File the Network Readiness Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the determination trail at its required retention tier and sets the retrieval handles for it. What was exercised, against which routing logic, and what was found stays readable whenever the readiness call is revisited.",
+    "business_purpose": "It exists so the readiness judgement can be evidenced against the exercise it was drawn from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the determination trail at its retention tier and sets the retrieval handles a network review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-sstnxw": {
+    "plain_language_name": "Confirm the Network Readiness Determination",
+    "plain_language_description": "When the determination stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The network's users learn it is ready - or knows exactly what must still be fixed.",
+    "business_purpose": "It exists so the network is used only once readiness is confirmed by determination.",
+    "practical_context": "It begins once preparation is complete and the readiness determination awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the readiness determination against the activity's intended outcome and issues the confirmation the network's users wait on."
+    }
+  },
+  "processes:task-eo-build-intake-efx4gj": {
+    "plain_language_name": "Receive the Built Network for the Readiness Determination",
+    "plain_language_description": "The determination opens when the built network - nodes, capacity, and carriers - is handed over as the whole whose readiness must be judged. The intake custodian accepts it, registers it with audit identifiers, and starts the determination from a recorded baseline.",
+    "business_purpose": "It exists so readiness is judged over the registered built network rather than over optimism.",
+    "practical_context": "It opens when the built network is presented for the determination, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the built network as the determination baseline, with audit references, and opens the readiness work."
+    }
+  },
+  "processes:task-eo-build-transform-6cz4ra": {
+    "plain_language_name": "Prove the Built Network Can Run the Designed Routing",
+    "plain_language_description": "With the network verified, the processing custodian makes the determination itself: the built network is exercised against the routing logic specification, and the readiness determination is set down in the form the activity defines. Working papers behind the judgement are preserved.",
+    "business_purpose": "It exists because a network that was never exercised is a hope with buildings on it - the determination is where the design is shown to work.",
+    "practical_context": "It starts once checking is complete and the verified network is ready to be exercised, and it ends with the readiness determination produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management exercises the network against the routing logic and records the readiness determination, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-7cqw9v": {
+    "plain_language_name": "Check the Built Network Before Judging Its Readiness",
+    "plain_language_description": "Before any readiness is judged, the verification custodian checks the built network against what the determination requires - that nodes, capacity, and carriers are all present and accounted for. Defects are logged for rejection or repair before the judgement is made.",
+    "business_purpose": "It exists so readiness is never declared over a network with pieces still missing.",
+    "practical_context": "It runs once the intake is registered and the network can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one node's carriers still unsigned and logs the defect before readiness is judged."
+    }
+  }
+}

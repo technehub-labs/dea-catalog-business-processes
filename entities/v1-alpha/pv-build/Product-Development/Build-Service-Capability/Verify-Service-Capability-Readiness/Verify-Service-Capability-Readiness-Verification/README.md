@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-veri
 
 This is a **Task** (level L4), named **Verify Service Capability Readiness Verification**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Verify Service Capability Readiness** (`processes:activity-pv-build-nhhc9u`). Its canonical ID is `processes:task-pv-build-verify-6b63na`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the verdict is given, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the readiness call.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a capability declared ready on unchecked inputs fails in front of customers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management tests the capability against the proposition's service levels before the verdict.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Capability Against the Service Levels |
+| `plain_language_description` | string | no | Before the verdict is given, the verification custodian tests the arriving material against what the activity requires … |
+| `business_purpose` | string | no | It exists because a capability declared ready on unchecked inputs fails in front of customers. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Candidate Adjustments for Implications Work'
+plain_language_description: 'The assessment opens as its material arrives: the candidate direction adjustments drafted against the adaptation case. The intake custodian logs them against the assessment file so the assessment starts accounted for.'
+business_purpose: 'It exists so the implications work covers exactly the candidates on the register, with none slipping in or out unrecorded.'
+practical_context: 'It opens when the candidate adjustments are presented for assessment, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs each candidate direction adjustment into the assessment file, so the implications work starts with every candidate accounted for.'

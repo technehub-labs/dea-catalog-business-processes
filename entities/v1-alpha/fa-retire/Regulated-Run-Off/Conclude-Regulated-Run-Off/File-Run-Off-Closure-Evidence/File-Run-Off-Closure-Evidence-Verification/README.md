@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-ver
 
 This is a **Task** (level L4), named **File Run-Off Closure Evidence Verification**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **File Run-Off Closure Evidence** (`processes:activity-fa-retire-3g3m9u`). Its canonical ID is `processes:task-fa-retire-verify-8r64r7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is filed, the verification custodian checks the accounts, certificate, and distribution against what filing requires - that every piece the regulator expects is present and none arrived half-drawn. Defects are logged for rejection or repair before the submission goes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the regulator never receives an ending with pieces missing from it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the surrender request absent from the assembly and logs the defect before the submission goes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Pieces Before the Submission Goes |
+| `plain_language_description` | string | no | Before anything is filed, the verification custodian checks the accounts, certificate, and distribution against what … |
+| `business_purpose` | string | no | It exists so the regulator never receives an ending with pieces missing from it. |
+| `practical_context` | string | no | It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

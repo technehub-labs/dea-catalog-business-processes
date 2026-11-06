@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-v
 
 This is a **Task** (level L4), named **Bound Proposition Scope Verification**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Bound Proposition Scope** (`processes:activity-pv-conceive-wtenjt`). Its canonical ID is `processes:task-pv-conceive-verify-an4ja9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the boundary is drawn, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the scoping proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a boundary drawn on unchecked inputs leaks work into the proposition that was never priced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian of the proposition design authority checks the scoping inputs before the boundary is drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Scoping Inputs Before the Boundary Is Drawn |
+| `plain_language_description` | string | no | Before the boundary is drawn, the verification custodian tests the arriving material against what the activity … |
+| `business_purpose` | string | no | It exists because a boundary drawn on unchecked inputs leaks work into the proposition that was never priced. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

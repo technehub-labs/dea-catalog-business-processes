@@ -72,3 +72,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Performance Monitoring Audit Record'
+plain_language_description: 'After confirmation, the monitoring round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The evidence behind each performance reading therefore stays retrievable.'
+business_purpose: 'It exists because performance readings that later drive rebalancing calls must have retrievable evidence standing behind them.'
+practical_context: 'It opens once confirmation has been issued, and it closes with the monitoring audit record held at its required retention tier and its retrieval handles in place.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian in product management files the audit record behind the quarter''s performance readings at its required retention tier and sets the retrieval handles, so any later challenge to a rebalancing call can be answered from the evidence.'

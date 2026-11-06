@@ -68,3 +68,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Roll the Batch Records Up into the Quality Picture'
+plain_language_description: 'With the records verified, the processing custodian does the aggregation itself: the batch records are rolled up into the performance picture - yield, defect rates, and their movement - set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a hundred good batch records still say nothing until they are read together - the roll-up is where quality becomes visible.'
+practical_context: 'It starts once checking is complete and the verified records are ready to be rolled up, and it ends with the quality report produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management rolls the batch records into the yield and defect picture, keeping the working papers.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Log the Arriving Lifecycle Updates'
+plain_language_description: 'The record work opens as the material that moves a proposition''s lifecycle arrives, chiefly transitions and gate decisions. The intake custodian logs them against the lifecycle record file so the maintaining starts accounted for.'
+business_purpose: 'It exists because a stage history assembled from unlogged transitions and decisions is an account nobody can trust.'
+practical_context: 'It opens when a transition or a gate decision is presented for the record with the activity''s owner told that it has landed, and it closes with the intake registered.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in product management logs a completed transition and its gate outcome into the lifecycle record file, so the day''s maintenance of the stage histories starts accounted for.'

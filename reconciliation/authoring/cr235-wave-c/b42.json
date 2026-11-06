@@ -1,0 +1,582 @@
+{
+ "processes:task-pv-improve-transform-4x8apr": {
+  "plain_language_name": "Draw Up the Retire-or-Pivot Options for Each Failing Proposition",
+  "plain_language_description": "With the justification assessment checked, the option work proper begins. The processing custodian works each failing proposition into its candidate paths, producing the retire-or-pivot option set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a proposition that failed its justification needs concrete retirement and pivot paths on the table before any rationalization decision can be committed.",
+  "practical_context": "It opens when the checked justification material is ready to be worked, and it closes with the option set produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management takes the checked assessment for an underperforming proposition and drafts its two paths, retire with the offering withdrawn or pivot with a repositioned proposition, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-improve-verify-ke92bq": {
+  "plain_language_name": "Check the Justification Assessments Feeding the Option Set",
+  "plain_language_description": "Before any retire-or-pivot option is drawn up, the incoming justification assessments are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because options drawn up on an unsound justification assessment would steer a failing proposition toward the wrong path.",
+  "practical_context": "It opens once intake has registered the assessment material, and it closes with the material verified fit or its shortcomings written down for rejection or repair.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management receives the justification assessment for a proposition that missed its targets and confirms it carries the evidence the option work needs before anything is drawn up."
+  }
+ },
+ "processes:task-pv-improve-record-bqarsg": {
+  "plain_language_name": "File the Outcome Measurement Audit Record",
+  "plain_language_description": "After confirmation, the measurement work is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The realized-outcome evidence therefore outlives the wave that produced it.",
+  "business_purpose": "It exists because the evidence of what rationalization actually delivered must stay retrievable long after the decisions and their makers have moved on.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the measurement's audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the outcome measurement dossier for a completed rationalization wave at its required retention tier and sets the retrieval handles, so an auditor can pull the evidence years later."
+  }
+ },
+ "processes:task-pv-improve-confirm-q9gp5d": {
+  "plain_language_name": "Confirm the Outcome Measurements and Hand Them On",
+  "plain_language_description": "With the measuring done, the result is readied for whoever acts on it. The confirmation custodian tells the downstream teams the outcome measurement is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because a measurement that sits unannounced cannot inform the next round of rationalization decisions or close out the ones already taken.",
+  "practical_context": "It opens when processing has finished the measurement, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management announces to the portfolio review teams that the outcome measurement for the latest rationalization wave is ready, and reconciles what was produced against what the activity promised before standing the work down."
+  }
+ },
+ "processes:task-pv-improve-intake-a8pqvf": {
+  "plain_language_name": "Log the Arriving Rationalization Measurement Materials",
+  "plain_language_description": "The measuring work opens when the material for scoring committed rationalization decisions arrives. The intake custodian logs them against the outcome measurement file so the measuring starts accounted for.",
+  "business_purpose": "It exists because outcomes cannot be scored credibly when the comparison material arrives unlogged and the start of the work goes unaccounted.",
+  "practical_context": "It opens when the measurement input is presented with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management receives the pre-decision portfolio baseline for a rationalization wave and logs it into the outcome measurement file, so the scoring of what the decisions delivered starts accounted for."
+  }
+ },
+ "processes:task-pv-improve-transform-ne65yt": {
+  "plain_language_name": "Measure the Realized Rationalization Outcomes",
+  "plain_language_description": "Once the inputs are verified, the measuring itself is done. The processing custodian compares the realized portfolio state with the pre-decision baseline, producing the outcome measurement in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because committed rationalization decisions only prove their worth when what the portfolio actually became is measured against where it stood before.",
+  "practical_context": "It opens when the verified inputs are ready to be worked, and it closes with the outcome measurement produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management scores what changed after a rationalization wave, comparing the portfolio's current position with the pre-decision baseline and writing up the measurement with its workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-improve-verify-8wg95c": {
+  "plain_language_name": "Check the Measurement Inputs Against the Baseline",
+  "plain_language_description": "Before any scoring is done, the arriving measurement material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because an outcome measurement built on a defective baseline would misreport what the rationalization actually achieved.",
+  "practical_context": "It opens once intake has registered the material, and it closes with the inputs verified fit for scoring or their shortcomings logged for rejection or repair.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the pre-decision baseline figures for a decided rationalization wave, notices one closed proposition's position is missing, and writes the shortfall down for the source team to put right."
+  }
+ },
+ "processes:task-pv-operate-record-96g28m": {
+  "plain_language_name": "File the Portfolio Record Maintenance Audit Trail",
+  "plain_language_description": "After confirmation, the maintenance round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Every change to the record can then be traced to its authority.",
+  "business_purpose": "It exists because the portfolio record only stays trustworthy when each update can later be traced to the change and the decision behind it.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the maintenance audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the day's portfolio updates at its required retention tier and sets the retrieval handles, so a later reviewer can trace each allocation change to its approving decision."
+  }
+ },
+ "processes:task-pv-operate-confirm-j7dze7": {
+  "plain_language_name": "Confirm the Updated Portfolio Record to Its Users",
+  "plain_language_description": "Once the record is updated, the people who act on it are told. The confirmation custodian tells the downstream teams the refreshed portfolio record is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because an updated record nobody hears about leaves planners and reviewers working from stale positions.",
+  "practical_context": "It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the planning and review teams that the portfolio record now reflects the latest rebalancing and stage changes, and closes the reconciliation against what the maintenance work promised."
+  }
+ },
+ "processes:task-pv-operate-intake-7m3jkf": {
+  "plain_language_name": "Book In the Portfolio Changes for the Record",
+  "plain_language_description": "The record-keeping opens as the material that moves the portfolio arrives, chiefly rebalancing actions and lifecycle transitions. The intake custodian logs them against the portfolio record file so the maintaining starts accounted for.",
+  "business_purpose": "It exists because a record updated from unlogged changes cannot stand as the current account of propositions, envelopes, and allocations.",
+  "practical_context": "It opens when a rebalancing action or a transition is presented for the record with the activity's owner told that it has landed, and it closes with the intake registered and custody passed on.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management books in a freshly approved rebalancing action and a proposition's slide into decline, logging both into the portfolio record file so today's maintenance round starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-v2hxus": {
+  "plain_language_name": "Bring the Portfolio Record Up to Date",
+  "plain_language_description": "With the changes verified, the record itself is brought current. The processing custodian works the rebalancing actions and transitions into the record, producing the current account of propositions, envelopes, and allocations in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because everyone who steers the portfolio relies on the record being current, and it is this step that makes it so.",
+  "practical_context": "It opens when the verified changes are ready to be applied, and it closes with the record brought up to date in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management applies the verified changes to the portfolio record, moving allocations between envelopes and marking the proposition that entered decline, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-h382u5": {
+  "plain_language_name": "Check the Portfolio Changes Before They Enter the Record",
+  "plain_language_description": "Before anything moves the record, the arriving changes are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because an allocation or stage change entered unchecked would leave the record stating a portfolio that does not exist.",
+  "practical_context": "It opens once intake has booked the changes in, and it closes with them verified against what the maintenance requires or their defects written down.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks an incoming allocation change against the signed rebalancing decision, finds the envelope figures do not tie out, and writes the shortfall down for rejection or for the source team to put right."
+  }
+ },
+ "processes:task-pv-operate-record-a8d3w3": {
+  "plain_language_name": "File the Performance Monitoring Audit Record",
+  "plain_language_description": "After confirmation, the monitoring round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The evidence behind each performance reading therefore stays retrievable.",
+  "business_purpose": "It exists because performance readings that later drive rebalancing calls must have retrievable evidence standing behind them.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the monitoring audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record behind the quarter's performance readings at its required retention tier and sets the retrieval handles, so any later challenge to a rebalancing call can be answered from the evidence."
+  }
+ },
+ "processes:task-pv-operate-confirm-5qbjqv": {
+  "plain_language_name": "Hand the Performance Picture to Its Readers",
+  "plain_language_description": "Once the picture is assembled, the people who steer by it are told. The confirmation custodian tells the downstream teams the performance picture is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because a picture that never reaches its readers cannot trigger the envelope and rebalancing decisions it exists to inform.",
+  "practical_context": "It opens when processing has finished the picture, and it closes with confirmation issued, the picture's readers told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the steering teams the latest performance picture is ready, flagging the propositions drifting outside their envelopes, and closes the reconciliation against what the monitoring work promised."
+  }
+ },
+ "processes:task-pv-operate-intake-cmzsgc": {
+  "plain_language_name": "Log the Arriving Performance Signals",
+  "plain_language_description": "The watching opens as proposition performance signals arrive for monitoring. The intake custodian logs them against the performance picture file so the monitoring starts accounted for.",
+  "business_purpose": "It exists because keeping continuous sight of proposition performance starts with knowing exactly which signals arrived and when.",
+  "practical_context": "It opens when a round of signals is presented for monitoring with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the week's proposition signals into the performance picture file, so the continuous watch on how each proposition sits against its investment envelope starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-asm9ss": {
+  "plain_language_name": "Assemble the Proposition Performance Picture",
+  "plain_language_description": "With the signals verified, the watching becomes a picture. The processing custodian reads the telemetry against each proposition's investment envelope, producing the performance picture in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because raw telemetry steers nothing until it is assembled into a picture showing how each proposition performs against its envelope.",
+  "practical_context": "It opens when the verified signals are ready to be read, and it closes with the performance picture produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management assembles the week's verified telemetry into the performance picture, showing which propositions track inside their envelopes and which are drifting, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-xm4apt": {
+  "plain_language_name": "Check the Performance Signals for Fitness",
+  "plain_language_description": "Before the signals inform any picture, they are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a picture built on gappy or mislabelled telemetry would mislead every steering call taken from it.",
+  "practical_context": "It opens once intake has registered the signals, and it closes with them verified fit for the monitoring or their defects logged for rejection or repair.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the arriving telemetry for a flagship proposition, notices one channel's figures are missing for the week, and writes the shortfall down so the source feed can put it right."
+  }
+ },
+ "processes:task-pv-operate-record-m8c345": {
+  "plain_language_name": "File the Rebalancing Audit Record",
+  "plain_language_description": "After confirmation, the rebalancing round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Every allocation shift can then be traced to the performance and direction behind it.",
+  "business_purpose": "It exists because moving portfolio money must leave retrievable evidence of what moved, when it moved, and on whose authority.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the rebalancing audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the quarter's rebalancing at its required retention tier and sets the retrieval handles, so an auditor can trace each envelope shift to the picture and direction that justified it."
+  }
+ },
+ "processes:task-pv-operate-confirm-qnkmf4": {
+  "plain_language_name": "Confirm the Rebalanced Allocations Downstream",
+  "plain_language_description": "Once the allocations are reworked, the teams who must live by them are told. The confirmation custodian tells the downstream teams the rebalanced allocations are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because a rebalancing that is never confirmed leaves planners, budget holders, and the record still working to the old split.",
+  "practical_context": "It opens when processing has finished the rework, and it closes with confirmation issued, the downstream teams told the new split is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the planning and budget teams the rebalanced allocations are settled and ready, and closes the reconciliation against what the rebalancing work promised before the round is stood down."
+  }
+ },
+ "processes:task-pv-operate-intake-2wmbz9": {
+  "plain_language_name": "Take In the Rebalancing Request Papers",
+  "plain_language_description": "The rebalancing opens as the material calling for new allocations arrives, starting from the monitored performance picture. The intake custodian logs them against the rebalancing file so the rebalancing starts accounted for.",
+  "business_purpose": "It exists because shifting portfolio money must begin from logged triggering evidence and direction, or the round has no accounted start.",
+  "practical_context": "It opens when the picture and direction material is presented for rebalancing with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the latest performance picture and the portfolio direction papers into the rebalancing file, so the work of shifting allocations starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-edvupt": {
+  "plain_language_name": "Work Out the Adjusted Portfolio Allocations",
+  "plain_language_description": "With the inputs verified, the allocations themselves are reworked. The processing custodian reads the performance picture against the portfolio direction, producing the adjusted allocations in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the portfolio only keeps pointing where the direction says while its allocations are deliberately reworked from the monitored performance.",
+  "practical_context": "It opens when the verified inputs are ready to be worked, and it closes with the adjusted allocations produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management reworks the allocation split, moving weight from propositions trailing their envelopes toward the ones the direction favours, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-nsbgbz": {
+  "plain_language_name": "Check the Rebalancing Inputs Before Allocations Move",
+  "plain_language_description": "Before any allocation is moved, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because reallocating on an unverified picture or a direction that does not hold would move portfolio money on false grounds.",
+  "practical_context": "It opens once intake has registered the rebalancing material, and it closes with it verified fit for the work or its defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the picture behind a proposed rebalancing against the portfolio direction, notices the picture predates a major launch, and writes the shortfall down so the picture gets refreshed first."
+  }
+ },
+ "processes:task-pv-operate-record-296jjr": {
+  "plain_language_name": "File the Performance Report Audit Record",
+  "plain_language_description": "After the report has gone out, the cycle is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. What governance was told, and when, therefore stays answerable.",
+  "business_purpose": "It exists because decisions taken on a performance report must stay traceable to exactly what that report said.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the reporting audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the issued quarterly report at its required retention tier and sets the retrieval handles, so a later question about what governance was told can be answered from the file."
+  }
+ },
+ "processes:task-pv-operate-confirm-s2vfmm": {
+  "plain_language_name": "Issue the Report to Governance and Strategy",
+  "plain_language_description": "Once drafted, the report is readied for the people who act on it. The confirmation custodian tells the downstream teams the portfolio performance report is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because a finished report that is never confirmed and issued leaves the governance cycle waiting on numbers that already exist.",
+  "practical_context": "It opens when processing has finished the report, and it closes with confirmation issued, the report's consumers told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the governance and strategy consumers the quarterly performance report is available, and closes the reconciliation against what the reporting work promised for the cycle."
+  }
+ },
+ "processes:task-pv-operate-intake-ajdmhh": {
+  "plain_language_name": "Log the Reporting Cycle Materials",
+  "plain_language_description": "Each reporting cycle opens as the material for the portfolio performance report arrives. The intake custodian logs them against the reporting file so the reporting starts accounted for.",
+  "business_purpose": "It exists because a report bound for governance and strategy consumers must start from an accounted set of cycle inputs.",
+  "practical_context": "It opens when the cycle's inputs are presented for the report with the activity's owner told that they have landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the quarter's reporting inputs into the reporting file at the top of the cycle, so the preparation of the portfolio performance report starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-mktm7k": {
+  "plain_language_name": "Draft the Portfolio Performance Report",
+  "plain_language_description": "With the inputs verified, the report itself is written. The processing custodian shapes the cycle's material for the governance and strategy consumers, producing the portfolio performance report in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the people who govern and steer the portfolio can only act on performance they can actually read.",
+  "practical_context": "It opens when the verified inputs are ready to be shaped, and it closes with the report produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management drafts the quarterly portfolio performance report, turning the verified cycle figures into a readable account for the governance and strategy consumers with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-sedevc": {
+  "plain_language_name": "Check the Report Inputs Before Drafting",
+  "plain_language_description": "Before the report is drafted, its inputs are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because governance and strategy consumers act on the report, and a figure that slips through unchecked misleads them at the top table.",
+  "practical_context": "It opens once intake has registered the cycle inputs, and it closes with them verified fit for the report or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the cycle's performance figures before drafting begins, notices one envelope's spend counted twice, and writes the shortfall down for the feed owner to put right."
+  }
+ },
+ "processes:task-pv-operate-record-recnkj": {
+  "plain_language_name": "File the Gate Execution Audit Record",
+  "plain_language_description": "After confirmation, the gate round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Who passed or held each proposition, and why, therefore stays answerable.",
+  "business_purpose": "It exists because gate outcomes shape the rest of a proposition's life, and the authority behind each one must remain retrievable.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the gate audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the executed gate decisions at its required retention tier and sets the retrieval handles, so a later challenge to why a proposition passed its gate can be answered from the file."
+  }
+ },
+ "processes:task-pv-operate-confirm-8ta9p6": {
+  "plain_language_name": "Confirm the Executed Gates to the Lifecycle Teams",
+  "plain_language_description": "Once the decisions are executed, the teams who run the propositions are told. The confirmation custodian tells the downstream teams the executed gate decisions are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because proposition teams plan their next stage around the gate outcome, and an unconfirmed execution leaves them waiting or guessing.",
+  "practical_context": "It opens when processing has executed the decisions, and it closes with confirmation issued, the downstream teams told, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the proposition teams their gate decisions have been executed and the outcomes are ready, and closes the reconciliation against what the gate work promised."
+  }
+ },
+ "processes:task-pv-operate-intake-jrk2t8": {
+  "plain_language_name": "Book In the Arriving Gate Decision Papers",
+  "plain_language_description": "The gate work opens as the decisions taken at stage boundaries arrive for execution. The intake custodian logs them against the gate execution file so the executing starts accounted for.",
+  "business_purpose": "It exists because a gate decision that arrives unlogged cannot be executed accountably or defended against later challenge.",
+  "practical_context": "It opens when a gate decision is presented for execution with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the review board's decision to advance a proposition past its growth-stage gate into the gate execution file, so the executing starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-r8nkgb": {
+  "plain_language_name": "Put the Gate Decisions into Effect",
+  "plain_language_description": "With the decisions verified, they are carried out. The processing custodian works each decision against its stage boundary, producing the executed gate decisions in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a gate decision governs nothing until it is actually put into effect at the stage boundary it addresses.",
+  "practical_context": "It opens when the verified decisions are ready to be executed, and it closes with them carried out in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management puts the verified gate decision into effect, moving the proposition through its stage boundary and recording what changed, with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-dnbbht": {
+  "plain_language_name": "Check the Gate Decisions Against Their Criteria",
+  "plain_language_description": "Before a gate decision is acted on, the arriving papers are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because executing a gate decision that does not line up with the stage criteria would advance or hold a proposition on shaky ground.",
+  "practical_context": "It opens once intake has registered the decision papers, and it closes with them verified against the gate requirements or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks a gate decision against the criteria for its stage boundary, notices the paper omits the evidence the criteria call for, and writes the shortfall down for the review board to put right."
+  }
+ },
+ "processes:task-pv-operate-record-anybmt": {
+  "plain_language_name": "File the Lifecycle Record Audit Trail",
+  "plain_language_description": "After confirmation, the maintenance round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Each proposition's history can then be walked back through every change.",
+  "business_purpose": "It exists because a proposition's stage history is only worth what its traceability allows, and this step secures that traceability.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the lifecycle audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the lifecycle updates at its required retention tier and sets the retrieval handles, so a reviewer can walk any proposition's stage history back to its sources."
+  }
+ },
+ "processes:task-pv-operate-confirm-ux8xwc": {
+  "plain_language_name": "Confirm the Current Lifecycle Record to Its Users",
+  "plain_language_description": "Once the record is current, the people who plan against it are told. The confirmation custodian tells the downstream teams the updated lifecycle record is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because stage planning and gate preparation both run off the lifecycle record, and its users must know when it has moved on.",
+  "practical_context": "It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the planning teams the lifecycle record now carries the latest stage histories and gate outcomes, and closes the reconciliation against what the maintenance work promised."
+  }
+ },
+ "processes:task-pv-operate-intake-k9pkzp": {
+  "plain_language_name": "Log the Arriving Lifecycle Updates",
+  "plain_language_description": "The record work opens as the material that moves a proposition's lifecycle arrives, chiefly transitions and gate decisions. The intake custodian logs them against the lifecycle record file so the maintaining starts accounted for.",
+  "business_purpose": "It exists because a stage history assembled from unlogged transitions and decisions is an account nobody can trust.",
+  "practical_context": "It opens when a transition or a gate decision is presented for the record with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs a completed transition and its gate outcome into the lifecycle record file, so the day's maintenance of the stage histories starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-wh62e3": {
+  "plain_language_name": "Bring the Lifecycle Record Up to Date",
+  "plain_language_description": "With the updates verified, the record itself is brought current. The processing custodian works the transitions and gate outcomes into each proposition's history, producing the current stage account in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because planners and reviewers need every proposition's stage history and gate outcomes current, and this step makes them so.",
+  "practical_context": "It opens when the verified updates are ready to be applied, and it closes with the lifecycle record current in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management applies the verified updates to the lifecycle record, extending a proposition's stage history with its new stage and gate outcome, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-ee6yhm": {
+  "plain_language_name": "Check the Lifecycle Updates Before Entry",
+  "plain_language_description": "Before anything enters the lifecycle record, the arriving updates are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a stage history or gate outcome entered unchecked would corrupt the account every lifecycle decision leans on.",
+  "practical_context": "It opens once intake has registered the updates, and it closes with them verified fit for the record or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks an incoming gate outcome against the executed decision papers, notices the recorded stage does not match the decision, and writes the shortfall down for correction."
+  }
+ },
+ "processes:task-pv-operate-record-3a5jmn": {
+  "plain_language_name": "File the Stage Transition Audit Record",
+  "plain_language_description": "After confirmation, the transition round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Each stage move and its grounds therefore stay answerable.",
+  "business_purpose": "It exists because a stage change decides what a proposition owes next, and the grounds behind each move must stay retrievable.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the transition audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the executed transitions at its required retention tier and sets the retrieval handles, so the grounds behind any stage move can be retrieved on demand."
+  }
+ },
+ "processes:task-pv-operate-confirm-5uc6r8": {
+  "plain_language_name": "Confirm the Stage Moves to the Proposition Teams",
+  "plain_language_description": "Once the moves are made, the teams whose propositions have shifted are told. The confirmation custodian tells the downstream teams the executed transitions are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because a team's obligations change with its proposition's stage, and the team must hear officially when the move has happened.",
+  "practical_context": "It opens when processing has executed the transitions, and it closes with confirmation issued, the downstream teams told, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the proposition teams their stage moves are executed and official, and closes the reconciliation against what the transition work promised for the round."
+  }
+ },
+ "processes:task-pv-operate-intake-xsgcyz": {
+  "plain_language_name": "Take In the Transition Request Papers",
+  "plain_language_description": "The transition work opens as the cases for moving propositions between stages arrive. The intake custodian logs them against the transition file so the managing starts accounted for.",
+  "business_purpose": "It exists because a stage move made without a logged case cannot be checked against the stage criteria or defended afterwards.",
+  "practical_context": "It opens when a transition case is presented for handling with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs a proposition's case for moving from introduction into growth into the transition file, so the handling of the move starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-yvsf5z": {
+  "plain_language_name": "Carry Out the Stage Moves",
+  "plain_language_description": "With the cases verified, the moves themselves are made. The processing custodian works each proposition from its stage to the next, producing the executed transitions in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the lifecycle only means anything while propositions actually move between stages when their criteria are met.",
+  "practical_context": "It opens when the verified cases are ready to be executed, and it closes with the transitions carried out in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management executes the verified transition, formally moving the proposition from introduction into growth and recording the move, with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-gvmbtj": {
+  "plain_language_name": "Check Each Transition Case Against the Stage Criteria",
+  "plain_language_description": "Before a proposition is moved, its case is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because moving a proposition between stages on an unproven case places it in a stage its performance does not support.",
+  "practical_context": "It opens once intake has registered the transition cases, and it closes with them verified against the stage criteria or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests a growth-stage case against the stage criteria and the proposition's tracked position, finds the growth evidence thin, and writes the shortfall down for rejection or repair."
+  }
+ },
+ "processes:task-pv-operate-record-6vjdr4": {
+  "plain_language_name": "File the Stage Tracking Audit Record",
+  "plain_language_description": "After confirmation, the tracking round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The evidence behind each stage reading therefore stays retrievable.",
+  "business_purpose": "It exists because stage readings that are later challenged at a gate or a review need their supporting evidence on hand.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the tracking audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record behind the stage readings at its required retention tier and sets the retrieval handles, so a gate review can pull the evidence that placed a proposition in maturity."
+  }
+ },
+ "processes:task-pv-operate-confirm-skckdn": {
+  "plain_language_name": "Hand the Stage Tracking Record On",
+  "plain_language_description": "Once the positions are set down, the teams who plan by them are told. The confirmation custodian tells the downstream teams the stage tracking record is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because transition cases and gate preparation both start from the tracked positions, so their users must know when the record has moved.",
+  "practical_context": "It opens when processing has finished the tracking, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the lifecycle planning teams the refreshed stage tracking record is ready, and closes the reconciliation against what the tracking work promised before the round closes."
+  }
+ },
+ "processes:task-pv-operate-intake-yjr7je": {
+  "plain_language_name": "Log the Incoming Stage Signals",
+  "plain_language_description": "The tracking opens as the signals bearing on each proposition's stage arrive. The intake custodian logs them against the stage tracking file so the tracking starts accounted for.",
+  "business_purpose": "It exists because knowing where each proposition sits between introduction and decline starts with an accounted set of arriving signals.",
+  "practical_context": "It opens when a round of signals is presented for stage tracking with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the week's signals into the stage tracking file, so the work of keeping every proposition's stage position current starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-prcf5j": {
+  "plain_language_name": "Update the Stage Positions of the Propositions",
+  "plain_language_description": "With the signals verified, the positions themselves are read and set down. The processing custodian reads each proposition against introduction, growth, maturity, and decline, producing the stage tracking record in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because every lifecycle decision starts from where a proposition actually sits, and this step keeps that answer current.",
+  "practical_context": "It opens when the verified signals are ready to be read, and it closes with the stage tracking record produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management reads the verified signals and updates the stage tracking record, holding one proposition in growth and moving another into maturity, with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-fcvpe3": {
+  "plain_language_name": "Check the Signals That Bear on Stage Positions",
+  "plain_language_description": "Before a stage position is read from them, the signals are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a proposition tracked in the wrong stage misdirects every decision that stage implies.",
+  "practical_context": "It opens once intake has registered the signals, and it closes with them verified fit for the tracking or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the signals behind a maturity reading, notices a sales feed double-counting one region, and writes the shortfall down for the feed to be put right."
+  }
+ },
+ "processes:task-pv-operate-record-v9qpy9": {
+  "plain_language_name": "File the Catalogue Pricing Audit Record",
+  "plain_language_description": "After confirmation, the pricing round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Every price shown to buyers can then be traced to its authority.",
+  "business_purpose": "It exists because prices carry commercial and regulatory weight, and the authority behind each one must stay retrievable.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the pricing audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the administered pricing at its required retention tier and sets the retrieval handles, so any price on the catalogue can later be traced to its launch pricing or rule authority."
+  }
+ },
+ "processes:task-pv-operate-confirm-mha68v": {
+  "plain_language_name": "Confirm the Catalogue Pricing to the Sales Channels",
+  "plain_language_description": "Once the prices are administered, the teams who sell on them are told. The confirmation custodian tells the downstream teams the administered catalogue pricing is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because channels quoting from stale prices oversell or undersell, so they must hear when the catalogue pricing has moved.",
+  "practical_context": "It opens when processing has finished the pricing work, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the channel and sales teams the new catalogue pricing is in force and ready, and closes the reconciliation against what the pricing work promised."
+  }
+ },
+ "processes:task-pv-operate-intake-qmfamc": {
+  "plain_language_name": "Book In the Arriving Pricing Papers",
+  "plain_language_description": "The pricing work opens as the material that sets or moves catalogue prices arrives, chiefly launch pricing and rule updates. The intake custodian logs them against the pricing file so the administering starts accounted for.",
+  "business_purpose": "It exists because the prices buyers see must be traceable to logged and authorised inputs from the very first step.",
+  "practical_context": "It opens when pricing material is presented for administration with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs a new product's launch pricing and a seasonal rule change into the pricing file, so the administering of catalogue prices starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-ehw8b9": {
+  "plain_language_name": "Apply the Administered Prices to the Catalogue",
+  "plain_language_description": "With the papers verified, the prices themselves are administered. The processing custodian works the launch pricing and rule outcomes into the catalogue figures, producing the administered catalogue pricing in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the catalogue is where buyers meet prices, so the administered figures must actually take effect there.",
+  "practical_context": "It opens when the verified pricing is ready to be applied, and it closes with the catalogue pricing administered in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management applies the verified launch pricing to the catalogue entries and works the seasonal rule through the affected prices, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-su5ehj": {
+  "plain_language_name": "Check the Pricing Papers Against the Pricing Rules",
+  "plain_language_description": "Before a price reaches the catalogue, its papers are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a price administered outside the set rules would show buyers figures the business never authorised.",
+  "practical_context": "It opens once intake has registered the pricing papers, and it closes with them verified against the pricing requirements or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks a proposed price move against the set pricing rules, finds the margin floor breached, and writes the shortfall down for the pricing owner to put right."
+  }
+ },
+ "processes:task-pv-operate-record-aj6tf3": {
+  "plain_language_name": "File the Catalogue Entry Audit Trail",
+  "plain_language_description": "After confirmation, the maintenance round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Each entry change can then be traced to the baseline and state behind it.",
+  "business_purpose": "It exists because what the catalogue said about a product at any moment must stay reconstructible from its trail.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the entry audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the audit record for the catalogue entry changes at its required retention tier and sets the retrieval handles, so a dispute over what a listing once said can be settled from the trail."
+  }
+ },
+ "processes:task-pv-operate-confirm-xfpdy3": {
+  "plain_language_name": "Confirm the Current Entries to the Channels",
+  "plain_language_description": "Once the entries are current, the teams who trade on them are told. The confirmation custodian tells the downstream teams the updated catalogue entries are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because channels listing products from stale entries sell the wrong variants or miss new ones entirely.",
+  "practical_context": "It opens when processing has finished the entry work, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management tells the channel teams the updated catalogue entries are live and ready, and closes the reconciliation against what the entry maintenance promised for the round."
+  }
+ },
+ "processes:task-pv-operate-intake-q89kh3": {
+  "plain_language_name": "Log the Arriving Catalogue Change Papers",
+  "plain_language_description": "The entry work opens as the material that shapes catalogue entries arrives, chiefly variant baselines and lifecycle states. The intake custodian logs them against the catalogue entry file so the maintaining starts accounted for.",
+  "business_purpose": "It exists because entries for products in active operation must be maintained from logged and accounted inputs.",
+  "practical_context": "It opens when catalogue change material is presented for the entries with the activity's owner told that it has landed, and it closes with the intake registered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs a new variant baseline and a product's move into active operation into the catalogue entry file, so the day's entry maintenance starts accounted for."
+  }
+ },
+ "processes:task-pv-operate-transform-6tykmp": {
+  "plain_language_name": "Bring the Catalogue Entries Up to Date",
+  "plain_language_description": "With the changes verified, the entries themselves are updated. The processing custodian works the baselines and lifecycle states into the entries for products in active operation, producing the current catalogue entries in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because buyers and channels rely on the entries reflecting each active product as it actually is.",
+  "practical_context": "It opens when the verified changes are ready to be applied, and it closes with the entries brought up to date in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management updates the catalogue entries with the verified baselines and states, so each product in active operation is described as it currently stands, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-verify-qp59st": {
+  "plain_language_name": "Check the Catalogue Changes Before Entry",
+  "plain_language_description": "Before an entry is changed, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because an entry changed on unchecked material misdescribes a product buyers are actively choosing.",
+  "practical_context": "It opens once intake has registered the change papers, and it closes with them verified fit for the entries or their defects logged.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks a variant baseline against the product's state before the entry changes, finds the baseline predates the launch variant, and writes the shortfall down for repair."
+  }
+ },
+ "processes:task-pv-operate-record-qr65se": {
+  "plain_language_name": "File the Catalogue Integrity Audit Record",
+  "plain_language_description": "After confirmation, the integrity round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The accuracy, availability, and consistency findings therefore stand as retrievable evidence.",
+  "business_purpose": "It exists because the catalogue is the system of record for buyable offerings, and its integrity findings must survive as retrievable evidence.",
+  "practical_context": "It opens once confirmation has been issued, and it closes with the integrity audit record held at its required retention tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the integrity round's audit record at its required retention tier and sets the retrieval handles, so a later challenge to catalogue accuracy can be answered from the findings on file."
+  }
+ }
+}

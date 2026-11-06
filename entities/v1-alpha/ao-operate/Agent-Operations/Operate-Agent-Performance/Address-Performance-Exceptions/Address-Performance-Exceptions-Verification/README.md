@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Address Performance Exceptions Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Address Performance Exceptions** (`processes:activity-ao-operate-yyqtzw`). Its canonical ID is `processes:task-ao-operate-verify-bwhbpq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any exception is addressed, the verification custodian checks the monitoring against what handling requires - that each flagged exception is real under the expectation it breaches. Defects are logged for rejection or repair before any exception is addressed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so agents are never pulled up over exceptions the monitoring raised in error.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the monitoring can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an exception flagged against an expectation that was never set for that agent and logs the defect first.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Monitoring Before Addressing the Exceptions |
+| `plain_language_description` | string | no | Before any exception is addressed, the verification custodian checks the monitoring against what handling requires - … |
+| `business_purpose` | string | no | It exists so agents are never pulled up over exceptions the monitoring raised in error. |
+| `practical_context` | string | no | It runs once the intake is registered and the monitoring can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

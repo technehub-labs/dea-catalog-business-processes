@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Record Governance Decisions and acknowledged by the governance custodian and any governing-party notify-list; confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Sign Off the Governance Operating Round'
+plain_language_description: 'With the results pack in hand, the confirmation custodian checks it against what the cycle demanded and what the assurance standards expect. Once the reconciliation holds, the board secretary and the governance custodian receive the completion sign-off, and the confirmation is logged.'
+business_purpose: 'It exists so completion of the round is formally acknowledged before the file passes into record-keeping, closing the custody chain.'
+practical_context: 'It starts once the results pack is produced, and it closes when the acknowledgement is back and the records custodian takes over the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the pack against the meeting calendar and assurance standards, then logs the sign-off acknowledged by the board secretary.'

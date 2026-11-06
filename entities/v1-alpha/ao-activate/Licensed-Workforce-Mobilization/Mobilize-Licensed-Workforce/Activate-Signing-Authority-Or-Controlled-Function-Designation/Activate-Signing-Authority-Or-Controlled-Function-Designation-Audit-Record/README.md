@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-r
 
 This is a **Task** (level L4), named **Activate Signing Authority Or Controlled-Function Designation Audit Record**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Activate Signing Authority Or Controlled-Function Designation** (`processes:activity-ao-activate-sq2zfw`). Its canonical ID is `processes:task-ao-activate-record-4szntk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the confirmation has gone out, the records custodian preserves the audit trail of the activation: the record is stored at its required retention tier and given retrieval handles so it can be found again years later. Once filed, the activation can withstand scrutiny without anyone having to reconstruct it from memory.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the activation leaves behind durable, findable evidence of what was done and on whose authority.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the completed activation trail at its retention tier and sets the retrieval handles so a future reviewer can pull the whole history on demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Activation Audit Record |
+| `plain_language_description` | string | no | After the confirmation has gone out, the records custodian preserves the audit trail of the activation: the record is … |
+| `business_purpose` | string | no | It exists so the activation leaves behind durable, findable evidence of what was done and on whose authority. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

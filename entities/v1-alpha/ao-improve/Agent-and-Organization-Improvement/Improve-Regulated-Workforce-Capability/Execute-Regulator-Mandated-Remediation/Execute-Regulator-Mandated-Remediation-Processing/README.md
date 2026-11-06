@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Execute Regulator-Mandated Remediation Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Execute Regulator-Mandated Remediation** (`processes:activity-ao-improve-f2r6t4`). Its canonical ID is `processes:task-ao-improve-transform-5ru9b8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian executes the remediation itself: the regulator-supervised or employer-driven program is carried out per the plan, and the completion record is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a remediation obligation only lifts once the required program has actually been run and recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be executed from, and it ends with the remediation completion record produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian carries the remediation program through to completion per the plan and records it, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Remediation to Completion |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian executes the remediation itself: the regulator-supervised or … |
+| `business_purpose` | string | no | It exists because a remediation obligation only lifts once the required program has actually been run and recorded. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be executed from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Send Every Customer Its Bill'
+plain_language_description: 'With the inputs verified, the processing custodian does the issuing itself: each billing event''s invoice is drawn from the fulfilment record under the contract''s terms and sent, and the issued invoices are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because work delivered but never billed is work paid for by the enterprise - the issuing is where delivery finally asks for its money.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be billed from, and it ends with the issued invoices produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the compliance function draws each bill from the fulfilment record under the contract''s terms and sends it, keeping the working papers.'

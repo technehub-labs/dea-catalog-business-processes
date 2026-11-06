@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Report Portfolio Performance Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Report Portfolio Performance** (`processes:activity-pv-operate-nzj8xu`). Its canonical ID is `processes:task-pv-operate-confirm-s2vfmm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once drafted, the report is readied for the people who act on it. The confirmation custodian tells the downstream teams the portfolio performance report is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a finished report that is never confirmed and issued leaves the governance cycle waiting on numbers that already exist.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the report, and it closes with confirmation issued, the report's consumers told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the governance and strategy consumers the quarterly performance report is available, and closes the reconciliation against what the reporting work promised for the cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue the Report to Governance and Strategy |
+| `plain_language_description` | string | no | Once drafted, the report is readied for the people who act on it. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists because a finished report that is never confirmed and issued leaves the governance cycle waiting on numbers … |
+| `practical_context` | string | no | It opens when processing has finished the report, and it closes with confirmation issued, the report's consumers told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

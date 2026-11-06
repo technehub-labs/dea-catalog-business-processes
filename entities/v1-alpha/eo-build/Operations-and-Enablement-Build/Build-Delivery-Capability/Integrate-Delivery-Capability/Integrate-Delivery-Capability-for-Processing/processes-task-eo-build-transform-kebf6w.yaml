@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Fit the Stood-Up Components Together into One Capability'
+plain_language_description: 'With the components verified, the processing custodian does the integration itself: the stood-up components are joined into one working delivery capability, and the integrated capability is set down in the form the activity defines. Working papers from the joining are preserved.'
+business_purpose: 'It exists because working parts beside each other are still not a capability - integration is where they start working as one.'
+practical_context: 'It starts once checking is complete and the verified components are ready to be joined, and it ends with the integrated capability produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management fits the stood-up components together into one working delivery capability, keeping the working papers.'

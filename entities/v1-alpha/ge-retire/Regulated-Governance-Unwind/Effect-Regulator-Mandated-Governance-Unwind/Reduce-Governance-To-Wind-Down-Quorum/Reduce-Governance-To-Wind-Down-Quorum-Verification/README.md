@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 
 This is a **Task** (level L4), named **Reduce Governance To Wind-Down Quorum Verification**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Reduce Governance To Wind-Down Quorum** (`processes:activity-ge-retire-bp4237`). Its canonical ID is `processes:task-ge-retire-verify-tj9wv3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian examines the pack before the reduction executes: does it satisfy the dissolution statute, does it preserve the quorum the wind-down regime needs, and does it respect the custodianship contract for retained records? Deviations are reported with their fixes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because stripping governance below the required quorum, or misreading the statute, would invalidate the reduced regime's decisions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the manifest is registered, and it ends when the certificate is out, deviations are remediated, and the processing custodian takes over.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the risk function confirms the downscaling plan keeps the wind-down quorum intact and clears the pack.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Downscaling Plan Against Quorum Rules |
+| `plain_language_description` | string | no | The verification custodian examines the pack before the reduction executes: does it satisfy the dissolution statute … |
+| `business_purpose` | string | no | It exists because stripping governance below the required quorum, or misreading the statute, would invalidate the … |
+| `practical_context` | string | no | It starts once the manifest is registered, and it ends when the certificate is out, deviations are remediated, and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

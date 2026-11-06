@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Record Governance Decisions Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Record Governance Decisions** (`processes:activity-ge-operate-fch6f5`). Its canonical ID is `processes:task-ge-operate-transform-88yh2y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is where the governance round actually happens: meetings are convened on schedule, the risk registers are kept current, exposures are raised, reviews and audits are run, and the assurance material is gathered. Everything the round produced is brought together into one results pack ready for sign-off.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the decisions the board and its committees make only become a durable record if the underlying work is actually performed and captured.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack for work, and it closes with the results pack produced and custody handed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function convenes the scheduled committee meetings, updates the risk registers, and gathers the assurance evidence into the results pack.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Governance Workload and Assemble the Results |
+| `plain_language_description` | string | no | This is where the governance round actually happens: meetings are convened on schedule, the risk registers are kept … |
+| `business_purpose` | string | no | It exists because the decisions the board and its committees make only become a durable record if the underlying work … |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack for work, and it closes with the results pack produced and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-inta
 
 This is a **Task** (level L4), named **Construct Product Variants Intake**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Construct Product Variants** (`processes:activity-pv-build-sk4whv`). Its canonical ID is `processes:task-pv-build-intake-7d793s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The variant build opens with the proposition and packaging designs arriving to be constructed. The intake custodian logs them against the build file so the construction starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because variants built from an unlogged design diverge from what the propositions promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the proposition and packaging designs into the variant build file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Variant Construction File |
+| `plain_language_description` | string | no | The variant build opens with the proposition and packaging designs arriving to be constructed. The intake custodian … |
+| `business_purpose` | string | no | It exists because variants built from an unlogged design diverge from what the propositions promised. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

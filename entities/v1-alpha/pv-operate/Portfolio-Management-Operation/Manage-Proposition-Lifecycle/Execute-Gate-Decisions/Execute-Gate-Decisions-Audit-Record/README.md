@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Execute Gate Decisions Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Execute Gate Decisions** (`processes:activity-pv-operate-xmvfj7`). Its canonical ID is `processes:task-pv-operate-record-recnkj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the gate round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Who passed or held each proposition, and why, therefore stays answerable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because gate outcomes shape the rest of a proposition's life, and the authority behind each one must remain retrievable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the gate audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the audit record for the executed gate decisions at its required retention tier and sets the retrieval handles, so a later challenge to why a proposition passed its gate can be answered from the file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Gate Execution Audit Record |
+| `plain_language_description` | string | no | After confirmation, the gate round is put beyond doubt for later scrutiny. The records custodian preserves the audit … |
+| `business_purpose` | string | no | It exists because gate outcomes shape the rest of a proposition's life, and the authority behind each one must remain … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the gate audit record held at its required retention … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Position Network Nodes Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Position Network Nodes** (`processes:activity-eo-design-fcqpn4`). Its canonical ID is `processes:task-eo-design-intake-quw8rm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Node positioning opens when the delivery model design and the demand geography are handed over together as the two inputs the node positions will be planned from. The intake custodian accepts both, registers them with audit identifiers, and starts the positioning from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nodes are positioned from the design and the demand rather than from available real estate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the design and geography are presented for positioning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the operations function registers the delivery model design and demand geography as the positioning baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Delivery Model Design and Demand Geography |
+| `plain_language_description` | string | no | Node positioning opens when the delivery model design and the demand geography are handed over together as the two … |
+| `business_purpose` | string | no | It exists so nodes are positioned from the design and the demand rather than from available real estate. |
+| `practical_context` | string | no | It opens when the design and geography are presented for positioning, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

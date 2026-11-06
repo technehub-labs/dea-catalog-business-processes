@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-c
 
 This is a **Task** (level L4), named **Bound Substrate Proportions Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Substrate Proportions** (`processes:activity-ao-conceive-4tgrxr`). Its canonical ID is `processes:task-ao-conceive-confirm-qswgna`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the proportions stand bounded, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The envelope and drafting steps that follow learn the proportions are fixed and available to work from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so envelope and drafting work proceeds over proportions confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the bounded proportions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the bounded proportions against the activity's intended outcome and issues the confirmation the envelope work depends on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Bounded Substrate Proportions |
+| `plain_language_description` | string | no | When the proportions stand bounded, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so envelope and drafting work proceeds over proportions confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the bounded proportions await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

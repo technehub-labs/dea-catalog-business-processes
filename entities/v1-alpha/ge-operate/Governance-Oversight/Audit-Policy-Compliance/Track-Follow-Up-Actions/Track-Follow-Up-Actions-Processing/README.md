@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Track Follow-Up Actions Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Track Follow-Up Actions** (`processes:activity-ge-operate-zhhypw`). Its canonical ID is `processes:task-ge-operate-transform-akrjny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the operating for the tracking: each reported follow-up action is followed from raise to closure, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an action raised and forgotten is a finding that has won - the tracking is what keeps the follow-up honest to the end.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the risk function follows each reported action from raise to closure, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Follow Every Action to Its Closure |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the operating for the tracking: each reported follow-up … |
+| `business_purpose` | string | no | It exists because an action raised and forgotten is a finding that has won - the tracking is what keeps the follow-up … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

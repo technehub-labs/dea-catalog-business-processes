@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Maintain Portfolio Record Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Portfolio Record** (`processes:activity-pv-operate-38waaf`). Its canonical ID is `processes:task-pv-operate-confirm-j7dze7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the record is updated, the people who act on it are told. The confirmation custodian tells the downstream teams the refreshed portfolio record is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an updated record nobody hears about leaves planners and reviewers working from stale positions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the planning and review teams that the portfolio record now reflects the latest rebalancing and stage changes, and closes the reconciliation against what the maintenance work promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Updated Portfolio Record to Its Users |
+| `plain_language_description` | string | no | Once the record is updated, the people who act on it are told. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists because an updated record nobody hears about leaves planners and reviewers working from stale positions. |
+| `practical_context` | string | no | It opens when processing has finished the update, and it closes with confirmation issued, the record's users told it is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

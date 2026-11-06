@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Identify Competency Domains Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Identify Competency Domains** (`processes:activity-ao-design-e63vge`). Its canonical ID is `processes:task-ao-design-verify-wjb4rn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any domain is identified, the verification custodian checks the structure design against what identification requires - that its roles and units are settled enough for their competency needs to be read off. Gaps are logged for rejection or repair before any domain is named.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework is never built on domains read from an unsettled structure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a new unit the design does not yet describe and logs the gap before any domain is identified for it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Structure Design Before Identifying the Domains |
+| `plain_language_description` | string | no | Before any domain is identified, the verification custodian checks the structure design against what identification … |
+| `business_purpose` | string | no | It exists so the framework is never built on domains read from an unsettled structure. |
+| `practical_context` | string | no | It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

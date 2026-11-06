@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Verify Network Readiness Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Verify Network Readiness** (`processes:activity-eo-build-by2f8g`). Its canonical ID is `processes:task-eo-build-transform-6cz4ra`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the network verified, the processing custodian makes the determination itself: the built network is exercised against the routing logic specification, and the readiness determination is set down in the form the activity defines. Working papers behind the judgement are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a network that was never exercised is a hope with buildings on it - the determination is where the design is shown to work.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified network is ready to be exercised, and it ends with the readiness determination produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management exercises the network against the routing logic and records the readiness determination, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prove the Built Network Can Run the Designed Routing |
+| `plain_language_description` | string | no | With the network verified, the processing custodian makes the determination itself: the built network is exercised … |
+| `business_purpose` | string | no | It exists because a network that was never exercised is a hope with buildings on it - the determination is where the … |
+| `practical_context` | string | no | It starts once checking is complete and the verified network is ready to be exercised, and it ends with the readiness … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

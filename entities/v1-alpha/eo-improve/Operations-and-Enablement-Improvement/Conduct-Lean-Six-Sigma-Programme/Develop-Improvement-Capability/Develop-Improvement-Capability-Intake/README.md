@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-in
 
 This is a **Task** (level L4), named **Develop Improvement Capability Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Develop Improvement Capability** (`processes:activity-eo-improve-334m2m`). Its canonical ID is `processes:task-eo-improve-intake-hgaqjh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Capability work opens when the programme standards are handed over as the bar the practitioners, methods, and governance must be developed to. The intake custodian accepts them, registers them with audit identifiers, and starts the development from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so capability is developed to a registered standard rather than to whatever enthusiasm achieves.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the programme standards are presented for the capability work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the programme standards as the capability baseline, with audit references, and opens the development work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Programme Standards for Capability Work |
+| `plain_language_description` | string | no | Capability work opens when the programme standards are handed over as the bar the practitioners, methods, and … |
+| `business_purpose` | string | no | It exists so capability is developed to a registered standard rather than to whatever enthusiasm achieves. |
+| `practical_context` | string | no | It opens when the programme standards are presented for the capability work, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

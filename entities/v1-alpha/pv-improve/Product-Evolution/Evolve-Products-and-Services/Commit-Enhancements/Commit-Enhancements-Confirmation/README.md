@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-co
 
 This is a **Task** (level L4), named **Commit Enhancements Confirmation**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Commit Enhancements** (`processes:activity-pv-improve-b3x5kk`). Its canonical ID is `processes:task-pv-improve-confirm-hgfaad`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian issues the completion confirmation, tells the downstream teams the committed enhancements are available, and closes the reconciliation against what the activity promised. The confirmation is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the commitments carry a logged acceptance from the accountable owner.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management logs the enhancement commitments and notifies the implementation teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Enhancement Commitments |
+| `plain_language_description` | string | no | The confirmation custodian issues the completion confirmation, tells the downstream teams the committed enhancements … |
+| `business_purpose` | string | no | It exists so the commitments carry a logged acceptance from the accountable owner. |
+| `practical_context` | string | no | It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

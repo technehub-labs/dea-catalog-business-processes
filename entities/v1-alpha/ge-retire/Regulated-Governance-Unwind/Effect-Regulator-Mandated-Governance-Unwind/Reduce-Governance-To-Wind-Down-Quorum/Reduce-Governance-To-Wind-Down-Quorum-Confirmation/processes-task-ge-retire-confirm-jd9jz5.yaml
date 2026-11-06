@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Reduce Governance To Wind-Down Quorum and acknowledged by the governance custodian and any governing-party notify-list …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Slimmed Governance Can Still Act'
+plain_language_description: 'The confirmation custodian reconciles the record pack with dissolution law and with the custodianship contract for retained records. Once satisfied, the completion confirmation is received by the governance custodian and by the registrar of companies. It is logged into the case file.'
+business_purpose: 'It exists so the reduced regime begins life with a formal, logged completion behind it.'
+practical_context: 'It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the finance function signs the reconciliation off, and the governance custodian acknowledges completion before logging.'

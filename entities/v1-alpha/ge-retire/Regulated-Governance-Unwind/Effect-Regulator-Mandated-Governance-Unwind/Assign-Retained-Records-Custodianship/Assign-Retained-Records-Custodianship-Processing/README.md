@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 
 This is a **Task** (level L4), named **Assign Retained-Records Custodianship Processing**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assign Retained-Records Custodianship** (`processes:activity-ge-retire-rzhc83`). Its canonical ID is `processes:task-ge-retire-transform-jcgs9j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian works the unwind: the order's scope is assessed, the retained records find their designated custodian, governance shrinks to its wind-down minimum, and the dissolution filings are lodged. Everything produced is bundled into the record pack for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the records that must outlive the entity pass into a designated custodian's hands as part of a defensible, evidenced unwind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody moving to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function secures the custodian designation and lodges the filings, bundling the evidence into the record pack.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Custodianship Work and Assemble the Pack |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian works the unwind: the order's scope is assessed, the retained … |
+| `business_purpose` | string | no | It exists so the records that must outlive the entity pass into a designated custodian's hands as part of a defensible … |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

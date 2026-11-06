@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-inta
 
 This is a **Task** (level L4), named **Onboard Agents Intake**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Onboard Agents** (`processes:activity-ao-build-gceqs6`). Its canonical ID is `processes:task-ao-build-intake-xwyg22`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Newly acquired agents arrive here to start becoming effective. The intake custodian accepts each arrival, logs it with audit identifiers, and sets the onboarding steps running from a registered list rather than a loose handover.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so onboarding starts from a traceable intake of exactly the agents acquisition delivered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the acquired agents are presented for onboarding, with the activity owner told of their arrival, and it closes with the intake registered under audit identifiers and the remaining steps free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the newly acquired agents onto the onboarding list with audit references and confirms receipt to the acquiring side.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Acquired Agents for Onboarding |
+| `plain_language_description` | string | no | Newly acquired agents arrive here to start becoming effective. The intake custodian accepts each arrival, logs it with … |
+| `business_purpose` | string | no | It exists so onboarding starts from a traceable intake of exactly the agents acquisition delivered. |
+| `practical_context` | string | no | It opens when the acquired agents are presented for onboarding, with the activity owner told of their arrival, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

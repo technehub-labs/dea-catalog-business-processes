@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Record Programme Completion Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Record Programme Completion** (`processes:activity-ao-operate-b6fecc`). Its canonical ID is `processes:task-ao-operate-intake-g97rcn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Completion logging opens when the delivered learning sessions are handed over as the teaching whose uptake must now be recorded per agent. The intake custodian accepts the handover, registers it with audit identifiers, and starts the recording from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so completions are logged from the registered record of what was actually delivered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the delivered sessions are presented for the logging, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the delivered sessions as the logging baseline, with audit references, and opens the completion work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Delivered Sessions for Completion Logging |
+| `plain_language_description` | string | no | Completion logging opens when the delivered learning sessions are handed over as the teaching whose uptake must now be … |
+| `business_purpose` | string | no | It exists so completions are logged from the registered record of what was actually delivered. |
+| `practical_context` | string | no | It opens when the delivered sessions are presented for the logging, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

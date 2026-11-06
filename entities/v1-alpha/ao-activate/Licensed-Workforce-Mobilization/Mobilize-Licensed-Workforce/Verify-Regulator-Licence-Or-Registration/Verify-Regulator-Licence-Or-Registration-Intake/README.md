@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-i
 
 This is a **Task** (level L4), named **Verify Regulator Licence Or Registration Intake**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Verify Regulator Licence Or Registration** (`processes:activity-ao-activate-z4yhzy`). Its canonical ID is `processes:task-ao-activate-intake-rwb8vd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A licence or registration needing verification arrives here together with the role it is meant to cover. The intake custodian accepts both, logs them with audit references on the personnel-record trail, and signals that the checking steps may begin.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so licence verification starts from a registered, traceable package rather than an untracked document.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the licence record and the role it must serve are presented for verification, with the activity owner alerted, and it closes with the intake registered under audit identifiers and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the operations function receives a practitioner's licence document with the live role it covers, registers both on the trail, and alerts the checking step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Licence for Verification |
+| `plain_language_description` | string | no | A licence or registration needing verification arrives here together with the role it is meant to cover. The intake … |
+| `business_purpose` | string | no | It exists so licence verification starts from a registered, traceable package rather than an untracked document. |
+| `practical_context` | string | no | It opens when the licence record and the role it must serve are presented for verification, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

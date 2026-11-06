@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-ve
 
 This is a **Task** (level L4), named **Commit Cost Review Outcomes Verification**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Commit Cost Review Outcomes** (`processes:activity-fa-improve-s2fjfj`). Its canonical ID is `processes:task-fa-improve-verify-u7443z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the record is committed, the verification custodian checks the pieces against what commitment requires - that every finding is settled and every routing names a track to act on it. Defects are logged for rejection or repair before the commitment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no finding is committed without somewhere to go and something to do.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a finding routed to no track at all and logs the defect before the record is committed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Pieces Before Committing the Cost Record |
+| `plain_language_description` | string | no | Before the record is committed, the verification custodian checks the pieces against what commitment requires - that … |
+| `business_purpose` | string | no | It exists so no finding is committed without somewhere to go and something to do. |
+| `practical_context` | string | no | It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

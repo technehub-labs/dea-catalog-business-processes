@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-ve
 
 This is a **Task** (level L4), named **Capture Lessons Learned Verification**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Capture Lessons Learned** (`processes:activity-ge-improve-f4qwmk`). Its canonical ID is `processes:task-ge-improve-verify-gg96m4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and the contract that classifies findings, and issues the report naming whatever deviates and how it will be mended.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because lessons captured short of the audit method would teach the wrong things - the reading is what keeps them honest.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the audit function reads the pack against the method of internal audit, naming whatever deviates and how it will be mended.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read the Pack Against the Audit Method Before the Lessons |
+| `plain_language_description` | string | no | With the manifest registered, the verification custodian reads the whole pack against the method of internal audit and … |
+| `business_purpose` | string | no | It exists because lessons captured short of the audit method would teach the wrong things - the reading is what keeps … |
+| `practical_context` | string | no | It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

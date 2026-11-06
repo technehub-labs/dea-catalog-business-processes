@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Fit Out Facilities Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Fit Out Facilities** (`processes:activity-eo-build-vggmrg`). Its canonical ID is `processes:task-eo-build-transform-jsyq39`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the brief verified, the processing custodian does the fit-out itself: each secured site is fitted out to its designed layout under the health-safety and accessibility specification, and the fitted facilities are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a secured site is bare ground - the fit-out is what turns it into a place people can safely work in.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified brief is ready to be fitted from, and it ends with the fitted facilities produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management fits each secured site out to its designed layout, health-safety and accessibility included, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fit Out the Secured Sites to the Designed Layouts |
+| `plain_language_description` | string | no | With the brief verified, the processing custodian does the fit-out itself: each secured site is fitted out to its … |
+| `business_purpose` | string | no | It exists because a secured site is bare ground - the fit-out is what turns it into a place people can safely work in. |
+| `practical_context` | string | no | It starts once checking is complete and the verified brief is ready to be fitted from, and it ends with the fitted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Measure Optimization Outcomes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Measure Optimization Outcomes** (`processes:activity-eo-improve-d9p8hv`). Its canonical ID is `processes:task-eo-improve-transform-y763ed`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the measurement itself: what each committed change actually delivered is measured against the quantified opening behind it, and the outcome measurement is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a change adopted is not a change proven - measurement is where the promise is settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the outcome measurement produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function measures each adopted change against the opening it answered and records the result, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Each Change Against the Opportunity That Prompted It |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the measurement itself: what each committed change actually … |
+| `business_purpose` | string | no | It exists because a change adopted is not a change proven - measurement is where the promise is settled. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the outcome … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

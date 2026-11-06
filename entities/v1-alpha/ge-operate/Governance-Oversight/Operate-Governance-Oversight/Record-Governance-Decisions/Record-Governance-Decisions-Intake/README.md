@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 
 This is a **Task** (level L4), named **Record Governance Decisions Intake**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Record Governance Decisions** (`processes:activity-ge-operate-fch6f5`). Its canonical ID is `processes:task-ge-operate-intake-bttmdg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the governance round opens, the intake custodian receives everything the recording work depends on: the meeting timetable for the board and its committees, the queue of assurance material, the diary of risk reviews, and the plan for compliance audits. Each item is logged so the operating case file shows exactly what the round started with.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the recording of governance decisions starts from a complete, accounted-for set of inputs rather than loose papers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Operate-stage pack is handed over at the start of the activity, and it closes once the manifest is on file and the verification custodian takes over.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function logs the board timetable, the assurance queue, and the audit plan against the case file before handing the pack to the verification custodian.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take Charge of the Decision Paperwork |
+| `plain_language_description` | string | no | When the governance round opens, the intake custodian receives everything the recording work depends on: the meeting … |
+| `business_purpose` | string | no | It exists so the recording of governance decisions starts from a complete, accounted-for set of inputs rather than … |
+| `practical_context` | string | no | It opens when the Operate-stage pack is handed over at the start of the activity, and it closes once the manifest is on … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

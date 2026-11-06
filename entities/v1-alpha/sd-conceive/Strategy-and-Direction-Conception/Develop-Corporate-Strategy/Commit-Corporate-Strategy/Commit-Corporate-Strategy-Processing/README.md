@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-t
 
 This is a **Task** (level L4), named **Commit Corporate Strategy Processing**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Commit Corporate Strategy** (`processes:activity-sd-conceive-7tr4ax`). Its canonical ID is `processes:task-sd-conceive-transform-gdm78s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the committing proper begins. The processing custodian binds the bounded ambition, strategic intent and chosen trajectory into one strategy statement, producing the committed corporate strategy in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the enterprise only steers by its strategy once ambition, intent and course are bound and committed as one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the committed corporate strategy produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function binds the verified ambition, intent and trajectory into the committed corporate strategy, keeping the binding workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bind Ambition, Intent and Trajectory into the Committed Strategy |
+| `plain_language_description` | string | no | With the inputs verified, the committing proper begins. The processing custodian binds the bounded ambition, strategic … |
+| `business_purpose` | string | no | It exists because the enterprise only steers by its strategy once ambition, intent and course are bound and committed … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the committed corporate strategy produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-co
 
 This is a **Task** (level L4), named **Prepare Footnotes and Disclosures Confirmation**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Prepare Footnotes and Disclosures** (`processes:activity-fa-operate-dv3u8j`). Its canonical ID is `processes:task-fa-operate-confirm-hpxpya`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the footnotes stand prepared, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The review that follows learns the context is written and the package can be judged whole.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the package is reviewed only once its context is confirmed as written.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the prepared footnotes await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the prepared footnotes against the activity's intended outcome and issues the confirmation the review needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Prepared Footnotes |
+| `plain_language_description` | string | no | When the footnotes stand prepared, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so the package is reviewed only once its context is confirmed as written. |
+| `practical_context` | string | no | It begins once preparation is complete and the prepared footnotes await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

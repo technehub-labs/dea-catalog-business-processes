@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Bound Allocation Envelopes Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Bound Allocation Envelopes** (`processes:activity-sd-build-sn9sky`). Its canonical ID is `processes:task-sd-build-transform-mgnpp7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the bounding proper begins. The processing custodian sets each envelope the translated initiatives must operate within, drawing on the plan's means, producing the bounded envelopes in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because initiatives resourced without firm envelopes compete for the same money and quietly overspend the plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the bounded envelopes produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function draws each envelope the verified initiatives must stay within, matching them against the plan's means, and keeps the bounding workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Resource Envelopes Each Initiative Must Stay Within |
+| `plain_language_description` | string | no | With the inputs verified, the bounding proper begins. The processing custodian sets each envelope the translated … |
+| `business_purpose` | string | no | It exists because initiatives resourced without firm envelopes compete for the same money and quietly overspend the … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the bounded envelopes produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

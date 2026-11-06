@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-ve
 
 This is a **Task** (level L4), named **Deliver Reports and Disclosures Verification**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Deliver Reports and Disclosures** (`processes:activity-fa-operate-hxqddg`). Its canonical ID is `processes:task-fa-operate-verify-vmqfw5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is handed out, the verification custodian checks the package and milestones against what delivery requires - that every audience is mapped and every milestone is still ahead. Defects are logged for rejection or repair before any delivery is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no audience is left waiting because the map missed it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the milestones can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an audience missing from the map and logs the defect before any delivery is made.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Milestones Before Handing the Package Out |
+| `plain_language_description` | string | no | Before anything is handed out, the verification custodian checks the package and milestones against what delivery … |
+| `business_purpose` | string | no | It exists so no audience is left waiting because the map missed it. |
+| `practical_context` | string | no | It runs once the intake is registered and the milestones can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

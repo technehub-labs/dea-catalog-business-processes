@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-co
 
 This is a **Task** (level L4), named **Commit Direction Adjustment Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Commit Direction Adjustment** (`processes:activity-sd-improve-m6ww6z`). Its canonical ID is `processes:task-sd-improve-confirm-trcxdz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The direction is settled and the handoff must be sealed. The confirmation custodian tells the downstream teams the committed direction adjustment is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the objectives refresh and the effectiveness review cannot start until someone has formally told them the new direction is in force.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the commitment work is finished and the new direction is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the objectives refresh and effectiveness review teams the committed direction is available, then closes the handover by reconciling it against what the commitment promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Committed Direction to Refresh and Review Teams |
+| `plain_language_description` | string | no | The direction is settled and the handoff must be sealed. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists because the objectives refresh and the effectiveness review cannot start until someone has formally told them … |
+| `practical_context` | string | no | It opens when the commitment work is finished and the new direction is ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Review Outcomes for Decision Logging'
+plain_language_description: 'The recording opens as its material arrives: the conducted strategic review with the decisions taken in the room. The intake custodian logs them against the recording file so the recording starts accounted for.'
+business_purpose: 'It exists so every decision leaves the room on a register, before memory blurs over who agreed what.'
+practical_context: 'It opens when the review outcomes are presented for recording, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the review''s outcomes into the recording file the same day, so the logging of its decisions starts accounted for.'

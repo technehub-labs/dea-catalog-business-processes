@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-r
 
 This is a **Task** (level L4), named **Record Supervised-Training Completion Audit Record**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Record Supervised-Training Completion** (`processes:activity-ao-activate-bsjbfc`). Its canonical ID is `processes:task-ao-activate-record-d494s9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian consigns the completion's audit trail to retention at its required tier and establishes the means of finding it again. The training story - plan, evidence, entry, confirmation - stays retrievable as one coherent history.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so supervised training can be evidenced as completed for as long as the record must live.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the completion's audit trail at its retention tier and sets the handles so a later supervision review can retrieve the whole history.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Training Completion Audit Record |
+| `plain_language_description` | string | no | After confirmation, the records custodian consigns the completion's audit trail to retention at its required tier and … |
+| `business_purpose` | string | no | It exists so supervised training can be evidenced as completed for as long as the record must live. |
+| `practical_context` | string | no | It begins when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

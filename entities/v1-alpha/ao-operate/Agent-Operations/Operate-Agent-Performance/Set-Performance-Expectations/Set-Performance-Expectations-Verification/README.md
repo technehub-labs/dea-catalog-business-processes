@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Set Performance Expectations Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Set Performance Expectations** (`processes:activity-ao-operate-duu9yw`). Its canonical ID is `processes:task-ao-operate-verify-92fttz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any expectation is set, the verification custodian checks the agents and roles against what setting requires - that each agent carries a settled role whose performance can be expected of it. Defects are logged for rejection or repair before any expectation is fixed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so expectations are never set against a role that was never fully settled for the agent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the roles can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an agent whose role assignment is still provisional and logs the defect before expectations are set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Agents and Roles Before Setting Expectations |
+| `plain_language_description` | string | no | Before any expectation is set, the verification custodian checks the agents and roles against what setting requires - … |
+| `business_purpose` | string | no | It exists so expectations are never set against a role that was never fully settled for the agent. |
+| `practical_context` | string | no | It runs once the intake is registered and the roles can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

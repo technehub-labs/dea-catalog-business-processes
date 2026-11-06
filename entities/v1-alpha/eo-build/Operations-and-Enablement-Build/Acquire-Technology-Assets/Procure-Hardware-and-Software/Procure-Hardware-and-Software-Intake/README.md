@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Procure Hardware and Software Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Procure Hardware and Software** (`processes:activity-eo-build-jg28xr`). Its canonical ID is `processes:task-eo-build-intake-rrqjrt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Procurement opens when the specification the platform architecture sets and the sourcing principles are handed over together as the brief the buying must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the procurement from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assets are bought against the architecture's specification, not against whatever is on hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the specification and sourcing principles are presented for procurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management registers the architecture specification and sourcing principles as the procurement brief, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Specification and Sourcing Principles |
+| `plain_language_description` | string | no | Procurement opens when the specification the platform architecture sets and the sourcing principles are handed over … |
+| `business_purpose` | string | no | It exists so assets are bought against the architecture's specification, not against whatever is on hand. |
+| `practical_context` | string | no | It opens when the specification and sourcing principles are presented for procurement, with the activity owner alerted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

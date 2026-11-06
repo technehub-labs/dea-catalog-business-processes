@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-tr
 
 This is a **Task** (level L4), named **Assess Adjustment Implications Processing**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Assess Adjustment Implications** (`processes:activity-sd-improve-r5jbb6`). Its canonical ID is `processes:task-sd-improve-transform-gpryru`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the assessment proper begins. The processing custodian works each tested candidate through objectives, targets, the strategic plan and the initiative portfolio, producing the assessed implications in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the choice between candidates is blind until someone has traced what each would do to objectives, targets, plan and portfolio.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified candidates are ready to be worked, and it closes with the assessed adjustment implications produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function traces each candidate adjustment through the objectives, the targets, the plan and the live initiative portfolio, writing up the assessed implications with the workings kept.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Trace What Each Candidate Would Mean for Plan and Portfolio |
+| `plain_language_description` | string | no | With the inputs verified, the assessment proper begins. The processing custodian works each tested candidate through … |
+| `business_purpose` | string | no | It exists because the choice between candidates is blind until someone has traced what each would do to objectives … |
+| `practical_context` | string | no | It opens when the verified candidates are ready to be worked, and it closes with the assessed adjustment implications … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

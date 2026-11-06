@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 
 This is a **Task** (level L4), named **Specify Decision Rights Processing**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Specify Decision Rights** (`processes:activity-ge-design-sy338w`). Its canonical ID is `processes:task-ge-design-transform-mmkr5g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the design for the rights: what each body and role may decide, and with whose consultation, is specified against the delegation design, and the design-ready artefact is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a delegation that cannot say who decides is a delegation that decides nothing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function specifies what each body and role may decide and with whose consultation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Say Who Decides What, and With Whose Consultation |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the design for the rights: what each body and role may … |
+| `business_purpose` | string | no | It exists because a delegation that cannot say who decides is a delegation that decides nothing. |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -1,0 +1,582 @@
+{
+ "processes:task-pv-operate-intake-29xxsy": {
+  "plain_language_name": "Take In the Catalogue and Channel States Feeding the Integrity Watch",
+  "plain_language_description": "The watching over the buyable offering catalogue opens as its material arrives, chiefly the current catalogue state and the states of the selling channels. The intake custodian logs them against the integrity watch file so the monitoring starts accounted for.",
+  "business_purpose": "It exists so every arrival bearing on catalogue correctness is on the books before the watch begins, leaving no unexamined state behind.",
+  "practical_context": "It opens when the catalogue state and the channel states are presented for the integrity watch, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management receives the day's catalogue state alongside the shop-front channel states, logs them into the integrity watch file, and notes that the watching can start accounted for."
+  }
+ },
+ "processes:task-pv-operate-verify-amgq9g": {
+  "plain_language_name": "Test the Arriving Catalogue and Channel States Before Watching",
+  "plain_language_description": "Before the integrity posture can be worked out, the arriving states are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It stands between logging and the watch itself so a flawed catalogue state never gets scored as if it were sound.",
+  "practical_context": "It opens once the intake is registered and the states are ready to be challenged, and it closes with each shortfall marked for rejection or queued for putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management takes the freshly logged catalogue state, checks it against what the integrity watch demands of a usable input, and writes up a missing channel feed as a shortfall to be put right."
+  }
+ },
+ "processes:task-pv-operate-transform-kev8ms": {
+  "plain_language_name": "Work Out the Catalogue Integrity Posture",
+  "plain_language_description": "With the inputs verified, the watching proper begins. The processing custodian reads the catalogue state and the channel states together, producing the integrity posture in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because catalogue correctness only becomes manageable once accuracy, availability and consistency are scored into one stated posture.",
+  "practical_context": "It opens when the verified states are ready to be worked, and it closes with the integrity posture produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management weighs the verified catalogue state against each selling channel's state, notes where offerings are mispriced or missing, and states the resulting integrity posture with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-confirm-pvtsre": {
+  "plain_language_name": "Hand the Integrity Posture to the Teams That Act on It",
+  "plain_language_description": "The confirming opens once the posture is worked and ready to hand on. The confirmation custodian tells the downstream teams the integrity posture is available, and closes the reconciliation against what the activity promised for the watch.",
+  "business_purpose": "It exists so decisions about fixing the catalogue rest on a posture that has been formally issued rather than on an unconfirmed draft.",
+  "practical_context": "It opens when the posture is worked and ready to hand on, and it closes with the confirmation issued and the watch's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management releases the finished integrity posture to the catalogue and channel teams, checks it against what the activity set out to deliver, and closes the reconciliation for the cycle."
+  }
+ },
+ "processes:task-pv-operate-intake-d4hvkq": {
+  "plain_language_name": "Take In the Catalogue and the Channel Setups for Publishing",
+  "plain_language_description": "The publishing opens as its material arrives: the maintained catalogue together with the setups that govern each selling channel. The intake custodian logs them against the publishing file so the publishing starts accounted for.",
+  "business_purpose": "It exists so the push to the channels starts from a logged, attributable set of catalogue and channel material rather than from loose files.",
+  "practical_context": "It opens when the maintained catalogue and the channel setups are presented for publishing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management receives the updated catalogue for the season and the setups for the web and shop-front channels, logging both against the publishing file before any channel is touched."
+  }
+ },
+ "processes:task-pv-operate-verify-9myq93": {
+  "plain_language_name": "Test the Catalogue and Channel Setups Before Pushing Them Out",
+  "plain_language_description": "Before anything reaches a selling channel, the arriving catalogue and setups are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists to stop a faulty catalogue or a wrong channel setup from being published to the places where customers buy.",
+  "practical_context": "It opens once the intake is registered and the publishing material is ready to be challenged, and it closes with every shortfall written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the logged catalogue against each channel's setup requirements, and records an incomplete shop-front configuration as a shortfall to be put right before publishing."
+  }
+ },
+ "processes:task-pv-operate-transform-hdjynx": {
+  "plain_language_name": "Push the Catalogue Out to Each Selling Channel",
+  "plain_language_description": "With the inputs verified, the publishing proper begins. The processing custodian carries the maintained catalogue to each channel under its setup, producing the published catalogue state per channel in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because customers buy through the channels, so the maintained catalogue only earns its keep once it is live in every one of them.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the published state for each channel produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management publishes the verified catalogue to the web shop and the shop-front channel under their setups, records the resulting published state per channel, and keeps the publish workings for the audit trail."
+  }
+ },
+ "processes:task-pv-operate-confirm-wnx2ba": {
+  "plain_language_name": "Confirm the Channel Publishing and Tell the Downstream Teams",
+  "plain_language_description": "The confirming opens once the catalogue is live in the channels. The confirmation custodian tells the downstream teams the published state is available, and closes the reconciliation against what the activity promised for the push.",
+  "business_purpose": "It exists so everyone who trades on the catalogue knows the channel publishing is complete and official rather than still in progress.",
+  "practical_context": "It opens when the published states are complete and ready to hand on, and it closes with the confirmation issued and the publishing's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management announces to the sales and support teams that the catalogue is live in every channel, checks the delivered published states against what the publishing promised, and issues the confirmation."
+  }
+ },
+ "processes:task-pv-operate-record-rsuuq2": {
+  "plain_language_name": "File the Publishing Evidence for the Channels",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the evidence of what was published to each channel can be found again when a dispute or an audit calls for it.",
+  "business_purpose": "It exists so the organisation can prove, channel by channel, exactly what catalogue state was published and when.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the publishing evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the channel publishing evidence at its required retention tier and sets the retrieval handles, so a pricing query three months later can be answered straight from the record."
+  }
+ },
+ "processes:task-pv-retire-intake-4ncf7j": {
+  "plain_language_name": "Take In the Withdrawn Service and Its Routed Residuals for Closure",
+  "plain_language_description": "The closure work opens as its material arrives: the withdrawn service together with the residual obligations already routed from the withdrawal. The intake custodian logs them against the closure file so the confirming starts accounted for.",
+  "business_purpose": "It exists so retirement closure is confirmed only over a logged withdrawn service and routed residuals, never over loose assertions that a product has gone.",
+  "practical_context": "It opens when the withdrawn service and its routed residuals are presented for closure, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the proposition design authority logs the newly withdrawn service and the routed warranty and data-retention residuals into the closure file, so the closure confirmation starts accounted for."
+  }
+ },
+ "processes:task-pv-retire-verify-nvwtvj": {
+  "plain_language_name": "Test the Withdrawal Material Before Closure Is Confirmed",
+  "plain_language_description": "Before any closure is declared, the arriving withdrawn-service material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists so a retirement is never closed on the strength of material that would not stand up to challenge.",
+  "practical_context": "It opens once the intake is registered and the closure material is ready to be challenged, and it closes with each shortfall written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the proposition design authority challenges the logged closure material against what the activity requires, and writes up an unrouted support commitment as a shortfall to be put right."
+  }
+ },
+ "processes:task-pv-retire-transform-vhbkar": {
+  "plain_language_name": "Draw the Retirement Closure Together with Its Evidence",
+  "plain_language_description": "With the inputs verified, the closure proper begins. The processing custodian gathers the evidence that the service is gone and the residuals are routed, completing the archive and the catalogue de-listing, and produces the retirement closure record in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a retirement is only truly finished when its evidence, archive and catalogue de-listing are gathered into one closure record.",
+  "practical_context": "It opens when the verified closure material is ready to be worked, and it closes with the retirement closure record produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the proposition design authority works the verified material into the closure record, completing the archive of the withdrawn service and the de-listing from the catalogue, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-pv-retire-confirm-bpwkag": {
+  "plain_language_name": "Issue the Retirement Closure to the Teams Still Holding Residuals",
+  "plain_language_description": "The confirming opens once the closure record stands. The confirmation custodian tells the downstream teams the closure is available, and closes the reconciliation against what the activity promised for the retirement.",
+  "business_purpose": "It exists so support, archive and catalogue teams all hear one authoritative word that the retirement is closed, not rumour.",
+  "practical_context": "It opens when the closure record is complete and ready to hand on, and it closes with the confirmation issued and the closure's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the proposition design authority issues the closure confirmation to the support and catalogue teams, reconciles what was delivered against what the retirement promised, and closes the matter."
+  }
+ },
+ "processes:task-pv-retire-record-t5vcxv": {
+  "plain_language_name": "File the Retirement Closure Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the proof that this offering was retired cleanly can be produced years later when a warranty or a data-retention question resurfaces.",
+  "business_purpose": "It exists so the closed retirement leaves behind retrievable evidence rather than a silence that later obligation questions cannot be answered from.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the closure evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the proposition design authority files the retirement closure evidence at its required retention tier and sets the retrieval handles, so a customer warranty claim two years on can be checked against the record."
+  }
+ },
+ "processes:task-pv-retire-intake-s2nuvm": {
+  "plain_language_name": "Take In the Withdrawal Plan for Execution",
+  "plain_language_description": "The withdrawing opens as its material arrives: the service withdrawal plan that says how the proposition comes out of operational reliance. The intake custodian logs it against the withdrawal file so the executing starts accounted for.",
+  "business_purpose": "It exists so the removal of a live service starts from one logged plan rather than from verbal instructions drifting across teams.",
+  "practical_context": "It opens when the withdrawal plan is presented for execution, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the proposition design authority receives the approved withdrawal plan for a sunset offering, logs it into the withdrawal file, and signals that the removal work can start accounted for."
+  }
+ },
+ "processes:task-pv-retire-verify-5rh4c6": {
+  "plain_language_name": "Test the Withdrawal Plan Before Any Service Is Removed",
+  "plain_language_description": "Before anything is switched off, the arriving plan is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because executing an inadequate withdrawal plan risks pulling the proposition out from under customers who still rely on it.",
+  "practical_context": "It opens once the intake is registered and the plan is ready to be challenged, and it closes with the plan's shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the proposition design authority tests the withdrawal plan against what the activity requires, and flags a missing user-migration step as a shortfall to be put right before any service is switched off."
+  }
+ },
+ "processes:task-pv-retire-transform-4rw7pj": {
+  "plain_language_name": "Carry Out the Withdrawal and Take the Service Out of Reliance",
+  "plain_language_description": "With the inputs verified, the withdrawal proper begins. The processing custodian works the plan step by step, removing the proposition from operational reliance and producing the withdrawn service in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a retirement decision stays on paper until someone actually takes the service out of operational reliance.",
+  "practical_context": "It opens when the verified plan is ready to be worked, and it closes with the withdrawn service produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the proposition design authority executes the verified plan, switching off the offering's operational reliance step by step, and hands over the withdrawn service with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-pv-retire-confirm-hk8w59": {
+  "plain_language_name": "Confirm the Withdrawal Is Done and Tell the Downstream Teams",
+  "plain_language_description": "The confirming opens once the service is out of reliance. The confirmation custodian tells the downstream teams the withdrawn service is available, and closes the reconciliation against what the activity promised for the withdrawal.",
+  "business_purpose": "It exists so the residual-obligations and closure teams work from a confirmed withdrawal, not from the assumption that the switch-off went through.",
+  "practical_context": "It opens when the withdrawn service is ready to hand on, and it closes with the confirmation issued and the withdrawal's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the proposition design authority announces the completed withdrawal to the teams handling residuals, reconciles the delivered withdrawn service against the plan's promises, and issues the confirmation."
+  }
+ },
+ "processes:task-pv-retire-record-tgepzj": {
+  "plain_language_name": "File the Withdrawal Execution Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what was switched off, when, and under which plan stays provable long after the offering is gone.",
+  "business_purpose": "It exists so the execution of a withdrawal leaves evidence that survives staff turnover and later disputes about what was switched off.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the withdrawal evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the proposition design authority files the withdrawal execution evidence at its required retention tier and sets the retrieval handles, so a later question about the switch-off date is answered from the record."
+  }
+ },
+ "processes:task-pv-retire-intake-ygn79u": {
+  "plain_language_name": "Take In the Approved Retirement Decision for Withdrawal Planning",
+  "plain_language_description": "The planning opens as its material arrives: the approved retirement decision that sets the withdrawal in motion. The intake custodian logs it against the withdrawal planning file so the planning starts accounted for.",
+  "business_purpose": "It exists so the plan is drawn from a logged, approved decision rather than from an informal expectation that a product will be retired.",
+  "practical_context": "It opens when the approved retirement decision is presented for planning, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the proposition design authority logs the approved retirement decision for an ageing service into the planning file, so the withdrawal planning starts accounted for."
+  }
+ },
+ "processes:task-pv-retire-verify-fx66gf": {
+  "plain_language_name": "Test the Approved Decision Before Planning the Withdrawal",
+  "plain_language_description": "Before notice periods and migration steps are planned, the arriving decision material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists so the withdrawal plan is never built on a decision that is incomplete or not actually approved.",
+  "practical_context": "It opens once the intake is registered and the decision material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the proposition design authority tests the logged retirement decision against what the activity requires, and writes up a missing dependency inventory as a shortfall to be put right."
+  }
+ },
+ "processes:task-pv-retire-transform-d7ekwb": {
+  "plain_language_name": "Draw Up the Withdrawal Plan with Notice, Timelines and Migration",
+  "plain_language_description": "With the inputs verified, the planning proper begins. The processing custodian works out notice, dependencies, timelines and user migration provisions, producing the service withdrawal plan in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because retiring a service safely needs one written plan covering who is told, what depends on it, and how users move off.",
+  "practical_context": "It opens when the verified decision material is ready to be worked, and it closes with the withdrawal plan produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the proposition design authority drafts the withdrawal plan, setting the customer notice, the dependency timeline and the user migration provisions, and keeps the planning workings for the audit trail."
+  }
+ },
+ "processes:task-pv-retire-confirm-h2ahnu": {
+  "plain_language_name": "Issue the Withdrawal Plan to the Teams Who Will Execute It",
+  "plain_language_description": "The confirming opens once the plan stands. The confirmation custodian tells the downstream teams the plan is available, and closes the reconciliation against what the activity promised for the planning.",
+  "business_purpose": "It exists so execution starts from an issued plan everyone can point to, not from a draft circulating by email.",
+  "practical_context": "It opens when the plan is complete and ready to hand on, and it closes with the confirmation issued and the planning's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the proposition design authority hands the finished withdrawal plan to the execution and communications teams, checks it against what the planning promised, and issues the confirmation."
+  }
+ },
+ "processes:task-pv-retire-record-ummykz": {
+  "plain_language_name": "File the Withdrawal Planning Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the reasoning behind notice periods, timelines and migration choices stays retrievable when the withdrawal is later questioned.",
+  "business_purpose": "It exists so the choices baked into the withdrawal plan can be explained from evidence, not from memory.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the planning evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the proposition design authority files the planning evidence at its required retention tier and sets the retrieval handles, so a later dispute about the chosen notice period is settled from the record."
+  }
+ },
+ "processes:task-pv-retire-intake-3j8mds": {
+  "plain_language_name": "Take In the Withdrawn Service and Its Outstanding Commitments",
+  "plain_language_description": "The residual work opens as its material arrives: the withdrawn service together with the commitments it still carries. The intake custodian logs them against the residuals file so the resolving starts accounted for.",
+  "business_purpose": "It exists so no warranty, support commitment or retention duty survives the withdrawal unlogged and therefore unhandled.",
+  "practical_context": "It opens when the withdrawn service and its outstanding commitments are presented for resolution, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the proposition design authority logs the withdrawn service alongside its outstanding warranty and support commitments into the residuals file, so the resolving starts accounted for."
+  }
+ },
+ "processes:task-pv-retire-verify-wzs534": {
+  "plain_language_name": "Test the Outstanding Commitments Before Routing Any of Them",
+  "plain_language_description": "Before a single obligation is routed, the arriving commitments material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a misread commitment routed to the wrong team leaves a customer promise quietly broken.",
+  "practical_context": "It opens once the intake is registered and the commitments material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the proposition design authority tests the logged commitments against what the activity requires, and writes up an undocumented data-retention duty as a shortfall to be put right."
+  }
+ },
+ "processes:task-pv-retire-transform-p2ny7y": {
+  "plain_language_name": "Identify and Route the Warranties, Support and Retention Duties",
+  "plain_language_description": "With the inputs verified, the resolving proper begins. The processing custodian identifies each warranty, support commitment and data retention duty and sends it to its owning team, producing the routed residual obligations in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because retiring the offering does not retire the promises made with it; each one must be identified and given an owner.",
+  "practical_context": "It opens when the verified commitments are ready to be worked, and it closes with the identified and routed obligations produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the proposition design authority works through the verified commitments, routing the outstanding warranties to support and the retention duties to records management, and keeps the routing workings for the audit trail."
+  }
+ },
+ "processes:task-pv-retire-confirm-emnknh": {
+  "plain_language_name": "Tell the Owning Teams Their Residual Duties Have Landed",
+  "plain_language_description": "The confirming opens once the obligations are routed. The confirmation custodian tells the downstream teams the routed residuals are available, and closes the reconciliation against what the activity promised for the resolution.",
+  "business_purpose": "It exists so each owning team formally knows it now holds a duty for a retired offering, instead of discovering it when a claim arrives.",
+  "practical_context": "It opens when the routed obligations are ready to hand on, and it closes with the confirmation issued and the resolution's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the proposition design authority notifies support and records management that their routed duties are on record, reconciles the routing against what the resolution promised, and issues the confirmation."
+  }
+ },
+ "processes:task-pv-retire-record-b7bzyg": {
+  "plain_language_name": "File the Residual Obligations Routing Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so who holds which duty for the retired offering is answerable from evidence whenever a claim surfaces.",
+  "business_purpose": "It exists so the routing of promises made with a retired offering is provable when a customer or an auditor asks who now owns them.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the routing evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the proposition design authority files the routing evidence at its required retention tier and sets the retrieval handles, so a warranty claim years later is traced to its owning team from the record."
+  }
+ },
+ "processes:task-sd-activate-intake-armkwz": {
+  "plain_language_name": "Take In the Acknowledged Plan and the Disclosure Framework",
+  "plain_language_description": "The communications activation opens as its material arrives: the supervisor-acknowledged strategic plan together with the regulator-mandated disclosure framework. The intake custodian logs them against the activation file so the activating starts accounted for.",
+  "business_purpose": "It exists so communications are activated only over a logged acknowledged plan and the mandated framework, under the regulator's continuing supervision.",
+  "practical_context": "It opens when the acknowledged plan and the disclosure framework are presented for activation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the supervisor-acknowledged strategic plan and the mandated disclosure framework into the activation file, so the communications work starts accounted for under the regulator's continuing supervision."
+  }
+ },
+ "processes:task-sd-activate-verify-f85f9w": {
+  "plain_language_name": "Test the Plan and Disclosure Material Before Activating Communications",
+  "plain_language_description": "Before any announcement is made under supervision, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because announcing under a regulator's continuing supervision on faulty material invites supervisory findings.",
+  "practical_context": "It opens once the intake is registered and the activation material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged plan and disclosure framework against what the activity requires, and writes up an outdated disclosure control as a shortfall to be put right before any announcement."
+  }
+ },
+ "processes:task-sd-activate-transform-df37sq": {
+  "plain_language_name": "Bring the Disclosure Controls, Briefings and Announcements to Life",
+  "plain_language_description": "With the inputs verified, the activation proper begins. The processing custodian stands up the disclosure controls, the investor-relations briefing and the regulated-entity announcement under the mandated framework, producing the activated communications plan in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a supervisor-acknowledged plan only takes effect publicly once its disclosure controls, briefings and announcements are actually activated.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the activated communications plan produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function activates the disclosure controls, prepares the investor-relations briefing and issues the regulated-entity announcement, preserving the activated communications plan on the regulated strategic-plan record."
+  }
+ },
+ "processes:task-sd-activate-confirm-t3gzny": {
+  "plain_language_name": "Confirm the Activated Communications to the Teams and the Supervisor",
+  "plain_language_description": "The confirming opens once the communications plan is activated. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the activation under continuing supervision.",
+  "business_purpose": "It exists so the supervisor-facing and internal audiences both receive one confirmed word that the communications are live.",
+  "practical_context": "It opens when the activated plan is ready to hand on, and it closes with the confirmation issued and the activation's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function confirms to the investor-relations and disclosure teams that the communications are live, reconciles the delivery against what the activation promised, and issues the confirmation for the supervisory file."
+  }
+ },
+ "processes:task-sd-activate-record-hqkf24": {
+  "plain_language_name": "File the Communications Activation Evidence on the Plan Record",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what was announced, under which framework, and when, remains provable to the regulator on demand.",
+  "business_purpose": "It exists because a supervised activation is only defensible if its evidence sits retrievable on the strategic-plan record at inspection.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the activation evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the activation evidence at its required retention tier and sets the retrieval handles, so an inspection question about a past announcement is answered from the strategic-plan record."
+  }
+ },
+ "processes:task-sd-activate-intake-g7cxyr": {
+  "plain_language_name": "Take In the Filed Submission and the Review Criteria",
+  "plain_language_description": "The supervisor review opens as its material arrives: the filed strategic-plan submission together with the review criteria the supervisor applies. The intake custodian logs them against the review file so the review starts accounted for.",
+  "business_purpose": "It exists so the pursuit of the acknowledgement is tracked over a logged submission and criteria, not over an unfiled draft.",
+  "practical_context": "It opens when the filed submission and the review criteria are presented for the review, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the filed strategic-plan submission and the supervisor's review criteria into the review file, so the pursuit of the acknowledgement starts accounted for."
+  }
+ },
+ "processes:task-sd-activate-verify-c5vtcy": {
+  "plain_language_name": "Test the Submission Against the Supervisor's Review Criteria",
+  "plain_language_description": "Before the supervisor's verdict is pursued, the arriving submission material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because asking for an acknowledgement over a deficient submission wastes a supervisory cycle and delays the plan.",
+  "practical_context": "It opens once the intake is registered and the submission material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the filed submission against the review criteria, and writes up an incomplete risk-appetite section as a shortfall to be put right before the acknowledgement is sought."
+  }
+ },
+ "processes:task-sd-activate-transform-yepwxy": {
+  "plain_language_name": "Walk the Submission Through the Review to the Acknowledgement",
+  "plain_language_description": "With the inputs verified, the review proper begins. The processing custodian steers the submission through the supervisor's review, resolving queries until the acknowledgement is obtained and produced in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the plan cannot take effect until the supervisor's review is complete and the acknowledgement sits on record.",
+  "practical_context": "It opens when the verified submission is ready to be worked, and it closes with the acknowledgement obtained in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function answers the supervising authority's queries through the review cycle, secures the acknowledgement on record, and keeps the correspondence workings for the audit trail."
+  }
+ },
+ "processes:task-sd-activate-confirm-eu6wma": {
+  "plain_language_name": "Announce the Acknowledgement to the Teams Waiting on the Plan",
+  "plain_language_description": "The confirming opens once the acknowledgement is on record. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the review.",
+  "business_purpose": "It exists so the activation and communications work starts only once the acknowledgement is confirmed, never on assumption.",
+  "practical_context": "It opens when the acknowledgement is secured and ready to hand on, and it closes with the confirmation issued and the review's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the activation and communications teams that the supervising authority's acknowledgement is on record, reconciles the outcome against what the review promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-activate-record-r8p7py": {
+  "plain_language_name": "File the Supervisor's Acknowledgement Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the proof that the acknowledgement was obtained before the plan took effect is always retrievable.",
+  "business_purpose": "It exists because the sequence of acknowledgement before effect is exactly what a supervisory inspection will test the record for.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the acknowledgement evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the acknowledgement evidence at its required retention tier and sets the retrieval handles, so an inspector can verify the acknowledgement preceded the plan taking effect."
+  }
+ },
+ "processes:task-sd-activate-intake-z8vc3f": {
+  "plain_language_name": "Take In the Board-Approved Plan and the Mandated Filing Format",
+  "plain_language_description": "The filing work opens as its material arrives: the board-approved strategic plan together with the regulator-mandated filing format. The intake custodian logs them against the filing file so the filing starts accounted for.",
+  "business_purpose": "It exists so the regulatory submission proceeds over logged approved material in the mandated format, not over an unapproved draft.",
+  "practical_context": "It opens when the approved plan and the filing format are presented for the submission, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the board-approved strategic plan and the regulator-mandated filing format into the filing file, so the submission work starts accounted for."
+  }
+ },
+ "processes:task-sd-activate-verify-6g3f7n": {
+  "plain_language_name": "Test the Plan and Its Format Before Filing with the Regulator",
+  "plain_language_description": "Before anything goes to the competent regulator, the arriving filing material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a submission that misses the mandated format or lacks board approval is rejected, costing the plan its timetable.",
+  "practical_context": "It opens once the intake is registered and the filing material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the plan-to-format mapping against what the activity requires, and writes up a missing recovery-scenario annex as a shortfall to be put right before filing."
+  }
+ },
+ "processes:task-sd-activate-transform-kvcj6q": {
+  "plain_language_name": "Prepare and Lodge the Submission with the Competent Regulator",
+  "plain_language_description": "With the inputs verified, the filing proper begins. The processing custodian renders the board-approved plan into the mandated format and lodges it with the regulator, producing the filed submission in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the plan cannot take effect until the submission is actually filed with the competent regulator in the mandated form.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the filed submission produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function renders the approved plan into the regulator's mandated format, lodges the submission before the deadline, and keeps the lodgement workings for the audit trail."
+  }
+ },
+ "processes:task-sd-activate-confirm-4ne65w": {
+  "plain_language_name": "Report the Filed Submission to the Board and the Downstream Teams",
+  "plain_language_description": "The confirming opens once the submission is filed. The confirmation custodian tells the downstream teams the filed submission is available, and closes the reconciliation against what the activity promised for the filing.",
+  "business_purpose": "It exists so the board and the review work both proceed from a confirmed lodgement rather than from a courier's say-so.",
+  "practical_context": "It opens when the filed submission is ready to hand on, and it closes with the confirmation issued and the filing's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function reports the completed lodgement to the governing board and the review teams, reconciles the receipt against what the filing promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-activate-record-4zf3q6": {
+  "plain_language_name": "File the Lodgement Receipt and Submission Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the receipt proving what was filed, with whom, and when, is retrievable for the life of the plan's supervision.",
+  "business_purpose": "It exists because the filing receipt is the plan's licence to proceed, and losing its evidence undermines every later step.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the lodgement evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the lodgement receipt and submission evidence at its required retention tier and sets the retrieval handles, so the proof of timely filing survives every later reorganisation."
+  }
+ },
+ "processes:task-sd-activate-intake-trqgq3": {
+  "plain_language_name": "Take In the Acknowledged Plan and the Mandated Monitoring Framework",
+  "plain_language_description": "The monitoring launch opens as its material arrives: the supervisor-acknowledged strategic plan together with the regulator-mandated monitoring framework. The intake custodian logs them against the launch file so the launching starts accounted for.",
+  "business_purpose": "It exists so the monitoring framework goes live over a logged acknowledged plan and the mandated framework, under continuing supervision.",
+  "practical_context": "It opens when the acknowledged plan and the monitoring framework are presented for launch, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the acknowledged plan and the mandated monitoring framework into the launch file, so the framework launch starts accounted for under the supervisor's continuing oversight."
+  }
+ },
+ "processes:task-sd-activate-verify-7hfs8e": {
+  "plain_language_name": "Test the Monitoring Framework Material Before It Goes Live",
+  "plain_language_description": "Before indicators are switched on for supervised operations, the arriving framework material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a monitoring framework launched with faulty indicators misleads both the board and the supervisor.",
+  "practical_context": "It opens once the intake is registered and the framework material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the risk function tests the framework material against what the activity requires, and writes up an early-warning indicator without a defined threshold as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-activate-transform-2bfuwh": {
+  "plain_language_name": "Switch On the Indicators, Risk Appetite and Early Warnings",
+  "plain_language_description": "With the inputs verified, the launch proper begins. The processing custodian stands up the key indicators, the risk-appetite statement and the early-warning indicators, and opens the continuing-oversight relationship, producing the live framework in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an acknowledged plan stays unmonitored, and unchecked, until its indicators and oversight relationship are actually live.",
+  "practical_context": "It opens when the verified framework material is ready to be worked, and it closes with the live framework produced in the agreed form and the workings retained.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the risk function switches on the key indicators and early-warning thresholds against the risk-appetite statement, opens the continuing-oversight relationship with the supervising authority, and keeps the setup workings for the audit trail."
+  }
+ },
+ "processes:task-sd-activate-confirm-qwg65y": {
+  "plain_language_name": "Confirm the Live Framework to the Supervisor and the Business",
+  "plain_language_description": "The confirming opens once the framework is live. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the launch under continuing oversight.",
+  "business_purpose": "It exists so the supervisor and the business functions both hear one confirmed word that monitoring is operating, not promised.",
+  "practical_context": "It opens when the live framework is ready to hand on, and it closes with the confirmation issued and the launch's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function confirms to the supervising authority and the operations and workforce functions that the monitoring framework is live, reconciles the delivery against what the launch promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-activate-record-3qdnr6": {
+  "plain_language_name": "File the Monitoring Framework Launch Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so the evidence of when monitoring went live and on what mandate stays answerable across supervisory cycles.",
+  "business_purpose": "It exists because continuing supervision assumes a retrievable launch record; without it the framework's authority is contestable.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the launch evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the launch evidence at its required retention tier and sets the retrieval handles, so the next supervisory cycle finds the go-live record without a search."
+  }
+ },
+ "processes:task-sd-build-intake-qjd8kg": {
+  "plain_language_name": "Take In the Bounded Version and Its Choice and Roadmap Material",
+  "plain_language_description": "The assembly opens as its material arrives: the bounded plan version together with the chosen direction, objectives, initiatives and allocation that hang off it. The intake custodian logs them against the assembly file so the assembling starts accounted for.",
+  "business_purpose": "It exists so the plan is assembled from a logged bounded version and its parts, never from scattered unversioned pieces.",
+  "practical_context": "It opens when the bounded version and its supporting material are presented for assembly, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the bounded plan version with its committed choice and built roadmap into the assembly file, so the plan assembly starts accounted for."
+  }
+ },
+ "processes:task-sd-build-verify-qegav5": {
+  "plain_language_name": "Test the Plan Material Before Assembling the Document",
+  "plain_language_description": "Before the plan document is put together, the arriving version material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because assembling a plan from unchecked pieces produces a document the organisation cannot rely on.",
+  "practical_context": "It opens once the intake is registered and the version material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the logged version material against what the activity requires, and writes up an initiative without an owner as a shortfall to be put right before assembly."
+  }
+ },
+ "processes:task-sd-build-transform-j86c7u": {
+  "plain_language_name": "Bring the Plan Together with Its Direction, Objectives and Allocation",
+  "plain_language_description": "With the inputs verified, the assembly proper begins. The processing custodian draws the bounded version, chosen direction, objectives, initiatives and allocation into one document, producing the assembled plan in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because direction, objectives and allocation only steer the organisation once they are bound into a single assembled plan.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the assembled plan produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function binds the bounded version, the chosen direction, its objectives and initiatives and the allocation into the plan document, keeping the assembly workings for the audit trail."
+  }
+ },
+ "processes:task-sd-build-confirm-k9q3qv": {
+  "plain_language_name": "Release the Assembled Plan to the Teams That Commit It",
+  "plain_language_description": "The confirming opens once the plan is assembled. The confirmation custodian tells the downstream teams the assembled plan is available, and closes the reconciliation against what the activity promised for the assembly.",
+  "business_purpose": "It exists so the commitment step works from a confirmed assembled plan rather than from a quietly changing draft.",
+  "practical_context": "It opens when the assembled plan is ready to hand on, and it closes with the confirmation issued and the assembly's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function releases the assembled plan to the board-facing and planning teams, reconciles the delivered document against what the assembly promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-build-record-rpyeyw": {
+  "plain_language_name": "File the Assembled Plan Evidence for the Build",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so how the plan came together, and from which version, stays retrievable through every later revision.",
+  "business_purpose": "It exists so the assembled plan's provenance is answerable when a future revision asks why the plan reads as it does.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the assembly evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the assembly evidence at its required retention tier and sets the retrieval handles, so the next planning cycle can trace the plan back to its bounded version."
+  }
+ },
+ "processes:task-sd-build-intake-d57zj5": {
+  "plain_language_name": "Take In the Committed Choice and the Built Roadmap",
+  "plain_language_description": "The bounding opens as its material arrives: the committed strategic choice together with the built roadmap it implies. The intake custodian logs them against the bounding file so the bounding starts accounted for.",
+  "business_purpose": "It exists so the version's scope is drawn from a logged committed choice and roadmap, not from preferences drifting between meetings.",
+  "practical_context": "It opens when the committed choice and the roadmap are presented for bounding, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the committed strategic choice and the built roadmap into the bounding file, so the version bounding starts accounted for."
+  }
+ },
+ "processes:task-sd-build-transform-q4tyak": {
+  "plain_language_name": "Fix the Scope of the Plan Version the Choice Requires",
+  "plain_language_description": "With the inputs verified, the bounding proper begins. The processing custodian draws the version's scope around the committed choice and the built roadmap, producing the bounded version in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because assembling a plan needs a fixed version boundary; without one the document's contents are endlessly negotiable.",
+  "practical_context": "It opens when the verified choice and roadmap are ready to be worked, and it closes with the bounded version produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function draws the version boundary around the committed choice and the built roadmap, deciding what is in and out of the plan version, and keeps the bounding workings for the audit trail."
+  }
+ },
+ "processes:task-sd-build-confirm-ubuhtv": {
+  "plain_language_name": "Hand the Bounded Version to the Plan Assemblers",
+  "plain_language_description": "The confirming opens once the version is bounded. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the bounding.",
+  "business_purpose": "It exists so assembly starts over a confirmed version boundary rather than over a scope still being argued.",
+  "practical_context": "It opens when the bounded version is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the assembly team the bounded version is ready, reconciles the boundary against what the bounding promised, and issues the confirmation."
+  }
+ },
+ "processes:task-sd-build-record-ffcpd2": {
+  "plain_language_name": "File the Version Bounding Evidence",
+  "plain_language_description": "The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so what the version deliberately left out, as well as what it took in, stays answerable from evidence.",
+  "business_purpose": "It exists so the scope decisions behind the version survive as evidence when later revisions ask why the boundary sat where it did.",
+  "practical_context": "It opens when the confirmation is in place, and it closes with the bounding evidence filed at its required tier and the retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the bounding evidence at its required retention tier and sets the retrieval handles, so a future planner can see exactly what the version included and excluded."
+  }
+ }
+}

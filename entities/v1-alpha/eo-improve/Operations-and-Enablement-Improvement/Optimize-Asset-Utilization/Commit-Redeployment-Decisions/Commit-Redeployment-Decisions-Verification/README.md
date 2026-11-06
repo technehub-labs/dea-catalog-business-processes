@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-ve
 
 This is a **Task** (level L4), named **Commit Redeployment Decisions Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Commit Redeployment Decisions** (`processes:activity-eo-improve-acbypp`). Its canonical ID is `processes:task-eo-improve-verify-7ewcrp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is decided, the verification custodian checks the assessed options against what commitment requires - that each option is complete and carries its assessment of impact and feasibility. Defects are logged for rejection or repair before any decision is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the fleet never acts on an option whose consequences were never weighed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the options can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an option with no impact assessment behind it and logs the defect before any decision is made.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Options Before Committing the Decisions |
+| `plain_language_description` | string | no | Before anything is decided, the verification custodian checks the assessed options against what commitment requires - … |
+| `business_purpose` | string | no | It exists so the fleet never acts on an option whose consequences were never weighed. |
+| `practical_context` | string | no | It runs once the intake is registered and the options can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

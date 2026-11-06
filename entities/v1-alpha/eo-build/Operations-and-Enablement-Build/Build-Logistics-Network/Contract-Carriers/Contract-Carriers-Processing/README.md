@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Contract Carriers Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Contract Carriers** (`processes:activity-eo-build-egr964`). Its canonical ID is `processes:task-eo-build-transform-ap5c3d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the designs verified, the processing custodian does the contracting itself: carriers for each designed transport mode are contracted to the designed service levels, and the contracted carriers are set down in the form the activity defines. Working papers behind each agreement are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because goods do not move on good intentions - the carriers are what make the designed routes real.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified designs are ready to be contracted from, and it ends with the contracted carriers produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management signs each mode's carriers to the designed service levels, keeping the working papers behind the agreements.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sign the Carriers the Transport Modes Need |
+| `plain_language_description` | string | no | With the designs verified, the processing custodian does the contracting itself: carriers for each designed transport … |
+| `business_purpose` | string | no | It exists because goods do not move on good intentions - the carriers are what make the designed routes real. |
+| `practical_context` | string | no | It starts once checking is complete and the verified designs are ready to be contracted from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

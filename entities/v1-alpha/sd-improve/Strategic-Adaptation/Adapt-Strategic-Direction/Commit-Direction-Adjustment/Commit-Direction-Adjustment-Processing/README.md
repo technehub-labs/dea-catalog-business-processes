@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-tr
 
 This is a **Task** (level L4), named **Commit Direction Adjustment Processing**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Commit Direction Adjustment** (`processes:activity-sd-improve-m6ww6z`). Its canonical ID is `processes:task-sd-improve-transform-e2ngzt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the commitment proper begins. The processing custodian settles which candidate becomes the direction and prepares the handoff for objectives refresh and effectiveness review, producing the committed adjustment in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assessed options change nothing until one is selected, ratified and formally handed to the teams who must act on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified implications are ready to be worked, and it closes with the committed direction adjustment produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function records which candidate the leadership has ratified as the new direction, and prepares the handoff pack for the objectives refresh and the effectiveness review, workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Settle the Selected Direction and Prepare the Handoff |
+| `plain_language_description` | string | no | With the inputs verified, the commitment proper begins. The processing custodian settles which candidate becomes the … |
+| `business_purpose` | string | no | It exists because assessed options change nothing until one is selected, ratified and formally handed to the teams who … |
+| `practical_context` | string | no | It opens when the verified implications are ready to be worked, and it closes with the committed direction adjustment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

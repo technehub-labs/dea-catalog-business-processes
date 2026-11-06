@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-tra
 
 This is a **Task** (level L4), named **Execute Communications Plan for Regulated Strategic Plan Sunset Processing**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Communications Plan for Regulated Strategic Plan Sunset** (`processes:activity-sd-retire-r5tcp2`). Its canonical ID is `processes:task-sd-retire-transform-zzy376`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the execution proper begins. The processing custodian runs each tested communication to its audience on the filed plan's schedule, producing the executed communications plan in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a sunset that is silent breeds rumour; the plan's communications are how the retirement is carried publicly.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified plan is ready to be worked, and it closes with the communications plan executed in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function issues the tested communications to business units, customers and the supervisor on the filed schedule, keeping the dispatch workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Sunset Communications Across Their Audiences |
+| `plain_language_description` | string | no | With the inputs verified, the execution proper begins. The processing custodian runs each tested communication to its … |
+| `business_purpose` | string | no | It exists because a sunset that is silent breeds rumour; the plan's communications are how the retirement is carried … |
+| `practical_context` | string | no | It opens when the verified plan is ready to be worked, and it closes with the communications plan executed in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

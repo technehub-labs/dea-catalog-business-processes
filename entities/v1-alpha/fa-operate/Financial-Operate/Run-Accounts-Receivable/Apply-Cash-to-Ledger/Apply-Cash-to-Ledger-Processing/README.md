@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Apply Cash to Ledger Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Apply Cash to Ledger** (`processes:activity-fa-operate-rnszvv`). Its canonical ID is `processes:task-fa-operate-transform-b4kamh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the receipts verified, the processing custodian does the applying itself: each arriving payment is matched to the invoice it settles and cleared against the books, and the applied cash is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because money that arrives unapplied is money that clears nothing - the application is what turns a receipt into a settled debt.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified receipts are ready to be applied, and it ends with the applied cash produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function matches each payment to the invoice it settles and clears it on the books, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Clear Each Invoice the Cash Names |
+| `plain_language_description` | string | no | With the receipts verified, the processing custodian does the applying itself: each arriving payment is matched to the … |
+| `business_purpose` | string | no | It exists because money that arrives unapplied is money that clears nothing - the application is what turns a receipt … |
+| `practical_context` | string | no | It starts once checking is complete and the verified receipts are ready to be applied, and it ends with the applied … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

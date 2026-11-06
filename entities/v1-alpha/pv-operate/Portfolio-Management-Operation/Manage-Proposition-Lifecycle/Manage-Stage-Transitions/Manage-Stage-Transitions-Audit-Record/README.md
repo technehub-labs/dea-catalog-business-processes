@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-re
 
 This is a **Task** (level L4), named **Manage Stage Transitions Audit Record**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Stage Transitions** (`processes:activity-pv-operate-jpupsh`). Its canonical ID is `processes:task-pv-operate-record-3a5jmn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the transition round is put beyond doubt for later scrutiny. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles. Each stage move and its grounds therefore stay answerable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a stage change decides what a proposition owes next, and the grounds behind each move must stay retrievable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once confirmation has been issued, and it closes with the transition audit record held at its required retention tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the audit record for the executed transitions at its required retention tier and sets the retrieval handles, so the grounds behind any stage move can be retrieved on demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Stage Transition Audit Record |
+| `plain_language_description` | string | no | After confirmation, the transition round is put beyond doubt for later scrutiny. The records custodian preserves the … |
+| `business_purpose` | string | no | It exists because a stage change decides what a proposition owes next, and the grounds behind each move must stay … |
+| `practical_context` | string | no | It opens once confirmation has been issued, and it closes with the transition audit record held at its required … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

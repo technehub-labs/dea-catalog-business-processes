@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Plan Maintenance Schedules Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Plan Maintenance Schedules** (`processes:activity-eo-operate-eadndb`). Its canonical ID is `processes:task-eo-operate-intake-uu37wc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Planning opens when the asset register and the condition and usage data are handed over together as the ground the schedule will be built from. The intake custodian accepts both, registers them with audit identifiers, and starts the planning from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so maintenance is planned from registered asset reality rather than from habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the register and condition data are presented for planning, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the asset register and condition data as the planning baseline, with audit references, and opens the schedule work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Asset Register and Condition Data |
+| `plain_language_description` | string | no | Planning opens when the asset register and the condition and usage data are handed over together as the ground the … |
+| `business_purpose` | string | no | It exists so maintenance is planned from registered asset reality rather than from habit. |
+| `practical_context` | string | no | It opens when the register and condition data are presented for planning, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

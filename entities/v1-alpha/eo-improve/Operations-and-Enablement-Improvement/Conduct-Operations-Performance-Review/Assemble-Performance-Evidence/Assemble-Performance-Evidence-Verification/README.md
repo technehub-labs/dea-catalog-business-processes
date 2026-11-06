@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-ve
 
 This is a **Task** (level L4), named **Assemble Performance Evidence Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Assemble Performance Evidence** (`processes:activity-eo-improve-xunaq5`). Its canonical ID is `processes:task-eo-improve-verify-ssgdum`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is gathered, the verification custodian checks the records against what assembly requires - that they cover the review's scope and period completely. Defects are logged for rejection or repair before the assembly begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review never concludes over evidence with holes in it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the records can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the records missing one quarter's utilization data and logs the defect before the assembly begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Records Before Assembling the Evidence |
+| `plain_language_description` | string | no | Before anything is gathered, the verification custodian checks the records against what assembly requires - that they … |
+| `business_purpose` | string | no | It exists so the review never concludes over evidence with holes in it. |
+| `practical_context` | string | no | It runs once the intake is registered and the records can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

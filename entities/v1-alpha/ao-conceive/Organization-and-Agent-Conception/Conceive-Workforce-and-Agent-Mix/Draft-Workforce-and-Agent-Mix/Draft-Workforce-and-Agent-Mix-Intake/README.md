@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Draft Workforce and Agent Mix Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Draft Workforce and Agent Mix** (`processes:activity-ao-conceive-73s2vm`). Its canonical ID is `processes:task-ao-conceive-intake-82prfy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Drafting opens when the bounded capacity envelopes are handed over as the frame the mix must be composed within. The intake custodian accepts them, registers the handover with audit identifiers, and starts the drafting work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the mix is drafted within a registered set of envelopes rather than freehand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded envelopes are presented for the drafting, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function registers the bounded capacity envelopes as the drafting baseline, with audit references, and opens the composition work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Bounded Envelopes for Drafting |
+| `plain_language_description` | string | no | Drafting opens when the bounded capacity envelopes are handed over as the frame the mix must be composed within. The … |
+| `business_purpose` | string | no | It exists so the mix is drafted within a registered set of envelopes rather than freehand. |
+| `practical_context` | string | no | It opens when the bounded envelopes are presented for the drafting, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-r
 
 This is a **Task** (level L4), named **Articulate Risk Appetite Audit Record**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Articulate Risk Appetite** (`processes:activity-ge-conceive-b82hdf`). Its canonical ID is `processes:task-ge-conceive-record-tgr3wp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the conception-ready package, the completion confirmation, and whatever remediations were raised. The appetite's articulation stays provable for as long as the framework endures.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the appetite's articulation can be evidenced for as long as the framework endures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a risk review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Lay the Appetite Case Down for Keeps |
+| `plain_language_description` | string | no | At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest … |
+| `business_purpose` | string | no | It exists so the appetite's articulation can be evidenced for as long as the framework endures. |
+| `practical_context` | string | no | It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-ve
 
 This is a **Task** (level L4), named **Execute Retention Actions Verification**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Execute Retention Actions** (`processes:activity-pr-improve-jg6bv4`). Its canonical ID is `processes:task-pr-improve-verify-4yua6g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the interventions run, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Any shortfall against the model contract is named with its fix.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because actions aimed by a broken model spend goodwill on the wrong customers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the retention pack against the model contract and flags one candidate gap.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Retention Pack Against the Model Contract |
+| `plain_language_description` | string | no | Before the interventions run, the verification custodian tests the pack against the contract governing the churn model … |
+| `business_purpose` | string | no | It exists because actions aimed by a broken model spend goodwill on the wrong customers. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

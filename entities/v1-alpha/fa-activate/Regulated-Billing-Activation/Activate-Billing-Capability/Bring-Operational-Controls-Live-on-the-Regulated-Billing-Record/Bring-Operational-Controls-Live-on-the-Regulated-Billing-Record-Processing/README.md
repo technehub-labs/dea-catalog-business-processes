@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-activate-t
 
 This is a **Task** (level L4), named **Bring Operational Controls Live on the Regulated Billing Record Processing**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Bring Operational Controls Live on the Regulated Billing Record** (`processes:activity-fa-activate-utzqpn`). Its canonical ID is `processes:task-fa-activate-transform-5k9ase`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the framework verified, the processing custodian makes the go-live itself: the separation of duties, the audit trail, and the reconciliations are brought live and recorded onto the regulated billing record in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because controls on paper restrain no invoices - the go-live is where the authorization starts to mean trustworthy billing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified framework is ready to be brought live, and it ends with the live controls produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the audit function brings the separation of duties, trail, and reconciliations live on the billing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Make the Billing Controls Live |
+| `plain_language_description` | string | no | With the framework verified, the processing custodian makes the go-live itself: the separation of duties, the audit … |
+| `business_purpose` | string | no | It exists because controls on paper restrain no invoices - the go-live is where the authorization starts to mean … |
+| `practical_context` | string | no | It starts once checking is complete and the verified framework is ready to be brought live, and it ends with the live … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

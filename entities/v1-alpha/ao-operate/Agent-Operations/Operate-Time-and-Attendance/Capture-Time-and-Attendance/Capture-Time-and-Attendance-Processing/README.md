@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Capture Time and Attendance Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Capture Time and Attendance** (`processes:activity-ao-operate-kyup4x`). Its canonical ID is `processes:task-ao-operate-transform-ptp9kn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the workforce verified, the processing custodian does the capture itself: each delivering agent's time and attendance is recorded as it accrues, and the captured records are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because every downstream entitlement - pay, hours compliance, cycle reviews - rests on the time being captured honestly at the source.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified workforce is ready to be captured from, and it ends with the captured records produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management logs each delivering agent's time and attendance as it accrues, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Time and Attendance of Agents in Service |
+| `plain_language_description` | string | no | With the workforce verified, the processing custodian does the capture itself: each delivering agent's time and … |
+| `business_purpose` | string | no | It exists because every downstream entitlement - pay, hours compliance, cycle reviews - rests on the time being … |
+| `practical_context` | string | no | It starts once checking is complete and the verified workforce is ready to be captured from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-v
 
 This is a **Task** (level L4), named **Verify Regulator Licence Or Registration Verification**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Verify Regulator Licence Or Registration** (`processes:activity-ao-activate-z4yhzy`). Its canonical ID is `processes:task-ao-activate-verify-7wu8bx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the heart of the activity: the verification custodian confirms the licence is current, in good standing, and actually matches the designation or authority the live role needs. Anything less - an expired document, a scope that misses the role - is written up as a nonconformance for refusal or repair.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody relies on a licence that turns out to be lapsed, mismatched, or short of the role's true requirement.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once intake is registered and the licence can be compared against the activity's requirements, and it finishes with the licence verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian checks a practitioner's licence currency and scope against the role's needs, finds the scope narrower than the role requires, and logs the nonconformance for follow-up.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Licence Details Against the Role's Requirement |
+| `plain_language_description` | string | no | This is the heart of the activity: the verification custodian confirms the licence is current, in good standing, and … |
+| `business_purpose` | string | no | It exists so nobody relies on a licence that turns out to be lapsed, mismatched, or short of the role's true … |
+| `practical_context` | string | no | It runs once intake is registered and the licence can be compared against the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

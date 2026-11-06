@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-co
 
 This is a **Task** (level L4), named **Review Treasury Exposures Confirmation**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Review Treasury Exposures** (`processes:activity-fa-improve-grdfaj`). Its canonical ID is `processes:task-fa-improve-confirm-7tmn72`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the review stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work that follows learns the exposures are weighed and can be answered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so evolutions are designed only over exposures confirmed as reviewed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the exposure review awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the reviewed exposures against the activity's intended outcome and issues the confirmation the design work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Reviewed Treasury Exposures |
+| `plain_language_description` | string | no | When the review stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach … |
+| `business_purpose` | string | no | It exists so evolutions are designed only over exposures confirmed as reviewed. |
+| `practical_context` | string | no | It begins once preparation is complete and the exposure review awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

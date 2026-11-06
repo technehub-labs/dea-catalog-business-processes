@@ -117,3 +117,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Map the Training Requirements for Each Role'
+plain_language_description: 'With the inputs verified, the processing custodian makes the mapping itself: for every licensed role it settles the training plan to follow, the evidence that shows supervised completion, and the path completions are recorded along - all set down in the form the activity defines. The working papers behind the mapping are preserved.'
+business_purpose: 'It exists because supervised training can only be completed and evidenced against requirements somebody has mapped in advance.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be mapped from, and it ends with the mapped requirements produced and the working papers kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian maps each licensed role''s training plan, evidence class, and recording path, keeping the working papers for audit.'

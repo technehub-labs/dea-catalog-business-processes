@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Review Structure against Model Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Review Structure against Model** (`processes:activity-ao-design-p6pheg`). Its canonical ID is `processes:task-ao-design-intake-wg4qzc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The review opens when the bounded authority chains are handed over as the structure to be checked against the framed model. The intake custodian accepts them, registers the handover with audit identifiers, and starts the review from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the structure review runs over a registered design rather than over working assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded chains are presented for the review, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the bounded chains as the review baseline, with audit references, and opens the structure review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Bounded Chains for the Structure Review |
+| `plain_language_description` | string | no | The review opens when the bounded authority chains are handed over as the structure to be checked against the framed … |
+| `business_purpose` | string | no | It exists so the structure review runs over a registered design rather than over working assumptions. |
+| `practical_context` | string | no | It opens when the bounded chains are presented for the review, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

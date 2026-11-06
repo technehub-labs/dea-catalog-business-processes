@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-veri
 
 This is a **Task** (level L4), named **Execute Funding Line Documentation Verification**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Execute Funding Line Documentation** (`processes:activity-fa-build-2ccp49`). Its canonical ID is `processes:task-fa-build-verify-n557t9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is papered, the verification custodian checks the negotiated terms against what documentation requires - that each term matches what the talks actually settled. Defects are logged for rejection or repair before any paper is executed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise never signs a paper that says something other than what was agreed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the terms can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a draft paper straying from the settled terms and logs the defect before anything is signed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Terms Before They Go onto Paper |
+| `plain_language_description` | string | no | Before anything is papered, the verification custodian checks the negotiated terms against what documentation requires … |
+| `business_purpose` | string | no | It exists so the enterprise never signs a paper that says something other than what was agreed. |
+| `practical_context` | string | no | It runs once the intake is registered and the terms can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

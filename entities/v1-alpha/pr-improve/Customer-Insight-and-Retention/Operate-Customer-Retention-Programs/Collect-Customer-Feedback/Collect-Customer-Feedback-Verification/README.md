@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-ve
 
 This is a **Task** (level L4), named **Collect Customer Feedback Verification**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Collect Customer Feedback** (`processes:activity-pr-improve-p988q3`). Its canonical ID is `processes:task-pr-improve-verify-mzgnam`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the collection proceeds, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Where the pack deviates, the deviation is named and a remediation is set out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because feedback gathered below the quality bar would poison every insight drawn from it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the feedback pack against the quality bar and clears it for collection.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Feedback Pack Against the Quality Bar |
+| `plain_language_description` | string | no | Before the collection proceeds, the verification custodian tests the pack against the contract governing the churn … |
+| `business_purpose` | string | no | It exists because feedback gathered below the quality bar would poison every insight drawn from it. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

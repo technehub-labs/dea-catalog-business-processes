@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-conf
 
 This is a **Task** (level L4), named **Verify Ledger Implementation Confirmation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Verify Ledger Implementation** (`processes:activity-fa-build-ee89qu`). Its canonical ID is `processes:task-fa-build-confirm-t2cdvc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the proving stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The general ledger operation that follows learns the books are proven and may go live.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the books run only over an implementation proven ready by determination.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the readiness determination awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the readiness determination against the activity's intended outcome and issues the confirmation the ledger operation waits on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Ledger Readiness Determination |
+| `plain_language_description` | string | no | When the proving stands done, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the books run only over an implementation proven ready by determination. |
+| `practical_context` | string | no | It begins once preparation is complete and the readiness determination awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

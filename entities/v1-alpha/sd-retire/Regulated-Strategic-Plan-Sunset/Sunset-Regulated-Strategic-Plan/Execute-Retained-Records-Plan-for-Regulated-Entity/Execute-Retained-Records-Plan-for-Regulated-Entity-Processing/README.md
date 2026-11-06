@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-tra
 
 This is a **Task** (level L4), named **Execute Retained-Records Plan for Regulated Entity Processing**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Retained-Records Plan for Regulated Entity** (`processes:activity-sd-retire-48khkt`). Its canonical ID is `processes:task-sd-retire-transform-36v72u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the execution proper begins. The processing custodian catalogues the tested records to the retention schedule and honours the regulator-prescribed period for each, producing the executed retained-records plan in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the retired plan's records must stay findable and intact for as long as the regulator can come back to them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified records are ready to be worked, and it closes with the retained-records plan executed in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance function catalogues each tested record series to the schedule and sets its preservation term, honouring the regulator's prescribed period, workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Catalogue the Retired Plan's Records Against the Schedule |
+| `plain_language_description` | string | no | With the inputs verified, the execution proper begins. The processing custodian catalogues the tested records to the … |
+| `business_purpose` | string | no | It exists because the retired plan's records must stay findable and intact for as long as the regulator can come back … |
+| `practical_context` | string | no | It opens when the verified records are ready to be worked, and it closes with the retained-records plan executed in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

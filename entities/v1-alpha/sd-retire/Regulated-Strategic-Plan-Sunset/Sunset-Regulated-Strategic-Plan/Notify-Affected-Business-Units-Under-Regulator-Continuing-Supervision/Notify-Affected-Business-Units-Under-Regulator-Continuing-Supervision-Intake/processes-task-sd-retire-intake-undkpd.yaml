@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Notification List and Prescribed Content'
+plain_language_description: 'The notification opens as its material arrives: the regulator-prescribed list of affected business units with the content and cadence their notices must follow. The intake custodian logs them against the notification file so the notification starts accounted for.'
+business_purpose: 'It exists so the notices go to exactly the units the regulator named, on the prescribed cadence, with none skipped or improvised.'
+practical_context: 'It opens when the prescribed list and content are presented for notification, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the prescribed notification list and content into the notification file, so the notifying of the affected units starts accounted for.'

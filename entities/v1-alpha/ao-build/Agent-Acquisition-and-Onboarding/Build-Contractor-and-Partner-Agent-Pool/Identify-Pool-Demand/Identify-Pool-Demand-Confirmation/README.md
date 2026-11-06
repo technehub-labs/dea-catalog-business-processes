@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-conf
 
 This is a **Task** (level L4), named **Identify Pool Demand Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Identify Pool Demand** (`processes:activity-ao-build-yjbucg`). Its canonical ID is `processes:task-ao-build-confirm-89qahu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the demand reading is complete, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The sourcing and vetting work that comes next learns exactly what demand it is being asked to serve.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pool is sourced against demand that has been confirmed, not against a first reading.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the identified demand awaits its consumers, and it closes with confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the identified demand against the activity's intended outcome and issues the confirmation the vetting work needs before sourcing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Identified Pool Demand |
+| `plain_language_description` | string | no | When the demand reading is complete, the confirmation custodian reconciles it against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so the pool is sourced against demand that has been confirmed, not against a first reading. |
+| `practical_context` | string | no | It begins once preparation is complete and the identified demand awaits its consumers, and it closes with confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-r
 
 This is a **Task** (level L4), named **Articulate Value Claim Audit Record**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Articulate Value Claim** (`processes:activity-pv-conceive-zgnzny`). Its canonical ID is `processes:task-pv-conceive-record-4bc6hc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The promise as made stays readable for the discipline's duration.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the promise as made stays provable when its delivery is disputed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian of the proposition design authority files the value claim at its retention tier and sets the retrieval handles.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Value Claim on Record |
+| `plain_language_description` | string | no | Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets … |
+| `business_purpose` | string | no | It exists so the promise as made stays provable when its delivery is disputed. |
+| `practical_context` | string | no | It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Papers and Register the Presence'
+plain_language_description: 'With the requirements verified, the processing custodian does the execution itself: each required filing is made and each registration completed until the enterprise stands properly present in the regime, set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because an enterprise without registered presence owes tax it cannot properly account for - the filings are what make the standing real.'
+practical_context: 'It starts once checking is complete and the verified requirements are ready to be executed, and it ends with the completed registrations produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the finance function files each paper and completes each registration the regime demands, keeping the working papers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 
 This is a **Task** (level L4), named **Deliver Learning Sessions Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Deliver Learning Sessions** (`processes:activity-ao-operate-f669fn`). Its canonical ID is `processes:task-ao-operate-confirm-vk643b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the sessions stand delivered, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The programme evaluation that follows learns the completions are on record and ready to be weighed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so programmes are evaluated only over sessions confirmed as delivered.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the delivered sessions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the delivered sessions against the activity's intended outcome and issues the confirmation the evaluation step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Delivered Learning Sessions |
+| `plain_language_description` | string | no | When the sessions stand delivered, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so programmes are evaluated only over sessions confirmed as delivered. |
+| `practical_context` | string | no | It begins once preparation is complete and the delivered sessions await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

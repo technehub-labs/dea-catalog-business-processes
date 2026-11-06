@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-con
 
 This is a **Task** (level L4), named **Maintain Reserving Discipline Confirmation**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Maintain Reserving Discipline** (`processes:activity-fa-retire-uuqbe9`). Its canonical ID is `processes:task-fa-retire-confirm-9z6n8d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the discipline stands kept, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The run-off learns its reserve is tended, its capital watched, and its corrections made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the run-off relies only on a reserve confirmed as tended.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the maintained discipline awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the tended reserve against the activity's intended outcome and issues the confirmation the run-off needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Maintained Reserving Discipline |
+| `plain_language_description` | string | no | When the discipline stands kept, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the run-off relies only on a reserve confirmed as tended. |
+| `practical_context` | string | no | It begins once preparation is complete and the maintained discipline awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

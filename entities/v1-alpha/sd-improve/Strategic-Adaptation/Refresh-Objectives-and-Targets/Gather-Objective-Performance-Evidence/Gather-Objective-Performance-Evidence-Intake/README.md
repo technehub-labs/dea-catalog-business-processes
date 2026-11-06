@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-in
 
 This is a **Task** (level L4), named **Gather Objective Performance Evidence Intake**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Gather Objective Performance Evidence** (`processes:activity-sd-improve-6tdndg`). Its canonical ID is `processes:task-sd-improve-intake-c52fz8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The gathering opens as its material arrives: the monitored strategic performance that shows how the current objectives are really doing. The intake custodian logs it against the gathering file so the gathering starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the evidence against which objectives will be judged is complete on arrival, not assembled from whatever reports happen to surface.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the monitored performance is presented for gathering, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the monitored performance reports into the gathering file, so the evidence work on the current objectives starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Monitored Performance for the Evidence Gathering |
+| `plain_language_description` | string | no | The gathering opens as its material arrives: the monitored strategic performance that shows how the current objectives … |
+| `business_purpose` | string | no | It exists so the evidence against which objectives will be judged is complete on arrival, not assembled from whatever … |
+| `practical_context` | string | no | It opens when the monitored performance is presented for gathering, with the activity's owner told that it has landed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

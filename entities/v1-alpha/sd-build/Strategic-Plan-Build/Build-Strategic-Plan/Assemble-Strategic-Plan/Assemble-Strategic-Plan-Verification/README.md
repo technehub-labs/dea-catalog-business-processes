@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-veri
 
 This is a **Task** (level L4), named **Assemble Strategic Plan Verification**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Assemble Strategic Plan** (`processes:activity-sd-build-7z99jy`). Its canonical ID is `processes:task-sd-build-verify-qegav5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the plan document is put together, the arriving version material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assembling a plan from unchecked pieces produces a document the organisation cannot rely on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the version material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged version material against what the activity requires, and writes up an initiative without an owner as a shortfall to be put right before assembly.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Plan Material Before Assembling the Document |
+| `plain_language_description` | string | no | Before the plan document is put together, the arriving version material is put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because assembling a plan from unchecked pieces produces a document the organisation cannot rely on. |
+| `practical_context` | string | no | It opens once the intake is registered and the version material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

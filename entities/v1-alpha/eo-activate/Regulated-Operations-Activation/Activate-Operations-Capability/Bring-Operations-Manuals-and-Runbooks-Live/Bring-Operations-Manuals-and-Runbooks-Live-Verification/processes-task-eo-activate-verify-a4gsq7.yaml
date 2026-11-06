@@ -74,3 +74,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Manual Content Before Bringing It Live'
+plain_language_description: 'Before any manual goes live, the verification custodian checks the content against what the go-live requires - that every manual and runbook carries the regulator''s approval and matches the authorized capability. Defects are logged for rejection or repair before anything is made live.'
+business_purpose: 'It exists so crews and operators never work from manuals that were never approved.'
+practical_context: 'It runs once the intake is registered and the content can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a runbook still in draft and logs the defect before the manual set goes live.'

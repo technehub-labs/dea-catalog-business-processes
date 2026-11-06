@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 
 This is a **Task** (level L4), named **Draft Initial Policy Document Processing**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Draft Initial Policy Document** (`processes:activity-ge-conceive-g7nxw2`). Its canonical ID is `processes:task-ge-conceive-transform-updhkb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the conception for the draft: the bounded scope and the proposed authority are consolidated into the initial document, and the conception-ready package is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because scope and rights in separate papers are a policy in pieces - the draft is where they become one instrument.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded conception may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function consolidates the bounded scope and proposed authority into the initial document.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather the Scope and the Rights into One Document |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the conception for the draft: the bounded scope and the … |
+| `business_purpose` | string | no | It exists because scope and rights in separate papers are a policy in pieces - the draft is where they become one … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded conception may be executed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

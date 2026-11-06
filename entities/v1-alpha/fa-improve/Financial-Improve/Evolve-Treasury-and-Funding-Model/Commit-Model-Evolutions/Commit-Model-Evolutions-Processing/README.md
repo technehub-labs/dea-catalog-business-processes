@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-tr
 
 This is a **Task** (level L4), named **Commit Model Evolutions Processing**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Commit Model Evolutions** (`processes:activity-fa-improve-4mju3t`). Its canonical ID is `processes:task-fa-improve-transform-b3y5pa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the designs verified, the processing custodian does the commitment itself: each designed evolution is ratified for the model to take, and the monitoring that will catch the next posture shift is set, all recorded in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a model that changed once will need to change again - the commitment is what both moves it and keeps the watch on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified designs are ready to be adopted, and it ends with the committed evolutions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority adopts each designed change and sets the watch for the next shift, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Adopt the Changes and Keep Watching the Posture |
+| `plain_language_description` | string | no | With the designs verified, the processing custodian does the commitment itself: each designed evolution is ratified for … |
+| `business_purpose` | string | no | It exists because a model that changed once will need to change again - the commitment is what both moves it and keeps … |
+| `practical_context` | string | no | It starts once checking is complete and the verified designs are ready to be adopted, and it ends with the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

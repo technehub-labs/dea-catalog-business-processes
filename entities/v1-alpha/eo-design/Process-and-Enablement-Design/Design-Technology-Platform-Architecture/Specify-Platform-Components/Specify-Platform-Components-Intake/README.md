@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Specify Platform Components Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Specify Platform Components** (`processes:activity-eo-design-m29ghr`). Its canonical ID is `processes:task-eo-design-intake-kba5jh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Specification opens when the framed enablement approach is handed over as the direction the platform components must realize. The intake custodian accepts it, registers it with audit identifiers, and starts the specification from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so components are specified from the committed enablement direction rather than from a vendor brochure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the framed approach is presented for the specification, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the framed enablement approach as the specification baseline, with audit references, and opens the naming work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Framed Enablement Approach |
+| `plain_language_description` | string | no | Specification opens when the framed enablement approach is handed over as the direction the platform components must … |
+| `business_purpose` | string | no | It exists so components are specified from the committed enablement direction rather than from a vendor brochure. |
+| `practical_context` | string | no | It opens when the framed approach is presented for the specification, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

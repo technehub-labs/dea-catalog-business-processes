@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Commit Allocation Priorities Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Commit Allocation Priorities** (`processes:activity-sd-build-vgavkq`). Its canonical ID is `processes:task-sd-build-transform-k23j6r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the committing proper begins. The processing custodian fixes the prioritized decisions with their bounded envelopes per initiative for operate, producing the committed priorities in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because operate needs one settled order of precedence per initiative, not a shifting sense of what matters most.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the committed priorities produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function commits the verified priorities with their envelopes per initiative, and keeps the committing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Allocation Priorities Envelope by Envelope |
+| `plain_language_description` | string | no | With the inputs verified, the committing proper begins. The processing custodian fixes the prioritized decisions with … |
+| `business_purpose` | string | no | It exists because operate needs one settled order of precedence per initiative, not a shifting sense of what matters … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the committed priorities produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

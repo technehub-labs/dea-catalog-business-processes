@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-tra
 
 This is a **Task** (level L4), named **Confirm Retirement Closure Processing**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Confirm Retirement Closure** (`processes:activity-pv-retire-mqkper`). Its canonical ID is `processes:task-pv-retire-transform-vhbkar`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the closure proper begins. The processing custodian gathers the evidence that the service is gone and the residuals are routed, completing the archive and the catalogue de-listing, and produces the retirement closure record in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a retirement is only truly finished when its evidence, archive and catalogue de-listing are gathered into one closure record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified closure material is ready to be worked, and it closes with the retirement closure record produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the proposition design authority works the verified material into the closure record, completing the archive of the withdrawn service and the de-listing from the catalogue, and keeps the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Retirement Closure Together with Its Evidence |
+| `plain_language_description` | string | no | With the inputs verified, the closure proper begins. The processing custodian gathers the evidence that the service is … |
+| `business_purpose` | string | no | It exists because a retirement is only truly finished when its evidence, archive and catalogue de-listing are gathered … |
+| `practical_context` | string | no | It opens when the verified closure material is ready to be worked, and it closes with the retirement closure record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

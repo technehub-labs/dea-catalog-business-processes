@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-rec
 
 This is a **Task** (level L4), named **Position Network Nodes Audit Record**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Position Network Nodes** (`processes:activity-eo-design-fcqpn4`). Its canonical ID is `processes:task-eo-design-record-sznnbz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the positioning trail at its required retention tier and sets the retrieval handles for it. Where each node was placed, and from which design and geography, stays readable whenever the network's footprint is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the placement of each node can be evidenced whenever the network's footprint is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the positioning trail at its retention tier and sets the retrieval handles a logistics review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Node Position Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the positioning trail at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so the placement of each node can be evidenced whenever the network's footprint is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

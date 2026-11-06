@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Enhancement Design Pack'
+plain_language_description: 'The design work opens with the analyzed drivers and their design materials arriving to be answered. The intake custodian logs them against the design file so the designing starts accounted for.'
+business_purpose: 'It exists because enhancements designed from an unlogged driver set enhance nothing in particular.'
+practical_context: 'It opens when the activity''s input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in product management logs the analyzed drivers into the enhancement design file.'

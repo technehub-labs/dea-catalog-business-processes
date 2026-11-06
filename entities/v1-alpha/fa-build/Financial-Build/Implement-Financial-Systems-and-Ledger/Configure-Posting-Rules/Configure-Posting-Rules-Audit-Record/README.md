@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-reco
 
 This is a **Task** (level L4), named **Configure Posting Rules Audit Record**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Configure Posting Rules** (`processes:activity-fa-build-g2g6yw`). Its canonical ID is `processes:task-fa-build-record-86quhg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the configuration trail at its required retention tier and sets the retrieval handles for it. How each transaction class was set to enter the books stays readable whenever an entry's route is examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the rules behind every ledger entry can be evidenced whenever an entry's route is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the configuration trail at its retention tier and sets the retrieval handles a ledger review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Posting Rules Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the configuration trail at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so the rules behind every ledger entry can be evidenced whenever an entry's route is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

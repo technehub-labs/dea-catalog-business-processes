@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Compute Cycle Payroll Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Compute Cycle Payroll** (`processes:activity-ao-operate-gxarb3`). Its canonical ID is `processes:task-ao-operate-transform-q9ajex`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the data verified, the processing custodian does the computation itself: the payroll for each cycle is computed from the validated time and attendance data, and the computed payroll is set down in the form the activity defines. Working papers behind the figures are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the whole payroll promise rests on the figures being computed from the validated record, every cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified data is ready to be computed from, and it ends with the computed payroll produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management computes the cycle's pay from the validated time data, keeping the working papers behind every figure.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Out the Cycle's Payroll from the Validated Time |
+| `plain_language_description` | string | no | With the data verified, the processing custodian does the computation itself: the payroll for each cycle is computed … |
+| `business_purpose` | string | no | It exists because the whole payroll promise rests on the figures being computed from the validated record, every cycle. |
+| `practical_context` | string | no | It starts once checking is complete and the verified data is ready to be computed from, and it ends with the computed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-retire-tra
 
 This is a **Task** (level L4), named **Consult Representative Bodies Processing**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Consult Representative Bodies** (`processes:activity-ao-retire-zmc7yk`). Its canonical ID is `processes:task-ao-retire-transform-h8d4t7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the proposal verified, the processing custodian conducts the consultation itself: the recognised unions, works councils, and elected representatives are consulted within the statutory period, and the consultation outcome record - positions, agreements, unresolved issues - is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the law requires people's representatives to be heard before a reduction takes effect - and heard properly, not as a formality.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified proposal is ready to be consulted on, and it ends with the consultation outcome record produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian conducts the statutory consultation with the recognised unions and works councils within the required period, recording positions and agreements.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consult the Representative Bodies Before the Reduction |
+| `plain_language_description` | string | no | With the proposal verified, the processing custodian conducts the consultation itself: the recognised unions, works … |
+| `business_purpose` | string | no | It exists because the law requires people's representatives to be heard before a reduction takes effect - and heard … |
+| `practical_context` | string | no | It starts once checking is complete and the verified proposal is ready to be consulted on, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

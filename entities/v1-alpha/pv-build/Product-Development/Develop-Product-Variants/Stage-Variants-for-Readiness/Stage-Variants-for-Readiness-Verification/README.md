@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-veri
 
 This is a **Task** (level L4), named **Stage Variants for Readiness Verification**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Stage Variants for Readiness** (`processes:activity-pv-build-6z6rdn`). Its canonical ID is `processes:task-pv-build-verify-r796kz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the variants are staged, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before staging proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because staging a non-conforming variant wastes every downstream effort.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks the variants' conformance papers before staging.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Variants Before They Are Staged |
+| `plain_language_description` | string | no | Before the variants are staged, the verification custodian tests the arriving material against what the activity … |
+| `business_purpose` | string | no | It exists because staging a non-conforming variant wastes every downstream effort. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

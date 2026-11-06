@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Frame Purpose Statement Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Purpose Statement** (`processes:activity-sd-conceive-na8erc`). Its canonical ID is `processes:task-sd-conceive-confirm-wh5ygc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the statement is framed. The confirmation custodian tells the downstream teams the purpose statement is available, and closes the reconciliation against what the activity promised for the framing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ambition is framed over a confirmed statement of purpose rather than over a phrase still being polished.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the purpose statement is ready to hand on, and it closes with the confirmation issued and the framing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the framed purpose statement to the ambition framing team, reconciles it against what the framing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Framed Purpose Statement to the Ambition Framing |
+| `plain_language_description` | string | no | The confirming opens once the statement is framed. The confirmation custodian tells the downstream teams the purpose … |
+| `business_purpose` | string | no | It exists so the ambition is framed over a confirmed statement of purpose rather than over a phrase still being … |
+| `practical_context` | string | no | It opens when the purpose statement is ready to hand on, and it closes with the confirmation issued and the framing's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-con
 
 This is a **Task** (level L4), named **Identify Superseded Regulated Strategic Plan Confirmation**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Identify Superseded Regulated Strategic Plan** (`processes:activity-sd-retire-6azc3g`). Its canonical ID is `processes:task-sd-retire-confirm-ff2sst`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The supersession is marked and must now travel. The confirmation custodian tells the downstream teams the superseded-plan identification is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the filings register cannot be updated until someone confirms which plan is retired and which replaces it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the identification work is finished and the marked supersession is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the register team the supersession stands marked with its successor link, then closes the handover against what the identification promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Register Team the Supersession Stands Marked |
+| `plain_language_description` | string | no | The supersession is marked and must now travel. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists because the filings register cannot be updated until someone confirms which plan is retired and which … |
+| `practical_context` | string | no | It opens when the identification work is finished and the marked supersession is ready to travel, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

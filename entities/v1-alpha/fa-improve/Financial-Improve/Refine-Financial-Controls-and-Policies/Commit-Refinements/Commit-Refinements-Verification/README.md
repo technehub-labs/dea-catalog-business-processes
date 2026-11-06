@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-ve
 
 This is a **Task** (level L4), named **Commit Refinements Verification**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Commit Refinements** (`processes:activity-fa-improve-nsgnav`). Its canonical ID is `processes:task-fa-improve-verify-pmd6jk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is adopted, the verification custodian checks the designed refinements against what adoption requires - that each names the controls it refines and the review it needs. Defects are logged for rejection or repair before any refinement is adopted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no rule changes through a review that was never properly opened.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a refinement that names no control it refines and logs the defect before adoption.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Designs Before Adopting the Rules |
+| `plain_language_description` | string | no | Before anything is adopted, the verification custodian checks the designed refinements against what adoption requires - … |
+| `business_purpose` | string | no | It exists so no rule changes through a review that was never properly opened. |
+| `practical_context` | string | no | It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Analyze Routing Performance Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Analyze Routing Performance** (`processes:activity-eo-improve-ck6ghm`). Its canonical ID is `processes:task-eo-improve-transform-72jzjy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the analysis itself: the routing and network record is read for where cost sits and where service falls short, and the opportunity analysis is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a network always leaks somewhere - the analysis is what finds the leaks worth fixing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be read, and it ends with the opportunity analysis produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function reads the routing record for cost and service openings and sets down the analysis, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Surface Where Cost and Service Can Improve |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the analysis itself: the routing and network record is read … |
+| `business_purpose` | string | no | It exists because a network always leaks somewhere - the analysis is what finds the leaks worth fixing. |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be read, and it ends with the opportunity … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

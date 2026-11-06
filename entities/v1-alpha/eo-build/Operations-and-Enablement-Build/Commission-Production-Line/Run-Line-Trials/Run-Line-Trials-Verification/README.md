@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Run Line Trials Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Run Line Trials** (`processes:activity-eo-build-jpj6tj`). Its canonical ID is `processes:task-eo-build-verify-dkvzjt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any trial runs, the verification custodian checks the plans against what the trials require - that each planned run states what the line must produce and at what rate. Defects are logged for rejection or repair before any trial is run.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so trials never run without a stated target to measure them against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the plans can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a trial plan with no rate stated and logs the defect before that trial runs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Plans Before Running the Trials |
+| `plain_language_description` | string | no | Before any trial runs, the verification custodian checks the plans against what the trials require - that each planned … |
+| `business_purpose` | string | no | It exists so trials never run without a stated target to measure them against. |
+| `practical_context` | string | no | It runs once the intake is registered and the plans can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-con
 
 This is a **Task** (level L4), named **Bound Evaluation Scope Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Bound Evaluation Scope** (`processes:activity-sd-design-h56x3t`). Its canonical ID is `processes:task-sd-design-confirm-an64vw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the scope is bounded. The confirmation custodian tells the downstream teams the bounded evaluation scope is available, and closes the reconciliation against what the activity promised for the bounding.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the comparison runs inside a confirmed scope rather than inside terms still being negotiated.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded evaluation scope is ready to hand on, and it closes with the confirmation issued and the bounding's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the bounded scope to the comparison team, reconciles it against what the bounding promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Bounded Evaluation Scope to the Comparison |
+| `plain_language_description` | string | no | The confirming opens once the scope is bounded. The confirmation custodian tells the downstream teams the bounded … |
+| `business_purpose` | string | no | It exists so the comparison runs inside a confirmed scope rather than inside terms still being negotiated. |
+| `practical_context` | string | no | It opens when the bounded evaluation scope is ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

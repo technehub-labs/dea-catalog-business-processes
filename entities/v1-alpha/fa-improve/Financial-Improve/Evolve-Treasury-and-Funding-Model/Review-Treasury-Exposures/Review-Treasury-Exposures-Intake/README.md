@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Review Treasury Exposures Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Review Treasury Exposures** (`processes:activity-fa-improve-grdfaj`). Its canonical ID is `processes:task-fa-improve-intake-sy2ey8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Review opens when the assessed shifts and the current treasury model are handed over together as the two sides the exposures will be weighed between. The intake custodian accepts both, registers them with audit identifiers, and starts the review from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so exposures are weighed against the registered model rather than against memory of it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the shifts and model are presented for the review, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the assessed shifts and current model as the review baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Assessed Shifts and the Current Model |
+| `plain_language_description` | string | no | Review opens when the assessed shifts and the current treasury model are handed over together as the two sides the … |
+| `business_purpose` | string | no | It exists so exposures are weighed against the registered model rather than against memory of it. |
+| `practical_context` | string | no | It opens when the shifts and model are presented for the review, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-co
 
 This is a **Task** (level L4), named **Disposition Nonconforming Output Confirmation**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Disposition Nonconforming Output** (`processes:activity-eo-operate-gmj49n`). Its canonical ID is `processes:task-eo-operate-confirm-myjdfs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the fates stand decided, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. Production and the quality chain learn which output is contained, which is reworked, and which is gone.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so output is treated as settled only once its disposition is confirmed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the settled dispositions await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the settled dispositions against the activity's intended outcome and issues the confirmation the quality chain needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Settled Dispositions |
+| `plain_language_description` | string | no | When the fates stand decided, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so output is treated as settled only once its disposition is confirmed. |
+| `practical_context` | string | no | It begins once preparation is complete and the settled dispositions await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

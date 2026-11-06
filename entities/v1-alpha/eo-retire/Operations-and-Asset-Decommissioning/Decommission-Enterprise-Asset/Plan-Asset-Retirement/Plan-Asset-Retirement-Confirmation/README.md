@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-con
 
 This is a **Task** (level L4), named **Plan Asset Retirement Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Plan Asset Retirement** (`processes:activity-eo-retire-6gntey`). Its canonical ID is `processes:task-eo-retire-confirm-5ntpwk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the plan stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The withdrawal work that follows learns the retirement is planned and ready to be executed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the asset is withdrawn only to a plan confirmed as drawn.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the retirement plan awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the retirement plan against the activity's intended outcome and issues the confirmation the withdrawal work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Asset Retirement Plan |
+| `plain_language_description` | string | no | When the plan stands drawn, the confirmation custodian reconciles it against the outcome the activity set out to reach … |
+| `business_purpose` | string | no | It exists so the asset is withdrawn only to a plan confirmed as drawn. |
+| `practical_context` | string | no | It begins once preparation is complete and the retirement plan awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

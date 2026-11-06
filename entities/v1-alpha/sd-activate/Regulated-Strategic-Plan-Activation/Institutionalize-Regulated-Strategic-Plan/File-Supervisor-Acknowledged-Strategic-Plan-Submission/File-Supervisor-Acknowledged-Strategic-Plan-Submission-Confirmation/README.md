@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-c
 
 This is a **Task** (level L4), named **File Supervisor-Acknowledged Strategic-Plan Submission Confirmation**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **File Supervisor-Acknowledged Strategic-Plan Submission** (`processes:activity-sd-activate-4gefj3`). Its canonical ID is `processes:task-sd-activate-confirm-4ne65w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the submission is filed. The confirmation custodian tells the downstream teams the filed submission is available, and closes the reconciliation against what the activity promised for the filing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the board and the review work both proceed from a confirmed lodgement rather than from a courier's say-so.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the filed submission is ready to hand on, and it closes with the confirmation issued and the filing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function reports the completed lodgement to the governing board and the review teams, reconciles the receipt against what the filing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report the Filed Submission to the Board and the Downstream Teams |
+| `plain_language_description` | string | no | The confirming opens once the submission is filed. The confirmation custodian tells the downstream teams the filed … |
+| `business_purpose` | string | no | It exists so the board and the review work both proceed from a confirmed lodgement rather than from a courier's say-so. |
+| `practical_context` | string | no | It opens when the filed submission is ready to hand on, and it closes with the confirmation issued and the filing's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

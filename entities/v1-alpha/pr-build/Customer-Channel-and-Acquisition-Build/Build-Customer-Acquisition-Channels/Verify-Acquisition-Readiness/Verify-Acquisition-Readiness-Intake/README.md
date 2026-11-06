@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 This is a **Task** (level L4), named **Verify Acquisition Readiness Intake**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Verify Acquisition Readiness** (`processes:activity-pr-build-p42qh7`). Its canonical ID is `processes:task-pr-build-intake-k7h6ae`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The readiness check opens with the same design brief that steered the build: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian logs the pack so the verification starts from an accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so readiness is judged against the agreed brief rather than an improvised checklist.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the design brief and pack contents into the readiness case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Readiness File and Log the Brief |
+| `plain_language_description` | string | no | The readiness check opens with the same design brief that steered the build: the mix of channels, what the demand … |
+| `business_purpose` | string | no | It exists so readiness is judged against the agreed brief rather than an improvised checklist. |
+| `practical_context` | string | no | It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

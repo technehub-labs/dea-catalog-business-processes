@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-ve
 
 This is a **Task** (level L4), named **Gather Objective Performance Evidence Verification**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Gather Objective Performance Evidence** (`processes:activity-sd-improve-6tdndg`). Its canonical ID is `processes:task-sd-improve-verify-mnzdf8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the evidence is used to judge objectives, the arriving performance material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because objectives judged on miscounted or stale performance would be redrafted to answer the wrong story.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the performance material can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests each arriving performance report against what the gathering requires, and writes up one metric missing its baseline as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Performance Material Before It Judges the Objectives |
+| `plain_language_description` | string | no | Before the evidence is used to judge objectives, the arriving performance material is put to the test. The verification … |
+| `business_purpose` | string | no | It exists because objectives judged on miscounted or stale performance would be redrafted to answer the wrong story. |
+| `practical_context` | string | no | It opens once the intake is registered and the performance material can be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

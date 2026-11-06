@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-conf
 
 This is a **Task** (level L4), named **Integrate Forecasting Integrations Confirmation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Integrate Forecasting Integrations** (`processes:activity-fa-build-nhup75`). Its canonical ID is `processes:task-fa-build-confirm-xxwr8j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the pipes stand laid, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The readiness work that follows learns the systems are fed and can be proven whole.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so readiness is proven only over integrations confirmed as working.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the working integrations await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the laid pipes against the activity's intended outcome and issues the confirmation the readiness work needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Working Integrations |
+| `plain_language_description` | string | no | When the pipes stand laid, the confirmation custodian reconciles them against the outcome the activity set out to reach … |
+| `business_purpose` | string | no | It exists so readiness is proven only over integrations confirmed as working. |
+| `practical_context` | string | no | It begins once preparation is complete and the working integrations await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

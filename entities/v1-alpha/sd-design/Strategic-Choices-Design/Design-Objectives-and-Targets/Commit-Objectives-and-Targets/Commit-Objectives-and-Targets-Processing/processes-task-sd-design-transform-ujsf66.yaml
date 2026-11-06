@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Commit the Objectives and Targets with Their Measures and Owners'
+plain_language_description: 'With the inputs verified, the committing proper begins. The processing custodian fixes the drafted objectives and targets with their bounded measures and ownership for the plan build, producing the committed objectives and targets in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because the plan build needs one settled design; a moving one gives the plan nothing solid to stand on.'
+practical_context: 'It opens when the verified material is ready to be worked, and it closes with the committed objectives and targets produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function commits the verified objectives and targets with their measures and owners for the plan build, keeping the committing workings for the audit trail.'

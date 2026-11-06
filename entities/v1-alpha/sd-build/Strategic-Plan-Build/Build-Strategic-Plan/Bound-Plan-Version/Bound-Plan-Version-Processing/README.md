@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Bound Plan Version Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Bound Plan Version** (`processes:activity-sd-build-c2ky47`). Its canonical ID is `processes:task-sd-build-transform-q4tyak`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the bounding proper begins. The processing custodian draws the version's scope around the committed choice and the built roadmap, producing the bounded version in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assembling a plan needs a fixed version boundary; without one the document's contents are endlessly negotiable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified choice and roadmap are ready to be worked, and it closes with the bounded version produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function draws the version boundary around the committed choice and the built roadmap, deciding what is in and out of the plan version, and keeps the bounding workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Fix the Scope of the Plan Version the Choice Requires |
+| `plain_language_description` | string | no | With the inputs verified, the bounding proper begins. The processing custodian draws the version's scope around the … |
+| `business_purpose` | string | no | It exists because assembling a plan needs a fixed version boundary; without one the document's contents are endlessly … |
+| `practical_context` | string | no | It opens when the verified choice and roadmap are ready to be worked, and it closes with the bounded version produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

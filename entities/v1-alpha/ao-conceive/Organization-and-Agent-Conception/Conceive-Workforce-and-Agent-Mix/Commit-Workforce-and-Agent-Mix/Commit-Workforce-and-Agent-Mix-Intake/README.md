@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Commit Workforce and Agent Mix Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Workforce and Agent Mix** (`processes:activity-ao-conceive-njcgbs`). Its canonical ID is `processes:task-ao-conceive-intake-n9sbp4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the drafted workforce and agent mix is handed over as the candidate the organisation will be asked to stand behind. The intake custodian accepts the handover, registers it with audit identifiers, and puts the commitment work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the mix is committed from a registered draft rather than from an informal proposal.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the drafted mix is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the drafted workforce and agent mix as the commitment baseline, with audit references, and opens the commitment work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Drafted Mix for Commitment |
+| `plain_language_description` | string | no | Commitment opens when the drafted workforce and agent mix is handed over as the candidate the organisation will be … |
+| `business_purpose` | string | no | It exists so the mix is committed from a registered draft rather than from an informal proposal. |
+| `practical_context` | string | no | It opens when the drafted mix is presented for commitment, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

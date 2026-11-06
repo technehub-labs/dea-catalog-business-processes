@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Receive and Verify Deliveries Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Receive and Verify Deliveries** (`processes:activity-eo-operate-9q2e4c`). Its canonical ID is `processes:task-eo-operate-intake-uma7mh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Receipt opens when the arriving supplier deliveries are handed over as the goods to be checked at the gate. The intake custodian accepts them, registers them with audit identifiers, and starts the verification from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so deliveries are checked from a registered arrival list rather than from the loading dock's memory.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the arriving deliveries are presented for receipt, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the arriving deliveries as the receipt baseline, with audit references, and opens the checking work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Arriving Supplier Deliveries |
+| `plain_language_description` | string | no | Receipt opens when the arriving supplier deliveries are handed over as the goods to be checked at the gate. The intake … |
+| `business_purpose` | string | no | It exists so deliveries are checked from a registered arrival list rather than from the loading dock's memory. |
+| `practical_context` | string | no | It opens when the arriving deliveries are presented for receipt, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

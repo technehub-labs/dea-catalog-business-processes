@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Assemble Strategic Plan Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Assemble Strategic Plan** (`processes:activity-sd-build-7z99jy`). Its canonical ID is `processes:task-sd-build-transform-j86c7u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the assembly proper begins. The processing custodian draws the bounded version, chosen direction, objectives, initiatives and allocation into one document, producing the assembled plan in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because direction, objectives and allocation only steer the organisation once they are bound into a single assembled plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the assembled plan produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function binds the bounded version, the chosen direction, its objectives and initiatives and the allocation into the plan document, keeping the assembly workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Plan Together with Its Direction, Objectives and Allocation |
+| `plain_language_description` | string | no | With the inputs verified, the assembly proper begins. The processing custodian draws the bounded version, chosen … |
+| `business_purpose` | string | no | It exists because direction, objectives and allocation only steer the organisation once they are bound into a single … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the assembled plan produced in the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

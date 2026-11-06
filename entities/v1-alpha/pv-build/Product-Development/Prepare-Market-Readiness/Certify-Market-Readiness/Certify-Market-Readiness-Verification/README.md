@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-veri
 
 This is a **Task** (level L4), named **Certify Market Readiness Verification**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Certify Market Readiness** (`processes:activity-pv-build-ak4gpq`). Its canonical ID is `processes:task-pv-build-verify-jb2net`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the certification is granted, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the assessment proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because readiness certified on unchecked criteria is discovered at the launch, not before.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management tests the offering against the readiness criteria before certifying.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Offering Against the Readiness Criteria |
+| `plain_language_description` | string | no | Before the certification is granted, the verification custodian tests the arriving material against what the activity … |
+| `business_purpose` | string | no | It exists because readiness certified on unchecked criteria is discovered at the launch, not before. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

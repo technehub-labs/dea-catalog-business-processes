@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Measure Evidence Against Standards Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Measure Evidence Against Standards** (`processes:activity-ge-operate-gjnh3s`). Its canonical ID is `processes:task-ge-operate-transform-bmg34r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the operating for the measuring: the assembled evidence is set beside the codified policies and control objectives and measured, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because evidence unmeasured is evidence wasted - the setting-beside is what turns a pack of papers into a verdict.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function sets the assembled evidence beside the codified policies and control objectives and measures it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Evidence Beside the Standards It Answers To |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the operating for the measuring: the assembled evidence … |
+| `business_purpose` | string | no | It exists because evidence unmeasured is evidence wasted - the setting-beside is what turns a pack of papers into a … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

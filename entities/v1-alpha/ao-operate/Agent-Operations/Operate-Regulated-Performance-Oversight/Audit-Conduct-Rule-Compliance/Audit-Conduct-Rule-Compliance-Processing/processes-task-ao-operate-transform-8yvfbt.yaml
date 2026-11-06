@@ -116,3 +116,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Audit Each Licensed Role''s Conduct Against Its Rules'
+plain_language_description: 'With the inputs verified, the processing custodian runs the audit itself: each licensed role''s conduct is examined against the rules that bind it, and the compliance audit record is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because conduct rules only hold when somebody periodically checks actual conduct against them, role by role.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be audited from, and it ends with the compliance audit record produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in workforce management examines each licensed role''s conduct against its mapped rules and records the audit findings.'

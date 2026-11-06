@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Execute Regulator-Mandated Remediation Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Execute Regulator-Mandated Remediation** (`processes:activity-ao-improve-f2r6t4`). Its canonical ID is `processes:task-ao-improve-verify-7v378y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any remediation is executed, the verification custodian checks the trigger and plan against what execution requires - that the plan actually answers the trigger and is concrete enough to carry out. Defects are logged for rejection or repair before any remediation runs.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so remediation is never executed against a trigger the plan does not truly answer.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the plan addressing only part of what the trigger demands and logs the defect before execution begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Trigger and Plan Before Executing Remediation |
+| `plain_language_description` | string | no | Before any remediation is executed, the verification custodian checks the trigger and plan against what execution … |
+| `business_purpose` | string | no | It exists so remediation is never executed against a trigger the plan does not truly answer. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

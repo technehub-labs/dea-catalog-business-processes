@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-co
 
 This is a **Task** (level L4), named **Bound Reorganization Scope Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Bound Reorganization Scope** (`processes:activity-ao-improve-evxkz9`). Its canonical ID is `processes:task-ao-improve-confirm-474sf9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the scope stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The transition work that follows learns the bounds are fixed and the change can be sequenced within them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the transition is planned only within a scope confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the bounded scope awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the bounded scope against the activity's intended outcome and issues the confirmation the transition planning needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Bounded Reorganization Scope |
+| `plain_language_description` | string | no | When the scope stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the transition is planned only within a scope confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the bounded scope awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Onboard Agents Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Onboard Agents** (`processes:activity-ao-build-gceqs6`). Its canonical ID is `processes:task-ao-build-transform-nc3v6f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With each agent verified, the processing custodian does the onboarding itself: the agent is worked into its role and brought up to the competencies the role rests on, in the form the activity defines. Working notes from the onboarding are preserved so the preparation stays auditable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because acquisition only delivers potential until onboarding turns each agent into a working participant.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts when checking is complete and the verified agents are ready to be worked into their roles, and it ends with the onboarded agents produced and the working notes preserved for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian brings each verified agent into its role and builds the competencies the role needs, keeping notes of the onboarding for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Agents into Their Roles and Competencies |
+| `plain_language_description` | string | no | With each agent verified, the processing custodian does the onboarding itself: the agent is worked into its role and … |
+| `business_purpose` | string | no | It exists because acquisition only delivers potential until onboarding turns each agent into a working participant. |
+| `practical_context` | string | no | It starts when checking is complete and the verified agents are ready to be worked into their roles, and it ends with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

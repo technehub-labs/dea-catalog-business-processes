@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Families Before Framing the Sourcing Postures'
+plain_language_description: 'Before any posture is framed, the verification custodian checks the platform families against what framing requires - that the register is complete and each family is stated specifically enough to source. Defects are flagged for rejection or repair before the framing is made.'
+business_purpose: 'It exists so sourcing postures are never framed for families too vague to be sourced.'
+practical_context: 'It runs once the intake is registered and the families can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a family named too loosely to source against and flags the defect before postures are framed.'

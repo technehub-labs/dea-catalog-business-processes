@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-c
 
 This is a **Task** (level L4), named **Activate Communications Plan Under Regulator Continuing Supervision Confirmation**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Activate Communications Plan Under Regulator Continuing Supervision** (`processes:activity-sd-activate-jz6u3q`). Its canonical ID is `processes:task-sd-activate-confirm-t3gzny`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the communications plan is activated. The confirmation custodian tells the downstream teams it is available, and closes the reconciliation against what the activity promised for the activation under continuing supervision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supervisor-facing and internal audiences both receive one confirmed word that the communications are live.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activated plan is ready to hand on, and it closes with the confirmation issued and the activation's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function confirms to the investor-relations and disclosure teams that the communications are live, reconciles the delivery against what the activation promised, and issues the confirmation for the supervisory file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Activated Communications to the Teams and the Supervisor |
+| `plain_language_description` | string | no | The confirming opens once the communications plan is activated. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists so the supervisor-facing and internal audiences both receive one confirmed word that the communications are … |
+| `practical_context` | string | no | It opens when the activated plan is ready to hand on, and it closes with the confirmation issued and the activation's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

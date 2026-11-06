@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Sense Organization Imperatives Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Sense Organization Imperatives** (`processes:activity-ao-conceive-fyb9vc`). Its canonical ID is `processes:task-ao-conceive-intake-7cqf6y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Sensing opens when the enterprise strategy and the substrate signals around it are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the imperatives will be read from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so imperatives are sensed from a registered strategy and registered signals rather than from impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the strategy and signals are presented for the sensing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function registers the enterprise strategy and substrate signals as the sensing baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Enterprise Strategy and Substrate Signals |
+| `plain_language_description` | string | no | Sensing opens when the enterprise strategy and the substrate signals around it are handed to the intake custodian. Both … |
+| `business_purpose` | string | no | It exists so imperatives are sensed from a registered strategy and registered signals rather than from impressions. |
+| `practical_context` | string | no | It opens when the strategy and signals are presented for the sensing, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

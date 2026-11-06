@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-ve
 
 This is a **Task** (level L4), named **Record Governance Decisions Verification**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Record Governance Decisions** (`processes:activity-ge-operate-fch6f5`). Its canonical ID is `processes:task-ge-operate-verify-m48wf8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any recording work starts, the verification custodian tests the incoming pack against the rules that govern it: how often the board must meet, what good assurance evidence looks like, and how risk reviews are to be run. Where the pack falls short, the shortfalls are named and a fix is set out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because recording decisions on flawed inputs would put the decision record of record on shaky ground.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the manifest is registered and the pack is ready for scrutiny, and it ends with a certificate that states what was checked, what deviated, and what was remediated.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian from the risk function confirms the meeting timetable satisfies the statutory frequency rules and flags a missing assurance item for correction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Governance Inputs Against Their Standards |
+| `plain_language_description` | string | no | Before any recording work starts, the verification custodian tests the incoming pack against the rules that govern it … |
+| `business_purpose` | string | no | It exists because recording decisions on flawed inputs would put the decision record of record on shaky ground. |
+| `practical_context` | string | no | It starts once the manifest is registered and the pack is ready for scrutiny, and it ends with a certificate that … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

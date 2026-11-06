@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Design Route and Network Changes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Design Route and Network Changes** (`processes:activity-eo-improve-nrsv8w`). Its canonical ID is `processes:task-eo-improve-transform-9d6kpy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the analysis verified, the processing custodian does the design itself: the route and network alterations that capture each analyzed opening are drawn within the routing logic's frame, and the change designs are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an analyzed opening changes nothing by itself - the design is where the fix takes shape.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified analysis is ready to be designed from, and it ends with the change designs produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function draws the route and network alterations each opening calls for, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Changes That Answer the Opportunities |
+| `plain_language_description` | string | no | With the analysis verified, the processing custodian does the design itself: the route and network alterations that … |
+| `business_purpose` | string | no | It exists because an analyzed opening changes nothing by itself - the design is where the fix takes shape. |
+| `practical_context` | string | no | It starts once checking is complete and the verified analysis is ready to be designed from, and it ends with the change … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

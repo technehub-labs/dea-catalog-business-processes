@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Maintain Catalogue Entries Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Catalogue Entries** (`processes:activity-pv-operate-5yty8e`). Its canonical ID is `processes:task-pv-operate-confirm-xfpdy3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the entries are current, the teams who trade on them are told. The confirmation custodian tells the downstream teams the updated catalogue entries are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because channels listing products from stale entries sell the wrong variants or miss new ones entirely.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the entry work, and it closes with confirmation issued, the downstream teams told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the channel teams the updated catalogue entries are live and ready, and closes the reconciliation against what the entry maintenance promised for the round.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Current Entries to the Channels |
+| `plain_language_description` | string | no | Once the entries are current, the teams who trade on them are told. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because channels listing products from stale entries sell the wrong variants or miss new ones entirely. |
+| `practical_context` | string | no | It opens when processing has finished the entry work, and it closes with confirmation issued, the downstream teams told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

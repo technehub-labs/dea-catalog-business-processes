@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Monitor Proposition Performance Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Proposition Performance** (`processes:activity-pv-operate-unuyxe`). Its canonical ID is `processes:task-pv-operate-transform-asm9ss`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the signals verified, the watching becomes a picture. The processing custodian reads the telemetry against each proposition's investment envelope, producing the performance picture in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because raw telemetry steers nothing until it is assembled into a picture showing how each proposition performs against its envelope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified signals are ready to be read, and it closes with the performance picture produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management assembles the week's verified telemetry into the performance picture, showing which propositions track inside their envelopes and which are drifting, and keeps the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble the Proposition Performance Picture |
+| `plain_language_description` | string | no | With the signals verified, the watching becomes a picture. The processing custodian reads the telemetry against each … |
+| `business_purpose` | string | no | It exists because raw telemetry steers nothing until it is assembled into a picture showing how each proposition … |
+| `practical_context` | string | no | It opens when the verified signals are ready to be read, and it closes with the performance picture produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

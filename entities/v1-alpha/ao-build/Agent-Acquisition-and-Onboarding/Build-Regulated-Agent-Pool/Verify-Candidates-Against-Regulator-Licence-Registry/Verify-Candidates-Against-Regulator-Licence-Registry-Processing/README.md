@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Verify Candidates Against Regulator Licence Registry Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Verify Candidates Against Regulator Licence Registry** (`processes:activity-ao-build-q7m3k9`). Its canonical ID is `processes:task-ao-build-transform-u4fdxv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the list verified, the processing custodian consults the regulator licence registry for each candidate and confirms the licence position the activity promises. The verified candidate list - each candidate's licence record attached - is set down in the form the activity defines, working papers preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a pool claiming regulator readiness must rest on licences checked against the registry itself.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified list is ready to be worked from, and it ends with the verified-candidate list produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian checks each candidate against the regulator licence registry and attaches the licence records to the verified list.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Registry Checks on Each Candidate |
+| `plain_language_description` | string | no | With the list verified, the processing custodian consults the regulator licence registry for each candidate and … |
+| `business_purpose` | string | no | It exists because a pool claiming regulator readiness must rest on licences checked against the registry itself. |
+| `practical_context` | string | no | It starts once checking is complete and the verified list is ready to be worked from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

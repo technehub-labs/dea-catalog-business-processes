@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-veri
 
 This is a **Task** (level L4), named **Verify Initial Demand Production Verification**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Verify Initial Demand Production** (`processes:activity-pr-build-ppw8cp`). Its canonical ID is `processes:task-pr-build-verify-4qcu4x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the demand is judged, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because demand numbers gathered through a non-compliant path would flatter the engine falsely.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function clears the demand evidence against the privacy rules before the verdict.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Demand Signals Against Consent and Privacy Rules |
+| `plain_language_description` | string | no | Before the demand is judged, the verification custodian tests the package for the build against the integration … |
+| `business_purpose` | string | no | It exists because demand numbers gathered through a non-compliant path would flatter the engine falsely. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

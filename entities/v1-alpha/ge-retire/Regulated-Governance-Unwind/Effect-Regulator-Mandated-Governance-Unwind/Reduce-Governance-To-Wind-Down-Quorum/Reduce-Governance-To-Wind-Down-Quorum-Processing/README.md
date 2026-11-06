@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 
 This is a **Task** (level L4), named **Reduce Governance To Wind-Down Quorum Processing**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Reduce Governance To Wind-Down Quorum** (`processes:activity-ge-retire-bp4237`). Its canonical ID is `processes:task-ge-retire-transform-kx5rv3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the reduction itself: the order's scope is assessed, custodianship of the retained records is settled, the governance apparatus is thinned to the quorum the wind-down needs, and the statutory dissolution filings are submitted. The evidence from every step is bundled into the record pack.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the entity keeps exactly the governance the binding order allows - no more, and not a member less.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens on the verification certificate, and it closes with the record pack produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the workforce management function winds down the surplus board seats and policy instruments, then bundles the evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Shrink the Governance Bodies and Sunset the Policies |
+| `plain_language_description` | string | no | This is the reduction itself: the order's scope is assessed, custodianship of the retained records is settled, the … |
+| `business_purpose` | string | no | It exists so the entity keeps exactly the governance the binding order allows - no more, and not a member less. |
+| `practical_context` | string | no | It opens on the verification certificate, and it closes with the record pack produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

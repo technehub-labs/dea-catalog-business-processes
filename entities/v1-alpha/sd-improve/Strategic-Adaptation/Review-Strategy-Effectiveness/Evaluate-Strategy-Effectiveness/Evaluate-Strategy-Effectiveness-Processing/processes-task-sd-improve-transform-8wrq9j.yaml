@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Weigh the Evidence and Reach the Effectiveness Verdict'
+plain_language_description: 'With the inputs verified, the evaluation proper begins. The processing custodian weighs the tested evidence against the outcomes the direction promised, producing the effectiveness evaluation in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because someone must move from assembled facts to a judgement the organisation can act on: effective, drifting, or failing.'
+practical_context: 'It opens when the verified evidence is ready to be worked, and it closes with the effectiveness evaluation produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function weighs each outcome line of evidence and delivers a reasoned verdict on whether the strategy is effective, keeping the reasoning for the audit trail.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Boundaries Before Consolidating the Frame'
+plain_language_description: 'Before the frame is consolidated, the verification custodian checks the bounded boundaries against what consolidation requires - that the pieces together make a complete, coherent model frame. Anything found wanting is logged for rejection or repair before the commitment is made.'
+business_purpose: 'It exists so the organisation never commits a model frame assembled from incomplete pieces.'
+practical_context: 'It runs once the intake is registered and the boundaries can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds two boundary sets that overlap unstably and logs the defect before the frame is consolidated.'

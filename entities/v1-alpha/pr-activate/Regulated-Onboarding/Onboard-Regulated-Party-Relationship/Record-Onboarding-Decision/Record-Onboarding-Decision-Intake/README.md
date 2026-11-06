@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-i
 
 This is a **Task** (level L4), named **Record Onboarding Decision Intake**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Record Onboarding Decision** (`processes:activity-pr-activate-q9pr4m`). Its canonical ID is `processes:task-pr-activate-intake-tpetg5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The decision round starts with intake: the applicant's party record, the identity documents, and the request packet are taken in and logged. The intake custodian logs them against the activation case file so the approvers work from one accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an approval decision is only as good as the completeness of the case placed before the approvers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Activate-stage pack arrives, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the applicant's papers against the activation case file before the checks begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect the Approval Case Papers |
+| `plain_language_description` | string | no | The decision round starts with intake: the applicant's party record, the identity documents, and the request packet are … |
+| `business_purpose` | string | no | It exists because an approval decision is only as good as the completeness of the case placed before the approvers. |
+| `practical_context` | string | no | It opens when the Activate-stage pack arrives, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

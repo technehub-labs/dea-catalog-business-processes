@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-design-rec
 
 This is a **Task** (level L4), named **Set Experience Quality Criteria Audit Record**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Set Experience Quality Criteria** (`processes:activity-pr-design-9kscys`). Its canonical ID is `processes:task-pr-design-record-cbwe62`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the criteria the build will be judged by survive with their full reasoning.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the criteria file so the build's acceptance testing cites the same measures.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Retain the Quality Criteria File |
+| `plain_language_description` | string | no | After confirmation, the records custodian places the design file - manifest, verification report, journey artefact … |
+| `business_purpose` | string | no | It exists so the criteria the build will be judged by survive with their full reasoning. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

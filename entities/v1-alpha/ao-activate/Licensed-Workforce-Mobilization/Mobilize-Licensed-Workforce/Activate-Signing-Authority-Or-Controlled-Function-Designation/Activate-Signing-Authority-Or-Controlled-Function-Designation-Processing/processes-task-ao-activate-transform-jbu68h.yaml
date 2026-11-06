@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Prepare the Activation for the Personnel Record'
+plain_language_description: 'Once the request has passed checking, the processing custodian turns it into the activated entry the activity promises: the signing authority is set out in the shape the personnel record expects, with the continuing-supervisor notification drafted alongside it. Working notes from the preparation are kept, so the trail from request to activation stays auditable.'
+business_purpose: 'It exists because a checked request only becomes real authority once it is shaped into the record and notification the organisation works from.'
+practical_context: 'It runs after checking is complete and the verified request is ready to be worked into its final form, and it ends when the activation output exists in its agreed shape with the working notes preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the operations function converts the checked designation into the personnel-record entry and drafts the continuing-supervisor notification for issue.'

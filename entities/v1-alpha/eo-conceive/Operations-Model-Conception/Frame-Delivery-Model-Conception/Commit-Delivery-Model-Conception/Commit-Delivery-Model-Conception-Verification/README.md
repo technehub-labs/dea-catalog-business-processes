@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-v
 
 This is a **Task** (level L4), named **Commit Delivery Model Conception Verification**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Commit Delivery Model Conception** (`processes:activity-eo-conceive-ycqjxs`). Its canonical ID is `processes:task-eo-conceive-verify-av9wnh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is consolidated, the verification custodian checks the framed pieces against what the commitment requires - that channels, envelopes, and patterns are all settled and none arrived half-framed. Defects are logged for rejection or repair before the consolidation is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model is never committed from pieces that were only partly framed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a framing still carrying open questions and logs the defect before the conception is consolidated.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Framed Pieces Before Consolidating the Conception |
+| `plain_language_description` | string | no | Before anything is consolidated, the verification custodian checks the framed pieces against what the commitment … |
+| `business_purpose` | string | no | It exists so the delivery model is never committed from pieces that were only partly framed. |
+| `practical_context` | string | no | It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

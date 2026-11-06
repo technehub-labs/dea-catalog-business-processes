@@ -117,3 +117,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Capture the Notification Path for Each Licensed Role'
+plain_language_description: 'With the inputs verified, the processing custodian captures the paths themselves: for every licensed role it is settled who the continuing supervisor is, how often notifications go out, what they carry, and how escalation runs - all set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because continuing supervision only works when each licensed role has a captured, defined path to its supervisor.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be captured from, and it ends with the notification paths produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in workforce management captures each licensed role''s supervisor, cadence, and escalation route, keeping the working papers for audit.'

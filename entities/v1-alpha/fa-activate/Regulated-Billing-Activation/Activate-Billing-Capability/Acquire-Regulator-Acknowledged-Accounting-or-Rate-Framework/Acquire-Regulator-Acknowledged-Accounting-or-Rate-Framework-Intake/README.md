@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-activate-i
 
 This is a **Task** (level L4), named **Acquire Regulator-Acknowledged Accounting or Rate Framework Intake**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Acquire Regulator-Acknowledged Accounting or Rate Framework** (`processes:activity-fa-activate-63duu7`). Its canonical ID is `processes:task-fa-activate-intake-nzhjyz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The acquisition opens when the billing-capability description and the regulator-mandated filing format are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the application work from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the acknowledgment is applied for from a registered description in the format the regulator mandates.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the description and format are presented for the application, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the audit function registers the capability description and the mandated format as the application baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Capability Description and the Mandated Format |
+| `plain_language_description` | string | no | The acquisition opens when the billing-capability description and the regulator-mandated filing format are handed over … |
+| `business_purpose` | string | no | It exists so the acknowledgment is applied for from a registered description in the format the regulator mandates. |
+| `practical_context` | string | no | It opens when the description and format are presented for the application, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

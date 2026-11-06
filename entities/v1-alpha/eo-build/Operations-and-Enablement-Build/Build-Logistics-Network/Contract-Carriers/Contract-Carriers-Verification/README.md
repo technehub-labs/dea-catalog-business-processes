@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Contract Carriers Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Contract Carriers** (`processes:activity-eo-build-egr964`). Its canonical ID is `processes:task-eo-build-verify-v8j3tq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any carrier is signed, the verification custodian checks the mode selections and service-level designs against what contracting requires - that every designed mode carries a service level to hold the carrier to. Gaps are logged for rejection or repair before any agreement is signed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no carrier is signed without a service level to hold it to, and no mode left without a carrier.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a designed mode with no service level attached and logs the gap before any carrier is signed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Designs Before Signing the Carriers |
+| `plain_language_description` | string | no | Before any carrier is signed, the verification custodian checks the mode selections and service-level designs against … |
+| `business_purpose` | string | no | It exists so no carrier is signed without a service level to hold it to, and no mode left without a carrier. |
+| `practical_context` | string | no | It runs once the intake is registered and the designs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

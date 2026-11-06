@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Verify Commencement Conditions naming verification methods applied and any deviations remediated; verification custodian …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Test the Preconditions Before the Gate Opens'
+plain_language_description: 'With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.'
+business_purpose: 'It exists because a gate that opens on unmet preconditions was never a gate - the testing is what makes the opening lawful.'
+practical_context: 'It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-int
 
 This is a **Task** (level L4), named **File Run-Off Closure Evidence Intake**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **File Run-Off Closure Evidence** (`processes:activity-fa-retire-3g3m9u`). Its canonical ID is `processes:task-fa-retire-intake-m229un`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Filing opens when the final accounts, the claim clearance certificate, and the residual distribution are handed over together as the material the closure submission will be assembled from. The intake custodian accepts them, registers them with audit identifiers, and starts the assembling from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ending is assembled from registered materials rather than from assertions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the accounts, certificate, and distribution are presented for the filing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the operations function registers the final accounts and clearance certificate as the filing baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Final Accounts and the Clearance Certificate |
+| `plain_language_description` | string | no | Filing opens when the final accounts, the claim clearance certificate, and the residual distribution are handed over … |
+| `business_purpose` | string | no | It exists so the ending is assembled from registered materials rather than from assertions. |
+| `practical_context` | string | no | It opens when the accounts, certificate, and distribution are presented for the filing, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

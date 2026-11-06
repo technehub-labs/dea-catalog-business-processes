@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Sense Intent Imperatives Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Sense Intent Imperatives** (`processes:activity-sd-conceive-gdjvff`). Its canonical ID is `processes:task-sd-conceive-confirm-35u4v3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the imperatives are sensed. The confirmation custodian tells the downstream teams the sensed imperative set is available, and closes the reconciliation against what the activity promised for the sensing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the narrative is framed over confirmed imperatives rather than over a raw pile of unweighed signals.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the sensed imperative set is ready to hand on, and it closes with the confirmation issued and the sensing's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the sensed imperative set to the narrative framing team, reconciles it against what the sensing promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Sensed Imperatives to the Narrative Framing |
+| `plain_language_description` | string | no | The confirming opens once the imperatives are sensed. The confirmation custodian tells the downstream teams the sensed … |
+| `business_purpose` | string | no | It exists so the narrative is framed over confirmed imperatives rather than over a raw pile of unweighed signals. |
+| `practical_context` | string | no | It opens when the sensed imperative set is ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

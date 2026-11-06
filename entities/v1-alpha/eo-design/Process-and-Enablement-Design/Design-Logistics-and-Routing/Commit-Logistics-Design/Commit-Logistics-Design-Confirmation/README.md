@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-con
 
 This is a **Task** (level L4), named **Commit Logistics Design Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Commit Logistics Design** (`processes:activity-eo-design-65b4xh`). Its canonical ID is `processes:task-eo-design-confirm-6c8xz9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build work downstream learns the committed logistics design is ready to be received.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so build starts only from a logistics design confirmed as committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the committed design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the committed logistics design against the activity's intended outcome and issues the confirmation the build work waits on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Committed Logistics Design |
+| `plain_language_description` | string | no | When the design stands committed, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so build starts only from a logistics design confirmed as committed. |
+| `practical_context` | string | no | It begins once preparation is complete and the committed design awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

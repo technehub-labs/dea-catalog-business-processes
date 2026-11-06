@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-ve
 
 This is a **Task** (level L4), named **Monitor Market and Funding Shifts Verification**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Monitor Market and Funding Shifts** (`processes:activity-fa-improve-capmsa`). Its canonical ID is `processes:task-fa-improve-verify-4t4236`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is read, the verification custodian checks the market data and posture against what monitoring requires - that the data is current and the posture reflects the model as it actually stands. Defects are flagged for rejection or repair before the reading begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so shifts are never read against a posture the model outgrew.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the posture snapshot predating the last model change and flags the defect before the reading begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Data Before Reading the Moves |
+| `plain_language_description` | string | no | Before anything is read, the verification custodian checks the market data and posture against what monitoring requires … |
+| `business_purpose` | string | no | It exists so shifts are never read against a posture the model outgrew. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

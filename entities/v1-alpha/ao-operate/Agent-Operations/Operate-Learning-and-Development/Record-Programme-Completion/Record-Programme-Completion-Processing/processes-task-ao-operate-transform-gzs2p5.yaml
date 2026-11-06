@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Log Each Agent''s Programme Completions'
+plain_language_description: 'With the sessions verified, the processing custodian does the recording itself: the completion of each delivered programme is logged per agent, and the recorded completions are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because an agent''s learning only counts - for progression, for development planning - once it is recorded against their name.'
+practical_context: 'It starts once checking is complete and the verified sessions are ready to be logged from, and it ends with the recorded completions produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian logs each agent''s completions against the programmes they attended, keeping the working papers for audit.'

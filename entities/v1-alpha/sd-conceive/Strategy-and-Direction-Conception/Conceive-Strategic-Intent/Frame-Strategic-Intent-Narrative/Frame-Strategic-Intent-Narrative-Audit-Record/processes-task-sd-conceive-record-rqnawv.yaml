@@ -72,3 +72,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Intent Narrative Framing Evidence'
+plain_language_description: 'The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so which imperatives shaped the narrative stays answerable when the intent is later re-read or challenged.'
+business_purpose: 'It exists so the narrative''s lineage from imperatives survives as evidence through every strategy revision.'
+practical_context: 'It opens when the confirmation is in place, and it closes with the framing evidence filed at its required tier and the retrieval handles set.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian in the strategy function files the framing evidence at its required retention tier and sets the retrieval handles, so the narrative''s debt to each imperative is traceable from the record.'

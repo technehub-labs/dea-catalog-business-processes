@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-t
 
 This is a **Task** (level L4), named **Record Supervised-Training Completion Processing**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Record Supervised-Training Completion** (`processes:activity-ao-activate-bsjbfc`). Its canonical ID is `processes:task-ao-activate-transform-rpswjw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian shapes it into the completion entry the personnel record will carry, in the settled form the activity calls for. The working papers behind the entry are preserved, keeping the route from evidence to record open for later inspection.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the verified completion becomes a standing entry on the personnel record rather than a loose verified paper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once checking is complete and the verified evidence is ready for shaping, and it ends when the entry exists in its final agreed form with the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian turns the verified completion evidence into the personnel-record entry, keeping the working papers so an auditor can retrace every step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare the Training Completion Entry |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian shapes it into the completion entry the personnel record will … |
+| `business_purpose` | string | no | It exists so the verified completion becomes a standing entry on the personnel record rather than a loose verified … |
+| `practical_context` | string | no | It begins once checking is complete and the verified evidence is ready for shaping, and it ends when the entry exists … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

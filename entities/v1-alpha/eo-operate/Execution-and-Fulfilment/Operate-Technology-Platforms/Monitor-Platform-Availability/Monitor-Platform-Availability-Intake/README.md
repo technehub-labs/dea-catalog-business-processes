@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Monitor Platform Availability Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Monitor Platform Availability** (`processes:activity-eo-operate-9nhpgy`). Its canonical ID is `processes:task-eo-operate-intake-f5bp8x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Watching opens when the platform health signals and the agreed availability targets are handed over together as the two sides the watching will read between. The intake custodian accepts both, registers them with audit identifiers, and starts the monitoring from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so platforms are watched against registered targets rather than against optimism.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the health signals and targets are presented for the watching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the health signals and agreed targets as the watching baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Health Signals and the Agreed Targets |
+| `plain_language_description` | string | no | Watching opens when the platform health signals and the agreed availability targets are handed over together as the two … |
+| `business_purpose` | string | no | It exists so platforms are watched against registered targets rather than against optimism. |
+| `practical_context` | string | no | It opens when the health signals and targets are presented for the watching, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

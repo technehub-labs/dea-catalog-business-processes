@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Execute Strategic Comparison Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Execute Strategic Comparison** (`processes:activity-sd-design-dgkmm5`). Its canonical ID is `processes:task-sd-design-transform-7c9b6h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the comparing proper begins. The processing custodian runs each option against the criteria inside the bounded scope, producing the comparison results in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because preference needs evidence; the comparison is where the options are finally made to face the same questions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the comparison results produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function runs each verified option against the agreed criteria within the bounded scope, scoring them on the same terms, and keeps the comparison workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Score the Options Against the Criteria Within the Scope |
+| `plain_language_description` | string | no | With the inputs verified, the comparing proper begins. The processing custodian runs each option against the criteria … |
+| `business_purpose` | string | no | It exists because preference needs evidence; the comparison is where the options are finally made to face the same … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the comparison results produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

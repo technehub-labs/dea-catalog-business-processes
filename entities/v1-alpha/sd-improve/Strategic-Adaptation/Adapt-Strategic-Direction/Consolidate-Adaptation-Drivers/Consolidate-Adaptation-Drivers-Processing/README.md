@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-improve-tr
 
 This is a **Task** (level L4), named **Consolidate Adaptation Drivers Processing**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Consolidate Adaptation Drivers** (`processes:activity-sd-improve-dhkxf6`). Its canonical ID is `processes:task-sd-improve-transform-bfb4hs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the consolidation proper begins. The processing custodian draws the tested signals, performance evidence and findings together into a single adaptation case, producing it in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because scattered signals and loose figures persuade no one; the direction change needs one case that carries the whole argument.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the consolidated adaptation case produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function brings the tested market signals, the performance figures and the review findings together into one adaptation case, keeping the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Consolidated Case for Changing Direction |
+| `plain_language_description` | string | no | With the inputs verified, the consolidation proper begins. The processing custodian draws the tested signals … |
+| `business_purpose` | string | no | It exists because scattered signals and loose figures persuade no one; the direction change needs one case that carries … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the consolidated adaptation case produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

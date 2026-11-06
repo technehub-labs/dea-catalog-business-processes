@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 This is a **Task** (level L4), named **Build Acquisition Engines Intake**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Acquisition Engines** (`processes:activity-pr-build-qutweg`). Its canonical ID is `processes:task-pr-build-intake-774sys`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The engine build opens with the design brief: the channel mix, the demand-program specification, and the asset library manifest. The intake custodian confirms the scope of the build with the owners of the channels and demand programmes, then logs the pack into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so engine construction starts from a brief its owners - the people accountable for the channels and the demand programmes - have actually agreed to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function walks the channel owner through the design brief and logs the agreed scope.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take Delivery of the Engine Build Brief |
+| `plain_language_description` | string | no | The engine build opens with the design brief: the channel mix, the demand-program specification, and the asset library … |
+| `business_purpose` | string | no | It exists so engine construction starts from a brief its owners - the people accountable for the channels and the … |
+| `practical_context` | string | no | It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

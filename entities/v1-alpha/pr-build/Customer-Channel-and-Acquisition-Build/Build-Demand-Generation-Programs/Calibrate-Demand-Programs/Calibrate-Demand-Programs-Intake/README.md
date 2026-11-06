@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 This is a **Task** (level L4), named **Calibrate Demand Programs Intake**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Calibrate Demand Programs** (`processes:activity-pr-build-ywaa6n`). Its canonical ID is `processes:task-pr-build-intake-28bw98`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The calibration round opens with the design brief in hand: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian settles the scope of the tuning with the owners of the channels and the demand programmes, then logs the pack.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tuning starts from a documented scope rather than informal requests.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the calibration scope agreed with the demand-programme owner.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Calibration Pack |
+| `plain_language_description` | string | no | The calibration round opens with the design brief in hand: the mix of channels, what the demand programmes call for … |
+| `business_purpose` | string | no | It exists so tuning starts from a documented scope rather than informal requests. |
+| `practical_context` | string | no | It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

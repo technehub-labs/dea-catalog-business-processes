@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-tr
 
 This is a **Task** (level L4), named **Form Cost Review Findings Processing**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Form Cost Review Findings** (`processes:activity-fa-improve-rqws4s`). Its canonical ID is `processes:task-fa-improve-transform-9xg6d8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the formulating itself: what the review concludes about the costs is drawn from the pack and bounded so each finding says exactly what it covers, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an unbounded cost finding invites every argument - bounding is what makes a conclusion actionable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be concluded from, and it ends with the finding set produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority draws the cost conclusions and bounds each finding to what the evidence shows, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound What the Costs Are Saying |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the formulating itself: what the review concludes about the … |
+| `business_purpose` | string | no | It exists because an unbounded cost finding invites every argument - bounding is what makes a conclusion actionable. |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be concluded from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

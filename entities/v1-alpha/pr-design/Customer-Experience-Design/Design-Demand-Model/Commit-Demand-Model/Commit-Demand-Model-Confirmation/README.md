@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-design-con
 
 This is a **Task** (level L4), named **Commit Demand Model Confirmation**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Commit Demand Model** (`processes:activity-pr-design-ftrzgz`). Its canonical ID is `processes:task-pr-design-confirm-5gtde8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the commitment carries a logged acceptance from the person accountable for the model.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian logs the sign-off after the experience custodian acknowledges the completed demand model.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Demand Model Commitment |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract … |
+| `business_purpose` | string | no | It exists so the commitment carries a logged acceptance from the person accountable for the model. |
+| `practical_context` | string | no | It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

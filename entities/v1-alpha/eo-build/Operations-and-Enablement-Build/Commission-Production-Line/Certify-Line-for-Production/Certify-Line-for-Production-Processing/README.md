@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Certify Line for Production Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Certify Line for Production** (`processes:activity-eo-build-7bmbzy`). Its canonical ID is `processes:task-eo-build-transform-wks26s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian makes the certification itself: the trialled line is judged against the quality criteria and certified ready for steady-state production, and the production certification is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because trials prove a line can produce once - certification is what says it may produce always.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be judged from, and it ends with the production certification produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management judges the trialled line against the quality criteria and issues its production certification, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Certify the Line Ready for Steady-State Production |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian makes the certification itself: the trialled line is judged … |
+| `business_purpose` | string | no | It exists because trials prove a line can produce once - certification is what says it may produce always. |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be judged from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

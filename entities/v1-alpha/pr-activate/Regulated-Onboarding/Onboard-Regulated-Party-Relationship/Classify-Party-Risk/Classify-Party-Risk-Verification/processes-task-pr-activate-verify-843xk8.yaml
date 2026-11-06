@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Classify Party Risk naming verification methods applied and any deviations remediated; verification custodian passes …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Run the Identity, Sanctions, and Screening Checks'
+plain_language_description: 'The verification custodian puts the application through its checks: identity is confirmed through multiple factors, the parties are screened for sanctions and politically exposed status, and adverse media is searched. The results are reconciled into a certificate that states exactly which checks were run.'
+business_purpose: 'It exists because no risk rating can be defended if the identity and background behind it have not been properly screened.'
+practical_context: 'It starts once the intake manifest is registered, and it ends with the certificate issued and custody passed to the processing custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in the risk function screens a new applicant against sanctions lists and adverse media, then issues the certificate.'

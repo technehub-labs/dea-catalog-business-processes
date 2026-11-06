@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-v
 
 This is a **Task** (level L4), named **Attest Fitness And Propriety Verification**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Attest Fitness And Propriety** (`processes:activity-ao-activate-x9hy5e`). Its canonical ID is `processes:task-ao-activate-verify-uuszhj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the attestation logged, the verification custodian examines the fitness evidence against what the activity requires of the role in question. Gaps, stale documents, or mismatches are written up as shortfalls to be remedied or refused - nothing defective slides forward on trust.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so an attestation is only carried forward on evidence that genuinely measures up to the role's fitness requirement.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the attestation is registered and the evidence can be compared with the activity's requirements, and it finishes with the evidence found conformant or the shortfalls logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian spots a fitness document past its expiry during the review, records the shortfall, and sends it back for the licensee to remedy before the attestation proceeds.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Fitness Evidence |
+| `plain_language_description` | string | no | With the attestation logged, the verification custodian examines the fitness evidence against what the activity … |
+| `business_purpose` | string | no | It exists so an attestation is only carried forward on evidence that genuinely measures up to the role's fitness … |
+| `practical_context` | string | no | It runs once the attestation is registered and the evidence can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Execute Gate Decisions Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Execute Gate Decisions** (`processes:activity-pv-operate-xmvfj7`). Its canonical ID is `processes:task-pv-operate-verify-dnbbht`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a gate decision is acted on, the arriving papers are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because executing a gate decision that does not line up with the stage criteria would advance or hold a proposition on shaky ground.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the decision papers, and it closes with them verified against the gate requirements or their defects logged.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks a gate decision against the criteria for its stage boundary, notices the paper omits the evidence the criteria call for, and writes the shortfall down for the review board to put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Gate Decisions Against Their Criteria |
+| `plain_language_description` | string | no | Before a gate decision is acted on, the arriving papers are put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because executing a gate decision that does not line up with the stage criteria would advance or hold a … |
+| `practical_context` | string | no | It opens once intake has registered the decision papers, and it closes with them verified against the gate requirements … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

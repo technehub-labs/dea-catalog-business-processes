@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Record Review Decisions Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Record Review Decisions** (`processes:activity-sd-operate-4je2y3`). Its canonical ID is `processes:task-sd-operate-confirm-c2nzq6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The decisions are on the register and must now travel. The confirmation custodian tells the downstream teams the recorded review decisions are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the consuming processes cannot act on a decision until they are told it stands recorded and is theirs to pick up.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the recording work is finished and the register entries are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the consuming processes the recorded decisions are available for pickup, then closes the handover against what the recording promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Recorded Decisions to the Consuming Processes |
+| `plain_language_description` | string | no | The decisions are on the register and must now travel. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists because the consuming processes cannot act on a decision until they are told it stands recorded and is theirs … |
+| `practical_context` | string | no | It opens when the recording work is finished and the register entries are ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

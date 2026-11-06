@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Run Fit-And-Proper Re-Assessment Cycle Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Run Fit-And-Proper Re-Assessment Cycle** (`processes:activity-ao-improve-k9w5p8`). Its canonical ID is `processes:task-ao-improve-verify-gecaac`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any re-assessment runs, the verification custodian checks the role list and calendar against what the cycle requires - that every live role carries its next due fitness review on the calendar. Gaps are logged for rejection or repair before the cycle runs.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no licensed role's fitness review falls due unnoticed because the calendar missed it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a role whose fitness review is overdue but absent from the calendar and logs the gap before the cycle runs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Role List and Calendar Before the Cycle Runs |
+| `plain_language_description` | string | no | Before any re-assessment runs, the verification custodian checks the role list and calendar against what the cycle … |
+| `business_purpose` | string | no | It exists so no licensed role's fitness review falls due unnoticed because the calendar missed it. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

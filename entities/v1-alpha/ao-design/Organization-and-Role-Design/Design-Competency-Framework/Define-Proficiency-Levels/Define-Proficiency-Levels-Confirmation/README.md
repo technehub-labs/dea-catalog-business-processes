@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-con
 
 This is a **Task** (level L4), named **Define Proficiency Levels Confirmation**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Define Proficiency Levels** (`processes:activity-ao-design-amjqu5`). Its canonical ID is `processes:task-ao-design-confirm-j2dwmn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the levels stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The assessment work that follows learns the levels are settled and ready to be anchored.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so assessment is anchored only to levels confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the defined levels await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the defined levels against the activity's intended outcome and issues the confirmation the anchoring step depends on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Defined Proficiency Levels |
+| `plain_language_description` | string | no | When the levels stand defined, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so assessment is anchored only to levels confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the defined levels await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

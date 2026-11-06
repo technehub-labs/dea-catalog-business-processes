@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-v
 
 This is a **Task** (level L4), named **Document Fitness-And-Propriety Attestation Regime Verification**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Document Fitness-And-Propriety Attestation Regime** (`processes:activity-ao-conceive-vnkqzf`). Its canonical ID is `processes:task-ao-conceive-verify-uut74e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the regime is written down, the verification custodian checks the taxonomy and the regime matrix against what the activity requires - that every licensed role in scope has its attestation forms, attestors, and framing settled. Gaps are logged for rejection or repair before documentation begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no licensed role ends up under an attestation regime that was never fully worked out.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a licensed role whose periodic attestation form is undefined and logs the gap for repair before the regime is documented.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Regime Inputs |
+| `plain_language_description` | string | no | Before the regime is written down, the verification custodian checks the taxonomy and the regime matrix against what … |
+| `business_purpose` | string | no | It exists so no licensed role ends up under an attestation regime that was never fully worked out. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

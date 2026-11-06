@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-operate-in
 
 This is a **Task** (level L4), named **Handle Relationship Escalations Intake**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Handle Relationship Escalations** (`processes:activity-pr-operate-w753mv`). Its canonical ID is `processes:task-pr-operate-intake-9k27h2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The escalation work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations, and the pipeline of upcoming renewals. The intake custodian logs each item against the operating file so the handling starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an escalation answered without its context answers the wrong question.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the escalation queue and account histories into the operating file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Escalation Handling File |
+| `plain_language_description` | string | no | The escalation work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations … |
+| `business_purpose` | string | no | It exists because an escalation answered without its context answers the wrong question. |
+| `practical_context` | string | no | It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 
 This is a **Task** (level L4), named **Address Performance Exceptions Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Address Performance Exceptions** (`processes:activity-ao-operate-yyqtzw`). Its canonical ID is `processes:task-ao-operate-confirm-grsjvp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the exceptions stand addressed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The review cycle that follows learns the exceptions are handled and the outcomes can be judged whole.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review cycle judges performance only once its exceptions are confirmed as addressed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the addressed exceptions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the addressed exceptions against the activity's intended outcome and issues the confirmation the review cycle needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Addressed Performance Exceptions |
+| `plain_language_description` | string | no | When the exceptions stand addressed, the confirmation custodian reconciles them against the outcome the activity set … |
+| `business_purpose` | string | no | It exists so the review cycle judges performance only once its exceptions are confirmed as addressed. |
+| `practical_context` | string | no | It begins once preparation is complete and the addressed exceptions await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

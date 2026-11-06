@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Maintain Lifecycle Record Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Lifecycle Record** (`processes:activity-pv-operate-89v5ty`). Its canonical ID is `processes:task-pv-operate-transform-wh62e3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the updates verified, the record itself is brought current. The processing custodian works the transitions and gate outcomes into each proposition's history, producing the current stage account in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because planners and reviewers need every proposition's stage history and gate outcomes current, and this step makes them so.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified updates are ready to be applied, and it closes with the lifecycle record current in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management applies the verified updates to the lifecycle record, extending a proposition's stage history with its new stage and gate outcome, and keeps the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bring the Lifecycle Record Up to Date |
+| `plain_language_description` | string | no | With the updates verified, the record itself is brought current. The processing custodian works the transitions and … |
+| `business_purpose` | string | no | It exists because planners and reviewers need every proposition's stage history and gate outcomes current, and this … |
+| `practical_context` | string | no | It opens when the verified updates are ready to be applied, and it closes with the lifecycle record current in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

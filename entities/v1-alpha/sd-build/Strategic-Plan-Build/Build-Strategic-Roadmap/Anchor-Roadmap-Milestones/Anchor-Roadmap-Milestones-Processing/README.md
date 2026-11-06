@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-tran
 
 This is a **Task** (level L4), named **Anchor Roadmap Milestones Processing**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Anchor Roadmap Milestones** (`processes:activity-sd-build-yvecqq`). Its canonical ID is `processes:task-sd-build-transform-7qjx6k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the anchoring proper begins. The processing custodian fixes each milestone the sequenced initiatives must deliver onto its horizon, producing the anchored milestones in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a sequence without anchored milestones drifts, and drift in the roadmap quietly resets every downstream plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the anchored milestones produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function pins each milestone the sequenced initiatives must deliver to its horizon, keeping the anchoring workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pin the Milestones the Sequenced Initiatives Must Deliver |
+| `plain_language_description` | string | no | With the inputs verified, the anchoring proper begins. The processing custodian fixes each milestone the sequenced … |
+| `business_purpose` | string | no | It exists because a sequence without anchored milestones drifts, and drift in the roadmap quietly resets every … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the anchored milestones produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

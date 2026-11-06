@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Procure Hardware and Software Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Procure Hardware and Software** (`processes:activity-eo-build-jg28xr`). Its canonical ID is `processes:task-eo-build-transform-7ybs7h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the brief verified, the processing custodian does the procurement itself: the specified hardware and software are sourced under the committed principles, procured, and set down in the form the activity defines. Working papers behind the purchases are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an architecture on paper equips nobody - procurement is where the specification turns into delivered assets.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified brief is ready to be bought from, and it ends with the procured assets produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management sources and buys the specified hardware and software, keeping the working papers behind each purchase.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Buy the Hardware and Software the Architecture Specifies |
+| `plain_language_description` | string | no | With the brief verified, the processing custodian does the procurement itself: the specified hardware and software are … |
+| `business_purpose` | string | no | It exists because an architecture on paper equips nobody - procurement is where the specification turns into delivered … |
+| `practical_context` | string | no | It starts once checking is complete and the verified brief is ready to be bought from, and it ends with the procured … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

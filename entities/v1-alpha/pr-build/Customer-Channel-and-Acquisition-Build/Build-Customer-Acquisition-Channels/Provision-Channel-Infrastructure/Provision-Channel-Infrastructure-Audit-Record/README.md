@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-reco
 
 This is a **Task** (level L4), named **Provision Channel Infrastructure Audit Record**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Provision Channel Infrastructure** (`processes:activity-pr-build-ncrg72`). Its canonical ID is `processes:task-pr-build-record-wv8n67`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the schedule for acquisition-engine records, protected against tampering. Where storage limits bite, a destruction attestation is recorded.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the provenance of the standing infrastructure - what was built, checked, and accepted - stays provable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the infrastructure build file with its verification report and remediation notes for future audits.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Retain the Infrastructure Build File |
+| `plain_language_description` | string | no | After confirmation, the records custodian secures the build package - manifest, report, asset inventory, confirmation … |
+| `business_purpose` | string | no | It exists so the provenance of the standing infrastructure - what was built, checked, and accepted - stays provable. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

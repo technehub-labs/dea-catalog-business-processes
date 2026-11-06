@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-con
 
 This is a **Task** (level L4), named **Reduce Governance To Wind-Down Quorum Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Reduce Governance To Wind-Down Quorum** (`processes:activity-ge-retire-bp4237`). Its canonical ID is `processes:task-ge-retire-confirm-jd9jz5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the record pack with dissolution law and with the custodianship contract for retained records. Once satisfied, the completion confirmation is received by the governance custodian and by the registrar of companies. It is logged into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the reduced regime begins life with a formal, logged completion behind it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the finance function signs the reconciliation off, and the governance custodian acknowledges completion before logging.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Slimmed Governance Can Still Act |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the record pack with dissolution law and with the custodianship contract for … |
+| `business_purpose` | string | no | It exists so the reduced regime begins life with a formal, logged completion behind it. |
+| `practical_context` | string | no | It starts once the record pack is produced, and it closes when acknowledgements are in and the records custodian takes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

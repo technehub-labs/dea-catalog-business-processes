@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Identify Capability Gaps Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Identify Capability Gaps** (`processes:activity-ao-improve-eyvh62`). Its canonical ID is `processes:task-ao-improve-intake-tkejeu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Gap identification opens when the population competency baseline is handed over as the measurement the gaps will be read from. The intake custodian accepts it, registers the handover with audit identifiers, and starts the identification work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so gaps are identified from a registered baseline rather than from impressions of shortcoming.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the competency baseline is presented for the identification, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the competency baseline as the identification baseline, with audit references, and opens the gap work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Competency Baseline for Gap Identification |
+| `plain_language_description` | string | no | Gap identification opens when the population competency baseline is handed over as the measurement the gaps will be … |
+| `business_purpose` | string | no | It exists so gaps are identified from a registered baseline rather than from impressions of shortcoming. |
+| `practical_context` | string | no | It opens when the competency baseline is presented for the identification, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

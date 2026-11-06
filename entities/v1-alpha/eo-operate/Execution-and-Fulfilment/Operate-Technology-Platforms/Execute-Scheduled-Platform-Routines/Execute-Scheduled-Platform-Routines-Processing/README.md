@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Execute Scheduled Platform Routines Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Scheduled Platform Routines** (`processes:activity-eo-operate-7xkcre`). Its canonical ID is `processes:task-eo-operate-transform-ure72w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the calendar verified, the processing custodian does the execution itself: each planned routine - the backups, the rotations, the certificate renewals, the housekeeping - is run on its due date, and the completed routines are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because platforms rot quietly between the noticeable events - the routines are what keep them servable between times.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified calendar is ready to be run, and it ends with the completed routines produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management runs each due routine - backups, rotations, renewals, housekeeping - on its date, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Backups, Renewals, and Housekeeping on Time |
+| `plain_language_description` | string | no | With the calendar verified, the processing custodian does the execution itself: each planned routine - the backups, the … |
+| `business_purpose` | string | no | It exists because platforms rot quietly between the noticeable events - the routines are what keep them servable … |
+| `practical_context` | string | no | It starts once checking is complete and the verified calendar is ready to be run, and it ends with the completed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

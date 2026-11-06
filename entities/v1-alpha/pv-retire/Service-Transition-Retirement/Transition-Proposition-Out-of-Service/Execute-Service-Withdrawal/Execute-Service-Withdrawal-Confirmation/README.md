@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-con
 
 This is a **Task** (level L4), named **Execute Service Withdrawal Confirmation**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Execute Service Withdrawal** (`processes:activity-pv-retire-6hqeys`). Its canonical ID is `processes:task-pv-retire-confirm-hk8w59`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the service is out of reliance. The confirmation custodian tells the downstream teams the withdrawn service is available, and closes the reconciliation against what the activity promised for the withdrawal.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the residual-obligations and closure teams work from a confirmed withdrawal, not from the assumption that the switch-off went through.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the withdrawn service is ready to hand on, and it closes with the confirmation issued and the withdrawal's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the proposition design authority announces the completed withdrawal to the teams handling residuals, reconciles the delivered withdrawn service against the plan's promises, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Withdrawal Is Done and Tell the Downstream Teams |
+| `plain_language_description` | string | no | The confirming opens once the service is out of reliance. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so the residual-obligations and closure teams work from a confirmed withdrawal, not from the assumption that … |
+| `practical_context` | string | no | It opens when the withdrawn service is ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

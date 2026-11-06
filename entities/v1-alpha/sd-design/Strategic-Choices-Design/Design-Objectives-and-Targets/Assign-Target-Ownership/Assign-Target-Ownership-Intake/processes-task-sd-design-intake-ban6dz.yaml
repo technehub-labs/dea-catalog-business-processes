@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Drafted Targets and the Organisational Structure'
+plain_language_description: 'The assignment opens as its material arrives: the drafted targets together with the organisational structure that says who could own them. The intake custodian logs them against the assignment file so the assigning starts accounted for.'
+business_purpose: 'It exists so ownership is assigned over logged targets and a real structure rather than over whoever happens to be keen.'
+practical_context: 'It opens when the drafted targets and the structure are presented for assignment, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the drafted targets and the organisational structure into the assignment file, so the ownership work starts accounted for.'

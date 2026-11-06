@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Time Data Before Computing the Payroll'
+plain_language_description: 'Before any pay is computed, the verification custodian checks the time data against what computation requires - that it is the validated set and covers every agent in the cycle. Gaps are logged for rejection or repair before the computation runs.'
+business_purpose: 'It exists so nobody''s pay is computed from a record that missed their hours.'
+practical_context: 'It runs once the intake is registered and the data can be compared with the activity''s requirements, and it finishes with it verified or its gaps logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds one agent''s time data missing from the validated set and logs the gap before the payroll is computed.'

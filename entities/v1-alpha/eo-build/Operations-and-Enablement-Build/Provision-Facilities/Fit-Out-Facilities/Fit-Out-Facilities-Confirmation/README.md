@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-conf
 
 This is a **Task** (level L4), named **Fit Out Facilities Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Fit Out Facilities** (`processes:activity-eo-build-vggmrg`). Its canonical ID is `processes:task-eo-build-confirm-mpy79n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the facilities stand fitted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The services commissioning that follows learns the shells are fitted and ready for their services.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so services are commissioned only over facilities confirmed as fitted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the fitted facilities await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the fitted facilities against the activity's intended outcome and issues the confirmation the services commissioning needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Fitted Facilities |
+| `plain_language_description` | string | no | When the facilities stand fitted, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so services are commissioned only over facilities confirmed as fitted. |
+| `practical_context` | string | no | It begins once preparation is complete and the fitted facilities await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

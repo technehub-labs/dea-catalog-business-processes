@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-i
 
 This is a **Task** (level L4), named **Capture Continuing-Supervisor Notification Path Intake**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Capture Continuing-Supervisor Notification Path** (`processes:activity-ao-conceive-v7g5se`). Its canonical ID is `processes:task-ao-conceive-intake-7mwjy4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The notification-path work opens when the regulator licensing taxonomy and the supervision matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the reference the capture will be made from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so notification paths are captured against a registered taxonomy and a registered supervision matrix.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the taxonomy and supervision matrix are presented for the capture, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in workforce management registers the licensing taxonomy and supervision matrix as the capture baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Licensing Taxonomy and Supervision Matrix |
+| `plain_language_description` | string | no | The notification-path work opens when the regulator licensing taxonomy and the supervision matrix are handed to the … |
+| `business_purpose` | string | no | It exists so notification paths are captured against a registered taxonomy and a registered supervision matrix. |
+| `practical_context` | string | no | It opens when the taxonomy and supervision matrix are presented for the capture, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

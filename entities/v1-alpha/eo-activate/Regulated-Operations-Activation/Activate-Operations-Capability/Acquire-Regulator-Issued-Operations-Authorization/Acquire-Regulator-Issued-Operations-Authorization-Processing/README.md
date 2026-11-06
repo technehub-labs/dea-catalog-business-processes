@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-t
 
 This is a **Task** (level L4), named **Acquire Regulator-Issued Operations Authorization Processing**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Acquire Regulator-Issued Operations Authorization** (`processes:activity-eo-activate-w8tgv6`). Its canonical ID is `processes:task-eo-activate-transform-jthh9z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the material verified, the processing custodian makes the acquisition itself: the application is filed, the regulator's authorization or certification is obtained, and the issued authorization is preserved on the regulated operations record in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because live regulated operations cannot lawfully begin until the regulator has said yes - this is the saying yes, recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified material is ready to be filed, and it ends with the issued authorization preserved and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function files the application, receives the regulator's authorization, and preserves it on the regulated operations record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Obtain the Regulator's Operations Authorization |
+| `plain_language_description` | string | no | With the material verified, the processing custodian makes the acquisition itself: the application is filed, the … |
+| `business_purpose` | string | no | It exists because live regulated operations cannot lawfully begin until the regulator has said yes - this is the saying … |
+| `practical_context` | string | no | It starts once checking is complete and the verified material is ready to be filed, and it ends with the issued … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

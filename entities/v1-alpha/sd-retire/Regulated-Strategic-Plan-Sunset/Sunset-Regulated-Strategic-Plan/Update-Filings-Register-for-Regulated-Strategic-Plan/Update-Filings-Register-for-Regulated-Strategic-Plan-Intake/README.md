@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-int
 
 This is a **Task** (level L4), named **Update Filings Register for Regulated Strategic Plan Intake**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Update Filings Register for Regulated Strategic Plan** (`processes:activity-sd-retire-6m38cq`). Its canonical ID is `processes:task-sd-retire-intake-chjffg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The update opens as its material arrives: the marked supersession and the recorded directive that the filings register must now reflect. The intake custodian logs them against the register file so the update starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the register change rests on the registered identification, not on word of mouth that a plan has retired.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the supersession material is presented for the register update, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the marked supersession and the directive into the register file, so the updating of the filings register starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Supersession for the Register Update |
+| `plain_language_description` | string | no | The update opens as its material arrives: the marked supersession and the recorded directive that the filings register … |
+| `business_purpose` | string | no | It exists so the register change rests on the registered identification, not on word of mouth that a plan has retired. |
+| `practical_context` | string | no | It opens when the supersession material is presented for the register update, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

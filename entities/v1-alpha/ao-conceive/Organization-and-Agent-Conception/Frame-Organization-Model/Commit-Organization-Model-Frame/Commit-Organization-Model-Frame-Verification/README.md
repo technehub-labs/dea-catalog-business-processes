@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-v
 
 This is a **Task** (level L4), named **Commit Organization Model Frame Verification**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Organization Model Frame** (`processes:activity-ao-conceive-rcyn7u`). Its canonical ID is `processes:task-ao-conceive-verify-jd8auf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the frame is consolidated, the verification custodian checks the bounded boundaries against what consolidation requires - that the pieces together make a complete, coherent model frame. Anything found wanting is logged for rejection or repair before the commitment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation never commits a model frame assembled from incomplete pieces.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the boundaries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds two boundary sets that overlap unstably and logs the defect before the frame is consolidated.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Boundaries Before Consolidating the Frame |
+| `plain_language_description` | string | no | Before the frame is consolidated, the verification custodian checks the bounded boundaries against what consolidation … |
+| `business_purpose` | string | no | It exists so the organisation never commits a model frame assembled from incomplete pieces. |
+| `practical_context` | string | no | It runs once the intake is registered and the boundaries can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

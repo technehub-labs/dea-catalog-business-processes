@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-in
 
 This is a **Task** (level L4), named **Measure Rationalization Outcomes Intake**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Measure Rationalization Outcomes** (`processes:activity-pv-improve-k3hy7t`). Its canonical ID is `processes:task-pv-improve-intake-a8pqvf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The measuring work opens when the material for scoring committed rationalization decisions arrives. The intake custodian logs them against the outcome measurement file so the measuring starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because outcomes cannot be scored credibly when the comparison material arrives unlogged and the start of the work goes unaccounted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the measurement input is presented with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management receives the pre-decision portfolio baseline for a rationalization wave and logs it into the outcome measurement file, so the scoring of what the decisions delivered starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Arriving Rationalization Measurement Materials |
+| `plain_language_description` | string | no | The measuring work opens when the material for scoring committed rationalization decisions arrives. The intake … |
+| `business_purpose` | string | no | It exists because outcomes cannot be scored credibly when the comparison material arrives unlogged and the start of the … |
+| `practical_context` | string | no | It opens when the measurement input is presented with the activity's owner told that it has landed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Manage Stage Transitions Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Stage Transitions** (`processes:activity-pv-operate-jpupsh`). Its canonical ID is `processes:task-pv-operate-confirm-5uc6r8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the moves are made, the teams whose propositions have shifted are told. The confirmation custodian tells the downstream teams the executed transitions are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a team's obligations change with its proposition's stage, and the team must hear officially when the move has happened.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has executed the transitions, and it closes with confirmation issued, the downstream teams told, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the proposition teams their stage moves are executed and official, and closes the reconciliation against what the transition work promised for the round.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Stage Moves to the Proposition Teams |
+| `plain_language_description` | string | no | Once the moves are made, the teams whose propositions have shifted are told. The confirmation custodian tells the … |
+| `business_purpose` | string | no | It exists because a team's obligations change with its proposition's stage, and the team must hear officially when the … |
+| `practical_context` | string | no | It opens when processing has executed the transitions, and it closes with confirmation issued, the downstream teams … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

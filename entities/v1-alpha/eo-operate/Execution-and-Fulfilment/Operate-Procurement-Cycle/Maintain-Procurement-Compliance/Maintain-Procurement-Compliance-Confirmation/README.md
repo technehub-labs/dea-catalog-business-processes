@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-co
 
 This is a **Task** (level L4), named **Maintain Procurement Compliance Confirmation**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Procurement Compliance** (`processes:activity-eo-operate-37uk3c`). Its canonical ID is `processes:task-eo-operate-confirm-wvcbmd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the watching stands done, the confirmation custodian reconciles the compliance position against the outcome the activity set out to reach and issues the confirmation. The procurement chain learns where the buying stands clean and where it drifts.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the chain relies only on a position confirmed as held.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the compliance position awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the compliance position against the activity's intended outcome and issues the confirmation the procurement chain needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Compliance Position |
+| `plain_language_description` | string | no | When the watching stands done, the confirmation custodian reconciles the compliance position against the outcome the … |
+| `business_purpose` | string | no | It exists so the chain relies only on a position confirmed as held. |
+| `practical_context` | string | no | It begins once preparation is complete and the compliance position awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

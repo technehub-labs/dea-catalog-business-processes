@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Define the Proficiency Levels Within Each Domain'
+plain_language_description: 'With the domains verified, the processing custodian does the definition itself: the proficiency levels within each competency domain are worked out and set down in the form the activity defines. The working papers behind each scale are preserved for audit.'
+business_purpose: 'It exists because a domain without levels cannot say how well anyone actually performs within it.'
+practical_context: 'It starts once checking is complete and the verified domains are ready to be levelled, and it ends with the defined proficiency levels produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian cuts the proficiency scale within each competency domain, keeping the working papers for audit.'

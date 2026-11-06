@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Collect Strategic Performance Measures Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Collect Strategic Performance Measures** (`processes:activity-sd-operate-fjj2yt`). Its canonical ID is `processes:task-sd-operate-confirm-6pxf4w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The measures are collected and must now travel. The confirmation custodian tells the downstream teams the collected strategic performance measures are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the tracking work cannot start until it knows the collected set is complete and formally handed over.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the collection work is finished and the collected set is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the tracking team the collected measures are available for their work against the plan, then closes the handover against what the collection promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Tracking Team the Collected Measures Are Ready |
+| `plain_language_description` | string | no | The measures are collected and must now travel. The confirmation custodian tells the downstream teams the collected … |
+| `business_purpose` | string | no | It exists because the tracking work cannot start until it knows the collected set is complete and formally handed over. |
+| `practical_context` | string | no | It opens when the collection work is finished and the collected set is ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

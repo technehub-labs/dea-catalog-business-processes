@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-tran
 
 This is a **Task** (level L4), named **Build Acquisition Engines Processing**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Acquisition Engines** (`processes:activity-pr-build-qutweg`). Its canonical ID is `processes:task-pr-build-transform-ah9wtw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the report in hand, the processing custodian builds: the channel-integration surface is provisioned, the demand-program assets are instantiated, and the attribution model is calibrated. The finished components are captured as a build-ready asset inventory.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise can actively acquire customers through its channels rather than simply maintain a presence on them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function provisions the integration surface, stands up the campaign assets, and calibrates attribution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble the Acquisition Engines |
+| `plain_language_description` | string | no | With the report in hand, the processing custodian builds: the channel-integration surface is provisioned, the … |
+| `business_purpose` | string | no | It exists so the enterprise can actively acquire customers through its channels rather than simply maintain a presence … |
+| `practical_context` | string | no | It opens when the verification report clears the build, and it closes with the asset inventory produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

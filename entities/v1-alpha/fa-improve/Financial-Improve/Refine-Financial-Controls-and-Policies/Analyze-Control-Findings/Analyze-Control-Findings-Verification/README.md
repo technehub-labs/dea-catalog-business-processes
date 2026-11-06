@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-ve
 
 This is a **Task** (level L4), named **Analyze Control Findings Verification**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Analyze Control Findings** (`processes:activity-fa-improve-6j2xpt`). Its canonical ID is `processes:task-fa-improve-verify-f3gg2a`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is read, the verification custodian checks the findings and incidents against what analysis requires - that each is described concretely enough to be bounded. Defects are flagged for rejection or repair before the reading begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no need is bounded from a finding too thin to trust.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the findings can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a finding described without its affected controls and flags the defect before the reading begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Findings Before Reading Them Down |
+| `plain_language_description` | string | no | Before anything is read, the verification custodian checks the findings and incidents against what analysis requires - … |
+| `business_purpose` | string | no | It exists so no need is bounded from a finding too thin to trust. |
+| `practical_context` | string | no | It runs once the intake is registered and the findings can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

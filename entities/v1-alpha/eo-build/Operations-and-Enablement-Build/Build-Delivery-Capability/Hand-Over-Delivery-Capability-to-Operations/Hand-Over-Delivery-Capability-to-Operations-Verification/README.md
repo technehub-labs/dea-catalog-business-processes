@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Hand Over Delivery Capability to Operations Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Hand Over Delivery Capability to Operations** (`processes:activity-eo-build-fnyeud`). Its canonical ID is `processes:task-eo-build-verify-vkzpcc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the capability passes over, the verification custodian checks the proof against what the hand-over requires - that the verification is complete and covers what the operational teams will depend on. Defects are logged for rejection or repair before anything changes hands.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operations never accepts a capability whose proof was thinner than it looked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the proof can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the proof skipping one service level the teams depend on and logs the defect before anything changes hands.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Proof Before Handing the Capability Over |
+| `plain_language_description` | string | no | Before the capability passes over, the verification custodian checks the proof against what the hand-over requires - … |
+| `business_purpose` | string | no | It exists so operations never accepts a capability whose proof was thinner than it looked. |
+| `practical_context` | string | no | It runs once the intake is registered and the proof can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

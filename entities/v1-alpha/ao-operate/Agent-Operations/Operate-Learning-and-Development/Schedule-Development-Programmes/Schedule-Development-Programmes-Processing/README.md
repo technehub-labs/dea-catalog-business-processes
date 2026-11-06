@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Schedule Development Programmes Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Schedule Development Programmes** (`processes:activity-ao-operate-skjmyf`). Its canonical ID is `processes:task-ao-operate-transform-g37952`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the scheduling itself: the development programmes committed for agents in service are placed on the learning calendar and set down in the form the activity defines. Working papers behind the schedule are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because committed development only reaches agents once somebody actually puts it on the calendar.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be scheduled from, and it ends with the scheduled programmes produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management places each committed programme on the learning calendar, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Put the Committed Programmes on the Schedule |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the scheduling itself: the development programmes committed for … |
+| `business_purpose` | string | no | It exists because committed development only reaches agents once somebody actually puts it on the calendar. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be scheduled from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

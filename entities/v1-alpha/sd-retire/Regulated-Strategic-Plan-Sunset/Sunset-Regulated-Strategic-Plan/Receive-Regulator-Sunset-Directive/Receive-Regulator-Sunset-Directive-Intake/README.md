@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-int
 
 This is a **Task** (level L4), named **Receive Regulator Sunset Directive Intake**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Receive Regulator Sunset Directive** (`processes:activity-sd-retire-z2y3pr`). Its canonical ID is `processes:task-sd-retire-intake-dbp86u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The receipt opens as its material arrives: the regulator's directive or rejection notice requiring the regulated strategic plan's retirement. The intake custodian logs them against the receipt file so the receipt starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a directive that sits in an inbox unrecorded starts no sunset at all; the clock only runs once it is on the plan record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the directive or rejection notice is presented for receipt, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the supervisor's sunset directive, with its directive date and effective-retirement date, into the receipt file so the retirement work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Regulator's Sunset Directive |
+| `plain_language_description` | string | no | The receipt opens as its material arrives: the regulator's directive or rejection notice requiring the regulated … |
+| `business_purpose` | string | no | It exists because a directive that sits in an inbox unrecorded starts no sunset at all; the clock only runs once it is … |
+| `practical_context` | string | no | It opens when the directive or rejection notice is presented for receipt, with the activity's owner told that it has … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

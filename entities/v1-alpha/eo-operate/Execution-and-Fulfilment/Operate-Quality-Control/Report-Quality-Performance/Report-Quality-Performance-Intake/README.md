@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Report Quality Performance Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Report Quality Performance** (`processes:activity-eo-operate-x59sfp`). Its canonical ID is `processes:task-eo-operate-intake-fke3jj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Reporting opens when the per-batch quality records are handed over as the material the performance picture will be rolled up from. The intake custodian accepts them, registers them with audit identifiers, and starts the aggregation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the report is built from authoritative batch records rather than from spot impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the batch records are presented for the report, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the per-batch records as the reporting baseline, with audit references, and opens the aggregation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Per-Batch Records for the Quality Report |
+| `plain_language_description` | string | no | Reporting opens when the per-batch quality records are handed over as the material the performance picture will be … |
+| `business_purpose` | string | no | It exists so the report is built from authoritative batch records rather than from spot impressions. |
+| `practical_context` | string | no | It opens when the batch records are presented for the report, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

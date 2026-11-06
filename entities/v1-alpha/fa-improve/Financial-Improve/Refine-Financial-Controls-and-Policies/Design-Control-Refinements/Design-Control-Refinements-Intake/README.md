@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Design Control Refinements Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Design Control Refinements** (`processes:activity-fa-improve-g6x3fj`). Its canonical ID is `processes:task-fa-improve-intake-dhjfr8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Design work opens when the analyzed findings are handed over as the bounded needs the refinements must close. The intake custodian accepts them, registers them with audit identifiers, and starts the designing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so refinements are drawn against a registered analysis rather than against a memo's tone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the analyzed findings are presented for the refinement work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the analyzed findings as the design baseline, with audit references, and opens the reworking.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Analyzed Findings for Refinement Work |
+| `plain_language_description` | string | no | Design work opens when the analyzed findings are handed over as the bounded needs the refinements must close. The … |
+| `business_purpose` | string | no | It exists so refinements are drawn against a registered analysis rather than against a memo's tone. |
+| `practical_context` | string | no | It opens when the analyzed findings are presented for the refinement work, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

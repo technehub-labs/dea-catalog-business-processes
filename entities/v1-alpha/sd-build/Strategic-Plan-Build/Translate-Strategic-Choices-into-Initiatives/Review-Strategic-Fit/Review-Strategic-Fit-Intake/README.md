@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Review Strategic Fit Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Review Strategic Fit** (`processes:activity-sd-build-tjdzmd`). Its canonical ID is `processes:task-sd-build-intake-jzy42p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The fit review opens as its material arrives: the drafted initiatives together with the strategic plan and the chosen direction they must fit. The intake custodian logs them against the review file so the reviewing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the fit examination runs over logged drafts and references rather than over half-remembered aims.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the drafted initiatives and their references are presented for review, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the drafted initiatives alongside the strategic plan and chosen direction into the review file, so the fit review starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Drafted Initiatives with the Plan and Direction |
+| `plain_language_description` | string | no | The fit review opens as its material arrives: the drafted initiatives together with the strategic plan and the chosen … |
+| `business_purpose` | string | no | It exists so the fit examination runs over logged drafts and references rather than over half-remembered aims. |
+| `practical_context` | string | no | It opens when the drafted initiatives and their references are presented for review, with the activity's owner told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

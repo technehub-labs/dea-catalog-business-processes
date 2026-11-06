@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Rebalance Portfolio Allocations Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Rebalance Portfolio Allocations** (`processes:activity-pv-operate-bzud7v`). Its canonical ID is `processes:task-pv-operate-verify-nsbgbz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any allocation is moved, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because reallocating on an unverified picture or a direction that does not hold would move portfolio money on false grounds.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the rebalancing material, and it closes with it verified fit for the work or its defects logged.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks the picture behind a proposed rebalancing against the portfolio direction, notices the picture predates a major launch, and writes the shortfall down so the picture gets refreshed first.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Rebalancing Inputs Before Allocations Move |
+| `plain_language_description` | string | no | Before any allocation is moved, the arriving material is put to the test. The verification custodian tests the arriving … |
+| `business_purpose` | string | no | It exists because reallocating on an unverified picture or a direction that does not hold would move portfolio money on … |
+| `practical_context` | string | no | It opens once intake has registered the rebalancing material, and it closes with it verified fit for the work or its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

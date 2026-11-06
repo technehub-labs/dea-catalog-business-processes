@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-i
 
 This is a **Task** (level L4), named **Bound Delivery Model Envelope Intake**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Bound Delivery Model Envelope** (`processes:activity-eo-conceive-57g5bv`). Its canonical ID is `processes:task-eo-conceive-intake-hn6rvy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Envelope bounding opens when the assessed strategy context is handed over as the ground the delivery model envelope must be drawn within. The intake custodian accepts it, registers it with audit identifiers, and starts the bounding from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the envelope is drawn from a registered context rather than from ambition.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the assessed context is presented for the bounding, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the assessed context as the bounding baseline, with audit references, and opens the envelope work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Assessed Context for Envelope Bounding |
+| `plain_language_description` | string | no | Envelope bounding opens when the assessed strategy context is handed over as the ground the delivery model envelope … |
+| `business_purpose` | string | no | It exists so the envelope is drawn from a registered context rather than from ambition. |
+| `practical_context` | string | no | It opens when the assessed context is presented for the bounding, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

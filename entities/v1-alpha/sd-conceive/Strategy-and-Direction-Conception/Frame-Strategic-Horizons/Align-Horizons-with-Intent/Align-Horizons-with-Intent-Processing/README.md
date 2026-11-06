@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-t
 
 This is a **Task** (level L4), named **Align Horizons with Intent Processing**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Align Horizons with Intent** (`processes:activity-sd-conceive-6dbxtu`). Its canonical ID is `processes:task-sd-conceive-transform-u3fm6u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the aligning proper begins. The processing custodian reads each bounded timeframe and its milestones against the committed intent, adjusting where they pull apart, producing the aligned horizons in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because timeframes that drift from the intent turn the horizons into an arbitrary calendar.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the aligned horizons produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function reads each verified timeframe and milestone against the committed intent, easing the boundaries until they serve the intent's demands, and keeps the alignment workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Line the Timeframes and Milestones Up with the Intent |
+| `plain_language_description` | string | no | With the inputs verified, the aligning proper begins. The processing custodian reads each bounded timeframe and its … |
+| `business_purpose` | string | no | It exists because timeframes that drift from the intent turn the horizons into an arbitrary calendar. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the aligned horizons produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

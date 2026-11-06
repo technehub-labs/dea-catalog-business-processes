@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-ve
 
 This is a **Task** (level L4), named **Design Bounded Enhancements Verification**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Design Bounded Enhancements** (`processes:activity-pv-improve-t7vbjt`). Its canonical ID is `processes:task-pv-improve-verify-cvsvbb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the enhancements are designed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the designing proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an enhancement that answers no driver is effort wearing a feature's clothes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management tests the enhancement inputs against the analyzed drivers before designing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Enhancement Inputs Against the Drivers |
+| `plain_language_description` | string | no | Before the enhancements are designed, the verification custodian tests the arriving material against what the activity … |
+| `business_purpose` | string | no | It exists because an enhancement that answers no driver is effort wearing a feature's clothes. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-c
 
 This is a **Task** (level L4), named **Verify Regulator Licence Or Registration Confirmation**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Verify Regulator Licence Or Registration** (`processes:activity-ao-activate-z4yhzy`). Its canonical ID is `processes:task-ao-activate-confirm-nffyt3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the verified record in hand, the confirmation custodian reconciles it against the result the activity set out to reach, then issues the confirmation. Those waiting to put the person live - and the continuing supervision chain - learn that the licence position is settled.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the verification is treated as settled only once it has been confirmed against the intended result and announced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the verified record awaits its consumers, and it closes with the confirmation issued, consumers told, and the outcome reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the verified licence record to the activity's intended result and issues the confirmation that lets the live-role decision proceed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Licence Verification Result |
+| `plain_language_description` | string | no | With the verified record in hand, the confirmation custodian reconciles it against the result the activity set out to … |
+| `business_purpose` | string | no | It exists so the verification is treated as settled only once it has been confirmed against the intended result and … |
+| `practical_context` | string | no | It begins once preparation is complete and the verified record awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

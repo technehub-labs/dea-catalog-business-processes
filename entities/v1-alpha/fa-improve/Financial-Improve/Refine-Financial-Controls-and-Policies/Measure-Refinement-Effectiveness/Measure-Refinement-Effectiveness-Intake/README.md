@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-in
 
 This is a **Task** (level L4), named **Measure Refinement Effectiveness Intake**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Measure Refinement Effectiveness** (`processes:activity-fa-improve-ssfp68`). Its canonical ID is `processes:task-fa-improve-intake-mr49v3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Measurement opens when the committed refinements and the finding baseline are handed over together as the two sides the effectiveness will be judged between. The intake custodian accepts both, registers them with audit identifiers, and starts the measurement from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so refinements are judged against the registered findings they were promised on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the refinements and baseline are presented for measurement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the committed refinements and the finding baseline as the measurement baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Committed Refinements and Their Baseline |
+| `plain_language_description` | string | no | Measurement opens when the committed refinements and the finding baseline are handed over together as the two sides the … |
+| `business_purpose` | string | no | It exists so refinements are judged against the registered findings they were promised on. |
+| `practical_context` | string | no | It opens when the refinements and baseline are presented for measurement, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

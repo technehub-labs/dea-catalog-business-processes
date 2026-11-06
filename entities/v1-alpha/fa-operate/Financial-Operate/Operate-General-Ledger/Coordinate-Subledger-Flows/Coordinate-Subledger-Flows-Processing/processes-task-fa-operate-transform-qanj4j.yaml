@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Meet the Feeds Where the Ledger Waits'
+plain_language_description: 'With the outputs verified, the processing custodian does the coordinating itself: each subledger''s flow is brought to the ledger in the order and shape it can accept, and the coordinated flows are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a ledger fed carelessly is a ledger that lies politely - the coordination is what makes every tributary arrive true.'
+practical_context: 'It starts once checking is complete and the verified outputs are ready to be brought in, and it ends with the coordinated flows produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the compliance function brings each subledger''s feed to the ledger in its proper order and shape, keeping the working papers.'

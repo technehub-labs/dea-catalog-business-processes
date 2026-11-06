@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Monitor Catalogue Integrity Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Catalogue Integrity** (`processes:activity-pv-operate-5gtsjg`). Its canonical ID is `processes:task-pv-operate-confirm-pvtsre`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the posture is worked and ready to hand on. The confirmation custodian tells the downstream teams the integrity posture is available, and closes the reconciliation against what the activity promised for the watch.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so decisions about fixing the catalogue rest on a posture that has been formally issued rather than on an unconfirmed draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the posture is worked and ready to hand on, and it closes with the confirmation issued and the watch's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management releases the finished integrity posture to the catalogue and channel teams, checks it against what the activity set out to deliver, and closes the reconciliation for the cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Integrity Posture to the Teams That Act on It |
+| `plain_language_description` | string | no | The confirming opens once the posture is worked and ready to hand on. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists so decisions about fixing the catalogue rest on a posture that has been formally issued rather than on an … |
+| `practical_context` | string | no | It opens when the posture is worked and ready to hand on, and it closes with the confirmation issued and the watch's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

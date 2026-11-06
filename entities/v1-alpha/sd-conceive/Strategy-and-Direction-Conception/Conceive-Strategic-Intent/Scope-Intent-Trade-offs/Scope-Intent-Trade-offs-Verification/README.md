@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-v
 
 This is a **Task** (level L4), named **Scope Intent Trade-offs Verification**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Scope Intent Trade-offs** (`processes:activity-sd-conceive-e6epkt`). Its canonical ID is `processes:task-sd-conceive-verify-3tmu47`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any trade-off space is bounded, the arriving narrative and signal material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because trade-offs scoped around stale signals fence the intent into a world that no longer exists.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the scoping material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged narrative and signals against what the activity requires, and writes up a signal contradicted by newer data as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Narrative and Signals Before Bounding the Trade-offs |
+| `plain_language_description` | string | no | Before any trade-off space is bounded, the arriving narrative and signal material is put to the test. The verification … |
+| `business_purpose` | string | no | It exists because trade-offs scoped around stale signals fence the intent into a world that no longer exists. |
+| `practical_context` | string | no | It opens once the intake is registered and the scoping material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

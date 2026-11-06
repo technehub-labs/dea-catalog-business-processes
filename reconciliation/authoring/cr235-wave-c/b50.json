@@ -1,0 +1,582 @@
+{
+ "processes:task-sd-operate-intake-wppfuk": {
+  "plain_language_name": "Take In the Operating Environment for the Source Sweep",
+  "plain_language_description": "The sweep opens as its material arrives: the operating environment whose internal and external sources must be swept for signals. The intake custodian logs them against the sweep file so the sweep starts accounted for.",
+  "business_purpose": "It exists so the sweep covers the registered environment in full, with no source class left unswept for want of a register entry.",
+  "practical_context": "It opens when the operating environment is presented for scanning, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the environment's source classes, market feeds and internal channels into the sweep file, so the environmental scan starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-wnmj4m": {
+  "plain_language_name": "Test the Environment Material Before the Sources Are Swept",
+  "plain_language_description": "Before the sources are swept, the arriving environment material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a sweep run over a mis-scoped environment would miss the very corner where the next disruption gathers.",
+  "practical_context": "It opens once the intake is registered and the environment material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving environment material against what the sweep needs, and writes up a source class with no named owner as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-qv3jr5": {
+  "plain_language_name": "Sweep the Internal and External Sources for Candidate Signals",
+  "plain_language_description": "With the inputs verified, the sweep proper begins. The processing custodian works through each tested source, gathering whatever bears on drift, disruption or opportunity, producing the raw environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because drift and disruption announce themselves in the sources; if nobody sweeps them, the strategy hears about them last.",
+  "practical_context": "It opens when the verified environment is ready to be worked, and it closes with the raw environmental signals produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function sweeps each tested source and gathers the raw signals, from regulatory murmurings to competitor moves, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-intake-en6kzw": {
+  "plain_language_name": "Take In the Monitored Performance for the Alignment Assessment",
+  "plain_language_description": "The assessment opens as its material arrives: the monitored strategic performance against which the in-flight initiatives will be weighed. The intake custodian logs them against the assessment file so the assessment starts accounted for.",
+  "business_purpose": "It exists so the alignment verdict covers every in-flight initiative on the register, none judged unseen.",
+  "practical_context": "It opens when the monitored performance is presented for assessment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the monitored performance and the in-flight initiative set into the assessment file, so the alignment work starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-4utryb": {
+  "plain_language_name": "Test the Performance Material Before Initiatives Are Weighed",
+  "plain_language_description": "Before the in-flight initiatives are weighed against it, the arriving performance material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because alignment judged on stale performance would leave off-course initiatives running on the leadership's money.",
+  "practical_context": "It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving performance material against what the assessment needs, and writes up a quarter missing its initiative-level figures as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-9dngvw": {
+  "plain_language_name": "Weigh Each In-Flight Initiative Against the Strategy's Pull",
+  "plain_language_description": "With the inputs verified, the assessment proper begins. The processing custodian weighs every in-flight initiative against the tested performance and the strategy's intent, producing the initiative alignment assessment in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the portfolio cannot be steered until someone can say which initiatives still pull with the strategy and which have fallen out of step.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the initiative alignment assessment produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function weighs each in-flight initiative against the tested performance and the strategy's intent, writing the alignment verdict per initiative with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-as6xse": {
+  "plain_language_name": "Tell the Drift Spotters the Alignment Verdicts Are In",
+  "plain_language_description": "The weighing is done and the verdicts must travel. The confirmation custodian tells the downstream teams the initiative alignment assessment is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the drift work needs the formal word that the assessment is closed and its verdicts stand ready.",
+  "practical_context": "It opens when the assessment work is finished and the verdicts are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the drift team the alignment assessment is available, then closes the handover against what the assessment promised."
+  }
+ },
+ "processes:task-sd-operate-record-xxxpyp": {
+  "plain_language_name": "File the Alignment Assessment Behind the Drift Calls",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the verdict on each in-flight initiative stays producible when a rebalancing decision is later questioned.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the assessment record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the alignment assessment with its per-initiative reasoning at the agreed retention tier, and sets the retrieval handles the rebalancing review will need."
+  }
+ },
+ "processes:task-sd-operate-intake-wpc4gb": {
+  "plain_language_name": "Take In the Alignment Verdicts for the Drift Work",
+  "plain_language_description": "The identification opens as its material arrives: the initiative alignment assessment showing how each in-flight initiative sits with the strategy. The intake custodian logs it against the drift file so the identification starts accounted for.",
+  "business_purpose": "It exists so drift is surfaced from the registered verdicts rather than from whichever misalignment someone noticed first.",
+  "practical_context": "It opens when the alignment assessment is presented for the drift work, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the alignment assessment into the drift file, so the surfacing of portfolio drift starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-4reedd": {
+  "plain_language_name": "Test the Verdicts Before Any Drift Is Declared",
+  "plain_language_description": "Before portfolio drift is declared, the arriving verdicts are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because drift declared off a misread verdict would put the portfolio chasing a misalignment that is not there.",
+  "practical_context": "It opens once the intake is registered and the verdicts can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving verdicts against what the identification needs, and writes up a verdict scored against the old intent as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-psge8c": {
+  "plain_language_name": "Surface Where the Portfolio Has Drifted from the Strategy",
+  "plain_language_description": "With the inputs verified, the identification proper begins. The processing custodian works the tested verdicts into a statement of where the portfolio has pulled away from the alignment the strategy requires, producing the identified portfolio drift in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because rebalancing options cannot be drawn until the drift itself is named, measured and owned.",
+  "practical_context": "It opens when the verified verdicts are ready to be worked, and it closes with the identified portfolio drift produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function works the tested verdicts into a named, measured statement of portfolio drift, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-sb22eq": {
+  "plain_language_name": "Tell the Options Team Where the Drift Sits",
+  "plain_language_description": "The drift is named and must now travel. The confirmation custodian tells the downstream teams the identified portfolio drift is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the option work cannot start until it holds the formal, closed statement of what is out of line.",
+  "practical_context": "It opens when the identification work is finished and the drift statement is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the options team the identified drift is available for their rebalancing work, then closes the handover against what the identification promised."
+  }
+ },
+ "processes:task-sd-operate-record-vnqd68": {
+  "plain_language_name": "File the Drift Statement Behind the Rebalancing Options",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show what drift was declared, on whose assessment, before options were drawn.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the drift record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the drift statement with its assessment lineage at the agreed retention tier, and sets the retrieval handles for the review that asks why rebalancing happened."
+  }
+ },
+ "processes:task-sd-operate-intake-7jmehq": {
+  "plain_language_name": "Take In the Drift Statement for the Options Work",
+  "plain_language_description": "The formulation opens as its material arrives: the identified portfolio drift that the options must correct. The intake custodian logs it against the options file so the formulation starts accounted for.",
+  "business_purpose": "It exists so the option drafting answers the registered drift, not a private reading of what is wrong with the portfolio.",
+  "practical_context": "It opens when the drift statement is presented for formulation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the drift statement into the options file, so the drafting of rebalancing options starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-u5rarw": {
+  "plain_language_name": "Test the Drift Statement Before Options Are Drawn",
+  "plain_language_description": "Before rebalancing options are drawn, the arriving drift material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because options drawn to correct a misstated drift would rebalance the portfolio in the wrong direction.",
+  "practical_context": "It opens once the intake is registered and the drift statement can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the drift statement against what the formulation needs, and writes up a drift claim with no measured baseline as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-mjuxk9": {
+  "plain_language_name": "Draw the Options That Correct the Portfolio Drift",
+  "plain_language_description": "With the inputs verified, the formulation proper begins. The processing custodian turns the tested drift into concrete rebalancing options, producing them in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because named drift changes nothing until someone sets out the concrete ways the portfolio could be brought back in line.",
+  "practical_context": "It opens when the verified drift is ready to be worked, and it closes with the rebalancing options produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function turns the tested drift into two or three rebalancing options, each costed and written to the agreed shape with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-9eph9t": {
+  "plain_language_name": "Tell the Committing Team the Rebalancing Options Are Ready",
+  "plain_language_description": "The options are drawn and must now travel. The confirmation custodian tells the downstream teams the rebalancing options are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the selection cannot open until it knows the option set is complete and drafted to the agreed shape.",
+  "practical_context": "It opens when the formulation work is finished and the options are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the committing team the rebalancing options are available for selection, then closes the handover against what the formulation promised."
+  }
+ },
+ "processes:task-sd-operate-record-3nc94e": {
+  "plain_language_name": "File the Options Record with Its Drift Lineage",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the options that were on the table, and the drift they answered, stay producible when one is chosen.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the options record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the rebalancing options with their drift lineage at the agreed retention tier, and sets the retrieval handles for when the chosen option is reviewed."
+  }
+ },
+ "processes:task-sd-operate-intake-qprcyt": {
+  "plain_language_name": "Take In the Rebalancing Options for Selection",
+  "plain_language_description": "The commitment opens as its material arrives: the rebalancing options drawn to correct the portfolio drift. The intake custodian logs them against the commitment file so the commitment starts accounted for.",
+  "business_purpose": "It exists so the selection runs over the registered option set in full, with none arriving by side door.",
+  "practical_context": "It opens when the rebalancing options are presented for commitment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the rebalancing options into the commitment file, so the selection and ratification work starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-xp669f": {
+  "plain_language_name": "Test the Options Before Any Rebalancing Is Committed",
+  "plain_language_description": "Before rebalancing decisions are committed, the arriving options are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a rebalancing committed off a half-costed option would move real money and people on figures nobody tested.",
+  "practical_context": "It opens once the intake is registered and the options can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests each option against what the commitment needs, and writes up one option with unstated resourcing as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-grsryj": {
+  "plain_language_name": "Settle the Selected Rebalancing and Ready the Handoff",
+  "plain_language_description": "With the inputs verified, the commitment proper begins. The processing custodian settles which rebalancing decisions are ratified and prepares the handoff to initiative governance, producing the committed rebalancing decisions in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because drawn options steer nothing until they are selected, ratified and formally handed to the governance that will execute them.",
+  "practical_context": "It opens when the verified options are ready to be worked, and it closes with the committed rebalancing decisions produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function records which rebalancing decisions the leadership ratified and prepares the handoff pack for initiative governance, workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-6tkpc8": {
+  "plain_language_name": "Hand the Committed Rebalancing to Initiative Governance",
+  "plain_language_description": "The rebalancing is settled and must now travel. The confirmation custodian tells the downstream teams the committed rebalancing decisions are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because initiative governance cannot adjust the portfolio until it is formally told which decisions are in force.",
+  "practical_context": "It opens when the commitment work is finished and the decisions are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells initiative governance the committed rebalancing decisions are available for execution, then closes the handover against what the commitment promised."
+  }
+ },
+ "processes:task-sd-operate-record-e4yhvs": {
+  "plain_language_name": "File the Rebalancing Commitment with Its Ratification Trail",
+  "plain_language_description": "After the handoff, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can show which rebalancing decisions were committed, when, and on whose ratification.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the commitment record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the committed decisions with their ratification trail at the agreed retention tier, and sets the retrieval handles auditors use when they ask why the portfolio moved."
+  }
+ },
+ "processes:task-sd-retire-intake-dbp86u": {
+  "plain_language_name": "Take In the Regulator's Sunset Directive",
+  "plain_language_description": "The receipt opens as its material arrives: the regulator's directive or rejection notice requiring the regulated strategic plan's retirement. The intake custodian logs them against the receipt file so the receipt starts accounted for.",
+  "business_purpose": "It exists because a directive that sits in an inbox unrecorded starts no sunset at all; the clock only runs once it is on the plan record.",
+  "practical_context": "It opens when the directive or rejection notice is presented for receipt, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the supervisor's sunset directive, with its directive date and effective-retirement date, into the receipt file so the retirement work starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-zte35x": {
+  "plain_language_name": "Test the Directive Before the Retirement Clock Is Started",
+  "plain_language_description": "Before the directive is taken onto the plan record, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a sunset run off a misread directive date, or the wrong regulator identifier, would fail the very supervision it answers.",
+  "practical_context": "It opens once the intake is registered and the directive can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the directive against what the receipt needs, and writes up a notice missing its effective-retirement date as a shortfall to be put right with the supervisor."
+  }
+ },
+ "processes:task-sd-retire-transform-bea8cn": {
+  "plain_language_name": "Record the Directive Against the Regulated Plan",
+  "plain_language_description": "With the inputs verified, the recording proper begins. The processing custodian writes the tested directive to the plan record with the regulator identifier, directive date and effective-retirement date, producing the recorded directive in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the whole sunset hangs off the record that the directive arrived, from whom, and by when retirement takes effect.",
+  "practical_context": "It opens when the verified directive is ready to be worked, and it closes with the directive recorded against the plan record in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes the tested directive to the plan record, preserving the regulator identifier and both dates, and keeps the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-c4hv6z": {
+  "plain_language_name": "Tell the Sunset Teams the Directive Stands Recorded",
+  "plain_language_description": "The directive is on the record and the retirement must now proceed. The confirmation custodian tells the downstream teams the recorded sunset directive is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the identification and register work cannot safely start until someone has confirmed the directive stands recorded and complete.",
+  "practical_context": "It opens when the receipt work is finished and the recorded directive is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the sunset teams the directive stands recorded with its dates, then closes the handover by reconciling the record against what the receipt promised."
+  }
+ },
+ "processes:task-sd-retire-record-nc47qd": {
+  "plain_language_name": "File the Directive Receipt for the Regulator's Scrutiny",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the entity can always show exactly what the regulator ordered, and when, if the sunset is ever challenged.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the receipt record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the directive receipt with its envelope trail at the agreed retention tier, and sets the retrieval handles for the supervisor's next look at how the sunset began."
+  }
+ },
+ "processes:task-sd-retire-intake-8gwtes": {
+  "plain_language_name": "Take In the Plan Record and Directive for the Supersession Work",
+  "plain_language_description": "The identification opens as its material arrives: the regulated strategic-plan record and the recorded directive naming the plan to be retired. The intake custodian logs them against the identification file so the identification starts accounted for.",
+  "business_purpose": "It exists so the supersession is settled on the registered record, with the successor plan named and linked from the start.",
+  "practical_context": "It opens when the plan record and directive are presented for identification, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the plan record and the recorded directive into the identification file, so the work of naming the superseded plan starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-fzjjzj": {
+  "plain_language_name": "Test the Plan Record Before Supersession Is Declared",
+  "plain_language_description": "Before the superseded plan is declared, the arriving record material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because superseding the wrong plan, or failing to link the successor, would leave the record set telling two stories.",
+  "practical_context": "It opens once the intake is registered and the record material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the record material against what the identification needs, and writes up a successor plan with no linked reference as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-3tvqwa": {
+  "plain_language_name": "Mark the Superseded Plan and Link Its Successor",
+  "plain_language_description": "With the inputs verified, the identification proper begins. The processing custodian marks the tested plan as superseded on the record and writes the supersession reference to its successor, producing the superseded-plan identification in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a plan can only retire cleanly when the record says which plan it was and which plan replaces it.",
+  "practical_context": "It opens when the verified record material is ready to be worked, and it closes with the superseded-plan identification produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function marks the tested plan superseded and links its replacement on the same record, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-ff2sst": {
+  "plain_language_name": "Tell the Register Team the Supersession Stands Marked",
+  "plain_language_description": "The supersession is marked and must now travel. The confirmation custodian tells the downstream teams the superseded-plan identification is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the filings register cannot be updated until someone confirms which plan is retired and which replaces it.",
+  "practical_context": "It opens when the identification work is finished and the marked supersession is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the register team the supersession stands marked with its successor link, then closes the handover against what the identification promised."
+  }
+ },
+ "processes:task-sd-retire-record-kayn5k": {
+  "plain_language_name": "File the Supersession Identification on the Plan's Trail",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the line from the retired plan to its replacement stays traceable for the retention policy's full span.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the identification record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the supersession identification with its successor link at the agreed retention tier, and sets the retrieval handles the retention policy's reviews will need."
+  }
+ },
+ "processes:task-sd-retire-intake-chjffg": {
+  "plain_language_name": "Take In the Supersession for the Register Update",
+  "plain_language_description": "The update opens as its material arrives: the marked supersession and the recorded directive that the filings register must now reflect. The intake custodian logs them against the register file so the update starts accounted for.",
+  "business_purpose": "It exists so the register change rests on the registered identification, not on word of mouth that a plan has retired.",
+  "practical_context": "It opens when the supersession material is presented for the register update, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the marked supersession and the directive into the register file, so the updating of the filings register starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-ed9rm5": {
+  "plain_language_name": "Test the Supersession Material Before the Register Changes",
+  "plain_language_description": "Before the filings register is changed, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a register showing a plan retired on the wrong date would put the entity out of step with its supervisor on paper.",
+  "practical_context": "It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the supersession material against what the register update needs, and writes up a retirement date that misses the directive as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-gvz2hz": {
+  "plain_language_name": "Mark the Plan Retired on the Filings Register",
+  "plain_language_description": "With the inputs verified, the update proper begins. The processing custodian marks the tested plan retired on the register with the regulator identifier and dates, preserving the replacement plan's status, producing the filings register update in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the supervisor reads the register, and the register is where the retirement must stand in writing.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the filings register update produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function marks the tested plan retired on the register, keeps the replacement's status visible, and files the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-rqn8aw": {
+  "plain_language_name": "Transmit the Register Update to the Supervisor",
+  "plain_language_description": "The register is updated and must now travel. The confirmation custodian tells the downstream teams the filings register update is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the entity stays under continuing supervision until the update is formally transmitted to the supervisor.",
+  "practical_context": "It opens when the update work is finished and the register change is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function transmits the register update to the supervisor and confirms its availability downstream, then closes the handover against what the update promised."
+  }
+ },
+ "processes:task-sd-retire-record-t7tx4y": {
+  "plain_language_name": "File the Register Update as Transmitted",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the entity can show the supervisor exactly what was filed, and when, if the retirement is ever queried.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the register record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the register update exactly as transmitted, at the agreed retention tier, and sets the retrieval handles for the supervisor's follow-up queries."
+  }
+ },
+ "processes:task-sd-retire-intake-6rkuwf": {
+  "plain_language_name": "Take In the Sunset Materials for the Preservation Work",
+  "plain_language_description": "The preservation opens as its material arrives: the directive, the supersession and the register update that together make up the sunset's story on the plan record. The intake custodian logs them against the preservation file so the preservation starts accounted for.",
+  "business_purpose": "It exists so the preservation gathers the whole sunset story as registered, leaving no piece of the record to be reconstructed from memory.",
+  "practical_context": "It opens when the sunset materials are presented for preservation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the finance function logs the directive, the supersession and the register update into the preservation file, so the assembling of the sunset record starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-5xdeuj": {
+  "plain_language_name": "Test the Sunset Materials Before the Record Is Preserved",
+  "plain_language_description": "Before the sunset record is preserved, the arriving materials are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a record preserved with a missing date or an unlinked successor would fail the supervisor's review that relies on it.",
+  "practical_context": "It opens once the intake is registered and the materials can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the finance function tests the sunset materials against what the preservation needs, and writes up a missing replacement-plan status as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-as7xee": {
+  "plain_language_name": "Set the Regulator-Acknowledged Sunset on the Plan Record",
+  "plain_language_description": "With the inputs verified, the preservation proper begins. The processing custodian sets the tested sunset details on the plan record, preserving the regulator identifier, the directive and effective-retirement dates and the replacement's status, producing the preserved sunset record in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the supervisor's acknowledgement must rest on a record that is complete, dated and kept to the retention policy's standard.",
+  "practical_context": "It opens when the verified materials are ready to be worked, and it closes with the preserved sunset record produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the finance function sets the tested sunset details on the plan record and arranges them per the retention policy, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-hkf3se": {
+  "plain_language_name": "Tell the Comms and Records Teams the Sunset Record Stands",
+  "plain_language_description": "The record stands and must now travel. The confirmation custodian tells the downstream teams the preserved sunset record is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the communications and retained-records work must build on a sunset record that is formally closed and available.",
+  "practical_context": "It opens when the preservation work is finished and the sunset record is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the finance function tells the communications and records teams the preserved sunset record is available, then closes the handover against what the preservation promised."
+  }
+ },
+ "processes:task-sd-retire-record-pc7hf2": {
+  "plain_language_name": "Keep the Sunset Record Ready for the Supervisor's Review",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the acknowledged sunset stays available, intact and retrievable for every later look the supervisor may take.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the preservation record kept at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the finance function keeps the acknowledged sunset record at the retention policy's tier, sets its retrieval handles, and leaves it ready for the supervisor's downstream review."
+  }
+ },
+ "processes:task-sd-retire-intake-yw5puz": {
+  "plain_language_name": "Take In the Filed Communications Plan for Execution",
+  "plain_language_description": "The execution opens as its material arrives: the supervisor-filed communications plan with the sunset's audiences, messages and prescribed content. The intake custodian logs them against the execution file so the execution starts accounted for.",
+  "business_purpose": "It exists so the communications go out on the filed plan's terms, not on whatever wording the moment suggests.",
+  "practical_context": "It opens when the filed communications plan is presented for execution, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the supervisor-filed communications plan into the execution file, so the running of the sunset communications starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-9mmpk3": {
+  "plain_language_name": "Test the Filed Plan Before Any Sunset Message Goes Out",
+  "plain_language_description": "Before any sunset message goes out, the arriving plan material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a message sent off the regulator's prescribed wording would put the entity wrong with its supervisor mid-sunset.",
+  "practical_context": "It opens once the intake is registered and the filed plan can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the filed plan against what the execution needs, and writes up an audience list that misses a regulated subsidiary as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-zzy376": {
+  "plain_language_name": "Run the Sunset Communications Across Their Audiences",
+  "plain_language_description": "With the inputs verified, the execution proper begins. The processing custodian runs each tested communication to its audience on the filed plan's schedule, producing the executed communications plan in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a sunset that is silent breeds rumour; the plan's communications are how the retirement is carried publicly.",
+  "practical_context": "It opens when the verified plan is ready to be worked, and it closes with the communications plan executed in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function issues the tested communications to business units, customers and the supervisor on the filed schedule, keeping the dispatch workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-d5ezgv": {
+  "plain_language_name": "Tell the Records Team the Sunset Communications Have Run",
+  "plain_language_description": "The communications have run and the execution must now travel. The confirmation custodian tells the downstream teams the executed communications plan is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the retained-records work needs the formal word that the communications leg is complete and evidenced.",
+  "practical_context": "It opens when the execution work is finished and the evidence is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the records team the executed communications plan and its evidence are available, then closes the handover against what the execution promised."
+  }
+ },
+ "processes:task-sd-retire-record-ebsxst": {
+  "plain_language_name": "File the Communications Execution with Its Dispatch Evidence",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the entity can show the supervisor that every prescribed message went out, on time, to the right audience.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the execution record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the communications execution with its dispatch receipts at the agreed retention tier, and sets the retrieval handles for the supervisor's evidence requests."
+  }
+ },
+ "processes:task-sd-retire-intake-bmr5a6": {
+  "plain_language_name": "Take In the Retired Plan's Records for the Retention Work",
+  "plain_language_description": "The execution opens as its material arrives: the retired plan's records and the retention policy whose schedule now governs them. The intake custodian logs them against the execution file so the execution starts accounted for.",
+  "business_purpose": "It exists so every record of the retired plan is on the retention register from day one, none drifting loose after the sunset.",
+  "practical_context": "It opens when the retired plan's records are presented for the retention work, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the finance function logs the retired plan's records and the retention schedule into the execution file, so the cataloguing and preservation start accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-mykcvz": {
+  "plain_language_name": "Test the Records and Schedule Before Any Retention Is Applied",
+  "plain_language_description": "Before the retention schedule is applied, the arriving records and policy material are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a record held short of the regulator's prescribed period would breach the very supervision the sunset sits under.",
+  "practical_context": "It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the finance function tests the records and schedule against what the execution needs, and writes up a record series with no matched retention line as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-36v72u": {
+  "plain_language_name": "Catalogue the Retired Plan's Records Against the Schedule",
+  "plain_language_description": "With the inputs verified, the execution proper begins. The processing custodian catalogues the tested records to the retention schedule and honours the regulator-prescribed period for each, producing the executed retained-records plan in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the retired plan's records must stay findable and intact for as long as the regulator can come back to them.",
+  "practical_context": "It opens when the verified records are ready to be worked, and it closes with the retained-records plan executed in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the finance function catalogues each tested record series to the schedule and sets its preservation term, honouring the regulator's prescribed period, workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-z3ussd": {
+  "plain_language_name": "Tell the Notification Team the Records Leg Stands Executed",
+  "plain_language_description": "The retention work stands executed and must now travel. The confirmation custodian tells the downstream teams the executed retained-records plan is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the business-unit notification closes the sunset, and it should only run once the records leg is formally done.",
+  "practical_context": "It opens when the execution work is finished and the executed plan is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the finance function tells the notification team the executed retained-records plan is available, then closes the handover against what the execution promised."
+  }
+ },
+ "processes:task-sd-retire-record-b4mtk7": {
+  "plain_language_name": "File the Retention Execution Against the Plan Record",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the entity can show the supervisor that the retired plan's records were catalogued and preserved to the policy's letter.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the execution record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the finance function files the retention execution against the plan record at the agreed tier, and sets the retrieval handles the supervisor's next records review will need."
+  }
+ },
+ "processes:task-sd-retire-intake-undkpd": {
+  "plain_language_name": "Take In the Notification List and Prescribed Content",
+  "plain_language_description": "The notification opens as its material arrives: the regulator-prescribed list of affected business units with the content and cadence their notices must follow. The intake custodian logs them against the notification file so the notification starts accounted for.",
+  "business_purpose": "It exists so the notices go to exactly the units the regulator named, on the prescribed cadence, with none skipped or improvised.",
+  "practical_context": "It opens when the prescribed list and content are presented for notification, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the prescribed notification list and content into the notification file, so the notifying of the affected units starts accounted for."
+  }
+ },
+ "processes:task-sd-retire-verify-m3um43": {
+  "plain_language_name": "Test the Prescribed List Before Any Notice Is Sent",
+  "plain_language_description": "Before any notice is sent, the arriving list and content are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a notice sent to a unit the regulator did not list, or worded off-prescription, would show up badly under continuing supervision.",
+  "practical_context": "It opens once the intake is registered and the list can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the prescribed list against what the notification needs, and writes up two units on the register but off the list as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-retire-transform-uayn6f": {
+  "plain_language_name": "Send the Prescribed Notices to the Affected Business Units",
+  "plain_language_description": "With the inputs verified, the notification proper begins. The processing custodian sends each tested notice on the prescribed cadence and records the acknowledgements as they return, producing the notified business units in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the affected units must hear of the sunset from the entity, on the regulator's terms, before they hear of it anywhere else.",
+  "practical_context": "It opens when the verified list is ready to be worked, and it closes with the business units notified in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function sends each tested notice on the prescribed cadence and logs the returning acknowledgements, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-retire-confirm-89c28y": {
+  "plain_language_name": "Close the Sunset's Notification Leg with the Prescribed Acknowledgements",
+  "plain_language_description": "The notices have gone and the acknowledgements must now travel. The confirmation custodian tells the downstream teams the notified business units are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the sunset cannot be declared done until the prescribed acknowledgements are formally closed against the plan record.",
+  "practical_context": "It opens when the notification work is finished and the acknowledgements are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the sunset team the prescribed acknowledgements are in and the notification leg is closed, reconciling it against what the notification promised."
+  }
+ },
+ "processes:task-sd-retire-record-u4wxg9": {
+  "plain_language_name": "File the Notifications and Their Acknowledgements",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the entity can show the supervisor that every affected unit was told, on cadence, and every acknowledgement came back.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the notification record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the notices with their returning acknowledgements at the agreed retention tier, and sets the retrieval handles for the supervisor's continuing-supervision checks."
+  }
+ }
+}

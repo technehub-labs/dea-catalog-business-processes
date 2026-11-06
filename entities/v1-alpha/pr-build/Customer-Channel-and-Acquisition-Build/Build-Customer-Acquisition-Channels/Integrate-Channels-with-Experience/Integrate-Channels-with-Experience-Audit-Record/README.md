@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-build-reco
 
 This is a **Task** (level L4), named **Integrate Channels with Experience Audit Record**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Integrate Channels with Experience** (`processes:activity-pr-build-d3pku9`). Its canonical ID is `processes:task-pr-build-record-8mwbey`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With acceptance logged, the records custodian places the build package into retention under the acquisition-engine schedule with tamper protection - the manifest, the report, the asset inventory, the confirmation, and any remediation notes. A destruction attestation is recorded where storage limits apply.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so future teams can trace how the channels were connected and on what contractual basis.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the integration file so a later channel rebuild can consult the original contracts and receipts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Integration File for Future Audits |
+| `plain_language_description` | string | no | With acceptance logged, the records custodian places the build package into retention under the acquisition-engine … |
+| `business_purpose` | string | no | It exists so future teams can trace how the channels were connected and on what contractual basis. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

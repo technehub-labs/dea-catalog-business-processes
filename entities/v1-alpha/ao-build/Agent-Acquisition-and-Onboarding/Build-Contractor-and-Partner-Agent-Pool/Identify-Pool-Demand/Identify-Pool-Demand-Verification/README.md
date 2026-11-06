@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Identify Pool Demand Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Identify Pool Demand** (`processes:activity-ao-build-yjbucg`). Its canonical ID is `processes:task-ao-build-verify-s5v5r8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before demand is read, the verification custodian checks the design and plan against what the demand work requires of them. A plan with gaps would mislead the whole pool effort, so defects are flagged for rejection or repair at this early point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pool effort is never steered by a capacity plan that has not itself been checked.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the design and plan can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the capacity plan missing its specialist-demand lines and records the defect so the demand reading is not built on gaps.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Plan Before Reading the Demand |
+| `plain_language_description` | string | no | Before demand is read, the verification custodian checks the design and plan against what the demand work requires of … |
+| `business_purpose` | string | no | It exists so the pool effort is never steered by a capacity plan that has not itself been checked. |
+| `practical_context` | string | no | It runs once the intake is registered and the design and plan can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

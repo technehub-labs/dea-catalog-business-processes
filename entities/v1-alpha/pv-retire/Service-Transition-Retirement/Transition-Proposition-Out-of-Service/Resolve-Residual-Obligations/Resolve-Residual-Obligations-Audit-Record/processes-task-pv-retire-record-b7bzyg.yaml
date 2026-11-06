@@ -72,3 +72,18 @@ outputs:
   description: 'Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Residual Obligations Routing Evidence'
+plain_language_description: 'The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so who holds which duty for the retired offering is answerable from evidence whenever a claim surfaces.'
+business_purpose: 'It exists so the routing of promises made with a retired offering is provable when a customer or an auditor asks who now owns them.'
+practical_context: 'It opens when the confirmation is in place, and it closes with the routing evidence filed at its required tier and the retrieval handles set.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian in the proposition design authority files the routing evidence at its required retention tier and sets the retrieval handles, so a warranty claim years later is traced to its owning team from the record.'

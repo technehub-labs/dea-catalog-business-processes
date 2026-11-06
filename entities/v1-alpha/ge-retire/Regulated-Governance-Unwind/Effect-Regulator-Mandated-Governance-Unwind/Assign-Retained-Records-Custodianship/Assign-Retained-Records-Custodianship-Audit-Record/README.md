@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-rec
 
 This is a **Task** (level L4), named **Assign Retained-Records Custodianship Audit Record**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assign Retained-Records Custodianship** (`processes:activity-ge-retire-rzhc83`). Its canonical ID is `processes:task-ge-retire-record-wbjrn5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the designation is confirmed, the records custodian seals the wind-down file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the dissolved-entity schedule, protected against tampering for the full statutory horizon.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the custodianship decision itself must remain provable for as long as the records it covers are retained.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory horizon applied.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian locks the custodianship file into tamper-protected retention and records the statutory horizon on the retention record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Secure the Custodianship File for the Statutory Years |
+| `plain_language_description` | string | no | Once the designation is confirmed, the records custodian seals the wind-down file - manifest, verification report … |
+| `business_purpose` | string | no | It exists because the custodianship decision itself must remain provable for as long as the records it covers are … |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

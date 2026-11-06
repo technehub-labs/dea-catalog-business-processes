@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Mark the Plan Retired on the Filings Register'
+plain_language_description: 'With the inputs verified, the update proper begins. The processing custodian marks the tested plan retired on the register with the regulator identifier and dates, preserving the replacement plan''s status, producing the filings register update in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because the supervisor reads the register, and the register is where the retirement must stand in writing.'
+practical_context: 'It opens when the verified material is ready to be worked, and it closes with the filings register update produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function marks the tested plan retired on the register, keeps the replacement''s status visible, and files the workings for the audit trail.'

@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Classify Party Risk and acknowledged by the relationship custodian and any governing-party notify-list; confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Sign Off the Risk Rating with the Relationship Owner'
+plain_language_description: 'The confirmation custodian reconciles the rated party record with the criteria for the onboarding decision and with the verification certificate. When the two agree, the relationship custodian receives the confirmation and the applicant is notified, and the confirmation is written into the case file.'
+business_purpose: 'It exists so the rating that will govern the relationship is confirmed by the person accountable for it before activation proceeds.'
+practical_context: 'It starts once the rated record is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian checks the rating against the decision criteria, and the relationship custodian acknowledges before it is logged.'

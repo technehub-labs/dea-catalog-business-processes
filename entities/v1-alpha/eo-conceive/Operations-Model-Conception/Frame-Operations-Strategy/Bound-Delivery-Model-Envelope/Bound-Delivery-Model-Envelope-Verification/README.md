@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-v
 
 This is a **Task** (level L4), named **Bound Delivery Model Envelope Verification**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Bound Delivery Model Envelope** (`processes:activity-eo-conceive-57g5bv`). Its canonical ID is `processes:task-eo-conceive-verify-ma8bx7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the envelope is drawn, the verification custodian checks the assessed context against what bounding requires - that the context is settled enough to bound a delivery model within. Defects are flagged for rejection or repair before any bound is fixed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the envelope never encloses a context that was only partly read.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the context can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the context ambiguous on one shift dimension and flags the defect before the envelope is drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Context Before Drawing the Envelope |
+| `plain_language_description` | string | no | Before the envelope is drawn, the verification custodian checks the assessed context against what bounding requires - … |
+| `business_purpose` | string | no | It exists so the envelope never encloses a context that was only partly read. |
+| `practical_context` | string | no | It runs once the intake is registered and the context can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

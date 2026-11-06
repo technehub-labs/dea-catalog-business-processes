@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Report Assurance Findings Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Report Assurance Findings** (`processes:activity-ge-operate-q4qn2x`). Its canonical ID is `processes:task-ge-operate-transform-q6begh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the operating for the reporting: the findings arising from the measured evidence are written up and reported, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because evidence measured but unreported changes nothing - the reporting is where the measurement earns its keep.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function writes up the findings the measured evidence produced and reports them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Say What the Measured Evidence Found |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the operating for the reporting: the findings arising … |
+| `business_purpose` | string | no | It exists because evidence measured but unreported changes nothing - the reporting is where the measurement earns its … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

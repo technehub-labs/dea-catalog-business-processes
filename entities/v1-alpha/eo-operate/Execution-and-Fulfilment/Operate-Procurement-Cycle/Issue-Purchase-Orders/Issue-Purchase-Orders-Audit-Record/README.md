@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-re
 
 This is a **Task** (level L4), named **Issue Purchase Orders Audit Record**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Issue Purchase Orders** (`processes:activity-eo-operate-n5fq6h`). Its canonical ID is `processes:task-eo-operate-record-c5qv2n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the placement trail at its required retention tier and sets the retrieval handles for it. What was ordered, from whom, and on which approval, stays readable whenever a supplier's obligations are examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the placement of each order can be evidenced whenever a supplier's obligations are questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the placement trail at its retention tier and sets the retrieval handles a supplier review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Purchase Order Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the placement trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the placement of each order can be evidenced whenever a supplier's obligations are questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

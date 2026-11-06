@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Allocate Resources to Initiatives Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Allocate Resources to Initiatives** (`processes:activity-sd-build-25j2m7`). Its canonical ID is `processes:task-sd-build-confirm-gasfcx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the allocation is complete. The confirmation custodian tells the downstream teams the allocation is available, and closes the reconciliation against what the activity promised for the allocating.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so initiative owners plan delivery from a confirmed allocation rather than from pencilled figures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the allocation is ready to hand on, and it closes with the confirmation issued and the allocation's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells each initiative owner what their confirmed allocation is, reconciles the figures against what the allocating promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Initiative Owners Their Resources Are Set |
+| `plain_language_description` | string | no | The confirming opens once the allocation is complete. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so initiative owners plan delivery from a confirmed allocation rather than from pencilled figures. |
+| `practical_context` | string | no | It opens when the allocation is ready to hand on, and it closes with the confirmation issued and the allocation's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

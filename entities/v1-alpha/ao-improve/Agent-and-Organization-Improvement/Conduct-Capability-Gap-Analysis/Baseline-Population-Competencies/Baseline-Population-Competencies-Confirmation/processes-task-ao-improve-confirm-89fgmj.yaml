@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Population Competency Baseline'
+plain_language_description: 'When the baseline stands measured, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The gap identification that follows learns the baseline is settled and available to be read against.'
+business_purpose: 'It exists so gaps are identified only against a baseline confirmed as measured.'
+practical_context: 'It begins once preparation is complete and the baseline awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the measured baseline against the activity''s intended outcome and issues the confirmation the gap work needs.'

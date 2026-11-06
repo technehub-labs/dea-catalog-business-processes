@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Prioritized Capability Gaps'
+plain_language_description: 'When the ranking stands complete, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the prioritized gaps are ready to be ratified and routed.'
+business_purpose: 'It exists so priorities are committed only from a ranking confirmed against the intended result.'
+practical_context: 'It begins once preparation is complete and the prioritized gaps await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the prioritized gaps against the activity''s intended outcome and issues the confirmation the commitment step needs.'

@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Consolidate the Organization Model Frame'
+plain_language_description: 'With the boundaries verified, the processing custodian consolidates the frame itself: principles, spans, and boundaries are brought together into the framed organization model and set down in the form the activity defines, ready for structure design. Working papers are preserved for audit.'
+business_purpose: 'It exists because principles, spans, and boundaries only govern once they are consolidated into one committed frame.'
+practical_context: 'It starts once checking is complete and the verified boundaries are ready to be consolidated, and it ends with the committed organization model frame produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian brings the principles, spans, and boundaries together into the framed model and sets it down for structure design, keeping the working papers.'

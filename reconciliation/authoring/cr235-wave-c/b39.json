@@ -1,0 +1,582 @@
+{
+ "processes:task-pv-build-verify-cdpc6u": {
+  "plain_language_name": "Check the Pricing Pack Against the Policy",
+  "plain_language_description": "Before the price is fixed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the pricing proceeds.",
+  "business_purpose": "It exists because a price set on unchecked inputs breaks the financial policy on day one.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the pricing pack against the financial policy and demand model before the price is fixed."
+  }
+ },
+ "processes:task-pv-conceive-intake-23dzxf": {
+  "plain_language_name": "Open the Option Space File",
+  "plain_language_description": "The option work opens with the focus areas and market signals arriving to be assessed. The intake custodian logs them against the option space file so the assessment starts accounted for.",
+  "business_purpose": "It exists because options assessed from an unlogged pack assess the wrong space.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the focus areas and market signals into the option space file."
+  }
+ },
+ "processes:task-pv-conceive-verify-z92xew": {
+  "plain_language_name": "Check the Option Pack Before the Assessment",
+  "plain_language_description": "Before the options are assessed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the assessment proceeds.",
+  "business_purpose": "It exists because an option map drawn on unchecked inputs misleads the whole thesis.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the option pack against the focus areas before assessing."
+  }
+ },
+ "processes:task-pv-conceive-transform-6nkbq6": {
+  "plain_language_name": "Map the Options Inside the Focus Areas",
+  "plain_language_description": "With the checks done, the processing custodian assesses the option space, producing the option map in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because committing a thesis without seeing the options is guessing with a budget.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority maps the options within each focus area."
+  }
+ },
+ "processes:task-pv-conceive-confirm-xuew5p": {
+  "plain_language_name": "Confirm the Assessed Option Space",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the assessed option space is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the option space is formally accepted before the thesis consolidates around it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the assessed option space."
+  }
+ },
+ "processes:task-pv-conceive-record-3s424k": {
+  "plain_language_name": "Keep the Option Space Map on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The options considered, and set aside, stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the options considered, and set aside, stay visible when the thesis is questioned.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the option map at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-sm6c6y": {
+  "plain_language_name": "Open the Boundaries Case File",
+  "plain_language_description": "The boundary work opens with the risk appetite and investment envelopes arriving to be turned into limits. The intake custodian logs them against the boundaries file so the bounding starts accounted for.",
+  "business_purpose": "It exists because boundaries set from an unlogged input bind the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the risk appetite and investment envelopes into the boundaries file."
+  }
+ },
+ "processes:task-pv-conceive-verify-8xbrzs": {
+  "plain_language_name": "Check the Boundary Inputs Before They Are Set",
+  "plain_language_description": "Before the limits are set, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the boundaries are drawn.",
+  "business_purpose": "It exists because limits that were never checked are limits nobody will honour.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the boundary inputs against the risk appetite before the limits are set."
+  }
+ },
+ "processes:task-pv-conceive-transform-3vwa8k": {
+  "plain_language_name": "Set the Limits on Time, Money, and Risk",
+  "plain_language_description": "With the checks done, the processing custodian sets the experimentation limits, producing the boundaries in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because innovation without limits spends money and time the enterprise never agreed to risk.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority sets the investment, risk, and time limits innovation must live within."
+  }
+ },
+ "processes:task-pv-conceive-confirm-mfm9pd": {
+  "plain_language_name": "Confirm the Experimentation Boundaries",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the experimentation boundaries are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the boundaries are formally accepted before any experiment runs.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the experimentation boundaries."
+  }
+ },
+ "processes:task-pv-conceive-record-xdwskm": {
+  "plain_language_name": "Keep the Boundaries Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The agreed limits stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the agreed limits stay consultable when an experiment wants to exceed them.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the boundaries record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-ptjfp7": {
+  "plain_language_name": "Collect the Thesis Consolidation Papers",
+  "plain_language_description": "Bringing the thesis together starts with intake: the focus areas, boundaries, and option assessment arrive to be consolidated. The intake custodian logs them against the thesis file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed thesis is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the focus areas, boundaries, and option assessment into the thesis file."
+  }
+ },
+ "processes:task-pv-conceive-verify-dezdsf": {
+  "plain_language_name": "Check the Thesis Inputs Before Commitment",
+  "plain_language_description": "Before the thesis is committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit a thesis whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority clears the thesis inputs against the framing method before commitment."
+  }
+ },
+ "processes:task-pv-conceive-transform-ga7895": {
+  "plain_language_name": "Consolidate the Innovation Thesis",
+  "plain_language_description": "With the checks done, the processing custodian consolidates the framing, producing the thesis document in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the scattered pieces become one document the enterprise can actually commit.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority consolidates focus areas, boundaries, and options into the thesis document."
+  }
+ },
+ "processes:task-pv-conceive-confirm-a3r7pk": {
+  "plain_language_name": "Log the Innovation Thesis Commitment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the committed innovation thesis is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the commitment carries a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority issues the thesis commitment and notifies the portfolio framing teams."
+  }
+ },
+ "processes:task-pv-conceive-record-c42xff": {
+  "plain_language_name": "Preserve the Committed Thesis File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The committed thesis stays readable for the discipline's duration.",
+  "business_purpose": "It exists because the committed thesis's evidence must survive to answer later drift or challenge.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the committed thesis at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-cckkah": {
+  "plain_language_name": "Receive the Focus-Area Selection Pack",
+  "plain_language_description": "The selection work opens with the strategy and market intelligence arriving to be weighed. The intake custodian logs them against the selection file so the choosing starts accounted for.",
+  "business_purpose": "It exists because focus areas chosen from an unlogged pack choose the wrong ground.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the strategy and market intelligence into the selection file."
+  }
+ },
+ "processes:task-pv-conceive-verify-yqbqnp": {
+  "plain_language_name": "Check the Selection Inputs Against the Strategy",
+  "plain_language_description": "Before the areas are chosen, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the selection proceeds.",
+  "business_purpose": "It exists because innovating in the wrong places wastes the whole envelope.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority tests the selection inputs against the strategy before choosing."
+  }
+ },
+ "processes:task-pv-conceive-transform-h7ypbj": {
+  "plain_language_name": "Choose Where the Enterprise Will Innovate",
+  "plain_language_description": "With the checks done, the processing custodian selects the focus areas, producing the area set in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the enterprise can only innovate well where it has decided to innovate at all.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority chooses the focus areas where the enterprise will innovate."
+  }
+ },
+ "processes:task-pv-conceive-confirm-nfwktr": {
+  "plain_language_name": "Confirm the Chosen Focus Areas",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the focus area set is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the chosen areas are formally accepted before options are assessed in them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the chosen focus areas."
+  }
+ },
+ "processes:task-pv-conceive-record-yfytjj": {
+  "plain_language_name": "Keep the Focus-Area Set on Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The chosen and declined areas stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the areas chosen, and declined, stay visible when the thesis is retested.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the focus-area set at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-vavejy": {
+  "plain_language_name": "Open the Balance Assessment File",
+  "plain_language_description": "The balance work opens with the priority ordering and proposition theses arriving to be weighed. The intake custodian logs them against the balance file so the assessment starts accounted for.",
+  "business_purpose": "It exists because balance assessed from an incomplete file balances the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the priority ordering and proposition theses into the balance file."
+  }
+ },
+ "processes:task-pv-conceive-verify-6dtaq5": {
+  "plain_language_name": "Check the Balance Inputs Before the Assessment",
+  "plain_language_description": "Before the balance is assessed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the weighing begins.",
+  "business_purpose": "It exists because a balance verdict drawn on unchecked inputs reassures falsely.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the balance inputs against the risk, horizon, and value dimensions before assessing."
+  }
+ },
+ "processes:task-pv-conceive-transform-s5mqd8": {
+  "plain_language_name": "Weigh the Portfolio Across Risk and Horizon",
+  "plain_language_description": "With the checks done, the processing custodian assesses the balance, producing the assessment in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a portfolio heavy in one risk or one horizon fails in exactly one way.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority weighs the portfolio across risk, horizon, and value."
+  }
+ },
+ "processes:task-pv-conceive-confirm-rkpp4h": {
+  "plain_language_name": "Confirm the Balance Assessment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the balance assessment is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the balance findings are formally accepted before direction consolidates.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the balance assessment."
+  }
+ },
+ "processes:task-pv-conceive-record-vab978": {
+  "plain_language_name": "Retain the Balance Assessment File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The balance at commitment time stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the balance at commitment time can be compared against what actually happened.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the balance assessment at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-rge8bx": {
+  "plain_language_name": "Gather the Direction Consolidation Papers",
+  "plain_language_description": "Bringing the direction together starts with intake: the envelopes, orderings, and balance assessment arrive to be consolidated. The intake custodian logs them against the direction file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed direction is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the envelopes, orderings, and balance assessment into the direction file."
+  }
+ },
+ "processes:task-pv-conceive-verify-xt8a35": {
+  "plain_language_name": "Check the Direction Inputs Before Commitment",
+  "plain_language_description": "Before the direction is committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit a direction whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority clears the direction inputs before the commitment round."
+  }
+ },
+ "processes:task-pv-conceive-transform-xcrk5g": {
+  "plain_language_name": "Consolidate the Portfolio Direction",
+  "plain_language_description": "With the checks done, the processing custodian consolidates the framing, producing the direction document in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the envelopes, orderings, and balance become one document worth committing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority consolidates the envelopes, orderings, and balance into the direction document."
+  }
+ },
+ "processes:task-pv-conceive-confirm-kb5a22": {
+  "plain_language_name": "Log the Portfolio Direction Commitment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the committed portfolio direction is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the direction carries a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority issues the direction commitment and notifies the proposition teams."
+  }
+ },
+ "processes:task-pv-conceive-record-3btpz3": {
+  "plain_language_name": "Preserve the Committed Direction File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The committed direction stays readable for the discipline's duration.",
+  "business_purpose": "It exists because the committed direction's evidence must survive to answer later drift.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the committed direction at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-bzc7cu": {
+  "plain_language_name": "Open the Investment Envelope File",
+  "plain_language_description": "The envelope work opens with the competing propositions and the financial policy arriving to be bounded. The intake custodian logs them against the envelope file so the framing starts accounted for.",
+  "business_purpose": "It exists because envelopes framed from an unlogged policy cap the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the competing propositions and financial policy into the envelope file."
+  }
+ },
+ "processes:task-pv-conceive-verify-4f8dzm": {
+  "plain_language_name": "Check the Envelope Inputs Against the Policy",
+  "plain_language_description": "Before the envelopes are framed, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the caps are drawn.",
+  "business_purpose": "It exists because spending limits that ignore the financial policy are limits on paper only.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the envelope inputs against the financial policy before framing."
+  }
+ },
+ "processes:task-pv-conceive-transform-jm83vt": {
+  "plain_language_name": "Draw the Spending Limits for Each Proposition",
+  "plain_language_description": "With the checks done, the processing custodian frames the envelopes, producing the investment bounds in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because bounded investment needs a stated ceiling for every competing proposition.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority draws the investment ceiling each competing proposition may draw on."
+  }
+ },
+ "processes:task-pv-conceive-confirm-yj77d6": {
+  "plain_language_name": "Confirm the Investment Envelopes",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the investment envelope set is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the envelopes are formally accepted before priorities are ordered against them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the investment envelopes."
+  }
+ },
+ "processes:task-pv-conceive-record-hbuffy": {
+  "plain_language_name": "Keep the Envelope Set on Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The agreed caps stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the caps agreed at framing time stay visible when more money is asked for.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the envelope set at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-qyutga": {
+  "plain_language_name": "Receive the Priority Ordering Pack",
+  "plain_language_description": "The ordering work opens with the competing propositions and the investment envelopes arriving to be ranked. The intake custodian logs them against the ordering file so the ranking starts accounted for.",
+  "business_purpose": "It exists because an ordering drawn from an unlogged pack ranks the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the competing propositions and investment envelopes into the ordering file."
+  }
+ },
+ "processes:task-pv-conceive-verify-gcqcqh": {
+  "plain_language_name": "Check the Ordering Inputs Before They Are Ranked",
+  "plain_language_description": "Before the propositions are ranked, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the ordering proceeds.",
+  "business_purpose": "It exists because priorities set on unchecked inputs invert the investment that follows.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the ordering inputs against the envelopes before ranking."
+  }
+ },
+ "processes:task-pv-conceive-transform-95tqpr": {
+  "plain_language_name": "Rank the Competing Propositions",
+  "plain_language_description": "With the checks done, the processing custodian orders the propositions, producing the priority sequence in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the enterprise cannot fund everything, and the sequence decides what it does fund.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority ranks the competing propositions into the priority sequence."
+  }
+ },
+ "processes:task-pv-conceive-confirm-qct4hy": {
+  "plain_language_name": "Confirm the Priority Ordering",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the priority ordering is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the ordering is formally accepted before the money moves.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the priority ordering."
+  }
+ },
+ "processes:task-pv-conceive-record-ytsgr9": {
+  "plain_language_name": "Retain the Priority Ordering File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The ranking at framing time stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the ranking at framing time stays visible when priorities are later challenged.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the priority ordering at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-wn5yv6": {
+  "plain_language_name": "Open the Value Claim File",
+  "plain_language_description": "The claim work opens with the bounded scope and target parties arriving to be written for. The intake custodian logs them against the claim file so the articulation starts accounted for.",
+  "business_purpose": "It exists because a claim written from an unlogged pack promises the wrong things.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the bounded scope and target parties into the claim file."
+  }
+ },
+ "processes:task-pv-conceive-verify-enjhsc": {
+  "plain_language_name": "Check the Claim Inputs Before They Are Written",
+  "plain_language_description": "Before the claim is written, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the articulation proceeds.",
+  "business_purpose": "It exists because a promise made on unchecked inputs is a promise that will be broken.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the claim inputs against the bounded scope before writing."
+  }
+ },
+ "processes:task-pv-conceive-transform-vv5v5d": {
+  "plain_language_name": "Write Down the Promise to the Customer",
+  "plain_language_description": "With the checks done, the processing custodian articulates the value claim, producing the claim in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the value claim is the one sentence every downstream decision will be tested against.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority writes down the value the proposition promises its target parties."
+  }
+ },
+ "processes:task-pv-conceive-confirm-esska4": {
+  "plain_language_name": "Confirm the Articulated Value Claim",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the articulated value claim is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the claim is formally accepted before the thesis consolidates.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the articulated value claim."
+  }
+ },
+ "processes:task-pv-conceive-record-4bc6hc": {
+  "plain_language_name": "Keep the Value Claim on Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The promise as made stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the promise as made stays provable when its delivery is disputed.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the value claim at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-px7f9p": {
+  "plain_language_name": "Open the Proposition Scoping File",
+  "plain_language_description": "The scoping work opens with the framing context and its materials arriving to be bounded. The intake custodian logs them against the scoping file so the bounding starts accounted for.",
+  "business_purpose": "It exists because a scope bounded from an unlogged pack bounds the wrong proposition.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the trigger context and framing materials into the scoping file."
+  }
+ },
+ "processes:task-pv-conceive-verify-an4ja9": {
+  "plain_language_name": "Check the Scoping Inputs Before the Boundary Is Drawn",
+  "plain_language_description": "Before the boundary is drawn, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the scoping proceeds.",
+  "business_purpose": "It exists because a boundary drawn on unchecked inputs leaks work into the proposition that was never priced.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the scoping inputs before the boundary is drawn."
+  }
+ },
+ "processes:task-pv-conceive-transform-qufr9v": {
+  "plain_language_name": "Draw the Proposition's Boundary",
+  "plain_language_description": "With the checks done, the processing custodian bounds the scope, producing the bounded scope in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a proposition that tries to be everything is nothing sellable.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority bounds what the proposition covers and rules the rest out."
+  }
+ },
+ "processes:task-pv-conceive-confirm-yynjnp": {
+  "plain_language_name": "Confirm the Bounded Proposition Scope",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the bounded proposition scope is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the bounded scope is formally accepted before parties and claims build on it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the bounded proposition scope."
+  }
+ },
+ "processes:task-pv-conceive-record-syqejd": {
+  "plain_language_name": "Keep the Scoping Decision on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. What was ruled in and out stays readable for the discipline's duration.",
+  "business_purpose": "It exists so what was ruled in and out stays visible when scope disputes arise.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the scoping decision at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-intake-2y9kzg": {
+  "plain_language_name": "Collect the Proposition Consolidation Papers",
+  "plain_language_description": "Bringing the thesis together starts with intake: the scope, target parties, and value claim arrive to be consolidated. The intake custodian logs them against the thesis file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed thesis is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the scope, parties, and claim into the proposition thesis file."
+  }
+ },
+ "processes:task-pv-conceive-verify-htab2d": {
+  "plain_language_name": "Check the Proposition Inputs Before Commitment",
+  "plain_language_description": "Before the thesis is committed, the verification custodian tests the arriving material against what the activity requires. Deviations are written down, either for rejection or for putting right, before the commitment round.",
+  "business_purpose": "It exists so the approvers commit a thesis whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority clears the thesis inputs before the commitment round."
+  }
+ },
+ "processes:task-pv-conceive-transform-vfby9t": {
+  "plain_language_name": "Consolidate the Proposition Thesis",
+  "plain_language_description": "With the checks done, the processing custodian consolidates the framing, producing the thesis document in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so scope, parties, and claim become one document worth committing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority consolidates scope, parties, and claim into the thesis document."
+  }
+ },
+ "processes:task-pv-conceive-confirm-jtxq4z": {
+  "plain_language_name": "Log the Proposition Thesis Commitment",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the committed proposition thesis is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the commitment carries a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority issues the thesis commitment and notifies the design teams."
+  }
+ },
+ "processes:task-pv-conceive-record-u8nt2y": {
+  "plain_language_name": "Preserve the Committed Proposition File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The committed thesis stays readable for the discipline's duration.",
+  "business_purpose": "It exists because the committed thesis's evidence must survive for the design that follows.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the committed proposition thesis at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-record-ze4j6d": {
+  "plain_language_name": "Keep the Target-Party Register on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The register of who the proposition serves stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the parties the proposition was framed for stay authoritative as designs change.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the target-party register at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-conceive-confirm-jsjt2a": {
+  "plain_language_name": "Confirm the Identified Target Parties",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the identified target parties are available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the target parties are formally accepted before the value claim is written for them.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the identified target parties and notifies the claim work."
+  }
+ }
+}

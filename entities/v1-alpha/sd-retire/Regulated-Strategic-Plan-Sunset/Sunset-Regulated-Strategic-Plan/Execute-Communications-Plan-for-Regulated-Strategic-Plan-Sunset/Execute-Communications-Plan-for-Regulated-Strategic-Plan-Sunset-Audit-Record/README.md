@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-rec
 
 This is a **Task** (level L4), named **Execute Communications Plan for Regulated Strategic Plan Sunset Audit Record**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Execute Communications Plan for Regulated Strategic Plan Sunset** (`processes:activity-sd-retire-r5tcp2`). Its canonical ID is `processes:task-sd-retire-record-ebsxst`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the entity can show the supervisor that every prescribed message went out, on time, to the right audience.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the execution record preserved at its required tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the communications execution with its dispatch receipts at the agreed retention tier, and sets the retrieval handles for the supervisor's evidence requests.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Communications Execution with Its Dispatch Evidence |
+| `plain_language_description` | string | no | After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention … |
+| `business_purpose` | string | no | It exists so the entity can show the supervisor that every prescribed message went out, on time, to the right audience. |
+| `practical_context` | string | no | It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the execution … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

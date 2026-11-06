@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 This is a **Task** (level L4), named **Provision Agent Capacity Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Provision Agent Capacity** (`processes:activity-ao-build-7xrz4d`). Its canonical ID is `processes:task-ao-build-record-u3n4bv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+To close, the records custodian preserves the provisioning trail - design in, checks run, capacity out, confirmation given - at the retention tier the evidence rules set, with retrieval handles ready for the day the capacity decisions are questioned.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the provisioning of agent capacity stays evidenced and retrievable long after the work is done.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the provisioning trail at its retention tier and sets the retrieval handles a future capacity review would rely on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Provisioning Audit Record |
+| `plain_language_description` | string | no | To close, the records custodian preserves the provisioning trail - design in, checks run, capacity out, confirmation … |
+| `business_purpose` | string | no | It exists so the provisioning of agent capacity stays evidenced and retrievable long after the work is done. |
+| `practical_context` | string | no | It starts when the confirmation has gone out and retention may begin under the activity's evidence requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

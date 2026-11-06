@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Set How Money Is Measured and Recognized'
+plain_language_description: 'With the inputs verified, the processing custodian does the framing itself: the currency posture, the measurement conventions, and the basis on which value is recognized are bounded and set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because every figure the enterprise will ever publish depends on how its money is measured - the model is where that is decided once, deliberately.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be bounded from, and it ends with the bounded model produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function bounds the currency posture, conventions, and recognition basis the enterprise will run under, keeping the working papers.'

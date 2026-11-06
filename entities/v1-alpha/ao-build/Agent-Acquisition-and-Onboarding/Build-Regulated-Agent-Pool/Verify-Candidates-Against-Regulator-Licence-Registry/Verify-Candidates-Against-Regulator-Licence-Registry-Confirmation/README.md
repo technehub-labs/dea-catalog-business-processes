@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-conf
 
 This is a **Task** (level L4), named **Verify Candidates Against Regulator Licence Registry Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Verify Candidates Against Regulator Licence Registry** (`processes:activity-ao-build-q7m3k9`). Its canonical ID is `processes:task-ao-build-confirm-sua2mx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the registry checks are done, the confirmation custodian reconciles the verified list against the outcome the activity set out to reach and issues the confirmation. The fitness attestation step that follows learns the candidates it will attest have verified licences behind them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pool builds on licence positions that have been confirmed, not merely looked up.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the verified list awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the verified candidate list against the activity's intended outcome and issues the confirmation the attestation step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Verified Candidate List |
+| `plain_language_description` | string | no | When the registry checks are done, the confirmation custodian reconciles the verified list against the outcome the … |
+| `business_purpose` | string | no | It exists so the pool builds on licence positions that have been confirmed, not merely looked up. |
+| `practical_context` | string | no | It begins once preparation is complete and the verified list awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

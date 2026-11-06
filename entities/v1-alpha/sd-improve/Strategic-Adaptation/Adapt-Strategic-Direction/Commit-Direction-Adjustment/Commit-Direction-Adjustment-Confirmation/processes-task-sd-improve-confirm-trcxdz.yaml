@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Hand the Committed Direction to Refresh and Review Teams'
+plain_language_description: 'The direction is settled and the handoff must be sealed. The confirmation custodian tells the downstream teams the committed direction adjustment is available, and closes the reconciliation against what the activity promised.'
+business_purpose: 'It exists because the objectives refresh and the effectiveness review cannot start until someone has formally told them the new direction is in force.'
+practical_context: 'It opens when the commitment work is finished and the new direction is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity''s promise closed out.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function tells the objectives refresh and effectiveness review teams the committed direction is available, then closes the handover by reconciling it against what the commitment promised.'

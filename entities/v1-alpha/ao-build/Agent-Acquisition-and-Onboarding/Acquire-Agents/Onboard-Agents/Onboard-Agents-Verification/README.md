@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Onboard Agents Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Onboard Agents** (`processes:activity-ao-build-gceqs6`). Its canonical ID is `processes:task-ao-build-verify-6vzk4d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian examines each acquired agent against what its intended role and competencies demand before any onboarding work is invested. An agent that misses the requirement is logged as a shortfall for rejection or repair, so effort is not spent on the wrong material.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so onboarding effort is spent only on agents that genuinely fit the roles awaiting them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes with the agents verified or their gaps recorded for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian checks each acquired agent against its intended role's competencies and logs one shortfall where an agent lacks a required skill.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Acquired Agents Before Onboarding |
+| `plain_language_description` | string | no | The verification custodian examines each acquired agent against what its intended role and competencies demand before … |
+| `business_purpose` | string | no | It exists so onboarding effort is spent only on agents that genuinely fit the roles awaiting them. |
+| `practical_context` | string | no | It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

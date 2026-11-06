@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Classify Placement Candidates Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Classify Placement Candidates** (`processes:activity-ao-design-vtuma6`). Its canonical ID is `processes:task-ao-design-transform-w96a2p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the frame verified, the processing custodian makes the classification itself: each role and work item is typed as a candidate for human, artificial, or hybrid placement, and the classified list is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because placement can only be decided well when the candidates have first been typed honestly.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified frame is ready to be classified from, and it ends with the classified placement candidates produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority types every role and work item in the frame as a human, artificial, or hybrid candidate.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Type Each Role and Work Item as a Placement Candidate |
+| `plain_language_description` | string | no | With the frame verified, the processing custodian makes the classification itself: each role and work item is typed as … |
+| `business_purpose` | string | no | It exists because placement can only be decided well when the candidates have first been typed honestly. |
+| `practical_context` | string | no | It starts once checking is complete and the verified frame is ready to be classified from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

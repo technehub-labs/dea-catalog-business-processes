@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-ver
 
 This is a **Task** (level L4), named **Commit Objectives and Targets Verification**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Objectives and Targets** (`processes:activity-sd-design-ec5thr`). Its canonical ID is `processes:task-sd-design-verify-p5vapp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the objectives and targets are committed for plan build, the arriving design material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because plan build over an unmeasured or unowned objective inherits a target nobody can steer by.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the design material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the logged design material against what the activity requires, and writes up a target whose measure lacks a bound as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Drafted Objectives and Owners Before Committing Them |
+| `plain_language_description` | string | no | Before the objectives and targets are committed for plan build, the arriving design material is put to the test. The … |
+| `business_purpose` | string | no | It exists because plan build over an unmeasured or unowned objective inherits a target nobody can steer by. |
+| `practical_context` | string | no | It opens once the intake is registered and the design material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

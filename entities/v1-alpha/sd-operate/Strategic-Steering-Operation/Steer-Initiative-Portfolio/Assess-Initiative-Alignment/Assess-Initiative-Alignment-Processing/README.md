@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Assess Initiative Alignment Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Assess Initiative Alignment** (`processes:activity-sd-operate-cjjgw3`). Its canonical ID is `processes:task-sd-operate-transform-9dngvw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the assessment proper begins. The processing custodian weighs every in-flight initiative against the tested performance and the strategy's intent, producing the initiative alignment assessment in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the portfolio cannot be steered until someone can say which initiatives still pull with the strategy and which have fallen out of step.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the initiative alignment assessment produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function weighs each in-flight initiative against the tested performance and the strategy's intent, writing the alignment verdict per initiative with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Weigh Each In-Flight Initiative Against the Strategy's Pull |
+| `plain_language_description` | string | no | With the inputs verified, the assessment proper begins. The processing custodian weighs every in-flight initiative … |
+| `business_purpose` | string | no | It exists because the portfolio cannot be steered until someone can say which initiatives still pull with the strategy … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the initiative alignment assessment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

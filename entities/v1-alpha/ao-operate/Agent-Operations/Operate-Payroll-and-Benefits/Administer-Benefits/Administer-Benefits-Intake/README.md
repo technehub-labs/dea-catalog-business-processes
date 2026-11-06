@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Administer Benefits Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Administer Benefits** (`processes:activity-ao-operate-8sc5gr`). Its canonical ID is `processes:task-ao-operate-intake-a2jecs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Benefits administration opens when the entitlements of the agents in service are handed over as the basis each cycle's benefits must be administered from. The intake custodian accepts them, registers them with audit identifiers, and starts the administration from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so benefits are administered from registered entitlements rather than from memory or informal notes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the entitlements are presented for administration, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the agents' benefits entitlements as the administration baseline, with audit references, and opens the cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Benefits Entitlements of the Agents in Service |
+| `plain_language_description` | string | no | Benefits administration opens when the entitlements of the agents in service are handed over as the basis each cycle's … |
+| `business_purpose` | string | no | It exists so benefits are administered from registered entitlements rather than from memory or informal notes. |
+| `practical_context` | string | no | It opens when the entitlements are presented for administration, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

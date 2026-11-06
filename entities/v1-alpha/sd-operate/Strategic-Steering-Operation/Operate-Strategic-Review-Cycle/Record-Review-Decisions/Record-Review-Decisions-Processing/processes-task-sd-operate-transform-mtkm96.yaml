@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Write the Review Decisions to the Register'
+plain_language_description: 'With the inputs verified, the recording proper begins. The processing custodian writes each tested decision to the register with its owner and deadline, producing the recorded review decisions in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because an unrecorded decision steers nothing; the register is what turns the room''s conclusions into instructions.'
+practical_context: 'It opens when the verified outcomes are ready to be worked, and it closes with the recorded review decisions produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function writes each tested decision to the register with its owner and deadline, keeping the drafting workings for the audit trail.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Record Inspection Results Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Record Inspection Results** (`processes:activity-eo-operate-uyzanp`). Its canonical ID is `processes:task-eo-operate-intake-s8eyu5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Recording opens when the completed inspections are handed over as the raw material each batch's quality story will be written from. The intake custodian accepts them, registers them with audit identifiers, and starts the recording from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the record is written from the bench's actual results rather than from recollection.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completed inspections are presented for recording, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the completed inspections as the recording baseline, with audit references, and opens the writing work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Completed Inspections for the Record |
+| `plain_language_description` | string | no | Recording opens when the completed inspections are handed over as the raw material each batch's quality story will be … |
+| `business_purpose` | string | no | It exists so the record is written from the bench's actual results rather than from recollection. |
+| `practical_context` | string | no | It opens when the completed inspections are presented for recording, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

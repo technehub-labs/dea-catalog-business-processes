@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-conceive-transform-76hqdw": {
+    "plain_language_name": "Choose the Channel Patterns That Reach the Customer",
+    "plain_language_description": "With the inputs verified, the processing custodian does the selection itself: the channel patterns through which the delivery model will reach customers are chosen from the strategy and journeys, and the selected pattern set is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a delivery model without chosen channels is a direction with no door - the selection is where customers actually come in.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be selected from, and it ends with the selected channel pattern set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function chooses the channel patterns the model will reach customers through, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-25d55c": {
+    "plain_language_name": "Check the Inputs Before Choosing the Channels",
+    "plain_language_description": "Before any pattern is chosen, the verification custodian checks the strategy envelope and journey designs against what selection requires - that the strategy bounds are stated and the journeys cover the customers in scope. Defects are flagged for rejection or repair before the selection is made.",
+    "business_purpose": "It exists so channels are never chosen from a strategy whose bounds were never stated.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the journey designs missing a whole customer segment and flags the defect before channels are chosen."
+    }
+  },
+  "processes:task-eo-conceive-record-ja4au5": {
+    "plain_language_name": "File the Strategy Context Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the assessment trail at its required retention tier and sets the retrieval handles for it. What the assessment concluded about the need, and from which signals, stays readable whenever the strategy's premise is examined.",
+    "business_purpose": "It exists so the premise behind the strategy can be evidenced against the signals it was read from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the assessment trail at its retention tier and sets the retrieval handles a strategy review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-akraac": {
+    "plain_language_name": "Confirm the Assessed Strategy Context",
+    "plain_language_description": "When the context stands assessed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The envelope work that follows learns the context is settled and the strategy can be bounded within it.",
+    "business_purpose": "It exists so the strategy is bounded only within a context confirmed as assessed.",
+    "practical_context": "It begins once preparation is complete and the assessed context awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the assessed context against the activity's intended outcome and issues the confirmation the envelope work needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-3cfzvx": {
+    "plain_language_name": "Receive the Engine State and Shift Signals",
+    "plain_language_description": "The strategy framing opens when the execution engine state and the shift signals around it are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the context assessment from a recorded base.",
+    "business_purpose": "It exists so the strategy answers a registered reading of why it is needed, not a hunch.",
+    "practical_context": "It opens when the engine state and signals are presented for the assessment, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the engine state and shift signals as the assessment baseline, with audit references."
+    }
+  },
+  "processes:task-eo-conceive-transform-yfkzhj": {
+    "plain_language_name": "Read Why This Strategy Is Needed Now",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the assessment itself: whether the need is a new engine, a reframe, or a delivery-model shift is read out of the state and signals, and the assessed strategy context is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a strategy that never asks why it exists solves the wrong problem confidently.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the assessed strategy context produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function reads whether the need is a new engine, a reframe, or a delivery-model shift, and records the context."
+    }
+  },
+  "processes:task-eo-conceive-verify-ta7s7v": {
+    "plain_language_name": "Check the Signals Before Reading the Context",
+    "plain_language_description": "Before the context is read, the verification custodian checks the state and signals against what assessment requires - that the signals are current and the engine state is complete. Defects are flagged for rejection or repair before the assessment is made.",
+    "business_purpose": "It exists so the strategy is never framed from stale signals about a moving engine.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a shift signal already superseded and flags the defect before the context is read."
+    }
+  },
+  "processes:task-eo-conceive-record-nwtjzq": {
+    "plain_language_name": "File the Delivery Model Envelope Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the bounding trail at its required retention tier and sets the retrieval handles for it. What the envelope mandated, and within which context, stays readable whenever the model's bounds are examined.",
+    "business_purpose": "It exists so the envelope the strategy mandates can be evidenced whenever the model's bounds are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the envelope trail at its retention tier and sets the retrieval handles a strategy review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-4dwdnh": {
+    "plain_language_name": "Confirm the Bounded Delivery Model Envelope",
+    "plain_language_description": "When the envelope stands bounded, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The direction framing that follows learns the envelope is fixed and the postures can be set within it.",
+    "business_purpose": "It exists so directions are framed only within an envelope confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded envelope awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded envelope against the activity's intended outcome and issues the confirmation the direction framing needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-hn6rvy": {
+    "plain_language_name": "Receive the Assessed Context for Envelope Bounding",
+    "plain_language_description": "Envelope bounding opens when the assessed strategy context is handed over as the ground the delivery model envelope must be drawn within. The intake custodian accepts it, registers it with audit identifiers, and starts the bounding from a recorded baseline.",
+    "business_purpose": "It exists so the envelope is drawn from a registered context rather than from ambition.",
+    "practical_context": "It opens when the assessed context is presented for the bounding, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the assessed context as the bounding baseline, with audit references, and opens the envelope work."
+    }
+  },
+  "processes:task-eo-conceive-transform-y46g67": {
+    "plain_language_name": "Draw the Delivery Model Envelope the Strategy Mandates",
+    "plain_language_description": "With the context verified, the processing custodian does the bounding itself: the delivery model envelope the strategy will mandate for conception and design is worked out and set down in the form the activity defines. Working papers behind the bounds are preserved.",
+    "business_purpose": "It exists because a strategy without an envelope delegates every decision downstream - the envelope is what the strategy actually mandates.",
+    "practical_context": "It starts once checking is complete and the verified context is ready to be bounded from, and it ends with the bounded envelope produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function draws the delivery model envelope the strategy mandates, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-ma8bx7": {
+    "plain_language_name": "Check the Context Before Drawing the Envelope",
+    "plain_language_description": "Before the envelope is drawn, the verification custodian checks the assessed context against what bounding requires - that the context is settled enough to bound a delivery model within. Defects are flagged for rejection or repair before any bound is fixed.",
+    "business_purpose": "It exists so the envelope never encloses a context that was only partly read.",
+    "practical_context": "It runs once the intake is registered and the context can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the context ambiguous on one shift dimension and flags the defect before the envelope is drawn."
+    }
+  },
+  "processes:task-eo-conceive-record-sr9hmj": {
+    "plain_language_name": "File the Operations Strategy Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed strategy contains, and from which framings it was consolidated, stays on file for the life of the strategy.",
+    "business_purpose": "It exists so the strategy's standing as committed direction can be evidenced whenever conception leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a conception review would draw on."
+    }
+  },
+  "processes:task-eo-conceive-confirm-h6b77s": {
+    "plain_language_name": "Confirm the Committed Operations Strategy",
+    "plain_language_description": "When the strategy stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The conception work downstream learns the committed strategy is ready to be received.",
+    "business_purpose": "It exists so conception starts only from a strategy confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed strategy awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed strategy against the activity's intended outcome and issues the confirmation the conception work waits on."
+    }
+  },
+  "processes:task-eo-conceive-intake-tnkrhd": {
+    "plain_language_name": "Receive the Framed Pieces for the Strategy Commit",
+    "plain_language_description": "The commit opens when the assessed context, bounded envelope, and framed directions are handed over together as the pieces the strategy must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the strategy is committed from registered pieces rather than from a loose sheaf of framings.",
+    "practical_context": "It opens when the framed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the context, envelope, and directions as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-eo-conceive-transform-wq6t59": {
+    "plain_language_name": "Consolidate the Framings into the Committed Strategy",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: context, envelope, and directions are brought together into the committed operations strategy, and the committed strategy is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because framings scattered across documents command nobody - the commit is where the strategy becomes one authority ready for conception.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed strategy produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function consolidates the framings into the committed operations strategy, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-u3xzfu": {
+    "plain_language_name": "Check the Pieces Before Committing the Strategy",
+    "plain_language_description": "Before the strategy is committed, the verification custodian checks the pieces against what commitment requires - that context, envelope, and directions are all settled and none arrived half-framed. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the strategy is never committed from pieces that were only partly framed.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a framing still carrying open questions and logs the defect before the strategy is committed."
+    }
+  },
+  "processes:task-eo-conceive-record-y4ksne": {
+    "plain_language_name": "File the Enablement and Asset Direction Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. What postures the strategy committed to, and within which envelope, stays readable whenever the directions are examined.",
+    "business_purpose": "It exists so the directions behind the committed strategy can be evidenced whenever they are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the directions trail at its retention tier and sets the retrieval handles a strategy review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-eq2d4f": {
+    "plain_language_name": "Confirm the Enablement and Asset Directions",
+    "plain_language_description": "When the directions stand framed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns both directions are settled and the strategy can be committed.",
+    "business_purpose": "It exists so the strategy is committed only once both directions are confirmed as framed.",
+    "practical_context": "It begins once preparation is complete and the framed directions await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the framed directions against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-qhsvk5": {
+    "plain_language_name": "Receive the Bounded Envelope for Direction Framing",
+    "plain_language_description": "Direction framing opens when the bounded delivery model envelope is handed over as the frame the technology and asset postures must be set within. The intake custodian accepts it, registers it with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so postures are framed within a registered envelope rather than against each other.",
+    "practical_context": "It opens when the bounded envelope is presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded envelope as the direction baseline, with audit references, and opens the framing work."
+    }
+  },
+  "processes:task-eo-conceive-transform-r22rgx": {
+    "plain_language_name": "Set the Technology and Asset Postures the Strategy Commits To",
+    "plain_language_description": "With the envelope verified, the processing custodian frames the directions themselves: the technology enablement approach and the physical asset approach the strategy commits to are worked out as directions and set down in the form the activity defines. Working papers behind the directions are preserved.",
+    "business_purpose": "It exists because an envelope says what the model must do - the directions say what technology and assets will do it with.",
+    "practical_context": "It starts once checking is complete and the verified envelope is ready to be framed from, and it ends with the two directions produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function sets the technology and asset postures the strategy commits to within the envelope, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-x4ux55": {
+    "plain_language_name": "Check the Envelope Before Framing the Directions",
+    "plain_language_description": "Before any direction is framed, the verification custodian checks the envelope against what framing requires - that its bounds are complete enough to set both postures within. Defects are flagged for rejection or repair before any direction is framed.",
+    "business_purpose": "It exists so technology and asset postures are never set inside an envelope that was only partly drawn.",
+    "practical_context": "It runs once the intake is registered and the envelope can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the envelope's bounds unstated for one dimension and flags the defect before directions are framed."
+    }
+  },
+  "processes:task-eo-conceive-record-rbcgnh": {
+    "plain_language_name": "File the Footprint Options Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the assessment trail at its required retention tier and sets the retrieval handles for it. Which options were weighed, and on what recommendation, stays readable whenever the footprint choice is examined.",
+    "business_purpose": "It exists so the weighing behind the footprint choice can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the assessment trail at its retention tier and sets the retrieval handles a footprint review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-dcef66": {
+    "plain_language_name": "Confirm the Assessed Footprint Options",
+    "plain_language_description": "When the options stand assessed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The lifecycle framing that follows learns the option set is settled and the envelopes can be drawn to fit it.",
+    "business_purpose": "It exists so lifecycle envelopes are drawn only over options confirmed as assessed.",
+    "practical_context": "It begins once preparation is complete and the assessed options await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the assessed options against the activity's intended outcome and issues the confirmation the lifecycle framing needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-a4w2na": {
+    "plain_language_name": "Receive the Footprint Principles and Market Geography",
+    "plain_language_description": "Option assessment opens when the footprint principles and the market geography are handed over together as the ground the candidate footprints will be weighed on. The intake custodian accepts both, registers them with audit identifiers, and starts the assessment from a recorded baseline.",
+    "business_purpose": "It exists so options are weighed against registered principles over registered geography rather than against preference.",
+    "practical_context": "It opens when the principles and geography are presented for the assessment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the footprint principles and market geography as the assessment baseline, with audit references, and opens the weighing work."
+    }
+  },
+  "processes:task-eo-conceive-transform-8d6vrc": {
+    "plain_language_name": "Weigh the Candidate Footprints Against the Principles",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the assessment itself: the candidate footprint options are weighed against the framed principles over the market geography, and the assessed option set with its recommendation is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a footprint chosen without weighing the options is a commitment made blind.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be weighed on, and it ends with the assessed option set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function weighs each candidate footprint against the principles and records the assessed set with its recommendation."
+    }
+  },
+  "processes:task-eo-conceive-verify-vkyzva": {
+    "plain_language_name": "Check the Inputs Before Weighing the Options",
+    "plain_language_description": "Before any option is weighed, the verification custodian checks the principles and geography against what assessment requires - that the principles are the framed set and the geography is current. Defects are flagged for rejection or repair before the weighing is made.",
+    "business_purpose": "It exists so options are never weighed against superseded principles or stale geography.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the geography a cycle out of date and flags the defect before any options are weighed."
+    }
+  },
+  "processes:task-eo-conceive-record-ej437k": {
+    "plain_language_name": "File the Asset Lifecycle Envelope Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the bounding trail at its required retention tier and sets the retrieval handles for it. What postures were set for each stage of asset life stays readable whenever an asset decision is examined.",
+    "business_purpose": "It exists so the lifecycle envelopes behind asset decisions can be evidenced whenever a decision is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the envelope trail at its retention tier and sets the retrieval handles an asset review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-8nv7dq": {
+    "plain_language_name": "Confirm the Asset Lifecycle Envelopes",
+    "plain_language_description": "When the envelopes stand bounded, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the envelopes are fixed and the approach can be assembled.",
+    "business_purpose": "It exists so the approach is consolidated only over envelopes confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded envelopes await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded envelopes against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-g2edc9": {
+    "plain_language_name": "Receive the Footprint Principles for Envelope Bounding",
+    "plain_language_description": "Envelope bounding opens when the footprint principles are handed over as the frame the asset lifecycle postures must be drawn within. The intake custodian accepts them, registers them with audit identifiers, and starts the bounding from a recorded baseline.",
+    "business_purpose": "It exists so lifecycle postures are drawn within a registered set of principles rather than ad hoc.",
+    "practical_context": "It opens when the footprint principles are presented for the bounding, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the footprint principles as the bounding baseline, with audit references, and opens the envelope work."
+    }
+  },
+  "processes:task-eo-conceive-transform-cd9bcv": {
+    "plain_language_name": "Set How Assets Will Be Bought, Refreshed, and Retired",
+    "plain_language_description": "With the principles verified, the processing custodian does the bounding itself: the acquisition, renewal, and retirement postures within which asset decisions will be made are worked out and set down in the form the activity defines. Working papers behind the envelopes are preserved.",
+    "business_purpose": "It exists because assets drift without lifecycle postures - bought on impulse, renewed out of habit, retired too late or never.",
+    "practical_context": "It starts once checking is complete and the verified principles are ready to be bounded from, and it ends with the lifecycle envelopes produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian draws how assets will be acquired, renewed, and retired within the footprint principles, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-ez3fr4": {
+    "plain_language_name": "Check the Principles Before Bounding the Envelopes",
+    "plain_language_description": "Before any envelope is drawn, the verification custodian checks the principles against what bounding requires - that they cover acquisition, renewal, and retirement questions. Defects are flagged for rejection or repair before any envelope is drawn.",
+    "business_purpose": "It exists so lifecycle postures are never set inside principles that answer only part of the life.",
+    "practical_context": "It runs once the intake is registered and the principles can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the principles silent on retirement and logs the defect before any envelope is drawn."
+    }
+  },
+  "processes:task-eo-conceive-record-kpvvqq": {
+    "plain_language_name": "File the Physical Asset Approach Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed approach contains, and from which framings it was consolidated, stays on file for the life of the approach.",
+    "business_purpose": "It exists so the approach's standing as committed guidance can be evidenced whenever blueprint design leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a blueprint design review would draw on."
+    }
+  },
+  "processes:task-eo-conceive-confirm-ah4te7": {
+    "plain_language_name": "Confirm the Committed Physical Asset Approach",
+    "plain_language_description": "When the approach stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The blueprint design work downstream learns the committed approach is ready to be received.",
+    "business_purpose": "It exists so blueprint design starts only from an approach confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed approach awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed approach against the activity's intended outcome and issues the confirmation the blueprint design waits on."
+    }
+  },
+  "processes:task-eo-conceive-intake-spxx9h": {
+    "plain_language_name": "Receive the Framed Pieces for the Approach Commit",
+    "plain_language_description": "The commit opens when the footprint principles, lifecycle envelopes, and assessed options are handed over together as the pieces the approach must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the approach is committed from registered pieces rather than from a loose sheaf of framings.",
+    "practical_context": "It opens when the framed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the principles, envelopes, and assessed options as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-eo-conceive-transform-8rkx3w": {
+    "plain_language_name": "Consolidate the Physical Asset Approach for Blueprint Design",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: principles, envelopes, and the option assessment are brought together into the committed physical asset approach, and the committed approach is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because framings scattered across documents decide nothing - the commit is where the approach becomes one authority ready for blueprint design.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed approach produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function consolidates the framings into the committed physical asset approach, ready for blueprint design, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-bvja94": {
+    "plain_language_name": "Check the Pieces Before Committing the Approach",
+    "plain_language_description": "Before the approach is committed, the verification custodian checks the pieces against what commitment requires - that principles, envelopes, and assessment are all settled and none arrived half-framed. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the approach is never committed from pieces that were only partly framed.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the option assessment still carrying an unresolved alternative and logs the defect before the approach is committed."
+    }
+  },
+  "processes:task-eo-conceive-record-jt3c9x": {
+    "plain_language_name": "File the Footprint Principles Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. Which principles were framed, and from what strategy and envelope reading, stays readable whenever a footprint choice is examined.",
+    "business_purpose": "It exists so the principles behind footprint choices can be evidenced whenever a choice is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the principles trail at its retention tier and sets the retrieval handles a footprint review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-hnnhmj": {
+    "plain_language_name": "Confirm the Footprint Principle Set",
+    "plain_language_description": "When the principles stand framed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The option assessment that follows learns the principles are settled and the options can be weighed against them.",
+    "business_purpose": "It exists so options are weighed only against principles confirmed as framed.",
+    "practical_context": "It begins once preparation is complete and the framed principles await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the framed principles against the activity's intended outcome and issues the confirmation the option assessment needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-nhgkbf": {
+    "plain_language_name": "Receive the Strategy and Envelope for Principle Framing",
+    "plain_language_description": "Principle framing opens when the operations strategy and the delivery model envelope are handed over together as the ground the footprint principles will be drawn from. The intake custodian accepts both, registers them with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so footprint choices are governed by principles drawn from a registered strategy and envelope.",
+    "practical_context": "It opens when the strategy and envelope are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the strategy and envelope as the framing baseline, with audit references, and opens the principles work."
+    }
+  },
+  "processes:task-eo-conceive-transform-eh6k4u": {
+    "plain_language_name": "State What Governs Facility and Footprint Choices",
+    "plain_language_description": "With the inputs verified, the processing custodian does the framing itself: the principles governing facility and asset footprint decisions are drawn from the strategy and envelope, and the principle set is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because footprint decisions made without principles are made twice - once in haste and once in correction.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be framed from, and it ends with the footprint principle set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function draws the principles that will govern facility and footprint choices, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-c88rgh": {
+    "plain_language_name": "Check the Inputs Before Framing the Principles",
+    "plain_language_description": "Before any principle is framed, the verification custodian checks the strategy and envelope against what framing requires - that the strategy is the committed one and the envelope bounds are stated. Defects are flagged for rejection or repair before the framing is made.",
+    "business_purpose": "It exists so footprint principles are never drawn from a superseded strategy.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the envelope bounding a superseded strategy and flags the defect before principles are framed."
+    }
+  },
+  "processes:task-eo-conceive-record-7mkh6y": {
+    "plain_language_name": "File the Enablement Fit Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the assessment trail at its required retention tier and sets the retrieval handles for it. How each family measured against the operating model stays readable whenever the approach's platform choices are examined.",
+    "business_purpose": "It exists so the fit judgements behind the approach can be evidenced whenever a platform choice is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the fit trail at its retention tier and sets the retrieval handles an enablement review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-fh8ath": {
+    "plain_language_name": "Confirm the Enablement Fit Assessment",
+    "plain_language_description": "When the fit stands assessed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the fit is settled and the approach can be committed.",
+    "business_purpose": "It exists so the approach is committed only over a fit confirmed as assessed.",
+    "practical_context": "It begins once preparation is complete and the fit assessment awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the fit assessment against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-yp7k8b": {
+    "plain_language_name": "Receive the Family Register and Operating Model Requirements",
+    "plain_language_description": "Fit assessment opens when the platform family register and the operating model requirements are handed over together as the two sides the fit will be tested between. The intake custodian accepts both, registers them with audit identifiers, and starts the assessment from a recorded baseline.",
+    "business_purpose": "It exists so fit is tested between a registered register and registered requirements, not between impressions.",
+    "practical_context": "It opens when the register and requirements are presented for the assessment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the platform family register and operating model requirements as the assessment baseline, with audit references."
+    }
+  },
+  "processes:task-eo-conceive-transform-hkmp7x": {
+    "plain_language_name": "Test the Platform Families Against the Operating Model",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the assessment itself: how each platform family fits the operating model the strategy mandates is tested and set down in the form the activity defines. Working papers behind the fit judgements are preserved.",
+    "business_purpose": "It exists because a platform that fits badly is a tax paid every day - the fit assessment is where the mismatch is caught early.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be tested, and it ends with the fit assessment produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function tests each platform family against the operating model's requirements and records the fit assessment."
+    }
+  },
+  "processes:task-eo-conceive-verify-hpt7ee": {
+    "plain_language_name": "Check the Register and Requirements Before Testing the Fit",
+    "plain_language_description": "Before any fit is tested, the verification custodian checks the register and requirements against what assessment requires - that the register is complete and the requirements state what the families must actually do. Defects are flagged for rejection or repair before the testing begins.",
+    "business_purpose": "It exists so families are never tested against requirements too thin to be meaningful.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the requirements stating availability but not capacity and flags the defect before the fit is tested."
+    }
+  },
+  "processes:task-eo-conceive-record-nrttfn": {
+    "plain_language_name": "File the Technology Enablement Approach Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed approach contains, and from which framings it was consolidated, stays on file for the life of the approach.",
+    "business_purpose": "It exists so the approach's standing as committed enablement direction can be evidenced whenever architecture design leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles an architecture design review would draw on."
+    }
+  },
+  "processes:task-eo-conceive-confirm-bd39c9": {
+    "plain_language_name": "Confirm the Committed Technology Enablement Approach",
+    "plain_language_description": "When the approach stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The architecture design work downstream learns the committed approach is ready to be received.",
+    "business_purpose": "It exists so architecture design starts only from an approach confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed approach awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed approach against the activity's intended outcome and issues the confirmation the architecture design waits on."
+    }
+  },
+  "processes:task-eo-conceive-intake-z499a2": {
+    "plain_language_name": "Receive the Framed Pieces for the Approach Commit",
+    "plain_language_description": "The commit opens when the platform families, sourcing principles, and fit assessment are handed over together as the pieces the approach must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment from a recorded base.",
+    "business_purpose": "It exists so the approach is committed from registered pieces rather than from a loose sheaf of framings.",
+    "practical_context": "It opens when the framed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the families, sourcing principles, and fit assessment as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-eo-conceive-transform-nwkuxw": {
+    "plain_language_name": "Consolidate the Technology Enablement Approach for Architecture",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: families, sourcing postures, and the fit assessment are brought together into the committed technology enablement approach, and the committed approach is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because framings scattered across documents enable nothing - the commit is where the approach becomes one authority ready for architecture design.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed approach produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function consolidates the framings into the committed technology enablement approach, ready for architecture design, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-hxp6ek": {
+    "plain_language_name": "Check the Pieces Before Committing the Approach",
+    "plain_language_description": "Before the approach is committed, the verification custodian checks the pieces against what commitment requires - that families, sourcing, and fit are all settled and none arrived half-framed. Defects are logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so the approach is never committed from pieces that were only partly framed.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the sourcing postures still open for one family and logs the defect before the approach is committed."
+    }
+  },
+  "processes:task-eo-conceive-record-8mv6y5": {
+    "plain_language_name": "File the Sourcing Principles Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. What postures were set for each family - build, buy, partner, or open - stays readable whenever a platform decision is examined.",
+    "business_purpose": "It exists so the sourcing postures behind platform decisions can be evidenced whenever a decision is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the sourcing trail at its retention tier and sets the retrieval handles a platform review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-y6b2k2": {
+    "plain_language_name": "Confirm the Framed Sourcing Principles",
+    "plain_language_description": "When the principles stand framed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The fit assessment that follows learns the postures are settled and the families can be tested against them.",
+    "business_purpose": "It exists so the fit is assessed only over postures confirmed as framed.",
+    "practical_context": "It begins once preparation is complete and the framed principles await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the framed sourcing principles against the activity's intended outcome and issues the confirmation the fit assessment needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-wdaqpv": {
+    "plain_language_name": "Receive the Platform Families for Sourcing Framing",
+    "plain_language_description": "Sourcing framing opens when the platform families are handed over as the subjects the sourcing postures will be framed for. The intake custodian accepts them, registers them with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so sourcing postures are framed for a registered set of platform families rather than in the abstract.",
+    "practical_context": "It opens when the platform families are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the identified platform families as the framing baseline, with audit references, and opens the sourcing work."
+    }
+  },
+  "processes:task-eo-conceive-transform-mwwkrk": {
+    "plain_language_name": "Decide How Platforms Will Be Sourced",
+    "plain_language_description": "With the families verified, the processing custodian does the framing itself: the build, buy, partner, and open-source postures governing each platform decision are worked out and set down in the form the activity defines. Working papers behind the postures are preserved.",
+    "business_purpose": "It exists because every platform decision embeds a sourcing choice - framing the postures first keeps those choices deliberate.",
+    "practical_context": "It starts once checking is complete and the verified families are ready to be framed for, and it ends with the sourcing principles produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function frames the build, buy, partner, and open-source postures for each platform family, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-9suxe3": {
+    "plain_language_name": "Check the Families Before Framing the Sourcing Postures",
+    "plain_language_description": "Before any posture is framed, the verification custodian checks the platform families against what framing requires - that the register is complete and each family is stated specifically enough to source. Defects are flagged for rejection or repair before the framing is made.",
+    "business_purpose": "It exists so sourcing postures are never framed for families too vague to be sourced.",
+    "practical_context": "It runs once the intake is registered and the families can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a family named too loosely to source against and flags the defect before postures are framed."
+    }
+  },
+  "processes:task-eo-conceive-record-k5h45f": {
+    "plain_language_name": "File the Platform Family Register Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the identification trail at its required retention tier and sets the retrieval handles for it. Which platform families were identified, and from what strategy and envelope reading, stays readable whenever the enablement approach is examined.",
+    "business_purpose": "It exists so the platform families behind the enablement approach can be evidenced whenever they are questioned.",
+    "practical_context": "It starts once the identification confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the identification trail at its retention tier and sets the retrieval handles an enablement review would consult."
+    }
+  }
+}

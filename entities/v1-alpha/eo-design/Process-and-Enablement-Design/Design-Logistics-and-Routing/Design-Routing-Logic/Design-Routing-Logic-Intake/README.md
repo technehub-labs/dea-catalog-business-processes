@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Design Routing Logic Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Routing Logic** (`processes:activity-eo-design-vk83pr`). Its canonical ID is `processes:task-eo-design-intake-vf2j2z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Routing design opens when the transport mode selections and service-level designs are handed over as the requirements the routing logic must honour. The intake custodian accepts them, registers them with audit identifiers, and starts the design from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so routing logic is designed against registered mode and service commitments rather than against habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the mode selections and designs are presented for routing design, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the mode selections and service-level designs as the routing baseline, with audit references, and opens the design work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Mode Selections and Service-Level Designs |
+| `plain_language_description` | string | no | Routing design opens when the transport mode selections and service-level designs are handed over as the requirements … |
+| `business_purpose` | string | no | It exists so routing logic is designed against registered mode and service commitments rather than against habit. |
+| `practical_context` | string | no | It opens when the mode selections and designs are presented for routing design, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

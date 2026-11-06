@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Hand Over Delivery Capability to Operations Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Hand Over Delivery Capability to Operations** (`processes:activity-eo-build-fnyeud`). Its canonical ID is `processes:task-eo-build-transform-k4fn8e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the proof verified, the processing custodian makes the hand-over itself: the capability passes from build into steady-state operation, acceptance is recorded, and the accepted operational capability is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a capability built but never handed over helps nobody - the acceptance is where the build's work starts paying off.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified proof is ready to be handed over on, and it ends with the accepted capability produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management hands the proven capability to the operating teams and records their acceptance, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Verified Capability to Steady-State Operations |
+| `plain_language_description` | string | no | With the proof verified, the processing custodian makes the hand-over itself: the capability passes from build into … |
+| `business_purpose` | string | no | It exists because a capability built but never handed over helps nobody - the acceptance is where the build's work … |
+| `practical_context` | string | no | It starts once checking is complete and the verified proof is ready to be handed over on, and it ends with the accepted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

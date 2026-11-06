@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Execute Risk Reviews conforming to the Operate schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Run the Reviews the Cycle Boundary Brings Due'
+plain_language_description: 'With the certificate in hand, the processing custodian executes the operating for the reviews: the risk reviews due at the cycle boundary are executed against the registers and the scales, and the outcomes pack is produced for confirmation.'
+business_purpose: 'It exists because a review overdue is a register going stale - the execution is what keeps the risk picture fresh at each boundary.'
+practical_context: 'It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the risk function runs the reviews due at the boundary against the registers and the scales.'

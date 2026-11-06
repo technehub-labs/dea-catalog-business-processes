@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Register the Signing-Authority Activation Request'
+plain_language_description: 'When a request to confer signing authority or a controlled function arrives, the intake custodian brings it into the activation workflow, logs it against the individual''s record on the regulated personnel file, and stamps it with audit references so every later step can be traced. Nothing is judged or reshaped at this point - the request is simply booked in and held safely for checking.'
+business_purpose: 'It exists so activation work starts from a logged, traceable request rather than loose paperwork.'
+practical_context: 'It begins the moment the designation request is presented, with the activity owner told of its arrival, and it closes once the request is registered with audit identifiers and the checking steps are free to start.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management intake custodian receives a designation request for a newly approved executive, books it onto the personnel record with its audit references, and lets the approver know it has landed.'

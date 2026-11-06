@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Baseline Population Competencies Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Baseline Population Competencies** (`processes:activity-ao-improve-2bds64`). Its canonical ID is `processes:task-ao-improve-verify-6ypbad`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any competency is measured, the verification custodian checks the framework and population against what baselining requires - that the framework is the committed one and the population list is complete and current. Defects are flagged for rejection or repair before the baselining is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the baseline is never measured against a superseded framework or an incomplete roster.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the population roster missing a recently onboarded team and flags the defect before baselining begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Framework and Population Before Baselining |
+| `plain_language_description` | string | no | Before any competency is measured, the verification custodian checks the framework and population against what … |
+| `business_purpose` | string | no | It exists so the baseline is never measured against a superseded framework or an incomplete roster. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

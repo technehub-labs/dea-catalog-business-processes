@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-i
 
 This is a **Task** (level L4), named **Activate Communications Plan Under Regulator Continuing Supervision Intake**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Activate Communications Plan Under Regulator Continuing Supervision** (`processes:activity-sd-activate-jz6u3q`). Its canonical ID is `processes:task-sd-activate-intake-armkwz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The communications activation opens as its material arrives: the supervisor-acknowledged strategic plan together with the regulator-mandated disclosure framework. The intake custodian logs them against the activation file so the activating starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so communications are activated only over a logged acknowledged plan and the mandated framework, under the regulator's continuing supervision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the acknowledged plan and the disclosure framework are presented for activation, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the supervisor-acknowledged strategic plan and the mandated disclosure framework into the activation file, so the communications work starts accounted for under the regulator's continuing supervision.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Acknowledged Plan and the Disclosure Framework |
+| `plain_language_description` | string | no | The communications activation opens as its material arrives: the supervisor-acknowledged strategic plan together with … |
+| `business_purpose` | string | no | It exists so communications are activated only over a logged acknowledged plan and the mandated framework, under the … |
+| `practical_context` | string | no | It opens when the acknowledged plan and the disclosure framework are presented for activation, with the activity's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Assemble Strategic Roadmap Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Assemble Strategic Roadmap** (`processes:activity-sd-build-htapw4`). Its canonical ID is `processes:task-sd-build-confirm-c4erxa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the roadmap is assembled. The confirmation custodian tells the downstream teams the assembled roadmap is available, and closes the reconciliation against what the activity promised for the assembly.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the roadmap commitment proceeds from a confirmed assembly rather than from a partly updated draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the assembled roadmap is ready to hand on, and it closes with the confirmation issued and the assembly's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the assembled roadmap to the commitment team, reconciles the delivered document against what the assembly promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Assembled Roadmap to the Committing Step |
+| `plain_language_description` | string | no | The confirming opens once the roadmap is assembled. The confirmation custodian tells the downstream teams the assembled … |
+| `business_purpose` | string | no | It exists so the roadmap commitment proceeds from a confirmed assembly rather than from a partly updated draft. |
+| `practical_context` | string | no | It opens when the assembled roadmap is ready to hand on, and it closes with the confirmation issued and the assembly's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-ver
 
 This is a **Task** (level L4), named **Execute Service Withdrawal Verification**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Execute Service Withdrawal** (`processes:activity-pv-retire-6hqeys`). Its canonical ID is `processes:task-pv-retire-verify-5rh4c6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is switched off, the arriving plan is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because executing an inadequate withdrawal plan risks pulling the proposition out from under customers who still rely on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the plan is ready to be challenged, and it closes with the plan's shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the proposition design authority tests the withdrawal plan against what the activity requires, and flags a missing user-migration step as a shortfall to be put right before any service is switched off.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Withdrawal Plan Before Any Service Is Removed |
+| `plain_language_description` | string | no | Before anything is switched off, the arriving plan is put to the test. The verification custodian tests the arriving … |
+| `business_purpose` | string | no | It exists because executing an inadequate withdrawal plan risks pulling the proposition out from under customers who … |
+| `practical_context` | string | no | It opens once the intake is registered and the plan is ready to be challenged, and it closes with the plan's shortfalls … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

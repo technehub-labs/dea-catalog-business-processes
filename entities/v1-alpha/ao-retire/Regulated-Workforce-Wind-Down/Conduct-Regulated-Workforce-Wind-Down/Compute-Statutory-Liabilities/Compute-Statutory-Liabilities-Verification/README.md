@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-retire-ver
 
 This is a **Task** (level L4), named **Compute Statutory Liabilities Verification**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Compute Statutory Liabilities** (`processes:activity-ao-retire-sqdecn`). Its canonical ID is `processes:task-ao-retire-verify-6kzc36`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is computed, the verification custodian checks the particulars against what computation requires - that each employee's tenure, pay, and classification are complete and the controlling statute is identified for each. Defects are logged for rejection or repair before the computation runs.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody's entitlement is computed from particulars that were wrong or missing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the particulars can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds one employee's tenure recorded short and logs the defect before the liability is computed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Particulars Before Computing the Liabilities |
+| `plain_language_description` | string | no | Before anything is computed, the verification custodian checks the particulars against what computation requires - that … |
+| `business_purpose` | string | no | It exists so nobody's entitlement is computed from particulars that were wrong or missing. |
+| `practical_context` | string | no | It runs once the intake is registered and the particulars can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

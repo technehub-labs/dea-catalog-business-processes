@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Structure Operations Model Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Structure Operations Model** (`processes:activity-eo-design-cc2c7f`). Its canonical ID is `processes:task-eo-design-transform-f8fdxv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the strategy verified, the processing custodian does the structuring itself: the components the strategy frames are arranged into the model's overall shape, and the model structure is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategy names directions, not arrangements - structuring is where the directions become a model that can be designed into.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified strategy is ready to be structured from, and it ends with the model structure produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function arranges the strategy's components into the model's overall shape, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Give the Model Its Overall Shape |
+| `plain_language_description` | string | no | With the strategy verified, the processing custodian does the structuring itself: the components the strategy frames … |
+| `business_purpose` | string | no | It exists because a strategy names directions, not arrangements - structuring is where the directions become a model … |
+| `practical_context` | string | no | It starts once checking is complete and the verified strategy is ready to be structured from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

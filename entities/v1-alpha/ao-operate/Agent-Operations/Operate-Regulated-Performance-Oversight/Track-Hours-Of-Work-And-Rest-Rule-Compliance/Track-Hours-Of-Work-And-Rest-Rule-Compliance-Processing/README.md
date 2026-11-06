@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Track Hours-Of-Work And Rest-Rule Compliance Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Track Hours-Of-Work And Rest-Rule Compliance** (`processes:activity-ao-operate-8pqgha`). Its canonical ID is `processes:task-ao-operate-transform-rrhxq2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the tracking itself: each licensed role's worked hours and rest taken are measured against the rules that bind it, and the compliance record is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because hours-and-rest rules protect both the work and the worker - and only hold while somebody actually measures against them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be tracked from, and it ends with the compliance record produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management measures each role's worked hours and rest taken against its rules and records the compliance position.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Watch Each Role's Hours and Rest Against the Rules |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the tracking itself: each licensed role's worked hours and rest … |
+| `business_purpose` | string | no | It exists because hours-and-rest rules protect both the work and the worker - and only hold while somebody actually … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be tracked from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

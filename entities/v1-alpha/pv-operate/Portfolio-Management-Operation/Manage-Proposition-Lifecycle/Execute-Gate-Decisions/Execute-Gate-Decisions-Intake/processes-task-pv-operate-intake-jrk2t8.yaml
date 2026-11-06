@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Book In the Arriving Gate Decision Papers'
+plain_language_description: 'The gate work opens as the decisions taken at stage boundaries arrive for execution. The intake custodian logs them against the gate execution file so the executing starts accounted for.'
+business_purpose: 'It exists because a gate decision that arrives unlogged cannot be executed accountably or defended against later challenge.'
+practical_context: 'It opens when a gate decision is presented for execution with the activity''s owner told that it has landed, and it closes with the intake registered.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in product management logs the review board''s decision to advance a proposition past its growth-stage gate into the gate execution file, so the executing starts accounted for.'

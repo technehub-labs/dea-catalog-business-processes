@@ -71,3 +71,18 @@ outputs:
   description: Verification certificate issued for Resolve Records and Rights naming verification methods applied and any deviations remediated; verification custodian passes …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Disposition Plan Against the Storage Rules'
+plain_language_description: 'Before the dispositions are decided, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.'
+business_purpose: 'It exists because keeping data past its lawful horizon, or erasing what must be kept, are both failures discovered too late.'
+practical_context: 'It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in customer relationship management tests the disposition pack against the storage-limitation rules.'

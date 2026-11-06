@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Monitor Proposition Performance Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Proposition Performance** (`processes:activity-pv-operate-unuyxe`). Its canonical ID is `processes:task-pv-operate-confirm-5qbjqv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the picture is assembled, the people who steer by it are told. The confirmation custodian tells the downstream teams the performance picture is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a picture that never reaches its readers cannot trigger the envelope and rebalancing decisions it exists to inform.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has finished the picture, and it closes with confirmation issued, the picture's readers told it is ready, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the steering teams the latest performance picture is ready, flagging the propositions drifting outside their envelopes, and closes the reconciliation against what the monitoring work promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Performance Picture to Its Readers |
+| `plain_language_description` | string | no | Once the picture is assembled, the people who steer by it are told. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because a picture that never reaches its readers cannot trigger the envelope and rebalancing decisions it … |
+| `practical_context` | string | no | It opens when processing has finished the picture, and it closes with confirmation issued, the picture's readers told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

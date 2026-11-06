@@ -1,0 +1,582 @@
+{
+ "processes:task-pr-design-intake-cekxqc": {
+  "plain_language_name": "Open the Demand Model File for Commitment",
+  "plain_language_description": "Bringing the demand model together starts with intake: the segment thesis the design serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian binds the pack to the design file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed model is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the supply paths, capacity register, and lever catalogue into the model design file."
+  }
+ },
+ "processes:task-pr-design-verify-9jze3t": {
+  "plain_language_name": "Check the Model Inputs Against the Quality Bar",
+  "plain_language_description": "Before the model is committed, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Deviations are reported with their fixes.",
+  "business_purpose": "It exists so the approvers commit a model whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the model inputs against the quality bar before the commitment round."
+  }
+ },
+ "processes:task-pr-design-transform-x7bvpr": {
+  "plain_language_name": "Consolidate the Model for Commitment",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. Supply paths, capacity assumptions, and levers are consolidated as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the scattered design pieces become one document the build can actually work from.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function consolidates the supply paths, capacity assumptions, and levers into the model document."
+  }
+ },
+ "processes:task-pr-design-confirm-5gtde8": {
+  "plain_language_name": "Log the Demand Model Commitment",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the commitment carries a logged acceptance from the person accountable for the model.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the sign-off after the experience custodian acknowledges the completed demand model."
+  }
+ },
+ "processes:task-pr-design-record-rtbc4t": {
+  "plain_language_name": "Preserve the Committed Model File",
+  "plain_language_description": "After commitment, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists because the committed model's evidence must survive to answer later drift or challenge.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the committed model file with its verification trail for the build teams and future rounds."
+  }
+ },
+ "processes:task-pr-design-intake-qjuqp5": {
+  "plain_language_name": "Receive the Lever Design Pack",
+  "plain_language_description": "The lever work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the lever definition starts accounted for.",
+  "business_purpose": "It exists so the lever catalogue starts from the demand thesis rather than from whatever tools are fashionable.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the demand thesis and criteria pack into the lever design file."
+  }
+ },
+ "processes:task-pr-design-verify-ytgscn": {
+  "plain_language_name": "Check the Lever Work Against the Quality Bar",
+  "plain_language_description": "Before the levers are defined, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because a lever defined against a weak pack would shape demand in directions the model never intended.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the lever pack against the quality bar and flags one gap."
+  }
+ },
+ "processes:task-pr-design-transform-9k5m3q": {
+  "plain_language_name": "Define the Levers That Shape Demand",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The levers for shaping demand toward the designed supply paths are produced as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the enterprise knows exactly which strings it can pull to move demand toward its supply paths.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function defines each lever the enterprise can pull and writes the catalogue."
+  }
+ },
+ "processes:task-pr-design-confirm-gasd5z": {
+  "plain_language_name": "Confirm the Lever Catalogue with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once satisfied, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the levers go into the model only with a logged acceptance behind them.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the lever catalogue."
+  }
+ },
+ "processes:task-pr-design-record-skeyxs": {
+  "plain_language_name": "Keep the Lever Catalogue on File",
+  "plain_language_description": "Once accepted, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the lever choices and their reasoning stay consultable when demand behaves unexpectedly.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the catalogue so a later demand review can see which levers were on the table."
+  }
+ },
+ "processes:task-pr-design-intake-sc7wwg": {
+  "plain_language_name": "Take In the Capacity Assumption Pack",
+  "plain_language_description": "The assumption work opens with its design pack: the segment thesis it serves, the library of interaction patterns, and the criteria the experience must meet. The intake custodian logs each item against the design file so the assumption modelling starts accounted for.",
+  "business_purpose": "It exists because an assumption nobody logged is an assumption nobody will revisit.",
+  "practical_context": "It opens when the Design-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the supply paths and capability baseline into the assumption design file."
+  }
+ },
+ "processes:task-pr-design-verify-k8wuzw": {
+  "plain_language_name": "Check the Assumption Work Against the Quality Bar",
+  "plain_language_description": "Before the assumptions are stated, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Any shortfall against the criteria is named with its fix.",
+  "business_purpose": "It exists so the model does not rest on assumptions that were never checked.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the assumption pack against the quality bar and clears it for structuring."
+  }
+ },
+ "processes:task-pr-design-transform-y9t86s": {
+  "plain_language_name": "State and Structure the Capacity Assumptions",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. The capacity assumptions the model depends on are stated and structured as a journey artefact ready for confirmation.",
+  "business_purpose": "It exists so the demand model states openly what capacity it presumes rather than assuming in silence.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function states each capacity assumption the model presumes and structures the register."
+  }
+ },
+ "processes:task-pr-design-confirm-s9yqn4": {
+  "plain_language_name": "Confirm the Capacity Assumptions with the Experience Owner",
+  "plain_language_description": "The confirmation custodian reconciles the journey artefact with the bar the experience must meet and with the contract for how touchpoints are classified. Once aligned, the experience custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the assumptions the model depends on are formally accepted by the accountable owner.",
+  "practical_context": "It starts once the journey artefact is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the experience custodian acknowledges the assumption register."
+  }
+ },
+ "processes:task-pr-design-record-faxp97": {
+  "plain_language_name": "Retain the Assumption Register File",
+  "plain_language_description": "Once confirmed, the records custodian places the design file - manifest, verification report, journey artefact, completion confirmation, and remediation notes - into retention under the schedule for journey-design records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the assumption register survives for the day reality diverges from the model.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the register so a capacity shortfall can be traced to the assumption behind it."
+  }
+ },
+ "processes:task-pr-improve-intake-d2uj2a": {
+  "plain_language_name": "Open the Churn-Risk Case File",
+  "plain_language_description": "The churn work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer feedback, and the candidate retention actions. The intake custodian logs each item against the improvement file so the assessment starts accounted for.",
+  "business_purpose": "It exists because retention effort is wasted unless it is aimed at the customers actually about to leave.",
+  "practical_context": "It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the risk register and feedback stream into the improvement case file."
+  }
+ },
+ "processes:task-pr-improve-verify-hqjuue": {
+  "plain_language_name": "Check the Churn Pack Against the Model Contract",
+  "plain_language_description": "Before the scoring proceeds, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Any shortfall against the model contract is named with its fix.",
+  "business_purpose": "It exists because churn scores from a non-conforming pack would misdirect every retention action downstream.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the churn pack against the model contract and flags one feedback gap."
+  }
+ },
+ "processes:task-pr-improve-transform-25stkv": {
+  "plain_language_name": "Score the Churn Risk Across the Base",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the improvement: each at-risk customer is scored, the feedback is gathered and aggregated, and the retention actions are carried out. The results are produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because retention effort is wasted unless it is aimed at the customers actually about to leave.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function scores the churn risk for each affected party using the feedback and behaviour signals."
+  }
+ },
+ "processes:task-pr-improve-confirm-82gaet": {
+  "plain_language_name": "Confirm the Churn Assessment with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape required of retention outcomes. Once aligned, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the churn scores that will steer retention are formally accepted before anyone acts on them.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the churn assessment."
+  }
+ },
+ "processes:task-pr-improve-record-btgbbm": {
+  "plain_language_name": "Keep the Churn Assessment on File",
+  "plain_language_description": "Once confirmed, the records custodian places the improvement file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for customer-improvement records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the reasoning behind each churn score stays consultable when the model is re-tuned.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the assessment file so the next scoring round can compare against this one."
+  }
+ },
+ "processes:task-pr-improve-intake-fa8kpz": {
+  "plain_language_name": "Receive the Feedback Collection Pack",
+  "plain_language_description": "The feedback work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer feedback, and the candidate retention actions. The intake custodian logs each item against the improvement file so the collection starts accounted for.",
+  "business_purpose": "It exists because the enterprise cannot fix what its customers never get the chance to say.",
+  "practical_context": "It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the survey instruments and feedback channels into the improvement case file."
+  }
+ },
+ "processes:task-pr-improve-verify-mzgnam": {
+  "plain_language_name": "Check the Feedback Pack Against the Quality Bar",
+  "plain_language_description": "Before the collection proceeds, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because feedback gathered below the quality bar would poison every insight drawn from it.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the feedback pack against the quality bar and clears it for collection."
+  }
+ },
+ "processes:task-pr-improve-transform-x9vkdr": {
+  "plain_language_name": "Gather and Aggregate the Customer's Voice",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the improvement: each at-risk customer is scored, the feedback is gathered and aggregated, and the retention actions are carried out. The customer's voice, collected from every channel, is produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because the enterprise cannot fix what its customers never get the chance to say.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management gathers the NPS responses and service feedback into the aggregated stream."
+  }
+ },
+ "processes:task-pr-improve-confirm-jxzghv": {
+  "plain_language_name": "Confirm the Feedback Round with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape required of retention outcomes. Once satisfied, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the insight that steers retention is accepted as sound before it is acted on.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian closes the reconciliation, and the relationship custodian acknowledges the feedback round."
+  }
+ },
+ "processes:task-pr-improve-record-q6edff": {
+  "plain_language_name": "File the Feedback Round Record",
+  "plain_language_description": "After confirmation, the records custodian places the improvement file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for customer-improvement records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the collected voice of the customer survives for trend analysis across rounds.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the feedback round so satisfaction trends can be traced across the years."
+  }
+ },
+ "processes:task-pr-improve-intake-r4eht8": {
+  "plain_language_name": "Take In the Retention Action Pack",
+  "plain_language_description": "The retention work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer feedback, and the candidate retention actions. The intake custodian logs each item against the improvement file so the intervention starts accounted for.",
+  "business_purpose": "It exists because an intervention launched from an incomplete case saves the wrong customer.",
+  "practical_context": "It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the flagged accounts and candidate interventions into the improvement case file."
+  }
+ },
+ "processes:task-pr-improve-verify-4yua6g": {
+  "plain_language_name": "Check the Retention Pack Against the Model Contract",
+  "plain_language_description": "Before the interventions run, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Any shortfall against the model contract is named with its fix.",
+  "business_purpose": "It exists because actions aimed by a broken model spend goodwill on the wrong customers.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the retention pack against the model contract and flags one candidate gap."
+  }
+ },
+ "processes:task-pr-improve-transform-u2f7rw": {
+  "plain_language_name": "Carry Out the Retention Interventions",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the improvement: each at-risk customer is scored, the feedback is gathered and aggregated, and the retention actions are carried out. The executed interventions and their effects are produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because a churn score nobody acts on saves nobody.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management executes the retention interventions chosen for each flagged account."
+  }
+ },
+ "processes:task-pr-improve-confirm-dv2jkc": {
+  "plain_language_name": "Confirm the Executed Retention Actions",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape required of retention outcomes. Once aligned, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the interventions and their effects are formally accepted into the insight record.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the executed actions."
+  }
+ },
+ "processes:task-pr-improve-record-fas3fm": {
+  "plain_language_name": "Store the Retention Action File",
+  "plain_language_description": "Once confirmed, the records custodian places the improvement file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for customer-improvement records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so what was tried, on whom, and with what effect stays provable for the next round.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the intervention file so future retention design can learn from what worked."
+  }
+ },
+ "processes:task-pr-improve-intake-w8y6sv": {
+  "plain_language_name": "Open the Win-Back Case File",
+  "plain_language_description": "The win-back work opens with its case pack: the register of customers at risk of leaving, the stream of voice-of-customer feedback, and the candidate retention actions. The intake custodian logs each item against the improvement file so the pipeline work starts accounted for.",
+  "business_purpose": "It exists because a lapsed customer is the cheapest new customer the enterprise will ever get.",
+  "practical_context": "It opens when the Improve-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the lapse signals and win-back candidates into the improvement case file."
+  }
+ },
+ "processes:task-pr-improve-verify-wnyvwa": {
+  "plain_language_name": "Check the Win-Back Pack Against the Quality Bar",
+  "plain_language_description": "Before the pipeline is built, the verification custodian tests the pack against the contract governing the churn model and the bar the voice-of-customer material must clear. Where the pack falls short, the shortfall is named and a remediation set out.",
+  "business_purpose": "It exists because win-back effort aimed through a poor signal wastes the one approach that might have landed.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the win-back pack against the quality bar and clears it for the pipeline."
+  }
+ },
+ "processes:task-pr-improve-transform-uhh9q7": {
+  "plain_language_name": "Build the Win-Back Opportunity List",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the improvement: each at-risk customer is scored, the feedback is gathered and aggregated, and the retention actions are carried out. The lapsed and lapsing customers are worked into a win-back list and produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because a lapsed customer is the cheapest new customer the enterprise will ever get.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management turns lapse signals into win-back opportunities on the list."
+  }
+ },
+ "processes:task-pr-improve-confirm-3zzrfc": {
+  "plain_language_name": "Confirm the Win-Back Pipeline with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape required of retention outcomes. Once satisfied, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the win-back list enters outreach only with a logged acceptance behind it.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the win-back pipeline."
+  }
+ },
+ "processes:task-pr-improve-record-y23h5d": {
+  "plain_language_name": "Retain the Win-Back Pipeline File",
+  "plain_language_description": "After confirmation, the records custodian places the improvement file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for customer-improvement records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the win-back history stays consultable when a lapsed customer resurfaces.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the pipeline file so a returning customer's history is at hand for the approach."
+  }
+ },
+ "processes:task-pr-operate-intake-9y3gqe": {
+  "plain_language_name": "Open the Attention Allocation File",
+  "plain_language_description": "The allocation work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations, and the pipeline of upcoming renewals. The intake custodian logs each item against the operating file so the allocation starts accounted for.",
+  "business_purpose": "It exists because attention can only be shared out fairly once the whole load is on the table.",
+  "practical_context": "It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the review calendar, escalation queue, and renewal pipeline into the operating file."
+  }
+ },
+ "processes:task-pr-operate-verify-9burzv": {
+  "plain_language_name": "Check the Allocation Pack Against the Account Contracts",
+  "plain_language_description": "Before the allocation proceeds, the verification custodian tests the pack against the agreed cadence for account reviews and the contract governing how the accounts are run. Any deviation from the contracts is named with its fix.",
+  "business_purpose": "It exists because attention allocated outside the playbook starves the accounts the contracts promise to serve.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management tests the allocation pack against the review cadence and flags one gap."
+  }
+ },
+ "processes:task-pr-operate-transform-wtqukm": {
+  "plain_language_name": "Share Out Relationship Attention Across the Base",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. The attention each customer receives is produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because relationship attention is finite, and where it lands decides which relationships thrive.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management decides where account ownership and contact effort land across the base."
+  }
+ },
+ "processes:task-pr-operate-confirm-hpaub7": {
+  "plain_language_name": "Confirm the Attention Allocation with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with the terms for executing renewals. Once aligned, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the allocation decisions are formally accepted before the operating cycle runs on them.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the attention allocation."
+  }
+ },
+ "processes:task-pr-operate-record-u9gwf7": {
+  "plain_language_name": "Keep the Allocation Round on File",
+  "plain_language_description": "Once confirmed, the records custodian places the operating file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-operating records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the allocation rationale stays consultable when a customer asks why their service changed.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the allocation round so the next cycle can compare attention against value delivered."
+  }
+ },
+ "processes:task-pr-operate-intake-zkvnd2": {
+  "plain_language_name": "Receive the Relationship Review Pack",
+  "plain_language_description": "The review work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations, and the pipeline of upcoming renewals. The intake custodian logs each item against the operating file so the reviews start accounted for.",
+  "business_purpose": "It exists because a review held without its full pack reviews only half the relationship.",
+  "practical_context": "It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the review schedule and account papers into the operating file."
+  }
+ },
+ "processes:task-pr-operate-verify-4ama6f": {
+  "plain_language_name": "Check the Review Pack Against the Account Contracts",
+  "plain_language_description": "Before the reviews are held, the verification custodian tests the pack against the agreed cadence for account reviews and the contract governing how the accounts are run. Any deviation from the contracts is named with its fix.",
+  "business_purpose": "It exists because a review outside the agreed cadence breaks the promise the account was sold on.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management checks the review pack against the cadence contract and clears it."
+  }
+ },
+ "processes:task-pr-operate-transform-tc72yy": {
+  "plain_language_name": "Hold the Relationship Reviews",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. Each relationship's health, commitments, and milestones are reviewed and produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because a relationship left unreviewed drifts until the drift becomes a defection.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management holds the scheduled reviews and records each relationship's state against its commitments."
+  }
+ },
+ "processes:task-pr-operate-confirm-2eqbsh": {
+  "plain_language_name": "Confirm the Review Round with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with the terms for executing renewals. Once satisfied, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the review findings are formally accepted before they steer the relationship's next steps.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the review round."
+  }
+ },
+ "processes:task-pr-operate-record-9wwtdx": {
+  "plain_language_name": "File the Relationship Review Record",
+  "plain_language_description": "After confirmation, the records custodian places the operating file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-operating records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the review history shows how each relationship's health moved over time.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the review record so the next review opens with the last one's findings at hand."
+  }
+ },
+ "processes:task-pr-operate-intake-es2c74": {
+  "plain_language_name": "Take In the Renewal Coordination Pack",
+  "plain_language_description": "The renewal work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations, and the pipeline of upcoming renewals. The intake custodian logs each item against the operating file so the coordination starts accounted for.",
+  "business_purpose": "It exists because a renewal surprises no one when the pipeline is complete and logged from the start.",
+  "practical_context": "It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the renewal pipeline and term dates into the operating file."
+  }
+ },
+ "processes:task-pr-operate-verify-vkxyk9": {
+  "plain_language_name": "Check the Renewal Pack Against the Account Contracts",
+  "plain_language_description": "Before the renewals are coordinated, the verification custodian tests the pack against the agreed cadence for account reviews and the contract governing how the accounts are run. Any deviation from the contracts is named with its fix.",
+  "business_purpose": "It exists because a renewal negotiated outside the playbook creates terms the enterprise never agreed to.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management tests the renewal pack against the playbook contract and flags one gap."
+  }
+ },
+ "processes:task-pr-operate-transform-zrmu7y": {
+  "plain_language_name": "Keep the Renewals Moving on Schedule",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. The approaching terms are prepared and executed, and the results are produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because a renewal missed at term is a relationship lost by calendar, not by choice.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management tracks the renewal calendar and keeps each approaching term on track."
+  }
+ },
+ "processes:task-pr-operate-confirm-tqc84h": {
+  "plain_language_name": "Confirm the Renewal Round with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with the terms for executing renewals. Once aligned, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so each renewal disposition is formally accepted before the term arrives.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the renewal dispositions."
+  }
+ },
+ "processes:task-pr-operate-record-tnft7y": {
+  "plain_language_name": "Store the Renewal Coordination File",
+  "plain_language_description": "Once confirmed, the records custodian places the operating file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-operating records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the renewal history informs how the next term is approached.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the renewal file so the next term's negotiation starts from the last one's record."
+  }
+ },
+ "processes:task-pr-operate-intake-9k27h2": {
+  "plain_language_name": "Open the Escalation Handling File",
+  "plain_language_description": "The escalation work opens with its operating pack: the calendar of relationship reviews, the queue of open escalations, and the pipeline of upcoming renewals. The intake custodian logs each item against the operating file so the handling starts accounted for.",
+  "business_purpose": "It exists because an escalation answered without its context answers the wrong question.",
+  "practical_context": "It opens when the Operate-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the escalation queue and account histories into the operating file."
+  }
+ },
+ "processes:task-pr-operate-verify-4n8jkn": {
+  "plain_language_name": "Check the Escalation Pack Against the Account Contracts",
+  "plain_language_description": "Before the escalations are worked, the verification custodian tests the pack against the agreed cadence for account reviews and the contract governing how the accounts are run. Any deviation from the contracts is named with its fix.",
+  "business_purpose": "It exists because a resolution promised outside the playbook creates a second escalation later.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management tests the escalation pack against the playbook and clears it for handling."
+  }
+ },
+ "processes:task-pr-operate-transform-suduf5": {
+  "plain_language_name": "Resolve the Relationship Escalations",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the operating rhythm: reviews are held with the accounts, attention is spread across the portfolio, escalations are resolved, and renewals are kept moving. Each escalated relationship is worked to resolution and the results are produced as an outcomes pack ready for confirmation.",
+  "business_purpose": "It exists because how an enterprise handles a complaint decides whether the customer stays angry or stays.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the outcomes pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management takes the escalations in the queue and drives each to a preserved relationship."
+  }
+ },
+ "processes:task-pr-operate-confirm-rnpxjz": {
+  "plain_language_name": "Confirm the Escalation Round with the Relationship Owner",
+  "plain_language_description": "The confirmation custodian reconciles the outcomes pack with the contract governing how the accounts are run and with the terms for executing renewals. Once satisfied, the relationship custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the resolutions are formally accepted before the relationships are declared recovered.",
+  "practical_context": "It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the escalation resolutions."
+  }
+ },
+ "processes:task-pr-operate-record-k3mhvn": {
+  "plain_language_name": "Keep the Escalation Handling on File",
+  "plain_language_description": "After confirmation, the records custodian places the operating file - manifest, verification report, outcomes pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-operating records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the pattern in past escalations can be seen before the next one arrives.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the escalation file so recurring complaints surface as a pattern, not as surprises."
+  }
+ },
+ "processes:task-pr-retire-intake-94pyf5": {
+  "plain_language_name": "Open the Closure Case File",
+  "plain_language_description": "Closing the relationship starts with its case pack: the plan for the close-out, the inventory of obligations still outstanding, and the register of records and rights to be resolved. The intake custodian logs each item against the closure file so the execution starts accounted for.",
+  "business_purpose": "It exists because a close can only be executed with evidence if its inputs are complete and accounted for.",
+  "practical_context": "It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the close-out plan, obligations inventory, and records register into the closure file."
+  }
+ },
+ "processes:task-pr-retire-confirm-rhynh7": {
+  "plain_language_name": "Sign Off the Evidenced Closure",
+  "plain_language_description": "The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with the contract for settling what is owed. Once aligned, the completion confirmation is received by the relationship custodian and by the records custodian, and it is logged.",
+  "business_purpose": "It exists so the close is formally accepted by the parties who must stand behind it before the file is retired.",
+  "practical_context": "It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to record-keeping.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship and records custodians each acknowledge the close before it is logged."
+  }
+ },
+ "processes:task-pr-retire-record-awt2te": {
+  "plain_language_name": "Preserve the Closure Evidence for Retention",
+  "plain_language_description": "After confirmation, the records custodian places the closure file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-closure records, protected against tampering. Where records pass the storage-limit horizon, a destruction attestation is recorded.",
+  "business_purpose": "It exists because the proof that a relationship was closed properly may be needed long after it ended.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian seals the closure file into tamper-protected retention and attests the destruction of records past their horizon."
+  }
+ }
+}

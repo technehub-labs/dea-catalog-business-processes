@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Facilitate Cross-Team Interactions Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Facilitate Cross-Team Interactions** (`processes:activity-ao-operate-xnd6yx`). Its canonical ID is `processes:task-ao-operate-verify-sygx8y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any interaction is facilitated, the verification custodian checks the maintained norms against what facilitation requires - that every cross-team pattern in play has a norm to run under. Gaps are logged for rejection or repair before the facilitation proceeds.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so agents and teams are never pushed into interactions that have no rules to run under.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the norms can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds two teams about to interact with no shared norm covering the exchange and logs the gap first.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Norms Before Facilitating the Interactions |
+| `plain_language_description` | string | no | Before any interaction is facilitated, the verification custodian checks the maintained norms against what facilitation … |
+| `business_purpose` | string | no | It exists so agents and teams are never pushed into interactions that have no rules to run under. |
+| `practical_context` | string | no | It runs once the intake is registered and the norms can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -75,3 +75,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Designed Topology for Commitment'
+plain_language_description: 'Commitment opens when the designed agent topology is handed over as the arrangement the enterprise will run on. The intake custodian accepts the handover, registers it with audit identifiers, and puts the consolidation on a recorded footing.'
+business_purpose: 'It exists so the topology is committed from a registered design rather than from working drafts.'
+practical_context: 'It opens when the designed topology is presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the designed agent topology as the consolidation baseline, with audit references, and opens the commitment work.'

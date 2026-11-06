@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Record Onboarding Decision conforming to the Activate schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Build the Approved Party Record'
+plain_language_description: 'With verification complete, the processing custodian assembles the record the decision will act on: the party identifier is resolved, the risk classification computed, and the diligence tier derived. The finished record conforms to the enterprise''s master-data standard.'
+business_purpose: 'It exists so activation or refusal lands on a single, well-formed record the onboarding systems can trust.'
+practical_context: 'It opens when the verification certificate is in hand, and it closes with the party record produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian builds the approved party record for a cleared applicant and hands it to the confirmation custodian.'

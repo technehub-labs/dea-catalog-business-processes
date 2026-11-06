@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-inta
 
 This is a **Task** (level L4), named **Verify Prototype Readiness Intake**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Verify Prototype Readiness** (`processes:activity-pv-build-gznqhc`). Its canonical ID is `processes:task-pv-build-intake-a84tht`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The readiness check opens with the instrumented prototype and the experiment's demands arriving. The intake custodian logs them against the file so the verification starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a test launched before the prototype is ready burns the timebox on fixes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the instrumented prototype and experiment design into the readiness check file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Open the Readiness Check File |
+| `plain_language_description` | string | no | The readiness check opens with the instrumented prototype and the experiment's demands arriving. The intake custodian … |
+| `business_purpose` | string | no | It exists because a test launched before the prototype is ready burns the timebox on fixes. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

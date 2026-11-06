@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-v
 
 This is a **Task** (level L4), named **Bring Operations Manuals and Runbooks Live Verification**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Bring Operations Manuals and Runbooks Live** (`processes:activity-eo-activate-qmpq2e`). Its canonical ID is `processes:task-eo-activate-verify-a4gsq7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any manual goes live, the verification custodian checks the content against what the go-live requires - that every manual and runbook carries the regulator's approval and matches the authorized capability. Defects are logged for rejection or repair before anything is made live.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so crews and operators never work from manuals that were never approved.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the content can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a runbook still in draft and logs the defect before the manual set goes live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Manual Content Before Bringing It Live |
+| `plain_language_description` | string | no | Before any manual goes live, the verification custodian checks the content against what the go-live requires - that … |
+| `business_purpose` | string | no | It exists so crews and operators never work from manuals that were never approved. |
+| `practical_context` | string | no | It runs once the intake is registered and the content can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

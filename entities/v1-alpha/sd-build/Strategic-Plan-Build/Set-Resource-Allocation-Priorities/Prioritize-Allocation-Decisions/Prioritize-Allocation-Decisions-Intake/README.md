@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Prioritize Allocation Decisions Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Prioritize Allocation Decisions** (`processes:activity-sd-build-ys83dr`). Its canonical ID is `processes:task-sd-build-intake-8wpg3w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The prioritizing opens as its material arrives: the allocation decisions together with the bounded envelopes and the strategic plan they must answer to. The intake custodian logs them against the prioritizing file so the prioritizing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ranking rests on logged decisions and envelopes rather than on the loudest sponsor in the room.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the allocation decisions and their references are presented for prioritizing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the allocation decisions with their envelopes and the strategic plan into the prioritizing file, so the ranking work starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Allocation Decisions with Their Envelopes and Plan |
+| `plain_language_description` | string | no | The prioritizing opens as its material arrives: the allocation decisions together with the bounded envelopes and the … |
+| `business_purpose` | string | no | It exists so the ranking rests on logged decisions and envelopes rather than on the loudest sponsor in the room. |
+| `practical_context` | string | no | It opens when the allocation decisions and their references are presented for prioritizing, with the activity's owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Form Review Findings Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Form Review Findings** (`processes:activity-eo-improve-rf46hj`). Its canonical ID is `processes:task-eo-improve-transform-s78kf3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the formulation itself: what the review concludes is drawn from the pack and bounded so each finding says exactly what it covers, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an unbounded finding invites every argument - bounding is what makes a conclusion actionable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be concluded from, and it ends with the finding set produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function draws the review's conclusions and bounds each finding to what the evidence actually shows, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound What the Review Concludes |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the formulation itself: what the review concludes is drawn … |
+| `business_purpose` | string | no | It exists because an unbounded finding invites every argument - bounding is what makes a conclusion actionable. |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be concluded from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Report Portfolio Performance Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Report Portfolio Performance** (`processes:activity-pv-operate-nzj8xu`). Its canonical ID is `processes:task-pv-operate-intake-ajdmhh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Each reporting cycle opens as the material for the portfolio performance report arrives. The intake custodian logs them against the reporting file so the reporting starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a report bound for governance and strategy consumers must start from an accounted set of cycle inputs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the cycle's inputs are presented for the report with the activity's owner told that they have landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the quarter's reporting inputs into the reporting file at the top of the cycle, so the preparation of the portfolio performance report starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Reporting Cycle Materials |
+| `plain_language_description` | string | no | Each reporting cycle opens as the material for the portfolio performance report arrives. The intake custodian logs them … |
+| `business_purpose` | string | no | It exists because a report bound for governance and strategy consumers must start from an accounted set of cycle inputs. |
+| `practical_context` | string | no | It opens when the cycle's inputs are presented for the report with the activity's owner told that they have landed, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

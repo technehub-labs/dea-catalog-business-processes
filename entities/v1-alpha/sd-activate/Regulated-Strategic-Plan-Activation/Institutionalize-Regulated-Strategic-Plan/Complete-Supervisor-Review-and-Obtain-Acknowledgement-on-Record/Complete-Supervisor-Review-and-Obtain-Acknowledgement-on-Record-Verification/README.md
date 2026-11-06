@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-v
 
 This is a **Task** (level L4), named **Complete Supervisor Review and Obtain Acknowledgement on Record Verification**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Complete Supervisor Review and Obtain Acknowledgement on Record** (`processes:activity-sd-activate-w83pp4`). Its canonical ID is `processes:task-sd-activate-verify-c5vtcy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the supervisor's verdict is pursued, the arriving submission material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because asking for an acknowledgement over a deficient submission wastes a supervisory cycle and delays the plan.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the submission material is ready to be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the filed submission against the review criteria, and writes up an incomplete risk-appetite section as a shortfall to be put right before the acknowledgement is sought.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Submission Against the Supervisor's Review Criteria |
+| `plain_language_description` | string | no | Before the supervisor's verdict is pursued, the arriving submission material is put to the test. The verification … |
+| `business_purpose` | string | no | It exists because asking for an acknowledgement over a deficient submission wastes a supervisory cycle and delays the … |
+| `practical_context` | string | no | It opens once the intake is registered and the submission material is ready to be challenged, and it closes with its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

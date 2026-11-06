@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Schedule Development Programmes Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Schedule Development Programmes** (`processes:activity-ao-operate-skjmyf`). Its canonical ID is `processes:task-ao-operate-intake-ah5hgv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Scheduling opens when the committed gap priorities and the development plan are handed over together as the demand the learning schedule must answer. The intake custodian accepts both, registers them with audit identifiers, and starts the scheduling from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so programmes are scheduled from committed priorities rather than from whoever asks loudest for a course.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed priorities and development plan are presented for scheduling, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in workforce management registers the committed priorities and development plan as the scheduling baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Committed Priorities and Development Plan |
+| `plain_language_description` | string | no | Scheduling opens when the committed gap priorities and the development plan are handed over together as the demand the … |
+| `business_purpose` | string | no | It exists so programmes are scheduled from committed priorities rather than from whoever asks loudest for a course. |
+| `practical_context` | string | no | It opens when the committed priorities and development plan are presented for scheduling, with the activity owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

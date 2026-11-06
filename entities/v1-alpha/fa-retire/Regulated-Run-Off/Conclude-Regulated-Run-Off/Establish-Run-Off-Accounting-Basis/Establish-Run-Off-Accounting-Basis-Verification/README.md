@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-ver
 
 This is a **Task** (level L4), named **Establish Run-Off Accounting Basis Verification**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Establish Run-Off Accounting Basis** (`processes:activity-fa-retire-t3uyxp`). Its canonical ID is `processes:task-fa-retire-verify-6dy7ga`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is restated, the verification custodian checks the position and rules against what transitioning requires - that the position is the going-concern one and the rule set is the regulator's own. Defects are logged for rejection or repair before the moving begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the books never change basis under rules nobody acknowledged.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the rule set lacking the regulator's acknowledgment and logs the defect before the moving begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Rule Set Before Moving the Books |
+| `plain_language_description` | string | no | Before anything is restated, the verification custodian checks the position and rules against what transitioning … |
+| `business_purpose` | string | no | It exists so the books never change basis under rules nobody acknowledged. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

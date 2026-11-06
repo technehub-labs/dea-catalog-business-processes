@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-ve
 
 This is a **Task** (level L4), named **Process Journal Entries Verification**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Process Journal Entries** (`processes:activity-fa-operate-6pk6zf`). Its canonical ID is `processes:task-fa-operate-verify-4etjh5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is posted, the verification custodian checks the entries and the rules against what processing requires - that the rules are the configured ones and the entries carry what the rules will ask of them. Defects are logged for rejection or repair before the posting begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no entry is posted by rules that were superseded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the entries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an entry missing the reference its rule requires and logs the defect before the posting begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Rules Before Posting the Entries |
+| `plain_language_description` | string | no | Before anything is posted, the verification custodian checks the entries and the rules against what processing requires … |
+| `business_purpose` | string | no | It exists so no entry is posted by rules that were superseded. |
+| `practical_context` | string | no | It runs once the intake is registered and the entries can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

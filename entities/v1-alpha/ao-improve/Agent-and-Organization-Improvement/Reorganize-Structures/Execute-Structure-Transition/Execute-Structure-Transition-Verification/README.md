@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-ve
 
 This is a **Task** (level L4), named **Execute Structure Transition Verification**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Execute Structure Transition** (`processes:activity-ao-improve-pp4uvg`). Its canonical ID is `processes:task-ao-improve-verify-3jd7uv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any step runs, the verification custodian checks the sequenced transition against what execution requires - that the steps are complete, ordered without gaps, and ready to move the organisation through the bounded change. Defects are logged for rejection or repair before any step runs.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organisation is never moved by a sequence that was incomplete or out of order.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the sequence can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the sequence jumping from one step to another with no handover between and logs the defect before anything runs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Sequence Before Running the Steps |
+| `plain_language_description` | string | no | Before any step runs, the verification custodian checks the sequenced transition against what execution requires - that … |
+| `business_purpose` | string | no | It exists so the organisation is never moved by a sequence that was incomplete or out of order. |
+| `practical_context` | string | no | It runs once the intake is registered and the sequence can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

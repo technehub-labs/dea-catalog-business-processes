@@ -1,0 +1,582 @@
+{
+  "processes:task-eo-build-record-8dn2a3": {
+    "plain_language_name": "File the Production Certification Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the certification trail at its required retention tier and sets the retrieval handles for it. What evidence the certification rested on, and against which criteria, stays readable whenever the line's authority to produce is examined.",
+    "business_purpose": "It exists so the certification of the line can be evidenced whenever its authority to produce is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the certification trail at its retention tier and sets the retrieval handles a production review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-hssv8q": {
+    "plain_language_name": "Confirm the Production Certification",
+    "plain_language_description": "When the line stands certified, the confirmation custodian reconciles the certification against the outcome the activity set out to reach and issues the confirmation. The commissioning closes with the line authorized for steady-state production.",
+    "business_purpose": "It exists so the commissioning closes only once the certification is confirmed.",
+    "practical_context": "It begins once preparation is complete and the production certification awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the production certification against the activity's intended outcome and issues the confirmation that closes the commissioning."
+    }
+  },
+  "processes:task-eo-build-intake-8xx378": {
+    "plain_language_name": "Receive the Trial Evidence and Quality Criteria",
+    "plain_language_description": "Certification opens when the trial evidence and the quality criteria are handed over together as the basis the line's readiness will be judged on. The intake custodian accepts both, registers them with audit identifiers, and starts the certification from a recorded baseline.",
+    "business_purpose": "It exists so certification judges the line against registered criteria and registered evidence, not against optimism.",
+    "practical_context": "It opens when the trial evidence and criteria are presented for certification, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the trial evidence and quality criteria as the certification baseline, with audit references, and opens the judging work."
+    }
+  },
+  "processes:task-eo-build-transform-wks26s": {
+    "plain_language_name": "Certify the Line Ready for Steady-State Production",
+    "plain_language_description": "With the evidence verified, the processing custodian makes the certification itself: the trialled line is judged against the quality criteria and certified ready for steady-state production, and the production certification is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because trials prove a line can produce once - certification is what says it may produce always.",
+    "practical_context": "It starts once checking is complete and the verified evidence is ready to be judged from, and it ends with the production certification produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management judges the trialled line against the quality criteria and issues its production certification, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-8k4anb": {
+    "plain_language_name": "Check the Evidence Before Certifying the Line",
+    "plain_language_description": "Before anything is certified, the verification custodian checks the trial evidence against what certification requires - that the evidence covers the runs and measures the quality criteria the certification depends on. Defects are logged for rejection or repair before the judgement is made.",
+    "business_purpose": "It exists so the line is never certified on evidence that missed part of the criteria.",
+    "practical_context": "It runs once the intake is registered and the evidence can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the trial evidence missing one quality criterion's measurements and logs the defect before certification proceeds."
+    }
+  },
+  "processes:task-eo-build-record-rdpq85": {
+    "plain_language_name": "File the Line Controls Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the configuration trail at its required retention tier and sets the retrieval handles for it. How each control was set, to which parameter, stays readable whenever the line's control behaviour is examined.",
+    "business_purpose": "It exists so the configuration of each control can be evidenced whenever the line's behaviour is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the controls trail at its retention tier and sets the retrieval handles a line audit would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-9jjgrk": {
+    "plain_language_name": "Confirm the Configured Line Controls",
+    "plain_language_description": "When the controls stand configured, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The trials that follow learn the line is configured and safe to run.",
+    "business_purpose": "It exists so trials run only over controls confirmed as configured.",
+    "practical_context": "It begins once preparation is complete and the configured controls await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the configured controls against the activity's intended outcome and issues the confirmation the trials need."
+    }
+  },
+  "processes:task-eo-build-intake-jv7ev8": {
+    "plain_language_name": "Receive the Line's Control Systems and the Design Parameters",
+    "plain_language_description": "Configuration opens when the line's control systems and the designed operating parameters are handed over together as the brief the configuration must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the configuration from a recorded baseline.",
+    "business_purpose": "It exists so controls are configured to the designed parameters rather than to whatever defaults the equipment ships with.",
+    "practical_context": "It opens when the control systems and parameters are presented for configuration, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the line's control systems and the designed parameters as the configuration brief, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-sqha7p": {
+    "plain_language_name": "Set the Line's Controls to Their Operating Parameters",
+    "plain_language_description": "With the systems verified, the processing custodian does the configuration itself: the automation, quality gates, and safety interlocks are configured to the designed operating parameters, and the configured controls are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because equipment without configured controls is machinery waiting for an accident - configuration is what makes the line safe and deliberate.",
+    "practical_context": "It starts once checking is complete and the verified systems are ready to be configured, and it ends with the configured controls produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management sets the automation, quality gates, and safety interlocks to their designed parameters, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-y45bsg": {
+    "plain_language_name": "Check the Systems and Parameters Before Configuring",
+    "plain_language_description": "Before anything is configured, the verification custodian checks the systems and parameters against what configuration requires - that every control system is present on the line and each parameter is stated in the design. Defects are logged for rejection or repair before any configuration is made.",
+    "business_purpose": "It exists so safety interlocks are never left unconfigured because a parameter went unstated.",
+    "practical_context": "It runs once the intake is registered and the systems can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a safety interlock with no parameter set behind it and logs the defect before configuration begins."
+    }
+  },
+  "processes:task-eo-build-record-5dw4n7": {
+    "plain_language_name": "File the Line Installation Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the installation trail at its required retention tier and sets the retrieval handles for it. Which equipment went onto the line, at which blueprint positions, stays readable whenever the line's make-up is examined.",
+    "business_purpose": "It exists so the installation of each piece can be evidenced whenever the line's make-up is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the installation trail at its retention tier and sets the retrieval handles a line review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-53am4b": {
+    "plain_language_name": "Confirm the Installed Line",
+    "plain_language_description": "When the line stands installed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The controls work that follows learns the equipment is in place and ready to be configured.",
+    "business_purpose": "It exists so controls are configured only over a line confirmed as installed.",
+    "practical_context": "It begins once preparation is complete and the installed line awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the installed line against the activity's intended outcome and issues the confirmation the controls work needs."
+    }
+  },
+  "processes:task-eo-build-intake-m9v6ad": {
+    "plain_language_name": "Receive the Equipment Specification and Facility Blueprint",
+    "plain_language_description": "The line build opens when the equipment specification and the facility blueprint are handed over together as the brief the installation must follow. The intake custodian accepts both, registers them with audit identifiers, and starts the installation from a recorded baseline.",
+    "business_purpose": "It exists so line equipment is installed to the specification and blueprint, not to the installer's convenience.",
+    "practical_context": "It opens when the specification and blueprint are presented for installation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the equipment specification and facility blueprint as the installation brief, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-zucsyn": {
+    "plain_language_name": "Put the Specified Equipment onto the Line",
+    "plain_language_description": "With the deliveries verified, the processing custodian does the installation itself: each piece of specified equipment is installed onto the production line at its blueprint position, and the installed line is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a line is its equipment in the right places - installation is where the production line starts to exist.",
+    "practical_context": "It starts once checking is complete and the verified deliveries are ready to be installed, and it ends with the installed line produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management installs each specified piece onto the line at its blueprint position, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-b5jsjg": {
+    "plain_language_name": "Check the Deliveries Before Installing the Line",
+    "plain_language_description": "Before anything is installed, the verification custodian checks the equipment deliveries against what installation requires - that what arrived matches the specification and the blueprint states where each piece sits. Defects are logged for rejection or repair before any installation begins.",
+    "business_purpose": "It exists so the line is never built from deliveries that were wrong, into positions the blueprint never defined.",
+    "practical_context": "It runs once the intake is registered and the deliveries can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an equipment delivery short of its specified configuration and logs the defect before installation begins."
+    }
+  },
+  "processes:task-eo-build-record-nzgwjq": {
+    "plain_language_name": "File the Line Trials Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the trials trail at its required retention tier and sets the retrieval handles for it. What the line produced in each run, and at what rate, stays readable whenever the certification's basis is examined.",
+    "business_purpose": "It exists so the trial evidence behind the certification can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the trials trail at its retention tier and sets the retrieval handles a certification review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-ffhjpx": {
+    "plain_language_name": "Confirm the Trial Run Results",
+    "plain_language_description": "When the trials stand run, the confirmation custodian reconciles the results against the outcome the activity set out to reach and issues the confirmation. The certification step that follows learns the trial evidence is settled and ready to be judged.",
+    "business_purpose": "It exists so certification proceeds only over trial results confirmed as settled.",
+    "practical_context": "It begins once preparation is complete and the trial results await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the trial results against the activity's intended outcome and issues the confirmation the certification step needs."
+    }
+  },
+  "processes:task-eo-build-intake-q2pjtc": {
+    "plain_language_name": "Receive the Trial Production Plans",
+    "plain_language_description": "The trials open when the trial production plans are handed over as the runs the line must be put through. The intake custodian accepts them, registers them with audit identifiers, and starts the trials from a recorded baseline.",
+    "business_purpose": "It exists so trials run to a registered plan rather than to whatever the floor feels like testing.",
+    "practical_context": "It opens when the trial plans are presented for the trials, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the trial production plans as the trials baseline, with audit references, and opens the running work."
+    }
+  },
+  "processes:task-eo-build-transform-kbxk6q": {
+    "plain_language_name": "Run the Line Through Its Trial Production",
+    "plain_language_description": "With the plans verified, the processing custodian runs the trials themselves: the line is put through each planned run until it produces at trial rate, and the trial run results are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a line that has never produced is a promise - the trials are where the promise is first tested.",
+    "practical_context": "It starts once checking is complete and the verified plans are ready to be run from, and it ends with the trial run results produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management puts the line through each planned run until it reaches trial rate, recording the results."
+    }
+  },
+  "processes:task-eo-build-verify-dkvzjt": {
+    "plain_language_name": "Check the Plans Before Running the Trials",
+    "plain_language_description": "Before any trial runs, the verification custodian checks the plans against what the trials require - that each planned run states what the line must produce and at what rate. Defects are logged for rejection or repair before any trial is run.",
+    "business_purpose": "It exists so trials never run without a stated target to measure them against.",
+    "practical_context": "It runs once the intake is registered and the plans can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a trial plan with no rate stated and logs the defect before that trial runs."
+    }
+  },
+  "processes:task-eo-build-record-k6739q": {
+    "plain_language_name": "File the Facility Services Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commissioning trail at its required retention tier and sets the retrieval handles for it. Which services were commissioned, against which specifications, stays readable whenever a service's readiness is examined.",
+    "business_purpose": "It exists so the commissioning of each service can be evidenced whenever its readiness is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the services trail at its retention tier and sets the retrieval handles a facilities review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-tj2wsf": {
+    "plain_language_name": "Confirm the Commissioned Facility Services",
+    "plain_language_description": "When the services stand commissioned, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The hand-over that follows learns the facilities are live and ready to be passed to facility management.",
+    "business_purpose": "It exists so the hand-over proceeds only over services confirmed as commissioned.",
+    "practical_context": "It begins once preparation is complete and the commissioned services await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the commissioned services against the activity's intended outcome and issues the confirmation the hand-over needs."
+    }
+  },
+  "processes:task-eo-build-intake-nqdqxw": {
+    "plain_language_name": "Receive the Fitted Facilities and Service Specifications",
+    "plain_language_description": "Services commissioning opens when the fitted facilities and the blueprint service specifications are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the commissioning from a recorded baseline.",
+    "business_purpose": "It exists so services are commissioned to the blueprint's specifications rather than to whatever the contractors installed.",
+    "practical_context": "It opens when the fitted facilities and specifications are presented for commissioning, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the fitted facilities and service specifications as the commissioning baseline, with audit references."
+    }
+  },
+  "processes:task-eo-build-transform-tkpynu": {
+    "plain_language_name": "Bring the Facility Services to Operational Readiness",
+    "plain_language_description": "With the inputs verified, the processing custodian does the commissioning itself: the utilities, safety systems, and environmental controls are brought to operational readiness against the specifications, and the commissioned services are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a fitted building is still inert - the services commissioning is what makes it live, safe, and habitable.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be commissioned, and it ends with the commissioned services produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management brings the utilities, safety systems, and environmental controls to readiness per the specifications, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-qevv4y": {
+    "plain_language_name": "Check the Facilities and Specifications Before Commissioning Services",
+    "plain_language_description": "Before any service is commissioned, the verification custodian checks the facilities and specifications against what commissioning requires - that every service the blueprint calls for has a specification and a fitted installation behind it. Gaps are logged for rejection or repair before the commissioning begins.",
+    "business_purpose": "It exists so utilities and safety systems are never called ready without the specification and installation to back them.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a safety system with no specification behind it and logs the gap before the services are commissioned."
+    }
+  },
+  "processes:task-eo-build-record-xnnpmm": {
+    "plain_language_name": "File the Facility Fit-Out Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the fit-out trail at its required retention tier and sets the retrieval handles for it. How each site was fitted, to which layout and specification, stays readable whenever a fitting decision is examined.",
+    "business_purpose": "It exists so the fit-out of each facility can be evidenced whenever a fitting decision is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the fit-out trail at its retention tier and sets the retrieval handles a facilities review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-mpy79n": {
+    "plain_language_name": "Confirm the Fitted Facilities",
+    "plain_language_description": "When the facilities stand fitted, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The services commissioning that follows learns the shells are fitted and ready for their services.",
+    "business_purpose": "It exists so services are commissioned only over facilities confirmed as fitted.",
+    "practical_context": "It begins once preparation is complete and the fitted facilities await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the fitted facilities against the activity's intended outcome and issues the confirmation the services commissioning needs."
+    }
+  },
+  "processes:task-eo-build-intake-escwv8": {
+    "plain_language_name": "Receive the Secured Sites and Layout Designs",
+    "plain_language_description": "Fit-out opens when the secured sites and the designed layouts are handed over together as the brief the fitting-out must follow, health-safety and accessibility included. The intake custodian accepts them, registers them with audit identifiers, and starts the fit-out from a recorded baseline.",
+    "business_purpose": "It exists so sites are fitted to the designed layouts and specifications rather than to convenience.",
+    "practical_context": "It opens when the secured sites and layouts are presented for fit-out, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the secured sites and layout designs as the fit-out brief, with audit references, and opens the fitting work."
+    }
+  },
+  "processes:task-eo-build-transform-jsyq39": {
+    "plain_language_name": "Fit Out the Secured Sites to the Designed Layouts",
+    "plain_language_description": "With the brief verified, the processing custodian does the fit-out itself: each secured site is fitted out to its designed layout under the health-safety and accessibility specification, and the fitted facilities are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a secured site is bare ground - the fit-out is what turns it into a place people can safely work in.",
+    "practical_context": "It starts once checking is complete and the verified brief is ready to be fitted from, and it ends with the fitted facilities produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management fits each secured site out to its designed layout, health-safety and accessibility included, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-34s59v": {
+    "plain_language_name": "Check the Sites and Layouts Before Fitting Out",
+    "plain_language_description": "Before any site is fitted out, the verification custodian checks the sites and layouts against what fit-out requires - that each secured site carries its layout and the health-safety and accessibility specification is complete. Defects are logged for rejection or repair before any fitting begins.",
+    "business_purpose": "It exists so nobody works in a space fitted without its safety and accessibility requirements stated.",
+    "practical_context": "It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a layout missing its accessibility specification and logs the defect before fitting begins."
+    }
+  },
+  "processes:task-eo-build-record-za3c4q": {
+    "plain_language_name": "File the Facilities Hand-Over Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the hand-over trail at its required retention tier and sets the retrieval handles for it. What was handed over, on what evidence, and who accepted it stays readable whenever the build-operate boundary for facilities is examined.",
+    "business_purpose": "It exists so the hand-over of the facilities can be evidenced whenever that boundary is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the hand-over trail at its retention tier and sets the retrieval handles a build-operate review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-xaq339": {
+    "plain_language_name": "Confirm the Accepted Operational Facilities",
+    "plain_language_description": "When the acceptance stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The build closes with its facilities accepted and operating under facility management.",
+    "business_purpose": "It exists so the build is treated as done only once acceptance is confirmed.",
+    "practical_context": "It begins once preparation is complete and the accepted facilities await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the accepted facilities against the activity's intended outcome and issues the confirmation that closes the build."
+    }
+  },
+  "processes:task-eo-build-intake-hkx6dx": {
+    "plain_language_name": "Receive the Commissioned Facilities for the Hand-Over",
+    "plain_language_description": "The hand-over opens when the commissioned facilities are handed over as the build's finished product, ready to pass to facility management. The intake custodian accepts them, registers them with audit identifiers, and starts the hand-over from a recorded baseline.",
+    "business_purpose": "It exists so the hand-over runs over registered commissioned facilities rather than over a walk-through impression.",
+    "practical_context": "It opens when the commissioned facilities are presented for the hand-over, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the commissioned facilities as the hand-over baseline, with audit references, and opens the hand-over work."
+    }
+  },
+  "processes:task-eo-build-transform-wy39zc": {
+    "plain_language_name": "Hand the Facilities Over to Facility Management",
+    "plain_language_description": "With the commissioning verified, the processing custodian makes the hand-over itself: the facilities pass from build into steady-state facility management, acceptance is recorded, and the accepted operational facilities are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because facilities built but never handed over house nobody - acceptance is where the build starts serving the operation.",
+    "practical_context": "It starts once checking is complete and the verified commissioning is ready to be handed over on, and it ends with the accepted facilities produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management hands the commissioned facilities to facility management and records their acceptance, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-cc9dm3": {
+    "plain_language_name": "Check the Commissioning Before Handing the Facilities Over",
+    "plain_language_description": "Before anything changes hands, the verification custodian checks the commissioning against what the hand-over requires - that services, fit-out, and securing are all complete and evidenced. Defects are logged for rejection or repair before anything changes hands.",
+    "business_purpose": "It exists so facility management never accepts facilities whose commissioning was thinner than it looked.",
+    "practical_context": "It runs once the intake is registered and the commissioning can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one facility's services evidence incomplete and logs the defect before anything changes hands."
+    }
+  },
+  "processes:task-eo-build-record-nn4unk": {
+    "plain_language_name": "File the Site Securing Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the securing trail at its required retention tier and sets the retrieval handles for it. Which sites were secured, against which blueprint positions, stays readable whenever the facilities' footprint is examined.",
+    "business_purpose": "It exists so the securing of each site can be evidenced whenever the facilities' footprint is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the securing trail at its retention tier and sets the retrieval handles a facilities review would consult."
+    }
+  },
+  "processes:task-eo-build-confirm-ejk4te": {
+    "plain_language_name": "Confirm the Secured Facility Sites",
+    "plain_language_description": "When the sites stand secured, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The fit-out that follows learns the ground is held and the building work can begin.",
+    "business_purpose": "It exists so fit-out proceeds only over sites confirmed as secured.",
+    "practical_context": "It begins once preparation is complete and the secured sites await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the secured sites against the activity's intended outcome and issues the confirmation the fit-out needs."
+    }
+  },
+  "processes:task-eo-build-intake-9d7zqr": {
+    "plain_language_name": "Receive the Committed Facility Blueprint for Site Securing",
+    "plain_language_description": "Site securing opens when the committed facility blueprint is handed over as the plan whose positions must be secured. The intake custodian accepts it, registers it with audit identifiers, and starts the securing from a recorded baseline.",
+    "business_purpose": "It exists so sites are secured at the positions the blueprint chose, under registered control.",
+    "practical_context": "It opens when the blueprint is presented for site securing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in product management registers the committed blueprint as the securing baseline, with audit references, and opens the site work."
+    }
+  },
+  "processes:task-eo-build-transform-54z4tt": {
+    "plain_language_name": "Secure the Sites the Facility Blueprint Requires",
+    "plain_language_description": "With the blueprint verified, the processing custodian does the securing itself: each position the blueprint requires is secured under the organisation's control, and the secured sites are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because nothing can be fitted out until the ground itself belongs to the plan - securing is the first physical act of the facilities build.",
+    "practical_context": "It starts once checking is complete and the verified blueprint is ready to be secured from, and it ends with the secured sites produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in product management secures each blueprint position under the organisation's control, keeping the working papers."
+    }
+  },
+  "processes:task-eo-build-verify-wjhp4k": {
+    "plain_language_name": "Check the Blueprint Before Securing the Sites",
+    "plain_language_description": "Before any site is secured, the verification custodian checks the blueprint against what securing requires - that every position the facilities need is stated and none is contested. Defects are logged for rejection or repair before any site is secured.",
+    "business_purpose": "It exists so the facilities are never sited on positions the blueprint left undefined or disputed.",
+    "practical_context": "It runs once the intake is registered and the blueprint can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one blueprint position still contested and logs the defect before any site is secured."
+    }
+  },
+  "processes:task-eo-conceive-record-xn47hd": {
+    "plain_language_name": "File the Delivery Model Conception Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What the committed model contains, and from which framings it was consolidated, stays on file for the life of the delivery model.",
+    "business_purpose": "It exists so the delivery model's standing as committed conception can be evidenced whenever design leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a design review would draw on."
+    }
+  },
+  "processes:task-eo-conceive-confirm-m8zmsw": {
+    "plain_language_name": "Confirm the Committed Delivery Model Conception",
+    "plain_language_description": "When the conception stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work downstream learns the committed conception is ready to be received.",
+    "business_purpose": "It exists so design starts only from a conception confirmed as committed.",
+    "practical_context": "It begins once preparation is complete and the committed conception awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed conception against the activity's intended outcome and issues the confirmation the design work waits on."
+    }
+  },
+  "processes:task-eo-conceive-intake-n34fcv": {
+    "plain_language_name": "Receive the Framed Pieces for the Conception Commit",
+    "plain_language_description": "The commit opens when the framed channel patterns, service-level envelopes, and fulfilment patterns are handed over together as the pieces the conception must be consolidated from. The intake custodian accepts them, registers them with audit identifiers, and starts the commitment work from a recorded base.",
+    "business_purpose": "It exists so the conception is committed from registered pieces rather than from a loose sheaf of framings.",
+    "practical_context": "It opens when the framed pieces are presented for the commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the framed channels, envelopes, and patterns as the commitment baseline, with audit references, and opens the assembly."
+    }
+  },
+  "processes:task-eo-conceive-transform-jp83v5": {
+    "plain_language_name": "Consolidate the Pieces into the Committed Delivery Model",
+    "plain_language_description": "With the pieces verified, the processing custodian does the consolidation itself: channels, service levels, and fulfilment patterns are brought together into the committed delivery model conception, and the committed conception is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because framings scattered across three documents direct nobody - the commit is where the conception becomes one model ready for design.",
+    "practical_context": "It starts once checking is complete and the verified pieces are ready to be consolidated, and it ends with the committed conception produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function consolidates the framings into the committed delivery model conception, ready for design, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-av9wnh": {
+    "plain_language_name": "Check the Framed Pieces Before Consolidating the Conception",
+    "plain_language_description": "Before anything is consolidated, the verification custodian checks the framed pieces against what the commitment requires - that channels, envelopes, and patterns are all settled and none arrived half-framed. Defects are logged for rejection or repair before the consolidation is made.",
+    "business_purpose": "It exists so the delivery model is never committed from pieces that were only partly framed.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a framing still carrying open questions and logs the defect before the conception is consolidated."
+    }
+  },
+  "processes:task-eo-conceive-record-dyjjzn": {
+    "plain_language_name": "File the Fulfilment Pattern Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. Which patterns were framed, and from what demand reading, stays readable whenever the model's fulfilment logic is examined.",
+    "business_purpose": "It exists so the fulfilment logic behind the delivery model can be evidenced whenever it is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the pattern trail at its retention tier and sets the retrieval handles a delivery model review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-s3jk5u": {
+    "plain_language_name": "Confirm the Fulfilment Pattern Set",
+    "plain_language_description": "When the patterns stand framed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation that follows learns the patterns are settled and the conception can be assembled.",
+    "business_purpose": "It exists so the conception is consolidated only over patterns confirmed as framed.",
+    "practical_context": "It begins once preparation is complete and the framed patterns await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the framed patterns against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-bjh4bq": {
+    "plain_language_name": "Receive the Demand Thesis and Model Envelope",
+    "plain_language_description": "Fulfilment framing opens when the demand thesis and the delivery model envelope are handed over together as the ground the patterns will be framed from. The intake custodian accepts both, registers them with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so fulfilment patterns are framed from a registered demand reading within a registered envelope.",
+    "practical_context": "It opens when the demand thesis and envelope are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the demand thesis and model envelope as the framing baseline, with audit references, and opens the pattern work."
+    }
+  },
+  "processes:task-eo-conceive-transform-uk24cm": {
+    "plain_language_name": "Frame How Fulfilment Will Happen",
+    "plain_language_description": "With the inputs verified, the processing custodian does the framing itself: how the delivery model will fulfil demand - make-to-order, make-to-stock, hybrid - is worked out and set down in the form the activity defines. Working papers behind the patterns are preserved.",
+    "business_purpose": "It exists because channels and service levels promise an experience; the fulfilment patterns are what decide how the promise can actually be kept.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be framed from, and it ends with the fulfilment pattern set produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function frames how demand will be fulfilled - to order, to stock, or hybrid - and records the pattern set."
+    }
+  },
+  "processes:task-eo-conceive-verify-b94nym": {
+    "plain_language_name": "Check the Inputs Before Framing the Fulfilment Patterns",
+    "plain_language_description": "Before any pattern is framed, the verification custodian checks the demand thesis and envelope against what framing requires - that the demand reading is complete and the envelope bounds are stated. Defects are flagged for rejection or repair before the framing is made.",
+    "business_purpose": "It exists so fulfilment is never framed from a demand reading that was never fully settled.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the demand thesis silent on one fulfilment question and flags the defect before the patterns are framed."
+    }
+  },
+  "processes:task-eo-conceive-record-fgtu8w": {
+    "plain_language_name": "File the Service-Level Envelope Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. What bounds were set, and around which channels, stays readable whenever the model's promises are examined.",
+    "business_purpose": "It exists so the service levels the model commits to can be evidenced whenever they are challenged.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the envelope trail at its retention tier and sets the retrieval handles a delivery model review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-qwrxy7": {
+    "plain_language_name": "Confirm the Framed Service-Level Envelopes",
+    "plain_language_description": "When the envelopes stand framed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The fulfilment framing that follows learns the bounds are set and the patterns can be framed within them.",
+    "business_purpose": "It exists so fulfilment patterns are framed only within bounds confirmed as framed.",
+    "practical_context": "It begins once preparation is complete and the framed envelopes await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the framed envelopes against the activity's intended outcome and issues the confirmation the fulfilment framing needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-a388ru": {
+    "plain_language_name": "Receive the Selected Channels for Envelope Framing",
+    "plain_language_description": "Envelope framing opens when the selected channel patterns are handed over as the reference the service-level bounds must be framed around. The intake custodian accepts them, registers them with audit identifiers, and starts the framing from a recorded baseline.",
+    "business_purpose": "It exists so service levels are framed against a registered channel selection rather than against aspiration.",
+    "practical_context": "It opens when the selected channels are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the selected channel patterns as the framing baseline, with audit references, and opens the envelope work."
+    }
+  },
+  "processes:task-eo-conceive-transform-vjx6dy": {
+    "plain_language_name": "Set the Service Levels the Delivery Model Commits To",
+    "plain_language_description": "With the channels verified, the processing custodian does the framing itself: the response, quality, and availability bounds the delivery model commits to are worked out and set down in the form the activity defines. Working papers behind the bounds are preserved.",
+    "business_purpose": "It exists because a delivery model without stated bounds promises everything and delivers whatever happens.",
+    "practical_context": "It starts once checking is complete and the verified channels are ready to be framed from, and it ends with the framed envelopes produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the strategy function frames the response, quality, and availability bounds the model commits to, keeping the working papers."
+    }
+  },
+  "processes:task-eo-conceive-verify-c8dche": {
+    "plain_language_name": "Check the Channels Before Framing the Envelopes",
+    "plain_language_description": "Before any envelope is framed, the verification custodian checks the channel selection against what framing requires - that every selected channel is settled and none arrived half-chosen. Defects are flagged for rejection or repair before the framing is made.",
+    "business_purpose": "It exists so service bounds are never framed around channels that were only partly chosen.",
+    "practical_context": "It runs once the intake is registered and the channels can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a channel selection still carrying open options and flags the defect before the envelopes are framed."
+    }
+  },
+  "processes:task-eo-conceive-record-86cqrf": {
+    "plain_language_name": "File the Channel Selection Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the selection trail at its required retention tier and sets the retrieval handles for it. Which channel patterns were chosen, and from what strategy and journey reading, stays readable whenever the delivery model's reach is examined.",
+    "business_purpose": "It exists so the channel choices behind the delivery model can be evidenced whenever they are questioned.",
+    "practical_context": "It starts once the selection confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the selection trail at its retention tier and sets the retrieval handles a delivery model review would consult."
+    }
+  },
+  "processes:task-eo-conceive-confirm-39xcpg": {
+    "plain_language_name": "Confirm the Selected Channel Patterns",
+    "plain_language_description": "When the channel patterns stand selected, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The service-level framing that follows learns the channels are chosen and ready to be bounded.",
+    "business_purpose": "It exists so service levels are framed only over channels confirmed as selected.",
+    "practical_context": "It begins once preparation is complete and the selected patterns await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the selected channel patterns against the activity's intended outcome and issues the confirmation the service-level work needs."
+    }
+  },
+  "processes:task-eo-conceive-intake-nbcbbb": {
+    "plain_language_name": "Receive the Strategy Envelope and Customer Journey Designs",
+    "plain_language_description": "Channel selection opens when the operations strategy envelope and the customer journey designs are handed over together as the ground the channel patterns will be chosen from. The intake custodian accepts both, registers them with audit identifiers, and starts the selection from a recorded base.",
+    "business_purpose": "It exists so channels are chosen from a registered strategy and registered journeys rather than from fashion.",
+    "practical_context": "It opens when the strategy envelope and journey designs are presented for the selection, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the strategy function registers the strategy envelope and customer journey designs as the selection baseline, with audit references."
+    }
+  }
+}

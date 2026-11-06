@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 
 This is a **Task** (level L4), named **Resolve Records and Rights Intake**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Resolve Records and Rights** (`processes:activity-pr-retire-5k7ngj`). Its canonical ID is `processes:task-pr-retire-intake-p32trp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The resolution work opens with its case pack: the plan for the close-out, the inventory of obligations still outstanding, and the register of records and rights to be resolved. The intake custodian logs each item against the closure file so the disposition work starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because records and rights resolved from an incomplete register leave data alive that should have been erased.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the records, data, and granted rights into the closure case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Records-and-Rights Register |
+| `plain_language_description` | string | no | The resolution work opens with its case pack: the plan for the close-out, the inventory of obligations still … |
+| `business_purpose` | string | no | It exists because records and rights resolved from an incomplete register leave data alive that should have been erased. |
+| `practical_context` | string | no | It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

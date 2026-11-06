@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-inta
 
 This is a **Task** (level L4), named **Fit Out Facilities Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Fit Out Facilities** (`processes:activity-eo-build-vggmrg`). Its canonical ID is `processes:task-eo-build-intake-escwv8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Fit-out opens when the secured sites and the designed layouts are handed over together as the brief the fitting-out must follow, health-safety and accessibility included. The intake custodian accepts them, registers them with audit identifiers, and starts the fit-out from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so sites are fitted to the designed layouts and specifications rather than to convenience.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the secured sites and layouts are presented for fit-out, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the secured sites and layout designs as the fit-out brief, with audit references, and opens the fitting work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Secured Sites and Layout Designs |
+| `plain_language_description` | string | no | Fit-out opens when the secured sites and the designed layouts are handed over together as the brief the fitting-out … |
+| `business_purpose` | string | no | It exists so sites are fitted to the designed layouts and specifications rather than to convenience. |
+| `practical_context` | string | no | It opens when the secured sites and layouts are presented for fit-out, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

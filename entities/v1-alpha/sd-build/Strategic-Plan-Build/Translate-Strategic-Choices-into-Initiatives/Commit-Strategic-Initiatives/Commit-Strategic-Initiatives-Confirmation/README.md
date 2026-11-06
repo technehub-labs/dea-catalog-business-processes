@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Commit Strategic Initiatives Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Commit Strategic Initiatives** (`processes:activity-sd-build-u85tt9`). Its canonical ID is `processes:task-sd-build-confirm-zugq7r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the bounded initiatives are committed. The confirmation custodian tells the downstream teams the committed initiatives are available, and closes the reconciliation against what the activity promised for the commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so sequencing and resourcing start from one confirmed initiative set aligned to the chosen direction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the committed initiatives are ready to hand on, and it closes with the confirmation issued and the commitment's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the committed initiative set to the sequencing and resourcing teams, reconciles it against the chosen direction and what the commitment promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Committed Initiatives to Sequencing and Resourcing |
+| `plain_language_description` | string | no | The confirming opens once the bounded initiatives are committed. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists so sequencing and resourcing start from one confirmed initiative set aligned to the chosen direction. |
+| `practical_context` | string | no | It opens when the committed initiatives are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

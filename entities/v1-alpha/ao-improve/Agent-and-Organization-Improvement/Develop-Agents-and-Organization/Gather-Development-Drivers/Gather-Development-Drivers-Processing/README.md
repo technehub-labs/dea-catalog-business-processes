@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Gather Development Drivers Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Gather Development Drivers** (`processes:activity-ao-improve-6fusds`). Its canonical ID is `processes:task-ao-improve-transform-c65sgw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the material verified, the processing custodian does the gathering itself: the engagement signals, capability gaps, and reorganization requirements indicating that agents or the organization must develop are drawn together and set down as the gathered drivers, in the form the activity defines. Working papers are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because scattered indications of need only become development when somebody assembles them into one case.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified material is ready to be gathered from, and it ends with the gathered development drivers produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian draws the engagement signals, capability gaps, and reorganization requirements together into one development case, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather the Drivers into One Development Case |
+| `plain_language_description` | string | no | With the material verified, the processing custodian does the gathering itself: the engagement signals, capability … |
+| `business_purpose` | string | no | It exists because scattered indications of need only become development when somebody assembles them into one case. |
+| `practical_context` | string | no | It starts once checking is complete and the verified material is ready to be gathered from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

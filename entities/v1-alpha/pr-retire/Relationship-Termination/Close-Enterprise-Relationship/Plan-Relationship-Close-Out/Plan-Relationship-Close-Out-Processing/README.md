@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 
 This is a **Task** (level L4), named **Plan Relationship Close-Out Processing**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Plan Relationship Close-Out** (`processes:activity-pr-retire-k646h9`). Its canonical ID is `processes:task-pr-retire-transform-tfzf6c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. The scope, timeline, and inventory of what remains outstanding are drawn up as a record pack ready for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an ending without a plan scatters its obligations across whoever notices them last.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in customer relationship management draws up the close-out plan with its timeline and obligation inventory.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw Up the Close-Out Plan |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and … |
+| `business_purpose` | string | no | It exists because an ending without a plan scatters its obligations across whoever notices them last. |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

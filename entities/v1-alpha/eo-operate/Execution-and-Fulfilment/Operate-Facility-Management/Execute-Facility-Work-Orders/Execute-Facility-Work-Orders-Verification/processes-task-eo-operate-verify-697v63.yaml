@@ -74,3 +74,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Orders Before Working Them'
+plain_language_description: 'Before any order is worked, the verification custodian checks the issued orders against what execution requires - that each order states its job, its location, and the resources it will draw. Defects are logged for rejection or repair before any crew is dispatched.'
+business_purpose: 'It exists so crews are never sent to jobs that were never fully specified.'
+practical_context: 'It runs once the intake is registered and the orders can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds an order that names no location and logs the defect before any crew is sent.'

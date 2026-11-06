@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-i
 
 This is a **Task** (level L4), named **Formulate Demand Hypotheses Intake**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Formulate Demand Hypotheses** (`processes:activity-pr-conceive-mnhm2f`). Its canonical ID is `processes:task-pr-conceive-intake-yppww4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The hypothesis work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the formulation starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a hypothesis is only as testable as the evidence it was drawn from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in customer relationship management logs the scan record and research artefacts into the hypothesis case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Hypothesis Research Pack |
+| `plain_language_description` | string | no | The hypothesis work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and … |
+| `business_purpose` | string | no | It exists because a hypothesis is only as testable as the evidence it was drawn from. |
+| `practical_context` | string | no | It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

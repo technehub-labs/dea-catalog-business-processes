@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-t
 
 This is a **Task** (level L4), named **Sense Intent Imperatives Processing**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Sense Intent Imperatives** (`processes:activity-sd-conceive-gdjvff`). Its canonical ID is `processes:task-sd-conceive-transform-cnht3n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the sensing proper begins. The processing custodian reads the signals for what they demand of the enterprise, producing the sensed imperative set in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because bounded strategic intent must answer real pressures; the imperatives are where those pressures are named.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the sensed imperative set produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function reads the verified signals into a named set of imperatives, each tied to the signal that raised it, and keeps the sensing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read the Imperatives Driving the Need for Strategic Intent |
+| `plain_language_description` | string | no | With the inputs verified, the sensing proper begins. The processing custodian reads the signals for what they demand of … |
+| `business_purpose` | string | no | It exists because bounded strategic intent must answer real pressures; the imperatives are where those pressures are … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the sensed imperative set produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

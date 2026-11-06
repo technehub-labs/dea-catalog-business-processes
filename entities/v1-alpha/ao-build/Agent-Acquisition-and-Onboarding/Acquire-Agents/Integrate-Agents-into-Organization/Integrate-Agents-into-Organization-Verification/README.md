@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Integrate Agents into Organization Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Integrate Agents into Organization** (`processes:activity-ao-build-khtsgv`). Its canonical ID is `processes:task-ao-build-verify-9trtn4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anyone is placed, the verification custodian compares each onboarded agent with what integration into the organisation requires of it. An agent that arrives short of the mark is written up as a shortfall to fix or refuse, keeping weak placements out of the teams.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only agents genuinely ready for placement are allowed into the organisation's teams.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes with the agents verified or their shortcomings logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds one onboarded agent missing a required competency and records the shortfall for remediation before any team placement happens.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Agents Against the Integration Requirements |
+| `plain_language_description` | string | no | Before anyone is placed, the verification custodian compares each onboarded agent with what integration into the … |
+| `business_purpose` | string | no | It exists so only agents genuinely ready for placement are allowed into the organisation's teams. |
+| `practical_context` | string | no | It runs once the intake is registered and each agent can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

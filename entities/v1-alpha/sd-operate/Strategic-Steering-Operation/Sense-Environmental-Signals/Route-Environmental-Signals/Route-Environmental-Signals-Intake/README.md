@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-in
 
 This is a **Task** (level L4), named **Route Environmental Signals Intake**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Route Environmental Signals** (`processes:activity-sd-operate-ebntgy`). Its canonical ID is `processes:task-sd-operate-intake-8b2vt7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The routing opens as its material arrives: the classified environmental signals with their drift, disruption and opportunity types. The intake custodian logs them against the routing file so the routing starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every typed signal enters delivery on the register, with none lost between classification and destination.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the typed signals are presented for routing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the typed signals into the routing file, so the delivery work to the consuming processes starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Typed Signals for Delivery |
+| `plain_language_description` | string | no | The routing opens as its material arrives: the classified environmental signals with their drift, disruption and … |
+| `business_purpose` | string | no | It exists so every typed signal enters delivery on the register, with none lost between classification and destination. |
+| `practical_context` | string | no | It opens when the typed signals are presented for routing, with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

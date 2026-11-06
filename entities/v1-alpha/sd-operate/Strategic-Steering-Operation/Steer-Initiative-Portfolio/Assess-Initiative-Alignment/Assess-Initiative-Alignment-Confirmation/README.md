@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Assess Initiative Alignment Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Assess Initiative Alignment** (`processes:activity-sd-operate-cjjgw3`). Its canonical ID is `processes:task-sd-operate-confirm-as6xse`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The weighing is done and the verdicts must travel. The confirmation custodian tells the downstream teams the initiative alignment assessment is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the drift work needs the formal word that the assessment is closed and its verdicts stand ready.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the assessment work is finished and the verdicts are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the drift team the alignment assessment is available, then closes the handover against what the assessment promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Drift Spotters the Alignment Verdicts Are In |
+| `plain_language_description` | string | no | The weighing is done and the verdicts must travel. The confirmation custodian tells the downstream teams the initiative … |
+| `business_purpose` | string | no | It exists because the drift work needs the formal word that the assessment is closed and its verdicts stand ready. |
+| `practical_context` | string | no | It opens when the assessment work is finished and the verdicts are ready to travel, and it closes with the downstream … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

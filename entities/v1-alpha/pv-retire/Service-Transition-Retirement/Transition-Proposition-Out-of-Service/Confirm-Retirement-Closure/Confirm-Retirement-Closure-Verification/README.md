@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-ver
 
 This is a **Task** (level L4), named **Confirm Retirement Closure Verification**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Confirm Retirement Closure** (`processes:activity-pv-retire-mqkper`). Its canonical ID is `processes:task-pv-retire-verify-nvwtvj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any closure is declared, the arriving withdrawn-service material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a retirement is never closed on the strength of material that would not stand up to challenge.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the closure material is ready to be challenged, and it closes with each shortfall written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the proposition design authority challenges the logged closure material against what the activity requires, and writes up an unrouted support commitment as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Withdrawal Material Before Closure Is Confirmed |
+| `plain_language_description` | string | no | Before any closure is declared, the arriving withdrawn-service material is put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists so a retirement is never closed on the strength of material that would not stand up to challenge. |
+| `practical_context` | string | no | It opens once the intake is registered and the closure material is ready to be challenged, and it closes with each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

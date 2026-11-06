@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-conceive-t
 
 This is a **Task** (level L4), named **Assess Finance Strategy Context Processing**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Assess Finance Strategy Context** (`processes:activity-fa-conceive-hebg2g`). Its canonical ID is `processes:task-fa-conceive-transform-h2mfvv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the assessment itself: whether the need is a new model, a reframe, or an answer to outside pressure is read out of the state and signals, and the assessed context is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a money strategy that never asks why it exists solves the wrong problem confidently.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the assessed strategy context produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function reads whether the need is a new model, a reframe, or an outside answer, and records the context.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Read Why the Money Model Must Move |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the assessment itself: whether the need is a new model, a … |
+| `business_purpose` | string | no | It exists because a money strategy that never asks why it exists solves the wrong problem confidently. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the assessed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

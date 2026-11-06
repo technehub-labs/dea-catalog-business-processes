@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Bounded Boundaries for Consolidation'
+plain_language_description: 'Consolidation opens when the bounded coordination boundaries are handed over as the last pieces of the model frame. The intake custodian accepts them, registers the handover with audit identifiers, and puts the consolidation on a recorded footing.'
+business_purpose: 'It exists so the frame is consolidated from a registered set of boundaries rather than from loose pieces.'
+practical_context: 'It opens when the bounded boundaries are presented for consolidation, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the bounded coordination boundaries as the consolidation baseline, with audit references, and opens the assembly.'

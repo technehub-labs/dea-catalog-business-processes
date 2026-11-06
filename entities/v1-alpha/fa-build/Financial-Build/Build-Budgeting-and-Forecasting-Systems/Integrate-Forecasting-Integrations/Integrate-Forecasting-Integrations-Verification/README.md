@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-veri
 
 This is a **Task** (level L4), named **Integrate Forecasting Integrations Verification**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Integrate Forecasting Integrations** (`processes:activity-fa-build-nhup75`). Its canonical ID is `processes:task-fa-build-verify-ebpgww`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is piped, the verification custodian checks the data sources against what integration requires - that each source is authoritative for what it will feed. Defects are logged for rejection or repair before any pipe is laid.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the models are never fed from wells that were never authoritative.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the sources can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a feed pointed at a shadow copy of the sales data and logs the defect before any pipe is laid.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Sources Before Laying the Pipes |
+| `plain_language_description` | string | no | Before anything is piped, the verification custodian checks the data sources against what integration requires - that … |
+| `business_purpose` | string | no | It exists so the models are never fed from wells that were never authoritative. |
+| `practical_context` | string | no | It runs once the intake is registered and the sources can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

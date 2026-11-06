@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-tr
 
 This is a **Task** (level L4), named **Commit Framework Improvements Processing**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Commit Framework Improvements** (`processes:activity-ge-improve-68awnk`). Its canonical ID is `processes:task-ge-improve-transform-v8265y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the improvement for the commitment: the measured gaps, the standard updates, and the strengthened posture are consolidated into the committed improvements, ready for adoption, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because gaps, standards, and posture reviewed separately improve nothing - the commit is where they become one set of changes the enterprise adopts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the audit function binds the measured gaps, standard updates, and posture strengthening into the committed improvements.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bind the Gaps, the Standards, and the Posture into One Commitment |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the improvement for the commitment: the measured gaps … |
+| `business_purpose` | string | no | It exists because gaps, standards, and posture reviewed separately improve nothing - the commit is where they become … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded improvement may be executed, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

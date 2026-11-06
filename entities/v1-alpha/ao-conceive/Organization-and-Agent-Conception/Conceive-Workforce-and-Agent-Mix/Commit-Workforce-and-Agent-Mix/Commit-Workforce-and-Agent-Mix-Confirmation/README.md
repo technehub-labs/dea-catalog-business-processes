@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-c
 
 This is a **Task** (level L4), named **Commit Workforce and Agent Mix Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Workforce and Agent Mix** (`processes:activity-ao-conceive-njcgbs`). Its canonical ID is `processes:task-ao-conceive-confirm-mk5eh3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the mix stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The design work downstream learns the committed mix is ready to be received.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so organization and role design starts only from a confirmed, announced commitment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the committed mix awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the committed mix against the activity's intended outcome and issues the confirmation the design step is waiting on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Committed Workforce and Agent Mix |
+| `plain_language_description` | string | no | When the mix stands committed, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so organization and role design starts only from a confirmed, announced commitment. |
+| `practical_context` | string | no | It begins once preparation is complete and the committed mix awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Deploy Financial Reports Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Deploy Financial Reports** (`processes:activity-fa-build-rbv7fk`). Its canonical ID is `processes:task-fa-build-intake-q9uzcd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Report deployment opens when the reporting requirements and the disclosure needs are handed over as the obligations the reports must satisfy. The intake custodian accepts them, registers them with audit identifiers, and starts the building from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so reports are built against registered obligations rather than against whatever looks presentable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the requirements and disclosure needs are presented for the deployment, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function registers the reporting requirements and disclosure needs as the deployment baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Reporting Requirements and Disclosure Needs |
+| `plain_language_description` | string | no | Report deployment opens when the reporting requirements and the disclosure needs are handed over as the obligations the … |
+| `business_purpose` | string | no | It exists so reports are built against registered obligations rather than against whatever looks presentable. |
+| `practical_context` | string | no | It opens when the requirements and disclosure needs are presented for the deployment, with the activity owner alerted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

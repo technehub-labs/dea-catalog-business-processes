@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Positions and Ledger Data'
+plain_language_description: 'Preparation opens when the documented tax positions and the ledger data are handed over together as the ground each return will be filled from. The intake custodian accepts them, registers them with audit identifiers, and starts the preparation from a recorded baseline.'
+business_purpose: 'It exists so returns are filled from the registered positions and the books rather than from last year''s template.'
+practical_context: 'It opens when the positions and data are presented for the preparation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the compliance function registers the positions and ledger data as the preparation baseline, with audit references.'

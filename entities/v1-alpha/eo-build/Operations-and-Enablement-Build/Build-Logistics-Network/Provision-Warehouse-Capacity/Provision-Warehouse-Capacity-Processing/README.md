@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Provision Warehouse Capacity Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Provision Warehouse Capacity** (`processes:activity-eo-build-6rz88v`). Its canonical ID is `processes:task-eo-build-transform-tc32nd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the sizing verified, the processing custodian does the provisioning itself: the warehouse capacity each node requires is provisioned to its sizing, and the provisioned capacity is set down in the form the activity defines. Working papers behind each provision are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a node without capacity is a pin on a map - provisioning is what turns positions into usable storage.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified sizing is ready to be provisioned from, and it ends with the provisioned capacity produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management provisions each node's warehouse capacity to its sizing, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Provide the Warehouse Capacity Each Node Needs |
+| `plain_language_description` | string | no | With the sizing verified, the processing custodian does the provisioning itself: the warehouse capacity each node … |
+| `business_purpose` | string | no | It exists because a node without capacity is a pin on a map - provisioning is what turns positions into usable storage. |
+| `practical_context` | string | no | It starts once checking is complete and the verified sizing is ready to be provisioned from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

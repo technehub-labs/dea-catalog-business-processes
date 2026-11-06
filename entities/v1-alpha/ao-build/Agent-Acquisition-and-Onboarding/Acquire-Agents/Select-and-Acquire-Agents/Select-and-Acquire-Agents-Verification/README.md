@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Select and Acquire Agents Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Select and Acquire Agents** (`processes:activity-ao-build-4vccpu`). Its canonical ID is `processes:task-ao-build-verify-8dyuy4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verification custodian checks both sides of the match: the capacity requirement as handed over, and the candidate agents offered against it. Where a candidate falls short of the requirement, the defect is logged for rejection or repair rather than quietly accepted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so agents are only acquired against a requirement that has itself been checked and found sound.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and both requirement and candidates can be compared with the activity's requirements, and it finishes with them verified or the defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian tests each candidate agent against the handed-over capacity requirement and logs one candidate as short of the mark for remediation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Requirement and the Candidate Agents |
+| `plain_language_description` | string | no | The verification custodian checks both sides of the match: the capacity requirement as handed over, and the candidate … |
+| `business_purpose` | string | no | It exists so agents are only acquired against a requirement that has itself been checked and found sound. |
+| `practical_context` | string | no | It runs once the intake is registered and both requirement and candidates can be compared with the activity's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

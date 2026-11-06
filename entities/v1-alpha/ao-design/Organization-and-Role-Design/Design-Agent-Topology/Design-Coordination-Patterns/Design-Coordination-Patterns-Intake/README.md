@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Design Coordination Patterns Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Coordination Patterns** (`processes:activity-ao-design-j98gk4`). Its canonical ID is `processes:task-ao-design-intake-mf3f4b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Pattern design opens when the decided substrate placements are handed over as the arrangement the patterns must connect. The intake custodian accepts the handover, registers it with audit identifiers, and starts the design work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so coordination patterns are designed over a registered placement arrangement rather than an assumed one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the decided placements are presented for pattern design, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the decided placements as the pattern-design baseline, with audit references, and opens the design work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Decided Placements for Pattern Design |
+| `plain_language_description` | string | no | Pattern design opens when the decided substrate placements are handed over as the arrangement the patterns must … |
+| `business_purpose` | string | no | It exists so coordination patterns are designed over a registered placement arrangement rather than an assumed one. |
+| `practical_context` | string | no | It opens when the decided placements are presented for pattern design, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

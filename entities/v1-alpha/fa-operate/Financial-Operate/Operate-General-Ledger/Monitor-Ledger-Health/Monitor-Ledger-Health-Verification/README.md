@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-ve
 
 This is a **Task** (level L4), named **Monitor Ledger Health Verification**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Monitor Ledger Health** (`processes:activity-fa-operate-ksg7yj`). Its canonical ID is `processes:task-fa-operate-verify-pfv2ym`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is watched, the verification custodian checks the telemetry against what monitoring requires - that it covers the ledger's operation and is flowing for the period ahead. Defects are logged for rejection or repair before the watching begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pulse is never read from telemetry that went quietly dark.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the telemetry can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the telemetry stopped flowing for one feed and logs the defect before the watching begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Telemetry Before Watching the Pulse |
+| `plain_language_description` | string | no | Before anything is watched, the verification custodian checks the telemetry against what monitoring requires - that it … |
+| `business_purpose` | string | no | It exists so the pulse is never read from telemetry that went quietly dark. |
+| `practical_context` | string | no | It runs once the intake is registered and the telemetry can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

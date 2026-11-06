@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Design Financial Policies Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Policies** (`processes:activity-fa-design-ppadqj`). Its canonical ID is `processes:task-fa-design-transform-bqspva`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the objectives verified, the processing custodian does the designing itself: each control objective is turned into the policy that makes it law inside the enterprise, and the policy designs are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an objective without a policy is a hope with vocabulary - the policy is where the objective becomes a rule people can follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified objectives are ready to be written from, and it ends with the policy designs produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority turns each objective into the rule that makes it binding, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Write the Rules the Objectives Imply |
+| `plain_language_description` | string | no | With the objectives verified, the processing custodian does the designing itself: each control objective is turned into … |
+| `business_purpose` | string | no | It exists because an objective without a policy is a hope with vocabulary - the policy is where the objective becomes a … |
+| `practical_context` | string | no | It starts once checking is complete and the verified objectives are ready to be written from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

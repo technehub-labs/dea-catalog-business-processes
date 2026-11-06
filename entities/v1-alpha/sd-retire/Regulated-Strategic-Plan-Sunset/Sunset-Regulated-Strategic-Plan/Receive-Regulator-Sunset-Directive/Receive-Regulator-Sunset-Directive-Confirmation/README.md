@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-con
 
 This is a **Task** (level L4), named **Receive Regulator Sunset Directive Confirmation**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Receive Regulator Sunset Directive** (`processes:activity-sd-retire-z2y3pr`). Its canonical ID is `processes:task-sd-retire-confirm-c4hv6z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The directive is on the record and the retirement must now proceed. The confirmation custodian tells the downstream teams the recorded sunset directive is available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the identification and register work cannot safely start until someone has confirmed the directive stands recorded and complete.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the receipt work is finished and the recorded directive is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the sunset teams the directive stands recorded with its dates, then closes the handover by reconciling the record against what the receipt promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Tell the Sunset Teams the Directive Stands Recorded |
+| `plain_language_description` | string | no | The directive is on the record and the retirement must now proceed. The confirmation custodian tells the downstream … |
+| `business_purpose` | string | no | It exists because the identification and register work cannot safely start until someone has confirmed the directive … |
+| `practical_context` | string | no | It opens when the receipt work is finished and the recorded directive is ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

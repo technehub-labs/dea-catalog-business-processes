@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Plan Agent Development Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Plan Agent Development** (`processes:activity-ao-improve-eq6pbr`). Its canonical ID is `processes:task-ao-improve-intake-r5hd7s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Planning opens when the gathered development drivers are handed over as the case the plan must answer. The intake custodian accepts the handover, registers it with audit identifiers, and starts the planning work on a recorded footing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so development actions are planned against a registered set of drivers rather than against instinct.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the gathered drivers are presented for planning, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the gathered drivers as the planning baseline, with audit references, and opens the planning work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Gathered Drivers for Development Planning |
+| `plain_language_description` | string | no | Planning opens when the gathered development drivers are handed over as the case the plan must answer. The intake … |
+| `business_purpose` | string | no | It exists so development actions are planned against a registered set of drivers rather than against instinct. |
+| `practical_context` | string | no | It opens when the gathered drivers are presented for planning, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-tra
 
 This is a **Task** (level L4), named **Adjudicate Policyholder Claims Processing**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Adjudicate Policyholder Claims** (`processes:activity-fa-retire-vmpdww`). Its canonical ID is `processes:task-fa-retire-transform-j9bya3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the submissions verified, the processing custodian does the adjudicating itself: each claim is validated, judged down the priority waterfall, and paid, partly paid, or refused with its reasons written, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because in a run-off the claimants have waited long enough - the judging is what gives each of them their lawful answer, evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified submissions are ready to be judged, and it ends with the adjudicated register produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function judges each claim down the priority waterfall and pays what is owed, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Judge Every Claim and Pay What Is Owed |
+| `plain_language_description` | string | no | With the submissions verified, the processing custodian does the adjudicating itself: each claim is validated, judged … |
+| `business_purpose` | string | no | It exists because in a run-off the claimants have waited long enough - the judging is what gives each of them their … |
+| `practical_context` | string | no | It starts once checking is complete and the verified submissions are ready to be judged, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

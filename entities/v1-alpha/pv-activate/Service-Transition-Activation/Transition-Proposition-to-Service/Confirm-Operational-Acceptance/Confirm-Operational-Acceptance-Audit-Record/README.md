@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-activate-r
 
 This is a **Task** (level L4), named **Confirm Operational Acceptance Audit Record**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Confirm Operational Acceptance** (`processes:activity-pv-activate-hxb9wf`). Its canonical ID is `processes:task-pv-activate-record-jevchn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the sign-off is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles an evidence review would consult. The file stays readable for as long as the discipline requires.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the acceptance evidence can be produced whenever anyone questions who signed off, and when.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian of the proposition design authority files the acceptance record at its retention tier and sets the retrieval handles.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Preserve the Acceptance Record |
+| `plain_language_description` | string | no | Once the sign-off is in, the records custodian preserves the audit record at its required retention tier and sets the … |
+| `business_purpose` | string | no | It exists so the acceptance evidence can be produced whenever anyone questions who signed off, and when. |
+| `practical_context` | string | no | It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

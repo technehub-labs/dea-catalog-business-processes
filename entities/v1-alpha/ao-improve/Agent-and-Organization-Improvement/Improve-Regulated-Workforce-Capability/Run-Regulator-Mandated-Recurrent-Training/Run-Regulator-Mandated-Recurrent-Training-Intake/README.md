@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Run Regulator-Mandated Recurrent Training Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Run Regulator-Mandated Recurrent Training** (`processes:activity-ao-improve-x7m4n2`). Its canonical ID is `processes:task-ao-improve-intake-hhw7w9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The training cycle opens when the live role list and the regulator training matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the cycles will be run from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so recurrent training is run from a registered role list against a registered training matrix.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the live role list and training matrix are presented for the cycle, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the live role list and training matrix as the cycle baseline, with audit references, and opens the training work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Live Role List and Training Matrix |
+| `plain_language_description` | string | no | The training cycle opens when the live role list and the regulator training matrix are handed to the intake custodian … |
+| `business_purpose` | string | no | It exists so recurrent training is run from a registered role list against a registered training matrix. |
+| `practical_context` | string | no | It opens when the live role list and training matrix are presented for the cycle, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

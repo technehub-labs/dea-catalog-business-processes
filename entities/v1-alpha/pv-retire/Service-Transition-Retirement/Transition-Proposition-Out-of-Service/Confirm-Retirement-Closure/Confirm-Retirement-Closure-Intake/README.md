@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-int
 
 This is a **Task** (level L4), named **Confirm Retirement Closure Intake**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Confirm Retirement Closure** (`processes:activity-pv-retire-mqkper`). Its canonical ID is `processes:task-pv-retire-intake-4ncf7j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The closure work opens as its material arrives: the withdrawn service together with the residual obligations already routed from the withdrawal. The intake custodian logs them against the closure file so the confirming starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so retirement closure is confirmed only over a logged withdrawn service and routed residuals, never over loose assertions that a product has gone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the withdrawn service and its routed residuals are presented for closure, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the proposition design authority logs the newly withdrawn service and the routed warranty and data-retention residuals into the closure file, so the closure confirmation starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Withdrawn Service and Its Routed Residuals for Closure |
+| `plain_language_description` | string | no | The closure work opens as its material arrives: the withdrawn service together with the residual obligations already … |
+| `business_purpose` | string | no | It exists so retirement closure is confirmed only over a logged withdrawn service and routed residuals, never over … |
+| `practical_context` | string | no | It opens when the withdrawn service and its routed residuals are presented for closure, with the activity's owner told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

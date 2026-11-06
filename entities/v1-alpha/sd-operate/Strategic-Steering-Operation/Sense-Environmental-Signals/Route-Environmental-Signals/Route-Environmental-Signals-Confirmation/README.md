@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-co
 
 This is a **Task** (level L4), named **Route Environmental Signals Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Route Environmental Signals** (`processes:activity-sd-operate-ebntgy`). Its canonical ID is `processes:task-sd-operate-confirm-2akekq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The signals are delivered and the handover must be sealed. The confirmation custodian tells the downstream teams the routed environmental signals are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the sensing cell cannot close its cycle until each consuming team has acknowledged what landed on its desk.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the routing work is finished and the deliveries are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the monitoring, steering and adaptation teams the routed signals are available, then closes each delivery against what the routing promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Close Out the Signal Deliveries with the Consuming Teams |
+| `plain_language_description` | string | no | The signals are delivered and the handover must be sealed. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists because the sensing cell cannot close its cycle until each consuming team has acknowledged what landed on its … |
+| `practical_context` | string | no | It opens when the routing work is finished and the deliveries are ready to travel, and it closes with the downstream … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

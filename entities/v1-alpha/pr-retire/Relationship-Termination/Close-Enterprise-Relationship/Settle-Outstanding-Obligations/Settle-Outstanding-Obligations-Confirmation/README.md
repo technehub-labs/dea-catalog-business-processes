@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-con
 
 This is a **Task** (level L4), named **Settle Outstanding Obligations Confirmation**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Settle Outstanding Obligations** (`processes:activity-pr-retire-zb4htq`). Its canonical ID is `processes:task-pr-retire-confirm-by4z54`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with the contract for settling what is owed. Once aligned, the completion confirmation is received by the relationship custodian and by the records custodian, and it is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so both parties can rely on one formal signal that nothing is owed any more.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to record-keeping.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian completes the reconciliation, and the relationship and records custodians each acknowledge the settlements.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Obligations Are Settled |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with … |
+| `business_purpose` | string | no | It exists so both parties can rely on one formal signal that nothing is owed any more. |
+| `practical_context` | string | no | It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

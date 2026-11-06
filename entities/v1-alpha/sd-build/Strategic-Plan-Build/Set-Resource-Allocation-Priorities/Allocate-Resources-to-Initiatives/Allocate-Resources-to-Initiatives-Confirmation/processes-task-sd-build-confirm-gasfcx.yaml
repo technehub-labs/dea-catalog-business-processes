@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Tell the Initiative Owners Their Resources Are Set'
+plain_language_description: 'The confirming opens once the allocation is complete. The confirmation custodian tells the downstream teams the allocation is available, and closes the reconciliation against what the activity promised for the allocating.'
+business_purpose: 'It exists so initiative owners plan delivery from a confirmed allocation rather than from pencilled figures.'
+practical_context: 'It opens when the allocation is ready to hand on, and it closes with the confirmation issued and the allocation''s promises checked off against what was delivered.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function tells each initiative owner what their confirmed allocation is, reconciles the figures against what the allocating promised, and issues the confirmation.'

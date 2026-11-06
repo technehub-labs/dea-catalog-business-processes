@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Draft Workforce and Agent Mix Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Draft Workforce and Agent Mix** (`processes:activity-ao-conceive-73s2vm`). Its canonical ID is `processes:task-ao-conceive-transform-k599zn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the envelopes verified, the processing custodian does the composition itself: the workforce and agent mix is drafted to sit within its bounded proportions and envelopes, in the form the activity defines. The drafting working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because proportions and envelopes only become an organisation once somebody composes the actual mix within them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified envelopes are ready to be composed within, and it ends with the drafted mix produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management composes the mix draft within the bounded envelopes, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Compose the Workforce and Agent Mix Draft |
+| `plain_language_description` | string | no | With the envelopes verified, the processing custodian does the composition itself: the workforce and agent mix is … |
+| `business_purpose` | string | no | It exists because proportions and envelopes only become an organisation once somebody composes the actual mix within … |
+| `practical_context` | string | no | It starts once checking is complete and the verified envelopes are ready to be composed within, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

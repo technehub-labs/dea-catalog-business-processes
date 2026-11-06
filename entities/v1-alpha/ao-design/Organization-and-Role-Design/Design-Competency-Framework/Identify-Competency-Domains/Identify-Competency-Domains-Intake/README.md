@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 
 This is a **Task** (level L4), named **Identify Competency Domains Intake**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Identify Competency Domains** (`processes:activity-ao-design-e63vge`). Its canonical ID is `processes:task-ao-design-intake-38e936`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The framework work opens when the committed organization structure design is handed over as the structure whose competency domains must be identified. The intake custodian accepts it, registers it with audit identifiers, and starts the identification from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so competency domains are identified from the committed structure rather than from a generic list.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the structure design is presented for the identification, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the committed structure design as the identification baseline, with audit references, and opens the framework work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Structure Design for Domain Identification |
+| `plain_language_description` | string | no | The framework work opens when the committed organization structure design is handed over as the structure whose … |
+| `business_purpose` | string | no | It exists so competency domains are identified from the committed structure rather than from a generic list. |
+| `practical_context` | string | no | It opens when the structure design is presented for the identification, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-r
 
 This is a **Task** (level L4), named **Commit Market and Demand Thesis Audit Record**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Commit Market and Demand Thesis** (`processes:activity-pr-conceive-hx3r6g`). Its canonical ID is `processes:task-pr-conceive-record-fxqb34`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After commitment, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the committed thesis and its evidence remain available when the test results come back.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the committed thesis file so the test designers can trace every hypothesis to its source.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Retain the Committed Thesis File |
+| `plain_language_description` | string | no | After commitment, the records custodian places the conception file - manifest, verification report, thesis package … |
+| `business_purpose` | string | no | It exists so the committed thesis and its evidence remain available when the test results come back. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

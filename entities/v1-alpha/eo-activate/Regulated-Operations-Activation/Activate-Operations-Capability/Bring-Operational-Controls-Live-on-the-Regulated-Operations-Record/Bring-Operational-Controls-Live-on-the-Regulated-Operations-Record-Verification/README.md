@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-v
 
 This is a **Task** (level L4), named **Bring Operational Controls Live on the Regulated Operations Record Verification**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Bring Operational Controls Live on the Regulated Operations Record** (`processes:activity-eo-activate-h2dqvk`). Its canonical ID is `processes:task-eo-activate-verify-cyg5gt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any control is brought live, the verification custodian checks the framework against what the go-live requires - that every mandated control is present and each is traceable to the authorization. Defects are logged for rejection or repair before any control is switched on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so live operations never run on controls that only partially match what the regulator mandated.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the framework can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a mandated control with no implementation behind it and logs the defect before any control goes live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Framework Before Bringing the Controls Live |
+| `plain_language_description` | string | no | Before any control is brought live, the verification custodian checks the framework against what the go-live requires - … |
+| `business_purpose` | string | no | It exists so live operations never run on controls that only partially match what the regulator mandated. |
+| `practical_context` | string | no | It runs once the intake is registered and the framework can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

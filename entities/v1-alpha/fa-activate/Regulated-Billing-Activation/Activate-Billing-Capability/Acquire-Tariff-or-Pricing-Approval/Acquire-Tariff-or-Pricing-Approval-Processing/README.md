@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-activate-t
 
 This is a **Task** (level L4), named **Acquire Tariff or Pricing Approval Processing**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Acquire Tariff or Pricing Approval** (`processes:activity-fa-activate-u8sq5k`). Its canonical ID is `processes:task-fa-activate-transform-ffn27p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the material verified, the processing custodian makes the acquisition itself: the pricing submission is filed, the tariff or pricing permission is secured, and the granted approval is preserved on the regulated billing record in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a price without permission is a debt without a leg to stand on - this is the permission being won, recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified material is ready to be filed, and it ends with the granted approval preserved and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the audit function files the submission and preserves the granted approval on the billing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Win the Approval to Charge What the Filing Says |
+| `plain_language_description` | string | no | With the material verified, the processing custodian makes the acquisition itself: the pricing submission is filed, the … |
+| `business_purpose` | string | no | It exists because a price without permission is a debt without a leg to stand on - this is the permission being won … |
+| `practical_context` | string | no | It starts once checking is complete and the verified material is ready to be filed, and it ends with the granted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

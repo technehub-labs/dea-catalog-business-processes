@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Monitor Catalogue Integrity Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Catalogue Integrity** (`processes:activity-pv-operate-5gtsjg`). Its canonical ID is `processes:task-pv-operate-transform-kev8ms`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the watching proper begins. The processing custodian reads the catalogue state and the channel states together, producing the integrity posture in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because catalogue correctness only becomes manageable once accuracy, availability and consistency are scored into one stated posture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified states are ready to be worked, and it closes with the integrity posture produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management weighs the verified catalogue state against each selling channel's state, notes where offerings are mispriced or missing, and states the resulting integrity posture with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Out the Catalogue Integrity Posture |
+| `plain_language_description` | string | no | With the inputs verified, the watching proper begins. The processing custodian reads the catalogue state and the … |
+| `business_purpose` | string | no | It exists because catalogue correctness only becomes manageable once accuracy, availability and consistency are scored … |
+| `practical_context` | string | no | It opens when the verified states are ready to be worked, and it closes with the integrity posture produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

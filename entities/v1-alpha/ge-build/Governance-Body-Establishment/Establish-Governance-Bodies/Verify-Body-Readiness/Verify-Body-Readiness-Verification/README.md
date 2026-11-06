@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-build-veri
 
 This is a **Task** (level L4), named **Verify Body Readiness Verification**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Verify Body Readiness** (`processes:activity-ge-build-epqkej`). Its canonical ID is `processes:task-ge-build-verify-5sxw4t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the manifest registered, the verification custodian reads the whole package against the framework's contract, the completeness rules, and the tooling specification, and issues the report naming whatever deviates and how it will be mended.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because readiness judged short of the design would hand operation a body that cannot govern - the reading is what catches that before it counts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification report issued, custody passed onward to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian reads the whole package against the framework's contract and the completeness rules, naming whatever deviates and how it will be mended.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hold the Readiness Against the Design Before It Counts |
+| `plain_language_description` | string | no | With the manifest registered, the verification custodian reads the whole package against the framework's contract, the … |
+| `business_purpose` | string | no | It exists because readiness judged short of the design would hand operation a body that cannot govern - the reading is … |
+| `practical_context` | string | no | It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

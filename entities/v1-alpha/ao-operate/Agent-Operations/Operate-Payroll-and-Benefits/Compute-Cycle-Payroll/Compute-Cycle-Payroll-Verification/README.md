@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Compute Cycle Payroll Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Compute Cycle Payroll** (`processes:activity-ao-operate-gxarb3`). Its canonical ID is `processes:task-ao-operate-verify-xm7tvy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any pay is computed, the verification custodian checks the time data against what computation requires - that it is the validated set and covers every agent in the cycle. Gaps are logged for rejection or repair before the computation runs.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody's pay is computed from a record that missed their hours.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the data can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds one agent's time data missing from the validated set and logs the gap before the payroll is computed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Time Data Before Computing the Payroll |
+| `plain_language_description` | string | no | Before any pay is computed, the verification custodian checks the time data against what computation requires - that it … |
+| `business_purpose` | string | no | It exists so nobody's pay is computed from a record that missed their hours. |
+| `practical_context` | string | no | It runs once the intake is registered and the data can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

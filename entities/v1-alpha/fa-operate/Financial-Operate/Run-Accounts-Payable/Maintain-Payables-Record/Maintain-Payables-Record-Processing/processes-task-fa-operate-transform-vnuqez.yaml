@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Keep the Owings to Suppliers True'
+plain_language_description: 'With the inputs verified, the processing custodian does the keeping itself: every invoice, approval, and payment is written into the payables record as it happens, and the current record is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because an owing that drifts from its facts is a dispute in waiting - the keeping is what makes the payables record worth trusting.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be written from, and it ends with the current record produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the compliance function writes every invoice, approval, and payment into the record as it happens, keeping the working papers.'

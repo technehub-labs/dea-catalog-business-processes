@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 
 This is a **Task** (level L4), named **Deploy Monitoring Tooling Processing**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Deploy Monitoring Tooling** (`processes:activity-ge-build-459rn2`). Its canonical ID is `processes:task-ge-build-transform-c5j7nf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the build for the tooling: the monitoring the control objectives and the compliance regime demand is stood up, joined by the rest of the build, and the build-ready inventory is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because controls without eyes are controls honoured only by choice - the tooling is what makes the watching constant.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function stands up the monitoring the control objectives and regime demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stand Up the Eyes the Controls Need |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the build for the tooling: the monitoring the control … |
+| `business_purpose` | string | no | It exists because controls without eyes are controls honoured only by choice - the tooling is what makes the watching … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

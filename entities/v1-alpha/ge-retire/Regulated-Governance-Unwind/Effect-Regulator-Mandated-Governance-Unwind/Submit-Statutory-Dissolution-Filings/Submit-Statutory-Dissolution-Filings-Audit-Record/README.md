@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-rec
 
 This is a **Task** (level L4), named **Submit Statutory Dissolution Filings Audit Record**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Submit Statutory Dissolution Filings** (`processes:activity-ge-retire-rck7n9`). Its canonical ID is `processes:task-ge-retire-record-jkgdu7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian seals the whole wind-down file - including every filing receipt - under the dissolved-entity retention schedule with tamper protection. The file must last for the entire retention horizon the statute sets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the receipts proving that dissolution filings were properly made may be demanded long after the entity ceases.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory horizon applied.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the dissolution receipts into tamper-protected retention and notes the statutory horizon on the custody record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Retain the Filing Receipts for the Statutory Term |
+| `plain_language_description` | string | no | After confirmation, the records custodian seals the whole wind-down file - including every filing receipt - under the … |
+| `business_purpose` | string | no | It exists because the receipts proving that dissolution filings were properly made may be demanded long after the … |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the case file retained and the statutory … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Resolve Beneficial Ownership and acknowledged by the relationship custodian and any governing-party notify-list …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Ownership Picture Is Settled'
+plain_language_description: 'The confirmation custodian reconciles the party record with the criteria for the onboarding decision and with the verification certificate. Once aligned, the relationship custodian receives the confirmation, the applicant is told, and the confirmation is logged.'
+business_purpose: 'It exists so the ownership resolution is formally accepted by the accountable relationship owner before the relationship advances.'
+practical_context: 'It starts once the record is produced, and it closes when the acknowledgement is logged and custody passes to the records custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian closes out the ownership reconciliation, and the relationship custodian acknowledges before the confirmation is logged.'

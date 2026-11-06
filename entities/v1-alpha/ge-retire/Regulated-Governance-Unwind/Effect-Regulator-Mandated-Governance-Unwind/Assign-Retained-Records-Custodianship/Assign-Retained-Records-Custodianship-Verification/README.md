@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 
 This is a **Task** (level L4), named **Assign Retained-Records Custodianship Verification**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assign Retained-Records Custodianship** (`processes:activity-ge-retire-rzhc83`). Its canonical ID is `processes:task-ge-retire-verify-x2rtfs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the designation proceeds, the verification custodian tests the papers against dissolution law, the quorum the reduced governance must keep, and the contract for who holds the retained records. Any statutory shortfall is named and scheduled for remediation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a custodian designation that fails the statute would leave the dissolved entity's records without a lawful home.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the manifest is registered, and it ends with the certificate issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian from the finance function checks the draft designation against the statutory retention requirements and clears it for processing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Custodianship Arrangement Against the Statute |
+| `plain_language_description` | string | no | Before the designation proceeds, the verification custodian tests the papers against dissolution law, the quorum the … |
+| `business_purpose` | string | no | It exists because a custodian designation that fails the statute would leave the dissolved entity's records without a … |
+| `practical_context` | string | no | It starts once the manifest is registered, and it ends with the certificate issued, deviations remediated, and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

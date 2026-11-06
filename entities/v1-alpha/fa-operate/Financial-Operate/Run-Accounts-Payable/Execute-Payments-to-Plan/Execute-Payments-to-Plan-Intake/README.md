@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Execute Payments to Plan Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payments to Plan** (`processes:activity-fa-operate-k9cf3b`). Its canonical ID is `processes:task-fa-operate-intake-smany2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Execution opens when the approved invoices and the payment plan are handed over together as the two sides the paying will be run between. The intake custodian accepts them, registers them with audit identifiers, and starts the execution from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so suppliers are paid from approved invoices on a registered plan rather than at whim.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the invoices and plan are presented for the execution, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the approved invoices and payment plan as the execution baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Approved Invoices and the Payment Plan |
+| `plain_language_description` | string | no | Execution opens when the approved invoices and the payment plan are handed over together as the two sides the paying … |
+| `business_purpose` | string | no | It exists so suppliers are paid from approved invoices on a registered plan rather than at whim. |
+| `practical_context` | string | no | It opens when the invoices and plan are presented for the execution, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

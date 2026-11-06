@@ -74,3 +74,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Recorded Training Completion'
+plain_language_description: 'When the entry is prepared, the confirmation custodian checks it against the result the activity set out to reach and then issues the formal confirmation. Whoever depends on the completion - the continuing supervisor, the teams awaiting a fully trained colleague - is told the record is ready.'
+business_purpose: 'It exists so a completion is announced as done only after it has been reconciled to the activity''s intended result.'
+practical_context: 'It starts once preparation is complete and the entry awaits its consumers, and it closes with the confirmation issued, the dependants told, and the outcome reconciled against the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the new completion entry to the activity''s intended result and confirms onward that the record is available to those who rely on it.'

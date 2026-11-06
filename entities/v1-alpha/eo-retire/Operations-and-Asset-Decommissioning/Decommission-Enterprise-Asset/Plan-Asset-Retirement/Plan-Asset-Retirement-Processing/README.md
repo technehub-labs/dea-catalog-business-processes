@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-tra
 
 This is a **Task** (level L4), named **Plan Asset Retirement Processing**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Plan Asset Retirement** (`processes:activity-eo-retire-6gntey`). Its canonical ID is `processes:task-eo-retire-transform-cj8yxc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the decision verified, the processing custodian does the planning itself: the retirement's schedule, its dependencies, and the safety and regulatory lines it must run inside are worked out and set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because pulling an asset carelessly can cost more than keeping it - the plan is what makes the ending deliberate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified decision is ready to be planned from, and it ends with the retirement plan produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management works out the retirement's order, dependencies, and constraints, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Out How the Asset Comes Out of Service |
+| `plain_language_description` | string | no | With the decision verified, the processing custodian does the planning itself: the retirement's schedule, its … |
+| `business_purpose` | string | no | It exists because pulling an asset carelessly can cost more than keeping it - the plan is what makes the ending … |
+| `practical_context` | string | no | It starts once checking is complete and the verified decision is ready to be planned from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

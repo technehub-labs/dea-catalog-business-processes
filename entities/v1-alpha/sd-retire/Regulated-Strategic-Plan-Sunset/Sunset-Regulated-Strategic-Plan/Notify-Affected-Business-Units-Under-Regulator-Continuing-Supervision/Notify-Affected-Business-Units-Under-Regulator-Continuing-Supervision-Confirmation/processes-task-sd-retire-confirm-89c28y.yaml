@@ -74,3 +74,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Close the Sunset''s Notification Leg with the Prescribed Acknowledgements'
+plain_language_description: 'The notices have gone and the acknowledgements must now travel. The confirmation custodian tells the downstream teams the notified business units are available, and closes the reconciliation against what the activity promised.'
+business_purpose: 'It exists because the sunset cannot be declared done until the prescribed acknowledgements are formally closed against the plan record.'
+practical_context: 'It opens when the notification work is finished and the acknowledgements are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity''s promise closed out.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function tells the sunset team the prescribed acknowledgements are in and the notification leg is closed, reconciling it against what the notification promised.'

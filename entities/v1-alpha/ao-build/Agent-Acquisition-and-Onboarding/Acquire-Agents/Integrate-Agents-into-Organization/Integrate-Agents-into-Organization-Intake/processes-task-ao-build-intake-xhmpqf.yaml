@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Onboarded Agents for Integration'
+plain_language_description: 'Agents that have finished onboarding arrive here to begin the move into the working organisation. The intake custodian accepts each one, registers the arrival with audit identifiers, and lets the placement work start from a clean, traceable list.'
+business_purpose: 'It exists so integration begins from a registered roster rather than whoever happens to turn up.'
+practical_context: 'It opens when the onboarded agents are handed over for placement, with the activity owner told of their arrival, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian logs the freshly onboarded agents onto the integration roster with audit references and confirms the handover so placement work can begin.'

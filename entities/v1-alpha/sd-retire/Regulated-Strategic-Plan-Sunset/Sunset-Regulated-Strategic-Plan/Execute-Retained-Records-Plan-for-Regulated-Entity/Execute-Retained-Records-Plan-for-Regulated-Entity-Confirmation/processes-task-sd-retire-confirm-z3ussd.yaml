@@ -74,3 +74,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Tell the Notification Team the Records Leg Stands Executed'
+plain_language_description: 'The retention work stands executed and must now travel. The confirmation custodian tells the downstream teams the executed retained-records plan is available, and closes the reconciliation against what the activity promised.'
+business_purpose: 'It exists because the business-unit notification closes the sunset, and it should only run once the records leg is formally done.'
+practical_context: 'It opens when the execution work is finished and the executed plan is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity''s promise closed out.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the finance function tells the notification team the executed retained-records plan is available, then closes the handover against what the execution promised.'

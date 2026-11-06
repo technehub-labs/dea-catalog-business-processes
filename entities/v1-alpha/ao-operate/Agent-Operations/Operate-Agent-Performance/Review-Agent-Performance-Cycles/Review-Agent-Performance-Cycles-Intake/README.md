@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Review Agent Performance Cycles Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Review Agent Performance Cycles** (`processes:activity-ao-operate-vs4qaq`). Its canonical ID is `processes:task-ao-operate-intake-mkzye4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The review cycle opens when the monitored performance and the addressed exceptions are handed over together as the record the period's judgement will be made from. The intake custodian accepts both, registers them with audit identifiers, and starts the review from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cycle's judgement is made over the full registered record, monitoring and handling alike.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the monitoring and exceptions are presented for the review cycle, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the monitoring record and addressed exceptions as the review baseline, with audit references, and opens the cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Monitoring and Exceptions for the Review Cycle |
+| `plain_language_description` | string | no | The review cycle opens when the monitored performance and the addressed exceptions are handed over together as the … |
+| `business_purpose` | string | no | It exists so the cycle's judgement is made over the full registered record, monitoring and handling alike. |
+| `practical_context` | string | no | It opens when the monitoring and exceptions are presented for the review cycle, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Map Supervised-Training Completion Requirements Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Map Supervised-Training Completion Requirements** (`processes:activity-ao-conceive-fmxtqr`). Its canonical ID is `processes:task-ao-conceive-transform-6cbb24`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the mapping itself: for every licensed role it settles the training plan to follow, the evidence that shows supervised completion, and the path completions are recorded along - all set down in the form the activity defines. The working papers behind the mapping are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because supervised training can only be completed and evidenced against requirements somebody has mapped in advance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be mapped from, and it ends with the mapped requirements produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian maps each licensed role's training plan, evidence class, and recording path, keeping the working papers for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Map the Training Requirements for Each Role |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the mapping itself: for every licensed role it settles the … |
+| `business_purpose` | string | no | It exists because supervised training can only be completed and evidenced against requirements somebody has mapped in … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be mapped from, and it ends with the mapped … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

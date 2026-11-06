@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-tran
 
 This is a **Task** (level L4), named **Screen Candidates Against Sanctions / AML / FCRA / ADA Processing**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Screen Candidates Against Sanctions / AML / FCRA / ADA** (`processes:activity-ao-build-bufzrw`). Its canonical ID is `processes:task-ao-build-transform-bvpr2d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian runs the screenings themselves: every candidate is checked for sanctions exposure, financial-crime standing, background fitness, and fair-access fitness, and the cleared results are set down as the screened candidate list. Working papers from the checks are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a candidate whose past has not been screened is a risk the regulator-ready pool cannot carry.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be screened, and it ends with the screened candidate list produced and the working papers kept for audit.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian runs each screening line over every candidate and records the clearances on the screened list, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Screenings on Each Candidate |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian runs the screenings themselves: every candidate is checked for … |
+| `business_purpose` | string | no | It exists because a candidate whose past has not been screened is a risk the regulator-ready pool cannot carry. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be screened, and it ends with the screened … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

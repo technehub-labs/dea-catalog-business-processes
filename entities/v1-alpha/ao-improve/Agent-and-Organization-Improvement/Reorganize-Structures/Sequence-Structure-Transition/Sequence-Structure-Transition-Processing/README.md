@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Sequence Structure Transition Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Sequence Structure Transition** (`processes:activity-ao-improve-rnkywc`). Its canonical ID is `processes:task-ao-improve-transform-gd68fs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the scope verified, the processing custodian does the sequencing itself: the steps that move the organisation through the bounded change are worked out in their working order and set down in the form the activity defines. Working papers behind the order are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because structural change done out of order strands people and roles between arrangements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified scope is ready to be sequenced from, and it ends with the sequenced transition produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian orders the transition steps so no unit or role is left stranded between arrangements, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Order the Transition Steps for the Bounded Change |
+| `plain_language_description` | string | no | With the scope verified, the processing custodian does the sequencing itself: the steps that move the organisation … |
+| `business_purpose` | string | no | It exists because structural change done out of order strands people and roles between arrangements. |
+| `practical_context` | string | no | It starts once checking is complete and the verified scope is ready to be sequenced from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

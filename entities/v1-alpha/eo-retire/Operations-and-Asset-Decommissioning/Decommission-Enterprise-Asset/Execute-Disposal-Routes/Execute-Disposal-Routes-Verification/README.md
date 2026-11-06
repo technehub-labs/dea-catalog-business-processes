@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-retire-ver
 
 This is a **Task** (level L4), named **Execute Disposal Routes Verification**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Execute Disposal Routes** (`processes:activity-eo-retire-2xjudv`). Its canonical ID is `processes:task-eo-retire-verify-jxzjx9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything leaves, the verification custodian checks the routes against what disposal requires - that each asset's route is approved for its kind and the policy's requirements are met by the path chosen. Defects are logged for rejection or repair before any asset goes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no asset leaves down a path its kind was never approved for.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the routes can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a data-bearing asset routed to sale without its wipe and logs the defect before it goes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Routes Before the Assets Go |
+| `plain_language_description` | string | no | Before anything leaves, the verification custodian checks the routes against what disposal requires - that each asset's … |
+| `business_purpose` | string | no | It exists so no asset leaves down a path its kind was never approved for. |
+| `practical_context` | string | no | It runs once the intake is registered and the routes can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

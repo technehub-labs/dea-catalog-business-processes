@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-ve
 
 This is a **Task** (level L4), named **Resolve Collaboration Frictions Verification**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Resolve Collaboration Frictions** (`processes:activity-ao-operate-v356a4`). Its canonical ID is `processes:task-ao-operate-verify-69265b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any friction is resolved, the verification custodian checks the facilitated interactions against what resolution requires - that the record shows enough of each exchange to locate where the friction actually sits. Defects are logged for rejection or repair before any friction is worked on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so frictions are never fixed at the wrong boundary because the record was too thin to locate them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the interactions can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the record of one exchange too thin to locate its friction and logs the defect before resolution proceeds.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Interactions Before Resolving the Frictions |
+| `plain_language_description` | string | no | Before any friction is resolved, the verification custodian checks the facilitated interactions against what resolution … |
+| `business_purpose` | string | no | It exists so frictions are never fixed at the wrong boundary because the record was too thin to locate them. |
+| `practical_context` | string | no | It runs once the intake is registered and the interactions can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

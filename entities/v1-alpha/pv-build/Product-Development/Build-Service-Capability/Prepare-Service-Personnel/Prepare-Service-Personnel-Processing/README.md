@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-build-tran
 
 This is a **Task** (level L4), named **Prepare Service Personnel Processing**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Prepare Service Personnel** (`processes:activity-pv-build-zta8ej`). Its canonical ID is `processes:task-pv-build-transform-b5vwk9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checks done, the processing custodian prepares the team, producing personnel ready to run the stood-up mechanism in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a standing mechanism without prepared people is machinery with no hands.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management trains and readies the people who will run the stood-up mechanism.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Ready the People Who Will Run the Service |
+| `plain_language_description` | string | no | With the checks done, the processing custodian prepares the team, producing personnel ready to run the stood-up … |
+| `business_purpose` | string | no | It exists because a standing mechanism without prepared people is machinery with no hands. |
+| `practical_context` | string | no | It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

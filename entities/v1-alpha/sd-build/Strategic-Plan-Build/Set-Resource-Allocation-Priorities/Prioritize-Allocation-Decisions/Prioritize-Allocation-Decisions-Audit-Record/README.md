@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-reco
 
 This is a **Task** (level L4), named **Prioritize Allocation Decisions Audit Record**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Prioritize Allocation Decisions** (`processes:activity-sd-build-ys83dr`). Its canonical ID is `processes:task-sd-build-record-7jvnwx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The filing work opens once confirmation is given. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles, so why each decision ranked where it did stays answerable when sponsors push back.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ranking's reasoning survives as evidence through every sponsor challenge and replanning round.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is in place, and it closes with the prioritizing evidence filed at its required tier and the retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the strategy function files the prioritizing evidence at its required retention tier and sets the retrieval handles, so a sponsor's challenge to the ranking is met from the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Allocation Prioritizing Evidence |
+| `plain_language_description` | string | no | The filing work opens once confirmation is given. The records custodian preserves the audit record at its required … |
+| `business_purpose` | string | no | It exists so the ranking's reasoning survives as evidence through every sponsor challenge and replanning round. |
+| `practical_context` | string | no | It opens when the confirmation is in place, and it closes with the prioritizing evidence filed at its required tier and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

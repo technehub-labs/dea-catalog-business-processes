@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-conf
 
 This is a **Task** (level L4), named **Deploy ERP Finance Module Confirmation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Deploy ERP Finance Module** (`processes:activity-fa-build-va7nxd`). Its canonical ID is `processes:task-fa-build-confirm-kzmmx9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the module stands live, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The stood-up function learns its tooling is in place and the facilities can be operated over it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the function operates only over tooling confirmed as deployed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the deployed module awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the deployed module against the activity's intended outcome and issues the confirmation the operating function needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Deployed Finance Module |
+| `plain_language_description` | string | no | When the module stands live, the confirmation custodian reconciles it against the outcome the activity set out to reach … |
+| `business_purpose` | string | no | It exists so the function operates only over tooling confirmed as deployed. |
+| `practical_context` | string | no | It begins once preparation is complete and the deployed module awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

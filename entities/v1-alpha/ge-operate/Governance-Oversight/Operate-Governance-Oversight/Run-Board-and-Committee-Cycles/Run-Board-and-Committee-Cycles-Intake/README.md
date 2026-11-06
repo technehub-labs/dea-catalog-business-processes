@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 
 This is a **Task** (level L4), named **Run Board and Committee Cycles Intake**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Run Board and Committee Cycles** (`processes:activity-ge-operate-bjfkws`). Its canonical ID is `processes:task-ge-operate-intake-u3p2va`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the top of each cycle round, the intake custodian takes delivery of the working pack: the timetable of board and committee meetings, the queue of assurance material, the diary of risk reviews, and the compliance audit plan. Every item is logged into the cycle's case file so nothing enters the round unaccounted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cycles run from a controlled, fully logged starting point rather than ad-hoc papers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Operate-stage pack is ready to be handed over, and it closes with the manifest registered and the verification custodian holding custody.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the risk function logs the meeting timetable and assurance queue into the cycle file, then passes the pack to the verification custodian.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Cycle Pack and Open the File |
+| `plain_language_description` | string | no | At the top of each cycle round, the intake custodian takes delivery of the working pack: the timetable of board and … |
+| `business_purpose` | string | no | It exists so the cycles run from a controlled, fully logged starting point rather than ad-hoc papers. |
+| `practical_context` | string | no | It opens when the Operate-stage pack is ready to be handed over, and it closes with the manifest registered and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

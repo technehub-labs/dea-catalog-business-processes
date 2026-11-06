@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 
 This is a **Task** (level L4), named **Establish Operating Cycles Processing**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Operating Cycles** (`processes:activity-ge-build-5cjpnx`). Its canonical ID is `processes:task-ge-build-transform-mz7c8z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the build for the cycles: the regular convening rhythms the bodies will keep are established against their charters, joined by the rest of the build, and the build-ready inventory is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a body that never convenes never governs - the cycles are what turn constituted bodies into sitting ones.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function sets the convening rhythms each body's charter calls for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Rhythm the Bodies Will Convene On |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the build for the cycles: the regular convening rhythms … |
+| `business_purpose` | string | no | It exists because a body that never convenes never governs - the cycles are what turn constituted bodies into sitting … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

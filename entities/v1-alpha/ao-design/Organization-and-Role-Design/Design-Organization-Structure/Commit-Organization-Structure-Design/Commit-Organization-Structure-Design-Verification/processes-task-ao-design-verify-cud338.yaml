@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Reviewed Design Before Structure Commitment'
+plain_language_description: 'Before the structure is committed, the verification custodian checks the reviewed design against what commitment requires - that the review''s findings have been resolved and the design hangs together as one coherent arrangement. Anything found wanting is logged for rejection or repair before the commitment is made.'
+business_purpose: 'It exists so the enterprise never builds on a structure design committed with its review unresolved.'
+practical_context: 'It runs once the intake is registered and the design can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a review finding left unresolved and logs it for repair before the structure is committed.'

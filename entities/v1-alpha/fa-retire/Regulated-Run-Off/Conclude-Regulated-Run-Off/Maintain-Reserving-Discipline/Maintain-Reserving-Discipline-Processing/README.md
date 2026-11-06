@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-tra
 
 This is a **Task** (level L4), named **Maintain Reserving Discipline Processing**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Maintain Reserving Discipline** (`processes:activity-fa-retire-uuqbe9`). Its canonical ID is `processes:task-fa-retire-transform-7esdmp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the maintaining itself: the actuarial reserve, the capital adequacy, and the asset matching are held to the standard through each review, and the maintained reserve is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a run-off that lets its reserve slip pays its first creditors with its last creditors' money - the discipline is what keeps the promise whole.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be tended from, and it ends with the maintained reserve produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function holds the reserve to the standard through each review and corrects where it drifts, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hold the Reserves True While the Book Runs Off |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the maintaining itself: the actuarial reserve, the capital … |
+| `business_purpose` | string | no | It exists because a run-off that lets its reserve slip pays its first creditors with its last creditors' money - the … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be tended from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

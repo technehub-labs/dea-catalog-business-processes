@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-t
 
 This is a **Task** (level L4), named **Bring Operations Manuals and Runbooks Live Processing**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Bring Operations Manuals and Runbooks Live** (`processes:activity-eo-activate-qmpq2e`). Its canonical ID is `processes:task-eo-activate-transform-heheg6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the content verified, the processing custodian makes the go-live itself: the operations manuals and runbooks are brought live and recorded onto the regulated operations record in the form the activity defines. Working papers from the launch are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an authorization to operate is unusable without the documents the operators actually work from - live and authoritative.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified content is ready to be brought live, and it ends with the manuals and runbooks live and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function brings the manuals and runbooks live on the record and notes the launch in the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Make the Manuals and Runbooks Live |
+| `plain_language_description` | string | no | With the content verified, the processing custodian makes the go-live itself: the operations manuals and runbooks are … |
+| `business_purpose` | string | no | It exists because an authorization to operate is unusable without the documents the operators actually work from - live … |
+| `practical_context` | string | no | It starts once checking is complete and the verified content is ready to be brought live, and it ends with the manuals … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

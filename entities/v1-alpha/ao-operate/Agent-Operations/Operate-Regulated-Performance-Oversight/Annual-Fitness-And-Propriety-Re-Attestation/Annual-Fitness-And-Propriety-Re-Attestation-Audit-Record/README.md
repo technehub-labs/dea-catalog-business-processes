@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-re
 
 This is a **Task** (level L4), named **Annual Fitness-And-Propriety Re-Attestation Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Annual Fitness-And-Propriety Re-Attestation** (`processes:activity-ao-operate-j8k5p7`). Its canonical ID is `processes:task-ao-operate-record-dgbssv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the annual trail at its required retention tier and sets the retrieval handles for it. How each role's fitness stood at each annual re-attestation stays provable across the whole history of the cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each role's annual fitness history can be evidenced whenever a re-attestation outcome is questioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the annual trail at its retention tier and sets the retrieval handles a fitness review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Annual Fitness Re-Attestation Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the annual trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so each role's annual fitness history can be evidenced whenever a re-attestation outcome is questioned. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

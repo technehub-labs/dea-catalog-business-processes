@@ -73,3 +73,18 @@ outputs:
   description: Intake manifest registered and bound to the Design Hypothesis Tests case file; registered intake custodian passes custody to the verification custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Open the Test-Design Case File'
+plain_language_description: 'The test-design work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the test design starts accounted for.'
+business_purpose: 'It exists so the test designs are drawn from a complete, logged evidence set.'
+practical_context: 'It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the hypothesis set and research papers into the conception file before verification begins.'

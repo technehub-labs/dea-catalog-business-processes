@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-activate-t
 
 This is a **Task** (level L4), named **Activate Signing Authority Or Controlled-Function Designation Processing**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Activate Signing Authority Or Controlled-Function Designation** (`processes:activity-ao-activate-sq2zfw`). Its canonical ID is `processes:task-ao-activate-transform-jbu68h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the request has passed checking, the processing custodian turns it into the activated entry the activity promises: the signing authority is set out in the shape the personnel record expects, with the continuing-supervisor notification drafted alongside it. Working notes from the preparation are kept, so the trail from request to activation stays auditable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a checked request only becomes real authority once it is shaped into the record and notification the organisation works from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after checking is complete and the verified request is ready to be worked into its final form, and it ends when the activation output exists in its agreed shape with the working notes preserved.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function converts the checked designation into the personnel-record entry and drafts the continuing-supervisor notification for issue.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare the Activation for the Personnel Record |
+| `plain_language_description` | string | no | Once the request has passed checking, the processing custodian turns it into the activated entry the activity promises … |
+| `business_purpose` | string | no | It exists because a checked request only becomes real authority once it is shaped into the record and notification the … |
+| `practical_context` | string | no | It runs after checking is complete and the verified request is ready to be worked into its final form, and it ends when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

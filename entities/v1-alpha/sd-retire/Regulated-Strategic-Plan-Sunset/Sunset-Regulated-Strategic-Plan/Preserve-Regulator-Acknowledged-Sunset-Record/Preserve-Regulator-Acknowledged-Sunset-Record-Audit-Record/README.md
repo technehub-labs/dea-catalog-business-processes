@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-rec
 
 This is a **Task** (level L4), named **Preserve Regulator-Acknowledged Sunset Record Audit Record**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Preserve Regulator-Acknowledged Sunset Record** (`processes:activity-sd-retire-a364uh`). Its canonical ID is `processes:task-sd-retire-record-pc7hf2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the acknowledged sunset stays available, intact and retrievable for every later look the supervisor may take.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the preservation record kept at its required tier and its retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in the finance function keeps the acknowledged sunset record at the retention policy's tier, sets its retrieval handles, and leaves it ready for the supervisor's downstream review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Sunset Record Ready for the Supervisor's Review |
+| `plain_language_description` | string | no | After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention … |
+| `business_purpose` | string | no | It exists so the acknowledged sunset stays available, intact and retrievable for every later look the supervisor may … |
+| `practical_context` | string | no | It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -1,0 +1,582 @@
+{
+  "processes:task-ao-design-intake-v2uckf": {
+    "plain_language_name": "Receive the Role Catalogue and Supervision Matrix",
+    "plain_language_description": "Path definition opens when the regulator-tied role catalogue and the supervision matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the paths will be defined from.",
+    "business_purpose": "It exists so notification paths are defined from a registered catalogue against a registered supervision matrix.",
+    "practical_context": "It opens when the role catalogue and supervision matrix are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the role catalogue and supervision matrix as the definition baseline, with audit references."
+    }
+  },
+  "processes:task-ao-design-transform-ftvjry": {
+    "plain_language_name": "Define the Notification Path for Each Licensed Role",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the definition itself: for each regulator-licensed role, who the continuing supervisor is, how often notifications go out, what they carry, and how escalation runs are worked out and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a licensed role without a defined path to its supervisor cannot be supervised in operation.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be defined from, and it ends with the defined notification paths produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority defines each licensed role's supervisor, cadence, and escalation route, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-bwnb99": {
+    "plain_language_name": "Check the Definition Inputs Before Defining the Paths",
+    "plain_language_description": "Before any path is defined, the verification custodian checks the catalogue and supervision matrix against what definition requires - that every licensed role in the catalogue has a supervision line to define against. Gaps are flagged for rejection or repair before the paths are written.",
+    "business_purpose": "It exists so no licensed role is left without its notification path because its supervision line was missing.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a licensed role with no supervision line in the matrix and flags the gap before its path is defined."
+    }
+  },
+  "processes:task-ao-design-record-sfgczh": {
+    "plain_language_name": "File the Fitness Regime Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the definition trail at its required retention tier and sets the retrieval handles for it. What each role's fitness regime requires, and on what matrix reading it rests, remains readable for as long as the regime governs.",
+    "business_purpose": "It exists so the fitness regime set for each role can be evidenced whenever its application is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the regime trail at its retention tier and sets the retrieval handles a fitness review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-45k77k": {
+    "plain_language_name": "Confirm the Defined Fitness Assessment Regimes",
+    "plain_language_description": "When the regimes stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The mobilization design downstream learns each licensed role's fitness regime is settled and available.",
+    "business_purpose": "It exists so downstream design builds only over fitness regimes confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the defined regimes await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the defined regimes against the activity's intended outcome and issues the confirmation the downstream work needs."
+    }
+  },
+  "processes:task-ao-design-intake-gbaudu": {
+    "plain_language_name": "Receive the Role Catalogue and Fitness Matrix",
+    "plain_language_description": "Regime definition opens when the regulator-tied role catalogue and the fitness-and-propriety matrix are handed to the intake custodian. Both are accepted, registered with audit identifiers, and set down as the material the regime will be defined from.",
+    "business_purpose": "It exists so fitness assessment regimes are defined from a registered catalogue against a registered matrix.",
+    "practical_context": "It opens when the role catalogue and fitness matrix are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the role catalogue and fitness matrix as the definition baseline, with audit references."
+    }
+  },
+  "processes:task-ao-design-transform-e8kqf9": {
+    "plain_language_name": "Define the Fitness Assessment Regime for Each Role",
+    "plain_language_description": "With the inputs verified, the processing custodian makes the definition itself: for each licensed role, the assessment forms - initial, annual, and event-driven - the criteria, the attestor, and the framing the regulator applies are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because fitness attestations can only be made, and trusted, against a regime defined in advance for the role.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be defined from, and it ends with the defined fitness assessment regime produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority defines each licensed role's assessment forms, criteria, and attestor, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-mg9myj": {
+    "plain_language_name": "Check the Regime Inputs Before Defining",
+    "plain_language_description": "Before any regime is written, the verification custodian checks the catalogue and matrix against what definition requires - that each licensed role in the catalogue has its fitness criteria and attestor settled in the matrix. Gaps are flagged for rejection or repair before the regimes are defined.",
+    "business_purpose": "It exists so no licensed role carries a fitness regime that was never fully settled for it.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a licensed role whose attestor is unset in the matrix and flags the gap before its regime is defined."
+    }
+  },
+  "processes:task-ao-design-record-d4f56k": {
+    "plain_language_name": "File the Role Accountability Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the bounding trail at its required retention tier and sets the retrieval handles for it. What each role was made answerable for, and where its accountability ends, stays readable whenever responsibility in the live organisation is disputed.",
+    "business_purpose": "It exists so the accountabilities fixed on each role can be evidenced whenever they are tested.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the accountability trail at its retention tier and sets the retrieval handles an accountability review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-qzh2hv": {
+    "plain_language_name": "Confirm the Bounded Role Accountabilities",
+    "plain_language_description": "When the boundaries stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the accountabilities are bounded and the catalogue can be assembled.",
+    "business_purpose": "It exists so the catalogue is committed only with accountabilities confirmed as bounded.",
+    "practical_context": "It begins once preparation is complete and the bounded accountabilities await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the bounded accountabilities against the activity's intended outcome and issues the confirmation the consolidation step needs."
+    }
+  },
+  "processes:task-ao-design-intake-exzf93": {
+    "plain_language_name": "Receive the Role Levels for Accountability Bounding",
+    "plain_language_description": "Accountability bounding opens when the defined role levels are handed over as the roles whose boundaries of accountability must be drawn. The intake custodian accepts them, registers the handover with audit identifiers, and starts the bounding work from a recorded baseline.",
+    "business_purpose": "It exists so accountabilities are bounded within a registered set of role levels rather than informally.",
+    "practical_context": "It opens when the role levels are presented for the bounding, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the defined role levels as the bounding baseline, with audit references, and opens the accountability work."
+    }
+  },
+  "processes:task-ao-design-transform-vj5f48": {
+    "plain_language_name": "Bound the Accountabilities of Each Catalogued Role",
+    "plain_language_description": "With the levels verified, the processing custodian bounds the accountabilities themselves: what each catalogued role is answerable for, and where its accountability ends, is worked out and fixed in the form the activity defines. Working papers behind each boundary are preserved.",
+    "business_purpose": "It exists because a role with unbounded accountabilities becomes either a bottleneck or a scapegoat.",
+    "practical_context": "It starts once checking is complete and the verified levels are ready to be bounded, and it ends with the bounded role accountabilities produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority fixes what each catalogued role answers for and where its accountability ends, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-enyuz3": {
+    "plain_language_name": "Check the Levels Before Bounding the Accountabilities",
+    "plain_language_description": "Before any boundary is drawn, the verification custodian checks the role levels against what bounding requires - that each levelled role is settled enough for its accountabilities to be fixed. Defects are logged for rejection or repair before any boundary is drawn.",
+    "business_purpose": "It exists so accountability is never fixed to a role whose level was never fully settled.",
+    "practical_context": "It runs once the intake is registered and the levels can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a levelled role still missing its reporting place and logs the defect before accountabilities are bounded."
+    }
+  },
+  "processes:task-ao-design-record-ugpdhe": {
+    "plain_language_name": "File the Role Catalogue Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the consolidation trail at its required retention tier and sets the retrieval handles for it. What was committed as the catalogue, and on whose confirmation, stays on file for the life of the catalogue.",
+    "business_purpose": "It exists so the catalogue's standing as the canonical reference can be evidenced whenever provisioning leans on it.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the consolidation trail at its retention tier and sets the retrieval handles a provisioning review would draw on."
+    }
+  },
+  "processes:task-ao-design-confirm-yc6q5f": {
+    "plain_language_name": "Confirm the Committed Role Catalogue",
+    "plain_language_description": "When the catalogue stands committed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The provisioning work downstream learns the canonical reference is ready to be received.",
+    "business_purpose": "It exists so provisioning starts only from a catalogue confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed catalogue awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed catalogue against the activity's intended outcome and issues the confirmation provisioning is waiting on."
+    }
+  },
+  "processes:task-ao-design-intake-c4mfm2": {
+    "plain_language_name": "Receive the Bounded Accountabilities for Catalogue Commitment",
+    "plain_language_description": "Commitment opens when the bounded role accountabilities are handed over as the last piece of the catalogue. The intake custodian accepts the handover, registers it with audit identifiers, and puts the consolidation on a recorded footing.",
+    "business_purpose": "It exists so the catalogue is committed from a registered set of bounded roles rather than from loose pieces.",
+    "practical_context": "It opens when the bounded accountabilities are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the bounded accountabilities as the commitment baseline, with audit references, and opens the consolidation."
+    }
+  },
+  "processes:task-ao-design-transform-5x7fd7": {
+    "plain_language_name": "Consolidate the Catalogue as the Canonical Reference",
+    "plain_language_description": "With the accountabilities verified, the processing custodian consolidates the catalogue itself: families, levels, and bounded accountabilities are brought together, ratified, and set down in the form the activity defines as the canonical reference downstream provisioning will work from. Working papers are preserved for audit.",
+    "business_purpose": "It exists because roles only staff the organisation once the catalogue stands as one committed reference instead of many drafts.",
+    "practical_context": "It starts once checking is complete and the verified accountabilities are ready to be consolidated, and it ends with the committed role catalogue produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority consolidates the catalogue into the canonical reference provisioning will work from, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-ynnbs7": {
+    "plain_language_name": "Check the Accountabilities Before Committing the Catalogue",
+    "plain_language_description": "Before the catalogue is committed, the verification custodian checks the bounded accountabilities against what commitment requires - that families, levels, and boundaries together make a complete, coherent catalogue. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so provisioning never runs against a catalogue committed in an incomplete state.",
+    "practical_context": "It runs once the intake is registered and the accountabilities can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a family whose roles lack bounded accountabilities and logs the defect before the catalogue is committed."
+    }
+  },
+  "processes:task-ao-design-record-n42uvs": {
+    "plain_language_name": "File the Role Family Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the definition trail at its required retention tier and sets the retrieval handles for it. Which families were defined, and from what frame reading, stays provable whenever the catalogue's shape is examined.",
+    "business_purpose": "It exists so the families behind the catalogue can be evidenced against the frame that produced them.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the family trail at its retention tier and sets the retrieval handles a catalogue review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-q2ap3z": {
+    "plain_language_name": "Confirm the Defined Role Families",
+    "plain_language_description": "When the families stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The levelling work that follows learns the families are settled and ready to be structured.",
+    "business_purpose": "It exists so role levels are defined only within families confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the defined families await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the defined families against the activity's intended outcome and issues the confirmation the levelling step needs."
+    }
+  },
+  "processes:task-ao-design-intake-zeuvvz": {
+    "plain_language_name": "Receive the Model Frame for Family Definition",
+    "plain_language_description": "The catalogue work opens when the committed organization model frame is handed over as the structure whose roles will be grouped into families. The intake custodian accepts it, registers it with audit identifiers, and starts the definition from a recorded baseline.",
+    "business_purpose": "It exists so role families are defined from the committed model frame rather than from ad hoc groupings.",
+    "practical_context": "It opens when the model frame is presented for the family definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed model frame as the family baseline, with audit references, and opens the catalogue work."
+    }
+  },
+  "processes:task-ao-design-transform-stp7p7": {
+    "plain_language_name": "Group the Catalogue's Roles into Families",
+    "plain_language_description": "With the frame verified, the processing custodian makes the definition itself: the role families that group the catalogue's roles are worked out from the frame and set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a catalogue of loose roles is unmanageable until the families that order it are defined.",
+    "practical_context": "It starts once checking is complete and the verified frame is ready to be grouped from, and it ends with the defined role families produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority groups the catalogue's roles into families drawn from the frame, keeping the working papers."
+    }
+  },
+  "processes:task-ao-design-verify-2gbk54": {
+    "plain_language_name": "Check the Model Frame Before Defining the Families",
+    "plain_language_description": "Before any family is defined, the verification custodian checks the model frame against what definition requires - that its roles are enumerated fully enough to be grouped. Gaps are logged for rejection or repair before any family is named.",
+    "business_purpose": "It exists so no catalogue role is left outside every family because the frame was read incompletely.",
+    "practical_context": "It runs once the intake is registered and the frame can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a set of roles the frame does not yet enumerate and logs the gap before families are defined."
+    }
+  },
+  "processes:task-ao-design-record-thasb5": {
+    "plain_language_name": "File the Role Level Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the definition trail at its required retention tier and sets the retrieval handles for it. What structure was set within each family, and on what basis, remains readable whenever roles are levelled or challenged against it.",
+    "business_purpose": "It exists so the leveling structure within each family can be evidenced whenever it is applied or questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the level trail at its retention tier and sets the retrieval handles a role review would consult."
+    }
+  },
+  "processes:task-ao-design-confirm-3qbw2v": {
+    "plain_language_name": "Confirm the Defined Role Levels",
+    "plain_language_description": "When the levels stand defined, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The accountability work that follows learns the levels are settled and ready to be bounded against.",
+    "business_purpose": "It exists so accountabilities are bounded only within levels confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the defined levels await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the defined levels against the activity's intended outcome and issues the confirmation the accountability step depends on."
+    }
+  },
+  "processes:task-ao-design-intake-kwr7x2": {
+    "plain_language_name": "Receive the Role Families for Level Definition",
+    "plain_language_description": "Level definition opens when the defined role families are handed over as the ground the leveling structure will be cut into. The intake custodian accepts them, registers the handover with audit identifiers, and starts the definition work on a recorded footing.",
+    "business_purpose": "It exists so role levels are defined within a registered set of families rather than free-floating.",
+    "practical_context": "It opens when the role families are presented for the level definition, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the defined families as the levelling baseline, with audit references, and opens the definition work."
+    }
+  },
+  "processes:task-ao-design-transform-u5vv8d": {
+    "plain_language_name": "Define the Leveling Structure Within Each Family",
+    "plain_language_description": "With the families verified, the processing custodian makes the definition itself: the leveling structure applied within each role family is worked out and set down in the form the activity defines. The working papers behind each structure are preserved for audit.",
+    "business_purpose": "It exists because a family without levels cannot distinguish a starter role from a seasoned one.",
+    "practical_context": "It starts once checking is complete and the verified families are ready to be levelled, and it ends with the defined role levels produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian cuts the leveling structure within each role family, keeping the working papers for audit."
+    }
+  },
+  "processes:task-ao-design-verify-fqbesq": {
+    "plain_language_name": "Check the Families Before Defining the Levels",
+    "plain_language_description": "Before any structure is defined, the verification custodian checks the role families against what definition requires - that each family is settled enough to carry a leveling structure within it. Gaps are logged for rejection or repair before any level is cut.",
+    "business_purpose": "It exists so no family is levelled before it has been settled as a family.",
+    "practical_context": "It runs once the intake is registered and the families can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one family described too loosely to level and logs the gap before definition proceeds."
+    }
+  },
+  "processes:task-ao-improve-record-qgqttw": {
+    "plain_language_name": "File the Competency Baseline Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the baselining trail at its required retention tier and sets the retrieval handles for it. What the population's competencies measured at baseline, and against which framework, stays provable whenever the gap analysis is examined.",
+    "business_purpose": "It exists so the competency baseline can be evidenced against the framework it was measured under.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the baselining trail at its retention tier and sets the retrieval handles a later gap review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-89fgmj": {
+    "plain_language_name": "Confirm the Population Competency Baseline",
+    "plain_language_description": "When the baseline stands measured, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The gap identification that follows learns the baseline is settled and available to be read against.",
+    "business_purpose": "It exists so gaps are identified only against a baseline confirmed as measured.",
+    "practical_context": "It begins once preparation is complete and the baseline awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the measured baseline against the activity's intended outcome and issues the confirmation the gap work needs."
+    }
+  },
+  "processes:task-ao-improve-intake-hmehhn": {
+    "plain_language_name": "Receive the Framework and Population for Baselining",
+    "plain_language_description": "Baselining opens when the committed competency framework and the current agent population are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the baselining work from a recorded base.",
+    "business_purpose": "It exists so competencies are measured against a registered framework over a registered population.",
+    "practical_context": "It opens when the framework and population are presented for baselining, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the committed framework and the current population as the baselining baseline, with audit references."
+    }
+  },
+  "processes:task-ao-improve-transform-hbkbu2": {
+    "plain_language_name": "Measure the Population's Competencies Against the Framework",
+    "plain_language_description": "With the inputs verified, the processing custodian does the baselining itself: the current agent population's competencies are measured against the framework's requirements and set down as the population competency baseline, in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because gaps can only be identified against a baseline somebody has actually measured and written down.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be measured from, and it ends with the population competency baseline produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian measures the population's competencies against the framework and sets down the baseline, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-6ypbad": {
+    "plain_language_name": "Check the Framework and Population Before Baselining",
+    "plain_language_description": "Before any competency is measured, the verification custodian checks the framework and population against what baselining requires - that the framework is the committed one and the population list is complete and current. Defects are flagged for rejection or repair before the baselining is made.",
+    "business_purpose": "It exists so the baseline is never measured against a superseded framework or an incomplete roster.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the population roster missing a recently onboarded team and flags the defect before baselining begins."
+    }
+  },
+  "processes:task-ao-improve-record-ctdhgp": {
+    "plain_language_name": "File the Gap Priority Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the commitment trail at its required retention tier and sets the retrieval handles for it. What priorities were committed, in which order, and on whose confirmation, stays on file for the life of the development effort.",
+    "business_purpose": "It exists so the priorities routed to development can be evidenced whenever the effort's direction is reviewed.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the commitment trail at its retention tier and sets the retrieval handles a development review would draw on."
+    }
+  },
+  "processes:task-ao-improve-confirm-n625pw": {
+    "plain_language_name": "Confirm the Committed Gap Priorities",
+    "plain_language_description": "When the priorities stand committed, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. Development planning and learning operations learn the committed priorities are ready to be received.",
+    "business_purpose": "It exists so development planning starts only from priorities confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the committed priorities await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the committed priorities against the activity's intended outcome and issues the confirmation development planning waits on."
+    }
+  },
+  "processes:task-ao-improve-intake-j5c2nw": {
+    "plain_language_name": "Receive the Prioritized Gaps for Commitment",
+    "plain_language_description": "Commitment opens when the prioritized capability gaps are handed over as the list the development effort will be asked to stand behind. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.",
+    "business_purpose": "It exists so priorities are committed from a registered ranking rather than from an informal shortlist.",
+    "practical_context": "It opens when the prioritized gaps are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the prioritized gaps as the commitment baseline, with audit references, and opens the commitment work."
+    }
+  },
+  "processes:task-ao-improve-transform-tzaxwm": {
+    "plain_language_name": "Commit the Gap Priorities for Development and Learning",
+    "plain_language_description": "With the ranking verified, the processing custodian works the commitment itself: the gap priorities are ratified and set down in the form the activity defines, ready to be routed onward to development planning and learning operations. Working papers from the commitment are preserved.",
+    "business_purpose": "It exists because identified gaps change nothing until they are committed and routed to the work that closes them.",
+    "practical_context": "It starts once checking is complete and the verified ranking is ready to be committed, and it ends with the committed gap priorities produced and the working papers kept for audit.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority ratifies the priorities and routes them to development planning and learning operations, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-v4yus7": {
+    "plain_language_name": "Check the Prioritized Gaps Before Commitment",
+    "plain_language_description": "Before the priorities are committed, the verification custodian checks them against what commitment requires - that the ranking is complete and every gap on it can be routed to a development owner. Anything found wanting is logged for rejection or repair before the commitment is made.",
+    "business_purpose": "It exists so development planning never receives priorities committed half-formed.",
+    "practical_context": "It runs once the intake is registered and the ranking can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a ranked gap with no development owner to receive it and logs the defect before commitment."
+    }
+  },
+  "processes:task-ao-improve-record-my33dc": {
+    "plain_language_name": "File the Capability Gap Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the identification trail at its required retention tier and sets the retrieval handles for it. Which gaps were found, and against what baseline reading, stays provable whenever the development effort's origins are examined.",
+    "business_purpose": "It exists so the gaps behind the development effort can be evidenced against the baseline they were read from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the gap trail at its retention tier and sets the retrieval handles a later analysis review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-qvmbtu": {
+    "plain_language_name": "Confirm the Identified Capability Gaps",
+    "plain_language_description": "When the gaps stand identified, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The prioritization that follows learns the gaps are settled and ready to be ranked.",
+    "business_purpose": "It exists so gaps are ranked only after identification confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the identified gaps await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the identified gaps against the activity's intended outcome and issues the confirmation the prioritization step needs."
+    }
+  },
+  "processes:task-ao-improve-intake-tkejeu": {
+    "plain_language_name": "Receive the Competency Baseline for Gap Identification",
+    "plain_language_description": "Gap identification opens when the population competency baseline is handed over as the measurement the gaps will be read from. The intake custodian accepts it, registers the handover with audit identifiers, and starts the identification work from a recorded baseline.",
+    "business_purpose": "It exists so gaps are identified from a registered baseline rather than from impressions of shortcoming.",
+    "practical_context": "It opens when the competency baseline is presented for the identification, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the competency baseline as the identification baseline, with audit references, and opens the gap work."
+    }
+  },
+  "processes:task-ao-improve-transform-pjf8cs": {
+    "plain_language_name": "Read the Gaps Between Baseline and Framework Requirements",
+    "plain_language_description": "With the baseline verified, the processing custodian makes the identification itself: where the population's measured competencies fall short of the framework's requirements is read out and set down as the identified capability gaps, in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because development can only be aimed at shortfalls somebody has actually identified and recorded.",
+    "practical_context": "It starts once checking is complete and the verified baseline is ready to be read from, and it ends with the identified capability gaps produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian reads where the population falls short of the framework and records the identified gaps, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-sv7y6h": {
+    "plain_language_name": "Check the Baseline Before Identifying the Gaps",
+    "plain_language_description": "Before any gap is identified, the verification custodian checks the baseline against what identification requires - that it covers the whole population against the whole framework. Gaps in the baseline itself are logged for rejection or repair before the gap reading is made.",
+    "business_purpose": "It exists so the gap list is never built over a baseline that missed part of the ground.",
+    "practical_context": "It runs once the intake is registered and the baseline can be compared with the activity's requirements, and it finishes with it verified or its gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the baseline covering only part of a framework domain and logs the defect before gaps are read."
+    }
+  },
+  "processes:task-ao-improve-record-qznyq8": {
+    "plain_language_name": "File the Gap Prioritization Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the prioritization trail at its required retention tier and sets the retrieval handles for it. How each gap was weighed, and where it landed in the ranking, remains readable whenever the development order is questioned.",
+    "business_purpose": "It exists so the ranking behind the development order can be evidenced whenever it is challenged.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the prioritization trail at its retention tier and sets the retrieval handles a development review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-ptdn5s": {
+    "plain_language_name": "Confirm the Prioritized Capability Gaps",
+    "plain_language_description": "When the ranking stands complete, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the prioritized gaps are ready to be ratified and routed.",
+    "business_purpose": "It exists so priorities are committed only from a ranking confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the prioritized gaps await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the prioritized gaps against the activity's intended outcome and issues the confirmation the commitment step needs."
+    }
+  },
+  "processes:task-ao-improve-intake-8e9x55": {
+    "plain_language_name": "Receive the Identified Gaps for Prioritization",
+    "plain_language_description": "Prioritization opens when the identified capability gaps are handed over as the list awaiting its ranking. The intake custodian accepts the handover, registers it with audit identifiers, and starts the prioritization work from a recorded baseline.",
+    "business_purpose": "It exists so gaps are ranked from a registered identification rather than from whoever shouts loudest.",
+    "practical_context": "It opens when the identified gaps are presented for prioritization, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the identified gaps as the prioritization baseline, with audit references, and opens the ranking work."
+    }
+  },
+  "processes:task-ao-improve-transform-tq5ye2": {
+    "plain_language_name": "Rank the Gaps by Their Impact on Structure and Direction",
+    "plain_language_description": "With the gaps verified, the processing custodian makes the prioritization itself: each identified gap is weighed for its impact on the organization structure and direction, and the ranked list is set down in the form the activity defines. Working papers behind the ranking are preserved.",
+    "business_purpose": "It exists because development effort is finite, and it must land where the organisation's shape and course need it most.",
+    "practical_context": "It starts once checking is complete and the verified gaps are ready to be ranked, and it ends with the prioritized capability gaps produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority weighs each gap for its impact on structure and direction and records the ranked list."
+    }
+  },
+  "processes:task-ao-improve-verify-46m4qe": {
+    "plain_language_name": "Check the Gaps Before Prioritizing Them",
+    "plain_language_description": "Before anything is ranked, the verification custodian checks the identified gaps against what prioritization requires - that each gap is concrete enough to weigh for impact. Defects are logged for rejection or repair before the ranking is made.",
+    "business_purpose": "It exists so the ranking is never spent on gaps too vague to carry a priority.",
+    "practical_context": "It runs once the intake is registered and the gaps can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds one gap described too loosely to weigh and logs the defect before the ranking proceeds."
+    }
+  },
+  "processes:task-ao-improve-record-rngcnt": {
+    "plain_language_name": "File the Alignment Assessment Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the assessment trail at its required retention tier and sets the retrieval handles for it. What the review concluded about alignment, and from which evidence, stays readable whenever the review's judgement is revisited.",
+    "business_purpose": "It exists so the alignment judgement can be evidenced against the evidence it was drawn from.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record stored at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the assessment trail at its retention tier and sets the retrieval handles a later alignment review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-msag5s": {
+    "plain_language_name": "Confirm the Agent Alignment Assessment",
+    "plain_language_description": "When the assessment stands made, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The improvement work that draws on the review learns the alignment assessment is settled and available.",
+    "business_purpose": "It exists so improvement decisions rest only on an alignment assessment confirmed against the intended result.",
+    "practical_context": "It begins once preparation is complete and the assessment awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the alignment assessment against the activity's intended outcome and issues the confirmation the improvement work depends on."
+    }
+  },
+  "processes:task-ao-improve-intake-kb48bg": {
+    "plain_language_name": "Receive the Collected Signals for Alignment Assessment",
+    "plain_language_description": "Assessment opens when the collected engagement signals are handed over as the evidence the alignment question will be answered from. The intake custodian accepts them, registers the handover with audit identifiers, and starts the assessment work from a recorded baseline.",
+    "business_purpose": "It exists so alignment is assessed from registered evidence rather than from anecdote.",
+    "practical_context": "It opens when the collected signals are presented for assessment, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the collected signals as the assessment baseline, with audit references, and opens the assessment work."
+    }
+  },
+  "processes:task-ao-improve-transform-8wuc64": {
+    "plain_language_name": "Assess How Far the Agents Remain Aligned to the Direction",
+    "plain_language_description": "With the signals verified, the processing custodian makes the assessment itself: how far the agents remain aligned to the current direction is read out of the evidence and set down as the agent alignment assessment, in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because drift is invisible until somebody measures how far the population has moved off the course that was set.",
+    "practical_context": "It starts once checking is complete and the verified signals are ready to be assessed, and it ends with the agent alignment assessment produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the organization design authority reads the collected evidence and assesses how far the agents remain aligned to the direction, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-8ja432": {
+    "plain_language_name": "Check the Signals Before Assessing Alignment",
+    "plain_language_description": "Before any assessment is made, the verification custodian checks the collected signals against what assessment requires - that they are complete enough across the population to carry a judgement about alignment. Gaps are logged for rejection or repair before the assessment is made.",
+    "business_purpose": "It exists so the alignment judgement is never rested on evidence that covered only part of the population.",
+    "practical_context": "It runs once the intake is registered and the signals can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the signals thin over one whole team and logs the gap before the assessment is made."
+    }
+  },
+  "processes:task-ao-improve-record-3xkwc6": {
+    "plain_language_name": "File the Engagement Signal Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the collection trail at its required retention tier and sets the retrieval handles for it. What signals were gathered, from whom, and over which period, stays provable whenever the alignment picture is examined.",
+    "business_purpose": "It exists so the engagement evidence behind the assessment can be evidenced whenever its weight is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the collection trail at its retention tier and sets the retrieval handles a later review would consult."
+    }
+  },
+  "processes:task-ao-improve-confirm-2a44x9": {
+    "plain_language_name": "Confirm the Collected Engagement Signals",
+    "plain_language_description": "When the signals stand collected, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The alignment assessment that follows learns the signals are settled and available to be read.",
+    "business_purpose": "It exists so alignment is assessed only over signals confirmed as collected.",
+    "practical_context": "It begins once preparation is complete and the collected signals await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the collected signals against the activity's intended outcome and issues the confirmation the assessment step needs."
+    }
+  },
+  "processes:task-ao-improve-intake-eb3dqm": {
+    "plain_language_name": "Receive the Operating Population for Signal Collection",
+    "plain_language_description": "Collection opens when the operating agent population is handed over as the ground the engagement signals will be gathered from. The intake custodian accepts the handover, registers it with audit identifiers, and starts the collection from a recorded baseline.",
+    "business_purpose": "It exists so engagement signals are gathered from a registered population rather than from whoever happens to respond.",
+    "practical_context": "It opens when the operating population is presented for collection, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian registers the operating agent population as the collection baseline, with audit references, and opens the gathering."
+    }
+  },
+  "processes:task-ao-improve-transform-5cucm2": {
+    "plain_language_name": "Gather the Periodic Engagement Evidence",
+    "plain_language_description": "With the population verified, the processing custodian does the collection itself: the periodic engagement evidence from the operating agents is gathered and set down as the collected engagement signals, in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because alignment can only be assessed against engagement evidence somebody has actually gathered and recorded.",
+    "practical_context": "It starts once checking is complete and the verified population is ready to be gathered from, and it ends with the collected engagement signals produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian gathers the periodic engagement evidence from the operating agents and records the collected signals, keeping the working papers."
+    }
+  },
+  "processes:task-ao-improve-verify-tyjkf6": {
+    "plain_language_name": "Check the Population Before Collecting the Signals",
+    "plain_language_description": "Before any signal is gathered, the verification custodian checks the population list against what collection requires - that it covers the whole operating population and is current. Defects are flagged for rejection or repair before the collection is made.",
+    "business_purpose": "It exists so the engagement picture is never drawn over an incomplete or stale roster.",
+    "practical_context": "It runs once the intake is registered and the list can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the roster missing a team that came alive last month and flags the defect before collection begins."
+    }
+  }
+}

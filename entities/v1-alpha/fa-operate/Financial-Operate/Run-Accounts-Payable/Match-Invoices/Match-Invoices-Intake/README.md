@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Match Invoices Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Match Invoices** (`processes:activity-fa-operate-f3c2rt`). Its canonical ID is `processes:task-fa-operate-intake-w27h77`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Matching opens when the invoices, the purchase orders, and the goods receipts are handed over together as the three papers every bill must prove itself between. The intake custodian accepts them, registers them with audit identifiers, and starts the matching from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so bills are proved between registered papers rather than on a supplier's insistence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the invoices, orders, and receipts are presented for the matching, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the invoices, orders, and receipts as the matching baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Invoices, Orders, and Receipts |
+| `plain_language_description` | string | no | Matching opens when the invoices, the purchase orders, and the goods receipts are handed over together as the three … |
+| `business_purpose` | string | no | It exists so bills are proved between registered papers rather than on a supplier's insistence. |
+| `practical_context` | string | no | It opens when the invoices, orders, and receipts are presented for the matching, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

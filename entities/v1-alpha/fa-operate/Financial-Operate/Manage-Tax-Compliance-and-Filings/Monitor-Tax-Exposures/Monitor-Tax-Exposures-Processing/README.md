@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Monitor Tax Exposures Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Monitor Tax Exposures** (`processes:activity-fa-operate-48s3kx`). Its canonical ID is `processes:task-fa-operate-transform-xye67u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the watching itself: the flows and changes are read for what they add to the enterprise's tax position between filings, and the exposure picture is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a tax bill that arrives unwatched arrives unbudgeted - the watching is what keeps the owing visible all year.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be watched, and it ends with the exposure picture produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function watches the flows and changes for what they add to the owing, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Watch What the Enterprise Owes Between Filings |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the watching itself: the flows and changes are read for what … |
+| `business_purpose` | string | no | It exists because a tax bill that arrives unwatched arrives unbudgeted - the watching is what keeps the owing visible … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be watched, and it ends with the exposure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

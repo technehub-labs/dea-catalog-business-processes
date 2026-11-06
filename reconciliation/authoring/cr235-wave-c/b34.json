@@ -1,0 +1,582 @@
+{
+ "processes:task-pr-build-verify-ja3guj": {
+  "plain_language_name": "Test the Wiring Against the Integration Rules",
+  "plain_language_description": "With the wiring done, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Any contract violation is written up with its remedy.",
+  "business_purpose": "It exists because a journey that mishandles consent or personal data would poison every acquisition that flows through it.",
+  "practical_context": "It starts once the intake manifest is registered and the pack is ready for scrutiny, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function walks the connected sign-up journey against the consent and privacy rules and flags one integration gap."
+  }
+ },
+ "processes:task-pr-build-intake-kavfwv": {
+  "plain_language_name": "Take Charge of the Infrastructure Build Pack",
+  "plain_language_description": "Provisioning opens with the design brief in hand: which channels are in the mix, what the demand programmes call for, and what the asset library already holds. The intake custodian settles the scope of the build with the owners of the channels and the demand programmes, then logs the pack.",
+  "business_purpose": "It exists so the infrastructure work starts from a brief the channel and programme owners have actually agreed to.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function walks the channel owner through the design brief and logs the agreed scope for the stand-up."
+  }
+ },
+ "processes:task-pr-build-verify-u6bp5s": {
+  "plain_language_name": "Check the Provisioning Work Against Consent and Privacy Rules",
+  "plain_language_description": "Before anything is stood up, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.",
+  "business_purpose": "It exists because infrastructure built outside the contracts would carry experiences that leak consent and personal data.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the provisioning plan against the consent rules and clears it for the stand-up."
+  }
+ },
+ "processes:task-pr-build-transform-xj9sfj": {
+  "plain_language_name": "Stand Up the Channel Infrastructure",
+  "plain_language_description": "This is the stand-up itself: the integration surface for the channels is provisioned, the programme assets are instantiated, and the attribution model is calibrated. What results is an inventory of build-ready assets.",
+  "business_purpose": "It exists because the designed experience needs standing infrastructure to run on, not just designs on paper.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function stands up the channel surfaces and calibrates attribution ahead of readiness testing."
+  }
+ },
+ "processes:task-pr-build-confirm-ytuh8a": {
+  "plain_language_name": "Confirm the Standing Infrastructure with the Channel Owners",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the build holds up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the standing infrastructure is formally accepted by the people accountable for the channels before it carries anything.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the channel custodian acknowledges the standing infrastructure before it is logged."
+  }
+ },
+ "processes:task-pr-build-record-wv8n67": {
+  "plain_language_name": "Retain the Infrastructure Build File",
+  "plain_language_description": "After confirmation, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the schedule for acquisition-engine records, protected against tampering. Where storage limits bite, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the provenance of the standing infrastructure - what was built, checked, and accepted - stays provable.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the infrastructure build file with its verification report and remediation notes for future audits."
+  }
+ },
+ "processes:task-pr-build-intake-k7h6ae": {
+  "plain_language_name": "Open the Readiness File and Log the Brief",
+  "plain_language_description": "The readiness check opens with the same design brief that steered the build: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian logs the pack so the verification starts from an accounted-for set.",
+  "business_purpose": "It exists so readiness is judged against the agreed brief rather than an improvised checklist.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the design brief and pack contents into the readiness case file."
+  }
+ },
+ "processes:task-pr-build-verify-gd8h5w": {
+  "plain_language_name": "Test the Built Capability Against the Design Intent",
+  "plain_language_description": "Before the checks run, the verification custodian tests the pack against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Any violation is written up with its remedy.",
+  "business_purpose": "It exists because a readiness verdict is worthless if the capability under test breaches its own contracts.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the pack for testing and flags a consent-capture gap for remediation."
+  }
+ },
+ "processes:task-pr-build-transform-dm2rkf": {
+  "plain_language_name": "Run the Readiness Checks and Gather the Evidence",
+  "plain_language_description": "With the certificate in hand, the processing custodian runs the readiness work: the integration surface for the channels is exercised, the programme assets are instantiated for the trial, and the attribution model is calibrated until the journey behaves as designed. The evidence is captured as an inventory of build-ready assets.",
+  "business_purpose": "It exists so the verdict on readiness rests on an actual trial run rather than on paper assertions.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function exercises the built journey end to end and gathers the readiness evidence."
+  }
+ },
+ "processes:task-pr-build-confirm-qbynm2": {
+  "plain_language_name": "Confirm the Channels Are Ready to Acquire",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the capability holds up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the go-live decision is a logged acceptance by the accountable owners, not a quiet assumption.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian signs off the readiness reconciliation, and the channel custodian acknowledges before logging."
+  }
+ },
+ "processes:task-pr-build-record-5hchza": {
+  "plain_language_name": "Keep the Readiness File with Its Evidence",
+  "plain_language_description": "Once accepted, the records custodian places the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the acquisition-engine schedule with tamper protection. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so future teams can see why the channels were declared ready to acquire.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the readiness file so a later channel review can consult the original evidence."
+  }
+ },
+ "processes:task-pr-build-intake-ua3rfc": {
+  "plain_language_name": "Receive the Asset Build Brief",
+  "plain_language_description": "The asset build opens with the design brief: which channels are in the mix, what the demand programmes call for, and what the asset library already holds. The intake custodian settles the scope of the build with the owners of the channels and the demand programmes, then logs the pack.",
+  "business_purpose": "It exists so the campaign and content work starts from a scope its owners have confirmed.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management confirms the asset scope with the demand-programme owner and logs the manifest."
+  }
+ },
+ "processes:task-pr-build-verify-5b97a5": {
+  "plain_language_name": "Check the Asset Build Against Consent and Privacy Rules",
+  "plain_language_description": "Before the assets are built, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.",
+  "business_purpose": "It exists because campaign assets that mishandle consent or personal data create exposure the moment they run.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function checks the asset plan against the privacy rules and flags a data-quality gap."
+  }
+ },
+ "processes:task-pr-build-transform-3zvrmb": {
+  "plain_language_name": "Build Out the Campaign and Content Assets",
+  "plain_language_description": "With the report in hand, the processing custodian builds: the integration surface for the channels is provisioned, the programme assets are instantiated, and the attribution model is calibrated. The finished campaign and content pieces are captured as an inventory of build-ready assets.",
+  "business_purpose": "It exists because the demand engine runs on assets - the content, campaigns, and machinery must actually exist.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function stands up the campaign assets and calibrates attribution for the demand engine."
+  }
+ },
+ "processes:task-pr-build-confirm-qrrn3w": {
+  "plain_language_name": "Sign Off the Built Assets with the Programme Owners",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the assets hold up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the built assets go live only with a logged acceptance from the accountable owners.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the demand-programme custodian acknowledges the built assets."
+  }
+ },
+ "processes:task-pr-build-record-8fd24p": {
+  "plain_language_name": "File the Asset Build Record",
+  "plain_language_description": "Once confirmed, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the schedule for acquisition-engine records, protected against tampering. Where storage limits bite, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the lineage of every campaign asset - what was built and accepted - can be traced later.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the asset build file with its receipts for a future campaign audit."
+  }
+ },
+ "processes:task-pr-build-intake-28bw98": {
+  "plain_language_name": "Take In the Calibration Pack",
+  "plain_language_description": "The calibration round opens with the design brief in hand: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian settles the scope of the tuning with the owners of the channels and the demand programmes, then logs the pack.",
+  "business_purpose": "It exists so tuning starts from a documented scope rather than informal requests.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the calibration scope agreed with the demand-programme owner."
+  }
+ },
+ "processes:task-pr-build-verify-prrqnx": {
+  "plain_language_name": "Check the Tuning Work Against Consent and Privacy Rules",
+  "plain_language_description": "Before the tuning begins, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.",
+  "business_purpose": "It exists because retuning a programme must never push it outside the consent and privacy rules it lives under.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the tuning pack against the consent rules before any changes run."
+  }
+ },
+ "processes:task-pr-build-transform-n8mnyc": {
+  "plain_language_name": "Tune the Programmes Against Early Demand",
+  "plain_language_description": "With the report in hand, the processing custodian tunes: the integration surface for the channels is adjusted, the programme assets are re-instantiated where the response demands, and the attribution model is recalibrated against the early signal. The result is captured as an inventory of build-ready assets.",
+  "business_purpose": "It exists so the programmes reach steady state tuned to real demand rather than to the assumptions in the original brief.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function recalibrates the programmes against the first demand signals."
+  }
+ },
+ "processes:task-pr-build-confirm-s966qb": {
+  "plain_language_name": "Confirm the Calibrated Programmes",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the tuned programmes hold up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the calibrated settings are formally accepted before the programmes settle into steady operation.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the tuning sign-off once the demand-programme custodian acknowledges it."
+  }
+ },
+ "processes:task-pr-build-record-2snuc6": {
+  "plain_language_name": "Retain the Calibration File",
+  "plain_language_description": "After confirmation, the records custodian places the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the acquisition-engine schedule with tamper protection. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the tuning decisions - and the response data behind them - remain auditable.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the calibration file so later programme changes can be compared against the original tuning."
+  }
+ },
+ "processes:task-pr-build-intake-qwd6hu": {
+  "plain_language_name": "Accept the Engine Integration Brief",
+  "plain_language_description": "The engine integration opens with the design brief: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian settles the scope of the connection work with the owners of the channels and the demand programmes, then logs the pack.",
+  "business_purpose": "It exists so the engine-to-channel wiring starts from a scope the owners have confirmed.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the integration scope agreed with the channel owner."
+  }
+ },
+ "processes:task-pr-build-verify-ncgf3h": {
+  "plain_language_name": "Check the Engine Wiring Against Consent and Privacy Rules",
+  "plain_language_description": "Before the wiring runs, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Any violation is written up with its remedy.",
+  "business_purpose": "It exists because a mis-wired engine would push programmes into channels outside their consent terms.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the wiring plan against the integration and consent contracts."
+  }
+ },
+ "processes:task-pr-build-transform-cy5r6w": {
+  "plain_language_name": "Connect the Engine to the Channels",
+  "plain_language_description": "With the certificate in hand, the processing custodian connects: the integration surface for the channels is provisioned, the programme assets are slotted into place, and the attribution model is calibrated across the joined path. The result is captured as an inventory of build-ready assets.",
+  "business_purpose": "It exists because a demand engine that cannot reach the market through the channels produces nothing.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function connects the engine to the channels and calibrates attribution across the path."
+  }
+ },
+ "processes:task-pr-build-confirm-gm26b5": {
+  "plain_language_name": "Confirm the Connected Engine with the Channel Owners",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the connection holds up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the connected engine starts reaching the market only under a logged acceptance.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the channel custodian acknowledges the connected engine."
+  }
+ },
+ "processes:task-pr-build-record-6dxwpd": {
+  "plain_language_name": "Keep the Engine Integration File",
+  "plain_language_description": "Once accepted, the records custodian secures the build package - manifest, report, asset inventory, confirmation, and any remediation notes - into retention under the schedule for acquisition-engine records, protected against tampering. Where storage limits bite, a destruction attestation is recorded.",
+  "business_purpose": "It exists so future engine changes can trace how the original wiring was contracted and accepted.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the integration file with its contracts and receipts for later engine work."
+  }
+ },
+ "processes:task-pr-build-intake-hgtu89": {
+  "plain_language_name": "Log the Demand Verification Pack",
+  "plain_language_description": "The first-demand check opens with its pack: the mix of channels, what the demand programmes call for, and what the asset library holds. The intake custodian logs the pack so the verification starts from an accounted-for set.",
+  "business_purpose": "It exists so the verdict on first demand rests on a complete, logged evidence set.",
+  "practical_context": "It opens when the Build-stage pack is handed over, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the demand evidence pack into the verification case file."
+  }
+ },
+ "processes:task-pr-build-verify-4qcu4x": {
+  "plain_language_name": "Check the Demand Signals Against Consent and Privacy Rules",
+  "plain_language_description": "Before the demand is judged, the verification custodian tests the package for the build against the integration contract for the channels, the rules for capturing consent, and the data-quality requirements for handling personal information. Violations are reported with their remedies.",
+  "business_purpose": "It exists because demand numbers gathered through a non-compliant path would flatter the engine falsely.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, violations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the demand evidence against the privacy rules before the verdict."
+  }
+ },
+ "processes:task-pr-build-transform-vzxbj3": {
+  "plain_language_name": "Produce the First Demand and Measure It",
+  "plain_language_description": "With the report in hand, the processing custodian produces and measures: the integration surface for the channels carries the programmes, the programme assets are instantiated, and the attribution model is calibrated against the first responses. The evidence is captured as an inventory of build-ready assets.",
+  "business_purpose": "It exists so the enterprise learns whether the engine actually generates demand, not merely that it is switched on.",
+  "practical_context": "It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function runs the programmes, measures the first demand, and gathers the evidence."
+  }
+ },
+ "processes:task-pr-build-confirm-2g4qqf": {
+  "plain_language_name": "Confirm the Engine's First Demand Output",
+  "plain_language_description": "The confirmation custodian reconciles the asset inventory with the integration contract for the channels and with the consent-capture rules. When the first-demand evidence holds up, the custodians of the channels and demand programmes receive the completion confirmation, which is logged.",
+  "business_purpose": "It exists so the engine's first output is formally accepted against the committed demand model.",
+  "practical_context": "It starts once the asset inventory is produced, and it closes when acknowledgements are in and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian signs off the first-demand reconciliation, and the demand-programme custodian acknowledges it."
+  }
+ },
+ "processes:task-pr-build-record-y4jz6q": {
+  "plain_language_name": "Store the Demand Verification File",
+  "plain_language_description": "With acceptance logged, the records custodian places the build package into retention under the schedule for acquisition-engine records, protected against tampering - the manifest, the report, the asset inventory, the confirmation, and any remediation notes. A destruction attestation is recorded where storage limits apply.",
+  "business_purpose": "It exists so the evidence behind the first-demand verdict survives for later model comparisons.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the demand verification file so future model reviews can consult the original evidence."
+  }
+ },
+ "processes:task-pr-conceive-intake-cgu54m": {
+  "plain_language_name": "Receive the Strategy Research Pack",
+  "plain_language_description": "The value-exchange work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the articulation starts accounted for.",
+  "business_purpose": "It exists so what the enterprise gives and receives is defined from complete, logged research.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the research artefacts and customer-jobs evidence into the conception file."
+  }
+ },
+ "processes:task-pr-conceive-verify-vpb2zm": {
+  "plain_language_name": "Check the Research Pack Against the Method",
+  "plain_language_description": "Before the exchange is articulated, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because a value exchange built on thin evidence would mislead the whole customer strategy.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the research pack against the framing method and flags one evidence gap."
+  }
+ },
+ "processes:task-pr-conceive-transform-5tkh6t": {
+  "plain_language_name": "Set Down What the Enterprise Gives and Gets",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The whole is produced as a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the enterprise can state plainly what it offers its chosen customers and what it expects in return.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes down the give-and-get of the relationship and assembles the thesis package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-d3p8g8": {
+  "plain_language_name": "Sign Off the Value Exchange with the Strategy Owner",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once aligned, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the articulated exchange is formally accepted before the strategy consolidates around it.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the strategy custodian acknowledges the articulated exchange."
+  }
+ },
+ "processes:task-pr-conceive-record-5djxpc": {
+  "plain_language_name": "Keep the Exchange Research on File",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the reasoning behind the value exchange stays retrievable when the strategy is later challenged.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the exchange research so a future strategy review can consult the original evidence."
+  }
+ },
+ "processes:task-pr-conceive-intake-det27u": {
+  "plain_language_name": "Collect the Strategy Consolidation Papers",
+  "plain_language_description": "Bringing the strategy together starts with intake: the market-research artefacts, the customer-jobs (JTBD) evidence, and the demand-thesis drafts arrive and are logged. The intake custodian binds the pack to the conception file so the consolidation works from one accounted-for set.",
+  "business_purpose": "It exists because a committed strategy is only as sound as the completeness of what fed it.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the research artefacts and thesis drafts into the strategy case file."
+  }
+ },
+ "processes:task-pr-conceive-verify-9gbvr7": {
+  "plain_language_name": "Check the Strategy Inputs Before Commitment",
+  "plain_language_description": "Before the strategy is committed, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Deviations are reported with their fixes.",
+  "business_purpose": "It exists so the approvers commit a strategy whose inputs have survived scrutiny.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the strategy inputs against the framing method before commitment."
+  }
+ },
+ "processes:task-pr-conceive-transform-zzc7ak": {
+  "plain_language_name": "Consolidate the Strategy into One Document",
+  "plain_language_description": "With the certificate in hand, the processing custodian executes the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis and its hypotheses are set down, producing the thesis package the commitment will rest on.",
+  "business_purpose": "It exists so the scattered theses become one document the governance round can actually commit.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function consolidates the segment, exchange, and demand theses into the strategy package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-43fbku": {
+  "plain_language_name": "Log the Strategy Owner's Confirmation",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the commitment carries a logged acceptance from the person accountable for the strategy.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the sign-off after the strategy custodian acknowledges the completed reconciliation."
+  }
+ },
+ "processes:task-pr-conceive-record-y2vche": {
+  "plain_language_name": "Preserve the Committed Strategy File",
+  "plain_language_description": "After commitment, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists because the committed strategy's evidence must survive to answer later drift or challenge.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the committed strategy file with its verification trail for future strategy rounds."
+  }
+ },
+ "processes:task-pr-conceive-intake-yvfxaw": {
+  "plain_language_name": "Take In the Demand Research Pack",
+  "plain_language_description": "The demand work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the formulation starts accounted for.",
+  "business_purpose": "It exists so the demand thesis is written from complete, logged evidence rather than impressions.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the research artefacts and thesis drafts into the demand case file."
+  }
+ },
+ "processes:task-pr-conceive-verify-ewg2ta": {
+  "plain_language_name": "Check the Demand Research Against the Method",
+  "plain_language_description": "Before the thesis is written, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack falls short, the shortfall is named and a remediation set out.",
+  "business_purpose": "It exists because a demand thesis resting on weak evidence would misdirect every downstream build decision.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the demand research against the framing method and clears it for writing."
+  }
+ },
+ "processes:task-pr-conceive-transform-fg8svp": {
+  "plain_language_name": "Write Down How the Demand Will Arise",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The expectation of how demand arises and sustains is produced as a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the enterprise states, testably, how demand from the chosen segment will arise and keep flowing.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes the demand thesis and its hypotheses and assembles the package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-dajmzd": {
+  "plain_language_name": "Sign Off the Demand Thesis",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once aligned, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the demand thesis enters the strategy only with a logged acceptance behind it.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian closes the reconciliation, and the strategy custodian acknowledges the demand thesis."
+  }
+ },
+ "processes:task-pr-conceive-record-r58gjj": {
+  "plain_language_name": "File the Demand Thesis Package",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the demand thesis and its evidence trail remain consultable when the model is retested.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the demand thesis file so the next retest can compare against the original."
+  }
+ },
+ "processes:task-pr-conceive-intake-9vkk54": {
+  "plain_language_name": "Receive the Segment Research Pack",
+  "plain_language_description": "The segment work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the bounding starts accounted for.",
+  "business_purpose": "It exists because choosing a segment must start from everything the research actually says.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the research artefacts into the segment case file."
+  }
+ },
+ "processes:task-pr-conceive-verify-7mg2dq": {
+  "plain_language_name": "Check the Segment Research Against the Method",
+  "plain_language_description": "Before the segment is bounded, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Where the pack deviates, the deviation is named and a remediation is set out.",
+  "business_purpose": "It exists because a segment framed on shaky evidence would misdirect the entire customer strategy.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the segment research against the framing method and flags one gap."
+  }
+ },
+ "processes:task-pr-conceive-transform-hcwr2e": {
+  "plain_language_name": "Bound the Segment and Say Why",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. The bounded segment and the reasons for choosing it are produced as a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the enterprise names exactly which customers it will serve and can defend why them.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function bounds the target segment and writes the rationale into the thesis package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-4ze5m5": {
+  "plain_language_name": "Confirm the Chosen Segment",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the chosen segment is formally accepted before the exchange and demand work builds on it.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the strategy custodian acknowledges the chosen segment."
+  }
+ },
+ "processes:task-pr-conceive-record-tgdehu": {
+  "plain_language_name": "Keep the Segment Thesis on Record",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the segment decision and its evidence stay consultable when the strategy is revisited.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the segment thesis file so the next strategy round can compare segment choices."
+  }
+ },
+ "processes:task-pr-conceive-intake-bjgxye": {
+  "plain_language_name": "Gather the Market Intelligence Papers",
+  "plain_language_description": "The market intelligence work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the consolidation starts accounted for.",
+  "business_purpose": "It exists so the committed thesis consolidates everything the scans and hypotheses produced, not a subset.",
+  "practical_context": "It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the scans, hypotheses, and test papers into the thesis case file."
+  }
+ },
+ "processes:task-pr-conceive-verify-z9y54d": {
+  "plain_language_name": "Check the Intelligence Pack Against the Method",
+  "plain_language_description": "Before the thesis is consolidated, the verification custodian tests the pack against the methodology for framing the segment and the quality bar the customer-jobs evidence must clear. Deviations are reported with their fixes.",
+  "business_purpose": "It exists because a committed thesis absorbs every later decision - its inputs must hold up first.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function clears the intelligence pack against the framing method before consolidation."
+  }
+ },
+ "processes:task-pr-conceive-transform-6czwmg": {
+  "plain_language_name": "Consolidate the Market and Demand Thesis",
+  "plain_language_description": "With the certificate in hand, the processing custodian carries out the conception: the segment thesis is framed, the give-and-get of the relationship is articulated, and the demand thesis with its hypotheses is written down. Scans, hypotheses, and test plans are consolidated into a thesis package ready for confirmation.",
+  "business_purpose": "It exists so the market's lessons become one committed thesis the test design can work from.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the thesis package produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function consolidates the scans, hypotheses, and test plans into the committed thesis package."
+  }
+ },
+ "processes:task-pr-conceive-confirm-gahdj2": {
+  "plain_language_name": "Log the Thesis Commitment",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the thesis commitment carries a logged acceptance from the accountable owner.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian logs the thesis sign-off once the strategy custodian acknowledges the reconciliation."
+  }
+ },
+ "processes:task-pr-conceive-record-fxqb34": {
+  "plain_language_name": "Retain the Committed Thesis File",
+  "plain_language_description": "After commitment, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the committed thesis and its evidence remain available when the test results come back.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the committed thesis file so the test designers can trace every hypothesis to its source."
+  }
+ },
+ "processes:task-pr-conceive-record-bmsyqh": {
+  "plain_language_name": "Store the Test-Design File",
+  "plain_language_description": "Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the test designs stay traceable to the hypotheses they were built to judge.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the test-design file so the hypothesis record and its tests stay linked."
+  }
+ },
+ "processes:task-pr-conceive-confirm-ny49vy": {
+  "plain_language_name": "Confirm the Test Plan with the Strategy Owner",
+  "plain_language_description": "The confirmation custodian reconciles the thesis package with the shape required of segment-strategy artefacts and with the quality bar for the customer-jobs evidence. Once satisfied, the strategy custodian receives the completion confirmation, and it is logged.",
+  "business_purpose": "It exists so the test plan enters execution only with a logged acceptance from the strategy owner.",
+  "practical_context": "It starts once the thesis package is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the strategy custodian acknowledges the test plan before logging."
+  }
+ }
+}

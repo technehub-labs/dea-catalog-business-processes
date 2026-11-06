@@ -1,0 +1,582 @@
+{
+  "processes:task-fa-operate-transform-b4kamh": {
+    "plain_language_name": "Clear Each Invoice the Cash Names",
+    "plain_language_description": "With the receipts verified, the processing custodian does the applying itself: each arriving payment is matched to the invoice it settles and cleared against the books, and the applied cash is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because money that arrives unapplied is money that clears nothing - the application is what turns a receipt into a settled debt.",
+    "practical_context": "It starts once checking is complete and the verified receipts are ready to be applied, and it ends with the applied cash produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function matches each payment to the invoice it settles and clears it on the books, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-gpzkad": {
+    "plain_language_name": "Check the Cash Before Clearing the Invoices",
+    "plain_language_description": "Before anything is applied, the verification custodian checks the receipts and invoices against what application requires - that each receipt names its payer and each invoice stands open. Defects are logged for rejection or repair before the applying begins.",
+    "business_purpose": "It exists so no invoice is cleared by cash that was never really identified.",
+    "practical_context": "It runs once the intake is registered and the receipts can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a receipt with no payer named and logs the defect before the applying begins."
+    }
+  },
+  "processes:task-fa-operate-record-k75gbz": {
+    "plain_language_name": "File the Issued Invoices Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the issuance trail at its required retention tier and sets the retrieval handles for it. What was billed, to whom, and on which terms, stays readable whenever a customer's bill is examined.",
+    "business_purpose": "It exists so the issuing of every bill can be evidenced whenever a customer's bill is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the issuance trail at its retention tier and sets the retrieval handles a billing review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-rj8sdh": {
+    "plain_language_name": "Confirm the Issued Customer Invoices",
+    "plain_language_description": "When the bills stand sent, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The collections work that follows learns what has been billed and can begin its watching.",
+    "business_purpose": "It exists so collections chase only bills confirmed as issued.",
+    "practical_context": "It begins once preparation is complete and the issued invoices await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the sent bills against the activity's intended outcome and issues the confirmation the collections work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-j8cs7f": {
+    "plain_language_name": "Receive the Fulfilment Records and Contract Terms",
+    "plain_language_description": "Invoicing opens when the fulfilment records and the contract terms are handed over together as the two sides every bill must be drawn between. The intake custodian accepts them, registers them with audit identifiers, and starts the issuing from a recorded baseline.",
+    "business_purpose": "It exists so bills are drawn from what was actually delivered under what was actually agreed.",
+    "practical_context": "It opens when the records and terms are presented for the invoicing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the fulfilment records and contract terms as the billing baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-k2g486": {
+    "plain_language_name": "Send Every Customer Its Bill",
+    "plain_language_description": "With the inputs verified, the processing custodian does the issuing itself: each billing event's invoice is drawn from the fulfilment record under the contract's terms and sent, and the issued invoices are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because work delivered but never billed is work paid for by the enterprise - the issuing is where delivery finally asks for its money.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be billed from, and it ends with the issued invoices produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function draws each bill from the fulfilment record under the contract's terms and sends it, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-9dqtrp": {
+    "plain_language_name": "Check the Events Before Sending the Bills",
+    "plain_language_description": "Before anything is billed, the verification custodian checks the fulfilment records and terms against what issuing requires - that every billing event is backed by delivery and every bill matches its contract. Defects are logged for rejection or repair before any bill is sent.",
+    "business_purpose": "It exists so no customer is billed for something that was never delivered or never agreed.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a billing event with no delivery behind it and logs the defect before any bill is sent."
+    }
+  },
+  "processes:task-fa-operate-record-29p78v": {
+    "plain_language_name": "File the Receivables Record Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the maintenance trail at its required retention tier and sets the retrieval handles for it. The running account of who owes what stays readable whenever a customer's balance is examined.",
+    "business_purpose": "It exists so the owings from customers can be evidenced whenever a customer's balance is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the maintenance trail at its retention tier and sets the retrieval handles a customer balance review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-umudk7": {
+    "plain_language_name": "Confirm the Current Receivables Record",
+    "plain_language_description": "When the record stands current, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The collections work that follows learns the owings are true and can chase against them.",
+    "business_purpose": "It exists so collections chase only against owings confirmed as true.",
+    "practical_context": "It begins once preparation is complete and the current record awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the current record against the activity's intended outcome and issues the confirmation the collections work needs."
+    }
+  },
+  "processes:task-fa-operate-intake-7d76n2": {
+    "plain_language_name": "Receive the Invoices, Collections, and Cash Applications",
+    "plain_language_description": "Record-keeping opens when the invoices, the collections, and the cash applications are handed over together as the movements the receivables record will be kept true from. The intake custodian accepts them, registers them with audit identifiers, and starts the maintenance from a recorded baseline.",
+    "business_purpose": "It exists so the owings are kept from registered movements rather than from the ledger's mood.",
+    "practical_context": "It opens when the invoices, collections, and applications are presented for the record-keeping, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the invoices, collections, and applications as the record baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-b3evu7": {
+    "plain_language_name": "Keep the Owings from Customers True",
+    "plain_language_description": "With the movements verified, the processing custodian does the keeping itself: every invoice, collection, and application is written into the receivables record as it happens, and the current record is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an owing that drifts from its facts is a chase built on sand - the keeping is what makes the receivables record worth trusting.",
+    "practical_context": "It starts once checking is complete and the verified movements are ready to be written from, and it ends with the current record produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function writes every invoice, collection, and application into the record as it happens, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-shv4ku": {
+    "plain_language_name": "Check the Movements Before Keeping the Owings True",
+    "plain_language_description": "Before anything is written, the verification custodian checks the invoices, collections, and applications against what record-keeping requires - that each movement carries its customer and its date. Defects are logged for rejection or repair before the record is touched.",
+    "business_purpose": "It exists so the record never gains an owing nobody can attribute.",
+    "practical_context": "It runs once the intake is registered and the movements can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds an application with no customer named and logs the defect before the record is touched."
+    }
+  },
+  "processes:task-fa-operate-record-sczxr5": {
+    "plain_language_name": "File the Collections Management Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the collections trail at its required retention tier and sets the retrieval handles for it. What was chased, how it was escalated, and what it recovered stays readable whenever a customer relationship is examined.",
+    "business_purpose": "It exists so the chasing behind every recovery can be evidenced whenever a customer relationship is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the collections trail at its retention tier and sets the retrieval handles a credit review would consult."
+    }
+  },
+  "processes:task-fa-operate-confirm-n7a98m": {
+    "plain_language_name": "Confirm the Managed Collections",
+    "plain_language_description": "When the chasing stands done, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The receivables record learns what was recovered and what still stands chased.",
+    "business_purpose": "It exists so the record counts only recoveries confirmed as managed.",
+    "practical_context": "It begins once preparation is complete and the managed collections await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the managed recoveries against the activity's intended outcome and issues the confirmation the receivables record needs."
+    }
+  },
+  "processes:task-fa-operate-intake-cxt5re": {
+    "plain_language_name": "Receive the Issued Invoices and Payment Terms",
+    "plain_language_description": "Collections opens when the issued invoices and the payment terms are handed over together as the ground the chasing will be run on. The intake custodian accepts them, registers them with audit identifiers, and starts the managing from a recorded baseline.",
+    "business_purpose": "It exists so bills are chased against registered terms rather than against irritation.",
+    "practical_context": "It opens when the invoices and terms are presented for the collections, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the compliance function registers the issued invoices and payment terms as the collections baseline, with audit references."
+    }
+  },
+  "processes:task-fa-operate-transform-v6mds2": {
+    "plain_language_name": "Chase Every Bill to Its Cash",
+    "plain_language_description": "With the inputs verified, the processing custodian does the managing itself: each issued invoice is followed to receipt, escalated under the credit-control policy as it ages, and the managed collections are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a bill nobody chases is a donation - the chasing is what turns the issued invoice into received cash.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be chased, and it ends with the managed collections produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the compliance function follows each bill to its cash and escalates as the policy directs, keeping the working papers."
+    }
+  },
+  "processes:task-fa-operate-verify-puda8s": {
+    "plain_language_name": "Check the Terms Before Chasing the Bills",
+    "plain_language_description": "Before anything is chased, the verification custodian checks the invoices and terms against what managing requires - that each bill carries its terms and the escalation ladder is the policy's own. Defects are logged for rejection or repair before the chasing begins.",
+    "business_purpose": "It exists so no customer is chased on terms that were never agreed.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a bill chased ahead of its agreed terms and logs the defect before the chasing begins."
+    }
+  },
+  "processes:task-fa-retire-record-8c3xgb": {
+    "plain_language_name": "File the Adjudication Register Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the adjudication trail at its required retention tier and sets the retrieval handles for it. Every claim's outcome, payment, and rationale stays readable whenever the run-off's fairness is examined.",
+    "business_purpose": "It exists so the judging of every claim can be evidenced whenever the run-off's fairness is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the adjudication trail at its retention tier and sets the retrieval handles a run-off review would consult."
+    }
+  },
+  "processes:task-fa-retire-confirm-un7f9b": {
+    "plain_language_name": "Confirm the Adjudicated Claims",
+    "plain_language_description": "When the claims stand judged, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The run-off learns who has been paid, who has been partly paid, and who has been refused and why.",
+    "business_purpose": "It exists so the run-off proceeds only over claims confirmed as adjudicated.",
+    "practical_context": "It begins once preparation is complete and the adjudicated claims await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the judged claims against the activity's intended outcome and issues the confirmation the run-off needs."
+    }
+  },
+  "processes:task-fa-retire-intake-jpakrj": {
+    "plain_language_name": "Receive the Claim Submissions and the Priority Order",
+    "plain_language_description": "Adjudication opens when the claim submissions and the run-off priority order are handed over together as the two sides every claim will be judged between. The intake custodian accepts them, registers them with audit identifiers, and starts the adjudicating from a recorded baseline.",
+    "business_purpose": "It exists so claims are judged against the registered order rather than against whoever shouts hardest.",
+    "practical_context": "It opens when the submissions and the order are presented for adjudication, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the claim submissions and the priority order as the adjudication baseline, with audit references."
+    }
+  },
+  "processes:task-fa-retire-transform-j9bya3": {
+    "plain_language_name": "Judge Every Claim and Pay What Is Owed",
+    "plain_language_description": "With the submissions verified, the processing custodian does the adjudicating itself: each claim is validated, judged down the priority waterfall, and paid, partly paid, or refused with its reasons written, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because in a run-off the claimants have waited long enough - the judging is what gives each of them their lawful answer, evidenced.",
+    "practical_context": "It starts once checking is complete and the verified submissions are ready to be judged, and it ends with the adjudicated register produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function judges each claim down the priority waterfall and pays what is owed, keeping the working papers."
+    }
+  },
+  "processes:task-fa-retire-verify-jqk8j2": {
+    "plain_language_name": "Check the Submissions Before Judging the Claims",
+    "plain_language_description": "Before anything is judged, the verification custodian checks the claim submissions against what adjudication requires - that each carries its documentation and its place in the priority order. Defects are logged for rejection or repair before the judging begins.",
+    "business_purpose": "It exists so no claim is judged from papers that were never complete.",
+    "practical_context": "It runs once the intake is registered and the submissions can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds a submission missing its supporting documents and logs the defect before the judging begins."
+    }
+  },
+  "processes:task-fa-retire-record-78vvyu": {
+    "plain_language_name": "File the Accounting Basis Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the transition trail at its required retention tier and sets the retrieval handles for it. How the books changed their basis, and what the move adjusted, stays readable whenever the run-off's accounts are examined.",
+    "business_purpose": "It exists so the change of accounting basis can be evidenced whenever the run-off's accounts are questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the transition trail at its retention tier and sets the retrieval handles a run-off accounts review would consult."
+    }
+  },
+  "processes:task-fa-retire-confirm-3vw9pt": {
+    "plain_language_name": "Confirm the Run-Off Accounting Basis",
+    "plain_language_description": "When the basis stands established, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The reserving and filing work that follows learns the accounts now speak run-off and can be built on.",
+    "business_purpose": "It exists so reserving and filing proceed only over a basis confirmed as established.",
+    "practical_context": "It begins once preparation is complete and the established basis awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the established basis against the activity's intended outcome and issues the confirmation the reserving work needs."
+    }
+  },
+  "processes:task-fa-retire-intake-g9cskr": {
+    "plain_language_name": "Receive the Going-Concern Position and the Rule Set",
+    "plain_language_description": "Basis work opens when the going-concern position and the statutory rule set are handed over together as the two sides the accounts will be moved between. The intake custodian accepts them, registers them with audit identifiers, and starts the transition from a recorded baseline.",
+    "business_purpose": "It exists so the books change basis under the registered rules rather than under improvisation.",
+    "practical_context": "It opens when the position and rule set are presented for the transition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the going-concern position and rule set as the transition baseline, with audit references."
+    }
+  },
+  "processes:task-fa-retire-transform-88ks4t": {
+    "plain_language_name": "Move the Books from Going Concern to Run-Off",
+    "plain_language_description": "With the inputs verified, the processing custodian does the transitioning itself: recognition, liability measurement, and asset admissibility are restated under the run-off rules, and the restated accounts with their transition adjustments are set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because an enterprise closing down must keep its books honest in a new grammar - the transition is what teaches the old books the new language.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be restated, and it ends with the restated accounts produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function restates the books to the run-off grammar and records every adjustment, keeping the working papers."
+    }
+  },
+  "processes:task-fa-retire-verify-6dy7ga": {
+    "plain_language_name": "Check the Rule Set Before Moving the Books",
+    "plain_language_description": "Before anything is restated, the verification custodian checks the position and rules against what transitioning requires - that the position is the going-concern one and the rule set is the regulator's own. Defects are logged for rejection or repair before the moving begins.",
+    "business_purpose": "It exists so the books never change basis under rules nobody acknowledged.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the rule set lacking the regulator's acknowledgment and logs the defect before the moving begins."
+    }
+  },
+  "processes:task-fa-retire-record-9qjn6f": {
+    "plain_language_name": "File the Closure Evidence Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the filing trail at its required retention tier and sets the retrieval handles for it. What was submitted, and what the regulator acknowledged, stays readable whenever the enterprise's ending is examined.",
+    "business_purpose": "It exists so the ending presented to the regulator can be evidenced whenever the ending is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the filing trail at its retention tier and sets the retrieval handles a run-off review would consult."
+    }
+  },
+  "processes:task-fa-retire-confirm-q2xkf3": {
+    "plain_language_name": "Confirm the Filed Closure Evidence",
+    "plain_language_description": "When the submission stands filed, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The run-off learns its ending is before the regulator and its distribution is on record.",
+    "business_purpose": "It exists so the run-off concludes only over evidence confirmed as filed.",
+    "practical_context": "It begins once preparation is complete and the filed evidence awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the filed submission against the activity's intended outcome and issues the confirmation the run-off needs."
+    }
+  },
+  "processes:task-fa-retire-intake-m229un": {
+    "plain_language_name": "Receive the Final Accounts and the Clearance Certificate",
+    "plain_language_description": "Filing opens when the final accounts, the claim clearance certificate, and the residual distribution are handed over together as the material the closure submission will be assembled from. The intake custodian accepts them, registers them with audit identifiers, and starts the assembling from a recorded baseline.",
+    "business_purpose": "It exists so the ending is assembled from registered materials rather than from assertions.",
+    "practical_context": "It opens when the accounts, certificate, and distribution are presented for the filing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the final accounts and clearance certificate as the filing baseline, with audit references."
+    }
+  },
+  "processes:task-fa-retire-transform-s4ra5b": {
+    "plain_language_name": "Assemble the Ending and Hand It to the Regulator",
+    "plain_language_description": "With the materials verified, the processing custodian does the assembling itself: the final accounts, the clearance certificate, the distribution plan, and the surrender request are bound into the closure submission and filed, set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a run-off that ends without evidence never really ends - the filing is what asks the regulator to close the book.",
+    "practical_context": "It starts once checking is complete and the verified materials are ready to be assembled, and it ends with the filed submission produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function binds the ending into its submission and hands it to the regulator, keeping the working papers."
+    }
+  },
+  "processes:task-fa-retire-verify-8r64r7": {
+    "plain_language_name": "Check the Pieces Before the Submission Goes",
+    "plain_language_description": "Before anything is filed, the verification custodian checks the accounts, certificate, and distribution against what filing requires - that every piece the regulator expects is present and none arrived half-drawn. Defects are logged for rejection or repair before the submission goes.",
+    "business_purpose": "It exists so the regulator never receives an ending with pieces missing from it.",
+    "practical_context": "It runs once the intake is registered and the pieces can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the surrender request absent from the assembly and logs the defect before the submission goes."
+    }
+  },
+  "processes:task-fa-retire-record-66qqzn": {
+    "plain_language_name": "File the Reserving Discipline Audit Record",
+    "plain_language_description": "At the close the records custodian preserves the discipline trail at its required retention tier and sets the retrieval handles for it. Every review, certification, and corrective action stays readable whenever the reserve's honesty is examined.",
+    "business_purpose": "It exists so the tending of the reserve can be evidenced whenever its honesty is questioned.",
+    "practical_context": "It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian files the discipline trail at its retention tier and sets the retrieval handles a reserving review would consult."
+    }
+  },
+  "processes:task-fa-retire-confirm-9z6n8d": {
+    "plain_language_name": "Confirm the Maintained Reserving Discipline",
+    "plain_language_description": "When the discipline stands kept, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The run-off learns its reserve is tended, its capital watched, and its corrections made.",
+    "business_purpose": "It exists so the run-off relies only on a reserve confirmed as tended.",
+    "practical_context": "It begins once preparation is complete and the maintained discipline awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian reconciles the tended reserve against the activity's intended outcome and issues the confirmation the run-off needs."
+    }
+  },
+  "processes:task-fa-retire-intake-5ust2m": {
+    "plain_language_name": "Receive the Run-Off Experience and the Reserving Standard",
+    "plain_language_description": "Discipline work opens when the run-off experience and the reserving standard are handed over together as the two sides the reserve will be tended between. The intake custodian accepts them, registers them with audit identifiers, and starts the maintaining from a recorded baseline.",
+    "business_purpose": "It exists so the reserve is tended against a registered standard rather than against hope.",
+    "practical_context": "It opens when the experience and standard are presented for the discipline work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian in the operations function registers the run-off experience and reserving standard as the discipline baseline, with audit references."
+    }
+  },
+  "processes:task-fa-retire-transform-7esdmp": {
+    "plain_language_name": "Hold the Reserves True While the Book Runs Off",
+    "plain_language_description": "With the inputs verified, the processing custodian does the maintaining itself: the actuarial reserve, the capital adequacy, and the asset matching are held to the standard through each review, and the maintained reserve is set down in the form the activity defines. Working papers are preserved for audit.",
+    "business_purpose": "It exists because a run-off that lets its reserve slip pays its first creditors with its last creditors' money - the discipline is what keeps the promise whole.",
+    "practical_context": "It starts once checking is complete and the verified inputs are ready to be tended from, and it ends with the maintained reserve produced and the working papers kept.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the operations function holds the reserve to the standard through each review and corrects where it drifts, keeping the working papers."
+    }
+  },
+  "processes:task-fa-retire-verify-8tezc3": {
+    "plain_language_name": "Check the Standard Before Holding the Reserves True",
+    "plain_language_description": "Before anything is tended, the verification custodian checks the experience and standard against what maintaining requires - that the experience is current and the standard is the regime's own. Defects are logged for rejection or repair before the tending begins.",
+    "business_purpose": "It exists so the reserve is never tended against a standard the regime never set.",
+    "practical_context": "It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian finds the reserving standard out of date against the regime and logs the defect before the tending begins."
+    }
+  },
+  "processes:task-ge-activate-record-mpc6x3": {
+    "plain_language_name": "Lay the Notification Case File Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The obligations' telling stays provable for as long as the law requires.",
+    "business_purpose": "It exists so the telling of the obligations can be evidenced for as long as the law requires.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-ge-activate-confirm-w4wzh5": {
+    "plain_language_name": "Reconcile the Record and Tell the Bound Parties",
+    "plain_language_description": "When the activated record exists, the confirmation custodian sets it beside the instrument as constituted and the statute that governs it, reconciles the two, and issues the completion confirmation, which the governance custodian receives first and the parties now bound after, logging it into the case file.",
+    "business_purpose": "It exists because a commencement nobody has confirmed is a commencement nobody can rely on.",
+    "practical_context": "It opens once the activated record is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the record beside the instrument as constituted and the statute above it, reconciles the two, and issues the confirmation to the custodian of governance and the bound parties."
+    }
+  },
+  "processes:task-ge-activate-intake-6t8h34": {
+    "plain_language_name": "Take Custody of the Notification Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the commencement pack — instrument as constituted, commencement order, and the schedule of duties and rights — and writes the manifest that ties the pack into the case file for the activation.",
+    "business_purpose": "It exists so the commencement begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives ready for intake under the contract that governs it, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the instrument, order, and schedule, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-activate-transform-4ahajm": {
+    "plain_language_name": "Carry Out the Commencement and Register the Instrument",
+    "plain_language_description": "With the certificate in hand, the processing custodian effects the commencement: the instrument is registered with the authority competent for it, the duties-and-rights schedule is set in force, and the activated record is produced for confirmation.",
+    "business_purpose": "It exists because an instrument verified but never effected governs nothing - the effecting is where it starts to bind.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded work may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the governance design authority registers the instrument where the competent authority sits and produces the activated record."
+    }
+  },
+  "processes:task-ge-activate-verify-fj65v3": {
+    "plain_language_name": "Test the Preconditions Before Anything Moves",
+    "plain_language_description": "With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.",
+    "business_purpose": "It exists because a commencement effected on unmet preconditions binds nobody and disgraces everybody - the testing is what makes it lawful.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet."
+    }
+  },
+  "processes:task-ge-activate-record-nhgx8k": {
+    "plain_language_name": "Lay the Commencement Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The commencement's making stays provable for as long as the law requires.",
+    "business_purpose": "It exists so the commencement's making can be evidenced for as long as the law requires.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an oversight review would consult."
+    }
+  },
+  "processes:task-ge-activate-confirm-uyjbne": {
+    "plain_language_name": "Reconcile the Record and Give the Official Yes",
+    "plain_language_description": "When the activated record exists, the confirmation custodian sets it beside the instrument as constituted and the statute that governs it, reconciles the two, and issues the completion confirmation, which the governance custodian receives first and the parties now bound after, logging it into the case file.",
+    "business_purpose": "It exists because a commencement nobody has confirmed is a commencement nobody can rely on.",
+    "practical_context": "It opens once the activated record is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the record beside the instrument as constituted and the statute above it, reconciles the two, and issues the confirmation to the custodian of governance and the bound parties."
+    }
+  },
+  "processes:task-ge-activate-intake-45ywc5": {
+    "plain_language_name": "Take Custody of the Commencement Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the commencement pack — instrument as constituted, commencement order, and the schedule of duties and rights — and writes the manifest that ties the pack into the case file for the activation.",
+    "business_purpose": "It exists so the commencement begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives ready for intake under the contract that governs it, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the instrument, order, and schedule, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-activate-transform-zmuz23": {
+    "plain_language_name": "Effect the Commencement the Statute Provides",
+    "plain_language_description": "With the certificate in hand, the processing custodian effects the commencement the statute provides for: the instrument is registered with the authority competent for it, the baseline is set in force, and the activated record is produced for confirmation.",
+    "business_purpose": "It exists because an instrument verified but never effected governs nothing - the effecting is where the instrument starts to bind.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded work may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the governance design authority effects the commencement by registering the instrument and producing the activated record."
+    }
+  },
+  "processes:task-ge-activate-verify-wjc7ac": {
+    "plain_language_name": "Test the Preconditions Before the Instrument Moves",
+    "plain_language_description": "With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.",
+    "business_purpose": "It exists because a commencement effected on unmet preconditions binds nobody and disgraces everybody - the testing is what makes it lawful.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet."
+    }
+  },
+  "processes:task-ge-activate-record-bwyw4e": {
+    "plain_language_name": "Lay the Baseline Case File Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The baseline's arming stays provable for as long as the law requires.",
+    "business_purpose": "It exists so the baseline's arming can be evidenced for as long as the law requires.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles an enforcement review would consult."
+    }
+  },
+  "processes:task-ge-activate-confirm-e8wmgf": {
+    "plain_language_name": "Reconcile the Record and Confirm the Baseline",
+    "plain_language_description": "When the activated record exists, the confirmation custodian sets it beside the instrument as constituted and the statute that governs it, reconciles the two, and issues the completion confirmation, which the governance custodian receives first and the parties now bound after, logging it into the case file.",
+    "business_purpose": "It exists because a baseline nobody has confirmed is a baseline nobody can enforce from.",
+    "practical_context": "It opens once the activated record is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the record beside the instrument as constituted and the statute above it, reconciles the two, and confirms the baseline to the custodian of governance and the bound parties."
+    }
+  },
+  "processes:task-ge-activate-intake-qvt8ss": {
+    "plain_language_name": "Take Custody of the Baseline Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the commencement pack — instrument as constituted, commencement order, and the schedule of duties and rights — and writes the manifest that ties the pack into the case file for the activation.",
+    "business_purpose": "It exists so the baseline begins from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives ready for intake under the contract that governs it, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the instrument, order, and schedule, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-activate-transform-23rf87": {
+    "plain_language_name": "Register the Instrument and Set the Baseline in Force",
+    "plain_language_description": "With the certificate in hand, the processing custodian effects the commencement: the instrument is registered with the authority competent for it, the duties-and-rights schedule is set in force as the baseline, and the activated record is produced for confirmation.",
+    "business_purpose": "It exists because an instrument verified but never effected governs nothing - the effecting is where the baseline starts to bite.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded work may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the governance design authority registers the instrument where the competent authority sits and sets the duties-and-rights schedule in force as the baseline."
+    }
+  },
+  "processes:task-ge-activate-verify-6awm7s": {
+    "plain_language_name": "Test the Preconditions Before the Baseline Is Set",
+    "plain_language_description": "With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.",
+    "business_purpose": "It exists because a baseline set on unmet preconditions arms mechanisms that bind nobody - the testing is what makes the arming lawful.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet."
+    }
+  },
+  "processes:task-ge-activate-record-xmz6az": {
+    "plain_language_name": "Lay the Conditions Case File Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The conditions' testing stays provable for as long as the law requires.",
+    "business_purpose": "It exists so the conditions' testing can be evidenced for as long as the law requires.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a formation review would consult."
+    }
+  },
+  "processes:task-ge-activate-confirm-kbte74": {
+    "plain_language_name": "Reconcile the Record and Confirm the Checks",
+    "plain_language_description": "When the activated record exists, the confirmation custodian sets it beside the instrument as constituted and the statute that governs it, reconciles the two, and issues the completion confirmation, which the governance custodian receives first and the parties now bound after, logging it into the case file.",
+    "business_purpose": "It exists because checks nobody has confirmed are checks nobody can build on.",
+    "practical_context": "It opens once the activated record is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian sets the record beside the instrument as constituted and the statute above it, reconciles the two, and confirms the checks to the custodian of governance and the bound parties."
+    }
+  },
+  "processes:task-ge-activate-intake-cnkk4f": {
+    "plain_language_name": "Take Custody of the Conditions Input Pack",
+    "plain_language_description": "The intake custodian takes charge of the commencement pack — instrument as constituted, commencement order, and the schedule of duties and rights — and writes the manifest that ties the pack into the case file for the activation.",
+    "business_purpose": "It exists so the conditions are tested from a registered pack rather than from loose papers.",
+    "practical_context": "It opens when custody of the pack arrives ready for intake under the contract that governs it, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An intake custodian takes charge of the instrument, order, and schedule, and writes the manifest that ties them into the case file."
+    }
+  },
+  "processes:task-ge-activate-transform-ecp9yh": {
+    "plain_language_name": "Carry Out the Commencement the Gate Clears",
+    "plain_language_description": "With the certificate in hand, the processing custodian effects the commencement: the instrument is registered with the authority competent for it, the baseline is set in force, and the activated record is produced for confirmation.",
+    "business_purpose": "It exists because an instrument verified but never effected governs nothing - the carrying-out is where the conditions turn into force.",
+    "practical_context": "It opens once the verification certificate is in hand and the bounded work may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian in the governance design authority carries the commencement out once the gate clears it, producing the activated record."
+    }
+  },
+  "processes:task-ge-activate-verify-e2cm72": {
+    "plain_language_name": "Test the Preconditions Before the Gate Opens",
+    "plain_language_description": "With the manifest registered, the verification custodian tests the conditions the commencement must satisfy — reading them against the instrument as constituted and the statute that governs it — and issues the certificate that names what was proven and what still stands unmet.",
+    "business_purpose": "It exists because a gate that opens on unmet preconditions was never a gate - the testing is what makes the opening lawful.",
+    "practical_context": "It opens once the manifest is registered and the contract and quality checks may run against the pack, and it closes with the verification certificate issued, custody passed onward to the processing custodian.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian tests each precondition against the instrument and its statute, naming whatever still stands unmet."
+    }
+  },
+  "processes:task-ge-build-record-h7b56b": {
+    "plain_language_name": "Lay the Apparatus Case Down for Keeps",
+    "plain_language_description": "At the close the records custodian lays the charters' build package down under the schedule that keeps it, integrity sealed: the manifest, the verification report, the build-ready inventory, the completion confirmation, and whatever remediations were raised. The charters' making stays provable for as long as the bodies they govern endure.",
+    "business_purpose": "It exists so the charters' making can be evidenced for as long as the bodies they govern endure.",
+    "practical_context": "It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian lays the charters' apparatus case down under the governance retention rules and sets the retrieval handles a governance review would consult."
+    }
+  }
+}

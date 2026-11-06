@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-design-ver
 
 This is a **Task** (level L4), named **Articulate Supply Paths Verification**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Articulate Supply Paths** (`processes:activity-pr-design-zst46t`). Its canonical ID is `processes:task-pr-design-verify-gwpsuz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the paths are articulated, the verification custodian tests the pack against the bar the experience must meet and the contract for how touchpoints are classified. Where the pack deviates, the deviation is named and a remediation is set out.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because supply paths drawn from a weak pack would promise supply the enterprise cannot deliver.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the supply-path pack against the quality bar and flags one gap.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Supply-Path Work Against the Quality Bar |
+| `plain_language_description` | string | no | Before the paths are articulated, the verification custodian tests the pack against the bar the experience must meet … |
+| `business_purpose` | string | no | It exists because supply paths drawn from a weak pack would promise supply the enterprise cannot deliver. |
+| `practical_context` | string | no | It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

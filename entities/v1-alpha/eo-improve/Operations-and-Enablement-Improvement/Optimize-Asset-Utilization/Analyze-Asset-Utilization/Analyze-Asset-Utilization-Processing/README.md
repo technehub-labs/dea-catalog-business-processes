@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-tr
 
 This is a **Task** (level L4), named **Analyze Asset Utilization Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Analyze Asset Utilization** (`processes:activity-eo-improve-bwndzz`). Its canonical ID is `processes:task-eo-improve-transform-4w9zqn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the analysis itself: the maintenance and production record is read for which assets sit underused and which are buckling under load, and the utilization analysis is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because misused assets hide in plain sight - the analysis is what makes the idle ones and the overloaded ones visible at once.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be read, and it ends with the utilization analysis produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function reads the maintenance and production record and bounds which assets idle and which strain, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Find the Assets Sitting Idle or Straining |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the analysis itself: the maintenance and production record is … |
+| `business_purpose` | string | no | It exists because misused assets hide in plain sight - the analysis is what makes the idle ones and the overloaded ones … |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be read, and it ends with the utilization … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

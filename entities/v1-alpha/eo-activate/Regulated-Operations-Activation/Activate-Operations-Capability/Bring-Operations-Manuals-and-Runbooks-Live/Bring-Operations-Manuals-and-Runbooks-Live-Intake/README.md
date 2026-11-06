@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-activate-i
 
 This is a **Task** (level L4), named **Bring Operations Manuals and Runbooks Live Intake**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Bring Operations Manuals and Runbooks Live** (`processes:activity-eo-activate-qmpq2e`). Its canonical ID is `processes:task-eo-activate-intake-795evv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The go-live opens when the issued authorization and the regulator-approved manual content are handed over together. The intake custodian accepts both, registers them with audit identifiers, and starts the bring-live work from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so manuals go live from approved content over the issued authorization, not from unapproved drafts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the authorization and manual content are presented for the bring-live, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the issued authorization and approved manual content as the bring-live baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Authorization and the Approved Manual Content |
+| `plain_language_description` | string | no | The go-live opens when the issued authorization and the regulator-approved manual content are handed over together. The … |
+| `business_purpose` | string | no | It exists so manuals go live from approved content over the issued authorization, not from unapproved drafts. |
+| `practical_context` | string | no | It opens when the authorization and manual content are presented for the bring-live, with the activity owner alerted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

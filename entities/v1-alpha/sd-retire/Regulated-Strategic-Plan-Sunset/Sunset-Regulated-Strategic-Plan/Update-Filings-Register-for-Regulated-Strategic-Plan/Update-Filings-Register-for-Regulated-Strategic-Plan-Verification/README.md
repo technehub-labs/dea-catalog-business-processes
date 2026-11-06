@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 
 This is a **Task** (level L4), named **Update Filings Register for Regulated Strategic Plan Verification**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Update Filings Register for Regulated Strategic Plan** (`processes:activity-sd-retire-6m38cq`). Its canonical ID is `processes:task-sd-retire-verify-ed9rm5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the filings register is changed, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a register showing a plan retired on the wrong date would put the entity out of step with its supervisor on paper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the supersession material against what the register update needs, and writes up a retirement date that misses the directive as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Supersession Material Before the Register Changes |
+| `plain_language_description` | string | no | Before the filings register is changed, the arriving material is put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because a register showing a plan retired on the wrong date would put the entity out of step with its … |
+| `practical_context` | string | no | It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

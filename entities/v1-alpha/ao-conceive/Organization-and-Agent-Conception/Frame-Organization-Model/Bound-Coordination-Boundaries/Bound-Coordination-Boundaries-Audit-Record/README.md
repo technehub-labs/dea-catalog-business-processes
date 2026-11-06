@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-r
 
 This is a **Task** (level L4), named **Bound Coordination Boundaries Audit Record**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Coordination Boundaries** (`processes:activity-ao-conceive-ycwkts`). Its canonical ID is `processes:task-ao-conceive-record-35mq4u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the boundary trail at its required retention tier and sets the retrieval handles for it. Where each boundary was drawn, and within which spans, stays readable whenever coordination between units and substrates comes into question.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the boundaries between units and substrates can be evidenced whenever coordination is disputed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record held at its tier and retrieval handles in place.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the boundary trail at its retention tier and sets the retrieval handles a coordination review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Coordination Boundary Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the boundary trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the boundaries between units and substrates can be evidenced whenever coordination is disputed. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

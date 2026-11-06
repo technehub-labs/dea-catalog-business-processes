@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-ver
 
 This is a **Task** (level L4), named **Design Fulfilment Flows Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Fulfilment Flows** (`processes:activity-eo-design-4wmwgy`). Its canonical ID is `processes:task-eo-design-verify-ehpht6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any flow is drawn, the verification custodian checks the patterns and configurations against what flow design requires - that every pattern has its channel configurations to realize it through. Gaps are logged for rejection or repair before the drawing begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no flow is drawn between inputs that were never fully settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a pattern with no configuration to realize it and logs the gap before the flows are drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Inputs Before Drawing the Flows |
+| `plain_language_description` | string | no | Before any flow is drawn, the verification custodian checks the patterns and configurations against what flow design … |
+| `business_purpose` | string | no | It exists so no flow is drawn between inputs that were never fully settled. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

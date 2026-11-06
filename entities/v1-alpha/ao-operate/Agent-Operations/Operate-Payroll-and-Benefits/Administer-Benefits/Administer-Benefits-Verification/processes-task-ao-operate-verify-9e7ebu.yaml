@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Entitlements Before Administering the Benefits'
+plain_language_description: 'Before any benefit is administered, the verification custodian checks the entitlements against what administration requires - that each in-service agent''s entitlements are current for the cycle. Defects are logged for rejection or repair before the administration runs.'
+business_purpose: 'It exists so nobody receives benefits they have outgrown, and nobody loses benefits the records still owe them.'
+practical_context: 'It runs once the intake is registered and the entitlements can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds an entitlement still running for a departed agent and logs the defect before the cycle administers it.'

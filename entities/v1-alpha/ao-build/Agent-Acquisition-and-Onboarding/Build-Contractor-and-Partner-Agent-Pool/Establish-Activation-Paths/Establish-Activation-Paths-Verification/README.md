@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-build-veri
 
 This is a **Task** (level L4), named **Establish Activation Paths Verification**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Establish Activation Paths** (`processes:activity-ao-build-jgtegj`). Its canonical ID is `processes:task-ao-build-verify-kdycrh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before routes are laid, the verification custodian checks the vetted sources against what establishing activation paths requires - that each source can actually carry engagement as intended. Shortfalls are written up for rejection or repair, so no route is built on a source that cannot serve it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the routes into the pool rest on sources confirmed able to carry the engagement.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and each source can be compared with the activity's requirements, and it finishes with the sources verified or the shortfalls logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian checks each vetted source's readiness to carry engagement and logs one source as unable to serve its route, for remediation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Sources Against the Path Requirements |
+| `plain_language_description` | string | no | Before routes are laid, the verification custodian checks the vetted sources against what establishing activation paths … |
+| `business_purpose` | string | no | It exists so the routes into the pool rest on sources confirmed able to carry the engagement. |
+| `practical_context` | string | no | It runs once the intake is registered and each source can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

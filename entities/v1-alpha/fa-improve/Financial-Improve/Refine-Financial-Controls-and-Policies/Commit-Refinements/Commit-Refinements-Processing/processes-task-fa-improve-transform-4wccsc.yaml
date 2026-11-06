@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Adopt the Refined Rules Through the Review Cycle'
+plain_language_description: 'With the designs verified, the processing custodian does the adoption itself: each refinement is put through the policy review cycle and adopted into the standing rules, set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a refinement adopted by accretion is a control nobody owns - the review cycle is what makes the change deliberate.'
+practical_context: 'It starts once checking is complete and the verified designs are ready to be adopted, and it ends with the committed refinements produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the finance design authority carries each refinement through the review cycle into the standing rules, keeping the working papers.'

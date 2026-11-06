@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Chains Before Reviewing the Structure'
+plain_language_description: 'Before the review begins, the verification custodian checks the bounded chains against what the review requires - that the structure they run through is complete enough to be checked against the model. Defects are logged for rejection or repair before the review is made.'
+business_purpose: 'It exists so the model is never used to judge a structure that was handed over half-formed.'
+practical_context: 'It runs once the intake is registered and the chains can be compared with the activity''s requirements, and it finishes with them verified or their defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds the chains covering only part of the drafted units and logs the defect before the review begins.'

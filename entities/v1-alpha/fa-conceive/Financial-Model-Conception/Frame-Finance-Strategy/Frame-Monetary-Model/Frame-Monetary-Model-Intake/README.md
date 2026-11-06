@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-conceive-i
 
 This is a **Task** (level L4), named **Frame Monetary Model Intake**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Frame Monetary Model** (`processes:activity-fa-conceive-n35a6c`). Its canonical ID is `processes:task-fa-conceive-intake-w29pvr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Model framing opens when the enterprise strategy and the jurisdictional footprint are handed over together as the ground the monetary model will be bounded from. The intake custodian accepts both, registers them with audit identifiers, and starts the framing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so money is measured within a registered strategy over a registered footprint.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the strategy and footprint are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function registers the enterprise strategy and footprint as the framing baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Enterprise Strategy and Jurisdictional Footprint |
+| `plain_language_description` | string | no | Model framing opens when the enterprise strategy and the jurisdictional footprint are handed over together as the … |
+| `business_purpose` | string | no | It exists so money is measured within a registered strategy over a registered footprint. |
+| `practical_context` | string | no | It opens when the strategy and footprint are presented for the framing, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

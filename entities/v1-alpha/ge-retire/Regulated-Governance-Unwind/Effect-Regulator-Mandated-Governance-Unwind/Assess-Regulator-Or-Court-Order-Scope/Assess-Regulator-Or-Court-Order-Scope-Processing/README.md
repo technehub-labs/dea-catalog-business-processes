@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 
 This is a **Task** (level L4), named **Assess Regulator Or Court Order Scope Processing**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assess Regulator Or Court Order Scope** (`processes:activity-ge-retire-k5amzf`). Its canonical ID is `processes:task-ge-retire-transform-acer4t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the unwind: the order's reach is assessed, custodianship of the retained records is arranged, governance is scaled back to the quorum the wind-down requires, and the dissolution filings go in. The resulting record pack is bundled for formal confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the binding order is answered step by step, with each step's evidence gathered into one defensible pack.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate clears the pack, and it closes with the record pack produced and custody handed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function assesses the order's reach, arranges custodianship for retained records, and bundles the evidence for confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Work Through the Wind-Down Steps and Bundle the Evidence |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the unwind: the order's reach is assessed … |
+| `business_purpose` | string | no | It exists so the binding order is answered step by step, with each step's evidence gathered into one defensible pack. |
+| `practical_context` | string | no | It opens once the verification certificate clears the pack, and it closes with the record pack produced and custody … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-co
 
 This is a **Task** (level L4), named **Schedule Production Cycles Confirmation**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Schedule Production Cycles** (`processes:activity-eo-operate-gmkpny`). Its canonical ID is `processes:task-eo-operate-confirm-cxxkmt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the queue stands sequenced, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The running side learns the cycles are ordered and resourced, ready to be run.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the line runs only from a schedule confirmed as sequenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the cycle schedule awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the cycle schedule against the activity's intended outcome and issues the confirmation the running side needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Cycle Schedule |
+| `plain_language_description` | string | no | When the queue stands sequenced, the confirmation custodian reconciles it against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the line runs only from a schedule confirmed as sequenced. |
+| `practical_context` | string | no | It begins once preparation is complete and the cycle schedule awaits its consumers, and it closes with the confirmation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-tr
 
 This is a **Task** (level L4), named **Prioritize Capability Gaps Processing**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Prioritize Capability Gaps** (`processes:activity-ao-improve-rk3g4q`). Its canonical ID is `processes:task-ao-improve-transform-tq5ye2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the gaps verified, the processing custodian makes the prioritization itself: each identified gap is weighed for its impact on the organization structure and direction, and the ranked list is set down in the form the activity defines. Working papers behind the ranking are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because development effort is finite, and it must land where the organisation's shape and course need it most.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified gaps are ready to be ranked, and it ends with the prioritized capability gaps produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority weighs each gap for its impact on structure and direction and records the ranked list.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Rank the Gaps by Their Impact on Structure and Direction |
+| `plain_language_description` | string | no | With the gaps verified, the processing custodian makes the prioritization itself: each identified gap is weighed for … |
+| `business_purpose` | string | no | It exists because development effort is finite, and it must land where the organisation's shape and course need it most. |
+| `practical_context` | string | no | It starts once checking is complete and the verified gaps are ready to be ranked, and it ends with the prioritized … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

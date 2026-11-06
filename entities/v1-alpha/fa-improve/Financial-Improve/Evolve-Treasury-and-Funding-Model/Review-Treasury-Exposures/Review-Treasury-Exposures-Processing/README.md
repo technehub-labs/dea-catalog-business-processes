@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-improve-tr
 
 This is a **Task** (level L4), named **Review Treasury Exposures Processing**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Review Treasury Exposures** (`processes:activity-fa-improve-grdfaj`). Its canonical ID is `processes:task-fa-improve-transform-qb5tsg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the review itself: each assessed shift is weighed against the model as it stands, and the exposure picture is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a shift only matters for what it moves - the review is what prices the outside in model terms.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be weighed, and it ends with the exposure review produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority weighs each shift's cost against the current model, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Weigh What the Shifts Cost the Model |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the review itself: each assessed shift is weighed against the … |
+| `business_purpose` | string | no | It exists because a shift only matters for what it moves - the review is what prices the outside in model terms. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be weighed, and it ends with the exposure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

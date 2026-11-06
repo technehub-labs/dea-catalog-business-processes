@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Draft Strategic Scenarios Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Draft Strategic Scenarios** (`processes:activity-sd-design-xz6zgn`). Its canonical ID is `processes:task-sd-design-transform-3a9v5n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the drafting proper begins. The processing custodian works the bounded assumptions into distinct, coherent worlds the options must survive, producing the drafted scenarios in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a strategy proved in only one future is a bet; scenarios are how the other futures get their say.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the drafted scenarios produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function works the verified assumptions into distinct and coherent scenario worlds, and keeps the drafting workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Scenarios Within the Bounded Assumptions |
+| `plain_language_description` | string | no | With the inputs verified, the drafting proper begins. The processing custodian works the bounded assumptions into … |
+| `business_purpose` | string | no | It exists because a strategy proved in only one future is a bet; scenarios are how the other futures get their say. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the drafted scenarios produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

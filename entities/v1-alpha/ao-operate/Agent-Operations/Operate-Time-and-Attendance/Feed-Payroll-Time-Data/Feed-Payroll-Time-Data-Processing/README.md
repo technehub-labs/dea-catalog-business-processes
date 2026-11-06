@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 This is a **Task** (level L4), named **Feed Payroll Time Data Processing**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Feed Payroll Time Data** (`processes:activity-ao-operate-5myx8s`). Its canonical ID is `processes:task-ao-operate-transform-vpp8my`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the record verified, the processing custodian makes the feed itself: the validated time data is assembled for the cycle's payroll and handed over in the form the activity defines. Working papers from the hand-off are preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because payroll can only compute as well as the time it is fed - this is the bridge between the two.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified record is ready to be fed from, and it ends with the time data feed produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in workforce management assembles the validated time for the cycle and hands it to payroll, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Validated Time to Payroll Each Cycle |
+| `plain_language_description` | string | no | With the record verified, the processing custodian makes the feed itself: the validated time data is assembled for the … |
+| `business_purpose` | string | no | It exists because payroll can only compute as well as the time it is fed - this is the bridge between the two. |
+| `practical_context` | string | no | It starts once checking is complete and the verified record is ready to be fed from, and it ends with the time data … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

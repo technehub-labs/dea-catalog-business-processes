@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-conf
 
 This is a **Task** (level L4), named **Draft Strategic Initiatives Confirmation**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Draft Strategic Initiatives** (`processes:activity-sd-build-547hm5`). Its canonical ID is `processes:task-sd-build-confirm-wng5fj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the initiatives are drafted. The confirmation custodian tells the downstream teams the drafted initiatives are available, and closes the reconciliation against what the activity promised for the drafting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the fit review examines a confirmed draft set rather than notes that are still moving.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the drafted initiatives are ready to hand on, and it closes with the confirmation issued and the drafting's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the drafted initiative set to the fit review team, reconciles it against what the drafting promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Drafted Initiatives to the Fit Review |
+| `plain_language_description` | string | no | The confirming opens once the initiatives are drafted. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so the fit review examines a confirmed draft set rather than notes that are still moving. |
+| `practical_context` | string | no | It opens when the drafted initiatives are ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

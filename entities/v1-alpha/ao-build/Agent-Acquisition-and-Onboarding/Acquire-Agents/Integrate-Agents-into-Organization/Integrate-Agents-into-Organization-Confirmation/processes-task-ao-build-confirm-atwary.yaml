@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Completed Integration'
+plain_language_description: 'Once placements are made, the confirmation custodian reconciles the integrated arrangement against what the activity set out to deliver and issues the confirmation. The teams affected, and whoever depends on the integration, learn the agents are in place and working.'
+business_purpose: 'It exists so an integration is declared complete only after reconciliation to the intended result and a formal announcement.'
+practical_context: 'It starts when preparation is complete and the integrated agents are ready for those depending on them, and it closes with confirmation issued, dependants informed, and the result reconciled to the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian checks the finished placements against the activity''s intended result and confirms onward that the integrated agents are in place.'

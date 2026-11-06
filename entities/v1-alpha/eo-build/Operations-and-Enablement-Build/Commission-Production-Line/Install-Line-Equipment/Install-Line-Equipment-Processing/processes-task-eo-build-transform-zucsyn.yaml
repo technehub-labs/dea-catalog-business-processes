@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Put the Specified Equipment onto the Line'
+plain_language_description: 'With the deliveries verified, the processing custodian does the installation itself: each piece of specified equipment is installed onto the production line at its blueprint position, and the installed line is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a line is its equipment in the right places - installation is where the production line starts to exist.'
+practical_context: 'It starts once checking is complete and the verified deliveries are ready to be installed, and it ends with the installed line produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management installs each specified piece onto the line at its blueprint position, keeping the working papers.'

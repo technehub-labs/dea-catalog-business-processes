@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Track Lifecycle Stages Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Track Lifecycle Stages** (`processes:activity-pv-operate-zk8rc3`). Its canonical ID is `processes:task-pv-operate-transform-prcf5j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the signals verified, the positions themselves are read and set down. The processing custodian reads each proposition against introduction, growth, maturity, and decline, producing the stage tracking record in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because every lifecycle decision starts from where a proposition actually sits, and this step keeps that answer current.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified signals are ready to be read, and it closes with the stage tracking record produced in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management reads the verified signals and updates the stage tracking record, holding one proposition in growth and moving another into maturity, with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Update the Stage Positions of the Propositions |
+| `plain_language_description` | string | no | With the signals verified, the positions themselves are read and set down. The processing custodian reads each … |
+| `business_purpose` | string | no | It exists because every lifecycle decision starts from where a proposition actually sits, and this step keeps that … |
+| `practical_context` | string | no | It opens when the verified signals are ready to be read, and it closes with the stage tracking record produced in the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

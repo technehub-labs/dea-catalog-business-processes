@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-ver
 
 This is a **Task** (level L4), named **Align Competency Framework To Continuing-Supervision Verification**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Align Competency Framework To Continuing-Supervision** (`processes:activity-ao-design-wnqz3k`). Its canonical ID is `processes:task-ao-design-verify-rcwfmv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any entry is aligned, the verification custodian checks the catalogue and skeleton against what alignment requires - that each licensed role in the catalogue has a framework place to be aligned into. Gaps are flagged for rejection or repair before the alignment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no licensed role's competency entry is left floating outside the continuing-supervision framework.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their gaps logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a licensed role missing its framework slot and flags the gap before any entry is aligned.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Alignment Inputs Before Aligning |
+| `plain_language_description` | string | no | Before any entry is aligned, the verification custodian checks the catalogue and skeleton against what alignment … |
+| `business_purpose` | string | no | It exists so no licensed role's competency entry is left floating outside the continuing-supervision framework. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

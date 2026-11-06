@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-tr
 
 This is a **Task** (level L4), named **Report Audit Findings Processing**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Report Audit Findings** (`processes:activity-ge-operate-r4ka8z`). Its canonical ID is `processes:task-ge-operate-transform-6hhtxe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the operating for the reporting: the audit findings, recommendations, and follow-up actions are written down for the body that owns them, and the outcomes pack is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a finding that never reaches its owning body is a finding that will happen again - the writing-down is what delivers it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the risk function writes the findings, recommendations, and follow-up actions down for the body that owns each one.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Write the Findings Down for the Body That Owns Them |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the operating for the reporting: the audit findings … |
+| `business_purpose` | string | no | It exists because a finding that never reaches its owning body is a finding that will happen again - the writing-down … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

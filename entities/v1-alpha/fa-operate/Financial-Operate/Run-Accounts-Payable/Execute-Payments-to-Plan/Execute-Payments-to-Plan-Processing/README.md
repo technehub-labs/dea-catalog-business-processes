@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-tr
 
 This is a **Task** (level L4), named **Execute Payments to Plan Processing**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payments to Plan** (`processes:activity-fa-operate-k9cf3b`). Its canonical ID is `processes:task-fa-operate-transform-cwpc2u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the execution itself: each approved invoice is paid per the plan's ordering and settled through its chosen instrument, and the executed payments are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because paying in the wrong order strands the suppliers who mattered most - the plan is what keeps the money loyal to the schedule.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be paid from, and it ends with the executed payments produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the compliance function pays each invoice in the plan's order through its chosen instrument, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pay the Suppliers in the Order the Plan Says |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the execution itself: each approved invoice is paid per the … |
+| `business_purpose` | string | no | It exists because paying in the wrong order strands the suppliers who mattered most - the plan is what keeps the money … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be paid from, and it ends with the executed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

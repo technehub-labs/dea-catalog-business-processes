@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Procure Hardware and Software Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Procure Hardware and Software** (`processes:activity-eo-build-jg28xr`). Its canonical ID is `processes:task-eo-build-verify-h5p7nk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is bought, the verification custodian checks the specification and principles against what procurement requires - that the architecture's needs are fully stated and the sourcing rules are the committed ones. Defects are flagged for rejection or repair before the buying begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise never buys assets the architecture did not actually ask for.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the specification silent on one environment's needs and flags the defect before any buying begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Specification Before Buying the Assets |
+| `plain_language_description` | string | no | Before anything is bought, the verification custodian checks the specification and principles against what procurement … |
+| `business_purpose` | string | no | It exists so the enterprise never buys assets the architecture did not actually ask for. |
+| `practical_context` | string | no | It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

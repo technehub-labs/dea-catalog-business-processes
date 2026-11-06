@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Design Fulfilment Flows Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Fulfilment Flows** (`processes:activity-eo-design-4wmwgy`). Its canonical ID is `processes:task-eo-design-intake-gnsp6m`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Flow design opens when the fulfilment patterns and the channel configurations are handed over together as the two inputs the order-to-delivery paths will be drawn between. The intake custodian accepts both, registers them with audit identifiers, and starts the design from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so flows are designed between registered patterns and registered configurations rather than sketched freehand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the patterns and configurations are presented for the flow design, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the fulfilment patterns and channel configurations as the flow-design baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Patterns and Channel Configurations for Flow Design |
+| `plain_language_description` | string | no | Flow design opens when the fulfilment patterns and the channel configurations are handed over together as the two … |
+| `business_purpose` | string | no | It exists so flows are designed between registered patterns and registered configurations rather than sketched freehand. |
+| `practical_context` | string | no | It opens when the patterns and configurations are presented for the flow design, with the activity owner alerted, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

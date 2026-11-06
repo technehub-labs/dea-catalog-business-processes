@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-retire-tra
 
 This is a **Task** (level L4), named **Plan Service Withdrawal Processing**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Plan Service Withdrawal** (`processes:activity-pv-retire-vbn7s6`). Its canonical ID is `processes:task-pv-retire-transform-d7ekwb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the planning proper begins. The processing custodian works out notice, dependencies, timelines and user migration provisions, producing the service withdrawal plan in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because retiring a service safely needs one written plan covering who is told, what depends on it, and how users move off.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified decision material is ready to be worked, and it closes with the withdrawal plan produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the proposition design authority drafts the withdrawal plan, setting the customer notice, the dependency timeline and the user migration provisions, and keeps the planning workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw Up the Withdrawal Plan with Notice, Timelines and Migration |
+| `plain_language_description` | string | no | With the inputs verified, the planning proper begins. The processing custodian works out notice, dependencies … |
+| `business_purpose` | string | no | It exists because retiring a service safely needs one written plan covering who is told, what depends on it, and how … |
+| `practical_context` | string | no | It opens when the verified decision material is ready to be worked, and it closes with the withdrawal plan produced in … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

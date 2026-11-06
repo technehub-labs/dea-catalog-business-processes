@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-in
 
 This is a **Task** (level L4), named **Maintain Stock Accuracy Intake**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Stock Accuracy** (`processes:activity-eo-operate-rrg5cv`). Its canonical ID is `processes:task-eo-operate-intake-gmse4r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Reconciliation opens when the counting variances and the movement records are handed over together as the material the stock record will be put right from. The intake custodian accepts them, registers them with audit identifiers, and starts the reconciling from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the record is corrected from registered evidence rather than from guesswork.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the variances and movements are presented for the reconciling, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the variances and movement records as the reconciliation baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Variances and Movement Records |
+| `plain_language_description` | string | no | Reconciliation opens when the counting variances and the movement records are handed over together as the material the … |
+| `business_purpose` | string | no | It exists so the record is corrected from registered evidence rather than from guesswork. |
+| `practical_context` | string | no | It opens when the variances and movements are presented for the reconciling, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

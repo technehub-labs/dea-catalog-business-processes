@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-design-int
 
 This is a **Task** (level L4), named **Design Segment Configurations Intake**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Segment Configurations** (`processes:activity-pv-design-yyrnq4`). Its canonical ID is `processes:task-pv-design-intake-ejwt6k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The configuration work opens with the segment theses and packaging formats arriving to be tailored. The intake custodian logs them against the configuration file so the tailoring starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because configurations tailored from an unlogged thesis suit no segment at all.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the segment theses and packaging formats into the configuration file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Segment Configuration Pack |
+| `plain_language_description` | string | no | The configuration work opens with the segment theses and packaging formats arriving to be tailored. The intake … |
+| `business_purpose` | string | no | It exists because configurations tailored from an unlogged thesis suit no segment at all. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

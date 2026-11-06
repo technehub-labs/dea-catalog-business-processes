@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-r
 
 This is a **Task** (level L4), named **Frame Service-Level Envelopes Audit Record**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Service-Level Envelopes** (`processes:activity-eo-conceive-wprvuf`). Its canonical ID is `processes:task-eo-conceive-record-fgtu8w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval handles for it. What bounds were set, and around which channels, stays readable whenever the model's promises are examined.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the service levels the model commits to can be evidenced whenever they are challenged.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and it ends with the audit record preserved at its tier and retrieval handles standing.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian files the envelope trail at its retention tier and sets the retrieval handles a delivery model review would consult.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File the Service-Level Envelope Audit Record |
+| `plain_language_description` | string | no | At the close the records custodian preserves the framing trail at its required retention tier and sets the retrieval … |
+| `business_purpose` | string | no | It exists so the service levels the model commits to can be evidenced whenever they are challenged. |
+| `practical_context` | string | no | It starts once the confirmation has been issued and retention may begin under the activity's evidence requirements, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

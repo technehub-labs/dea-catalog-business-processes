@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-con
 
 This is a **Task** (level L4), named **Anchor Competency Assessment Confirmation**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Anchor Competency Assessment** (`processes:activity-ao-design-749rxd`). Its canonical ID is `processes:task-ao-design-confirm-bzxs5w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the anchors stand set, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The framework consolidation that follows learns the anchored assessment is ready to be committed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework is committed only with assessment anchors confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the anchored assessment awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the anchored assessment against the activity's intended outcome and issues the confirmation the consolidation step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Anchored Competency Assessment |
+| `plain_language_description` | string | no | When the anchors stand set, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so the framework is committed only with assessment anchors confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the anchored assessment awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

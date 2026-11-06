@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-ve
 
 This is a **Task** (level L4), named **Design Redeployment Options Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Design Redeployment Options** (`processes:activity-eo-improve-s9zhpt`). Its canonical ID is `processes:task-eo-improve-verify-2n5mgd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is drawn, the verification custodian checks the utilization analysis against what design requires - that each issue is bounded and traceable to the evidence. Defects are logged for rejection or repair before the drawing begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so options are never drawn for issues that were never truly established.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the analysis can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds an issue asserted without evidence and logs the defect before any option is drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Analysis Before Drawing the Options |
+| `plain_language_description` | string | no | Before anything is drawn, the verification custodian checks the utilization analysis against what design requires - … |
+| `business_purpose` | string | no | It exists so options are never drawn for issues that were never truly established. |
+| `practical_context` | string | no | It runs once the intake is registered and the analysis can be compared with the activity's requirements, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

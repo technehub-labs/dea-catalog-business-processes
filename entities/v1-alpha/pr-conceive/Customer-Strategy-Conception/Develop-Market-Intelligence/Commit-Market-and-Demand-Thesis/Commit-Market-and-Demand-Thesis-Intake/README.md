@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-i
 
 This is a **Task** (level L4), named **Commit Market and Demand Thesis Intake**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Commit Market and Demand Thesis** (`processes:activity-pr-conceive-hx3r6g`). Its canonical ID is `processes:task-pr-conceive-intake-bjgxye`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The market intelligence work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) evidence, and the drafts of the demand thesis. The intake custodian logs each item against the conception file so the consolidation starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the committed thesis consolidates everything the scans and hypotheses produced, not a subset.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the scans, hypotheses, and test papers into the thesis case file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather the Market Intelligence Papers |
+| `plain_language_description` | string | no | The market intelligence work opens with its research pack: the market-research artefacts, the customer-jobs (JTBD) … |
+| `business_purpose` | string | no | It exists so the committed thesis consolidates everything the scans and hypotheses produced, not a subset. |
+| `practical_context` | string | no | It opens when the Conceive-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

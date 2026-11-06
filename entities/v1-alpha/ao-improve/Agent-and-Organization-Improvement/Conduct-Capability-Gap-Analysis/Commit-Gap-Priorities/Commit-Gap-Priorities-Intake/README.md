@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Commit Gap Priorities Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Commit Gap Priorities** (`processes:activity-ao-improve-g5bube`). Its canonical ID is `processes:task-ao-improve-intake-j5c2nw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Commitment opens when the prioritized capability gaps are handed over as the list the development effort will be asked to stand behind. The intake custodian accepts the handover, registers it with audit identifiers, and opens the commitment work from a recorded base.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so priorities are committed from a registered ranking rather than from an informal shortlist.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the prioritized gaps are presented for commitment, with the activity owner alerted, and it closes with the intake registered and the remaining steps free to run.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the prioritized gaps as the commitment baseline, with audit references, and opens the commitment work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Prioritized Gaps for Commitment |
+| `plain_language_description` | string | no | Commitment opens when the prioritized capability gaps are handed over as the list the development effort will be asked … |
+| `business_purpose` | string | no | It exists so priorities are committed from a registered ranking rather than from an informal shortlist. |
+| `practical_context` | string | no | It opens when the prioritized gaps are presented for commitment, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

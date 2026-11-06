@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Track Lifecycle Stages Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Track Lifecycle Stages** (`processes:activity-pv-operate-zk8rc3`). Its canonical ID is `processes:task-pv-operate-intake-yjr7je`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The tracking opens as the signals bearing on each proposition's stage arrive. The intake custodian logs them against the stage tracking file so the tracking starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because knowing where each proposition sits between introduction and decline starts with an accounted set of arriving signals.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when a round of signals is presented for stage tracking with the activity's owner told that it has landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the week's signals into the stage tracking file, so the work of keeping every proposition's stage position current starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Incoming Stage Signals |
+| `plain_language_description` | string | no | The tracking opens as the signals bearing on each proposition's stage arrive. The intake custodian logs them against … |
+| `business_purpose` | string | no | It exists because knowing where each proposition sits between introduction and decline starts with an accounted set of … |
+| `practical_context` | string | no | It opens when a round of signals is presented for stage tracking with the activity's owner told that it has landed, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

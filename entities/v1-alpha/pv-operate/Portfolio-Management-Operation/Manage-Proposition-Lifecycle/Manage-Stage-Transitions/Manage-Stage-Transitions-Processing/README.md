@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Manage Stage Transitions Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Stage Transitions** (`processes:activity-pv-operate-jpupsh`). Its canonical ID is `processes:task-pv-operate-transform-yvsf5z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the cases verified, the moves themselves are made. The processing custodian works each proposition from its stage to the next, producing the executed transitions in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the lifecycle only means anything while propositions actually move between stages when their criteria are met.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified cases are ready to be executed, and it closes with the transitions carried out in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management executes the verified transition, formally moving the proposition from introduction into growth and recording the move, with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Carry Out the Stage Moves |
+| `plain_language_description` | string | no | With the cases verified, the moves themselves are made. The processing custodian works each proposition from its stage … |
+| `business_purpose` | string | no | It exists because the lifecycle only means anything while propositions actually move between stages when their criteria … |
+| `practical_context` | string | no | It opens when the verified cases are ready to be executed, and it closes with the transitions carried out in the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

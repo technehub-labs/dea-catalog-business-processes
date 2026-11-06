@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-conf
 
 This is a **Task** (level L4), named **Integrate Delivery Capability Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Integrate Delivery Capability** (`processes:activity-eo-build-5acbks`). Its canonical ID is `processes:task-eo-build-confirm-yyr88b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the capability stands integrated, the confirmation custodian reconciles it against the outcome the activity set out to reach and issues the confirmation. The verification step that follows learns the capability is whole and ready to be proven.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so verification proceeds only over a capability confirmed as integrated.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the integrated capability awaits its consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the integrated capability against the activity's intended outcome and issues the confirmation the verification step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Integrated Delivery Capability |
+| `plain_language_description` | string | no | When the capability stands integrated, the confirmation custodian reconciles it against the outcome the activity set … |
+| `business_purpose` | string | no | It exists so verification proceeds only over a capability confirmed as integrated. |
+| `practical_context` | string | no | It begins once preparation is complete and the integrated capability awaits its consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-build-inta
 
 This is a **Task** (level L4), named **Assemble Strategic Plan Intake**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Assemble Strategic Plan** (`processes:activity-sd-build-7z99jy`). Its canonical ID is `processes:task-sd-build-intake-qjd8kg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The assembly opens as its material arrives: the bounded plan version together with the chosen direction, objectives, initiatives and allocation that hang off it. The intake custodian logs them against the assembly file so the assembling starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the plan is assembled from a logged bounded version and its parts, never from scattered unversioned pieces.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the bounded version and its supporting material are presented for assembly, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the bounded plan version with its committed choice and built roadmap into the assembly file, so the plan assembly starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Bounded Version and Its Choice and Roadmap Material |
+| `plain_language_description` | string | no | The assembly opens as its material arrives: the bounded plan version together with the chosen direction, objectives … |
+| `business_purpose` | string | no | It exists so the plan is assembled from a logged bounded version and its parts, never from scattered unversioned pieces. |
+| `practical_context` | string | no | It opens when the bounded version and its supporting material are presented for assembly, with the activity's owner … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

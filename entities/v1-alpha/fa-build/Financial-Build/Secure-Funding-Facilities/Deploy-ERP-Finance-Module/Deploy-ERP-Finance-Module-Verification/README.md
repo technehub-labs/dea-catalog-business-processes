@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-veri
 
 This is a **Task** (level L4), named **Deploy ERP Finance Module Verification**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Deploy ERP Finance Module** (`processes:activity-fa-build-va7nxd`). Its canonical ID is `processes:task-fa-build-verify-pd328h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is deployed, the verification custodian checks the systems design against what deployment requires - that the module's configuration is stated completely enough to stand up. Defects are logged for rejection or repair before the deployment begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the module is never stood up from a design with gaps in it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the design silent on one module's integration and logs the defect before the deployment begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Design Before Standing the Module Up |
+| `plain_language_description` | string | no | Before anything is deployed, the verification custodian checks the systems design against what deployment requires - … |
+| `business_purpose` | string | no | It exists so the module is never stood up from a design with gaps in it. |
+| `practical_context` | string | no | It runs once the intake is registered and the design can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

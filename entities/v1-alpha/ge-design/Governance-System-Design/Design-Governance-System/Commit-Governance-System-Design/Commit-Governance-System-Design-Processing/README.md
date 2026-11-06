@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 
 This is a **Task** (level L4), named **Commit Governance System Design Processing**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Commit Governance System Design** (`processes:activity-ge-design-6xmeft`). Its canonical ID is `processes:task-ge-design-transform-qhm8eq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the design for the commitment: bodies, delegations, and the rights that travel with them are consolidated into the committed system design, ready for build, and the design-ready artefact is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because bodies, delegations, and rights in separate papers govern nothing - the commit is where they become one design ready for build.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function binds the bodies, the delegations, and the travelling rights into the committed design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bind Bodies, Delegations, and Rights into One Design |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the design for the commitment: bodies, delegations, and … |
+| `business_purpose` | string | no | It exists because bodies, delegations, and rights in separate papers govern nothing - the commit is where they become … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded design may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

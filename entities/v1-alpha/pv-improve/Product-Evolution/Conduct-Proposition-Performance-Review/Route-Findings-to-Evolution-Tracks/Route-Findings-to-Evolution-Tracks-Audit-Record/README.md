@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-improve-re
 
 This is a **Task** (level L4), named **Route Findings to Evolution Tracks Audit Record**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Route Findings to Evolution Tracks** (`processes:activity-pv-improve-eyn4d4`). Its canonical ID is `processes:task-pv-improve-record-pa46hc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. Where each finding went stays readable for the discipline's duration.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no finding can quietly vanish between the review and the tracks.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian in product management files the routing record at its retention tier and sets the retrieval handles.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Routing Record |
+| `plain_language_description` | string | no | Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets … |
+| `business_purpose` | string | no | It exists so no finding can quietly vanish between the review and the tracks. |
+| `practical_context` | string | no | It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

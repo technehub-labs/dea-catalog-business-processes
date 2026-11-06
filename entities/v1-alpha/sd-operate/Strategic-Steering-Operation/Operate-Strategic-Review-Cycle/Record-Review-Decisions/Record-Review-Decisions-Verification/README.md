@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-ve
 
 This is a **Task** (level L4), named **Record Review Decisions Verification**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Record Review Decisions** (`processes:activity-sd-operate-4je2y3`). Its canonical ID is `processes:task-sd-operate-verify-b9dtxm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before decisions are written to the register, the arriving outcomes are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a decision logged half-heard would send the consuming processes acting on an instruction nobody actually gave.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the outcomes can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests the arriving outcomes against what the recording needs, and writes up a decision with two conflicting wordings as a shortfall to be put right before it is logged.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Outcomes Before Any Decision Is Logged |
+| `plain_language_description` | string | no | Before decisions are written to the register, the arriving outcomes are put to the test. The verification custodian … |
+| `business_purpose` | string | no | It exists because a decision logged half-heard would send the consuming processes acting on an instruction nobody … |
+| `practical_context` | string | no | It opens once the intake is registered and the outcomes can be challenged, and it closes with its shortfalls written … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

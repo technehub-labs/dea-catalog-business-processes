@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Document Tax Positions Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Document Tax Positions** (`processes:activity-fa-design-x66t4r`). Its canonical ID is `processes:task-fa-design-transform-r9ux8j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the exposures verified, the processing custodian does the documenting itself: for each assessed exposure, the stance the enterprise will take and the authority it stands on are written down, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an unargued exposure is an unpaid bill in waiting - the position is what the enterprise will say for itself when the question comes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified exposures are ready to be argued, and it ends with the documented positions produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority writes each exposure's stance and its authority into the record, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Write Down What the Enterprise Will Argue |
+| `plain_language_description` | string | no | With the exposures verified, the processing custodian does the documenting itself: for each assessed exposure, the … |
+| `business_purpose` | string | no | It exists because an unargued exposure is an unpaid bill in waiting - the position is what the enterprise will say for … |
+| `practical_context` | string | no | It starts once checking is complete and the verified exposures are ready to be argued, and it ends with the documented … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Turn Demand and the Preventive Calendar into a Resourced Book'
+plain_language_description: 'With the inputs verified, the processing custodian does the scheduling itself: facility demand, the preventive calendar, and crew availability are converted into the scheduled, resourced book of orders, set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because unbooked demand and unstaffed prevention compete for the same crews - the schedule is where they are reconciled.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be scheduled from, and it ends with the scheduled book produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management books the demand and prevention around the crews that can actually do them, keeping the working papers.'

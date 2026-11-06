@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-ve
 
 This is a **Task** (level L4), named **Administer Catalogue Pricing Verification**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Administer Catalogue Pricing** (`processes:activity-pv-operate-kwm3wt`). Its canonical ID is `processes:task-pv-operate-verify-su5ehj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a price reaches the catalogue, its papers are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a price administered outside the set rules would show buyers figures the business never authorised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once intake has registered the pricing papers, and it closes with them verified against the pricing requirements or their defects logged.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in product management checks a proposed price move against the set pricing rules, finds the margin floor breached, and writes the shortfall down for the pricing owner to put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Pricing Papers Against the Pricing Rules |
+| `plain_language_description` | string | no | Before a price reaches the catalogue, its papers are put to the test. The verification custodian tests the arriving … |
+| `business_purpose` | string | no | It exists because a price administered outside the set rules would show buyers figures the business never authorised. |
+| `practical_context` | string | no | It opens once intake has registered the pricing papers, and it closes with them verified against the pricing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -74,3 +74,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Approved Requisitions for Placement'
+plain_language_description: 'Placement opens when the approved requisitions are handed over as the demand the suppliers will be asked to fill. The intake custodian accepts them, registers them with audit identifiers, and starts the placement from a recorded baseline.'
+business_purpose: 'It exists so orders are placed from approved demand rather than from informal requests.'
+practical_context: 'It opens when the approved requisitions are presented for placement, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the approved requisitions as the placement baseline, with audit references, and opens the ordering work.'

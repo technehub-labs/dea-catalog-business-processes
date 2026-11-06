@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-ver
 
 This is a **Task** (level L4), named **Maintain Reserving Discipline Verification**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Maintain Reserving Discipline** (`processes:activity-fa-retire-uuqbe9`). Its canonical ID is `processes:task-fa-retire-verify-8tezc3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is tended, the verification custodian checks the experience and standard against what maintaining requires - that the experience is current and the standard is the regime's own. Defects are logged for rejection or repair before the tending begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the reserve is never tended against a standard the regime never set.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the reserving standard out of date against the regime and logs the defect before the tending begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Standard Before Holding the Reserves True |
+| `plain_language_description` | string | no | Before anything is tended, the verification custodian checks the experience and standard against what maintaining … |
+| `business_purpose` | string | no | It exists so the reserve is never tended against a standard the regime never set. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

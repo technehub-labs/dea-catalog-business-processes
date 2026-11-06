@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-activate-i
 
 This is a **Task** (level L4), named **Complete Supervisor Review and Obtain Acknowledgement on Record Intake**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Complete Supervisor Review and Obtain Acknowledgement on Record** (`processes:activity-sd-activate-w83pp4`). Its canonical ID is `processes:task-sd-activate-intake-g7cxyr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The supervisor review opens as its material arrives: the filed strategic-plan submission together with the review criteria the supervisor applies. The intake custodian logs them against the review file so the review starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pursuit of the acknowledgement is tracked over a logged submission and criteria, not over an unfiled draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the filed submission and the review criteria are presented for the review, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the filed strategic-plan submission and the supervisor's review criteria into the review file, so the pursuit of the acknowledgement starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Filed Submission and the Review Criteria |
+| `plain_language_description` | string | no | The supervisor review opens as its material arrives: the filed strategic-plan submission together with the review … |
+| `business_purpose` | string | no | It exists so the pursuit of the acknowledgement is tracked over a logged submission and criteria, not over an unfiled … |
+| `practical_context` | string | no | It opens when the filed submission and the review criteria are presented for the review, with the activity's owner told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

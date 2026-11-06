@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Maintain Lifecycle Record Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Lifecycle Record** (`processes:activity-pv-operate-89v5ty`). Its canonical ID is `processes:task-pv-operate-intake-k9pkzp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The record work opens as the material that moves a proposition's lifecycle arrives, chiefly transitions and gate decisions. The intake custodian logs them against the lifecycle record file so the maintaining starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a stage history assembled from unlogged transitions and decisions is an account nobody can trust.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when a transition or a gate decision is presented for the record with the activity's owner told that it has landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs a completed transition and its gate outcome into the lifecycle record file, so the day's maintenance of the stage histories starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Arriving Lifecycle Updates |
+| `plain_language_description` | string | no | The record work opens as the material that moves a proposition's lifecycle arrives, chiefly transitions and gate … |
+| `business_purpose` | string | no | It exists because a stage history assembled from unlogged transitions and decisions is an account nobody can trust. |
+| `practical_context` | string | no | It opens when a transition or a gate decision is presented for the record with the activity's owner told that it has … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

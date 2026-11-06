@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Report Strategic Performance Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Report Strategic Performance** (`processes:activity-sd-operate-k48yk5`). Its canonical ID is `processes:task-sd-operate-transform-pts2ng`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the reporting proper begins. The processing custodian packages the tested position and flags into the report the review cycle will sit down to, producing the strategic performance report in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because scattered numbers and loose flags never reach a boardroom; the review needs one report that carries the position.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the strategic performance report produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function assembles the tested position and flags into the strategic performance report for the next review, keeping the workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Strategic Performance Report for the Review Cycle |
+| `plain_language_description` | string | no | With the inputs verified, the reporting proper begins. The processing custodian packages the tested position and flags … |
+| `business_purpose` | string | no | It exists because scattered numbers and loose flags never reach a boardroom; the review needs one report that carries … |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the strategic performance report produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

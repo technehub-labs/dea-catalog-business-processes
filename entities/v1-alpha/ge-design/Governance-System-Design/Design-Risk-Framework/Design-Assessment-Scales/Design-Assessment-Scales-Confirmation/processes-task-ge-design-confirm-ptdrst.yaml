@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Design Assessment Scales and acknowledged by the governance custodian and any governing-party notify-list; confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Reconcile the Artefact and Confirm the Scales'
+plain_language_description: 'When the design-ready artefact exists, the confirmation custodian sets it beside the architecture''s standards and the delegation contract, reconciles the two, and issues the design confirmation to the custodian of governance, logging it into the case file.'
+business_purpose: 'It exists because scales nobody has confirmed are scales nobody can measure by.'
+practical_context: 'It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian sets the artefact beside the standards and the delegation contract and issues the design confirmation to the custodian of governance.'

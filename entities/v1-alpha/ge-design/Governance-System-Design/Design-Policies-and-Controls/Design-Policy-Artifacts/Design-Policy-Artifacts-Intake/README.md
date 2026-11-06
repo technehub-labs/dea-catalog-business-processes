@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-design-int
 
 This is a **Task** (level L4), named **Design Policy Artifacts Intake**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Policy Artifacts** (`processes:activity-ge-design-ka3nqz`). Its canonical ID is `processes:task-ge-design-intake-naz9qj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The intake custodian takes charge of the design pack — the conception framework reference, the body-architecture proposals, the delegation models, and the regime requirements — and writes the manifest that ties the pack into the case file for the design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the artefacts begin from a registered pack rather than from loose papers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered and bound to the case file, custody passed onward to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function takes charge of the design pack and writes the binding manifest.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take Custody of the Artifacts Input Pack |
+| `plain_language_description` | string | no | The intake custodian takes charge of the design pack — the conception framework reference, the body-architecture … |
+| `business_purpose` | string | no | It exists so the artefacts begin from a registered pack rather than from loose papers. |
+| `practical_context` | string | no | It opens when custody of the pack arrives and the intake contract applies, and it closes with the manifest registered … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

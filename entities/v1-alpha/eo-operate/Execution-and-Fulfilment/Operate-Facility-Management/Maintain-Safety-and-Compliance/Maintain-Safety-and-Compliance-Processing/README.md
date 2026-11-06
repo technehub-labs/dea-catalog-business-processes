@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Maintain Safety and Compliance Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Maintain Safety and Compliance** (`processes:activity-eo-operate-gtt587`). Its canonical ID is `processes:task-eo-operate-transform-vjk44u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the requirements verified, the processing custodian does the keeping itself: each facility's daily state is held against what its safety and compliance duties demand, and the maintained position is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because buildings drift out of compliance one unchecked day at a time - the watch is what holds the line.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified requirements are ready to be held to, and it ends with the maintained position produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management holds each facility's daily state against its safety duties and records the position, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Facilities Inside Their Safety Duties |
+| `plain_language_description` | string | no | With the requirements verified, the processing custodian does the keeping itself: each facility's daily state is held … |
+| `business_purpose` | string | no | It exists because buildings drift out of compliance one unchecked day at a time - the watch is what holds the line. |
+| `practical_context` | string | no | It starts once checking is complete and the verified requirements are ready to be held to, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

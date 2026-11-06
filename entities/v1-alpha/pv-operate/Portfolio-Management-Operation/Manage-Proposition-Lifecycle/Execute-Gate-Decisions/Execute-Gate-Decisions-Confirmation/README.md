@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-co
 
 This is a **Task** (level L4), named **Execute Gate Decisions Confirmation**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Execute Gate Decisions** (`processes:activity-pv-operate-xmvfj7`). Its canonical ID is `processes:task-pv-operate-confirm-8ta9p6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the decisions are executed, the teams who run the propositions are told. The confirmation custodian tells the downstream teams the executed gate decisions are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because proposition teams plan their next stage around the gate outcome, and an unconfirmed execution leaves them waiting or guessing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when processing has executed the decisions, and it closes with confirmation issued, the downstream teams told, and the reconciliation closed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in product management tells the proposition teams their gate decisions have been executed and the outcomes are ready, and closes the reconciliation against what the gate work promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Executed Gates to the Lifecycle Teams |
+| `plain_language_description` | string | no | Once the decisions are executed, the teams who run the propositions are told. The confirmation custodian tells the … |
+| `business_purpose` | string | no | It exists because proposition teams plan their next stage around the gate outcome, and an unconfirmed execution leaves … |
+| `practical_context` | string | no | It opens when processing has executed the decisions, and it closes with confirmation issued, the downstream teams told … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

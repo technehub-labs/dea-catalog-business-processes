@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Resolve Beneficial Ownership conforming to the Activate schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Map the Ownership Chain and Record the Controllers'
+plain_language_description: 'With the certificate in hand, the processing custodian resolves the party identifier, computes the risk classification, and derives the diligence tier from the ownership picture. The resulting party record is produced to the master-data standard.'
+business_purpose: 'It exists so every natural person who ultimately owns or controls the applicant is identified to the regime''s threshold and carried on the record.'
+practical_context: 'It opens when the verification certificate clears the application, and it closes with the party record produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian traces a layered holding structure to its natural-person controllers and writes the chain into the party record.'

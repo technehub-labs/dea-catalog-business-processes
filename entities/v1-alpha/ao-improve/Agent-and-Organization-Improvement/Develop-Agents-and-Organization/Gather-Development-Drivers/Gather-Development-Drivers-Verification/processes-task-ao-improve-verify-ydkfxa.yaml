@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Source Material Before Gathering the Drivers'
+plain_language_description: 'Before any driver is gathered, the verification custodian checks the reviews, analyses, and triggers against what gathering requires - that they are the committed versions and current. Defects are flagged for rejection or repair before the drivers are gathered.'
+business_purpose: 'It exists so the development case is never built on superseded reviews or stale analyses.'
+practical_context: 'It runs once the intake is registered and the material can be compared with the activity''s requirements, and it finishes with it verified or its defects logged for rejection or repair.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a gap analysis from a superseded framework cycle and flags the defect before drivers are gathered from it.'

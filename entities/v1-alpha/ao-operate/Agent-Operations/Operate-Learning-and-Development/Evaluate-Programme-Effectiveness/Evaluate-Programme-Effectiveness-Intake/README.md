@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-in
 
 This is a **Task** (level L4), named **Evaluate Programme Effectiveness Intake**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Evaluate Programme Effectiveness** (`processes:activity-ao-operate-8mxujq`). Its canonical ID is `processes:task-ao-operate-intake-pp2rcr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Evaluation opens when the recorded programme completions are handed over as the evidence the effectiveness question will be answered from. The intake custodian accepts them, registers the handover with audit identifiers, and starts the evaluation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so programmes are evaluated from a registered completion record rather than from anecdotes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the recorded completions are presented for the evaluation, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the recorded completions as the evaluation baseline, with audit references, and opens the effectiveness work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Recorded Completions for Effectiveness Work |
+| `plain_language_description` | string | no | Evaluation opens when the recorded programme completions are handed over as the evidence the effectiveness question … |
+| `business_purpose` | string | no | It exists so programmes are evaluated from a registered completion record rather than from anecdotes. |
+| `practical_context` | string | no | It opens when the recorded completions are presented for the evaluation, with the activity owner alerted, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

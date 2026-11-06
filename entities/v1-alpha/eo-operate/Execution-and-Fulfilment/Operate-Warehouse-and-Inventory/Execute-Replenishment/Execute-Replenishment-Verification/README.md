@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-ve
 
 This is a **Task** (level L4), named **Execute Replenishment Verification**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Execute Replenishment** (`processes:activity-eo-operate-9sdchy`). Its canonical ID is `processes:task-eo-operate-verify-qyzppq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is refilled, the verification custodian checks the positions and signals against what replenishment requires - that each signal names its location and the position data is current. Defects are logged for rejection or repair before any refilling begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody hauls stock to a face that did not actually need it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a signal pointing at a face already full and logs the defect before any refilling begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Signals Before Filling the Faces |
+| `plain_language_description` | string | no | Before anything is refilled, the verification custodian checks the positions and signals against what replenishment … |
+| `business_purpose` | string | no | It exists so nobody hauls stock to a face that did not actually need it. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -71,3 +71,18 @@ outputs:
   description: Completion confirmation issued for Codify Standard Artifacts and acknowledged by the governance custodian and any governing-party notify-list; confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Reconcile the Inventory and Confirm the Standards'
+plain_language_description: 'When the build-ready inventory stands complete, the confirmation custodian sets it beside the framework''s contract and the completeness rules, reconciles the two, and issues the apparatus confirmation to the custodian of governance, logging it into the case file.'
+business_purpose: 'It exists because standards nobody has confirmed are standards nobody can rely on.'
+practical_context: 'It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian sets the inventory beside the framework''s contract and the completeness rules and issues the apparatus confirmation to the custodian of governance.'

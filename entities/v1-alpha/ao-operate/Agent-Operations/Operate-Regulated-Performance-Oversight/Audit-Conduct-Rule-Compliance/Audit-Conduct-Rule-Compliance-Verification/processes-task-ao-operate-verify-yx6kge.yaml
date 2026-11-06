@@ -116,3 +116,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Role List and Matrix Before the Conduct Audit'
+plain_language_description: 'Before any conduct audit runs, the verification custodian checks the role list and matrix against what the audit requires - that every licensed role carries the conduct rules that bind it. Gaps are logged for rejection or repair before the audit proceeds.'
+business_purpose: 'It exists so no role is judged against rules that were never mapped to it.'
+practical_context: 'It runs once the intake is registered and the inputs can be compared with the activity''s requirements, and it finishes with them verified or their gaps logged for rejection or remediation.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian finds a licensed role with no conduct rules mapped in the matrix and logs the gap before the audit runs.'

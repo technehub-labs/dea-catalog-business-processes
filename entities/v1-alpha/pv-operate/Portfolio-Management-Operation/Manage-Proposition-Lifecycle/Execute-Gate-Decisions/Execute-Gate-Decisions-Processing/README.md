@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-tr
 
 This is a **Task** (level L4), named **Execute Gate Decisions Processing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Execute Gate Decisions** (`processes:activity-pv-operate-xmvfj7`). Its canonical ID is `processes:task-pv-operate-transform-r8nkgb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the decisions verified, they are carried out. The processing custodian works each decision against its stage boundary, producing the executed gate decisions in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a gate decision governs nothing until it is actually put into effect at the stage boundary it addresses.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified decisions are ready to be executed, and it closes with them carried out in the agreed form and the workings retained.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management puts the verified gate decision into effect, moving the proposition through its stage boundary and recording what changed, with the workings kept for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Put the Gate Decisions into Effect |
+| `plain_language_description` | string | no | With the decisions verified, they are carried out. The processing custodian works each decision against its stage … |
+| `business_purpose` | string | no | It exists because a gate decision governs nothing until it is actually put into effect at the stage boundary it … |
+| `practical_context` | string | no | It opens when the verified decisions are ready to be executed, and it closes with them carried out in the agreed form … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

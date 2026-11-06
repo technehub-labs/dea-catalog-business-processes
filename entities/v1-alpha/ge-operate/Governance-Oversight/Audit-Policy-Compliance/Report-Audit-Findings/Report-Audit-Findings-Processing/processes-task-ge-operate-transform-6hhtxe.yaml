@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Report Audit Findings conforming to the Operate schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Write the Findings Down for the Body That Owns Them'
+plain_language_description: 'With the certificate in hand, the processing custodian executes the operating for the reporting: the audit findings, recommendations, and follow-up actions are written down for the body that owns them, and the outcomes pack is produced for confirmation.'
+business_purpose: 'It exists because a finding that never reaches its owning body is a finding that will happen again - the writing-down is what delivers it.'
+practical_context: 'It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the risk function writes the findings, recommendations, and follow-up actions down for the body that owns each one.'

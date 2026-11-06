@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-c
 
 This is a **Task** (level L4), named **Capture Continuing-Supervisor Notification Path Confirmation**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Capture Continuing-Supervisor Notification Path** (`processes:activity-ao-conceive-v7g5se`). Its canonical ID is `processes:task-ao-conceive-confirm-4qbj4s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the paths are captured, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. Whoever relies on continuing supervision learns the notification paths are captured and available on the personnel record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so continuing supervision runs over notification paths that have been confirmed against the intended result.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the captured paths await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the captured paths against the activity's intended outcome and issues the confirmation supervision planning relies on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Captured Notification Paths |
+| `plain_language_description` | string | no | When the paths are captured, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so continuing supervision runs over notification paths that have been confirmed against the intended result. |
+| `practical_context` | string | no | It begins once preparation is complete and the captured paths await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

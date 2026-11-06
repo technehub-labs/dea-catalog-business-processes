@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bound Where the Platforms Fall Short'
+plain_language_description: 'With the evidence verified, the processing custodian does the analysis itself: the platform record and its incidents are read for where reliability, capacity, and capability fall short, and the gap analysis is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because platforms decay quietly until the day they fail publicly - the analysis is what finds the shortfall while it is still cheap.'
+practical_context: 'It starts once checking is complete and the verified evidence is ready to be read, and it ends with the gap analysis produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the operations function reads the platform record and its incidents for shortfall and bounds the gaps, keeping the working papers.'

@@ -118,3 +118,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Receive the Attested Candidates for Screening'
+plain_language_description: 'Screening opens when the attested candidates arrive for screening, together with the matrix of checks they must be run against. The intake custodian accepts the handover, registers it with audit identifiers, and starts the screening work from a recorded baseline.'
+business_purpose: 'It exists so screening runs over a registered candidate list against a registered screening matrix.'
+practical_context: 'It opens when the attested candidates and the screening matrix are presented for the activity, with the activity owner alerted, and it closes with the intake registered and the later steps free to run.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian registers the attested candidate list and the screening matrix as the screening baseline, with audit references.'

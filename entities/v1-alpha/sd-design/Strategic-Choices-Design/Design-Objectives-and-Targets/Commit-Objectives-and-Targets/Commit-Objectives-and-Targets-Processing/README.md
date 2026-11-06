@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-design-tra
 
 This is a **Task** (level L4), named **Commit Objectives and Targets Processing**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Commit Objectives and Targets** (`processes:activity-sd-design-ec5thr`). Its canonical ID is `processes:task-sd-design-transform-ujsf66`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the committing proper begins. The processing custodian fixes the drafted objectives and targets with their bounded measures and ownership for the plan build, producing the committed objectives and targets in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the plan build needs one settled design; a moving one gives the plan nothing solid to stand on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified material is ready to be worked, and it closes with the committed objectives and targets produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function commits the verified objectives and targets with their measures and owners for the plan build, keeping the committing workings for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Objectives and Targets with Their Measures and Owners |
+| `plain_language_description` | string | no | With the inputs verified, the committing proper begins. The processing custodian fixes the drafted objectives and … |
+| `business_purpose` | string | no | It exists because the plan build needs one settled design; a moving one gives the plan nothing solid to stand on. |
+| `practical_context` | string | no | It opens when the verified material is ready to be worked, and it closes with the committed objectives and targets … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Maintain Portfolio Record Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Maintain Portfolio Record** (`processes:activity-pv-operate-38waaf`). Its canonical ID is `processes:task-pv-operate-intake-7m3jkf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The record-keeping opens as the material that moves the portfolio arrives, chiefly rebalancing actions and lifecycle transitions. The intake custodian logs them against the portfolio record file so the maintaining starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a record updated from unlogged changes cannot stand as the current account of propositions, envelopes, and allocations.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when a rebalancing action or a transition is presented for the record with the activity's owner told that it has landed, and it closes with the intake registered and custody passed on.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management books in a freshly approved rebalancing action and a proposition's slide into decline, logging both into the portfolio record file so today's maintenance round starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Book In the Portfolio Changes for the Record |
+| `plain_language_description` | string | no | The record-keeping opens as the material that moves the portfolio arrives, chiefly rebalancing actions and lifecycle … |
+| `business_purpose` | string | no | It exists because a record updated from unlogged changes cannot stand as the current account of propositions … |
+| `practical_context` | string | no | It opens when a rebalancing action or a transition is presented for the record with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-i
 
 This is a **Task** (level L4), named **Frame Service-Level Envelopes Intake**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Service-Level Envelopes** (`processes:activity-eo-conceive-wprvuf`). Its canonical ID is `processes:task-eo-conceive-intake-a388ru`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Envelope framing opens when the selected channel patterns are handed over as the reference the service-level bounds must be framed around. The intake custodian accepts them, registers them with audit identifiers, and starts the framing from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so service levels are framed against a registered channel selection rather than against aspiration.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the selected channels are presented for the framing, with the activity owner alerted, and it closes with the intake registered and the remaining steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the selected channel patterns as the framing baseline, with audit references, and opens the envelope work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Selected Channels for Envelope Framing |
+| `plain_language_description` | string | no | Envelope framing opens when the selected channel patterns are handed over as the reference the service-level bounds … |
+| `business_purpose` | string | no | It exists so service levels are framed against a registered channel selection rather than against aspiration. |
+| `practical_context` | string | no | It opens when the selected channels are presented for the framing, with the activity owner alerted, and it closes with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

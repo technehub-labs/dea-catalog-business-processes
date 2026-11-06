@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Check the Rebalancing Inputs Before Allocations Move'
+plain_language_description: 'Before any allocation is moved, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.'
+business_purpose: 'It exists because reallocating on an unverified picture or a direction that does not hold would move portfolio money on false grounds.'
+practical_context: 'It opens once intake has registered the rebalancing material, and it closes with it verified fit for the work or its defects logged.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in product management checks the picture behind a proposed rebalancing against the portfolio direction, notices the picture predates a major launch, and writes the shortfall down so the picture gets refreshed first.'

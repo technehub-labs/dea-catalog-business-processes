@@ -74,3 +74,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Work the Orders Through to Done'
+plain_language_description: 'With the orders verified, the processing custodian does the execution itself: crews and contractors carry each issued order to the end of the job, whatever it takes in parts and visits, and the completed work is set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because an issued order fixes nothing by itself - execution is where the facility actually gets mended.'
+practical_context: 'It starts once checking is complete and the verified orders are ready to be worked, and it ends with the completed work produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management runs the crews and contractors through each order to its end, keeping the working papers.'

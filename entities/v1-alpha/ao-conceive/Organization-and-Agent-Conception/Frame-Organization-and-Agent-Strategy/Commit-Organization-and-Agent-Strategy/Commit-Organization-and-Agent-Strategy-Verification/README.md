@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-v
 
 This is a **Task** (level L4), named **Commit Organization and Agent Strategy Verification**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Organization and Agent Strategy** (`processes:activity-ao-conceive-476rpj`). Its canonical ID is `processes:task-ao-conceive-verify-n5bgj6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the enterprise commits, the verification custodian checks the drafted strategy against what commitment requires - that it sits within the bounded capacity and settles the direction for both the model and the mix. Anything out of bounds is logged for rejection or repair before the commitment is made.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise never commits a strategy that breaks its own capacity bounds.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the draft can be compared with the activity's requirements, and it finishes with the draft verified or its defects logged for rejection or repair.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the drafted strategy reaching past its capacity bound and logs the breach for repair before commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Drafted Strategy Before Commitment |
+| `plain_language_description` | string | no | Before the enterprise commits, the verification custodian checks the drafted strategy against what commitment requires … |
+| `business_purpose` | string | no | It exists so the enterprise never commits a strategy that breaks its own capacity bounds. |
+| `practical_context` | string | no | It runs once the intake is registered and the draft can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

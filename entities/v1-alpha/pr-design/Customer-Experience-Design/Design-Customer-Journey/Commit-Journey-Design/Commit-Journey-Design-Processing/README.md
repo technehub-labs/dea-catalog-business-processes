@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-design-tra
 
 This is a **Task** (level L4), named **Commit Journey Design Processing**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Commit Journey Design** (`processes:activity-pr-design-vbvz6f`). Its canonical ID is `processes:task-pr-design-transform-wmravx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments that decide the relationship are identified, touchpoints and their interaction patterns are designed, and the capacity assumptions are modelled. Stages, critical moments, and handoffs are consolidated as a journey artefact ready for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the built journey carries one committed design rather than scattered artefacts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function consolidates the stages, moments, and handoffs into the journey design document.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Journey into One Design |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian carries out the design: journey stages are mapped, the moments … |
+| `business_purpose` | string | no | It exists so the built journey carries one committed design rather than scattered artefacts. |
+| `practical_context` | string | no | It opens when the verification certificate clears the pack, and it closes with the journey artefact produced and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

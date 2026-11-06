@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-tr
 
 This is a **Task** (level L4), named **Filter Environmental Signals Processing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Filter Environmental Signals** (`processes:activity-sd-operate-c4n3fr`). Its canonical ID is `processes:task-sd-operate-transform-dbaujx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the filtering proper begins. The processing custodian strips the noise from the tested batch and qualifies what is left for strategic relevance, producing the filtered environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because strategy attention is finite; the filter is what keeps the leadership reading signals instead of static.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verified batch is ready to be worked, and it closes with the filtered environmental signals produced in the agreed form and the workings filed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function strips the noise from the tested batch and qualifies each survivor for strategic relevance, keeping the drop reasoning for the audit trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Strip the Noise and Qualify the Strategic Relevance |
+| `plain_language_description` | string | no | With the inputs verified, the filtering proper begins. The processing custodian strips the noise from the tested batch … |
+| `business_purpose` | string | no | It exists because strategy attention is finite; the filter is what keeps the leadership reading signals instead of … |
+| `practical_context` | string | no | It opens when the verified batch is ready to be worked, and it closes with the filtered environmental signals produced … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

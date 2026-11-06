@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-build-inta
 
 This is a **Task** (level L4), named **Implement Tax Controls Intake**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Tax Controls** (`processes:activity-fa-build-5h2xk4`). Its canonical ID is `processes:task-fa-build-intake-2x4h2u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Control work opens when the documented tax positions and the strategy are handed over together as the ground the guard-rails must be fitted around. The intake custodian accepts both, registers them with audit identifiers, and starts the fitting from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so controls are fitted to registered positions rather than to generic checklists.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the positions and strategy are presented for the control work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function registers the documented positions and strategy as the control baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Documented Positions and the Strategy |
+| `plain_language_description` | string | no | Control work opens when the documented tax positions and the strategy are handed over together as the ground the … |
+| `business_purpose` | string | no | It exists so controls are fitted to registered positions rather than to generic checklists. |
+| `practical_context` | string | no | It opens when the positions and strategy are presented for the control work, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

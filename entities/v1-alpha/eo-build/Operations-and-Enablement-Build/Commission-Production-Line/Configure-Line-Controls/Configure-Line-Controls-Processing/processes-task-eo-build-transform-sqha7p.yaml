@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Set the Line''s Controls to Their Operating Parameters'
+plain_language_description: 'With the systems verified, the processing custodian does the configuration itself: the automation, quality gates, and safety interlocks are configured to the designed operating parameters, and the configured controls are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because equipment without configured controls is machinery waiting for an accident - configuration is what makes the line safe and deliberate.'
+practical_context: 'It starts once checking is complete and the verified systems are ready to be configured, and it ends with the configured controls produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management sets the automation, quality gates, and safety interlocks to their designed parameters, keeping the working papers.'

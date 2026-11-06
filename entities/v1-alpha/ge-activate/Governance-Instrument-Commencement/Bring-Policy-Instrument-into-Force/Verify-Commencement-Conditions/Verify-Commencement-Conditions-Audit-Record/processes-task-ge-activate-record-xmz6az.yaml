@@ -71,3 +71,18 @@ outputs:
   description: Case file retained for Verify Commencement Conditions under the records retention schedule with cryptographic integrity protection; statutory retention horizon …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Lay the Conditions Case File Down for Keeps'
+plain_language_description: 'At the close the records custodian lays the case down under the schedule that keeps it, integrity sealed: the manifest, the certificate, the activated record, the acknowledgment, and any remediation trail. The conditions'' testing stays provable for as long as the law requires.'
+business_purpose: 'It exists so the conditions'' testing can be evidenced for as long as the law requires.'
+practical_context: 'It opens once the completion confirmation is issued and the case file may be retained, and it closes with the case file held under the retention schedule, its integrity protected.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian lays the case down under the schedule that keeps it and sets the retrieval handles a formation review would consult.'

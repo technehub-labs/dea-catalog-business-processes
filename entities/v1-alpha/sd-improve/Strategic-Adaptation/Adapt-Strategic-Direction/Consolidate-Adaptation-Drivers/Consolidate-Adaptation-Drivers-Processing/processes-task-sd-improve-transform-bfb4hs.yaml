@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Build the Consolidated Case for Changing Direction'
+plain_language_description: 'With the inputs verified, the consolidation proper begins. The processing custodian draws the tested signals, performance evidence and findings together into a single adaptation case, producing it in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because scattered signals and loose figures persuade no one; the direction change needs one case that carries the whole argument.'
+practical_context: 'It opens when the verified material is ready to be worked, and it closes with the consolidated adaptation case produced in the agreed form and the workings filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function brings the tested market signals, the performance figures and the review findings together into one adaptation case, keeping the workings for the audit trail.'

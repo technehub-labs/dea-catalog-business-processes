@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-co
 
 This is a **Task** (level L4), named **Measure Findings Against Standards Confirmation**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Measure Findings Against Standards** (`processes:activity-ge-improve-9te97d`). Its canonical ID is `processes:task-ge-improve-confirm-fc5d6h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract that classifies findings, reconciles the two, and issues the improvement confirmation to the custodian of governance and to the audit committee, logging it into the case file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a delta nobody has confirmed is a delta nobody can close.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes with the completion confirmation issued and acknowledged, custody passed to the records custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian sets the pack beside the audit method and the classification contract and issues the improvement confirmation to the custodian of governance and the audit committee.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Reconcile the Pack and Confirm the Delta |
+| `plain_language_description` | string | no | When the outcomes pack exists, the confirmation custodian sets it beside the internal-audit method and the contract … |
+| `business_purpose` | string | no | It exists because a delta nobody has confirmed is a delta nobody can close. |
+| `practical_context` | string | no | It opens once the artefact is produced and the reconciliation may run against the governing contract, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

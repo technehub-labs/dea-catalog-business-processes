@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-activate-v
 
 This is a **Task** (level L4), named **Prepare Transition Readiness Verification**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Prepare Transition Readiness** (`processes:activity-pv-activate-922fde`). Its canonical ID is `processes:task-pv-activate-verify-wn5hay`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the package is assembled, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before cutover is prepared.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a cutover prepared on an unverified proposition moves risk, not service.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian of the proposition design authority tests the proposition against its readiness threshold and logs the result.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Proposition Against Its Threshold |
+| `plain_language_description` | string | no | Before the package is assembled, the verification custodian tests the arriving material against what the activity … |
+| `business_purpose` | string | no | It exists because a cutover prepared on an unverified proposition moves risk, not service. |
+| `practical_context` | string | no | It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

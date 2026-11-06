@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Bound Capacity Envelopes Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Bound Capacity Envelopes** (`processes:activity-ao-conceive-9mvxt3`). Its canonical ID is `processes:task-ao-conceive-transform-awmvkw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the proportions verified, the processing custodian sets the envelopes themselves: the capacity limits each substrate proportion has to stay within are worked out and fixed in the form the activity defines. Working papers behind each envelope are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because proportions only hold when the capacity each one may carry is fixed in advance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified proportions are ready to be bounded, and it ends with the bounded capacity envelopes produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function fixes the capacity limits each substrate proportion must stay within, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Capacity Envelopes for Each Proportion |
+| `plain_language_description` | string | no | With the proportions verified, the processing custodian sets the envelopes themselves: the capacity limits each … |
+| `business_purpose` | string | no | It exists because proportions only hold when the capacity each one may carry is fixed in advance. |
+| `practical_context` | string | no | It starts once checking is complete and the verified proportions are ready to be bounded, and it ends with the bounded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

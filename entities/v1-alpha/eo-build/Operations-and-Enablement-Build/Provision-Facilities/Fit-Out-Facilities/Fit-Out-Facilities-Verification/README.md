@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-veri
 
 This is a **Task** (level L4), named **Fit Out Facilities Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Fit Out Facilities** (`processes:activity-eo-build-vggmrg`). Its canonical ID is `processes:task-eo-build-verify-34s59v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any site is fitted out, the verification custodian checks the sites and layouts against what fit-out requires - that each secured site carries its layout and the health-safety and accessibility specification is complete. Defects are logged for rejection or repair before any fitting begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so nobody works in a space fitted without its safety and accessibility requirements stated.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes with it verified or its defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds a layout missing its accessibility specification and logs the defect before fitting begins.
 
 ## 5. Header and Identity Table (generated)
 
@@ -63,6 +63,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Sites and Layouts Before Fitting Out |
+| `plain_language_description` | string | no | Before any site is fitted out, the verification custodian checks the sites and layouts against what fit-out requires - … |
+| `business_purpose` | string | no | It exists so nobody works in a space fitted without its safety and accessibility requirements stated. |
+| `practical_context` | string | no | It runs once the intake is registered and the brief can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

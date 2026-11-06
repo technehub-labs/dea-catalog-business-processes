@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-c
 
 This is a **Task** (level L4), named **Articulate Strategic Trajectory Confirmation**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Articulate Strategic Trajectory** (`processes:activity-sd-conceive-e7z2am`). Its canonical ID is `processes:task-sd-conceive-confirm-h2jct4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirming opens once the trajectory is articulated. The confirmation custodian tells the downstream teams the trajectory articulation is available, and closes the reconciliation against what the activity promised for the articulation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the teams that will build plans from the trajectory start from a confirmed statement of course.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the trajectory articulation is ready to hand on, and it closes with the confirmation issued and the articulation's promises checked off against what was delivered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function hands the articulated trajectory to the downstream planning teams, reconciles it against what the articulation promised, and issues the confirmation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Hand the Articulated Trajectory Downstream |
+| `plain_language_description` | string | no | The confirming opens once the trajectory is articulated. The confirmation custodian tells the downstream teams the … |
+| `business_purpose` | string | no | It exists so the teams that will build plans from the trajectory start from a confirmed statement of course. |
+| `practical_context` | string | no | It opens when the trajectory articulation is ready to hand on, and it closes with the confirmation issued and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

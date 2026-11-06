@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Send Each Finding to the Track That Acts on It'
+plain_language_description: 'With the findings verified, the processing custodian does the routing itself: each finding is sent to the logistics optimization, the asset utilization, or the platform evolution track that will act on it, and the routed findings with their owners are set down in the form the activity defines. Working papers are preserved for audit.'
+business_purpose: 'It exists because a conclusion without a destination is a complaint - routing is what gives each finding an owner and a course of action.'
+practical_context: 'It starts once checking is complete and the verified findings are ready to be routed, and it ends with the routed findings produced and the working papers kept.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the operations function sends each finding to the track that will act on it and names its owner, keeping the working papers.'

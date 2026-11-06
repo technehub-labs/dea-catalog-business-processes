@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 
 This is a **Task** (level L4), named **Assess Regulator Or Court Order Scope Intake**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Assess Regulator Or Court Order Scope** (`processes:activity-ge-retire-k5amzf`). Its canonical ID is `processes:task-ge-retire-intake-ztxh6t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The wind-down opens with paperwork: the regulator or court order itself, the inventory of records that must survive dissolution, and the drafts of the dissolution filings. The intake custodian logs each item against the wind-down file so the scope work starts from a documented set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because interpreting a binding order is only defensible when the order text, the records inventory, and the filing drafts are all accounted for from the outset.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the finance function logs the regulator's order, the records inventory, and the filing drafts into the wind-down file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect the Wind-Down Papers at Intake |
+| `plain_language_description` | string | no | The wind-down opens with paperwork: the regulator or court order itself, the inventory of records that must survive … |
+| `business_purpose` | string | no | It exists because interpreting a binding order is only defensible when the order text, the records inventory, and the … |
+| `practical_context` | string | no | It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

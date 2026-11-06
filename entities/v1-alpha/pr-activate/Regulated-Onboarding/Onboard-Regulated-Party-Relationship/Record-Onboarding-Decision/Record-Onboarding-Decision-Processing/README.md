@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 
 This is a **Task** (level L4), named **Record Onboarding Decision Processing**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Record Onboarding Decision** (`processes:activity-pr-activate-q9pr4m`). Its canonical ID is `processes:task-pr-activate-transform-4xbcbz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With verification complete, the processing custodian assembles the record the decision will act on: the party identifier is resolved, the risk classification computed, and the diligence tier derived. The finished record conforms to the enterprise's master-data standard.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so activation or refusal lands on a single, well-formed record the onboarding systems can trust.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the verification certificate is in hand, and it closes with the party record produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian builds the approved party record for a cleared applicant and hands it to the confirmation custodian.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Approved Party Record |
+| `plain_language_description` | string | no | With verification complete, the processing custodian assembles the record the decision will act on: the party … |
+| `business_purpose` | string | no | It exists so activation or refusal lands on a single, well-formed record the onboarding systems can trust. |
+| `practical_context` | string | no | It opens when the verification certificate is in hand, and it closes with the party record produced and custody passed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

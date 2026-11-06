@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-operate-ve
 
 This is a **Task** (level L4), named **Assemble Review Inputs Verification**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Assemble Review Inputs** (`processes:activity-sd-operate-9evxdj`). Its canonical ID is `processes:task-sd-operate-verify-hm59ns`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before the pack is built for the room, the arriving feeds are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a review sat with an incomplete pack wastes the leadership's hour and leaves decisions that outlast the meeting unmade.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the intake is registered and the feeds can be challenged, and it closes with its shortfalls written down for rejection or putting right.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian in the strategy function tests each due feed against what the review pack needs, and writes up a signal brief missing its classification as a shortfall to be put right.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Test the Feeds Before They Go into the Review Pack |
+| `plain_language_description` | string | no | Before the pack is built for the room, the arriving feeds are put to the test. The verification custodian tests the … |
+| `business_purpose` | string | no | It exists because a review sat with an incomplete pack wastes the leadership's hour and leaves decisions that outlast … |
+| `practical_context` | string | no | It opens once the intake is registered and the feeds can be challenged, and it closes with its shortfalls written down … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

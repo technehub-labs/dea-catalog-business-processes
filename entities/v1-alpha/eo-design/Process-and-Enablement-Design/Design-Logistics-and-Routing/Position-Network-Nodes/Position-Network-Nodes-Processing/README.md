@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Position Network Nodes Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Position Network Nodes** (`processes:activity-eo-design-fcqpn4`). Its canonical ID is `processes:task-eo-design-transform-6dsd5y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the positioning itself: the warehouses, hubs, and cross-docks the logistics design requires are positioned against the demand geography, and the node position plan is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because goods cannot flow through a network whose nodes were never placed - positioning is where the network gets its skeleton.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be positioned from, and it ends with the node position plan produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function places the warehouses, hubs, and cross-docks against the demand geography, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Place the Nodes the Logistics Design Requires |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the positioning itself: the warehouses, hubs, and cross-docks … |
+| `business_purpose` | string | no | It exists because goods cannot flow through a network whose nodes were never placed - positioning is where the network … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be positioned from, and it ends with the node … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

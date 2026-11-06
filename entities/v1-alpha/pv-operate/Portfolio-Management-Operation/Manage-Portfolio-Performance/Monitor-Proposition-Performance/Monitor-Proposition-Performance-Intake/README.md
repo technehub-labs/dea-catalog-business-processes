@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-operate-in
 
 This is a **Task** (level L4), named **Monitor Proposition Performance Intake**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Monitor Proposition Performance** (`processes:activity-pv-operate-unuyxe`). Its canonical ID is `processes:task-pv-operate-intake-cmzsgc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The watching opens as proposition performance signals arrive for monitoring. The intake custodian logs them against the performance picture file so the monitoring starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because keeping continuous sight of proposition performance starts with knowing exactly which signals arrived and when.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when a round of signals is presented for monitoring with the activity's owner told that it has landed, and it closes with the intake registered.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in product management logs the week's proposition signals into the performance picture file, so the continuous watch on how each proposition sits against its investment envelope starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Log the Arriving Performance Signals |
+| `plain_language_description` | string | no | The watching opens as proposition performance signals arrive for monitoring. The intake custodian logs them against the … |
+| `business_purpose` | string | no | It exists because keeping continuous sight of proposition performance starts with knowing exactly which signals arrived … |
+| `practical_context` | string | no | It opens when a round of signals is presented for monitoring with the activity's owner told that it has landed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

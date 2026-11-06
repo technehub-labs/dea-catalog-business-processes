@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-tra
 
 This is a **Task** (level L4), named **Design Fulfilment Flows Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Fulfilment Flows** (`processes:activity-eo-design-4wmwgy`). Its canonical ID is `processes:task-eo-design-transform-etfpy2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the design itself: the fulfilment flows realizing the framed patterns are drawn across the channel configurations, and the flow designs are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because patterns and channels only promise - the flows are where an order is shown its actual path to delivery.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be designed across, and it ends with the fulfilment flow designs produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the operations function draws each order-to-delivery path across the configured channels, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draw the Paths from Order to Delivery |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the design itself: the fulfilment flows realizing the framed … |
+| `business_purpose` | string | no | It exists because patterns and channels only promise - the flows are where an order is shown its actual path to … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be designed across, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

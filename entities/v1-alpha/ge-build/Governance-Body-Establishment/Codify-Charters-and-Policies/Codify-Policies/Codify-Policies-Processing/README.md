@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 
 This is a **Task** (level L4), named **Codify Policies Processing**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Codify Policies** (`processes:activity-ge-build-f5yeny`). Its canonical ID is `processes:task-ge-build-transform-xf42xt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the certificate in hand, the processing custodian executes the build for the policies: the committed policy designs are codified into rules that operate, joined by the rest of the build the inventory calls for, and the build-ready inventory is produced for confirmation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a policy design that never becomes an operative rule governs nothing - the codifying is where the design starts to bite.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the strategy function codifies the committed policy designs into operative rules, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn the Policy Designs into Rules That Operate |
+| `plain_language_description` | string | no | With the certificate in hand, the processing custodian executes the build for the policies: the committed policy … |
+| `business_purpose` | string | no | It exists because a policy design that never becomes an operative rule governs nothing - the codifying is where the … |
+| `practical_context` | string | no | It opens once the verification certificate is in hand and the bounded build may be executed, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

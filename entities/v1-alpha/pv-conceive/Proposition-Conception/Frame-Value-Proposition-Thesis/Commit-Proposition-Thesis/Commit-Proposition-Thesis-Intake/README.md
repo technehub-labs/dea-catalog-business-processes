@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-i
 
 This is a **Task** (level L4), named **Commit Proposition Thesis Intake**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Commit Proposition Thesis** (`processes:activity-pv-conceive-8sq29j`). Its canonical ID is `processes:task-pv-conceive-intake-2y9kzg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Bringing the thesis together starts with intake: the scope, target parties, and value claim arrive to be consolidated. The intake custodian logs them against the thesis file so the consolidation works from one accounted-for set.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a committed thesis is only as sound as the completeness of what fed it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian of the proposition design authority logs the scope, parties, and claim into the proposition thesis file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect the Proposition Consolidation Papers |
+| `plain_language_description` | string | no | Bringing the thesis together starts with intake: the scope, target parties, and value claim arrive to be consolidated … |
+| `business_purpose` | string | no | It exists because a committed thesis is only as sound as the completeness of what fed it. |
+| `practical_context` | string | no | It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

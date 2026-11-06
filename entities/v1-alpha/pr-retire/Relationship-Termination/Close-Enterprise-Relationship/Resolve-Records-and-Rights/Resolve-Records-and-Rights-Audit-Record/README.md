@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-rec
 
 This is a **Task** (level L4), named **Resolve Records and Rights Audit Record**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Resolve Records and Rights** (`processes:activity-pr-retire-5k7ngj`). Its canonical ID is `processes:task-pr-retire-record-wa6gpu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After confirmation, the records custodian places the closure file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-closure records, protected against tampering. Where records pass the storage-limit horizon, a destruction attestation is recorded.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the disposition decisions themselves must survive as long as the records they govern.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: records custodian)_
+*Example (carried out by a person):* A records custodian archives the disposition record so every keep-or-erase call can be evidenced later.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Keep the Disposition Record for Its Horizon |
+| `plain_language_description` | string | no | After confirmation, the records custodian places the closure file - manifest, verification report, record pack … |
+| `business_purpose` | string | no | It exists because the disposition decisions themselves must survive as long as the records they govern. |
+| `practical_context` | string | no | It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

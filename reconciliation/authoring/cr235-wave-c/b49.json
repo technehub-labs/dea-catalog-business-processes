@@ -1,0 +1,582 @@
+{
+ "processes:task-sd-improve-verify-by6tyt": {
+  "plain_language_name": "Test the Effectiveness Verdict Before Findings Are Drafted",
+  "plain_language_description": "Before findings and recommendations are drafted, the arriving evaluation is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because findings drawn from an unchallenged verdict would carry the evaluation's blind spots straight into the adaptation cycle.",
+  "practical_context": "It opens once the intake is registered and the arriving verdict can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving effectiveness evaluation against what the findings work needs, and writes up a verdict whose reasoning stops at two of four outcomes as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-intake-g6evhm": {
+  "plain_language_name": "Take In the Performance Measures from the Executing Plan",
+  "plain_language_description": "The collection opens as its material arrives: the performance measures streaming out of executing initiatives and operations. The intake custodian logs them against the collection file so the collection starts accounted for.",
+  "business_purpose": "It exists so the measures feeding the strategic picture are counted from the moment they arrive, none dropped between source and register.",
+  "practical_context": "It opens when the measures from execution are presented for collection, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the measure sets coming in from the executing initiatives and operations into the collection file, so the strategic performance picture starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-kzabsd": {
+  "plain_language_name": "Test the Arriving Measures Before They Enter the Strategic Picture",
+  "plain_language_description": "Before the measures are taken into the strategic picture, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a strategic picture assembled from a measure with the wrong basis or a missing period misleads every review downstream.",
+  "practical_context": "It opens once the intake is registered and the measures can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests each arriving measure set against what the collection needs, and writes up one measure missing its reporting period as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-wxhc98": {
+  "plain_language_name": "Gather the Measures into the Collected Performance Set",
+  "plain_language_description": "With the inputs verified, the collection proper begins. The processing custodian brings the tested measures from every executing source into one set, producing the collected strategic performance measures in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because measures scattered across initiative reports tell the strategy nothing until they sit in one collected set ready for tracking.",
+  "practical_context": "It opens when the verified measures are ready to be worked, and it closes with the collected performance measures produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function gathers the tested measures from every executing initiative and operation into the collected set, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-6pxf4w": {
+  "plain_language_name": "Tell the Tracking Team the Collected Measures Are Ready",
+  "plain_language_description": "The measures are collected and must now travel. The confirmation custodian tells the downstream teams the collected strategic performance measures are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the tracking work cannot start until it knows the collected set is complete and formally handed over.",
+  "practical_context": "It opens when the collection work is finished and the collected set is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the tracking team the collected measures are available for their work against the plan, then closes the handover against what the collection promised."
+  }
+ },
+ "processes:task-sd-operate-record-jjj93s": {
+  "plain_language_name": "File the Collection Record of the Performance Measures",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the measures behind every tracked position can be traced back to their sources when a review questions the numbers.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the collection record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the collected measure set with its source trail at the agreed retention tier, and sets the retrieval handles so any figure can be traced to where it came from."
+  }
+ },
+ "processes:task-sd-operate-intake-qhfk6s": {
+  "plain_language_name": "Take In the Collected Measures for Tracking",
+  "plain_language_description": "The tracking opens as its material arrives: the collected strategic performance measures from the executing plan. The intake custodian logs them against the tracking file so the tracking starts accounted for.",
+  "business_purpose": "It exists so the comparison against plan runs over the registered measure set in full, not whatever reached the tracker first.",
+  "practical_context": "It opens when the collected measures are presented for tracking, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the collected measure set into the tracking file, so the work of comparing performance to plan starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-gt9fe3": {
+  "plain_language_name": "Test the Measures Before They Are Set Against the Plan",
+  "plain_language_description": "Before the collected measures are set against the plan, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a tracked position built on an unverified measure would report the strategy as off or on course for the wrong reason.",
+  "practical_context": "It opens once the intake is registered and the measures can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving measures against what the tracking needs, and writes up one measure that no longer maps to its plan line as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-6v9kg6": {
+  "plain_language_name": "Set Each Measure Against Its Plan Line and Targets",
+  "plain_language_description": "With the inputs verified, the tracking proper begins. The processing custodian compares every tested measure to its plan line, objective and target, producing the performance-against-plan position in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because execution drift stays invisible until each measure is set beside what the plan said should be happening.",
+  "practical_context": "It opens when the verified measures are ready to be worked, and it closes with the performance-against-plan position produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function compares each collected measure to its plan line, objective and target, and writes the resulting position with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-wg62u2": {
+  "plain_language_name": "Tell the Deviation Spotters the Tracked Position Is Ready",
+  "plain_language_description": "The position is tracked and must now travel. The confirmation custodian tells the downstream teams the performance-against-plan position is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the deviation work needs the formal word that the position is settled and the comparison closed.",
+  "practical_context": "It opens when the tracking work is finished and the position is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the deviation team the tracked position is available for their flagging work, then reconciles the delivered position against what the tracking promised."
+  }
+ },
+ "processes:task-sd-operate-record-exd85j": {
+  "plain_language_name": "File the Tracked Position Behind the Deviation Flags",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show where performance stood against plan when each deviation was raised.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the tracking record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the tracked position with its measure-by-measure workings at the agreed retention tier, and sets the retrieval handles a later review will use."
+  }
+ },
+ "processes:task-sd-operate-intake-3465p4": {
+  "plain_language_name": "Take In the Tracked Position for Deviation Work",
+  "plain_language_description": "The flagging opens as its material arrives: the performance-against-plan position showing where execution sits against the plan. The intake custodian logs it against the flagging file so the flagging starts accounted for.",
+  "business_purpose": "It exists so every deviation is raised from the registered position rather than from anecdote or a slide that caught someone's eye.",
+  "practical_context": "It opens when the tracked position is presented for flagging, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the tracked position into the flagging file, so the work of raising deviations starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-228sm3": {
+  "plain_language_name": "Test the Position Before Any Deviation Is Flagged",
+  "plain_language_description": "Before deviations are flagged and triaged, the arriving position is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a deviation raised off a mis-tracked line would send steering attention after a problem that does not exist.",
+  "practical_context": "It opens once the intake is registered and the position can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving position against what the flagging needs, and writes up a line whose target baseline shifted mid-period as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-fpbjes": {
+  "plain_language_name": "Flag and Triage the Deviations from the Plan",
+  "plain_language_description": "With the inputs verified, the flagging proper begins. The processing custodian raises the deviations the position shows and triages each by weight, producing the flagged performance deviations in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because not every gap deserves the leadership's time; someone must sort the real deviations from the noise and rank them.",
+  "practical_context": "It opens when the verified position is ready to be worked, and it closes with the flagged performance deviations produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function raises the deviations the position shows and triages each as red, amber or noise, keeping the reasoning for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-pwa2wj": {
+  "plain_language_name": "Tell the Report Builders Which Deviations Are Flagged",
+  "plain_language_description": "The flags are set and must now travel. The confirmation custodian tells the downstream teams the flagged performance deviations are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the performance report can only carry the deviations once the flagging is closed and formally handed on.",
+  "practical_context": "It opens when the flagging work is finished and the flags are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the reporting team the flagged deviations are available for the performance report, then closes the handover against what the flagging promised."
+  }
+ },
+ "processes:task-sd-operate-record-93ystw": {
+  "plain_language_name": "File the Deviation Flags with Their Triage Reasoning",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show which deviations were raised, how each was triaged, and why some were left alone.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the flagging record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the deviation flags with their triage reasoning at the agreed retention tier, and sets the retrieval handles for the review that will ask why each one fired."
+  }
+ },
+ "processes:task-sd-operate-intake-apbxag": {
+  "plain_language_name": "Take In the Position and the Flags for the Performance Report",
+  "plain_language_description": "The reporting opens as its material arrives: the tracked position and the flagged deviations from the monitoring work. The intake custodian logs them against the reporting file so the reporting starts accounted for.",
+  "business_purpose": "It exists so the report is built from the registered position and flags, not from a half-remembered version of the month's numbers.",
+  "practical_context": "It opens when the position and flags are presented for reporting, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the tracked position and the deviation flags into the reporting file, so the building of the performance report starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-hghb7p": {
+  "plain_language_name": "Test the Position and Flags Before the Report Is Built",
+  "plain_language_description": "Before the performance report is built, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a report carrying an untested flag or a stale position would steer the review cycle toward the wrong agenda.",
+  "practical_context": "It opens once the intake is registered and the material can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving position and flags against what the reporting needs, and writes up a flag awaiting re-triage as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-pts2ng": {
+  "plain_language_name": "Build the Strategic Performance Report for the Review Cycle",
+  "plain_language_description": "With the inputs verified, the reporting proper begins. The processing custodian packages the tested position and flags into the report the review cycle will sit down to, producing the strategic performance report in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because scattered numbers and loose flags never reach a boardroom; the review needs one report that carries the position.",
+  "practical_context": "It opens when the verified material is ready to be worked, and it closes with the strategic performance report produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function assembles the tested position and flags into the strategic performance report for the next review, keeping the workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-p7mbfj": {
+  "plain_language_name": "Hand the Performance Report into the Review Cycle",
+  "plain_language_description": "The report is built and must now travel. The confirmation custodian tells the downstream teams the strategic performance report is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the review cycle cannot assemble its inputs until it is told the performance report is final and available.",
+  "practical_context": "It opens when the reporting work is finished and the report is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the review-cycle team the strategic performance report is available for the scheduled review, then closes the handover against what the reporting promised."
+  }
+ },
+ "processes:task-sd-operate-record-5m4q6z": {
+  "plain_language_name": "File the Performance Report as Issued to the Review Cycle",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the report as issued survives intact, ready to be checked against what the review later decided on its numbers.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the report record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the strategic performance report exactly as issued, sets the retrieval handles, and leaves the trail for whoever checks the review's decisions against it."
+  }
+ },
+ "processes:task-sd-operate-intake-3rtpj4": {
+  "plain_language_name": "Take In the Review Mandate for the Cadence Work",
+  "plain_language_description": "The scheduling opens as its material arrives: the strategic review cycle mandate that says how often and how deeply the strategy must be reviewed. The intake custodian logs it against the scheduling file so the scheduling starts accounted for.",
+  "business_purpose": "It exists so the cadence is set from the registered mandate rather than from habit or whoever shouts loudest for a slot.",
+  "practical_context": "It opens when the review mandate is presented for scheduling, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the review cycle mandate into the scheduling file, so the setting of the review cadence starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-48yfvb": {
+  "plain_language_name": "Test the Mandate Before the Cadence Is Set",
+  "plain_language_description": "Before the standing cadence is set, the arriving mandate material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a cadence built off a misread mandate would review the strategy too thinly or waste the room's time meeting for nothing.",
+  "practical_context": "It opens once the intake is registered and the mandate can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the mandate against what the scheduling needs, and writes up an unstated review depth as a shortfall to be put right before dates are fixed."
+  }
+ },
+ "processes:task-sd-operate-transform-ya3f8z": {
+  "plain_language_name": "Fix the Standing Calendar of Strategic Reviews",
+  "plain_language_description": "With the inputs verified, the scheduling proper begins. The processing custodian sets the review dates, depth and owners that will stand until revised, producing the scheduled review cadence in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because reviews that are not on a standing calendar quietly stop happening, and the strategy drifts unwatched.",
+  "practical_context": "It opens when the verified mandate is ready to be worked, and it closes with the scheduled review cadence produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function fixes the quarterly and mid-cycle review dates with their depth and owners, keeping the scheduling workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-fwjk4g": {
+  "plain_language_name": "Publish the Review Cadence to the Teams Who Must Attend",
+  "plain_language_description": "The cadence is set and must now travel. The confirmation custodian tells the downstream teams the scheduled review cadence is available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the input assembly and the attendees cannot plan their quarters until the cadence is formally published.",
+  "practical_context": "It opens when the scheduling work is finished and the cadence is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the assembly team and the review attendees the published cadence is available, then closes the handover against what the scheduling promised."
+  }
+ },
+ "processes:task-sd-operate-record-834suj": {
+  "plain_language_name": "File the Cadence Record with Its Mandate Lineage",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can show why reviews sit where they do in the calendar and on which mandate they rest.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the cadence record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the standing cadence with the mandate it came from at the agreed retention tier, and sets the retrieval handles for when the calendar is next challenged."
+  }
+ },
+ "processes:task-sd-operate-intake-jygtbf": {
+  "plain_language_name": "Take In the Cadence and Its Feeds for the Review Pack",
+  "plain_language_description": "The assembly opens as its material arrives: the scheduled review cadence naming the session, with its due performance reports and signal briefs. The intake custodian logs them against the assembly file so the assembly starts accounted for.",
+  "business_purpose": "It exists so every scheduled review is built from a counted pack, with no report or brief missing when the room sits.",
+  "practical_context": "It opens when the cadence and its feeds are presented for assembly, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the scheduled session with its due reports and briefs into the assembly file, so the building of the review pack starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-hm59ns": {
+  "plain_language_name": "Test the Feeds Before They Go into the Review Pack",
+  "plain_language_description": "Before the pack is built for the room, the arriving feeds are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a review sat with an incomplete pack wastes the leadership's hour and leaves decisions that outlast the meeting unmade.",
+  "practical_context": "It opens once the intake is registered and the feeds can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests each due feed against what the review pack needs, and writes up a signal brief missing its classification as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-mz7yqq": {
+  "plain_language_name": "Build the Review Pack with Reports, Briefs and Agenda",
+  "plain_language_description": "With the inputs verified, the assembly proper begins. The processing custodian binds the tested reports and briefs to the session agenda, producing the assembled review inputs in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a review without its papers on the table is a conversation, not a decision; the pack makes the session real.",
+  "practical_context": "It opens when the verified feeds are ready to be worked, and it closes with the assembled review inputs produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function binds the tested performance reports and signal briefs to the agenda for the scheduled review, keeping the pack workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-vycq5x": {
+  "plain_language_name": "Circulate the Review Pack to the Scheduled Session",
+  "plain_language_description": "The pack is built and must now travel. The confirmation custodian tells the downstream teams the assembled review inputs are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because attendees cannot prepare and the review cannot open until the pack is formally circulated as complete.",
+  "practical_context": "It opens when the assembly work is finished and the pack is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function circulates the assembled pack to the review attendees and confirms it is available, then closes the handover against what the assembly promised."
+  }
+ },
+ "processes:task-sd-operate-record-3gefwg": {
+  "plain_language_name": "File the Review Pack as Circulated",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the papers each review sat down to stay retrievable when its decisions are later traced to their basis.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the pack record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the review pack exactly as circulated, at the agreed retention tier, and sets the retrieval handles the decision trail will need."
+  }
+ },
+ "processes:task-sd-operate-intake-8jdvxp": {
+  "plain_language_name": "Take In the Assembled Pack for the Review Session",
+  "plain_language_description": "The conducting opens as its material arrives: the assembled review inputs bound for the scheduled session. The intake custodian logs them against the review file so the review starts accounted for.",
+  "business_purpose": "It exists so the session runs over the registered pack on the table, with nothing discussed that is not in it.",
+  "practical_context": "It opens when the assembled inputs are presented for the review, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the assembled pack into the review file ahead of the scheduled session, so the conducting of the review starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-r5t7hs": {
+  "plain_language_name": "Test the Pack Before the Session Is Opened",
+  "plain_language_description": "Before the review session is opened, the arriving pack is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a review convened over a pack with holes spends its hour on housekeeping instead of decisions.",
+  "practical_context": "It opens once the intake is registered and the pack can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving pack against what the session needs, and writes up an agenda without its supporting report as a shortfall to be put right before the room gathers."
+  }
+ },
+ "processes:task-sd-operate-transform-p69se3": {
+  "plain_language_name": "Run the Strategic Review Against Its Pack",
+  "plain_language_description": "With the inputs verified, the conducting proper begins. The processing custodian chairs the scheduled session through the pack's position, flags and briefs, producing the conducted strategic reviews in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the reviews only steer the strategy if someone actually sits the leadership down and works the pack to a conclusion.",
+  "practical_context": "It opens when the verified pack is ready to be worked, and it closes with the conducted strategic reviews produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function chairs the scheduled session, working the pack's position and flags through to conclusions, and keeps the session workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-mgrjs8": {
+  "plain_language_name": "Hand the Review Outcomes to the Decision Recorders",
+  "plain_language_description": "The session has run and its outputs must travel. The confirmation custodian tells the downstream teams the conducted strategic reviews are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the decisions taken in the room cannot be logged until the review is formally closed and its outputs handed on.",
+  "practical_context": "It opens when the review work is finished and the outcomes are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the decision-recording team the conducted review and its outputs are available, then closes the handover against what the review promised."
+  }
+ },
+ "processes:task-sd-operate-record-695prz": {
+  "plain_language_name": "File the Conducted Review with Its Session Papers",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the fact that each review was held, and what it covered, stays provable long after the room has emptied.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the review record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the conducted review with its session papers at the agreed retention tier, and sets the retrieval handles the governance calendar will need."
+  }
+ },
+ "processes:task-sd-operate-intake-d8xtpb": {
+  "plain_language_name": "Take In the Review Outcomes for Decision Logging",
+  "plain_language_description": "The recording opens as its material arrives: the conducted strategic review with the decisions taken in the room. The intake custodian logs them against the recording file so the recording starts accounted for.",
+  "business_purpose": "It exists so every decision leaves the room on a register, before memory blurs over who agreed what.",
+  "practical_context": "It opens when the review outcomes are presented for recording, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the review's outcomes into the recording file the same day, so the logging of its decisions starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-b9dtxm": {
+  "plain_language_name": "Test the Outcomes Before Any Decision Is Logged",
+  "plain_language_description": "Before decisions are written to the register, the arriving outcomes are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a decision logged half-heard would send the consuming processes acting on an instruction nobody actually gave.",
+  "practical_context": "It opens once the intake is registered and the outcomes can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving outcomes against what the recording needs, and writes up a decision with two conflicting wordings as a shortfall to be put right before it is logged."
+  }
+ },
+ "processes:task-sd-operate-transform-mtkm96": {
+  "plain_language_name": "Write the Review Decisions to the Register",
+  "plain_language_description": "With the inputs verified, the recording proper begins. The processing custodian writes each tested decision to the register with its owner and deadline, producing the recorded review decisions in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an unrecorded decision steers nothing; the register is what turns the room's conclusions into instructions.",
+  "practical_context": "It opens when the verified outcomes are ready to be worked, and it closes with the recorded review decisions produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function writes each tested decision to the register with its owner and deadline, keeping the drafting workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-c2nzq6": {
+  "plain_language_name": "Hand the Recorded Decisions to the Consuming Processes",
+  "plain_language_description": "The decisions are on the register and must now travel. The confirmation custodian tells the downstream teams the recorded review decisions are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the consuming processes cannot act on a decision until they are told it stands recorded and is theirs to pick up.",
+  "practical_context": "It opens when the recording work is finished and the register entries are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the consuming processes the recorded decisions are available for pickup, then closes the handover against what the recording promised."
+  }
+ },
+ "processes:task-sd-operate-record-fpkp9g": {
+  "plain_language_name": "File the Decision Register with Its Review Lineage",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can trace any steering decision back to the review that took it and the pack it rested on.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the register record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the decision register with its review lineage at the agreed retention tier, and sets the retrieval handles auditors use when they ask who decided what."
+  }
+ },
+ "processes:task-sd-operate-confirm-wzfr7p": {
+  "plain_language_name": "Hand the Raw Signals to the Noise Filter",
+  "plain_language_description": "The sweep is done and its yield must travel. The confirmation custodian tells the downstream teams the raw environmental signals are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the filtering work cannot start until the sweep is formally closed and its yield handed over as complete.",
+  "practical_context": "It opens when the sweep work is finished and the raw signals are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the filtering team the raw signals from the source sweep are available, then closes the handover against what the scan promised."
+  }
+ },
+ "processes:task-sd-operate-record-8s9f8n": {
+  "plain_language_name": "File the Source Sweep Record and Its Yield",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show which sources were swept, when, and what each sweep turned up.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the sweep record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the source sweep with its raw yield at the agreed retention tier, and sets the retrieval handles for the next signal review that asks what the environment looked like."
+  }
+ },
+ "processes:task-sd-operate-intake-4kzxub": {
+  "plain_language_name": "Take In the Raw Signals for the Noise Filter",
+  "plain_language_description": "The filtering opens as its material arrives: the raw environmental signals swept from the internal and external sources. The intake custodian logs them against the filtering file so the filtering starts accounted for.",
+  "business_purpose": "It exists so the noise stripping runs over the registered sweep yield in full, with no signal judged unseen.",
+  "practical_context": "It opens when the raw signals are presented for filtering, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the raw signals from the source sweep into the filtering file, so the stripping of noise and the qualifying of relevance start accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-sznbue": {
+  "plain_language_name": "Test the Raw Signals Before the Noise Is Stripped",
+  "plain_language_description": "Before noise is stripped and relevance judged, the arriving signals are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because filtering over an untested batch would throw away the signal that mattered and keep the noise that flattered.",
+  "practical_context": "It opens once the intake is registered and the signals can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving batch against what the filtering needs, and writes up one source whose feed arrived garbled as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-dbaujx": {
+  "plain_language_name": "Strip the Noise and Qualify the Strategic Relevance",
+  "plain_language_description": "With the inputs verified, the filtering proper begins. The processing custodian strips the noise from the tested batch and qualifies what is left for strategic relevance, producing the filtered environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because strategy attention is finite; the filter is what keeps the leadership reading signals instead of static.",
+  "practical_context": "It opens when the verified batch is ready to be worked, and it closes with the filtered environmental signals produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function strips the noise from the tested batch and qualifies each survivor for strategic relevance, keeping the drop reasoning for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-8bh89b": {
+  "plain_language_name": "Tell the Classifiers the Filtered Signals Are Ready",
+  "plain_language_description": "The filtering is done and the survivors must travel. The confirmation custodian tells the downstream teams the filtered environmental signals are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the classification step needs the formal word that filtering has closed and the surviving set is complete.",
+  "practical_context": "It opens when the filtering work is finished and the survivors are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the classification team the filtered signals are available for typing, then closes the handover against what the filtering promised."
+  }
+ },
+ "processes:task-sd-operate-record-yquzw9": {
+  "plain_language_name": "File the Filtering Record with Its Drop Reasoning",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the signals that were dropped can be revisited when someone asks whether the filter threw away something that mattered.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the filtering record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the filtered set with its drop reasoning at the agreed retention tier, and sets the retrieval handles for the next look-back at what the filter discarded."
+  }
+ },
+ "processes:task-sd-operate-intake-23eaj2": {
+  "plain_language_name": "Take In the Filtered Signals for Classification",
+  "plain_language_description": "The classification opens as its material arrives: the filtered environmental signals that survived the noise stripping. The intake custodian logs them against the classification file so the classification starts accounted for.",
+  "business_purpose": "It exists so every surviving signal is typed on the register, with none slipping through the typing unrecorded.",
+  "practical_context": "It opens when the filtered signals are presented for classification, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the filtered signals into the classification file, so the typing of each as drift, disruption or opportunity starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-nge3xw": {
+  "plain_language_name": "Test the Surviving Signals Before They Are Typed",
+  "plain_language_description": "Before the surviving signals are typed, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a signal typed as mere drift when it was disruption would leave the strategy responding a category too slow.",
+  "practical_context": "It opens once the intake is registered and the survivors can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the arriving survivors against what the classification needs, and writes up one signal with conflicting source readings as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-vtr8ub": {
+  "plain_language_name": "Type Each Signal as Drift, Disruption or Opportunity",
+  "plain_language_description": "With the inputs verified, the classification proper begins. The processing custodian types each tested signal as drift, disruption or opportunity for the operating strategy, producing the classified environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because the routes downstream differ by type; an untyped signal has nowhere to go and a mistyped one goes somewhere wrong.",
+  "practical_context": "It opens when the verified survivors are ready to be worked, and it closes with the classified environmental signals produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function types each tested signal as drift, disruption or opportunity, recording the evidence behind each call with the workings kept for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-y4zbb4": {
+  "plain_language_name": "Tell the Routing Team the Typed Signals Are Ready",
+  "plain_language_description": "The typing is done and the classified set must travel. The confirmation custodian tells the downstream teams the classified environmental signals are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the routing step needs the formal word that classification has closed and every signal now carries its type.",
+  "practical_context": "It opens when the classification work is finished and the typed set is ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the routing team the typed signals are available for delivery, then closes the handover against what the classification promised."
+  }
+ },
+ "processes:task-sd-operate-record-kz9va9": {
+  "plain_language_name": "File the Signal Types with Their Classifying Evidence",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the calls on contentious signals survive with their evidence, ready to be challenged or revisited later.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the classification record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the typed signals with their classifying evidence at the agreed retention tier, and sets the retrieval handles for the review that disputes a drift call."
+  }
+ },
+ "processes:task-sd-operate-intake-8b2vt7": {
+  "plain_language_name": "Take In the Typed Signals for Delivery",
+  "plain_language_description": "The routing opens as its material arrives: the classified environmental signals with their drift, disruption and opportunity types. The intake custodian logs them against the routing file so the routing starts accounted for.",
+  "business_purpose": "It exists so every typed signal enters delivery on the register, with none lost between classification and destination.",
+  "practical_context": "It opens when the typed signals are presented for routing, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in the strategy function logs the typed signals into the routing file, so the delivery work to the consuming processes starts accounted for."
+  }
+ },
+ "processes:task-sd-operate-verify-b8ueku": {
+  "plain_language_name": "Test the Typed Signals Before They Leave for Their Routes",
+  "plain_language_description": "Before the typed signals leave for their routes, the arriving material is put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.",
+  "business_purpose": "It exists because a signal delivered with a wrong type lands on the wrong desk, and the desk that needed it never hears.",
+  "practical_context": "It opens once the intake is registered and the typed signals can be challenged, and it closes with its shortfalls written down for rejection or putting right.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in the strategy function tests the typed signals against what the routing needs, and writes up one opportunity signal still marked for monitoring as a shortfall to be put right."
+  }
+ },
+ "processes:task-sd-operate-transform-db5jv7": {
+  "plain_language_name": "Deliver Each Signal to Its Monitoring, Steering or Adaptation Route",
+  "plain_language_description": "With the inputs verified, the routing proper begins. The processing custodian sends each tested signal to its consuming process, whether performance monitoring, portfolio steering or the adaptation cycle, producing the routed environmental signals in the form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a signal that stays in the sensing cell informs no one; routing is where the environment finally reaches the strategy.",
+  "practical_context": "It opens when the verified signals are ready to be worked, and it closes with the routed environmental signals produced in the agreed form and the workings filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in the strategy function sends each tested signal to its consuming process and records the delivery, keeping the routing workings for the audit trail."
+  }
+ },
+ "processes:task-sd-operate-confirm-2akekq": {
+  "plain_language_name": "Close Out the Signal Deliveries with the Consuming Teams",
+  "plain_language_description": "The signals are delivered and the handover must be sealed. The confirmation custodian tells the downstream teams the routed environmental signals are available, and closes the reconciliation against what the activity promised.",
+  "business_purpose": "It exists because the sensing cell cannot close its cycle until each consuming team has acknowledged what landed on its desk.",
+  "practical_context": "It opens when the routing work is finished and the deliveries are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in the strategy function tells the monitoring, steering and adaptation teams the routed signals are available, then closes each delivery against what the routing promised."
+  }
+ },
+ "processes:task-sd-operate-record-q5szty": {
+  "plain_language_name": "File the Signal Routing Record with Its Destinations",
+  "plain_language_description": "After the handover, the trail must be kept. The records custodian preserves the audit record at its required retention tier and sets the retrieval handles.",
+  "business_purpose": "It exists so the organisation can later show which signal went where, and what each consuming team was told and when.",
+  "practical_context": "It opens once the confirmation has been issued and the audit trail can be laid down, and it closes with the routing record preserved at its required tier and its retrieval handles in place.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in the strategy function files the routing record with each signal's destination at the agreed retention tier, and sets the retrieval handles for tracing who knew what, and when."
+  }
+ }
+}

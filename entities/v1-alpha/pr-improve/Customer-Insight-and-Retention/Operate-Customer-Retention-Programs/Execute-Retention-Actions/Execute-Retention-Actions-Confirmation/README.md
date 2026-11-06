@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-co
 
 This is a **Task** (level L4), named **Execute Retention Actions Confirmation**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Execute Retention Actions** (`processes:activity-pr-improve-jg6bv4`). Its canonical ID is `processes:task-pr-improve-confirm-dv2jkc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape required of retention outcomes. Once aligned, the relationship custodian receives the completion confirmation, and it is logged.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the interventions and their effects are formally accepted into the insight record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records custodian receives the file.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian completes the reconciliation, and the relationship custodian acknowledges the executed actions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Executed Retention Actions |
+| `plain_language_description` | string | no | The confirmation custodian reconciles the outcomes pack with the contract governing the churn model and with the shape … |
+| `business_purpose` | string | no | It exists so the interventions and their effects are formally accepted into the insight record. |
+| `practical_context` | string | no | It starts once the outcomes pack is produced, and it closes when the acknowledgement is logged and the records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

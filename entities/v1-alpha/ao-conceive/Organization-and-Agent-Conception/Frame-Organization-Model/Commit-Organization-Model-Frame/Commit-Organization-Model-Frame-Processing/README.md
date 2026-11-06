@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 This is a **Task** (level L4), named **Commit Organization Model Frame Processing**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Commit Organization Model Frame** (`processes:activity-ao-conceive-rcyn7u`). Its canonical ID is `processes:task-ao-conceive-transform-pp9z4f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the boundaries verified, the processing custodian consolidates the frame itself: principles, spans, and boundaries are brought together into the framed organization model and set down in the form the activity defines, ready for structure design. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because principles, spans, and boundaries only govern once they are consolidated into one committed frame.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified boundaries are ready to be consolidated, and it ends with the committed organization model frame produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian brings the principles, spans, and boundaries together into the framed model and sets it down for structure design, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Consolidate the Organization Model Frame |
+| `plain_language_description` | string | no | With the boundaries verified, the processing custodian consolidates the frame itself: principles, spans, and boundaries … |
+| `business_purpose` | string | no | It exists because principles, spans, and boundaries only govern once they are consolidated into one committed frame. |
+| `practical_context` | string | no | It starts once checking is complete and the verified boundaries are ready to be consolidated, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

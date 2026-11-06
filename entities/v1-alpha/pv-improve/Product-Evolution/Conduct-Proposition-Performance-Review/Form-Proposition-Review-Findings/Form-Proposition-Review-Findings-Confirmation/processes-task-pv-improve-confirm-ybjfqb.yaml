@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Formed Findings'
+plain_language_description: 'The confirmation custodian issues the completion confirmation, tells the downstream teams the formed findings are available, and closes the reconciliation against what the activity promised. The confirmation is logged.'
+business_purpose: 'It exists so the findings are formally accepted before they are routed to the tracks that act on them.'
+practical_context: 'It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in product management confirms the formed findings.'

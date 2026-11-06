@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-tra
 
 This is a **Task** (level L4), named **Design Cost Allocation Model Processing**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Cost Allocation Model** (`processes:activity-fa-design-xzbfxx`). Its canonical ID is `processes:task-fa-design-transform-33qfc9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the chart verified, the processing custodian does the designing itself: how each cost finds its bearer across the enterprise is worked out over the chart, and the allocation model is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because costs unallocated are costs invisible - the model is what makes every part of the enterprise pay its own way on paper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified chart is ready to be allocated across, and it ends with the allocation model produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the finance design authority works out which bearer carries which cost over the chart, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Decide Who Carries Which Cost |
+| `plain_language_description` | string | no | With the chart verified, the processing custodian does the designing itself: how each cost finds its bearer across the … |
+| `business_purpose` | string | no | It exists because costs unallocated are costs invisible - the model is what makes every part of the enterprise pay its … |
+| `practical_context` | string | no | It starts once checking is complete and the verified chart is ready to be allocated across, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-i
 
 This is a **Task** (level L4), named **Align Horizons with Intent Intake**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Align Horizons with Intent** (`processes:activity-sd-conceive-6dbxtu`). Its canonical ID is `processes:task-sd-conceive-intake-qsy5rg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The alignment opens as its material arrives: the bounded timeframes and their milestones together with the committed strategic intent they must serve. The intake custodian logs them against the alignment file so the aligning starts accounted for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the horizons are aligned over logged intent rather than over a calendar that simply looked tidy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the timeframes, milestones and intent are presented for alignment, with the activity's owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the strategy function logs the bounded timeframes, their milestones and the committed intent into the alignment file, so the aligning starts accounted for.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Take In the Timeframes, Milestones and Committed Intent |
+| `plain_language_description` | string | no | The alignment opens as its material arrives: the bounded timeframes and their milestones together with the committed … |
+| `business_purpose` | string | no | It exists so the horizons are aligned over logged intent rather than over a calendar that simply looked tidy. |
+| `practical_context` | string | no | It opens when the timeframes, milestones and intent are presented for alignment, with the activity's owner told that it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

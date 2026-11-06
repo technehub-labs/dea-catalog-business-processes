@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-conceive-c
 
 This is a **Task** (level L4), named **Identify Platform Families Confirmation**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Identify Platform Families** (`processes:activity-eo-conceive-c3quwt`). Its canonical ID is `processes:task-eo-conceive-confirm-8ek2hs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the families stand identified, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The sourcing framing that follows learns the register is settled and the postures can be framed for each family.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so sourcing postures are framed only over a register confirmed as identified.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the identified families await their consumers, and it closes with the confirmation issued, consumers told, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the identified families against the activity's intended outcome and issues the confirmation the sourcing framing needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Identified Platform Families |
+| `plain_language_description` | string | no | When the families stand identified, the confirmation custodian reconciles them against the outcome the activity set out … |
+| `business_purpose` | string | no | It exists so sourcing postures are framed only over a register confirmed as identified. |
+| `practical_context` | string | no | It begins once preparation is complete and the identified families await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-pv-conceive-t
 
 This is a **Task** (level L4), named **Bound Experimentation Boundaries Processing**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Bound Experimentation Boundaries** (`processes:activity-pv-conceive-m8x6e4`). Its canonical ID is `processes:task-pv-conceive-transform-3vwa8k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the checks done, the processing custodian sets the experimentation limits, producing the boundaries in the form the activity's definition specifies. The working papers are kept for the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because innovation without limits spends money and time the enterprise never agreed to risk.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian of the proposition design authority sets the investment, risk, and time limits innovation must live within.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Limits on Time, Money, and Risk |
+| `plain_language_description` | string | no | With the checks done, the processing custodian sets the experimentation limits, producing the boundaries in the form … |
+| `business_purpose` | string | no | It exists because innovation without limits spends money and time the enterprise never agreed to risk. |
+| `practical_context` | string | no | It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -1,0 +1,582 @@
+{
+ "processes:task-pr-retire-transform-ynuygb": {
+  "plain_language_name": "Execute the Close and Gather Its Evidence",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. The close is carried out with the counterparty's confirmation, and the evidence is captured as a record pack ready for confirmation.",
+  "business_purpose": "It exists because an ending that leaves no evidence never proves it happened.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management executes the close with the counterparty and gathers the evidence into the record pack."
+  }
+ },
+ "processes:task-pr-retire-verify-rmv7bq": {
+  "plain_language_name": "Check the Closure Pack Against the Closure Rules",
+  "plain_language_description": "Before the close is executed, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.",
+  "business_purpose": "It exists because a close executed on a defective pack would have to be un-executed, which is rarely possible.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in supplier and partner management tests the closure pack against the retention, settlement, and storage rules."
+  }
+ },
+ "processes:task-pr-retire-intake-zatdsa": {
+  "plain_language_name": "Open the Close-Out Planning File",
+  "plain_language_description": "Planning the close-out opens with its case pack: the plan for the close-out, the inventory of obligations still outstanding, and the register of records and rights to be resolved. The intake custodian logs each item against the closure file so the planning starts accounted for.",
+  "business_purpose": "It exists because a close-out planned from an incomplete inventory leaves obligations behind to resurface.",
+  "practical_context": "It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the end-of-relationship papers into the closure planning file."
+  }
+ },
+ "processes:task-pr-retire-verify-4w8tb5": {
+  "plain_language_name": "Check the Close-Out Plan Against the Rules",
+  "plain_language_description": "Before the planning proceeds, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.",
+  "business_purpose": "It exists because a close-out plan that breaches the retention or settlement rules would unwind the whole close.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in supplier and partner management tests the close-out pack against the retention and settlement rules."
+  }
+ },
+ "processes:task-pr-retire-transform-tfzf6c": {
+  "plain_language_name": "Draw Up the Close-Out Plan",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. The scope, timeline, and inventory of what remains outstanding are drawn up as a record pack ready for confirmation.",
+  "business_purpose": "It exists because an ending without a plan scatters its obligations across whoever notices them last.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management draws up the close-out plan with its timeline and obligation inventory."
+  }
+ },
+ "processes:task-pr-retire-confirm-ha5cy7": {
+  "plain_language_name": "Confirm the Close-Out Plan with Both Custodians",
+  "plain_language_description": "The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with the contract for settling what is owed. Once aligned, the completion confirmation is received by the relationship custodian and by the records custodian, and it is logged.",
+  "business_purpose": "It exists so the close-out proceeds on a plan both the relationship and records sides have accepted.",
+  "practical_context": "It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to record-keeping.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship and records custodians each acknowledge the plan."
+  }
+ },
+ "processes:task-pr-retire-record-8c5qu7": {
+  "plain_language_name": "Keep the Close-Out Plan on Record",
+  "plain_language_description": "After confirmation, the records custodian places the closure file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-closure records, protected against tampering. Where records pass the storage-limit horizon, a destruction attestation is recorded.",
+  "business_purpose": "It exists so the plan that shaped the close stays consultable while its obligations are worked.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the close-out plan so its timeline can be checked against what was actually settled."
+  }
+ },
+ "processes:task-pr-retire-intake-2bngqw": {
+  "plain_language_name": "Open the Obligations Case File",
+  "plain_language_description": "The settlement work opens with its case pack: the plan for the close-out, the inventory of obligations still outstanding, and the register of records and rights to be resolved. The intake custodian logs each item against the closure file so the settling starts accounted for.",
+  "business_purpose": "It exists because an obligation settled twice, or not at all, both trace back to a case file that was never whole.",
+  "practical_context": "It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in supplier and partner management logs the obligation inventory into the closure case file."
+  }
+ },
+ "processes:task-pr-retire-verify-as58mv": {
+  "plain_language_name": "Check the Obligations Against the Settlement Contract",
+  "plain_language_description": "Before the settling proceeds, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.",
+  "business_purpose": "It exists because settling against the wrong contract terms creates disputes after the relationship is gone.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management tests the obligations pack against the settlement contract."
+  }
+ },
+ "processes:task-pr-retire-transform-bgb85e": {
+  "plain_language_name": "Settle What the Relationship Still Owes",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. Each financial and contractual obligation is fulfilled or settled, and the evidence is produced as a record pack ready for confirmation.",
+  "business_purpose": "It exists because a relationship cannot close cleanly while either party still owes the other.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in supplier and partner management settles each outstanding obligation and records the settlement evidence."
+  }
+ },
+ "processes:task-pr-retire-confirm-by4z54": {
+  "plain_language_name": "Confirm the Obligations Are Settled",
+  "plain_language_description": "The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with the contract for settling what is owed. Once aligned, the completion confirmation is received by the relationship custodian and by the records custodian, and it is logged.",
+  "business_purpose": "It exists so both parties can rely on one formal signal that nothing is owed any more.",
+  "practical_context": "It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to record-keeping.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship and records custodians each acknowledge the settlements."
+  }
+ },
+ "processes:task-pr-retire-record-n6uaxd": {
+  "plain_language_name": "Retain the Settlement Evidence",
+  "plain_language_description": "After confirmation, the records custodian places the closure file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-closure records, protected against tampering. Where records pass the storage-limit horizon, a destruction attestation is recorded.",
+  "business_purpose": "It exists because proof of settlement is what ends an argument that might otherwise outlive the relationship.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the settlement evidence so any later claim meets a documented answer."
+  }
+ },
+ "processes:task-pr-retire-intake-p32trp": {
+  "plain_language_name": "Take In the Records-and-Rights Register",
+  "plain_language_description": "The resolution work opens with its case pack: the plan for the close-out, the inventory of obligations still outstanding, and the register of records and rights to be resolved. The intake custodian logs each item against the closure file so the disposition work starts accounted for.",
+  "business_purpose": "It exists because records and rights resolved from an incomplete register leave data alive that should have been erased.",
+  "practical_context": "It opens when the Retire-stage pack is handed over for the activity, and it closes with the manifest registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in customer relationship management logs the records, data, and granted rights into the closure case file."
+  }
+ },
+ "processes:task-pr-retire-verify-mydkzs": {
+  "plain_language_name": "Check the Disposition Plan Against the Storage Rules",
+  "plain_language_description": "Before the dispositions are decided, the verification custodian tests the pack against the schedule for how long records are kept, the contract for settling what is owed, and the rules limiting how long data may be stored. Any schedule or contract shortfall is named with its fix.",
+  "business_purpose": "It exists because keeping data past its lawful horizon, or erasing what must be kept, are both failures discovered too late.",
+  "practical_context": "It starts once the intake manifest is registered, and it ends with the report issued, deviations remediated, and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in customer relationship management tests the disposition pack against the storage-limitation rules."
+  }
+ },
+ "processes:task-pr-retire-transform-f94yhe": {
+  "plain_language_name": "Resolve What Is Kept and What Is Returned",
+  "plain_language_description": "With the certificate in hand, the processing custodian works the closure: what is owed is settled, the records and rights are resolved under the rules for how long data may be kept, and the close itself is executed. Each record, dataset, and granted right is given its disposition, and the whole is produced as a record pack ready for confirmation.",
+  "business_purpose": "It exists because an ending must say plainly what is kept, what is returned, and what is erased.",
+  "practical_context": "It opens when the verification certificate clears the pack, and it closes with the record pack produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in customer relationship management gives each record and right its disposition under the storage rules."
+  }
+ },
+ "processes:task-pr-retire-confirm-5jp479": {
+  "plain_language_name": "Confirm the Records and Rights Are Resolved",
+  "plain_language_description": "The confirmation custodian reconciles the record pack with the schedule governing how long records are kept and with the contract for settling what is owed. Once aligned, the completion confirmation is received by the relationship custodian and by the records custodian, and it is logged.",
+  "business_purpose": "It exists so the dispositions are formally accepted before the close is executed on top of them.",
+  "practical_context": "It starts once the record pack is produced, and it closes when both acknowledgements are logged and the file passes to record-keeping.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian completes the reconciliation, and the relationship and records custodians each acknowledge the dispositions."
+  }
+ },
+ "processes:task-pr-retire-record-wa6gpu": {
+  "plain_language_name": "Keep the Disposition Record for Its Horizon",
+  "plain_language_description": "After confirmation, the records custodian places the closure file - manifest, verification report, record pack, completion confirmation, and remediation notes - into retention under the schedule for relationship-closure records, protected against tampering. Where records pass the storage-limit horizon, a destruction attestation is recorded.",
+  "business_purpose": "It exists because the disposition decisions themselves must survive as long as the records they govern.",
+  "practical_context": "It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian archives the disposition record so every keep-or-erase call can be evidenced later."
+  }
+ },
+ "processes:task-pv-activate-intake-3hcw7s": {
+  "plain_language_name": "Open the Acceptance Case File",
+  "plain_language_description": "Acceptance work opens with the transitioned service arriving for formal sign-off. The intake custodian logs it against the acceptance case file so the sign-off starts from one accounted-for instance.",
+  "business_purpose": "It exists because acceptance granted on loose paperwork is acceptance that cannot be defended later.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the transitioned service into the acceptance case file."
+  }
+ },
+ "processes:task-pv-activate-verify-7mwqhd": {
+  "plain_language_name": "Check the Service Against the Acceptance Bar",
+  "plain_language_description": "Before sign-off is sought, the verification custodian tests the arriving service against what the activity requires of it. Anything that falls short is written down, either for rejection or for putting right.",
+  "business_purpose": "It exists so ownership signs off on a service that has actually been checked, not one that merely arrived.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the service instance and records every shortfall for remediation."
+  }
+ },
+ "processes:task-pv-activate-transform-uhga2s": {
+  "plain_language_name": "Assemble the Acceptance Evidence",
+  "plain_language_description": "With the checks done, the processing custodian does the acceptance work itself, producing the output the activity calls for in the form its definition specifies. Everything produced along the way is kept for the audit trail.",
+  "business_purpose": "It exists so the acceptance rests on assembled evidence rather than on a handshake.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority assembles the acceptance evidence into the output the sign-off needs."
+  }
+ },
+ "processes:task-pv-activate-confirm-c7r2ns": {
+  "plain_language_name": "Issue the Ownership Sign-Off",
+  "plain_language_description": "The confirmation custodian issues the formal sign-off, tells the parties downstream that the output is ready, and closes the reconciliation against what the activity promised. The sign-off is logged.",
+  "business_purpose": "It exists so the service is formally accepted by its owners before anyone relies on it.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority issues the ownership sign-off and notifies the downstream consumers."
+  }
+ },
+ "processes:task-pv-activate-record-jevchn": {
+  "plain_language_name": "Preserve the Acceptance Record",
+  "plain_language_description": "Once the sign-off is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles an evidence review would consult. The file stays readable for as long as the discipline requires.",
+  "business_purpose": "It exists so the acceptance evidence can be produced whenever anyone questions who signed off, and when.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the acceptance record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-activate-intake-wzghvv": {
+  "plain_language_name": "Receive the Cutover Package",
+  "plain_language_description": "The cutover opens with the readiness package arriving for activation. The intake custodian logs it against the case file so the switch-over starts from one accounted-for set.",
+  "business_purpose": "It exists because a cutover run from an unlogged package is a cutover that cannot be rolled back cleanly.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the readiness package into the cutover case file."
+  }
+ },
+ "processes:task-pv-activate-verify-at7dry": {
+  "plain_language_name": "Check the Package Before the Switch",
+  "plain_language_description": "Before the service is switched on, the verification custodian tests the arriving package against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before anything moves.",
+  "business_purpose": "It exists so the operational environment only receives a service that has passed its checks.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority clears the package for the switch and logs each shortfall found."
+  }
+ },
+ "processes:task-pv-activate-transform-q9fy25": {
+  "plain_language_name": "Switch the Proposition into Live Service",
+  "plain_language_description": "With the checks done, the processing custodian performs the activation, producing the transitioned service in the form the activity's definition specifies. The working papers from the switch are kept for the audit trail.",
+  "business_purpose": "It exists because a proposition only becomes a service when it actually runs in the operational environment.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority carries out the cutover and hands over the running service."
+  }
+ },
+ "processes:task-pv-activate-confirm-tgq55b": {
+  "plain_language_name": "Confirm the Cutover to the Downstream Teams",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, lets the downstream teams know the transitioned service is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the operations teams take the service on an evidenced handover, not a rumour.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority confirms the cutover and notifies the teams who will run the service."
+  }
+ },
+ "processes:task-pv-activate-record-whkmzs": {
+  "plain_language_name": "Keep the Cutover Audit Trail",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles. The trail of the switch stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the question of what was switched, and when, always has a documented answer.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the cutover record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-activate-intake-jhz56p": {
+  "plain_language_name": "Open the Readiness Case File",
+  "plain_language_description": "Readiness work opens with the authorized proposition and its threshold arriving for review. The intake custodian logs them against the case file so the preparation starts accounted for.",
+  "business_purpose": "It exists because readiness declared from memory is readiness that fails at the worst moment.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the authorized proposition and its threshold into the readiness case file."
+  }
+ },
+ "processes:task-pv-activate-verify-wn5hay": {
+  "plain_language_name": "Test the Proposition Against Its Threshold",
+  "plain_language_description": "Before the package is assembled, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before cutover is prepared.",
+  "business_purpose": "It exists because a cutover prepared on an unverified proposition moves risk, not service.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority tests the proposition against its readiness threshold and logs the result."
+  }
+ },
+ "processes:task-pv-activate-transform-f4cmea": {
+  "plain_language_name": "Assemble the Readiness Package",
+  "plain_language_description": "With the checks done, the processing custodian assembles the package: the criteria confirmed, the transition plan set, and the way back prepared if the cutover fails. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because a cutover without a ready package and a way back is a gamble with the service.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority assembles the confirmed criteria, transition plan, and rollback provisions."
+  }
+ },
+ "processes:task-pv-activate-confirm-bheamd": {
+  "plain_language_name": "Clear the Service for Cutover",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the confirmed package is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the cutover starts on a formal clearance, not on an informal nod.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority clears the readiness package and notifies the cutover teams."
+  }
+ },
+ "processes:task-pv-activate-record-gv76zq": {
+  "plain_language_name": "Preserve the Readiness Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The readiness story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the criteria the cutover was cleared on can always be produced again.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the readiness record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-activate-intake-svsr6x": {
+  "plain_language_name": "Open the Stabilization Case File",
+  "plain_language_description": "Early-life support opens with the newly accepted service arriving for watch. The intake custodian logs it against the case file so the stabilization starts from one accounted-for service.",
+  "business_purpose": "It exists because the first weeks of a live service are when small faults decide its reputation.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian of the proposition design authority logs the accepted service into the stabilization case file."
+  }
+ },
+ "processes:task-pv-activate-verify-fr9rbk": {
+  "plain_language_name": "Check the Accepted Service at Handover",
+  "plain_language_description": "Before the watch begins, the verification custodian tests the arriving service against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before monitoring starts.",
+  "business_purpose": "It exists because a watch started on an unchecked service watches the wrong things.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian of the proposition design authority checks the accepted service at handover and logs any shortfall."
+  }
+ },
+ "processes:task-pv-activate-transform-gc6vvy": {
+  "plain_language_name": "Watch the Service Through Its Early Days",
+  "plain_language_description": "With the checks done, the processing custodian runs the early-life work: monitoring the service and putting right the issues that surface until it can be relied upon. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the service earns the reliance placed on it before the transition support is withdrawn.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian of the proposition design authority monitors the young service and resolves the issues of its first weeks."
+  }
+ },
+ "processes:task-pv-activate-confirm-pkr7df": {
+  "plain_language_name": "Declare the Service Operationally Steady",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the stabilized service is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so reliance on the service begins with a formal declaration, not a hope.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian of the proposition design authority declares the service steady and notifies the teams who rely on it."
+  }
+ },
+ "processes:task-pv-activate-record-8n6f74": {
+  "plain_language_name": "Keep the Stabilization Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The early-life story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the faults of the first weeks, and their fixes, are never learned twice.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian of the proposition design authority files the stabilization record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-hgt4z4": {
+  "plain_language_name": "Open the Prototype Build File",
+  "plain_language_description": "The build opens with the experiment's requirements arriving for construction. The intake custodian logs them against the build file so the construction starts accounted for.",
+  "business_purpose": "It exists because a prototype built from an unlogged brief cannot be tied to the experiment it serves.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the experiment's requirements into the prototype build file."
+  }
+ },
+ "processes:task-pv-build-verify-ut7ugs": {
+  "plain_language_name": "Check the Build Brief Before Construction",
+  "plain_language_description": "Before anything is built, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before work begins.",
+  "business_purpose": "It exists because materials that fail their check produce a prototype that fails its experiment.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the build brief against the experiment's demands before construction starts."
+  }
+ },
+ "processes:task-pv-build-transform-c26z4n": {
+  "plain_language_name": "Build the Working Prototype",
+  "plain_language_description": "With the checks done, the processing custodian constructs the prototype, producing it in the form the activity's definition specifies. The working papers from the build are kept for the audit trail.",
+  "business_purpose": "It exists because the designed experiment needs a real, working prototype to test the hypothesis against.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management constructs the working prototype the designed experiment calls for."
+  }
+ },
+ "processes:task-pv-build-confirm-3j6u83": {
+  "plain_language_name": "Hand Over the Built Prototype",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the constructed prototype is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the experiment starts from a formally handed-over prototype, not a half-finished one.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management hands over the built prototype and notifies the testing teams."
+  }
+ },
+ "processes:task-pv-build-record-e9kveb": {
+  "plain_language_name": "Preserve the Prototype Build Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The build's story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the prototype's construction can always be traced back to its brief.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the build record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-c9narz": {
+  "plain_language_name": "Collect the Build Papers",
+  "plain_language_description": "The documentation work opens with the construction and instrumentation records arriving to be written up. The intake custodian logs them against the file so the write-up starts accounted for.",
+  "business_purpose": "It exists because results attributed to an unknown construction state attribute to nothing.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the construction and instrumentation records into the documentation file."
+  }
+ },
+ "processes:task-pv-build-verify-fhxb94": {
+  "plain_language_name": "Check the Build Papers Before the Write-Up",
+  "plain_language_description": "Before the documentation is produced, the verification custodian tests the arriving records against what the activity requires. Gaps are written down, either for rejection or for putting right, before the write-up begins.",
+  "business_purpose": "It exists because documentation written from incomplete records documents the wrong thing.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management checks the build papers for completeness before the write-up starts."
+  }
+ },
+ "processes:task-pv-build-transform-b8bb5b": {
+  "plain_language_name": "Write Up the Construction State",
+  "plain_language_description": "With the checks done, the processing custodian produces the build documentation in the form the activity's definition specifies, so results can be attributed to a known construction state. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so experiment results point to a documented build rather than to a memory.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management writes up the construction state the results will be attributed to."
+  }
+ },
+ "processes:task-pv-build-confirm-yne58r": {
+  "plain_language_name": "Confirm the Build Documentation Is Complete",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the documentation is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the experiment teams work from documentation formally accepted as complete.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the documentation and notifies the experiment teams."
+  }
+ },
+ "processes:task-pv-build-record-f2waff": {
+  "plain_language_name": "Keep the Build Documentation on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The write-up stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the attribution of every result has its documentary footing on file.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the build documentation at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-r4xqka": {
+  "plain_language_name": "Receive the Instrumentation Pack",
+  "plain_language_description": "The instrumentation work opens with the prototype and its measurement requirements arriving. The intake custodian logs them against the file so the instrumentation starts accounted for.",
+  "business_purpose": "It exists because a measurement nobody planned for is a result nobody will have.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the prototype and the success criteria into the instrumentation file."
+  }
+ },
+ "processes:task-pv-build-verify-tjcmcm": {
+  "plain_language_name": "Check the Instrumentation Against the Success Criteria",
+  "plain_language_description": "Before the instruments are fitted, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before work proceeds.",
+  "business_purpose": "It exists because instruments fitted to the wrong criteria measure the wrong experiment.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the instrumentation plan against the success criteria before fitting begins."
+  }
+ },
+ "processes:task-pv-build-transform-gr7hfy": {
+  "plain_language_name": "Fit the Prototype with Its Instruments",
+  "plain_language_description": "With the checks done, the processing custodian instruments the prototype so it captures the measurements the success criteria require, producing the instrumented form the activity's definition specifies. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists because an unmeasured prototype can run an experiment and learn nothing.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management fits the prototype with the instruments its success criteria require."
+  }
+ },
+ "processes:task-pv-build-confirm-8pmrtn": {
+  "plain_language_name": "Confirm the Instrumented Prototype",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the instrumented prototype is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the experiment proceeds on a prototype formally accepted as measurable.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the instrumented prototype and notifies the readiness check."
+  }
+ },
+ "processes:task-pv-build-record-bk9zj5": {
+  "plain_language_name": "Preserve the Instrumentation Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The instrumentation story stays readable for the discipline's duration.",
+  "business_purpose": "It exists so the measurement setup behind every reading can be reconstructed on demand.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the instrumentation record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-intake-a84tht": {
+  "plain_language_name": "Open the Readiness Check File",
+  "plain_language_description": "The readiness check opens with the instrumented prototype and the experiment's demands arriving. The intake custodian logs them against the file so the verification starts accounted for.",
+  "business_purpose": "It exists because a test launched before the prototype is ready burns the timebox on fixes.",
+  "practical_context": "It opens when the activity's input arrives and the owner is told it has landed, and it closes with the intake registered and custody passed to the verification custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "An intake custodian in product management logs the instrumented prototype and experiment design into the readiness check file."
+  }
+ },
+ "processes:task-pv-build-verify-tj2d89": {
+  "plain_language_name": "Test the Prototype Against the Experiment's Demands",
+  "plain_language_description": "Before the verdict is given, the verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right, before the readiness call.",
+  "business_purpose": "It exists because readiness assumed rather than tested is discovered at the worst possible hour.",
+  "practical_context": "It starts once the intake is on file, and it ends with the checks recorded and custody passed to the processing custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A verification custodian in product management tests the prototype against the experiment design before the readiness call."
+  }
+ },
+ "processes:task-pv-build-transform-87j5sq": {
+  "plain_language_name": "Make the Readiness Determination",
+  "plain_language_description": "With the checks done, the processing custodian produces the readiness determination in the form the activity's definition specifies, answering whether the prototype can test the hypothesis within the timebox. The working papers are kept for the audit trail.",
+  "business_purpose": "It exists so the experiment starts on a stated verdict, not on optimism.",
+  "practical_context": "It opens when the checks clear the input for work, and it closes with the output produced and custody passed to the confirmation custodian.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A processing custodian in product management makes the readiness call and states whether the timebox can hold the test."
+  }
+ },
+ "processes:task-pv-build-confirm-jxan9v": {
+  "plain_language_name": "Confirm the Prototype's Readiness Verdict",
+  "plain_language_description": "The confirmation custodian issues the completion confirmation, tells the downstream teams the determination is available, and closes the reconciliation against what the activity promised. The confirmation is logged.",
+  "business_purpose": "It exists so the go or no-go for testing rests on a formally issued verdict.",
+  "practical_context": "It starts once the output is available, and it closes when the acknowledgement is logged and the records custodian receives the file.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A confirmation custodian in product management confirms the readiness verdict and notifies the experiment teams."
+  }
+ },
+ "processes:task-pv-build-record-2cukjp": {
+  "plain_language_name": "Keep the Readiness Determination on File",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles for the evidence review. The verdict and its grounds stay readable for the discipline's duration.",
+  "business_purpose": "It exists so the readiness call, and why it was made, can be revisited when results surprise.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the determination record at its retention tier and sets the retrieval handles."
+  }
+ },
+ "processes:task-pv-build-record-t8cd38": {
+  "plain_language_name": "File the Integration Record",
+  "plain_language_description": "Once the confirmation is in, the records custodian preserves the audit record at its required retention tier and sets the retrieval handles an evidence review would consult. The integration's trail stays readable for as long as the discipline requires.",
+  "business_purpose": "It exists so the service capability's route into the delivery model can be traced when the channels change.",
+  "practical_context": "It opens when the confirmation is issued and retention may begin, and it closes with the audit record preserved and retrieval handles set.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A records custodian in product management files the integration record so a channel redesign can trace the service's wiring."
+  }
+ }
+}

@@ -72,3 +72,18 @@ outputs:
   description: 'Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Test the Arriving Signals and Evidence Before Building the Case'
+plain_language_description: 'Before any case for change is assembled, the arriving signals, performance evidence and findings are put to the test. The verification custodian tests the arriving material against what the activity requires. Shortfalls are written down, either for rejection or for putting right.'
+business_purpose: 'It exists because a case for changing direction built on a misread signal or a stale figure would steer the whole adaptation on false ground.'
+practical_context: 'It opens once the intake is registered and the arriving material can be challenged, and it closes with its shortfalls written down for rejection or putting right.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian in the strategy function checks each arriving signal and performance figure against what the consolidation requires, and writes up an out-of-date market reading as a shortfall to be put right.'

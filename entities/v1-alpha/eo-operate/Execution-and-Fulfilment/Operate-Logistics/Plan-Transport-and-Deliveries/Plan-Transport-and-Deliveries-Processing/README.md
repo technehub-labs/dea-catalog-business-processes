@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Plan Transport and Deliveries Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Plan Transport and Deliveries** (`processes:activity-eo-operate-zdw2by`). Its canonical ID is `processes:task-eo-operate-transform-pepqj7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian does the planning itself: the demand is routed and scheduled across the network's capacity into the shipment plan, set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because demand and capacity only meet when somebody routes them together - planning is where the network earns its keep.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be planned from, and it ends with the shipment plan produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management routes and schedules the demand across the network's capacity, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Turn Delivery Demand into the Routed Transport Plan |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian does the planning itself: the demand is routed and scheduled across … |
+| `business_purpose` | string | no | It exists because demand and capacity only meet when somebody routes them together - planning is where the network … |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be planned from, and it ends with the shipment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

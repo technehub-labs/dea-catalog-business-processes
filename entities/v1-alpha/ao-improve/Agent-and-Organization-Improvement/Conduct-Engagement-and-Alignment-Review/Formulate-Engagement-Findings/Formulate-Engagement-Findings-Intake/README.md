@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 This is a **Task** (level L4), named **Formulate Engagement Findings Intake**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Formulate Engagement Findings** (`processes:activity-ao-improve-zzszrd`). Its canonical ID is `processes:task-ao-improve-intake-ctd3cf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Findings work opens when the agent alignment assessment is handed over as the judgement the findings will be drawn from. The intake custodian accepts it, registers the handover with audit identifiers, and starts the formulation from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so findings are drawn from a registered assessment rather than from half-remembered impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the alignment assessment is presented for the findings work, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the alignment assessment as the findings baseline, with audit references, and opens the formulation work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Alignment Assessment for Findings |
+| `plain_language_description` | string | no | Findings work opens when the agent alignment assessment is handed over as the judgement the findings will be drawn … |
+| `business_purpose` | string | no | It exists so findings are drawn from a registered assessment rather than from half-remembered impressions. |
+| `practical_context` | string | no | It opens when the alignment assessment is presented for the findings work, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

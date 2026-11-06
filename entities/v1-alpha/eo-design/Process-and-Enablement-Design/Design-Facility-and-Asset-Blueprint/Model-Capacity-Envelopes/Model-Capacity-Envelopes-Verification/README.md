@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-ver
 
 This is a **Task** (level L4), named **Model Capacity Envelopes Verification**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Model Capacity Envelopes** (`processes:activity-eo-design-8pd74t`). Its canonical ID is `processes:task-eo-design-verify-yd7x8b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any capacity is modelled, the verification custodian checks the inputs against what modelling requires - that the layouts and equipment are the designed sets and the demand model is the current one. Defects are logged for rejection or repair before the modelling begins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so capacity is never modelled from superseded layouts or a stale demand picture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the demand model a season behind and logs the defect before any capacity is modelled.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Inputs Before Modelling the Capacity |
+| `plain_language_description` | string | no | Before any capacity is modelled, the verification custodian checks the inputs against what modelling requires - that … |
+| `business_purpose` | string | no | It exists so capacity is never modelled from superseded layouts or a stale demand picture. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

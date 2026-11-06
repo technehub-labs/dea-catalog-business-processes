@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-in
 
 This is a **Task** (level L4), named **Maintain Account Integrity Intake**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Maintain Account Integrity** (`processes:activity-fa-operate-kzqaqw`). Its canonical ID is `processes:task-fa-operate-intake-9vz8dw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Integrity work opens when the designed chart of accounts is handed over as the standard the live structure will be watched against. The intake custodian accepts it, registers it with audit identifiers, and starts the watching from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the structure is watched against a registered standard rather than against drift.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the designed chart is presented for the watch, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian in the compliance function registers the designed chart as the watch baseline, with audit references.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Designed Chart for the Watch |
+| `plain_language_description` | string | no | Integrity work opens when the designed chart of accounts is handed over as the standard the live structure will be … |
+| `business_purpose` | string | no | It exists so the structure is watched against a registered standard rather than against drift. |
+| `practical_context` | string | no | It opens when the designed chart is presented for the watch, with the activity owner alerted, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

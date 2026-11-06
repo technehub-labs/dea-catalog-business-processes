@@ -72,3 +72,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Confirm the Embedded Controls Design'
+plain_language_description: 'When the safeguards stand woven, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The consolidation step that follows learns the structure is safeguarded and can be committed.'
+business_purpose: 'It exists so the structure is committed only once its safeguards are confirmed as woven.'
+practical_context: 'It begins once preparation is complete and the embedded design awaits its consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity''s promise.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reconciles the woven safeguards against the activity''s intended outcome and issues the confirmation the consolidation step needs.'

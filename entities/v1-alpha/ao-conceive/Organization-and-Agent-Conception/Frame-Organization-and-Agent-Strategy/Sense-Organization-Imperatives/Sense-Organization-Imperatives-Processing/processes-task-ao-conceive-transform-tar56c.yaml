@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Read the Imperatives Driving the Agentive Fabric'
+plain_language_description: 'With the inputs verified, the processing custodian does the sensing itself: the imperatives driving a new or reframed agentive fabric - substrate shifts among them - are read out and set down as the sensed imperatives, in the form the activity defines. Working papers are preserved.'
+business_purpose: 'It exists because strategy work can only answer imperatives somebody has actually read and written down.'
+practical_context: 'It starts once checking is complete and the verified inputs are ready to be read from, and it ends with the sensed imperatives produced and the working papers kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function reads the imperatives behind the reframe - substrate shifts included - and sets down the sensed list.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 This is a **Task** (level L4), named **Define Continuing-Supervisor Notification Path Processing**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Define Continuing-Supervisor Notification Path** (`processes:activity-ao-design-v8r5n2`). Its canonical ID is `processes:task-ao-design-transform-ftvjry`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the inputs verified, the processing custodian makes the definition itself: for each regulator-licensed role, who the continuing supervisor is, how often notifications go out, what they carry, and how escalation runs are worked out and set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a licensed role without a defined path to its supervisor cannot be supervised in operation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified inputs are ready to be defined from, and it ends with the defined notification paths produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in the organization design authority defines each licensed role's supervisor, cadence, and escalation route, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -68,6 +68,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Notification Path for Each Licensed Role |
+| `plain_language_description` | string | no | With the inputs verified, the processing custodian makes the definition itself: for each regulator-licensed role, who … |
+| `business_purpose` | string | no | It exists because a licensed role without a defined path to its supervisor cannot be supervised in operation. |
+| `practical_context` | string | no | It starts once checking is complete and the verified inputs are ready to be defined from, and it ends with the defined … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

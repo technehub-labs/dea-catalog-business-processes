@@ -73,3 +73,18 @@ outputs:
   description: Closure case file retained for Formulate Demand Thesis under the records retention schedule with cryptographic integrity protection; cryptographic destruction …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'File the Demand Thesis Package'
+plain_language_description: 'Once confirmed, the records custodian places the conception file - manifest, verification report, thesis package, completion confirmation, and remediation notes - into retention under the schedule for segment-strategy records, protected against tampering. Where storage limits apply, a destruction attestation is recorded.'
+business_purpose: 'It exists so the demand thesis and its evidence trail remain consultable when the model is retested.'
+practical_context: 'It opens when the completion confirmation is issued, and it closes with the file retained at its tier and any destruction attestation recorded.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian archives the demand thesis file so the next retest can compare against the original.'

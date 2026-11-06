@@ -71,3 +71,18 @@ outputs:
   description: Bounded-work artefact produced for Assemble Assurance Evidence conforming to the Operate schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Gather What the Mandate Needs into One Pack'
+plain_language_description: 'With the certificate in hand, the processing custodian executes the operating for the assembly: what the assurance cycle or audit mandate requires is gathered into one review-ready evidence pack, and the outcomes pack is produced for confirmation.'
+business_purpose: 'It exists because evidence scattered across systems is evidence the review cannot use - the gathering is what makes it answerable.'
+practical_context: 'It opens once the verification certificate is in hand and the bounded operating may be executed, and it closes with the artefact produced and custody passed onward to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the compliance function gathers what the assurance cycle requires into one review-ready pack, keeping the working papers.'

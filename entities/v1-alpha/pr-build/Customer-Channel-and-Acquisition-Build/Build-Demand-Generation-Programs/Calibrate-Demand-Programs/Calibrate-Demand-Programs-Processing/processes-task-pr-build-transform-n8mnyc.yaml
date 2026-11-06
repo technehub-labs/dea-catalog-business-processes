@@ -73,3 +73,18 @@ outputs:
   description: Bounded-work artefact produced for Calibrate Demand Programs conforming to the Build schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Tune the Programmes Against Early Demand'
+plain_language_description: 'With the report in hand, the processing custodian tunes: the integration surface for the channels is adjusted, the programme assets are re-instantiated where the response demands, and the attribution model is recalibrated against the early signal. The result is captured as an inventory of build-ready assets.'
+business_purpose: 'It exists so the programmes reach steady state tuned to real demand rather than to the assumptions in the original brief.'
+practical_context: 'It opens when the verification report clears the build, and it closes with the asset inventory produced and custody passed to the confirmation custodian.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in the strategy function recalibrates the programmes against the first demand signals.'

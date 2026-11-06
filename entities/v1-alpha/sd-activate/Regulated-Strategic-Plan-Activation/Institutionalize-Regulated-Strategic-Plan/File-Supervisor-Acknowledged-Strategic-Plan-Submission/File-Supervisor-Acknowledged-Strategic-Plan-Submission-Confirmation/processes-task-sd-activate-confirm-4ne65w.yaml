@@ -74,3 +74,18 @@ outputs:
   description: 'Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Report the Filed Submission to the Board and the Downstream Teams'
+plain_language_description: 'The confirming opens once the submission is filed. The confirmation custodian tells the downstream teams the filed submission is available, and closes the reconciliation against what the activity promised for the filing.'
+business_purpose: 'It exists so the board and the review work both proceed from a confirmed lodgement rather than from a courier''s say-so.'
+practical_context: 'It opens when the filed submission is ready to hand on, and it closes with the confirmation issued and the filing''s promises checked off against what was delivered.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian in the strategy function reports the completed lodgement to the governing board and the review teams, reconciles the receipt against what the filing promised, and issues the confirmation.'

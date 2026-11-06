@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-build-tran
 
 This is a **Task** (level L4), named **Register Acquired Assets Processing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Register Acquired Assets** (`processes:activity-eo-build-6335m6`). Its canonical ID is `processes:task-eo-build-transform-td8k2u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the evidence verified, the processing custodian does the registration itself: each acquired, installed, and commissioned asset is entered into the enterprise asset record, and the registered entries are set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because assets nobody recorded are assets nobody can account for - the entry is what makes each asset governable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified evidence is ready to be entered from, and it ends with the registered entries produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management enters each commissioned asset into the enterprise asset record, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Enter Every Acquired Asset into the Asset Record |
+| `plain_language_description` | string | no | With the evidence verified, the processing custodian does the registration itself: each acquired, installed, and … |
+| `business_purpose` | string | no | It exists because assets nobody recorded are assets nobody can account for - the entry is what makes each asset … |
+| `practical_context` | string | no | It starts once checking is complete and the verified evidence is ready to be entered from, and it ends with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

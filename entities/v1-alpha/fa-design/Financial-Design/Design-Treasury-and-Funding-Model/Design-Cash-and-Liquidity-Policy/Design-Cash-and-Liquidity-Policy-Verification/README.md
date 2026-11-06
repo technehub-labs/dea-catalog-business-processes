@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-design-ver
 
 This is a **Task** (level L4), named **Design Cash and Liquidity Policy Verification**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Cash and Liquidity Policy** (`processes:activity-fa-design-tsdptr`). Its canonical ID is `processes:task-fa-design-verify-jfenne`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is drawn, the verification custodian checks the review and posture against what policy work requires - that the review is current and the posture is stated concretely. Defects are logged for rejection or repair before the policy is drawn.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cash is never governed from a stale review or a vague posture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes with them verified or their defects logged for rejection or remediation.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: verification custodian)_
+*Example (carried out by a person):* A verification custodian finds the funding posture stated as an aspiration and logs the defect before the policy is drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Check the Posture Before Writing the Policy |
+| `plain_language_description` | string | no | Before anything is drawn, the verification custodian checks the review and posture against what policy work requires - … |
+| `business_purpose` | string | no | It exists so cash is never governed from a stale review or a vague posture. |
+| `practical_context` | string | no | It runs once the intake is registered and the inputs can be compared with the activity's requirements, and it finishes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

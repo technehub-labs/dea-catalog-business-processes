@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-design-int
 
 This is a **Task** (level L4), named **Define Deployment Topology Intake**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Define Deployment Topology** (`processes:activity-eo-design-8uvwq5`). Its canonical ID is `processes:task-eo-design-intake-rkb3ym`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Topology work opens when the component specification and the integration patterns are handed over together as the inputs the deployment topology will be defined from. The intake custodian accepts both, registers them with audit identifiers, and starts the definition from a recorded baseline.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the topology is defined from the registered specification and patterns rather than from infrastructure habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the specification and patterns are presented for the definition, with the activity owner alerted, and it closes with the intake registered and the later steps cleared to proceed.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: intake custodian)_
+*Example (carried out by a person):* An intake custodian registers the specification and patterns as the topology baseline, with audit references, and opens the definition work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive the Specification and Patterns for Topology Work |
+| `plain_language_description` | string | no | Topology work opens when the component specification and the integration patterns are handed over together as the … |
+| `business_purpose` | string | no | It exists so the topology is defined from the registered specification and patterns rather than from infrastructure … |
+| `practical_context` | string | no | It opens when the specification and patterns are presented for the definition, with the activity owner alerted, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

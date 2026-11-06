@@ -72,3 +72,18 @@ outputs:
   description: 'Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Bring the Catalogue Entries Up to Date'
+plain_language_description: 'With the changes verified, the entries themselves are updated. The processing custodian works the baselines and lifecycle states into the entries for products in active operation, producing the current catalogue entries in the form the activity''s definition specifies. The working papers are kept for the audit trail.'
+business_purpose: 'It exists because buyers and channels rely on the entries reflecting each active product as it actually is.'
+practical_context: 'It opens when the verified changes are ready to be applied, and it closes with the entries brought up to date in the agreed form and the workings retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian in product management updates the catalogue entries with the verified baselines and states, so each product in active operation is described as it currently stands, keeping the workings for the audit trail.'

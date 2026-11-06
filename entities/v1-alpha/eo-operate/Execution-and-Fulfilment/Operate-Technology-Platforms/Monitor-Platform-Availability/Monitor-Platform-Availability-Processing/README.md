@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-operate-tr
 
 This is a **Task** (level L4), named **Monitor Platform Availability Processing**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Monitor Platform Availability** (`processes:activity-eo-operate-9nhpgy`). Its canonical ID is `processes:task-eo-operate-transform-b8yje4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the signals verified, the processing custodian does the watching itself: each platform's health is read against its agreed target across the service window, and the availability picture is set down in the form the activity defines. Working papers are preserved for audit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because an outage announces itself late - the watching is what catches the slide while there is still time to act.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts once checking is complete and the verified signals are ready to be watched, and it ends with the availability picture produced and the working papers kept.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: processing custodian)_
+*Example (carried out by a person):* A processing custodian in product management reads each platform's pulse against its target across the window, keeping the working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Watch Each Platform's Pulse Across the Window |
+| `plain_language_description` | string | no | With the signals verified, the processing custodian does the watching itself: each platform's health is read against … |
+| `business_purpose` | string | no | It exists because an outage announces itself late - the watching is what catches the slide while there is still time to … |
+| `practical_context` | string | no | It starts once checking is complete and the verified signals are ready to be watched, and it ends with the availability … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

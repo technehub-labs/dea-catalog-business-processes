@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-eo-improve-co
 
 This is a **Task** (level L4), named **Design Route and Network Changes Confirmation**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Design Route and Network Changes** (`processes:activity-eo-improve-nrsv8w`). Its canonical ID is `processes:task-eo-improve-confirm-v3n2qu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the designs stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The commitment step that follows learns the changes are drawn and ready to be adopted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so changes are adopted only over designs confirmed as drawn.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the change designs await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the change designs against the activity's intended outcome and issues the confirmation the commitment step needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Route and Network Change Designs |
+| `plain_language_description` | string | no | When the designs stand drawn, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so changes are adopted only over designs confirmed as drawn. |
+| `practical_context` | string | no | It begins once preparation is complete and the change designs await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

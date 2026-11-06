@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-co
 
 This is a **Task** (level L4), named **Prepare Tax Returns Confirmation**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Prepare Tax Returns** (`processes:activity-fa-operate-9g2b8x`). Its canonical ID is `processes:task-fa-operate-confirm-3zxq59`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the returns stand prepared, the confirmation custodian reconciles them against the outcome the activity set out to reach and issues the confirmation. The payment scheduling that follows learns what is owed and can be set against the calendar.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so payments are scheduled only over returns confirmed as prepared.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins once preparation is complete and the prepared returns await their consumers, and it closes with the confirmation issued, consumers informed, and the result reconciled to the activity's promise.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian reconciles the prepared returns against the activity's intended outcome and issues the confirmation the payment scheduling needs.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm the Prepared Tax Returns |
+| `plain_language_description` | string | no | When the returns stand prepared, the confirmation custodian reconciles them against the outcome the activity set out to … |
+| `business_purpose` | string | no | It exists so payments are scheduled only over returns confirmed as prepared. |
+| `practical_context` | string | no | It begins once preparation is complete and the prepared returns await their consumers, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

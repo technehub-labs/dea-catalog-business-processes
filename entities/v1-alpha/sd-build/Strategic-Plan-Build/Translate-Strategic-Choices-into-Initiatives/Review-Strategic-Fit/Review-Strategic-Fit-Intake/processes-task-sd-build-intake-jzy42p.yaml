@@ -72,3 +72,18 @@ outputs:
   description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-235 Wave C (2026-11-05): plain-language fields authored from the
+# task's own documented content (name, definition, trigger, outcome,
+# responsibility; CR-BP-230 S2; no invention; MECE against the formal
+# definition). Rendered in README Part I by the CR-BP-231 profile v3
+# generator.
+
+plain_language_name: 'Take In the Drafted Initiatives with the Plan and Direction'
+plain_language_description: 'The fit review opens as its material arrives: the drafted initiatives together with the strategic plan and the chosen direction they must fit. The intake custodian logs them against the review file so the reviewing starts accounted for.'
+business_purpose: 'It exists so the fit examination runs over logged drafts and references rather than over half-remembered aims.'
+practical_context: 'It opens when the drafted initiatives and their references are presented for review, with the activity''s owner told that it has landed, and it closes with the intake registered and the later phases free to proceed.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian in the strategy function logs the drafted initiatives alongside the strategic plan and chosen direction into the review file, so the fit review starts accounted for.'

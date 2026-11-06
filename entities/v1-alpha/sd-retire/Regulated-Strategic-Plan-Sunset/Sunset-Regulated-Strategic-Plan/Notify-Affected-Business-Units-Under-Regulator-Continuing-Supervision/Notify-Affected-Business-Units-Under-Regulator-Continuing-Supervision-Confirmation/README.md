@@ -8,19 +8,19 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-con
 
 This is a **Task** (level L4), named **Notify Affected Business Units Under Regulator Continuing Supervision Confirmation**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Notify Affected Business Units Under Regulator Continuing Supervision** (`processes:activity-sd-retire-8yt6ar`). Its canonical ID is `processes:task-sd-retire-confirm-89c28y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The notices have gone and the acknowledgements must now travel. The confirmation custodian tells the downstream teams the notified business units are available, and closes the reconciliation against what the activity promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because the sunset cannot be declared done until the prescribed acknowledgements are formally closed against the plan record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the notification work is finished and the acknowledgements are ready to travel, and it closes with the downstream teams told and the reconciliation against the activity's promise closed out.
 
 ## 4. Worked Example (provided)
 
-_(worked example to be authored in the two-layer documentation waves, CR-BP-233..236; the task's `responsibility` field reads: confirmation custodian)_
+*Example (carried out by a person):* A confirmation custodian in the strategy function tells the sunset team the prescribed acknowledgements are in and the notification leg is closed, reconciling it against what the notification promised.
 
 ## 5. Header and Identity Table (generated)
 
@@ -62,6 +62,11 @@ _(worked example to be authored in the two-layer documentation waves, CR-BP-233.
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Close the Sunset's Notification Leg with the Prescribed Acknowledgements |
+| `plain_language_description` | string | no | The notices have gone and the acknowledgements must now travel. The confirmation custodian tells the downstream teams … |
+| `business_purpose` | string | no | It exists because the sunset cannot be declared done until the prescribed acknowledgements are formally closed against … |
+| `practical_context` | string | no | It opens when the notification work is finished and the acknowledgements are ready to travel, and it closes with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)
