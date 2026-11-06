@@ -1,6 +1,6 @@
 # CR-BP-232: Human Readability Gate (HUM-001..007) + Provided-Layer Naming Principles
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #228; status backfilled post-merge per the immutability rule)
 **Layer**: Cross-cutting (catalog documentation layer)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05

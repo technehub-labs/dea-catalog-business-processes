@@ -1,6 +1,6 @@
 # CR-BP-235: Wave C — L4 Task Plain-Language Authoring (2,900 Records)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #231; status backfilled post-merge per the immutability rule)
 **Layer**: Process Catalog (operational documentation completions)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05

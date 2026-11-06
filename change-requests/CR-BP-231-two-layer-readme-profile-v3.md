@@ -1,6 +1,6 @@
 # CR-BP-231: Two-Layer README Profile v3 (Part I Provided / Part II Generated)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #228; status backfilled post-merge per the immutability rule)
 **Layer**: Cross-cutting (catalog documentation layer)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05

@@ -1,6 +1,6 @@
 # CR-BP-234: Wave B — L3 Activity Plain-Language Authoring (580 Records)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #230; status backfilled post-merge per the immutability rule)
 **Layer**: Process Catalog (operational documentation completions)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05
