@@ -1,6 +1,6 @@
 # CR-BP-233: Wave A — L2 Business Process Plain-Language Authoring (145 Records)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #229; status backfilled post-merge per the immutability rule)
 **Layer**: Process Catalog (operational documentation completions)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05

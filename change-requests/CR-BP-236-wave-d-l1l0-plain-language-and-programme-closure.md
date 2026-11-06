@@ -1,6 +1,6 @@
 # CR-BP-236: Wave D — L1/L0 Plain-Language Authoring (98 Records) + Two-Layer Programme Closure and HUM Blocking Flip
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #232; status backfilled post-merge per the immutability rule)
 **Layer**: Process Catalog (operational documentation completions) + Cross-cutting (gate posture)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-05
