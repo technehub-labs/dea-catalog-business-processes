@@ -6,6 +6,8 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+- Release cut executed: `v0.5.0` tag + GitHub Release live (`https://github.com/technehub-labs/dea-catalog-business-processes/releases/tag/v0.5.0`). Procedure deviation recorded in the CR-BP-30h post-cut note: the tag is annotated, not GPG-signed (no signing key on the cut machine); signed-tag remediation deferred to the next release cycle.
+
 
 ## [v0.5.0] - 2026-11-06
 

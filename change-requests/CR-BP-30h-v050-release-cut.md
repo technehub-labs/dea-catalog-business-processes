@@ -30,3 +30,9 @@ v0.5.0 is the first versioned snapshot since the CR-BP-116 release-history reset
 1. Carrier PR green on all 3 workflows; the four procedure step-3 checks exit 0.
 2. Post-merge: GPG-signed tag `v0.5.0` on the carrier merge SHA, signature verified, tag pushed, GitHub Release created with `release-notes/v0.5.0.md`.
 3. `CITATION.cff` reports 0.5.0 / 2026-11-06; the prior-cut history table carries the v0.5.0 row.
+
+---
+
+## Post-cut note (2026-11-07)
+
+Cut executed: annotated tag `v0.5.0` at the carrier merge SHA `3fdddb8c151fa0b1c1d15d08fd06b5c9359e71c0`, pushed 2026-11-07; GitHub Release created at `https://github.com/technehub-labs/dea-catalog-business-processes/releases/tag/v0.5.0` with `release-notes/v0.5.0.md`. **Deviation from procedure step 4**: the tag is annotated, not GPG-signed — no GPG binary, keyring, or signing key existed on the cut machine (the referenced signing-setup notes were also absent). The pre-release CI verification contract (step 2: all 3 workflows SUCCESS on the tagged SHA) was satisfied before tagging. Remediation: GPG setup + a signed follow-up tag on a future cut (or re-tag policy decision) is deferred to the next release cycle's carrier CR.

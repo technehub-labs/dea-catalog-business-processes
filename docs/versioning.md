@@ -56,7 +56,7 @@ retrospective, link it.
 | version | date | cut by CR | commit SHA | gates (blocking+advisory CONFORMANT) | post-mortem |
 | ------- | ---- | --------- | ---------- | ------------------------------------ | ----------- |
 | _empty post-reset 2026-10-13_ | | | | | |
-| v0.5.0 | 2026-11-06 | CR-BP-30h | (this PR's merge commit) | 31+0 blocking; advisory per the conformance report | — |
+| v0.5.0 | 2026-11-06 | CR-BP-30h | 3fdddb8c151fa0b1c1d15d08fd06b5c9359e71c0 | 31+0 blocking; advisory per the conformance report | [CR-BP-30h post-cut note](../change-requests/CR-BP-30h-v050-release-cut.md) |
 
 The v0.x withdrawals of CR-BP-116 deliberately do not appear here.
 This table records *successful* cuts, not withdrawals; the recovery
