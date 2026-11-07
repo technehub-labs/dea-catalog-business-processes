@@ -1,6 +1,6 @@
 {
   "manifest_schema_version": 1,
-  "generated_at": "2026-11-06",
+  "generated_at": "2026-11-07",
   "generator": "scripts/validate_readme_structure.py",
   "parent_cr": "CR-BP-94-EXT-04",
   "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
