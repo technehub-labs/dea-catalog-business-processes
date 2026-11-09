@@ -7,7 +7,7 @@ name: validate
 #   2. CATALOG.yaml validation (gate)
 #   3. Per-entity schema validation (legacy; uses local schemas/)
 #   4. The seven existing catalog-specific validators
-#   5. Cross-repo conformance suite (CST-001..CST-016)
+#   5. Cross-repo conformance suite (CST-001..CST-017)
 #
 # The schema-validation phase-2 early-exit is preserved for catalogs
 # in deferred-population mode (empty entities/); once Phase 2 entries
@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: technehub-labs/dea-metaframework
-          ref: v2.6.0
+          ref: v2.7.0
           path: .metaframework
 
       - name: Install regenerator + gate + schema (prefer vendored copies)
