@@ -14,3 +14,4 @@ __pycache__/
 # The generator and its tests are tracked; the rendered output is derived
 # state and is reproducible from the live catalogue at any revision.
 /out/
+.DS_Store
