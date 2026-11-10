@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-237: Metaframework Toolchain Pin v2.6.0 -> v2.7.0 (CST-017 Adoption)
+
+The CI checkout of `dea-metaframework` moves v2.6.0 -> v2.7.0, so the cross-repo conformance suite step (the final CI step, `--strict`) picks up **CST-017**: no directory in this repo may hold 800 or more tracked entries (entity-storage-layout §4 shard trigger; GitHub truncates listings at 1,000). This repo is the first adopter of the new invariant; its worst directory today is `change-requests/` at 194 flat CR files (a watch-tier entry for the org-level weekly audit, dea-governance CR-019; R5), far under the trigger. Header comment updated to CST-001..CST-017. No record, gate, or layout changes; the suite passes unchanged (verified locally: CST-001..CST-017 all pass at the v2.7.0 suite, worst directory 194).
+
 - Release cut executed: `v0.5.0` tag + GitHub Release live (`https://github.com/technehub-labs/dea-catalog-business-processes/releases/tag/v0.5.0`). Procedure deviation recorded in the CR-BP-30h post-cut note: the tag is annotated, not GPG-signed (no signing key on the cut machine); signed-tag remediation deferred to the next release cycle.
 
 
