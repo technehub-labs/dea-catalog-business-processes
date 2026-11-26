@@ -77,7 +77,7 @@ class TestL2BackfillEXT19(unittest.TestCase):
         # checks for >=10 chars. Check that findings are present for
         # records without descriptions.
         l2_003 = data["summary"]["by_rule"].get("L2-003", 0)
-        # The 146 L2 BPs all have a description >= 10 chars, so L2-003
+        # The 145 canonical L2 BPs all have a description >= 10 chars, so L2-003
         # should be 0.
         self.assertEqual(l2_003, 0, f"L2-003 findings: {l2_003} (expected 0)")
 
