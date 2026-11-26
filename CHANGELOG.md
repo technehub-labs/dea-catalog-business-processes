@@ -26,6 +26,10 @@ Reconciles the EXT-24 lifecycle register to 3,723 canonical identities, the owne
 
 Defines a single publication model and schema for the print-ready ECF poster, offline self-contained rich HTML catalogue, JSON export and enriched Excel workbook. Establishes shared source/provenance, field fidelity, cross-format reconciliation and release-package acceptance criteria. Implementation is staged after the CR-BP-238 inventory baseline is established.
 
+### CR-BP-239 Slice B: Poster and offline HTML renderer (PR #244)
+
+Refactors the `generate_entity_map.py` command to render only from the validated publication model, preserving the earlier helper functions for compatibility. Adds an A1 landscape L0-L2 poster and self-contained compressed HTML catalogue with ECF/process filters, source detail, hierarchy navigation, field-coverage counts and visible diagnostics. PDF output is verified as one page; the PNG is rasterized from that PDF. Repeated PDF and PNG output is byte-identical for the same model. Production diagnostics reproduce 12 unresolved L2 relationship findings, so the preview remains marked not release-ready; the existing strict model build remains blocking. CI now tests rendering and produces a diagnostic preview artifact. No canonical entity files or semantics change.
+
 
 ## [v0.5.0] - 2026-11-06
 

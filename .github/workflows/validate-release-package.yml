@@ -14,6 +14,12 @@ on:
     paths:
       - 'entities/**'
       - 'schemas/**'
+      - 'scripts/build_publication_model.py'
+      - 'scripts/render_publication_assets.py'
+      - 'scripts/generate_entity_map.py'
+      - 'tests/test_publication_model.py'
+      - 'tests/test_publication_renderers.py'
+      - 'change-requests/CR-BP-239-ecf-catalogue-publication-asset-suite.md'
       - 'scripts/generate_process_map.py'
       - 'scripts/build_catalog_xlsx.py'
       - 'scripts/build_bpmn_artifact.py'

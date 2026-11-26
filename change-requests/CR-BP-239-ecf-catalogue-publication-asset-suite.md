@@ -1,6 +1,6 @@
 # CR-BP-239: ECF Catalogue Publication Asset Suite
 
-**Status**: Proposed
+**Status**: In progress — Slice B implementation in PR #244
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
@@ -235,6 +235,8 @@ The next release must not be tagged until the CR-BP-238 strict inventory gate is
 - Produce the print-ready poster PDF/PNG.
 - Build the self-contained interactive HTML catalogue with rich entity details and offline operation.
 - Retain the current overview/drill-down concepts where they improve usability, but remove duplicated source interpretation.
+
+**Current implementation (PR #244).** The renderer now validates and reads only the Slice A publication-model JSON; it no longer walks canonical YAML when producing its command-line assets. It emits an A1 landscape L0-L2 poster, a self-contained compressed offline HTML catalogue, and a PDF with a PNG raster derived from that same PDF. The HTML carries filters, entity details, field coverage, provenance, source relationships and every model finding. The poster places L2 records by their own context assertions and identifies affected cells; it does not imply that an unresolved L1 composition is valid. Reproduced production diagnostics contain 12 error-level hierarchy findings (six context conflicts, five multiple-group claims and one missing group claim), so this diagnostic edition remains explicitly marked **not release-ready**. Strict model generation remains the release boundary.
 
 ### Slice C — Enriched Excel publication
 

@@ -56,7 +56,10 @@ jobs:
 
       - name: Install dependencies
         if: steps.check.outputs.skip != 'true'
-        run: pip install pyyaml jsonschema pytest
+        run: |
+          python -m pip install pyyaml jsonschema pytest weasyprint
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils
 
       - name: Fetch catalog index machinery from dea-metaframework (if not vendored)
         if: steps.check.outputs.skip != 'true'
@@ -429,8 +432,10 @@ jobs:
         # must be observable in CI without pretending the catalogue is ready
         # for publication. The builder's default mode remains strict.
         run: |
-          python -m pytest -q tests/test_publication_model.py
+          python -m pytest -q tests/test_publication_model.py tests/test_publication_renderers.py
           python scripts/build_publication_model.py --allow-findings --output /tmp/process-catalogue.json
+          python scripts/generate_entity_map.py --model /tmp/process-catalogue.json \
+            --allow-findings --output-dir /tmp/process-catalogue-assets --pdf --png
           python - <<'PY'
           import json
           from collections import Counter
@@ -452,6 +457,14 @@ jobs:
         with:
           name: cr-bp-239-publication-model-diagnostics
           path: /tmp/process-catalogue.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload CR-BP-239 Slice B diagnostic preview
+        if: steps.check.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cr-bp-239-slice-b-preview
+          path: /tmp/process-catalogue-assets/process-catalogue*
           if-no-files-found: error
           retention-days: 14
       - name: Run cross-repo conformance suite (CR-CATALOG-STRUCT-01 §11)
