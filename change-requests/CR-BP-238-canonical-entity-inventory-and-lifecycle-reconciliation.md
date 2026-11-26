@@ -163,7 +163,7 @@ A generated representation must not become an independent source of entity ident
 ### Slice B — Register and baseline correction (implemented in this PR)
 
 - Removed the duplicate documentation-manifest row from the lifecycle register, ownership register and L2 inventory while retaining the canonical `Operate Customer Retention Programs` identity and ownership disposition.
-- Removed the legacy `dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind` row from the canonical lifecycle register. Its research evidence remains outside the canonical lifecycle population.
+- Removed the legacy `dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind` row from the canonical lifecycle register. The original admission deposition remains preserved at `entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/research/l2-admission-deposition.yaml`, linked to parent process `processes:process-ge-retire-mjq5hg`.
 - Reconciled lifecycle population to 3,723 rows / 3,723 unique IDs; ownership to 145 rows / 145 unique L2 IDs; L2 inventory to 145 rows / 145 unique L2 IDs.
 - Confirmed 145/145 canonical L2 records declare both inputs and outputs in the reconciled L2 inventory.
 - Published `reconciliation/closure/current-inventory-baseline.json`, commit-addressed to the canonical entity snapshot at `f88472eac891331801400028ba3270cb64444cd3`.
