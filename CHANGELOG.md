@@ -18,6 +18,15 @@ The CI checkout of `dea-metaframework` moves v2.6.0 -> v2.7.0, so the cross-repo
 Establishes a read-only, deterministic audit of the canonical L0-L4 entity population and reconciles it with the generated catalogue index, lifecycle register and dated closure baseline. The initial recon identifies 3,723 physical entity records (49/49/145/580/2,900), a duplicated lifecycle identity, a legacy research row in the lifecycle register, and stale historical population claims. Slice A adds the audit tool and focused tests; register correction, current-baseline publication and release-pipeline enforcement follow under the CR. No canonical entity identities or semantics change in this slice.
 
 
+### CR-BP-238 Slice B: Canonical register reconciliation
+
+Reconciles the EXT-24 lifecycle register to 3,723 canonical identities, the ownership register and L2 inventory to 145 unique L2 identities each. Removes the duplicate documentation-manifest row from all three registers and the legacy research row from the canonical lifecycle register, preserving the canonical process record and historical evidence. Publishes a current commit-addressed baseline, retains the dated EXT-24 programme-closure baseline unchanged, corrects the README L2 I/O coverage to 145/145, and extends the audit to verify all three governance representations.
+
+### CR-BP-239: ECF Catalogue Publication Asset Suite (specification)
+
+Defines a single publication model and schema for the print-ready ECF poster, offline self-contained rich HTML catalogue, JSON export and enriched Excel workbook. Establishes shared source/provenance, field fidelity, cross-format reconciliation and release-package acceptance criteria. Implementation is staged after the CR-BP-238 inventory baseline is established.
+
+
 ## [v0.5.0] - 2026-11-06
 
 ### CR-BP-236: Wave D — L1/L0 Plain-Language Authoring (98 Records) + Two-Layer Programme Closure and HUM Blocking Flip
