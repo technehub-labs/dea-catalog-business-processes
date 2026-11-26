@@ -357,6 +357,12 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
         row.get("id") for row in l2_rows
         if isinstance(row, dict) and isinstance(row.get("id"), str)
     ]
+    if l2_inventory.get("total_l2_entities") != len(l2_rows):
+        findings.append(_finding(
+            "INV-040", "L2 inventory total_l2_entities does not equal its row count",
+            declared_total=l2_inventory.get("total_l2_entities"),
+            actual_rows=len(l2_rows),
+        ))
     l2_duplicates = sorted(rid for rid, n in Counter(l2_ids).items() if n > 1)
     for rid in l2_duplicates:
         findings.append(_finding(
