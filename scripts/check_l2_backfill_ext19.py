@@ -103,7 +103,7 @@ def _collect_l2_records(catalog_root: Path) -> list[tuple[Path, dict]]:
 def _resolve_l1_parents(catalog_root: Path) -> set[str]:
     """Return the set of L1 ProcessGroup entity IDs."""
     out: set[str] = set()
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
@@ -119,7 +119,7 @@ def _resolve_l1_parents(catalog_root: Path) -> set[str]:
 def _collect_l3_children(catalog_root: Path) -> dict[str, list[str]]:
     """Return {parent_l2_id: [l3_activity_ids, ...]} for L3 Activities."""
     out: dict[str, list[str]] = {}
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
