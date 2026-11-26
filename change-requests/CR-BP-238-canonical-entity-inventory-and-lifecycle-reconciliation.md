@@ -1,6 +1,6 @@
 # CR-BP-238: Canonical Entity Inventory and Lifecycle Reconciliation
 
-**Status**: In Progress (Slice A merged; Slice B implemented in this PR)
+**Status**: Proposed
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
@@ -170,6 +170,7 @@ A generated representation must not become an independent source of entity ident
 - Preserved the 2026-10-20 EXT-24 programme-closure baseline unchanged.
 - Corrected the README's current L2 I/O coverage statement from 146/146 to 145/145.
 - Extended the inventory audit and tests to check ownership and L2 inventory identity sets, duplicates, I/O declaration coverage and the current baseline.
+- Corrected the EXT-19 L2 inventory generator to exclude documentation/support mirrors from all canonical scans; reconciled its L2 backfill manifest and L2-to-L3 matrix to the 145-record population. The one genuine L2 decomposition gap remains explicitly reported.
 
 No canonical entity record or identity was changed. The current baseline's source commit identifies the entity snapshot inventoried; subsequent governance-only reconciliation commits do not change that entity snapshot.
 
