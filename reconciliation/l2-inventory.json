@@ -4209,11 +4209,5 @@
       "disposition": null,
       "profile_completeness": "partial"
     }
-  ],
-  "reconciliation": {
-    "change_request": "CR-BP-238",
-    "slice": "B",
-    "source_commit": "f88472eac891331801400028ba3270cb64444cd3",
-    "method": "Duplicate documentation-manifest inventory row removed; canonical process record retained"
-  }
+  ]
 }
