@@ -245,6 +245,24 @@ jobs:
         # docs/conformance-pipeline.md S16.
         run: python scripts/check_cr_metadata.py --strict
 
+      - name: Run CR-BP-238 canonical inventory audit (advisory during reconciliation)
+        if: steps.check.outputs.skip != 'true'
+        # Slice A reports current register/index drift without blocking
+        # remediation. The strict mode is promoted only after Slice B.
+        run: |
+          python -m pytest -q tests/test_canonical_inventory.py
+          python scripts/check_canonical_inventory.py --output /tmp/canonical-inventory-reconciliation.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("/tmp/canonical-inventory-reconciliation.json").read_text())
+          print("Canonical inventory:", report["inventory"]["counts_by_level"])
+          print("Entity files:", report["inventory"]["total_entity_files"])
+          print("Reconciliation findings:", report["finding_count"])
+          for finding in report["findings"]:
+              print(f'  {finding["code"]}: {finding["message"]}')
+          PY
+
       - name: Aggregate Conformance Result (CR-BP-16 S17/S18)
         if: steps.check.outputs.skip != 'true'
         # The single CONFORMANCE RESULT verdict (CR-BP-16 S18) that
