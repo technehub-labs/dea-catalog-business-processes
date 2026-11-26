@@ -156,3 +156,28 @@ def test_duplicate_orphan_and_historical_baseline_drift_are_reported(
     assert "INV-036" in codes  # current baseline lifecycle row count drift
     assert report["lifecycle_register"]["actual_rows"] == 7
     assert report["observations"][0]["code"] == "HIST-001"
+
+
+
+def test_ownership_and_l2_inventory_duplicates_are_blocking(tmp_path: Path) -> None:
+    _fixture(tmp_path)
+    ownership_path = tmp_path / "reconciliation" / "closure" / "ownership-register.json"
+    ownership = json.loads(ownership_path.read_text(encoding="utf-8"))
+    ownership["dispositions"].append(dict(ownership["dispositions"][0]))
+    _write_json(ownership_path, ownership)
+
+    l2_path = tmp_path / "reconciliation" / "l2-inventory.json"
+    l2_inventory = json.loads(l2_path.read_text(encoding="utf-8"))
+    l2_inventory["inventory"][0]["fields_present"]["outputs"] = False
+    l2_inventory["inventory"].append(dict(l2_inventory["inventory"][0]))
+    l2_inventory["total_l2_entities"] = 2
+    _write_json(l2_path, l2_inventory)
+
+    report = MODULE.audit(tmp_path)
+    codes = {finding["code"] for finding in report["findings"]}
+
+    assert "INV-028" in codes  # duplicate ownership identity
+    assert "INV-029" in codes  # ownership identity set differs from canonical L2
+    assert "INV-031" in codes  # duplicate L2 inventory identity
+    assert "INV-033" in codes  # missing output declaration
+    assert "INV-040" not in codes  # declared row count matches physical rows
