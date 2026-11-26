@@ -174,6 +174,12 @@ No canonical entity is to be deleted, renamed or semantically rewritten merely t
 - Ensure map, workbook, BPMN, decisions log, dispositions, contributions, source snapshot and MANIFEST are derived from the same tagged commit.
 - Record source commit, toolchain and dependency pins, inventory counts, entity-state counts, artifact hashes and tag-signature verification in the release manifest.
 - Validate package determinism and verify that package counts agree with the current inventory baseline.
+- Normalize archive entry ordering, timestamps and permissions so the ZIP itself is reproducible, not only its constituent generated files.
+- Derive generated release-note dates from the tagged source commit rather than the wall-clock date, so rebuilding a tag cannot change package bytes.
+- Publish the curated `release-notes/vN.M.P.md` as the GitHub Release notes and set the release/prerelease classification explicitly; do not substitute unreviewed auto-generated notes.
+- Verify the annotated tag signature in the publication workflow and record the verified signer/fingerprint in the manifest.
+- Reconcile the release-cut procedure's hard-coded gate-count language with the current versioned conformance registry; release readiness must follow the active gate inventory, not a stale numeric total.
+- Decide and document whether schemas, profiles and controlled vocabularies are included in the self-contained package or referenced through immutable dependency pins.
 - Keep artifact versions lockstep with the catalogue release version, per CR-BP-30 decision D6.
 
 ## 6. Release package strategy
@@ -197,8 +203,9 @@ A release candidate shall not be promoted until:
 - the lifecycle register has exactly one row per canonical identity;
 - `CATALOG.yaml` is freshly regenerated and passes schema and structural validation;
 - generated READMEs and derived reports are fresh;
-- the complete required conformance pipeline and all three established CI workflows succeed on the proposed tag SHA;
-- the release-package validation workflow passes, including deterministic rebuild comparisons;
+- the complete required conformance pipeline and all three established CI workflows succeed on the proposed tag SHA, using the active gate registry rather than a hard-coded historical gate count;
+- the release-package validation workflow passes, including deterministic rebuild comparisons at both artifact and archive level;
+- the package release notes, GitHub Release notes, tag date and manifest all identify the same version and source commit;
 - every advisory finding is visible and has an explicit governance disposition under the existing conformance and exception policies;
 - package contents, row counts, process counts and manifest hashes reconcile to the same source commit;
 - dependency pins and the ECF/metamodel contract are declared;
@@ -216,7 +223,7 @@ The current version policy remains authoritative:
 | Minor | Canonical admission/retirement wave, material non-breaking catalogue evolution or an ECF domain rename cascade | Increment the 0.x minor version |
 | Major 1.0.0 | Stable catalogue contract and sustained operational conformance, with upstream ECF at a stable point | Promote only when the 1.0 exit criteria below are met |
 
-The v0.5.0 release record is retained as historical evidence. Its count inconsistency is corrected in current reporting and the next release notes, not by rewriting the already-published release history.
+The v0.5.0 release record is retained as historical evidence. Its count inconsistency is corrected in current reporting and the next release notes, not by rewriting the already-published release history. The current v0.5.0 GitHub Release is marked as a prerelease, and its post-cut note records that the tag is annotated but not GPG-signed. The next cut must explicitly resolve both release classification and signing; the existing deviation is not to become the default.
 
 ### 6.4 1.0.0 exit criteria
 
