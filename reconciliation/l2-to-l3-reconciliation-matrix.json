@@ -4,11 +4,11 @@
   "generator": "scripts/check_l2_backfill_ext19.py",
   "parent_cr": "CR-BP-94-EXT-19 (EXT-20 extension in EXT-21)",
   "purpose": "the L2-to-L3 reconciliation matrix (mandatory EXT-19 deliverable per the user recommendation; extended to L2-to-L3-to-L4 during EXT-20 and EXT-21)",
-  "total_l2_entities": 146,
+  "total_l2_entities": 145,
   "buckets": {
     "0": 1,
     "1_to_3": 0,
-    "4_to_7": 145,
+    "4_to_7": 144,
     "8_or_more": 0
   },
   "l2_processes_with_no_l3_children": [
@@ -16,6 +16,6 @@
   ],
   "structural_quality_observations": {
     "decomposition_gaps_count": 1,
-    "fully_decomposed_l2_count": 145
+    "fully_decomposed_l2_count": 144
   }
 }
