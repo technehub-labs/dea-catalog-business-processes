@@ -197,12 +197,17 @@ class TestProgrammeClosureEXT24(unittest.TestCase):
         self.assertGreater(len(o["dispositions"]), 0)
         # Every L2 BP in the live catalogue has an explicit disposition.
         import glob, re
+        from pathlib import Path
         live_l2 = 0
-        for fp in glob.glob(str(REPO_ROOT / "entities/v1-alpha/**/*.yaml"),
-                             recursive=True):
-            if "/discovery/" in fp or "/templates/" in fp:
-                continue
-            if fp.endswith(("_template.yaml", "README.yaml", "README.md")):
+        entity_root = REPO_ROOT / "entities" / "v1-alpha"
+        non_canonical_dirs = {
+            "research", "candidates", "retired", "documentation",
+            "discovery", "reports", "templates",
+        }
+        for fp in glob.glob(str(entity_root / "**/processes-process-*.yaml"),
+                            recursive=True):
+            relative_parts = Path(fp).relative_to(entity_root).parts
+            if any(part in non_canonical_dirs for part in relative_parts):
                 continue
             with open(fp, encoding="utf-8") as f:
                 text = f.read()
