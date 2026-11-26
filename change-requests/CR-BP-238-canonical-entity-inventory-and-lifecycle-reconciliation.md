@@ -86,6 +86,17 @@ Other count claims require reconciliation against the new baseline:
 
 The historical v0.5.0 release record shall remain immutable. Corrections to user-facing current counts belong in current documentation and the next release notes.
 
+### 2.5 L2 ownership and decomposition registers
+
+The same duplicate identity is present in two further L2 artefacts:
+
+- `reconciliation/closure/ownership-register.json`: 146 dispositions but 145 unique `bp_id` values. The duplicate is `processes:process-pr-improve-t6uvan`, repeated as the documentation-manifest row.
+- `reconciliation/l2-inventory.json`: 146 inventory rows with the same duplicate L2 identity.
+
+The EXT-22 reconciliation matrix contains 2,901 rows, but its distinct identity sets resolve to 145 L2 Processes, 580 L3 Activities and 2,900 L4 Tasks. Its additional row is the known deprecated L2 process with no decomposition; this is a reconciliation case, not an additional canonical entity. The matrix must retain this explicit structural disposition rather than be forced to the 2,900-task cardinality.
+
+The EXT-12 inputs/outputs manifest is dated 2026-10-19 and reports 3,882 scanned YAML records with zero findings. That report is useful evidence of the validator run, but it is not proof that the current L2 identity population is 146. The README's 146/146 L2 statement must be revalidated against the 145 physical L2 identities and the relevant validator's actual scope.
+
 ## 3. Objectives
 
 CR-BP-238 shall:
@@ -93,7 +104,7 @@ CR-BP-238 shall:
 1. Establish a deterministic filesystem inventory of L0-L4 canonical entity records.
 2. Validate identifier uniqueness and the relationship between record identifiers, filenames and entity kinds.
 3. Reconcile the filesystem inventory with the generated `CATALOG.yaml` entity set and state counts.
-4. Reconcile the lifecycle register one-to-one with canonical entity identities, retaining retired entities exactly once.
+4. Reconcile the lifecycle and ownership registers, plus the L2 inventory, one-to-one with canonical entity identities, retaining retired entities exactly once.
 5. Identify duplicate, orphaned, missing, misclassified and legacy records without deleting source evidence.
 6. Establish a current, commit-addressed inventory baseline distinct from the dated EXT-24 programme-closure baseline.
 7. Reconcile all current count claims in README, reports, registers, release builders and package tests.
@@ -153,9 +164,10 @@ A generated representation must not become an independent source of entity ident
 
 After Slice A is merged and its output is verified:
 
-- remove the duplicate documentation-manifest row from the entity lifecycle register;
+- remove the duplicate documentation-manifest row from the entity lifecycle register, ownership register and L2 inventory;
 - disposition the legacy `dea:` research row outside the canonical entity lifecycle register while preserving its source evidence;
 - create a current inventory baseline with source commit, per-level counts, state counts, schema/profile pins and reconciliation results;
+- regenerate or explicitly archive the L2 inventory and any derivative report whose source population contains the duplicate documentation-manifest row;
 - preserve the 2026-10-20 EXT-24 closure baseline as a historical snapshot;
 - reconcile README and current operational status claims, including the L2 input/output population.
 
@@ -258,7 +270,7 @@ CR-BP-238 is complete when:
 1. A deterministic inventory tool enumerates every canonical L0-L4 entity record and reports per-level counts.
 2. The tool validates identifier uniqueness, file/identifier consistency and entity-kind classification.
 3. The catalogue index and canonical filesystem inventory agree exactly.
-4. The lifecycle register contains exactly one row for every canonical entity identity and no unexplained additional rows.
+4. The lifecycle and ownership registers and L2 inventory contain exactly one row for every applicable canonical entity identity and no unexplained additional rows.
 5. The legacy research artefact is preserved and correctly classified outside the canonical entity lifecycle population.
 6. The dated EXT-24 closure baseline remains immutable and a current commit-addressed baseline is available.
 7. Current README, status reports, release builders and package tests use reconciled counts.
