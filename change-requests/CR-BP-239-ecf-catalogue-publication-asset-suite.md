@@ -205,7 +205,17 @@ All files must identify the same release version, source commit and publication-
 
 The publication assets shall be attached to the GitHub Release and included in the downloadable versioned package. Repository publication pages may link to the same versioned assets but must not regenerate a second, divergent view.
 
-## 7. Implementation slices
+## 7. Release sequencing and version policy
+
+The release cut is governed by `docs/versioning.md`, not by the merge of an individual CR.
+
+- **CR-BP-238-only next cut:** if the next release contains only inventory, lifecycle, governance and documentation reconciliation, the policy classifies it as a patch candidate (`v0.5.1`).
+- **CR-BP-239 included before the next cut:** the addition of the unified publication model and new consumer-facing asset family is a backward-compatible catalogue feature. The recommended next cut is then a minor release (`v0.6.0`), batching the CR-BP-238 stabilisation and CR-BP-239 publication assets. Do not cut an artificial `v0.5.1` solely because CR-BP-238 merged.
+- **Stable contract:** `v1.0.0` remains gated by sustained catalogue and upstream ECF stability, not by completion of this publication CR alone.
+
+The next release must not be tagged until the CR-BP-238 strict inventory gate is green, all publication assets reconcile to one model digest, the full active conformance registry is conformant, and the three required CI workflows have succeeded on the exact proposed tag SHA. The next tag must be GPG-signed and verified; the unsigned v0.5.0 deviation is not a precedent.
+
+## 8. Implementation slices
 
 ### Slice A — Publication model and schema
 
@@ -248,7 +258,7 @@ The publication assets shall be attached to the GitHub Release and included in t
 - Retire the superseded independent map-generation path only after all compatibility and release tests pass.
 - Record deprecation and migration in CHANGELOG and release notes.
 
-## 8. Acceptance criteria
+## 9. Acceptance criteria
 
 1. One publication model and one source commit drive all four asset families.
 2. All 49 ECF cells appear in normative order, with no missing or duplicated coordinate.
@@ -264,7 +274,7 @@ The publication assets shall be attached to the GitHub Release and included in t
 12. CI blocks publication on missing entities, duplicate IDs, unresolved hierarchy, invalid ECF placement, schema failure, model digest mismatch or cross-format count drift.
 13. Every release contains the complete publication asset family and a manifest with hashes and provenance.
 
-## 9. Governance boundaries
+## 10. Governance boundaries
 
 - No canonical entity semantics, IDs, or ECF coordinate assertions are changed merely to improve presentation.
 - No examples, I/O, definitions or responsibilities are fabricated to fill gaps.
