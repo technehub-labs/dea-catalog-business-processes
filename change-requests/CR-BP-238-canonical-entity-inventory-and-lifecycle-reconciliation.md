@@ -1,6 +1,6 @@
 # CR-BP-238: Canonical Entity Inventory and Lifecycle Reconciliation
 
-**Status**: Proposed
+**Status**: In Progress (Slice A merged; Slice B implemented in this PR)
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
@@ -160,16 +160,34 @@ A generated representation must not become an independent source of entity ident
 - Keep the checker read-only; do not rewrite entity files or registers during discovery.
 - Update the generated catalogue index's open-CR count for this CR.
 
-### Slice B — Register and baseline correction
+### Slice B — Register and baseline correction (implemented in this PR)
 
-After Slice A is merged and its output is verified:
+- Removed the duplicate documentation-manifest row from the lifecycle register, ownership register and L2 inventory while retaining the canonical `Operate Customer Retention Programs` identity and ownership disposition.
+- Removed the legacy `dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind` row from the canonical lifecycle register. Its research evidence remains outside the canonical lifecycle population.
+- Reconciled lifecycle population to 3,723 rows / 3,723 unique IDs; ownership to 145 rows / 145 unique L2 IDs; L2 inventory to 145 rows / 145 unique L2 IDs.
+- Confirmed 145/145 canonical L2 records declare both inputs and outputs in the reconciled L2 inventory.
+- Published `reconciliation/closure/current-inventory-baseline.json`, commit-addressed to the canonical entity snapshot at `f88472eac891331801400028ba3270cb64444cd3`.
+- Preserved the 2026-10-20 EXT-24 programme-closure baseline unchanged.
+- Corrected the README's current L2 I/O coverage statement from 146/146 to 145/145.
+- Extended the inventory audit and tests to check ownership and L2 inventory identity sets, duplicates, I/O declaration coverage and the current baseline.
 
-- remove the duplicate documentation-manifest row from the entity lifecycle register, ownership register and L2 inventory;
-- disposition the legacy `dea:` research row outside the canonical entity lifecycle register while preserving its source evidence;
-- create a current inventory baseline with source commit, per-level counts, state counts, schema/profile pins and reconciliation results;
-- regenerate or explicitly archive the L2 inventory and any derivative report whose source population contains the duplicate documentation-manifest row;
-- preserve the 2026-10-20 EXT-24 closure baseline as a historical snapshot;
-- reconcile README and current operational status claims, including the L2 input/output population.
+No canonical entity record or identity was changed. The current baseline's source commit identifies the entity snapshot inventoried; subsequent governance-only reconciliation commits do not change that entity snapshot.
+
+### Slice C — Continuous conformance
+
+Promote the checker to a blocking gate after Slice B's data and test evidence are verified. Require current-baseline agreement and one-to-one lifecycle, ownership and L2 inventory identity coverage. Retain approved exceptions only through explicit, evidence-backed dispositions.
+
+### Slice D — Release-package integration
+
+- Make the reconciled inventory a required input to release generation and publication.
+- Ensure all release assets derive from the same tagged source commit and publication model.
+- Record source commit, toolchain and dependency pins, inventory counts, entity-state counts, artifact hashes and tag-signature verification in the release manifest.
+- Validate package determinism at both artifact and archive level.
+- Normalize archive entry ordering, timestamps and permissions.
+- Derive release-note dates from the tagged commit and publish curated release notes.
+- Verify annotated tag signatures and record signer/fingerprint.
+- Resolve schemas/profiles/vocabularies as bundled assets or immutable dependency pins.
+- Use the active conformance registry, not hard-coded historical gate totals, as the release-readiness authority.
 
 No canonical entity is to be deleted, renamed or semantically rewritten merely to reconcile a count.
 
