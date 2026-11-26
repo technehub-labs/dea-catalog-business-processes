@@ -174,37 +174,21 @@ A generated representation must not become an independent source of entity ident
 
 No canonical entity record or identity was changed. The current baseline's source commit identifies the entity snapshot inventoried; subsequent governance-only reconciliation commits do not change that entity snapshot.
 
-### Slice C — Continuous conformance
+### Slice C — Continuous conformance and report freshness
 
-Promote the checker to a blocking gate after Slice B's data and test evidence are verified. Require current-baseline agreement and one-to-one lifecycle, ownership and L2 inventory identity coverage. Retain approved exceptions only through explicit, evidence-backed dispositions.
+- Keep the canonical inventory checker as a blocking gate in the main conformance pipeline and release-publication workflow. This enforcement was introduced in PR #240 after Slice B's register and baseline corrections.
+- Require current-baseline agreement and one-to-one lifecycle, ownership and L2 inventory identity coverage.
+- Add a generated-report freshness check so any committed or published inventory report is demonstrably generated from the exact canonical entity snapshot and current governed-register state it claims to represent.
+- Require the checker and freshness validation to fail on duplicate or missing lifecycle identities, index drift, unexplained records, baseline mismatch, stale report inputs or report/source-commit disagreement.
+- Retain approved exceptions only through explicit, evidence-backed dispositions; an exception must never be inferred from a warning.
+- Preserve the distinction between the canonical entity snapshot commit and later governance-only commits when validating the baseline's source-commit reference.
 
-### Slice D — Release-package integration
+### Slice D — Reproducible release-package integration
 
-- Make the reconciled inventory a required input to release generation and publication.
-- Ensure all release assets derive from the same tagged source commit and publication model.
-- Record source commit, toolchain and dependency pins, inventory counts, entity-state counts, artifact hashes and tag-signature verification in the release manifest.
-- Validate package determinism at both artifact and archive level.
-- Normalize archive entry ordering, timestamps and permissions.
-- Derive release-note dates from the tagged commit and publish curated release notes.
-- Verify annotated tag signatures and record signer/fingerprint.
-- Resolve schemas/profiles/vocabularies as bundled assets or immutable dependency pins.
-- Use the active conformance registry, not hard-coded historical gate totals, as the release-readiness authority.
-
-No canonical entity is to be deleted, renamed or semantically rewritten merely to reconcile a count.
-
-### Slice C — Continuous conformance
-
-- Add the inventory checker to the conformance pipeline as a blocking gate only after the register and current baseline are clean.
-- Add a generated-report freshness check.
-- Require the checker to fail on duplicate or missing lifecycle identities, index drift, unexplained records and baseline mismatch.
-- Retain explicit dispositions for approved exceptions; an exception must never be inferred from a warning.
-
-### Slice D — Release-package integration
-
-- Make the reconciled inventory a required input to `publish-versioned.yml`.
-- Ensure map, workbook, BPMN, decisions log, dispositions, contributions, source snapshot and MANIFEST are derived from the same tagged commit.
-- Record source commit, toolchain and dependency pins, inventory counts, entity-state counts, artifact hashes and tag-signature verification in the release manifest.
-- Validate package determinism and verify that package counts agree with the current inventory baseline.
+- Make the reconciled inventory a required input to `publish-versioned.yml`; the strict inventory precondition is already wired by PR #240.
+- Ensure the map, workbook, BPMN, decisions log, dispositions, contributions, canonical source snapshot, publication assets and MANIFEST derive from the same tagged source commit and, where applicable, the same versioned publication model.
+- Record source commit, toolchain and dependency pins, inventory counts, entity-state counts, artifact hashes, model digest and tag-signature verification in the release manifest.
+- Validate package determinism at both artifact and archive level, including package counts against the current inventory baseline.
 - Normalize archive entry ordering, timestamps and permissions so the ZIP itself is reproducible, not only its constituent generated files.
 - Derive generated release-note dates from the tagged source commit rather than the wall-clock date, so rebuilding a tag cannot change package bytes.
 - Publish the curated `release-notes/vN.M.P.md` as the GitHub Release notes and set the release/prerelease classification explicitly; do not substitute unreviewed auto-generated notes.
@@ -212,6 +196,8 @@ No canonical entity is to be deleted, renamed or semantically rewritten merely t
 - Reconcile the release-cut procedure's hard-coded gate-count language with the current versioned conformance registry; release readiness must follow the active gate inventory, not a stale numeric total.
 - Decide and document whether schemas, profiles and controlled vocabularies are included in the self-contained package or referenced through immutable dependency pins.
 - Keep artifact versions lockstep with the catalogue release version, per CR-BP-30 decision D6.
+
+No canonical entity is to be deleted, renamed or semantically rewritten merely to reconcile a count.
 
 ## 6. Release package strategy
 
@@ -297,12 +283,51 @@ CR-BP-238 is complete when:
 9. The release package is reproducible, version-consistent and traceable to its tagged source commit.
 10. The next release is cut only after the stable-base conditions and release-readiness contract are satisfied.
 
-## 9. Initial implementation status
+## 9. Implementation status and evidence
 
-This PR implements Slice A's read-only audit foundation and tests. The initial recon has established the 3,723-file population and identified the lifecycle-register discrepancies described in §2.3. It does not claim that the lifecycle register or historical baseline has already been repaired.
+Implementation status is recorded incrementally. Completion of an implementation slice does not, by itself, constitute acceptance of CR-BP-238 as a whole.
 
-Slices B-D remain explicit implementation work under this CR. The inventory findings must be rerun against the merged commit before the register correction is prepared.
+### Slice A — Read-only inventory audit: implemented
+
+Implemented by [PR #239](https://github.com/technehub-labs/dea-catalog-business-processes/pull/239), merged 2026-11-26 at `f88472eac891331801400028ba3270cb64444cd3`.
+
+- Added the read-only canonical inventory auditor and focused tests.
+- Established the initial 3,723-file L0-L4 population and exposed the lifecycle, ownership and L2 inventory discrepancies.
+- Kept the first-slice audit informational while the known register defects remained unresolved.
+
+### Slice B — Register and baseline correction: implemented
+
+Implemented by [PR #240](https://github.com/technehub-labs/dea-catalog-business-processes/pull/240), merged 2026-11-26 at `05e57aadfb2f17101f354dc1d220b721b86ad36d`.
+
+- Reconciled the lifecycle register to 3,723 rows and 3,723 unique canonical identities.
+- Reconciled the ownership register and EXT-19 L2 inventory to 145 unique L2 identities each.
+- Preserved the research deposition and historical EXT-24 closure baseline.
+- Published the current commit-addressed inventory baseline against the unchanged canonical entity snapshot at `f88472eac891331801400028ba3270cb64444cd3`.
+- Corrected current-facing L2 input/output coverage to 145/145 and repaired the EXT-19 generator's canonical scan scope.
+- Left the genuine L2 decomposition gap explicitly visible.
+
+No canonical entity record, canonical ID or entity semantic content was changed by these register corrections.
+
+### Slice C — Continuous conformance: partially implemented
+
+PR #240 promoted the inventory audit to strict/blocking execution in the main CI workflow and made it a release-publication precondition in `.github/workflows/publish-versioned.yml`. The focused inventory tests and strict audit are part of the validation path.
+
+Outstanding work:
+
+- Generated inventory-report freshness enforcement, including source-snapshot and governed-register provenance.
+- Explicit validation that any committed or published report is current for the source state it describes.
+- Final evidence that the freshness rule is blocking in both conformance and release contexts.
+
+### Slice D — Release-package integration: partially implemented
+
+PR #240 established the strict inventory precondition in the release workflow. The broader release contract remains outstanding, including deterministic artifact and ZIP construction, normalized archive metadata, curated release-note and release-classification controls, tag-signature verification and signer provenance, active conformance-registry alignment, dependency/schema packaging policy, and lockstep artifact versioning.
+
+### Acceptance posture
+
+CR-BP-238 remains **Proposed / in implementation**. It shall not be marked Accepted or Complete until all ten acceptance criteria in §8 are satisfied with repository evidence. In particular, the strict inventory gate does not imply that the full release package is already reproducible, signed, provenance-complete or ready for publication.
+
+The next implementation work may proceed under the dependent CR-BP-239 publication-model contract, but no release may be cut until the remaining CR-BP-238 and CR-BP-239 release-readiness requirements are satisfied.
 
 ---
 
-**Decision requested:** approve CR-BP-238 as the governing reconciliation and release-foundation change, with Slice A as its first implementation increment.
+**Decision requested:** approve CR-BP-238 as the governing reconciliation and release-foundation change. Slice A and Slice B are implemented; Slices C and D remain partially implemented and require the evidence and work recorded above.
