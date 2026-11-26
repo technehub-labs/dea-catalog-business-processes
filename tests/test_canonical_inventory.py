@@ -96,9 +96,12 @@ def _fixture(root: Path) -> tuple[list[dict], dict]:
                 "L4_Task": 1, "total": 5,
             },
             "governance_registers": {
-                "lifecycle": {"rows": 5},
+                "lifecycle": {"rows": 5, "states": {"active": 5}},
                 "ownership": {"rows": 1},
-                "l2_inventory": {"rows": 1},
+                "l2_inventory": {"rows": 1, "inputs_declared": 1, "outputs_declared": 1},
+            },
+            "catalogue_index_state_counts": {
+                "entities": 5, "canonical": 5, "retired": 0, "candidates": 0,
             },
         },
     )
