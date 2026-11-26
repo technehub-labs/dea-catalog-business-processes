@@ -53,20 +53,21 @@ class TestL2BackfillEXT19(unittest.TestCase):
         self.assertEqual(data["mode"], "self-test")
 
     def test_l2_inventory_completeness(self):
-        """L2-001: 146 L2 BPs identified from the actual catalogue."""
+        """L2-001: 145 canonical L2 BPs identified from the actual catalogue."""
         with L2_INVENTORY.open() as fp:
             data = json.load(fp)
-        self.assertEqual(data["total_l2_entities"], 146)
+        self.assertEqual(data["total_l2_entities"], 145)
+        ids = [row["id"] for row in data["inventory"]]
+        self.assertEqual(len(ids), len(set(ids)))
 
     def test_l2_profile_complete_count(self):
         """L2-002: per-record profile completeness."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         profile = data["inventory_summary"]["by_profile_completeness"]
-        # Pre-EXT-19 state: 0 fully_complete, 0 partial, 146 incomplete
         self.assertEqual(profile["fully_complete"], 0)
-        self.assertEqual(profile["partial"], 0)
-        self.assertEqual(profile["incomplete"], 146)
+        self.assertEqual(profile["partial"], 145)
+        self.assertEqual(profile["incomplete"], 0)
 
     def test_l2_process_identity_findings(self):
         """L2-003: the L2 BPs lack operationally meaningful descriptions."""
@@ -76,65 +77,64 @@ class TestL2BackfillEXT19(unittest.TestCase):
         # checks for >=10 chars. Check that findings are present for
         # records without descriptions.
         l2_003 = data["summary"]["by_rule"].get("L2-003", 0)
-        # The 146 L2 BPs all have a description >= 10 chars, so L2-003
+        # The 145 canonical L2 BPs all have a description >= 10 chars, so L2-003
         # should be 0.
         self.assertEqual(l2_003, 0, f"L2-003 findings: {l2_003} (expected 0)")
 
     def test_l2_inputs_outputs_findings(self):
-        """L2-006: 146 L2 BPs lack inputs[]/outputs[]."""
+        """L2-006: canonical L2 BPs declare inputs[] and outputs[]."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         l2_006 = data["summary"]["by_rule"].get("L2-006", 0)
-        self.assertEqual(l2_006, 146)
+        self.assertEqual(l2_006, 0)
 
     def test_l2_responsibility_accountability_findings(self):
-        """L2-007: 146 L2 BPs lack accountability/responsibility."""
+        """L2-007: 145 canonical L2 BPs lack accountability/responsibility."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         l2_007 = data["summary"]["by_rule"].get("L2-007", 0)
-        self.assertEqual(l2_007, 146)
+        self.assertEqual(l2_007, 145)
 
     def test_l2_rules_controls_exceptions_findings(self):
-        """L2-008: 146 L2 BPs lack business_rules/controls/exceptions."""
+        """L2-008: 145 canonical L2 BPs lack business_rules/controls/exceptions."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         l2_008 = data["summary"]["by_rule"].get("L2-008", 0)
-        self.assertEqual(l2_008, 146)
+        self.assertEqual(l2_008, 145)
 
     def test_l2_provenance_findings(self):
-        """L2-009: 146 L2 BPs lack provenance[]."""
+        """L2-009: 145 canonical L2 BPs lack provenance[]."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         l2_009 = data["summary"]["by_rule"].get("L2-009", 0)
-        self.assertEqual(l2_009, 146)
+        self.assertEqual(l2_009, 145)
 
     def test_l2_parent_l0_pc_findings(self):
-        """L2-010: 1 L2 BP lacks context[] L0 PC ref (the gap)."""
+        """L2-010: all canonical L2 BPs resolve their L0 Process Context."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
-        # 145 of 146 have context[]; 1 is missing (processes:process-pr-improve-t6uvan)
         l2_010 = data["summary"]["by_rule"].get("L2-010", 0)
-        self.assertEqual(l2_010, 1)
+        self.assertEqual(l2_010, 0)
 
     def test_l2_to_l3_reconciliation_matrix(self):
         """L2-011: the L2-to-L3 reconciliation matrix surfaced (the
         user-recommended mandatory EXT-19 deliverable)."""
         with L2_TO_L3_MATRIX.open() as fp:
             data = json.load(fp)
-        self.assertEqual(data["total_l2_entities"], 146)
-        # 145 L2 BPs have 4-7 L3 children; 1 L2 BP has 0 L3 children (gap)
+        self.assertEqual(data["total_l2_entities"], 145)
+        # 144 L2 BPs have 4-7 L3 children; 1 L2 BP has 0 L3 children (gap)
         buckets = data["buckets"]
         self.assertEqual(buckets["0"], 1)
-        self.assertEqual(buckets["4_to_7"], 145)
-        # The structural_quality_observations record the gap count
+        self.assertEqual(buckets["4_to_7"], 144)
         self.assertEqual(data["structural_quality_observations"]["decomposition_gaps_count"], 1)
+        self.assertEqual(data["structural_quality_observations"]["fully_decomposed_l2_count"], 144)
 
     def test_l2_disposition_findings(self):
-        """L2-012: 146 L2 BPs lack metadata.authoring (REQ-19-24)."""
+        """L2-012: 145 canonical L2 BPs lack metadata.authoring (REQ-19-24)."""
         with L2_BACKFILL_MANIFEST.open() as fp:
             data = json.load(fp)
         l2_012 = data["summary"]["by_rule"].get("L2-012", 0)
-        self.assertEqual(l2_012, 146)
+        self.assertEqual(l2_012, 145)
 
     def test_l2_inventory_manifest_emitted(self):
         self.assertTrue(L2_INVENTORY.exists(),

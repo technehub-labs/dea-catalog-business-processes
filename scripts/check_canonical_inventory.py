@@ -312,6 +312,163 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
             declared_total=declared_lifecycle_total, actual_rows=len(lifecycle_records),
         ))
 
+    # Reconcile the L2 ownership register and EXT-19 L2 inventory to the
+    # canonical L2 filesystem identity set. Supporting registers are not
+    # allowed to manufacture additional Process identities.
+    canonical_l2_ids = {
+        record_id for record_id, record in expected_by_id.items()
+        if record["level"] == "L2"
+    }
+
+    ownership = _read_json(
+        root / "reconciliation/closure/ownership-register.json", findings, "INV-027"
+    )
+    ownership_rows = ownership.get("dispositions", [])
+    if not isinstance(ownership_rows, list):
+        findings.append(_finding("INV-027", "Ownership register dispositions must be a list"))
+        ownership_rows = []
+    ownership_ids = [
+        row.get("bp_id") for row in ownership_rows
+        if isinstance(row, dict) and isinstance(row.get("bp_id"), str)
+    ]
+    ownership_duplicates = sorted(
+        rid for rid, n in Counter(ownership_ids).items() if n > 1
+    )
+    for rid in ownership_duplicates:
+        findings.append(_finding(
+            "INV-028", "Ownership register contains a duplicate L2 identity",
+            record_id=rid, row_count=Counter(ownership_ids)[rid],
+        ))
+    if set(ownership_ids) != canonical_l2_ids:
+        findings.append(_finding(
+            "INV-029", "Ownership register identity set differs from canonical L2 population",
+            missing=sorted(canonical_l2_ids - set(ownership_ids)),
+            additional=sorted(set(ownership_ids) - canonical_l2_ids),
+        ))
+
+    l2_inventory = _read_json(
+        root / "reconciliation/l2-inventory.json", findings, "INV-030"
+    )
+    l2_rows = l2_inventory.get("inventory", [])
+    if not isinstance(l2_rows, list):
+        findings.append(_finding("INV-030", "L2 inventory must contain an inventory list"))
+        l2_rows = []
+    l2_ids = [
+        row.get("id") for row in l2_rows
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    ]
+    if l2_inventory.get("total_l2_entities") != len(l2_rows):
+        findings.append(_finding(
+            "INV-040", "L2 inventory total_l2_entities does not equal its row count",
+            declared_total=l2_inventory.get("total_l2_entities"),
+            actual_rows=len(l2_rows),
+        ))
+    l2_duplicates = sorted(rid for rid, n in Counter(l2_ids).items() if n > 1)
+    for rid in l2_duplicates:
+        findings.append(_finding(
+            "INV-031", "L2 inventory contains a duplicate Process identity",
+            record_id=rid, row_count=Counter(l2_ids)[rid],
+        ))
+    if set(l2_ids) != canonical_l2_ids:
+        findings.append(_finding(
+            "INV-032", "L2 inventory identity set differs from canonical L2 population",
+            missing=sorted(canonical_l2_ids - set(l2_ids)),
+            additional=sorted(set(l2_ids) - canonical_l2_ids),
+        ))
+    missing_io = sorted(
+        row.get("id") for row in l2_rows
+        if isinstance(row, dict)
+        and isinstance(row.get("id"), str)
+        and not (
+            (row.get("fields_present") or {}).get("inputs") is True
+            and (row.get("fields_present") or {}).get("outputs") is True
+        )
+    )
+    if missing_io:
+        findings.append(_finding(
+            "INV-033", "Canonical L2 inventory contains processes without both inputs and outputs",
+            missing_record_ids=missing_io,
+        ))
+
+    current_baseline = _read_json(
+        root / "reconciliation/closure/current-inventory-baseline.json",
+        findings, "INV-034",
+    )
+    current_population = current_baseline.get("canonical_entity_population", {})
+    expected_baseline_counts = {
+        "L0": current_population.get("L0_ProcessContext"),
+        "L1": current_population.get("L1_ProcessGroup"),
+        "L2": current_population.get("L2_BusinessProcess"),
+        "L3": current_population.get("L3_Activity"),
+        "L4": current_population.get("L4_Task"),
+    } if isinstance(current_population, dict) else {}
+    if expected_baseline_counts != expected_counts or current_population.get("total") != total:
+        findings.append(_finding(
+            "INV-035", "Current inventory baseline population differs from canonical filesystem inventory",
+            baseline=expected_baseline_counts, current=expected_counts,
+            baseline_total=current_population.get("total"), current_total=total,
+        ))
+    baseline_registers = current_baseline.get("governance_registers", {})
+    baseline_lifecycle = baseline_registers.get("lifecycle", {})
+    baseline_ownership = baseline_registers.get("ownership", {})
+    baseline_l2 = baseline_registers.get("l2_inventory", {})
+    actual_register_counts = {
+        "lifecycle": len(lifecycle_records),
+        "ownership": len(ownership_rows),
+        "l2_inventory": len(l2_rows),
+    }
+    declared_register_counts = {
+        "lifecycle": baseline_lifecycle.get("rows"),
+        "ownership": baseline_ownership.get("rows"),
+        "l2_inventory": baseline_l2.get("rows"),
+    }
+    if declared_register_counts != actual_register_counts:
+        findings.append(_finding(
+            "INV-036", "Current inventory baseline register counts differ from actual registers",
+            baseline=declared_register_counts, current=actual_register_counts,
+        ))
+    baseline_io = {
+        "inputs_declared": baseline_l2.get("inputs_declared"),
+        "outputs_declared": baseline_l2.get("outputs_declared"),
+    }
+    actual_io = {
+        "inputs_declared": sum(
+            1 for row in l2_rows if isinstance(row, dict)
+            and (row.get("fields_present") or {}).get("inputs") is True
+        ),
+        "outputs_declared": sum(
+            1 for row in l2_rows if isinstance(row, dict)
+            and (row.get("fields_present") or {}).get("outputs") is True
+        ),
+    }
+    if baseline_io != actual_io:
+        findings.append(_finding(
+            "INV-037", "Current inventory baseline L2 I/O coverage differs from L2 inventory",
+            baseline=baseline_io, current=actual_io,
+        ))
+    baseline_state_counts = current_baseline.get("catalogue_index_state_counts", {})
+    actual_state_counts = {
+        "entities": index_counts.get("entities"),
+        "canonical": index_counts.get("canonical"),
+        "retired": index_counts.get("retired"),
+        "candidates": index_counts.get("candidates"),
+    }
+    if baseline_state_counts != actual_state_counts:
+        findings.append(_finding(
+            "INV-038", "Current inventory baseline catalogue state counts differ from CATALOG.yaml",
+            baseline=baseline_state_counts, current=actual_state_counts,
+        ))
+    baseline_lifecycle_states = baseline_lifecycle.get("states", {})
+    actual_lifecycle_states = dict(sorted(Counter(
+        row.get("lifecycle_state") for row in lifecycle_records
+        if isinstance(row, dict) and isinstance(row.get("lifecycle_state"), str)
+    ).items()))
+    if baseline_lifecycle_states != actual_lifecycle_states:
+        findings.append(_finding(
+            "INV-039", "Current inventory baseline lifecycle-state counts differ from lifecycle register",
+            baseline=baseline_lifecycle_states, current=actual_lifecycle_states,
+        ))
+
     # The EXT-24 baseline is intentionally historical; compare it, but never rewrite it.
     baseline = _read_json(
         root / "reconciliation/closure/catalogue-baseline.json", findings, "INV-023"
@@ -368,6 +525,23 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
             "unique_ids": len(set(lifecycle_ids)),
             "entity_kind_counts": dict(sorted(lifecycle_kind_counts.items())),
             "duplicate_ids": duplicate_lifecycle_ids,
+        },
+        "ownership_register": {
+            "actual_rows": len(ownership_rows),
+            "unique_ids": len(set(ownership_ids)),
+            "duplicate_ids": ownership_duplicates,
+        },
+        "l2_inventory": {
+            "declared_total": l2_inventory.get("total_l2_entities"),
+            "actual_rows": len(l2_rows),
+            "unique_ids": len(set(l2_ids)),
+            "duplicate_ids": l2_duplicates,
+            "inputs_outputs_complete": len(l2_rows) - len(missing_io),
+        },
+        "current_baseline": {
+            "source_commit": current_baseline.get("source_commit"),
+            "reconciled_at": current_baseline.get("reconciled_at"),
+            "counts_by_level": expected_baseline_counts,
         },
         "historical_baseline": {
             "date": baseline.get("baseline_date"),

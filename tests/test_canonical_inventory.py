@@ -72,6 +72,39 @@ def _fixture(root: Path) -> tuple[list[dict], dict]:
             }
         },
     )
+    _write_json(
+        root / "reconciliation" / "closure" / "ownership-register.json",
+        {"dispositions": [{
+            "bp_id": "processes:process-process-one",
+            "bp_name": "Process One",
+        }]},
+    )
+    _write_json(
+        root / "reconciliation" / "l2-inventory.json",
+        {"total_l2_entities": 1, "inventory": [{
+            "id": "processes:process-process-one",
+            "fields_present": {"inputs": True, "outputs": True},
+        }]},
+    )
+    _write_json(
+        root / "reconciliation" / "closure" / "current-inventory-baseline.json",
+        {
+            "source_commit": "0123456789abcdef",
+            "canonical_entity_population": {
+                "L0_ProcessContext": 1, "L1_ProcessGroup": 1,
+                "L2_BusinessProcess": 1, "L3_Activity": 1,
+                "L4_Task": 1, "total": 5,
+            },
+            "governance_registers": {
+                "lifecycle": {"rows": 5, "states": {"active": 5}},
+                "ownership": {"rows": 1},
+                "l2_inventory": {"rows": 1, "inputs_declared": 1, "outputs_declared": 1},
+            },
+            "catalogue_index_state_counts": {
+                "entities": 5, "canonical": 5, "retired": 0, "candidates": 0,
+            },
+        },
+    )
     return rows, population
 
 
@@ -85,6 +118,8 @@ def test_clean_inventory_reconciles_all_representations(tmp_path: Path) -> None:
     assert report["inventory"]["total_entity_files"] == 5
     assert report["catalog_index"]["entity_count"] == 5
     assert report["lifecycle_register"]["actual_rows"] == 5
+    assert report["ownership_register"]["actual_rows"] == 1
+    assert report["l2_inventory"]["inputs_outputs_complete"] == 1
     assert report["finding_count"] == 0
 
 
@@ -118,5 +153,34 @@ def test_duplicate_orphan_and_historical_baseline_drift_are_reported(
     assert "INV-024" not in codes  # historical baseline is not a current-state gate
     assert "INV-025" in codes  # unknown lifecycle entity kind
     assert "INV-026" in codes  # legacy/non-canonical lifecycle identifier
+    assert "INV-036" in codes  # current baseline lifecycle row count drift
     assert report["lifecycle_register"]["actual_rows"] == 7
     assert report["observations"][0]["code"] == "HIST-001"
+
+
+
+def test_ownership_and_l2_inventory_duplicates_are_blocking(tmp_path: Path) -> None:
+    _fixture(tmp_path)
+    ownership_path = tmp_path / "reconciliation" / "closure" / "ownership-register.json"
+    ownership = json.loads(ownership_path.read_text(encoding="utf-8"))
+    ownership["dispositions"].append(dict(ownership["dispositions"][0]))
+    extra_owner = dict(ownership["dispositions"][0])
+    extra_owner["bp_id"] = "processes:process-unregistered"
+    ownership["dispositions"].append(extra_owner)
+    _write_json(ownership_path, ownership)
+
+    l2_path = tmp_path / "reconciliation" / "l2-inventory.json"
+    l2_inventory = json.loads(l2_path.read_text(encoding="utf-8"))
+    l2_inventory["inventory"][0]["fields_present"]["outputs"] = False
+    l2_inventory["inventory"].append(dict(l2_inventory["inventory"][0]))
+    l2_inventory["total_l2_entities"] = 2
+    _write_json(l2_path, l2_inventory)
+
+    report = MODULE.audit(tmp_path)
+    codes = {finding["code"] for finding in report["findings"]}
+
+    assert "INV-028" in codes  # duplicate ownership identity
+    assert "INV-029" in codes  # ownership identity set differs from canonical L2
+    assert "INV-031" in codes  # duplicate L2 inventory identity
+    assert "INV-033" in codes  # missing output declaration
+    assert "INV-040" not in codes  # declared row count matches physical rows

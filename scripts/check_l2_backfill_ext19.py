@@ -64,6 +64,23 @@ DISPOSITION_VOCAB = frozenset({
     "deferred_with_approval",
 })
 
+# Canonical entity records are named processes-*.yaml. Documentation,
+# research and discovery artefacts may mirror an entity identity but are
+# not additional L2 entities.
+NON_CANONICAL_DIRS = {
+    "research", "candidates", "retired", "documentation",
+    "discovery", "reports", "templates",
+}
+
+
+def _canonical_record_files(catalog_root: Path) -> list[Path]:
+    entity_root = catalog_root / "entities" / "v1-alpha"
+    return [
+        path for path in sorted(entity_root.rglob("processes-*.yaml"))
+        if not any(part in NON_CANONICAL_DIRS
+                   for part in path.relative_to(entity_root).parts)
+    ]
+
 
 def _make_finding(rule: str, where: str, diagnostic: str, severity: str = "info") -> dict:
     return {"rule": rule, "where": where, "diagnostic": diagnostic, "severity": severity}
@@ -72,7 +89,7 @@ def _make_finding(rule: str, where: str, diagnostic: str, severity: str = "info"
 def _collect_l2_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     """Yield (path, record) for every L2 BP entity in the catalogue."""
     out: list[tuple[Path, dict]] = []
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
@@ -86,7 +103,7 @@ def _collect_l2_records(catalog_root: Path) -> list[tuple[Path, dict]]:
 def _resolve_l1_parents(catalog_root: Path) -> set[str]:
     """Return the set of L1 ProcessGroup entity IDs."""
     out: set[str] = set()
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
@@ -102,7 +119,7 @@ def _resolve_l1_parents(catalog_root: Path) -> set[str]:
 def _collect_l3_children(catalog_root: Path) -> dict[str, list[str]]:
     """Return {parent_l2_id: [l3_activity_ids, ...]} for L3 Activities."""
     out: dict[str, list[str]] = {}
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
@@ -376,7 +393,7 @@ def main() -> int:
     # Build the manifest.
     manifest = {
         "manifest_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19",
         "catalog_root": str(catalog_root),
@@ -398,7 +415,7 @@ def main() -> int:
     # Emit the inventory.
     L2_INVENTORY_PATH.write_text(json.dumps({
         "inventory_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19",
         "total_l2_entities": inventory_report["total_l2_entities"],
@@ -446,7 +463,7 @@ def _build_reconciliation_matrix(inventory_report: dict) -> dict:
     bucket_distrib = inventory_report["by_l3_children_count"]
     return {
         "matrix_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19 (EXT-20 extension in EXT-21)",
         "purpose": "the L2-to-L3 reconciliation matrix (mandatory EXT-19 deliverable per the user recommendation; extended to L2-to-L3-to-L4 during EXT-20 and EXT-21)",

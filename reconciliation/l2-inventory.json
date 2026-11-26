@@ -1,9 +1,9 @@
 {
   "inventory_schema_version": "1",
-  "generated_at": "2026-10-19",
+  "generated_at": "2026-11-26",
   "generator": "scripts/check_l2_backfill_ext19.py",
   "parent_cr": "CR-BP-94-EXT-19",
-  "total_l2_entities": 146,
+  "total_l2_entities": 145,
   "inventory": [
     {
       "id": "processes:process-fa-operate-g9zpnq",
@@ -1921,35 +1921,6 @@
       "type": "Process",
       "level": "L2",
       "parent_l1": "processes:pc-pr-improve-k8phkn",
-      "parent_l1_resolves": false,
-      "l3_children_count": 4,
-      "l3_children_ids": [
-        "processes:activity-pr-improve-6atff5",
-        "processes:activity-pr-improve-k6eb79",
-        "processes:activity-pr-improve-jg6bv4",
-        "processes:activity-pr-improve-p988q3"
-      ],
-      "has_description": true,
-      "fields_present": {
-        "inputs": true,
-        "outputs": true,
-        "accountability": false,
-        "responsibility_struct": false,
-        "business_rules": false,
-        "controls": false,
-        "exceptions": false,
-        "provenance": false
-      },
-      "authoring_state": null,
-      "disposition": null,
-      "profile_completeness": "partial"
-    },
-    {
-      "id": "processes:process-pr-improve-t6uvan",
-      "name": "Operate Customer Retention Programs (documentation manifest)",
-      "type": "Process",
-      "level": "L2",
-      "parent_l1": null,
       "parent_l1_resolves": false,
       "l3_children_count": 4,
       "l3_children_ids": [

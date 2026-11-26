@@ -1,0 +1,66 @@
+{
+  "baseline_schema_version": "1",
+  "baseline_kind": "current-canonical-inventory",
+  "parent_cr": "CR-BP-238",
+  "slice": "B",
+  "reconciled_at": "2026-11-26",
+  "source_commit": "f88472eac891331801400028ba3270cb64444cd3",
+  "source_commit_semantics": "Commit whose canonical entity tree was inventoried; governance-only register corrections do not alter this entity snapshot.",
+  "canonical_entity_population": {
+    "L0_ProcessContext": 49,
+    "L1_ProcessGroup": 49,
+    "L2_BusinessProcess": 145,
+    "L3_Activity": 580,
+    "L4_Task": 2900,
+    "total": 3723
+  },
+  "catalogue_index_state_counts": {
+    "entities": 3723,
+    "canonical": 3722,
+    "retired": 1,
+    "candidates": 0
+  },
+  "governance_registers": {
+    "lifecycle": {
+      "rows": 3723,
+      "unique_ids": 3723,
+      "active": 3722,
+      "deprecated": 1,
+      "states": {
+        "active": 3722,
+        "deprecated": 1
+      }
+    },
+    "ownership": {
+      "rows": 145,
+      "unique_l2_ids": 145
+    },
+    "l2_inventory": {
+      "rows": 145,
+      "unique_l2_ids": 145,
+      "inputs_declared": 145,
+      "outputs_declared": 145
+    }
+  },
+  "historical_baseline": {
+    "path": "reconciliation/closure/catalogue-baseline.json",
+    "baseline_date": "2026-10-20",
+    "total": 3724,
+    "L2_BusinessProcess": 146,
+    "disposition": "preserved as immutable programme-closure evidence; not current population"
+  },
+  "reconciliation": {
+    "duplicate_documentation_manifest_identity": "processes:process-pr-improve-t6uvan",
+    "retained_canonical_record": "Operate Customer Retention Programs",
+    "removed_duplicate_register_rows": 3,
+    "removed_legacy_research_lifecycle_row": "dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind",
+    "legacy_research_disposition": "excluded from canonical lifecycle population; original research evidence retained outside the lifecycle register",
+    "canonical_entity_files_changed": 0,
+    "status": "reconciled",
+    "legacy_research_evidence_path": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/research/l2-admission-deposition.yaml",
+    "legacy_research_parent_business_process": "processes:process-ge-retire-mjq5hg"
+  },
+  "known_limitations": [
+    "The EXT-19 l2-inventory.parent_l1 field currently contains the L0 ProcessContext reference from the L2 context[] assertion; its parent_l1_resolves=false value is not evidence that the L2-to-L1 composition is missing. Resolve the actual L1-to-L2 relationship from ProcessGroup.composes and cross-check the L2 context in CR-BP-239."
+  ]
+}

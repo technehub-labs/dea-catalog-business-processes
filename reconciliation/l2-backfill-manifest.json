@@ -1,18 +1,17 @@
 {
   "manifest_schema_version": "1",
-  "generated_at": "2026-10-19",
+  "generated_at": "2026-11-26",
   "generator": "scripts/check_l2_backfill_ext19.py",
   "parent_cr": "CR-BP-94-EXT-19",
   "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
   "summary": {
-    "total_findings": 586,
+    "total_findings": 581,
     "by_rule": {
-      "L2-007": 146,
-      "L2-008": 146,
-      "L2-009": 146,
-      "L2-012": 146,
-      "L2-011": 1,
-      "L2-010": 1
+      "L2-007": 145,
+      "L2-008": 145,
+      "L2-009": 145,
+      "L2-012": 145,
+      "L2-011": 1
     }
   },
   "findings": [
@@ -1622,36 +1621,6 @@
       "rule": "L2-009",
       "where": "processes:process-pr-improve-t6uvan",
       "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' lacks provenance[] (REQ-19-20)",
-      "severity": "info"
-    },
-    {
-      "rule": "L2-012",
-      "where": "processes:process-pr-improve-t6uvan",
-      "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' has no metadata.authoring (REQ-19-24; entity-level disposition required)",
-      "severity": "info"
-    },
-    {
-      "rule": "L2-007",
-      "where": "processes:process-pr-improve-t6uvan",
-      "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' lacks accountability[] or structured responsibility[]",
-      "severity": "info"
-    },
-    {
-      "rule": "L2-008",
-      "where": "processes:process-pr-improve-t6uvan",
-      "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' lacks business_rules[], controls[], or exceptions[]",
-      "severity": "info"
-    },
-    {
-      "rule": "L2-009",
-      "where": "processes:process-pr-improve-t6uvan",
-      "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' lacks provenance[] (REQ-19-20)",
-      "severity": "info"
-    },
-    {
-      "rule": "L2-010",
-      "where": "processes:process-pr-improve-t6uvan",
-      "diagnostic": "L2 BP 'processes:process-pr-improve-t6uvan' has no context[] L0 ProcessContext reference",
       "severity": "info"
     },
     {
@@ -3534,10 +3503,10 @@
     }
   ],
   "inventory_summary": {
-    "total_l2_entities": 146,
+    "total_l2_entities": 145,
     "by_profile_completeness": {
       "fully_complete": 0,
-      "partial": 146,
+      "partial": 145,
       "incomplete": 0
     },
     "by_parent_l1": {
@@ -3595,7 +3564,7 @@
     "by_l3_children_count": {
       "0": 1,
       "1_to_3": 0,
-      "4_to_7": 145,
+      "4_to_7": 144,
       "8_or_more": 0
     },
     "inventory": [
@@ -5515,35 +5484,6 @@
         "type": "Process",
         "level": "L2",
         "parent_l1": "processes:pc-pr-improve-k8phkn",
-        "parent_l1_resolves": false,
-        "l3_children_count": 4,
-        "l3_children_ids": [
-          "processes:activity-pr-improve-6atff5",
-          "processes:activity-pr-improve-k6eb79",
-          "processes:activity-pr-improve-jg6bv4",
-          "processes:activity-pr-improve-p988q3"
-        ],
-        "has_description": true,
-        "fields_present": {
-          "inputs": true,
-          "outputs": true,
-          "accountability": false,
-          "responsibility_struct": false,
-          "business_rules": false,
-          "controls": false,
-          "exceptions": false,
-          "provenance": false
-        },
-        "authoring_state": null,
-        "disposition": null,
-        "profile_completeness": "partial"
-      },
-      {
-        "id": "processes:process-pr-improve-t6uvan",
-        "name": "Operate Customer Retention Programs (documentation manifest)",
-        "type": "Process",
-        "level": "L2",
-        "parent_l1": null,
         "parent_l1_resolves": false,
         "l3_children_count": 4,
         "l3_children_ids": [
