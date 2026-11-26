@@ -48,6 +48,7 @@ jobs:
       - name: Validate the substrate (no release on a non-conformant snapshot)
         run: |
           set -euo pipefail
+          python3 scripts/check_canonical_inventory.py --strict
           python3 scripts/conformance_result.py --strict
           python3 scripts/check_id_system.py --strict
           python3 scripts/check_readme_consistency.py --strict
