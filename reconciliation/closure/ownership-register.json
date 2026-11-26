@@ -1,7 +1,7 @@
 {
   "register_schema_version": "1",
   "parent_cr": "CR-BP-94-EXT-24",
-  "generated_at": "2026-10-20",
+  "generated_at": "2026-11-26",
   "note": "Every L2 Business Process has an explicit ownership disposition. Where the actual owner is not yet known, the disposition is 'awaiting_owner_confirmation' and a Process Domain Reviewer (GOV-003) is responsible for assigning it. REQ-24-10.",
   "dispositions": [
     {
@@ -941,15 +941,6 @@
       "decision_right": "Business Process Owner (GOV-002) confirms"
     },
     {
-      "bp_id": "processes:process-pr-improve-t6uvan",
-      "bp_name": "Operate Customer Retention Programs (documentation manifest)",
-      "cell_id": "(unassigned cell)",
-      "owner": "awaiting_owner_confirmation",
-      "owner_status": "pending_naming",
-      "review_due": "2026-12-31",
-      "decision_right": "Business Process Owner (GOV-002) confirms"
-    },
-    {
       "bp_id": "processes:process-pr-operate-bbe384",
       "bp_name": "Manage Customer Relationship",
       "cell_id": "(unassigned cell)",
@@ -1318,5 +1309,12 @@
       "review_due": "2026-12-31",
       "decision_right": "Business Process Owner (GOV-002) confirms"
     }
-  ]
+  ],
+  "total_l2_entities": 145,
+  "reconciliation": {
+    "change_request": "CR-BP-238",
+    "slice": "B",
+    "source_commit": "f88472eac891331801400028ba3270cb64444cd3",
+    "method": "Duplicate documentation-manifest disposition removed; canonical process ownership disposition retained"
+  }
 }
