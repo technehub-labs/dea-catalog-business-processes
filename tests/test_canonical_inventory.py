@@ -163,7 +163,9 @@ def test_ownership_and_l2_inventory_duplicates_are_blocking(tmp_path: Path) -> N
     _fixture(tmp_path)
     ownership_path = tmp_path / "reconciliation" / "closure" / "ownership-register.json"
     ownership = json.loads(ownership_path.read_text(encoding="utf-8"))
-    ownership["dispositions"].append(dict(ownership["dispositions"][0]))
+    extra_owner = dict(ownership["dispositions"][0])
+    extra_owner["bp_id"] = "processes:process-unregistered"
+    ownership["dispositions"].append(extra_owner)
     _write_json(ownership_path, ownership)
 
     l2_path = tmp_path / "reconciliation" / "l2-inventory.json"
