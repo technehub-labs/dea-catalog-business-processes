@@ -115,7 +115,7 @@ The HTML edition shall work locally without network access or external runtime d
 - search by entity name, canonical ID and supported semantic terms;
 - filters by ECF domain, lifecycle stage, level, intent, specialization, classification and lifecycle state;
 - drill-down from L0 to L4 and navigable parent/child relationships;
-- rich detail panels for definitions, descriptions, example uses, triggers, outcomes, scope, inputs, outputs, responsibility, accountability, rules, controls, exceptions and provenance;
+- rich detail panels for formal and plain-language definitions/descriptions, business purpose, practical context, worked examples, triggers, outcomes, scope, inputs, outputs, responsibility, accountability, rules, controls, exceptions and provenance;
 - clear display of unavailable or undeclared fields, rather than fabricated examples;
 - summary counts and data-quality coverage indicators;
 - print styles for the overview and individual entity details;
@@ -251,7 +251,7 @@ The publication assets shall be attached to the GitHub Release and included in t
 2. All 49 ECF cells appear in normative order, with no missing or duplicated coordinate.
 3. All 3,723 canonical records in the current reconciled baseline are accounted for by level and lifecycle state.
 4. Every canonical L2 process and all its declared L3/L4 descendants are navigable in HTML and represented in JSON and Excel.
-5. L2 descriptions, example uses, inputs and outputs are carried through from source records without invention or silent truncation.
+5. L2 formal and plain-language descriptions, business purpose, practical context, worked examples, inputs and outputs are carried through from source records without invention or silent truncation.
 6. All absent or undeclared information is visibly distinguished from empty or not-applicable values.
 7. HTML works offline with network access disabled.
 8. PDF is one intentional poster page at its declared print size; PNG is rendered from that PDF.
