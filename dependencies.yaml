@@ -6,11 +6,11 @@
 # dea:catalog/business-processes@<version>.
 #
 # Schema (informative):
-#   ecf_contract:  string, e.g. dea:ecf@2.5.0      (required, hard pin)
+#   ecf_contract:  string, e.g. dea:ecf@2.7.0      (required, hard pin)
 #   metamodel_pin: string, e.g. 1.0.0              (required, hard pin)
 #   catalogs:      list of catalog pin entries     (zero or more)
 
-ecf_contract: dea:ecf@2.5.0
+ecf_contract: dea:ecf@2.7.0
 metamodel_pin: "1.0.0"
 
 catalogs:
