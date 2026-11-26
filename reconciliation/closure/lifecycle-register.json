@@ -1,12 +1,12 @@
 {
   "register_schema_version": "1",
   "parent_cr": "CR-BP-94-EXT-24",
-  "generated_at": "2026-10-20",
+  "generated_at": "2026-11-26",
   "states_in_use": [
     "active",
     "deprecated"
   ],
-  "total_records": 3725,
+  "total_records": 3723,
   "records": [
     {
       "record_id": "processes:pc-fa-retire-64q5p9",
@@ -4944,15 +4944,6 @@
       "record_id": "processes:task-pr-improve-transform-25stkv",
       "record_name": "Assess Churn Risk Processing",
       "entity_kind": "Task",
-      "lifecycle_state": "active",
-      "approved_by": "GOV-009 (programme authority)",
-      "last_review": "2026-10-20",
-      "next_review": "2027-10-20"
-    },
-    {
-      "record_id": "processes:process-pr-improve-t6uvan",
-      "record_name": "Operate Customer Retention Programs (documentation manifest)",
-      "entity_kind": "Process",
       "lifecycle_state": "active",
       "approved_by": "GOV-009 (programme authority)",
       "last_review": "2026-10-20",
@@ -21564,15 +21555,6 @@
       "next_review": "2027-10-20"
     },
     {
-      "record_id": "dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind",
-      "record_name": "",
-      "entity_kind": "unknown",
-      "lifecycle_state": "active",
-      "approved_by": "GOV-009 (programme authority)",
-      "last_review": "2026-10-20",
-      "next_review": "2027-10-20"
-    },
-    {
       "record_id": "processes:pc-pr-operate-pwue5a",
       "record_name": "Customer Relationship Operations",
       "entity_kind": "ProcessContext",
@@ -33533,5 +33515,11 @@
       "last_review": "2026-10-20",
       "next_review": "2027-10-20"
     }
-  ]
+  ],
+  "reconciliation": {
+    "change_request": "CR-BP-238",
+    "slice": "B",
+    "source_commit": "f88472eac891331801400028ba3270cb64444cd3",
+    "method": "Canonical filesystem identity reconciliation; no entity records changed"
+  }
 }
