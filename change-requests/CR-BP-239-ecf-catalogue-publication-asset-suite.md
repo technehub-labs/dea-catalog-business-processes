@@ -42,7 +42,8 @@ The publication model is a derived view, not a new source of truth. Canonical en
 6. The existing map and workbook read the entity tree independently. They can therefore drift in field coverage, filtering or counts.
 7. The existing workbook is a six-sheet governance-oriented workbook, not a complete operationally useful catalogue workbook. It does not provide a dedicated, consistently structured view of all L0-L4 entity details and I/O declarations.
 8. The release package currently lacks a canonical JSON publication model and an explicit schema for that model.
-9. Release-package validation does not yet assert that the poster, HTML, JSON and workbook represent the same model digest and entity population.
+9. The EXT-19 L2 inventory labels the L2 `context[].ref` Process Context ID as `parent_l1`, and consequently reports `parent_l1_resolves=false`. This is a field-semantics defect in the derived inventory, not evidence that the canonical L1-to-L2 composition is absent. The publication model must use the L1 Process Group's `composes[]` assertions for L1-to-L2 containment and independently resolve the L2 context to L0.
+10. Release-package validation does not yet assert that the poster, HTML, JSON and workbook represent the same model digest and entity population.
 
 These are publication-tooling gaps. They do not invalidate the canonical entity records or justify speculative enrichment.
 
