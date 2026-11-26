@@ -1,6 +1,6 @@
 # CR-BP-239: ECF Catalogue Publication Asset Suite
 
-**Status**: In progress — Slice B implementation in PR #244
+**Status**: Proposed
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
