@@ -81,8 +81,11 @@ The JSON Schema shall be versioned independently from the catalogue release vers
 ### 3.3 Identity and ECF placement
 
 - ECF cell placement is resolved from canonical references and the L0 Process Context's `domain` and `lifecycle_stage`.
-- L1 placement resolves through `process_context`; L2 placement resolves through `context[].ref`; L3 through `belongs_to_business_process`; L4 through `belongs_to_activity`.
-- The model shall preserve the asserted relationship and its resolution status.
+- L1 placement resolves through `process_context` to its L0 Process Context.
+- L1-to-L2 containment resolves from the L1 Process Group's canonical `composes[]` assertions (source = L1 group, target = L2 process). Do not infer this relationship from directory nesting or from the L2 `context[]` field.
+- Each L2 process independently resolves its ECF cell through `context[].ref` to the L0 Process Context. The resolved L0 context must agree with the L0 context of every asserted L1 parent. Missing, multiple or conflicting group compositions are explicit findings.
+- L3 containment resolves through `belongs_to_business_process`; L4 containment resolves through `belongs_to_activity`.
+- The model shall preserve each asserted relationship and its resolution status. The publication builder shall distinguish the L2-to-L0 context reference from the L1-to-L2 composition relationship; they are complementary assertions, not interchangeable parent fields.
 - A record with missing, ambiguous or invalid placement is reported; it is never silently assigned by path or name.
 - Domain and stage order shall be taken from the ECF contract, not alphabetical sorting or an independently maintained renderer-specific order.
 - For the current pinned ECF contract in dea-metaframework v2.7.0, the domain-major order is: Governance & Existence; Strategy & Direction; Agency & Organization; Party & Relationship; Product & Value; Enablement & Operations; Finance & Accounting. The stage-minor order is: Conceive; Design; Build; Activate; Operate; Improve; Retire. The renderer shall import or verify against `tools/ecf_coordinates.py` rather than re-declare these arrays independently.
