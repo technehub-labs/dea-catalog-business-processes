@@ -25,7 +25,11 @@
       "rows": 3723,
       "unique_ids": 3723,
       "active": 3722,
-      "deprecated": 1
+      "deprecated": 1,
+      "states": {
+        "active": 3722,
+        "deprecated": 1
+      }
     },
     "ownership": {
       "rows": 145,
