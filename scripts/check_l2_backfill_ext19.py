@@ -64,6 +64,23 @@ DISPOSITION_VOCAB = frozenset({
     "deferred_with_approval",
 })
 
+# Canonical entity records are named processes-*.yaml. Documentation,
+# research and discovery artefacts may mirror an entity identity but are
+# not additional L2 entities.
+NON_CANONICAL_DIRS = {
+    "research", "candidates", "retired", "documentation",
+    "discovery", "reports", "templates",
+}
+
+
+def _canonical_record_files(catalog_root: Path) -> list[Path]:
+    entity_root = catalog_root / "entities" / "v1-alpha"
+    return [
+        path for path in sorted(entity_root.rglob("processes-*.yaml"))
+        if not any(part in NON_CANONICAL_DIRS
+                   for part in path.relative_to(entity_root).parts)
+    ]
+
 
 def _make_finding(rule: str, where: str, diagnostic: str, severity: str = "info") -> dict:
     return {"rule": rule, "where": where, "diagnostic": diagnostic, "severity": severity}
@@ -72,7 +89,7 @@ def _make_finding(rule: str, where: str, diagnostic: str, severity: str = "info"
 def _collect_l2_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     """Yield (path, record) for every L2 BP entity in the catalogue."""
     out: list[tuple[Path, dict]] = []
-    for f in (catalog_root / "entities" / "v1-alpha").rglob("*.yaml"):
+    for f in _canonical_record_files(catalog_root):
         try:
             with f.open(encoding="utf-8") as fp:
                 rec = yaml.safe_load(fp) or {}
