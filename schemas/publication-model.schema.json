@@ -1,0 +1,455 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/publication-model.schema.json",
+  "title": "OpenDEA Business Process Catalogue Publication Model",
+  "description": "CR-BP-239 Slice A. Deterministic derived publication model; canonical entity records remain authoritative.",
+  "type": "object",
+  "required": [
+    "model_schema_version",
+    "catalogue",
+    "provenance",
+    "inventory",
+    "coordinates",
+    "entities",
+    "relationships",
+    "findings",
+    "model_digest"
+  ],
+  "properties": {
+    "model_schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "catalogue": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "const": "dea:catalog/business-processes"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "canonical_entity_snapshot_commit",
+        "inventory_baseline_path",
+        "ecf_contract",
+        "metamodel_pin",
+        "dependency_manifest"
+      ],
+      "properties": {
+        "canonical_entity_snapshot_commit": {
+          "type": "string",
+          "minLength": 7
+        },
+        "build_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "inventory_baseline_path": {
+          "type": "string"
+        },
+        "inventory_baseline_schema_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ecf_contract": {
+          "type": "object",
+          "required": [
+            "identifier",
+            "version",
+            "tag",
+            "commit",
+            "coordinate_module"
+          ],
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "const": "dea:ecf"
+            },
+            "version": {
+              "type": "string",
+              "const": "2.7.0"
+            },
+            "tag": {
+              "type": "string",
+              "const": "v2.7.0"
+            },
+            "commit": {
+              "type": "string",
+              "const": "8858839111f1458e597c46741f27dbd71ec19518"
+            },
+            "coordinate_module": {
+              "type": "string",
+              "const": "tools/ecf_coordinates.py"
+            }
+          },
+          "additionalProperties": false
+        },
+        "metamodel_pin": {
+          "type": "string"
+        },
+        "dependency_manifest": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "inventory": {
+      "type": "object",
+      "required": [
+        "total",
+        "by_level",
+        "by_lifecycle_state",
+        "by_ecf_domain",
+        "by_lifecycle_stage",
+        "baseline"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "by_level": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "by_lifecycle_state": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "by_ecf_domain": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "by_lifecycle_stage": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "baseline": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "coordinates": {
+      "type": "array",
+      "minItems": 49,
+      "maxItems": 49,
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "stage",
+          "identifier",
+          "label",
+          "process_context_ids",
+          "process_group_ids",
+          "business_process_ids",
+          "counts"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "stage": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "process_context_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "process_group_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "business_process_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "counts": {
+            "type": "object",
+            "required": [
+              "L0",
+              "L1",
+              "L2",
+              "L3",
+              "L4"
+            ],
+            "properties": {
+              "L0": {
+                "type": "integer"
+              },
+              "L1": {
+                "type": "integer"
+              },
+              "L2": {
+                "type": "integer"
+              },
+              "L3": {
+                "type": "integer"
+              },
+              "L4": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "level",
+          "source_path",
+          "record",
+          "lifecycle_state",
+          "governance",
+          "field_provenance",
+          "ecf_coordinate"
+        ],
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "L0",
+              "L1",
+              "L2",
+              "L3",
+              "L4"
+            ]
+          },
+          "source_path": {
+            "type": "string"
+          },
+          "record": {
+            "type": "object"
+          },
+          "lifecycle_state": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "governance": {
+            "type": "object",
+            "required": [
+              "lifecycle",
+              "ownership"
+            ],
+            "properties": {
+              "lifecycle": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "ownership": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "field_provenance": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "required": [
+                "source_path",
+                "source_key"
+              ],
+              "properties": {
+                "source_path": {
+                  "type": "string"
+                },
+                "source_key": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "ecf_coordinate": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "domain": {
+                "type": "string"
+              },
+              "stage": {
+                "type": "string"
+              },
+              "identifier": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "target_id",
+          "relationship_type",
+          "assertion_source",
+          "source_path",
+          "resolution"
+        ],
+        "properties": {
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relationship_type": {
+            "type": "string"
+          },
+          "assertion_source": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": "string"
+          },
+          "resolution": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "unresolved"
+            ]
+          },
+          "asserted_edge": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "severity",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "error",
+              "warning",
+              "info"
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_path": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "model_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    }
+  },
+  "additionalProperties": false
+}
