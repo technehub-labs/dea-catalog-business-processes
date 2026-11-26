@@ -93,6 +93,7 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
     """Return a deterministic inventory report; never writes to the repository."""
     root = catalog_root.resolve()
     findings: list[dict[str, Any]] = []
+    observations: list[dict[str, Any]] = []
     entity_root = root / ENTITY_ROOT
 
     if not entity_root.is_dir():
@@ -105,6 +106,7 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
             "lifecycle_register": {},
             "historical_baseline": {},
             "findings": findings,
+            "observations": observations,
         }
 
     counts: Counter[str] = Counter()
@@ -331,9 +333,9 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
         if baseline_counts.get(level) != expected_counts[level]
     }
     if baseline_mismatches:
-        findings.append(_finding(
-            "INV-024",
-            "Dated EXT-24 programme-closure baseline differs from current inventory; retain it as historical evidence",
+        observations.append(_finding(
+            "HIST-001",
+            "Dated EXT-24 programme-closure baseline differs from the current inventory; retain it as historical evidence",
             mismatches=baseline_mismatches,
             baseline_date=baseline.get("baseline_date"),
         ))
@@ -375,6 +377,7 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
         },
         "findings": findings,
         "finding_count": len(findings),
+        "observations": observations,
     }
 
 
