@@ -115,7 +115,8 @@ def test_duplicate_orphan_and_historical_baseline_drift_are_reported(
 
     assert "INV-018" in codes  # lifecycle row outside the canonical entity set
     assert "INV-020" in codes  # duplicate lifecycle identity
-    assert "INV-024" in codes  # dated baseline differs from current inventory
+    assert "INV-024" not in codes  # historical baseline is not a current-state gate
     assert "INV-025" in codes  # unknown lifecycle entity kind
     assert "INV-026" in codes  # legacy/non-canonical lifecycle identifier
     assert report["lifecycle_register"]["actual_rows"] == 7
+    assert report["observations"][0]["code"] == "HIST-001"
