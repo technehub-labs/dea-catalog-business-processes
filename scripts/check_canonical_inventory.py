@@ -421,6 +421,47 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
             "INV-036", "Current inventory baseline register counts differ from actual registers",
             baseline=declared_register_counts, current=actual_register_counts,
         ))
+    baseline_io = {
+        "inputs_declared": baseline_l2.get("inputs_declared"),
+        "outputs_declared": baseline_l2.get("outputs_declared"),
+    }
+    actual_io = {
+        "inputs_declared": sum(
+            1 for row in l2_rows if isinstance(row, dict)
+            and (row.get("fields_present") or {}).get("inputs") is True
+        ),
+        "outputs_declared": sum(
+            1 for row in l2_rows if isinstance(row, dict)
+            and (row.get("fields_present") or {}).get("outputs") is True
+        ),
+    }
+    if baseline_io != actual_io:
+        findings.append(_finding(
+            "INV-037", "Current inventory baseline L2 I/O coverage differs from L2 inventory",
+            baseline=baseline_io, current=actual_io,
+        ))
+    baseline_state_counts = current_baseline.get("catalogue_index_state_counts", {})
+    actual_state_counts = {
+        "entities": index_counts.get("entities"),
+        "canonical": index_counts.get("canonical"),
+        "retired": index_counts.get("retired"),
+        "candidates": index_counts.get("candidates"),
+    }
+    if baseline_state_counts != actual_state_counts:
+        findings.append(_finding(
+            "INV-038", "Current inventory baseline catalogue state counts differ from CATALOG.yaml",
+            baseline=baseline_state_counts, current=actual_state_counts,
+        ))
+    baseline_lifecycle_states = baseline_lifecycle.get("states", {})
+    actual_lifecycle_states = dict(sorted(Counter(
+        row.get("lifecycle_state") for row in lifecycle_records
+        if isinstance(row, dict) and isinstance(row.get("lifecycle_state"), str)
+    ).items()))
+    if baseline_lifecycle_states != actual_lifecycle_states:
+        findings.append(_finding(
+            "INV-039", "Current inventory baseline lifecycle-state counts differ from lifecycle register",
+            baseline=baseline_lifecycle_states, current=actual_lifecycle_states,
+        ))
 
     # The EXT-24 baseline is intentionally historical; compare it, but never rewrite it.
     baseline = _read_json(
