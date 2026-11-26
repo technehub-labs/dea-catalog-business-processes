@@ -72,6 +72,36 @@ def _fixture(root: Path) -> tuple[list[dict], dict]:
             }
         },
     )
+    _write_json(
+        root / "reconciliation" / "closure" / "ownership-register.json",
+        {"dispositions": [{
+            "bp_id": "processes:process-process-one",
+            "bp_name": "Process One",
+        }]},
+    )
+    _write_json(
+        root / "reconciliation" / "l2-inventory.json",
+        {"total_l2_entities": 1, "inventory": [{
+            "id": "processes:process-process-one",
+            "fields_present": {"inputs": True, "outputs": True},
+        }]},
+    )
+    _write_json(
+        root / "reconciliation" / "closure" / "current-inventory-baseline.json",
+        {
+            "source_commit": "0123456789abcdef",
+            "canonical_entity_population": {
+                "L0_ProcessContext": 1, "L1_ProcessGroup": 1,
+                "L2_BusinessProcess": 1, "L3_Activity": 1,
+                "L4_Task": 1, "total": 5,
+            },
+            "governance_registers": {
+                "lifecycle": {"rows": 5},
+                "ownership": {"rows": 1},
+                "l2_inventory": {"rows": 1},
+            },
+        },
+    )
     return rows, population
 
 
@@ -85,6 +115,8 @@ def test_clean_inventory_reconciles_all_representations(tmp_path: Path) -> None:
     assert report["inventory"]["total_entity_files"] == 5
     assert report["catalog_index"]["entity_count"] == 5
     assert report["lifecycle_register"]["actual_rows"] == 5
+    assert report["ownership_register"]["actual_rows"] == 1
+    assert report["l2_inventory"]["inputs_outputs_complete"] == 1
     assert report["finding_count"] == 0
 
 
@@ -118,5 +150,6 @@ def test_duplicate_orphan_and_historical_baseline_drift_are_reported(
     assert "INV-024" not in codes  # historical baseline is not a current-state gate
     assert "INV-025" in codes  # unknown lifecycle entity kind
     assert "INV-026" in codes  # legacy/non-canonical lifecycle identifier
+    assert "INV-036" in codes  # current baseline lifecycle row count drift
     assert report["lifecycle_register"]["actual_rows"] == 7
     assert report["observations"][0]["code"] == "HIST-001"
