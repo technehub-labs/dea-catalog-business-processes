@@ -1,7 +1,7 @@
 # CR-BP-238: Canonical Entity Inventory and Lifecycle Reconciliation
 
 **Status**: Proposed
-**Layer**: Cross-cutting (catalogue integrity and release governance)
+**Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
 **Depends on**: CR-BP-94-EXT-24 (operational governance and catalogue baseline), CR-BP-223 (register truth), CR-BP-30/30a..30h (release package), CR-BP-116 (release discipline), CR-BP-237 (metaframework toolchain pin v2.7.0)
