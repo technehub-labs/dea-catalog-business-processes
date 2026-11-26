@@ -261,6 +261,17 @@ def audit(catalog_root: Path = ROOT) -> dict[str, Any]:
             continue
         lifecycle_ids.append(record_id)
         lifecycle_kind_counts[str(entity_kind)] += 1
+        known_kinds = {value[1] for value in LEVELS.values()}
+        if entity_kind not in known_kinds:
+            findings.append(_finding(
+                "INV-025", "Lifecycle row has an unknown entity_kind",
+                record_id=record_id, entity_kind=entity_kind,
+            ))
+        if not ID_RE.fullmatch(record_id):
+            findings.append(_finding(
+                "INV-026", "Lifecycle row uses a non-canonical entity identifier",
+                record_id=record_id, entity_kind=entity_kind,
+            ))
         expected = expected_by_id.get(record_id)
         if expected is None:
             findings.append(_finding(
