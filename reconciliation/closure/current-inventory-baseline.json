@@ -56,6 +56,8 @@
     "removed_legacy_research_lifecycle_row": "dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind",
     "legacy_research_disposition": "excluded from canonical lifecycle population; original research evidence retained outside the lifecycle register",
     "canonical_entity_files_changed": 0,
-    "status": "reconciled"
+    "status": "reconciled",
+    "legacy_research_evidence_path": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/research/l2-admission-deposition.yaml",
+    "legacy_research_parent_business_process": "processes:process-ge-retire-mjq5hg"
   }
 }
