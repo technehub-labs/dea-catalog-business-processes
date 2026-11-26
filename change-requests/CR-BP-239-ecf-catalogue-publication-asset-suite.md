@@ -4,7 +4,7 @@
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-26
-**Depends on**: CR-BP-238 (canonical inventory and lifecycle reconciliation), CR-BP-30/30a..30h (release package), CR-BP-116 (release discipline), CR-BP-94-EXT-08..24 (documentation and operational governance), CR-ECF-CG-004 (ECF conformance)
+**Depends on**: CR-BP-238 (canonical inventory and lifecycle reconciliation), CR-BP-30/30a..30h (release package), CR-BP-116 (release discipline), CR-BP-94-EXT-08..24 (documentation and operational governance), CR-ECF-CG-004 (ECF conformance), dea-metaframework v2.7.0 (`tools/ecf_coordinates.py`)
 
 > **Scope.** Establish one verified, versioned publication model from which the ECF process-map poster, self-contained HTML catalogue, machine-readable JSON export and enriched Excel workbook are generated. The assets shall accompany every eligible catalogue release and publication. This CR evolves the existing `scripts/generate_entity_map.py` renderer; it does not create a competing interpretation of ECF coordinates or redefine canonical process semantics.
 
@@ -85,6 +85,7 @@ The JSON Schema shall be versioned independently from the catalogue release vers
 - The model shall preserve the asserted relationship and its resolution status.
 - A record with missing, ambiguous or invalid placement is reported; it is never silently assigned by path or name.
 - Domain and stage order shall be taken from the ECF contract, not alphabetical sorting or an independently maintained renderer-specific order.
+- For the current pinned ECF contract in dea-metaframework v2.7.0, the domain-major order is: Governance & Existence; Strategy & Direction; Agency & Organization; Party & Relationship; Product & Value; Enablement & Operations; Finance & Accounting. The stage-minor order is: Conceive; Design; Build; Activate; Operate; Improve; Retire. The renderer shall import or verify against `tools/ecf_coordinates.py` rather than re-declare these arrays independently.
 - Canonical identities must be unique. Duplicate IDs, multiple cell placements, orphaned children and unexpected ECF coordinates are publication-blocking findings.
 
 ## 4. Publication asset requirements
@@ -102,7 +103,7 @@ Produce a designed, print-ready ECF 7×7 poster with:
 - a compact legend and explicit statement of the levels shown;
 - accessible contrast and legibility at the selected print size.
 
-The poster shall be delivered as PDF and PNG. Select A1/A2 landscape based on measured density and actual print rendering; never shrink content to force a nominal page size. The release gate shall verify that the poster is a single intended poster page and that the PNG is rasterised from that same PDF.
+The poster shall be delivered as PDF and PNG. A1 landscape is the preferred initial target for the L0-L2 view carrying all 145 L2 names; A2 may be selected only if measured print tests demonstrate equivalent legibility. Never shrink content to force a nominal page size. The release gate shall verify that the poster is a single intended poster page and that the PNG is rasterised from that same PDF.
 
 The poster is an overview, not a substitute for the detailed catalogue. It shall not attempt to print all L3/L4 descriptions or all I/O content.
 
