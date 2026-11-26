@@ -245,13 +245,13 @@ jobs:
         # docs/conformance-pipeline.md S16.
         run: python scripts/check_cr_metadata.py --strict
 
-      - name: Run CR-BP-238 canonical inventory audit (advisory during reconciliation)
+      - name: Run CR-BP-238 canonical inventory audit (blocking after Slice B)
         if: steps.check.outputs.skip != 'true'
-        # Slice A reports current register/index drift without blocking
-        # remediation. The strict mode is promoted only after Slice B.
+        # Slice B reconciles lifecycle, ownership and L2 inventories to the
+        # canonical filesystem; the inventory contract is now blocking.
         run: |
           python -m pytest -q tests/test_canonical_inventory.py
-          python scripts/check_canonical_inventory.py --output /tmp/canonical-inventory-reconciliation.json
+          python scripts/check_canonical_inventory.py --strict --output /tmp/canonical-inventory-reconciliation.json
           python - <<'PY'
           import json
           from pathlib import Path
