@@ -393,7 +393,7 @@ def main() -> int:
     # Build the manifest.
     manifest = {
         "manifest_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19",
         "catalog_root": str(catalog_root),
@@ -415,7 +415,7 @@ def main() -> int:
     # Emit the inventory.
     L2_INVENTORY_PATH.write_text(json.dumps({
         "inventory_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19",
         "total_l2_entities": inventory_report["total_l2_entities"],
@@ -463,7 +463,7 @@ def _build_reconciliation_matrix(inventory_report: dict) -> dict:
     bucket_distrib = inventory_report["by_l3_children_count"]
     return {
         "matrix_schema_version": "1",
-        "generated_at": "2026-10-19",
+        "generated_at": "2026-11-26",
         "generator": "scripts/check_l2_backfill_ext19.py",
         "parent_cr": "CR-BP-94-EXT-19 (EXT-20 extension in EXT-21)",
         "purpose": "the L2-to-L3 reconciliation matrix (mandatory EXT-19 deliverable per the user recommendation; extended to L2-to-L3-to-L4 during EXT-20 and EXT-21)",
