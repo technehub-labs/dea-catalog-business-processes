@@ -59,5 +59,8 @@
     "status": "reconciled",
     "legacy_research_evidence_path": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/research/l2-admission-deposition.yaml",
     "legacy_research_parent_business_process": "processes:process-ge-retire-mjq5hg"
-  }
+  },
+  "known_limitations": [
+    "The EXT-19 l2-inventory.parent_l1 field currently contains the L0 ProcessContext reference from the L2 context[] assertion; its parent_l1_resolves=false value is not evidence that the L2-to-L1 composition is missing. Resolve the actual L1-to-L2 relationship from ProcessGroup.composes and cross-check the L2 context in CR-BP-239."
+  ]
 }
