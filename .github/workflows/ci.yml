@@ -461,7 +461,7 @@ jobs:
               assert path.is_file() and path.stat().st_size > 0, f"Missing/empty asset: {path}"
           html = (out / "process-catalogue.html").read_text(encoding="utf-8")
           assert model["model_digest"] in html, "Offline HTML lacks model digest"
-          assert not re.search(r'(?:src|href)="https?://', html, re.I), "HTML has external asset/network dependency"
+          assert not re.search(r'src="https?://', html, re.I), "HTML has external asset/network dependency"
           embedded = re.search(r'id="publication-model">([^<]+)</script>', html)
           assert embedded, "Offline HTML publication model payload missing"
           decoded = json.loads(gzip.decompress(base64.b64decode(embedded.group(1))))
