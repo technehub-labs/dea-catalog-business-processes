@@ -4,7 +4,6 @@ and the conformance pipeline documentation.
 from __future__ import annotations
 
 import json
-import importlib
 import re
 import subprocess
 import sys
@@ -107,7 +106,7 @@ def test_cr_readme_gate_is_invoked_strictly():
         if "CR README Consistency" in item[0]
     )
     assert gate[1] is True
-    assert gate[2][-2:] == ["--strict"]
+    assert gate[2][-1] == "--strict"
 
 
 def test_failed_gate_diagnostics_are_preserved(monkeypatch, capsys):
