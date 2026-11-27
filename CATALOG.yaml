@@ -7117,7 +7117,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-conceive-phabh2
-    last_modified: '2026-11-06'
+    last_modified: '2026-11-27'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-conceive/processes-pc-fa-conceive-phabh2.yaml
     research_count: 0
@@ -7139,7 +7139,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-improve-haqf4w
-    last_modified: '2026-11-06'
+    last_modified: '2026-11-27'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-improve/processes-pc-fa-improve-haqf4w.yaml
     research_count: 0
