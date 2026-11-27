@@ -33,7 +33,7 @@ PR #252 manually reconciled the visible composition tables, decomposition sectio
 5. Run `python scripts/generate_readmes.py --check` and `python scripts/check_readme_consistency.py --strict`.
 6. Run `python -m pytest -q tests/test_generate_readmes.py tests/test_check_readme_consistency.py tests/test_conformance_result.py`.
 7. Run main post-merge validation and resume the chain only after aggregate conformance has zero blocking findings.
-8. Preserve advisory findings, including documentation backfill and EXT-22 reconciliation, without treating them as resolved by this CR.
+8. Reconcile the CR register and generated `CATALOG.yaml` open-CR count to include CR-BP-243 as Proposed (10 open CRs at this baseline).\n9. Preserve advisory findings, including documentation backfill and EXT-22 reconciliation, without treating them as resolved by this CR.
 
 ## 4. Explicit Non-Goals
 
@@ -54,7 +54,7 @@ PR #252 manually reconciled the visible composition tables, decomposition sectio
 - [ ] Strict README consistency reports zero blocking findings.
 - [ ] Generator, README consistency and conformance-result test modules pass.
 - [ ] Post-merge main validation reaches aggregate conformance and reports zero blocking failures.
-- [ ] Advisory findings remain visible and are not represented as closed.
+- [ ] The CR register entry and generated `CATALOG.yaml` open-CR count reconcile for CR-BP-243.\n- [ ] Advisory findings remain visible and are not represented as closed.
 - [ ] Downstream CR-BP-238/239 stages run only after aggregate conformance passes; their results are reviewed separately.
 
 ## 6. Execution and Validation Boundary
