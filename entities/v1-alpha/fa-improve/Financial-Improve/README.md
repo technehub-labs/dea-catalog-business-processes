@@ -42,6 +42,7 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 
 | Date | Change Request | Action / Disposition | Author |
 | :--- | :--- | :--- | :--- |
+| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed the Audit Policy Compliance composes assertion. The process remains canonically composed by Governance Oversight (Governance & Existence × Operate); Finance Improve scope wording is retained as a cross-context concern pending relationship-model disposition. | System |
 | 2026-09-08 | `CR-BP-21e.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
@@ -55,7 +56,7 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 | `process_context` | string | no | processes:pc-fa-improve-haqf4w |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[2] | no | array of 2 item(s) |
-| `composes` | array[4] | no | array of 4 item(s) |
+| `composes` | array[3] | no | array of 3 item(s) |
 | `process_group_kind` | string | no | end-to-end |
 | `status` | string | no | accepted |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
@@ -72,7 +73,6 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `processes:process-ge-operate-hxxyc9` | 1 |
 | `composes` | `processes:process-fa-improve-emqpgr` | 1 |
 | `composes` | `processes:process-fa-improve-cdtsbq` | 1 |
 | `composes` | `processes:process-fa-improve-2kemkq` | 1 |
@@ -83,7 +83,6 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 <summary>Expand to view decomposition details</summary>
 
 - Composes (children):
-  - `processes:process-ge-operate-hxxyc9` (composes)
   - `processes:process-fa-improve-emqpgr` (composes)
   - `processes:process-fa-improve-cdtsbq` (composes)
   - `processes:process-fa-improve-2kemkq` (composes)
@@ -103,7 +102,7 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 **Roles and Responsibilities**
 
 - Process Owner: Finance & Accounting Process Owner (confirmed; GOV-002 role-based)
-- Decomposes into 4 L2 Process(es) (per the record's `composes` block)
+- Decomposes into 3 L2 Process(es) (per the record's `composes` block)
 
 **Business Rules and Controls**
 
