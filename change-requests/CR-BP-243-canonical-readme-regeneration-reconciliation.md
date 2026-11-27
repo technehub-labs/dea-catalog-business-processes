@@ -1,7 +1,7 @@
 # CR-BP-243 — Canonical README Regeneration Reconciliation
 
 **Status**: Proposed  
-**Layer**: Cross-cutting / Generated Documentation  
+**Layer**: Cross-cutting  
 **Owner**: Emmanuel A. Otchere  
 **Type**: Generated-artifact repair and validation  
 **Depends on**: CR-BP-114; CR-BP-240; CR-BP-241; CR-BP-242  
