@@ -1,6 +1,6 @@
 # CR-BP-240 — L1–L2 Hierarchy Reconciliation
 
-**Status:** Proposed  
+**Status**: Proposed  
 **Type:** Canonical hierarchy correction and publication-validation reconciliation  
 **Depends on:** CR-BP-239 Slice A publication model (PR #243, merged)  
 **Enables:** CR-BP-239 Slice B poster and offline HTML publication  
