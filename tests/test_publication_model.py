@@ -88,6 +88,14 @@ def _fixture(tmp_path: Path) -> tuple[Path, Path]:
     _write_yaml(base / "Group/Process/processes-process-governance-conceive-ghi.yaml", {
         "id": ids[2], "type": "Process", "name": "Governance Process",
         "context": [{"ref": ids[0]}],
+        "definition": "Formal process definition for the fixture.",
+        "plain_language_description": "A concise fixture description.",
+        "worked_example": "An example grounded in the fixture source.",
+        "process_intent": "manage",
+        "process_classification": {"type": "management"},
+        "process_specialization": ["governance"],
+        "inputs": [{"name": "Request", "description": "An input request."}],
+        "outputs": [{"name": "Decision", "description": "A recorded decision."}],
     })
     _write_yaml(base / "Group/Process/Activity/processes-activity-governance-conceive-jkl.yaml", {
         "id": ids[3], "type": "Activity", "name": "Governance Activity",

@@ -328,6 +328,35 @@ CR-BP-15 reconciliation closes the migration.
 
 ---
 
+# Publication Assets (CR-BP-239)
+
+The ECF poster and offline HTML catalogue are rendered from the same validated
+publication-model JSON. The renderer does not read entity YAML or resolve
+relationships independently. The poster is an A1 landscape L0-L2 overview;
+the HTML edition embeds its data, filters by ECF placement and process fields,
+and supports navigation through declared hierarchy relationships.
+
+The current production model is still diagnostic. Build it with findings
+enabled, then opt into a clearly labelled diagnostic preview:
+
+```sh
+python scripts/build_publication_model.py --allow-findings --output out/process-catalogue.json
+python scripts/generate_entity_map.py --model out/process-catalogue.json \\
+  --allow-findings --output-dir out --pdf --png
+```
+
+This produces `process-catalogue.html`, `process-catalogue-poster.html`,
+`process-catalogue-poster.pdf` and a PNG rasterized from that PDF. The HTML is
+self-contained and works without external scripts, fonts, stylesheets or data
+requests. The current diagnostic model reports 12 unresolved L2 hierarchy
+findings; the poster and HTML show these findings and are **not release-ready**.
+Once semantic reconciliation clears those findings, build without
+`--allow-findings`; strict generation then gates publication. JSON Schema and
+model provenance are validated before rendering. Slice C will add the enriched
+Excel consumer, and Slice D will integrate the full asset family with releases.
+
+---
+
 # Enterprise Concept Framework
 
 The Enterprise Concept Framework provides a holistic and structured representation of the enterprise through the intersection of:
