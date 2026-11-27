@@ -6578,7 +6578,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-conceive-9xzf3b
-    last_modified: '2026-11-06'
+    last_modified: '2026-11-27'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-conceive/Financial-Model-Conception/processes-group-fa-conceive-9xzf3b.yaml
     research_count: 0
@@ -6600,7 +6600,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-improve-hvq8u8
-    last_modified: '2026-11-06'
+    last_modified: '2026-11-27'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-improve/Financial-Improve/processes-group-fa-improve-hvq8u8.yaml
     research_count: 0
