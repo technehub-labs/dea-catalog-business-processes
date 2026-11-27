@@ -254,6 +254,10 @@ jobs:
         # docs/conformance-pipeline.md S16.
         run: python scripts/check_cr_metadata.py --strict
 
+      - name: Run conformance-result regression tests (CR-BP-241)
+        if: steps.check.outputs.skip != 'true'
+        run: python -m pytest -q tests/test_conformance_result.py
+
       - name: Run CR-BP-238 canonical inventory audit (blocking after Slice B)
         if: steps.check.outputs.skip != 'true'
         # Slice B reconciles lifecycle, ownership and L2 inventories to the
