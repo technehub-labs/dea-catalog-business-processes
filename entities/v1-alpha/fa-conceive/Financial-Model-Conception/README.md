@@ -51,6 +51,7 @@ scope.
 
 | Date | Change Request | Action / Disposition | Author |
 | :--- | :--- | :--- | :--- |
+| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed five out-of-context composes assertions. Canonical L2 compositions remain in their context-owned groups; cross-process concerns are not represented as containment. | System |
 | 2026-09-08 | `CR-BP-21e` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-09-08 | `CR-BP-21e.1` | Composes edges added for the 4 non-Conceive-cell L2s | System |
 | 2026-09-14 | `CR-BP-58` | Removed the dangling composes edge to | System |
@@ -66,7 +67,7 @@ scope.
 | `process_context` | string | no | processes:pc-fa-conceive-phabh2 |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
-| `composes` | array[6] | no | array of 6 item(s) |
+| `composes` | array[1] | no | array of 1 item(s) |
 | `process_group_kind` | string | no | end-to-end |
 | `status` | string | no | accepted |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
@@ -84,11 +85,6 @@ scope.
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
 | `composes` | `processes:process-fa-conceive-4uqqvg` | 1 |
-| `composes` | `processes:process-eo-conceive-87kx9n` | 1 |
-| `composes` | `processes:process-fa-design-vk422z` | 1 |
-| `composes` | `processes:process-ge-operate-hxxyc9` | 1 |
-| `composes` | `processes:process-fa-operate-g9zpnq` | 1 |
-| `composes` | `processes:process-fa-improve-emqpgr` | 1 |
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)
 
@@ -97,11 +93,6 @@ scope.
 
 - Composes (children):
   - `processes:process-fa-conceive-4uqqvg` (composes)
-  - `processes:process-eo-conceive-87kx9n` (composes)
-  - `processes:process-fa-design-vk422z` (composes)
-  - `processes:process-ge-operate-hxxyc9` (composes)
-  - `processes:process-fa-operate-g9zpnq` (composes)
-  - `processes:process-fa-improve-emqpgr` (composes)
 </details>
 
 ## 10. Operational Details (generated)
@@ -120,7 +111,7 @@ scope.
 **Roles and Responsibilities**
 
 - Process Owner: Finance & Accounting Process Owner (confirmed; GOV-002 role-based)
-- Decomposes into 6 L2 Process(es) (per the record's `composes` block)
+- Decomposes into 1 L2 Process(es) (per the record's `composes` block)
 
 **Business Rules and Controls**
 
