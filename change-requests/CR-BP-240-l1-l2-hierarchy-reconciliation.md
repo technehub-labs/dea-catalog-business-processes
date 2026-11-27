@@ -1,10 +1,13 @@
 # CR-BP-240 — L1–L2 Hierarchy Reconciliation
 
 **Status**: Proposed  
+**Layer**: Cross-cutting  
+**Owner**: Emmanuel A. Otchere  
 **Type:** Canonical hierarchy correction and publication-validation reconciliation  
 **Depends on:** CR-BP-239 Slice A publication model (PR #243, merged)  
 **Enables:** CR-BP-239 Slice B poster and offline HTML publication  
 **Baseline:** `2707db63a5502c676923511f896df439bd7d6398
+
 ## 1. Purpose
 
 Resolve the 12 diagnostic hierarchy findings produced by the CR-BP-239 production publication model. Reconcile the provenance and intent of each assertion before correcting canonical L1–L2 composition. The change shall not infer a parent from names, directories, process context, or ECF placement; it shall not rewrite a canonical L0 context to make a composition appear valid.
