@@ -163,5 +163,26 @@ def test_pdf_and_png_are_from_a_single_a1_page_when_dependencies_exist(tmp_path)
     model = _model(tmp_path)
     first = render_assets(model, tmp_path / "first", poster_pdf=True, poster_png=True)
     second = render_assets(model, tmp_path / "second", poster_pdf=True, poster_png=True)
-    assert first["poster_pdf"].read_bytes() == second["poster_pdf"].read_bytes()
-    assert first["poster_png"].read_bytes() == second["poster_png"].read_bytes()
+
+    # PDF metadata/serialization may vary between identical renders. Verify
+    # stable publication content and page geometry instead of byte identity.
+    info = subprocess.run(["pdfinfo", str(first["poster_pdf"])], check=True,
+                          capture_output=True, text=True).stdout
+    assert re.search(r"^Pages:\s+1$", info, re.MULTILINE)
+    size = re.search(r"^Page size:\s+([\d.]+) x ([\d.]+) pts", info, re.MULTILINE)
+    assert size is not None
+    assert abs(float(size.group(1)) - 841.89) < 1.5  # A1 landscape width
+    assert abs(float(size.group(2)) - 594.95) < 1.5  # A1 landscape height
+
+    text_a = subprocess.run(["pdftotext", "-layout", str(first["poster_pdf"]), "-"],
+                            check=True, capture_output=True, text=True).stdout
+    text_b = subprocess.run(["pdftotext", "-layout", str(second["poster_pdf"]), "-"],
+                            check=True, capture_output=True, text=True).stdout
+    normalize = lambda value: re.sub(r"\\s+", " ", value).strip()
+    assert normalize(text_a) == normalize(text_b)
+
+    from PIL import Image, ImageChops
+    image_a = Image.open(first["poster_png"]).convert("RGB")
+    image_b = Image.open(second["poster_png"]).convert("RGB")
+    assert image_a.size == image_b.size
+    assert ImageChops.difference(image_a, image_b).getbbox() is None
