@@ -115,7 +115,7 @@ GATES: list[tuple[str, bool, list[str]]] = [
     ("[28] Template Drift (CR-BP-113; TPL-001..005)",
      True, ["python", "scripts/check_templates.py"]),  # CR-BP-113; blocking
     ("[29] CR README Consistency (CR-BP-113; CRR-001..003)",
-     True, ["python", "scripts/check_cr_readme.py"]),  # CR-BP-113; blocking
+     True, ["python", "scripts/check_cr_readme.py", "--strict"]),  # CR-BP-113; blocking
     ("[30] README Consistency (CR-BP-114; RDM-001..002)",
      True, ["python", "scripts/check_readme_consistency.py"]),  # CR-BP-114; blocking
     ("[31] Entity Identity Clarity (CR-BP-117a; EID-001..004)",
@@ -301,6 +301,13 @@ def main(argv: list[str] | None = None) -> int:
             tag = "FAIL" if not r.passed else "PASS"
             kind = "BLOCKING" if r.blocking else "ADVISORY"
             print(f"    [{tag}/{kind}] {r.name}: {r.verdict_line[:80]}")
+        # Preserve validator diagnostics for failed gates. A verdict-only
+        # summary hid the file/rule-level evidence needed to remediate
+        # blocking failures (notably RDM-001 and CRR-001..003).
+        for r in results:
+            if not r.passed and r.raw_stdout.strip():
+                print(f"--- diagnostics: {r.name} ---")
+                print(r.raw_stdout.rstrip())
     return 1 if any_failure else 0
 
 
