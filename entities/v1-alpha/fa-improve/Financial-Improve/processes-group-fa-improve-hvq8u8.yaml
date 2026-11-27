@@ -19,20 +19,6 @@ outcomes:
 - Compliance and cost reviews feed governance.
 composes:
 - source_id: processes:group-fa-improve-hvq8u8
-  target_id: processes:process-ge-operate-hxxyc9
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21e).
-
-    '
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e.1
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
-- source_id: processes:group-fa-improve-hvq8u8
   target_id: processes:process-fa-improve-emqpgr
   relationship_type: composes
   direction: source-to-target
@@ -114,6 +100,9 @@ metadata:
   established_at: '2026-09-08'
   cross_context_overlap: []
   change_history:
+  - cr: CR-BP-240
+    date: '2026-11-27'
+    change: 'L1–L2 hierarchy reconciliation: removed the Audit Policy Compliance composes assertion. The process remains canonically composed by Governance Oversight (Governance & Existence × Operate); Finance Improve scope wording is retained as a cross-context concern pending relationship-model disposition.'
   - cr: CR-BP-21e.1
     date: '2026-09-08'
     change: 'Initial Process Group record; promoted from the CR-BP-19 register

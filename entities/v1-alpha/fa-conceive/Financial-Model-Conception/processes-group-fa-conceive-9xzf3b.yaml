@@ -58,99 +58,6 @@ composes:
     reference: CR-BP-21e
     asserted_by: dea-team
     asserted_at: '2026-09-08'
-- source_id: processes:group-fa-conceive-9xzf3b
-  target_id: processes:process-eo-conceive-87kx9n
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process frames the physical-asset approach that
-
-    informs the financial model''s asset accounting posture.
-
-    Lands under CR-BP-21e (FinanceAndAccounting landing tranche).
-
-    '
-  evidence: docs/examples/frame-physical-asset-approach.md
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
-- source_id: processes:group-fa-conceive-9xzf3b
-  target_id: processes:process-fa-design-vk422z
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process designs the financial plan structure (one
-
-    per non-Conceive cell seeded by CR-BP-21e). Extended by
-
-    CR-BP-21e.1.
-
-    '
-  evidence: docs/examples/design-financial-plan-structure.md
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e.1
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
-- source_id: processes:group-fa-conceive-9xzf3b
-  target_id: processes:process-ge-operate-hxxyc9
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process audits policy compliance (one per non-Conceive
-
-    cell seeded by CR-BP-21e). Extended by CR-BP-21e.1.
-
-    '
-  evidence: docs/examples/audit-policy-compliance.md
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e.1
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
-- source_id: processes:group-fa-conceive-9xzf3b
-  target_id: processes:process-fa-operate-g9zpnq
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process operates the general ledger (one per
-
-    non-Conceive cell seeded by CR-BP-21e). Extended by
-
-    CR-BP-21e.1.
-
-    '
-  evidence: docs/examples/operate-general-ledger.md
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e.1
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
-- source_id: processes:group-fa-conceive-9xzf3b
-  target_id: processes:process-fa-improve-emqpgr
-  relationship_type: composes
-  direction: source-to-target
-  status: active
-  asserted_by: dea-team
-  rationale: 'The L2 process conducts cost-optimization reviews (one per
-
-    non-Conceive cell seeded by CR-BP-21e). Extended by
-
-    CR-BP-21e.1.
-
-    '
-  evidence: docs/examples/conduct-cost-optimization-review.md
-  provenance:
-    type: architecture-review
-    reference: CR-BP-21e.1
-    asserted_by: dea-team
-    asserted_at: '2026-09-08'
 process_group_kind: end-to-end
 status: accepted
 owner:
@@ -191,6 +98,9 @@ metadata:
   established_at: '2026-09-08'
   cross_context_overlap: []
   change_history:
+  - cr: CR-BP-240
+    date: '2026-11-27'
+    change: 'L1–L2 hierarchy reconciliation: removed five out-of-context composes assertions. Canonical L2 compositions remain in their context-owned groups; cross-process concerns are not represented as containment.'
   - cr: CR-BP-21e
     date: '2026-09-08'
     change: 'Initial Process Group record; promoted from the CR-BP-19 register

@@ -338,7 +338,7 @@ def build_model(root: Path = ROOT, ecf_root: Path | None = None,
                 "source_path": entity["source_path"],
             })
         parents = sorted(set(l2_groups.get(rid, [])))
-        if len(parents) == 0:
+        if len(parents) == 0 and entity.get("lifecycle_state") not in {"deprecated", "retired"}:
             findings.append({
                 "code": "HIERARCHY-L2-GROUP-MISSING", "severity": "error",
                 "message": "L2 Business Process has no incoming L1 ProcessGroup.composes assertion.",

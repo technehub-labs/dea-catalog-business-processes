@@ -137,3 +137,26 @@ def test_model_conforms_to_published_schema(tmp_path):
     schema = json.loads((ROOT / "schemas/publication-model.schema.json").read_text(encoding="utf-8"))
     errors = list(Draft7Validator(schema).iter_errors(model))
     assert errors == []
+
+
+def test_deprecated_l2_without_composition_is_not_reported_as_missing_group(tmp_path):
+    root, ecf = _fixture(tmp_path)
+    base = root / "entities/v1-alpha/go-conceive/Group/Process"
+    process_path = base / "processes-process-governance-conceive-ghi.yaml"
+    group_path = root / "entities/v1-alpha/go-conceive/Group/processes-group-governance-conceive-def.yaml"
+    process = yaml.safe_load(process_path.read_text(encoding="utf-8"))
+    process["lifecycle_status"] = "deprecated"
+    process["status"] = "deprecated"
+    _write_yaml(process_path, process)
+    group = yaml.safe_load(group_path.read_text(encoding="utf-8"))
+    group["composes"] = []
+    _write_yaml(group_path, group)
+    lifecycle_path = root / "reconciliation/closure/lifecycle-register.json"
+    lifecycle = json.loads(lifecycle_path.read_text(encoding="utf-8"))
+    for record in lifecycle["records"]:
+        if record["record_id"] == process["id"]:
+            record["lifecycle_state"] = "deprecated"
+    lifecycle_path.write_text(json.dumps(lifecycle), encoding="utf-8")
+    model = build_model(root, ecf, build_commit="abcdef123456", verify_ecf_commit=False)
+    missing = [f for f in model["findings"] if f["code"] == "HIERARCHY-L2-GROUP-MISSING"]
+    assert missing == []
