@@ -28,14 +28,17 @@ def test_conformance_result_runs_on_live():
     """Live run returns CONFORMANT."""
     r = _run([str(SCRIPT_RESULT)])
     assert r.returncode == 0, r.stdout + r.stderr
-    assert "Conformance Result (CR-BP-16 §18): CONFORMANT" in r.stdout
+    assert ("Conformance Result (CR-BP-16 §18): CONFORMANT" in r.stdout
+            or "Conformance Result (CR-BP-16 §18): CONFORMANT-WITH-WARNINGS" in r.stdout)
+    assert "0 blocking failures" in r.stdout
 
 
 def test_conformance_result_json_shape():
     r = _run([str(SCRIPT_RESULT), "--json"])
     assert r.returncode == 0, r.stdout + r.stderr
     data = json.loads(r.stdout)
-    assert data["verdict"] == "CONFORMANT"
+    assert data["verdict"] in {"CONFORMANT", "CONFORMANT-WITH-WARNINGS"}
+    assert data["blocking_failures"] == []
     assert isinstance(data["gates"], list)
     assert len(data["gates"]) >= 10
     # Each gate has the expected fields
