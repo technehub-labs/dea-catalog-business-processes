@@ -96,9 +96,15 @@ jobs:
           # regenerator's --check produces byte-identical output.
           git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
 
-      - name: CATALOG.yaml must match regenerator output
+      - name: CATALOG.yaml must match regenerator output (show exact drift)
         if: steps.check.outputs.skip != 'true'
-        run: python scripts/regenerate_catalog.py --check --schema catalog-index-schema/catalog-index-schema.json
+        run: |
+          python scripts/regenerate_catalog.py --dry-run --schema catalog-index-schema/catalog-index-schema.json > /tmp/CATALOG.generated.yaml
+          if ! diff -u CATALOG.yaml /tmp/CATALOG.generated.yaml; then
+            echo "::error::CATALOG.yaml is stale. The unified diff above is the exact regenerator output discrepancy."
+            exit 3
+          fi
+          echo "OK: CATALOG.yaml matches regenerator output"
 
       - name: Validate CATALOG.yaml (CR-CATALOG-STRUCT-01 §8 gate)
         if: steps.check.outputs.skip != 'true'
