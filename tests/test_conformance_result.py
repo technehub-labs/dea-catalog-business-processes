@@ -4,6 +4,7 @@ and the conformance pipeline documentation.
 from __future__ import annotations
 
 import json
+import importlib
 import re
 import subprocess
 import sys
@@ -12,6 +13,8 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+import conformance_result as conformance_result_module
 SCRIPT_RESULT = ROOT / "scripts" / "conformance_result.py"
 PIPELINE_DOC = ROOT / "docs" / "conformance-pipeline.md"
 
@@ -96,3 +99,24 @@ def test_pipeline_doc_covers_continuous_conformance():
         "the governing metamodel changes",
     ]:
         assert trigger in text, f"continuous-conformance trigger missing: {trigger}"
+
+def test_cr_readme_gate_is_invoked_strictly():
+    """CRR-001..003 is a blocking gate and must not fail open on findings."""
+    gate = next(
+        item for item in conformance_result_module.GATES
+        if "CR README Consistency" in item[0]
+    )
+    assert gate[1] is True
+    assert gate[2][-2:] == ["--strict"]
+
+
+def test_failed_gate_diagnostics_are_preserved(monkeypatch, capsys):
+    """A failed validator's rule/file diagnostics must reach CI output."""
+    conformance_result_module.GATES = [
+        ("[test] README diagnostic fixture", True,
+         [sys.executable, "-c", "print('RDM-001: fixture README is stale'); raise SystemExit(1)"]),
+    ]
+    result = conformance_result_module.main([])
+    captured = capsys.readouterr()
+    assert result == 1
+    assert "RDM-001: fixture README is stale" in captured.out
