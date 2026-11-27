@@ -285,3 +285,8 @@ The next release must not be tagged until the CR-BP-238 strict inventory gate is
 - The publication model is derived and versioned; it does not supersede the entity catalog.
 - Any semantic source change remains subject to its own scoped CR and applicable upstream contracts.
 - The first complete publication release shall be cut only after CR-BP-238 inventory reconciliation and strict conformance are established.
+
+
+## 11. Slice B implementation reconciliation (2026-11-27)
+
+PR #244 merged the publication-model-driven poster and offline HTML renderer. PR #245 merged the governed hierarchy dispositions and canonical assertion corrections. The diagnostic-only CI build is superseded for Slice B acceptance by a strict production build and renderer gate: model generation uses the default strict mode (no `--allow-findings`), the renderer likewise runs without diagnostic override, and CI asserts zero error findings, the reconciled population (3,723 records; L0–L4 = 49/49/145/580/2,900), 49 unique ECF coordinates, embedded model digest fidelity, offline HTML, one-page landscape PDF, and PNG raster dimensions. CI uploads the strict model and Slice B outputs as one artifact. This closes the strict production-validation dependency for poster/HTML generation; it does not claim Slice C (Excel), Slice D (release integration), or the overall CR is complete.
