@@ -425,48 +425,71 @@ jobs:
         # CR-BP-63 lands the Activate/Retire discovery records.
         run: python scripts/check_lifecycle_discovery.py
 
-      - name: Build CR-BP-239 publication model diagnostics (Slice A)
+      - name: Build strict CR-BP-239 publication model and Slice B assets
         if: steps.check.outputs.skip != 'true'
-        # Diagnostic model generation is intentionally distinct from the strict
-        # release-readiness gate. Existing unresolved reconciliation findings
-        # must be observable in CI without pretending the catalogue is ready
-        # for publication. The builder's default mode remains strict.
         run: |
           python -m pytest -q tests/test_publication_model.py tests/test_publication_renderers.py
-          python scripts/build_publication_model.py --allow-findings --output /tmp/process-catalogue.json
+          # The default publication-model build is strict: unresolved error
+          # findings stop the build. No diagnostic override is permitted here.
+          python scripts/build_publication_model.py --output /tmp/process-catalogue.json
           python scripts/generate_entity_map.py --model /tmp/process-catalogue.json \
-            --allow-findings --output-dir /tmp/process-catalogue-assets --pdf --png
+            --output-dir /tmp/process-catalogue-assets --pdf --png
           python - <<'PY'
-          import json
-          from collections import Counter
+          import base64, gzip, json, re, subprocess
           from pathlib import Path
-          model = json.loads(Path("/tmp/process-catalogue.json").read_text(encoding="utf-8"))
-          findings = model.get("findings", [])
-          counts = Counter(f.get("severity", "unspecified") for f in findings)
-          codes = Counter(f.get("code", "unspecified") for f in findings)
-          print("Publication model diagnostic summary")
-          print(f"entities={model['inventory']['total']} coordinates={len(model['coordinates'])}")
-          print(f"digest={model['model_digest']}")
-          print("severity counts:", dict(sorted(counts.items())))
-          print("finding-code counts:", dict(sorted(codes.items())))
-          print("Strict release readiness: NOT ESTABLISHED by this diagnostic build")
+          from PIL import Image
+
+          model_path = Path("/tmp/process-catalogue.json")
+          out = Path("/tmp/process-catalogue-assets")
+          model = json.loads(model_path.read_text(encoding="utf-8"))
+          errors = [f for f in model.get("findings", []) if f.get("severity") == "error"]
+          assert not errors, f"Strict publication model has {len(errors)} error findings: {errors[:5]}"
+          assert model["inventory"]["total"] == 3723, model["inventory"]
+          assert len(model["coordinates"]) == 49, len(model["coordinates"])
+          expected = {"L0": 49, "L1": 49, "L2": 145, "L3": 580, "L4": 2900}
+          levels = {entity["level"] for entity in model["entities"]}
+          actual = {level: sum(e["level"] == level for e in model["entities"]) for level in sorted(levels)}
+          assert actual == expected, f"Level inventory mismatch: {actual}"
+          assert not errors
+          required = [
+              model_path, out / "process-catalogue.html",
+              out / "process-catalogue-poster.html",
+              out / "process-catalogue-poster.pdf",
+              out / "process-catalogue-poster.png",
+          ]
+          for path in required:
+              assert path.is_file() and path.stat().st_size > 0, f"Missing/empty asset: {path}"
+          html = (out / "process-catalogue.html").read_text(encoding="utf-8")
+          assert model["model_digest"] in html, "Offline HTML lacks model digest"
+          assert not re.search(r'(?:src|href)="https?://', html, re.I), "HTML has external asset/network dependency"
+          embedded = re.search(r'id="publication-model">([^<]+)</script>', html)
+          assert embedded, "Offline HTML publication model payload missing"
+          decoded = json.loads(gzip.decompress(base64.b64decode(embedded.group(1))))
+          assert decoded["model_digest"] == model["model_digest"]
+          assert decoded["inventory"]["total"] == model["inventory"]["total"]
+          info = subprocess.run(["pdfinfo", str(out / "process-catalogue-poster.pdf")],
+                                check=True, capture_output=True, text=True).stdout
+          pages = re.search(r"^Pages:\s+(\d+)", info, re.M)
+          size = re.search(r"^Page size:\s+([\d.]+) x ([\d.]+) pts", info, re.M)
+          assert pages and pages.group(1) == "1", f"Poster PDF page count not one: {info}"
+          assert size and float(size.group(1)) > float(size.group(2)), f"Poster is not landscape A1: {info}"
+          with Image.open(out / "process-catalogue-poster.png") as image:
+              assert image.width > 3000 and image.height > 2000 and image.width > image.height, image.size
+          print("STRICT PUBLICATION MODEL: PASS")
+          print(f"entities={model['inventory']['total']} level_counts={actual}")
+          print(f"coordinates={len(model['coordinates'])} error_findings=0 model_digest={model['model_digest']}")
+          print("Slice B assets: offline HTML, poster HTML, single-page landscape PDF, PNG raster: PASS")
           PY
-      - name: Upload CR-BP-239 diagnostic publication model
+      - name: Upload CR-BP-239 strict publication model and Slice B assets
         if: steps.check.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: cr-bp-239-publication-model-diagnostics
-          path: /tmp/process-catalogue.json
+          name: cr-bp-239-slice-b-publication-assets
+          path: |
+            /tmp/process-catalogue.json
+            /tmp/process-catalogue-assets/process-catalogue*
           if-no-files-found: error
-          retention-days: 14
-      - name: Upload CR-BP-239 Slice B diagnostic preview
-        if: steps.check.outputs.skip != 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: cr-bp-239-slice-b-preview
-          path: /tmp/process-catalogue-assets/process-catalogue*
-          if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
       - name: Run cross-repo conformance suite (CR-CATALOG-STRUCT-01 §11)
         if: steps.check.outputs.skip != 'true'
         run: |
