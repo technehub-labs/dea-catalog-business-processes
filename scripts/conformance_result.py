@@ -151,7 +151,7 @@ GATES: list[tuple[str, bool, list[str]]] = [
     ("[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
      False, ["python", "scripts/check_l4_backfill_ext21.py", "--catalog-root", "."]),  # CR-BP-94-EXT-21; ADVISORY (PR-190 lands; deferred by CR-BP-EXT-23 until the L4 population is reconciled; third slice of the catalogue enrichment tranche; completes the L2-to-L3-to-L4 traceability matrix)
     ("[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
-     False, ["python", "scripts/check_reconciliation_ext22.py", "--catalog-root", "."]),  # CR-BP-94-EXT-22; ADVISORY (PR-191 lands; deferred by CR-BP-EXT-23 until the 8 structural findings are reconciled; the fourth slice of the catalogue enrichment tranche)
+     False, ["python", "scripts/check_reconciliation_ext22.py", "--catalog-root", "."]),  # CR-BP-94-EXT-22; ADVISORY (PR-191 lands; the 6 R22-07 mismatches were remediated on main (PR #261 baseline refresh) and the 2 remaining R22-04/R22-06 findings are deprecated-record exclusions per CR-BP-246 (CR-BP-91 / MECE-008), recorded in deprecated_exclusions; the fourth slice of the catalogue enrichment tranche)
     ("[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)",
      False, ["python3", "scripts/check_conformance_framework_ext23.py"]),  # CR-BP-EXT-23; ADVISORY (the conformance framework's own self-check: the rule catalogue + the traceability matrix + the report + the dashboard must all validate; the validator returns rc=1 if any CF-NNN framework-finding is emitted; the framework is a meta-artefact and its failure is an exception in the meta-framework, not a catalogue defect)
     ("[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",

@@ -108,16 +108,21 @@ class TestReconciliationEXT22(unittest.TestCase):
         self.assertEqual(structural["duplicate_canonical_identifiers"], {})
 
     def test_r22_04_l2_to_l3_coverage(self):
-        """R22-04: exactly 1 L2 has no L3 decomposition (the known gap)."""
+        """R22-04: the only L2 without L3 is the deprecated record, exempted
+        per CR-BP-91 / MECE-008 (CR-BP-36) and recorded as an exclusion,
+        not emitted as an error (CR-BP-246)."""
         data = self._manifest()
         r22_004 = data["summary"]["by_rule"].get("R22-04", 0)
-        self.assertEqual(r22_004, 1)
+        self.assertEqual(r22_004, 0)
         with STRUCTURAL.open() as fp:
             structural = json.load(fp)
         self.assertEqual(
             structural["l2_without_l3_decomposition"],
             ["processes:process-ge-conceive-e6jx6s"],
         )
+        exclusions = [e for e in data["deprecated_exclusions"] if e["rule"] == "R22-04"]
+        self.assertEqual([e["record_id"] for e in exclusions],
+                         ["processes:process-ge-conceive-e6jx6s"])
 
     def test_r22_05_l3_to_l4_coverage(self):
         """R22-05: every L3 has L4 decomposition (0 findings)."""
@@ -128,25 +133,31 @@ class TestReconciliationEXT22(unittest.TestCase):
                           f"Activities have 4-7 L4 Tasks)")
 
     def test_r22_06_l1_to_l2_membership(self):
-        """R22-06: exactly 1 L2 is not composed by any L1 (the known gap)."""
+        """R22-06: the only L2 not composed by an L1 is the deprecated record,
+        exempted per CR-BP-91 / MECE-008 (CR-BP-36) and recorded as an
+        exclusion, not emitted as an error (CR-BP-246)."""
         data = self._manifest()
         r22_006 = data["summary"]["by_rule"].get("R22-06", 0)
-        self.assertEqual(r22_006, 1)
+        self.assertEqual(r22_006, 0)
         with STRUCTURAL.open() as fp:
             structural = json.load(fp)
         self.assertEqual(
             structural["l2_without_l1_membership"],
             ["processes:process-ge-conceive-e6jx6s"],
         )
+        exclusions = [e for e in data["deprecated_exclusions"] if e["rule"] == "R22-06"]
+        self.assertEqual([e["record_id"] for e in exclusions],
+                         ["processes:process-ge-conceive-e6jx6s"])
 
     def test_r22_07_l0_l1_contextual_consistency(self):
-        """R22-07: 6 L1-to-L2 compositions carry an L0 context mismatch."""
+        """R22-07: 0 findings — the six L0 context mismatches were remediated
+        on main after 2026-10-19 (baseline refreshed in PR #261)."""
         data = self._manifest()
         r22_007 = data["summary"]["by_rule"].get("R22-07", 0)
-        self.assertEqual(r22_007, 6)
+        self.assertEqual(r22_007, 0)
         with STRUCTURAL.open() as fp:
             structural = json.load(fp)
-        self.assertEqual(len(structural["l0_context_mismatches"]), 6)
+        self.assertEqual(len(structural["l0_context_mismatches"]), 0)
         for mismatch in structural["l0_context_mismatches"]:
             for key in ("l1", "l2", "l1_process_context", "l2_context"):
                 with self.subTest(key=key):
