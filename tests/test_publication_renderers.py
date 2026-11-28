@@ -171,8 +171,8 @@ def test_pdf_and_png_are_from_a_single_a1_page_when_dependencies_exist(tmp_path)
     assert re.search(r"^Pages:\s+1$", info, re.MULTILINE)
     size = re.search(r"^Page size:\s+([\d.]+) x ([\d.]+) pts", info, re.MULTILINE)
     assert size is not None
-    assert abs(float(size.group(1)) - 841.89) < 1.5  # A1 landscape width
-    assert abs(float(size.group(2)) - 594.95) < 1.5  # A1 landscape height
+    assert abs(float(size.group(1)) - 2383.94) < 1.5  # A1 landscape width (841 mm in points)
+    assert abs(float(size.group(2)) - 1683.78) < 1.5  # A1 landscape height (594 mm in points)
 
     text_a = subprocess.run(["pdftotext", "-layout", str(first["poster_pdf"]), "-"],
                             check=True, capture_output=True, text=True).stdout
