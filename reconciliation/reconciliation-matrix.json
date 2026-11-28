@@ -38631,12 +38631,10 @@
         "processes:activity-fa-design-aye4mb",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38664,12 +38662,10 @@
         "processes:activity-fa-design-aye4mb",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38697,12 +38693,10 @@
         "processes:activity-fa-design-aye4mb",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38730,12 +38724,10 @@
         "processes:activity-fa-design-aye4mb",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38763,12 +38755,10 @@
         "processes:activity-fa-design-aye4mb",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38796,12 +38786,10 @@
         "processes:activity-fa-design-drznes",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38829,12 +38817,10 @@
         "processes:activity-fa-design-drznes",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38862,12 +38848,10 @@
         "processes:activity-fa-design-drznes",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38895,12 +38879,10 @@
         "processes:activity-fa-design-drznes",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38928,12 +38910,10 @@
         "processes:activity-fa-design-drznes",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38961,12 +38941,10 @@
         "processes:activity-fa-design-xzbfxx",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -38994,12 +38972,10 @@
         "processes:activity-fa-design-xzbfxx",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39027,12 +39003,10 @@
         "processes:activity-fa-design-xzbfxx",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39060,12 +39034,10 @@
         "processes:activity-fa-design-xzbfxx",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39093,12 +39065,10 @@
         "processes:activity-fa-design-xzbfxx",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39126,12 +39096,10 @@
         "processes:activity-fa-design-bn5x7x",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39159,12 +39127,10 @@
         "processes:activity-fa-design-bn5x7x",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39192,12 +39158,10 @@
         "processes:activity-fa-design-bn5x7x",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39225,12 +39189,10 @@
         "processes:activity-fa-design-bn5x7x",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -39258,12 +39220,10 @@
         "processes:activity-fa-design-bn5x7x",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40531,12 +40491,10 @@
         "processes:activity-fa-improve-qa3vqq",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40564,12 +40522,10 @@
         "processes:activity-fa-improve-qa3vqq",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40597,12 +40553,10 @@
         "processes:activity-fa-improve-qa3vqq",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40630,12 +40584,10 @@
         "processes:activity-fa-improve-qa3vqq",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40663,12 +40615,10 @@
         "processes:activity-fa-improve-qa3vqq",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40696,12 +40646,10 @@
         "processes:activity-fa-improve-s2fjfj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40729,12 +40677,10 @@
         "processes:activity-fa-improve-s2fjfj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40762,12 +40708,10 @@
         "processes:activity-fa-improve-s2fjfj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40795,12 +40739,10 @@
         "processes:activity-fa-improve-s2fjfj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40828,12 +40770,10 @@
         "processes:activity-fa-improve-s2fjfj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40861,12 +40801,10 @@
         "processes:activity-fa-improve-rqws4s",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40894,12 +40832,10 @@
         "processes:activity-fa-improve-rqws4s",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40927,12 +40863,10 @@
         "processes:activity-fa-improve-rqws4s",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40960,12 +40894,10 @@
         "processes:activity-fa-improve-rqws4s",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -40993,12 +40925,10 @@
         "processes:activity-fa-improve-rqws4s",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -41026,12 +40956,10 @@
         "processes:activity-fa-improve-bxqsee",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -41059,12 +40987,10 @@
         "processes:activity-fa-improve-bxqsee",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -41092,12 +41018,10 @@
         "processes:activity-fa-improve-bxqsee",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -41125,12 +41049,10 @@
         "processes:activity-fa-improve-bxqsee",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -41158,12 +41080,10 @@
         "processes:activity-fa-improve-bxqsee",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -44911,12 +44831,10 @@
         "processes:activity-fa-operate-v4j4en",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -44944,12 +44862,10 @@
         "processes:activity-fa-operate-v4j4en",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -44977,12 +44893,10 @@
         "processes:activity-fa-operate-v4j4en",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45010,12 +44924,10 @@
         "processes:activity-fa-operate-v4j4en",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45043,12 +44955,10 @@
         "processes:activity-fa-operate-v4j4en",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45076,12 +44986,10 @@
         "processes:activity-fa-operate-kzqaqw",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45109,12 +45017,10 @@
         "processes:activity-fa-operate-kzqaqw",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45142,12 +45048,10 @@
         "processes:activity-fa-operate-kzqaqw",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45175,12 +45079,10 @@
         "processes:activity-fa-operate-kzqaqw",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45208,12 +45110,10 @@
         "processes:activity-fa-operate-kzqaqw",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45241,12 +45141,10 @@
         "processes:activity-fa-operate-ksg7yj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45274,12 +45172,10 @@
         "processes:activity-fa-operate-ksg7yj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45307,12 +45203,10 @@
         "processes:activity-fa-operate-ksg7yj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45340,12 +45234,10 @@
         "processes:activity-fa-operate-ksg7yj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45373,12 +45265,10 @@
         "processes:activity-fa-operate-ksg7yj",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45406,12 +45296,10 @@
         "processes:activity-fa-operate-6pk6zf",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45439,12 +45327,10 @@
         "processes:activity-fa-operate-6pk6zf",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45472,12 +45358,10 @@
         "processes:activity-fa-operate-6pk6zf",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45505,12 +45389,10 @@
         "processes:activity-fa-operate-6pk6zf",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -45538,12 +45420,10 @@
         "processes:activity-fa-operate-6pk6zf",
         "CR-BP-102"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55765,12 +55645,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-batrgt"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55799,12 +55677,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-batrgt"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55833,12 +55709,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-batrgt"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55867,12 +55741,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-batrgt"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55901,12 +55773,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-batrgt"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55935,12 +55805,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-cpcway"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -55969,12 +55837,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-cpcway"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56003,12 +55869,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-cpcway"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56037,12 +55901,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-cpcway"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56071,12 +55933,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-cpcway"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56105,12 +55965,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-r4ka8z"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56139,12 +55997,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-r4ka8z"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56173,12 +56029,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-r4ka8z"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56207,12 +56061,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-r4ka8z"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56241,12 +56093,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-r4ka8z"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56275,12 +56125,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-zhhypw"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56309,12 +56157,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-zhhypw"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56343,12 +56189,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-zhhypw"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56377,12 +56221,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-zhhypw"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {
@@ -56411,12 +56253,10 @@
         "Sarbanes-Oxley \u00a7\u00a7301-302",
         "processes:activity-ge-operate-zhhypw"
       ],
-      "identified_issues": [
-        "L0 context mismatch between the owning L1 and this L2"
-      ],
-      "required_action": "structural_remediation",
+      "identified_issues": [],
+      "required_action": "semantic_review",
       "issue_owner": "programme_owner",
-      "disposition": "requires_structural_remediation",
+      "disposition": "awaiting_owner_review",
       "review_status": "pending_review"
     },
     {

@@ -43,9 +43,8 @@
   ],
   "findings_by_rule": {
     "R22-04": 1,
-    "R22-06": 1,
-    "R22-07": 6
+    "R22-06": 1
   },
-  "total_findings": 8,
+  "total_findings": 2,
   "readiness_statement": "EXT-23 may enforce the deterministic structural rules automatically; the semantic rules must remain evidence-led and subject to human review."
 }
