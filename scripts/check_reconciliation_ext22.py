@@ -22,6 +22,11 @@ entity fields (per the EXT-22 implementation constraint).
   R22-04  L2-to-L3 decomposition coverage: every L2 has L3 children.
   R22-05  L3-to-L4 decomposition coverage: every L3 has L4 children.
   R22-06  L1-to-L2 membership: every L2 is composed by an L1.
+
+  R22-04 and R22-06 exempt deprecated records (lifecycle_status=deprecated):
+  per CR-BP-91 and the MECE-008 exemption (CR-BP-36), a deprecated BP is
+  intentionally not decomposed into L3 and not composed by an L1. Such
+  records are recorded in `deprecated_exclusions`, not emitted as errors.
   R22-07  L0-L1 contextual consistency: the L0 referenced by an L1
           matches the L0 referenced by the L2 processes it composes.
   R22-08  L0 materialisation: every referenced L0 Process Context
@@ -237,6 +242,12 @@ def _children_by_parent(records: list[tuple[Path, dict]]) -> dict[str, list[str]
 # Evaluation
 # ---------------------------------------------------------------------------
 
+DEPRECATED_EXEMPTION_BASIS = (
+    "lifecycle_status=deprecated; exempt per CR-BP-91 (deliberate L3 "
+    "exclusion) and MECE-008 (CR-BP-36) — superseded by the active sibling"
+)
+
+
 def evaluate(catalog_root: Path) -> tuple[list[dict], dict]:
     """Run R22-01..R22-12 against the catalogue."""
     findings: list[dict] = []
@@ -325,11 +336,16 @@ def evaluate(catalog_root: Path) -> tuple[list[dict], dict]:
 
     # R22-04: L2-to-L3 decomposition coverage
     l2_without_l3: list[str] = []
+    deprecated_exclusions: list[dict] = []
     for _path, rec in by_level.get("L2", []):
         rid = rec.get("id")
         if not children.get(rid):
             l2_without_l3.append(rid)
     for rid in sorted(l2_without_l3):
+        if id_index.get(rid, {}).get("lifecycle_status") == "deprecated":
+            deprecated_exclusions.append(
+                {"rule": "R22-04", "record_id": rid, "basis": DEPRECATED_EXEMPTION_BASIS})
+            continue
         findings.append(_make_finding(
             "R22-04", rid,
             f"L2 Business Process {rid!r} has no L3 Activity decomposition",
@@ -359,6 +375,10 @@ def evaluate(catalog_root: Path) -> tuple[list[dict], dict]:
         if rid not in l2_composed:
             l2_without_l1.append(rid)
     for rid in sorted(l2_without_l1):
+        if id_index.get(rid, {}).get("lifecycle_status") == "deprecated":
+            deprecated_exclusions.append(
+                {"rule": "R22-06", "record_id": rid, "basis": DEPRECATED_EXEMPTION_BASIS})
+            continue
         findings.append(_make_finding(
             "R22-06", rid,
             f"L2 Business Process {rid!r} is not composed by any L1 Process Group",
@@ -514,6 +534,7 @@ def evaluate(catalog_root: Path) -> tuple[list[dict], dict]:
         "l2_without_l3": l2_without_l3,
         "l3_without_l4": l3_without_l4,
         "l2_without_l1": l2_without_l1,
+        "deprecated_exclusions": deprecated_exclusions,
         "l1_without_l2": l1_without_l2,
         "l0_mismatches": l0_mismatches,
         "unmaterialised_l0": unmaterialised_l0,
@@ -735,6 +756,7 @@ def _emit_artefacts(state: dict, findings: list[dict]) -> None:
         "l2_without_l3_decomposition": state["l2_without_l3"],
         "l3_without_l4_decomposition": state["l3_without_l4"],
         "l2_without_l1_membership": state["l2_without_l1"],
+        "deprecated_exclusions": state["deprecated_exclusions"],
         "l1_without_l2_members": state["l1_without_l2"],
         "l0_context_mismatches": state["l0_mismatches"],
         "l0_referenced_not_materialised": state["unmaterialised_l0"],
@@ -781,6 +803,7 @@ def _emit_artefacts(state: dict, findings: list[dict]) -> None:
         "l0_materialised": state["materialised_l0"],
         "l0_context_mismatches": state["l0_mismatches"],
         "l2_without_l1_membership": state["l2_without_l1"],
+        "deprecated_exclusions": state["deprecated_exclusions"],
         "l1_without_l2_members": state["l1_without_l2"],
     }, indent=2), encoding="utf-8")
 
@@ -877,6 +900,7 @@ def main() -> int:
             "by_severity": dict(sorted(Counter(f["severity"] for f in findings).items())),
         },
         "findings": findings,
+        "deprecated_exclusions": state.get("deprecated_exclusions", []),
         "catalogue_state": {
             "by_level": state["by_level"],
             "total_records": state["total_records"],

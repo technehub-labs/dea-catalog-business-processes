@@ -10,5 +10,17 @@
   "l2_without_l1_membership": [
     "processes:process-ge-conceive-e6jx6s"
   ],
+  "deprecated_exclusions": [
+    {
+      "rule": "R22-04",
+      "record_id": "processes:process-ge-conceive-e6jx6s",
+      "basis": "lifecycle_status=deprecated; exempt per CR-BP-91 (deliberate L3 exclusion) and MECE-008 (CR-BP-36) \u2014 superseded by the active sibling"
+    },
+    {
+      "rule": "R22-06",
+      "record_id": "processes:process-ge-conceive-e6jx6s",
+      "basis": "lifecycle_status=deprecated; exempt per CR-BP-91 (deliberate L3 exclusion) and MECE-008 (CR-BP-36) \u2014 superseded by the active sibling"
+    }
+  ],
   "l1_without_l2_members": []
 }

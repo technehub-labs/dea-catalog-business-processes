@@ -41,10 +41,7 @@
     "6 L1-to-L2 compositions carry an L0 context mismatch",
     "49 L0 Process Contexts are referenced but not materialised"
   ],
-  "findings_by_rule": {
-    "R22-04": 1,
-    "R22-06": 1
-  },
-  "total_findings": 2,
+  "findings_by_rule": {},
+  "total_findings": 0,
   "readiness_statement": "EXT-23 may enforce the deterministic structural rules automatically; the semantic rules must remain evidence-led and subject to human review."
 }

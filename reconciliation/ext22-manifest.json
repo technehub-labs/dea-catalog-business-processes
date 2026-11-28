@@ -5,27 +5,21 @@
   "parent_cr": "CR-BP-94-EXT-22",
   "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
   "summary": {
-    "total_findings": 2,
-    "by_rule": {
-      "R22-04": 1,
-      "R22-06": 1
-    },
-    "by_severity": {
-      "error": 2
-    }
+    "total_findings": 0,
+    "by_rule": {},
+    "by_severity": {}
   },
-  "findings": [
+  "findings": [],
+  "deprecated_exclusions": [
     {
       "rule": "R22-04",
-      "where": "processes:process-ge-conceive-e6jx6s",
-      "diagnostic": "L2 Business Process 'processes:process-ge-conceive-e6jx6s' has no L3 Activity decomposition",
-      "severity": "error"
+      "record_id": "processes:process-ge-conceive-e6jx6s",
+      "basis": "lifecycle_status=deprecated; exempt per CR-BP-91 (deliberate L3 exclusion) and MECE-008 (CR-BP-36) \u2014 superseded by the active sibling"
     },
     {
       "rule": "R22-06",
-      "where": "processes:process-ge-conceive-e6jx6s",
-      "diagnostic": "L2 Business Process 'processes:process-ge-conceive-e6jx6s' is not composed by any L1 Process Group",
-      "severity": "error"
+      "record_id": "processes:process-ge-conceive-e6jx6s",
+      "basis": "lifecycle_status=deprecated; exempt per CR-BP-91 (deliberate L3 exclusion) and MECE-008 (CR-BP-36) \u2014 superseded by the active sibling"
     }
   ],
   "catalogue_state": {
