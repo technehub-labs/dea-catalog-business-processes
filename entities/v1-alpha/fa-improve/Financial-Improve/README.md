@@ -42,7 +42,7 @@ Encountered in the Improve stage: control reviews after each close, treasury evo
 
 | Date | Change Request | Action / Disposition | Author |
 | :--- | :--- | :--- | :--- |
-| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed the Audit Policy Compliance composes assertion. The process remains canonically composed by Governance Oversight (Governance & Existence × Operate); Finance Improve scope wording is retained as a cross-context concern pending relationship-model disposition. | System |
+| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed the Audit Policy Compliance composes assertion. The process remains canonically composed by Governance Oversight (Governance & Existence × Operate); Finance Imp | System |
 | 2026-09-08 | `CR-BP-21e.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 

@@ -51,7 +51,7 @@ scope.
 
 | Date | Change Request | Action / Disposition | Author |
 | :--- | :--- | :--- | :--- |
-| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed five out-of-context composes assertions. Canonical L2 compositions remain in their context-owned groups; cross-process concerns are not represented as containment. | System |
+| 2026-11-27 | `CR-BP-240` | L1–L2 hierarchy reconciliation: removed five out-of-context composes assertions. Canonical L2 compositions remain in their context-owned groups; cross-process concerns are not represented as containme | System |
 | 2026-09-08 | `CR-BP-21e` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-09-08 | `CR-BP-21e.1` | Composes edges added for the 4 non-Conceive-cell L2s | System |
 | 2026-09-14 | `CR-BP-58` | Removed the dangling composes edge to | System |
